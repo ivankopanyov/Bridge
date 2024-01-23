@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entitie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entities.Views", "Bridge.Opera.Domain.Entities.Views\Bridge.Opera.Domain.Entities.Views.csproj", "{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain", "Bridge.Opera.Domain\Bridge.Opera.Domain.csproj", "{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
