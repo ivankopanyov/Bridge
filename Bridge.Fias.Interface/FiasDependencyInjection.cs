@@ -1,4 +1,4 @@
-﻿namespace Bridge.FiasInterface;
+﻿namespace Bridge.Fias.Interface;
 
 public static class FiasDependencyInjection
 {
@@ -16,7 +16,7 @@ public static class FiasDependencyInjection
             fiasOptions.Running = options.Running;
         });
 
-        serviceCollection.AddSingleton<IFias, Fias>();
+        serviceCollection.AddSingleton<IFiasService, FiasService>();
         serviceCollection.AddHostedService<FiasSocketClient>();
 
         return serviceCollection;

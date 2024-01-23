@@ -1,6 +1,6 @@
-﻿namespace Bridge.FiasInterface;
+﻿namespace Bridge.Fias.Interface;
 
-internal class Fias : IFias
+internal class FiasService : IFiasService
 {
     #region Events
 
@@ -96,9 +96,9 @@ internal class Fias : IFias
 
     public CancellationToken CancellationToken => _cancellationToken;
 
-    private Fias() => RefreshCancellationToken();
+    private FiasService() => RefreshCancellationToken();
 
-    public Fias(IOptionsSnapshot<FiasOptions> options) : this()
+    public FiasService(IOptionsSnapshot<FiasOptions> options) : this()
     {
         var defaultOptions = options.Value;
         _hostname = defaultOptions.Hostname;

@@ -1,4 +1,4 @@
-﻿namespace Bridge.FiasInterface;
+﻿namespace Bridge.Fias.Interface;
 
 public delegate Task FiasMessageHandle<T>(T message);
 
@@ -8,7 +8,7 @@ public delegate Task FiasChangeConnectionStateHandle(bool isConnected, string? h
 
 public delegate Task FiasSendMessageHandle(string message);
 
-public interface IFias
+public interface IFiasService
 {
     event FiasMessageHandle<FiasLinkStart>? FiasLinkStartEvent;
     event FiasMessageHandle<FiasLinkAlive>? FiasLinkAliveEvent;

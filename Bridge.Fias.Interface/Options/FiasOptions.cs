@@ -1,4 +1,4 @@
-﻿namespace Bridge.FiasInterface;
+﻿namespace Bridge.Fias.Interface;
 
 public class FiasOptions
 {

@@ -1,4 +1,4 @@
-﻿namespace Bridge.FiasInterface.SocketClient;
+﻿namespace Bridge.Fias.SocketClient;
 
 internal class FiasSocketClient : BackgroundService
 {
@@ -8,13 +8,13 @@ internal class FiasSocketClient : BackgroundService
 
     private readonly string _separator = $"{TAIL}{HEAD}";
 
-    private readonly IFias _fias;
+    private readonly IFiasService _fias;
 
     private Socket? _socket;
 
     private string? _lastError;
 
-    public FiasSocketClient(IFias fias)
+    public FiasSocketClient(IFiasService fias)
     {
         _fias = fias;
         _fias.FiasSendMessageEvent += SendAsync;
