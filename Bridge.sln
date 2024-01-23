@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.FiasInterface", "Bri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entities.Tables", "Bridge.Opera.Domain.Entities.Tables\Bridge.Opera.Domain.Entities.Tables.csproj", "{746AEF87-9638-48C9-897C-ECFCD20CD68B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entities.Views", "Bridge.Opera.Domain.Entities.Views\Bridge.Opera.Domain.Entities.Views.csproj", "{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{746AEF87-9638-48C9-897C-ECFCD20CD68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{746AEF87-9638-48C9-897C-ECFCD20CD68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{746AEF87-9638-48C9-897C-ECFCD20CD68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
