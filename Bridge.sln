@@ -12,13 +12,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Fias.Entities", "Bri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Fias.Interface", "Bridge.Fias.Interface\Bridge.Fias.Interface.csproj", "{57075B92-3FD4-4297-AAC4-345101976B77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entities.Tables", "Bridge.Opera.Domain.Entities.Tables\Bridge.Opera.Domain.Entities.Tables.csproj", "{746AEF87-9638-48C9-897C-ECFCD20CD68B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Opera.Domain.Entities.Tables", "Bridge.Opera.Domain.Entities.Tables\Bridge.Opera.Domain.Entities.Tables.csproj", "{746AEF87-9638-48C9-897C-ECFCD20CD68B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain.Entities.Views", "Bridge.Opera.Domain.Entities.Views\Bridge.Opera.Domain.Entities.Views.csproj", "{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Opera.Domain.Entities.Views", "Bridge.Opera.Domain.Entities.Views\Bridge.Opera.Domain.Entities.Views.csproj", "{EAD600F5-E9EB-4DC8-91A6-16D8E164AE5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera.Domain", "Bridge.Opera.Domain\Bridge.Opera.Domain.csproj", "{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Opera.Domain", "Bridge.Opera.Domain\Bridge.Opera.Domain.csproj", "{B8FD4354-B23D-4E40-A6EE-1FD01ACECE54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.CheckDB", "Bridge.CheckDB\Bridge.CheckDB.csproj", "{187D9859-8C81-4CE1-8284-44D0FB6B18F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.CheckDB", "Bridge.CheckDB\Bridge.CheckDB.csproj", "{187D9859-8C81-4CE1-8284-44D0FB6B18F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.EventBus", "Bridge.EventBus\Bridge.EventBus.csproj", "{128EDD23-190B-4DF6-BF9F-87406874D2A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{187D9859-8C81-4CE1-8284-44D0FB6B18F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187D9859-8C81-4CE1-8284-44D0FB6B18F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187D9859-8C81-4CE1-8284-44D0FB6B18F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128EDD23-190B-4DF6-BF9F-87406874D2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128EDD23-190B-4DF6-BF9F-87406874D2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128EDD23-190B-4DF6-BF9F-87406874D2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128EDD23-190B-4DF6-BF9F-87406874D2A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
