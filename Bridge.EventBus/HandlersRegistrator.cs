@@ -4,7 +4,7 @@ internal class HandlersRegistrator(IServiceCollection services) : IHandlersRegis
 {
     private readonly IServiceCollection _services = services;
 
-    public IHandlersRegistrator Register<THandler, TIn>() where THandler : EventBusListenerBase<TIn> where TIn : Message
+    public IHandlersRegistrator Register<THandler, TIn>() where THandler : EventHandlerBase<TIn> where TIn : Message
     {
         _services.AddHostedService<THandler>();
         return this;

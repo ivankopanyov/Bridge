@@ -2,7 +2,9 @@
 
 public class EventBusOptions
 {
-    public const string SectionName = "EventBus";
+    public string RabbitMqHostName { get; set; } = "rabbitmq";
 
-    public string HostName { get; set; }
+    public string LogstashHostName { get; set; } = "logstash";
+
+    public string? LogFileName { get; set; }
 }

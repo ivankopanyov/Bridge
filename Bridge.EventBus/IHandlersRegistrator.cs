@@ -2,5 +2,5 @@
 
 public interface IHandlersRegistrator
 {
-    IHandlersRegistrator Register<THandler, TIn>() where THandler : EventBusListenerBase<TIn> where TIn : Message;
+    IHandlersRegistrator Register<THandler, TIn>() where THandler : EventHandlerBase<TIn> where TIn : Message;
 }

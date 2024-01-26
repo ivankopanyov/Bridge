@@ -1,6 +1,6 @@
 ﻿namespace Bridge.EventBus;
 
-public abstract class EventBusListenerBase<TIn> : BackgroundService where TIn : Message
+public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : Message
 {
     private readonly string _queueName;
     private readonly EventBusOptions _options;
@@ -8,7 +8,7 @@ public abstract class EventBusListenerBase<TIn> : BackgroundService where TIn : 
 
     protected virtual string HandlerName => GetType().Name;
 
-    private protected EventBusListenerBase(string queueName, EventBusOptions options, ILogger logger)
+    private protected EventHandlerBase(string queueName, EventBusOptions options, ILogger logger)
     {
         _queueName = queueName;
         _options = options;
@@ -19,7 +19,7 @@ public abstract class EventBusListenerBase<TIn> : BackgroundService where TIn : 
     {
         var factory = new ConnectionFactory 
         { 
-            HostName = _options.HostName 
+            HostName = _options.RabbitMqHostName 
         };
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
@@ -73,8 +73,8 @@ public abstract class EventBusListenerBase<TIn> : BackgroundService where TIn : 
     private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
 }
 
-public abstract class EventBusListener<TIn>(IOptions<EventBusOptions> options, ILogger logger)
-    : EventBusListenerBase<TIn>(typeof(TIn).Name, options.Value, logger) where TIn : Message
+public abstract class EventHandler<TIn>(EventBusOptions options, ILogger logger)
+    : EventHandlerBase<TIn>(typeof(TIn).Name, options, logger) where TIn : Message
 {
     private protected override async Task<bool> HandleProcessAsync(Event<TIn> @event)
     {
@@ -93,8 +93,8 @@ public abstract class EventBusListener<TIn>(IOptions<EventBusOptions> options, I
     protected abstract Task HandleAsync(TIn? @in);
 }
 
-public abstract class EventBusListener<TIn, TOut>(IOptions<EventBusOptions> options, ILogger logger) 
-    : EventBusListenerBase<TIn>(typeof(TIn).Name, options.Value, logger) where TIn : Message where TOut : Message
+public abstract class EventHandler<TIn, TOut>(EventBusOptions options, ILogger logger) 
+    : EventHandlerBase<TIn>(typeof(TIn).Name, options, logger) where TIn : Message where TOut : Message
 {
     private protected override async Task<bool> HandleProcessAsync(Event<TIn> @event)
     {
