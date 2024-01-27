@@ -2,5 +2,5 @@
 
 public abstract class Message
 {
-    private protected Message() { }
+    internal Message() { }
 }

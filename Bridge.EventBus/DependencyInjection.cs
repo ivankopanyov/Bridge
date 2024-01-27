@@ -13,13 +13,13 @@ public static class DependencyInjection
     public static IHandlersRegistrator AddEventBus(this IServiceCollection services, Action<EventBusOptions>? optionsAction = null)
     {
         var options = new EventBusOptions();
-        if (optionsAction != null)
-            optionsAction(options);
+        optionsAction?.Invoke(options);
         services.AddSingleton(options);
         services.AddScoped<IEventBusService, EventBusService>();
 
         var loggerConfiguration = new LoggerConfiguration();
         loggerConfiguration.WriteTo.Console(outputTemplate: OUTLINE_CONSOLE_TEMPLATE, theme: AnsiConsoleTheme.Code);
+        loggerConfiguration.WriteTo
 
         services.AddSerilog(loggerConfiguration.CreateLogger());
 
