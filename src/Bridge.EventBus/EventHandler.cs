@@ -55,12 +55,11 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : Mess
                 {
                     await HandleProcessAsync(@event); 
                     channel.BasicAck(e.DeliveryTag, false);
-                    _logger.Successful(@event.QueueName, HandlerName, @event.TaskId);
                 }
                 catch (Exception ex)
                 {
                     if (!e.Redelivered)
-                        _logger.Error(@event.QueueName, HandlerName, @event.TaskId, ex);
+                        _logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
 
                     channel.BasicReject(e.DeliveryTag, true);
                 }
@@ -76,6 +75,8 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : Mess
         return Task.CompletedTask;
     }
 
+    protected virtual string? InputLog(TIn? @in) => null;
+
     private protected abstract Task HandleProcessAsync(Event<TIn> @event);
 }
 
@@ -83,7 +84,10 @@ public abstract class EventHandler<TIn>(EventBusOptions options, ILogger logger)
     : EventHandlerBase<TIn>(typeof(TIn).Name, options, logger) where TIn : Message
 {
     private protected override async Task HandleProcessAsync(Event<TIn> @event)
-        => await HandleAsync(@event.Message);
+    { 
+        await HandleAsync(@event.Message);
+        _logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message));
+    }
 
     protected abstract Task HandleAsync(TIn? @in);
 }
@@ -101,7 +105,10 @@ public abstract class EventHandler<TIn, TOut>(EventBusOptions options, ILogger l
             TaskId = @event.TaskId,
             Message = @out
         });
+        _logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
     }
 
     protected abstract Task<TOut?> HandleAsync(TIn? @in);
+
+    protected virtual string? OutputLog(TOut? @out) => null;
 }

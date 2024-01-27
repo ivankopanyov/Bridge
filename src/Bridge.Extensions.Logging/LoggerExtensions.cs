@@ -10,6 +10,10 @@ public static class LoggerExtensions
 
     public const string SERVICE = "ServiceName";
 
+    public const string IN = "In";
+
+    public const string OUT = "Out";
+
     private const string UNKNOWN_QUEUE = "UNKNOWN_QUEUE";
 
     private const string UNKNOWN_HANDLER = "UNKNOWN_HANDLER";
@@ -20,8 +24,28 @@ public static class LoggerExtensions
 
     private const string NO_MESSAGE = "No message.";
 
-    public static void Successful(this ILogger logger, string? queueName, string? handlerName, string? taskId)
-        => logger.Log(LogLevel.Information, "Successful", queueName, handlerName, taskId);
+    public static void Successful(this ILogger logger, string? queueName, string? handlerName, string? taskId, string? @in)
+    {
+        var log = "Complete task!";
+
+        if (@in != null)
+            log += $"\n\t-->{@in}";
+
+        logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
+    }
+
+    public static void Successful(this ILogger logger, string? queueName, string? handlerName, string? taskId, string? @in, string? @out)
+    {
+        var log = "Succesful send message!";
+
+        if (@in != null)
+            log += $"\n\t-->{@in}";
+
+        if (@out != null)
+            log += $"\n\t<--{@out}";
+
+        logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
+    }
 
     public static void Info(this ILogger logger, string? sericeName, string? message)
         => logger.Log(LogLevel.Error, message, sericeName, null);
@@ -32,8 +56,15 @@ public static class LoggerExtensions
     public static void Error(this ILogger logger, string? sericeName, string? message)
         => logger.Log(LogLevel.Error, message, sericeName, null);
 
-    public static void Error(this ILogger logger, string? queueName, string? handlerName, string? taskId, Exception ex)
-        => logger.Log(LogLevel.Error, ex?.Message, queueName, handlerName, taskId);
+    public static void Error(this ILogger logger, string? queueName, string? handlerName, string? taskId, string? @in, Exception ex)
+    {
+        var log = ex?.Message;
+
+        if (@in != null)
+            log += $"\n\t-->{@in}";
+
+        logger.Log(LogLevel.Error, log, queueName, handlerName, taskId, ex); 
+    }
 
     public static void Critical(this ILogger logger, string? handlerName, string? message)
         => logger.Log(LogLevel.Critical, message, handlerName: handlerName);
