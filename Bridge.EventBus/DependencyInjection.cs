@@ -19,7 +19,6 @@ public static class DependencyInjection
 
         var loggerConfiguration = new LoggerConfiguration();
         loggerConfiguration.WriteTo.Console(outputTemplate: OUTLINE_CONSOLE_TEMPLATE, theme: AnsiConsoleTheme.Code);
-        loggerConfiguration.WriteTo
 
         services.AddSerilog(loggerConfiguration.CreateLogger());
 

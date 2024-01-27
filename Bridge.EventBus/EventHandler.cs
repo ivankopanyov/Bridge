@@ -51,13 +51,19 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : Mess
                     return;
                 }
 
-                if (await HandleProcessAsync(@event))
+                try
                 {
-                    channel.BasicAck(e.DeliveryTag, true);
+                    await HandleProcessAsync(@event); 
+                    channel.BasicAck(e.DeliveryTag, false);
                     _logger.Successful(@event.QueueName, HandlerName, @event.TaskId);
                 }
-                else
+                catch (Exception ex)
+                {
+                    if (!e.Redelivered)
+                        _logger.Error(@event.QueueName, HandlerName, @event.TaskId, ex);
+
                     channel.BasicReject(e.DeliveryTag, true);
+                }
             }
             catch (Exception ex)
             {
@@ -70,25 +76,14 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : Mess
         return Task.CompletedTask;
     }
 
-    private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
+    private protected abstract Task HandleProcessAsync(Event<TIn> @event);
 }
 
 public abstract class EventHandler<TIn>(EventBusOptions options, ILogger logger)
     : EventHandlerBase<TIn>(typeof(TIn).Name, options, logger) where TIn : Message
 {
-    private protected override async Task<bool> HandleProcessAsync(Event<TIn> @event)
-    {
-        try
-        {
-            await HandleAsync(@event.Message);
-            return true;
-        }
-        catch (Exception ex)
-        {
-            _logger.Error(@event.QueueName, HandlerName, @event.TaskId, ex);
-            return false;
-        }
-    }
+    private protected override async Task HandleProcessAsync(Event<TIn> @event)
+        => await HandleAsync(@event.Message);
 
     protected abstract Task HandleAsync(TIn? @in);
 }
@@ -96,25 +91,16 @@ public abstract class EventHandler<TIn>(EventBusOptions options, ILogger logger)
 public abstract class EventHandler<TIn, TOut>(EventBusOptions options, ILogger logger) 
     : EventHandlerBase<TIn>(typeof(TIn).Name, options, logger) where TIn : Message where TOut : Message
 {
-    private protected override async Task<bool> HandleProcessAsync(Event<TIn> @event)
+    private protected override async Task HandleProcessAsync(Event<TIn> @event)
     {
-        try
+        var @out = await HandleAsync(@event.Message);
+        var eventBusService = new EventBusService();
+        await eventBusService.SendAsync(new Event<TOut>
         {
-            var @out = await HandleAsync(@event.Message);
-            var eventBusService = new EventBusService();
-            await eventBusService.SendAsync(new Event<TOut>
-            {
-                QueueName = @event.QueueName,
-                TaskId = @event.TaskId,
-                Message = @out
-            });
-            return true;
-        }
-        catch (Exception ex)
-        {
-            _logger.Error(@event.QueueName, HandlerName, @event.TaskId, ex);
-            return false;
-        }
+            QueueName = @event.QueueName,
+            TaskId = @event.TaskId,
+            Message = @out
+        });
     }
 
     protected abstract Task<TOut?> HandleAsync(TIn? @in);
