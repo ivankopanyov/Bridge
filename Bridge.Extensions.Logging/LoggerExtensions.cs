@@ -1,23 +1,36 @@
-﻿namespace Bridge.EventBus.Extensions;
+﻿namespace Bridge.Extensions.Logging;
 
-internal static class LoggerExtensions
+public static class LoggerExtensions
 {
-    internal const string QUEUE = "QueueName";
+    public const string QUEUE = "QueueName";
 
-    internal const string HANDLER = "HandlerName";
+    public const string HANDLER = "HandlerName";
 
-    internal const string TASK = "TaskId";
- 
+    public const string TASK = "TaskId";
+
+    public const string SERVICE = "ServiceName";
+
     private const string UNKNOWN_QUEUE = "UNKNOWN_QUEUE";
 
     private const string UNKNOWN_HANDLER = "UNKNOWN_HANDLER";
 
     private const string UNKNOWN_TASK = "\"UNKNOWN_TASK\"";
 
+    private const string UNKNOWN_SERVICE = "UNKNOWN_SERVICE";
+
     private const string NO_MESSAGE = "No message.";
 
-    public static void Successful(this ILogger logger, string? queueName, string? handlerName, string? taskId) 
+    public static void Successful(this ILogger logger, string? queueName, string? handlerName, string? taskId)
         => logger.Log(LogLevel.Information, "Successful", queueName, handlerName, taskId);
+
+    public static void Info(this ILogger logger, string? sericeName, string? message)
+        => logger.Log(LogLevel.Error, message, sericeName, null);
+
+    public static void Error(this ILogger logger, string? sericeName, Exception ex)
+        => logger.Log(LogLevel.Error, ex?.Message, sericeName, ex);
+
+    public static void Error(this ILogger logger, string? sericeName, string? message)
+        => logger.Log(LogLevel.Error, message, sericeName, null);
 
     public static void Error(this ILogger logger, string? queueName, string? handlerName, string? taskId, Exception ex)
         => logger.Log(LogLevel.Error, ex?.Message, queueName, handlerName, taskId);
@@ -40,9 +53,20 @@ internal static class LoggerExtensions
         return string.IsNullOrEmpty(handlerName) ? UNKNOWN_HANDLER : handlerName;
     }
 
-    private static string FixTaskId(string? taskId) 
+    private static string FixServiceName(string? serviceName)
+    {
+        serviceName = serviceName?.Trim();
+        return string.IsNullOrEmpty(serviceName) ? UNKNOWN_SERVICE : serviceName;
+    }
+
+    private static string FixTaskId(string? taskId)
         => string.IsNullOrEmpty(taskId) ? UNKNOWN_TASK : $"\"{taskId}\"";
 
+    private static string FixMessage(string? message)
+    {
+        message = message?.Trim();
+        return string.IsNullOrEmpty(message) ? NO_MESSAGE : message;
+    }
 
     private static void Log(this ILogger logger, LogLevel level, string? message, string? queueName = null, string? handlerName = null, string? taskId = null, Exception? ex = null)
     {
@@ -59,9 +83,17 @@ internal static class LoggerExtensions
         };
     }
 
-    private static string FixMessage(string? message)
+    private static void Log(this ILogger logger, LogLevel level, string? message, string? serviceName, Exception? ex)
     {
-        message = message?.Trim();
-        return string.IsNullOrEmpty(message) ? NO_MESSAGE : message;
+        var state = new Dictionary<string, object>()
+        {
+            { SERVICE, FixServiceName(serviceName) }
+        };
+
+        using (logger.BeginScope(state))
+        {
+            logger.Log(level, ex, FixMessage(message));
+        };
     }
 }
+
