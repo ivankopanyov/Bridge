@@ -10,10 +10,6 @@ public static class LoggerExtensions
 
     public const string SERVICE = "ServiceName";
 
-    public const string IN = "In";
-
-    public const string OUT = "Out";
-
     private const string UNKNOWN_QUEUE = "UNKNOWN_QUEUE";
 
     private const string UNKNOWN_HANDLER = "UNKNOWN_HANDLER";
@@ -29,7 +25,7 @@ public static class LoggerExtensions
         var log = "Complete task!";
 
         if (@in != null)
-            log += $"\n\t-->{@in}";
+            log += $"\n\t-->{FixInOut(@in)}";
 
         logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
     }
@@ -39,10 +35,10 @@ public static class LoggerExtensions
         var log = "Succesful send message!";
 
         if (@in != null)
-            log += $"\n\t-->{@in}";
+            log += $"\n\t-->{FixInOut(@in)}";
 
         if (@out != null)
-            log += $"\n\t<--{@out}";
+            log += $"\n\t<--{FixInOut(@out)}";
 
         logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
     }
@@ -58,10 +54,10 @@ public static class LoggerExtensions
 
     public static void Error(this ILogger logger, string? queueName, string? handlerName, string? taskId, string? @in, Exception ex)
     {
-        var log = ex?.Message;
+        var log = FixMessage(ex?.Message);
 
         if (@in != null)
-            log += $"\n\t-->{@in}";
+            log += $"\n\t-->{FixInOut(@in)}";
 
         logger.Log(LogLevel.Error, log, queueName, handlerName, taskId, ex); 
     }
@@ -99,6 +95,8 @@ public static class LoggerExtensions
         return string.IsNullOrEmpty(message) ? NO_MESSAGE : message;
     }
 
+    private static string FixInOut(string inOut) => inOut.Replace("\n", "\n\t   ");
+
     private static void Log(this ILogger logger, LogLevel level, string? message, string? queueName = null, string? handlerName = null, string? taskId = null, Exception? ex = null)
     {
         var state = new Dictionary<string, object>()
@@ -110,7 +108,7 @@ public static class LoggerExtensions
 
         using (logger.BeginScope(state))
         {
-            logger.Log(level, ex, FixMessage(message));
+            logger.Log(level, ex, message);
         };
     }
 
@@ -123,7 +121,7 @@ public static class LoggerExtensions
 
         using (logger.BeginScope(state))
         {
-            logger.Log(level, ex, FixMessage(message));
+            logger.Log(level, ex, message);
         };
     }
 }
