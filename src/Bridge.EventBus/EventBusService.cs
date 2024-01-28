@@ -1,16 +1,18 @@
 ﻿namespace Bridge.EventBus;
 
-internal class EventBusService : IEventBusService
+internal class EventBusService(EventBusOptions options) : IEventBusService
 {
-    public async Task SendAsync<T>(string? queuName, T? message) where T : Message
+    private readonly EventBusOptions _options = options;
+
+    public async Task SendAsync<T>(string? queueName, T? message) where T : Message, new()
         => await SendAsync<T>(new()
         {
-            QueueName = queuName,
+            QueueName = queueName,
             TaskId = Guid.NewGuid().ToString(),
             Message = message
         });
 
-    public Task SendAsync<T>(Event<T> @event) where T : Message
+    public Task SendAsync<T>(Event<T> @event) where T : class, new()
     {
         var queueName = typeof(T).Name;
         var factory = new ConnectionFactory { HostName = "rabbitmq" };
@@ -36,5 +38,15 @@ internal class EventBusService : IEventBusService
                         body: body);
 
         return Task.CompletedTask;
+    }
+
+    public IModel OpenChannel()
+    {
+        var factory = new ConnectionFactory
+        {
+            HostName = _options.RabbitMqHost
+        };
+        using var connection = factory.CreateConnection();
+        return connection.CreateModel();
     }
 }

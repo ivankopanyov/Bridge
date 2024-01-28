@@ -1,6 +1,6 @@
 ﻿namespace Bridge.EventBus;
 
-internal class Event<T> where T : Message
+internal class Event<T> where T : class, new()
 {
     public string? QueueName { get; set; }
 

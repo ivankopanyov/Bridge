@@ -2,9 +2,11 @@
 
 public class EventBusOptions
 {
-    public string RabbitMqHostName { get; set; } = "rabbitmq";
+    public string RabbitMqHost { get; set; } = "rabbitmq";
 
-    public string LogstashHostName { get; set; } = "logstash";
+    public int RabbitMqPort { get; set; } = 5672;
 
-    public string? LogFileName { get; set; }
+    public string ElasticSearchHost { get; set; } = "elasticsearch";
+
+    public int ElasticSearchPort { get; set; } = 9200;
 }
