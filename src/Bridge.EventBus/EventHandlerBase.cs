@@ -18,10 +18,11 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
     {
         var queueName = typeof(TIn).Name;
 
-        using var channel = EventBusService.OpenChannel();
-        channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+        using var connection = EventBusService.ConnectionFactory.CreateConnection();
+        using var model = connection.CreateModel();
+        model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
-        var consumer = new EventingBasicConsumer(channel);
+        var consumer = new EventingBasicConsumer(model);
         consumer.Received += async (sender, e) =>
         {
             try
@@ -29,45 +30,45 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
                 if (e.Body.ToArray() is not byte[] bytes)
                 {
                     Logger.Critical(HandlerName, "Event body is null.");
-                    channel.BasicReject(e.DeliveryTag, false);
+                    model.BasicReject(e.DeliveryTag, false);
                     return;
                 }
 
                 if (Encoding.UTF8.GetString(bytes) is not string json)
                 {
                     Logger.Critical(HandlerName, "Event encoding failed.");
-                    channel.BasicReject(e.DeliveryTag, false);
+                    model.BasicReject(e.DeliveryTag, false);
                     return;
                 }
 
                 if (JsonConvert.DeserializeObject<Event<TIn>>(json) is not Event<TIn> @event)
                 {
                     Logger.Critical(HandlerName, "Event deserialize failed.");
-                    channel.BasicReject(e.DeliveryTag, false);
+                    model.BasicReject(e.DeliveryTag, false);
                     return;
                 }
 
                 try
                 {
                     await HandleProcessAsync(@event);
-                    channel.BasicAck(e.DeliveryTag, false);
+                    model.BasicAck(e.DeliveryTag, false);
                 }
                 catch (Exception ex)
                 {
                     if (!e.Redelivered)
                         Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
 
-                    channel.BasicReject(e.DeliveryTag, true);
+                    model.BasicReject(e.DeliveryTag, true);
                 }
             }
             catch (Exception ex)
             {
                 Logger.Critical(HandlerName, ex);
-                channel.BasicReject(e.DeliveryTag, false);
+                model.BasicReject(e.DeliveryTag, false);
             }
         };
 
-        channel.BasicConsume(queueName, false, consumer);
+        model.BasicConsume(queueName, false, consumer);
         return Task.CompletedTask;
     }
 
@@ -82,13 +83,13 @@ public abstract class EventHandlerBase<TIn, TOut>(IEventBusService eventBusServi
     private protected override sealed async Task HandleProcessAsync(Event<TIn> @event)
     {
         var @out = await HandleAsync(@event.Message);
+        Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
         await EventBusService.SendAsync(new Event<TOut>
         {
             QueueName = @event.QueueName,
             TaskId = @event.TaskId,
             Message = @out
         });
-        Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
     }
 
     protected abstract Task<TOut?> HandleAsync(TIn? @in);

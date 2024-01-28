@@ -7,7 +7,7 @@ public static class DependencyInjection
         var options = new EventBusOptions();
         optionsAction?.Invoke(options);
         services.AddSingleton(options);
-        services.AddScoped<IEventBusService, EventBusService>();
+        services.AddSingleton<IEventBusService, EventBusService>();
         return new HandlersRegistrator(services);
     }
 }
