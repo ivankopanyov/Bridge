@@ -4,10 +4,11 @@ public abstract class EventHandler<TIn> : EventHandlerBase<TIn> where TIn : Mess
 {
     protected EventHandler(IEventBusService eventBusService, ILogger logger) : base(eventBusService, logger) { }
 
-    private protected override sealed async Task HandleProcessAsync(Event<TIn> @event)
+    private protected override sealed async Task<bool> HandleProcessAsync(Event<TIn> @event)
     { 
         await HandleAsync(@event.Message);
         Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message));
+        return true;
     }
 
     protected abstract Task HandleAsync(TIn? @in);

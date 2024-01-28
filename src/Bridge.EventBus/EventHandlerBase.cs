@@ -1,7 +1,13 @@
-﻿namespace Bridge.EventBus;
+﻿using RabbitMQ.Client;
+
+namespace Bridge.EventBus;
 
 public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : class, new()
 {
+    private IConnection? _connection;
+
+    private IModel? _model;
+
     private protected ILogger Logger { get; init; }
 
     private protected IEventBusService EventBusService { get; init; }
@@ -14,82 +20,141 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         Logger = logger;
     }
 
-    protected override sealed Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        await ConnectAsync();
+    }
+
+    private protected async Task ConnectAsync()
+    {
+        _model?.Dispose();
+        _connection?.Dispose();
+
         var queueName = typeof(TIn).Name;
-
-        using var connection = EventBusService.ConnectionFactory.CreateConnection();
-        using var model = connection.CreateModel();
-        model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
-
-        var consumer = new EventingBasicConsumer(model);
-        consumer.Received += async (sender, e) =>
-        {
-            try
+        var connect = false;
+        while (!connect)
+            await Task.Run(async () =>
             {
-                if (e.Body.ToArray() is not byte[] bytes)
-                {
-                    Logger.Critical(HandlerName, "Event body is null.");
-                    model.BasicReject(e.DeliveryTag, false);
-                    return;
-                }
-
-                if (Encoding.UTF8.GetString(bytes) is not string json)
-                {
-                    Logger.Critical(HandlerName, "Event encoding failed.");
-                    model.BasicReject(e.DeliveryTag, false);
-                    return;
-                }
-
-                if (JsonConvert.DeserializeObject<Event<TIn>>(json) is not Event<TIn> @event)
-                {
-                    Logger.Critical(HandlerName, "Event deserialize failed.");
-                    model.BasicReject(e.DeliveryTag, false);
-                    return;
-                }
-
                 try
                 {
-                    await HandleProcessAsync(@event);
-                    model.BasicAck(e.DeliveryTag, false);
+                    _connection = EventBusService.ConnectionFactory.CreateConnection();
+                    _model = _connection.CreateModel();
+                    _model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+
+                    var consumer = new EventingBasicConsumer(_model);
+                    consumer.Received += async (sender, e) => await BasicEventHandleAsync(e, _model);
+
+                    _model.BasicConsume(queueName, false, consumer);
+                    EventBusService.Active();
+                    connect = true;
                 }
                 catch (Exception ex)
                 {
-                    if (!e.Redelivered)
-                        Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
-
-                    model.BasicReject(e.DeliveryTag, true);
+                    EventBusService.Unactive(ex);
+                    await Task.Delay(1000);
                 }
+            }).ConfigureAwait(false);
+    }
+
+    private async Task BasicEventHandleAsync(BasicDeliverEventArgs e, IModel model)
+    {
+        try
+        {
+            if (e.Body.ToArray() is not byte[] bytes)
+            {
+                Logger.Critical(HandlerName, "Event body is null.");
+                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
+                return;
+            }
+
+            if (Encoding.UTF8.GetString(bytes) is not string json)
+            {
+                Logger.Critical(HandlerName, "Event encoding failed.");
+                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
+                return;
+            }
+
+            if (JsonConvert.DeserializeObject<Event<TIn>>(json) is not Event<TIn> @event)
+            {
+                Logger.Critical(HandlerName, "Event deserialize failed.");
+                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
+                return;
+            }
+
+            try
+            {
+                if (!await HandleProcessAsync(@event))
+                    return;
+
+                await TryBasicAnswerAsync(() => model.BasicAck(e.DeliveryTag, false));
             }
             catch (Exception ex)
             {
-                Logger.Critical(HandlerName, ex);
-                model.BasicReject(e.DeliveryTag, false);
-            }
-        };
+                if (!e.Redelivered)
+                    Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
 
-        model.BasicConsume(queueName, false, consumer);
-        return Task.CompletedTask;
+                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, true));
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.Critical(HandlerName, ex); 
+            await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
+        }
     }
 
     protected virtual string? InputLog(TIn? @in) => null;
 
-    private protected abstract Task HandleProcessAsync(Event<TIn> @event);
+    private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
+
+    private async Task TryBasicAnswerAsync(Action action)
+    {
+        try
+        {
+            action.Invoke();
+            EventBusService.Active();
+        }
+        catch (Exception ex)
+        {
+            EventBusService.Unactive(ex);
+            await Task.Run(ConnectAsync);
+        }
+    }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+        _model?.Dispose();
+        _connection?.Dispose();
+    }
 }
 
 public abstract class EventHandlerBase<TIn, TOut>(IEventBusService eventBusService, ILogger logger)
     : EventHandlerBase<TIn>(eventBusService, logger) where TIn : class, new() where TOut : Message, new()
 {
-    private protected override sealed async Task HandleProcessAsync(Event<TIn> @event)
+    private protected override sealed async Task<bool> HandleProcessAsync(Event<TIn> @event)
     {
         var @out = await HandleAsync(@event.Message);
         Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
-        await EventBusService.SendAsync(new Event<TOut>
+
+        try
         {
-            QueueName = @event.QueueName,
-            TaskId = @event.TaskId,
-            Message = @out
-        });
+            await EventBusService.SendAsync(new Event<TOut>
+            {
+                QueueName = @event.QueueName,
+                TaskId = @event.TaskId,
+                Message = @out
+            });
+
+            EventBusService.Active();
+            return true;
+        }
+        catch (Exception ex) 
+        {
+            EventBusService.Unactive(ex);
+            await Task.Run(ConnectAsync);
+            return false;
+        }
     }
 
     protected abstract Task<TOut?> HandleAsync(TIn? @in);

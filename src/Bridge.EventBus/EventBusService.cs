@@ -4,7 +4,17 @@ internal class EventBusService : IEventBusService
 {
     private readonly ConnectionFactory _connectionFactory;
 
+    private bool _isActive = false;
+
+    private Exception? _currentException = null;
+
+    public event ChangeStateServiceBusHandle ChangeStateEvent;
+
     public IConnectionFactory ConnectionFactory => _connectionFactory;
+
+    public bool IsActive => _isActive;
+
+    public Exception? CurrentException => _currentException;
 
     public EventBusService(EventBusOptions options)
     {
@@ -48,5 +58,25 @@ internal class EventBusService : IEventBusService
                         body: body);
 
         return Task.CompletedTask;
+    }
+
+    public void Active()
+    {
+        if (_isActive)
+            return;
+
+        _isActive = true;
+        _currentException = null;
+        ChangeStateEvent?.Invoke(true, null);
+    }
+
+    public void Unactive(Exception ex)
+    {
+        if (!_isActive && _currentException != null && ex?.Message == _currentException.Message)
+            return;
+
+        _isActive = false;
+        _currentException = ex;
+        ChangeStateEvent?.Invoke(false, ex);
     }
 }
