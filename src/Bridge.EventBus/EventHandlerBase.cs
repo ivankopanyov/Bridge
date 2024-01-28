@@ -44,6 +44,8 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
                     var consumer = new EventingBasicConsumer(_model);
                     consumer.Received += async (sender, e) => await BasicEventHandleAsync(e, _model);
 
+                    _connection.ConnectionShutdown += async (sender, e) => await ConnectAsync();
+
                     _model.BasicConsume(queueName, false, consumer);
                     EventBusService.Active();
                     connect = true;
