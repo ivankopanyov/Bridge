@@ -8,7 +8,7 @@ internal class EventBusService : IEventBusService
 
     private Exception? _currentException = null;
 
-    public event ChangeStateServiceBusHandle ChangeStateEvent;
+    public event ChangeStateServiceBusHandle? ChangeStateEvent;
 
     public IConnectionFactory ConnectionFactory => _connectionFactory;
 

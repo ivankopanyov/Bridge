@@ -2,11 +2,9 @@
 
 public delegate Task FiasMessageHandle<T>(T message);
 
-public delegate Task FiasErrorHandle(string message, Exception? ex);
-
-public delegate Task FiasChangeConnectionStateHandle(bool isConnected, string? hostname, int? port);
-
 public delegate Task FiasSendMessageHandle(string message);
+
+public delegate void ChangeStateFiasHandle(bool isActive, Exception? ex);
 
 public interface IFiasService
 {
@@ -39,21 +37,23 @@ public interface IFiasService
     event FiasMessageHandle<FiasRoomEquipmentStatusResponse>? FiasRoomEquipmentStatusResponseEvent;
     event FiasMessageHandle<FiasCommonMessage>? FiasUnknownTypeMessageEvent;
 
-    event FiasErrorHandle? FiasErrorEvent;
-
-    event FiasChangeConnectionStateHandle? FiasChangeConnectionStateEvent;
-
     event FiasSendMessageHandle? FiasSendMessageEvent;
 
-    bool IsRunning { get; set; }
+    event ChangeStateFiasHandle? ChangeStateEvent;
 
-    string? Hostname { get; set; }
+    string? Hostname { get; }
 
-    int? Port { get; set; }
+    int? Port { get; }
+
+    bool IsActive { get; }
+
+    Exception? CurrentException { get; }
 
     internal CancellationToken CancellationToken { get; }
 
     void Send(string message);
+
+    void SetFiasOptions(FiasOptions? options);
 
     internal void RefreshCancellationToken();
 
@@ -61,7 +61,8 @@ public interface IFiasService
 
     internal void UnknownTypeMessageEventInvoke(FiasCommonMessage message);
 
-    internal void ErrorEventInvoke(string errorMessage, Exception? ex = null);
+    internal void Active();
 
-    internal void ChangeConnectionStateEventInvoke(bool isConnected, string? hostname = null, int? port = null);
+    internal void Unactive(Exception ex);
 }
+

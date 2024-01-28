@@ -10,7 +10,7 @@ public interface IEventBusService
 
     Exception? CurrentException { get; }
 
-    event ChangeStateServiceBusHandle ChangeStateEvent;
+    event ChangeStateServiceBusHandle? ChangeStateEvent;
 
     Task SendAsync<T>(string? queuName, T? message) where T : Message, new();
 

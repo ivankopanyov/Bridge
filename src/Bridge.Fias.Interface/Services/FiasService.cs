@@ -34,77 +34,35 @@ internal class FiasService : IFiasService
     public event FiasMessageHandle<FiasCommonMessage>? UnknownTypeMessageEvent;
     public event FiasMessageHandle<FiasCommonMessage>? FiasUnknownTypeMessageEvent;
 
-    public event FiasErrorHandle? FiasErrorEvent;
-
-    public event FiasChangeConnectionStateHandle? FiasChangeConnectionStateEvent;
-
     public event FiasSendMessageHandle? FiasSendMessageEvent;
+
+    public event ChangeStateFiasHandle? ChangeStateEvent;
 
     #endregion
 
-    private bool _isRunning;
+    private string? _hostname = null;
 
-    private string? _hostname;
+    private int? _port = null;
 
-    private int? _port;
+    private bool _isActive = false;
+
+    private Exception? _currentException = null;
 
     private CancellationTokenSource _cancellationTokenSource;
 
     private CancellationToken _cancellationToken;
 
-    public bool IsRunning
-    {
-        get => _isRunning;
+    public string? Hostname => _hostname;
 
-        set
-        {
-            if (value != _isRunning)
-            {
-                _isRunning = value;
-                _cancellationTokenSource.Cancel();
-            }
-        }
-    }
+    public int? Port => _port;
 
-    public string? Hostname
-    {
-        get => _hostname;
+    public bool IsActive => _isActive;
 
-        set
-        {
-            if (value != _hostname)
-            {
-                _hostname = value;
-                _cancellationTokenSource.Cancel();
-            }
-        }
-    }
-
-    public int? Port
-    {
-        get => _port;
-
-        set
-        {
-            if (value != _port)
-            {
-                _port = value;
-                _cancellationTokenSource.Cancel();
-            }
-        }
-    }
+    public Exception? CurrentException => _currentException;
 
     public CancellationToken CancellationToken => _cancellationToken;
 
     private FiasService() => RefreshCancellationToken();
-
-    public FiasService(IOptionsSnapshot<FiasOptions> options) : this()
-    {
-        var defaultOptions = options.Value;
-        _hostname = defaultOptions.Hostname;
-        _port = defaultOptions.Port;
-        _isRunning = defaultOptions.Running;
-    }
 
     public void RefreshCancellationToken()
     {
@@ -117,8 +75,13 @@ internal class FiasService : IFiasService
     public void MessageEventInvoke(object message)
     {
         var type = message.GetType();
-        
-        if (type == typeof(FiasLinkStart))
+
+        if (type == typeof(FiasLinkEnd))
+        {
+            FiasLinkEndEvent?.Invoke((FiasLinkEnd)message);
+            _cancellationTokenSource.Cancel();
+        }
+        else if (type == typeof(FiasLinkStart))
             FiasLinkStartEvent?.Invoke((FiasLinkStart)message);
         else if (type == typeof(FiasLinkAlive))
             FiasLinkAliveEvent?.Invoke((FiasLinkAlive)message);
@@ -177,9 +140,36 @@ internal class FiasService : IFiasService
     public void UnknownTypeMessageEventInvoke(FiasCommonMessage message) =>
         UnknownTypeMessageEvent?.Invoke(message);
 
-    public void ErrorEventInvoke(string errorMessage, Exception? ex = null) =>
-        FiasErrorEvent?.Invoke(errorMessage, ex);
+    public void SetFiasOptions(FiasOptions? options)
+    {
+        if (((_hostname == null && options?.Hostname == null)
+            || (_hostname != null && options?.Hostname != null && _hostname == options?.Hostname))
+            && ((_port == null && options?.Port == null)
+            || (_port != null && options?.Port != null && _port == options?.Port)))
+            return;
 
-    public void ChangeConnectionStateEventInvoke(bool isConnected, string? hostname = null, int? port = null) =>
-        FiasChangeConnectionStateEvent?.Invoke(isConnected, hostname, port);
+        _hostname = options?.Hostname;
+        _port = options?.Port;
+        _cancellationTokenSource.Cancel();
+    }
+
+    public void Active()
+    {
+        if (_isActive)
+            return;
+
+        _isActive = true;
+        _currentException = null;
+        ChangeStateEvent?.Invoke(true, null);
+    }
+
+    public void Unactive(Exception ex)
+    {
+        if (!_isActive && _currentException != null && ex?.Message == _currentException.Message)
+            return;
+
+        _isActive = false;
+        _currentException = ex;
+        ChangeStateEvent?.Invoke(false, ex);
+    }
 }
