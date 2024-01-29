@@ -62,7 +62,7 @@ internal class FiasService : IFiasService
 
     public CancellationToken CancellationToken => _cancellationToken;
 
-    private FiasService() => RefreshCancellationToken();
+    public FiasService() => RefreshCancellationToken();
 
     public void RefreshCancellationToken()
     {

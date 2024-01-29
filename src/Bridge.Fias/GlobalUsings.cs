@@ -1,0 +1,10 @@
+﻿global using Bridge.EventBus;
+global using Bridge.EventBus.Messages;
+global using Bridge.Extensions.Logging;
+global using Bridge.Fias.Dto;
+global using Bridge.Logger;
+global using Bridge.Fias.Entities;
+global using Bridge.Fias.Interface;
+global using Bridge.Fias.Handlers;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Net;

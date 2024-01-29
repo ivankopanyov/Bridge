@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  fias:
+    image: ${DOCKER_REGISTRY-}fias
+    build:
+      context: .
+      dockerfile: src/Bridge.Fias/Dockerfile
+  
+  elasticsearch:
+    image: elasticsearch:${ELASTIC_VERSION}
+  
+  kibana:
+    image: kibana:${ELASTIC_VERSION}
+
+  rabbitmq:
+    image: rabbitmq:3.12.12-management-alpine

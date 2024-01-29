@@ -1,0 +1,51 @@
+version: '3.4'
+
+services:
+  fias:
+    container_name: fias
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "8080:8080"
+    networks:
+      - network
+    depends_on:
+      - rabbitmq
+  
+  elasticsearch:
+    container_name: elasticsearch
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data:Z
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    networks:
+      - network
+    depends_on:
+      - rabbitmq
+  
+  kibana:
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      - elasticsearch.hosts=["elasticsearch:9200"]
+    networks:
+      - network
+    depends_on:
+      - elasticsearch
+
+  rabbitmq:
+    container_name: rabbitmq
+    ports:
+      - "15672:15672"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
+
+volumes:
+    elasticsearch:

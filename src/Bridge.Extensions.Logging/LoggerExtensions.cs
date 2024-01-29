@@ -44,7 +44,7 @@ public static class LoggerExtensions
     }
 
     public static void Info(this ILogger logger, string? sericeName, string? message)
-        => logger.Log(LogLevel.Error, message, sericeName, null);
+        => logger.Log(LogLevel.Information, message, sericeName, null);
 
     public static void Error(this ILogger logger, string? sericeName, Exception ex)
         => logger.Log(LogLevel.Error, ex?.Message, sericeName, ex);

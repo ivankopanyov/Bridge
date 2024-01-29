@@ -5,6 +5,7 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{002D5B1C-D510-42E2-934C-E0B6A9892856}"
 	ProjectSection(SolutionItems) = preProject
+		.env = .env
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
@@ -27,6 +28,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Logger", "src\Bridge.Logger\Bridge.Logger.csproj", "{25884176-23CD-4DFC-9442-291CAF5B8A26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63F0321D-66AD-42E6-99F6-A2FA317D468D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Fias", "src\Bridge.Fias\Bridge.Fias.csproj", "{C3A90460-F88F-4021-9862-5CEFC67A49CB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81EA9C18-421C-42DC-8692-19D28C33E381}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +75,14 @@ Global
 		{25884176-23CD-4DFC-9442-291CAF5B8A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25884176-23CD-4DFC-9442-291CAF5B8A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25884176-23CD-4DFC-9442-291CAF5B8A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A90460-F88F-4021-9862-5CEFC67A49CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A90460-F88F-4021-9862-5CEFC67A49CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A90460-F88F-4021-9862-5CEFC67A49CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A90460-F88F-4021-9862-5CEFC67A49CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EA9C18-421C-42DC-8692-19D28C33E381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EA9C18-421C-42DC-8692-19D28C33E381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EA9C18-421C-42DC-8692-19D28C33E381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EA9C18-421C-42DC-8692-19D28C33E381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +97,7 @@ Global
 		{128EDD23-190B-4DF6-BF9F-87406874D2A6} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 		{E5E0981D-E26C-4D87-B6B9-E98685E498F8} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 		{25884176-23CD-4DFC-9442-291CAF5B8A26} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
+		{C3A90460-F88F-4021-9862-5CEFC67A49CB} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {068F8188-C4D1-4990-9C43-BD00F62D36EE}

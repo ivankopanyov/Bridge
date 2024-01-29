@@ -4,7 +4,7 @@ public delegate Task FiasMessageHandle<T>(T message);
 
 public delegate Task FiasSendMessageHandle(string message);
 
-public delegate void ChangeStateFiasHandle(bool isActive, Exception? ex);
+public delegate Task ChangeStateFiasHandle(bool isActive, Exception? ex);
 
 public interface IFiasService
 {

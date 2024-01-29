@@ -20,19 +20,23 @@ internal class FiasSocketClient : BackgroundService
 
     protected sealed override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        while (true)
-            await Task.Run(ConnectAsync, stoppingToken);
+        await Task.Run(async () =>
+        {
+            while (true)
+                await ConnectAsync();
+        }, stoppingToken).ConfigureAwait(false);
     }
     
     private async Task ConnectAsync()
     {
         if (_fias.CancellationToken.IsCancellationRequested)
-        {
             _fias.RefreshCancellationToken();
-            await Task.Delay(6000);
-        }
 
-        if (_fias.CancellationToken.IsCancellationRequested)
+        try
+        {
+            await Task.Delay(6000, _fias.CancellationToken);
+        }
+        catch (OperationCanceledException)
         {
             _fias.Unactive(new OperationCanceledException("Restarting the connection."));
             return;
@@ -50,48 +54,42 @@ internal class FiasSocketClient : BackgroundService
             return;
         }
 
-        if (_fias.CancellationToken.IsCancellationRequested)
-        {
-            _fias.Unactive(new OperationCanceledException("Restarting the connection."));
-            return;
-        }
-
         _fias.Active();
 
         StringBuilder stringBuilder = new();
+        _socket = socket;
 
         try
         {
-            _socket = socket;
             while (true)
             {
-                if (!socket.Connected)
-                {
-                    _socket = null;
-                    _fias.Unactive(new InvalidOperationException());
-                    return;
-                }
-
-                await Task.Run(async () => await ReadAsync(socket, stringBuilder));
-
                 if (_fias.CancellationToken.IsCancellationRequested)
                 {
                     _fias.Unactive(new OperationCanceledException("Restarting the connection."));
                     break;
                 }
+
+                if (!socket.Connected)
+                {
+                    _fias.Unactive(new InvalidOperationException("Fias connection is failed."));
+                    break;
+                }
+
+                await ReadAsync(socket, stringBuilder);
             }
         }
         catch (Exception ex)
         {
-            _socket = null;
             _fias.Unactive(ex);
         }
+
+        _socket = null;
     }
 
     private async Task ReadAsync(Socket socket, StringBuilder stringBuilder)
     {
-        ArraySegment<byte> buffer = new(new byte[8192]);
-        var size = await socket.ReceiveAsync(buffer, SocketFlags.None);
+        var buffer = new byte[8192];
+        var size = await socket.ReceiveAsync(buffer);
 
         if (size > 0)
         {
@@ -138,6 +136,8 @@ internal class FiasSocketClient : BackgroundService
                 }
             }
         }
+        else
+            await socket.SendAsync(Array.Empty<byte>());
     }
 
     private void MessageHandle(string message)
@@ -150,7 +150,7 @@ internal class FiasSocketClient : BackgroundService
             _fias.UnknownTypeMessageEventInvoke(commonMessage);
     }
 
-    private Task SendAsync(string message)
+    private async Task SendAsync(string message)
     {
         if (message is null)
             throw new ArgumentException("The message was not sent because it is null.");
@@ -158,9 +158,7 @@ internal class FiasSocketClient : BackgroundService
         if (_socket is null)
             throw new InvalidOperationException("The message was not sent because the connection to FIAS was not established.");
 
-        var buffer = Encoding.Default.GetBytes(message);
-        _socket.SendAsync(new ArraySegment<byte>(buffer), SocketFlags.None);
-        return Task.CompletedTask;
+        await _socket.SendAsync(Encoding.Default.GetBytes(message));
     }
 
     private void ConnectToFias(Socket socket)
@@ -172,8 +170,16 @@ internal class FiasSocketClient : BackgroundService
             throw new InvalidOperationException($"Port {_fias.Port} out of range [{IPEndPoint.MinPort}..{IPEndPoint.MaxPort}]");
 
         var ipEndPoint = GetIPEndPointFromHostName(_fias.Hostname, _fias.Port);
-        if (!socket.ConnectAsync(ipEndPoint).Wait(1000, _fias.CancellationToken))
+
+        try
+        {
+            if (!socket.ConnectAsync(ipEndPoint).Wait(1000, _fias.CancellationToken))
+                throw new InvalidOperationException($"The remote host {_fias.Hostname}:{_fias.Port} was not found.");
+        }
+        catch (OperationCanceledException)
+        {
             throw new InvalidOperationException($"The remote host {_fias.Hostname}:{_fias.Port} was not found.");
+        }
     }
 
     public static IPEndPoint GetIPEndPointFromHostName(string? hostName, int? port)
@@ -188,3 +194,4 @@ internal class FiasSocketClient : BackgroundService
     private static string FixHead(string message, StringBuilder stringBuilder)
         => message[0] != HEAD ? stringBuilder.Append(message.AsSpan(0, message.Length - 1)).ToString() : message[1..^1];
 }
+
