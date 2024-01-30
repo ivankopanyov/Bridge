@@ -2,57 +2,57 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ImpArAccount
 {
-    public string Resort { get; set; }
-    public string AccountNo { get; set; }
+    public string? Resort { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
-    public string AccountType { get; set; }
-    public string AccountName { get; set; }
-    public string Status { get; set; }
-    public string Vip { get; set; }
-    public string Contact { get; set; }
-    public string Country { get; set; }
-    public string Zip { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
-    public string EmailAddress { get; set; }
-    public string CblInd { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
+    public string? NameType { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountName { get; set; }
+    public string? Status { get; set; }
+    public string? Vip { get; set; }
+    public string? Contact { get; set; }
+    public string? Country { get; set; }
+    public string? Zip { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? CblInd { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
     public decimal? Udfn01 { get; set; }
-    public string Tax1No { get; set; }
-    public string IataCorpNo { get; set; }
-    public string BatchStmtYn { get; set; }
-    public string PermAcctYn { get; set; }
+    public string? Tax1No { get; set; }
+    public string? IataCorpNo { get; set; }
+    public string? BatchStmtYn { get; set; }
+    public string? PermAcctYn { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string SumCurCode { get; set; }
-    public string AccountStatusMsg { get; set; }
-    public string PrimaryYn { get; set; }
-    public string ProfileLastName { get; set; }
-    public string ProfileFirstName { get; set; }
-    public string PaymentDueDays { get; set; }
-    public string UnformattedAccountNo { get; set; }
-    public string Name2 { get; set; }
-    public string CblMsg { get; set; }
+    public string? SumCurCode { get; set; }
+    public string? AccountStatusMsg { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? ProfileLastName { get; set; }
+    public string? ProfileFirstName { get; set; }
+    public string? PaymentDueDays { get; set; }
+    public string? UnformattedAccountNo { get; set; }
+    public string? Name2 { get; set; }
+    public string? CblMsg { get; set; }
     public decimal? ImportId { get; set; }
-    public string ImportTabName { get; set; }
-    public string ImportTabType { get; set; }
+    public string? ImportTabName { get; set; }
+    public string? ImportTabType { get; set; }
     public DateTime? ImportCtrlDte { get; set; }
     public decimal? BatchId { get; set; }
     public decimal? SeqNo { get; set; }
     public DateTime? ImportDate { get; set; }
-    public string ImportStatus { get; set; }
+    public string? ImportStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

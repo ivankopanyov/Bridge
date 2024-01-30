@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaInterfaceSetupVw
 {
-    public string InterfaceId { get; set; }
-    public string IntDescription { get; set; }
-    public string PmsResort { get; set; }
-    public string ExternalResort { get; set; }
-    public string ActiveYn { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? IntDescription { get; set; }
+    public string? PmsResort { get; set; }
+    public string? ExternalResort { get; set; }
+    public string? ActiveYn { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? ImageId { get; set; }
-    public string InterfaceType { get; set; }
-    public string DeltachangesYn { get; set; }
-    public string MessageFormat { get; set; }
-    public string ColumnDeleteIndicator { get; set; }
+    public string? InterfaceType { get; set; }
+    public string? DeltachangesYn { get; set; }
+    public string? MessageFormat { get; set; }
+    public string? ColumnDeleteIndicator { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string ChainCode { get; set; }
-    public string SystemType { get; set; }
-    public string GlobalYn { get; set; }
-    public string DeleteCharInd { get; set; }
+    public string? ChainCode { get; set; }
+    public string? SystemType { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? DeleteCharInd { get; set; }
     public decimal? DeleteNumberInd { get; set; }
     public DateTime? DeleteDateInd { get; set; }
-    public string KeepingCharInd { get; set; }
+    public string? KeepingCharInd { get; set; }
     public DateTime? KeepingDateInd { get; set; }
     public decimal? KeepingNumberInd { get; set; }
-    public string InboundYn { get; set; }
-    public string OutboundYn { get; set; }
-    public string ExportYn { get; set; }
-    public string LookupYn { get; set; }
-    public string ProdCode { get; set; }
-    public string BatchBe { get; set; }
+    public string? InboundYn { get; set; }
+    public string? OutboundYn { get; set; }
+    public string? ExportYn { get; set; }
+    public string? LookupYn { get; set; }
+    public string? ProdCode { get; set; }
+    public string? BatchBe { get; set; }
     public byte? MachineId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

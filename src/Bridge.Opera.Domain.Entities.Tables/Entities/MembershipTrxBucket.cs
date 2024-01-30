@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTrxBucket
 {
-    public decimal BucketId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
+    public decimal? BucketId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
     public decimal? MembershipPointsSeqno { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? MaxBucketSize { get; set; }
-    public string BucketType { get; set; }
-    public string BucketStatus { get; set; }
+    public string? BucketType { get; set; }
+    public string? BucketStatus { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

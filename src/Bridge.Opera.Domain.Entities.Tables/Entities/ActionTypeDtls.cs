@@ -7,14 +7,14 @@ public partial class ActionTypeDtls
         ActionTypeSubscriptionDtls = new HashSet<ActionTypeSubscriptionDtls>();
     }
 
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
-    public string UsageContext { get; set; }
-    public string DataElementDatatype { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
+    public string? UsageContext { get; set; }
+    public string? DataElementDatatype { get; set; }
     public decimal? LovSequence { get; set; }
-    public string Xmltagname { get; set; }
-    public string Grpxmltagname { get; set; }
+    public string? Xmltagname { get; set; }
+    public string? Grpxmltagname { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

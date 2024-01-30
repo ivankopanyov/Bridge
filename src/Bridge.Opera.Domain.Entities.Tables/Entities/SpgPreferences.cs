@@ -7,9 +7,9 @@ public partial class SpgPreferences
         GuestEnrollmentPref = new HashSet<GuestEnrollmentPref>();
     }
 
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
-    public string Description { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Description { get; set; }
 
     public virtual ICollection<GuestEnrollmentPref> GuestEnrollmentPref { get; set; }
 

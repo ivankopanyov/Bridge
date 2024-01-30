@@ -7,18 +7,18 @@ public partial class ColourHeader
         GridHeader = new HashSet<GridHeader>();
     }
 
-    public decimal ColourId { get; set; }
-    public string Colourname { get; set; }
-    public string Descr { get; set; }
+    public decimal? ColourId { get; set; }
+    public string? Colourname { get; set; }
+    public string? Descr { get; set; }
     public decimal? OwnerUser { get; set; }
-    public string FormName { get; set; }
-    public string Colour { get; set; }
-    public string WhereClause { get; set; }
+    public string? FormName { get; set; }
+    public string? Colour { get; set; }
+    public string? WhereClause { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ICollection<GridHeader> GridHeader { get; set; }
 

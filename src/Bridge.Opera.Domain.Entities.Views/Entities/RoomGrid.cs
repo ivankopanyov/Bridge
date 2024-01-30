@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomGrid
 {
-    public string Resort { get; set; }
-    public string Building { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
-    public string Type { get; set; }
-    public string RoomCategory { get; set; }
-    public string Description { get; set; }
-    public string RoomStatus { get; set; }
-    public string RoomFeatures { get; set; }
+    public string? Resort { get; set; }
+    public string? Building { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Type { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Description { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? RoomFeatures { get; set; }
     public decimal? MaxOccupancy { get; set; }
-    public string Floor { get; set; }
-    public string SmokingPreference { get; set; }
-    public string FoStatus { get; set; }
-    public string AssignType { get; set; }
+    public string? Floor { get; set; }
+    public string? SmokingPreference { get; set; }
+    public string? FoStatus { get; set; }
+    public string? AssignType { get; set; }
     public decimal? PersonDiscrepancy { get; set; }
     public decimal? OccupantDiscrepancy { get; set; }
-    public string AssignReason { get; set; }
+    public string? AssignReason { get; set; }
     public decimal? RoomUseCount { get; set; }
     public decimal? RoomCatOrderBy { get; set; }
     public decimal? RoomOrderBy { get; set; }
-    public string ResvStatus { get; set; }
-    public string Remarks { get; set; }
-    public string HkStatus { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Remarks { get; set; }
+    public string? HkStatus { get; set; }
     public decimal? TotalPoints { get; set; }
     public DateTime? HoldDateTime { get; set; }
     public decimal? HoldUser { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
     public decimal? ConsolidatedOrderBy { get; set; }
     public DateTime? LastCheckOutDate { get; set; }
     public decimal? TotForecastedPoints { get; set; }
-    public string PsuedoRoomType { get; set; }
+    public string? PsuedoRoomType { get; set; }
     public decimal? MaxCapacity { get; set; }
-    public string OvosGradeCode { get; set; }
+    public string? OvosGradeCode { get; set; }
     public decimal? GradeCodeSeq { get; set; }
-    public string HousekeeperInRoomYn { get; set; }
+    public string? HousekeeperInRoomYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

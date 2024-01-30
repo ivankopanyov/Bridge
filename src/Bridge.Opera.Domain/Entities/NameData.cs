@@ -1,4 +1,4 @@
-﻿namespace Bridge.Infrastructure.Opera.Entities;
+﻿namespace Bridge.Opera.Entities;
 
 public class NameData
 {

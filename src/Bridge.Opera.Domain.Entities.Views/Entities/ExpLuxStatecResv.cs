@@ -10,23 +10,23 @@ public partial class ExpLuxStatecResv
     public DateTime? Departure { get; set; }
     public DateTime? BirthDate { get; set; }
     public DateTime? AccompBirthDate { get; set; }
-    public string Room { get; set; }
-    public string PurposeOfStay { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
-    public string BirthPlace { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestName { get; set; }
-    public string Country { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string StreetNumber { get; set; }
-    public string StreetAddress { get; set; }
-    public string LicensePlate { get; set; }
-    public string LicenseCntry { get; set; }
-    public string AccompBirthPlace { get; set; }
-    public string AccompFirstName { get; set; }
-    public string AccompGuestName { get; set; }
+    public string? Room { get; set; }
+    public string? PurposeOfStay { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestName { get; set; }
+    public string? Country { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? StreetNumber { get; set; }
+    public string? StreetAddress { get; set; }
+    public string? LicensePlate { get; set; }
+    public string? LicenseCntry { get; set; }
+    public string? AccompBirthPlace { get; set; }
+    public string? AccompFirstName { get; set; }
+    public string? AccompGuestName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

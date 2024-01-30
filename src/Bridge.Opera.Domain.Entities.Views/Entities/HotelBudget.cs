@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HotelBudget
 {
-    public decimal GoalId { get; set; }
+    public decimal? GoalId { get; set; }
     public decimal? NameId { get; set; }
-    public string GoalType { get; set; }
-    public string Resort { get; set; }
+    public string? GoalType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ArrivalStartdate { get; set; }
     public DateTime? ArrivalEnddate { get; set; }
     public decimal? RoomNights { get; set; }
@@ -16,9 +16,9 @@ public partial class HotelBudget
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PeriodType { get; set; }
-    public string PeriodCode { get; set; }
-    public string BudgetType { get; set; }
+    public string? PeriodType { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? BudgetType { get; set; }
     public decimal? YearId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

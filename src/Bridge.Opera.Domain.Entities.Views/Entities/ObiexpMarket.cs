@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpMarket
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ResortId { get; set; }
-    public string MarketCodeKey { get; set; }
-    public string MarketGroupKey { get; set; }
-    public string AllKey { get; set; }
+    public string? ResortId { get; set; }
+    public string? MarketCodeKey { get; set; }
+    public string? MarketGroupKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

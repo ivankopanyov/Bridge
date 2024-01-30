@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntEvents
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string BatchState { get; set; }
-    public string Module { get; set; }
-    public string PrimaryKey { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? BatchState { get; set; }
+    public string? Module { get; set; }
+    public string? PrimaryKey { get; set; }
     public decimal? ActionId { get; set; }
-    public decimal BatchId { get; set; }
-    public decimal EventCount { get; set; }
-    public decimal BatchSize { get; set; }
+    public decimal? BatchId { get; set; }
+    public decimal? EventCount { get; set; }
+    public decimal? BatchSize { get; set; }
     public decimal? UpdateCount { get; set; }
-    public DateTime EventDate { get; set; }
-    public DateTime StateDate { get; set; }
-    public DateTime HeaderInsertDate { get; set; }
+    public DateTime? EventDate { get; set; }
+    public DateTime? StateDate { get; set; }
+    public DateTime? HeaderInsertDate { get; set; }
     public DateTime? DetailInsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

@@ -5,7 +5,7 @@ public partial class ExpUpeStatisticDates
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string StatGroup { get; set; }
+    public string? StatGroup { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

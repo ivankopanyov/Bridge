@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemEventWpCombined
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
-    public string EventId { get; set; }
+    public string? EventId { get; set; }
     public decimal? FirstEventId { get; set; }
     public decimal? CountEventIds { get; set; }
-    public string EvType { get; set; }
-    public string EvTypeDescription { get; set; }
-    public string EvName { get; set; }
+    public string? EvType { get; set; }
+    public string? EvTypeDescription { get; set; }
+    public string? EvName { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? Attendees { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
     public decimal? PkgId { get; set; }
-    public string EvResort { get; set; }
+    public string? EvResort { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? SumRateAmount { get; set; }
     public decimal? RateAmount { get; set; }
-    public string Ratecode { get; set; }
-    public string ResvNameId { get; set; }
+    public string? Ratecode { get; set; }
+    public string? ResvNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,58 +2,58 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReceiptHistory
 {
-    public string Resort { get; set; }
-    public string RecptType { get; set; }
-    public string RecptTypeDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? RecptType { get; set; }
+    public string? RecptTypeDesc { get; set; }
     public decimal? RecptNo { get; set; }
-    public string DecodeRecptNo { get; set; }
+    public string? DecodeRecptNo { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? RecptAmt { get; set; }
-    public string DisplayName { get; set; }
-    public string FirstName { get; set; }
-    public string Sfirst { get; set; }
-    public string Sname { get; set; }
+    public string? DisplayName { get; set; }
+    public string? FirstName { get; set; }
+    public string? Sfirst { get; set; }
+    public string? Sname { get; set; }
     public decimal? TrxNo { get; set; }
-    public string Reference { get; set; }
-    public string TaxInvNo { get; set; }
-    public string PaymentType { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string XfullName { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string PasserByName { get; set; }
-    public string Company { get; set; }
+    public string? Reference { get; set; }
+    public string? TaxInvNo { get; set; }
+    public string? PaymentType { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? XfullName { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? PasserByName { get; set; }
+    public string? Company { get; set; }
     public decimal? CashierId { get; set; }
-    public string Workstation { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string Remark { get; set; }
-    public string Room { get; set; }
-    public string PostingTime { get; set; }
-    public string PayeeAddress { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeLastName { get; set; }
-    public string PayeeName { get; set; }
-    public string PayeeName2 { get; set; }
-    public string PayeeName3 { get; set; }
-    public string LastName { get; set; }
-    public string MiddleName { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
+    public string? Workstation { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? Remark { get; set; }
+    public string? Room { get; set; }
+    public string? PostingTime { get; set; }
+    public string? PayeeAddress { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? PayeeName { get; set; }
+    public string? PayeeName2 { get; set; }
+    public string? PayeeName3 { get; set; }
+    public string? LastName { get; set; }
+    public string? MiddleName { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string CurrencyDesc { get; set; }
-    public string CcApprovalCode { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string CreditCardExpDate { get; set; }
-    public string CreditCardNo { get; set; }
+    public string? CurrencyDesc { get; set; }
+    public string? CcApprovalCode { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? CreditCardExpDate { get; set; }
+    public string? CreditCardNo { get; set; }
     public decimal? FolioView { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? XmlActionSeq { get; set; }
-    public string CheckExchangeType { get; set; }
-    public string MCreditCardNo { get; set; }
+    public string? CheckExchangeType { get; set; }
+    public string? MCreditCardNo { get; set; }
     public decimal? ResvNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

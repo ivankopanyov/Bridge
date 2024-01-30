@@ -7,14 +7,14 @@ public partial class OrmsSeasons
         OrmsDaily = new HashSet<OrmsDaily>();
     }
 
-    public string Resort { get; set; }
-    public string SeasonCode { get; set; }
-    public string SeasonDesc { get; set; }
-    public string DisplayColor { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? SeasonDesc { get; set; }
+    public string? DisplayColor { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<OrmsDaily> OrmsDaily { get; set; }
 

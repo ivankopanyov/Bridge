@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Destination1
 {
-    public decimal DestinationId { get; set; }
+    public decimal? DestinationId { get; set; }
     public decimal? MasterDestinationId { get; set; }
-    public decimal LevelId { get; set; }
-    public string DestinationDesc { get; set; }
+    public decimal? LevelId { get; set; }
+    public string? DestinationDesc { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

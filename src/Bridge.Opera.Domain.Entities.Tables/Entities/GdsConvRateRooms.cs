@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvRateRooms
 {
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string GdsRateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public DateTime? BeginDate { get; set; }
     public decimal? GdsRateCodeOrder { get; set; }
-    public string RateUpdateStatus { get; set; }
+    public string? RateUpdateStatus { get; set; }
     public DateTime? LastRateUpdateDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? EndDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? ShadowBeginDate { get; set; }
-    public string Shadow { get; set; }
+    public string? Shadow { get; set; }
     public decimal? GdsRoomOrder { get; set; }
-    public string ActivateYn { get; set; }
-    public string AvailabilityUpdateYn { get; set; }
-    public string RateRoomGdsYn { get; set; }
-    public string PublicYn { get; set; }
-    public string BbarYn { get; set; }
-    public string DisplayRegionalYn { get; set; }
+    public string? ActivateYn { get; set; }
+    public string? AvailabilityUpdateYn { get; set; }
+    public string? RateRoomGdsYn { get; set; }
+    public string? PublicYn { get; set; }
+    public string? BbarYn { get; set; }
+    public string? DisplayRegionalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

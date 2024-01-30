@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsPropUpload
 {
-    public decimal PropUpdId { get; set; }
-    public string Resort { get; set; }
-    public string Status { get; set; }
-    public string CategoryType { get; set; }
-    public string SubcategoryType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Flag { get; set; }
-    public string PropData1 { get; set; }
-    public string PropData2 { get; set; }
-    public string PropData3 { get; set; }
-    public string ActionCode { get; set; }
-    public string InitialUploadYn { get; set; }
-    public string PropData4 { get; set; }
+    public decimal? PropUpdId { get; set; }
+    public string? Resort { get; set; }
+    public string? Status { get; set; }
+    public string? CategoryType { get; set; }
+    public string? SubcategoryType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Flag { get; set; }
+    public string? PropData1 { get; set; }
+    public string? PropData2 { get; set; }
+    public string? PropData3 { get; set; }
+    public string? ActionCode { get; set; }
+    public string? InitialUploadYn { get; set; }
+    public string? PropData4 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

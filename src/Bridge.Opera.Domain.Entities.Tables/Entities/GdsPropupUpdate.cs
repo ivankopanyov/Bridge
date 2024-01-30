@@ -11,46 +11,46 @@ public partial class GdsPropupUpdate
         GdsResrtyUpdate = new HashSet<GdsResrtyUpdate>();
     }
 
-    public decimal PropupId { get; set; }
-    public string UpdateCode { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
+    public decimal? PropupId { get; set; }
+    public string? UpdateCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Action { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string AutoCommission { get; set; }
-    public string PropertyStatus { get; set; }
-    public string PropertyName { get; set; }
-    public string Street { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string PostalCode { get; set; }
-    public string TelephoneNumber { get; set; }
-    public string FaxNumber { get; set; }
-    public string TelexNumber { get; set; }
-    public string Directions { get; set; }
-    public string PropLocationDesc { get; set; }
-    public string YearlyClosures { get; set; }
+    public string? Action { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? AutoCommission { get; set; }
+    public string? PropertyStatus { get; set; }
+    public string? PropertyName { get; set; }
+    public string? Street { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? PostalCode { get; set; }
+    public string? TelephoneNumber { get; set; }
+    public string? FaxNumber { get; set; }
+    public string? TelexNumber { get; set; }
+    public string? Directions { get; set; }
+    public string? PropLocationDesc { get; set; }
+    public string? YearlyClosures { get; set; }
     public DateTime? DateOpened { get; set; }
     public DateTime? DateRenovated { get; set; }
-    public string TimeZone { get; set; }
-    public string GmtOffset { get; set; }
-    public string CheckinTime { get; set; }
-    public string CheckoutTime { get; set; }
+    public string? TimeZone { get; set; }
+    public string? GmtOffset { get; set; }
+    public string? CheckinTime { get; set; }
+    public string? CheckoutTime { get; set; }
     public decimal? NumberRooms { get; set; }
     public decimal? NumberSuites { get; set; }
     public decimal? NumberFloors { get; set; }
-    public string NativeCurrencyCode { get; set; }
+    public string? NativeCurrencyCode { get; set; }
     public decimal? MaxRoomOccupancy { get; set; }
-    public string DefaultStatusCode { get; set; }
-    public string RollInStatusCode { get; set; }
-    public string DeliverStatusCode { get; set; }
-    public string DeliverStatusDate { get; set; }
-    public string SessionId { get; set; }
-    public string GdsHost { get; set; }
+    public string? DefaultStatusCode { get; set; }
+    public string? RollInStatusCode { get; set; }
+    public string? DeliverStatusCode { get; set; }
+    public string? DeliverStatusDate { get; set; }
+    public string? SessionId { get; set; }
+    public string? GdsHost { get; set; }
 
     public virtual ICollection<GdsAirptUpdate> GdsAirptUpdate { get; set; }
     public virtual ICollection<GdsAmentupUpdate> GdsAmentupUpdate { get; set; }

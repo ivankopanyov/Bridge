@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAccStatsMonthlyFact
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StayDate { get; set; }
-    public decimal StayMonth { get; set; }
-    public decimal StayYear { get; set; }
-    public string NameType { get; set; }
-    public string CurrencyCode { get; set; }
+    public decimal? StayMonth { get; set; }
+    public decimal? StayYear { get; set; }
+    public string? NameType { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? IndRoomNight { get; set; }
     public decimal? IndRoomRevNet { get; set; }
     public decimal? IndAvgRevNet { get; set; }
@@ -42,7 +42,7 @@ public partial class ObiAccStatsMonthlyFact
     public decimal? TotFbRevGross { get; set; }
     public decimal? TotOtherRevGross { get; set; }
     public decimal? TotTotalRevGross { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CcIndRoomNight { get; set; }
     public decimal? CcIndRoomRevNet { get; set; }
     public decimal? CcIndAvgRevNet { get; set; }

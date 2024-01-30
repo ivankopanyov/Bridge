@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EuroConvSummDetails
 {
-    public string TableName { get; set; }
+    public string? TableName { get; set; }
     public decimal? ConvertedRecords { get; set; }
-    public string FromScope { get; set; }
-    public string ToScope { get; set; }
+    public string? FromScope { get; set; }
+    public string? ToScope { get; set; }
     public DateTime? FromTime { get; set; }
     public DateTime? ToTime { get; set; }
 

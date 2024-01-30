@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiUserResorts
 {
-    public string CodeName { get; set; }
-    public string CodeValue { get; set; }
+    public string? CodeName { get; set; }
+    public string? CodeValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfilePhones
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneRole { get; set; }
-    public string PhoneNumber { get; set; }
-    public string Countryaccessnumber { get; set; }
-    public string Citycode { get; set; }
-    public string Phoneextension { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneRole { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? Countryaccessnumber { get; set; }
+    public string? Citycode { get; set; }
+    public string? Phoneextension { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? PrimaryYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DefaultConfirmationYn { get; set; }
+    public string? DefaultConfirmationYn { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }
 

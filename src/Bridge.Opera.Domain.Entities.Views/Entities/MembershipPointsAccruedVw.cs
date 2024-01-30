@@ -3,21 +3,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MembershipPointsAccruedVw
 {
     public decimal? CostPerPoint { get; set; }
-    public decimal MembershipTrxId { get; set; }
-    public string MembershipType { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public decimal Points { get; set; }
-    public string TypeOfPoints { get; set; }
-    public string BillingGroup { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public decimal? Points { get; set; }
+    public string? TypeOfPoints { get; set; }
+    public string? BillingGroup { get; set; }
     public decimal? AwBucketQuantity { get; set; }
     public decimal? TierBucketQuantity { get; set; }
     public decimal? AwPoints { get; set; }
     public decimal? TierPoints { get; set; }
-    public string RuleGroup { get; set; }
+    public string? RuleGroup { get; set; }
     public decimal? DaysFromEnroll { get; set; }
-    public string PointsRatioPercentYn { get; set; }
-    public string PointsRatioRoundingFlg { get; set; }
-    public string RtcYn { get; set; }
+    public string? PointsRatioPercentYn { get; set; }
+    public string? PointsRatioRoundingFlg { get; set; }
+    public string? RtcYn { get; set; }
     public decimal? CentralQualifiedRevenue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

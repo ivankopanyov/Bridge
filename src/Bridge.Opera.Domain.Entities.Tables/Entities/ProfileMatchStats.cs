@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileMatchStats
 {
-    public decimal ProfileMatchId { get; set; }
-    public string Resort { get; set; }
-    public string MatchCriteria { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? ProfileMatchId { get; set; }
+    public string? Resort { get; set; }
+    public string? MatchCriteria { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? Points { get; set; }
     public decimal? Sequence { get; set; }
-    public string NameType { get; set; }
+    public string? NameType { get; set; }
     public decimal? ProcessTime { get; set; }
-    public string ResortNameId { get; set; }
+    public string? ResortNameId { get; set; }
     public decimal? OrsNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

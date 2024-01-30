@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmProfileSegBatchesVw
 {
-    public decimal SegId { get; set; }
-    public string SegCode { get; set; }
-    public string SegDesc { get; set; }
-    public string SegSourceType { get; set; }
-    public string Resort { get; set; }
-    public decimal SegBatchId { get; set; }
-    public string JobNameId { get; set; }
-    public DateTime BatchStartDate { get; set; }
+    public decimal? SegId { get; set; }
+    public string? SegCode { get; set; }
+    public string? SegDesc { get; set; }
+    public string? SegSourceType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SegBatchId { get; set; }
+    public string? JobNameId { get; set; }
+    public DateTime? BatchStartDate { get; set; }
     public DateTime? BatchEndDate { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? RecordCount { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string EspBatchCode { get; set; }
+    public string? EspBatchCode { get; set; }
     public decimal? ParamListId { get; set; }
     public decimal? TaskInstId { get; set; }
 

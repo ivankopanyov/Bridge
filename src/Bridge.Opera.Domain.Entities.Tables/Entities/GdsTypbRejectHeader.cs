@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsTypbRejectHeader
 {
-    public decimal TypbRejectId { get; set; }
-    public string TypbHost { get; set; }
-    public string TypbMessageNo { get; set; }
-    public string TypbErrorText { get; set; }
-    public decimal TypbRetryCount { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ReadyForRetry { get; set; }
-    public string HeaderText { get; set; }
-    public string GdsTransactionNo { get; set; }
-    public string Resort { get; set; }
+    public decimal? TypbRejectId { get; set; }
+    public string? TypbHost { get; set; }
+    public string? TypbMessageNo { get; set; }
+    public string? TypbErrorText { get; set; }
+    public decimal? TypbRetryCount { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ReadyForRetry { get; set; }
+    public string? HeaderText { get; set; }
+    public string? GdsTransactionNo { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ReserveBeginDate { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
     public decimal? BookNo { get; set; }
-    public string TypbRetryErrorText { get; set; }
-    public string UseRetryErrorYn { get; set; }
-    public string BookrqText { get; set; }
-    public string GuestText { get; set; }
-    public string GdsPassthrough { get; set; }
+    public string? TypbRetryErrorText { get; set; }
+    public string? UseRetryErrorYn { get; set; }
+    public string? BookrqText { get; set; }
+    public string? GuestText { get; set; }
+    public string? GdsPassthrough { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

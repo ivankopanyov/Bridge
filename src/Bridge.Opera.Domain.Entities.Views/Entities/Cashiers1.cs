@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Cashiers1
 {
-    public string ActiveYn { get; set; }
-    public string GenCashierYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? GenCashierYn { get; set; }
     public DateTime? LastOpened { get; set; }
-    public decimal CashierId { get; set; }
-    public string Title { get; set; }
-    public string State { get; set; }
+    public decimal? CashierId { get; set; }
+    public string? Title { get; set; }
+    public string? State { get; set; }
     public DateTime? Timeoffirstopen { get; set; }
     public DateTime? Timeoflastclose { get; set; }
     public DateTime? Dateoflastuse { get; set; }
     public decimal? MaxNoOpen { get; set; }
     public decimal? TimesOpened { get; set; }
-    public decimal AmtFloat { get; set; }
+    public decimal? AmtFloat { get; set; }
     public decimal? AmtDiffInitial { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? CashierBal { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string IncludeFloat { get; set; }
-    public string Resort { get; set; }
-    public string InterfaceCashierYn { get; set; }
-    public string KioskCashierYn { get; set; }
-    public string ReservedYn { get; set; }
-    public string ReservedResort { get; set; }
+    public string? IncludeFloat { get; set; }
+    public string? Resort { get; set; }
+    public string? InterfaceCashierYn { get; set; }
+    public string? KioskCashierYn { get; set; }
+    public string? ReservedYn { get; set; }
+    public string? ReservedResort { get; set; }
     public decimal? ClosureNo { get; set; }
-    public string ChainCode { get; set; }
-    public string InternalUpdateYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? InternalUpdateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

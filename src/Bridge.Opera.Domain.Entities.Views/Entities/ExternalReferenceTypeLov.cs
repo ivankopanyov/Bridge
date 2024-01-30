@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExternalReferenceTypeLov
 {
-    public string InterfaceId { get; set; }
-    public string IntDescription { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? IntDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

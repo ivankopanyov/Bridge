@@ -7,33 +7,33 @@ public partial class ResortHkBreakout
         ResortHkDailyTask = new HashSet<ResortHkDailyTask>();
     }
 
-    public decimal HkBreakoutJobId { get; set; }
-    public string Resort { get; set; }
-    public DateTime TaskDate { get; set; }
-    public string AutoAssignmentYn { get; set; }
-    public string TaskCodesList { get; set; }
+    public decimal? HkBreakoutJobId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? TaskDate { get; set; }
+    public string? AutoAssignmentYn { get; set; }
+    public string? TaskCodesList { get; set; }
     public decimal? NumOfAttendants { get; set; }
-    public string RoomStatusList { get; set; }
-    public string FoStatusList { get; set; }
-    public string ExcludeOwnerRooms { get; set; }
-    public string ExcludeOwnerFfOccupied { get; set; }
-    public string RoomClassList { get; set; }
+    public string? RoomStatusList { get; set; }
+    public string? FoStatusList { get; set; }
+    public string? ExcludeOwnerRooms { get; set; }
+    public string? ExcludeOwnerFfOccupied { get; set; }
+    public string? RoomClassList { get; set; }
     public decimal? MaximumCredits { get; set; }
-    public string ResvStatusList { get; set; }
-    public string ExcludeCoAfter { get; set; }
-    public string ExcludeCoBefore { get; set; }
-    public string TaskInstruction { get; set; }
-    public string AttendantInstruction { get; set; }
-    public string RoomInstruction { get; set; }
-    public string ExcludeVipList { get; set; }
-    public string VipOnlyYn { get; set; }
-    public string AssignmentOrder { get; set; }
-    public string IsolatedRateCodes { get; set; }
-    public string IsolatedRooms { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? ResvStatusList { get; set; }
+    public string? ExcludeCoAfter { get; set; }
+    public string? ExcludeCoBefore { get; set; }
+    public string? TaskInstruction { get; set; }
+    public string? AttendantInstruction { get; set; }
+    public string? RoomInstruction { get; set; }
+    public string? ExcludeVipList { get; set; }
+    public string? VipOnlyYn { get; set; }
+    public string? AssignmentOrder { get; set; }
+    public string? IsolatedRateCodes { get; set; }
+    public string? IsolatedRooms { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual ICollection<ResortHkDailyTask> ResortHkDailyTask { get; set; }
 

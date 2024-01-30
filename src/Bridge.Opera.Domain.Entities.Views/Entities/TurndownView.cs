@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TurndownView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string FullGuestName { get; set; }
-    public string ResvStatus { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? FullGuestName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string TurndownStatus { get; set; }
-    public string TurndownStatusDesc { get; set; }
-    public string RoomStatus { get; set; }
-    public string RoomStatusDesc { get; set; }
-    public string SharedYn { get; set; }
-    public string DisplayResvStatus { get; set; }
+    public string? TurndownStatus { get; set; }
+    public string? TurndownStatusDesc { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? RoomStatusDesc { get; set; }
+    public string? SharedYn { get; set; }
+    public string? DisplayResvStatus { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string Vip { get; set; }
-    public string ArrivalTime { get; set; }
-    public string DepartureTime { get; set; }
-    public string RoomInstructions { get; set; }
-    public string TurndownYn { get; set; }
+    public string? Vip { get; set; }
+    public string? ArrivalTime { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? RoomInstructions { get; set; }
+    public string? TurndownYn { get; set; }
     public decimal? ShareId { get; set; }
-    public string HkSectionCode { get; set; }
-    public string HkEveningSection { get; set; }
+    public string? HkSectionCode { get; set; }
+    public string? HkEveningSection { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

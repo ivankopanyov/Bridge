@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrsResvLookupFields
 {
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string FldName { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? FldName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

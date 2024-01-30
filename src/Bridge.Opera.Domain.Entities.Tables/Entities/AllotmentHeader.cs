@@ -38,116 +38,116 @@ public partial class AllotmentHeader
         MeetingRoomInventory = new HashSet<MeetingRoomInventory>();
     }
 
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string AllotmentType { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? AllotmentType { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Description { get; set; }
     public DateTime? ShoulderBeginDate { get; set; }
     public DateTime? ShoulderEndDate { get; set; }
-    public string AllotmentCode { get; set; }
+    public string? AllotmentCode { get; set; }
     public decimal? MasterNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? AgentNameId { get; set; }
     public decimal? SourceNameId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CancelRule { get; set; }
-    public string RateCode { get; set; }
-    public string BookingStatus { get; set; }
-    public decimal BookingStatusOrder { get; set; }
-    public string Status { get; set; }
+    public string? CancelRule { get; set; }
+    public string? RateCode { get; set; }
+    public string? BookingStatus { get; set; }
+    public decimal? BookingStatusOrder { get; set; }
+    public string? Status { get; set; }
     public decimal? Elastic { get; set; }
     public DateTime? InvCutoffDate { get; set; }
     public decimal? InvCutoffDays { get; set; }
     public decimal? TentativeLevel { get; set; }
-    public string Info { get; set; }
-    public string MarketCode { get; set; }
-    public string Source { get; set; }
-    public string Channel { get; set; }
+    public string? Info { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Source { get; set; }
+    public string? Channel { get; set; }
     public decimal? AvgPeoplePerRoom { get; set; }
-    public string OriginalRateCode { get; set; }
-    public string BookingId { get; set; }
+    public string? OriginalRateCode { get; set; }
+    public string? BookingId { get; set; }
     public decimal? CancellationNo { get; set; }
-    public string CancellationCode { get; set; }
+    public string? CancellationCode { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationDesc { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? CancellationDesc { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? RoomsPerDay { get; set; }
     public decimal? AverageRate { get; set; }
-    public string ReserveInventoryYn { get; set; }
-    public string AllotmentOrigion { get; set; }
+    public string? ReserveInventoryYn { get; set; }
+    public string? AllotmentOrigion { get; set; }
     public int? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
+    public string? SuperBlockResort { get; set; }
     public decimal? ActionId { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? ContactNameId { get; set; }
-    public string Alias { get; set; }
-    public string SalesId { get; set; }
-    public string PaymentMethod { get; set; }
-    public string RivMarketSegment { get; set; }
-    public string ExchangePostingType { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Alias { get; set; }
+    public string? SalesId { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? RivMarketSegment { get; set; }
+    public string? ExchangePostingType { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ExchangeRate { get; set; }
     public DateTime? DateOpenedForPickup { get; set; }
-    public string Mainmarket { get; set; }
-    public string Tracecode { get; set; }
-    public string OwnerResort { get; set; }
+    public string? Mainmarket { get; set; }
+    public string? Tracecode { get; set; }
+    public string? OwnerResort { get; set; }
     public decimal? Owner { get; set; }
-    public string OwnerCode { get; set; }
-    public string RmsOwnerResort { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? RmsOwnerResort { get; set; }
     public decimal? RmsOwner { get; set; }
-    public string RmsOwnerCode { get; set; }
-    public string CatOwnerResort { get; set; }
+    public string? RmsOwnerCode { get; set; }
+    public string? CatOwnerResort { get; set; }
     public decimal? CatOwner { get; set; }
-    public string CatOwnerCode { get; set; }
-    public string Bookingtype { get; set; }
-    public string Bookingmethod { get; set; }
+    public string? CatOwnerCode { get; set; }
+    public string? Bookingtype { get; set; }
+    public string? Bookingmethod { get; set; }
     public DateTime? MethodDue { get; set; }
     public DateTime? RmsDecision { get; set; }
     public DateTime? RmsFollowup { get; set; }
-    public string RmsCurrency { get; set; }
-    public string RmsQuoteCurr { get; set; }
+    public string? RmsCurrency { get; set; }
+    public string? RmsQuoteCurr { get; set; }
     public decimal? RmsExchange { get; set; }
     public decimal? Attendees { get; set; }
-    public string CatStatus { get; set; }
+    public string? CatStatus { get; set; }
     public DateTime? CatDecision { get; set; }
     public DateTime? CatFollowup { get; set; }
     public DateTime? CatCutoff { get; set; }
-    public string CatCurrency { get; set; }
-    public string CatQuoteCurr { get; set; }
+    public string? CatCurrency { get; set; }
+    public string? CatQuoteCurr { get; set; }
     public decimal? CatExchange { get; set; }
     public decimal? CatCanxNo { get; set; }
-    public string CatCanxCode { get; set; }
+    public string? CatCanxCode { get; set; }
     public DateTime? CatCanxDate { get; set; }
-    public string CatCanxDesc { get; set; }
-    public string Infoboard { get; set; }
-    public string BfstYn { get; set; }
+    public string? CatCanxDesc { get; set; }
+    public string? Infoboard { get; set; }
+    public string? BfstYn { get; set; }
     public decimal? BfstPrice { get; set; }
-    public string BfstDesc { get; set; }
-    public string PorterageYn { get; set; }
+    public string? BfstDesc { get; set; }
+    public string? PorterageYn { get; set; }
     public decimal? PorteragePrice { get; set; }
-    public string Commission { get; set; }
-    public string DetailsOkYn { get; set; }
-    public string DistributedYn { get; set; }
-    public string ContractNr { get; set; }
-    public string Functiontype { get; set; }
-    public string Representative { get; set; }
+    public string? Commission { get; set; }
+    public string? DetailsOkYn { get; set; }
+    public string? DistributedYn { get; set; }
+    public string? ContractNr { get; set; }
+    public string? Functiontype { get; set; }
+    public string? Representative { get; set; }
     public decimal? DefaultPmResvNameId { get; set; }
-    public string CateringonlyYn { get; set; }
-    public string EventsGuaranteedYn { get; set; }
+    public string? CateringonlyYn { get; set; }
+    public string? EventsGuaranteedYn { get; set; }
     public decimal? TaxAmount { get; set; }
     public decimal? ServiceCharge { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -168,58 +168,58 @@ public partial class AllotmentHeader
     public decimal? Udfn08 { get; set; }
     public decimal? Udfn09 { get; set; }
     public decimal? Udfn10 { get; set; }
-    public string DownloadResort { get; set; }
+    public string? DownloadResort { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? DownloadDate { get; set; }
     public DateTime? UploadDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string ExternalReference { get; set; }
-    public string ExternalLocked { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? ExternalLocked { get; set; }
     public decimal? ProfileId { get; set; }
-    public string ResortBooked { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ManualCutoff { get; set; }
-    public string SnapshotSetup { get; set; }
-    public string TbdRates { get; set; }
-    public string Destination { get; set; }
-    public string LeadSource { get; set; }
-    public string Program { get; set; }
-    public string Competition { get; set; }
-    public string ControlBlockYn { get; set; }
-    public string CrsGtdYn { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? ResortBooked { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ManualCutoff { get; set; }
+    public string? SnapshotSetup { get; set; }
+    public string? TbdRates { get; set; }
+    public string? Destination { get; set; }
+    public string? LeadSource { get; set; }
+    public string? Program { get; set; }
+    public string? Competition { get; set; }
+    public string? ControlBlockYn { get; set; }
+    public string? CrsGtdYn { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd11 { get; set; }
     public DateTime? Udfd12 { get; set; }
     public DateTime? Udfd13 { get; set; }
@@ -260,158 +260,158 @@ public partial class AllotmentHeader
     public decimal? Udfn38 { get; set; }
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
-    public string SynchronizeYn { get; set; }
+    public string? SynchronizeYn { get; set; }
     public DateTime? OriginalBeginDate { get; set; }
     public DateTime? OriginalEndDate { get; set; }
     public decimal? MtgRevenue { get; set; }
     public decimal? MtgBudget { get; set; }
     public DateTime? ArrivalTime { get; set; }
     public DateTime? DepartureTime { get; set; }
-    public string CompRoomsFixedYn { get; set; }
+    public string? CompRoomsFixedYn { get; set; }
     public decimal? CompRooms { get; set; }
-    public string CompPerStayYn { get; set; }
+    public string? CompPerStayYn { get; set; }
     public decimal? CompRoomValue { get; set; }
-    public string Udescription { get; set; }
-    public string Xdescription { get; set; }
-    public string Xudescription { get; set; }
+    public string? Udescription { get; set; }
+    public string? Xdescription { get; set; }
+    public string? Xudescription { get; set; }
     public decimal? RmCommission1 { get; set; }
     public decimal? RmCommission2 { get; set; }
     public decimal? FbCommission1 { get; set; }
     public decimal? FbCommission2 { get; set; }
-    public string CateringPkgsYn { get; set; }
+    public string? CateringPkgsYn { get; set; }
     public decimal? AgentContactNameId { get; set; }
-    public string ShowRateAmountYn { get; set; }
-    public string PrintRateYn { get; set; }
-    public string LeadType { get; set; }
-    public string LeadOrigin { get; set; }
+    public string? ShowRateAmountYn { get; set; }
+    public string? PrintRateYn { get; set; }
+    public string? LeadType { get; set; }
+    public string? LeadOrigin { get; set; }
     public DateTime? DueDate { get; set; }
-    public string Leadstatus { get; set; }
-    public string SentYn { get; set; }
+    public string? Leadstatus { get; set; }
+    public string? SentYn { get; set; }
     public DateTime? SentDate { get; set; }
-    public string SentVia { get; set; }
+    public string? SentVia { get; set; }
     public decimal? SentBy { get; set; }
-    public string ReplyStatus { get; set; }
+    public string? ReplyStatus { get; set; }
     public DateTime? ReplyDate { get; set; }
-    public string ReplyVia { get; set; }
+    public string? ReplyVia { get; set; }
     public decimal? ReplyBy { get; set; }
     public DateTime? DatePel { get; set; }
     public DateTime? DateAcl { get; set; }
     public DateTime? DateTdl { get; set; }
     public DateTime? DateCfl { get; set; }
     public DateTime? DateLsl { get; set; }
-    public string TdlReason { get; set; }
-    public string LeadNewYn { get; set; }
-    public string LeadReceivedYn { get; set; }
-    public string Leadsend1 { get; set; }
-    public string Leadsend2 { get; set; }
-    public string Leadsend3 { get; set; }
-    public string ComMethod1 { get; set; }
-    public string ComMethod2 { get; set; }
-    public string ComMethod3 { get; set; }
-    public string ComAddress1 { get; set; }
-    public string ComAddress2 { get; set; }
-    public string ComAddress3 { get; set; }
-    public string LeadError { get; set; }
+    public string? TdlReason { get; set; }
+    public string? LeadNewYn { get; set; }
+    public string? LeadReceivedYn { get; set; }
+    public string? Leadsend1 { get; set; }
+    public string? Leadsend2 { get; set; }
+    public string? Leadsend3 { get; set; }
+    public string? ComMethod1 { get; set; }
+    public string? ComMethod2 { get; set; }
+    public string? ComMethod3 { get; set; }
+    public string? ComAddress1 { get; set; }
+    public string? ComAddress2 { get; set; }
+    public string? ComAddress3 { get; set; }
+    public string? LeadError { get; set; }
     public decimal? RespTime { get; set; }
-    public string RespTimeCode { get; set; }
+    public string? RespTimeCode { get; set; }
     public DateTime? UpdateDateExternal { get; set; }
-    public string HideAccInfoYn { get; set; }
-    public string PendingSendYn { get; set; }
-    public string SendToCentralYn { get; set; }
+    public string? HideAccInfoYn { get; set; }
+    public string? PendingSendYn { get; set; }
+    public string? SendToCentralYn { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string SyncContractYn { get; set; }
-    public string ExclusionMessage { get; set; }
+    public string? SyncContractYn { get; set; }
+    public string? ExclusionMessage { get; set; }
     public decimal? PotRoomNights { get; set; }
     public decimal? PotRoomRevenue { get; set; }
     public decimal? PotFbRevenue { get; set; }
     public decimal? PotOtherRevenue { get; set; }
-    public string CommissionableYn { get; set; }
+    public string? CommissionableYn { get; set; }
     public decimal? CommissionablePerc { get; set; }
     public decimal? FitDiscountPerc { get; set; }
     public decimal? FitDiscountLevel { get; set; }
-    public string BfstInclYn { get; set; }
+    public string? BfstInclYn { get; set; }
     public decimal? BfstInclPrice { get; set; }
-    public string ServiceInclYn { get; set; }
+    public string? ServiceInclYn { get; set; }
     public decimal? ServicePerc { get; set; }
-    public string DblRmSupplementYn { get; set; }
+    public string? DblRmSupplementYn { get; set; }
     public decimal? DblRmSupplementPrice { get; set; }
-    public string TaxIncludedYn { get; set; }
+    public string? TaxIncludedYn { get; set; }
     public decimal? TaxIncludedPerc { get; set; }
-    public string CentralOwner { get; set; }
-    public string RateOverride { get; set; }
-    public string SellThruYn { get; set; }
-    public string ServiceFeeYn { get; set; }
+    public string? CentralOwner { get; set; }
+    public string? RateOverride { get; set; }
+    public string? SellThruYn { get; set; }
+    public string? ServiceFeeYn { get; set; }
     public decimal? ServiceFee { get; set; }
     public decimal? CatItemDiscount { get; set; }
     public DateTime? BeginDateOriginal { get; set; }
     public DateTime? EndDateOriginal { get; set; }
-    public string RoomingListRules { get; set; }
-    public string FlatRateYn { get; set; }
-    public string Tourcode { get; set; }
-    public string BlockType { get; set; }
-    public string GreekContractNr { get; set; }
-    public string TaRecordLocator { get; set; }
-    public string Ualias { get; set; }
-    public string RateOverrideReason { get; set; }
+    public string? RoomingListRules { get; set; }
+    public string? FlatRateYn { get; set; }
+    public string? Tourcode { get; set; }
+    public string? BlockType { get; set; }
+    public string? GreekContractNr { get; set; }
+    public string? TaRecordLocator { get; set; }
+    public string? Ualias { get; set; }
+    public string? RateOverrideReason { get; set; }
     public DateTime? OriginalBeginDateHolidex { get; set; }
-    public string PublishRatesYn { get; set; }
-    public string TaxType { get; set; }
-    public string SubAllotmentYn { get; set; }
+    public string? PublishRatesYn { get; set; }
+    public string? TaxType { get; set; }
+    public string? SubAllotmentYn { get; set; }
     public DateTime? BeoLastPrint { get; set; }
-    public string AttachmentUrl { get; set; }
-    public string LeadchangeBypropertyYn { get; set; }
-    public string KeepLeadControlYn { get; set; }
+    public string? AttachmentUrl { get; set; }
+    public string? LeadchangeBypropertyYn { get; set; }
+    public string? KeepLeadControlYn { get; set; }
     public DateTime? DueDateOrd { get; set; }
-    public string AllowAlternateDatesYn { get; set; }
-    public string RegeneratedLeadYn { get; set; }
-    public string OrmsBlockClass { get; set; }
-    public string LostToProperty { get; set; }
+    public string? AllowAlternateDatesYn { get; set; }
+    public string? RegeneratedLeadYn { get; set; }
+    public string? OrmsBlockClass { get; set; }
+    public string? LostToProperty { get; set; }
     public decimal? CxlPenalty { get; set; }
-    public string OrmsFinalBlock { get; set; }
-    public string FitDiscountType { get; set; }
-    public string OrmsTransientBlock { get; set; }
+    public string? OrmsFinalBlock { get; set; }
+    public string? FitDiscountType { get; set; }
+    public string? OrmsTransientBlock { get; set; }
     public decimal? HlxDepositDays { get; set; }
     public decimal? HlxCanxNoticeDays { get; set; }
-    public string HlxReturnEachDayYn { get; set; }
-    public string HlxCommissionableYn { get; set; }
-    public string HlxDiSecuredYn { get; set; }
-    public string HlxDdSecuredYn { get; set; }
-    public string HlxRatesGnrSecuredYn { get; set; }
-    public string HlxRateAllSecuredYn { get; set; }
-    public string HlxHousinginfoSecuredYn { get; set; }
-    public string IsacOpptyId { get; set; }
+    public string? HlxReturnEachDayYn { get; set; }
+    public string? HlxCommissionableYn { get; set; }
+    public string? HlxDiSecuredYn { get; set; }
+    public string? HlxDdSecuredYn { get; set; }
+    public string? HlxRatesGnrSecuredYn { get; set; }
+    public string? HlxRateAllSecuredYn { get; set; }
+    public string? HlxHousinginfoSecuredYn { get; set; }
+    public string? IsacOpptyId { get; set; }
     public DateTime? LinkDate { get; set; }
-    public string TlpResponseid { get; set; }
-    public string TlpUrl { get; set; }
+    public string? TlpResponseid { get; set; }
+    public string? TlpUrl { get; set; }
     public DateTime? DistributedDate { get; set; }
-    public string FbAgendaCurr { get; set; }
-    public string FitContractMode { get; set; }
-    public string ProposalShowSpacenameYn { get; set; }
-    public string ProposalShowEventpriceYn { get; set; }
-    public string ProposalOwnerSelection { get; set; }
-    public string ProposalDecisionSelection { get; set; }
+    public string? FbAgendaCurr { get; set; }
+    public string? FitContractMode { get; set; }
+    public string? ProposalShowSpacenameYn { get; set; }
+    public string? ProposalShowEventpriceYn { get; set; }
+    public string? ProposalOwnerSelection { get; set; }
+    public string? ProposalDecisionSelection { get; set; }
     public DateTime? ProposalSentDate { get; set; }
-    public string ProposalViewToken { get; set; }
-    public string AllotmentClassification { get; set; }
-    public string SuperSearchIndexText { get; set; }
-    public string RateProtection { get; set; }
-    public string NonCompete { get; set; }
-    public string ConversionCode { get; set; }
-    public string RankingCode { get; set; }
-    public string NonCompeteCode { get; set; }
-    public string RateGuaranteedYn { get; set; }
-    public string ProposalShowPmsRoomTypeYn { get; set; }
-    public string OffsetType { get; set; }
-    public string ScQuoteId { get; set; }
-    public string ProposalFollowupSelection { get; set; }
-    public string ProposalInclAltNamesYn { get; set; }
+    public string? ProposalViewToken { get; set; }
+    public string? AllotmentClassification { get; set; }
+    public string? SuperSearchIndexText { get; set; }
+    public string? RateProtection { get; set; }
+    public string? NonCompete { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? RankingCode { get; set; }
+    public string? NonCompeteCode { get; set; }
+    public string? RateGuaranteedYn { get; set; }
+    public string? ProposalShowPmsRoomTypeYn { get; set; }
+    public string? OffsetType { get; set; }
+    public string? ScQuoteId { get; set; }
+    public string? ProposalFollowupSelection { get; set; }
+    public string? ProposalInclAltNamesYn { get; set; }
     public decimal? OrigAllotmentHeaderId { get; set; }
-    public string WebBookableYn { get; set; }
-    public string ProposalCombineEventsYn { get; set; }
-    public string ProposalSpaceMeasurement { get; set; }
-    public string AutoLoadForecastYn { get; set; }
-    public string BwiLeadId { get; set; }
-    public string BwiUrl { get; set; }
+    public string? WebBookableYn { get; set; }
+    public string? ProposalCombineEventsYn { get; set; }
+    public string? ProposalSpaceMeasurement { get; set; }
+    public string? AutoLoadForecastYn { get; set; }
+    public string? BwiLeadId { get; set; }
+    public string? BwiUrl { get; set; }
 
     public virtual Name AgentName { get; set; }
     public virtual Name CompanyName { get; set; }

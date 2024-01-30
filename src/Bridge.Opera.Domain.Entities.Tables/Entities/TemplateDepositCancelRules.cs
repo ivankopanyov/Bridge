@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TemplateDepositCancelRules
 {
-    public string RuleType { get; set; }
-    public string RuleCode { get; set; }
-    public string RuleDescription { get; set; }
+    public string? RuleType { get; set; }
+    public string? RuleCode { get; set; }
+    public string? RuleDescription { get; set; }
     public decimal? DepDaysPriorToArrival { get; set; }
     public decimal? DepDaysAfterBooking { get; set; }
     public decimal? DepAmount { get; set; }
-    public string DepAmountType { get; set; }
+    public string? DepAmountType { get; set; }
     public decimal? CnclDaysPriorToArrival { get; set; }
     public DateTime? CnclBeforeTime { get; set; }
     public decimal? CnclPenltyAmount { get; set; }
-    public string CnclPnltyAmountType { get; set; }
-    public string ReservationType { get; set; }
+    public string? CnclPnltyAmountType { get; set; }
+    public string? ReservationType { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ChainCode { get; set; }
-    public string ApplyRuleTo { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ApplyRuleTo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomTypeList0View
 {
-    public string RoomType { get; set; }
-    public string RoomCategory { get; set; }
-    public string LongDescription { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? LongDescription { get; set; }
     public decimal? PhysicalInventory { get; set; }
     public decimal? OverbookInventory { get; set; }
     public decimal? ExternalSystemInv { get; set; }
-    public string FlowThroughYn { get; set; }
+    public string? FlowThroughYn { get; set; }
     public decimal? MaxOccupancy { get; set; }
-    public string RoomPreferenceYn { get; set; }
-    public string ComponentRoomCatYn { get; set; }
-    public string RotationGroupYn { get; set; }
+    public string? RoomPreferenceYn { get; set; }
+    public string? ComponentRoomCatYn { get; set; }
+    public string? RotationGroupYn { get; set; }
     public decimal? DefaultOccupancy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

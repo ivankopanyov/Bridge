@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationGcRoomsDeften
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ReservationDate { get; set; }
     public decimal? Quantity { get; set; }
-    public string RoomCategory { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? GuaranteeCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

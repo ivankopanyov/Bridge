@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MailTagsVw
 {
     public decimal? SourceId { get; set; }
-    public string Tag { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string DataType { get; set; }
-    public string TableDesc { get; set; }
-    public string FieldDesc { get; set; }
+    public string? Tag { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? DataType { get; set; }
+    public string? TableDesc { get; set; }
+    public string? FieldDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

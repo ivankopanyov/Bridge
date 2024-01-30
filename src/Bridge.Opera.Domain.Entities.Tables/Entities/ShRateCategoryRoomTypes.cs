@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ShRateCategoryRoomTypes
 {
-    public string Resort { get; set; }
-    public string RateCategory { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? DisplaySeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

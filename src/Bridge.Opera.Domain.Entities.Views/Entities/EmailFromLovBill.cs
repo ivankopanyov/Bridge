@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EmailFromLovBill
 {
-    public string Email { get; set; }
+    public string? Email { get; set; }
     public decimal? Orderby { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

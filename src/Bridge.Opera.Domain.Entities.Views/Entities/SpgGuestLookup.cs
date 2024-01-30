@@ -2,51 +2,51 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SpgGuestLookup
 {
-    public decimal LookupSeqId { get; set; }
-    public string LookupRequestId { get; set; }
-    public string MembershipNo { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Resort { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string MiddleInitial { get; set; }
-    public string PrefName { get; set; }
-    public string BusinessTitle { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string CommName { get; set; }
-    public string EmailAddress { get; set; }
-    public string EmailPrefCodes { get; set; }
-    public string LanguageCode { get; set; }
-    public string SetNumber { get; set; }
+    public decimal? LookupSeqId { get; set; }
+    public string? LookupRequestId { get; set; }
+    public string? MembershipNo { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Resort { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? MiddleInitial { get; set; }
+    public string? PrefName { get; set; }
+    public string? BusinessTitle { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? CommName { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? EmailPrefCodes { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? SetNumber { get; set; }
     public decimal? SpgMileage { get; set; }
     public decimal? SpgBalance { get; set; }
-    public string SpgStatus { get; set; }
-    public string SpgStatusDesc { get; set; }
+    public string? SpgStatus { get; set; }
+    public string? SpgStatusDesc { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? CrsNameid { get; set; }
     public decimal? CpiNumber { get; set; }
     public decimal? SuiteNightAwardsBalance { get; set; }
-    public string LoyaltySegments { get; set; }
-    public string FullName { get; set; }
-    public string AltFirstName { get; set; }
-    public string AltLastName { get; set; }
-    public string AltFullName { get; set; }
-    public string AltAddress1 { get; set; }
-    public string AltAddress2 { get; set; }
-    public string AltCity { get; set; }
-    public string AltState { get; set; }
-    public string AltZipCode { get; set; }
-    public string AltCountry { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneNumber { get; set; }
-    public string PhoneCountry { get; set; }
+    public string? LoyaltySegments { get; set; }
+    public string? FullName { get; set; }
+    public string? AltFirstName { get; set; }
+    public string? AltLastName { get; set; }
+    public string? AltFullName { get; set; }
+    public string? AltAddress1 { get; set; }
+    public string? AltAddress2 { get; set; }
+    public string? AltCity { get; set; }
+    public string? AltState { get; set; }
+    public string? AltZipCode { get; set; }
+    public string? AltCountry { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? PhoneCountry { get; set; }
     public decimal? YtdStays { get; set; }
     public decimal? YtdNights { get; set; }
 

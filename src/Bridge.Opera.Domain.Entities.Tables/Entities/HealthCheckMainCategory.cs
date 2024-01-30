@@ -7,12 +7,12 @@ public partial class HealthCheckMainCategory
         HealthCheckSubCategory = new HashSet<HealthCheckSubCategory>();
     }
 
-    public string CategoryCode { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? OrderBy { get; set; }
 
     public virtual ICollection<HealthCheckSubCategory> HealthCheckSubCategory { get; set; }

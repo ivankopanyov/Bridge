@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ViewNameXrefTypes
 {
-    public string Relationship { get; set; }
-    public string Description { get; set; }
-    public string ToRelationship { get; set; }
-    public string ToDescription { get; set; }
-    public string FromType { get; set; }
-    public string ToType { get; set; }
-    public string PrimaryYn { get; set; }
-    public string IndividualYn { get; set; }
-    public string ToInheritRatesYn { get; set; }
-    public string InheritRatesYn { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string GlobalYn { get; set; }
-    public string HierarchyYn { get; set; }
-    public string IgnoreProtectionYn { get; set; }
+    public string? Relationship { get; set; }
+    public string? Description { get; set; }
+    public string? ToRelationship { get; set; }
+    public string? ToDescription { get; set; }
+    public string? FromType { get; set; }
+    public string? ToType { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? IndividualYn { get; set; }
+    public string? ToInheritRatesYn { get; set; }
+    public string? InheritRatesYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? HierarchyYn { get; set; }
+    public string? IgnoreProtectionYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

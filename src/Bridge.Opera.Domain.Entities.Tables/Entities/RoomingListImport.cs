@@ -2,100 +2,100 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomingListImport
 {
-    public decimal RoomingListId { get; set; }
-    public decimal BatchId { get; set; }
-    public string RecordNumber { get; set; }
-    public string Resort { get; set; }
-    public string BlockCode { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestTitle { get; set; }
-    public string GuestLastAlternateName { get; set; }
-    public string GuestFirstAlternateName { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string Email { get; set; }
-    public string Phone { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public DateTime DepartureDate { get; set; }
-    public string RoomType { get; set; }
-    public decimal NumberRooms { get; set; }
-    public decimal NumberAdults { get; set; }
-    public decimal NumberChildren { get; set; }
+    public decimal? RoomingListId { get; set; }
+    public decimal? BatchId { get; set; }
+    public string? RecordNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? BlockCode { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? GuestLastAlternateName { get; set; }
+    public string? GuestFirstAlternateName { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Email { get; set; }
+    public string? Phone { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public DateTime? DepartureDate { get; set; }
+    public string? RoomType { get; set; }
+    public decimal? NumberRooms { get; set; }
+    public decimal? NumberAdults { get; set; }
+    public decimal? NumberChildren { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string ShareRecordNumber { get; set; }
+    public string? ShareRecordNumber { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string TaRecordLocator { get; set; }
+    public string? TaRecordLocator { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Language { get; set; }
-    public string Nationality { get; set; }
-    public string VipCode { get; set; }
-    public string Passport { get; set; }
-    public string ArrivalTime { get; set; }
-    public string DepartureTime { get; set; }
-    public string ArrivalStationCode { get; set; }
-    public string ArrivalTransportCode { get; set; }
-    public string ArrivalTransportType { get; set; }
-    public string ArrivalTranportationYn { get; set; }
+    public string? Language { get; set; }
+    public string? Nationality { get; set; }
+    public string? VipCode { get; set; }
+    public string? Passport { get; set; }
+    public string? ArrivalTime { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? ArrivalStationCode { get; set; }
+    public string? ArrivalTransportCode { get; set; }
+    public string? ArrivalTransportType { get; set; }
+    public string? ArrivalTranportationYn { get; set; }
     public DateTime? ArrivalDateTime { get; set; }
-    public string DepartureCarrierCode { get; set; }
-    public string DepartureStationCode { get; set; }
-    public string DepartureTransportCode { get; set; }
-    public string DepartureTransportType { get; set; }
-    public string DepartureTransportationYn { get; set; }
+    public string? DepartureCarrierCode { get; set; }
+    public string? DepartureStationCode { get; set; }
+    public string? DepartureTransportCode { get; set; }
+    public string? DepartureTransportType { get; set; }
+    public string? DepartureTransportationYn { get; set; }
     public DateTime? DepartureDateTime { get; set; }
-    public string KeywordType { get; set; }
-    public string Keyword { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? KeywordType { get; set; }
+    public string? Keyword { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -156,8 +156,8 @@ public partial class RoomingListImport
     public DateTime? Udfd18 { get; set; }
     public DateTime? Udfd19 { get; set; }
     public DateTime? Udfd20 { get; set; }
-    public string ArrivalCarrierCode { get; set; }
-    public string SpecialRequests { get; set; }
+    public string? ArrivalCarrierCode { get; set; }
+    public string? SpecialRequests { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

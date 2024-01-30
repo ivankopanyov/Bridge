@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CollectingAgentTaxes1
 {
-    public string Resort { get; set; }
-    public decimal TaxCodeSeq { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaxCodeSeq { get; set; }
     public decimal? Percentage { get; set; }
     public decimal? TriggerAmount { get; set; }
     public decimal? TaxVoid { get; set; }
-    public string TrxCode { get; set; }
-    public string TaxType { get; set; }
-    public string CodeBillInstDesc { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TaxType { get; set; }
+    public string? CodeBillInstDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

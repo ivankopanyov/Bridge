@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaBankAccounts
 {
-    public string Resort { get; set; }
-    public decimal AccountId { get; set; }
-    public string AccountNo { get; set; }
-    public string BankName { get; set; }
-    public string Currency { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? AccountNo { get; set; }
+    public string? BankName { get; set; }
+    public string? Currency { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

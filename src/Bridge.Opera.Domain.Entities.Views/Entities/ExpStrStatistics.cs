@@ -4,8 +4,8 @@ public partial class ExpStrStatistics
 {
     public decimal? ExportId { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string ExpHotelCode { get; set; }
-    public string ResortName { get; set; }
+    public string? ExpHotelCode { get; set; }
+    public string? ResortName { get; set; }
     public decimal? PhysicalRooms { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? TotalCompRooms { get; set; }
@@ -19,7 +19,7 @@ public partial class ExpStrStatistics
     public decimal? GroupRoomRevenue { get; set; }
     public decimal? ContractRooms { get; set; }
     public decimal? ContractRoomRevenue { get; set; }
-    public string IsoCurrencyCode { get; set; }
+    public string? IsoCurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

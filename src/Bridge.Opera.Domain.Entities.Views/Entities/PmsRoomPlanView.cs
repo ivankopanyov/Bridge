@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsRoomPlanView
 {
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomStatus { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
     public DateTime? StFromDt { get; set; }
     public DateTime? StEndDt { get; set; }
-    public string RoomClass { get; set; }
-    public string SmokingPreference { get; set; }
+    public string? RoomClass { get; set; }
+    public string? SmokingPreference { get; set; }
     public decimal? RoomUseCount { get; set; }
     public decimal? RoomCatOrderBy { get; set; }
     public decimal? RoomOrderBy { get; set; }
-    public string AssignType { get; set; }
-    public string AssignReason { get; set; }
+    public string? AssignType { get; set; }
+    public string? AssignReason { get; set; }
     public DateTime? LastCheckOutDate { get; set; }
-    public string PsuedoRoomType { get; set; }
+    public string? PsuedoRoomType { get; set; }
     public decimal? TotalPoints { get; set; }
     public decimal? TotForecastedPoints { get; set; }
-    public string OvosGradeCode { get; set; }
+    public string? OvosGradeCode { get; set; }
     public decimal? GradeCodeSeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwSourcestat
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceDescription { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceDescription { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? TotalRoomRevenue { get; set; }
     public decimal? TotalRoomAdj { get; set; }

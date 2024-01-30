@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentRoomtypes
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string ShortDescription { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? ShortDescription { get; set; }
     public decimal? Priority { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

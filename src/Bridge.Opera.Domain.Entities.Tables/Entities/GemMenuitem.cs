@@ -10,37 +10,37 @@ public partial class GemMenuitem
         GemMenuitemVendor = new HashSet<GemMenuitemVendor>();
     }
 
-    public string Resort { get; set; }
-    public decimal MitId { get; set; }
-    public decimal MenuClassId { get; set; }
-    public string Name1 { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Description { get; set; }
-    public string Restrictions { get; set; }
-    public string Origin1 { get; set; }
-    public string Origin2 { get; set; }
-    public string Origin3 { get; set; }
-    public string Beverage { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MitId { get; set; }
+    public decimal? MenuClassId { get; set; }
+    public string? Name1 { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Description { get; set; }
+    public string? Restrictions { get; set; }
+    public string? Origin1 { get; set; }
+    public string? Origin2 { get; set; }
+    public string? Origin3 { get; set; }
+    public string? Beverage { get; set; }
     public byte? Year { get; set; }
     public decimal? SalesPrice { get; set; }
     public decimal? Cost { get; set; }
-    public string Portion { get; set; }
+    public string? Portion { get; set; }
     public decimal? ContainerId { get; set; }
-    public string ContainerCode { get; set; }
-    public string Container { get; set; }
+    public string? ContainerCode { get; set; }
+    public string? Container { get; set; }
     public decimal? Serving { get; set; }
-    public string IncludedYn { get; set; }
-    public string ArticleNumber { get; set; }
-    public string RevenueType { get; set; }
-    public string ShowbeoYn { get; set; }
+    public string? IncludedYn { get; set; }
+    public string? ArticleNumber { get; set; }
+    public string? RevenueType { get; set; }
+    public string? ShowbeoYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ConsumptionYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? ConsumptionYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual GemTranslation ContainerNavigation { get; set; }
     public virtual GemMenuitemClass MenuClass { get; set; }

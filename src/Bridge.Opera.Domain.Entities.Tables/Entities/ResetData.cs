@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResetData
 {
-    public string TableName { get; set; }
-    public string IncludeYn { get; set; }
-    public string Description { get; set; }
-    public string ResortColumnName { get; set; }
-    public string ResortResetFilter { get; set; }
+    public string? TableName { get; set; }
+    public string? IncludeYn { get; set; }
+    public string? Description { get; set; }
+    public string? ResortColumnName { get; set; }
+    public string? ResortResetFilter { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

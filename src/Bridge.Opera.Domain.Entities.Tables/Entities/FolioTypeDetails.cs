@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioTypeDetails
 {
-    public string FolioType { get; set; }
-    public string Resort { get; set; }
-    public string LanguageCode { get; set; }
-    public string FolioName { get; set; }
-    public string FolioGroup { get; set; }
+    public string? FolioType { get; set; }
+    public string? Resort { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? FolioName { get; set; }
+    public string? FolioGroup { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

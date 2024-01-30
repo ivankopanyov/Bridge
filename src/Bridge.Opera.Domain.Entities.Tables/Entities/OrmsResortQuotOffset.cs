@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsResortQuotOffset
 {
-    public string Resort { get; set; }
-    public string OffsetCode { get; set; }
-    public string OffsetDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? OffsetCode { get; set; }
+    public string? OffsetDesc { get; set; }
     public decimal? Offset { get; set; }
     public decimal? OrderBy { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OffsetAmt { get; set; }
-    public string OffsetAmtCalcMethod { get; set; }
+    public string? OffsetAmtCalcMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

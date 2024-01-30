@@ -7,10 +7,10 @@ public partial class ResortHkSections
         Room = new HashSet<Room>();
     }
 
-    public string SectionCode { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
-    public string ActiveYn { get; set; }
+    public string? SectionCode { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
+    public string? ActiveYn { get; set; }
 
     public virtual ICollection<Room> Room { get; set; }
 

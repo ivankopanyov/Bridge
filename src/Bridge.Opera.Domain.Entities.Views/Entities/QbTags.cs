@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbTags
 {
-    public string Tag { get; set; }
-    public string UsedForDataType { get; set; }
-    public string ReplaceExpr { get; set; }
+    public string? Tag { get; set; }
+    public string? UsedForDataType { get; set; }
+    public string? ReplaceExpr { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

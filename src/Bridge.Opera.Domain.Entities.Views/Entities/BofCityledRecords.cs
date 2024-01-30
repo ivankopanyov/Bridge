@@ -2,62 +2,62 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofCityledRecords
 {
-    public string AccountingPeriod { get; set; }
+    public string? AccountingPeriod { get; set; }
     public decimal? UserId { get; set; }
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
     public decimal? ArNumber { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string CountryName { get; set; }
-    public string Zip { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? CountryName { get; set; }
+    public string? Zip { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxTime { get; set; }
+    public string? TrxTime { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFullName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFullName { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
-    public string RefFolioNo { get; set; }
-    public string RefFolioNoFormatted { get; set; }
+    public string? RefFolioNo { get; set; }
+    public string? RefFolioNoFormatted { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string AdjustYn { get; set; }
-    public string FoStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? FoStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string FullName { get; set; }
-    public string TravelAgentVoucher { get; set; }
-    public string ResvUdfc13 { get; set; }
-    public string Room { get; set; }
+    public string? FullName { get; set; }
+    public string? TravelAgentVoucher { get; set; }
+    public string? ResvUdfc13 { get; set; }
+    public string? Room { get; set; }
     public decimal? InvoiceAge { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? TotalAmount { get; set; }
     public decimal? CurrencyDifferenceLocal { get; set; }
     public decimal? OrgParallelAmount { get; set; }
     public decimal? OrgContractAmount { get; set; }
-    public string ParallelCurrencyCode { get; set; }
-    public string ContractCurrencyCode { get; set; }
+    public string? ParallelCurrencyCode { get; set; }
+    public string? ContractCurrencyCode { get; set; }
     public decimal? CurrencyDifferenceParallel { get; set; }
     public decimal? CurrencyDifferenceContract { get; set; }
     public decimal? TotalParallelAmount { get; set; }
     public decimal? TotalContractAmount { get; set; }
     public decimal? AccountNameId { get; set; }
-    public string NameUdfc23 { get; set; }
-    public string ResvUdfc24 { get; set; }
-    public string ExternalReference { get; set; }
-    public string ExpOriginalInvoice { get; set; }
-    public string ExpInvoiceType { get; set; }
+    public string? NameUdfc23 { get; set; }
+    public string? ResvUdfc24 { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? ExpOriginalInvoice { get; set; }
+    public string? ExpInvoiceType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

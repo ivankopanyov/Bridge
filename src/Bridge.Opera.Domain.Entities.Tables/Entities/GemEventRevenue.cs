@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemEventRevenue
 {
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }
     public decimal? ActualRevenue { get; set; }
     public decimal? BilledRevenue { get; set; }
-    public string IgnoreForecastYn { get; set; }
-    public string FlatYn { get; set; }
-    public string CustomYn { get; set; }
+    public string? IgnoreForecastYn { get; set; }
+    public string? FlatYn { get; set; }
+    public string? CustomYn { get; set; }
     public decimal? ExpectedCost { get; set; }
     public decimal? GuaranteedCost { get; set; }
     public decimal? ActualCost { get; set; }
@@ -24,9 +24,9 @@ public partial class GemEventRevenue
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string PkgRevenueYn { get; set; }
-    public string ForecastEditedYn { get; set; }
-    public string MinimumRevenueYn { get; set; }
+    public string? PkgRevenueYn { get; set; }
+    public string? ForecastEditedYn { get; set; }
+    public string? MinimumRevenueYn { get; set; }
 
     public virtual GemEvent Event { get; set; }
 

@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationStatDaySum
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketMainGroup { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceMainGroup { get; set; }
-    public string Channel { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string Country { get; set; }
-    public string RegionCode { get; set; }
-    public string PsuedoRoomYn { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketMainGroup { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceMainGroup { get; set; }
+    public string? Channel { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? Country { get; set; }
+    public string? RegionCode { get; set; }
+    public string? PsuedoRoomYn { get; set; }
     public decimal? StayRooms { get; set; }
     public decimal? StayPersons { get; set; }
     public decimal? StayAdults { get; set; }

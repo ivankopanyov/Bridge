@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HousestatDrillDownView
 {
-    public string Code { get; set; }
-    public string Description { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
     public decimal? NoOfRooms { get; set; }
     public decimal? NoOfPersons { get; set; }
     public decimal? NoOfVips { get; set; }

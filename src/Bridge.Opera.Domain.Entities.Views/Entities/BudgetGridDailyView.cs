@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BudgetGridDailyView
 {
-    public string Resort { get; set; }
-    public decimal AccountingYear { get; set; }
-    public string BudgetType { get; set; }
-    public string BudgetCodeType { get; set; }
-    public string BudgetCodeValue { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountingYear { get; set; }
+    public string? BudgetType { get; set; }
+    public string? BudgetCodeType { get; set; }
+    public string? BudgetCodeValue { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? BudgetMonthNo { get; set; }
     public decimal? BudgetDayNo { get; set; }
-    public string BudgetDayDesc { get; set; }
-    public string BudgetMonthDesc { get; set; }
+    public string? BudgetDayDesc { get; set; }
+    public string? BudgetMonthDesc { get; set; }
     public decimal? Revenue { get; set; }
     public decimal? RoomNights { get; set; }
 

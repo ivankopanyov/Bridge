@@ -2,117 +2,117 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FolioHeaderView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? FolioStyle { get; set; }
     public decimal? ResvNameIdHeader { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Title { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string GuestCompany { get; set; }
-    public string TravelAgentName { get; set; }
-    public string SourceName { get; set; }
-    public string GroupName { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string CountryCode { get; set; }
-    public string ZipCode { get; set; }
-    public string City { get; set; }
-    public string TodayDate { get; set; }
+    public string? Title { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? GuestCompany { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? SourceName { get; set; }
+    public string? GroupName { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? CountryCode { get; set; }
+    public string? ZipCode { get; set; }
+    public string? City { get; set; }
+    public string? TodayDate { get; set; }
     public DateTime? DirectTodayDate { get; set; }
-    public string LongDate { get; set; }
-    public string HotelName { get; set; }
-    public string ArrivalDate { get; set; }
+    public string? LongDate { get; set; }
+    public string? HotelName { get; set; }
+    public string? ArrivalDate { get; set; }
     public DateTime? DirectArrivalDate { get; set; }
-    public string DepartureDate { get; set; }
+    public string? DepartureDate { get; set; }
     public DateTime? DirectDepartureDate { get; set; }
     public decimal? NoOfNights { get; set; }
-    public string RoomType { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomNumberHeader { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomNumberHeader { get; set; }
     public decimal? NoOfAdults { get; set; }
     public decimal? NoOfChildren { get; set; }
     public decimal? NoOfExtrabeds { get; set; }
     public decimal? NoOfCribs { get; set; }
     public decimal? RoomRate { get; set; }
-    public string PrintRateYn { get; set; }
+    public string? PrintRateYn { get; set; }
     public decimal? DepositAmtPaid { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? BillNumberHeader { get; set; }
-    public string PropertyTaxNo { get; set; }
+    public string? PropertyTaxNo { get; set; }
     public decimal? RevisionNumberHeader { get; set; }
-    public string FolioType { get; set; }
-    public string QueueName { get; set; }
-    public string GuestPhoneNumber { get; set; }
-    public string AddresseeFullAddress { get; set; }
-    public string AddresseeAddress1 { get; set; }
-    public string AddresseeAddress2 { get; set; }
-    public string AddresseeCity { get; set; }
-    public string AddresseeState { get; set; }
-    public string AddresseeZipCode { get; set; }
-    public string AddresseeCountry { get; set; }
+    public string? FolioType { get; set; }
+    public string? QueueName { get; set; }
+    public string? GuestPhoneNumber { get; set; }
+    public string? AddresseeFullAddress { get; set; }
+    public string? AddresseeAddress1 { get; set; }
+    public string? AddresseeAddress2 { get; set; }
+    public string? AddresseeCity { get; set; }
+    public string? AddresseeState { get; set; }
+    public string? AddresseeZipCode { get; set; }
+    public string? AddresseeCountry { get; set; }
     public decimal? CashierNo { get; set; }
-    public string LanguageCode { get; set; }
-    public string ArNumber { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string Country { get; set; }
-    public string BlockCode { get; set; }
-    public string GuestNameCo { get; set; }
-    public string MembershipNumber { get; set; }
-    public string MembershipType { get; set; }
-    public string RateCode { get; set; }
-    public string IdNumber { get; set; }
-    public string IdType { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? ArNumber { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Country { get; set; }
+    public string? BlockCode { get; set; }
+    public string? GuestNameCo { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? MembershipType { get; set; }
+    public string? RateCode { get; set; }
+    public string? IdNumber { get; set; }
+    public string? IdType { get; set; }
     public DateTime? IdDate { get; set; }
-    public string IdPlace { get; set; }
-    public string IdCountry { get; set; }
-    public string Passport { get; set; }
-    public string ProfileUdfc21 { get; set; }
-    public string Tax1No { get; set; }
-    public string Tax2No { get; set; }
-    public string BillingContact { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? IdPlace { get; set; }
+    public string? IdCountry { get; set; }
+    public string? Passport { get; set; }
+    public string? ProfileUdfc21 { get; set; }
+    public string? Tax1No { get; set; }
+    public string? Tax2No { get; set; }
+    public string? BillingContact { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -173,46 +173,46 @@ public partial class FolioHeaderView
     public decimal? Udfn38 { get; set; }
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
-    public string PUdfc01 { get; set; }
-    public string PUdfc02 { get; set; }
-    public string PUdfc03 { get; set; }
-    public string PUdfc04 { get; set; }
-    public string PUdfc05 { get; set; }
-    public string PUdfc06 { get; set; }
-    public string PUdfc07 { get; set; }
-    public string PUdfc08 { get; set; }
-    public string PUdfc09 { get; set; }
-    public string PUdfc10 { get; set; }
-    public string PUdfc11 { get; set; }
-    public string PUdfc12 { get; set; }
-    public string PUdfc13 { get; set; }
-    public string PUdfc14 { get; set; }
-    public string PUdfc15 { get; set; }
-    public string PUdfc16 { get; set; }
-    public string PUdfc17 { get; set; }
-    public string PUdfc18 { get; set; }
-    public string PUdfc19 { get; set; }
-    public string PUdfc20 { get; set; }
-    public string PUdfc21 { get; set; }
-    public string PUdfc22 { get; set; }
-    public string PUdfc23 { get; set; }
-    public string PUdfc24 { get; set; }
-    public string PUdfc25 { get; set; }
-    public string PUdfc26 { get; set; }
-    public string PUdfc27 { get; set; }
-    public string PUdfc28 { get; set; }
-    public string PUdfc29 { get; set; }
-    public string PUdfc30 { get; set; }
-    public string PUdfc31 { get; set; }
-    public string PUdfc32 { get; set; }
-    public string PUdfc33 { get; set; }
-    public string PUdfc34 { get; set; }
-    public string PUdfc35 { get; set; }
-    public string PUdfc36 { get; set; }
-    public string PUdfc37 { get; set; }
-    public string PUdfc38 { get; set; }
-    public string PUdfc39 { get; set; }
-    public string PUdfc40 { get; set; }
+    public string? PUdfc01 { get; set; }
+    public string? PUdfc02 { get; set; }
+    public string? PUdfc03 { get; set; }
+    public string? PUdfc04 { get; set; }
+    public string? PUdfc05 { get; set; }
+    public string? PUdfc06 { get; set; }
+    public string? PUdfc07 { get; set; }
+    public string? PUdfc08 { get; set; }
+    public string? PUdfc09 { get; set; }
+    public string? PUdfc10 { get; set; }
+    public string? PUdfc11 { get; set; }
+    public string? PUdfc12 { get; set; }
+    public string? PUdfc13 { get; set; }
+    public string? PUdfc14 { get; set; }
+    public string? PUdfc15 { get; set; }
+    public string? PUdfc16 { get; set; }
+    public string? PUdfc17 { get; set; }
+    public string? PUdfc18 { get; set; }
+    public string? PUdfc19 { get; set; }
+    public string? PUdfc20 { get; set; }
+    public string? PUdfc21 { get; set; }
+    public string? PUdfc22 { get; set; }
+    public string? PUdfc23 { get; set; }
+    public string? PUdfc24 { get; set; }
+    public string? PUdfc25 { get; set; }
+    public string? PUdfc26 { get; set; }
+    public string? PUdfc27 { get; set; }
+    public string? PUdfc28 { get; set; }
+    public string? PUdfc29 { get; set; }
+    public string? PUdfc30 { get; set; }
+    public string? PUdfc31 { get; set; }
+    public string? PUdfc32 { get; set; }
+    public string? PUdfc33 { get; set; }
+    public string? PUdfc34 { get; set; }
+    public string? PUdfc35 { get; set; }
+    public string? PUdfc36 { get; set; }
+    public string? PUdfc37 { get; set; }
+    public string? PUdfc38 { get; set; }
+    public string? PUdfc39 { get; set; }
+    public string? PUdfc40 { get; set; }
     public DateTime? PUdfd01 { get; set; }
     public DateTime? PUdfd02 { get; set; }
     public DateTime? PUdfd03 { get; set; }
@@ -273,39 +273,39 @@ public partial class FolioHeaderView
     public decimal? PUdfn38 { get; set; }
     public decimal? PUdfn39 { get; set; }
     public decimal? PUdfn40 { get; set; }
-    public string ResortFullAddress { get; set; }
-    public string ArFullAddress { get; set; }
-    public string GuestFullAddress { get; set; }
+    public string? ResortFullAddress { get; set; }
+    public string? ArFullAddress { get; set; }
+    public string? GuestFullAddress { get; set; }
     public decimal? NameId { get; set; }
     public decimal? AccountCode { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string XpayeeLastName { get; set; }
-    public string XpayeeFirstName { get; set; }
-    public string XpayeeSalutation { get; set; }
-    public string XcompanyName { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeLastName { get; set; }
-    public string PayeeName2 { get; set; }
-    public string PayeeName3 { get; set; }
-    public string PayeeSalutation { get; set; }
-    public string PayeeAddressType { get; set; }
-    public string PayeeProvince { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Nationality { get; set; }
-    public string PayeePhoneType { get; set; }
-    public string PayeePhoneRole { get; set; }
-    public string PayeePhoneNumber { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string PayeeLanguage { get; set; }
-    public string AccountNo { get; set; }
-    public string PayeeCompany { get; set; }
-    public string FiscalBillNo { get; set; }
-    public string FolioPrintTask { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? XpayeeLastName { get; set; }
+    public string? XpayeeFirstName { get; set; }
+    public string? XpayeeSalutation { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? PayeeName2 { get; set; }
+    public string? PayeeName3 { get; set; }
+    public string? PayeeSalutation { get; set; }
+    public string? PayeeAddressType { get; set; }
+    public string? PayeeProvince { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Nationality { get; set; }
+    public string? PayeePhoneType { get; set; }
+    public string? PayeePhoneRole { get; set; }
+    public string? PayeePhoneNumber { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? PayeeLanguage { get; set; }
+    public string? AccountNo { get; set; }
+    public string? PayeeCompany { get; set; }
+    public string? FiscalBillNo { get; set; }
+    public string? FolioPrintTask { get; set; }
     public decimal? PropertyTriggerAmount1 { get; set; }
     public decimal? PropertyTriggerAmount2 { get; set; }
     public decimal? PropertyTriggerAmount3 { get; set; }
@@ -321,56 +321,56 @@ public partial class FolioHeaderView
     public decimal? PayeeTaxPerc3 { get; set; }
     public decimal? PayeeTaxPerc4 { get; set; }
     public decimal? PayeeTaxPerc5 { get; set; }
-    public string PayeeTitle { get; set; }
-    public string PayeeNameCo { get; set; }
+    public string? PayeeTitle { get; set; }
+    public string? PayeeNameCo { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string PayeeIdCountry { get; set; }
-    public string PayeeIdNumber { get; set; }
+    public string? PayeeIdCountry { get; set; }
+    public string? PayeeIdNumber { get; set; }
     public DateTime? PayeeIdDate { get; set; }
-    public string PayeeIdPlace { get; set; }
-    public string PayeeIdType { get; set; }
-    public string PayeePassport { get; set; }
-    public string PayeeNameTaxType { get; set; }
-    public string PayeeUdfc1 { get; set; }
-    public string PayeeUdfc2 { get; set; }
-    public string PayeeUdfc3 { get; set; }
-    public string PayeeUdfc4 { get; set; }
-    public string PayeeUdfc5 { get; set; }
-    public string PayeeUdfc6 { get; set; }
-    public string PayeeUdfc7 { get; set; }
-    public string PayeeUdfc8 { get; set; }
-    public string PayeeUdfc9 { get; set; }
-    public string PayeeUdfc10 { get; set; }
-    public string PayeeUdfc11 { get; set; }
-    public string PayeeUdfc12 { get; set; }
-    public string PayeeUdfc13 { get; set; }
-    public string PayeeUdfc14 { get; set; }
-    public string PayeeUdfc15 { get; set; }
-    public string PayeeUdfc16 { get; set; }
-    public string PayeeUdfc17 { get; set; }
-    public string PayeeUdfc18 { get; set; }
-    public string PayeeUdfc19 { get; set; }
-    public string PayeeUdfc20 { get; set; }
-    public string PayeeUdfc21 { get; set; }
-    public string PayeeUdfc22 { get; set; }
-    public string PayeeUdfc23 { get; set; }
-    public string PayeeUdfc24 { get; set; }
-    public string PayeeUdfc25 { get; set; }
-    public string PayeeUdfc26 { get; set; }
-    public string PayeeUdfc27 { get; set; }
-    public string PayeeUdfc28 { get; set; }
-    public string PayeeUdfc29 { get; set; }
-    public string PayeeUdfc30 { get; set; }
-    public string PayeeUdfc31 { get; set; }
-    public string PayeeUdfc32 { get; set; }
-    public string PayeeUdfc33 { get; set; }
-    public string PayeeUdfc34 { get; set; }
-    public string PayeeUdfc35 { get; set; }
-    public string PayeeUdfc36 { get; set; }
-    public string PayeeUdfc37 { get; set; }
-    public string PayeeUdfc38 { get; set; }
-    public string PayeeUdfc39 { get; set; }
-    public string PayeeUdfc40 { get; set; }
+    public string? PayeeIdPlace { get; set; }
+    public string? PayeeIdType { get; set; }
+    public string? PayeePassport { get; set; }
+    public string? PayeeNameTaxType { get; set; }
+    public string? PayeeUdfc1 { get; set; }
+    public string? PayeeUdfc2 { get; set; }
+    public string? PayeeUdfc3 { get; set; }
+    public string? PayeeUdfc4 { get; set; }
+    public string? PayeeUdfc5 { get; set; }
+    public string? PayeeUdfc6 { get; set; }
+    public string? PayeeUdfc7 { get; set; }
+    public string? PayeeUdfc8 { get; set; }
+    public string? PayeeUdfc9 { get; set; }
+    public string? PayeeUdfc10 { get; set; }
+    public string? PayeeUdfc11 { get; set; }
+    public string? PayeeUdfc12 { get; set; }
+    public string? PayeeUdfc13 { get; set; }
+    public string? PayeeUdfc14 { get; set; }
+    public string? PayeeUdfc15 { get; set; }
+    public string? PayeeUdfc16 { get; set; }
+    public string? PayeeUdfc17 { get; set; }
+    public string? PayeeUdfc18 { get; set; }
+    public string? PayeeUdfc19 { get; set; }
+    public string? PayeeUdfc20 { get; set; }
+    public string? PayeeUdfc21 { get; set; }
+    public string? PayeeUdfc22 { get; set; }
+    public string? PayeeUdfc23 { get; set; }
+    public string? PayeeUdfc24 { get; set; }
+    public string? PayeeUdfc25 { get; set; }
+    public string? PayeeUdfc26 { get; set; }
+    public string? PayeeUdfc27 { get; set; }
+    public string? PayeeUdfc28 { get; set; }
+    public string? PayeeUdfc29 { get; set; }
+    public string? PayeeUdfc30 { get; set; }
+    public string? PayeeUdfc31 { get; set; }
+    public string? PayeeUdfc32 { get; set; }
+    public string? PayeeUdfc33 { get; set; }
+    public string? PayeeUdfc34 { get; set; }
+    public string? PayeeUdfc35 { get; set; }
+    public string? PayeeUdfc36 { get; set; }
+    public string? PayeeUdfc37 { get; set; }
+    public string? PayeeUdfc38 { get; set; }
+    public string? PayeeUdfc39 { get; set; }
+    public string? PayeeUdfc40 { get; set; }
     public DateTime? PayeeUdfd1 { get; set; }
     public DateTime? PayeeUdfd2 { get; set; }
     public DateTime? PayeeUdfd3 { get; set; }
@@ -431,61 +431,61 @@ public partial class FolioHeaderView
     public decimal? PayeeUdfn38 { get; set; }
     public decimal? PayeeUdfn39 { get; set; }
     public decimal? PayeeUdfn40 { get; set; }
-    public string MembershipFolioMessage { get; set; }
-    public string PayeeNationality { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string AddresseeStateDesc { get; set; }
-    public string AddresseeCountryDesc { get; set; }
+    public string? MembershipFolioMessage { get; set; }
+    public string? PayeeNationality { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? AddresseeStateDesc { get; set; }
+    public string? AddresseeCountryDesc { get; set; }
     public decimal? UsdpexchRate { get; set; }
     public decimal? EuropexchRate { get; set; }
     public decimal? FiscalBillCheckDigit { get; set; }
-    public string CheckedOutUsername { get; set; }
-    public string CompVoucherNo { get; set; }
-    public string FolioText1 { get; set; }
-    public string FolioText2 { get; set; }
-    public string ExternalReference { get; set; }
-    public string CustomReference { get; set; }
-    public string TaRecordLocator { get; set; }
-    public string MembershipLevel { get; set; }
-    public string MemlvlFolioText1 { get; set; }
-    public string MemlvlFolioText2 { get; set; }
-    public string MemlvlFolioText3 { get; set; }
-    public string MemlvlFolioText4 { get; set; }
-    public string StdFolioText1 { get; set; }
-    public string StdFolioText2 { get; set; }
-    public string StdFolioText3 { get; set; }
-    public string StdFolioText4 { get; set; }
-    public string Barcode { get; set; }
-    public string KeyValidUntil { get; set; }
-    public string KeyPinCode { get; set; }
-    public string BillGenerationDate { get; set; }
-    public string BillGenerationTime { get; set; }
-    public string Workstation { get; set; }
-    public string FiscalUnitSerialNumber { get; set; }
-    public string FiscalUnitControlCode { get; set; }
+    public string? CheckedOutUsername { get; set; }
+    public string? CompVoucherNo { get; set; }
+    public string? FolioText1 { get; set; }
+    public string? FolioText2 { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? CustomReference { get; set; }
+    public string? TaRecordLocator { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? MemlvlFolioText1 { get; set; }
+    public string? MemlvlFolioText2 { get; set; }
+    public string? MemlvlFolioText3 { get; set; }
+    public string? MemlvlFolioText4 { get; set; }
+    public string? StdFolioText1 { get; set; }
+    public string? StdFolioText2 { get; set; }
+    public string? StdFolioText3 { get; set; }
+    public string? StdFolioText4 { get; set; }
+    public string? Barcode { get; set; }
+    public string? KeyValidUntil { get; set; }
+    public string? KeyPinCode { get; set; }
+    public string? BillGenerationDate { get; set; }
+    public string? BillGenerationTime { get; set; }
+    public string? Workstation { get; set; }
+    public string? FiscalUnitSerialNumber { get; set; }
+    public string? FiscalUnitControlCode { get; set; }
     public decimal? AsbProformaSeqNo { get; set; }
-    public string AddlAddresseeName { get; set; }
-    public string AddlAddresseeFullAddress { get; set; }
-    public string AddlAddresseeAddress1 { get; set; }
-    public string AddlAddresseeAddress2 { get; set; }
-    public string AddlAddresseeCity { get; set; }
-    public string AddlAddresseeState { get; set; }
-    public string AddlAddresseeCountry { get; set; }
-    public string AddlAddresseeCountrydesc { get; set; }
-    public string AddlAddresseeStatedesc { get; set; }
-    public string AddlAddresseeZipCode { get; set; }
-    public string SignatureHash { get; set; }
+    public string? AddlAddresseeName { get; set; }
+    public string? AddlAddresseeFullAddress { get; set; }
+    public string? AddlAddresseeAddress1 { get; set; }
+    public string? AddlAddresseeAddress2 { get; set; }
+    public string? AddlAddresseeCity { get; set; }
+    public string? AddlAddresseeState { get; set; }
+    public string? AddlAddresseeCountry { get; set; }
+    public string? AddlAddresseeCountrydesc { get; set; }
+    public string? AddlAddresseeStatedesc { get; set; }
+    public string? AddlAddresseeZipCode { get; set; }
+    public string? SignatureHash { get; set; }
     public decimal? DepositReqReceiptNo { get; set; }
-    public string AuxAddress1 { get; set; }
-    public string AuxAddress2 { get; set; }
-    public string AuxAddress3 { get; set; }
-    public string AuxAddress4 { get; set; }
-    public string AuxCity { get; set; }
-    public string AuxState { get; set; }
-    public string AuxCountry { get; set; }
-    public string AuxZipCode { get; set; }
-    public string AuxFullAddress { get; set; }
+    public string? AuxAddress1 { get; set; }
+    public string? AuxAddress2 { get; set; }
+    public string? AuxAddress3 { get; set; }
+    public string? AuxAddress4 { get; set; }
+    public string? AuxCity { get; set; }
+    public string? AuxState { get; set; }
+    public string? AuxCountry { get; set; }
+    public string? AuxZipCode { get; set; }
+    public string? AuxFullAddress { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

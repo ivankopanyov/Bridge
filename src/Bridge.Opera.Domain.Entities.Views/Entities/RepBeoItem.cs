@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoItem
 {
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public DateTime ItemStartDate { get; set; }
-    public DateTime ItemEndDate { get; set; }
-    public string EventItemStartDate { get; set; }
-    public decimal EventId { get; set; }
-    public string EventName { get; set; }
-    public string EventTime { get; set; }
-    public string EventRoom { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ItemStartDate { get; set; }
+    public DateTime? ItemEndDate { get; set; }
+    public string? EventItemStartDate { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EventName { get; set; }
+    public string? EventTime { get; set; }
+    public string? EventRoom { get; set; }
     public decimal? ClassId { get; set; }
-    public string ClassResort { get; set; }
-    public string ClassName { get; set; }
-    public string ItemName { get; set; }
-    public string ItemShow { get; set; }
-    public string EventType { get; set; }
+    public string? ClassResort { get; set; }
+    public string? ClassName { get; set; }
+    public string? ItemName { get; set; }
+    public string? ItemShow { get; set; }
+    public string? EventType { get; set; }
     public decimal? EventitemEventId { get; set; }
     public decimal? EventitemEventItemId { get; set; }
     public decimal? EventitemPkgId { get; set; }
-    public string EventitemName { get; set; }
-    public string EventitemItmaName { get; set; }
-    public string EventitemDescription { get; set; }
-    public string EventitemStartTimeForm { get; set; }
-    public string EventitemEndTimeForm { get; set; }
+    public string? EventitemName { get; set; }
+    public string? EventitemItmaName { get; set; }
+    public string? EventitemDescription { get; set; }
+    public string? EventitemStartTimeForm { get; set; }
+    public string? EventitemEndTimeForm { get; set; }
     public DateTime? EventitemStartTime { get; set; }
     public DateTime? EventitemEndTime { get; set; }
     public decimal? EventitemQuantity { get; set; }
     public decimal? EventitemPrice { get; set; }
-    public string EventitemArticleNumber { get; set; }
+    public string? EventitemArticleNumber { get; set; }
     public decimal? EventitemItemId { get; set; }
     public decimal? EventitemItmgId { get; set; }
-    public string EventitemPriceCode { get; set; }
-    public string EventitemPriceName { get; set; }
+    public string? EventitemPriceCode { get; set; }
+    public string? EventitemPriceName { get; set; }
     public decimal? EventresourcePkgId { get; set; }
-    public string EventitemAttr { get; set; }
+    public string? EventitemAttr { get; set; }
     public decimal? EventitemVendorId { get; set; }
-    public string EventitemVendorName { get; set; }
-    public string EventitemVendorPhone { get; set; }
-    public string EventitemOrderBy { get; set; }
+    public string? EventitemVendorName { get; set; }
+    public string? EventitemVendorPhone { get; set; }
+    public string? EventitemOrderBy { get; set; }
     public decimal? EventitemClassOrderBy { get; set; }
     public decimal? EventitemItemOrderBy { get; set; }
     public decimal? EventitemItemPrice { get; set; }
     public decimal? EventitemItemDiscount { get; set; }
-    public string ItemClassCode { get; set; }
+    public string? ItemClassCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailInactiveFields
 {
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string ParameterName { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? ParameterName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

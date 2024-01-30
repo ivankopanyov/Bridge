@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TrxCodeExportBuckets
 {
-    public string Resort { get; set; }
-    public string ExportBucketType { get; set; }
-    public string ExportBucketCode { get; set; }
-    public decimal ArrangementId { get; set; }
-    public string TrxCode { get; set; }
-    public string EligibleYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ExportBucketType { get; set; }
+    public string? ExportBucketCode { get; set; }
+    public decimal? ArrangementId { get; set; }
+    public string? TrxCode { get; set; }
+    public string? EligibleYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArReminderDetails
 {
     public decimal? AccountCode { get; set; }
-    public decimal AccountTypeId { get; set; }
+    public decimal? AccountTypeId { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
-    public string Remark { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? Remark { get; set; }
     public decimal? InvoiceAge { get; set; }
     public decimal? PostedAmount { get; set; }
     public decimal? Payments { get; set; }
@@ -18,16 +18,16 @@ public partial class ArReminderDetails
     public DateTime? BillingDate { get; set; }
     public DateTime? TransferDate { get; set; }
     public decimal? OpenBalance { get; set; }
-    public string Currency { get; set; }
-    public string ReminderStyle { get; set; }
+    public string? Currency { get; set; }
+    public string? ReminderStyle { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? PrintedInvAmount { get; set; }
     public decimal? PrintedPaid { get; set; }
     public decimal? PrintedOpenBalance { get; set; }
-    public string PrintedCurrency { get; set; }
-    public string PrintedExchInfo { get; set; }
-    public string PrintedExchRate { get; set; }
+    public string? PrintedCurrency { get; set; }
+    public string? PrintedExchInfo { get; set; }
+    public string? PrintedExchRate { get; set; }
     public decimal? BillNumber { get; set; }
     public decimal? ReminderCycle { get; set; }
     public DateTime? ReminderDate { get; set; }

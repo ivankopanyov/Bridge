@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentDetail1
 {
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string ScRoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string ShoulderYn { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? ScRoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? ShoulderYn { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? ToSell { get; set; }
     public decimal? Sold { get; set; }
@@ -39,10 +39,10 @@ public partial class AllotmentDetail1
     public decimal? ContractOcc3 { get; set; }
     public decimal? ContractOcc4 { get; set; }
     public byte? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? CutoffDate { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? TotToSell { get; set; }
@@ -53,8 +53,8 @@ public partial class AllotmentDetail1
     public decimal? CalcMaterialization { get; set; }
     public decimal? DiscountAmt { get; set; }
     public decimal? DiscountPct { get; set; }
-    public string DiscountReasonCode { get; set; }
-    public string FixedRateYn { get; set; }
+    public string? DiscountReasonCode { get; set; }
+    public string? FixedRateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

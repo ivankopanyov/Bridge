@@ -13,13 +13,13 @@ public partial class WorkOrders
         WorkorderPager = new HashSet<WorkorderPager>();
     }
 
-    public decimal WoNumber { get; set; }
-    public string ActType { get; set; }
-    public string MasterSub { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public decimal CreatedBy { get; set; }
-    public string ProblemDesc { get; set; }
-    public string Notes { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? ActType { get; set; }
+    public string? MasterSub { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public decimal? CreatedBy { get; set; }
+    public string? ProblemDesc { get; set; }
+    public string? Notes { get; set; }
     public decimal? AssignedBy { get; set; }
     public DateTime? AssignedOnDate { get; set; }
     public decimal? AssignedTo { get; set; }
@@ -33,48 +33,48 @@ public partial class WorkOrders
     public DateTime? ShowOn { get; set; }
     public decimal? TotalLaborCost { get; set; }
     public decimal? TotalPartsCost { get; set; }
-    public string UserExt { get; set; }
-    public string DeptOfAction { get; set; }
-    public string GuestRoomYn { get; set; }
-    public string PriorityChangedYn { get; set; }
+    public string? UserExt { get; set; }
+    public string? DeptOfAction { get; set; }
+    public string? GuestRoomYn { get; set; }
+    public string? PriorityChangedYn { get; set; }
     public decimal? EstTimeToComplete { get; set; }
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string ReasonCode { get; set; }
-    public string LocationCode { get; set; }
-    public string PriorityCode { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? PriorityCode { get; set; }
     public decimal? ParentWoNumber { get; set; }
-    public string StatusCode { get; set; }
+    public string? StatusCode { get; set; }
     public decimal? TaskCode { get; set; }
     public decimal? TaskitemNumber { get; set; }
-    public string TypeCode { get; set; }
-    public string PlantItemCode { get; set; }
-    public string EstUotCode { get; set; }
+    public string? TypeCode { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? EstUotCode { get; set; }
     public decimal? DependingOnWoNumber { get; set; }
-    public string Room { get; set; }
-    public string GuestOriginatedYn { get; set; }
+    public string? Room { get; set; }
+    public string? GuestOriginatedYn { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string PrivateYn { get; set; }
-    public string FoRoomStatus { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string DownloadResort { get; set; }
+    public string? PrivateYn { get; set; }
+    public string? FoRoomStatus { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? DownloadResort { get; set; }
     public DateTime? DownloadDate { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? UploadDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string Tracecode { get; set; }
+    public string? Tracecode { get; set; }
     public decimal? SurveyId { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? Attendees { get; set; }
-    public string ExternalSystemId { get; set; }
-    public string ExternalSystem { get; set; }
-    public string SendMethod { get; set; }
-    public string CompletedYn { get; set; }
-    public string ActClass { get; set; }
+    public string? ExternalSystemId { get; set; }
+    public string? ExternalSystem { get; set; }
+    public string? SendMethod { get; set; }
+    public string? CompletedYn { get; set; }
+    public string? ActClass { get; set; }
     public decimal? Author { get; set; }
     public byte[] Attachment { get; set; }
     public decimal? GeneratedByFreqId { get; set; }
@@ -84,26 +84,26 @@ public partial class WorkOrders
     public decimal? EstCatRevenue { get; set; }
     public decimal? EstOtherRevenue { get; set; }
     public decimal? RequestTemplateId { get; set; }
-    public string RequestTypeId { get; set; }
-    public string CampaignStatusCode { get; set; }
-    public string GeneratedByCampaign { get; set; }
-    public string Result { get; set; }
+    public string? RequestTypeId { get; set; }
+    public string? CampaignStatusCode { get; set; }
+    public string? GeneratedByCampaign { get; set; }
+    public string? Result { get; set; }
     public decimal? RequestTypeTemplatesId { get; set; }
-    public string NotifiedYn { get; set; }
+    public string? NotifiedYn { get; set; }
     public decimal? DepositAmount { get; set; }
-    public string DepositOwner { get; set; }
+    public string? DepositOwner { get; set; }
     public decimal? ActivityAmount { get; set; }
-    public string GuestType { get; set; }
-    public string AttachmentLocation { get; set; }
-    public string InternalYn { get; set; }
-    public string DatabaseId { get; set; }
-    public string AttachmentOwner { get; set; }
+    public string? GuestType { get; set; }
+    public string? AttachmentLocation { get; set; }
+    public string? InternalYn { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? AttachmentOwner { get; set; }
     public decimal? MinutesBeforeAlert { get; set; }
-    public string GlobalYn { get; set; }
-    public string TimezoneConvertedYn { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? TimezoneConvertedYn { get; set; }
     public decimal? OrigWoNumber { get; set; }
     public DateTime? ProposalSentDate { get; set; }
-    public string ProposalViewToken { get; set; }
+    public string? ProposalViewToken { get; set; }
 
     public virtual Locations Locations { get; set; }
     public virtual WorkOrders ParentWoNumberNavigation { get; set; }

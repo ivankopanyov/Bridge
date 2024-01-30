@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SurveyTemplateDetails
 {
-    public string Resort { get; set; }
-    public decimal SurveyTemplateDetailId { get; set; }
-    public decimal SurveyTemplateId { get; set; }
-    public decimal QuestionId { get; set; }
-    public string QuestionType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SurveyTemplateDetailId { get; set; }
+    public decimal? SurveyTemplateId { get; set; }
+    public decimal? QuestionId { get; set; }
+    public string? QuestionType { get; set; }
     public decimal? GenerateTask { get; set; }
-    public string AnswerRequiredYn { get; set; }
+    public string? AnswerRequiredYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

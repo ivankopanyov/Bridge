@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRiSummV
 {
-    public string Resort { get; set; }
-    public decimal RiId { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public string RiTemplateLocationCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RiId { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public string? RiTemplateLocationCode { get; set; }
     public DateTime? RiDate { get; set; }
     public decimal? RiBy { get; set; }
-    public string Room { get; set; }
-    public string Inspection { get; set; }
-    public string LocationRoomInd { get; set; }
-    public string LocationDesc { get; set; }
-    public string InspectedBy { get; set; }
+    public string? Room { get; set; }
+    public string? Inspection { get; set; }
+    public string? LocationRoomInd { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? InspectedBy { get; set; }
     public decimal? NoOfQuestions { get; set; }
     public decimal? OverallScore { get; set; }
     public decimal? Acceptance { get; set; }
@@ -21,10 +21,10 @@ public partial class RepRiSummV
     public decimal? NotApplicable { get; set; }
     public decimal? LastInspection { get; set; }
     public decimal? LastInspectionScore { get; set; }
-    public string LastInspectionDate { get; set; }
+    public string? LastInspectionDate { get; set; }
     public decimal? Diff { get; set; }
-    public string CurResult { get; set; }
-    public string LastResult { get; set; }
+    public string? CurResult { get; set; }
+    public string? LastResult { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

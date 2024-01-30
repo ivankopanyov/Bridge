@@ -37,21 +37,21 @@ public partial class ExpConRate
     public decimal? AvailThu { get; set; }
     public decimal? AvailFri { get; set; }
     public decimal? AvailSat { get; set; }
-    public string RatePlanType { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string CurrencyCode { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string PkgTrxCode { get; set; }
-    public string TrxCode { get; set; }
-    public string ExchangePostingType { get; set; }
-    public string CnclBeforeTime { get; set; }
-    public string CnclPnltyAmountType { get; set; }
-    public string RateCodeDesc { get; set; }
-    public string RateCodeLongDesc { get; set; }
-    public string FolioText { get; set; }
-    public string PkgCode { get; set; }
+    public string? RatePlanType { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? PkgTrxCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? ExchangePostingType { get; set; }
+    public string? CnclBeforeTime { get; set; }
+    public string? CnclPnltyAmountType { get; set; }
+    public string? RateCodeDesc { get; set; }
+    public string? RateCodeLongDesc { get; set; }
+    public string? FolioText { get; set; }
+    public string? PkgCode { get; set; }
     public DateTime? BeginSellDate { get; set; }
     public DateTime? EndSellDate { get; set; }
 

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTurnawayDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string TurnawayType { get; set; }
-    public string TurnawayTypedesc { get; set; }
-    public string TurnawayCode { get; set; }
-    public string TurnawayDesc { get; set; }
-    public string ResortId { get; set; }
-    public string TurnawayTypeKey { get; set; }
-    public string TurnawayCodeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? TurnawayType { get; set; }
+    public string? TurnawayTypedesc { get; set; }
+    public string? TurnawayCode { get; set; }
+    public string? TurnawayDesc { get; set; }
+    public string? ResortId { get; set; }
+    public string? TurnawayTypeKey { get; set; }
+    public string? TurnawayCodeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

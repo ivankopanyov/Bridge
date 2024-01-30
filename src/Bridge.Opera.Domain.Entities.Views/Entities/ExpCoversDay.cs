@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpCoversDay
 {
-    public DateTime BusinessDate { get; set; }
-    public string Description { get; set; }
-    public string TrxCode { get; set; }
-    public string Covers { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? Description { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Covers { get; set; }
     public decimal? Sequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

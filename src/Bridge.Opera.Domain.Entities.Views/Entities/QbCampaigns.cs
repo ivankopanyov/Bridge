@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbCampaigns
 {
-    public string Resort { get; set; }
-    public string CampaignCode { get; set; }
+    public string? Resort { get; set; }
+    public string? CampaignCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Type { get; set; }
-    public string Category { get; set; }
+    public string? Type { get; set; }
+    public string? Category { get; set; }
     public decimal? OwnerId { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string EspCode { get; set; }
+    public string? EspCode { get; set; }
     public decimal? ApprovalUserId { get; set; }
     public DateTime? ApprovalDate { get; set; }
-    public string ApprovalStatusFlg { get; set; }
+    public string? ApprovalStatusFlg { get; set; }
     public DateTime? ApprovalSubDate { get; set; }
     public decimal? EstTotalCost { get; set; }
     public decimal? EstRmNights { get; set; }
     public decimal? EstRmRevenue { get; set; }
     public decimal? EstCatRevenue { get; set; }
     public decimal? EstOtherRevenue { get; set; }
-    public string StatusCode { get; set; }
-    public string RequestTypeId { get; set; }
-    public string GenerateActivityYn { get; set; }
-    public string GenerateProfileRequestYn { get; set; }
-    public string EmailYnFlg { get; set; }
-    public string EmailYnOptInFlg { get; set; }
-    public string GuestPrivYnFlg { get; set; }
-    public string GuestPrivYnOptInFlg { get; set; }
-    public decimal OcrmProfileId { get; set; }
-    public string EspReplyStatus { get; set; }
+    public string? StatusCode { get; set; }
+    public string? RequestTypeId { get; set; }
+    public string? GenerateActivityYn { get; set; }
+    public string? GenerateProfileRequestYn { get; set; }
+    public string? EmailYnFlg { get; set; }
+    public string? EmailYnOptInFlg { get; set; }
+    public string? GuestPrivYnFlg { get; set; }
+    public string? GuestPrivYnOptInFlg { get; set; }
+    public decimal? OcrmProfileId { get; set; }
+    public string? EspReplyStatus { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

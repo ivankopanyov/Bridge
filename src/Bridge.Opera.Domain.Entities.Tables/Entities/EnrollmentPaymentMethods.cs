@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EnrollmentPaymentMethods
 {
-    public decimal EnrollPaymentId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string PmtMethod { get; set; }
-    public string Mpcode { get; set; }
-    public string Description { get; set; }
+    public decimal? EnrollPaymentId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? PmtMethod { get; set; }
+    public string? Mpcode { get; set; }
+    public string? Description { get; set; }
     public decimal? PmtAmount { get; set; }
-    public string PmtDesc { get; set; }
-    public string SourceCode { get; set; }
+    public string? PmtDesc { get; set; }
+    public string? SourceCode { get; set; }
     public decimal? PointFactor { get; set; }
-    public string AllowEnrollYn { get; set; }
+    public string? AllowEnrollYn { get; set; }
     public decimal? EnrollmentFee { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MembershipLevels MembershipLevels { get; set; }
 

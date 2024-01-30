@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcCertSetup
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public string Host { get; set; }
-    public string Message { get; set; }
-    public string Fix { get; set; }
-    public string ErrorYn { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public string? Host { get; set; }
+    public string? Message { get; set; }
+    public string? Fix { get; set; }
+    public string? ErrorYn { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

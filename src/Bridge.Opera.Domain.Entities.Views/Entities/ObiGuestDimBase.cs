@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiGuestDimBase
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RegionCode { get; set; }
-    public string RegionDesc { get; set; }
-    public string CountryId { get; set; }
-    public string CountryCode { get; set; }
-    public string CountryDesc { get; set; }
-    public string StateId { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string FfMembershipType { get; set; }
-    public string FfMembershipDesc { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipDesc { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string NameOnCard { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RegionCode { get; set; }
+    public string? RegionDesc { get; set; }
+    public string? CountryId { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? StateId { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? FfMembershipType { get; set; }
+    public string? FfMembershipDesc { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipDesc { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? NameOnCard { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string MembershipStatus { get; set; }
-    public string MembershipClass { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? ExpirationMonth { get; set; }
-    public string AwardGenerationMethod { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string EnrolledAt { get; set; }
-    public string FfMembershipLevel { get; set; }
-    public string FfMembershipLevelDesc { get; set; }
-    public string FfMembershipLevelId { get; set; }
-    public string MembershipLevel { get; set; }
-    public string MembershipLevelDesc { get; set; }
-    public string MembershipLevelId { get; set; }
-    public decimal NameId { get; set; }
-    public string GuestName { get; set; }
-    public string NameIdChar { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string VipStatus { get; set; }
-    public string VipName { get; set; }
-    public string Nationality { get; set; }
-    public string NationalityDesc { get; set; }
-    public string ResortId { get; set; }
+    public string? AwardGenerationMethod { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? FfMembershipLevel { get; set; }
+    public string? FfMembershipLevelDesc { get; set; }
+    public string? FfMembershipLevelId { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? MembershipLevelDesc { get; set; }
+    public string? MembershipLevelId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? NameIdChar { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? VipStatus { get; set; }
+    public string? VipName { get; set; }
+    public string? Nationality { get; set; }
+    public string? NationalityDesc { get; set; }
+    public string? ResortId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

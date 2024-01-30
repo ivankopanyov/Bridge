@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomCategoryStatistics
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public decimal ExistingRooms { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public decimal? ExistingRooms { get; set; }
     public decimal? OoRooms { get; set; }
     public decimal? OsRooms { get; set; }
     public decimal? ExistingBeds { get; set; }

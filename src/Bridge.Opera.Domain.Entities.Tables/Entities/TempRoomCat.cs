@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempRoomCat
 {
-    public string SessionId { get; set; }
-    public string RoomCat { get; set; }
+    public string? SessionId { get; set; }
+    public string? RoomCat { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

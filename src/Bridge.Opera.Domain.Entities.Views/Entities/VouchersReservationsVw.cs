@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class VouchersReservationsVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? VoucherId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? VoucherAmount { get; set; }
     public decimal? MembershipId { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string Room { get; set; }
-    public string GuestTitle { get; set; }
-    public string CompanyName { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? Room { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
     public DateTime? VoucherBeginDate { get; set; }
     public DateTime? VoucherEndDate { get; set; }
-    public string XcompanyName { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string GuestLanguage { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? GuestLanguage { get; set; }
+    public string? ConfirmationNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScBlkBudgetMonthlyFact
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? BudgetCatYNights { get; set; }

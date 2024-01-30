@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PaymentApplicationJrnl
 {
-    public decimal PaymentApplicationId { get; set; }
-    public decimal ConsumptionTrx { get; set; }
-    public decimal PaymentTrx { get; set; }
-    public decimal AppliedAmt { get; set; }
-    public DateTime AppliedDate { get; set; }
-    public string JrnlOperation { get; set; }
+    public decimal? PaymentApplicationId { get; set; }
+    public decimal? ConsumptionTrx { get; set; }
+    public decimal? PaymentTrx { get; set; }
+    public decimal? AppliedAmt { get; set; }
+    public DateTime? AppliedDate { get; set; }
+    public string? JrnlOperation { get; set; }
     public DateTime? JrnlTime { get; set; }
-    public string JrnlDesc { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? JrnlDesc { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? LastUnappliedCashier { get; set; }
     public decimal? LastUnappliedUser { get; set; }

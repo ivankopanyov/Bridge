@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortImageId
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BlobId { get; set; }
     public byte MapNo { get; set; }
 

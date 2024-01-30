@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DatamartStat
 {
-    public string Resort { get; set; }
-    public string StatType { get; set; }
-    public DateTime StatDate { get; set; }
+    public string? Resort { get; set; }
+    public string? StatType { get; set; }
+    public DateTime? StatDate { get; set; }
     public decimal? TotalMessages { get; set; }
     public decimal? TotalSuccess { get; set; }
     public decimal? TotalFailed { get; set; }
     public decimal? TotalSuspended { get; set; }
-    public DateTime LastUpdateDate { get; set; }
+    public DateTime? LastUpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MarketCodesTemplate
 {
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string Description { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? Description { get; set; }
     public int? SellSequence { get; set; }
-    public string DisplayColor { get; set; }
+    public string? DisplayColor { get; set; }
     public decimal? ScOrderby { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string PrintGroup { get; set; }
-    public string ChainCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? PrintGroup { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

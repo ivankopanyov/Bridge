@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SampleAuthrecptVw
 {
-    public decimal ResvReceiptId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? ResvReceiptId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? RecptNo { get; set; }
-    public string CreditCardType { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string CreditCardExpirationDate { get; set; }
-    public string CcApprovalCode { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditCardExpirationDate { get; set; }
+    public string? CcApprovalCode { get; set; }
     public decimal? ApprovalAmountLocal { get; set; }
-    public DateTime ApprovalSystemDateTime { get; set; }
+    public DateTime? ApprovalSystemDateTime { get; set; }
     public DateTime? ApprovalBusinessDate { get; set; }
-    public string ApprovalSystemDateTimeIso { get; set; }
-    public string MerchantId { get; set; }
-    public decimal TransSerialNo { get; set; }
+    public string? ApprovalSystemDateTimeIso { get; set; }
+    public string? MerchantId { get; set; }
+    public decimal? TransSerialNo { get; set; }
     public decimal? AuthSequenceNo { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ApprovalAmountFc { get; set; }
-    public string EftOrManual { get; set; }
-    public string SwipedOrManual { get; set; }
-    public string Room { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuestFullName { get; set; }
-    public string GuestAddress { get; set; }
+    public string? EftOrManual { get; set; }
+    public string? SwipedOrManual { get; set; }
+    public string? Room { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuestFullName { get; set; }
+    public string? GuestAddress { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

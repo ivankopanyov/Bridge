@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsRequestAttribute
 {
-    public decimal ReqId { get; set; }
-    public string Src { get; set; }
-    public decimal RowNo { get; set; }
-    public string Atr { get; set; }
-    public string AtrValue { get; set; }
+    public decimal? ReqId { get; set; }
+    public string? Src { get; set; }
+    public decimal? RowNo { get; set; }
+    public string? Atr { get; set; }
+    public string? AtrValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

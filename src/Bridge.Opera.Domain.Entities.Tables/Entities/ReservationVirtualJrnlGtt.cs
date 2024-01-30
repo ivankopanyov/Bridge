@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationVirtualJrnlGtt
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal Pool { get; set; }
-    public string Virtual { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? Pool { get; set; }
+    public string? Virtual { get; set; }
+    public string? Username { get; set; }
+    public string? Password { get; set; }
     public decimal? SessionId { get; set; }
-    public string Action { get; set; }
-    public DateTime ActionTs { get; set; }
+    public string? Action { get; set; }
+    public DateTime? ActionTs { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

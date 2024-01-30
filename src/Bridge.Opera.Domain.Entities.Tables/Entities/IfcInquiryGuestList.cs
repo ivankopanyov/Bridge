@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcInquiryGuestList
 {
-    public decimal IfcCtrlId { get; set; }
-    public string Workstation { get; set; }
-    public string PostInformation { get; set; }
+    public decimal? IfcCtrlId { get; set; }
+    public string? Workstation { get; set; }
+    public string? PostInformation { get; set; }
     public decimal? ListNum { get; set; }
-    public string AcctType { get; set; }
+    public string? AcctType { get; set; }
     public decimal? GuestNum { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Guestname { get; set; }
-    public string Guestfirstname { get; set; }
-    public string Track2 { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Guestname { get; set; }
+    public string? Guestfirstname { get; set; }
+    public string? Track2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

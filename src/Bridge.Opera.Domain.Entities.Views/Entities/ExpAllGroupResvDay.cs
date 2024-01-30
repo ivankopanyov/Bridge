@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpAllGroupResvDay
 {
     public DateTime? BusinessDate { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? NoOfRooms { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? Sequence { get; set; }

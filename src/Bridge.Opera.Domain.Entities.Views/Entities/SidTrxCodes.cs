@@ -2,77 +2,77 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidTrxCodes
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TaxInclusiveYn { get; set; }
-    public string FrequentFlyerYn { get; set; }
-    public string TclCodeDfltCl1 { get; set; }
-    public string TclCodeDfltCl2 { get; set; }
-    public string Class1MandatoryYn { get; set; }
-    public string Class2MandatoryYn { get; set; }
-    public string Description { get; set; }
-    public string TcTransactionType { get; set; }
-    public string IsManualPostAllowed { get; set; }
-    public string ResultIncludedInSumArray { get; set; }
-    public string CcType { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TaxInclusiveYn { get; set; }
+    public string? FrequentFlyerYn { get; set; }
+    public string? TclCodeDfltCl1 { get; set; }
+    public string? TclCodeDfltCl2 { get; set; }
+    public string? Class1MandatoryYn { get; set; }
+    public string? Class2MandatoryYn { get; set; }
+    public string? Description { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? IsManualPostAllowed { get; set; }
+    public string? ResultIncludedInSumArray { get; set; }
+    public string? CcType { get; set; }
     public decimal? Commission { get; set; }
-    public string CcCode { get; set; }
-    public string IndBilling { get; set; }
-    public string IndAr { get; set; }
-    public string Currency { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string AdjTrxCode { get; set; }
-    public string ArrangeCode { get; set; }
+    public string? CcCode { get; set; }
+    public string? IndBilling { get; set; }
+    public string? IndAr { get; set; }
+    public string? Currency { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? AdjTrxCode { get; set; }
+    public string? ArrangeCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
     public decimal? RevBucketId { get; set; }
     public decimal? RevGpId { get; set; }
-    public string IndCash { get; set; }
-    public string IndDepositYn { get; set; }
-    public string DeferredYn { get; set; }
-    public string TrxCodeType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string TcResort { get; set; }
-    public string TcBofRefCode { get; set; }
-    public string TcBofInterface { get; set; }
-    public string TcResort2 { get; set; }
-    public string TcBofRefCode2 { get; set; }
-    public string TcBofInterface2 { get; set; }
-    public string CrsTaxDesc { get; set; }
+    public string? IndCash { get; set; }
+    public string? IndDepositYn { get; set; }
+    public string? DeferredYn { get; set; }
+    public string? TrxCodeType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? TcResort { get; set; }
+    public string? TcBofRefCode { get; set; }
+    public string? TcBofInterface { get; set; }
+    public string? TcResort2 { get; set; }
+    public string? TcBofRefCode2 { get; set; }
+    public string? TcBofInterface2 { get; set; }
+    public string? CrsTaxDesc { get; set; }
     public decimal? TaxCodeNo { get; set; }
     public decimal? TrxActionId { get; set; }
     public decimal? ExportBucket { get; set; }
-    public string InhSalesYn { get; set; }
-    public string InhPayYn { get; set; }
-    public string InhDepositYn { get; set; }
-    public string FiscalTrxCodeType { get; set; }
-    public string CompYn { get; set; }
+    public string? InhSalesYn { get; set; }
+    public string? InhPayYn { get; set; }
+    public string? InhDepositYn { get; set; }
+    public string? FiscalTrxCodeType { get; set; }
+    public string? CompYn { get; set; }
     public decimal? DefaultPrice { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PaymentTaxInvoiceYn { get; set; }
-    public string InternalYn { get; set; }
-    public string FiscalPaymentYn { get; set; }
-    public string CompNightsYn { get; set; }
-    public string CheckNoMandatoryYn { get; set; }
-    public string CompPaymentYn { get; set; }
+    public string? PaymentTaxInvoiceYn { get; set; }
+    public string? InternalYn { get; set; }
+    public string? FiscalPaymentYn { get; set; }
+    public string? CompNightsYn { get; set; }
+    public string? CheckNoMandatoryYn { get; set; }
+    public string? CompPaymentYn { get; set; }
     public decimal? DailyPlanFolio { get; set; }
-    public string DedOwnerRevYn { get; set; }
-    public string IncludeIn8300Yn { get; set; }
-    public string IncludeInDepositRuleYn { get; set; }
-    public string ManualPostCoversYn { get; set; }
+    public string? DedOwnerRevYn { get; set; }
+    public string? IncludeIn8300Yn { get; set; }
+    public string? IncludeInDepositRuleYn { get; set; }
+    public string? ManualPostCoversYn { get; set; }
     public decimal? MaxAmt { get; set; }
     public decimal? MinAmt { get; set; }
-    public string NonTaxableYn { get; set; }
-    public string OwnerRevYn { get; set; }
-    public string RotationRevYn { get; set; }
-    public string TrxCodeDisplay { get; set; }
-    public string TrxServiceType { get; set; }
-    public string GpPointsRedemptionYn { get; set; }
+    public string? NonTaxableYn { get; set; }
+    public string? OwnerRevYn { get; set; }
+    public string? RotationRevYn { get; set; }
+    public string? TrxCodeDisplay { get; set; }
+    public string? TrxServiceType { get; set; }
+    public string? GpPointsRedemptionYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

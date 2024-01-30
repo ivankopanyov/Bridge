@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Airports
 {
-    public string AirportCode { get; set; }
+    public string? AirportCode { get; set; }
     public decimal? DistanceFromAirport { get; set; }
-    public string DistanceUnits { get; set; }
-    public string DirectionFromAirport { get; set; }
-    public string Transportation1 { get; set; }
-    public string Transportation2 { get; set; }
-    public string Transportation3 { get; set; }
-    public string Transportation4 { get; set; }
-    public string Transportation5 { get; set; }
-    public string Transportation6 { get; set; }
-    public string Transportation7 { get; set; }
-    public string Transportation8 { get; set; }
+    public string? DistanceUnits { get; set; }
+    public string? DirectionFromAirport { get; set; }
+    public string? Transportation1 { get; set; }
+    public string? Transportation2 { get; set; }
+    public string? Transportation3 { get; set; }
+    public string? Transportation4 { get; set; }
+    public string? Transportation5 { get; set; }
+    public string? Transportation6 { get; set; }
+    public string? Transportation7 { get; set; }
+    public string? Transportation8 { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string DrivingTime { get; set; }
-    public string ChainCode { get; set; }
-    public string Website { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? DrivingTime { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Website { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

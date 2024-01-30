@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CcAuthLog
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string CreditCardType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditCardType { get; set; }
     public DateTime? ExpiryDate { get; set; }
     public decimal? AuthorizationCount { get; set; }
     public decimal? ApprovalAmount { get; set; }
     public decimal? TotalApprovalAmount { get; set; }
-    public string AuthStatus { get; set; }
-    public string ApprovalCode { get; set; }
-    public string ReasonText { get; set; }
+    public string? AuthStatus { get; set; }
+    public string? ApprovalCode { get; set; }
+    public string? ReasonText { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdateUser { get; set; }
+    public string? UpdateUser { get; set; }
     public decimal? BatchId { get; set; }
-    public string ExpiryDateStr { get; set; }
+    public string? ExpiryDateStr { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string TmpCcn { get; set; }
-    public string TmpEds { get; set; }
-    public string TransactionType { get; set; }
-    public string AuthSettleFlag { get; set; }
+    public string? TmpCcn { get; set; }
+    public string? TmpEds { get; set; }
+    public string? TransactionType { get; set; }
+    public string? AuthSettleFlag { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ArNumber { get; set; }
     public decimal? AuthSequenceNo { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ApprovalAmountFc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

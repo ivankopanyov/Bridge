@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HltnGlGridLayoutView
 {
-    public string ColumnName { get; set; }
+    public string? ColumnName { get; set; }
     public decimal? ColumnWidth { get; set; }
-    public string AllowSearchYn { get; set; }
-    public string ColumnTitle { get; set; }
+    public string? AllowSearchYn { get; set; }
+    public string? ColumnTitle { get; set; }
     public decimal? SortOrder { get; set; }
     public decimal? PercentageWidth { get; set; }
 

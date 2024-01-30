@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortSguestConfig
 {
-    public string Resort { get; set; }
-    public string OperaSiteId { get; set; }
-    public string OperaSitePassword { get; set; }
-    public string SguestApplicationUrl { get; set; }
-    public string SguestTargetMemberCode { get; set; }
-    public decimal SguestSsoTokenMinExpTime { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string CommPrefWsUrl { get; set; }
+    public string? Resort { get; set; }
+    public string? OperaSiteId { get; set; }
+    public string? OperaSitePassword { get; set; }
+    public string? SguestApplicationUrl { get; set; }
+    public string? SguestTargetMemberCode { get; set; }
+    public decimal? SguestSsoTokenMinExpTime { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? CommPrefWsUrl { get; set; }
     public decimal? CommPrefWsTimeoutSeconds { get; set; }
-    public string TranslationWsUrl { get; set; }
+    public string? TranslationWsUrl { get; set; }
     public decimal? TranslationWsTimeoutSeconds { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

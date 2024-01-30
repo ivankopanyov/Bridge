@@ -12,12 +12,12 @@ public partial class ExpConStayTrans
     public decimal? FolioNo { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? NetAmount { get; set; }
-    public string RevType { get; set; }
-    public string TrxReference { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDescription { get; set; }
-    public string Printed { get; set; }
-    public string RevenueYn { get; set; }
+    public string? RevType { get; set; }
+    public string? TrxReference { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDescription { get; set; }
+    public string? Printed { get; set; }
+    public string? RevenueYn { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? StayDate { get; set; }
 

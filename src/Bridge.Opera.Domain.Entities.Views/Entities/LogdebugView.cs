@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LogdebugView
 {
-    public string MsgText { get; set; }
-    public string MessageType { get; set; }
+    public string? MsgText { get; set; }
+    public string? MessageType { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertTime { get; set; }
-    public string CharInsDate { get; set; }
+    public string? InsertTime { get; set; }
+    public string? CharInsDate { get; set; }
     public decimal? Seq { get; set; }
-    public string InputSeq { get; set; }
+    public string? InputSeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NaLogHeader
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string JobName { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? JobName { get; set; }
     public short Iteration { get; set; }
-    public decimal SysJobId { get; set; }
-    public DateTime StartTime { get; set; }
+    public decimal? SysJobId { get; set; }
+    public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public decimal RunByUserId { get; set; }
-    public string Status { get; set; }
+    public decimal? RunByUserId { get; set; }
+    public string? Status { get; set; }
     public decimal? ModuleId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

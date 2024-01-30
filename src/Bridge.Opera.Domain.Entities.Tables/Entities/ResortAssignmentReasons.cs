@@ -7,17 +7,17 @@ public partial class ResortAssignmentReasons
         Room = new HashSet<Room>();
     }
 
-    public string Resort { get; set; }
-    public string AssignReason { get; set; }
-    public string AssignType { get; set; }
-    public string AssignDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? AssignReason { get; set; }
+    public string? AssignType { get; set; }
+    public string? AssignDesc { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
     public decimal? HoldMinutes { get; set; }
 
     public virtual ICollection<Room> Room { get; set; }

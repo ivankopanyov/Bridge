@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ContractSend
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public decimal ContractSendId { get; set; }
-    public decimal ToNameId { get; set; }
-    public string SendTo { get; set; }
-    public string FromEmail { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public decimal? ContractSendId { get; set; }
+    public decimal? ToNameId { get; set; }
+    public string? SendTo { get; set; }
+    public string? FromEmail { get; set; }
     public decimal? ModuleId { get; set; }
-    public string Destination { get; set; }
+    public string? Destination { get; set; }
     public decimal? AddressId { get; set; }
-    public string AddressLastStatus { get; set; }
+    public string? AddressLastStatus { get; set; }
     public DateTime? AddressLastAttempted { get; set; }
     public decimal? AddressSuccessfulTries { get; set; }
     public decimal? FaxId { get; set; }
-    public string FaxLastStatus { get; set; }
+    public string? FaxLastStatus { get; set; }
     public DateTime? FaxLastAttempted { get; set; }
     public decimal? FaxSuccessfulTries { get; set; }
     public decimal? EmailId { get; set; }
-    public string EmailLastStatus { get; set; }
+    public string? EmailLastStatus { get; set; }
     public DateTime? EmailLastAttempted { get; set; }
     public decimal? EmailSuccessfulTries { get; set; }
-    public string FailureReason { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? FailureReason { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
 

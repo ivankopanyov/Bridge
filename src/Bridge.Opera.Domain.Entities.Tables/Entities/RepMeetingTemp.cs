@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepMeetingTemp
 {
-    public decimal ReportId { get; set; }
-    public decimal Id { get; set; }
-    public string YTitle { get; set; }
+    public decimal? ReportId { get; set; }
+    public decimal? Id { get; set; }
+    public string? YTitle { get; set; }
     public decimal? XLength { get; set; }
-    public string Color { get; set; }
-    public string Text { get; set; }
-    public string Pattern { get; set; }
-    public string PrintYn { get; set; }
-    public string Waitlist { get; set; }
+    public string? Color { get; set; }
+    public string? Text { get; set; }
+    public string? Pattern { get; set; }
+    public string? PrintYn { get; set; }
+    public string? Waitlist { get; set; }
     public DateTime? BeginDate { get; set; }
     public byte? ShortName { get; set; }
-    public string RoomResort { get; set; }
+    public string? RoomResort { get; set; }
     public bool? Part { get; set; }
-    public string LineStartYn { get; set; }
-    public string HeaderYn { get; set; }
+    public string? LineStartYn { get; set; }
+    public string? HeaderYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

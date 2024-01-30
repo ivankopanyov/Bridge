@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScContactByAccount
 {
-    public decimal AccountId { get; set; }
-    public string AccountName { get; set; }
-    public string AccountSname { get; set; }
-    public string AccountCity { get; set; }
-    public string AccountPhone { get; set; }
-    public string AccountType { get; set; }
-    public string AccountIata { get; set; }
-    public decimal ContactId { get; set; }
-    public string ContactName { get; set; }
-    public string PrimaryYn { get; set; }
-    public string ContactFirst { get; set; }
-    public string ContactLast { get; set; }
-    public string ContactYn { get; set; }
-    public string ConActiveYn { get; set; }
-    public string ContactSname { get; set; }
-    public string ContactSxname { get; set; }
-    public string ContactPhone { get; set; }
-    public string ContactCity { get; set; }
-    public string Relationship { get; set; }
-    public string RelationshipDesc { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountSname { get; set; }
+    public string? AccountCity { get; set; }
+    public string? AccountPhone { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountIata { get; set; }
+    public decimal? ContactId { get; set; }
+    public string? ContactName { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? ContactFirst { get; set; }
+    public string? ContactLast { get; set; }
+    public string? ContactYn { get; set; }
+    public string? ConActiveYn { get; set; }
+    public string? ContactSname { get; set; }
+    public string? ContactSxname { get; set; }
+    public string? ContactPhone { get; set; }
+    public string? ContactCity { get; set; }
+    public string? Relationship { get; set; }
+    public string? RelationshipDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

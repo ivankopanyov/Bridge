@@ -3,19 +3,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class GrselectView
 {
     public decimal? AllotmentHeaderId { get; set; }
-    public string AllotmentCode { get; set; }
-    public string Description { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string Bookingmethod { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? Bookingmethod { get; set; }
     public decimal? Elastic { get; set; }
-    public string ElasticDesc { get; set; }
-    public string InsertUserName { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
+    public string? ElasticDesc { get; set; }
+    public string? InsertUserName { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

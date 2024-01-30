@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcPath
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? PathId { get; set; }
-    public string Path { get; set; }
-    public string AccessCode { get; set; }
-    public string Flags { get; set; }
+    public string? Path { get; set; }
+    public string? AccessCode { get; set; }
+    public string? Flags { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PeriodSetup
 {
-    public string Resort { get; set; }
-    public decimal YearId { get; set; }
-    public string PeriodType { get; set; }
-    public string Code { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Description { get; set; }
-    public string PeriodScope { get; set; }
-    public string ParentPeriod { get; set; }
+    public string? Resort { get; set; }
+    public decimal? YearId { get; set; }
+    public string? PeriodType { get; set; }
+    public string? Code { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Description { get; set; }
+    public string? PeriodScope { get; set; }
+    public string? ParentPeriod { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

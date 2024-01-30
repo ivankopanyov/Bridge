@@ -6,11 +6,11 @@ public partial class ExpUpeResvMemb
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? MembershipId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
     public DateTime? ExpirationDate { get; set; }
-    public string MembershipDescription { get; set; }
+    public string? MembershipDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

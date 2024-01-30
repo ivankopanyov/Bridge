@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class YearSetup1
 {
-    public string Resort { get; set; }
-    public decimal YearId { get; set; }
-    public string YearType { get; set; }
-    public string Description { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? YearId { get; set; }
+    public string? YearType { get; set; }
+    public string? Description { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? Year { get; set; }
-    public string Calendar { get; set; }
+    public string? Calendar { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

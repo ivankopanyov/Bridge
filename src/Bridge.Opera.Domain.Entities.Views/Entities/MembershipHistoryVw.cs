@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipHistoryVw
 {
-    public decimal MembershipId { get; set; }
-    public string ChangeType { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
-    public string Description { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? ChangeType { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
+    public string? Description { get; set; }
     public decimal? ExtractBatchId { get; set; }
     public decimal? ActionId { get; set; }
-    public string ActionType { get; set; }
+    public string? ActionType { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

@@ -7,16 +7,16 @@ public partial class CustomFacilityTaskHeader
         CustomFacilityCodesHeader = new HashSet<CustomFacilityCodesHeader>();
     }
 
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string FacilityTask { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? FacilityTask { get; set; }
     public decimal? FrequencyDays { get; set; }
     public decimal? Credits { get; set; }
     public decimal? Priority { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ReservationName Res { get; set; }
     public virtual ResortHkTasks ResortHkTasks { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RiTemplateTypes
 {
-    public string Resort { get; set; }
-    public string RiTemplateType { get; set; }
-    public string RiTemplateDescription { get; set; }
-    public decimal RiTemplateAccScore { get; set; }
+    public string? Resort { get; set; }
+    public string? RiTemplateType { get; set; }
+    public string? RiTemplateDescription { get; set; }
+    public decimal? RiTemplateAccScore { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

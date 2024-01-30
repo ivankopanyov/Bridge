@@ -7,20 +7,20 @@ public partial class ExpConResvPkgRate
     public decimal? ResvNameId { get; set; }
     public decimal? Amount { get; set; }
     public decimal? PkgDetSeq { get; set; }
-    public string IsTaxYn { get; set; }
-    public string IsPkgYn { get; set; }
-    public string Product { get; set; }
-    public string PkgRateDescription { get; set; }
-    public string TaxInclusiveYn { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Resort { get; set; }
-    public string Code { get; set; }
-    public string InDate { get; set; }
-    public string AddonYn { get; set; }
-    public string IncludePkgYn { get; set; }
-    public string PkgTaxYn { get; set; }
-    public string PkgTrxCode { get; set; }
-    public string PkgCode { get; set; }
+    public string? IsTaxYn { get; set; }
+    public string? IsPkgYn { get; set; }
+    public string? Product { get; set; }
+    public string? PkgRateDescription { get; set; }
+    public string? TaxInclusiveYn { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Code { get; set; }
+    public string? InDate { get; set; }
+    public string? AddonYn { get; set; }
+    public string? IncludePkgYn { get; set; }
+    public string? PkgTaxYn { get; set; }
+    public string? PkgTrxCode { get; set; }
+    public string? PkgCode { get; set; }
     public DateTime? PostingDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

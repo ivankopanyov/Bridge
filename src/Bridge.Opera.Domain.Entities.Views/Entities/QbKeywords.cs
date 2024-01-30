@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbKeywords
 {
-    public decimal NameId { get; set; }
-    public string Keyword { get; set; }
-    public string KeywordSoundex { get; set; }
-    public string KeywordType { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Keyword { get; set; }
+    public string? KeywordSoundex { get; set; }
+    public string? KeywordType { get; set; }
     public byte? LaptopChange { get; set; }
-    public string UpdateAllowedYn { get; set; }
-    public string InterfaceUpdatedYn { get; set; }
+    public string? UpdateAllowedYn { get; set; }
+    public string? InterfaceUpdatedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

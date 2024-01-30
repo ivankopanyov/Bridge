@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidDynamicTabularFieldsSys
 {
-    public string ModuleName { get; set; }
-    public string DisplaySet { get; set; }
-    public string BlockName { get; set; }
-    public string FieldName { get; set; }
-    public decimal OrderBy { get; set; }
-    public string DataType { get; set; }
-    public string Resort { get; set; }
-    public string PromptText { get; set; }
-    public string PromptCode { get; set; }
-    public string VisibleYn { get; set; }
-    public string InitialValue { get; set; }
-    public string CaseRestriction { get; set; }
-    public string EntityName { get; set; }
-    public string DefaultTemplateYn { get; set; }
-    public string SidYn { get; set; }
-    public string PopulationMethod { get; set; }
+    public string? ModuleName { get; set; }
+    public string? DisplaySet { get; set; }
+    public string? BlockName { get; set; }
+    public string? FieldName { get; set; }
+    public decimal? OrderBy { get; set; }
+    public string? DataType { get; set; }
+    public string? Resort { get; set; }
+    public string? PromptText { get; set; }
+    public string? PromptCode { get; set; }
+    public string? VisibleYn { get; set; }
+    public string? InitialValue { get; set; }
+    public string? CaseRestriction { get; set; }
+    public string? EntityName { get; set; }
+    public string? DefaultTemplateYn { get; set; }
+    public string? SidYn { get; set; }
+    public string? PopulationMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

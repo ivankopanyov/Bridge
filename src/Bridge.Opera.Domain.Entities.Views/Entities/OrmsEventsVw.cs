@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsEventsVw
 {
-    public string Resort { get; set; }
-    public string EventCode { get; set; }
-    public DateTime EventDate { get; set; }
-    public string Daytype { get; set; }
+    public string? Resort { get; set; }
+    public string? EventCode { get; set; }
+    public DateTime? EventDate { get; set; }
+    public string? Daytype { get; set; }
     public decimal? Dayseq { get; set; }
-    public string EventDesc { get; set; }
+    public string? EventDesc { get; set; }
     public decimal? SellSequence { get; set; }
-    public string BlackoutYn { get; set; }
+    public string? BlackoutYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

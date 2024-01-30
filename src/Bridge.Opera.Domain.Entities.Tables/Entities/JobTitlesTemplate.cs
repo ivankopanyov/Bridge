@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobTitlesTemplate
 {
-    public string JobCode { get; set; }
-    public string JobDescription { get; set; }
-    public string ChainCode { get; set; }
-    public string ClosingScriptYn { get; set; }
+    public string? JobCode { get; set; }
+    public string? JobDescription { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ClosingScriptYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

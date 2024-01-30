@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BacklogView
 {
     public decimal? ExportId { get; set; }
-    public string Resort { get; set; }
-    public string Month { get; set; }
-    public string Year { get; set; }
-    public string Status { get; set; }
-    public string MarketCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Month { get; set; }
+    public string? Year { get; set; }
+    public string? Status { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? Roomnights { get; set; }
     public decimal? NetRevenue { get; set; }
 

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidOperaAppDependenciesSys
 {
-    public string SourceTable { get; set; }
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
+    public string? SourceTable { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
     public decimal? DependencySeq { get; set; }
-    public string MsgKeyword { get; set; }
+    public string? MsgKeyword { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -21,60 +21,60 @@ public partial class GemEvent
         ResourceNotes = new HashSet<ResourceNotes>();
     }
 
-    public decimal EventId { get; set; }
+    public decimal? EventId { get; set; }
     public decimal? MasterEventId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string EvType { get; set; }
-    public string EvName { get; set; }
-    public string EvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? EvType { get; set; }
+    public string? EvName { get; set; }
+    public string? EvStatus { get; set; }
     public decimal? PkgId { get; set; }
-    public string WaitlistYn { get; set; }
-    public string TurntoStatus { get; set; }
+    public string? WaitlistYn { get; set; }
+    public string? TurntoStatus { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? ActualAttendees { get; set; }
-    public string ActualManual { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? ActualManual { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public DateTime? Blockstart { get; set; }
     public DateTime? Blockend { get; set; }
     public decimal? Guaranteed { get; set; }
-    public string Doorcard { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
+    public string? Doorcard { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string Tracecode { get; set; }
-    public string DontMoveYn { get; set; }
-    public string ProblemYn { get; set; }
-    public string WlIgnoreYn { get; set; }
-    public string MasterYn { get; set; }
+    public string? Tracecode { get; set; }
+    public string? DontMoveYn { get; set; }
+    public string? ProblemYn { get; set; }
+    public string? WlIgnoreYn { get; set; }
+    public string? MasterYn { get; set; }
     public decimal? EventLinkId { get; set; }
-    public string InspectedYn { get; set; }
+    public string? InspectedYn { get; set; }
     public DateTime? InspectedDate { get; set; }
     public decimal? InspectedUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string EvResort { get; set; }
-    public string DoorcardYn { get; set; }
-    public string EventLinkType { get; set; }
+    public string? EvResort { get; set; }
+    public string? DoorcardYn { get; set; }
+    public string? EventLinkType { get; set; }
     public decimal? PkgExpAttendees { get; set; }
     public decimal? PkgGuaAttendees { get; set; }
     public decimal? PkgActAttendees { get; set; }
     public decimal? V6EventId { get; set; }
-    public string ForecastRevenueOnlyYn { get; set; }
-    public string ExcludeFromForecastYn { get; set; }
-    public string PkgName { get; set; }
+    public string? ForecastRevenueOnlyYn { get; set; }
+    public string? ExcludeFromForecastYn { get; set; }
+    public string? PkgName { get; set; }
     public decimal? PkgLink { get; set; }
     public decimal? PkgEvId { get; set; }
     public decimal? SetAttendees { get; set; }
     public decimal? FbaId { get; set; }
-    public string SelectRatecodeInCentralYn { get; set; }
-    public string DetailedPostingYn { get; set; }
-    public string AllowRegistryYn { get; set; }
+    public string? SelectRatecodeInCentralYn { get; set; }
+    public string? DetailedPostingYn { get; set; }
+    public string? AllowRegistryYn { get; set; }
     public decimal? OrigEventId { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }

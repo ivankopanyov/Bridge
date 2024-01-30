@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpTsa01Vw
 {
-    public string BusinessDate { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string RmNo { get; set; }
-    public string RmType { get; set; }
-    public string PrevRmType { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? RmNo { get; set; }
+    public string? RmType { get; set; }
+    public string? PrevRmType { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string ConfirmationNo { get; set; }
-    public decimal NameId { get; set; }
-    public string Chkindte { get; set; }
-    public string Chkoutdte { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Chkindte { get; set; }
+    public string? Chkoutdte { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? RmRate { get; set; }
     public decimal? UsdRate { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string MarketGrp { get; set; }
-    public string MarketGrpDesc { get; set; }
-    public string Packages { get; set; }
-    public decimal PkgPrice { get; set; }
-    public string PakDesc { get; set; }
-    public string PkgBegin { get; set; }
-    public string PkgEnd { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? MarketGrp { get; set; }
+    public string? MarketGrpDesc { get; set; }
+    public string? Packages { get; set; }
+    public decimal? PkgPrice { get; set; }
+    public string? PakDesc { get; set; }
+    public string? PkgBegin { get; set; }
+    public string? PkgEnd { get; set; }
     public decimal? Quantity { get; set; }
-    public string Outdate { get; set; }
-    public string ResvStatus { get; set; }
-    public string Nationality { get; set; }
-    public string RateCode { get; set; }
-    public string RateDesc { get; set; }
+    public string? Outdate { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Nationality { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateDesc { get; set; }
     public decimal? CfgPrice { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

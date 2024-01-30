@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CheckRegister
 {
-    public decimal AccountId { get; set; }
-    public decimal BatchId { get; set; }
+    public decimal? AccountId { get; set; }
+    public decimal? BatchId { get; set; }
     public decimal? CheckAmt { get; set; }
     public DateTime? CheckDate { get; set; }
     public decimal? CheckNo { get; set; }
-    public string ChkCurrency { get; set; }
+    public string? ChkCurrency { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string Status { get; set; }
-    public string ClearedYn { get; set; }
+    public string? Status { get; set; }
+    public string? ClearedYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? TaPaymentId { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? VatAmt { get; set; }
     public decimal? MicrNo { get; set; }
     public decimal? VatPercnt { get; set; }
     public decimal? TotalCheckAmt { get; set; }
     public decimal? FcTotalCheckAmt { get; set; }
-    public string EftFileName { get; set; }
+    public string? EftFileName { get; set; }
     public DateTime? ActionDate { get; set; }
-    public string PositivePayStatus { get; set; }
+    public string? PositivePayStatus { get; set; }
     public DateTime? PositivePayDate { get; set; }
-    public string FailedYn { get; set; }
+    public string? FailedYn { get; set; }
 
     public virtual CommissionPayments TaPayment { get; set; }
     public virtual Name TravelAgent { get; set; }

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomSuiteComponents
 {
-    public string ComponentRoom { get; set; }
-    public string MasterEntryYn { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? ComponentRoom { get; set; }
+    public string? MasterEntryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? VnPriority { get; set; }
-    public string ComponentLabel { get; set; }
+    public string? ComponentLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcActTable
 {
-    public string Resort { get; set; }
-    public string EventId { get; set; }
-    public string Command { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Register { get; set; }
-    public string Register2 { get; set; }
-    public string Result { get; set; }
-    public string GuestNum { get; set; }
-    public string Param1 { get; set; }
-    public string Param2 { get; set; }
-    public string Param3 { get; set; }
-    public string Param4 { get; set; }
-    public string Param5 { get; set; }
-    public string Param6 { get; set; }
-    public string Param7 { get; set; }
-    public string PStation { get; set; }
-    public string LoginName { get; set; }
+    public string? Resort { get; set; }
+    public string? EventId { get; set; }
+    public string? Command { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Register { get; set; }
+    public string? Register2 { get; set; }
+    public string? Result { get; set; }
+    public string? GuestNum { get; set; }
+    public string? Param1 { get; set; }
+    public string? Param2 { get; set; }
+    public string? Param3 { get; set; }
+    public string? Param4 { get; set; }
+    public string? Param5 { get; set; }
+    public string? Param6 { get; set; }
+    public string? Param7 { get; set; }
+    public string? PStation { get; set; }
+    public string? LoginName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

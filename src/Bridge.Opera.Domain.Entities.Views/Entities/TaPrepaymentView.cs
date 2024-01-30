@@ -2,40 +2,40 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaPrepaymentView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string Name { get; set; }
-    public string First { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string IataCorpNo { get; set; }
-    public string City { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
-    public string Arrival { get; set; }
-    public string Departure { get; set; }
-    public string CommissionCode { get; set; }
-    public string RateCode { get; set; }
+    public string? Name { get; set; }
+    public string? First { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? IataCorpNo { get; set; }
+    public string? City { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? Arrival { get; set; }
+    public string? Departure { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? DiscountAmount { get; set; }
     public decimal? Nights { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? CommissionableRevenue { get; set; }
     public decimal? GrossCommAmt { get; set; }
     public decimal? PrepaidComm { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? VatAmount { get; set; }
-    public string HeldStatus { get; set; }
-    public string ArStatus { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Remarks { get; set; }
+    public string? HeldStatus { get; set; }
+    public string? ArStatus { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Remarks { get; set; }
     public decimal? BankAccount { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string AdjustmentNote { get; set; }
+    public string? AdjustmentNote { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
 

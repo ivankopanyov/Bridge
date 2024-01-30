@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SurveyAnswers
 {
-    public string Resort { get; set; }
-    public decimal QuestionId { get; set; }
-    public decimal AnswerId { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? QuestionId { get; set; }
+    public decimal? AnswerId { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? Score { get; set; }
     public DateTime? InsertDate { get; set; }

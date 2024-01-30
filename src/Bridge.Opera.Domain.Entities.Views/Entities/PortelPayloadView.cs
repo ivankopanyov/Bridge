@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PortelPayloadView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public DateTime? BillGenerationDate { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? Intid { get; set; }
-    public string Invoiceid { get; set; }
-    public string Invoiceno { get; set; }
-    public string Description { get; set; }
-    public string Invoicedate { get; set; }
+    public string? Invoiceid { get; set; }
+    public string? Invoiceno { get; set; }
+    public string? Description { get; set; }
+    public string? Invoicedate { get; set; }
     public decimal? Invoicetype { get; set; }
     public decimal? Scenariotype { get; set; }
-    public string Orderno { get; set; }
-    public string Dispatchno { get; set; }
+    public string? Orderno { get; set; }
+    public string? Dispatchno { get; set; }
     public decimal? Foliono1 { get; set; }
     public decimal? Totalamount { get; set; }
     public decimal? Totalpayamount { get; set; }
-    public string Currencycode { get; set; }
+    public string? Currencycode { get; set; }
     public decimal? Discountamount { get; set; }
     public decimal? Taxableamount { get; set; }
     public decimal? Roundingamount { get; set; }
@@ -28,54 +28,54 @@ public partial class PortelPayloadView
     public decimal? Withholdingtax { get; set; }
     public decimal? Taxexemption { get; set; }
     public decimal? Folderintid { get; set; }
-    public string Envelopeno { get; set; }
+    public string? Envelopeno { get; set; }
     public decimal? Invoicestatus { get; set; }
-    public string Externaltrackno { get; set; }
+    public string? Externaltrackno { get; set; }
     public decimal? Direction { get; set; }
-    public string Dontshow { get; set; }
-    public string Createdon { get; set; }
+    public string? Dontshow { get; set; }
+    public string? Createdon { get; set; }
     public decimal? Createdby { get; set; }
-    public string Modifiedon { get; set; }
+    public string? Modifiedon { get; set; }
     public decimal? Modifiedby { get; set; }
-    public string Errormessage { get; set; }
+    public string? Errormessage { get; set; }
     public decimal? Sourceintid { get; set; }
     public decimal? Gibstatuscode { get; set; }
-    public string Gibstatus { get; set; }
+    public string? Gibstatus { get; set; }
     public decimal? Integratorsourceintid { get; set; }
     public decimal? Customerid { get; set; }
-    public string Customername { get; set; }
-    public string Customertaxoffice { get; set; }
-    public string Customertaxno { get; set; }
-    public string Customerwebsite { get; set; }
-    public string Customeremail { get; set; }
-    public string Customertel { get; set; }
-    public string Customerfax { get; set; }
-    public string Customerroom { get; set; }
-    public string Customerstreetname { get; set; }
-    public string Customerbuildingname { get; set; }
-    public string Customerbuildingnumber { get; set; }
-    public string Customercitysubdivisionname { get; set; }
-    public string Customercityname { get; set; }
-    public string Customerpostalzone { get; set; }
-    public string Customercountryname { get; set; }
+    public string? Customername { get; set; }
+    public string? Customertaxoffice { get; set; }
+    public string? Customertaxno { get; set; }
+    public string? Customerwebsite { get; set; }
+    public string? Customeremail { get; set; }
+    public string? Customertel { get; set; }
+    public string? Customerfax { get; set; }
+    public string? Customerroom { get; set; }
+    public string? Customerstreetname { get; set; }
+    public string? Customerbuildingname { get; set; }
+    public string? Customerbuildingnumber { get; set; }
+    public string? Customercitysubdivisionname { get; set; }
+    public string? Customercityname { get; set; }
+    public string? Customerpostalzone { get; set; }
+    public string? Customercountryname { get; set; }
     public decimal? Supplierintid { get; set; }
     public decimal? Supplierid { get; set; }
-    public string Suppliername { get; set; }
-    public string Suppliertaxoffice { get; set; }
-    public string Suppliertaxno { get; set; }
-    public string Supplierwebsite { get; set; }
-    public string Supplieremail { get; set; }
-    public string Suppliertel { get; set; }
-    public string Supplierfax { get; set; }
-    public string Supplierroom { get; set; }
-    public string Supplierstreetname { get; set; }
-    public string Supplierbuildingname { get; set; }
-    public string Supplierbuildingnumber { get; set; }
-    public string Suppliercitysubdivisionname { get; set; }
-    public string Suppliercityname { get; set; }
-    public string Supplierpostalzone { get; set; }
-    public string Suppliercountryname { get; set; }
-    public string Invoicelines { get; set; }
+    public string? Suppliername { get; set; }
+    public string? Suppliertaxoffice { get; set; }
+    public string? Suppliertaxno { get; set; }
+    public string? Supplierwebsite { get; set; }
+    public string? Supplieremail { get; set; }
+    public string? Suppliertel { get; set; }
+    public string? Supplierfax { get; set; }
+    public string? Supplierroom { get; set; }
+    public string? Supplierstreetname { get; set; }
+    public string? Supplierbuildingname { get; set; }
+    public string? Supplierbuildingnumber { get; set; }
+    public string? Suppliercitysubdivisionname { get; set; }
+    public string? Suppliercityname { get; set; }
+    public string? Supplierpostalzone { get; set; }
+    public string? Suppliercountryname { get; set; }
+    public string? Invoicelines { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

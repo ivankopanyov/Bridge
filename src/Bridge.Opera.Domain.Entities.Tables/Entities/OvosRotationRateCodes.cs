@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosRotationRateCodes
 {
-    public decimal Id { get; set; }
-    public string RateCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? RateCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
     public virtual OvosContractPoints IdNavigation { get; set; }
 

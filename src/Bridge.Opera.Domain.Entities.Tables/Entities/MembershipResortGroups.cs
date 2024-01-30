@@ -7,16 +7,16 @@ public partial class MembershipResortGroups
         MembershipResortGroupCodes = new HashSet<MembershipResortGroupCodes>();
     }
 
-    public string MemResortGroup { get; set; }
-    public string Description { get; set; }
-    public string IncludeExclude { get; set; }
+    public string? MemResortGroup { get; set; }
+    public string? Description { get; set; }
+    public string? IncludeExclude { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string BackToBack { get; set; }
-    public string ChainCode { get; set; }
+    public string? BackToBack { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ICollection<MembershipResortGroupCodes> MembershipResortGroupCodes { get; set; }
 

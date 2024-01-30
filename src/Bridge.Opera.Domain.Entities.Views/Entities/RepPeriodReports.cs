@@ -3,22 +3,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepPeriodReports
 {
     public decimal? ReportId { get; set; }
-    public string MasterValue { get; set; }
+    public string? MasterValue { get; set; }
     public decimal? MasterValueOrder { get; set; }
-    public string Description { get; set; }
-    public string SubGrp1 { get; set; }
+    public string? Description { get; set; }
+    public string? SubGrp1 { get; set; }
     public decimal? SubGrp1Order { get; set; }
-    public string Heading1 { get; set; }
-    public string Heading2 { get; set; }
+    public string? Heading1 { get; set; }
+    public string? Heading2 { get; set; }
     public decimal? Heading1Order { get; set; }
     public decimal? Amount { get; set; }
-    public string FormattedAmount { get; set; }
+    public string? FormattedAmount { get; set; }
     public decimal? LastYear01 { get; set; }
-    public string AmountFormatType { get; set; }
-    public string PrintLineAfterYn { get; set; }
-    public string PeriodMode { get; set; }
-    public string ReportMode { get; set; }
-    public string Resort { get; set; }
+    public string? AmountFormatType { get; set; }
+    public string? PrintLineAfterYn { get; set; }
+    public string? PeriodMode { get; set; }
+    public string? ReportMode { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

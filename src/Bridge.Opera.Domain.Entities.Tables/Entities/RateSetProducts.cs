@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateSetProducts
 {
-    public decimal RateSetId { get; set; }
-    public string Resort { get; set; }
-    public string Product { get; set; }
-    public string GroupProduct { get; set; }
+    public decimal? RateSetId { get; set; }
+    public string? Resort { get; set; }
+    public string? Product { get; set; }
+    public string? GroupProduct { get; set; }
 
     public virtual RateSet RateSet { get; set; }
     public virtual ResortProducts ResortProducts { get; set; }

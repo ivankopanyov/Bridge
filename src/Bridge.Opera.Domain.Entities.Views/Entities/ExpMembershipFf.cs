@@ -4,24 +4,24 @@ public partial class ExpMembershipFf
 {
     public decimal? ExportId { get; set; }
     public decimal? RowSequence { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? RoomNightsTotal { get; set; }
-    public string AirlineMemberType { get; set; }
-    public string AirlineMemberNo { get; set; }
+    public string? AirlineMemberType { get; set; }
+    public string? AirlineMemberNo { get; set; }
     public decimal? AirlineTotalPoints { get; set; }
     public decimal? AirlineBonusPoints { get; set; }
-    public string ReservationStatus { get; set; }
-    public string PropertyCode { get; set; }
+    public string? ReservationStatus { get; set; }
+    public string? PropertyCode { get; set; }
     public decimal? LoyaltyTotalPoints { get; set; }
     public decimal? LoyaltyBonusPoints { get; set; }
-    public string LoyaltyMemberType { get; set; }
-    public string LoyaltyMemberNo { get; set; }
+    public string? LoyaltyMemberType { get; set; }
+    public string? LoyaltyMemberNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

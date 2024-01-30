@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FtTaxElementsTemp
 {
-    public string TempRowId { get; set; }
-    public decimal TrxNo { get; set; }
-    public string TaxElements { get; set; }
+    public string? TempRowId { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? TaxElements { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

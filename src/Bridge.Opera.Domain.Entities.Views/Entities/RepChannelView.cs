@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepChannelView
 {
-    public string Channel { get; set; }
-    public string Description { get; set; }
+    public string? Channel { get; set; }
+    public string? Description { get; set; }
     public decimal? MonthYear { get; set; }
     public decimal? RoomsRev { get; set; }
     public decimal? Rooms { get; set; }

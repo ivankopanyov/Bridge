@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ManualPostCovers
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public DateTime Dt { get; set; }
-    public decimal Covers { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public DateTime? Dt { get; set; }
+    public decimal? Covers { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

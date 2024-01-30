@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WorkorderPager
 {
-    public string Resort { get; set; }
-    public decimal WoNumber { get; set; }
-    public decimal EscalationLevel { get; set; }
-    public decimal PageSeqNo { get; set; }
-    public DateTime LastPageReqDate { get; set; }
-    public decimal PageReqCount { get; set; }
-    public string ShiftId { get; set; }
-    public DateTime FirstPageReqDate { get; set; }
-    public string DeptId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? WoNumber { get; set; }
+    public decimal? EscalationLevel { get; set; }
+    public decimal? PageSeqNo { get; set; }
+    public DateTime? LastPageReqDate { get; set; }
+    public decimal? PageReqCount { get; set; }
+    public string? ShiftId { get; set; }
+    public DateTime? FirstPageReqDate { get; set; }
+    public string? DeptId { get; set; }
 
     public virtual WorkOrders WorkOrders { get; set; }
 

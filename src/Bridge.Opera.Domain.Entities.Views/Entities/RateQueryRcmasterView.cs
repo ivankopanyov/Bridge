@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateQueryRcmasterView
 {
-    public string RateCode { get; set; }
-    public string RateCodeShortDesc { get; set; }
-    public string RateCodeLongDesc { get; set; }
-    public string RoomCategory { get; set; }
-    public string Description { get; set; }
-    public string RoomTypeLongDesc { get; set; }
-    public string Amount { get; set; }
-    public string TotalAmount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Available { get; set; }
-    public string AvailableLevel { get; set; }
-    public string PackageYn { get; set; }
-    public string RowColor { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCodeShortDesc { get; set; }
+    public string? RateCodeLongDesc { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Description { get; set; }
+    public string? RoomTypeLongDesc { get; set; }
+    public string? Amount { get; set; }
+    public string? TotalAmount { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Available { get; set; }
+    public string? AvailableLevel { get; set; }
+    public string? PackageYn { get; set; }
+    public string? RowColor { get; set; }
     public decimal? RateStatus { get; set; }
     public decimal? RateRoomStatus { get; set; }
     public decimal? Status { get; set; }
-    public string ExpandedYn { get; set; }
-    public string RateChangeYn { get; set; }
+    public string? ExpandedYn { get; set; }
+    public string? RateChangeYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

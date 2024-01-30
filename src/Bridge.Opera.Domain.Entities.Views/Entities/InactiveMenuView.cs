@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class InactiveMenuView
 {
-    public string MenuName { get; set; }
-    public string ParameterName { get; set; }
-    public string FormName { get; set; }
+    public string? MenuName { get; set; }
+    public string? ParameterName { get; set; }
+    public string? FormName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

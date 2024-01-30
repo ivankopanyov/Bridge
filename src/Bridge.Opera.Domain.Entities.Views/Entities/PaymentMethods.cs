@@ -2,47 +2,47 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PaymentMethods
 {
-    public string PaymentMethod { get; set; }
-    public string Description { get; set; }
-    public string CcCode { get; set; }
-    public string CcType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string IndBilling { get; set; }
-    public string IndAr { get; set; }
-    public string IndDepositYn { get; set; }
-    public string IndCash { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? Description { get; set; }
+    public string? CcCode { get; set; }
+    public string? CcType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? IndBilling { get; set; }
+    public string? IndAr { get; set; }
+    public string? IndDepositYn { get; set; }
+    public string? IndCash { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? IssueNumber { get; set; }
     public decimal? StartDate { get; set; }
-    public string PostYn { get; set; }
-    public string CardNumberLength { get; set; }
-    public string CardPrefix { get; set; }
-    public string ValidationRule { get; set; }
-    public string Formula { get; set; }
-    public string TrxUsage1 { get; set; }
-    public string TrxUsage2 { get; set; }
+    public string? PostYn { get; set; }
+    public string? CardNumberLength { get; set; }
+    public string? CardPrefix { get; set; }
+    public string? ValidationRule { get; set; }
+    public string? Formula { get; set; }
+    public string? TrxUsage1 { get; set; }
+    public string? TrxUsage2 { get; set; }
     public decimal? OrderBy { get; set; }
-    public string AuthAtCheckinYn { get; set; }
-    public string AuthDuringStayYn { get; set; }
-    public string AuthReversalYn { get; set; }
-    public string Cvv2CheckYn { get; set; }
-    public string AddressVerificationYn { get; set; }
-    public string CompPaymentYn { get; set; }
-    public string PromptAtCheckinYn { get; set; }
-    public string MerchantNumber { get; set; }
-    public string ChipPinYn { get; set; }
-    public string ResvPaymentYn { get; set; }
-    public string CalcPoints { get; set; }
-    public string TrxCodeDisplay { get; set; }
-    public string AutopayAtCheckinYn { get; set; }
-    public string AuthStlmtAtCheckOutYn { get; set; }
+    public string? AuthAtCheckinYn { get; set; }
+    public string? AuthDuringStayYn { get; set; }
+    public string? AuthReversalYn { get; set; }
+    public string? Cvv2CheckYn { get; set; }
+    public string? AddressVerificationYn { get; set; }
+    public string? CompPaymentYn { get; set; }
+    public string? PromptAtCheckinYn { get; set; }
+    public string? MerchantNumber { get; set; }
+    public string? ChipPinYn { get; set; }
+    public string? ResvPaymentYn { get; set; }
+    public string? CalcPoints { get; set; }
+    public string? TrxCodeDisplay { get; set; }
+    public string? AutopayAtCheckinYn { get; set; }
+    public string? AuthStlmtAtCheckOutYn { get; set; }
     public decimal? MaxAmt { get; set; }
-    public string BonusCheckType { get; set; }
-    public string FiscalPaymentYn { get; set; }
-    public string CurrencyCode { get; set; }
-    public string DepositType { get; set; }
+    public string? BonusCheckType { get; set; }
+    public string? FiscalPaymentYn { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? DepositType { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }

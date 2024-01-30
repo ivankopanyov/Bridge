@@ -12,25 +12,25 @@ public partial class ExpConBlk
     public decimal? ContactNameId { get; set; }
     public decimal? AgentContactNameId { get; set; }
     public decimal? OpenForPickup01 { get; set; }
-    public string InclInBlkElementYn { get; set; }
-    public string BookingType { get; set; }
-    public string BlockCode { get; set; }
-    public string InvBlockStatus { get; set; }
-    public string RestdBookList { get; set; }
-    public string CutoffDays { get; set; }
-    public string OffsetCalcMode { get; set; }
-    public string Channel { get; set; }
-    public string PymtMethodDesc { get; set; }
-    public string PymtMethod { get; set; }
-    public string ResvMethod { get; set; }
-    public string ResvType { get; set; }
-    public string UpdateUser { get; set; }
-    public string Status { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string BlockName { get; set; }
-    public string MarketCodeDesc { get; set; }
+    public string? InclInBlkElementYn { get; set; }
+    public string? BookingType { get; set; }
+    public string? BlockCode { get; set; }
+    public string? InvBlockStatus { get; set; }
+    public string? RestdBookList { get; set; }
+    public string? CutoffDays { get; set; }
+    public string? OffsetCalcMode { get; set; }
+    public string? Channel { get; set; }
+    public string? PymtMethodDesc { get; set; }
+    public string? PymtMethod { get; set; }
+    public string? ResvMethod { get; set; }
+    public string? ResvType { get; set; }
+    public string? UpdateUser { get; set; }
+    public string? Status { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? BlockName { get; set; }
+    public string? MarketCodeDesc { get; set; }
     public DateTime? BlockStartDate { get; set; }
     public DateTime? BlockEndDate { get; set; }
     public DateTime? CutoffDate { get; set; }

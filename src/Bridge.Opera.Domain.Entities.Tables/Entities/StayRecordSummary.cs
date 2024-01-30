@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StayRecordSummary
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public decimal Month { get; set; }
-    public decimal Year { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Month { get; set; }
+    public decimal? Year { get; set; }
     public decimal? NumberStays { get; set; }
     public decimal? NumberNights { get; set; }
     public decimal? NumberCancels { get; set; }
@@ -19,7 +19,7 @@ public partial class StayRecordSummary
     public decimal? FbRevenueTax { get; set; }
     public decimal? MiscRevenueTax { get; set; }
     public decimal? OtherRevenueTax { get; set; }
-    public string GroupRevenueYn { get; set; }
+    public string? GroupRevenueYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

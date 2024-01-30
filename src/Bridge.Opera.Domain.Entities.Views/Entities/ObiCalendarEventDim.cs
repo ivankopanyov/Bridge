@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCalendarEventDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string EventUcode { get; set; }
-    public string EventCode { get; set; }
-    public string EventDesc { get; set; }
-    public string OrmsEventYn { get; set; }
-    public string BlackoutYn { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? EventUcode { get; set; }
+    public string? EventCode { get; set; }
+    public string? EventDesc { get; set; }
+    public string? OrmsEventYn { get; set; }
+    public string? BlackoutYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

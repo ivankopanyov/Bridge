@@ -8,28 +8,28 @@ public partial class WorkDocFolioFooter
     public decimal? BillNumberFooter { get; set; }
     public decimal? RevisionNumberFooter { get; set; }
     public decimal? FolioViewFooter { get; set; }
-    public string TotalCredit { get; set; }
-    public string TotalDebit { get; set; }
-    public string TotalEuroDebit { get; set; }
-    public string TotalEuroCredit { get; set; }
-    public string TotalParallelDebit { get; set; }
-    public string TotalParallelCredit { get; set; }
-    public string TotalEuroBalance { get; set; }
-    public string TotalParallelBalance { get; set; }
+    public string? TotalCredit { get; set; }
+    public string? TotalDebit { get; set; }
+    public string? TotalEuroDebit { get; set; }
+    public string? TotalEuroCredit { get; set; }
+    public string? TotalParallelDebit { get; set; }
+    public string? TotalParallelCredit { get; set; }
+    public string? TotalEuroBalance { get; set; }
+    public string? TotalParallelBalance { get; set; }
     public decimal? EuroExchangeRate { get; set; }
-    public string Balance { get; set; }
-    public string ParallelBalance { get; set; }
-    public string SummaryCurrencyDebit { get; set; }
-    public string SummaryCurrencyCredit { get; set; }
-    public string SummaryBalance { get; set; }
-    public string SummaryCurrency { get; set; }
+    public string? Balance { get; set; }
+    public string? ParallelBalance { get; set; }
+    public string? SummaryCurrencyDebit { get; set; }
+    public string? SummaryCurrencyCredit { get; set; }
+    public string? SummaryBalance { get; set; }
+    public string? SummaryCurrency { get; set; }
     public decimal? SummaryCurrencyExchangeRt { get; set; }
-    public string TotalGross { get; set; }
-    public string TotalDiff { get; set; }
-    public string TotalEuroGross { get; set; }
-    public string TotalParallelGross { get; set; }
-    public string TotalEuroDiff { get; set; }
-    public string MerchantNumberFooter { get; set; }
+    public string? TotalGross { get; set; }
+    public string? TotalDiff { get; set; }
+    public string? TotalEuroGross { get; set; }
+    public string? TotalParallelGross { get; set; }
+    public string? TotalEuroDiff { get; set; }
+    public string? MerchantNumberFooter { get; set; }
     public decimal? DirectTotalCredit { get; set; }
     public decimal? DirectTotalDebit { get; set; }
     public decimal? DirectTotalEuroDebit { get; set; }
@@ -39,14 +39,14 @@ public partial class WorkDocFolioFooter
     public decimal? DirectSummaryCurrencyDebit { get; set; }
     public decimal? DirectSummaryCurrencyCredit { get; set; }
     public decimal? DirectSummaryBalance { get; set; }
-    public string TotalDebitInWords { get; set; }
-    public string TotalCreditInWords { get; set; }
-    public string BalanceInWords { get; set; }
-    public string ArNumberInFooter { get; set; }
-    public string RefInvNumber { get; set; }
-    public string MembershipFolioMessage { get; set; }
-    public string FolioText1 { get; set; }
-    public string FolioText2 { get; set; }
+    public string? TotalDebitInWords { get; set; }
+    public string? TotalCreditInWords { get; set; }
+    public string? BalanceInWords { get; set; }
+    public string? ArNumberInFooter { get; set; }
+    public string? RefInvNumber { get; set; }
+    public string? MembershipFolioMessage { get; set; }
+    public string? FolioText1 { get; set; }
+    public string? FolioText2 { get; set; }
     public decimal? Deposits { get; set; }
     public decimal? Paidouts { get; set; }
     public decimal? Settlements { get; set; }
@@ -65,56 +65,56 @@ public partial class WorkDocFolioFooter
     public decimal? TotalVatIncl { get; set; }
     public decimal? TotalVatInclEuro { get; set; }
     public decimal? NonhotelSupplies { get; set; }
-    public string TotalNet { get; set; }
-    public string TotalEuroNet { get; set; }
-    public string TotalParallelNet { get; set; }
-    public string TaxAmount { get; set; }
-    public string EuroTaxAmount { get; set; }
+    public string? TotalNet { get; set; }
+    public string? TotalEuroNet { get; set; }
+    public string? TotalParallelNet { get; set; }
+    public string? TaxAmount { get; set; }
+    public string? EuroTaxAmount { get; set; }
     public decimal? DirectTaxAmount { get; set; }
     public decimal? DirectEuroTaxAmount { get; set; }
     public decimal? FolioNoTax { get; set; }
     public decimal? BillNumberTax { get; set; }
     public decimal? RevisionNumberTax { get; set; }
-    public string TaxDesc1 { get; set; }
-    public string TaxDesc2 { get; set; }
-    public string TaxDesc3 { get; set; }
-    public string TaxDesc4 { get; set; }
-    public string TaxDesc5 { get; set; }
-    public string TaxDesc6 { get; set; }
-    public string TaxDesc7 { get; set; }
-    public string TaxDesc8 { get; set; }
-    public string TaxDesc9 { get; set; }
-    public string TaxDesc10 { get; set; }
-    public string Vat1Amt { get; set; }
-    public string Vat2Amt { get; set; }
-    public string Vat3Amt { get; set; }
-    public string Vat4Amt { get; set; }
-    public string Vat5Amt { get; set; }
-    public string Vat6Amt { get; set; }
-    public string Vat7Amt { get; set; }
-    public string Vat8Amt { get; set; }
-    public string Vat9Amt { get; set; }
-    public string Vat10Amt { get; set; }
-    public string Vat1Amteuro { get; set; }
-    public string Vat2Amteuro { get; set; }
-    public string Vat3Amteuro { get; set; }
-    public string Vat4Amteuro { get; set; }
-    public string Vat5Amteuro { get; set; }
-    public string Vat6Amteuro { get; set; }
-    public string Vat7Amteuro { get; set; }
-    public string Vat8Amteuro { get; set; }
-    public string Vat9Amteuro { get; set; }
-    public string Vat10Amteuro { get; set; }
-    public string Vat1Amtparallel { get; set; }
-    public string Vat2Amtparallel { get; set; }
-    public string Vat3Amtparallel { get; set; }
-    public string Vat4Amtparallel { get; set; }
-    public string Vat5Amtparallel { get; set; }
-    public string Vat6Amtparallel { get; set; }
-    public string Vat7Amtparallel { get; set; }
-    public string Vat8Amtparallel { get; set; }
-    public string Vat9Amtparallel { get; set; }
-    public string Vat10Amtparallel { get; set; }
+    public string? TaxDesc1 { get; set; }
+    public string? TaxDesc2 { get; set; }
+    public string? TaxDesc3 { get; set; }
+    public string? TaxDesc4 { get; set; }
+    public string? TaxDesc5 { get; set; }
+    public string? TaxDesc6 { get; set; }
+    public string? TaxDesc7 { get; set; }
+    public string? TaxDesc8 { get; set; }
+    public string? TaxDesc9 { get; set; }
+    public string? TaxDesc10 { get; set; }
+    public string? Vat1Amt { get; set; }
+    public string? Vat2Amt { get; set; }
+    public string? Vat3Amt { get; set; }
+    public string? Vat4Amt { get; set; }
+    public string? Vat5Amt { get; set; }
+    public string? Vat6Amt { get; set; }
+    public string? Vat7Amt { get; set; }
+    public string? Vat8Amt { get; set; }
+    public string? Vat9Amt { get; set; }
+    public string? Vat10Amt { get; set; }
+    public string? Vat1Amteuro { get; set; }
+    public string? Vat2Amteuro { get; set; }
+    public string? Vat3Amteuro { get; set; }
+    public string? Vat4Amteuro { get; set; }
+    public string? Vat5Amteuro { get; set; }
+    public string? Vat6Amteuro { get; set; }
+    public string? Vat7Amteuro { get; set; }
+    public string? Vat8Amteuro { get; set; }
+    public string? Vat9Amteuro { get; set; }
+    public string? Vat10Amteuro { get; set; }
+    public string? Vat1Amtparallel { get; set; }
+    public string? Vat2Amtparallel { get; set; }
+    public string? Vat3Amtparallel { get; set; }
+    public string? Vat4Amtparallel { get; set; }
+    public string? Vat5Amtparallel { get; set; }
+    public string? Vat6Amtparallel { get; set; }
+    public string? Vat7Amtparallel { get; set; }
+    public string? Vat8Amtparallel { get; set; }
+    public string? Vat9Amtparallel { get; set; }
+    public string? Vat10Amtparallel { get; set; }
     public decimal? DirectVatamt1 { get; set; }
     public decimal? DirectVatamt2 { get; set; }
     public decimal? DirectVatamt3 { get; set; }
@@ -145,36 +145,36 @@ public partial class WorkDocFolioFooter
     public decimal? DirectVatparallelamt8 { get; set; }
     public decimal? DirectVatparallelamt9 { get; set; }
     public decimal? DirectVatparallelamt10 { get; set; }
-    public string Net1Amt { get; set; }
-    public string Net2Amt { get; set; }
-    public string Net3Amt { get; set; }
-    public string Net4Amt { get; set; }
-    public string Net5Amt { get; set; }
-    public string Net6Amt { get; set; }
-    public string Net7Amt { get; set; }
-    public string Net8Amt { get; set; }
-    public string Net9Amt { get; set; }
-    public string Net10Amt { get; set; }
-    public string Net1Amteuro { get; set; }
-    public string Net2Amteuro { get; set; }
-    public string Net3Amteuro { get; set; }
-    public string Net4Amteuro { get; set; }
-    public string Net5Amteuro { get; set; }
-    public string Net6Amteuro { get; set; }
-    public string Net7Amteuro { get; set; }
-    public string Net8Amteuro { get; set; }
-    public string Net9Amteuro { get; set; }
-    public string Net10Amteuro { get; set; }
-    public string Net1Amtparallel { get; set; }
-    public string Net2Amtparallel { get; set; }
-    public string Net3Amtparallel { get; set; }
-    public string Net4Amtparallel { get; set; }
-    public string Net5Amtparallel { get; set; }
-    public string Net6Amtparallel { get; set; }
-    public string Net7Amtparallel { get; set; }
-    public string Net8Amtparallel { get; set; }
-    public string Net9Amtparallel { get; set; }
-    public string Net10Amtparallel { get; set; }
+    public string? Net1Amt { get; set; }
+    public string? Net2Amt { get; set; }
+    public string? Net3Amt { get; set; }
+    public string? Net4Amt { get; set; }
+    public string? Net5Amt { get; set; }
+    public string? Net6Amt { get; set; }
+    public string? Net7Amt { get; set; }
+    public string? Net8Amt { get; set; }
+    public string? Net9Amt { get; set; }
+    public string? Net10Amt { get; set; }
+    public string? Net1Amteuro { get; set; }
+    public string? Net2Amteuro { get; set; }
+    public string? Net3Amteuro { get; set; }
+    public string? Net4Amteuro { get; set; }
+    public string? Net5Amteuro { get; set; }
+    public string? Net6Amteuro { get; set; }
+    public string? Net7Amteuro { get; set; }
+    public string? Net8Amteuro { get; set; }
+    public string? Net9Amteuro { get; set; }
+    public string? Net10Amteuro { get; set; }
+    public string? Net1Amtparallel { get; set; }
+    public string? Net2Amtparallel { get; set; }
+    public string? Net3Amtparallel { get; set; }
+    public string? Net4Amtparallel { get; set; }
+    public string? Net5Amtparallel { get; set; }
+    public string? Net6Amtparallel { get; set; }
+    public string? Net7Amtparallel { get; set; }
+    public string? Net8Amtparallel { get; set; }
+    public string? Net9Amtparallel { get; set; }
+    public string? Net10Amtparallel { get; set; }
     public decimal? DirectNetamt1 { get; set; }
     public decimal? DirectNetamt2 { get; set; }
     public decimal? DirectNetamt3 { get; set; }
@@ -205,26 +205,26 @@ public partial class WorkDocFolioFooter
     public decimal? DirectNetparallelamt8 { get; set; }
     public decimal? DirectNetparallelamt9 { get; set; }
     public decimal? DirectNetparallelamt10 { get; set; }
-    public string Xvat1Amt { get; set; }
-    public string Xvat2Amt { get; set; }
-    public string Xvat3Amt { get; set; }
-    public string Xvat4Amt { get; set; }
-    public string Xvat5Amt { get; set; }
-    public string Xvat6Amt { get; set; }
-    public string Xvat7Amt { get; set; }
-    public string Xvat8Amt { get; set; }
-    public string Xvat9Amt { get; set; }
-    public string Xvat10Amt { get; set; }
-    public string Xvat1Amteuro { get; set; }
-    public string Xvat2Amteuro { get; set; }
-    public string Xvat3Amteuro { get; set; }
-    public string Xvat4Amteuro { get; set; }
-    public string Xvat5Amteuro { get; set; }
-    public string Xvat6Amteuro { get; set; }
-    public string Xvat7Amteuro { get; set; }
-    public string Xvat8Amteuro { get; set; }
-    public string Xvat9Amteuro { get; set; }
-    public string Xvat10Amteuro { get; set; }
+    public string? Xvat1Amt { get; set; }
+    public string? Xvat2Amt { get; set; }
+    public string? Xvat3Amt { get; set; }
+    public string? Xvat4Amt { get; set; }
+    public string? Xvat5Amt { get; set; }
+    public string? Xvat6Amt { get; set; }
+    public string? Xvat7Amt { get; set; }
+    public string? Xvat8Amt { get; set; }
+    public string? Xvat9Amt { get; set; }
+    public string? Xvat10Amt { get; set; }
+    public string? Xvat1Amteuro { get; set; }
+    public string? Xvat2Amteuro { get; set; }
+    public string? Xvat3Amteuro { get; set; }
+    public string? Xvat4Amteuro { get; set; }
+    public string? Xvat5Amteuro { get; set; }
+    public string? Xvat6Amteuro { get; set; }
+    public string? Xvat7Amteuro { get; set; }
+    public string? Xvat8Amteuro { get; set; }
+    public string? Xvat9Amteuro { get; set; }
+    public string? Xvat10Amteuro { get; set; }
     public decimal? DirectXvatamt1 { get; set; }
     public decimal? DirectXvatamt2 { get; set; }
     public decimal? DirectXvatamt3 { get; set; }
@@ -245,26 +245,26 @@ public partial class WorkDocFolioFooter
     public decimal? DirectXvateuroamt8 { get; set; }
     public decimal? DirectXvateuroamt9 { get; set; }
     public decimal? DirectXvateuroamt10 { get; set; }
-    public string Xnet1Amt { get; set; }
-    public string Xnet2Amt { get; set; }
-    public string Xnet3Amt { get; set; }
-    public string Xnet4Amt { get; set; }
-    public string Xnet5Amt { get; set; }
-    public string Xnet6Amt { get; set; }
-    public string Xnet7Amt { get; set; }
-    public string Xnet8Amt { get; set; }
-    public string Xnet9Amt { get; set; }
-    public string Xnet10Amt { get; set; }
-    public string Xnet1Amteuro { get; set; }
-    public string Xnet2Amteuro { get; set; }
-    public string Xnet3Amteuro { get; set; }
-    public string Xnet4Amteuro { get; set; }
-    public string Xnet5Amteuro { get; set; }
-    public string Xnet6Amteuro { get; set; }
-    public string Xnet7Amteuro { get; set; }
-    public string Xnet8Amteuro { get; set; }
-    public string Xnet9Amteuro { get; set; }
-    public string Xnet10Amteuro { get; set; }
+    public string? Xnet1Amt { get; set; }
+    public string? Xnet2Amt { get; set; }
+    public string? Xnet3Amt { get; set; }
+    public string? Xnet4Amt { get; set; }
+    public string? Xnet5Amt { get; set; }
+    public string? Xnet6Amt { get; set; }
+    public string? Xnet7Amt { get; set; }
+    public string? Xnet8Amt { get; set; }
+    public string? Xnet9Amt { get; set; }
+    public string? Xnet10Amt { get; set; }
+    public string? Xnet1Amteuro { get; set; }
+    public string? Xnet2Amteuro { get; set; }
+    public string? Xnet3Amteuro { get; set; }
+    public string? Xnet4Amteuro { get; set; }
+    public string? Xnet5Amteuro { get; set; }
+    public string? Xnet6Amteuro { get; set; }
+    public string? Xnet7Amteuro { get; set; }
+    public string? Xnet8Amteuro { get; set; }
+    public string? Xnet9Amteuro { get; set; }
+    public string? Xnet10Amteuro { get; set; }
     public decimal? DirectXnetamt1 { get; set; }
     public decimal? DirectXnetamt2 { get; set; }
     public decimal? DirectXnetamt3 { get; set; }
@@ -285,9 +285,9 @@ public partial class WorkDocFolioFooter
     public decimal? DirectXneteuroamt8 { get; set; }
     public decimal? DirectXneteuroamt9 { get; set; }
     public decimal? DirectXneteuroamt10 { get; set; }
-    public string FolioStyle { get; set; }
-    public string ProfileLanguageBalance { get; set; }
-    public string ResortLanguageBalance { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? ProfileLanguageBalance { get; set; }
+    public string? ResortLanguageBalance { get; set; }
     public decimal? CollTaxAmt1 { get; set; }
     public decimal? CollTaxAmt2 { get; set; }
     public decimal? CollTaxAmt3 { get; set; }
@@ -303,21 +303,21 @@ public partial class WorkDocFolioFooter
     public decimal? TaxPerc8 { get; set; }
     public decimal? TaxPerc9 { get; set; }
     public decimal? TaxPerc10 { get; set; }
-    public string ReturnAmount { get; set; }
-    public string TotalRounding { get; set; }
-    public string SignatureHash { get; set; }
-    public string DataType { get; set; }
-    public string CommentsFooter { get; set; }
-    public string TaxDesc11 { get; set; }
-    public string TaxDesc12 { get; set; }
-    public string TaxDesc13 { get; set; }
-    public string TaxDesc14 { get; set; }
-    public string TaxDesc15 { get; set; }
-    public string TaxDesc16 { get; set; }
-    public string TaxDesc17 { get; set; }
-    public string TaxDesc18 { get; set; }
-    public string TaxDesc19 { get; set; }
-    public string TaxDesc20 { get; set; }
+    public string? ReturnAmount { get; set; }
+    public string? TotalRounding { get; set; }
+    public string? SignatureHash { get; set; }
+    public string? DataType { get; set; }
+    public string? CommentsFooter { get; set; }
+    public string? TaxDesc11 { get; set; }
+    public string? TaxDesc12 { get; set; }
+    public string? TaxDesc13 { get; set; }
+    public string? TaxDesc14 { get; set; }
+    public string? TaxDesc15 { get; set; }
+    public string? TaxDesc16 { get; set; }
+    public string? TaxDesc17 { get; set; }
+    public string? TaxDesc18 { get; set; }
+    public string? TaxDesc19 { get; set; }
+    public string? TaxDesc20 { get; set; }
     public decimal? TaxPerc11 { get; set; }
     public decimal? TaxPerc12 { get; set; }
     public decimal? TaxPerc13 { get; set; }
@@ -328,36 +328,36 @@ public partial class WorkDocFolioFooter
     public decimal? TaxPerc18 { get; set; }
     public decimal? TaxPerc19 { get; set; }
     public decimal? TaxPerc20 { get; set; }
-    public string Vat11Amt { get; set; }
-    public string Vat12Amt { get; set; }
-    public string Vat13Amt { get; set; }
-    public string Vat14Amt { get; set; }
-    public string Vat15Amt { get; set; }
-    public string Vat16Amt { get; set; }
-    public string Vat17Amt { get; set; }
-    public string Vat18Amt { get; set; }
-    public string Vat19Amt { get; set; }
-    public string Vat20Amt { get; set; }
-    public string Vat11Amteuro { get; set; }
-    public string Vat12Amteuro { get; set; }
-    public string Vat13Amteuro { get; set; }
-    public string Vat14Amteuro { get; set; }
-    public string Vat15Amteuro { get; set; }
-    public string Vat16Amteuro { get; set; }
-    public string Vat17Amteuro { get; set; }
-    public string Vat18Amteuro { get; set; }
-    public string Vat19Amteuro { get; set; }
-    public string Vat20Amteuro { get; set; }
-    public string Vat11Amtparallel { get; set; }
-    public string Vat12Amtparallel { get; set; }
-    public string Vat13Amtparallel { get; set; }
-    public string Vat14Amtparallel { get; set; }
-    public string Vat15Amtparallel { get; set; }
-    public string Vat16Amtparallel { get; set; }
-    public string Vat17Amtparallel { get; set; }
-    public string Vat18Amtparallel { get; set; }
-    public string Vat19Amtparallel { get; set; }
-    public string Vat20Amtparallel { get; set; }
+    public string? Vat11Amt { get; set; }
+    public string? Vat12Amt { get; set; }
+    public string? Vat13Amt { get; set; }
+    public string? Vat14Amt { get; set; }
+    public string? Vat15Amt { get; set; }
+    public string? Vat16Amt { get; set; }
+    public string? Vat17Amt { get; set; }
+    public string? Vat18Amt { get; set; }
+    public string? Vat19Amt { get; set; }
+    public string? Vat20Amt { get; set; }
+    public string? Vat11Amteuro { get; set; }
+    public string? Vat12Amteuro { get; set; }
+    public string? Vat13Amteuro { get; set; }
+    public string? Vat14Amteuro { get; set; }
+    public string? Vat15Amteuro { get; set; }
+    public string? Vat16Amteuro { get; set; }
+    public string? Vat17Amteuro { get; set; }
+    public string? Vat18Amteuro { get; set; }
+    public string? Vat19Amteuro { get; set; }
+    public string? Vat20Amteuro { get; set; }
+    public string? Vat11Amtparallel { get; set; }
+    public string? Vat12Amtparallel { get; set; }
+    public string? Vat13Amtparallel { get; set; }
+    public string? Vat14Amtparallel { get; set; }
+    public string? Vat15Amtparallel { get; set; }
+    public string? Vat16Amtparallel { get; set; }
+    public string? Vat17Amtparallel { get; set; }
+    public string? Vat18Amtparallel { get; set; }
+    public string? Vat19Amtparallel { get; set; }
+    public string? Vat20Amtparallel { get; set; }
     public decimal? DirectVatamt11 { get; set; }
     public decimal? DirectVatamt12 { get; set; }
     public decimal? DirectVatamt13 { get; set; }
@@ -388,36 +388,36 @@ public partial class WorkDocFolioFooter
     public decimal? DirectVatparallelamt18 { get; set; }
     public decimal? DirectVatparallelamt19 { get; set; }
     public decimal? DirectVatparallelamt20 { get; set; }
-    public string Net11Amt { get; set; }
-    public string Net12Amt { get; set; }
-    public string Net13Amt { get; set; }
-    public string Net14Amt { get; set; }
-    public string Net15Amt { get; set; }
-    public string Net16Amt { get; set; }
-    public string Net17Amt { get; set; }
-    public string Net18Amt { get; set; }
-    public string Net19Amt { get; set; }
-    public string Net20Amt { get; set; }
-    public string Net11Amteuro { get; set; }
-    public string Net12Amteuro { get; set; }
-    public string Net13Amteuro { get; set; }
-    public string Net14Amteuro { get; set; }
-    public string Net15Amteuro { get; set; }
-    public string Net16Amteuro { get; set; }
-    public string Net17Amteuro { get; set; }
-    public string Net18Amteuro { get; set; }
-    public string Net19Amteuro { get; set; }
-    public string Net20Amteuro { get; set; }
-    public string Net11Amtparallel { get; set; }
-    public string Net12Amtparallel { get; set; }
-    public string Net13Amtparallel { get; set; }
-    public string Net14Amtparallel { get; set; }
-    public string Net15Amtparallel { get; set; }
-    public string Net16Amtparallel { get; set; }
-    public string Net17Amtparallel { get; set; }
-    public string Net18Amtparallel { get; set; }
-    public string Net19Amtparallel { get; set; }
-    public string Net20Amtparallel { get; set; }
+    public string? Net11Amt { get; set; }
+    public string? Net12Amt { get; set; }
+    public string? Net13Amt { get; set; }
+    public string? Net14Amt { get; set; }
+    public string? Net15Amt { get; set; }
+    public string? Net16Amt { get; set; }
+    public string? Net17Amt { get; set; }
+    public string? Net18Amt { get; set; }
+    public string? Net19Amt { get; set; }
+    public string? Net20Amt { get; set; }
+    public string? Net11Amteuro { get; set; }
+    public string? Net12Amteuro { get; set; }
+    public string? Net13Amteuro { get; set; }
+    public string? Net14Amteuro { get; set; }
+    public string? Net15Amteuro { get; set; }
+    public string? Net16Amteuro { get; set; }
+    public string? Net17Amteuro { get; set; }
+    public string? Net18Amteuro { get; set; }
+    public string? Net19Amteuro { get; set; }
+    public string? Net20Amteuro { get; set; }
+    public string? Net11Amtparallel { get; set; }
+    public string? Net12Amtparallel { get; set; }
+    public string? Net13Amtparallel { get; set; }
+    public string? Net14Amtparallel { get; set; }
+    public string? Net15Amtparallel { get; set; }
+    public string? Net16Amtparallel { get; set; }
+    public string? Net17Amtparallel { get; set; }
+    public string? Net18Amtparallel { get; set; }
+    public string? Net19Amtparallel { get; set; }
+    public string? Net20Amtparallel { get; set; }
     public decimal? DirectNetamt11 { get; set; }
     public decimal? DirectNetamt12 { get; set; }
     public decimal? DirectNetamt13 { get; set; }
@@ -448,26 +448,26 @@ public partial class WorkDocFolioFooter
     public decimal? DirectNetparallelamt18 { get; set; }
     public decimal? DirectNetparallelamt19 { get; set; }
     public decimal? DirectNetparallelamt20 { get; set; }
-    public string Xvat11Amt { get; set; }
-    public string Xvat12Amt { get; set; }
-    public string Xvat13Amt { get; set; }
-    public string Xvat14Amt { get; set; }
-    public string Xvat15Amt { get; set; }
-    public string Xvat16Amt { get; set; }
-    public string Xvat17Amt { get; set; }
-    public string Xvat18Amt { get; set; }
-    public string Xvat19Amt { get; set; }
-    public string Xvat20Amt { get; set; }
-    public string Xvat11Amteuro { get; set; }
-    public string Xvat12Amteuro { get; set; }
-    public string Xvat13Amteuro { get; set; }
-    public string Xvat14Amteuro { get; set; }
-    public string Xvat15Amteuro { get; set; }
-    public string Xvat16Amteuro { get; set; }
-    public string Xvat17Amteuro { get; set; }
-    public string Xvat18Amteuro { get; set; }
-    public string Xvat19Amteuro { get; set; }
-    public string Xvat20Amteuro { get; set; }
+    public string? Xvat11Amt { get; set; }
+    public string? Xvat12Amt { get; set; }
+    public string? Xvat13Amt { get; set; }
+    public string? Xvat14Amt { get; set; }
+    public string? Xvat15Amt { get; set; }
+    public string? Xvat16Amt { get; set; }
+    public string? Xvat17Amt { get; set; }
+    public string? Xvat18Amt { get; set; }
+    public string? Xvat19Amt { get; set; }
+    public string? Xvat20Amt { get; set; }
+    public string? Xvat11Amteuro { get; set; }
+    public string? Xvat12Amteuro { get; set; }
+    public string? Xvat13Amteuro { get; set; }
+    public string? Xvat14Amteuro { get; set; }
+    public string? Xvat15Amteuro { get; set; }
+    public string? Xvat16Amteuro { get; set; }
+    public string? Xvat17Amteuro { get; set; }
+    public string? Xvat18Amteuro { get; set; }
+    public string? Xvat19Amteuro { get; set; }
+    public string? Xvat20Amteuro { get; set; }
     public decimal? DirectXvatamt11 { get; set; }
     public decimal? DirectXvatamt12 { get; set; }
     public decimal? DirectXvatamt13 { get; set; }
@@ -488,26 +488,26 @@ public partial class WorkDocFolioFooter
     public decimal? DirectXvateuroamt18 { get; set; }
     public decimal? DirectXvateuroamt19 { get; set; }
     public decimal? DirectXvateuroamt20 { get; set; }
-    public string Xnet11Amt { get; set; }
-    public string Xnet12Amt { get; set; }
-    public string Xnet13Amt { get; set; }
-    public string Xnet14Amt { get; set; }
-    public string Xnet15Amt { get; set; }
-    public string Xnet16Amt { get; set; }
-    public string Xnet17Amt { get; set; }
-    public string Xnet18Amt { get; set; }
-    public string Xnet19Amt { get; set; }
-    public string Xnet20Amt { get; set; }
-    public string Xnet11Amteuro { get; set; }
-    public string Xnet12Amteuro { get; set; }
-    public string Xnet13Amteuro { get; set; }
-    public string Xnet14Amteuro { get; set; }
-    public string Xnet15Amteuro { get; set; }
-    public string Xnet16Amteuro { get; set; }
-    public string Xnet17Amteuro { get; set; }
-    public string Xnet18Amteuro { get; set; }
-    public string Xnet19Amteuro { get; set; }
-    public string Xnet20Amteuro { get; set; }
+    public string? Xnet11Amt { get; set; }
+    public string? Xnet12Amt { get; set; }
+    public string? Xnet13Amt { get; set; }
+    public string? Xnet14Amt { get; set; }
+    public string? Xnet15Amt { get; set; }
+    public string? Xnet16Amt { get; set; }
+    public string? Xnet17Amt { get; set; }
+    public string? Xnet18Amt { get; set; }
+    public string? Xnet19Amt { get; set; }
+    public string? Xnet20Amt { get; set; }
+    public string? Xnet11Amteuro { get; set; }
+    public string? Xnet12Amteuro { get; set; }
+    public string? Xnet13Amteuro { get; set; }
+    public string? Xnet14Amteuro { get; set; }
+    public string? Xnet15Amteuro { get; set; }
+    public string? Xnet16Amteuro { get; set; }
+    public string? Xnet17Amteuro { get; set; }
+    public string? Xnet18Amteuro { get; set; }
+    public string? Xnet19Amteuro { get; set; }
+    public string? Xnet20Amteuro { get; set; }
     public decimal? DirectXnetamt11 { get; set; }
     public decimal? DirectXnetamt12 { get; set; }
     public decimal? DirectXnetamt13 { get; set; }

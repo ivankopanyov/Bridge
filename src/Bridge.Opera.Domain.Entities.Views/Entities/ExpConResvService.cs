@@ -12,12 +12,12 @@ public partial class ExpConResvService
     public decimal? TaxAmount { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string PostingRhythm { get; set; }
-    public string PackageCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string TaxType { get; set; }
-    public string TaxCode { get; set; }
-    public string TaxCurrencyCode { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? PackageCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? TaxType { get; set; }
+    public string? TaxCode { get; set; }
+    public string? TaxCurrencyCode { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
 

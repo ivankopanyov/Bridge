@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BusinessProfileBlock
 {
-    public decimal ProfileId { get; set; }
-    public decimal DayOrder { get; set; }
-    public decimal RoomCategory { get; set; }
+    public decimal? ProfileId { get; set; }
+    public decimal? DayOrder { get; set; }
+    public decimal? RoomCategory { get; set; }
     public decimal? ForecastedToSell { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

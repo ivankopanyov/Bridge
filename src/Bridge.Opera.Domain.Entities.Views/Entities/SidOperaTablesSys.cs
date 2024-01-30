@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidOperaTablesSys
 {
-    public string TableName { get; set; }
-    public string TableScope { get; set; }
-    public string TableType { get; set; }
-    public string MigrateYn { get; set; }
-    public string Filter { get; set; }
-    public string Remark { get; set; }
-    public string Owner { get; set; }
-    public string Module { get; set; }
+    public string? TableName { get; set; }
+    public string? TableScope { get; set; }
+    public string? TableType { get; set; }
+    public string? MigrateYn { get; set; }
+    public string? Filter { get; set; }
+    public string? Remark { get; set; }
+    public string? Owner { get; set; }
+    public string? Module { get; set; }
     public decimal? OrderBy { get; set; }
-    public string PrimaryKey { get; set; }
+    public string? PrimaryKey { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string DowntimeFilter { get; set; }
+    public string? DowntimeFilter { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

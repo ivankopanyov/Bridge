@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class AqOedsMessageQueueTableG
 {
     public Guid Msgid { get; set; }
-    public decimal Subscriber { get; set; }
-    public string Name { get; set; }
-    public decimal Address { get; set; }
+    public decimal? Subscriber { get; set; }
+    public string? Name { get; set; }
+    public decimal? Address { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

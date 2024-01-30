@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class TravelerView
 {
     public decimal? NameId { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string Name { get; set; }
-    public string DisplayName { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Title { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayName { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Title { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

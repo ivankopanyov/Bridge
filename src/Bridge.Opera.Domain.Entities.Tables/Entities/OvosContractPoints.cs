@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosContractPoints
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
     public decimal? ContractId { get; set; }
-    public string PointType { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? PointType { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RateCode { get; set; }
-    public decimal Points { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? RateCode { get; set; }
+    public decimal? Points { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? RateMultiplier { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string ReferralYn { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? ReferralYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

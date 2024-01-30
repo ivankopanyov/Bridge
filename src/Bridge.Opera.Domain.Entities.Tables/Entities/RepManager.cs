@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepManager
 {
-    public DateTime BusinessDate { get; set; }
-    public string RoomClass { get; set; }
-    public string Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Resort { get; set; }
     public decimal? OccRoom { get; set; }
     public decimal? CompRoom { get; set; }
     public decimal? HouseUseRoom { get; set; }
@@ -141,7 +141,7 @@ public partial class RepManager
     public decimal? FfRoomRevenue { get; set; }
     public decimal? FfOtherRevenue { get; set; }
     public decimal? FfFoodBevRevenue { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
     public decimal? PhysicalBeds { get; set; }
     public decimal? OccBeds { get; set; }

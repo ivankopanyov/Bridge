@@ -2,86 +2,86 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipPoints
 {
-    public string MembershipType { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public string CalculationRule { get; set; }
-    public string TypeOfPoints { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? TypeOfPoints { get; set; }
     public decimal? PointsRatio { get; set; }
     public decimal? PointsBase { get; set; }
-    public string Resort { get; set; }
-    public string MemberLevel { get; set; }
-    public string RuleBasedOn { get; set; }
-    public string MemRateGroup { get; set; }
-    public string RateCode { get; set; }
-    public string MemMarketGroup { get; set; }
-    public string MarketCode { get; set; }
-    public string RevenueGroup { get; set; }
-    public string PromotionCode { get; set; }
-    public string ResortGroup { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? Resort { get; set; }
+    public string? MemberLevel { get; set; }
+    public string? RuleBasedOn { get; set; }
+    public string? MemRateGroup { get; set; }
+    public string? RateCode { get; set; }
+    public string? MemMarketGroup { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RevenueGroup { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? ResortGroup { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? MinimumNights { get; set; }
     public decimal? MaximumNights { get; set; }
     public decimal? MinimumRateAmount { get; set; }
     public decimal? CostPerPoint { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string TransactionType { get; set; }
-    public string ProgramType { get; set; }
-    public string MultipleTransactionsYn { get; set; }
-    public string QualifyingRatesYn { get; set; }
-    public string MemRevenueGroup { get; set; }
-    public string EnrollCode { get; set; }
-    public string MemEnrollGroup { get; set; }
+    public string? TransactionType { get; set; }
+    public string? ProgramType { get; set; }
+    public string? MultipleTransactionsYn { get; set; }
+    public string? QualifyingRatesYn { get; set; }
+    public string? MemRevenueGroup { get; set; }
+    public string? EnrollCode { get; set; }
+    public string? MemEnrollGroup { get; set; }
     public DateTime? ExpirationDate { get; set; }
     public decimal? MinimumStays { get; set; }
     public decimal? MinimumRevenue { get; set; }
     public decimal? MaximumRevenue { get; set; }
-    public string CreditMultipleMembershipYn { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? CreditMultipleMembershipYn { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
     public decimal? NoTimesEligible { get; set; }
-    public string ElegibleDate { get; set; }
-    public string MemRateGroupExcludeYn { get; set; }
-    public string UserpostingOnlyYn { get; set; }
+    public string? ElegibleDate { get; set; }
+    public string? MemRateGroupExcludeYn { get; set; }
+    public string? UserpostingOnlyYn { get; set; }
     public decimal? AvgRateAmount { get; set; }
-    public string PseudoRuleYn { get; set; }
-    public string RoomLabel { get; set; }
-    public string RoomClass { get; set; }
-    public string RuleCode { get; set; }
-    public string ChainCode { get; set; }
-    public string ExportLabel { get; set; }
-    public string BillingGroup { get; set; }
+    public string? PseudoRuleYn { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RuleCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ExportLabel { get; set; }
+    public string? BillingGroup { get; set; }
     public decimal? MaxBucketSize { get; set; }
     public decimal? MinPropertiesReq { get; set; }
-    public string ExcludeRevGroup { get; set; }
-    public string ExcludeMktGroup { get; set; }
+    public string? ExcludeRevGroup { get; set; }
+    public string? ExcludeMktGroup { get; set; }
     public DateTime? BookBeginDate { get; set; }
     public DateTime? BookEndDate { get; set; }
-    public string Channel { get; set; }
-    public string ExcludePointProj { get; set; }
-    public string ExcludeBbFlg { get; set; }
-    public string PointsEligibilityCode { get; set; }
-    public string AllMembershipTrxYn { get; set; }
-    public string AllMembershipRatesYn { get; set; }
+    public string? Channel { get; set; }
+    public string? ExcludePointProj { get; set; }
+    public string? ExcludeBbFlg { get; set; }
+    public string? PointsEligibilityCode { get; set; }
+    public string? AllMembershipTrxYn { get; set; }
+    public string? AllMembershipRatesYn { get; set; }
     public decimal? DaysFromEnroll { get; set; }
-    public string PointsRatioPercentYn { get; set; }
-    public string PointsRatioRoundingFlg { get; set; }
-    public string RtcYn { get; set; }
-    public string MemRoomGroup { get; set; }
-    public string EarningRhythmFlg { get; set; }
+    public string? PointsRatioPercentYn { get; set; }
+    public string? PointsRatioRoundingFlg { get; set; }
+    public string? RtcYn { get; set; }
+    public string? MemRoomGroup { get; set; }
+    public string? EarningRhythmFlg { get; set; }
     public decimal? EarningRhythmNights { get; set; }
-    public string ToMemberLevel { get; set; }
-    public string IncludeGraceRenewalFlg { get; set; }
+    public string? ToMemberLevel { get; set; }
+    public string? IncludeGraceRenewalFlg { get; set; }
 
     public virtual MembershipTypes MembershipTypes { get; set; }
 

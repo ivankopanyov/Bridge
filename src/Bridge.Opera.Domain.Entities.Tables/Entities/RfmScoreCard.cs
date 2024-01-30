@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RfmScoreCard
 {
-    public string ChainCode { get; set; }
-    public string RfmCode { get; set; }
-    public string DetailCode { get; set; }
-    public decimal Score { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal ValueRequired { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RfmCode { get; set; }
+    public string? DetailCode { get; set; }
+    public decimal? Score { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? ValueRequired { get; set; }
 
     public virtual RfmCodeDetails RfmCodeDetails { get; set; }
 

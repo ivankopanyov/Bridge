@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractStatus
 {
-    public string Status { get; set; }
-    public string Description { get; set; }
-    public string DeductInventory { get; set; }
-    public string AllowPickup { get; set; }
-    public string ReturnToInventory { get; set; }
-    public string StatusType { get; set; }
-    public string StartingStatus { get; set; }
+    public string? Status { get; set; }
+    public string? Description { get; set; }
+    public string? DeductInventory { get; set; }
+    public string? AllowPickup { get; set; }
+    public string? ReturnToInventory { get; set; }
+    public string? StatusType { get; set; }
+    public string? StartingStatus { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ShowdiaryYn { get; set; }
-    public string Color { get; set; }
-    public string ReasonType { get; set; }
-    public string DefResvType { get; set; }
-    public string CatStatusType { get; set; }
-    public string CatDeductInventory { get; set; }
-    public string LogCateringYn { get; set; }
-    public string LeadStatusYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ShowdiaryYn { get; set; }
+    public string? Color { get; set; }
+    public string? ReasonType { get; set; }
+    public string? DefResvType { get; set; }
+    public string? CatStatusType { get; set; }
+    public string? CatDeductInventory { get; set; }
+    public string? LogCateringYn { get; set; }
+    public string? LeadStatusYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

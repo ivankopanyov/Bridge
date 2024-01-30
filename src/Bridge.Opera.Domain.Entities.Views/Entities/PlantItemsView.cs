@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PlantItemsView
 {
-    public string Resort { get; set; }
-    public string PlantItemCode { get; set; }
-    public string PlantItemName { get; set; }
-    public string TypeCode { get; set; }
-    public string LocationCode { get; set; }
-    public string Room { get; set; }
+    public string? Resort { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? PlantItemName { get; set; }
+    public string? TypeCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? Room { get; set; }
     public decimal? ActualYtd { get; set; }
     public decimal? BudgetYtd { get; set; }
-    public string ExternalInfo { get; set; }
-    public string PmRequiredYn { get; set; }
+    public string? ExternalInfo { get; set; }
+    public string? PmRequiredYn { get; set; }
     public DateTime? LastMaintDate { get; set; }
     public DateTime? NextMaintDueDate { get; set; }
     public decimal? LastMaintTask { get; set; }
     public decimal? NextMaintTask { get; set; }
-    public string TypeDesc { get; set; }
-    public string LocationDesc { get; set; }
+    public string? TypeDesc { get; set; }
+    public string? LocationDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

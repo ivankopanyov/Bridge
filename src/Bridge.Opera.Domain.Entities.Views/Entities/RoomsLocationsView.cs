@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomsLocationsView
 {
-    public string ConcatDesc { get; set; }
-    public string LocCode { get; set; }
-    public string Type { get; set; }
-    public string LocationDesc { get; set; }
-    public string Resort { get; set; }
-    public string ApplicableToPmYn { get; set; }
+    public string? ConcatDesc { get; set; }
+    public string? LocCode { get; set; }
+    public string? Type { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ApplicableToPmYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiXmlBuildStat
 {
-    public decimal XmlLoadid { get; set; }
-    public string AwName { get; set; }
+    public decimal? XmlLoadid { get; set; }
+    public string? AwName { get; set; }
     public decimal? Processed { get; set; }
     public decimal? Rejected { get; set; }
     public DateTime? BuildStartTime { get; set; }

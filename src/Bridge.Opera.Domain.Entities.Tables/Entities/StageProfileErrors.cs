@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileErrors
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string ErrorField { get; set; }
-    public string ErrorValue { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? ErrorField { get; set; }
+    public string? ErrorValue { get; set; }
+    public string? ErrorDesc { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }
 

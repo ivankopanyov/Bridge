@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PrHistoryReservation
 {
-    public string NameType { get; set; }
-    public string Resort { get; set; }
-    public string FSource { get; set; }
-    public string MarketCode { get; set; }
+    public string? NameType { get; set; }
+    public string? Resort { get; set; }
+    public string? FSource { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? ResvNo { get; set; }
-    public string FReservationtype { get; set; }
-    public string FResort { get; set; }
-    public string FRate { get; set; }
+    public string? FReservationtype { get; set; }
+    public string? FResort { get; set; }
+    public string? FRate { get; set; }
     public decimal? FRateAmt { get; set; }
-    public string FRoom { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomType { get; set; }
+    public string? FRoom { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomType { get; set; }
     public decimal? FPrice { get; set; }
     public decimal? FAdults { get; set; }
     public decimal? FChildren { get; set; }
@@ -21,31 +21,31 @@ public partial class PrHistoryReservation
     public DateTime? ReserveBeginDate { get; set; }
     public DateTime? FArrival { get; set; }
     public DateTime? FDeparture { get; set; }
-    public string FGuestName { get; set; }
+    public string? FGuestName { get; set; }
     public decimal? NameId { get; set; }
     public decimal? FGuestId { get; set; }
-    public string FAgent { get; set; }
-    public string FGroup { get; set; }
-    public string FSourcename { get; set; }
-    public string FCompany { get; set; }
+    public string? FAgent { get; set; }
+    public string? FGroup { get; set; }
+    public string? FSourcename { get; set; }
+    public string? FCompany { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
     public decimal? NoOfRooms { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
-    public string ResvStatus { get; set; }
-    public string ModifyYn { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ModifyYn { get; set; }
     public decimal? ResvContactId { get; set; }
-    public string ResvContactName { get; set; }
+    public string? ResvContactName { get; set; }
     public decimal? NonRevenue { get; set; }
-    public string RecType { get; set; }
-    public string CheckedInYn { get; set; }
+    public string? RecType { get; set; }
+    public string? CheckedInYn { get; set; }
     public decimal? IsPrimaryFlag { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public decimal? InvoiceNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

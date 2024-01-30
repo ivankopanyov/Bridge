@@ -2,60 +2,60 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipBillingTrxVw
 {
-    public string RecordFlg { get; set; }
+    public string? RecordFlg { get; set; }
     public decimal? StatementBatchId { get; set; }
     public decimal? MemberStatementId { get; set; }
     public decimal? RecordId { get; set; }
     public decimal? BucketId { get; set; }
     public decimal? MembershipPointsSeqno { get; set; }
     public DateTime? RecordDate { get; set; }
-    public string RecordType { get; set; }
-    public string RecordTypeDesc { get; set; }
-    public string Resort { get; set; }
-    public string PmsResvNo { get; set; }
-    public string OrsBookNo { get; set; }
+    public string? RecordType { get; set; }
+    public string? RecordTypeDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? OrsBookNo { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? MembershipId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
     public DateTime? PostingDate { get; set; }
     public decimal? Points { get; set; }
     public decimal? PosPoints { get; set; }
     public decimal? NegPoints { get; set; }
-    public string PointsCalculatedYn { get; set; }
-    public string AdjustmentYn { get; set; }
+    public string? PointsCalculatedYn { get; set; }
+    public string? AdjustmentYn { get; set; }
     public decimal? StayRecordId { get; set; }
-    public string AwardType { get; set; }
+    public string? AwardType { get; set; }
     public DateTime? PointsExpirationDate { get; set; }
     public decimal? MembershipTrxLinkId { get; set; }
     public decimal? ParentMembershipTrxId { get; set; }
-    public string UserNotes { get; set; }
+    public string? UserNotes { get; set; }
     public decimal? AwardCancellationNo { get; set; }
-    public string ResvCancellationNo { get; set; }
+    public string? ResvCancellationNo { get; set; }
     public decimal? TrxInsertUser { get; set; }
     public DateTime? TrxInsertDate { get; set; }
     public decimal? TrxUpdateUser { get; set; }
     public DateTime? TrxUpdateDate { get; set; }
-    public string BillingGroup { get; set; }
-    public string BillingGroupLabel { get; set; }
-    public string ExchangeCode { get; set; }
+    public string? BillingGroup { get; set; }
+    public string? BillingGroupLabel { get; set; }
+    public string? ExchangeCode { get; set; }
     public decimal? MemExchRate { get; set; }
-    public string BillingParty { get; set; }
+    public string? BillingParty { get; set; }
     public decimal? CertId { get; set; }
-    public string CertificateNo { get; set; }
-    public string CertCode { get; set; }
+    public string? CertificateNo { get; set; }
+    public string? CertCode { get; set; }
     public DateTime? CertConsumptionDate { get; set; }
     public DateTime? CertCertExpiryDate { get; set; }
-    public string CertConsumerLastName { get; set; }
-    public string CertConsumerFirstName { get; set; }
+    public string? CertConsumerLastName { get; set; }
+    public string? CertConsumerFirstName { get; set; }
     public decimal? CertResvNameId { get; set; }
     public decimal? PointsValue { get; set; }
     public decimal? PosPointsValue { get; set; }
     public decimal? NegPointsValue { get; set; }
-    public string OcisCurrencyCode { get; set; }
+    public string? OcisCurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

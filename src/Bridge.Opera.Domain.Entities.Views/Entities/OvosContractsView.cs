@@ -2,52 +2,52 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OvosContractsView
 {
-    public decimal ContractId { get; set; }
-    public string Resort { get; set; }
-    public string TemplateCode { get; set; }
-    public string Description { get; set; }
-    public string Status { get; set; }
-    public string ContractNumber { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? Resort { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? Description { get; set; }
+    public string? Status { get; set; }
+    public string? ContractNumber { get; set; }
     public decimal? OwnerNameId { get; set; }
     public decimal? OwnerAddressId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ContractType { get; set; }
-    public string Unit { get; set; }
+    public string? ContractType { get; set; }
+    public string? Unit { get; set; }
     public decimal? AdvBookingDays { get; set; }
-    public string RentalProgramYn { get; set; }
+    public string? RentalProgramYn { get; set; }
     public DateTime? RentalBeginDate { get; set; }
     public DateTime? RentalEndDate { get; set; }
-    public string AutoRenewalYn { get; set; }
-    public string OptOutPenaltyFormula { get; set; }
+    public string? AutoRenewalYn { get; set; }
+    public string? OptOutPenaltyFormula { get; set; }
     public decimal? OptOutPenalty { get; set; }
     public decimal? CommByOwner { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string SalesAssociate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? SalesAssociate { get; set; }
     public DateTime? ContractPresentedDate { get; set; }
-    public string SsnTaxId { get; set; }
+    public string? SsnTaxId { get; set; }
     public DateTime? EstimatedClosingDate { get; set; }
     public decimal? PurchasePrice { get; set; }
-    public string RealEstateAgent { get; set; }
-    public string SpecialChangesToUnit { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
+    public string? RealEstateAgent { get; set; }
+    public string? SpecialChangesToUnit { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -78,86 +78,86 @@ public partial class OvosContractsView
     public DateTime? Udfd13 { get; set; }
     public DateTime? Udfd14 { get; set; }
     public DateTime? Udfd15 { get; set; }
-    public string SysStatus { get; set; }
-    public decimal OwnerContractId { get; set; }
-    public string OwnerResortId { get; set; }
-    public decimal Id { get; set; }
-    public string ProfileType { get; set; }
-    public decimal NameId { get; set; }
+    public string? SysStatus { get; set; }
+    public decimal? OwnerContractId { get; set; }
+    public string? OwnerResortId { get; set; }
+    public decimal? Id { get; set; }
+    public string? ProfileType { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? AddressId { get; set; }
     public decimal? RevenueShare { get; set; }
     public decimal? CommissionShare { get; set; }
-    public string ModifyUnitYn { get; set; }
-    public string NameType { get; set; }
-    public string Name { get; set; }
-    public string DisplayName { get; set; }
-    public string Last { get; set; }
-    public string Company { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string TitleName { get; set; }
-    public string Language { get; set; }
-    public string LanguageDesc { get; set; }
-    public string Nationality { get; set; }
-    public string NationalityDesc { get; set; }
-    public string Salutation { get; set; }
-    public string ArNo { get; set; }
-    public string Xname { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string XdisplayName { get; set; }
+    public string? ModifyUnitYn { get; set; }
+    public string? NameType { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayName { get; set; }
+    public string? Last { get; set; }
+    public string? Company { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? TitleName { get; set; }
+    public string? Language { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? Nationality { get; set; }
+    public string? NationalityDesc { get; set; }
+    public string? Salutation { get; set; }
+    public string? ArNo { get; set; }
+    public string? Xname { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? XdisplayName { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string EnvelopeGreeting { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string Protected { get; set; }
-    public string AddressType { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string CityExt { get; set; }
+    public string? EnvelopeGreeting { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? Protected { get; set; }
+    public string? AddressType { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CityExt { get; set; }
     public decimal? PhoneId { get; set; }
-    public string PhoneNo { get; set; }
-    public string PhoneType { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? PhoneType { get; set; }
     public decimal? FaxId { get; set; }
-    public string FaxNo { get; set; }
+    public string? FaxNo { get; set; }
     public decimal? EmailId { get; set; }
-    public string Email { get; set; }
-    public string OwnerRoomCategory { get; set; }
-    public string OwnerRoomCategoryLabel { get; set; }
+    public string? Email { get; set; }
+    public string? OwnerRoomCategory { get; set; }
+    public string? OwnerRoomCategoryLabel { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? AccountTypeId { get; set; }
-    public string AccountName { get; set; }
-    public string AccountSname { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountSname { get; set; }
     public decimal? Balance { get; set; }
-    public string AccountStatus { get; set; }
+    public string? AccountStatus { get; set; }
     public decimal? AccNameId { get; set; }
-    public string AccResort { get; set; }
+    public string? AccResort { get; set; }
     public decimal? CurrentInvoiceNo { get; set; }
-    public string ContractPassword { get; set; }
+    public string? ContractPassword { get; set; }
     public decimal? OwnerRevShare { get; set; }
-    public string RevShareFormula { get; set; }
-    public string IgnoreTemplateUpdateYn { get; set; }
-    public string FractionalYn { get; set; }
-    public string RepeatCycle { get; set; }
+    public string? RevShareFormula { get; set; }
+    public string? IgnoreTemplateUpdateYn { get; set; }
+    public string? FractionalYn { get; set; }
+    public string? RepeatCycle { get; set; }
     public decimal? RepeatLength { get; set; }
     public DateTime? RepeatStart { get; set; }
-    public string GetYn { get; set; }
-    public string TatYn { get; set; }
-    public string Relation { get; set; }
-    public string VipStatus { get; set; }
+    public string? GetYn { get; set; }
+    public string? TatYn { get; set; }
+    public string? Relation { get; set; }
+    public string? VipStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

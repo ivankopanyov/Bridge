@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DeptShiftPagers
 {
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string ShiftId { get; set; }
-    public string ShiftPager { get; set; }
-    public string InactiveYn { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? ShiftId { get; set; }
+    public string? ShiftPager { get; set; }
+    public string? InactiveYn { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

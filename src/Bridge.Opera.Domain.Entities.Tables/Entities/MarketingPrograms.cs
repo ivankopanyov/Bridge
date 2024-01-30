@@ -8,18 +8,18 @@ public partial class MarketingPrograms
         Promotions = new HashSet<Promotions>();
     }
 
-    public string Resort { get; set; }
-    public string Mpcode { get; set; }
-    public string MpPlan { get; set; }
-    public string MpName { get; set; }
-    public string MpType { get; set; }
-    public string MpForAirlineYn { get; set; }
-    public string RevenueBasedYn { get; set; }
-    public string LocalCurrencyYn { get; set; }
-    public string ProgramCurrencyCode { get; set; }
-    public string ExchangeRateTypeCde { get; set; }
+    public string? Resort { get; set; }
+    public string? Mpcode { get; set; }
+    public string? MpPlan { get; set; }
+    public string? MpName { get; set; }
+    public string? MpType { get; set; }
+    public string? MpForAirlineYn { get; set; }
+    public string? RevenueBasedYn { get; set; }
+    public string? LocalCurrencyYn { get; set; }
+    public string? ProgramCurrencyCode { get; set; }
+    public string? ExchangeRateTypeCde { get; set; }
     public byte? MinimumMembershipLength { get; set; }
-    public string MpIdEmul { get; set; }
+    public string? MpIdEmul { get; set; }
 
     public virtual ICollection<Awards> Awards { get; set; }
     public virtual ICollection<Promotions> Promotions { get; set; }

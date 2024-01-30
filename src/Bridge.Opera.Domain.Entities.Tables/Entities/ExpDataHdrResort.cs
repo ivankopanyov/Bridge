@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpDataHdrResort
 {
-    public decimal ExpDataId { get; set; }
-    public string Resort { get; set; }
-    public string Status { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public string? Resort { get; set; }
+    public string? Status { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

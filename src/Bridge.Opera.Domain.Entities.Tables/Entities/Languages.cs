@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Languages
 {
-    public string LanguageCode { get; set; }
-    public string TranslationLanguageCode { get; set; }
-    public string LanguageDesc { get; set; }
-    public string NlsLanguage { get; set; }
-    public string Preferredlanguage { get; set; }
-    public string ChainCode { get; set; }
-    public string Locale { get; set; }
-    public string NativeWritingSystem { get; set; }
-    public string EnrollmentAltYn { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? TranslationLanguageCode { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? NlsLanguage { get; set; }
+    public string? Preferredlanguage { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Locale { get; set; }
+    public string? NativeWritingSystem { get; set; }
+    public string? EnrollmentAltYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

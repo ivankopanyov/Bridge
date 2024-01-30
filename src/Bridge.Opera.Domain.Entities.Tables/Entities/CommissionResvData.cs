@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CommissionResvData
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? TravelAgentId { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? CommissionPaid { get; set; }
-    public string PaidTaYn { get; set; }
-    public string PaidSourceYn { get; set; }
-    public string ProcessedYn { get; set; }
+    public string? PaidTaYn { get; set; }
+    public string? PaidSourceYn { get; set; }
+    public string? ProcessedYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

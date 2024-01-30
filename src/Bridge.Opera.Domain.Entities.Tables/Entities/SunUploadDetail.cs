@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SunUploadDetail
 {
-    public decimal HeaderId { get; set; }
-    public decimal TrxId { get; set; }
-    public string MerchantReference { get; set; }
-    public string MerchantTerminal { get; set; }
-    public string TransactionCode { get; set; }
-    public string PurchaseDate { get; set; }
-    public string PurchaseTime { get; set; }
-    public string Amount { get; set; }
-    public string Ccnumber { get; set; }
-    public string CcStartDate { get; set; }
-    public string CcExpiryDate { get; set; }
-    public string AuthorisationCode { get; set; }
-    public string BudgetPeriod { get; set; }
-    public string OrgMerchantReference { get; set; }
-    public string ResultStatus { get; set; }
-    public string TransationStatus { get; set; }
-    public string CycleNumber { get; set; }
-    public string TraceNumber { get; set; }
-    public string ReconciliationStatus { get; set; }
-    public string PreauthorizationCode { get; set; }
-    public string PenaltyYn { get; set; }
+    public decimal? HeaderId { get; set; }
+    public decimal? TrxId { get; set; }
+    public string? MerchantReference { get; set; }
+    public string? MerchantTerminal { get; set; }
+    public string? TransactionCode { get; set; }
+    public string? PurchaseDate { get; set; }
+    public string? PurchaseTime { get; set; }
+    public string? Amount { get; set; }
+    public string? Ccnumber { get; set; }
+    public string? CcStartDate { get; set; }
+    public string? CcExpiryDate { get; set; }
+    public string? AuthorisationCode { get; set; }
+    public string? BudgetPeriod { get; set; }
+    public string? OrgMerchantReference { get; set; }
+    public string? ResultStatus { get; set; }
+    public string? TransationStatus { get; set; }
+    public string? CycleNumber { get; set; }
+    public string? TraceNumber { get; set; }
+    public string? ReconciliationStatus { get; set; }
+    public string? PreauthorizationCode { get; set; }
+    public string? PenaltyYn { get; set; }
 
     public virtual SunUploadHeader Header { get; set; }
 

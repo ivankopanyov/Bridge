@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SmsDeliveryMethods
 {
-    public string Resort { get; set; }
-    public string Partnerid { get; set; }
-    public string ServiceType { get; set; }
-    public string ServiceId { get; set; }
-    public string UrlName { get; set; }
-    public string UrlParameter { get; set; }
+    public string? Resort { get; set; }
+    public string? Partnerid { get; set; }
+    public string? ServiceType { get; set; }
+    public string? ServiceId { get; set; }
+    public string? UrlName { get; set; }
+    public string? UrlParameter { get; set; }
     public decimal? MsgTimeout { get; set; }
-    public string DelivMethod { get; set; }
-    public string ServicePassword { get; set; }
-    public string ServiceFormat { get; set; }
-    public string ServiceSubject { get; set; }
+    public string? DelivMethod { get; set; }
+    public string? ServicePassword { get; set; }
+    public string? ServiceFormat { get; set; }
+    public string? ServiceSubject { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

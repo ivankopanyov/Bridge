@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsGuestLoginPassword
 {
-    public string LoginName { get; set; }
-    public string Password { get; set; }
-    public decimal PwdChgNo { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? LoginName { get; set; }
+    public string? Password { get; set; }
+    public decimal? PwdChgNo { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

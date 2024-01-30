@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpSapTrx
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FromResvId { get; set; }
-    public string Room { get; set; }
-    public string FromRoom { get; set; }
+    public string? Room { get; set; }
+    public string? FromRoom { get; set; }
     public decimal? ArNumber { get; set; }
     public decimal? NameId { get; set; }
-    public string TrxCode { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TcGroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TcGroup { get; set; }
     public decimal? Amount { get; set; }
     public decimal? RevenueAmount { get; set; }
     public decimal? TrxAmount { get; set; }
@@ -26,45 +26,45 @@ public partial class ExpSapTrx
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? InsertUser { get; set; }
-    public string InsertUserEmpnumber { get; set; }
-    public string InsertUserName { get; set; }
+    public string? InsertUserEmpnumber { get; set; }
+    public string? InsertUserName { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string CheckNo { get; set; }
-    public string Covers { get; set; }
-    public string TrxCodeType { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
-    public string Duration { get; set; }
-    public string NumberDialed { get; set; }
+    public string? CheckNo { get; set; }
+    public string? Covers { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Duration { get; set; }
+    public string? NumberDialed { get; set; }
     public decimal? ArCredit { get; set; }
     public decimal? ArDebit { get; set; }
     public decimal? DepositCredit { get; set; }
     public decimal? DepositDebit { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
-    public string Ledger { get; set; }
-    public string LedgerDebit { get; set; }
-    public string IsInternalYn { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
+    public string? Ledger { get; set; }
+    public string? LedgerDebit { get; set; }
+    public string? IsInternalYn { get; set; }
     public decimal? InternalDbPayments { get; set; }
-    public string PmsVersion { get; set; }
+    public string? PmsVersion { get; set; }
     public decimal? AccountNo { get; set; }
     public decimal? TotalTrx { get; set; }
-    public string GuestName { get; set; }
-    public string CurrencyCode { get; set; }
-    public string CompFlag { get; set; }
-    public string OoDescription { get; set; }
-    public string HotelCode { get; set; }
-    public string ArAccountNumber { get; set; }
+    public string? GuestName { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? CompFlag { get; set; }
+    public string? OoDescription { get; set; }
+    public string? HotelCode { get; set; }
+    public string? ArAccountNumber { get; set; }
     public decimal? Arrivals { get; set; }
     public decimal? Departures { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? BillNo { get; set; }
-    public string RoomClass { get; set; }
-    public string SourceCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? SourceCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

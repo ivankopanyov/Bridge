@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActionTypeSubscriptionWhere
 {
-    public decimal ClauseId { get; set; }
-    public string ExtSystemCode { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string DataElementState { get; set; }
-    public string DataElement { get; set; }
-    public string Operator { get; set; }
-    public string DeValue { get; set; }
-    public string Andor { get; set; }
+    public decimal? ClauseId { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElementState { get; set; }
+    public string? DataElement { get; set; }
+    public string? Operator { get; set; }
+    public string? DeValue { get; set; }
+    public string? Andor { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

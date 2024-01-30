@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FinTranDetail
 {
-    public decimal FinTranDetailId { get; set; }
-    public string Resort { get; set; }
-    public decimal TrxNo { get; set; }
-    public string LanguageCode { get; set; }
-    public string TrxDescription { get; set; }
+    public decimal? FinTranDetailId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? TrxDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

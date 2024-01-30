@@ -7,14 +7,14 @@ public partial class ExpEspPay
     public DateTime? ConsideredDate { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? Amount { get; set; }
-    public string PayIndicator { get; set; }
-    public string PaymentType { get; set; }
+    public string? PayIndicator { get; set; }
+    public string? PaymentType { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string CcNo { get; set; }
+    public string? CcNo { get; set; }
     public DateTime? CcExpDate { get; set; }
-    public string CcType { get; set; }
-    public string TrxCode { get; set; }
+    public string? CcType { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

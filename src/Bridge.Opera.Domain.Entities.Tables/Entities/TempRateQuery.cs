@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempRateQuery
 {
-    public string Col { get; set; }
-    public string GdsOnRequest { get; set; }
+    public string? Col { get; set; }
+    public string? GdsOnRequest { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

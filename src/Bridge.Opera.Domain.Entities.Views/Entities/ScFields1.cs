@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScFields1
 {
-    public string Tablename { get; set; }
-    public string Fieldname { get; set; }
-    public string Language { get; set; }
-    public string RealTable { get; set; }
-    public string Description { get; set; }
-    public string RealField { get; set; }
-    public string DisplayYn { get; set; }
-    public string ObjType { get; set; }
-    public string TraceGroup { get; set; }
-    public string DataType { get; set; }
-    public string LovYn { get; set; }
-    public string UserDescription { get; set; }
-    public string MailingYn { get; set; }
-    public string FolioXmlYn { get; set; }
-    public string FieldDefaultsYn { get; set; }
-    public string TracesYn { get; set; }
-    public string FilterYn { get; set; }
-    public string ContractYn { get; set; }
-    public string StartTag { get; set; }
-    public string EndTag { get; set; }
-    public string DefaultValue { get; set; }
-    public string DataInfo { get; set; }
-    public string DescriptionOriginal { get; set; }
+    public string? Tablename { get; set; }
+    public string? Fieldname { get; set; }
+    public string? Language { get; set; }
+    public string? RealTable { get; set; }
+    public string? Description { get; set; }
+    public string? RealField { get; set; }
+    public string? DisplayYn { get; set; }
+    public string? ObjType { get; set; }
+    public string? TraceGroup { get; set; }
+    public string? DataType { get; set; }
+    public string? LovYn { get; set; }
+    public string? UserDescription { get; set; }
+    public string? MailingYn { get; set; }
+    public string? FolioXmlYn { get; set; }
+    public string? FieldDefaultsYn { get; set; }
+    public string? TracesYn { get; set; }
+    public string? FilterYn { get; set; }
+    public string? ContractYn { get; set; }
+    public string? StartTag { get; set; }
+    public string? EndTag { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? DataInfo { get; set; }
+    public string? DescriptionOriginal { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MessageBin
 {
-    public string Resort { get; set; }
-    public string Recipient { get; set; }
+    public string? Resort { get; set; }
+    public string? Recipient { get; set; }
     public DateTime? ExpireTime { get; set; }
-    public string Frequency { get; set; }
-    public string Message { get; set; }
-    public string Module { get; set; }
-    public decimal MessageId { get; set; }
-    public decimal Priority { get; set; }
-    public string ProcedureName { get; set; }
+    public string? Frequency { get; set; }
+    public string? Message { get; set; }
+    public string? Module { get; set; }
+    public decimal? MessageId { get; set; }
+    public decimal? Priority { get; set; }
+    public string? ProcedureName { get; set; }
     public decimal? Sid { get; set; }
-    public string ExcludedSessions { get; set; }
+    public string? ExcludedSessions { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

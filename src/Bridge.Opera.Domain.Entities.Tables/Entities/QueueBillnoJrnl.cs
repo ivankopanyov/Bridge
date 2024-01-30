@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class QueueBillnoJrnl
 {
-    public string QueueName { get; set; }
-    public string PrinterName { get; set; }
+    public string? QueueName { get; set; }
+    public string? PrinterName { get; set; }
     public decimal? LastStartBillno { get; set; }
     public decimal? LastGeneratedBillno { get; set; }
-    public string NewBillno { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? NewBillno { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

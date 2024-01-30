@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiStayRecTypeDim
 {
-    public string AllId { get; set; }
-    public string AllDesc { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string ResortId { get; set; }
-    public string RecTypeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? AllId { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? ResortId { get; set; }
+    public string? RecTypeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

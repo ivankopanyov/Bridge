@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DeferredPackageTaxes
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FromResvId { get; set; }
     public decimal? ParentTrxNo { get; set; }

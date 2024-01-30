@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DatabaseResortUtil
 {
-    public string DatabaseId { get; set; }
-    public string Resort { get; set; }
-    public string OldDatabaseId { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMsg { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? Resort { get; set; }
+    public string? OldDatabaseId { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMsg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

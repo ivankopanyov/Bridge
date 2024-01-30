@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmCampiagnEspReply
 {
-    public decimal ReplyRecId { get; set; }
+    public decimal? ReplyRecId { get; set; }
     public decimal? CampaignId { get; set; }
     public decimal? SegBatchId { get; set; }
     public decimal? OcrmProfileId { get; set; }
-    public string RecordLocator { get; set; }
-    public string MailListFlg { get; set; }
-    public string MarketResearchFlg { get; set; }
-    public string ThirdPartyFlg { get; set; }
-    public string AutoenrollMemberFlg { get; set; }
-    public string EmailFlg { get; set; }
-    public string GuestPrivFlg { get; set; }
-    public string PhoneFlg { get; set; }
-    public string SmsFlg { get; set; }
+    public string? RecordLocator { get; set; }
+    public string? MailListFlg { get; set; }
+    public string? MarketResearchFlg { get; set; }
+    public string? ThirdPartyFlg { get; set; }
+    public string? AutoenrollMemberFlg { get; set; }
+    public string? EmailFlg { get; set; }
+    public string? GuestPrivFlg { get; set; }
+    public string? PhoneFlg { get; set; }
+    public string? SmsFlg { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

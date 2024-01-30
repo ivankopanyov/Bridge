@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationRestrictionsAll
 {
-    public decimal ReservationRestrictionId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RestrictionType { get; set; }
+    public decimal? ReservationRestrictionId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RestrictionType { get; set; }
     public decimal? LosUnits { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string SeasonCode { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RateTier { get; set; }
-    public string RoomClass { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateTier { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? HurdleRate { get; set; }
-    public string YieldCreatedYn { get; set; }
-    public string Los1Yn { get; set; }
-    public string Los2Yn { get; set; }
-    public string Los3Yn { get; set; }
-    public string Los4Yn { get; set; }
-    public string Los5Yn { get; set; }
-    public string Los6Yn { get; set; }
-    public string Los7Yn { get; set; }
+    public string? YieldCreatedYn { get; set; }
+    public string? Los1Yn { get; set; }
+    public string? Los2Yn { get; set; }
+    public string? Los3Yn { get; set; }
+    public string? Los4Yn { get; set; }
+    public string? Los5Yn { get; set; }
+    public string? Los6Yn { get; set; }
+    public string? Los7Yn { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string ClearPreviousYn { get; set; }
-    public decimal DaySeq { get; set; }
-    public string GdsOnRequest { get; set; }
-    public string GdsHost { get; set; }
-    public string Ordr { get; set; }
-    public string RestrType { get; set; }
-    public string Yieldability { get; set; }
+    public string? ClearPreviousYn { get; set; }
+    public decimal? DaySeq { get; set; }
+    public string? GdsOnRequest { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Ordr { get; set; }
+    public string? RestrType { get; set; }
+    public string? Yieldability { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

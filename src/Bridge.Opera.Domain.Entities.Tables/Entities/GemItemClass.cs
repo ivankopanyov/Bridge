@@ -10,16 +10,16 @@ public partial class GemItemClass
         ItemcEvtype = new HashSet<ItemcEvtype>();
     }
 
-    public decimal ItemclassId { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
-    public string IconName { get; set; }
+    public decimal? ItemclassId { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
+    public string? IconName { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string UsedInApp { get; set; }
-    public string DiscountableYn { get; set; }
-    public string ItemclassCode { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? DiscountableYn { get; set; }
+    public string? ItemclassCode { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual ICollection<GemItem> GemItem { get; set; }
     public virtual ICollection<GemItemcDepartment> GemItemcDepartment { get; set; }

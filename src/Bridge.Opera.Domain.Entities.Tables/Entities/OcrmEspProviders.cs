@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmEspProviders
 {
-    public string EspCode { get; set; }
-    public string EspName { get; set; }
-    public string EspDescription { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string QCode { get; set; }
+    public string? EspCode { get; set; }
+    public string? EspName { get; set; }
+    public string? EspDescription { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? QCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string DefaultQCode { get; set; }
+    public string? DefaultQCode { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

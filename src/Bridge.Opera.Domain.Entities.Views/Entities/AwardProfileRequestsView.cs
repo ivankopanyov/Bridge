@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AwardProfileRequestsView
 {
-    public string AprRowid { get; set; }
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
+    public string? AprRowid { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string CertificateNumber { get; set; }
-    public string MembershipNo { get; set; }
-    public string AwardCode { get; set; }
-    public string Status { get; set; }
+    public string? CertificateNumber { get; set; }
+    public string? MembershipNo { get; set; }
+    public string? AwardCode { get; set; }
+    public string? Status { get; set; }
     public DateTime? ExpireDate { get; set; }
-    public string IsGift { get; set; }
-    public string HotelCategory { get; set; }
-    public string IsCategoryValid { get; set; }
-    public string AwardType { get; set; }
-    public string Description { get; set; }
+    public string? IsGift { get; set; }
+    public string? HotelCategory { get; set; }
+    public string? IsCategoryValid { get; set; }
+    public string? AwardType { get; set; }
+    public string? Description { get; set; }
     public decimal? Nights { get; set; }
     public decimal? AwardQty { get; set; }
-    public string IsPackage { get; set; }
-    public string IsUpgrade { get; set; }
-    public string SourceType { get; set; }
+    public string? IsPackage { get; set; }
+    public string? IsUpgrade { get; set; }
+    public string? SourceType { get; set; }
     public decimal? OrderBy { get; set; }
-    public string MasterCertificateNumber { get; set; }
-    public string ReservationCertificateType { get; set; }
-    public string RewardCertificateType { get; set; }
-    public string InstantRedemptionYn { get; set; }
+    public string? MasterCertificateNumber { get; set; }
+    public string? ReservationCertificateType { get; set; }
+    public string? RewardCertificateType { get; set; }
+    public string? InstantRedemptionYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CrsHotelCode { get; set; }
-    public string CrsConfirmationNumber { get; set; }
+    public string? CrsHotelCode { get; set; }
+    public string? CrsConfirmationNumber { get; set; }
     public decimal? PointsCost { get; set; }
-    public string FbaYn { get; set; }
-    public string FbaStatus { get; set; }
+    public string? FbaYn { get; set; }
+    public string? FbaStatus { get; set; }
     public decimal? FbaMonetaryValue { get; set; }
     public decimal? FbaAmount { get; set; }
     public decimal? FbaPostedAmount { get; set; }
@@ -46,11 +46,11 @@ public partial class AwardProfileRequestsView
     public DateTime? FbaReimbursementDateTime { get; set; }
     public DateTime? FbaReimburseBusinessDate { get; set; }
     public decimal? FbaPostingTrxNo { get; set; }
-    public string PaidUpgradeYn { get; set; }
-    public string IsResCertOrDetailCert { get; set; }
-    public string FbaPostedYn { get; set; }
-    public string FbaSettledYn { get; set; }
-    public string FbaReimbursedYn { get; set; }
+    public string? PaidUpgradeYn { get; set; }
+    public string? IsResCertOrDetailCert { get; set; }
+    public string? FbaPostedYn { get; set; }
+    public string? FbaSettledYn { get; set; }
+    public string? FbaReimbursedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

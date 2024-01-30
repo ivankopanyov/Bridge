@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidScFieldOperatorSys
 {
-    public string DefaultYn { get; set; }
-    public string FieldType { get; set; }
-    public string LovYn { get; set; }
-    public string Operator { get; set; }
-    public string OpDesc { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? FieldType { get; set; }
+    public string? LovYn { get; set; }
+    public string? Operator { get; set; }
+    public string? OpDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

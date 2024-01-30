@@ -5,13 +5,13 @@ public partial class ExpUpeResvProducts
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ProductSource { get; set; }
-    public string ProductId { get; set; }
+    public string? ProductSource { get; set; }
+    public string? ProductId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ProductDescription { get; set; }
+    public string? ProductDescription { get; set; }
     public decimal? Quantity { get; set; }
-    public string PostingRhythm { get; set; }
+    public string? PostingRhythm { get; set; }
     public decimal? Price { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

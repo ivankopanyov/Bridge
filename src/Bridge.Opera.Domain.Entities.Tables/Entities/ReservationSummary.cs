@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationSummary
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public string EventType { get; set; }
-    public string EventId { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public string? EventType { get; set; }
+    public string? EventId { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string RateCode { get; set; }
-    public string RegionCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? GroupId { get; set; }
-    public string ResvType { get; set; }
-    public string ResvInvType { get; set; }
-    public string PsuedoRoomYn { get; set; }
+    public string? ResvType { get; set; }
+    public string? ResvInvType { get; set; }
+    public string? PsuedoRoomYn { get; set; }
     public decimal? ArrRooms { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
@@ -31,25 +31,25 @@ public partial class ReservationSummary
     public decimal? PickedupBlockRooms { get; set; }
     public decimal? SingleOccupancy { get; set; }
     public decimal? MultipleOccupancy { get; set; }
-    public string BlockStatus { get; set; }
+    public string? BlockStatus { get; set; }
     public decimal? ArrPersons { get; set; }
     public decimal? DepPersons { get; set; }
     public decimal? WlRooms { get; set; }
     public decimal? WlPersons { get; set; }
     public decimal? DayUseRooms { get; set; }
     public decimal? DayUsePersons { get; set; }
-    public string BookingStatus { get; set; }
-    public string ResvStatus { get; set; }
-    public string DayUseYn { get; set; }
-    public string Channel { get; set; }
-    public string Country { get; set; }
-    public string Nationality { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? DayUseYn { get; set; }
+    public string? Channel { get; set; }
+    public string? Country { get; set; }
+    public string? Nationality { get; set; }
     public decimal? Cribs { get; set; }
     public decimal? ExtraBeds { get; set; }
     public decimal? AdultsTaxFree { get; set; }
     public decimal? ChildrenTaxFree { get; set; }
-    public string RateCategory { get; set; }
-    public string RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateClass { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FoodRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
@@ -61,17 +61,17 @@ public partial class ReservationSummary
     public decimal? OtherRevenueTax { get; set; }
     public decimal? TotalRevenueTax { get; set; }
     public decimal? NonRevenueTax { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string District { get; set; }
-    public string State { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? District { get; set; }
+    public string? State { get; set; }
     public decimal? Children1 { get; set; }
     public decimal? Children2 { get; set; }
     public decimal? Children3 { get; set; }
     public decimal? Children4 { get; set; }
     public decimal? Children5 { get; set; }
-    public string OwnerFfFlag { get; set; }
-    public string OwnerRentalFlag { get; set; }
+    public string? OwnerFfFlag { get; set; }
+    public string? OwnerRentalFlag { get; set; }
     public decimal? FcGrossRate { get; set; }
     public decimal? FcNetRoomRevenue { get; set; }
     public decimal? FcExtraRevenue { get; set; }
@@ -85,23 +85,23 @@ public partial class ReservationSummary
     public decimal? FcOtherRevenueTax { get; set; }
     public decimal? FcTotalRevenueTax { get; set; }
     public decimal? FcNonRevenueTax { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public DateTime? ExchangeDate { get; set; }
     public DateTime? UpdateBusinessDate { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
-    public string Gender { get; set; }
-    public string VipStatus { get; set; }
+    public string? Gender { get; set; }
+    public string? VipStatus { get; set; }
     public decimal? Quantity { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
-    public string ResInsertSource { get; set; }
+    public string? ResInsertSource { get; set; }
     public decimal? ParentCompanyId { get; set; }
     public decimal? AgentId { get; set; }
-    public string TurndownStatus { get; set; }
-    public string BookedRoomCategory { get; set; }
+    public string? TurndownStatus { get; set; }
+    public string? BookedRoomCategory { get; set; }
     public decimal? SourceProfId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

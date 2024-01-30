@@ -7,9 +7,9 @@ public partial class ScheduleTemplates
         EmpAvail = new HashSet<EmpAvail>();
     }
 
-    public decimal TemplateId { get; set; }
-    public string TemplateName { get; set; }
-    public string Resort { get; set; }
+    public decimal? TemplateId { get; set; }
+    public string? TemplateName { get; set; }
+    public string? Resort { get; set; }
 
     public virtual ICollection<EmpAvail> EmpAvail { get; set; }
 

@@ -7,57 +7,57 @@ public partial class ReservationReceipts
         CrCardSettle = new HashSet<CrCardSettle>();
     }
 
-    public string Resort { get; set; }
-    public decimal ResvReceiptId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvReceiptId { get; set; }
     public decimal? CreditCardId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string OriginFlag { get; set; }
-    public string Track2Data { get; set; }
-    public string IssueNumber { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? OriginFlag { get; set; }
+    public string? Track2Data { get; set; }
+    public string? IssueNumber { get; set; }
     public decimal? Amount { get; set; }
     public DateTime? ReceiptDate { get; set; }
-    public string ExtendedPayment { get; set; }
+    public string? ExtendedPayment { get; set; }
     public decimal? ReceiptBatchId { get; set; }
-    public string Comments { get; set; }
-    public string UcfFlag { get; set; }
+    public string? Comments { get; set; }
+    public string? UcfFlag { get; set; }
     public DateTime? DateToProcess { get; set; }
-    public string OriginalApprovalCode { get; set; }
-    public string ApprovalCode { get; set; }
+    public string? OriginalApprovalCode { get; set; }
+    public string? ApprovalCode { get; set; }
     public decimal? ApprovalAmount { get; set; }
     public decimal? ReceiptId { get; set; }
     public decimal? CallHeaderId { get; set; }
-    public string CheckNumber { get; set; }
-    public string CashReceiptType { get; set; }
-    public string ReferenceNumber { get; set; }
-    public string ManuallyEnteredYn { get; set; }
-    public string PromotionData1 { get; set; }
-    public string PromotionData2 { get; set; }
-    public decimal AuthorisationCount { get; set; }
+    public string? CheckNumber { get; set; }
+    public string? CashReceiptType { get; set; }
+    public string? ReferenceNumber { get; set; }
+    public string? ManuallyEnteredYn { get; set; }
+    public string? PromotionData1 { get; set; }
+    public string? PromotionData2 { get; set; }
+    public decimal? AuthorisationCount { get; set; }
     public decimal? PreSettlementAuthAmount { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string SwipedYn { get; set; }
-    public string DccYn { get; set; }
-    public string CcCurrencyCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? SwipedYn { get; set; }
+    public string? DccYn { get; set; }
+    public string? CcCurrencyCode { get; set; }
     public decimal? CcExchangeRate { get; set; }
     public decimal? CcCurrencyAmount { get; set; }
-    public string CcControlId { get; set; }
+    public string? CcControlId { get; set; }
     public decimal? FolioView { get; set; }
-    public string CcCryptogram { get; set; }
+    public string? CcCryptogram { get; set; }
     public decimal? IncidentalApprovalAmount { get; set; }
     public decimal? AuthSequenceNo { get; set; }
-    public string CpCardYn { get; set; }
-    public string TransactionType { get; set; }
-    public string VendorTranId { get; set; }
+    public string? CpCardYn { get; set; }
+    public string? TransactionType { get; set; }
+    public string? VendorTranId { get; set; }
     public decimal? ArNumber { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ApprovalAmountFc { get; set; }
     public decimal? IncidentalApprovalAmountFc { get; set; }
     public decimal? RecptNo { get; set; }
-    public string CardPresentYn { get; set; }
-    public string LoyaltyRedemptionReference { get; set; }
+    public string? CardPresentYn { get; set; }
+    public string? LoyaltyRedemptionReference { get; set; }
 
     public virtual ArAccount ArAccount { get; set; }
     public virtual NameCreditCard CreditCard { get; set; }

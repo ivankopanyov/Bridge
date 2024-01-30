@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WoPbxIn
 {
-    public string Resort { get; set; }
-    public string PbxInString { get; set; }
-    public DateTime RequestedDate { get; set; }
+    public string? Resort { get; set; }
+    public string? PbxInString { get; set; }
+    public DateTime? RequestedDate { get; set; }
     public decimal? SequenceNo { get; set; }
     public decimal? WoNumber { get; set; }
 

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestEnrollmentPhone
 {
-    public decimal EnrollmentSeqId { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneRole { get; set; }
-    public string PhoneNumber { get; set; }
+    public decimal? EnrollmentSeqId { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneRole { get; set; }
+    public string? PhoneNumber { get; set; }
     public decimal? CountryDialingCode { get; set; }
-    public string EmailPrefCodes { get; set; }
-    public string PhoneCountryCode { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? EmailPrefCodes { get; set; }
+    public string? PhoneCountryCode { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? OrderBy { get; set; }
 
     public virtual GuestEnrollment EnrollmentSeq { get; set; }

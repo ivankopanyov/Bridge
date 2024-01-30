@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileEntities
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string EntityCode { get; set; }
-    public string IncludedYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? EntityCode { get; set; }
+    public string? IncludedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

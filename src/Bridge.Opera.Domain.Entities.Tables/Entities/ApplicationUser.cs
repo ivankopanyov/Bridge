@@ -11,56 +11,56 @@ public partial class ApplicationUser
         ExtSystemsUsers = new HashSet<ExtSystemsUsers>();
     }
 
-    public decimal AppUserId { get; set; }
-    public string AppUser { get; set; }
-    public string AppPassword { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? AppUser { get; set; }
+    public string? AppPassword { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? OracleUid { get; set; }
-    public string OracleUser { get; set; }
-    public string OraclePassword { get; set; }
+    public string? OracleUser { get; set; }
+    public string? OraclePassword { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Title { get; set; }
-    public string DefaultForm { get; set; }
-    public string Name { get; set; }
-    public string AppUserType { get; set; }
-    public string LastLoggedResort { get; set; }
+    public string? Title { get; set; }
+    public string? DefaultForm { get; set; }
+    public string? Name { get; set; }
+    public string? AppUserType { get; set; }
+    public string? LastLoggedResort { get; set; }
     public decimal? DefCashierId { get; set; }
-    public string AppUserDescription { get; set; }
+    public string? AppUserDescription { get; set; }
     public decimal? PersonNameId { get; set; }
     public DateTime? DisabledUntil { get; set; }
     public DateTime? ExpiresOn { get; set; }
     public DateTime? LastLoggedTimestamp { get; set; }
-    public string IsSuperuser { get; set; }
-    public string EmployeeNumber { get; set; }
-    public string GeneralFilepath { get; set; }
-    public string UserFilepath { get; set; }
-    public string DefaultResort { get; set; }
+    public string? IsSuperuser { get; set; }
+    public string? EmployeeNumber { get; set; }
+    public string? GeneralFilepath { get; set; }
+    public string? UserFilepath { get; set; }
+    public string? DefaultResort { get; set; }
     public decimal? MaxUserSessions { get; set; }
-    public string InternalYn { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? MaxCheckoutDays { get; set; }
-    public string DefaultTerminal { get; set; }
-    public string DefaultLanguage { get; set; }
-    public string DeptId { get; set; }
-    public string MaleFemale { get; set; }
+    public string? DefaultTerminal { get; set; }
+    public string? DefaultLanguage { get; set; }
+    public string? DeptId { get; set; }
+    public string? MaleFemale { get; set; }
     public decimal? UserPbxId { get; set; }
     public DateTime? DateHired { get; set; }
-    public string WorkPermitNo { get; set; }
+    public string? WorkPermitNo { get; set; }
     public DateTime? WorkPermitExpdate { get; set; }
-    public string RateType { get; set; }
-    public string SalaryInterval { get; set; }
+    public string? RateType { get; set; }
+    public string? SalaryInterval { get; set; }
     public decimal? HourlyRate { get; set; }
     public decimal? WeeklySalary { get; set; }
     public decimal? OtMultiplier { get; set; }
-    public string HireType { get; set; }
-    public string RehireYn { get; set; }
-    public string EmpExtension { get; set; }
-    public string EmpPager { get; set; }
-    public string TermReason { get; set; }
+    public string? HireType { get; set; }
+    public string? RehireYn { get; set; }
+    public string? EmpExtension { get; set; }
+    public string? EmpPager { get; set; }
+    public string? TermReason { get; set; }
     public DateTime? TerminatedDate { get; set; }
-    public string InactiveReasonCode { get; set; }
+    public string? InactiveReasonCode { get; set; }
     public DateTime? InactiveFrom { get; set; }
     public DateTime? InactiveTo { get; set; }
     public decimal? WeekMin { get; set; }
@@ -79,55 +79,55 @@ public partial class ApplicationUser
     public decimal? SaturdayMax { get; set; }
     public decimal? SundayMin { get; set; }
     public decimal? SundayMax { get; set; }
-    public string Comments { get; set; }
-    public string LeadAddress { get; set; }
-    public string LeadComm { get; set; }
-    public string LeadAddressDet { get; set; }
+    public string? Comments { get; set; }
+    public string? LeadAddress { get; set; }
+    public string? LeadComm { get; set; }
+    public string? LeadAddressDet { get; set; }
     public decimal? LaptopId { get; set; }
     public decimal? HoursPerWeek { get; set; }
-    public string EmpStatus { get; set; }
+    public string? EmpStatus { get; set; }
     public DateTime? PasswordLastChange { get; set; }
     public decimal? PasswordChangeDays { get; set; }
     public decimal? GraceLogin { get; set; }
-    public string SrepGroup { get; set; }
-    public string DefaultReportgroup { get; set; }
-    public string AuthorizerYn { get; set; }
+    public string? SrepGroup { get; set; }
+    public string? DefaultReportgroup { get; set; }
+    public string? AuthorizerYn { get; set; }
     public DateTime? AuthorizerInactiveDate { get; set; }
-    public string SfaName { get; set; }
-    public string LoginCro { get; set; }
-    public string AuthorizerRateCode { get; set; }
-    public string LoginDomain { get; set; }
-    public string ReceiveBroadcastMsg { get; set; }
-    public string DefaultMfnResort { get; set; }
-    public string MfnUserType { get; set; }
-    public string ForcePasswordChangeYn { get; set; }
-    public string AccountLockedOutYn { get; set; }
-    public string PreventAccountLockout { get; set; }
+    public string? SfaName { get; set; }
+    public string? LoginCro { get; set; }
+    public string? AuthorizerRateCode { get; set; }
+    public string? LoginDomain { get; set; }
+    public string? ReceiveBroadcastMsg { get; set; }
+    public string? DefaultMfnResort { get; set; }
+    public string? MfnUserType { get; set; }
+    public string? ForcePasswordChangeYn { get; set; }
+    public string? AccountLockedOutYn { get; set; }
+    public string? PreventAccountLockout { get; set; }
     public DateTime? LockoutDate { get; set; }
-    public string AccessPms { get; set; }
-    public string AccessSc { get; set; }
-    public string AccessConfig { get; set; }
-    public string AccessEod { get; set; }
-    public string AccessUtil { get; set; }
-    public string AccessOrs { get; set; }
-    public string AccessSfa { get; set; }
-    public string AccessOcis { get; set; }
-    public string AccessOcm { get; set; }
-    public string AccessOxi { get; set; }
-    public string AccessOxihub { get; set; }
-    public string ChainCode { get; set; }
-    public string AppUserUniq { get; set; }
+    public string? AccessPms { get; set; }
+    public string? AccessSc { get; set; }
+    public string? AccessConfig { get; set; }
+    public string? AccessEod { get; set; }
+    public string? AccessUtil { get; set; }
+    public string? AccessOrs { get; set; }
+    public string? AccessSfa { get; set; }
+    public string? AccessOcis { get; set; }
+    public string? AccessOcm { get; set; }
+    public string? AccessOxi { get; set; }
+    public string? AccessOxihub { get; set; }
+    public string? ChainCode { get; set; }
+    public string? AppUserUniq { get; set; }
     public decimal? MaxDaysAfterCo { get; set; }
-    public string UserGroupAdmin { get; set; }
-    public string AccessOrms { get; set; }
-    public string AccessObi { get; set; }
-    public string SrepCode { get; set; }
+    public string? UserGroupAdmin { get; set; }
+    public string? AccessOrms { get; set; }
+    public string? AccessObi { get; set; }
+    public string? SrepCode { get; set; }
     public decimal? LoginAttempts { get; set; }
-    public string PropertyAccessYn { get; set; }
-    public string AccessScbi { get; set; }
-    public string TimezoneRegion { get; set; }
-    public string AccessOcrm { get; set; }
-    public string EmployeeIncentiveNumber { get; set; }
+    public string? PropertyAccessYn { get; set; }
+    public string? AccessScbi { get; set; }
+    public string? TimezoneRegion { get; set; }
+    public string? AccessOcrm { get; set; }
+    public string? EmployeeIncentiveNumber { get; set; }
 
     public virtual Name PersonName { get; set; }
     public virtual ExtSystems ExtSystems { get; set; }

@@ -3,22 +3,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ScRepCateringProgressBi
 {
     public decimal? ReportId { get; set; }
-    public string RtRowid { get; set; }
-    public string Resort { get; set; }
-    public string EvResort { get; set; }
+    public string? RtRowid { get; set; }
+    public string? Resort { get; set; }
+    public string? EvResort { get; set; }
     public decimal? BookId { get; set; }
-    public string BookingStatus { get; set; }
-    public string IsThisLastYearYn { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? IsThisLastYearYn { get; set; }
     public decimal? EventId { get; set; }
-    public string EvType { get; set; }
-    public string MealType { get; set; }
-    public string MarketCode { get; set; }
-    public string CateringOnlyYn { get; set; }
+    public string? EvType { get; set; }
+    public string? MealType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? CateringOnlyYn { get; set; }
     public DateTime? EventDate { get; set; }
-    public string CurrentStatus { get; set; }
-    public string NewCurrentStatus { get; set; }
+    public string? CurrentStatus { get; set; }
+    public string? NewCurrentStatus { get; set; }
     public DateTime? EventStatusChangeDate { get; set; }
-    public string RevenueType { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? RevenueChanges { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? NewDefRevenue { get; set; }

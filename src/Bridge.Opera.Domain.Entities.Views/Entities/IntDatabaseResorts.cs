@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntDatabaseResorts
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ExternalResort { get; set; }
-    public string DatabaseId { get; set; }
-    public string BeConsumerName { get; set; }
-    public string SystemType { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ExternalResort { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? BeConsumerName { get; set; }
+    public string? SystemType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

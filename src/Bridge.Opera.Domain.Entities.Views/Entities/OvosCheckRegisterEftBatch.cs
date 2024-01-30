@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OvosCheckRegisterEftBatch
 {
-    public decimal AccountId { get; set; }
-    public string Resort { get; set; }
-    public decimal BatchId { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BatchId { get; set; }
     public decimal? BatchAmt { get; set; }
     public DateTime? BatchDate { get; set; }
-    public string BatchCurrency { get; set; }
-    public string Status { get; set; }
+    public string? BatchCurrency { get; set; }
+    public string? Status { get; set; }
     public DateTime? ActionDate { get; set; }
-    public string EftFileName { get; set; }
-    public string ClearedYn { get; set; }
+    public string? EftFileName { get; set; }
+    public string? ClearedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

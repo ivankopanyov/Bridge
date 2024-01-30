@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StandardTexts
 {
-    public string DeptId { get; set; }
+    public string? DeptId { get; set; }
     public decimal? TextId { get; set; }
-    public string Description { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string Resort { get; set; }
+    public string? Description { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

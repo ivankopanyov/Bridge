@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReqForPublItems
 {
-    public decimal RfpiRfpId { get; set; }
-    public decimal RfpiNo { get; set; }
-    public string RfpiPCode { get; set; }
+    public decimal? RfpiRfpId { get; set; }
+    public decimal? RfpiNo { get; set; }
+    public string? RfpiPCode { get; set; }
     public decimal? RfpiQty { get; set; }
     public decimal? RfpiItemTba { get; set; }
     public decimal? RfpId { get; set; }

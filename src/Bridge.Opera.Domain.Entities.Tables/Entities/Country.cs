@@ -9,27 +9,27 @@ public partial class Country
         ResortCountry = new HashSet<ResortCountry>();
     }
 
-    public string Name { get; set; }
-    public string Status { get; set; }
-    public string CountryCode { get; set; }
-    public string GuestAddressFormat { get; set; }
-    public string PropertyAddressFormat { get; set; }
-    public string CountryName { get; set; }
-    public string StatisticCode { get; set; }
-    public string RegionCode { get; set; }
+    public string? Name { get; set; }
+    public string? Status { get; set; }
+    public string? CountryCode { get; set; }
+    public string? GuestAddressFormat { get; set; }
+    public string? PropertyAddressFormat { get; set; }
+    public string? CountryName { get; set; }
+    public string? StatisticCode { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string IsoCode { get; set; }
-    public string IsoName { get; set; }
+    public string? IsoCode { get; set; }
+    public string? IsoName { get; set; }
     public decimal? ShowSequence { get; set; }
     public decimal? PrintSequence { get; set; }
-    public string CountryMainGroup { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string AddressdoctorMode { get; set; }
-    public string DisplayCountryFlagYn { get; set; }
+    public string? CountryMainGroup { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? AddressdoctorMode { get; set; }
+    public string? DisplayCountryFlagYn { get; set; }
 
     public virtual ICollection<CountryLanguages> CountryLanguages { get; set; }
     public virtual ICollection<Resort> Resort { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpSys21Room
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string Floor { get; set; }
-    public string OooYn { get; set; }
-    public string VacantYn { get; set; }
-    public string CondoInd { get; set; }
-    public string ProgramStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Floor { get; set; }
+    public string? OooYn { get; set; }
+    public string? VacantYn { get; set; }
+    public string? CondoInd { get; set; }
+    public string? ProgramStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

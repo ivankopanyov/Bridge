@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GlNumbers
 {
-    public string GlNum { get; set; }
+    public string? GlNum { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

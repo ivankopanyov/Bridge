@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SimpleDynFieldsSid
 {
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ObjectType { get; set; }
-    public string ObjectName { get; set; }
-    public string ObjectDatatype { get; set; }
-    public string ObjectWindow { get; set; }
-    public string ChildObjectType1 { get; set; }
-    public string ChildObjectName1 { get; set; }
-    public string ChildObjectType2 { get; set; }
-    public string ChildObjectName2 { get; set; }
-    public string HideYn { get; set; }
-    public string DefaultYn { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ObjectType { get; set; }
+    public string? ObjectName { get; set; }
+    public string? ObjectDatatype { get; set; }
+    public string? ObjectWindow { get; set; }
+    public string? ChildObjectType1 { get; set; }
+    public string? ChildObjectName1 { get; set; }
+    public string? ChildObjectType2 { get; set; }
+    public string? ChildObjectName2 { get; set; }
+    public string? HideYn { get; set; }
+    public string? DefaultYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

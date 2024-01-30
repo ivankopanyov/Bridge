@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdRoomcatstat
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public decimal ExistingRooms { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public decimal? ExistingRooms { get; set; }
     public decimal? OoRooms { get; set; }
     public decimal? OsRooms { get; set; }
     public decimal? ExistingBeds { get; set; }

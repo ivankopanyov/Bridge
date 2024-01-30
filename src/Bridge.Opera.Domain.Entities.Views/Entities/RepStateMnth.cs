@@ -5,8 +5,8 @@ public partial class RepStateMnth
     public decimal? RoomsMnth { get; set; }
     public decimal? PersonsMnth { get; set; }
     public decimal? RevenueMnth { get; set; }
-    public string State { get; set; }
-    public string ReservationDate { get; set; }
+    public string? State { get; set; }
+    public string? ReservationDate { get; set; }
     public decimal? ResMnth { get; set; }
     public decimal? ResYr { get; set; }
 

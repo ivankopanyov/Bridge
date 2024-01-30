@@ -7,110 +7,110 @@ public partial class ExpBtrRecordsDay
     public decimal? RowSequence { get; set; }
     public decimal? RecordType { get; set; }
     public decimal? FolioView { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ConfNo { get; set; }
-    public string AccProdId { get; set; }
-    public string PseudoYn { get; set; }
-    public string ShareYn { get; set; }
-    public string MrNumber { get; set; }
-    public string MrLevel { get; set; }
-    public string MrPref { get; set; }
-    public string FfCode { get; set; }
-    public string FfType { get; set; }
-    public string PaymentMethod { get; set; }
-    public string CcType { get; set; }
-    public string CreditCard { get; set; }
+    public string? ConfNo { get; set; }
+    public string? AccProdId { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? ShareYn { get; set; }
+    public string? MrNumber { get; set; }
+    public string? MrLevel { get; set; }
+    public string? MrPref { get; set; }
+    public string? FfCode { get; set; }
+    public string? FfType { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? CcType { get; set; }
+    public string? CreditCard { get; set; }
     public DateTime? CcExpy { get; set; }
-    public string CcAuthCode { get; set; }
+    public string? CcAuthCode { get; set; }
     public decimal? NameId { get; set; }
     public decimal? CcAuthAmt { get; set; }
-    public string OppNo { get; set; }
-    public string SwipeYn { get; set; }
-    public string ResvStatus { get; set; }
-    public string BtrType { get; set; }
+    public string? OppNo { get; set; }
+    public string? SwipeYn { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? BtrType { get; set; }
     public DateTime? QueueDate { get; set; }
-    public string QueueTime { get; set; }
-    public string EarlyDepYn { get; set; }
-    public string WalkinYn { get; set; }
-    public string HostmultInd { get; set; }
-    public string BlockCode { get; set; }
-    public string BlockId { get; set; }
-    public string Specials { get; set; }
-    public string RoomPref { get; set; }
-    public string ArAccount { get; set; }
-    public string AwardCode { get; set; }
-    public string B2cProgType { get; set; }
-    public string B2cEmail { get; set; }
-    public string PrintYn { get; set; }
+    public string? QueueTime { get; set; }
+    public string? EarlyDepYn { get; set; }
+    public string? WalkinYn { get; set; }
+    public string? HostmultInd { get; set; }
+    public string? BlockCode { get; set; }
+    public string? BlockId { get; set; }
+    public string? Specials { get; set; }
+    public string? RoomPref { get; set; }
+    public string? ArAccount { get; set; }
+    public string? AwardCode { get; set; }
+    public string? B2cProgType { get; set; }
+    public string? B2cEmail { get; set; }
+    public string? PrintYn { get; set; }
     public decimal? TotalDebit { get; set; }
     public decimal? TotalCredit { get; set; }
     public DateTime? ResvDailyDate { get; set; }
-    public string Origin { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
+    public string? Origin { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? Amount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomType { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomType { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string ProfType { get; set; }
-    public string AccName { get; set; }
-    public string AccAddress1 { get; set; }
-    public string AccAddress2 { get; set; }
-    public string AccCity { get; set; }
-    public string AccState { get; set; }
-    public string AccZip { get; set; }
-    public string AccCountry { get; set; }
-    public string AccContact { get; set; }
-    public string AccConPhone { get; set; }
-    public string IataNumber { get; set; }
+    public string? ProfType { get; set; }
+    public string? AccName { get; set; }
+    public string? AccAddress1 { get; set; }
+    public string? AccAddress2 { get; set; }
+    public string? AccCity { get; set; }
+    public string? AccState { get; set; }
+    public string? AccZip { get; set; }
+    public string? AccCountry { get; set; }
+    public string? AccContact { get; set; }
+    public string? AccConPhone { get; set; }
+    public string? IataNumber { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxDesc { get; set; }
-    public string TrxRef { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? TrxRef { get; set; }
     public DateTime? TrxInsertDate { get; set; }
     public decimal? NetAmount { get; set; }
-    public string RetailYn { get; set; }
-    public string UserCode { get; set; }
+    public string? RetailYn { get; set; }
+    public string? UserCode { get; set; }
     public DateTime? PhoneDate { get; set; }
-    public string PhoneNo { get; set; }
-    public string PhoneDuration { get; set; }
-    public string TrxSuppl { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? PhoneDuration { get; set; }
+    public string? TrxSuppl { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? IntLink { get; set; }
     public decimal? TrxNoTax { get; set; }
-    public string TrxMrEligYn { get; set; }
-    public string Cashier { get; set; }
-    public string DbAccount { get; set; }
-    public string Certificate { get; set; }
-    public string IsUpgrade { get; set; }
-    public string CcAuthStatus { get; set; }
-    public string PptNo { get; set; }
-    public string PptLang { get; set; }
+    public string? TrxMrEligYn { get; set; }
+    public string? Cashier { get; set; }
+    public string? DbAccount { get; set; }
+    public string? Certificate { get; set; }
+    public string? IsUpgrade { get; set; }
+    public string? CcAuthStatus { get; set; }
+    public string? PptNo { get; set; }
+    public string? PptLang { get; set; }
     public DateTime? PptBirthDate { get; set; }
-    public string PptCountry { get; set; }
+    public string? PptCountry { get; set; }
     public DateTime? PptIssueDate { get; set; }
     public DateTime? PptExpDate { get; set; }
-    public string PptPlace { get; set; }
+    public string? PptPlace { get; set; }
     public DateTime? ResvInsertDate { get; set; }
-    public string EmailAddress { get; set; }
+    public string? EmailAddress { get; set; }
     public decimal? FromResvId { get; set; }
     public DateTime? FromResvInsertDate { get; set; }
-    public string ResvStatFlag { get; set; }
-    public string CheckNo { get; set; }
-    public string OrigRoom { get; set; }
-    public string HotelCode { get; set; }
-    public string ExtRefNo { get; set; }
-    public string MrBonusCode { get; set; }
+    public string? ResvStatFlag { get; set; }
+    public string? CheckNo { get; set; }
+    public string? OrigRoom { get; set; }
+    public string? HotelCode { get; set; }
+    public string? ExtRefNo { get; set; }
+    public string? MrBonusCode { get; set; }
     public decimal? MrEligRevenue { get; set; }
-    public string DepositYn { get; set; }
-    public string CustomReference { get; set; }
+    public string? DepositYn { get; set; }
+    public string? CustomReference { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

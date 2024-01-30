@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventTypes1
 {
-    public string EventType { get; set; }
-    public string Description { get; set; }
+    public string? EventType { get; set; }
+    public string? Description { get; set; }
     public byte? OrderBy { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
@@ -12,9 +12,9 @@ public partial class EventTypes1
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string MealType { get; set; }
-    public string CoverableYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? MealType { get; set; }
+    public string? CoverableYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

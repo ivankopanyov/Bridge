@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AwardRateCodes
 {
-    public decimal AwardSeqId { get; set; }
-    public string Resort { get; set; }
-    public string AwardCode { get; set; }
-    public string RateCode { get; set; }
+    public decimal? AwardSeqId { get; set; }
+    public string? Resort { get; set; }
+    public string? AwardCode { get; set; }
+    public string? RateCode { get; set; }
 
     public virtual Awards AwardSeq { get; set; }
 

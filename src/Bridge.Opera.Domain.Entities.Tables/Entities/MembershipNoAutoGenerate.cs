@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipNoAutoGenerate
 {
-    public string SeqType { get; set; }
-    public string MembershipType { get; set; }
-    public decimal FromSeqNo { get; set; }
-    public decimal ToSeqNo { get; set; }
-    public decimal LastSeqNo { get; set; }
+    public string? SeqType { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? FromSeqNo { get; set; }
+    public decimal? ToSeqNo { get; set; }
+    public decimal? LastSeqNo { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string CardPrefix { get; set; }
-    public string ChainCode { get; set; }
-    public string RandomNoFormat { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? CardPrefix { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RandomNoFormat { get; set; }
 
     public virtual MembershipTypes MembershipTypes { get; set; }
 

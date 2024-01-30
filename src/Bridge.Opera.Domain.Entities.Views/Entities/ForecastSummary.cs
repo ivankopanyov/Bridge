@@ -3,21 +3,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ForecastSummary
 {
     public decimal? Id { get; set; }
-    public string Resort { get; set; }
-    public string EventType { get; set; }
+    public string? Resort { get; set; }
+    public string? EventType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketMainGroup { get; set; }
-    public string SourceCode { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string RegionCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketMainGroup { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? GroupId { get; set; }
-    public string ResvType { get; set; }
-    public string ResvInvType { get; set; }
-    public string PsuedoRoomYn { get; set; }
+    public string? ResvType { get; set; }
+    public string? ResvInvType { get; set; }
+    public string? PsuedoRoomYn { get; set; }
     public decimal? ArrRooms { get; set; }
     public decimal? NoGuests { get; set; }
     public decimal? NoRooms { get; set; }
@@ -25,8 +25,8 @@ public partial class ForecastSummary
     public decimal? NetRoomRevenue { get; set; }
     public decimal? SingleOccupancy { get; set; }
     public decimal? MultipleOccupancy { get; set; }
-    public string BlockStatus { get; set; }
-    public string BookingStatus { get; set; }
+    public string? BlockStatus { get; set; }
+    public string? BookingStatus { get; set; }
     public decimal? ExtraRevenue { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
@@ -47,9 +47,9 @@ public partial class ForecastSummary
     public decimal? DayUseGrossRate { get; set; }
     public decimal? DayUseNetRoomRevenue { get; set; }
     public decimal? DayUseExtraRevenue { get; set; }
-    public string SourceMainGroup { get; set; }
-    public string Channel { get; set; }
-    public string Country { get; set; }
+    public string? SourceMainGroup { get; set; }
+    public string? Channel { get; set; }
+    public string? Country { get; set; }
     public decimal? Cribs { get; set; }
     public decimal? ExtraBeds { get; set; }
     public decimal? AdultsTaxFree { get; set; }

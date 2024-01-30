@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FormTranslationOldBackup
 {
-    public string FormName { get; set; }
-    public string BlockName { get; set; }
-    public string CanvasName { get; set; }
-    public string ItemName { get; set; }
-    public string ItemValue { get; set; }
-    public string Version { get; set; }
-    public string Datatype { get; set; }
-    public string SubclassGroup { get; set; }
-    public string Prompt { get; set; }
-    public string DisplayedYn { get; set; }
-    public string Tooltip { get; set; }
-    public string AccessKey { get; set; }
+    public string? FormName { get; set; }
+    public string? BlockName { get; set; }
+    public string? CanvasName { get; set; }
+    public string? ItemName { get; set; }
+    public string? ItemValue { get; set; }
+    public string? Version { get; set; }
+    public string? Datatype { get; set; }
+    public string? SubclassGroup { get; set; }
+    public string? Prompt { get; set; }
+    public string? DisplayedYn { get; set; }
+    public string? Tooltip { get; set; }
+    public string? AccessKey { get; set; }
     public decimal? ItemLength { get; set; }
-    public DateTime CreateDate { get; set; }
-    public string CreatedBy { get; set; }
+    public DateTime? CreateDate { get; set; }
+    public string? CreatedBy { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdatedBy { get; set; }
-    public string Itemtype { get; set; }
+    public string? UpdatedBy { get; set; }
+    public string? Itemtype { get; set; }
     public decimal? Height { get; set; }
     public decimal? Width { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

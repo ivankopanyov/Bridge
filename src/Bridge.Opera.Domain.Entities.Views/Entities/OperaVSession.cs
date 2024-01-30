@@ -5,23 +5,23 @@ public partial class OperaVSession
     public decimal? InstId { get; set; }
     public decimal? Sid { get; set; }
     public decimal? Serialno { get; set; }
-    public string Status { get; set; }
-    public string Module { get; set; }
-    public string ClientInfo { get; set; }
-    public string Terminal { get; set; }
-    public string OperaUser { get; set; }
-    public string ParentAudsid { get; set; }
+    public string? Status { get; set; }
+    public string? Module { get; set; }
+    public string? ClientInfo { get; set; }
+    public string? Terminal { get; set; }
+    public string? OperaUser { get; set; }
+    public string? ParentAudsid { get; set; }
     public decimal? Audsid { get; set; }
-    public string Action { get; set; }
-    public string Process { get; set; }
-    public string Schemaname { get; set; }
-    public string Machine { get; set; }
-    public string Program { get; set; }
-    public string Osuser { get; set; }
+    public string? Action { get; set; }
+    public string? Process { get; set; }
+    public string? Schemaname { get; set; }
+    public string? Machine { get; set; }
+    public string? Program { get; set; }
+    public string? Osuser { get; set; }
     public decimal? Cursors { get; set; }
     public decimal? Computedusage { get; set; }
-    public string Operauniquesessid { get; set; }
-    public string Username { get; set; }
+    public string? Operauniquesessid { get; set; }
+    public string? Username { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

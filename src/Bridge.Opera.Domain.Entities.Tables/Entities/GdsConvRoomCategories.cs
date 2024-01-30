@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvRoomCategories
 {
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public string GdsRoomDescription { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public string? GdsRoomDescription { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? GdsRoomOrder { get; set; }
-    public string RoomCreateYn { get; set; }
+    public string? RoomCreateYn { get; set; }
     public DateTime? RoomUpdateDate { get; set; }
-    public string ActivateYn { get; set; }
-    public string GdsBedTypeCode { get; set; }
+    public string? ActivateYn { get; set; }
+    public string? GdsBedTypeCode { get; set; }
     public decimal? SellSequence { get; set; }
-    public string Rd1 { get; set; }
-    public string Rd2 { get; set; }
-    public string Rd3 { get; set; }
+    public string? Rd1 { get; set; }
+    public string? Rd2 { get; set; }
+    public string? Rd3 { get; set; }
     public decimal? BaseAllocation { get; set; }
-    public string GdsRoomCodeName { get; set; }
-    public string GdsRoomShortDesc { get; set; }
+    public string? GdsRoomCodeName { get; set; }
+    public string? GdsRoomShortDesc { get; set; }
     public decimal? ThresholdRti { get; set; }
-    public string RoomViewCode { get; set; }
-    public string RoomQualCode { get; set; }
+    public string? RoomViewCode { get; set; }
+    public string? RoomQualCode { get; set; }
 
     public virtual GdsConvResorts GdsConvResorts { get; set; }
 

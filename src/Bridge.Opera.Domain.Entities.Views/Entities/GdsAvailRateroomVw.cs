@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsAvailRateroomVw
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string RateDescription { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? RateDescription { get; set; }
     public decimal? Lengthofstay { get; set; }
-    public string RateFrequency { get; set; }
-    public string Ratecurrencycode { get; set; }
-    public string CommissionCode { get; set; }
-    public string CommissionYn { get; set; }
-    public string TransactionCode { get; set; }
-    public string RateCategory { get; set; }
-    public string TrxTaxYn { get; set; }
+    public string? RateFrequency { get; set; }
+    public string? Ratecurrencycode { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? CommissionYn { get; set; }
+    public string? TransactionCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? TrxTaxYn { get; set; }
     public DateTime? BeginBookingDate { get; set; }
     public DateTime? EndBookingDate { get; set; }
     public decimal? Maxoccupancy { get; set; }
-    public string RoomDescription { get; set; }
+    public string? RoomDescription { get; set; }
     public decimal? AdultCharge { get; set; }
     public decimal? ChildrenCharge { get; set; }
     public decimal? PackageRateStayOver { get; set; }

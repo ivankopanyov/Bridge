@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentRates
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string RateCode { get; set; }
-    public string PrimaryYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string RecordType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? RateCode { get; set; }
+    public string? PrimaryYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? RecordType { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string OffsetType { get; set; }
+    public string? OffsetType { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
     public virtual AllotmentOffsetType AllotmentOffsetType { get; set; }

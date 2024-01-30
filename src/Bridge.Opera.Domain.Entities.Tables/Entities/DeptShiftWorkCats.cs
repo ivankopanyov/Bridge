@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DeptShiftWorkCats
 {
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string ShiftId { get; set; }
-    public string WorkCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? ShiftId { get; set; }
+    public string? WorkCategory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

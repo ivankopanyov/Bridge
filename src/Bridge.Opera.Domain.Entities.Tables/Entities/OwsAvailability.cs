@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsAvailability
 {
-    public decimal KeyId { get; set; }
-    public string Resort { get; set; }
-    public string RoomType { get; set; }
-    public string RoomCategory { get; set; }
-    public string AllotmentCode { get; set; }
+    public decimal? KeyId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? AllotmentCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? Quantity { get; set; }

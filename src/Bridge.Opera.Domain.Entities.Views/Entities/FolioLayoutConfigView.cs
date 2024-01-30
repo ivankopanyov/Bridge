@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FolioLayoutConfigView
 {
-    public string Resort { get; set; }
-    public string FolioType { get; set; }
-    public string RecordType { get; set; }
-    public string RecordSubtype { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? FolioType { get; set; }
+    public string? RecordType { get; set; }
+    public string? RecordSubtype { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ColSeq { get; set; }
-    public string UseInConfigYn { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string BeginTag { get; set; }
-    public string EndTag { get; set; }
+    public string? UseInConfigYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? BeginTag { get; set; }
+    public string? EndTag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortDeliveryMethods
 {
-    public string Resort { get; set; }
-    public string DeliveryType { get; set; }
-    public string ReportName { get; set; }
-    public string EmailFrom { get; set; }
-    public string EmailYn { get; set; }
-    public string EmailFormat { get; set; }
-    public string EmailAttachYn { get; set; }
-    public string EmailBody { get; set; }
-    public string EmailFaxYn { get; set; }
-    public string EmailFaxFormat { get; set; }
-    public string EmailFaxPrefix { get; set; }
-    public string EmailFaxSuffix { get; set; }
-    public string EmailFaxDomain { get; set; }
-    public string EmailFaxAttachYn { get; set; }
-    public string EmailFaxBody { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string EmailServerName { get; set; }
-    public string EmailFaxServerName { get; set; }
-    public string EmailFaxFrom { get; set; }
-    public string EmailUserId { get; set; }
-    public string EmailUserPassword { get; set; }
-    public string EmailFaxUserId { get; set; }
-    public string EmailFaxUserPassword { get; set; }
-    public string EmailFaxBodyYn { get; set; }
-    public string EmailFaxSubjectYn { get; set; }
-    public string EmailSubject { get; set; }
-    public string FaxSubject { get; set; }
-    public string InboundEmailServer { get; set; }
-    public string EmailAttachIcalYn { get; set; }
+    public string? Resort { get; set; }
+    public string? DeliveryType { get; set; }
+    public string? ReportName { get; set; }
+    public string? EmailFrom { get; set; }
+    public string? EmailYn { get; set; }
+    public string? EmailFormat { get; set; }
+    public string? EmailAttachYn { get; set; }
+    public string? EmailBody { get; set; }
+    public string? EmailFaxYn { get; set; }
+    public string? EmailFaxFormat { get; set; }
+    public string? EmailFaxPrefix { get; set; }
+    public string? EmailFaxSuffix { get; set; }
+    public string? EmailFaxDomain { get; set; }
+    public string? EmailFaxAttachYn { get; set; }
+    public string? EmailFaxBody { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? EmailServerName { get; set; }
+    public string? EmailFaxServerName { get; set; }
+    public string? EmailFaxFrom { get; set; }
+    public string? EmailUserId { get; set; }
+    public string? EmailUserPassword { get; set; }
+    public string? EmailFaxUserId { get; set; }
+    public string? EmailFaxUserPassword { get; set; }
+    public string? EmailFaxBodyYn { get; set; }
+    public string? EmailFaxSubjectYn { get; set; }
+    public string? EmailSubject { get; set; }
+    public string? FaxSubject { get; set; }
+    public string? InboundEmailServer { get; set; }
+    public string? EmailAttachIcalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

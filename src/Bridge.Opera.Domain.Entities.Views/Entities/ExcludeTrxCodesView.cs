@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExcludeTrxCodesView
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

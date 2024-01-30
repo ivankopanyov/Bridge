@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomCategoryFacilityCodes
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string FacilityTask { get; set; }
-    public string FacilityCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? FacilityTask { get; set; }
+    public string? FacilityCode { get; set; }
     public decimal? Quantity { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

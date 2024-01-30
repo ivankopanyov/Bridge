@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CcTransactionLog1
 {
-    public decimal SeqNo { get; set; }
-    public string Resort { get; set; }
+    public decimal? SeqNo { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? ArNumber { get; set; }
-    public DateTime TrxDate { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string AuthSettle { get; set; }
-    public string CcAction { get; set; }
-    public string CalledFrom { get; set; }
-    public string IfcReturnStatus { get; set; }
-    public string OperaProcessedYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertTs { get; set; }
+    public string? AuthSettle { get; set; }
+    public string? CcAction { get; set; }
+    public string? CalledFrom { get; set; }
+    public string? IfcReturnStatus { get; set; }
+    public string? OperaProcessedYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertTs { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateTs { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? PaymentMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCustomDimNames
 {
-    public string DimName { get; set; }
-    public string DimView { get; set; }
-    public string DimKey { get; set; }
+    public string? DimName { get; set; }
+    public string? DimView { get; set; }
+    public string? DimKey { get; set; }
     public decimal? AttributeCount { get; set; }
-    public string DimLabel { get; set; }
+    public string? DimLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

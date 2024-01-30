@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMenuPanels
 {
-    public string Resort { get; set; }
-    public string ApplicationName { get; set; }
-    public string PanelName { get; set; }
-    public string DisplayCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ApplicationName { get; set; }
+    public string? PanelName { get; set; }
+    public string? DisplayCode { get; set; }
     public decimal? SequenceNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

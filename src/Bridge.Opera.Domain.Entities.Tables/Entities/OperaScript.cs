@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaScript
 {
-    public decimal ScriptId { get; set; }
-    public string ScriptText { get; set; }
-    public string LanguageCode { get; set; }
-    public string MembershipType { get; set; }
-    public string ScriptType { get; set; }
-    public string ChainCode { get; set; }
+    public decimal? ScriptId { get; set; }
+    public string? ScriptText { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? ScriptType { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScAllotmentAltGridView
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? AlternateArrivalDate { get; set; }
     public DateTime? AlternateDepartureDate { get; set; }
     public decimal? AllotmentAltDateSeqno { get; set; }
-    public string RoomCategory { get; set; }
-    public string PreferredYn { get; set; }
-    public string RoomType { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? PreferredYn { get; set; }
+    public string? RoomType { get; set; }
     public decimal? SingleOccRate { get; set; }
     public decimal? DoubleOccRate { get; set; }
     public decimal? TripleOccRate { get; set; }
     public decimal? QuadOccRate { get; set; }
     public decimal? Priority { get; set; }
-    public string MainBookDatesYn { get; set; }
+    public string? MainBookDatesYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisNameLov
 {
-    public string Last { get; set; }
-    public string First { get; set; }
-    public decimal NameId { get; set; }
-    public string Sname { get; set; }
+    public string? Last { get; set; }
+    public string? First { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Sname { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

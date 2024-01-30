@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AuthorizerLimitsDetails
 {
-    public decimal AuthDetailId { get; set; }
-    public string Resort { get; set; }
-    public decimal AuthorizerId { get; set; }
-    public decimal AuthHeaderId { get; set; }
-    public string TrxCode { get; set; }
+    public decimal? AuthDetailId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AuthorizerId { get; set; }
+    public decimal? AuthHeaderId { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? ArrangementId { get; set; }
-    public string ArrangementCode { get; set; }
+    public string? ArrangementCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string AuthGroupCode { get; set; }
+    public string? AuthGroupCode { get; set; }
 
     public virtual TrxCodeArrangement Arrangement { get; set; }
     public virtual AuthorizerLimitsHeader AuthorizerLimitsHeader { get; set; }

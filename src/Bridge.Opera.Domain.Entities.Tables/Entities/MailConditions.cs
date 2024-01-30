@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailConditions
 {
-    public decimal QueryId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
+    public decimal? QueryId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
     public decimal? OperatorId { get; set; }
-    public string Param1 { get; set; }
-    public string Param2 { get; set; }
-    public string Param3 { get; set; }
+    public string? Param1 { get; set; }
+    public string? Param2 { get; set; }
+    public string? Param3 { get; set; }
     public decimal? OpenBracket { get; set; }
     public decimal? CloseBracket { get; set; }
-    public string JoinCondition { get; set; }
-    public decimal JoinSequence { get; set; }
-    public string MultiValueYn { get; set; }
-    public string VirtualYn { get; set; }
+    public string? JoinCondition { get; set; }
+    public decimal? JoinSequence { get; set; }
+    public string? MultiValueYn { get; set; }
+    public string? VirtualYn { get; set; }
     public decimal? Function1Id { get; set; }
     public decimal? Function2Id { get; set; }
 

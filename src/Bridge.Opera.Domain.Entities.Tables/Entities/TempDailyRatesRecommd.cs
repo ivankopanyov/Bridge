@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempDailyRatesRecommd
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomType { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomType { get; set; }
     public DateTime? RateDate { get; set; }
     public decimal? OneAdultRate { get; set; }
     public decimal? TwoAdultsRate { get; set; }

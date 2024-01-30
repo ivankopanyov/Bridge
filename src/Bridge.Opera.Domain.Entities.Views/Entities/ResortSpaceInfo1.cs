@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortSpaceInfo1
 {
-    public decimal SpaceInfoId { get; set; }
-    public string Resort { get; set; }
+    public decimal? SpaceInfoId { get; set; }
+    public string? Resort { get; set; }
     public decimal? SpaceAmount { get; set; }
-    public string SpaceType { get; set; }
+    public string? SpaceType { get; set; }
     public decimal? MaxOccupancy { get; set; }
     public decimal? AreaM { get; set; }
     public decimal? AreaF { get; set; }

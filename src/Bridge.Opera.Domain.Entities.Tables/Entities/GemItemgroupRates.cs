@@ -7,12 +7,12 @@ public partial class GemItemgroupRates
         GemItemgrTranslation = new HashSet<GemItemgrTranslation>();
     }
 
-    public decimal ItmgRateId { get; set; }
-    public decimal ItemgroupId { get; set; }
-    public string Name { get; set; }
-    public string HourlyYn { get; set; }
+    public decimal? ItmgRateId { get; set; }
+    public decimal? ItemgroupId { get; set; }
+    public string? Name { get; set; }
+    public string? HourlyYn { get; set; }
     public decimal? Price { get; set; }
-    public string PriceCode { get; set; }
+    public string? PriceCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

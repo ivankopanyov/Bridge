@@ -3,23 +3,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class EmpDetails
 {
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string EmpStatus { get; set; }
-    public string MaleFemale { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? EmpStatus { get; set; }
+    public string? MaleFemale { get; set; }
     public decimal? UserPbxId { get; set; }
     public DateTime? DateHired { get; set; }
-    public string WorkPermitNo { get; set; }
+    public string? WorkPermitNo { get; set; }
     public DateTime? WorkPermitExpdate { get; set; }
     public decimal? HoursPerWeek { get; set; }
-    public string RateType { get; set; }
-    public string HireType { get; set; }
-    public string SalaryInterval { get; set; }
-    public string RehireYn { get; set; }
-    public string EmpExtension { get; set; }
-    public string TermReason { get; set; }
+    public string? RateType { get; set; }
+    public string? HireType { get; set; }
+    public string? SalaryInterval { get; set; }
+    public string? RehireYn { get; set; }
+    public string? EmpExtension { get; set; }
+    public string? TermReason { get; set; }
     public DateTime? TerminatedDate { get; set; }
-    public string InactiveReasonCode { get; set; }
+    public string? InactiveReasonCode { get; set; }
     public DateTime? InactiveFrom { get; set; }
     public DateTime? InactiveTo { get; set; }
     public decimal? HourlyRate { get; set; }
@@ -41,12 +41,12 @@ public partial class EmpDetails
     public decimal? SaturdayMax { get; set; }
     public decimal? SundayMin { get; set; }
     public decimal? SundayMax { get; set; }
-    public string Comments { get; set; }
-    public string EmpPager { get; set; }
+    public string? Comments { get; set; }
+    public string? EmpPager { get; set; }
     public decimal? LaptopId { get; set; }
-    public string LeadAddress { get; set; }
-    public string LeadComm { get; set; }
-    public string LeadAddressDet { get; set; }
+    public string? LeadAddress { get; set; }
+    public string? LeadComm { get; set; }
+    public string? LeadAddressDet { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

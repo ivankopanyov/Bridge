@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmCampaignEmailFacts
 {
-    public decimal FactRecId { get; set; }
-    public decimal DateId { get; set; }
+    public decimal? FactRecId { get; set; }
+    public decimal? DateId { get; set; }
     public decimal? CampaignId { get; set; }
     public decimal? SegBatchId { get; set; }
     public decimal? OcrmProfileId { get; set; }
-    public string RecordLocator { get; set; }
-    public string DataSource { get; set; }
+    public string? RecordLocator { get; set; }
+    public string? DataSource { get; set; }
     public decimal? EmailSend { get; set; }
     public decimal? OpenEmail { get; set; }
     public decimal? ClicksOnEmail { get; set; }

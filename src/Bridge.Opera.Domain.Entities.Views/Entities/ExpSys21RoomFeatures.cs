@@ -4,9 +4,9 @@ public partial class ExpSys21RoomFeatures
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string Room { get; set; }
-    public string FeatureCode { get; set; }
-    public string FeatureDesc { get; set; }
+    public string? Room { get; set; }
+    public string? FeatureCode { get; set; }
+    public string? FeatureDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

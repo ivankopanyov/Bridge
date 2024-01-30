@@ -2,77 +2,77 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpTsa02Vw
 {
-    public string BusinessDate { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string CiDate { get; set; }
-    public string CiTime { get; set; }
-    public string AppUser { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string Chkindte { get; set; }
-    public string EndDate { get; set; }
-    public string ActionType { get; set; }
-    public string ResvStatus { get; set; }
-    public string Chkoutdte { get; set; }
-    public string Room { get; set; }
-    public string CreateDate { get; set; }
-    public string BookedRoomCategoryLabel { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? CiDate { get; set; }
+    public string? CiTime { get; set; }
+    public string? AppUser { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Chkindte { get; set; }
+    public string? EndDate { get; set; }
+    public string? ActionType { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Chkoutdte { get; set; }
+    public string? Room { get; set; }
+    public string? CreateDate { get; set; }
+    public string? BookedRoomCategoryLabel { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string Products { get; set; }
-    public string RateCode { get; set; }
-    public string RateDesc { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? Products { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateDesc { get; set; }
     public decimal? RateValue { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceDesc { get; set; }
-    public string Nationality { get; set; }
-    public string GuestCountry { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceDesc { get; set; }
+    public string? Nationality { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -133,10 +133,10 @@ public partial class ExpTsa02Vw
     public decimal? Udfn38 { get; set; }
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
-    public string SpecialRequests { get; set; }
+    public string? SpecialRequests { get; set; }
     public decimal? DiscountAmt { get; set; }
     public decimal? DiscountPrcnt { get; set; }
-    public string DiscountReasonCode { get; set; }
+    public string? DiscountReasonCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

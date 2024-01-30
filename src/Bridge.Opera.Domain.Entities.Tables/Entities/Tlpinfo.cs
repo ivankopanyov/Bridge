@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Tlpinfo
 {
-    public string Hotelcode { get; set; }
-    public string Groupid { get; set; }
-    public string Workstatid { get; set; }
-    public string Groupname { get; set; }
-    public string Grpabbrev { get; set; }
-    public string Eventname { get; set; }
-    public string Acctcode { get; set; }
-    public string Status { get; set; }
-    public string Salesmgr { get; set; }
-    public DateTime Earlyarrdt { get; set; }
-    public DateTime Arrdate { get; set; }
-    public DateTime Depdate { get; set; }
-    public DateTime Latedepdt { get; set; }
-    public string Mktseg { get; set; }
+    public string? Hotelcode { get; set; }
+    public string? Groupid { get; set; }
+    public string? Workstatid { get; set; }
+    public string? Groupname { get; set; }
+    public string? Grpabbrev { get; set; }
+    public string? Eventname { get; set; }
+    public string? Acctcode { get; set; }
+    public string? Status { get; set; }
+    public string? Salesmgr { get; set; }
+    public DateTime? Earlyarrdt { get; set; }
+    public DateTime? Arrdate { get; set; }
+    public DateTime? Depdate { get; set; }
+    public DateTime? Latedepdt { get; set; }
+    public string? Mktseg { get; set; }
     public byte? Sglocc { get; set; }
     public byte? Dblocc { get; set; }
     public byte? Tplocc { get; set; }
     public byte? Quadocc { get; set; }
     public byte? Extraocc { get; set; }
-    public string Rohflag { get; set; }
+    public string? Rohflag { get; set; }
     public decimal? Fbperson { get; set; }
     public int? Localguest { get; set; }
     public decimal? Fbbooking { get; set; }
@@ -34,17 +34,17 @@ public partial class Tlpinfo
     public int? Comprn { get; set; }
     public DateTime? Firstarrdt { get; set; }
     public DateTime? Lastarrdt { get; set; }
-    public string Sunarrflag { get; set; }
-    public string Monarrflag { get; set; }
-    public string Tuearrflag { get; set; }
-    public string Wedarrflag { get; set; }
-    public string Thuarrflag { get; set; }
-    public string Friarrflag { get; set; }
-    public string Satarrflag { get; set; }
-    public string Resgrpid { get; set; }
-    public string Cutofftype { get; set; }
+    public string? Sunarrflag { get; set; }
+    public string? Monarrflag { get; set; }
+    public string? Tuearrflag { get; set; }
+    public string? Wedarrflag { get; set; }
+    public string? Thuarrflag { get; set; }
+    public string? Friarrflag { get; set; }
+    public string? Satarrflag { get; set; }
+    public string? Resgrpid { get; set; }
+    public string? Cutofftype { get; set; }
     public int? Cutoffdays { get; set; }
-    public string Grouptype { get; set; }
+    public string? Grouptype { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

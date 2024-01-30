@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameGoalDetails
 {
-    public decimal NgoalGoalId { get; set; }
-    public string GoaltypeCode { get; set; }
-    public decimal DetailId { get; set; }
+    public decimal? NgoalGoalId { get; set; }
+    public string? GoaltypeCode { get; set; }
+    public decimal? DetailId { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgRate { get; set; }

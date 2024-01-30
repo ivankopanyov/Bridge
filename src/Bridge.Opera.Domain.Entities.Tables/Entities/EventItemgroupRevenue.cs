@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventItemgroupRevenue
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public decimal EventItemgId { get; set; }
-    public string CustomYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? EventItemgId { get; set; }
+    public string? CustomYn { get; set; }
     public decimal? ItemCost { get; set; }
     public decimal? ItemPrice { get; set; }
     public decimal? RevenueSplit { get; set; }
     public decimal? Discount { get; set; }
-    public string RevGroup { get; set; }
-    public string RevType { get; set; }
+    public string? RevGroup { get; set; }
+    public string? RevType { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ItemgroupId { get; set; }
-    public string HourlyYn { get; set; }
+    public string? HourlyYn { get; set; }
     public decimal? EventExpected { get; set; }
     public decimal? EventGuaranteed { get; set; }
     public decimal? EventActual { get; set; }
-    public DateTime EventStart { get; set; }
-    public DateTime EventEnd { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? EventStart { get; set; }
+    public DateTime? EventEnd { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual EventItemgroup EventItemg { get; set; }
 

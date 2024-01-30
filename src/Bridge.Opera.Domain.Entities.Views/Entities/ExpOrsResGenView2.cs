@@ -7,78 +7,78 @@ public partial class ExpOrsResGenView2
     public decimal? ResvNameId { get; set; }
     public decimal? Nights { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Resort { get; set; }
-    public string RoomResort { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
-    public string ArrivalTime { get; set; }
+    public string? ArrivalTime { get; set; }
     public DateTime? Departure { get; set; }
-    public string DepartureTime { get; set; }
-    public string PostingAllowedYn { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuestName { get; set; }
-    public string Sname { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? PostingAllowedYn { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuestName { get; set; }
+    public string? Sname { get; set; }
     public DateTime? ArrivalDateTime { get; set; }
     public DateTime? DepartureDateTime { get; set; }
-    public string CancellationNo { get; set; }
+    public string? CancellationNo { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationReasonCode { get; set; }
-    public string CancellationReasonDesc { get; set; }
-    public string WlReasonCode { get; set; }
-    public string WlPriority { get; set; }
-    public string WlReasonDescription { get; set; }
+    public string? CancellationReasonCode { get; set; }
+    public string? CancellationReasonDesc { get; set; }
+    public string? WlReasonCode { get; set; }
+    public string? WlPriority { get; set; }
+    public string? WlReasonDescription { get; set; }
     public DateTime? ActualCheckInDate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
     public DateTime? TruncActualCheckOutDate { get; set; }
     public DateTime? OriginalEndDate { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? ParentResvNameId { get; set; }
-    public string ExternalReference { get; set; }
+    public string? ExternalReference { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string NameTaxType { get; set; }
-    public string NameTaxDescription { get; set; }
-    public string TaxExemptNo { get; set; }
-    public string FixedRateYn { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? NameTaxDescription { get; set; }
+    public string? TaxExemptNo { get; set; }
+    public string? FixedRateYn { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? ShareAmount { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string SourceName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? SourceId { get; set; }
-    public string RateCode { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? OriginalBaseRate { get; set; }
     public decimal? BaseRateAmount { get; set; }
     public decimal? RoomCost { get; set; }
     public decimal? EffectiveRateAmount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string ExchangePostingType { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? ExchangePostingType { get; set; }
     public DateTime? ReservationDate { get; set; }
     public DateTime? RdenReservationDate { get; set; }
     public decimal? ShareId { get; set; }
-    public string SysStatus { get; set; }
+    public string? SysStatus { get; set; }
     public decimal? ResvNo { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string SguestName { get; set; }
-    public string Channel { get; set; }
-    public string BusinessTitle { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
+    public string? SguestName { get; set; }
+    public string? Channel { get; set; }
+    public string? BusinessTitle { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string NameType { get; set; }
+    public string? NameType { get; set; }
     public decimal? ResvContactId { get; set; }
-    public string ResvContactName { get; set; }
-    public string RegistrationCardNo { get; set; }
+    public string? ResvContactName { get; set; }
+    public string? RegistrationCardNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

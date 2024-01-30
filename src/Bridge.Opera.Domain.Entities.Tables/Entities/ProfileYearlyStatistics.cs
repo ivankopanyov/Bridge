@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileYearlyStatistics
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public string NameType { get; set; }
-    public string LocalCurrency { get; set; }
-    public decimal StayYear { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
+    public string? LocalCurrency { get; set; }
+    public decimal? StayYear { get; set; }
     public decimal? NumberStays { get; set; }
     public decimal? NumberNights { get; set; }
     public decimal? NumberCancels { get; set; }
@@ -35,7 +35,7 @@ public partial class ProfileYearlyStatistics
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CcRoomRevenue { get; set; }
     public decimal? CcFbRevenue { get; set; }
     public decimal? CcTotalRevenue { get; set; }
@@ -56,7 +56,7 @@ public partial class ProfileYearlyStatistics
     public decimal? CcGrpMiscRevenueTax { get; set; }
     public decimal? CcGrpOtherRevenueTax { get; set; }
     public decimal? CcGrpTotalRevenueTax { get; set; }
-    public string StayedBooked { get; set; }
+    public string? StayedBooked { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

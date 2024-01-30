@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TurnawayStatView
 {
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public decimal? Reason1 { get; set; }
     public decimal? Reason2 { get; set; }

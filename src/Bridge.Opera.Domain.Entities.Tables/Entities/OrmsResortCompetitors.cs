@@ -8,17 +8,17 @@ public partial class OrmsResortCompetitors
         OrmsCompetitorWeights = new HashSet<OrmsCompetitorWeights>();
     }
 
-    public string Resort { get; set; }
-    public string ShopperCode { get; set; }
-    public string CompetitorResort { get; set; }
-    public string CompetitorResortName { get; set; }
-    public string RstResort { get; set; }
+    public string? Resort { get; set; }
+    public string? ShopperCode { get; set; }
+    public string? CompetitorResort { get; set; }
+    public string? CompetitorResortName { get; set; }
+    public string? RstResort { get; set; }
     public decimal? OrderSeq { get; set; }
-    public string OperaResort { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? OperaResort { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<OrmsCompetitorTravelsites> OrmsCompetitorTravelsites { get; set; }
     public virtual ICollection<OrmsCompetitorWeights> OrmsCompetitorWeights { get; set; }

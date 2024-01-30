@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioPurgeHistory
 {
-    public string Resort { get; set; }
-    public DateTime PurgeDate { get; set; }
-    public string RecordType { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? PurgeDate { get; set; }
+    public string? RecordType { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
-    public decimal NameId { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
+    public string? Room { get; set; }
+    public decimal? NameId { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
     public decimal? Window { get; set; }
     public decimal? DebitAmt { get; set; }
-    public DateTime Arrival { get; set; }
-    public DateTime Departure { get; set; }
-    public string FolioPdfName { get; set; }
-    public string PayeeName { get; set; }
+    public DateTime? Arrival { get; set; }
+    public DateTime? Departure { get; set; }
+    public string? FolioPdfName { get; set; }
+    public string? PayeeName { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? CompanyId { get; set; }
-    public string ActionName { get; set; }
+    public string? ActionName { get; set; }
     public decimal? FolioAttachmentLinkId { get; set; }
     public decimal? FolioAttachmentStatus { get; set; }
     public decimal? AddresseeNameId { get; set; }

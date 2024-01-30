@@ -3,20 +3,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class ProfileCompareMemGtt
 {
     public decimal? NameId { get; set; }
-    public string RecordType { get; set; }
-    public string NameType { get; set; }
-    public string NameCode { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string Gender { get; set; }
-    public string ResortRegistered { get; set; }
-    public string ChainCode { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
+    public string? RecordType { get; set; }
+    public string? NameType { get; set; }
+    public string? NameCode { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? Gender { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

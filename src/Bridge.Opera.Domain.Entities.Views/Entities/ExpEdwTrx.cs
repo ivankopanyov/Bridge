@@ -3,26 +3,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwTrx
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string PmsConfirmationNo { get; set; }
-    public string ExternalReferenceNo { get; set; }
+    public string? PmsConfirmationNo { get; set; }
+    public string? ExternalReferenceNo { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? CreationDate { get; set; }
-    public string BucketCode { get; set; }
-    public string RoomType { get; set; }
+    public string? BucketCode { get; set; }
+    public string? RoomType { get; set; }
     public decimal? Quantity { get; set; }
-    public string RoomNo { get; set; }
+    public string? RoomNo { get; set; }
     public decimal? Amount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string OrigRateCode { get; set; }
-    public string LastRateCode { get; set; }
-    public string AwardNumber { get; set; }
-    public string AllotmentCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? OrigRateCode { get; set; }
+    public string? LastRateCode { get; set; }
+    public string? AwardNumber { get; set; }
+    public string? AllotmentCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoutingGeneralView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string SguestName { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string ResvStatus { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string ComputedResvStatus { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? SguestName { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? ComputedResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? Room { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string CompanyName { get; set; }
-    public string GroupName { get; set; }
-    public string TravelAgentName { get; set; }
-    public string SourceName { get; set; }
-    public string RoomResort { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GroupName { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? SourceName { get; set; }
+    public string? RoomResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

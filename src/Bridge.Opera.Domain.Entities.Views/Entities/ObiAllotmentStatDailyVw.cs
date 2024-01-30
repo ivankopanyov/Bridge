@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAllotmentStatDailyVw
 {
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? PmsAllotmentHeaderId { get; set; }
     public decimal? PmsAllotmentDetailId { get; set; }
-    public string AllotmentCode { get; set; }
-    public string AllotmentResort { get; set; }
-    public string AllotmentType { get; set; }
-    public string MarketCode { get; set; }
-    public string Source { get; set; }
-    public string Channel { get; set; }
-    public string Status { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? AllotmentResort { get; set; }
+    public string? AllotmentType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Source { get; set; }
+    public string? Channel { get; set; }
+    public string? Status { get; set; }
     public decimal? RmsOwner { get; set; }
-    public string RmsOwnerCode { get; set; }
-    public string RmsOwnerResort { get; set; }
+    public string? RmsOwnerCode { get; set; }
+    public string? RmsOwnerResort { get; set; }
     public decimal? CatOwner { get; set; }
-    public string CatOwnerCode { get; set; }
-    public string CatOwnerResort { get; set; }
+    public string? CatOwnerCode { get; set; }
+    public string? CatOwnerResort { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? AgentId { get; set; }
     public decimal? CompanyContactId { get; set; }

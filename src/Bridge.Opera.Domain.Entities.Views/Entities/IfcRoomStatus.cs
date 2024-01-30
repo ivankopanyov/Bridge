@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcRoomStatus
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? IfcCtrlId { get; set; }
-    public string Suiteroom { get; set; }
-    public string Room { get; set; }
-    public string Extn { get; set; }
+    public string? Suiteroom { get; set; }
+    public string? Room { get; set; }
+    public string? Extn { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string VideoCoYn { get; set; }
-    public string XlatId { get; set; }
-    public string Type { get; set; }
-    public string Mask { get; set; }
-    public string Status { get; set; }
-    public string CosRight { get; set; }
-    public string MsgRight { get; set; }
-    public string DndRight { get; set; }
-    public string MinibarRight { get; set; }
-    public string VideoRight { get; set; }
-    public string TvRight { get; set; }
-    public string GameRight { get; set; }
-    public string WebRight { get; set; }
-    public string PhoneDisplayNameYn { get; set; }
-    public string SharedYn { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? VideoCoYn { get; set; }
+    public string? XlatId { get; set; }
+    public string? Type { get; set; }
+    public string? Mask { get; set; }
+    public string? Status { get; set; }
+    public string? CosRight { get; set; }
+    public string? MsgRight { get; set; }
+    public string? DndRight { get; set; }
+    public string? MinibarRight { get; set; }
+    public string? VideoRight { get; set; }
+    public string? TvRight { get; set; }
+    public string? GameRight { get; set; }
+    public string? WebRight { get; set; }
+    public string? PhoneDisplayNameYn { get; set; }
+    public string? SharedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

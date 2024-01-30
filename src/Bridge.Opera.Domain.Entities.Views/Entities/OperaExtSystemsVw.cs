@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaExtSystemsVw
 {
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public decimal SeqNo { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public decimal? SeqNo { get; set; }
     public decimal? AppUserId { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PmsType { get; set; }
-    public string ProdCode { get; set; }
-    public string SystemType { get; set; }
-    public string LookupYn { get; set; }
-    public string BatchBe { get; set; }
+    public string? PmsType { get; set; }
+    public string? ProdCode { get; set; }
+    public string? SystemType { get; set; }
+    public string? LookupYn { get; set; }
+    public string? BatchBe { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

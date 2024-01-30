@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateTier
 {
-    public string Resort { get; set; }
-    public decimal TierId { get; set; }
-    public decimal FromLos { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TierId { get; set; }
+    public decimal? FromLos { get; set; }
     public decimal? ToLos { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UserCroAccessLink
 {
-    public decimal AppUserId { get; set; }
-    public string CroCode { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? CroCode { get; set; }
 
     public virtual Resort CroCodeNavigation { get; set; }
 

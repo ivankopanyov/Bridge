@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HltnGlTrxGroupsView
 {
-    public string ItemId { get; set; }
-    public string AllowDrillDownYn { get; set; }
-    public string GroupCode { get; set; }
-    public string GroupDescription { get; set; }
+    public string? ItemId { get; set; }
+    public string? AllowDrillDownYn { get; set; }
+    public string? GroupCode { get; set; }
+    public string? GroupDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EvForecastRevenue
 {
-    public decimal EvForecastid { get; set; }
-    public string RevType { get; set; }
+    public decimal? EvForecastid { get; set; }
+    public string? RevType { get; set; }
     public decimal? RevAmount { get; set; }
-    public string FlatYn { get; set; }
+    public string? FlatYn { get; set; }
     public decimal? BudgetSplit { get; set; }
 
     public virtual EvForecast EvForecast { get; set; }

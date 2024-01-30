@@ -8,25 +8,25 @@ public partial class ResortHkTasks
         ResortHkDailyTask = new HashSet<ResortHkDailyTask>();
     }
 
-    public string TaskCode { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
-    public string LongDescription { get; set; }
+    public string? TaskCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
+    public string? LongDescription { get; set; }
     public decimal? Frequency { get; set; }
-    public string UnitOfFrequency { get; set; }
+    public string? UnitOfFrequency { get; set; }
     public DateTime? TaskAssignDate { get; set; }
     public decimal? Credits { get; set; }
     public decimal? CreditsDeparture { get; set; }
     public decimal? OrderSeq { get; set; }
-    public string DepartureRoomDefaultYn { get; set; }
-    public string Color { get; set; }
-    public string CustomizableYn { get; set; }
+    public string? DepartureRoomDefaultYn { get; set; }
+    public string? Color { get; set; }
+    public string? CustomizableYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string LinenChangeYn { get; set; }
-    public string GuestRequestedYn { get; set; }
+    public string? LinenChangeYn { get; set; }
+    public string? GuestRequestedYn { get; set; }
 
     public virtual ICollection<CustomFacilityTaskHeader> CustomFacilityTaskHeader { get; set; }
     public virtual ICollection<ResortHkDailyTask> ResortHkDailyTask { get; set; }

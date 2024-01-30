@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DynamicFieldsView
 {
-    public string ChainCode { get; set; }
-    public string FormMode { get; set; }
-    public string Status { get; set; }
-    public string FormName { get; set; }
-    public string BlockName { get; set; }
-    public string ItemName { get; set; }
+    public string? ChainCode { get; set; }
+    public string? FormMode { get; set; }
+    public string? Status { get; set; }
+    public string? FormName { get; set; }
+    public string? BlockName { get; set; }
+    public string? ItemName { get; set; }
     public decimal? DynamicFieldsId { get; set; }
-    public string NextItem { get; set; }
-    public string PreviousItem { get; set; }
+    public string? NextItem { get; set; }
+    public string? PreviousItem { get; set; }
     public decimal? XPos { get; set; }
     public decimal? YPos { get; set; }
     public decimal? Height { get; set; }
     public decimal? Width { get; set; }
-    public string DisplayedYn { get; set; }
-    public string NavigableYn { get; set; }
-    public string VisualAttribute { get; set; }
-    public string Dbcolumnname { get; set; }
-    public string PreTextItemTrig { get; set; }
-    public string ValidateItemTrig { get; set; }
-    public string PostTextItemTrig { get; set; }
-    public string Profiletype { get; set; }
-    public string Itemvalue { get; set; }
+    public string? DisplayedYn { get; set; }
+    public string? NavigableYn { get; set; }
+    public string? VisualAttribute { get; set; }
+    public string? Dbcolumnname { get; set; }
+    public string? PreTextItemTrig { get; set; }
+    public string? ValidateItemTrig { get; set; }
+    public string? PostTextItemTrig { get; set; }
+    public string? Profiletype { get; set; }
+    public string? Itemvalue { get; set; }
     public decimal? Taborder { get; set; }
-    public string LovSql { get; set; }
-    public string UsedFor { get; set; }
-    public string CanvasName { get; set; }
-    public string TabName { get; set; }
-    public string RequiredYn { get; set; }
-    public string Itemtype { get; set; }
+    public string? LovSql { get; set; }
+    public string? UsedFor { get; set; }
+    public string? CanvasName { get; set; }
+    public string? TabName { get; set; }
+    public string? RequiredYn { get; set; }
+    public string? Itemtype { get; set; }
     public decimal? DynfIdHeader { get; set; }
-    public string Prompt { get; set; }
-    public string AccessKey { get; set; }
-    public string Tooltip { get; set; }
-    public string Version { get; set; }
+    public string? Prompt { get; set; }
+    public string? AccessKey { get; set; }
+    public string? Tooltip { get; set; }
+    public string? Version { get; set; }
     public decimal? ItemLength { get; set; }
-    public string Datatype { get; set; }
-    public string SubclassGroup { get; set; }
-    public string ValidateFromList { get; set; }
-    public string MultiSelectLov { get; set; }
-    public string AmountYn { get; set; }
-    public string Resort { get; set; }
+    public string? Datatype { get; set; }
+    public string? SubclassGroup { get; set; }
+    public string? ValidateFromList { get; set; }
+    public string? MultiSelectLov { get; set; }
+    public string? AmountYn { get; set; }
+    public string? Resort { get; set; }
     public int? Flags { get; set; }
-    public string PromptVa { get; set; }
+    public string? PromptVa { get; set; }
     public DateTime? CompareDate { get; set; }
     public decimal? PromptAttachmentOffset { get; set; }
     public decimal? PromptAlignmentOffset { get; set; }

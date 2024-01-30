@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiResvStatusDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string ResvStatus { get; set; }
-    public string ResvStatusDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ResvStatusDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

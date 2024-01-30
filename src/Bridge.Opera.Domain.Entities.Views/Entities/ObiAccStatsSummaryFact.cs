@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiAccStatsSummaryFact
 {
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
-    public string Resort { get; set; }
+    public string? NameType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? ProdMonth { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? IndRoomNight { get; set; }
     public decimal? IndRoomRevNet { get; set; }
     public decimal? IndAvgRevNet { get; set; }

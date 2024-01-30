@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FloorplanDetails
 {
-    public decimal FloorId { get; set; }
-    public decimal LayerId { get; set; }
-    public string Room { get; set; }
-    public string ShapeType { get; set; }
-    public string Shape { get; set; }
+    public decimal? FloorId { get; set; }
+    public decimal? LayerId { get; set; }
+    public string? Room { get; set; }
+    public string? ShapeType { get; set; }
+    public string? Shape { get; set; }
 
     public virtual FloorplanHeader Floor { get; set; }
 

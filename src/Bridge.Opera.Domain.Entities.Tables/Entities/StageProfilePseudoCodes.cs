@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfilePseudoCodes
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string PseudoCityCode { get; set; }
-    public string ChannelCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? PseudoCityCode { get; set; }
+    public string? ChannelCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

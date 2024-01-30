@@ -4,11 +4,11 @@ public partial class BofPopulateData
 {
     public decimal? SessId { get; set; }
     public decimal? RecordId { get; set; }
-    public string OutputValue { get; set; }
-    public string TrxCode { get; set; }
+    public string? OutputValue { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? OrderBy { get; set; }
-    public string RecordSubtype { get; set; }
-    public string ChildRecordSubtype { get; set; }
+    public string? RecordSubtype { get; set; }
+    public string? ChildRecordSubtype { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

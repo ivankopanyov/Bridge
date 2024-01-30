@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateCodesView
 {
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public DateTime BeginBookingDate { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? BeginBookingDate { get; set; }
     public DateTime? EndBookingDate { get; set; }
     public decimal? DisplaySeq { get; set; }
-    public string GdsHost { get; set; }
-    public string ChannelType { get; set; }
-    public string GrcGdsHost { get; set; }
-    public string GrcGdsRateCode { get; set; }
-    public string GrcGdsRateCategory { get; set; }
-    public string GrcGdsRateLevel { get; set; }
-    public string GrcNegRateCode { get; set; }
+    public string? GdsHost { get; set; }
+    public string? ChannelType { get; set; }
+    public string? GrcGdsHost { get; set; }
+    public string? GrcGdsRateCode { get; set; }
+    public string? GrcGdsRateCategory { get; set; }
+    public string? GrcGdsRateLevel { get; set; }
+    public string? GrcNegRateCode { get; set; }
     public decimal? SortCol1 { get; set; }
-    public string ExternalValue { get; set; }
+    public string? ExternalValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

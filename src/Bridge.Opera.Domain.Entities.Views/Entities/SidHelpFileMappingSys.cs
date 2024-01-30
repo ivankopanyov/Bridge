@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidHelpFileMappingSys
 {
-    public string BlockName { get; set; }
-    public string FieldName { get; set; }
-    public string FormName { get; set; }
-    public string PathTopicId { get; set; }
-    public string SubTopicName { get; set; }
+    public string? BlockName { get; set; }
+    public string? FieldName { get; set; }
+    public string? FormName { get; set; }
+    public string? PathTopicId { get; set; }
+    public string? SubTopicName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExportPotentialForecast
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? ProfileId { get; set; }
-    public string ProfileName { get; set; }
-    public string Udfc40 { get; set; }
-    public decimal PotentialId { get; set; }
-    public string PotentialName { get; set; }
-    public DateTime PotentialStartDate { get; set; }
-    public DateTime PotentialEndDate { get; set; }
-    public string ForecastType { get; set; }
-    public string Resort { get; set; }
+    public string? ProfileName { get; set; }
+    public string? Udfc40 { get; set; }
+    public decimal? PotentialId { get; set; }
+    public string? PotentialName { get; set; }
+    public DateTime? PotentialStartDate { get; set; }
+    public DateTime? PotentialEndDate { get; set; }
+    public string? ForecastType { get; set; }
+    public string? Resort { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgrate { get; set; }

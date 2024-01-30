@@ -4,8 +4,8 @@ public partial class ConvCharlist
 {
     public byte? CharLength { get; set; }
     public byte? ByteLength { get; set; }
-    public string ActualChar { get; set; }
-    public string ConvertChar { get; set; }
+    public string? ActualChar { get; set; }
+    public string? ConvertChar { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

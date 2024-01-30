@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchTaskQInst
 {
-    public decimal TaskInstId { get; set; }
-    public string TaskCode { get; set; }
-    public string QCode { get; set; }
-    public decimal ExecutionSeq { get; set; }
-    public string TaskStatus { get; set; }
+    public decimal? TaskInstId { get; set; }
+    public string? TaskCode { get; set; }
+    public string? QCode { get; set; }
+    public decimal? ExecutionSeq { get; set; }
+    public string? TaskStatus { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ProcessingMessage { get; set; }
+    public string? ProcessingMessage { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public decimal? ParamListId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string JobNameId { get; set; }
+    public string? JobNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

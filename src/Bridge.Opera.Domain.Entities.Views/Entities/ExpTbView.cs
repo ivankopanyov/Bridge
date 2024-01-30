@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpTbView
 {
     public DateTime? TrxDate { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? Amount { get; set; }
-    public string TrxType { get; set; }
-    public string TrxTypeDescription { get; set; }
+    public string? TrxType { get; set; }
+    public string? TrxTypeDescription { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? NonRevenueAmt { get; set; }
     public decimal? GrossAmount { get; set; }

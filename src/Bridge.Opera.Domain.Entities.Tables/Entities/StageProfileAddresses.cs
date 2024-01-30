@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileAddresses
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string AddressType { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? AddressType { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? PrimaryYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string LanguageCode { get; set; }
-    public string PostalCodeExt { get; set; }
-    public string BarCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? PostalCodeExt { get; set; }
+    public string? BarCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

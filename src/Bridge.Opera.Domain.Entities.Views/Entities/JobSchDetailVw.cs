@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class JobSchDetailVw
 {
-    public string JobNameId { get; set; }
-    public decimal TextSeqId { get; set; }
-    public string TextType { get; set; }
-    public string MessageText { get; set; }
+    public string? JobNameId { get; set; }
+    public decimal? TextSeqId { get; set; }
+    public string? TextType { get; set; }
+    public string? MessageText { get; set; }
     public decimal? CompletePercent { get; set; }
     public decimal? MsgLevel { get; set; }
     public DateTime? DateTimeStamp { get; set; }
-    public string TextMsgCode { get; set; }
+    public string? TextMsgCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

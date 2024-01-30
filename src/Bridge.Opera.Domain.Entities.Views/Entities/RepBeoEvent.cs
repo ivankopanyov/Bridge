@@ -2,43 +2,43 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoEvent
 {
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public string EvResort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public string? EvResort { get; set; }
     public decimal? PkgId { get; set; }
-    public string EventId { get; set; }
-    public string EventType { get; set; }
-    public string EventName { get; set; }
-    public string Room { get; set; }
-    public string RoomName { get; set; }
-    public string Doorcard { get; set; }
-    public string RoomSetup { get; set; }
-    public string EventStartDate { get; set; }
-    public string EventEndDate { get; set; }
-    public DateTime StartTime { get; set; }
-    public DateTime EndTime { get; set; }
-    public string EventStartTime { get; set; }
-    public string EventEndTime { get; set; }
-    public string EventTime { get; set; }
+    public string? EventId { get; set; }
+    public string? EventType { get; set; }
+    public string? EventName { get; set; }
+    public string? Room { get; set; }
+    public string? RoomName { get; set; }
+    public string? Doorcard { get; set; }
+    public string? RoomSetup { get; set; }
+    public string? EventStartDate { get; set; }
+    public string? EventEndDate { get; set; }
+    public DateTime? StartTime { get; set; }
+    public DateTime? EndTime { get; set; }
+    public string? EventStartTime { get; set; }
+    public string? EventEndTime { get; set; }
+    public string? EventTime { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? Guaranteed { get; set; }
-    public string EventStatus { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? EventStatus { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? MasterEventId { get; set; }
     public decimal? GroupId { get; set; }
-    public string Program { get; set; }
-    public string Ratecode { get; set; }
+    public string? Program { get; set; }
+    public string? Ratecode { get; set; }
     public decimal? DiscountPercentage { get; set; }
     public decimal? RateAmount { get; set; }
-    public string SetupSetdwnTime { get; set; }
+    public string? SetupSetdwnTime { get; set; }
     public decimal? ReservPkgId { get; set; }
-    public string DoorcardYn { get; set; }
-    public string EventLinkType { get; set; }
+    public string? DoorcardYn { get; set; }
+    public string? EventLinkType { get; set; }
     public decimal? EventLinkId { get; set; }
-    public string MinimumRevenueYn { get; set; }
+    public string? MinimumRevenueYn { get; set; }
     public decimal? RentalAmount { get; set; }
     public decimal? MinimumRevenue { get; set; }
     public decimal? SetAttendees { get; set; }

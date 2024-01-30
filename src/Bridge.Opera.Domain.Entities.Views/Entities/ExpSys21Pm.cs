@@ -6,12 +6,12 @@ public partial class ExpSys21Pm
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string GuestName { get; set; }
-    public string AllotmentCode { get; set; }
-    public string RateCode { get; set; }
-    public string Udfc26 { get; set; }
-    public string GroupName { get; set; }
-    public string HotelCode { get; set; }
+    public string? GuestName { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? GroupName { get; set; }
+    public string? HotelCode { get; set; }
     public DateTime? BeginDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

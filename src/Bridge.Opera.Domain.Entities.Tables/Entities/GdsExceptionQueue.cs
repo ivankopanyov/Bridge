@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsExceptionQueue
 {
-    public decimal ExceptionId { get; set; }
-    public string ExceptionReason { get; set; }
-    public string ActualValue { get; set; }
-    public string RealValue { get; set; }
-    public string GdsTransactionNo { get; set; }
-    public string Status { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Resort { get; set; }
-    public string GdsSource { get; set; }
-    public string GdsRecordLocator { get; set; }
-    public string DetailDescription { get; set; }
-    public string GdsMessageNo { get; set; }
-    public string BookNo { get; set; }
+    public decimal? ExceptionId { get; set; }
+    public string? ExceptionReason { get; set; }
+    public string? ActualValue { get; set; }
+    public string? RealValue { get; set; }
+    public string? GdsTransactionNo { get; set; }
+    public string? Status { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? GdsSource { get; set; }
+    public string? GdsRecordLocator { get; set; }
+    public string? DetailDescription { get; set; }
+    public string? GdsMessageNo { get; set; }
+    public string? BookNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

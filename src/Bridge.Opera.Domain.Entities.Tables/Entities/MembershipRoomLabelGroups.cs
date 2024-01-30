@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipRoomLabelGroups
 {
-    public string ChainCode { get; set; }
-    public string MemRoomGroup { get; set; }
-    public string Label { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MemRoomGroup { get; set; }
+    public string? Label { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

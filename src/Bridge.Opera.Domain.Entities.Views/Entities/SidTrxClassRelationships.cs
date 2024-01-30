@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidTrxClassRelationships
 {
-    public string Id { get; set; }
-    public string Resort { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TcGroupGenerator { get; set; }
-    public string TcSubgroupGenerator { get; set; }
-    public string TrxCodeGenerator { get; set; }
-    public string TclCodeGenerator { get; set; }
-    public string TcrType { get; set; }
+    public string? Id { get; set; }
+    public string? Resort { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcGroupGenerator { get; set; }
+    public string? TcSubgroupGenerator { get; set; }
+    public string? TrxCodeGenerator { get; set; }
+    public string? TclCodeGenerator { get; set; }
+    public string? TcrType { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }
     public bool? PercentageBaseCode { get; set; }
-    public string UdfFunction { get; set; }
-    public decimal CalculationSequence { get; set; }
-    public string AmountFromScheduleYn { get; set; }
-    public string Currency { get; set; }
-    public string ResultIncludedInSumArray { get; set; }
-    public string GeneratedPrintedOnFolioYn { get; set; }
-    public string NameTaxType { get; set; }
-    public string UdfInverse { get; set; }
+    public string? UdfFunction { get; set; }
+    public decimal? CalculationSequence { get; set; }
+    public string? AmountFromScheduleYn { get; set; }
+    public string? Currency { get; set; }
+    public string? ResultIncludedInSumArray { get; set; }
+    public string? GeneratedPrintedOnFolioYn { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? UdfInverse { get; set; }
     public decimal? StopDays { get; set; }
-    public string AdjustmentType { get; set; }
+    public string? AdjustmentType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

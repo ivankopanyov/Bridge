@@ -7,16 +7,16 @@ public partial class EventChangelog
         EventChangelogDetails = new HashSet<EventChangelogDetails>();
     }
 
-    public decimal ChangeId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public string EvName { get; set; }
+    public decimal? ChangeId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EvName { get; set; }
     public decimal? MenuId { get; set; }
-    public string ResourceType { get; set; }
+    public string? ResourceType { get; set; }
     public decimal? ResourceId { get; set; }
-    public string ResourceName { get; set; }
-    public string Action { get; set; }
+    public string? ResourceName { get; set; }
+    public string? Action { get; set; }
     public decimal? ByUser { get; set; }
     public DateTime? ByDate { get; set; }
 

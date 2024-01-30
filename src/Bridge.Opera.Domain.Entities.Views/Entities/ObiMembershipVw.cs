@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiMembershipVw
 {
-    public decimal NameId { get; set; }
-    public decimal MembershipId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MemTypeDesc { get; set; }
-    public string MemClassDesc { get; set; }
-    public string LoyaltyProgramYn { get; set; }
-    public string FrequentFlyerYn { get; set; }
-    public string NameOnCard { get; set; }
+    public decimal? NameId { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MemTypeDesc { get; set; }
+    public string? MemClassDesc { get; set; }
+    public string? LoyaltyProgramYn { get; set; }
+    public string? FrequentFlyerYn { get; set; }
+    public string? NameOnCard { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string MembershipStatus { get; set; }
-    public string MembershipClass { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? ExpirationMonth { get; set; }
-    public string AwardGenerationMethod { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string EnrolledAt { get; set; }
-    public string MembershipLevelId { get; set; }
-    public string PrimaryMembershipYn { get; set; }
+    public string? AwardGenerationMethod { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? MembershipLevelId { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

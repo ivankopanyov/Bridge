@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidRegionChn
 {
-    public string ChainCode { get; set; }
-    public string RegionCode { get; set; }
-    public string Description { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RegionCode { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

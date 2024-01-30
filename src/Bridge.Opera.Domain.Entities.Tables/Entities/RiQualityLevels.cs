@@ -7,10 +7,10 @@ public partial class RiQualityLevels
         RoomInspectionDetails = new HashSet<RoomInspectionDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal RiQualityLevelSeq { get; set; }
-    public string RiQualityLevelDescription { get; set; }
-    public decimal RiQualityLevelPoints { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RiQualityLevelSeq { get; set; }
+    public string? RiQualityLevelDescription { get; set; }
+    public decimal? RiQualityLevelPoints { get; set; }
 
     public virtual ICollection<RoomInspectionDetails> RoomInspectionDetails { get; set; }
 

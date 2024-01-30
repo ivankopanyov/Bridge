@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpMarketRoomcatTierStats
 {
-    public string MarketCode { get; set; }
-    public string RoomCategory { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? LosTier { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? TotalRooms { get; set; }

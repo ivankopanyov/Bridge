@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CancellationHistoryView
 {
-    public string CancelNo { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public string CancelCode { get; set; }
-    public string CancelReason { get; set; }
+    public string? CancelNo { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public string? CancelCode { get; set; }
+    public string? CancelReason { get; set; }
     public decimal? UserId { get; set; }
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
     public DateTime? CancelDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

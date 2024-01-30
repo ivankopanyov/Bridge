@@ -2,62 +2,62 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTrxAirRejects
 {
-    public decimal RejectRecId { get; set; }
-    public decimal BatchId { get; set; }
-    public DateTime ImportDate { get; set; }
-    public string ImportStatus { get; set; }
-    public decimal MembershipTrxId { get; set; }
-    public string MembershipCardNo { get; set; }
+    public decimal? RejectRecId { get; set; }
+    public decimal? BatchId { get; set; }
+    public DateTime? ImportDate { get; set; }
+    public string? ImportStatus { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public string? MembershipCardNo { get; set; }
     public DateTime? ImportTrxDate { get; set; }
     public DateTime? AirlinePostDate { get; set; }
-    public string AirlineErrCode { get; set; }
-    public string AirlineErrDesc { get; set; }
+    public string? AirlineErrCode { get; set; }
+    public string? AirlineErrDesc { get; set; }
     public decimal? MilesPoints { get; set; }
-    public string AirlineResortCode { get; set; }
-    public string OperaResortCode { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string ReviewStatus { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? AirlineResortCode { get; set; }
+    public string? OperaResortCode { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? ReviewStatus { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -88,7 +88,7 @@ public partial class MembershipTrxAirRejects
     public DateTime? Udfd08 { get; set; }
     public DateTime? Udfd09 { get; set; }
     public DateTime? Udfd10 { get; set; }
-    public string ImportErrorDesc { get; set; }
+    public string? ImportErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

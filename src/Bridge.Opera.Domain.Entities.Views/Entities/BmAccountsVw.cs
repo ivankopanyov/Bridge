@@ -2,44 +2,44 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BmAccountsVw
 {
-    public decimal NameId { get; set; }
-    public string AccountCode { get; set; }
-    public string TemplateAccount { get; set; }
-    public string AccountType { get; set; }
-    public string Note { get; set; }
-    public string Currency { get; set; }
-    public string ChainCode { get; set; }
-    public string ExportFormat { get; set; }
-    public string Name { get; set; }
-    public string Sname { get; set; }
-    public string AcctContact { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Country { get; set; }
-    public string State { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string Address1b { get; set; }
-    public string Address2b { get; set; }
-    public string Address3b { get; set; }
-    public string Countryb { get; set; }
-    public string Stateb { get; set; }
-    public string Cityb { get; set; }
-    public string ZipCodeb { get; set; }
-    public string PhoneNo { get; set; }
-    public string FaxNo { get; set; }
-    public string Resorts { get; set; }
-    public string ArNo { get; set; }
+    public decimal? NameId { get; set; }
+    public string? AccountCode { get; set; }
+    public string? TemplateAccount { get; set; }
+    public string? AccountType { get; set; }
+    public string? Note { get; set; }
+    public string? Currency { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ExportFormat { get; set; }
+    public string? Name { get; set; }
+    public string? Sname { get; set; }
+    public string? AcctContact { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Country { get; set; }
+    public string? State { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Address1b { get; set; }
+    public string? Address2b { get; set; }
+    public string? Address3b { get; set; }
+    public string? Countryb { get; set; }
+    public string? Stateb { get; set; }
+    public string? Cityb { get; set; }
+    public string? ZipCodeb { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? FaxNo { get; set; }
+    public string? Resorts { get; set; }
+    public string? ArNo { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Sxname { get; set; }
-    public string NoResorts { get; set; }
-    public string NoRooms { get; set; }
-    public string Instances { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Sxname { get; set; }
+    public string? NoResorts { get; set; }
+    public string? NoRooms { get; set; }
+    public string? Instances { get; set; }
     public DateTime? RebateDate { get; set; }
     public DateTime? ContractEnd { get; set; }
 

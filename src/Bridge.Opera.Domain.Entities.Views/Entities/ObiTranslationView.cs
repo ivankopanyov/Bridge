@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTranslationView
 {
-    public string BiCode { get; set; }
-    public string BiLanguageCode { get; set; }
-    public string BiLanguageDesc { get; set; }
-    public string TermCode { get; set; }
-    public string TermType { get; set; }
-    public string ObjectName { get; set; }
-    public string Version { get; set; }
-    public string TermText { get; set; }
-    public string TermComment { get; set; }
-    public string LanguageCode { get; set; }
-    public string CreatedBy { get; set; }
+    public string? BiCode { get; set; }
+    public string? BiLanguageCode { get; set; }
+    public string? BiLanguageDesc { get; set; }
+    public string? TermCode { get; set; }
+    public string? TermType { get; set; }
+    public string? ObjectName { get; set; }
+    public string? Version { get; set; }
+    public string? TermText { get; set; }
+    public string? TermComment { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? CreatedBy { get; set; }
     public DateTime? CreateDate { get; set; }
-    public string UpdatedBy { get; set; }
+    public string? UpdatedBy { get; set; }
     public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

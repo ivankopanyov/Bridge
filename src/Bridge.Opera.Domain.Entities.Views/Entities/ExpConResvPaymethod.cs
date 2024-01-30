@@ -6,7 +6,7 @@ public partial class ExpConResvPaymethod
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioWindowNo { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? PaymentMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

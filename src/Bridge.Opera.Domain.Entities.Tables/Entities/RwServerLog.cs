@@ -4,12 +4,12 @@ public partial class RwServerLog
 {
     public decimal? SeqNo { get; set; }
     public decimal? JobId { get; set; }
-    public string CharInsDate { get; set; }
-    public string MsgText { get; set; }
-    public string CommandLine { get; set; }
-    public string DesName { get; set; }
+    public string? CharInsDate { get; set; }
+    public string? MsgText { get; set; }
+    public string? CommandLine { get; set; }
+    public string? DesName { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Step { get; set; }
+    public string? Step { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

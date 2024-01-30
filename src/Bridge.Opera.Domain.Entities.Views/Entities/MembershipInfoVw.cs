@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipInfoVw
 {
-    public decimal MembershipId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public decimal? MembershipId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ColName { get; set; }
-    public string PromptText { get; set; }
-    public string ColValue { get; set; }
-    public string IsRangeFieldYn { get; set; }
-    public string IsResortFieldYn { get; set; }
+    public string? ColName { get; set; }
+    public string? PromptText { get; set; }
+    public string? ColValue { get; set; }
+    public string? IsRangeFieldYn { get; set; }
+    public string? IsResortFieldYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

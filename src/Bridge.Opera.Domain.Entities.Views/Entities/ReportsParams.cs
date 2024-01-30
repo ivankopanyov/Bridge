@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReportsParams
 {
-    public string ReportId { get; set; }
-    public string ReportName { get; set; }
-    public string ReportDescription { get; set; }
-    public string ParamName { get; set; }
-    public string ParamValue { get; set; }
-    public string ReportType { get; set; }
-    public string Destination { get; set; }
+    public string? ReportId { get; set; }
+    public string? ReportName { get; set; }
+    public string? ReportDescription { get; set; }
+    public string? ParamName { get; set; }
+    public string? ParamValue { get; set; }
+    public string? ReportType { get; set; }
+    public string? Destination { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Gateway { get; set; }
-    public string Server { get; set; }
-    public string StationId { get; set; }
-    public string Scheduled { get; set; }
-    public string Format { get; set; }
-    public string Title { get; set; }
-    public string Debug { get; set; }
+    public string? Gateway { get; set; }
+    public string? Server { get; set; }
+    public string? StationId { get; set; }
+    public string? Scheduled { get; set; }
+    public string? Format { get; set; }
+    public string? Title { get; set; }
+    public string? Debug { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

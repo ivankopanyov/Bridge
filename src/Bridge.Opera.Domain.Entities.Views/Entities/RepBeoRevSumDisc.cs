@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoRevSumDisc
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? EventId { get; set; }
     public DateTime? StartDate { get; set; }
-    public string RevenueType { get; set; }
-    public string RevenueDesc { get; set; }
+    public string? RevenueType { get; set; }
+    public string? RevenueDesc { get; set; }
     public decimal? Revenue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

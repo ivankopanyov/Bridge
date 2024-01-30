@@ -9,14 +9,14 @@ public partial class AppPermissions
         AppTrusteePermission = new HashSet<AppTrusteePermission>();
     }
 
-    public string Permission { get; set; }
-    public string PermissionGroup { get; set; }
-    public string UsedInApp { get; set; }
-    public string Description { get; set; }
+    public string? Permission { get; set; }
+    public string? PermissionGroup { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? Description { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string PermissionDisplay { get; set; }
+    public string? PermissionDisplay { get; set; }
     public decimal? OrderBy { get; set; }
-    public string TrusteePermissionYn { get; set; }
+    public string? TrusteePermissionYn { get; set; }
 
     public virtual ICollection<AppPermissionDependencies> AppPermissionDependenciesChildPermissionNavigation { get; set; }
     public virtual ICollection<AppPermissionDependencies> AppPermissionDependenciesParentPermissionNavigation { get; set; }

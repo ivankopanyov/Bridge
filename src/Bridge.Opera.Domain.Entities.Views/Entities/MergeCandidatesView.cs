@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MergeCandidatesView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? BatchId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string MergeToResvYn { get; set; }
+    public string? MergeToResvYn { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

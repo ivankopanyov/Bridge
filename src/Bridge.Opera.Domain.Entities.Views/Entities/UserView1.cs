@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class UserView1
 {
-    public decimal ViewId { get; set; }
-    public string FormName { get; set; }
+    public decimal? ViewId { get; set; }
+    public string? FormName { get; set; }
     public decimal? UserId { get; set; }
     public decimal? FilterId { get; set; }
     public decimal? GridId { get; set; }

@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PrimeNumbers
 {
-    public decimal PrimeNumber { get; set; }
+    public decimal? PrimeNumber { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

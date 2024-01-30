@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidAwardRateCodes
 {
-    public decimal AwardSeqId { get; set; }
-    public string Resort { get; set; }
-    public string AwardCode { get; set; }
-    public string RateCode { get; set; }
+    public decimal? AwardSeqId { get; set; }
+    public string? Resort { get; set; }
+    public string? AwardCode { get; set; }
+    public string? RateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OsaOlmBookings
 {
-    public string Resort { get; set; }
-    public decimal ActivityId { get; set; }
-    public string EasActivityId { get; set; }
-    public string ExternalSystem { get; set; }
-    public string ActivityType { get; set; }
-    public string LocationCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ActivityId { get; set; }
+    public string? EasActivityId { get; set; }
+    public string? ExternalSystem { get; set; }
+    public string? ActivityType { get; set; }
+    public string? LocationCode { get; set; }
     public decimal? Pax { get; set; }
-    public string Notes { get; set; }
+    public string? Notes { get; set; }
     public DateTime? StartDate { get; set; }
-    public string StartTime { get; set; }
+    public string? StartTime { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EndTime { get; set; }
-    public string StatusCode { get; set; }
-    public string LocationDesc { get; set; }
-    public string StatusDesc { get; set; }
-    public string ActivityDesc { get; set; }
+    public string? EndTime { get; set; }
+    public string? StatusCode { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? StatusDesc { get; set; }
+    public string? ActivityDesc { get; set; }
     public decimal? Duration { get; set; }
-    public string DepositAmount { get; set; }
-    public string DepositOwner { get; set; }
-    public decimal ActivityAmount { get; set; }
-    public string ProblemDesc { get; set; }
-    public string GuestType { get; set; }
+    public string? DepositAmount { get; set; }
+    public string? DepositOwner { get; set; }
+    public decimal? ActivityAmount { get; set; }
+    public string? ProblemDesc { get; set; }
+    public string? GuestType { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal OlmResvNameId { get; set; }
+    public decimal? OlmResvNameId { get; set; }
     public decimal? OlmNameId { get; set; }
-    public string DurationFmt { get; set; }
+    public string? DurationFmt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

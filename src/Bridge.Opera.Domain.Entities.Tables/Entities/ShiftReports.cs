@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ShiftReports
 {
-    public decimal ShiftGroupId { get; set; }
-    public decimal AttachedModuleId { get; set; }
-    public string CanDeleteYn { get; set; }
+    public decimal? ShiftGroupId { get; set; }
+    public decimal? AttachedModuleId { get; set; }
+    public string? CanDeleteYn { get; set; }
 
     public virtual AppModules AttachedModule { get; set; }
     public virtual AppModules ShiftGroup { get; set; }

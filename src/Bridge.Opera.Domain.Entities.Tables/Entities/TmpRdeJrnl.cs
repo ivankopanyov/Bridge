@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TmpRdeJrnl
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvDailyElSeq { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? ResvNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

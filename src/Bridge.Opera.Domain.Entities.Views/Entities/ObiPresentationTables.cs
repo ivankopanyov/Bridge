@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPresentationTables
 {
-    public string PresentationTable { get; set; }
+    public string? PresentationTable { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

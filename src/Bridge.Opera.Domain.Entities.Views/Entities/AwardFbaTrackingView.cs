@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AwardFbaTrackingView
 {
-    public string AprRowid { get; set; }
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
+    public string? AprRowid { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string CertificateNumber { get; set; }
-    public string MembershipNo { get; set; }
-    public string AwardCode { get; set; }
-    public string Status { get; set; }
-    public string Description { get; set; }
+    public string? CertificateNumber { get; set; }
+    public string? MembershipNo { get; set; }
+    public string? AwardCode { get; set; }
+    public string? Status { get; set; }
+    public string? Description { get; set; }
     public decimal? Nights { get; set; }
-    public string SourceType { get; set; }
+    public string? SourceType { get; set; }
     public decimal? OrderBy { get; set; }
-    public string MasterCertificateNumber { get; set; }
+    public string? MasterCertificateNumber { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CrsHotelCode { get; set; }
-    public string CrsConfirmationNumber { get; set; }
+    public string? CrsHotelCode { get; set; }
+    public string? CrsConfirmationNumber { get; set; }
     public decimal? PointsCost { get; set; }
-    public string FbaYn { get; set; }
-    public string FbaStatus { get; set; }
+    public string? FbaYn { get; set; }
+    public string? FbaStatus { get; set; }
     public decimal? FbaMonetaryValue { get; set; }
     public decimal? FbaAmount { get; set; }
     public decimal? FbaPostedAmount { get; set; }
@@ -34,21 +34,21 @@ public partial class AwardFbaTrackingView
     public DateTime? FbaSettlementBusinessDate { get; set; }
     public DateTime? FbaReimbursementDateTime { get; set; }
     public DateTime? FbaReimburseBusinessDate { get; set; }
-    public string IsResCertOrDetailCert { get; set; }
-    public string FbaPostedYn { get; set; }
-    public string FbaSettledYn { get; set; }
-    public string FbaReimbursedYn { get; set; }
-    public string Room { get; set; }
-    public string SguestName { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? IsResCertOrDetailCert { get; set; }
+    public string? FbaPostedYn { get; set; }
+    public string? FbaSettledYn { get; set; }
+    public string? FbaReimbursedYn { get; set; }
+    public string? Room { get; set; }
+    public string? SguestName { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public DateTime? TruncArrival { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? FbaBillNo { get; set; }
-    public string OrphanCertificateYn { get; set; }
+    public string? OrphanCertificateYn { get; set; }
     public DateTime? FbaBillGenerationDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

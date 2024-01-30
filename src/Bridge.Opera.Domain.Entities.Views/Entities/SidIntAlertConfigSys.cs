@@ -2,57 +2,57 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntAlertConfigSys
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string AlertGroupCode { get; set; }
-    public decimal AlertQueryId { get; set; }
-    public string AlertQuery { get; set; }
-    public string AlertDescription { get; set; }
-    public string Module { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? AlertGroupCode { get; set; }
+    public decimal? AlertQueryId { get; set; }
+    public string? AlertQuery { get; set; }
+    public string? AlertDescription { get; set; }
+    public string? Module { get; set; }
     public decimal? TimeInSecsP1 { get; set; }
     public decimal? TimeValP1 { get; set; }
-    public string TimeValTuP1 { get; set; }
-    public string TimeValP1Yn { get; set; }
+    public string? TimeValTuP1 { get; set; }
+    public string? TimeValP1Yn { get; set; }
     public decimal? TimeInSecsP2 { get; set; }
     public decimal? TimeValP2 { get; set; }
-    public string TimeValTuP2 { get; set; }
-    public string TimeValP2Yn { get; set; }
+    public string? TimeValTuP2 { get; set; }
+    public string? TimeValP2Yn { get; set; }
     public decimal? AbsValP1 { get; set; }
-    public string AbsValP1Yn { get; set; }
+    public string? AbsValP1Yn { get; set; }
     public decimal? AbsValP2 { get; set; }
-    public string AbsValP2Yn { get; set; }
+    public string? AbsValP2Yn { get; set; }
     public decimal? PrcValP1 { get; set; }
-    public string PrcValP1Yn { get; set; }
+    public string? PrcValP1Yn { get; set; }
     public decimal? PrcValP2 { get; set; }
-    public string PrcValP2Yn { get; set; }
-    public string AlertEnabledUd { get; set; }
+    public string? PrcValP2Yn { get; set; }
+    public string? AlertEnabledUd { get; set; }
     public DateTime? AlertDefferedUntil { get; set; }
     public DateTime? FirstAlertTime { get; set; }
     public DateTime? LastAlertTime { get; set; }
-    public string LastAlertLevel { get; set; }
-    public string MaxAlertLevel { get; set; }
-    public string QueryDump { get; set; }
-    public string SendQueryDumpYn { get; set; }
-    public string SendQueryDumpYnOrg { get; set; }
-    public string ErrorDump { get; set; }
-    public string AlertShortDesc { get; set; }
-    public string AlertEsclLevels { get; set; }
-    public string AlertEsclIntrL1 { get; set; }
-    public string AlertEsclIntrL2 { get; set; }
-    public string AlertEsclIntrL3 { get; set; }
-    public string AlertL1EmailId { get; set; }
-    public string AlertL2EmailId { get; set; }
-    public string AlertL3EmailId { get; set; }
+    public string? LastAlertLevel { get; set; }
+    public string? MaxAlertLevel { get; set; }
+    public string? QueryDump { get; set; }
+    public string? SendQueryDumpYn { get; set; }
+    public string? SendQueryDumpYnOrg { get; set; }
+    public string? ErrorDump { get; set; }
+    public string? AlertShortDesc { get; set; }
+    public string? AlertEsclLevels { get; set; }
+    public string? AlertEsclIntrL1 { get; set; }
+    public string? AlertEsclIntrL2 { get; set; }
+    public string? AlertEsclIntrL3 { get; set; }
+    public string? AlertL1EmailId { get; set; }
+    public string? AlertL2EmailId { get; set; }
+    public string? AlertL3EmailId { get; set; }
     public decimal? AlertL1SmsNo { get; set; }
     public decimal? AlertL2SmsNo { get; set; }
     public decimal? AlertL3SmsNo { get; set; }
-    public string AlertFmtL1 { get; set; }
-    public string AlertFmtL2 { get; set; }
-    public string AlertFmtL3 { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? AlertFmtL1 { get; set; }
+    public string? AlertFmtL2 { get; set; }
+    public string? AlertFmtL3 { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

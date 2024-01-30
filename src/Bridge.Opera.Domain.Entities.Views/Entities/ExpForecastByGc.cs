@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpForecastByGc
 {
-    public string GuaranteeCode { get; set; }
+    public string? GuaranteeCode { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? PickupRooms { get; set; }
     public decimal? AllottedRooms { get; set; }

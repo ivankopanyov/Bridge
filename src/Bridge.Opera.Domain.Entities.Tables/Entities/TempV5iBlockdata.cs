@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempV5iBlockdata
 {
-    public string Hotelcode { get; set; }
-    public decimal Groupid { get; set; }
+    public string? Hotelcode { get; set; }
+    public decimal? Groupid { get; set; }
     public DateTime? Blockdate { get; set; }
     public decimal? Forecast { get; set; }
-    public string Rmtypecode { get; set; }
+    public string? Rmtypecode { get; set; }
     public decimal? Block { get; set; }
     public decimal? Pickup { get; set; }
     public decimal? Sglocc { get; set; }

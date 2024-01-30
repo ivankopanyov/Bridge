@@ -8,14 +8,14 @@ public partial class OrmsPriceSlices
         OrmsRateDist = new HashSet<OrmsRateDist>();
     }
 
-    public decimal PricesliceId { get; set; }
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public decimal SliceFrom { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? PricesliceId { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public decimal? SliceFrom { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual YieldCategories YieldCategories { get; set; }
     public virtual ICollection<OrmsPriceDetails> OrmsPriceDetails { get; set; }

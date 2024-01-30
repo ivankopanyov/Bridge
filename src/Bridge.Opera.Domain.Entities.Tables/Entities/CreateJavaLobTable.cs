@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CreateJavaLobTable
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public byte[] Lob { get; set; }
     public DateTime? Loadtime { get; set; }
 

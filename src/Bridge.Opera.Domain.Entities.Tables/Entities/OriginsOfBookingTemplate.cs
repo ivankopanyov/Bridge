@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OriginsOfBookingTemplate
 {
-    public string SourceCode { get; set; }
-    public string ParentSourceCode { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? SourceCode { get; set; }
+    public string? ParentSourceCode { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? SellSequence { get; set; }
     public decimal? ScOrderby { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

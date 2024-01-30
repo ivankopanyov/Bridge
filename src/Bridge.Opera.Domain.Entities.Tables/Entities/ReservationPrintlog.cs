@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationPrintlog
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal PrintlogSeqno { get; set; }
-    public string PrintedYn { get; set; }
-    public string PrintText { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? PrintlogSeqno { get; set; }
+    public string? PrintedYn { get; set; }
+    public string? PrintText { get; set; }
     public decimal? PrintRetries { get; set; }
-    public string InsertTerminal { get; set; }
+    public string? InsertTerminal { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

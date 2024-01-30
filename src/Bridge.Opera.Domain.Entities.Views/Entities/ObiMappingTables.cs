@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiMappingTables
 {
-    public string BiTableName { get; set; }
-    public string BiTableDesc { get; set; }
+    public string? BiTableName { get; set; }
+    public string? BiTableDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

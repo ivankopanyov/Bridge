@@ -7,9 +7,9 @@ public partial class DailyForecast
         DailyForecastRevtypes = new HashSet<DailyForecastRevtypes>();
     }
 
-    public decimal ForecastId { get; set; }
-    public string Resort { get; set; }
-    public DateTime ForecastDate { get; set; }
+    public decimal? ForecastId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ForecastDate { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgRate { get; set; }

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipMultiplePoints
 {
-    public decimal MembershipTrxId { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public string MembershipType { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public string? MembershipType { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? Points { get; set; }
-    public string AppliedYn { get; set; }
+    public string? AppliedYn { get; set; }
 
     public virtual MembershipTransactions MembershipTrx { get; set; }
 

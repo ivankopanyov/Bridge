@@ -5,18 +5,18 @@ public partial class ExpConAddress
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string AddressType { get; set; }
-    public string PrimaryYn { get; set; }
-    public string StateDesc { get; set; }
-    public string CountryDesc { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? AddressType { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? StateDesc { get; set; }
+    public string? CountryDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

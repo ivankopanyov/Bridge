@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScActivityFact
 {
-    public decimal ActId { get; set; }
-    public string Resort { get; set; }
+    public decimal? ActId { get; set; }
+    public string? Resort { get; set; }
     public decimal? TotalActivities { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

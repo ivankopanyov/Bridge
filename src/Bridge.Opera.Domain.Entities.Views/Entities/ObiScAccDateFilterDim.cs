@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScAccDateFilterDim
 {
-    public string LevelId { get; set; }
-    public string KeyId { get; set; }
+    public string? LevelId { get; set; }
+    public string? KeyId { get; set; }
     public DateTime? DStayDate { get; set; }
     public decimal? DStayMonth { get; set; }
     public decimal? DStayYear { get; set; }
-    public string CStayDate { get; set; }
-    public string CStayMonth { get; set; }
-    public string CStayYear { get; set; }
+    public string? CStayDate { get; set; }
+    public string? CStayMonth { get; set; }
+    public string? CStayYear { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

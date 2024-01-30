@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmCmpgnResvStayVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string DataSource { get; set; }
+    public string? DataSource { get; set; }
     public decimal? LegNo { get; set; }
     public decimal? NameId { get; set; }
-    public decimal CampaignId { get; set; }
-    public string PromotionCode { get; set; }
-    public string CampaignCode { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? CampaignCode { get; set; }
     public DateTime? CampaignBeginDate { get; set; }
     public DateTime? CampaignEndDate { get; set; }
 

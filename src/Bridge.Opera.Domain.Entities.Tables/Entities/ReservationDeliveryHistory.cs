@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationDeliveryHistory
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal DeliveryId { get; set; }
-    public string DeliveryMethod { get; set; }
-    public string InterfaceId { get; set; }
-    public string Status { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? DeliveryId { get; set; }
+    public string? DeliveryMethod { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorDesc { get; set; }
     public decimal? RetryCount { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

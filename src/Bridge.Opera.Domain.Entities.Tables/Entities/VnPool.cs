@@ -8,17 +8,17 @@ public partial class VnPool
         VnPoolDetails = new HashSet<VnPoolDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal Pool { get; set; }
-    public string PoolName { get; set; }
-    public string ActiveYn { get; set; }
-    public string PoolType { get; set; }
-    public string AssignmentRequired { get; set; }
-    public decimal AssignmentRule { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Pool { get; set; }
+    public string? PoolName { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? PoolType { get; set; }
+    public string? AssignmentRequired { get; set; }
+    public decimal? AssignmentRule { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<RoomVnPool> RoomVnPool { get; set; }
     public virtual ICollection<VnPoolDetails> VnPoolDetails { get; set; }

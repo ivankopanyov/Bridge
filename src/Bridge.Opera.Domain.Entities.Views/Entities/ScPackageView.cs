@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScPackageView
 {
-    public decimal Duration { get; set; }
+    public decimal? Duration { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string PkgCode { get; set; }
-    public decimal PkgId { get; set; }
-    public string PkgName { get; set; }
-    public string Resort { get; set; }
+    public string? PkgCode { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? PkgName { get; set; }
+    public string? Resort { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string TemplateYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? TemplateYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

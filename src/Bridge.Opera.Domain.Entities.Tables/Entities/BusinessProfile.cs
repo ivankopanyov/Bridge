@@ -13,84 +13,84 @@ public partial class BusinessProfile
         BusinessProfileRevenue = new HashSet<BusinessProfileRevenue>();
     }
 
-    public decimal ProfileId { get; set; }
+    public decimal? ProfileId { get; set; }
     public decimal? DestinationId { get; set; }
-    public string DestinationResort { get; set; }
-    public string RateCode { get; set; }
-    public string ProfName { get; set; }
-    public string ProfType { get; set; }
-    public DateTime StartPeriod { get; set; }
-    public DateTime EndPeriod { get; set; }
-    public string Frequency { get; set; }
+    public string? DestinationResort { get; set; }
+    public string? RateCode { get; set; }
+    public string? ProfName { get; set; }
+    public string? ProfType { get; set; }
+    public DateTime? StartPeriod { get; set; }
+    public DateTime? EndPeriod { get; set; }
+    public string? Frequency { get; set; }
     public decimal? LeadTimeNo { get; set; }
-    public string LeadTimeUnit { get; set; }
+    public string? LeadTimeUnit { get; set; }
     public decimal? DurationNo { get; set; }
-    public string DurationUnit { get; set; }
-    public string HotelType { get; set; }
-    public string Currency { get; set; }
-    public string Features { get; set; }
-    public string GeoPreferences { get; set; }
-    public string Months { get; set; }
+    public string? DurationUnit { get; set; }
+    public string? HotelType { get; set; }
+    public string? Currency { get; set; }
+    public string? Features { get; set; }
+    public string? GeoPreferences { get; set; }
+    public string? Months { get; set; }
     public decimal? PotentialRoomNights { get; set; }
     public decimal? PotentialRoomRevenue { get; set; }
     public decimal? PotentialRoomAvgrate { get; set; }
     public decimal? PotentialFbRevenue { get; set; }
     public decimal? PotentialOtherRevenue { get; set; }
-    public string Tracecode { get; set; }
+    public string? Tracecode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DownloadResort { get; set; }
+    public string? DownloadResort { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? DownloadDate { get; set; }
     public DateTime? UploadDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string ForecastCurrency { get; set; }
-    public string ChainCode { get; set; }
-    public string ResortRegistered { get; set; }
-    public string MarketingRegion { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? ForecastCurrency { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -151,16 +151,16 @@ public partial class BusinessProfile
     public decimal? Udfn38 { get; set; }
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
-    public string MeetingType { get; set; }
-    public string ArrivalDow { get; set; }
-    public string ArrivalMonth { get; set; }
-    public string Competitor { get; set; }
-    public string MarketingCity { get; set; }
-    public string MarketCode { get; set; }
+    public string? MeetingType { get; set; }
+    public string? ArrivalDow { get; set; }
+    public string? ArrivalMonth { get; set; }
+    public string? Competitor { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? PeakRooms { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? AverageRate { get; set; }
-    public string ForecastYn { get; set; }
+    public string? ForecastYn { get; set; }
 
     public virtual TraceCodes TraceCodes { get; set; }
     public virtual ICollection<BookProfileLink> BookProfileLink { get; set; }

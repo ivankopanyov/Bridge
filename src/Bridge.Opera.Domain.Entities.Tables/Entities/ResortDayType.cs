@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortDayType
 {
-    public string Resort { get; set; }
-    public string DtCode { get; set; }
-    public string DtDesc { get; set; }
-    public string DtRemarks { get; set; }
+    public string? Resort { get; set; }
+    public string? DtCode { get; set; }
+    public string? DtDesc { get; set; }
+    public string? DtRemarks { get; set; }
     public decimal? DtAdder { get; set; }
     public decimal? DtMultiplier { get; set; }
     public decimal? SellSequence { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string DtColor { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? DtColor { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

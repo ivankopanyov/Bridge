@@ -7,12 +7,12 @@ public partial class MailSubquery
         MailOperator = new HashSet<MailOperator>();
     }
 
-    public decimal SubqueryId { get; set; }
-    public string SubqueryCode { get; set; }
-    public string Description { get; set; }
-    public decimal SourceId { get; set; }
-    public string SubqueryText { get; set; }
-    public string Placeholder { get; set; }
+    public decimal? SubqueryId { get; set; }
+    public string? SubqueryCode { get; set; }
+    public string? Description { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? SubqueryText { get; set; }
+    public string? Placeholder { get; set; }
 
     public virtual MailSource Source { get; set; }
     public virtual ICollection<MailOperator> MailOperator { get; set; }

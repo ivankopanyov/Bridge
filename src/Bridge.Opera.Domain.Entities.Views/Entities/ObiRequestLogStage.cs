@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRequestLogStage
 {
-    public string TableName { get; set; }
+    public string? TableName { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RequestDateTrunc { get; set; }
     public DateTime? RequestDate { get; set; }
-    public string RequestType { get; set; }
-    public string RequestSource { get; set; }
-    public string RequestSourceType { get; set; }
+    public string? RequestType { get; set; }
+    public string? RequestSource { get; set; }
+    public string? RequestSourceType { get; set; }
     public DateTime? ArrivalDate { get; set; }
-    public string InsertHour { get; set; }
+    public string? InsertHour { get; set; }
     public decimal? InsertUser { get; set; }
-    public string RateCode { get; set; }
-    public string RegionCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? AgentId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? NameId { get; set; }
-    public string SgaCode { get; set; }
-    public string PseudoCity { get; set; }
-    public string PromotionCode { get; set; }
+    public string? SgaCode { get; set; }
+    public string? PseudoCity { get; set; }
+    public string? PromotionCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? Nights { get; set; }

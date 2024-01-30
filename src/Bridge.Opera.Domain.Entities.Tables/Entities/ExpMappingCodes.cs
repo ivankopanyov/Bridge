@@ -7,14 +7,14 @@ public partial class ExpMappingCodes
         ExpMappingLinks = new HashSet<ExpMappingLinks>();
     }
 
-    public decimal ExpMappingId { get; set; }
-    public string MappingCode { get; set; }
-    public string CodeDesc { get; set; }
-    public string DataType { get; set; }
+    public decimal? ExpMappingId { get; set; }
+    public string? MappingCode { get; set; }
+    public string? CodeDesc { get; set; }
+    public string? DataType { get; set; }
     public decimal? SeqNo { get; set; }
-    public string UseLovYn { get; set; }
-    public string LovName { get; set; }
-    public string RequiredYn { get; set; }
+    public string? UseLovYn { get; set; }
+    public string? LovName { get; set; }
+    public string? RequiredYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

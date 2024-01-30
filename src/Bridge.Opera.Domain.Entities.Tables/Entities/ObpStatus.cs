@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObpStatus
 {
-    public string ProcedureName { get; set; }
-    public DateTime StartDate { get; set; }
+    public string? ProcedureName { get; set; }
+    public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Status { get; set; }
-    public string ErrorDesc { get; set; }
-    public string ProcessInfo { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? ProcessInfo { get; set; }
 
     public virtual ObpProcedures ProcedureNameNavigation { get; set; }
 

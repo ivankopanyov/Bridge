@@ -3,16 +3,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepMonthEndDetailsBi
 {
     public decimal? ReportId { get; set; }
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? SectionOrder { get; set; }
     public decimal? OrderBy { get; set; }
-    public string GroupBy { get; set; }
+    public string? GroupBy { get; set; }
     public decimal? GroupById { get; set; }
-    public string NewStatusYn { get; set; }
-    public string Status { get; set; }
+    public string? NewStatusYn { get; set; }
+    public string? Status { get; set; }
     public decimal? StatusOrder { get; set; }
     public decimal? BookId { get; set; }
-    public string BookDesc { get; set; }
+    public string? BookDesc { get; set; }
     public DateTime? BookArrival { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? FbChange { get; set; }
@@ -26,8 +26,8 @@ public partial class RepMonthEndDetailsBi
     public decimal? RoomChange { get; set; }
     public decimal? Covers { get; set; }
     public decimal? AvgCheck { get; set; }
-    public string TotalYn { get; set; }
-    public string Attributes { get; set; }
+    public string? TotalYn { get; set; }
+    public string? Attributes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

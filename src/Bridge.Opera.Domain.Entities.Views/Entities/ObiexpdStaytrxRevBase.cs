@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdStaytrxRevBase
 {
-    public string RowKey { get; set; }
-    public string Resort { get; set; }
+    public string? RowKey { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public DateTime TransactionDate { get; set; }
-    public string TransactionRevenueType { get; set; }
+    public DateTime? TransactionDate { get; set; }
+    public string? TransactionRevenueType { get; set; }
     public decimal? LocalRevenueAmount { get; set; }
     public decimal? CentralRevenueAmount { get; set; }
-    public decimal MembershipTrxLinkId { get; set; }
+    public decimal? MembershipTrxLinkId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -8,13 +8,13 @@ public partial class InternetCinRules
         InternetCinRulesSpecials = new HashSet<InternetCinRulesSpecials>();
     }
 
-    public decimal RuleId { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string RuleType { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string AllowRestrict { get; set; }
+    public decimal? RuleId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RuleType { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? AllowRestrict { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

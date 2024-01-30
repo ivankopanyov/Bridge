@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class TmpReservationPersonList
 {
     public decimal? ResvNameId { get; set; }
-    public string SessionId { get; set; }
+    public string? SessionId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

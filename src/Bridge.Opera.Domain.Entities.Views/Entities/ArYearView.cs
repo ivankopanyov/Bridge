@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArYearView
 {
-    public decimal AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public string Month { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountName { get; set; }
+    public string? Month { get; set; }
     public decimal? Debits { get; set; }
     public decimal? Credits { get; set; }
     public decimal? Balance { get; set; }

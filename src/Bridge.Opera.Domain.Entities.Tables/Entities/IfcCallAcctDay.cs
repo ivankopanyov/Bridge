@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IfcCallAcctDay
 {
     public decimal? IfcCtrlId { get; set; }
-    public decimal DayId { get; set; }
+    public decimal? DayId { get; set; }
     public decimal? StartDay { get; set; }
     public decimal? EndDay { get; set; }
     public DateTime? SpecialDate { get; set; }
-    public string DateDesc { get; set; }
+    public string? DateDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UserView
 {
-    public decimal ViewId { get; set; }
-    public string FormName { get; set; }
+    public decimal? ViewId { get; set; }
+    public string? FormName { get; set; }
     public decimal? UserId { get; set; }
     public decimal? GridId { get; set; }
     public decimal? FilterId { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

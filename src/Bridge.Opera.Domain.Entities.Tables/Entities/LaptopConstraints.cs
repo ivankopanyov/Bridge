@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LaptopConstraints
 {
-    public string TableName { get; set; }
-    public string ConstraintName { get; set; }
-    public string ConstraintType { get; set; }
-    public string RefTableName { get; set; }
-    public string Ddl { get; set; }
+    public string? TableName { get; set; }
+    public string? ConstraintName { get; set; }
+    public string? ConstraintType { get; set; }
+    public string? RefTableName { get; set; }
+    public string? Ddl { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

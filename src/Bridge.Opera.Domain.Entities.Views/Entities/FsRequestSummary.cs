@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FsRequestSummary
 {
-    public decimal HdrReqId { get; set; }
-    public string Atr { get; set; }
-    public string AtrValue { get; set; }
+    public decimal? HdrReqId { get; set; }
+    public string? Atr { get; set; }
+    public string? AtrValue { get; set; }
     public decimal? ReqId { get; set; }
-    public string AtrDesc { get; set; }
-    public string Datatype { get; set; }
-    public string AtrCat { get; set; }
-    public string AtrCatDesc { get; set; }
+    public string? AtrDesc { get; set; }
+    public string? Datatype { get; set; }
+    public string? AtrCat { get; set; }
+    public string? AtrCatDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Src { get; set; }
-    public string SrcDesc { get; set; }
+    public string? Src { get; set; }
+    public string? SrcDesc { get; set; }
     public decimal? RowNo { get; set; }
     public decimal? SummaryOrderBy { get; set; }
 

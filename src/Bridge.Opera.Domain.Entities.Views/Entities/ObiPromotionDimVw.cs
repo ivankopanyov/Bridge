@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPromotionDimVw
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string PromoCode { get; set; }
-    public string PromoDesc { get; set; }
-    public string Mpcode { get; set; }
-    public string MpcodeDesc { get; set; }
-    public string ResortId { get; set; }
-    public string PromoCodeKey { get; set; }
-    public string MpcodeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? PromoCode { get; set; }
+    public string? PromoDesc { get; set; }
+    public string? Mpcode { get; set; }
+    public string? MpcodeDesc { get; set; }
+    public string? ResortId { get; set; }
+    public string? PromoCodeKey { get; set; }
+    public string? MpcodeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

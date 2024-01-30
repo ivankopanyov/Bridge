@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScAllPeriod
 {
-    public string Resort { get; set; }
-    public DateTime PeriodStart { get; set; }
-    public DateTime PeriodEnd { get; set; }
-    public string Description { get; set; }
-    public string Code { get; set; }
-    public string PeriodType { get; set; }
-    public decimal YearId { get; set; }
-    public string YearDescription { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? PeriodStart { get; set; }
+    public DateTime? PeriodEnd { get; set; }
+    public string? Description { get; set; }
+    public string? Code { get; set; }
+    public string? PeriodType { get; set; }
+    public decimal? YearId { get; set; }
+    public string? YearDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

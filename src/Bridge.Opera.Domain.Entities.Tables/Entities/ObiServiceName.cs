@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiServiceName
 {
-    public decimal InstId { get; set; }
-    public string InstanceName { get; set; }
-    public string ServiceName { get; set; }
+    public decimal? InstId { get; set; }
+    public string? InstanceName { get; set; }
+    public string? ServiceName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

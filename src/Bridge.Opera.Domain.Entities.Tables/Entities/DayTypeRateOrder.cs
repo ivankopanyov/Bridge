@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DayTypeRateOrder
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string DtCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? DtCode { get; set; }
     public decimal? DisplaySequence { get; set; }
 
     public virtual RateHeader R { get; set; }

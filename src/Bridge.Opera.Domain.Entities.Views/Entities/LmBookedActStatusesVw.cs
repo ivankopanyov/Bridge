@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmBookedActStatusesVw
 {
-    public string BookedActStatus { get; set; }
+    public string? BookedActStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

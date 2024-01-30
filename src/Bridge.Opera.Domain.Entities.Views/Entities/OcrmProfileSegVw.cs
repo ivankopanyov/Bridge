@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmProfileSegVw
 {
-    public decimal SegId { get; set; }
-    public string SegCode { get; set; }
-    public string SegDesc { get; set; }
-    public string SegSourceType { get; set; }
-    public string Resort { get; set; }
-    public string JobNameId { get; set; }
-    public string ActionText { get; set; }
-    public string RepeatInterval { get; set; }
+    public decimal? SegId { get; set; }
+    public string? SegCode { get; set; }
+    public string? SegDesc { get; set; }
+    public string? SegSourceType { get; set; }
+    public string? Resort { get; set; }
+    public string? JobNameId { get; set; }
+    public string? ActionText { get; set; }
+    public string? RepeatInterval { get; set; }
     public decimal? TimesExec { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string DynCodeId { get; set; }
+    public string? DynCodeId { get; set; }
     public decimal? SegBatchId { get; set; }
     public DateTime? BatchStartDate { get; set; }
     public DateTime? BatchEndDate { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? RecordCount { get; set; }
-    public string JobName { get; set; }
-    public string JobNameTitle { get; set; }
-    public string JobState { get; set; }
+    public string? JobName { get; set; }
+    public string? JobNameTitle { get; set; }
+    public string? JobState { get; set; }
     public DateTime? JobStartDate { get; set; }
     public DateTime? JobEndDate { get; set; }
     public DateTime? JobLastRunDate { get; set; }

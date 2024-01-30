@@ -3,16 +3,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwPreferences
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
-    public string DataSource { get; set; }
-    public string BrandId { get; set; }
-    public string HotelCode { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
+    public string? DataSource { get; set; }
+    public string? BrandId { get; set; }
+    public string? HotelCode { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string PreferenceType { get; set; }
-    public string PreferenceValue { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? PreferenceValue { get; set; }
     public DateTime? CreateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

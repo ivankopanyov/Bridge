@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ImpOnePromocoup
 {
-    public decimal BatchId { get; set; }
-    public decimal SeqNo { get; set; }
+    public decimal? BatchId { get; set; }
+    public decimal? SeqNo { get; set; }
     public DateTime? ImportDate { get; set; }
-    public string ImportStatus { get; set; }
-    public string ImportMsg { get; set; }
-    public string CouponCode { get; set; }
-    public string Resort { get; set; }
-    public string PromotionCode { get; set; }
+    public string? ImportStatus { get; set; }
+    public string? ImportMsg { get; set; }
+    public string? CouponCode { get; set; }
+    public string? Resort { get; set; }
+    public string? PromotionCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

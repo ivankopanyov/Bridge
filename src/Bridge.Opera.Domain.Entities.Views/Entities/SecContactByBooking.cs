@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SecContactByBooking
 {
-    public string Resort { get; set; }
-    public decimal BookingId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookingId { get; set; }
     public decimal? ContactId { get; set; }
-    public string ContactFullName { get; set; }
-    public string ContactName { get; set; }
-    public string ContactFirstName { get; set; }
-    public string ContactMiddleName { get; set; }
-    public string ContactBusinessGreeting { get; set; }
-    public string ContactAddress1 { get; set; }
-    public string ContactAddress2 { get; set; }
-    public string ContactAddress3 { get; set; }
-    public string ContactAddress4 { get; set; }
-    public string ContactState { get; set; }
-    public string ConCountry { get; set; }
-    public string ConCity { get; set; }
-    public string ConCityExt { get; set; }
-    public string ContactZipCode { get; set; }
-    public string ContactFaxNo { get; set; }
-    public string ContactPhoneNo { get; set; }
-    public string ContactEmailId { get; set; }
-    public string ConRelationship { get; set; }
-    public string ConRelationDescription { get; set; }
-    public string EnvelopeGreeting { get; set; }
-    public string LetterGreeting { get; set; }
-    public string Position { get; set; }
-    public string Department { get; set; }
-    public string XcontactFullName { get; set; }
+    public string? ContactFullName { get; set; }
+    public string? ContactName { get; set; }
+    public string? ContactFirstName { get; set; }
+    public string? ContactMiddleName { get; set; }
+    public string? ContactBusinessGreeting { get; set; }
+    public string? ContactAddress1 { get; set; }
+    public string? ContactAddress2 { get; set; }
+    public string? ContactAddress3 { get; set; }
+    public string? ContactAddress4 { get; set; }
+    public string? ContactState { get; set; }
+    public string? ConCountry { get; set; }
+    public string? ConCity { get; set; }
+    public string? ConCityExt { get; set; }
+    public string? ContactZipCode { get; set; }
+    public string? ContactFaxNo { get; set; }
+    public string? ContactPhoneNo { get; set; }
+    public string? ContactEmailId { get; set; }
+    public string? ConRelationship { get; set; }
+    public string? ConRelationDescription { get; set; }
+    public string? EnvelopeGreeting { get; set; }
+    public string? LetterGreeting { get; set; }
+    public string? Position { get; set; }
+    public string? Department { get; set; }
+    public string? XcontactFullName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

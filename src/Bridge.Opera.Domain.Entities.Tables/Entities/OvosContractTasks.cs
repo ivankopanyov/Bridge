@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosContractTasks
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public string TaskCode { get; set; }
-    public string TaskRhythm { get; set; }
-    public decimal Amount { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string TrxCode { get; set; }
-    public string PostTo { get; set; }
-    public string OccupiedBy { get; set; }
-    public string PostingRule { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? TaskCode { get; set; }
+    public string? TaskRhythm { get; set; }
+    public decimal? Amount { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? TrxCode { get; set; }
+    public string? PostTo { get; set; }
+    public string? OccupiedBy { get; set; }
+    public string? PostingRule { get; set; }
 
     public virtual OvosContracts OvosContracts { get; set; }
 

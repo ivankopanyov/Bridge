@@ -4,13 +4,13 @@ public partial class ExpUpeStatistics
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string StatGroup { get; set; }
-    public string StatCode { get; set; }
+    public string? StatGroup { get; set; }
+    public string? StatCode { get; set; }
     public decimal? StatValue { get; set; }
-    public string StatCategoryCode { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? StatCategoryCode { get; set; }
+    public string? RoomCategoryLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

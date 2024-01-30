@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BqtChkRevDetailDesc
 {
     public decimal? BbId { get; set; }
-    public string PgBrk { get; set; }
+    public string? PgBrk { get; set; }
     public DateTime? EventStartDate { get; set; }
-    public string NameDescription { get; set; }
+    public string? NameDescription { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? UnitPrice { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string TransactionType { get; set; }
+    public string? TransactionType { get; set; }
     public decimal? EventId { get; set; }
-    public string ProgrammeDescription { get; set; }
-    public string OrderBy { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? ProgrammeDescription { get; set; }
+    public string? OrderBy { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ReportId { get; set; }
     public decimal? OrderByMaster { get; set; }
     public decimal? OrderByDetails { get; set; }

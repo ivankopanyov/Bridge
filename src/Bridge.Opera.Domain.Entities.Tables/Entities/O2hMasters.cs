@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2hMasters
 {
-    public decimal MapId { get; set; }
-    public string MigrationId { get; set; }
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string ColumnType { get; set; }
-    public string SequenceName { get; set; }
-    public string Remark { get; set; }
-    public string Expression { get; set; }
-    public string Filter { get; set; }
-    public string RegenerateYn { get; set; }
-    public string MappingExpression { get; set; }
+    public decimal? MapId { get; set; }
+    public string? MigrationId { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? ColumnType { get; set; }
+    public string? SequenceName { get; set; }
+    public string? Remark { get; set; }
+    public string? Expression { get; set; }
+    public string? Filter { get; set; }
+    public string? RegenerateYn { get; set; }
+    public string? MappingExpression { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

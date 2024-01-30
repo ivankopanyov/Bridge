@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrxCodeArrangementDetails
 {
-    public string AddTrxYn { get; set; }
-    public decimal ArrangementId { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
+    public string? AddTrxYn { get; set; }
+    public decimal? ArrangementId { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? ChildArrangementId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual TrxCodeArrangement Arrangement { get; set; }
     public virtual TrxCodes TrxCodes { get; set; }

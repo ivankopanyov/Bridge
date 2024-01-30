@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DeptView
 {
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
-    public string TcTransactionType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? TcTransactionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

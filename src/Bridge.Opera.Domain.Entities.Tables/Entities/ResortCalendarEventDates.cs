@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortCalendarEventDates
 {
-    public string Resort { get; set; }
-    public DateTime EventDate { get; set; }
-    public string EventCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? EventDate { get; set; }
+    public string? EventCode { get; set; }
 
     public virtual ResortCalendarEvents ResortCalendarEvents { get; set; }
 

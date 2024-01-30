@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepProdEvRevenue
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public string EventStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EventStatus { get; set; }
     public decimal? EventOwner { get; set; }
-    public string EventOwnerCode { get; set; }
-    public string MarketCode { get; set; }
-    public DateTime EventStartDate { get; set; }
-    public DateTime EventEndDate { get; set; }
+    public string? EventOwnerCode { get; set; }
+    public string? MarketCode { get; set; }
+    public DateTime? EventStartDate { get; set; }
+    public DateTime? EventEndDate { get; set; }
     public DateTime? ProductionDate { get; set; }
-    public string EventLinkType { get; set; }
+    public string? EventLinkType { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }

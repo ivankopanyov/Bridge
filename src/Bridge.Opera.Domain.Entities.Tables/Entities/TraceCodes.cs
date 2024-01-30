@@ -7,10 +7,10 @@ public partial class TraceCodes
         BusinessProfile = new HashSet<BusinessProfile>();
     }
 
-    public string Tracecode { get; set; }
-    public string Tracegroup { get; set; }
-    public string Description { get; set; }
-    public string ChainCode { get; set; }
+    public string? Tracecode { get; set; }
+    public string? Tracegroup { get; set; }
+    public string? Description { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual TraceGroups TracegroupNavigation { get; set; }
     public virtual ICollection<BusinessProfile> BusinessProfile { get; set; }

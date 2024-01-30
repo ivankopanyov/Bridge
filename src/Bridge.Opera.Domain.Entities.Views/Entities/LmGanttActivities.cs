@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmGanttActivities
 {
-    public string AvActCode { get; set; }
-    public string Resort { get; set; }
+    public string? AvActCode { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookedResId { get; set; }
     public decimal? BookedActId { get; set; }
     public decimal? BookedElId { get; set; }
-    public string ResType { get; set; }
-    public string ResId { get; set; }
-    public string ActCode { get; set; }
-    public string ActElCode { get; set; }
-    public string GanttType { get; set; }
-    public string GanttCode { get; set; }
+    public string? ResType { get; set; }
+    public string? ResId { get; set; }
+    public string? ActCode { get; set; }
+    public string? ActElCode { get; set; }
+    public string? GanttType { get; set; }
+    public string? GanttCode { get; set; }
     public decimal? GanttActId { get; set; }
-    public string GanttActDesc { get; set; }
-    public string GuestName { get; set; }
-    public string OutletCode { get; set; }
-    public string Status { get; set; }
+    public string? GanttActDesc { get; set; }
+    public string? GuestName { get; set; }
+    public string? OutletCode { get; set; }
+    public string? Status { get; set; }
     public decimal? TrxNo { get; set; }
     public DateTime? BeginTime { get; set; }
     public DateTime? EndTime { get; set; }
     public decimal? Rank { get; set; }
     public decimal? Price { get; set; }
     public decimal? MaxAvailable { get; set; }
-    public string Comments { get; set; }
-    public string GanttResource { get; set; }
+    public string? Comments { get; set; }
+    public string? GanttResource { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

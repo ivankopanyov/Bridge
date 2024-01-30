@@ -14,9 +14,9 @@ public partial class NameStatisticsView
     public decimal? OtherRevenue { get; set; }
     public decimal? TotalRevenue { get; set; }
     public DateTime? LastStay { get; set; }
-    public string LastRoom { get; set; }
-    public string LastGroup { get; set; }
-    public string LastSource { get; set; }
+    public string? LastRoom { get; set; }
+    public string? LastGroup { get; set; }
+    public string? LastSource { get; set; }
     public decimal? LastRate { get; set; }
     public decimal? TotalStays { get; set; }
 

@@ -2,43 +2,43 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ComputedCommissions
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? PaymentId { get; set; }
-    public decimal TravelAgentId { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? TravelAgentId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? CommissionableRevenue { get; set; }
     public decimal? GrossCommAmt { get; set; }
     public decimal? PrepaidComm { get; set; }
     public decimal? ArAmount { get; set; }
     public decimal? VatAmount { get; set; }
-    public string CommStatus { get; set; }
-    public string CommissionHoldCode { get; set; }
-    public string CommissionHoldDesc { get; set; }
+    public string? CommStatus { get; set; }
+    public string? CommissionHoldCode { get; set; }
+    public string? CommissionHoldDesc { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CommType { get; set; }
-    public string TaCommCode { get; set; }
-    public string ManualEditYn { get; set; }
-    public string PayeeType { get; set; }
-    public string ManualResvYn { get; set; }
-    public string Remarks { get; set; }
-    public string PpdRemarks { get; set; }
-    public string PpdEditYn { get; set; }
+    public string? CommType { get; set; }
+    public string? TaCommCode { get; set; }
+    public string? ManualEditYn { get; set; }
+    public string? PayeeType { get; set; }
+    public string? ManualResvYn { get; set; }
+    public string? Remarks { get; set; }
+    public string? PpdRemarks { get; set; }
+    public string? PpdEditYn { get; set; }
     public decimal? DecimalPositions { get; set; }
     public decimal? ExchangeRate { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
-    public string CommCodeDiffYn { get; set; }
+    public string? CommCodeDiffYn { get; set; }
     public DateTime? Departure { get; set; }
-    public string AdjustmentNote { get; set; }
-    public string ArYn { get; set; }
-    public string TaxFileStatus { get; set; }
+    public string? AdjustmentNote { get; set; }
+    public string? ArYn { get; set; }
+    public string? TaxFileStatus { get; set; }
     public DateTime? TaxFileDate { get; set; }
-    public string OwnerCommProcessedYn { get; set; }
-    public decimal CommissionId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? OwnerCommProcessedYn { get; set; }
+    public decimal? CommissionId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
 
     public virtual CommissionPayments Payment { get; set; }
     public virtual Name TravelAgent { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FacilityForecastView
 {
-    public string Type { get; set; }
+    public string? Type { get; set; }
     public decimal? Seq { get; set; }
-    public string FacilityTask { get; set; }
-    public string TaskCode { get; set; }
-    public string Multi { get; set; }
+    public string? FacilityTask { get; set; }
+    public string? TaskCode { get; set; }
+    public string? Multi { get; set; }
     public decimal? Day1 { get; set; }
     public decimal? Day2 { get; set; }
     public decimal? Day3 { get; set; }

@@ -2,40 +2,40 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphCheckoutInfo
 {
-    public string PropertyCode { get; set; }
-    public string DelphiInternalId { get; set; }
-    public string ReservationId { get; set; }
-    public string MasterAccountCode { get; set; }
-    public string AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public string MasterAgencyCode { get; set; }
-    public string AgencyCode { get; set; }
-    public string AgencyName { get; set; }
-    public string TruncArrival { get; set; }
-    public string TruncDeparture { get; set; }
-    public string RoomType { get; set; }
-    public string NoOfRoomsPickup { get; set; }
-    public string NoOfGuests { get; set; }
-    public string SingleRoomsPickup { get; set; }
-    public string DoubleRoomsPickup { get; set; }
-    public string TripleRoomsPickup { get; set; }
-    public string QuadRoomsPickup { get; set; }
-    public string GuestRoomRevenue { get; set; }
-    public string NonGuestRoomRevenue { get; set; }
-    public string GuestId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestAddress1 { get; set; }
-    public string GuestAddress2 { get; set; }
-    public string GuestCity { get; set; }
-    public string GuestState { get; set; }
-    public string GuestPostalCode { get; set; }
-    public string GuestCountry { get; set; }
-    public string GuestPaymentMethod { get; set; }
-    public string GuestCreditCard { get; set; }
-    public string GuestCreditCardNum { get; set; }
-    public string GuestCreditCardExp { get; set; }
-    public string GuestPackageCode { get; set; }
-    public string GuestMealCode { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? DelphiInternalId { get; set; }
+    public string? ReservationId { get; set; }
+    public string? MasterAccountCode { get; set; }
+    public string? AccountCode { get; set; }
+    public string? AccountName { get; set; }
+    public string? MasterAgencyCode { get; set; }
+    public string? AgencyCode { get; set; }
+    public string? AgencyName { get; set; }
+    public string? TruncArrival { get; set; }
+    public string? TruncDeparture { get; set; }
+    public string? RoomType { get; set; }
+    public string? NoOfRoomsPickup { get; set; }
+    public string? NoOfGuests { get; set; }
+    public string? SingleRoomsPickup { get; set; }
+    public string? DoubleRoomsPickup { get; set; }
+    public string? TripleRoomsPickup { get; set; }
+    public string? QuadRoomsPickup { get; set; }
+    public string? GuestRoomRevenue { get; set; }
+    public string? NonGuestRoomRevenue { get; set; }
+    public string? GuestId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestAddress1 { get; set; }
+    public string? GuestAddress2 { get; set; }
+    public string? GuestCity { get; set; }
+    public string? GuestState { get; set; }
+    public string? GuestPostalCode { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? GuestPaymentMethod { get; set; }
+    public string? GuestCreditCard { get; set; }
+    public string? GuestCreditCardNum { get; set; }
+    public string? GuestCreditCardExp { get; set; }
+    public string? GuestPackageCode { get; set; }
+    public string? GuestMealCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

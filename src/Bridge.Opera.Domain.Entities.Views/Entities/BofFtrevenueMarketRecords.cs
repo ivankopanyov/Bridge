@@ -2,56 +2,56 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofFtrevenueMarketRecords
 {
-    public string AccountPeriod { get; set; }
-    public string UserName { get; set; }
-    public string TrxCode { get; set; }
-    public string MarketCode { get; set; }
-    public string TaxRateString { get; set; }
-    public string TrxDesc { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? AccountPeriod { get; set; }
+    public string? UserName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? TaxRateString { get; set; }
+    public string? TrxDesc { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? InthotelLedDebit { get; set; }
     public decimal? InthotelLedCredit { get; set; }
     public decimal? InthotelLedControl { get; set; }
-    public string InthotelLedControlFlag { get; set; }
+    public string? InthotelLedControlFlag { get; set; }
     public decimal? DepLedDebit { get; set; }
     public decimal? DepLedCredit { get; set; }
     public decimal? DepLedControl { get; set; }
-    public string DepLedControlFlag { get; set; }
+    public string? DepLedControlFlag { get; set; }
     public decimal? GuestLedDebit { get; set; }
     public decimal? GuestLedCredit { get; set; }
     public decimal? GuestLedControl { get; set; }
-    public string GuestLedControlFlag { get; set; }
+    public string? GuestLedControlFlag { get; set; }
     public decimal? PackageLedDebit { get; set; }
     public decimal? PackageLedCredit { get; set; }
     public decimal? PackageLedControl { get; set; }
-    public string PackageLedControlFlag { get; set; }
+    public string? PackageLedControlFlag { get; set; }
     public decimal? ArLedCredit { get; set; }
     public decimal? ArLedDebit { get; set; }
     public decimal? ArLedControl { get; set; }
-    public string ArLedControlFlag { get; set; }
+    public string? ArLedControlFlag { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string GrossDrCrFlag { get; set; }
+    public string? GrossDrCrFlag { get; set; }
     public decimal? NetAmount { get; set; }
-    public string NetDrCrFlag { get; set; }
+    public string? NetDrCrFlag { get; set; }
     public decimal? VatAmount { get; set; }
-    public string VatDrCrFlag { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string ArInd { get; set; }
+    public string? VatDrCrFlag { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? ArInd { get; set; }
     public decimal? RevBucketId { get; set; }
-    public string CashInd { get; set; }
-    public string ManualPostYn { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string ArrangementCode { get; set; }
+    public string? CashInd { get; set; }
+    public string? ManualPostYn { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? ArrangementCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
     public decimal? BofIntfCode { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode4 { get; set; }
-    public string BofCode5 { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? BofCode5 { get; set; }
     public decimal? BofCode6 { get; set; }
     public decimal? BofCode7 { get; set; }
     public decimal? BofCode8 { get; set; }
@@ -62,16 +62,16 @@ public partial class BofFtrevenueMarketRecords
     public DateTime? BofCode13 { get; set; }
     public DateTime? BofCode14 { get; set; }
     public DateTime? BofCode15 { get; set; }
-    public string BofCode16 { get; set; }
-    public string BofCode17 { get; set; }
-    public string BofCode18 { get; set; }
-    public string BofCode19 { get; set; }
-    public string BofCode20 { get; set; }
-    public string BofCode21 { get; set; }
-    public string BofCode22 { get; set; }
-    public string BofCode23 { get; set; }
-    public string BofCode24 { get; set; }
-    public string BofCode25 { get; set; }
+    public string? BofCode16 { get; set; }
+    public string? BofCode17 { get; set; }
+    public string? BofCode18 { get; set; }
+    public string? BofCode19 { get; set; }
+    public string? BofCode20 { get; set; }
+    public string? BofCode21 { get; set; }
+    public string? BofCode22 { get; set; }
+    public string? BofCode23 { get; set; }
+    public string? BofCode24 { get; set; }
+    public string? BofCode25 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

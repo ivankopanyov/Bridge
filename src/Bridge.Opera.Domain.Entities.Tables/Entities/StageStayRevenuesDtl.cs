@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageStayRevenuesDtl
 {
-    public decimal StageStayRecordId { get; set; }
-    public decimal StageStayRevDtlId { get; set; }
-    public string FolioView { get; set; }
+    public decimal? StageStayRecordId { get; set; }
+    public decimal? StageStayRevDtlId { get; set; }
+    public string? FolioView { get; set; }
     public decimal? RevenueAmount { get; set; }
 
     public virtual StageStayRecords StageStayRecord { get; set; }

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpOvosFeeData
 {
-    public string Room { get; set; }
-    public string TrxCode { get; set; }
+    public string? Room { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? Amount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

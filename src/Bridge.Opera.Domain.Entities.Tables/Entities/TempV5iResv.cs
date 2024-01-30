@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempV5iResv
 {
-    public string ConfirmationNo { get; set; }
-    public string ResvStatus { get; set; }
-    public string SharedYn { get; set; }
-    public string SharersList { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? SharedYn { get; set; }
+    public string? SharersList { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public DateTime? CheckedOutDate { get; set; }
     public DateTime? CancellationDate { get; set; }
     public DateTime? BookingDate { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateAmount { get; set; }
-    public string MarketCode { get; set; }
-    public string Room { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Room { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
     public decimal? TotalRevenue { get; set; }
-    public string RoomType { get; set; }
-    public string SourceCode { get; set; }
-    public string Channel { get; set; }
-    public string BookedRoomType { get; set; }
-    public string Nationality { get; set; }
-    public string ResvType { get; set; }
+    public string? RoomType { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Channel { get; set; }
+    public string? BookedRoomType { get; set; }
+    public string? Nationality { get; set; }
+    public string? ResvType { get; set; }
     public decimal? Children { get; set; }
     public decimal? Adults { get; set; }
     public decimal? ResvNameId { get; set; }

@@ -2,56 +2,56 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoBeverageCombined
 {
-    public string Resort { get; set; }
-    public decimal BevBookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BevBookId { get; set; }
     public decimal? BeveragecombinedEventId { get; set; }
     public decimal? FbOrderby1 { get; set; }
     public decimal? BeverageCourse { get; set; }
     public decimal? BeverageCourseOrder { get; set; }
     public decimal? FbEventId1 { get; set; }
-    public string FbRoom1 { get; set; }
-    public DateTime BeverageStartDate { get; set; }
-    public DateTime BeverageEndDate { get; set; }
+    public string? FbRoom1 { get; set; }
+    public DateTime? BeverageStartDate { get; set; }
+    public DateTime? BeverageEndDate { get; set; }
     public decimal? BeveragemenuId { get; set; }
     public decimal? BeverageresourceId { get; set; }
-    public string BeverageresourceIds { get; set; }
-    public string BeveragemenuName { get; set; }
+    public string? BeverageresourceIds { get; set; }
+    public string? BeveragemenuName { get; set; }
     public decimal? BeveragemenuPkgId { get; set; }
     public decimal? BeveragemenuExp { get; set; }
     public decimal? BeveragemenuGtd { get; set; }
     public decimal? BeveragemenuSet { get; set; }
     public decimal? BeveragemenuPrice { get; set; }
-    public string BeveragemenuConsumption { get; set; }
-    public string BeveragemenuResort { get; set; }
-    public string BeveragemenuServing { get; set; }
+    public string? BeveragemenuConsumption { get; set; }
+    public string? BeveragemenuResort { get; set; }
+    public string? BeveragemenuServing { get; set; }
     public DateTime? BeveragemenuServingStart { get; set; }
     public DateTime? BeveragemenuServingEnd { get; set; }
-    public string BeverageResort { get; set; }
+    public string? BeverageResort { get; set; }
     public decimal? BeverageId { get; set; }
     public decimal? BeverageMenuId1 { get; set; }
     public decimal? BeverageMitId { get; set; }
     public decimal? BeverageExp { get; set; }
     public decimal? BeverageGtd { get; set; }
     public decimal? BeverageSet { get; set; }
-    public string BeverageIncluded { get; set; }
+    public string? BeverageIncluded { get; set; }
     public decimal? BeveragePrice { get; set; }
     public decimal? BevmenudetPrice { get; set; }
     public decimal? BevmenudetDiscount { get; set; }
-    public string BeveragePortion { get; set; }
-    public string BeverageContainer { get; set; }
+    public string? BeveragePortion { get; set; }
+    public string? BeverageContainer { get; set; }
     public byte? BeverageYear { get; set; }
-    public string BeverageName1 { get; set; }
-    public string BeverageName2 { get; set; }
-    public string BeverageName3 { get; set; }
-    public string BeverageOrigin1 { get; set; }
-    public string BeverageOrigin2 { get; set; }
-    public string BeverageOrigin3 { get; set; }
-    public string BeverageShow { get; set; }
-    public string BeveragedetailConsumption { get; set; }
+    public string? BeverageName1 { get; set; }
+    public string? BeverageName2 { get; set; }
+    public string? BeverageName3 { get; set; }
+    public string? BeverageOrigin1 { get; set; }
+    public string? BeverageOrigin2 { get; set; }
+    public string? BeverageOrigin3 { get; set; }
+    public string? BeverageShow { get; set; }
+    public string? BeveragedetailConsumption { get; set; }
     public decimal? BeveragedetailPrice { get; set; }
-    public string BeveragedetailIncluded { get; set; }
+    public string? BeveragedetailIncluded { get; set; }
     public decimal? BeverageresourceNoteId { get; set; }
-    public string PrintBevNotesYn { get; set; }
+    public string? PrintBevNotesYn { get; set; }
     public decimal? BeveragemenuGtdPkg { get; set; }
     public decimal? BeveragemenuExpPkg { get; set; }
 

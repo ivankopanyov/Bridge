@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntWizardRegsSys
 {
-    public decimal WizardRegsId { get; set; }
-    public string ApplicationId { get; set; }
-    public string InterfaceId { get; set; }
+    public decimal? WizardRegsId { get; set; }
+    public string? ApplicationId { get; set; }
+    public string? InterfaceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

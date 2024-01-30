@@ -3,31 +3,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class StayRecordBasicVw
 {
     public decimal? StayRecordId { get; set; }
-    public string Resort { get; set; }
-    public string PmsResvNo { get; set; }
-    public string RecordType { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? RecordType { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? BookDate { get; set; }
-    public string ShareNo { get; set; }
+    public string? ShareNo { get; set; }
     public DateTime? CancellationDate { get; set; }
     public decimal? CancelledRoomNights { get; set; }
     public decimal? NoshowRoomNights { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string CrsBookNo { get; set; }
-    public string RoomLabel { get; set; }
-    public string RoomNumber { get; set; }
+    public string? CrsBookNo { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? RoomNumber { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? TravelNameId { get; set; }
     public decimal? WholesalerNameId { get; set; }
     public decimal? GroupNameId { get; set; }
     public decimal? MiscNameId { get; set; }
-    public string AllotmentCode { get; set; }
-    public string PmsResvNameId { get; set; }
-    public string PosCode { get; set; }
-    public string PseudoYn { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? PmsResvNameId { get; set; }
+    public string? PosCode { get; set; }
+    public string? PseudoYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

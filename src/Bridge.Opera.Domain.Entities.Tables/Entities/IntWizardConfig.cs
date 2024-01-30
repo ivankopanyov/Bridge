@@ -8,16 +8,16 @@ public partial class IntWizardConfig
         IntWizardSetup = new HashSet<IntWizardSetup>();
     }
 
-    public decimal WizConfigId { get; set; }
-    public string ApplicationId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Category { get; set; }
-    public string Item { get; set; }
-    public string Value { get; set; }
-    public string MandatRecom { get; set; }
-    public string ScriptFile { get; set; }
-    public string Description { get; set; }
-    public string SubItem { get; set; }
+    public decimal? WizConfigId { get; set; }
+    public string? ApplicationId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Category { get; set; }
+    public string? Item { get; set; }
+    public string? Value { get; set; }
+    public string? MandatRecom { get; set; }
+    public string? ScriptFile { get; set; }
+    public string? Description { get; set; }
+    public string? SubItem { get; set; }
 
     public virtual ICollection<IntWizardOutput> IntWizardOutput { get; set; }
     public virtual ICollection<IntWizardSetup> IntWizardSetup { get; set; }

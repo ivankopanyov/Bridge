@@ -7,15 +7,15 @@ public partial class RequestTypeTemplates
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string RequestId { get; set; }
-    public decimal TemplateId { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal Id { get; set; }
+    public string? Resort { get; set; }
+    public string? RequestId { get; set; }
+    public decimal? TemplateId { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? Id { get; set; }
 
     public virtual ResortActivityTypes Re { get; set; }
     public virtual ScAttachment Template { get; set; }

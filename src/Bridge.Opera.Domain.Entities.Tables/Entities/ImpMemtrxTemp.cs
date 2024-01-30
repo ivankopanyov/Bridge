@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ImpMemtrxTemp
 {
-    public decimal BatchId { get; set; }
-    public decimal SeqNo { get; set; }
-    public DateTime ImportDate { get; set; }
-    public string ImportStatus { get; set; }
-    public string ImportMsg { get; set; }
-    public string InterfaceId { get; set; }
+    public decimal? BatchId { get; set; }
+    public decimal? SeqNo { get; set; }
+    public DateTime? ImportDate { get; set; }
+    public string? ImportStatus { get; set; }
+    public string? ImportMsg { get; set; }
+    public string? InterfaceId { get; set; }
     public decimal? MembershipTrxId { get; set; }
     public DateTime? MembershipTrxDate { get; set; }
-    public string RecordType { get; set; }
-    public string Resort { get; set; }
-    public string ExtResort { get; set; }
+    public string? RecordType { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtResort { get; set; }
     public decimal? NameId { get; set; }
     public decimal? MembershipId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string PmsNameId { get; set; }
-    public string PmsResvNo { get; set; }
-    public string PmsResvNameId { get; set; }
+    public string? PmsNameId { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? PmsResvNameId { get; set; }
     public decimal? StayRecordId { get; set; }
-    public string PopulationMethod { get; set; }
+    public string? PopulationMethod { get; set; }
     public decimal? Stay { get; set; }
     public decimal? Nights { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PromotionCode1 { get; set; }
-    public string PromotionCode2 { get; set; }
-    public string PromotionCode3 { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PromotionCode1 { get; set; }
+    public string? PromotionCode2 { get; set; }
+    public string? PromotionCode3 { get; set; }
     public decimal? TotalPoints { get; set; }
     public decimal? TotalBasePoints { get; set; }
     public decimal? TotalBonusPoints { get; set; }
@@ -41,39 +41,39 @@ public partial class ImpMemtrxTemp
     public decimal? MembershipBonusRevenue { get; set; }
     public decimal? PointsCost { get; set; }
     public DateTime? PointsCreditDate { get; set; }
-    public string PointsCalculatedYn { get; set; }
-    public string ProcessingMessages { get; set; }
-    public string DataExportedYn { get; set; }
+    public string? PointsCalculatedYn { get; set; }
+    public string? ProcessingMessages { get; set; }
+    public string? DataExportedYn { get; set; }
     public DateTime? DataExportedDate { get; set; }
-    public string AdjustmentYn { get; set; }
+    public string? AdjustmentYn { get; set; }
     public decimal? ParentMembershipTrxId { get; set; }
-    public string CrsBookNo { get; set; }
+    public string? CrsBookNo { get; set; }
     public decimal? MembershipBaseStay { get; set; }
     public decimal? MembershipBonusStay { get; set; }
-    public string PointsRejectedReason { get; set; }
+    public string? PointsRejectedReason { get; set; }
     public DateTime? PointsExpirationDate { get; set; }
     public decimal? MembershipTrxLinkId { get; set; }
-    public string UserNotes { get; set; }
-    public string RoomLabel { get; set; }
-    public string PosCode { get; set; }
-    public string PosNegRevAmount { get; set; }
-    public string RevenueType1 { get; set; }
+    public string? UserNotes { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? PosCode { get; set; }
+    public string? PosNegRevAmount { get; set; }
+    public string? RevenueType1 { get; set; }
     public decimal? RevenueAmount1 { get; set; }
-    public string RevenueType2 { get; set; }
+    public string? RevenueType2 { get; set; }
     public decimal? RevenueAmount2 { get; set; }
-    public string RevenueType3 { get; set; }
+    public string? RevenueType3 { get; set; }
     public decimal? RevenueAmount3 { get; set; }
-    public string RevenueType4 { get; set; }
+    public string? RevenueType4 { get; set; }
     public decimal? RevenueAmount4 { get; set; }
-    public string RevenueType5 { get; set; }
+    public string? RevenueType5 { get; set; }
     public decimal? RevenueAmount5 { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateAmount { get; set; }
-    public string MarketCode { get; set; }
-    public string BillingGroup { get; set; }
-    public string BaseBillingGroup { get; set; }
-    public string BonusBillingGroup { get; set; }
-    public string BookedRoomLabel { get; set; }
+    public string? MarketCode { get; set; }
+    public string? BillingGroup { get; set; }
+    public string? BaseBillingGroup { get; set; }
+    public string? BonusBillingGroup { get; set; }
+    public string? BookedRoomLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

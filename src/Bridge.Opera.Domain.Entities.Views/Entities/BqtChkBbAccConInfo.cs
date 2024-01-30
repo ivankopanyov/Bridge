@@ -3,19 +3,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BqtChkBbAccConInfo
 {
     public decimal? BbId { get; set; }
-    public string BbDescription { get; set; }
-    public string Accname { get; set; }
-    public string Accaddress1 { get; set; }
-    public string Accaddress2 { get; set; }
-    public string Acccity { get; set; }
-    public string Acczipcode { get; set; }
-    public string Accstate { get; set; }
-    public string Acccountry { get; set; }
-    public string Conname { get; set; }
-    public string PhoneNumber { get; set; }
-    public string FaxNumber { get; set; }
-    public string PaymentMethod { get; set; }
-    public string CatManager { get; set; }
+    public string? BbDescription { get; set; }
+    public string? Accname { get; set; }
+    public string? Accaddress1 { get; set; }
+    public string? Accaddress2 { get; set; }
+    public string? Acccity { get; set; }
+    public string? Acczipcode { get; set; }
+    public string? Accstate { get; set; }
+    public string? Acccountry { get; set; }
+    public string? Conname { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? FaxNumber { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? CatManager { get; set; }
     public decimal? ReportId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipCardReaderFmt
 {
-    public string MembershipType { get; set; }
-    public string FieldName { get; set; }
-    public string FormatType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? FieldName { get; set; }
+    public string? FormatType { get; set; }
     public decimal? StartPosition { get; set; }
     public decimal? EndPosition { get; set; }
-    public string StartPattern { get; set; }
-    public string EndPattern { get; set; }
+    public string? StartPattern { get; set; }
+    public string? EndPattern { get; set; }
     public decimal? StartSearchPosition { get; set; }
-    public string StartSearchPattern { get; set; }
-    public string ChainCode { get; set; }
+    public string? StartSearchPattern { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MembershipTypes MembershipTypes { get; set; }
 

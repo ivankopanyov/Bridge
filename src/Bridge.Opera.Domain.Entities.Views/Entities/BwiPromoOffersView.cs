@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BwiPromoOffersView
 {
-    public string Promoid { get; set; }
-    public string Promotitle { get; set; }
-    public string Promocode { get; set; }
-    public string Promodesc { get; set; }
+    public string? Promoid { get; set; }
+    public string? Promotitle { get; set; }
+    public string? Promocode { get; set; }
+    public string? Promodesc { get; set; }
     public DateTime? Startdate { get; set; }
     public DateTime? Enddate { get; set; }
     public DateTime? Registrationdate { get; set; }
-    public string Termsconditions { get; set; }
+    public string? Termsconditions { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

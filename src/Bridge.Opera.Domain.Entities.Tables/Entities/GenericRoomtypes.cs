@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GenericRoomtypes
 {
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }

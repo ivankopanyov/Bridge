@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SimpleDynTranslation
 {
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ObjectName { get; set; }
-    public string TranslationCode { get; set; }
-    public string Description { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ObjectName { get; set; }
+    public string? TranslationCode { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsHostsActiveView
 {
-    public string GdsHost { get; set; }
-    public string Name { get; set; }
-    public string ChannelType { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Name { get; set; }
+    public string? ChannelType { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ActivateYn { get; set; }
+    public string? ActivateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

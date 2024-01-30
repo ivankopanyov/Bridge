@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosReciprocalOwners
 {
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime Arrival { get; set; }
-    public DateTime Departure { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Unit { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? Arrival { get; set; }
+    public DateTime? Departure { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Unit { get; set; }
 
     public virtual OvosContracts OvosContracts { get; set; }
 

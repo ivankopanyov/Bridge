@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipStatementDetVw
 {
-    public decimal MemberStatementId { get; set; }
-    public decimal StatementBatchId { get; set; }
-    public decimal MembershipId { get; set; }
-    public string PrintYn { get; set; }
-    public string Status { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? MemberStatementId { get; set; }
+    public decimal? StatementBatchId { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? PrintYn { get; set; }
+    public string? Status { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? OpeningBalance { get; set; }
     public decimal? StCreditPoints { get; set; }
     public decimal? StDebitPoints { get; set; }
@@ -33,58 +33,58 @@ public partial class MembershipStatementDetVw
     public decimal? TotalNightPoints { get; set; }
     public decimal? TotalRevenuePoints { get; set; }
     public decimal? StNameId { get; set; }
-    public string StMembershipCardNo { get; set; }
-    public string StMembershipLevel { get; set; }
-    public string StDisplayName { get; set; }
-    public string UserKeyword { get; set; }
-    public string StatementNotes { get; set; }
-    public string ErrorLog { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string NameOnCard { get; set; }
-    public string Comments { get; set; }
+    public string? StMembershipCardNo { get; set; }
+    public string? StMembershipLevel { get; set; }
+    public string? StDisplayName { get; set; }
+    public string? UserKeyword { get; set; }
+    public string? StatementNotes { get; set; }
+    public string? ErrorLog { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? NameOnCard { get; set; }
+    public string? Comments { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
-    public string MemberIndicator { get; set; }
+    public string? MemberIndicator { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string GracePeriodIndicator { get; set; }
-    public string MembershipStatus { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? GracePeriodIndicator { get; set; }
+    public string? MembershipStatus { get; set; }
     public decimal? PointsAvailable { get; set; }
-    public string PrimaryMembershipYn { get; set; }
-    public string CentralSetupYn { get; set; }
-    public string MembershipClass { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
+    public string? CentralSetupYn { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? ExpirationMonth { get; set; }
     public decimal? CardValidYears { get; set; }
     public decimal? YearsToExpire { get; set; }
-    public string ExpirationDateRequired { get; set; }
-    public string LevelRequired { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? ExpirationDateRequired { get; set; }
+    public string? LevelRequired { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public decimal? BatchDelayPeriod { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }

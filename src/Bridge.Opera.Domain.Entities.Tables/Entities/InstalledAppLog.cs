@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InstalledAppLog
 {
-    public string Application { get; set; }
-    public string Version { get; set; }
+    public string? Application { get; set; }
+    public string? Version { get; set; }
     public DateTime? InstalledDate { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Epatchlevel { get; set; }
-    public string Client { get; set; }
-    public string NextVersion { get; set; }
-    public string NextVersion2 { get; set; }
+    public string? Epatchlevel { get; set; }
+    public string? Client { get; set; }
+    public string? NextVersion { get; set; }
+    public string? NextVersion2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

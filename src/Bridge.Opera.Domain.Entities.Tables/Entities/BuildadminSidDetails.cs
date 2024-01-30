@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BuildadminSidDetails
 {
-    public string Masterview { get; set; }
-    public string Mastercolumn { get; set; }
-    public string Masterexpression { get; set; }
-    public string Detailview { get; set; }
-    public string Detailcolumn { get; set; }
-    public string Detailexpression { get; set; }
-    public string Detailtabname { get; set; }
+    public string? Masterview { get; set; }
+    public string? Mastercolumn { get; set; }
+    public string? Masterexpression { get; set; }
+    public string? Detailview { get; set; }
+    public string? Detailcolumn { get; set; }
+    public string? Detailexpression { get; set; }
+    public string? Detailtabname { get; set; }
 
     public virtual BuildadminSidList MasterviewNavigation { get; set; }
 

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkFacDailyTaskView
 {
-    public decimal TaskSeqNo { get; set; }
-    public DateTime TaskDate { get; set; }
-    public string TaskCode { get; set; }
-    public decimal TaskSheetNo { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public DateTime? TaskDate { get; set; }
+    public string? TaskCode { get; set; }
+    public decimal? TaskSheetNo { get; set; }
     public DateTime? TaskCompletedDate { get; set; }
     public decimal? TaskCredits { get; set; }
-    public string TaskInstructions { get; set; }
-    public string AutoGenerateInd { get; set; }
-    public string AutoGenerateFilters { get; set; }
-    public string SimpleTaskYn { get; set; }
+    public string? TaskInstructions { get; set; }
+    public string? AutoGenerateInd { get; set; }
+    public string? AutoGenerateFilters { get; set; }
+    public string? SimpleTaskYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

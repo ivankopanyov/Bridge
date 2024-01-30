@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArReminderHeader
 {
-    public decimal AccountCode { get; set; }
-    public string AccountNumber { get; set; }
-    public string AccountName { get; set; }
-    public string XaccountName { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string Address5 { get; set; }
-    public string Address6 { get; set; }
-    public string Address7 { get; set; }
-    public string Address8 { get; set; }
-    public string State { get; set; }
-    public string FullAddress { get; set; }
-    public string City { get; set; }
-    public string Company { get; set; }
-    public string Country { get; set; }
-    public decimal NameId { get; set; }
-    public string Remarks { get; set; }
-    public string Salutation { get; set; }
-    public string Street1 { get; set; }
-    public string Street2 { get; set; }
-    public string Title { get; set; }
-    public string ZipCode { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountNumber { get; set; }
+    public string? AccountName { get; set; }
+    public string? XaccountName { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? Address5 { get; set; }
+    public string? Address6 { get; set; }
+    public string? Address7 { get; set; }
+    public string? Address8 { get; set; }
+    public string? State { get; set; }
+    public string? FullAddress { get; set; }
+    public string? City { get; set; }
+    public string? Company { get; set; }
+    public string? Country { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Remarks { get; set; }
+    public string? Salutation { get; set; }
+    public string? Street1 { get; set; }
+    public string? Street2 { get; set; }
+    public string? Title { get; set; }
+    public string? ZipCode { get; set; }
     public DateTime? LetterDate { get; set; }
-    public string ReminderLetter { get; set; }
-    public string CountryDesc { get; set; }
-    public string ContactName { get; set; }
-    public string StateDescription { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string StatementTypeMode { get; set; }
-    public string Barcode { get; set; }
-    public string AuxFullAddress { get; set; }
+    public string? ReminderLetter { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ContactName { get; set; }
+    public string? StateDescription { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? StatementTypeMode { get; set; }
+    public string? Barcode { get; set; }
+    public string? AuxFullAddress { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

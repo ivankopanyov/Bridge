@@ -4,11 +4,11 @@ public partial class AqBeQueueTableL
 {
     public Guid? Msgid { get; set; }
     public decimal? Subscriber { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public decimal? Address { get; set; }
     public DateTimeOffset? DequeueTime { get; set; }
-    public string TransactionId { get; set; }
-    public string DequeueUser { get; set; }
+    public string? TransactionId { get; set; }
+    public string? DequeueUser { get; set; }
     public byte[] Flags { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

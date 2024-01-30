@@ -2,67 +2,67 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdStay
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllId { get; set; }
-    public string AllDesc { get; set; }
-    public string StayDesc { get; set; }
-    public decimal StayRecordId { get; set; }
-    public string PmsResvNo { get; set; }
-    public string RecordType { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public string? AllId { get; set; }
+    public string? AllDesc { get; set; }
+    public string? StayDesc { get; set; }
+    public decimal? StayRecordId { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? RecordType { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? BookDate { get; set; }
     public DateTime? BookedArrivalDate { get; set; }
     public DateTime? BookedDepartureDate { get; set; }
-    public string ShareNo { get; set; }
-    public string PrimarySharer { get; set; }
+    public string? ShareNo { get; set; }
+    public string? PrimarySharer { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CrsBookNo { get; set; }
-    public string RoomLabel { get; set; }
-    public string RoomLabelDesc { get; set; }
-    public string RoomNumber { get; set; }
-    public string PmsCurrencyCode { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceCodeDesc { get; set; }
-    public string Channel { get; set; }
-    public string ChannelDesc { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PaymentMethodDesc { get; set; }
-    public string CompYn { get; set; }
-    public string GuestName { get; set; }
-    public string CompanyName { get; set; }
-    public string TaName { get; set; }
-    public string WholesalerName { get; set; }
-    public string GroupName { get; set; }
-    public string MiscName { get; set; }
-    public string PmsNameId { get; set; }
-    public string PmsCompanyId { get; set; }
-    public string PmsTravelId { get; set; }
-    public string PmsWholesalerId { get; set; }
-    public string PmsGroupId { get; set; }
-    public string PmsMiscId { get; set; }
-    public string ResInsertSource { get; set; }
-    public string ResInsertSourceDesc { get; set; }
-    public string ResInsertSourceType { get; set; }
-    public string AllotmentCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string InsertUserName { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string UpdateUserName { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
+    public string? CrsBookNo { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? RoomLabelDesc { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? PmsCurrencyCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceCodeDesc { get; set; }
+    public string? Channel { get; set; }
+    public string? ChannelDesc { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PaymentMethodDesc { get; set; }
+    public string? CompYn { get; set; }
+    public string? GuestName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TaName { get; set; }
+    public string? WholesalerName { get; set; }
+    public string? GroupName { get; set; }
+    public string? MiscName { get; set; }
+    public string? PmsNameId { get; set; }
+    public string? PmsCompanyId { get; set; }
+    public string? PmsTravelId { get; set; }
+    public string? PmsWholesalerId { get; set; }
+    public string? PmsGroupId { get; set; }
+    public string? PmsMiscId { get; set; }
+    public string? ResInsertSource { get; set; }
+    public string? ResInsertSourceDesc { get; set; }
+    public string? ResInsertSourceType { get; set; }
+    public string? AllotmentCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? InsertUserName { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? UpdateUserName { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -73,31 +73,31 @@ public partial class ObiexpdStay
     public DateTime? Udfd03 { get; set; }
     public DateTime? Udfd04 { get; set; }
     public DateTime? Udfd05 { get; set; }
-    public string PmsResvNameId { get; set; }
-    public decimal MembershipTrxLinkId { get; set; }
-    public string PointsYn { get; set; }
-    public string PromotionCode1 { get; set; }
-    public string PromotionDesc1 { get; set; }
-    public string PromotionCode2 { get; set; }
-    public string PromotionDesc2 { get; set; }
-    public string PromotionCode3 { get; set; }
-    public string PromotionDesc3 { get; set; }
-    public string AdjustmentYn { get; set; }
-    public string UserNotes { get; set; }
-    public string PosCode { get; set; }
-    public string IataConsortia { get; set; }
-    public string WholesalerRecordLocator { get; set; }
+    public string? PmsResvNameId { get; set; }
+    public decimal? MembershipTrxLinkId { get; set; }
+    public string? PointsYn { get; set; }
+    public string? PromotionCode1 { get; set; }
+    public string? PromotionDesc1 { get; set; }
+    public string? PromotionCode2 { get; set; }
+    public string? PromotionDesc2 { get; set; }
+    public string? PromotionCode3 { get; set; }
+    public string? PromotionDesc3 { get; set; }
+    public string? AdjustmentYn { get; set; }
+    public string? UserNotes { get; set; }
+    public string? PosCode { get; set; }
+    public string? IataConsortia { get; set; }
+    public string? WholesalerRecordLocator { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string PseudoYn { get; set; }
-    public string ResortId { get; set; }
-    public string AllKey { get; set; }
-    public string StayRecKey { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? ResortId { get; set; }
+    public string? AllKey { get; set; }
+    public string? StayRecKey { get; set; }
     public decimal? Adults { get; set; }
     public decimal? CancelledRoomNights { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? Children { get; set; }
     public decimal? CompanyNameId { get; set; }
-    public string DailyRoomDetailsYn { get; set; }
+    public string? DailyRoomDetailsYn { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? FbRevenueTax { get; set; }
@@ -120,7 +120,7 @@ public partial class ObiexpdStay
     public decimal? TravelNameId { get; set; }
     public decimal? WholesalerNameId { get; set; }
     public decimal? ParentCompanyId { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

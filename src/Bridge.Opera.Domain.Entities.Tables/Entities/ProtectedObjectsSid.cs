@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProtectedObjectsSid
 {
-    public string NameType { get; set; }
-    public string ObjectCode { get; set; }
-    public string DisplayName { get; set; }
-    public string ActionList { get; set; }
+    public string? NameType { get; set; }
+    public string? ObjectCode { get; set; }
+    public string? DisplayName { get; set; }
+    public string? ActionList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

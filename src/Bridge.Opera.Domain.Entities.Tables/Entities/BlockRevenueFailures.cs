@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BlockRevenueFailures
 {
-    public string EventType { get; set; }
-    public string EventId { get; set; }
-    public string ErrorMessage { get; set; }
-    public DateTime TimeFailed { get; set; }
+    public string? EventType { get; set; }
+    public string? EventId { get; set; }
+    public string? ErrorMessage { get; set; }
+    public DateTime? TimeFailed { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RmonAlerts
 {
-    public string SiteCode { get; set; }
-    public string SnapId { get; set; }
-    public string InterfaceId { get; set; }
-    public string RemoteResort { get; set; }
-    public string AlertText { get; set; }
+    public string? SiteCode { get; set; }
+    public string? SnapId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? RemoteResort { get; set; }
+    public string? AlertText { get; set; }
     public decimal? AlertPriority { get; set; }
-    public string EscalatedTo { get; set; }
+    public string? EscalatedTo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmResourceType
 {
-    public string ResType { get; set; }
-    public string Resort { get; set; }
-    public string ResCategory { get; set; }
-    public string ResTypeDesc { get; set; }
-    public string InventoryYn { get; set; }
-    public string DefForceAssignYn { get; set; }
+    public string? ResType { get; set; }
+    public string? Resort { get; set; }
+    public string? ResCategory { get; set; }
+    public string? ResTypeDesc { get; set; }
+    public string? InventoryYn { get; set; }
+    public string? DefForceAssignYn { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TrialBalanceView
 {
-    public string Description { get; set; }
-    public string Resort { get; set; }
-    public DateTime TrxDate { get; set; }
-    public string TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? DepLedDebit { get; set; }
     public decimal? DepLedCredit { get; set; }
     public decimal? GuestLedDebit { get; set; }

@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResortNotification
 {
-    public string Resort { get; set; }
-    public string NotificationGroup { get; set; }
-    public string NotificationCode { get; set; }
-    public string Description { get; set; }
-    public string TimeComponentYn { get; set; }
+    public string? Resort { get; set; }
+    public string? NotificationGroup { get; set; }
+    public string? NotificationCode { get; set; }
+    public string? Description { get; set; }
+    public string? TimeComponentYn { get; set; }
     public decimal? HoursBeforeAlert { get; set; }
-    public string BookingStatus { get; set; }
-    public string DataYn { get; set; }
-    public string AlertOnCreationYn { get; set; }
-    public string ActivityType { get; set; }
-    public string NotificationText { get; set; }
-    public string NotifyLeadOwner { get; set; }
-    public string DataRecipients { get; set; }
-    public string EmailYn { get; set; }
-    public string EmailSubject { get; set; }
-    public string EmailBody { get; set; }
-    public string NotifyLeadOwnerEmail { get; set; }
-    public string NotifyCentralOwnerYn { get; set; }
-    public string EmailRecipients { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? DataYn { get; set; }
+    public string? AlertOnCreationYn { get; set; }
+    public string? ActivityType { get; set; }
+    public string? NotificationText { get; set; }
+    public string? NotifyLeadOwner { get; set; }
+    public string? DataRecipients { get; set; }
+    public string? EmailYn { get; set; }
+    public string? EmailSubject { get; set; }
+    public string? EmailBody { get; set; }
+    public string? NotifyLeadOwnerEmail { get; set; }
+    public string? NotifyCentralOwnerYn { get; set; }
+    public string? EmailRecipients { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

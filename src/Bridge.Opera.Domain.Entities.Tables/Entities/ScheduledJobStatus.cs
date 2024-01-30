@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScheduledJobStatus
 {
-    public string JobName { get; set; }
+    public string? JobName { get; set; }
     public DateTime? LastRunDate { get; set; }
-    public string SuccessFlag { get; set; }
-    public string ErrorMessage { get; set; }
-    public string EmailAddresses { get; set; }
-    public string SmtpServer { get; set; }
-    public string SmtpServerPort { get; set; }
-    public string SmtpAuthuser { get; set; }
-    public string SmtpAuthuserpassword { get; set; }
-    public string OutputDataClob { get; set; }
-    public string EmailFrom { get; set; }
+    public string? SuccessFlag { get; set; }
+    public string? ErrorMessage { get; set; }
+    public string? EmailAddresses { get; set; }
+    public string? SmtpServer { get; set; }
+    public string? SmtpServerPort { get; set; }
+    public string? SmtpAuthuser { get; set; }
+    public string? SmtpAuthuserpassword { get; set; }
+    public string? OutputDataClob { get; set; }
+    public string? EmailFrom { get; set; }
     public decimal? JobIterator { get; set; }
     public decimal? DbMemoryLimit { get; set; }
-    public string SendDailyReportsYn { get; set; }
-    public string LogResultsYn { get; set; }
+    public string? SendDailyReportsYn { get; set; }
+    public string? LogResultsYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

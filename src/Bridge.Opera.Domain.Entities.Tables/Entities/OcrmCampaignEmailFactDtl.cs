@@ -2,63 +2,63 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmCampaignEmailFactDtl
 {
-    public decimal FactDtlRecId { get; set; }
-    public string RecordLocator { get; set; }
+    public decimal? FactDtlRecId { get; set; }
+    public string? RecordLocator { get; set; }
     public decimal? CampaignId { get; set; }
-    public string OcrmEventtype { get; set; }
-    public string OcrmBouncetype { get; set; }
+    public string? OcrmEventtype { get; set; }
+    public string? OcrmBouncetype { get; set; }
     public decimal? OcrmProfileId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ExternalResortId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ExternalResortId { get; set; }
     public DateTime? Eventdate { get; set; }
     public DateTime? ImportDate { get; set; }
     public decimal? ImportBatchId { get; set; }
     public decimal? ProcessBatchId { get; set; }
-    public string EspEventtype { get; set; }
+    public string? EspEventtype { get; set; }
     public decimal? EspEventcount { get; set; }
-    public string EspBouncecategory { get; set; }
-    public string Url { get; set; }
-    public string UrlAlias { get; set; }
-    public string EspRefNo { get; set; }
-    public string EspRefRecNo { get; set; }
+    public string? EspBouncecategory { get; set; }
+    public string? Url { get; set; }
+    public string? UrlAlias { get; set; }
+    public string? EspRefNo { get; set; }
+    public string? EspRefRecNo { get; set; }
     public DateTime? EspSchedtime { get; set; }
-    public string EspJobstatus { get; set; }
-    public string Emailaddress { get; set; }
-    public string Emailname { get; set; }
-    public string Fromname { get; set; }
-    public string Fromemail { get; set; }
-    public string EmailSubject { get; set; }
-    public string EmailPreviewurl { get; set; }
-    public string Espbatchid { get; set; }
-    public string Sendurlid { get; set; }
-    public string CampaignCode { get; set; }
+    public string? EspJobstatus { get; set; }
+    public string? Emailaddress { get; set; }
+    public string? Emailname { get; set; }
+    public string? Fromname { get; set; }
+    public string? Fromemail { get; set; }
+    public string? EmailSubject { get; set; }
+    public string? EmailPreviewurl { get; set; }
+    public string? Espbatchid { get; set; }
+    public string? Sendurlid { get; set; }
+    public string? CampaignCode { get; set; }
     public decimal? SegBatchId { get; set; }
-    public string MailListFlg { get; set; }
-    public string MarketResearchFlg { get; set; }
-    public string ThirdPartyFlg { get; set; }
-    public string AutoenrollMemberFlg { get; set; }
-    public string EmailFlg { get; set; }
-    public string GuestPrivFlg { get; set; }
-    public string PhoneFlg { get; set; }
-    public string SmsFlg { get; set; }
-    public string Urlid { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfn01 { get; set; }
+    public string? MailListFlg { get; set; }
+    public string? MarketResearchFlg { get; set; }
+    public string? ThirdPartyFlg { get; set; }
+    public string? AutoenrollMemberFlg { get; set; }
+    public string? EmailFlg { get; set; }
+    public string? GuestPrivFlg { get; set; }
+    public string? PhoneFlg { get; set; }
+    public string? SmsFlg { get; set; }
+    public string? Urlid { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
     public decimal? Udfn04 { get; set; }
     public decimal? Udfn05 { get; set; }
-    public string Udfd01 { get; set; }
+    public string? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
     public DateTime? Udfd04 { get; set; }

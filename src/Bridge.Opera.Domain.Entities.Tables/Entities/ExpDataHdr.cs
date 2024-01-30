@@ -8,23 +8,23 @@ public partial class ExpDataHdr
         ExpDataFile = new HashSet<ExpDataFile>();
     }
 
-    public decimal ExpDataId { get; set; }
-    public decimal ExpFileId { get; set; }
-    public string Resort { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public decimal? ExpFileId { get; set; }
+    public string? Resort { get; set; }
     public decimal? TotRecords { get; set; }
-    public string GeneratedFilename { get; set; }
-    public string GeneratedFileextn { get; set; }
-    public string GeneratedFileloc { get; set; }
-    public DateTime GeneratedDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? GeneratedFilename { get; set; }
+    public string? GeneratedFileextn { get; set; }
+    public string? GeneratedFileloc { get; set; }
+    public DateTime? GeneratedDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string InactiveYn { get; set; }
+    public string? InactiveYn { get; set; }
     public decimal? BatchNumber { get; set; }
     public DateTime? DataFromDate { get; set; }
     public DateTime? DataToDate { get; set; }
-    public string ChecksumYn { get; set; }
+    public string? ChecksumYn { get; set; }
     public decimal? XmlExpTempId { get; set; }
     public decimal? IterationByDate { get; set; }
 

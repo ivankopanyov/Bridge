@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiActivityClassDim
 {
-    public string ActivityClass { get; set; }
-    public string Description { get; set; }
+    public string? ActivityClass { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

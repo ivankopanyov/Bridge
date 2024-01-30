@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrxCodeDiversions
 {
-    public decimal DiversionId { get; set; }
-    public string Resort { get; set; }
-    public string DiversionCode { get; set; }
-    public decimal SeqNo { get; set; }
-    public string RuleType { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string VipCode { get; set; }
-    public string DivertToRoom { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? DiversionId { get; set; }
+    public string? Resort { get; set; }
+    public string? DiversionCode { get; set; }
+    public decimal? SeqNo { get; set; }
+    public string? RuleType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? VipCode { get; set; }
+    public string? DivertToRoom { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

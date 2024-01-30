@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class Ogriddisplayarray
 {
     public DateTime? FDate { get; set; }
-    public string FLabel { get; set; }
+    public string? FLabel { get; set; }
     public decimal? FCell1 { get; set; }
     public decimal? FCell2 { get; set; }
     public decimal? FCell3 { get; set; }
@@ -30,7 +30,7 @@ public partial class Ogriddisplayarray
     public decimal? FId12 { get; set; }
     public decimal? FDaytotal { get; set; }
     public decimal? FTotalbook { get; set; }
-    public string FInternalLabel { get; set; }
+    public string? FInternalLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

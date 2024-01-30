@@ -8,37 +8,37 @@ public partial class PassbyArFolioDetailV
     public decimal? BillNumberDetail { get; set; }
     public decimal? RevisionNumberDetail { get; set; }
     public decimal? WindowNo { get; set; }
-    public string FolioStyle { get; set; }
-    public string PhoneDetails { get; set; }
-    public string RoomNumberDetail { get; set; }
-    public string TrxDate { get; set; }
-    public string TransactionCode { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? PhoneDetails { get; set; }
+    public string? RoomNumberDetail { get; set; }
+    public string? TrxDate { get; set; }
+    public string? TransactionCode { get; set; }
     public decimal? Quantity { get; set; }
-    public string Reference { get; set; }
-    public string Description { get; set; }
-    public string Supplement { get; set; }
-    public string Debit { get; set; }
-    public string Credit { get; set; }
-    public string EuroDebit { get; set; }
-    public string EuroCredit { get; set; }
-    public string ExchangeRate { get; set; }
-    public string DetailCurrencyDebit { get; set; }
-    public string DetailCurrencyCredit { get; set; }
-    public string DetailCurrency { get; set; }
+    public string? Reference { get; set; }
+    public string? Description { get; set; }
+    public string? Supplement { get; set; }
+    public string? Debit { get; set; }
+    public string? Credit { get; set; }
+    public string? EuroDebit { get; set; }
+    public string? EuroCredit { get; set; }
+    public string? ExchangeRate { get; set; }
+    public string? DetailCurrencyDebit { get; set; }
+    public string? DetailCurrencyCredit { get; set; }
+    public string? DetailCurrency { get; set; }
     public decimal? DetailCurrencyExchangeRt { get; set; }
-    public string CcApprovalCode { get; set; }
+    public string? CcApprovalCode { get; set; }
     public DateTime? ExpiryDateDetail { get; set; }
-    public string CurrencyDetail { get; set; }
+    public string? CurrencyDetail { get; set; }
     public decimal? ExchRate { get; set; }
     public decimal? EuroExchRate { get; set; }
     public decimal? PostedAmount { get; set; }
-    public string CurrFormatMask { get; set; }
-    public string Refinvo { get; set; }
-    public string ChequeNumber { get; set; }
-    public string NetAmount { get; set; }
-    public string GrossAmount { get; set; }
-    public string EuroNetAmount { get; set; }
-    public string EuroGrossAmount { get; set; }
+    public string? CurrFormatMask { get; set; }
+    public string? Refinvo { get; set; }
+    public string? ChequeNumber { get; set; }
+    public string? NetAmount { get; set; }
+    public string? GrossAmount { get; set; }
+    public string? EuroNetAmount { get; set; }
+    public string? EuroGrossAmount { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? TranActionId { get; set; }
     public DateTime? DirectTrxDate { get; set; }
@@ -53,11 +53,11 @@ public partial class PassbyArFolioDetailV
     public decimal? DirectGross { get; set; }
     public decimal? DirectEuroNet { get; set; }
     public decimal? DirectEuroGross { get; set; }
-    public string RecordType { get; set; }
-    public string SourceRoomNumber { get; set; }
-    public string TrxCodeType { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceRoomNumber { get; set; }
+    public string? TrxCodeType { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string TargetResort { get; set; }
+    public string? TargetResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

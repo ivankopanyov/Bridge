@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CodeTranslationData
 {
-    public string FieldName { get; set; }
-    public string SourceLanguageCode { get; set; }
-    public string SourceValue { get; set; }
-    public string TargetLanguageCode { get; set; }
-    public string TargetValue { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? FieldName { get; set; }
+    public string? SourceLanguageCode { get; set; }
+    public string? SourceValue { get; set; }
+    public string? TargetLanguageCode { get; set; }
+    public string? TargetValue { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpLanguagesBase
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string LanguageKey { get; set; }
-    public string LanguageCode { get; set; }
-    public string LanguageDesc { get; set; }
-    public string TranslationLanguageCode { get; set; }
-    public string NlsLanguage { get; set; }
-    public string Preferredlanguage { get; set; }
-    public string Locale { get; set; }
-    public string NativeWritingSystem { get; set; }
-    public string EnrollmentAltYn { get; set; }
-    public string AllKey { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? LanguageKey { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? TranslationLanguageCode { get; set; }
+    public string? NlsLanguage { get; set; }
+    public string? Preferredlanguage { get; set; }
+    public string? Locale { get; set; }
+    public string? NativeWritingSystem { get; set; }
+    public string? EnrollmentAltYn { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

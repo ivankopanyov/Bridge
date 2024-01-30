@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentRoomtypePriorities
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? Priority { get; set; }
-    public string PriorityType { get; set; }
-    public string DownloadResort { get; set; }
+    public string? PriorityType { get; set; }
+    public string? DownloadResort { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? DownloadDate { get; set; }
     public DateTime? UploadDate { get; set; }

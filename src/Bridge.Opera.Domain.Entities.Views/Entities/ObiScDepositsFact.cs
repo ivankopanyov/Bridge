@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScDepositsFact
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? DepositPercentage { get; set; }
-    public string DepositComments { get; set; }
+    public string? DepositComments { get; set; }
     public DateTime? DepositDueDate { get; set; }
     public decimal? DepositPaidAmount { get; set; }
     public decimal? DepositRequestAmount { get; set; }
-    public string DepositResort { get; set; }
-    public string DepositRule { get; set; }
-    public string DepositTypeCode { get; set; }
-    public string DepositTypeDesc { get; set; }
+    public string? DepositResort { get; set; }
+    public string? DepositRule { get; set; }
+    public string? DepositTypeCode { get; set; }
+    public string? DepositTypeDesc { get; set; }
     public decimal? DepositUnpaid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

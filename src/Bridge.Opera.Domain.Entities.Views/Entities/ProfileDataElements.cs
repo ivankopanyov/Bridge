@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileDataElements
 {
-    public decimal ActionId { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
-    public decimal ProfDataElementId { get; set; }
-    public string ElementType { get; set; }
+    public decimal? ActionId { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
+    public decimal? ProfDataElementId { get; set; }
+    public string? ElementType { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string ElementRole { get; set; }
-    public string Resort { get; set; }
+    public string? ElementRole { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

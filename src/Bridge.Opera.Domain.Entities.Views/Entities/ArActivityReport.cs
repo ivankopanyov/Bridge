@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArActivityReport
 {
-    public string AccountType { get; set; }
-    public string TypeDesc { get; set; }
-    public string AccountName { get; set; }
-    public string GuestName { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountType { get; set; }
+    public string? TypeDesc { get; set; }
+    public string? AccountName { get; set; }
+    public string? GuestName { get; set; }
+    public string? AccountNo { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? AccountCode { get; set; }
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
-    public string Cashier { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
+    public string? Cashier { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? Amount { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InserUser { get; set; }
-    public decimal FinActionId { get; set; }
-    public string FinActionDesc { get; set; }
-    public string FinActionType { get; set; }
-    public string FinActionEvent { get; set; }
-    public string ReasonCode { get; set; }
-    public string FtSubtype { get; set; }
-    public string AccTypeFlag { get; set; }
+    public decimal? FinActionId { get; set; }
+    public string? FinActionDesc { get; set; }
+    public string? FinActionType { get; set; }
+    public string? FinActionEvent { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? AccTypeFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,15 +7,15 @@ public partial class NegCatPkgCollection
         NegCatPkgCollectionLink = new HashSet<NegCatPkgCollectionLink>();
     }
 
-    public decimal PkgCollectionSeq { get; set; }
-    public string Resort { get; set; }
-    public string NcpcCode { get; set; }
-    public string Description { get; set; }
+    public decimal? PkgCollectionSeq { get; set; }
+    public string? Resort { get; set; }
+    public string? NcpcCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual ICollection<NegCatPkgCollectionLink> NegCatPkgCollectionLink { get; set; }
 

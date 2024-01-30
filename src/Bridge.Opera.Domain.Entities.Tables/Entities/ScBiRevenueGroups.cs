@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScBiRevenueGroups
 {
-    public string ChainCode { get; set; }
-    public string RevGroupType { get; set; }
-    public string RevGroupCode { get; set; }
-    public string RevTypes { get; set; }
-    public string CodeDesc { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RevGroupType { get; set; }
+    public string? RevGroupCode { get; set; }
+    public string? RevTypes { get; set; }
+    public string? CodeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

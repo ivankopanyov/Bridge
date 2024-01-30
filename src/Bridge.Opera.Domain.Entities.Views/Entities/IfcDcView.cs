@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcDcView
 {
-    public string Resort { get; set; }
-    public string DcType { get; set; }
-    public string Sp { get; set; }
-    public string Rc { get; set; }
-    public string Tr { get; set; }
-    public string Pn { get; set; }
-    public string Ui { get; set; }
-    public string Pr { get; set; }
-    public string Lt { get; set; }
-    public string Dd { get; set; }
-    public string ItemNum { get; set; }
-    public string DpCode { get; set; }
-    public string Text { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DcType { get; set; }
+    public string? Sp { get; set; }
+    public string? Rc { get; set; }
+    public string? Tr { get; set; }
+    public string? Pn { get; set; }
+    public string? Ui { get; set; }
+    public string? Pr { get; set; }
+    public string? Lt { get; set; }
+    public string? Dd { get; set; }
+    public string? ItemNum { get; set; }
+    public string? DpCode { get; set; }
+    public string? Text { get; set; }
+    public string? DbfLogo { get; set; }
     public decimal? RowNum { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

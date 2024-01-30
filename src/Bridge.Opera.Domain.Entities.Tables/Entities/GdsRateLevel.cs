@@ -7,13 +7,13 @@ public partial class GdsRateLevel
         GdsConvRateCodes = new HashSet<GdsConvRateCodes>();
     }
 
-    public string GdsHost { get; set; }
-    public string GdsRateLevel1 { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRateLevel1 { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<GdsConvRateCodes> GdsConvRateCodes { get; set; }
 

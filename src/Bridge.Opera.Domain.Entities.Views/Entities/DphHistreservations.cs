@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphHistreservations
 {
-    public string PropertyCode { get; set; }
-    public string DelphiInternalId { get; set; }
-    public string ReservationId { get; set; }
-    public string BookingName { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? DelphiInternalId { get; set; }
+    public string? ReservationId { get; set; }
+    public string? BookingName { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

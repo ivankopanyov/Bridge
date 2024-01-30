@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinTranDepositLedgerSumm
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? Persons { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? TotalDepositAmt { get; set; }
     public decimal? TotalPaidAmt { get; set; }
     public DateTime? LastPaidDate { get; set; }
-    public string SguestName { get; set; }
-    public string ResvStatus { get; set; }
-    public string XfirstName { get; set; }
-    public string XlastName { get; set; }
-    public string PaymentMethod { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string ComputedResvStatus { get; set; }
+    public string? SguestName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XlastName { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? ComputedResvStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

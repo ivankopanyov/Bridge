@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventLink
 {
-    public decimal LinkId { get; set; }
-    public decimal EventId { get; set; }
+    public decimal? LinkId { get; set; }
+    public decimal? EventId { get; set; }
 
     public virtual GemEvent Event { get; set; }
 

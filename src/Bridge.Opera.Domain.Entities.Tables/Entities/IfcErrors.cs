@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcErrors
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RowId { get; set; }
-    public string ActionName { get; set; }
-    public string Error { get; set; }
-    public string Message { get; set; }
-    public string ResvNameId { get; set; }
+    public string? ActionName { get; set; }
+    public string? Error { get; set; }
+    public string? Message { get; set; }
+    public string? ResvNameId { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

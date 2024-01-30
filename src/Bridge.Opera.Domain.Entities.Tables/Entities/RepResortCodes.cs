@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepResortCodes
 {
-    public decimal LovGrpId { get; set; }
-    public string FormName { get; set; }
-    public string BlockName { get; set; }
-    public string ItemName { get; set; }
-    public string ReportName { get; set; }
-    public string Resort { get; set; }
-    public string LovMode { get; set; }
-    public string Codes { get; set; }
-    public string Description { get; set; }
-    public string AssociatedCodes { get; set; }
+    public decimal? LovGrpId { get; set; }
+    public string? FormName { get; set; }
+    public string? BlockName { get; set; }
+    public string? ItemName { get; set; }
+    public string? ReportName { get; set; }
+    public string? Resort { get; set; }
+    public string? LovMode { get; set; }
+    public string? Codes { get; set; }
+    public string? Description { get; set; }
+    public string? AssociatedCodes { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcErrorMessages
 {
-    public string Resort { get; set; }
-    public string Interface { get; set; }
+    public string? Resort { get; set; }
+    public string? Interface { get; set; }
     public decimal? OperaSid { get; set; }
     public decimal? MessageId { get; set; }
 

@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentRestrActWithSeq
 {
-    public decimal AllotmentHeaderId { get; set; }
-    public DateTime ControlDate { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public DateTime? ControlDate { get; set; }
     public DateTime? AppliedDate { get; set; }
-    public string RestrictionType { get; set; }
-    public string Resort { get; set; }
-    public decimal ReservationRestrictionId { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RestrictionType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ReservationRestrictionId { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? LosUnits { get; set; }
-    public string SeasonCode { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string RestrType { get; set; }
-    public string GdsHost { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? RestrType { get; set; }
+    public string? GdsHost { get; set; }
     public decimal? RoomCatDisplaySeq { get; set; }
     public decimal? RoomClassDisplaySeq { get; set; }
     public decimal? RateCodeDisplaySeq { get; set; }

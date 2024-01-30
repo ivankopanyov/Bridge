@@ -7,9 +7,9 @@ public partial class ResortFacilities
         CustomFacilityCodesHeader = new HashSet<CustomFacilityCodesHeader>();
     }
 
-    public string Resort { get; set; }
-    public string FacilityCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? FacilityCode { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

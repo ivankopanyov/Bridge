@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationCancelPolicy
 {
-    public decimal ResvCancelPolicyId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Type { get; set; }
-    public string Description { get; set; }
+    public decimal? ResvCancelPolicyId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Type { get; set; }
+    public string? Description { get; set; }
     public decimal? PercCancel { get; set; }
     public DateTime? CancelDate { get; set; }
     public decimal? PercDue { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? CancelAmount { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? InsertActionInstanceId { get; set; }
-    public string ProcessedYn { get; set; }
-    public string ExternalId { get; set; }
+    public string? ProcessedYn { get; set; }
+    public string? ExternalId { get; set; }
     public decimal? ForeignCancelAmount { get; set; }
-    public string ExchangeRateInfo { get; set; }
-    public string ManualYn { get; set; }
+    public string? ExchangeRateInfo { get; set; }
+    public string? ManualYn { get; set; }
     public decimal? RateDcSeq { get; set; }
-    public string RuleCode { get; set; }
+    public string? RuleCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

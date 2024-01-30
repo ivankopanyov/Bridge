@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemItemVendor
 {
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public decimal NameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? Priority { get; set; }
-    public string LeadTime { get; set; }
+    public string? LeadTime { get; set; }
     public decimal? PurchasePrice { get; set; }
     public decimal? RentalPrice { get; set; }
     public DateTime? InsertDate { get; set; }

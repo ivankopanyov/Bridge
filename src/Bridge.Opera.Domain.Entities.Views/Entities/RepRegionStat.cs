@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRegionStat
 {
-    public string RegionCode { get; set; }
-    public string Description { get; set; }
+    public string? RegionCode { get; set; }
+    public string? Description { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FbRevenue { get; set; }
@@ -12,7 +12,7 @@ public partial class RepRegionStat
     public decimal? ShareAmount { get; set; }
     public decimal? Arrivals { get; set; }
     public decimal? MonthNo { get; set; }
-    public string Month { get; set; }
+    public string? Month { get; set; }
     public decimal? YearNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ConnectingSuites
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string ConnectingSuiteRoom { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? ConnectingSuiteRoom { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

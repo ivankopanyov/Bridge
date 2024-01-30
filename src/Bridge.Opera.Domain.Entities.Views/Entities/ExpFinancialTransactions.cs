@@ -6,64 +6,64 @@ public partial class ExpFinancialTransactions
     public decimal? RowSequence { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioNo { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? FolioView { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? ArrangementId { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxDescription { get; set; }
-    public string TrxSupplement { get; set; }
+    public string? TrxDescription { get; set; }
+    public string? TrxSupplement { get; set; }
     public decimal? PricePerUnit { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? GuestAccountCredit { get; set; }
     public decimal? CashierId { get; set; }
-    public string OriginalRoomNumber { get; set; }
-    public string Reference { get; set; }
+    public string? OriginalRoomNumber { get; set; }
+    public string? Reference { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string Covers { get; set; }
-    public string MembershipPointsEligibleYn { get; set; }
-    public string SwcardIssueNumber { get; set; }
+    public string? Covers { get; set; }
+    public string? MembershipPointsEligibleYn { get; set; }
+    public string? SwcardIssueNumber { get; set; }
     public DateTime? SwcardIssueDate { get; set; }
-    public string PropertyCode { get; set; }
+    public string? PropertyCode { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? GuestAccountDebit { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? CalcAmount { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? SeqPerBill { get; set; }
     public decimal? RoutedFromResv { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? TrxNoAgainstPackage { get; set; }
-    public string TrxType { get; set; }
+    public string? TrxType { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string TrxCodeType { get; set; }
-    public string ProductCode { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? ProductCode { get; set; }
     public decimal? PackageDebit { get; set; }
     public decimal? PackageCredit { get; set; }
     public decimal? DepositDebit { get; set; }
     public decimal? DepositCredit { get; set; }
-    public string FtSubtype { get; set; }
-    public string TaxElements { get; set; }
-    public string IsCredit01 { get; set; }
-    public string DisplayYn { get; set; }
-    public string RoomCategory { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? TaxElements { get; set; }
+    public string? IsCredit01 { get; set; }
+    public string? DisplayYn { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? ShareAmt { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
-    public string CreditCardType { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? CreditCardType { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string CreditCardNo { get; set; }
+    public string? CreditCardNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

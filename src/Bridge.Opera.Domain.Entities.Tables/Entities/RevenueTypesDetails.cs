@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RevenueTypesDetails
 {
-    public string RevType { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? RevType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
     public decimal? Vat { get; set; }
-    public string ContributeMinRevenueYn { get; set; }
+    public string? ContributeMinRevenueYn { get; set; }
 
     public virtual RevenueTypes RevenueTypes { get; set; }
 

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RestrictionCodes
 {
-    public string Code { get; set; }
-    public string Description { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
     public decimal? Seq { get; set; }
-    public string RestrictionTypes { get; set; }
-    public string RestrictionTypesDesc { get; set; }
+    public string? RestrictionTypes { get; set; }
+    public string? RestrictionTypesDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

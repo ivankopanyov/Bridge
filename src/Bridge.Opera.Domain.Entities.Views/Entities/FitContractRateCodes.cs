@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractRateCodes
 {
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PrimaryYn { get; set; }
-    public string Resort { get; set; }
-    public string CommissionableYn { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? CommissionableYn { get; set; }
     public decimal? CommissionablePerc { get; set; }
-    public string TaxIncludedYn { get; set; }
+    public string? TaxIncludedYn { get; set; }
     public decimal? TaxIncludedPerc { get; set; }
-    public string ServiceInclYn { get; set; }
+    public string? ServiceInclYn { get; set; }
     public decimal? ServicePerc { get; set; }
-    public string BfstInclYn { get; set; }
+    public string? BfstInclYn { get; set; }
     public decimal? BfstPrice { get; set; }
-    public string DblRmSupplementYn { get; set; }
+    public string? DblRmSupplementYn { get; set; }
     public decimal? DblRmSupplementPrice { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

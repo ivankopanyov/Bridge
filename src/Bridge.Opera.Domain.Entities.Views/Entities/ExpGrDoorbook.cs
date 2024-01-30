@@ -2,72 +2,72 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpGrDoorbook
 {
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public decimal? ExportId { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public decimal? LastSeqNo { get; set; }
     public decimal? NewSeqNo { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string UpdType { get; set; }
-    public string GuestType { get; set; }
-    public string CompanyName { get; set; }
-    public string AgentName { get; set; }
-    public string RoomNum { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? UpdType { get; set; }
+    public string? GuestType { get; set; }
+    public string? CompanyName { get; set; }
+    public string? AgentName { get; set; }
+    public string? RoomNum { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Arrangement { get; set; }
+    public string? Arrangement { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ActualDepartureDate { get; set; }
-    public string CompValue { get; set; }
-    public string CurrencyFormat { get; set; }
-    public string FolioStatus1 { get; set; }
-    public string FolioStatus2 { get; set; }
-    public string FolioStatus3 { get; set; }
-    public string FolioStatus4 { get; set; }
-    public string FolioStatus5 { get; set; }
-    public string FolioStatus6 { get; set; }
-    public string FolioStatus7 { get; set; }
-    public string FolioStatus8 { get; set; }
-    public string FolioStatus9 { get; set; }
-    public string FolioStatus10 { get; set; }
-    public string FolioType1 { get; set; }
-    public string FolioType2 { get; set; }
-    public string FolioType3 { get; set; }
-    public string FolioType4 { get; set; }
-    public string FolioType5 { get; set; }
-    public string FolioType6 { get; set; }
-    public string FolioType7 { get; set; }
-    public string FolioType8 { get; set; }
-    public string FolioType9 { get; set; }
-    public string FolioType10 { get; set; }
-    public string UpdTypeDesc { get; set; }
-    public string Payee1 { get; set; }
-    public string Payee2 { get; set; }
-    public string Payee3 { get; set; }
-    public string Payee4 { get; set; }
-    public string Payee5 { get; set; }
-    public string Payee6 { get; set; }
-    public string Payee7 { get; set; }
-    public string Payee8 { get; set; }
-    public string Payee9 { get; set; }
-    public string Payee10 { get; set; }
-    public string AssociatedBill1 { get; set; }
-    public string AssociatedBill2 { get; set; }
-    public string AssociatedBill3 { get; set; }
-    public string AssociatedBill4 { get; set; }
-    public string AssociatedBill5 { get; set; }
-    public string AssociatedBill6 { get; set; }
-    public string AssociatedBill7 { get; set; }
-    public string AssociatedBill8 { get; set; }
-    public string AssociatedBill9 { get; set; }
-    public string AssociatedBill10 { get; set; }
+    public string? CompValue { get; set; }
+    public string? CurrencyFormat { get; set; }
+    public string? FolioStatus1 { get; set; }
+    public string? FolioStatus2 { get; set; }
+    public string? FolioStatus3 { get; set; }
+    public string? FolioStatus4 { get; set; }
+    public string? FolioStatus5 { get; set; }
+    public string? FolioStatus6 { get; set; }
+    public string? FolioStatus7 { get; set; }
+    public string? FolioStatus8 { get; set; }
+    public string? FolioStatus9 { get; set; }
+    public string? FolioStatus10 { get; set; }
+    public string? FolioType1 { get; set; }
+    public string? FolioType2 { get; set; }
+    public string? FolioType3 { get; set; }
+    public string? FolioType4 { get; set; }
+    public string? FolioType5 { get; set; }
+    public string? FolioType6 { get; set; }
+    public string? FolioType7 { get; set; }
+    public string? FolioType8 { get; set; }
+    public string? FolioType9 { get; set; }
+    public string? FolioType10 { get; set; }
+    public string? UpdTypeDesc { get; set; }
+    public string? Payee1 { get; set; }
+    public string? Payee2 { get; set; }
+    public string? Payee3 { get; set; }
+    public string? Payee4 { get; set; }
+    public string? Payee5 { get; set; }
+    public string? Payee6 { get; set; }
+    public string? Payee7 { get; set; }
+    public string? Payee8 { get; set; }
+    public string? Payee9 { get; set; }
+    public string? Payee10 { get; set; }
+    public string? AssociatedBill1 { get; set; }
+    public string? AssociatedBill2 { get; set; }
+    public string? AssociatedBill3 { get; set; }
+    public string? AssociatedBill4 { get; set; }
+    public string? AssociatedBill5 { get; set; }
+    public string? AssociatedBill6 { get; set; }
+    public string? AssociatedBill7 { get; set; }
+    public string? AssociatedBill8 { get; set; }
+    public string? AssociatedBill9 { get; set; }
+    public string? AssociatedBill10 { get; set; }
     public decimal? Bill1 { get; set; }
     public decimal? Bill2 { get; set; }
     public decimal? Bill3 { get; set; }
@@ -89,8 +89,8 @@ public partial class ExpGrDoorbook
     public decimal? BillAmount9 { get; set; }
     public decimal? BillAmount10 { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string GreekContractNumber { get; set; }
-    public string PmsDateFormat { get; set; }
+    public string? GreekContractNumber { get; set; }
+    public string? PmsDateFormat { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

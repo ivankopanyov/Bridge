@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScBookingStatusFact
 {
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public string PriorStatus { get; set; }
-    public string CurrentStatus { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public string? PriorStatus { get; set; }
+    public string? CurrentStatus { get; set; }
     public DateTime? ChangeDate { get; set; }
     public DateTime? ChangeDateTime { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? TotalNetRoomsRevenue { get; set; }
     public decimal? TotalGrossRoomsRevenue { get; set; }
-    public string AllDates { get; set; }
-    public string DayDesc { get; set; }
-    public string DayNoOfWeek { get; set; }
+    public string? AllDates { get; set; }
+    public string? DayDesc { get; set; }
+    public string? DayNoOfWeek { get; set; }
     public decimal? DayNoOfMonth { get; set; }
     public decimal? DayNoOfQuarter { get; set; }
-    public string DayOfWeek { get; set; }
+    public string? DayOfWeek { get; set; }
     public decimal? DayOfYear { get; set; }
-    public string IsoWeekOfYear { get; set; }
-    public string MonthDsc { get; set; }
-    public string MonthName { get; set; }
+    public string? IsoWeekOfYear { get; set; }
+    public string? MonthDsc { get; set; }
+    public string? MonthName { get; set; }
     public decimal? MonthOfYear { get; set; }
-    public string QuarterDsc { get; set; }
-    public string WeekDsc { get; set; }
-    public string YearDsc { get; set; }
+    public string? QuarterDsc { get; set; }
+    public string? WeekDsc { get; set; }
+    public string? YearDsc { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
     public decimal? CatRevenue { get; set; }

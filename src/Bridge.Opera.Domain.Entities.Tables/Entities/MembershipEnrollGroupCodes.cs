@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipEnrollGroupCodes
 {
-    public string MemEnrollGroup { get; set; }
-    public string EnrollmentCode { get; set; }
+    public string? MemEnrollGroup { get; set; }
+    public string? EnrollmentCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ChainCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MembershipEnrollGroups MembershipEnrollGroups { get; set; }
 

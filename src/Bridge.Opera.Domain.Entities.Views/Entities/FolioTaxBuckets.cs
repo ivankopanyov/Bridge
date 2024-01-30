@@ -6,7 +6,7 @@ public partial class FolioTaxBuckets
     public decimal? BillNo { get; set; }
     public decimal? NameId { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? Net1Amt { get; set; }
     public decimal? Tax1Amt { get; set; }
     public decimal? Gr1Amt { get; set; }
@@ -74,12 +74,12 @@ public partial class FolioTaxBuckets
     public decimal? TotalGross { get; set; }
     public decimal? TotalNet { get; set; }
     public decimal? TotalTax { get; set; }
-    public string Status { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string FolioType { get; set; }
+    public string? Status { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? FolioType { get; set; }
     public decimal? Exempt { get; set; }
-    public string AddresseeName { get; set; }
-    public string FolioTypeAssoc { get; set; }
+    public string? AddresseeName { get; set; }
+    public string? FolioTypeAssoc { get; set; }
     public decimal? Clarpay { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

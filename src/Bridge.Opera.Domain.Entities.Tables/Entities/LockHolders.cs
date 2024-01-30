@@ -4,11 +4,11 @@ public partial class LockHolders
 {
     public decimal? WaitingSession { get; set; }
     public decimal? HoldingSession { get; set; }
-    public string LockType { get; set; }
-    public string ModeHeld { get; set; }
-    public string ModeRequested { get; set; }
-    public string LockId1 { get; set; }
-    public string LockId2 { get; set; }
+    public string? LockType { get; set; }
+    public string? ModeHeld { get; set; }
+    public string? ModeRequested { get; set; }
+    public string? LockId1 { get; set; }
+    public string? LockId2 { get; set; }
     public decimal? InstanceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

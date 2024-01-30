@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempV5iOccupancy
 {
-    public string Resort { get; set; }
-    public DateTime OccupancyDate { get; set; }
-    public string MarketCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? OccupancyDate { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? PhysicalRooms { get; set; }
     public decimal? OoRooms { get; set; }
     public decimal? OsRooms { get; set; }
@@ -16,8 +16,8 @@ public partial class TempV5iOccupancy
     public decimal? FoodRevenue { get; set; }
     public decimal? CancelledRooms { get; set; }
     public decimal? NoShowRooms { get; set; }
-    public string ResType { get; set; }
-    public string RoomType { get; set; }
+    public string? ResType { get; set; }
+    public string? RoomType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

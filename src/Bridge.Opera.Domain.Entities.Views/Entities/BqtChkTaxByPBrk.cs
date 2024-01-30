@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BqtChkTaxByPBrk
 {
-    public string TaxPBreak { get; set; }
+    public string? TaxPBreak { get; set; }
     public decimal? TaxOrderBy { get; set; }
-    public string TaxDescription { get; set; }
+    public string? TaxDescription { get; set; }
     public decimal? TaxAmount { get; set; }
     public decimal? TaxAmountToDisplay { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? ReportId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

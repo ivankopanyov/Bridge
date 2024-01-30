@@ -8,28 +8,28 @@ public partial class OrmsAlertsDefinition
         OrmsAlertsParameters = new HashSet<OrmsAlertsParameters>();
     }
 
-    public decimal AlertId { get; set; }
-    public string Resort { get; set; }
-    public string AlertName { get; set; }
-    public string AlertOnlyYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Code { get; set; }
-    public string AlertText { get; set; }
-    public string AlertColor { get; set; }
-    public string SeasonCode { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string EventCodes { get; set; }
+    public decimal? AlertId { get; set; }
+    public string? Resort { get; set; }
+    public string? AlertName { get; set; }
+    public string? AlertOnlyYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Code { get; set; }
+    public string? AlertText { get; set; }
+    public string? AlertColor { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? EventCodes { get; set; }
     public decimal? Priority { get; set; }
-    public string DisplayPages { get; set; }
+    public string? DisplayPages { get; set; }
 
     public virtual ICollection<OrmsAlertsDefinitionDates> OrmsAlertsDefinitionDates { get; set; }
     public virtual ICollection<OrmsAlertsParameters> OrmsAlertsParameters { get; set; }

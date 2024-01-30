@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidScLovSys
 {
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string UdfName { get; set; }
-    public string SpMode { get; set; }
-    public string FormName { get; set; }
-    public string LovQuery { get; set; }
-    public string Column1Desc { get; set; }
-    public string Column2Desc { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? UdfName { get; set; }
+    public string? SpMode { get; set; }
+    public string? FormName { get; set; }
+    public string? LovQuery { get; set; }
+    public string? Column1Desc { get; set; }
+    public string? Column2Desc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

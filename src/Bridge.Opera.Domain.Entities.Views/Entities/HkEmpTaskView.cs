@@ -3,42 +3,42 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class HkEmpTaskView
 {
     public decimal? ReportId { get; set; }
-    public decimal TaskSeqNo { get; set; }
+    public decimal? TaskSeqNo { get; set; }
     public decimal? CntRep { get; set; }
-    public DateTime TaskDate { get; set; }
-    public string TaskCode { get; set; }
-    public decimal TaskSheetNo { get; set; }
+    public DateTime? TaskDate { get; set; }
+    public string? TaskCode { get; set; }
+    public decimal? TaskSheetNo { get; set; }
     public DateTime? TaskCompletedDate { get; set; }
     public decimal? TaskCredits { get; set; }
-    public string TaskInstructions { get; set; }
-    public string AutoGenerateInd { get; set; }
-    public string AutoGenerateFilters { get; set; }
-    public string Description { get; set; }
-    public string Frequency { get; set; }
-    public string UnitOfFrequency { get; set; }
-    public string EmpId { get; set; }
-    public string EmpName { get; set; }
-    public string EmpInstructions { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? TaskInstructions { get; set; }
+    public string? AutoGenerateInd { get; set; }
+    public string? AutoGenerateFilters { get; set; }
+    public string? Description { get; set; }
+    public string? Frequency { get; set; }
+    public string? UnitOfFrequency { get; set; }
+    public string? EmpId { get; set; }
+    public string? EmpName { get; set; }
+    public string? EmpInstructions { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? Credits { get; set; }
-    public string RoomInstructions { get; set; }
-    public string RoomStatus { get; set; }
-    public string Class { get; set; }
+    public string? RoomInstructions { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? Class { get; set; }
     public decimal? ReservationStatus { get; set; }
-    public string FoStatus { get; set; }
-    public string Type { get; set; }
-    public string RoomCategory { get; set; }
-    public string Turndown { get; set; }
-    public string SimpleTaskYn { get; set; }
-    public string ServiceTime { get; set; }
-    public string AssignType { get; set; }
-    public string AssignReason { get; set; }
-    public string AssignStatus { get; set; }
+    public string? FoStatus { get; set; }
+    public string? Type { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Turndown { get; set; }
+    public string? SimpleTaskYn { get; set; }
+    public string? ServiceTime { get; set; }
+    public string? AssignType { get; set; }
+    public string? AssignReason { get; set; }
+    public string? AssignStatus { get; set; }
     public decimal? TravelingCredits { get; set; }
-    public string TaskSheetType { get; set; }
+    public string? TaskSheetType { get; set; }
     public decimal? HkBreakoutJobId { get; set; }
-    public string TaskSheetNoDisplay { get; set; }
+    public string? TaskSheetNoDisplay { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

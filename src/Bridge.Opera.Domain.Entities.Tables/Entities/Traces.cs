@@ -5,17 +5,17 @@ public partial class Traces
     public decimal? Sid { get; set; }
     public decimal? Serial { get; set; }
     public decimal? Cpuio { get; set; }
-    public string Status { get; set; }
-    public string Schema { get; set; }
-    public string Terminal { get; set; }
-    public string OperaModule { get; set; }
-    public string OperaUser { get; set; }
+    public string? Status { get; set; }
+    public string? Schema { get; set; }
+    public string? Terminal { get; set; }
+    public string? OperaModule { get; set; }
+    public string? OperaUser { get; set; }
     public DateTime? LogonTime { get; set; }
-    public string Application { get; set; }
-    public string Comments { get; set; }
+    public string? Application { get; set; }
+    public string? Comments { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public string TraceFile { get; set; }
+    public string? TraceFile { get; set; }
     public decimal? Parentaudsid { get; set; }
     public decimal? Audsid { get; set; }
     public decimal? InstanceId { get; set; }

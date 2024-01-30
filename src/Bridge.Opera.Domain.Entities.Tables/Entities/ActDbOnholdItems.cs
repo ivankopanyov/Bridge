@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActDbOnholdItems
 {
-    public decimal ActivityId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GuestFullName { get; set; }
-    public string Type { get; set; }
-    public string Description { get; set; }
+    public decimal? ActivityId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GuestFullName { get; set; }
+    public string? Type { get; set; }
+    public string? Description { get; set; }
     public DateTime? BeginDate { get; set; }
-    public string BeginTime { get; set; }
+    public string? BeginTime { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EndTime { get; set; }
+    public string? EndTime { get; set; }
     public decimal? Persons { get; set; }
     public decimal? Amount { get; set; }
-    public string Notes { get; set; }
+    public string? Notes { get; set; }
 
     public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
     {

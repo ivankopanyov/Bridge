@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellRule
 {
-    public decimal UpsellRuleId { get; set; }
-    public string Resort { get; set; }
-    public string FromRoomCategory { get; set; }
-    public string ToRoomCategory { get; set; }
-    public DateTime BeginDate { get; set; }
+    public decimal? UpsellRuleId { get; set; }
+    public string? Resort { get; set; }
+    public string? FromRoomCategory { get; set; }
+    public string? ToRoomCategory { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? UpsellAmount { get; set; }
-    public string RoundingRule { get; set; }
+    public string? RoundingRule { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Formula { get; set; }
-    public string RateSourceType { get; set; }
-    public string OccupLevelsYn { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string FromRoomClass { get; set; }
-    public string ToRoomClass { get; set; }
+    public string? Formula { get; set; }
+    public string? RateSourceType { get; set; }
+    public string? OccupLevelsYn { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? FromRoomClass { get; set; }
+    public string? ToRoomClass { get; set; }
     public decimal? DaysInAdvance { get; set; }
-    public string CurrencyCode { get; set; }
-    public string TrxCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

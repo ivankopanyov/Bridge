@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BlockPmResList
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? EventId { get; set; }
     public decimal? BlockId { get; set; }
-    public string BlockResort { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? BlockResort { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
     public decimal? Adults { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? ShareAmount { get; set; }
-    public string PostingAllowedYn { get; set; }
-    public string Room { get; set; }
+    public string? PostingAllowedYn { get; set; }
+    public string? Room { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

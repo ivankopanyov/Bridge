@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CateringChangelog
 {
-    public string Action { get; set; }
-    public decimal BookId { get; set; }
+    public string? Action { get; set; }
+    public decimal? BookId { get; set; }
     public DateTime? ByDate { get; set; }
-    public string ByUser { get; set; }
-    public decimal ChangeId { get; set; }
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
+    public string? ByUser { get; set; }
+    public decimal? ChangeId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResourceId { get; set; }
-    public string ResourceName { get; set; }
-    public string ResourceType { get; set; }
-    public string EventName { get; set; }
-    public decimal UserId { get; set; }
+    public string? ResourceName { get; set; }
+    public string? ResourceType { get; set; }
+    public string? EventName { get; set; }
+    public decimal? UserId { get; set; }
     public decimal? MenuId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

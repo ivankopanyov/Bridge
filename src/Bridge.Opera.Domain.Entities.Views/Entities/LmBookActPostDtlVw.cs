@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmBookActPostDtlVw
 {
-    public decimal BookedActId { get; set; }
-    public string Resort { get; set; }
+    public decimal? BookedActId { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookedElId { get; set; }
-    public string ResId { get; set; }
-    public string ResDesc { get; set; }
-    public string ResType { get; set; }
-    public string ResLongDesc { get; set; }
+    public string? ResId { get; set; }
+    public string? ResDesc { get; set; }
+    public string? ResType { get; set; }
+    public string? ResLongDesc { get; set; }
     public decimal? NameId { get; set; }
-    public string ResName { get; set; }
+    public string? ResName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationVirtual
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal Pool { get; set; }
-    public string Virtual { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Password { get; set; }
-    public string Username { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? Pool { get; set; }
+    public string? Virtual { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Password { get; set; }
+    public string? Username { get; set; }
     public decimal? SessionId { get; set; }
 
     public virtual ReservationName Res { get; set; }

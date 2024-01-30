@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepHkResvRoomView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? SeqNo { get; set; }
-    public string Arrival { get; set; }
-    public string ArrivalTime { get; set; }
+    public string? Arrival { get; set; }
+    public string? ArrivalTime { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Departure { get; set; }
-    public string FullName { get; set; }
-    public string GuestName { get; set; }
-    public string Comments { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string RoomNo { get; set; }
-    public string Room { get; set; }
+    public string? Departure { get; set; }
+    public string? FullName { get; set; }
+    public string? GuestName { get; set; }
+    public string? Comments { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? RoomNo { get; set; }
+    public string? Room { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string GroupName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? Persons { get; set; }
-    public string Vip { get; set; }
+    public string? Vip { get; set; }
     public DateTime? TruncBegin { get; set; }
     public DateTime? TruncEnd { get; set; }
 

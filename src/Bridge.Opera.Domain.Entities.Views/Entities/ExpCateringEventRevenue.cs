@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpCateringEventRevenue
 {
     public decimal? RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string TransactionType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? TransactionType { get; set; }
     public decimal? BookId { get; set; }
-    public string Udfc06 { get; set; }
+    public string? Udfc06 { get; set; }
     public decimal? EventId { get; set; }
-    public string RevenueType { get; set; }
-    public string RevenueGroup { get; set; }
+    public string? RevenueType { get; set; }
+    public string? RevenueGroup { get; set; }
     public decimal? CurrForRevNet { get; set; }
     public decimal? CurrForRevGross { get; set; }
     public decimal? CurrGtdRevNet { get; set; }
@@ -19,7 +19,7 @@ public partial class ExpCateringEventRevenue
     public decimal? CurrExpRevGross { get; set; }
     public decimal? CurrActRevNet { get; set; }
     public decimal? CurrActRevGross { get; set; }
-    public string ExtEventId { get; set; }
+    public string? ExtEventId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

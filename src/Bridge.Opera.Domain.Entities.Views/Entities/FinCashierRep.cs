@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinCashierRep
 {
-    public string RepType { get; set; }
-    public string Resort { get; set; }
+    public string? RepType { get; set; }
+    public string? Resort { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string Remark { get; set; }
-    public string Currency { get; set; }
-    public string LocalCurrency { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? Remark { get; set; }
+    public string? Currency { get; set; }
+    public string? LocalCurrency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? CashierId { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string GuestName { get; set; }
-    public string RoomNo { get; set; }
+    public string? GuestName { get; set; }
+    public string? RoomNo { get; set; }
     public decimal? CashierDebit { get; set; }
     public decimal? CashierCredit { get; set; }
     public decimal? CreditAmt { get; set; }
@@ -24,12 +24,12 @@ public partial class FinCashierRep
     public decimal? LocalCurrCreditAmt { get; set; }
     public decimal? LocalCurrDebitAmt { get; set; }
     public decimal? PostedAmount { get; set; }
-    public string Time { get; set; }
+    public string? Time { get; set; }
     public decimal? FolioNumber { get; set; }
     public decimal? UserId { get; set; }
-    public string CreditCardNumberStr { get; set; }
-    public string CreditCardExpDateStr { get; set; }
-    public string AppUser { get; set; }
+    public string? CreditCardNumberStr { get; set; }
+    public string? CreditCardExpDateStr { get; set; }
+    public string? AppUser { get; set; }
     public decimal? ServiceTax { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -8,21 +8,21 @@ public partial class OcrmProfileSegHdr
         OcrmProfileSegBatches = new HashSet<OcrmProfileSegBatches>();
     }
 
-    public decimal SegId { get; set; }
-    public string SegCode { get; set; }
-    public string SegDesc { get; set; }
-    public string SegSourceType { get; set; }
-    public string Resort { get; set; }
-    public string JobNameId { get; set; }
-    public string ActionText { get; set; }
-    public string RepeatInterval { get; set; }
+    public decimal? SegId { get; set; }
+    public string? SegCode { get; set; }
+    public string? SegDesc { get; set; }
+    public string? SegSourceType { get; set; }
+    public string? Resort { get; set; }
+    public string? JobNameId { get; set; }
+    public string? ActionText { get; set; }
+    public string? RepeatInterval { get; set; }
     public decimal? TimesExec { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string DynCodeId { get; set; }
+    public string? DynCodeId { get; set; }
 
     public virtual ICollection<OcrmCampaigns> OcrmCampaigns { get; set; }
     public virtual ICollection<OcrmProfileSegBatches> OcrmProfileSegBatches { get; set; }

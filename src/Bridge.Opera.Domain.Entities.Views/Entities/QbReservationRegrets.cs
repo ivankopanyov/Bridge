@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbReservationRegrets
 {
-    public string Resort { get; set; }
-    public decimal ReservationRegretId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ReservationRegretId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public decimal? Nights { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string MarketCode { get; set; }
-    public string TurnawayCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string Comments { get; set; }
+    public string? MarketCode { get; set; }
+    public string? TurnawayCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Comments { get; set; }
     public decimal? CallHeaderId { get; set; }
     public decimal? RequestId { get; set; }
-    public string Country { get; set; }
-    public string Region { get; set; }
-    public string ZipCode { get; set; }
-    public string City { get; set; }
-    public string District { get; set; }
-    public string State { get; set; }
+    public string? Country { get; set; }
+    public string? Region { get; set; }
+    public string? ZipCode { get; set; }
+    public string? City { get; set; }
+    public string? District { get; set; }
+    public string? State { get; set; }
     public DateTime? TruncCreatedDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string YmCode { get; set; }
+    public string? YmCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

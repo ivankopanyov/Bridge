@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempMenuDetails
 {
-    public string ApplicationName { get; set; }
-    public string PanelName { get; set; }
-    public string PanelTitle { get; set; }
-    public string MenuModule { get; set; }
-    public string MenuName { get; set; }
-    public string MenuItem { get; set; }
+    public string? ApplicationName { get; set; }
+    public string? PanelName { get; set; }
+    public string? PanelTitle { get; set; }
+    public string? MenuModule { get; set; }
+    public string? MenuName { get; set; }
+    public string? MenuItem { get; set; }
     public decimal? MenuSequence { get; set; }
-    public string SubMenuLink { get; set; }
-    public string ToggleMenuModule { get; set; }
-    public string ToggleMenuName { get; set; }
-    public string ToggleCheckRoutine { get; set; }
-    public string MenuStatus { get; set; }
-    public string ResvYn { get; set; }
+    public string? SubMenuLink { get; set; }
+    public string? ToggleMenuModule { get; set; }
+    public string? ToggleMenuName { get; set; }
+    public string? ToggleCheckRoutine { get; set; }
+    public string? MenuStatus { get; set; }
+    public string? ResvYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaGenGtt
 {
-    public string IdxCol { get; set; }
-    public string Char1 { get; set; }
-    public string Char2 { get; set; }
+    public string? IdxCol { get; set; }
+    public string? Char1 { get; set; }
+    public string? Char2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

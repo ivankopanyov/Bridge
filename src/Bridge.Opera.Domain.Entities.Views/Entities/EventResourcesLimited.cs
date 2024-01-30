@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventResourcesLimited
 {
-    public string ResourceType { get; set; }
+    public string? ResourceType { get; set; }
     public decimal? ResourceGroupId { get; set; }
     public decimal? ResourceId { get; set; }
-    public string ResourceName { get; set; }
-    public string Code { get; set; }
-    public string Resort { get; set; }
+    public string? ResourceName { get; set; }
+    public string? Code { get; set; }
+    public string? Resort { get; set; }
     public decimal? EventId { get; set; }
     public decimal? BookId { get; set; }
     public decimal? ResourceSegment { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? PkgId { get; set; }
     public decimal? ClassId { get; set; }
-    public string OrderByChar { get; set; }
-    public string OrderByResort { get; set; }
+    public string? OrderByChar { get; set; }
+    public string? OrderByResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

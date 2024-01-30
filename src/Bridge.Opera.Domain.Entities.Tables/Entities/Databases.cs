@@ -7,34 +7,34 @@ public partial class Databases
         DatabaseResorts = new HashSet<DatabaseResorts>();
     }
 
-    public string DatabaseId { get; set; }
-    public string DatabaseName { get; set; }
-    public string DatabaseType { get; set; }
-    public string InterfaceType { get; set; }
-    public string DbConnectString { get; set; }
-    public string PmsInstalledYn { get; set; }
-    public string ScInstalledYn { get; set; }
-    public string CrsInstalledYn { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? DatabaseName { get; set; }
+    public string? DatabaseType { get; set; }
+    public string? InterfaceType { get; set; }
+    public string? DbConnectString { get; set; }
+    public string? PmsInstalledYn { get; set; }
+    public string? ScInstalledYn { get; set; }
+    public string? CrsInstalledYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string SfaInstalledYn { get; set; }
-    public string PmsType { get; set; }
-    public string Appservername { get; set; }
-    public string Jndiname { get; set; }
-    public string Operausername { get; set; }
-    public string Operauserpassword { get; set; }
-    public string Operaapplication { get; set; }
-    public string Operacro { get; set; }
-    public string Operalanguage { get; set; }
-    public string Operaextsystem { get; set; }
-    public string Operasecuritytoken { get; set; }
-    public string Operasecurityws { get; set; }
-    public string EmailAddress { get; set; }
-    public string EmailSubject { get; set; }
-    public string EmailText { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? SfaInstalledYn { get; set; }
+    public string? PmsType { get; set; }
+    public string? Appservername { get; set; }
+    public string? Jndiname { get; set; }
+    public string? Operausername { get; set; }
+    public string? Operauserpassword { get; set; }
+    public string? Operaapplication { get; set; }
+    public string? Operacro { get; set; }
+    public string? Operalanguage { get; set; }
+    public string? Operaextsystem { get; set; }
+    public string? Operasecuritytoken { get; set; }
+    public string? Operasecurityws { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? EmailSubject { get; set; }
+    public string? EmailText { get; set; }
     public decimal? EmailFrequency { get; set; }
 
     public virtual ICollection<DatabaseResorts> DatabaseResorts { get; set; }

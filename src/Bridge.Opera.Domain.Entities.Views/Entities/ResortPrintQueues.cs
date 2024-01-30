@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortPrintQueues
 {
-    public string Resort { get; set; }
-    public string QueueName { get; set; }
+    public string? Resort { get; set; }
+    public string? QueueName { get; set; }
     public decimal? BillNumber { get; set; }
     public decimal? IncrementValue { get; set; }
-    public string PaymentType { get; set; }
-    public string InactiveYn { get; set; }
-    public string KeyValue { get; set; }
+    public string? PaymentType { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? KeyValue { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

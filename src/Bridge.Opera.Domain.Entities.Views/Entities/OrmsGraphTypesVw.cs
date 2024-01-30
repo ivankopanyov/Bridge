@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsGraphTypesVw
 {
     public decimal? GraphSeq { get; set; }
-    public string GraphType { get; set; }
+    public string? GraphType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

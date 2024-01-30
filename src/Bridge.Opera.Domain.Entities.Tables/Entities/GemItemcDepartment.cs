@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemItemcDepartment
 {
-    public decimal ItemclassId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
+    public decimal? ItemclassId { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
 
     public virtual GemItemClass Itemclass { get; set; }
 

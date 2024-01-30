@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoItemCombined
 {
-    public string Resort { get; set; }
-    public decimal ItemBookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemBookId { get; set; }
     public decimal? CombinedEventId { get; set; }
     public decimal? EventId { get; set; }
-    public string EventItemResourceIds { get; set; }
+    public string? EventItemResourceIds { get; set; }
     public decimal? ClassId { get; set; }
-    public string ClassName { get; set; }
-    public string ClassResort { get; set; }
-    public string ItemName { get; set; }
-    public string ItemOrderBy { get; set; }
-    public string ItemRooms { get; set; }
-    public DateTime ItemStartDate { get; set; }
-    public DateTime ItemEndDate { get; set; }
+    public string? ClassName { get; set; }
+    public string? ClassResort { get; set; }
+    public string? ItemName { get; set; }
+    public string? ItemOrderBy { get; set; }
+    public string? ItemRooms { get; set; }
+    public DateTime? ItemStartDate { get; set; }
+    public DateTime? ItemEndDate { get; set; }
     public decimal? ItemId { get; set; }
     public decimal? ItemPkgId { get; set; }
-    public string ItmaName { get; set; }
+    public string? ItmaName { get; set; }
     public decimal? ItemQuantity { get; set; }
-    public string ItemAttribute { get; set; }
+    public string? ItemAttribute { get; set; }
     public decimal? ItemPrice { get; set; }
-    public string ItemPriceCode { get; set; }
-    public string ItemPriceName { get; set; }
-    public string ItemStartTimeForm { get; set; }
-    public string ItemEndTimeForm { get; set; }
+    public string? ItemPriceCode { get; set; }
+    public string? ItemPriceName { get; set; }
+    public string? ItemStartTimeForm { get; set; }
+    public string? ItemEndTimeForm { get; set; }
     public DateTime? ItemStartTime { get; set; }
     public DateTime? ItemEndTime { get; set; }
     public decimal? ItemVendorId { get; set; }
-    public string ItemVendorName { get; set; }
-    public string ItemVendorPhone { get; set; }
+    public string? ItemVendorName { get; set; }
+    public string? ItemVendorPhone { get; set; }
     public decimal? EventitemPrice { get; set; }
     public decimal? EventitemDiscount { get; set; }
     public decimal? EventitemClassOrderBy { get; set; }
     public decimal? EventitemItemOrderBy { get; set; }
-    public string ItemShow { get; set; }
+    public string? ItemShow { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

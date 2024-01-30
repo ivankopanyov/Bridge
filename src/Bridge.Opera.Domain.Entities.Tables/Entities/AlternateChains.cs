@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AlternateChains
 {
-    public string ChainCode { get; set; }
-    public string AlternateChainCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? AlternateChainCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string CrossSell { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? CrossSell { get; set; }
 
     public virtual ChainCode ChainCodeNavigation { get; set; }
 

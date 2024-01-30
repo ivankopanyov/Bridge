@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiManagersReportFactVw
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomClass { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? OccRoom { get; set; }
     public decimal? CompRoom { get; set; }
     public decimal? HouseUseRoom { get; set; }
@@ -91,7 +91,7 @@ public partial class ObiManagersReportFactVw
     public decimal? DayUseReservations { get; set; }
     public decimal? ArrivalReservations { get; set; }
     public decimal? RoomsCancelledToday { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
     public decimal? PhysicalBeds { get; set; }
     public decimal? OccBeds { get; set; }

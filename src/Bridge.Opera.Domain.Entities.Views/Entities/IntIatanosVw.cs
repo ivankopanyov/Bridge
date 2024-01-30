@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntIatanosVw
 {
-    public string Nrowid { get; set; }
-    public decimal NameId { get; set; }
-    public string Iatano { get; set; }
-    public string Status { get; set; }
-    public string Name { get; set; }
-    public string Bankaccountno { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? Nrowid { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Iatano { get; set; }
+    public string? Status { get; set; }
+    public string? Name { get; set; }
+    public string? Bankaccountno { get; set; }
+    public string? PaymentMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

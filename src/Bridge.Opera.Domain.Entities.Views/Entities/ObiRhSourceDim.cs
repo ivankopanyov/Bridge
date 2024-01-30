@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRhSourceDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceDesc { get; set; }
-    public string SourceGroup { get; set; }
-    public string SourceGroupDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceDesc { get; set; }
+    public string? SourceGroup { get; set; }
+    public string? SourceGroupDesc { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

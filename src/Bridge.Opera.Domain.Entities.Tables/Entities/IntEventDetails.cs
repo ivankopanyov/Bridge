@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntEventDetails
 {
-    public decimal BatchId { get; set; }
-    public string Module { get; set; }
-    public string PrimaryKey { get; set; }
-    public decimal ActionId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateCount { get; set; }
+    public decimal? BatchId { get; set; }
+    public string? Module { get; set; }
+    public string? PrimaryKey { get; set; }
+    public decimal? ActionId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateCount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

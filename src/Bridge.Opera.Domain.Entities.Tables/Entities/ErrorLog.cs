@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ErrorLog
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RunDate { get; set; }
-    public string ProgramName { get; set; }
-    public string ErrorCode { get; set; }
-    public string ErrorText { get; set; }
-    public string Remarks { get; set; }
+    public string? ProgramName { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? ErrorText { get; set; }
+    public string? Remarks { get; set; }
     public decimal? InsertUser { get; set; }
-    public string Action { get; set; }
-    public string FromResort { get; set; }
+    public string? Action { get; set; }
+    public string? FromResort { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

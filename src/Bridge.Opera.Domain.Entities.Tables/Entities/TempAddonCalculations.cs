@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempAddonCalculations
 {
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public decimal? SessionId { get; set; }
     public decimal? Amount { get; set; }
-    public string TrxCode { get; set; }
-    public string Resort { get; set; }
-    public string InclTaxYn { get; set; }
-    public string PkgTrxYn { get; set; }
-    public string PkgTrxCode { get; set; }
-    public string PackageYn { get; set; }
-    public string PkgCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? InclTaxYn { get; set; }
+    public string? PkgTrxYn { get; set; }
+    public string? PkgTrxCode { get; set; }
+    public string? PackageYn { get; set; }
+    public string? PkgCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

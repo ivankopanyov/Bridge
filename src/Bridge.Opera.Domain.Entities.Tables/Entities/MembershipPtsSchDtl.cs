@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipPtsSchDtl
 {
-    public decimal PtsSchId { get; set; }
-    public string ChainCode { get; set; }
-    public string PtsSchCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string FlatOrPercentage { get; set; }
-    public decimal PointsVar { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? PtsSchId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? PtsSchCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? FlatOrPercentage { get; set; }
+    public decimal? PointsVar { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

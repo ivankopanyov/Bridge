@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoFb
 {
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public decimal EventId { get; set; }
-    public string EventName { get; set; }
-    public DateTime FbStartDate { get; set; }
-    public DateTime FbEndDate { get; set; }
-    public string EventRoom { get; set; }
-    public string EventFbStartDate { get; set; }
-    public string EventFbEndDate { get; set; }
-    public string EventFbTimeInterval { get; set; }
-    public decimal EventmenuEventId { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EventName { get; set; }
+    public DateTime? FbStartDate { get; set; }
+    public DateTime? FbEndDate { get; set; }
+    public string? EventRoom { get; set; }
+    public string? EventFbStartDate { get; set; }
+    public string? EventFbEndDate { get; set; }
+    public string? EventFbTimeInterval { get; set; }
+    public decimal? EventmenuEventId { get; set; }
     public decimal? EventmenuOrderBy { get; set; }
     public decimal? EventmenuPkgId { get; set; }
-    public decimal EventmenuMenuId { get; set; }
-    public string EventmenuConsumption { get; set; }
-    public string EventmenuDescription { get; set; }
-    public string EventmenuName { get; set; }
-    public string EventmenuResort { get; set; }
-    public decimal EventMenuId { get; set; }
-    public string EventmenuBeverageClass { get; set; }
+    public decimal? EventmenuMenuId { get; set; }
+    public string? EventmenuConsumption { get; set; }
+    public string? EventmenuDescription { get; set; }
+    public string? EventmenuName { get; set; }
+    public string? EventmenuResort { get; set; }
+    public decimal? EventMenuId { get; set; }
+    public string? EventmenuBeverageClass { get; set; }
     public decimal? EventmenuExpNum { get; set; }
     public decimal? EventmenuGtdNum { get; set; }
     public decimal? EventmenuSetNum { get; set; }
@@ -30,33 +30,33 @@ public partial class RepBeoFb
     public decimal? MenudetailSet { get; set; }
     public DateTime? ServingStart { get; set; }
     public DateTime? ServingEnd { get; set; }
-    public string ServingTime { get; set; }
+    public string? ServingTime { get; set; }
     public decimal? EventmenuPrice { get; set; }
-    public decimal EventmenuEventMenuId { get; set; }
-    public string Serving { get; set; }
-    public decimal MenudetailEventId { get; set; }
+    public decimal? EventmenuEventMenuId { get; set; }
+    public string? Serving { get; set; }
+    public decimal? MenudetailEventId { get; set; }
     public decimal? MenudetailPkgId { get; set; }
     public decimal? MenudetailMenuId { get; set; }
-    public string MenudetailResort { get; set; }
-    public string MenudetailBeverage { get; set; }
+    public string? MenudetailResort { get; set; }
+    public string? MenudetailBeverage { get; set; }
     public decimal? MenudetailMitId { get; set; }
-    public decimal MenudetailId { get; set; }
-    public string MenudetailName1 { get; set; }
-    public string MenudetailName2 { get; set; }
-    public string MenudetailName3 { get; set; }
-    public string MenudetailOrigin1 { get; set; }
-    public string MenudetailOrigin2 { get; set; }
-    public string MenudetailOrigin3 { get; set; }
+    public decimal? MenudetailId { get; set; }
+    public string? MenudetailName1 { get; set; }
+    public string? MenudetailName2 { get; set; }
+    public string? MenudetailName3 { get; set; }
+    public string? MenudetailOrigin1 { get; set; }
+    public string? MenudetailOrigin2 { get; set; }
+    public string? MenudetailOrigin3 { get; set; }
     public byte? MenudetailYear { get; set; }
-    public string MenudetailArticleNumber { get; set; }
-    public string MenudetailIncluded { get; set; }
-    public string MenudetailContainer { get; set; }
-    public string MenudetailPortion { get; set; }
+    public string? MenudetailArticleNumber { get; set; }
+    public string? MenudetailIncluded { get; set; }
+    public string? MenudetailContainer { get; set; }
+    public string? MenudetailPortion { get; set; }
     public decimal? MenudetailPrice { get; set; }
     public decimal? MenudetailCourse { get; set; }
-    public string Showbeo { get; set; }
+    public string? Showbeo { get; set; }
     public decimal? MenudetailCourseOrder { get; set; }
-    public string EventmenudetailConsumption { get; set; }
+    public string? EventmenudetailConsumption { get; set; }
     public decimal? Discount { get; set; }
     public decimal? EventmenuExpPkgNum { get; set; }
     public decimal? EventmenuGuaPkgNum { get; set; }

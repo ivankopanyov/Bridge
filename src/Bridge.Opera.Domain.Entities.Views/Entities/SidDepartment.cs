@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidDepartment
 {
-    public string DeptId { get; set; }
-    public string DeptName { get; set; }
-    public string Resort { get; set; }
-    public string DeptManagerPager { get; set; }
+    public string? DeptId { get; set; }
+    public string? DeptName { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptManagerPager { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string MessageText { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? MessageText { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DeptEmail { get; set; }
+    public string? DeptEmail { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

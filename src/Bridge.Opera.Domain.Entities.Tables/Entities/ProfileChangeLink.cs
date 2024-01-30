@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class ProfileChangeLink
 {
     public decimal? NameId { get; set; }
-    public string ChangeType { get; set; }
+    public string? ChangeType { get; set; }
     public DateTime? ChangeDate { get; set; }
     public decimal? ChangeUser { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? AirlineMembershipId { get; set; }
     public decimal? BusinessCreditCardId { get; set; }
     public decimal? LeisureCreditCardId { get; set; }
-    public string UpdatedItems { get; set; }
-    public string SgiUpdateYn { get; set; }
+    public string? UpdatedItems { get; set; }
+    public string? SgiUpdateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

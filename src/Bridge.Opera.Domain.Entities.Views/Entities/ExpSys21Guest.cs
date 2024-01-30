@@ -16,36 +16,36 @@ public partial class ExpSys21Guest
     public decimal? GroupId { get; set; }
     public decimal? ResvContactId { get; set; }
     public decimal? DirectBillWindowNo { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Middle { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string AirlineCardType { get; set; }
-    public string AirlineCardNo { get; set; }
-    public string WalkinYn { get; set; }
-    public string GuestStatus { get; set; }
-    public string CompIataCorpNo { get; set; }
-    public string ExtConfirmationNo { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string RoomCategory { get; set; }
-    public string PrintRateYn { get; set; }
-    public string Resort { get; set; }
-    public string IdNumber { get; set; }
-    public string TaIataCorpNo { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string GuaranteeCodePreCi { get; set; }
-    public string PaymentMethod { get; set; }
-    public string CreditcardType { get; set; }
-    public string DirectBillName { get; set; }
-    public string CurrencyCode { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
-    public string GroupName { get; set; }
-    public string ArNo { get; set; }
-    public string IsoLanguageCode { get; set; }
-    public string Udfc02 { get; set; }
-    public string Email { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Middle { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? AirlineCardType { get; set; }
+    public string? AirlineCardNo { get; set; }
+    public string? WalkinYn { get; set; }
+    public string? GuestStatus { get; set; }
+    public string? CompIataCorpNo { get; set; }
+    public string? ExtConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? PrintRateYn { get; set; }
+    public string? Resort { get; set; }
+    public string? IdNumber { get; set; }
+    public string? TaIataCorpNo { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? GuaranteeCodePreCi { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? CreditcardType { get; set; }
+    public string? DirectBillName { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? GroupName { get; set; }
+    public string? ArNo { get; set; }
+    public string? IsoLanguageCode { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Email { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? TruncBeginDate { get; set; }

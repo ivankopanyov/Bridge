@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsHistoryDatesVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? TruncArrivalDate { get; set; }
     public decimal? BookingClassId { get; set; }
     public DateTime? HistoryArrivalDate { get; set; }

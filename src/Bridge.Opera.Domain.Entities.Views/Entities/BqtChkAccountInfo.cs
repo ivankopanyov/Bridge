@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BqtChkAccountInfo
 {
-    public decimal Accbookid { get; set; }
+    public decimal? Accbookid { get; set; }
     public decimal? Accid { get; set; }
-    public string Accname { get; set; }
-    public string Accaddress1 { get; set; }
-    public string Accaddress2 { get; set; }
-    public string Acccity { get; set; }
-    public string Acczipcode { get; set; }
-    public string Accstate { get; set; }
-    public string Acccountry { get; set; }
+    public string? Accname { get; set; }
+    public string? Accaddress1 { get; set; }
+    public string? Accaddress2 { get; set; }
+    public string? Acccity { get; set; }
+    public string? Acczipcode { get; set; }
+    public string? Accstate { get; set; }
+    public string? Acccountry { get; set; }
     public decimal? Conid { get; set; }
-    public string Conname { get; set; }
-    public string Conaddress1 { get; set; }
-    public string Conaddress2 { get; set; }
-    public string Concity { get; set; }
-    public string Conzipcode { get; set; }
-    public string Constate { get; set; }
-    public string Concountry { get; set; }
+    public string? Conname { get; set; }
+    public string? Conaddress1 { get; set; }
+    public string? Conaddress2 { get; set; }
+    public string? Concity { get; set; }
+    public string? Conzipcode { get; set; }
+    public string? Constate { get; set; }
+    public string? Concountry { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

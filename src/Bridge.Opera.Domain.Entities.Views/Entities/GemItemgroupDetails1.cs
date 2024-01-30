@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemItemgroupDetails1
 {
-    public decimal ItemgroupId { get; set; }
-    public decimal ItemId { get; set; }
-    public string Name { get; set; }
+    public decimal? ItemgroupId { get; set; }
+    public decimal? ItemId { get; set; }
+    public string? Name { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ItmaId { get; set; }
     public decimal? ItemrateId { get; set; }
     public decimal? ItemClassOrderBy { get; set; }

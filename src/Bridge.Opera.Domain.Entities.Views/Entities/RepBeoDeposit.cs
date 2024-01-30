@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoDeposit
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
-    public string DepositType { get; set; }
+    public string? DepositType { get; set; }
     public decimal? DepositPercentage { get; set; }
     public decimal? DepositAmount { get; set; }
     public DateTime? DepositDate { get; set; }
-    public string DepositDateForm { get; set; }
+    public string? DepositDateForm { get; set; }
     public decimal? DepositPaid { get; set; }
     public decimal? DepositSurcharge { get; set; }
     public decimal? DepositRest { get; set; }
-    public string DepositDescription { get; set; }
+    public string? DepositDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -5,8 +5,8 @@ public partial class RepStateDay
     public decimal? RoomsDay { get; set; }
     public decimal? PersonsDay { get; set; }
     public decimal? RevenueDay { get; set; }
-    public string State { get; set; }
-    public DateTime ReservationDate { get; set; }
+    public string? State { get; set; }
+    public DateTime? ReservationDate { get; set; }
     public decimal? ResMnth { get; set; }
     public decimal? ResYr { get; set; }
 

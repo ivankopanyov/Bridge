@@ -12,7 +12,7 @@ public partial class ObiProfileHierDim
     public decimal? EightId { get; set; }
     public decimal? NineId { get; set; }
     public decimal? BottomId { get; set; }
-    public string BottomNameType { get; set; }
+    public string? BottomNameType { get; set; }
     public decimal? TotalLevels { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -8,18 +8,18 @@ public partial class MailQuery
         MailHitlist = new HashSet<MailHitlist>();
     }
 
-    public decimal QueryId { get; set; }
-    public string Description { get; set; }
-    public decimal SourceId { get; set; }
-    public string InternalYn { get; set; }
+    public decimal? QueryId { get; set; }
+    public string? Description { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string TemporaryYn { get; set; }
-    public string QueryCode { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? TemporaryYn { get; set; }
+    public string? QueryCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
 
     public virtual MailSource Source { get; set; }
     public virtual ICollection<MailConditions> MailConditions { get; set; }

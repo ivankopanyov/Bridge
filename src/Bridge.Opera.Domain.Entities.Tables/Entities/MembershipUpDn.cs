@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipUpDn
 {
-    public decimal MembershipId { get; set; }
-    public decimal ReportId { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? MembershipId { get; set; }
+    public decimal? ReportId { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ActionToDo { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DisplayName { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string RecordType { get; set; }
-    public string MembershipType { get; set; }
-    public string OldMembershipLevel { get; set; }
-    public string NewMembershipLevel { get; set; }
-    public string FinMembershipLevel { get; set; }
-    public string OldGracePeriodIndicator { get; set; }
-    public string NewGracePeriodIndicator { get; set; }
-    public string FinGracePeriodIndicator { get; set; }
-    public string MemStatus { get; set; }
+    public string? DisplayName { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? RecordType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? OldMembershipLevel { get; set; }
+    public string? NewMembershipLevel { get; set; }
+    public string? FinMembershipLevel { get; set; }
+    public string? OldGracePeriodIndicator { get; set; }
+    public string? NewGracePeriodIndicator { get; set; }
+    public string? FinGracePeriodIndicator { get; set; }
+    public string? MemStatus { get; set; }
     public DateTime? EvalDate { get; set; }
     public DateTime? OldExpirationDate { get; set; }
     public DateTime? NewExpirationDate { get; set; }
     public DateTime? EvalFromDate { get; set; }
     public DateTime? EvalToDate { get; set; }
-    public string MemLog { get; set; }
-    public string MemError { get; set; }
+    public string? MemLog { get; set; }
+    public string? MemError { get; set; }
     public decimal? StayActual { get; set; }
     public decimal? StayRequired { get; set; }
     public decimal? NightsActual { get; set; }
@@ -38,11 +38,11 @@ public partial class MembershipUpDn
     public decimal? FbCoverRequired { get; set; }
     public decimal? FbRevenueActual { get; set; }
     public decimal? FbRevenueRequired { get; set; }
-    public string ReviewFlg { get; set; }
-    public string MembershipStatus { get; set; }
-    public string InactiveYn { get; set; }
+    public string? ReviewFlg { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? InactiveYn { get; set; }
     public decimal? RfmScoreDtlId { get; set; }
-    public string GraceRenewalFlg { get; set; }
+    public string? GraceRenewalFlg { get; set; }
     public decimal? MembershipTrxId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

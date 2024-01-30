@@ -2,42 +2,42 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmBookActPostVw
 {
-    public string Resort { get; set; }
-    public decimal BookedActId { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookedActId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string GuestName { get; set; }
-    public string ActCode { get; set; }
-    public string ActDesc { get; set; }
-    public string ActType { get; set; }
-    public string PostOnEvent { get; set; }
-    public string ActLongDesc { get; set; }
-    public string ActStatus { get; set; }
-    public decimal Price { get; set; }
-    public string PriceCode { get; set; }
+    public string? GuestName { get; set; }
+    public string? ActCode { get; set; }
+    public string? ActDesc { get; set; }
+    public string? ActType { get; set; }
+    public string? PostOnEvent { get; set; }
+    public string? ActLongDesc { get; set; }
+    public string? ActStatus { get; set; }
+    public decimal? Price { get; set; }
+    public string? PriceCode { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? BeginTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public decimal BookedResId { get; set; }
-    public string ResType { get; set; }
-    public string ResId { get; set; }
-    public string ResDesc { get; set; }
-    public string ResAddonYn { get; set; }
-    public decimal ResPrice { get; set; }
-    public decimal ResPriority010 { get; set; }
+    public decimal? BookedResId { get; set; }
+    public string? ResType { get; set; }
+    public string? ResId { get; set; }
+    public string? ResDesc { get; set; }
+    public string? ResAddonYn { get; set; }
+    public decimal? ResPrice { get; set; }
+    public decimal? ResPriority010 { get; set; }
     public decimal? ResTrxNo { get; set; }
     public decimal? ResOrderBy { get; set; }
-    public decimal ServiceId { get; set; }
-    public string ServiceResort { get; set; }
-    public string ArticleCode { get; set; }
-    public string TrxCode { get; set; }
-    public string ServiceActCode { get; set; }
-    public string ArticleResort { get; set; }
-    public decimal ArticleId { get; set; }
-    public string ArticleDescription { get; set; }
+    public decimal? ServiceId { get; set; }
+    public string? ServiceResort { get; set; }
+    public string? ArticleCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? ServiceActCode { get; set; }
+    public string? ArticleResort { get; set; }
+    public decimal? ArticleId { get; set; }
+    public string? ArticleDescription { get; set; }
     public decimal? ArticleDefaultPrice { get; set; }
-    public string ArticlePostitYn { get; set; }
+    public string? ArticlePostitYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

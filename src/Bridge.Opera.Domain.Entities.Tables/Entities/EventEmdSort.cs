@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventEmdSort
 {
-    public decimal MitId { get; set; }
+    public decimal? MitId { get; set; }
     public decimal? MencId { get; set; }
     public decimal? EventMenuId { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? SalesPrice { get; set; }
     public decimal? Course { get; set; }
     public decimal? CourseOrder { get; set; }
-    public string IncludedYn { get; set; }
-    public string Resort { get; set; }
+    public string? IncludedYn { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

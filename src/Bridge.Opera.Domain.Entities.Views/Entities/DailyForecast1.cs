@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DailyForecast1
 {
-    public decimal ForecastId { get; set; }
-    public string Resort { get; set; }
-    public DateTime ForecastDate { get; set; }
+    public decimal? ForecastId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ForecastDate { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgRate { get; set; }

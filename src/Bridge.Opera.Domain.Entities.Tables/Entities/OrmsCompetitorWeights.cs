@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsCompetitorWeights
 {
-    public string Resort { get; set; }
-    public string ShopperCode { get; set; }
-    public string CompetitorResort { get; set; }
-    public string WeightCode { get; set; }
-    public string WeightDesc { get; set; }
-    public string SeasonCode { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public decimal Weights { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? ShopperCode { get; set; }
+    public string? CompetitorResort { get; set; }
+    public string? WeightCode { get; set; }
+    public string? WeightDesc { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public decimal? Weights { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual OrmsResortCompetitors OrmsResortCompetitors { get; set; }
 

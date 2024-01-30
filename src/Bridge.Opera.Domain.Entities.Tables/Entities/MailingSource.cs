@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailingSource
 {
-    public decimal QueryIdLink { get; set; }
-    public string TableName { get; set; }
+    public decimal? QueryIdLink { get; set; }
+    public string? TableName { get; set; }
 
     public virtual MailingHeader QueryIdLinkNavigation { get; set; }
 

@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class SidAppModuleDependencies
 {
     public decimal? ModuleId { get; set; }
-    public string RModuleId { get; set; }
-    public string RType { get; set; }
-    public string CallParameters { get; set; }
+    public string? RModuleId { get; set; }
+    public string? RType { get; set; }
+    public string? CallParameters { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

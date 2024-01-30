@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class BktempSummaryTypTab
 {
     public decimal? Keynumber { get; set; }
-    public string SummaryType { get; set; }
-    public string Chain { get; set; }
-    public string Resort { get; set; }
+    public string? SummaryType { get; set; }
+    public string? Chain { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RecordDate { get; set; }
     public decimal? PmsToSell { get; set; }
     public decimal? PmsSold { get; set; }

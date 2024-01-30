@@ -11,13 +11,13 @@ public partial class UnitOfTime
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string UotCode { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
+    public string? UotCode { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
     public decimal? InDays { get; set; }
     public decimal? InHours { get; set; }
     public decimal? InMinutes { get; set; }
-    public decimal DurationInMinutes { get; set; }
+    public decimal? DurationInMinutes { get; set; }
 
     public virtual ICollection<LaborUsed> LaborUsed { get; set; }
     public virtual ICollection<Taskitems> Taskitems { get; set; }

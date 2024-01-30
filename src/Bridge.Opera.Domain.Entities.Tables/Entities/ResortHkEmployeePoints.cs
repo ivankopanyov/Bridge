@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortHkEmployeePoints
 {
-    public DateTime PointsDate { get; set; }
-    public string EmpId { get; set; }
-    public decimal Points { get; set; }
-    public string Resort { get; set; }
-    public string EmpName { get; set; }
+    public DateTime? PointsDate { get; set; }
+    public string? EmpId { get; set; }
+    public decimal? Points { get; set; }
+    public string? Resort { get; set; }
+    public string? EmpName { get; set; }
 
     public virtual ResortHkEmployees ResortHkEmployees { get; set; }
 

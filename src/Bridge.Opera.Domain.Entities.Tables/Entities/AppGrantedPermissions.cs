@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppGrantedPermissions
 {
-    public string Comments { get; set; }
-    public string Resort { get; set; }
-    public string Permission { get; set; }
-    public decimal AppUserId { get; set; }
+    public string? Comments { get; set; }
+    public string? Resort { get; set; }
+    public string? Permission { get; set; }
+    public decimal? AppUserId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

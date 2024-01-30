@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class PortelInvoicelinesView
 {
     public decimal? TrxNo { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? FolioNo { get; set; }
@@ -12,17 +12,17 @@ public partial class PortelInvoicelinesView
     public decimal? Invoiceid { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Amount { get; set; }
-    public string Unitcode { get; set; }
+    public string? Unitcode { get; set; }
     public decimal? Unitprice { get; set; }
     public decimal? Taxamount { get; set; }
     public decimal? Taxrate { get; set; }
-    public string Currencycode { get; set; }
+    public string? Currencycode { get; set; }
     public decimal? Withholdingtax { get; set; }
     public decimal? Withholdingrate { get; set; }
     public decimal? Taxexemption { get; set; }
     public decimal? Taxexemptionrate { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
     public decimal? Discountamount { get; set; }
     public decimal? Discountrate { get; set; }
     public decimal? Foreignamount { get; set; }
@@ -30,8 +30,8 @@ public partial class PortelInvoicelinesView
     public decimal? Foreignwithholdingtax { get; set; }
     public decimal? Foreigntaxexemption { get; set; }
     public decimal? Foreigndiscountamount { get; set; }
-    public string TaxElements { get; set; }
-    public string FtSubtype { get; set; }
+    public string? TaxElements { get; set; }
+    public string? FtSubtype { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

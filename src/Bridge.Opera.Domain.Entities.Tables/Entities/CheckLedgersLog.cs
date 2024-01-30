@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CheckLedgersLog
 {
-    public string Resort { get; set; }
-    public string TableUpdated { get; set; }
+    public string? Resort { get; set; }
+    public string? TableUpdated { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? FolioNo { get; set; }
@@ -13,11 +13,11 @@ public partial class CheckLedgersLog
     public decimal? OriginalResvNameId { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? OriginalAccountCode { get; set; }
-    public string ChangeType { get; set; }
-    public string ChangeDescription { get; set; }
-    public string ProcedureName { get; set; }
-    public decimal ChangeUser { get; set; }
-    public DateTime ChangeDate { get; set; }
+    public string? ChangeType { get; set; }
+    public string? ChangeDescription { get; set; }
+    public string? ProcedureName { get; set; }
+    public decimal? ChangeUser { get; set; }
+    public DateTime? ChangeDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

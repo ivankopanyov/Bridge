@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoPkg
 {
-    public decimal PkgBookId { get; set; }
-    public string PkgResort { get; set; }
-    public decimal PkgEventId { get; set; }
-    public decimal PkgId { get; set; }
-    public string PkgCode { get; set; }
-    public string PkgName { get; set; }
+    public decimal? PkgBookId { get; set; }
+    public string? PkgResort { get; set; }
+    public decimal? PkgEventId { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? PkgCode { get; set; }
+    public string? PkgName { get; set; }
     public decimal? PkgAttendees { get; set; }
     public decimal? PkgPrice { get; set; }
     public decimal? PkgGuaranteedAttendees { get; set; }

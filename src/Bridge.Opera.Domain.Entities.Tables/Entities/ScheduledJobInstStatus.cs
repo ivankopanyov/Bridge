@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScheduledJobInstStatus
 {
-    public string JobName { get; set; }
+    public string? JobName { get; set; }
     public decimal? InstanceNo { get; set; }
     public decimal? JobIterator { get; set; }
     public DateTime? LastRunDate { get; set; }

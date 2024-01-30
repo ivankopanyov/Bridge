@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RmonResGroupTargetView
 {
-    public string SiteCode { get; set; }
-    public string RemoteResort { get; set; }
+    public string? SiteCode { get; set; }
+    public string? RemoteResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

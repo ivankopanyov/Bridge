@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrsPropAvail
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string ResortType { get; set; }
-    public string ChainCode { get; set; }
-    public string Location { get; set; }
-    public string Feature1 { get; set; }
-    public string Feature2 { get; set; }
-    public string Feature3 { get; set; }
-    public string Feature4 { get; set; }
-    public string Feature5 { get; set; }
-    public string Feature6 { get; set; }
-    public string Feature7 { get; set; }
-    public string Feature8 { get; set; }
-    public string Feature9 { get; set; }
-    public string Feature10 { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? ResortType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Location { get; set; }
+    public string? Feature1 { get; set; }
+    public string? Feature2 { get; set; }
+    public string? Feature3 { get; set; }
+    public string? Feature4 { get; set; }
+    public string? Feature5 { get; set; }
+    public string? Feature6 { get; set; }
+    public string? Feature7 { get; set; }
+    public string? Feature8 { get; set; }
+    public string? Feature9 { get; set; }
+    public string? Feature10 { get; set; }
     public decimal? Availability { get; set; }
     public decimal? ToSell { get; set; }
-    public string PropertyAvailabilityYn { get; set; }
+    public string? PropertyAvailabilityYn { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? LowRate { get; set; }
     public decimal? HighRate { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Distance { get; set; }
-    public string DistanceType { get; set; }
-    public string NegotiatedYn { get; set; }
-    public string AlternateYn { get; set; }
+    public string? DistanceType { get; set; }
+    public string? NegotiatedYn { get; set; }
+    public string? AlternateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

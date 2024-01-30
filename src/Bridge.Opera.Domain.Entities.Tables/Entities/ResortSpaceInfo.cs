@@ -7,9 +7,9 @@ public partial class ResortSpaceInfo
         ResortSpaceSetup = new HashSet<ResortSpaceSetup>();
     }
 
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? SpaceAmount { get; set; }
-    public string SpaceType { get; set; }
+    public string? SpaceType { get; set; }
     public decimal? MaxOccupancy { get; set; }
     public decimal? AreaM { get; set; }
     public decimal? AreaF { get; set; }
@@ -19,7 +19,7 @@ public partial class ResortSpaceInfo
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public decimal SpaceInfoId { get; set; }
+    public decimal? SpaceInfoId { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
     public virtual ICollection<ResortSpaceSetup> ResortSpaceSetup { get; set; }

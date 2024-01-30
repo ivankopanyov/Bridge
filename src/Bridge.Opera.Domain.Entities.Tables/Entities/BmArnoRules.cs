@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BmArnoRules
 {
-    public string AccountCode { get; set; }
-    public string Type { get; set; }
-    public string Resort { get; set; }
-    public string ChannelType { get; set; }
-    public string Channel { get; set; }
-    public string ArNumber { get; set; }
+    public string? AccountCode { get; set; }
+    public string? Type { get; set; }
+    public string? Resort { get; set; }
+    public string? ChannelType { get; set; }
+    public string? Channel { get; set; }
+    public string? ArNumber { get; set; }
     public decimal? Weight { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

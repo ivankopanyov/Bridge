@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepFinTranJrnl
 {
-    public string Resort { get; set; }
-    public decimal TrxNo { get; set; }
-    public string ActionFormatDate { get; set; }
-    public string ActionDate { get; set; }
-    public string ActionTime { get; set; }
-    public decimal FinActionId { get; set; }
-    public string FinActionEvent { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? ActionFormatDate { get; set; }
+    public string? ActionDate { get; set; }
+    public string? ActionTime { get; set; }
+    public decimal? FinActionId { get; set; }
+    public string? FinActionEvent { get; set; }
     public decimal? CashierId { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
     public decimal? CashierCredit { get; set; }
     public decimal? CashierDebit { get; set; }
     public decimal? RevenueAmt { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxCodeNo { get; set; }
-    public string TrxDesc { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxCodeNo { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? NameId { get; set; }
-    public string FinActionDesc { get; set; }
+    public string? FinActionDesc { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Arrival { get; set; }
-    public string ArrivalTime { get; set; }
+    public string? Arrival { get; set; }
+    public string? ArrivalTime { get; set; }
     public decimal? Nights { get; set; }
-    public string Departure { get; set; }
-    public string DepartureTime { get; set; }
-    public string PaymentMethod { get; set; }
-    public string FullName { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string MarketCode { get; set; }
-    public string Remark { get; set; }
+    public string? Departure { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? FullName { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Remark { get; set; }
     public decimal? GuestCredit { get; set; }
     public decimal? GuestDebit { get; set; }
 

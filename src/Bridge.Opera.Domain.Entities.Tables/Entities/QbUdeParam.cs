@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class QbUdeParam
 {
-    public string UdeCode { get; set; }
-    public string ParamName { get; set; }
-    public string ParamLabel { get; set; }
-    public string ParamDesc { get; set; }
-    public string DataType { get; set; }
-    public string DefaultValue { get; set; }
-    public string LovQuery { get; set; }
-    public string RegExpr { get; set; }
-    public string MinValue { get; set; }
-    public string MaxValue { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? UdeCode { get; set; }
+    public string? ParamName { get; set; }
+    public string? ParamLabel { get; set; }
+    public string? ParamDesc { get; set; }
+    public string? DataType { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? LovQuery { get; set; }
+    public string? RegExpr { get; set; }
+    public string? MinValue { get; set; }
+    public string? MaxValue { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? DefaultDvalue { get; set; }
     public decimal? DefaultNvalue { get; set; }
     public DateTime? MinDvalue { get; set; }
     public DateTime? MaxDvalue { get; set; }
     public decimal? MinNvalue { get; set; }
     public decimal? MaxNvalue { get; set; }
-    public string MandatoryYn { get; set; }
+    public string? MandatoryYn { get; set; }
 
     public virtual QbUde UdeCodeNavigation { get; set; }
 

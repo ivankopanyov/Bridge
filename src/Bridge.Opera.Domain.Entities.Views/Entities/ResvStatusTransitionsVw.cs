@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvStatusTransitionsVw
 {
-    public string ResvStatusBegin { get; set; }
-    public string ResvStatusEnd { get; set; }
-    public string ResvStatusPath { get; set; }
+    public string? ResvStatusBegin { get; set; }
+    public string? ResvStatusEnd { get; set; }
+    public string? ResvStatusPath { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

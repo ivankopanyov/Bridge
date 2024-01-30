@@ -2,60 +2,60 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CrCardSettle
 {
-    public decimal CcSetId { get; set; }
-    public string Resort { get; set; }
-    public string CcApprovalCode { get; set; }
+    public decimal? CcSetId { get; set; }
+    public string? Resort { get; set; }
+    public string? CcApprovalCode { get; set; }
     public decimal? CashierId { get; set; }
     public DateTime? SettleDatetime { get; set; }
     public decimal? CreditCardId { get; set; }
     public DateTime? ExpiryDate { get; set; }
     public decimal? FinTrxNo { get; set; }
     public decimal? ResvRecptId { get; set; }
-    public string RespCode { get; set; }
-    public string RespRefer { get; set; }
-    public string RespType { get; set; }
-    public string Room { get; set; }
-    public string Track2Data { get; set; }
+    public string? RespCode { get; set; }
+    public string? RespRefer { get; set; }
+    public string? RespType { get; set; }
+    public string? Room { get; set; }
+    public string? Track2Data { get; set; }
     public decimal? SettlementAmt { get; set; }
     public decimal? FolioNumber { get; set; }
     public decimal? NameId { get; set; }
-    public string TrxCode { get; set; }
-    public string IncludeYn { get; set; }
+    public string? TrxCode { get; set; }
+    public string? IncludeYn { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string OriginFlag { get; set; }
-    public string PromotionalText2 { get; set; }
-    public string PromotionalText1 { get; set; }
+    public string? OriginFlag { get; set; }
+    public string? PromotionalText2 { get; set; }
+    public string? PromotionalText1 { get; set; }
     public decimal? ArAccountNumber { get; set; }
     public decimal? ArFolioNo { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string IssueNumber { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? IssueNumber { get; set; }
     public DateTime? StartDate { get; set; }
     public decimal? FolioView { get; set; }
-    public string DccYn { get; set; }
+    public string? DccYn { get; set; }
     public decimal? DccReceiptNo { get; set; }
-    public string CcCurrencyCode { get; set; }
+    public string? CcCurrencyCode { get; set; }
     public decimal? CcExchangeRate { get; set; }
     public decimal? CcCurrencyAmount { get; set; }
-    public string CcControlId { get; set; }
-    public string ChipPinPfields { get; set; }
+    public string? CcControlId { get; set; }
+    public string? ChipPinPfields { get; set; }
     public decimal? AuthSequenceNo { get; set; }
-    public string CpCardYn { get; set; }
-    public string TransactionType { get; set; }
+    public string? CpCardYn { get; set; }
+    public string? TransactionType { get; set; }
     public decimal? BatchId { get; set; }
-    public string OfflineSettlementYn { get; set; }
+    public string? OfflineSettlementYn { get; set; }
     public DateTime? SettleBusinessDate { get; set; }
-    public string VendorTranId { get; set; }
+    public string? VendorTranId { get; set; }
     public decimal? ArNumber { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? SettlementAmountFc { get; set; }
-    public string FolioType { get; set; }
-    public string QueueName { get; set; }
-    public string EodBatchStatus { get; set; }
-    public string CardPresentYn { get; set; }
-    public string LoyaltyRedemptionReference { get; set; }
+    public string? FolioType { get; set; }
+    public string? QueueName { get; set; }
+    public string? EodBatchStatus { get; set; }
+    public string? CardPresentYn { get; set; }
+    public string? LoyaltyRedemptionReference { get; set; }
 
     public virtual ArAccount ArAccount { get; set; }
     public virtual ReservationReceipts Res { get; set; }

@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FbAgenda1
 {
-    public decimal FbaId { get; set; }
-    public string Resort { get; set; }
-    public decimal Bookid { get; set; }
-    public string FbaName { get; set; }
-    public string EvType { get; set; }
-    public DateTime FbaDate { get; set; }
+    public decimal? FbaId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Bookid { get; set; }
+    public string? FbaName { get; set; }
+    public string? EvType { get; set; }
+    public DateTime? FbaDate { get; set; }
     public decimal? FbaDay { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? FbaBudget { get; set; }
-    public string RoomType { get; set; }
-    public string RoomSetup { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomSetup { get; set; }
     public byte? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? BudgetPerUnit { get; set; }
     public decimal? DiscountPercentage { get; set; }
     public DateTime? FbaEndDate { get; set; }
-    public string StartTime { get; set; }
-    public string EndTime { get; set; }
+    public string? StartTime { get; set; }
+    public string? EndTime { get; set; }
     public decimal? ExternalFbaId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

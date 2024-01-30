@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiLanguages
 {
-    public string BiLanguageCode { get; set; }
-    public string BiLanguageDesc { get; set; }
-    public string IsoLanguageCode { get; set; }
+    public string? BiLanguageCode { get; set; }
+    public string? BiLanguageDesc { get; set; }
+    public string? IsoLanguageCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

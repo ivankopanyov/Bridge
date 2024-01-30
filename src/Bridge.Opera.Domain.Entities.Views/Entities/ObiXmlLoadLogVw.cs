@@ -5,8 +5,8 @@ public partial class ObiXmlLoadLogVw
     public decimal? XmlLoadid { get; set; }
     public decimal? XmlRecordid { get; set; }
     public DateTime? XmlDate { get; set; }
-    public string XmlAw { get; set; }
-    public string XmlMessage { get; set; }
+    public string? XmlAw { get; set; }
+    public string? XmlMessage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

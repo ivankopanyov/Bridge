@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MemTrxGroupDtls
 {
-    public string TrxGroupCode { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxGroupCode { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MemTrxGroup MemTrxGroup { get; set; }
 

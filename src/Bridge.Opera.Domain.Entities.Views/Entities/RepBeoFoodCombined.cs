@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoFoodCombined
 {
-    public string Resort { get; set; }
-    public decimal FoodBookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? FoodBookId { get; set; }
     public decimal? FoodcombinedEventId { get; set; }
     public decimal? FbEventId { get; set; }
-    public string FbEventIds { get; set; }
-    public string FbRoom { get; set; }
+    public string? FbEventIds { get; set; }
+    public string? FbRoom { get; set; }
     public decimal? FbOrderby { get; set; }
     public decimal? MenudetailCourseOrder { get; set; }
-    public DateTime FoodStartDate { get; set; }
-    public DateTime FoodEndDate { get; set; }
+    public DateTime? FoodStartDate { get; set; }
+    public DateTime? FoodEndDate { get; set; }
     public decimal? FoodmenuId { get; set; }
     public decimal? FoodresourceId { get; set; }
-    public string FoodresourceIds { get; set; }
-    public string FoodmenuName { get; set; }
+    public string? FoodresourceIds { get; set; }
+    public string? FoodmenuName { get; set; }
     public decimal? FoodmenuPkgId { get; set; }
     public decimal? FoodmenuExp { get; set; }
     public decimal? FoodmenuGtd { get; set; }
@@ -24,11 +24,11 @@ public partial class RepBeoFoodCombined
     public decimal? FoodDiscount { get; set; }
     public decimal? DiscountedFoodmenuPrice { get; set; }
     public decimal? FoodmenuDiscount { get; set; }
-    public string FoodmenuResort { get; set; }
-    public string FoodmenuServing { get; set; }
+    public string? FoodmenuResort { get; set; }
+    public string? FoodmenuServing { get; set; }
     public DateTime? FoodmenuServingStart { get; set; }
     public DateTime? FoodmenuServingEnd { get; set; }
-    public string FoodResort { get; set; }
+    public string? FoodResort { get; set; }
     public decimal? FoodCourse { get; set; }
     public decimal? FoodId { get; set; }
     public decimal? FoodMenuId1 { get; set; }
@@ -36,22 +36,22 @@ public partial class RepBeoFoodCombined
     public decimal? FoodExp { get; set; }
     public decimal? FoodGtd { get; set; }
     public decimal? FoodSet { get; set; }
-    public string FoodIncluded { get; set; }
+    public string? FoodIncluded { get; set; }
     public decimal? FoodPrice { get; set; }
-    public string FoodPortion { get; set; }
-    public string FoodContainer { get; set; }
+    public string? FoodPortion { get; set; }
+    public string? FoodContainer { get; set; }
     public byte? FoodYear { get; set; }
-    public string FoodName1 { get; set; }
-    public string FoodName2 { get; set; }
-    public string FoodName3 { get; set; }
-    public string FoodShow { get; set; }
-    public string MenudetailConsumptionYn { get; set; }
-    public string MenuConsumptionYn { get; set; }
+    public string? FoodName1 { get; set; }
+    public string? FoodName2 { get; set; }
+    public string? FoodName3 { get; set; }
+    public string? FoodShow { get; set; }
+    public string? MenudetailConsumptionYn { get; set; }
+    public string? MenuConsumptionYn { get; set; }
     public decimal? DiscountedFoodPrice { get; set; }
     public decimal? FoodmenuGtdPkg { get; set; }
     public decimal? FoodmenuExpPkg { get; set; }
     public decimal? FoodresourceNoteId { get; set; }
-    public string PrintFoodNotesYn { get; set; }
+    public string? PrintFoodNotesYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

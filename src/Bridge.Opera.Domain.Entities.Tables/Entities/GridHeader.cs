@@ -7,22 +7,22 @@ public partial class GridHeader
         UserView = new HashSet<UserView>();
     }
 
-    public decimal GridId { get; set; }
-    public string FormName { get; set; }
+    public decimal? GridId { get; set; }
+    public string? FormName { get; set; }
     public decimal? UserId { get; set; }
     public decimal? GroupId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ColourId { get; set; }
-    public string TableName { get; set; }
-    public string GridName { get; set; }
-    public string FooterYn { get; set; }
-    public string GroupBy { get; set; }
+    public string? TableName { get; set; }
+    public string? GridName { get; set; }
+    public string? FooterYn { get; set; }
+    public string? GroupBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string SubtotalsYn { get; set; }
-    public string ChainCode { get; set; }
+    public string? SubtotalsYn { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ColourHeader C { get; set; }
     public virtual ICollection<UserView> UserView { get; set; }

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofArOldbalPayments
 {
-    public string Resort { get; set; }
-    public string BillNo { get; set; }
-    public DateTime TrxDate { get; set; }
-    public decimal ArAppliedAmount { get; set; }
-    public string PayTrxCode { get; set; }
-    public string PaymentDesc { get; set; }
-    public DateTime OrgInvDate { get; set; }
+    public string? Resort { get; set; }
+    public string? BillNo { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public decimal? ArAppliedAmount { get; set; }
+    public string? PayTrxCode { get; set; }
+    public string? PaymentDesc { get; set; }
+    public DateTime? OrgInvDate { get; set; }
     public decimal? TaxAmount { get; set; }
     public decimal? TaxNo { get; set; }
-    public string TaxDescription { get; set; }
+    public string? TaxDescription { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string GrossSign { get; set; }
+    public string? GrossSign { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? ConsumptionNameId { get; set; }
     public decimal? PayeeNameId { get; set; }
@@ -25,40 +25,40 @@ public partial class BofArOldbalPayments
     public decimal? PaymentTrxno { get; set; }
     public decimal? PaymentInvoice { get; set; }
     public decimal? PaymentBillno { get; set; }
-    public string PaymentBillType { get; set; }
+    public string? PaymentBillType { get; set; }
     public decimal? PaymentDebit { get; set; }
     public decimal? PaymentCredit { get; set; }
     public decimal? Commission { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeLastName { get; set; }
-    public string Title { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? Title { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Salutation { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string PhoneNo { get; set; }
-    public string FaxNo { get; set; }
-    public string NameType { get; set; }
-    public string VipStatus { get; set; }
-    public string MembershipNumber { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string ArNo { get; set; }
-    public string Gender { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string ProfileTaxId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? Salutation { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? FaxNo { get; set; }
+    public string? NameType { get; set; }
+    public string? VipStatus { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? ArNo { get; set; }
+    public string? Gender { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? ProfileTaxId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

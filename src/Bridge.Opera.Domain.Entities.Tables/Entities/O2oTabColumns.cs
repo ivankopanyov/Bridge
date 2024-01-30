@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oTabColumns
 {
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string Expression { get; set; }
-    public string DefaultValue { get; set; }
-    public string ResortColumnYn { get; set; }
-    public string MappingYn { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? Expression { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? ResortColumnYn { get; set; }
+    public string? MappingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

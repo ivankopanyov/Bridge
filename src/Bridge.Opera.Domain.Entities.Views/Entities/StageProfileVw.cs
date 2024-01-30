@@ -2,67 +2,67 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class StageProfileVw
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string NameType { get; set; }
-    public string NameId { get; set; }
-    public string NameCode { get; set; }
-    public string Prefix { get; set; }
-    public string Last { get; set; }
-    public string First { get; set; }
-    public string Title { get; set; }
-    public string Nameordered { get; set; }
-    public string Company { get; set; }
-    public string LastUl { get; set; }
-    public string FirstUl { get; set; }
-    public string CompanyUl { get; set; }
-    public string GenderMf { get; set; }
-    public string InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? NameType { get; set; }
+    public string? NameId { get; set; }
+    public string? NameCode { get; set; }
+    public string? Prefix { get; set; }
+    public string? Last { get; set; }
+    public string? First { get; set; }
+    public string? Title { get; set; }
+    public string? Nameordered { get; set; }
+    public string? Company { get; set; }
+    public string? LastUl { get; set; }
+    public string? FirstUl { get; set; }
+    public string? CompanyUl { get; set; }
+    public string? GenderMf { get; set; }
+    public string? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string UpdateUser { get; set; }
+    public string? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Commissionplancode { get; set; }
-    public string PassportNo { get; set; }
-    public string Nationality { get; set; }
+    public string? Commissionplancode { get; set; }
+    public string? PassportNo { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? Birthday { get; set; }
-    public string PrimaryLanguage { get; set; }
-    public string Alternatelanguageids { get; set; }
-    public string VipStatus { get; set; }
-    public string Blacklist { get; set; }
-    public string BlkListMessage { get; set; }
-    public string Occupation { get; set; }
-    public string ContactLast { get; set; }
-    public string ContactFirst { get; set; }
-    public string StageStatus { get; set; }
-    public string StageErrorDesc { get; set; }
-    public string StageSuspenseReason { get; set; }
+    public string? PrimaryLanguage { get; set; }
+    public string? Alternatelanguageids { get; set; }
+    public string? VipStatus { get; set; }
+    public string? Blacklist { get; set; }
+    public string? BlkListMessage { get; set; }
+    public string? Occupation { get; set; }
+    public string? ContactLast { get; set; }
+    public string? ContactFirst { get; set; }
+    public string? StageStatus { get; set; }
+    public string? StageErrorDesc { get; set; }
+    public string? StageSuspenseReason { get; set; }
     public DateTime? ImportDate { get; set; }
-    public string GuestPrivYn { get; set; }
-    public string EmailYn { get; set; }
-    public string MailYn { get; set; }
-    public string CommissionCurrencyCode { get; set; }
-    public string Firma { get; set; }
-    public string FirmaUl { get; set; }
-    public string Region { get; set; }
-    public string ResortCountry { get; set; }
-    public string ResortComment { get; set; }
-    public string Xlast { get; set; }
-    public string Xfirst { get; set; }
-    public string Xcompany { get; set; }
-    public string PhoneYn { get; set; }
+    public string? GuestPrivYn { get; set; }
+    public string? EmailYn { get; set; }
+    public string? MailYn { get; set; }
+    public string? CommissionCurrencyCode { get; set; }
+    public string? Firma { get; set; }
+    public string? FirmaUl { get; set; }
+    public string? Region { get; set; }
+    public string? ResortCountry { get; set; }
+    public string? ResortComment { get; set; }
+    public string? Xlast { get; set; }
+    public string? Xfirst { get; set; }
+    public string? Xcompany { get; set; }
+    public string? PhoneYn { get; set; }
     public decimal? TitleSuffix { get; set; }
-    public string Actioncode { get; set; }
-    public string Priority { get; set; }
-    public string RoomsPotential { get; set; }
-    public string Scope { get; set; }
-    public string ScopeCity { get; set; }
-    public string Accountsource { get; set; }
-    public string IndustryCode { get; set; }
-    public string CompetitionCode { get; set; }
-    public string Influence { get; set; }
-    public string AccountType { get; set; }
-    public string Markets { get; set; }
-    public string Territory { get; set; }
+    public string? Actioncode { get; set; }
+    public string? Priority { get; set; }
+    public string? RoomsPotential { get; set; }
+    public string? Scope { get; set; }
+    public string? ScopeCity { get; set; }
+    public string? Accountsource { get; set; }
+    public string? IndustryCode { get; set; }
+    public string? CompetitionCode { get; set; }
+    public string? Influence { get; set; }
+    public string? AccountType { get; set; }
+    public string? Markets { get; set; }
+    public string? Territory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

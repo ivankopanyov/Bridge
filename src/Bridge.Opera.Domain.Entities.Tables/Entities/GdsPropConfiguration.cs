@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsPropConfiguration
 {
-    public string Resort { get; set; }
-    public string UnitType { get; set; }
+    public string? Resort { get; set; }
+    public string? UnitType { get; set; }
     public decimal? YearBuilt { get; set; }
-    public string TaxId { get; set; }
-    public string Hotelshortname { get; set; }
-    public string Brandcode { get; set; }
-    public string Hotelsegment { get; set; }
-    public string Hotellanguages { get; set; }
-    public string CountryAccessCode { get; set; }
-    public string Hotelcategory { get; set; }
-    public string Hotelstatus { get; set; }
-    public string Hotelstatuscode { get; set; }
+    public string? TaxId { get; set; }
+    public string? Hotelshortname { get; set; }
+    public string? Brandcode { get; set; }
+    public string? Hotelsegment { get; set; }
+    public string? Hotellanguages { get; set; }
+    public string? CountryAccessCode { get; set; }
+    public string? Hotelcategory { get; set; }
+    public string? Hotelstatus { get; set; }
+    public string? Hotelstatuscode { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? YearRenovated { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string TimezoneOffset { get; set; }
-    public string AmenityType { get; set; }
-    public string InitialUploadYn { get; set; }
-    public string AreaCode { get; set; }
-    public string PhoneNumber { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? TimezoneOffset { get; set; }
+    public string? AmenityType { get; set; }
+    public string? InitialUploadYn { get; set; }
+    public string? AreaCode { get; set; }
+    public string? PhoneNumber { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

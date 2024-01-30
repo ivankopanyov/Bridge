@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepCurrencyExchange
 {
-    public string RecordType { get; set; }
-    public DateTime TrxDate { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? RecordType { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? NetExchangeRate { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string ForexType { get; set; }
+    public string? ForexType { get; set; }
     public decimal? ForexCommPerc { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? PostedAmount { get; set; }

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GrntAvlView
 {
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string Total { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? Total { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

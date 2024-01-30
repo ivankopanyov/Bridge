@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomLayoutTypes
 {
-    public string Name { get; set; }
-    public decimal Height { get; set; }
-    public decimal Width { get; set; }
-    public string VisualAttribute { get; set; }
-    public string ShowToUser { get; set; }
+    public string? Name { get; set; }
+    public decimal? Height { get; set; }
+    public decimal? Width { get; set; }
+    public string? VisualAttribute { get; set; }
+    public string? ShowToUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

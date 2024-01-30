@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationUpsells
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string OriginalRoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? OriginalRoomCategory { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
-    public string OriginalRateCode { get; set; }
+    public string? OriginalRateCode { get; set; }
     public decimal? OriginalTotalAmount { get; set; }
     public decimal? OriginalNights { get; set; }
-    public string OriginalProducts { get; set; }
-    public string OriginalCurrencyCode { get; set; }
-    public string UpsellRoomCategory { get; set; }
+    public string? OriginalProducts { get; set; }
+    public string? OriginalCurrencyCode { get; set; }
+    public string? UpsellRoomCategory { get; set; }
     public decimal? FirstNightUpsellAmt { get; set; }
     public decimal? TotalUpsellMoneyAmt { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? UpsellRuleId { get; set; }
     public decimal? OriginalAllotmentHeaderId { get; set; }
     public decimal? FirstNightUpsellCharge { get; set; }
     public decimal? TotalUpsellCharge { get; set; }
-    public string OriginalFixedRateYn { get; set; }
+    public string? OriginalFixedRateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

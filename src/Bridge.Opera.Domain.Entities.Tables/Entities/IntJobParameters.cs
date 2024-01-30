@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntJobParameters
 {
-    public decimal Jobseqno { get; set; }
+    public decimal? Jobseqno { get; set; }
     public decimal? Jobid { get; set; }
-    public string Procedurename { get; set; }
-    public string Interfaceid { get; set; }
-    public string Pmsresort { get; set; }
-    public string Crsresort { get; set; }
-    public string Status { get; set; }
-    public string Terminal { get; set; }
-    public string Schemaname { get; set; }
+    public string? Procedurename { get; set; }
+    public string? Interfaceid { get; set; }
+    public string? Pmsresort { get; set; }
+    public string? Crsresort { get; set; }
+    public string? Status { get; set; }
+    public string? Terminal { get; set; }
+    public string? Schemaname { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

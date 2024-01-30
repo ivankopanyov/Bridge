@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsNameYearSummaryView1
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? NameId { get; set; }
-    public string TransactionYear { get; set; }
+    public string? TransactionYear { get; set; }
     public decimal? Arrivals { get; set; }
     public decimal? Stays { get; set; }
     public decimal? Cancels { get; set; }

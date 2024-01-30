@@ -9,10 +9,10 @@ public partial class TrxClassTypes
         TrxClasses = new HashSet<TrxClasses>();
     }
 
-    public string TypeType { get; set; }
-    public string DescriptionDescription { get; set; }
-    public string TctType { get; set; }
-    public string Description { get; set; }
+    public string? TypeType { get; set; }
+    public string? DescriptionDescription { get; set; }
+    public string? TctType { get; set; }
+    public string? Description { get; set; }
 
     public virtual ICollection<TcGroups> TcGroupsTctClassType1Navigation { get; set; }
     public virtual ICollection<TcGroups> TcGroupsTctClassType2Navigation { get; set; }

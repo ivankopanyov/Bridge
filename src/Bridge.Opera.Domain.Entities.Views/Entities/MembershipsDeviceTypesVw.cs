@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipsDeviceTypesVw
 {
-    public string MembershipDevices { get; set; }
+    public string? MembershipDevices { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

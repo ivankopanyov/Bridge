@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccConBookHasattachments
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? LinkId { get; set; }
-    public string GlobalYn { get; set; }
+    public string? GlobalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

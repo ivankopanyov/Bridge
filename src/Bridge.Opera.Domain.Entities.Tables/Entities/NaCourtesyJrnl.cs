@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NaCourtesyJrnl
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal MembershipId { get; set; }
-    public DateTime TransferDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? MembershipId { get; set; }
+    public DateTime? TransferDate { get; set; }
     public decimal? TotalRevenue { get; set; }
-    public decimal TransferId { get; set; }
-    public string ActionType { get; set; }
-    public string StatusDescription { get; set; }
-    public string ProcessedStatus { get; set; }
+    public decimal? TransferId { get; set; }
+    public string? ActionType { get; set; }
+    public string? StatusDescription { get; set; }
+    public string? ProcessedStatus { get; set; }
     public DateTime? ProcessedDate { get; set; }
-    public string Machine { get; set; }
+    public string? Machine { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string RetransferYn { get; set; }
+    public string? RetransferYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

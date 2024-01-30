@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipLevelFoliotext
 {
-    public string ChainCode { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Resort { get; set; }
-    public string FolioText1 { get; set; }
-    public string FolioText2 { get; set; }
-    public string FolioText3 { get; set; }
-    public string FolioText4 { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Resort { get; set; }
+    public string? FolioText1 { get; set; }
+    public string? FolioText2 { get; set; }
+    public string? FolioText3 { get; set; }
+    public string? FolioText4 { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

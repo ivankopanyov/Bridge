@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoPackageEventCombined
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventIdNotCombined { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventIdNotCombined { get; set; }
     public decimal? EventLinkIdNotCombined { get; set; }
     public decimal? MasterEventIdNotCombined { get; set; }
     public decimal? CombinedEventId { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? Guaranteed { get; set; }
     public decimal? SetAttendees { get; set; }
-    public string EvType { get; set; }
-    public string EvStatus { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
+    public string? EvType { get; set; }
+    public string? EvStatus { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
     public decimal? GroupId { get; set; }

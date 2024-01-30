@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RmonStatsDtlsVw
 {
-    public string SnapId { get; set; }
-    public string SiteCode { get; set; }
+    public string? SnapId { get; set; }
+    public string? SiteCode { get; set; }
     public DateTime? SnapFrom { get; set; }
     public DateTime? SnapTo { get; set; }
-    public string InterfaceId { get; set; }
-    public string RemoteResort { get; set; }
-    public string MessageType { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? RemoteResort { get; set; }
+    public string? MessageType { get; set; }
     public decimal? TotalSuccess { get; set; }
     public decimal? TotalFailed { get; set; }
     public decimal? TotalExtSuccess { get; set; }
@@ -22,25 +22,25 @@ public partial class RmonStatsDtlsVw
     public decimal? TotalElapsedMin { get; set; }
     public decimal? TotalElapsedMean { get; set; }
     public decimal? TotalGenerated { get; set; }
-    public string Priority { get; set; }
-    public string StatisticType { get; set; }
+    public string? Priority { get; set; }
+    public string? StatisticType { get; set; }
     public decimal? TotInboundWavgWait { get; set; }
-    public string CInboundWavgWait { get; set; }
+    public string? CInboundWavgWait { get; set; }
     public decimal? TotInboundElapsed { get; set; }
-    public string CInboundElapsed { get; set; }
+    public string? CInboundElapsed { get; set; }
     public decimal? TotOutboundWavgWait { get; set; }
-    public string COutboundWavgWait { get; set; }
+    public string? COutboundWavgWait { get; set; }
     public decimal? TotOutboundLowWavgWait { get; set; }
-    public string COutboundLowWavgWait { get; set; }
+    public string? COutboundLowWavgWait { get; set; }
     public decimal? TotOutboundFailCount { get; set; }
-    public string COutboundFailCount { get; set; }
+    public string? COutboundFailCount { get; set; }
     public decimal? TotInboundFailCount { get; set; }
-    public string CInboundFailCount { get; set; }
+    public string? CInboundFailCount { get; set; }
     public decimal? TotInboundFsRatio { get; set; }
-    public string CInboundFsRatio { get; set; }
+    public string? CInboundFsRatio { get; set; }
     public decimal? TotOutboundFsRatio { get; set; }
-    public string COutboundFsRatio { get; set; }
-    public string RecordColor { get; set; }
+    public string? COutboundFsRatio { get; set; }
+    public string? RecordColor { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

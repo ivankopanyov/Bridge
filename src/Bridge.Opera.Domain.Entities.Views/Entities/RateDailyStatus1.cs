@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateDailyStatus1
 {
-    public decimal UpdateRateSetId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public decimal? UpdateRateSetId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? RateBeginDate { get; set; }
-    public string SeasonCode { get; set; }
+    public string? SeasonCode { get; set; }
     public decimal? AdultCharge { get; set; }
     public decimal? ChildrenCharge { get; set; }
     public decimal? ChildCharge1 { get; set; }
@@ -20,18 +20,18 @@ public partial class RateDailyStatus1
     public decimal? PackageRateStayOver { get; set; }
     public decimal? PackageChildrenStayOver { get; set; }
     public decimal? PackageAdultStayOver { get; set; }
-    public string CurrencyCode { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string SMinlos { get; set; }
-    public string SMaxlos { get; set; }
-    public string BookMinAdvance { get; set; }
-    public string SStatus { get; set; }
-    public string AStatus { get; set; }
-    public string DStatus { get; set; }
-    public string BookMaxAdvance { get; set; }
-    public string AMinlos { get; set; }
-    public string AMaxlos { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SMinlos { get; set; }
+    public string? SMaxlos { get; set; }
+    public string? BookMinAdvance { get; set; }
+    public string? SStatus { get; set; }
+    public string? AStatus { get; set; }
+    public string? DStatus { get; set; }
+    public string? BookMaxAdvance { get; set; }
+    public string? AMinlos { get; set; }
+    public string? AMaxlos { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

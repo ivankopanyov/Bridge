@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAvailUpdMessage
 {
-    public string EchoToken { get; set; }
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string Status { get; set; }
-    public string ErrorText { get; set; }
-    public string ChainCode { get; set; }
-    public string RestrictionType { get; set; }
+    public string? EchoToken { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorText { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RestrictionType { get; set; }
     public decimal? Los { get; set; }
-    public string LosDays { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? LosDays { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? RetryCount { get; set; }
-    public string ErrorCode { get; set; }
-    public string SubCode { get; set; }
-    public string OldEchoToken { get; set; }
-    public string ResendYn { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? SubCode { get; set; }
+    public string? OldEchoToken { get; set; }
+    public string? ResendYn { get; set; }
     public decimal? ResendCount { get; set; }
-    public decimal AvhRequestId { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string AllotmentCode { get; set; }
+    public decimal? AvhRequestId { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? AllotmentCode { get; set; }
     public decimal? RateTier { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

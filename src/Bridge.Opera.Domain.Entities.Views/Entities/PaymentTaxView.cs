@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PaymentTaxView
 {
-    public string Resort { get; set; }
-    public string TaxInvNo { get; set; }
-    public string TaxInvNoLink { get; set; }
+    public string? Resort { get; set; }
+    public string? TaxInvNo { get; set; }
+    public string? TaxInvNoLink { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
-    public string PaymentType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? PaymentType { get; set; }
     public decimal? PaymentAmount { get; set; }
     public decimal? VatableAmount { get; set; }
     public decimal? NonVatableAmount { get; set; }
@@ -21,11 +21,11 @@ public partial class PaymentTaxView
     public decimal? InvoiceNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
-    public string FinActionType { get; set; }
+    public string? FinActionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

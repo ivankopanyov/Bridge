@@ -2,53 +2,53 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ConfirmationYetToSentView
 {
-    public string Name { get; set; }
-    public string Arrival { get; set; }
-    public string Departure { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string Room { get; set; }
-    public string Rt { get; set; }
-    public string ResvDate { get; set; }
-    public string ConfirmationLetter { get; set; }
-    public string ConfirmTo { get; set; }
-    public string CompanyName { get; set; }
+    public string? Name { get; set; }
+    public string? Arrival { get; set; }
+    public string? Departure { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? Room { get; set; }
+    public string? Rt { get; set; }
+    public string? ResvDate { get; set; }
+    public string? ConfirmationLetter { get; set; }
+    public string? ConfirmTo { get; set; }
+    public string? CompanyName { get; set; }
     public decimal? CompanyId { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string SourceName { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? SourceName { get; set; }
     public decimal? SourceId { get; set; }
     public DateTime? ResvConfLetterLta { get; set; }
-    public string ResvConfLetterStatus { get; set; }
+    public string? ResvConfLetterStatus { get; set; }
     public decimal? ResvConfLetterId { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? AddressId { get; set; }
-    public string Address { get; set; }
+    public string? Address { get; set; }
     public decimal? FaxId { get; set; }
-    public string Fax { get; set; }
+    public string? Fax { get; set; }
     public decimal? EmailId { get; set; }
-    public string Email { get; set; }
-    public string FaxLastStatus { get; set; }
+    public string? Email { get; set; }
+    public string? FaxLastStatus { get; set; }
     public DateTime? FaxLastAttempted { get; set; }
-    public string EmailLastStatus { get; set; }
+    public string? EmailLastStatus { get; set; }
     public DateTime? EmailLastAttempted { get; set; }
-    public string CustomizeYn { get; set; }
-    public string ConfSentYn { get; set; }
+    public string? CustomizeYn { get; set; }
+    public string? ConfSentYn { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string Sfullname { get; set; }
-    public string Xfullname { get; set; }
-    public string Sxfullname { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string CallerName { get; set; }
-    public string CallerPhone { get; set; }
-    public string CallerFax { get; set; }
-    public string CallerEmail { get; set; }
+    public string? Sfullname { get; set; }
+    public string? Xfullname { get; set; }
+    public string? Sxfullname { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? CallerName { get; set; }
+    public string? CallerPhone { get; set; }
+    public string? CallerFax { get; set; }
+    public string? CallerEmail { get; set; }
     public decimal? CallNameId { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
 

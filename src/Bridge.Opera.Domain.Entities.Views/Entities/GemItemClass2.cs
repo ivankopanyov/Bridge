@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemItemClass2
 {
-    public decimal ItemclassId { get; set; }
-    public string Description { get; set; }
+    public decimal? ItemclassId { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string UsedInApp { get; set; }
-    public string DiscountableYn { get; set; }
-    public string ItemclassCode { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? DiscountableYn { get; set; }
+    public string? ItemclassCode { get; set; }
+    public string? WebBookingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class GdsResvRateChangeView
 {
     public decimal? RateChgAmount { get; set; }
-    public string RateChgCurr { get; set; }
+    public string? RateChgCurr { get; set; }
     public DateTime? RateChgDate { get; set; }
     public decimal? RateChgExtraAmt { get; set; }
     public decimal? RateChgBedAmt { get; set; }

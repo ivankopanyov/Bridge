@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HilifethMapping
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomtypeGroup { get; set; }
-    public decimal RoomCategory { get; set; }
-    public decimal RateroomSeq { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomtypeGroup { get; set; }
+    public decimal? RoomCategory { get; set; }
+    public decimal? RateroomSeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

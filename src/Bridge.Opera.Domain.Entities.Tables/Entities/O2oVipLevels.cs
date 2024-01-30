@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oVipLevels
 {
-    public string O2oMigId { get; set; }
-    public string VipLevel { get; set; }
+    public string? O2oMigId { get; set; }
+    public string? VipLevel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

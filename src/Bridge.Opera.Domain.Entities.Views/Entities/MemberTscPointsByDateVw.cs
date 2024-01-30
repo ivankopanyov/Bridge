@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberTscPointsByDateVw
 {
-    public decimal MembershipId { get; set; }
-    public string MembershipType { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string TscDateFlag { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? TscDateFlag { get; set; }
     public DateTime? TscDate { get; set; }
     public decimal? TotalStayPoints { get; set; }
     public decimal? TotalNightPoints { get; set; }

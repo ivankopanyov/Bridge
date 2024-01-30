@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMarketingPrograms
 {
-    public string Resort { get; set; }
-    public string Mpcode { get; set; }
-    public string MpPlan { get; set; }
-    public string MpName { get; set; }
-    public string MpType { get; set; }
-    public string MpForAirlineYn { get; set; }
-    public string RevenueBasedYn { get; set; }
-    public string LocalCurrencyYn { get; set; }
-    public string ProgramCurrencyCode { get; set; }
-    public string ExchangeRateTypeCde { get; set; }
+    public string? Resort { get; set; }
+    public string? Mpcode { get; set; }
+    public string? MpPlan { get; set; }
+    public string? MpName { get; set; }
+    public string? MpType { get; set; }
+    public string? MpForAirlineYn { get; set; }
+    public string? RevenueBasedYn { get; set; }
+    public string? LocalCurrencyYn { get; set; }
+    public string? ProgramCurrencyCode { get; set; }
+    public string? ExchangeRateTypeCde { get; set; }
     public byte? MinimumMembershipLength { get; set; }
-    public string MpIdEmul { get; set; }
+    public string? MpIdEmul { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

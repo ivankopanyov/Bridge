@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpVisaParty
 {
-    public decimal ExpDataId { get; set; }
+    public decimal? ExpDataId { get; set; }
     public decimal? ExpViewId { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string Resort { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? PartyId { get; set; }
     public decimal? PartySequence { get; set; }
     public decimal? NameId { get; set; }
-    public string PartyType { get; set; }
-    public string Name1 { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string PostalCode { get; set; }
-    public string Telephone { get; set; }
-    public string CountryCode { get; set; }
-    public string StateCode { get; set; }
-    public string ArAccountNo { get; set; }
-    public string Email { get; set; }
-    public string MerchantId { get; set; }
+    public string? PartyType { get; set; }
+    public string? Name1 { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? PostalCode { get; set; }
+    public string? Telephone { get; set; }
+    public string? CountryCode { get; set; }
+    public string? StateCode { get; set; }
+    public string? ArAccountNo { get; set; }
+    public string? Email { get; set; }
+    public string? MerchantId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

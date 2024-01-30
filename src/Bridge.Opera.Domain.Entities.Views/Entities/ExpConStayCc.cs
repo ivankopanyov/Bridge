@@ -9,10 +9,10 @@ public partial class ExpConStayCc
     public decimal? FolioNo { get; set; }
     public decimal? BillNumber { get; set; }
     public decimal? WindowNumber { get; set; }
-    public string IfcCcType { get; set; }
-    public string PaymentType { get; set; }
-    public string CcNumber { get; set; }
-    public string CcExpyDt { get; set; }
+    public string? IfcCcType { get; set; }
+    public string? PaymentType { get; set; }
+    public string? CcNumber { get; set; }
+    public string? CcExpyDt { get; set; }
     public DateTime? StayDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

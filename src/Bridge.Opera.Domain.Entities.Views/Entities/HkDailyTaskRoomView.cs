@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkDailyTaskRoomView
 {
-    public decimal TaskSeqNo { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? Credits { get; set; }
-    public string CreditsRem { get; set; }
-    public string RoomInstructions { get; set; }
-    public string ServiceTime { get; set; }
-    public string Turndown { get; set; }
-    public string HkSectionCode { get; set; }
-    public string Floor { get; set; }
+    public string? CreditsRem { get; set; }
+    public string? RoomInstructions { get; set; }
+    public string? ServiceTime { get; set; }
+    public string? Turndown { get; set; }
+    public string? HkSectionCode { get; set; }
+    public string? Floor { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

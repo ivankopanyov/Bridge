@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentProductsDetails
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string ProductId { get; set; }
-    public string RateCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? ProductId { get; set; }
+    public string? RateCode { get; set; }
     public decimal? Quantity { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ProductSource { get; set; }
+    public string? ProductSource { get; set; }
     public decimal? QtyExcluded { get; set; }
-    public string OffsetType { get; set; }
+    public string? OffsetType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

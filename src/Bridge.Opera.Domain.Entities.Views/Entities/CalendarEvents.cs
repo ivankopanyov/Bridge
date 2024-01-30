@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CalendarEvents
 {
-    public string EventCode { get; set; }
-    public string EventDesc { get; set; }
+    public string? EventCode { get; set; }
+    public string? EventDesc { get; set; }
     public decimal? SellSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

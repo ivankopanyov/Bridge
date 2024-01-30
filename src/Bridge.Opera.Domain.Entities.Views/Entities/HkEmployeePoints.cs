@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkEmployeePoints
 {
-    public DateTime PointsDate { get; set; }
-    public string EmpId { get; set; }
-    public decimal Points { get; set; }
-    public string EmpName { get; set; }
+    public DateTime? PointsDate { get; set; }
+    public string? EmpId { get; set; }
+    public decimal? Points { get; set; }
+    public string? EmpName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

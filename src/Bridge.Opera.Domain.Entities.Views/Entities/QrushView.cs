@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QrushView
 {
-    public string AvgTimeActual { get; set; }
-    public string AvgTimeCurrent { get; set; }
+    public string? AvgTimeActual { get; set; }
+    public string? AvgTimeCurrent { get; set; }
     public decimal? TotalRoomsInQueue { get; set; }
-    public string Overview { get; set; }
+    public string? Overview { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

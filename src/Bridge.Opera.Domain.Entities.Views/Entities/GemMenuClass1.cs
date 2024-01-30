@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemMenuClass1
 {
-    public decimal MencId { get; set; }
-    public string Name { get; set; }
-    public string Resort { get; set; }
+    public decimal? MencId { get; set; }
+    public string? Name { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string InactiveYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

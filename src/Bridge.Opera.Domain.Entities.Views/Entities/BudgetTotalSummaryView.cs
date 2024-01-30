@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BudgetTotalSummaryView
 {
-    public string Resort { get; set; }
-    public decimal AccountingYear { get; set; }
-    public string AccountingType { get; set; }
-    public string BudgetCodeType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountingYear { get; set; }
+    public string? AccountingType { get; set; }
+    public string? BudgetCodeType { get; set; }
     public decimal? TotalBudgetRevenue { get; set; }
     public decimal? TotalBudgetNights { get; set; }
     public decimal? TotalForecastRevenue { get; set; }

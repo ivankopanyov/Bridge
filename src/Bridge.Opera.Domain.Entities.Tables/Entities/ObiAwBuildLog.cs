@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiAwBuildLog
 {
-    public string SchemaName { get; set; }
-    public string AwName { get; set; }
-    public string CubeName { get; set; }
-    public DateTime SnapshotDate { get; set; }
+    public string? SchemaName { get; set; }
+    public string? AwName { get; set; }
+    public string? CubeName { get; set; }
+    public DateTime? SnapshotDate { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? FinishTime { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? Loadid { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public decimal Attempt { get; set; }
+    public decimal? Attempt { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? InsertUser { get; set; }
@@ -21,17 +21,17 @@ public partial class ObiAwBuildLog
     public decimal? Rejected { get; set; }
     public DateTime? BuildStarted { get; set; }
     public DateTime? BuildCompleted { get; set; }
-    public string DimName { get; set; }
-    public string CleandimYn { get; set; }
-    public string CleanattrYn { get; set; }
+    public string? DimName { get; set; }
+    public string? CleandimYn { get; set; }
+    public string? CleanattrYn { get; set; }
     public decimal? BuildLogId { get; set; }
-    public string ResortList { get; set; }
-    public string CmdType { get; set; }
-    public string RebuildYn { get; set; }
-    public string CopyName { get; set; }
+    public string? ResortList { get; set; }
+    public string? CmdType { get; set; }
+    public string? RebuildYn { get; set; }
+    public string? CopyName { get; set; }
     public decimal? ParentBuildLogId { get; set; }
-    public string DropCubeYn { get; set; }
-    public string DropAwYn { get; set; }
+    public string? DropCubeYn { get; set; }
+    public string? DropAwYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

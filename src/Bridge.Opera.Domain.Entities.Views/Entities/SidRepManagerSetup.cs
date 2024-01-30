@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidRepManagerSetup
 {
-    public string Resort { get; set; }
-    public string ItemName { get; set; }
+    public string? Resort { get; set; }
+    public string? ItemName { get; set; }
     public decimal? ModuleId { get; set; }
-    public decimal DefaultPrintSequence { get; set; }
+    public decimal? DefaultPrintSequence { get; set; }
     public decimal? PrintSequence { get; set; }
-    public string PrintLineAfterYn { get; set; }
+    public string? PrintLineAfterYn { get; set; }
     public decimal? BlankRowsAfter { get; set; }
-    public string ActiveYn { get; set; }
-    public string AmountFormatType { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? AmountFormatType { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string RepMgrCorrespondingColumn { get; set; }
-    public string UdfItemYn { get; set; }
-    public string UdfType { get; set; }
-    public string UdfDescription { get; set; }
-    public string UdfInclDayUseYn { get; set; }
-    public string UdfInclNoShowYn { get; set; }
-    public string UdfExclHouseYn { get; set; }
-    public string UdfExclCompYn { get; set; }
-    public string UdfExclOooYn { get; set; }
-    public string UdfExclOosYn { get; set; }
+    public string? RepMgrCorrespondingColumn { get; set; }
+    public string? UdfItemYn { get; set; }
+    public string? UdfType { get; set; }
+    public string? UdfDescription { get; set; }
+    public string? UdfInclDayUseYn { get; set; }
+    public string? UdfInclNoShowYn { get; set; }
+    public string? UdfExclHouseYn { get; set; }
+    public string? UdfExclCompYn { get; set; }
+    public string? UdfExclOooYn { get; set; }
+    public string? UdfExclOosYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

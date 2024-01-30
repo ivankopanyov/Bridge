@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipAwardFinTrx
 {
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

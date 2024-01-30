@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsRateRestrictions
 {
-    public decimal KeyId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomType { get; set; }
-    public string RoomCategory { get; set; }
-    public string AllotmentCode { get; set; }
+    public decimal? KeyId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? AllotmentCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string RestrictionType { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? RestrictionType { get; set; }
     public decimal? Los { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }

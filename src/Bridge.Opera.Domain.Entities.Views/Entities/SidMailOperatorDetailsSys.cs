@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMailOperatorDetailsSys
 {
-    public decimal OperatorId { get; set; }
-    public decimal Optype { get; set; }
-    public string Description { get; set; }
-    public string Realisation { get; set; }
-    public string Visualisation { get; set; }
-    public string MultiValueYn { get; set; }
-    public string ExecuteYn { get; set; }
-    public string UseTransformationYn { get; set; }
+    public decimal? OperatorId { get; set; }
+    public decimal? Optype { get; set; }
+    public string? Description { get; set; }
+    public string? Realisation { get; set; }
+    public string? Visualisation { get; set; }
+    public string? MultiValueYn { get; set; }
+    public string? ExecuteYn { get; set; }
+    public string? UseTransformationYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

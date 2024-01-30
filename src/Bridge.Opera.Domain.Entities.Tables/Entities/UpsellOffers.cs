@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellOffers
 {
-    public decimal UpsellOfferId { get; set; }
-    public decimal UpsellAvlReqId { get; set; }
-    public DateTime UpsellOfferDate { get; set; }
-    public string ToRateCode { get; set; }
-    public string FromRoomCategory { get; set; }
-    public string ToRoomCategory { get; set; }
-    public string ToRoomCategoryLabel { get; set; }
+    public decimal? UpsellOfferId { get; set; }
+    public decimal? UpsellAvlReqId { get; set; }
+    public DateTime? UpsellOfferDate { get; set; }
+    public string? ToRateCode { get; set; }
+    public string? FromRoomCategory { get; set; }
+    public string? ToRoomCategory { get; set; }
+    public string? ToRoomCategoryLabel { get; set; }
     public decimal? FirstNightAmt { get; set; }
     public decimal? TotalStayAmt { get; set; }
     public decimal? FirstNightUpsellAmt { get; set; }
     public decimal? TotalUpsellMoneyAmt { get; set; }
     public decimal? TotalRankingValue { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? UpsellRuleId { get; set; }
     public decimal? InsertUser { get; set; }

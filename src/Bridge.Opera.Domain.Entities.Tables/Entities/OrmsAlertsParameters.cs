@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsAlertsParameters
 {
-    public decimal AlertId { get; set; }
-    public string AlertName { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? AlertId { get; set; }
+    public string? AlertName { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual OrmsAlertsDefinition Alert { get; set; }
 

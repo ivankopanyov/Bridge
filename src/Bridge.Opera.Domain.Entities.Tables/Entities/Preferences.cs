@@ -9,24 +9,24 @@ public partial class Preferences
         RoomPreferences = new HashSet<RoomPreferences>();
     }
 
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
-    public string Resort { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Description { get; set; }
-    public string CrsPreferenceYn { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public string? CrsPreferenceYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? PreferenceSeqId { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string ChainCode { get; set; }
-    public string SendDeleteRequestYn { get; set; }
-    public string CorporateYn { get; set; }
-    public string OwsAllowedYn { get; set; }
-    public string AmenityYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? SendDeleteRequestYn { get; set; }
+    public string? CorporateYn { get; set; }
+    public string? OwsAllowedYn { get; set; }
+    public string? AmenityYn { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
     public virtual ICollection<ReservationFeatures> ReservationFeatures { get; set; }

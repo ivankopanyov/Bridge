@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateCodeLovInt
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string RateClass { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateClass { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Description { get; set; }
-    public string Label { get; set; }
+    public string? Description { get; set; }
+    public string? Label { get; set; }
     public decimal? SellSequence { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Negotiated { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Negotiated { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

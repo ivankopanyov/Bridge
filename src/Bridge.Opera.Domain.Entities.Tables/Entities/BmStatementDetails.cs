@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BmStatementDetails
 {
-    public decimal StatementId { get; set; }
-    public decimal ContractId { get; set; }
-    public decimal Seq { get; set; }
-    public string ChannelType { get; set; }
-    public string Channel { get; set; }
+    public decimal? StatementId { get; set; }
+    public decimal? ContractId { get; set; }
+    public decimal? Seq { get; set; }
+    public string? ChannelType { get; set; }
+    public string? Channel { get; set; }
     public decimal? Qty { get; set; }
     public decimal? UnitPrice { get; set; }
     public decimal? TimeUnits { get; set; }
-    public string Currency { get; set; }
-    public string Type { get; set; }
-    public string Note { get; set; }
-    public string TrxCode { get; set; }
-    public string PriceBasedOn { get; set; }
-    public string Range { get; set; }
+    public string? Currency { get; set; }
+    public string? Type { get; set; }
+    public string? Note { get; set; }
+    public string? TrxCode { get; set; }
+    public string? PriceBasedOn { get; set; }
+    public string? Range { get; set; }
     public decimal? MinRange { get; set; }
     public decimal? MaxRange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ArNo { get; set; }
-    public string Resort { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ArNo { get; set; }
+    public string? Resort { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? Amount { get; set; }
     public decimal? InvoiceAmount { get; set; }
-    public string InvoiceCurrency { get; set; }
+    public string? InvoiceCurrency { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

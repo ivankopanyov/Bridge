@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCustomLabels
 {
-    public string CustomVarName { get; set; }
-    public string CustomVarLabel { get; set; }
-    public string PresentationTable { get; set; }
-    public string DimName { get; set; }
+    public string? CustomVarName { get; set; }
+    public string? CustomVarLabel { get; set; }
+    public string? PresentationTable { get; set; }
+    public string? DimName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,15 +7,15 @@ public partial class DestinationLevel
         Destination = new HashSet<Destination>();
     }
 
-    public decimal LevelId { get; set; }
-    public string LevelDesc { get; set; }
+    public decimal? LevelId { get; set; }
+    public string? LevelDesc { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ICollection<Destination> Destination { get; set; }
 

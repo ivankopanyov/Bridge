@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntCcDefaults
 {
-    public decimal IntCcDefSeqno { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ConversionCode { get; set; }
-    public string DefaultPmsValue { get; set; }
-    public string DefaultExtValue { get; set; }
-    public string GlobalActiveYn { get; set; }
+    public decimal? IntCcDefSeqno { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? DefaultPmsValue { get; set; }
+    public string? DefaultExtValue { get; set; }
+    public string? GlobalActiveYn { get; set; }
 
     public virtual IntInterfaceSetup IntInterfaceSetup { get; set; }
 

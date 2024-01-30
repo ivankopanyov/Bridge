@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidGdsConvRestTypeSys
 {
-    public string GdsRestrictionType { get; set; }
-    public string Description { get; set; }
-    public string RestrictionType { get; set; }
-    public string BeginDate { get; set; }
+    public string? GdsRestrictionType { get; set; }
+    public string? Description { get; set; }
+    public string? RestrictionType { get; set; }
+    public string? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

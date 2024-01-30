@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepDepositView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
-    public string ArrivalChar { get; set; }
-    public string DepartureChar { get; set; }
-    public string PaymentMethod { get; set; }
-    public string GuestName { get; set; }
-    public string FullName { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ResType { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
-    public string GroupName { get; set; }
-    public string RateCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ArrivalChar { get; set; }
+    public string? DepartureChar { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? GuestName { get; set; }
+    public string? FullName { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ResType { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? GroupName { get; set; }
+    public string? RateCode { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string GuaranteeCodeDesc { get; set; }
+    public string? Room { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? GuaranteeCodeDesc { get; set; }
     public DateTime? TruncBegin { get; set; }
     public DateTime? TruncEnd { get; set; }
     public DateTime? DueDate { get; set; }

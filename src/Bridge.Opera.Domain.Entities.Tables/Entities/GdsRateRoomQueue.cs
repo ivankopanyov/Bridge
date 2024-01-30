@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateRoomQueue
 {
-    public string Resort { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsRateCode { get; set; }
-    public string GdsRoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? GdsRoomCategory { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RateCreateYn { get; set; }
-    public decimal RateTier { get; set; }
+    public string? RateCreateYn { get; set; }
+    public decimal? RateTier { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

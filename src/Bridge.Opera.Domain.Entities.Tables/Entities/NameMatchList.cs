@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameMatchList
 {
-    public decimal MergeId { get; set; }
-    public decimal NameId1 { get; set; }
-    public decimal NameId2 { get; set; }
-    public string MergeKey { get; set; }
-    public string DoNotMergeFlg { get; set; }
+    public decimal? MergeId { get; set; }
+    public decimal? NameId1 { get; set; }
+    public decimal? NameId2 { get; set; }
+    public string? MergeKey { get; set; }
+    public string? DoNotMergeFlg { get; set; }
     public decimal? DoNotMergeUid { get; set; }
     public DateTime? DoNotMergeDate { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMessage { get; set; }
-    public string UserMessage { get; set; }
-    public string MergeCriteriaRuleCode { get; set; }
-    public string MatchDesc { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMessage { get; set; }
+    public string? UserMessage { get; set; }
+    public string? MergeCriteriaRuleCode { get; set; }
+    public string? MatchDesc { get; set; }
     public decimal? MatchPoints { get; set; }
     public DateTime? PointsComputedDate { get; set; }
-    public string RuleCode { get; set; }
-    public string MergeDirectionFlg { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RuleCode { get; set; }
+    public string? MergeDirectionFlg { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

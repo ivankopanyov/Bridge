@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRoomMonthStat
 {
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
     public DateTime? LastDayMonth { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? Arrival { get; set; }
     public decimal? Night { get; set; }
     public decimal? Rev { get; set; }

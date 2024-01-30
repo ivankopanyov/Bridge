@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsResortRefresh
 {
-    public decimal GdsRefreshId { get; set; }
-    public string Resort { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Status { get; set; }
-    public string RefreshType { get; set; }
+    public decimal? GdsRefreshId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Status { get; set; }
+    public string? RefreshType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

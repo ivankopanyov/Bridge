@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPsRecordTypeBase
 {
-    public string PosRecType { get; set; }
-    public string PosRecTypeDesc { get; set; }
+    public string? PosRecType { get; set; }
+    public string? PosRecTypeDesc { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

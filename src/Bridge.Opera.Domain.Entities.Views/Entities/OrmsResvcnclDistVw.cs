@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsResvcnclDistVw
 {
-    public string Resort { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public decimal BookingClassId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public decimal? BookingClassId { get; set; }
     public byte LeadDay { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
     public decimal? ResvActual { get; set; }
     public decimal? ResvAdjustedActual { get; set; }
     public decimal? ResvHistory { get; set; }

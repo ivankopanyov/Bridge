@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ConColumns
 {
-    public string ColumnName { get; set; }
-    public string DataType { get; set; }
+    public string? ColumnName { get; set; }
+    public string? DataType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

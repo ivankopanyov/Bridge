@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AuditBox
 {
-    public DateTime TrxDate { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? NoOfTrans { get; set; }
     public decimal? ActualAmount { get; set; }
     public decimal? InputAttempt1 { get; set; }

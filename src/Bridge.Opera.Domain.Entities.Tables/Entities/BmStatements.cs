@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BmStatements
 {
-    public decimal StatementId { get; set; }
-    public decimal NameId { get; set; }
-    public DateTime StatementDate { get; set; }
-    public decimal ContractId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Note { get; set; }
-    public string ExportedYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? StatementId { get; set; }
+    public decimal? NameId { get; set; }
+    public DateTime? StatementDate { get; set; }
+    public decimal? ContractId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Note { get; set; }
+    public string? ExportedYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual BmAccounts Name { get; set; }
     public virtual BmStatementPeriods Statement { get; set; }

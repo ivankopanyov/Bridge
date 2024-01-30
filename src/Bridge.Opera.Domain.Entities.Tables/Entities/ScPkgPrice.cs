@@ -7,25 +7,25 @@ public partial class ScPkgPrice
         ScPkgRevenue = new HashSet<ScPkgRevenue>();
     }
 
-    public decimal PkgPriceId { get; set; }
-    public decimal PkgLink { get; set; }
-    public string PriceCode { get; set; }
-    public string Description { get; set; }
+    public decimal? PkgPriceId { get; set; }
+    public decimal? PkgLink { get; set; }
+    public string? PriceCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? SellStart { get; set; }
     public DateTime? SellEnd { get; set; }
     public DateTime? BookStart { get; set; }
     public DateTime? BookEnd { get; set; }
-    public string MarketCode { get; set; }
-    public string Bookingtype { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Bookingtype { get; set; }
     public decimal? AttendeesMin { get; set; }
     public decimal? AttendeesMax { get; set; }
-    public string FlatRateYn { get; set; }
+    public string? FlatRateYn { get; set; }
     public decimal? TotalPrice { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual ScPackage PkgLinkNavigation { get; set; }
     public virtual ICollection<ScPkgRevenue> ScPkgRevenue { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WorkstationPrinters
 {
-    public string StationId { get; set; }
-    public string PrintTask { get; set; }
-    public string OutputDevice { get; set; }
-    public string ChainCode { get; set; }
+    public string? StationId { get; set; }
+    public string? PrintTask { get; set; }
+    public string? OutputDevice { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual PmsTerminals PmsTerminals { get; set; }
 

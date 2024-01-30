@@ -7,26 +7,26 @@ public partial class ResvAutoAttachRules
         ResvAutoAttachDet = new HashSet<ResvAutoAttachDet>();
     }
 
-    public string Resort { get; set; }
-    public string RuleCode { get; set; }
-    public string Type { get; set; }
-    public string BasedOn { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string RateCode { get; set; }
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
+    public string? Resort { get; set; }
+    public string? RuleCode { get; set; }
+    public string? Type { get; set; }
+    public string? BasedOn { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? RateCode { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string RoomCategory { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? MinAdults { get; set; }
     public decimal? MinChildren { get; set; }
-    public string KeywordType { get; set; }
-    public string VipStatus { get; set; }
-    public string AdvancedYn { get; set; }
+    public string? KeywordType { get; set; }
+    public string? VipStatus { get; set; }
+    public string? AdvancedYn { get; set; }
     public decimal? QueryId { get; set; }
 
     public virtual ResortRoomCategory R { get; set; }

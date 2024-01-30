@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PostIt
 {
-    public string Resort { get; set; }
-    public decimal TrxNo { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrxNo { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? FolioNo { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? GuestAccountDebit { get; set; }
     public decimal? GuestAccountCredit { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public decimal? ArticleId { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public decimal? TranActionId { get; set; }
     public decimal? Amount { get; set; }
-    public string FtSubtype { get; set; }
+    public string? FtSubtype { get; set; }
     public decimal? PostitNo { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
 

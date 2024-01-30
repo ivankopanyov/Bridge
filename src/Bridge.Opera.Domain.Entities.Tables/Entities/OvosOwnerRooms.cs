@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosOwnerRooms
 {
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string Room { get; set; }
-    public decimal ContractId { get; set; }
-    public string SuiteYn { get; set; }
-    public string OwnerRental { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Room { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? SuiteYn { get; set; }
+    public string? OwnerRental { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioPurgeLog
 {
-    public string Resort { get; set; }
-    public string TableName { get; set; }
+    public string? Resort { get; set; }
+    public string? TableName { get; set; }
     public decimal? ResvNameId { get; set; }
-    public decimal NameId { get; set; }
-    public string ErrorMsg { get; set; }
+    public decimal? NameId { get; set; }
+    public string? ErrorMsg { get; set; }
     public DateTime? PurgeDate { get; set; }
-    public string LogAction { get; set; }
+    public string? LogAction { get; set; }
     public decimal? RowsPurged { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

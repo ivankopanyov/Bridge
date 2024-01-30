@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntWizardOutput
 {
-    public decimal WizOutputId { get; set; }
-    public decimal WizconfigId { get; set; }
-    public string ValueSet { get; set; }
-    public string Target { get; set; }
-    public string Fixable { get; set; }
-    public string Fixed { get; set; }
-    public string Interface { get; set; }
-    public string Property { get; set; }
-    public string Remarks { get; set; }
+    public decimal? WizOutputId { get; set; }
+    public decimal? WizconfigId { get; set; }
+    public string? ValueSet { get; set; }
+    public string? Target { get; set; }
+    public string? Fixable { get; set; }
+    public string? Fixed { get; set; }
+    public string? Interface { get; set; }
+    public string? Property { get; set; }
+    public string? Remarks { get; set; }
 
     public virtual IntWizardConfig Wizconfig { get; set; }
 

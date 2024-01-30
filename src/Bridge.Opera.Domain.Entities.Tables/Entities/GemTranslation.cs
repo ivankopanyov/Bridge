@@ -10,18 +10,18 @@ public partial class GemTranslation
         RoomSetup = new HashSet<RoomSetup>();
     }
 
-    public decimal CodeId { get; set; }
-    public string CodeType { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
+    public decimal? CodeId { get; set; }
+    public string? CodeType { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ChainCode { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? WebBookingYn { get; set; }
     public decimal? WebSetup { get; set; }
     public decimal? WebSetdown { get; set; }
-    public string FulldayYn { get; set; }
+    public string? FulldayYn { get; set; }
 
     public virtual ICollection<GemMenu> GemMenu { get; set; }
     public virtual ICollection<GemMenuitem> GemMenuitem { get; set; }

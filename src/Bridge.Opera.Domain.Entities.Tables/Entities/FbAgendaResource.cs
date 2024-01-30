@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FbAgendaResource
 {
-    public decimal FbaId { get; set; }
-    public string ResourceCode { get; set; }
-    public string ResourceName { get; set; }
+    public decimal? FbaId { get; set; }
+    public string? ResourceCode { get; set; }
+    public string? ResourceName { get; set; }
     public decimal? Quantity { get; set; }
     public byte? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual FbAgenda Fba { get; set; }
 

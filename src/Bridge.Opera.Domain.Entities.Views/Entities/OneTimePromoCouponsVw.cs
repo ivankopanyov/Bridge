@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OneTimePromoCouponsVw
 {
-    public string PromotionType { get; set; }
-    public string CouponCode { get; set; }
-    public string BenefitSummary { get; set; }
-    public string AvailOnlyYn { get; set; }
-    public string PromotionCode { get; set; }
-    public string PromoName { get; set; }
-    public string Status { get; set; }
-    public string IsCouponAvailableYn { get; set; }
+    public string? PromotionType { get; set; }
+    public string? CouponCode { get; set; }
+    public string? BenefitSummary { get; set; }
+    public string? AvailOnlyYn { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? PromoName { get; set; }
+    public string? Status { get; set; }
+    public string? IsCouponAvailableYn { get; set; }
     public decimal? UsedInResvNameId { get; set; }
-    public string UsedInResvResort { get; set; }
-    public string InactiveYn { get; set; }
-    public string VoucherBenefitCode { get; set; }
+    public string? UsedInResvResort { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? VoucherBenefitCode { get; set; }
     public DateTime? VbhBeginDate { get; set; }
     public DateTime? VbhEndDate { get; set; }
     public DateTime? VbhInactiveDate { get; set; }
-    public string OtpcUiFlg { get; set; }
+    public string? OtpcUiFlg { get; set; }
     public DateTime? PromoBookingStartdate { get; set; }
     public DateTime? PromoBookingEnddate { get; set; }
     public DateTime? PromoStayStartdate { get; set; }

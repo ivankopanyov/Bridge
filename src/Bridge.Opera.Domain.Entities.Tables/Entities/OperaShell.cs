@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaShell
 {
-    public string Name { get; set; }
-    public string Version { get; set; }
-    public DateTime UploadDate { get; set; }
-    public string SysLob { get; set; }
-    public string CroLob { get; set; }
-    public string ChnLob { get; set; }
-    public string PrpLob { get; set; }
-    public string RepLob { get; set; }
+    public string? Name { get; set; }
+    public string? Version { get; set; }
+    public DateTime? UploadDate { get; set; }
+    public string? SysLob { get; set; }
+    public string? CroLob { get; set; }
+    public string? ChnLob { get; set; }
+    public string? PrpLob { get; set; }
+    public string? RepLob { get; set; }
     public int? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

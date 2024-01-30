@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpCashierDropAmounts
 {
-    public decimal CashierId { get; set; }
-    public decimal ClosureNo { get; set; }
+    public decimal? CashierId { get; set; }
+    public decimal? ClosureNo { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? TotalCashReceived { get; set; }
     public decimal? TotalPaidouts { get; set; }
@@ -12,8 +12,8 @@ public partial class ExpCashierDropAmounts
     public decimal? ActualCheckDrop { get; set; }
     public decimal? DiffCash { get; set; }
     public decimal? DiffCheck { get; set; }
-    public string CashierAppUser { get; set; }
-    public string CashierName { get; set; }
+    public string? CashierAppUser { get; set; }
+    public string? CashierName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EmailAccounts
 {
-    public decimal AppUserId { get; set; }
-    public string Email { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? Email { get; set; }
+    public string? Username { get; set; }
+    public string? Password { get; set; }
     public DateTime? UpdateDate { get; set; }
 
     public virtual ApplicationUser AppUser { get; set; }

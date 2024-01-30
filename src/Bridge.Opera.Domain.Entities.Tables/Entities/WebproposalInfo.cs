@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WebproposalInfo
 {
-    public string Resort { get; set; }
-    public string AppServerUrl { get; set; }
-    public string CallerType { get; set; }
-    public decimal CallerId { get; set; }
+    public string? Resort { get; set; }
+    public string? AppServerUrl { get; set; }
+    public string? CallerType { get; set; }
+    public decimal? CallerId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

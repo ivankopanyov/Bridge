@@ -3,28 +3,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class FinTranArLedger
 {
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
+    public string? AccountName { get; set; }
     public decimal? TranActionId { get; set; }
-    public decimal TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string FtGeneratedType { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? FtGeneratedType { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string FtSubtype { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? FtSubtype { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? PricePerUnit { get; set; }
     public decimal? Amount { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public int? FolioView { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string TclCode1 { get; set; }
-    public string TclCode2 { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? TclCode1 { get; set; }
+    public string? TclCode2 { get; set; }
     public decimal? CashierId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

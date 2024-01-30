@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoFbNotes
 {
-    public decimal ResourceBookId { get; set; }
-    public decimal ResourceEventId { get; set; }
-    public decimal ResourceResourceId { get; set; }
-    public string Internal { get; set; }
-    public string ResourceNoteTitle { get; set; }
-    public string ResourceNotes { get; set; }
+    public decimal? ResourceBookId { get; set; }
+    public decimal? ResourceEventId { get; set; }
+    public decimal? ResourceResourceId { get; set; }
+    public string? Internal { get; set; }
+    public string? ResourceNoteTitle { get; set; }
+    public string? ResourceNotes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

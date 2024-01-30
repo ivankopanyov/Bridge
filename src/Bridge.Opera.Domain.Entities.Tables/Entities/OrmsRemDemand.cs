@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsRemDemand
 {
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public DateTime HurdleDate { get; set; }
-    public decimal Los { get; set; }
-    public decimal HurdleStepPricesliceId { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public DateTime? HurdleDate { get; set; }
+    public decimal? Los { get; set; }
+    public decimal? HurdleStepPricesliceId { get; set; }
     public decimal? HurdleStepAmount { get; set; }
     public decimal? RemForecast { get; set; }
     public decimal? OptimalDemand { get; set; }

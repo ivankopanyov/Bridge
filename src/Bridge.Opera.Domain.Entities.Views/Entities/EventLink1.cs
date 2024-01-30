@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventLink1
 {
-    public decimal LinkId { get; set; }
-    public decimal EventId { get; set; }
+    public decimal? LinkId { get; set; }
+    public decimal? EventId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

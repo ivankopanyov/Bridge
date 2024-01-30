@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphBlockComparison
 {
-    public string PropertyCode { get; set; }
-    public string DelphiId { get; set; }
-    public string ReservationId { get; set; }
-    public string BookingName { get; set; }
-    public string AllotmentDate { get; set; }
-    public string RoomType { get; set; }
-    public string NoRoomsBlocked { get; set; }
-    public string HoldAllMarketSegments { get; set; }
-    public string MktSegmentToHold { get; set; }
-    public string Dummy { get; set; }
-    public string BlockControlFlag { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? DelphiId { get; set; }
+    public string? ReservationId { get; set; }
+    public string? BookingName { get; set; }
+    public string? AllotmentDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? NoRoomsBlocked { get; set; }
+    public string? HoldAllMarketSegments { get; set; }
+    public string? MktSegmentToHold { get; set; }
+    public string? Dummy { get; set; }
+    public string? BlockControlFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

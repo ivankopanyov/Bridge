@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipAwardFinTrxVw
 {
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

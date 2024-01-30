@@ -3,23 +3,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpHdetInsertView
 {
     public decimal? ExportId { get; set; }
-    public string ExportType { get; set; }
-    public string RecordType { get; set; }
+    public string? ExportType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? Rooms { get; set; }
     public decimal? RoomRevenue { get; set; }
     public DateTime? ResDate { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? ReservationDate { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string ResvStatus { get; set; }
-    public string TentDefFlag { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? TentDefFlag { get; set; }
     public decimal? Nights { get; set; }
-    public string RateCode { get; set; }
-    public string PropertyCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string CurrencyDecimals { get; set; }
+    public string? RateCode { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? CurrencyDecimals { get; set; }
     public decimal? TotalBrecs { get; set; }
     public decimal? TotalCrecs { get; set; }
     public decimal? TotalNrecs { get; set; }

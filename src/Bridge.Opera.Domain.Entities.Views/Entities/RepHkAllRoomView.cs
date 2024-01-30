@@ -2,44 +2,44 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepHkAllRoomView
 {
-    public string Resort { get; set; }
-    public string RoomNo { get; set; }
-    public string Room { get; set; }
-    public string Description { get; set; }
-    public string RoomCategory { get; set; }
-    public string SuiteType { get; set; }
-    public string RoomStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomNo { get; set; }
+    public string? Room { get; set; }
+    public string? Description { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? SuiteType { get; set; }
+    public string? RoomStatus { get; set; }
     public DateTime? RmStatusFromDate { get; set; }
     public DateTime? RmStatusToDate { get; set; }
-    public string RmStatusReason { get; set; }
-    public string ReturnStatus { get; set; }
-    public string FoPers { get; set; }
-    public string FoStatus { get; set; }
-    public string Floor { get; set; }
-    public string Building { get; set; }
-    public string AssignType { get; set; }
-    public string AssignReason { get; set; }
-    public string AssignStatus { get; set; }
-    public string AssignDesc { get; set; }
-    public string AssignUser { get; set; }
-    public string AssignDate { get; set; }
-    public string AssignTime { get; set; }
-    public string OccupancyCondition { get; set; }
-    public string HkStatus { get; set; }
+    public string? RmStatusReason { get; set; }
+    public string? ReturnStatus { get; set; }
+    public string? FoPers { get; set; }
+    public string? FoStatus { get; set; }
+    public string? Floor { get; set; }
+    public string? Building { get; set; }
+    public string? AssignType { get; set; }
+    public string? AssignReason { get; set; }
+    public string? AssignStatus { get; set; }
+    public string? AssignDesc { get; set; }
+    public string? AssignUser { get; set; }
+    public string? AssignDate { get; set; }
+    public string? AssignTime { get; set; }
+    public string? OccupancyCondition { get; set; }
+    public string? HkStatus { get; set; }
     public decimal? HkPers { get; set; }
-    public string HkInspFlag { get; set; }
+    public string? HkInspFlag { get; set; }
     public DateTime? HkInspDate { get; set; }
-    public string HkInspEmpId { get; set; }
-    public string HkSectionCode { get; set; }
-    public string Class { get; set; }
-    public string RoomType { get; set; }
-    public string RoomStatusDesc { get; set; }
-    public string Features { get; set; }
+    public string? HkInspEmpId { get; set; }
+    public string? HkSectionCode { get; set; }
+    public string? Class { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomStatusDesc { get; set; }
+    public string? Features { get; set; }
     public decimal? OccupantDiscrepancy { get; set; }
-    public string OccDicrepancyDesc { get; set; }
+    public string? OccDicrepancyDesc { get; set; }
     public decimal? PersonDiscrepancy { get; set; }
-    public string PersonDiscrepancyDesc { get; set; }
-    public string Housekeeping { get; set; }
+    public string? PersonDiscrepancyDesc { get; set; }
+    public string? Housekeeping { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

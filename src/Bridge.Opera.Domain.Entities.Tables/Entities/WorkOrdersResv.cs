@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WorkOrdersResv
 {
-    public string Resort { get; set; }
-    public decimal WoNumber { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? WoNumber { get; set; }
+    public decimal? ResvNameId { get; set; }
 
     public virtual WorkOrders WorkOrders { get; set; }
 

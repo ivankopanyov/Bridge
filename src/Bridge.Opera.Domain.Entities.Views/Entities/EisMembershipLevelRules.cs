@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipLevelRules
 {
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal MembershipRuleNo { get; set; }
-    public string RuleType { get; set; }
-    public string RuleBasedOn { get; set; }
-    public decimal UnitsRequired { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? MembershipRuleNo { get; set; }
+    public string? RuleType { get; set; }
+    public string? RuleBasedOn { get; set; }
+    public decimal? UnitsRequired { get; set; }
     public decimal? Months { get; set; }
     public decimal? MonthsEffective { get; set; }
 

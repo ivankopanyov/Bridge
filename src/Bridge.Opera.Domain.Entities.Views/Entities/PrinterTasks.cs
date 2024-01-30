@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PrinterTasks
 {
-    public string Station { get; set; }
-    public string Printer { get; set; }
-    public string PrinterDesc { get; set; }
-    public string PrintTask { get; set; }
-    public string PhysicalDevice { get; set; }
-    public string Resort { get; set; }
-    public string PrintServer { get; set; }
-    public string FolioPrinter { get; set; }
-    public string DeviceDriver { get; set; }
-    public string DeviceMode { get; set; }
-    public string Papersize { get; set; }
-    public string TrayEmulation { get; set; }
-    public string DomainStation { get; set; }
-    public string ChainCode { get; set; }
+    public string? Station { get; set; }
+    public string? Printer { get; set; }
+    public string? PrinterDesc { get; set; }
+    public string? PrintTask { get; set; }
+    public string? PhysicalDevice { get; set; }
+    public string? Resort { get; set; }
+    public string? PrintServer { get; set; }
+    public string? FolioPrinter { get; set; }
+    public string? DeviceDriver { get; set; }
+    public string? DeviceMode { get; set; }
+    public string? Papersize { get; set; }
+    public string? TrayEmulation { get; set; }
+    public string? DomainStation { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

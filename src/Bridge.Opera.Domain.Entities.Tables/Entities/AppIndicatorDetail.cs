@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppIndicatorDetail
 {
-    public string IndicatorId { get; set; }
-    public string IndicatorCode { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string DisplayStatus { get; set; }
-    public string DisplayValue { get; set; }
-    public string Bkcolor { get; set; }
-    public string Fgcolor { get; set; }
+    public string? IndicatorId { get; set; }
+    public string? IndicatorCode { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? DisplayStatus { get; set; }
+    public string? DisplayValue { get; set; }
+    public string? Bkcolor { get; set; }
+    public string? Fgcolor { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? AppServPostDate { get; set; }
-    public string AppServProcessMsg { get; set; }
-    public string RecCleanYn { get; set; }
-    public string Indcolor { get; set; }
-    public string DisplayLine1 { get; set; }
-    public string DisplayLine2 { get; set; }
+    public string? AppServProcessMsg { get; set; }
+    public string? RecCleanYn { get; set; }
+    public string? Indcolor { get; set; }
+    public string? DisplayLine1 { get; set; }
+    public string? DisplayLine2 { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

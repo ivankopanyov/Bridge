@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiSourceRelHierDim
 {
-    public string RelType { get; set; }
-    public string RelToType { get; set; }
-    public string AllId { get; set; }
-    public string AllName { get; set; }
+    public string? RelType { get; set; }
+    public string? RelToType { get; set; }
+    public string? AllId { get; set; }
+    public string? AllName { get; set; }
     public decimal? TopId { get; set; }
-    public string TopName { get; set; }
+    public string? TopName { get; set; }
     public decimal? TwoId { get; set; }
-    public string TwoName { get; set; }
+    public string? TwoName { get; set; }
     public decimal? ThreeId { get; set; }
-    public string ThreeName { get; set; }
+    public string? ThreeName { get; set; }
     public decimal? FourId { get; set; }
-    public string FourName { get; set; }
+    public string? FourName { get; set; }
     public decimal? FiveId { get; set; }
-    public string FiveName { get; set; }
+    public string? FiveName { get; set; }
     public decimal? SixId { get; set; }
-    public string SixName { get; set; }
+    public string? SixName { get; set; }
     public decimal? SevenId { get; set; }
-    public string SevenName { get; set; }
+    public string? SevenName { get; set; }
     public decimal? EightId { get; set; }
-    public string EightName { get; set; }
+    public string? EightName { get; set; }
     public decimal? NineId { get; set; }
-    public string NineName { get; set; }
+    public string? NineName { get; set; }
     public decimal? BottomId { get; set; }
-    public string BottomName { get; set; }
+    public string? BottomName { get; set; }
     public decimal? TotalLevels { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

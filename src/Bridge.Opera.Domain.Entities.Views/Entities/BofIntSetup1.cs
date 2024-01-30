@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofIntSetup1
 {
-    public string BofResort { get; set; }
-    public decimal BofIntfCode { get; set; }
-    public decimal BofIntSetupId { get; set; }
-    public string BofTrxCode { get; set; }
-    public string BofTrxCodeType { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode4 { get; set; }
+    public string? BofResort { get; set; }
+    public decimal? BofIntfCode { get; set; }
+    public decimal? BofIntSetupId { get; set; }
+    public string? BofTrxCode { get; set; }
+    public string? BofTrxCodeType { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode4 { get; set; }
     public decimal? BofCode6 { get; set; }
-    public string BofCode5 { get; set; }
-    public string BofCode3 { get; set; }
+    public string? BofCode5 { get; set; }
+    public string? BofCode3 { get; set; }
     public decimal? BofCode7 { get; set; }
     public decimal? BofCode8 { get; set; }
     public decimal? BofCode9 { get; set; }
@@ -22,16 +22,16 @@ public partial class BofIntSetup1
     public DateTime? BofCode13 { get; set; }
     public DateTime? BofCode14 { get; set; }
     public DateTime? BofCode15 { get; set; }
-    public string BofCode16 { get; set; }
-    public string BofCode17 { get; set; }
-    public string BofCode18 { get; set; }
-    public string BofCode19 { get; set; }
-    public string BofCode20 { get; set; }
-    public string BofCode21 { get; set; }
-    public string BofCode22 { get; set; }
-    public string BofCode23 { get; set; }
-    public string BofCode24 { get; set; }
-    public string BofCode25 { get; set; }
+    public string? BofCode16 { get; set; }
+    public string? BofCode17 { get; set; }
+    public string? BofCode18 { get; set; }
+    public string? BofCode19 { get; set; }
+    public string? BofCode20 { get; set; }
+    public string? BofCode21 { get; set; }
+    public string? BofCode22 { get; set; }
+    public string? BofCode23 { get; set; }
+    public string? BofCode24 { get; set; }
+    public string? BofCode25 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

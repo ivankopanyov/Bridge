@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsReservationHeader
 {
-    public string ConfirmationNo { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
-    public string GuaranteeType { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string CreditCardType { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? GuaranteeType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditCardType { get; set; }
     public DateTime? CreditCardExpiration { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string CancelNumber { get; set; }
-    public decimal Nights { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public string Resort { get; set; }
-    public string BookingSource { get; set; }
-    public string GdsRecordLocator { get; set; }
-    public string GuestName { get; set; }
-    public string ReferenceConfirmationNo { get; set; }
-    public string SgaCode { get; set; }
-    public string PseudoCode { get; set; }
-    public string CreditCardExpirationStr { get; set; }
-    public string CompanyGroupId { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? CancelNumber { get; set; }
+    public decimal? Nights { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public string? Resort { get; set; }
+    public string? BookingSource { get; set; }
+    public string? GdsRecordLocator { get; set; }
+    public string? GuestName { get; set; }
+    public string? ReferenceConfirmationNo { get; set; }
+    public string? SgaCode { get; set; }
+    public string? PseudoCode { get; set; }
+    public string? CreditCardExpirationStr { get; set; }
+    public string? CompanyGroupId { get; set; }
     public decimal? CreditCardId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

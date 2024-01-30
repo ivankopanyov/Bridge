@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LaborUsed
 {
-    public decimal DurationWorked { get; set; }
+    public decimal? DurationWorked { get; set; }
     public decimal? LaborCost { get; set; }
-    public decimal UserId { get; set; }
-    public decimal WoNumber { get; set; }
-    public string Resort { get; set; }
-    public string UotCode { get; set; }
-    public decimal LaborUsedSeqNo { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? UserId { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? UotCode { get; set; }
+    public decimal? LaborUsedSeqNo { get; set; }
+    public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? HourlyRate { get; set; }
-    public DateTime LaborUsedDate { get; set; }
+    public DateTime? LaborUsedDate { get; set; }
 
     public virtual UnitOfTime UnitOfTime { get; set; }
     public virtual WorkOrders WorkOrders { get; set; }

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomCombo
 {
-    public string Resort { get; set; }
-    public string ComboRoom { get; set; }
-    public string ComboElement { get; set; }
+    public string? Resort { get; set; }
+    public string? ComboRoom { get; set; }
+    public string? ComboElement { get; set; }
     public decimal? PercentUtilized { get; set; }
     public decimal? AreaUtilized { get; set; }
 

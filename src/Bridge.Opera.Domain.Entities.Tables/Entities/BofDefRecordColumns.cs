@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BofDefRecordColumns
 {
-    public decimal BofRecId { get; set; }
+    public decimal? BofRecId { get; set; }
     public decimal? BofColId { get; set; }
     public decimal? MainSeqNo { get; set; }
     public decimal? SeqNo { get; set; }
-    public decimal BofIntfCode { get; set; }
-    public string Resort { get; set; }
-    public string ColumnName { get; set; }
+    public decimal? BofIntfCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ColumnName { get; set; }
     public decimal? ColumnLength { get; set; }
-    public string DataType { get; set; }
-    public string Format { get; set; }
-    public string AmtColumn { get; set; }
+    public string? DataType { get; set; }
+    public string? Format { get; set; }
+    public string? AmtColumn { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertUser { get; set; }
-    public string UpdateUser { get; set; }
+    public string? InsertUser { get; set; }
+    public string? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string AlignLeftRight { get; set; }
+    public string? AlignLeftRight { get; set; }
 
     public virtual BofInterface BofInterface { get; set; }
     public virtual BofDefRecords BofRec { get; set; }

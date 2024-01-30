@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiNamePhones
 {
-    public decimal NameId { get; set; }
-    public string HomePhoneNumber { get; set; }
-    public string BusinessPhoneNumber { get; set; }
-    public string BusinessExtension { get; set; }
-    public string MobilePhoneNumber { get; set; }
-    public string WebPage { get; set; }
-    public string Email { get; set; }
-    public string EmailFormat { get; set; }
-    public string FaxNo { get; set; }
-    public string PhoneNo { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneExtension { get; set; }
+    public decimal? NameId { get; set; }
+    public string? HomePhoneNumber { get; set; }
+    public string? BusinessPhoneNumber { get; set; }
+    public string? BusinessExtension { get; set; }
+    public string? MobilePhoneNumber { get; set; }
+    public string? WebPage { get; set; }
+    public string? Email { get; set; }
+    public string? EmailFormat { get; set; }
+    public string? FaxNo { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneExtension { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

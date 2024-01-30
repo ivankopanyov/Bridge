@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepReservationUserlogCo
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string FullName { get; set; }
-    public string CancellationNo { get; set; }
+    public string? FullName { get; set; }
+    public string? CancellationNo { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationReasonCode { get; set; }
+    public string? CancellationReasonCode { get; set; }
     public DateTime? ActualCheckInDate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
-    public decimal ActionInstanceId { get; set; }
-    public string ActionType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string ActionDescription { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? ActionType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? ActionDescription { get; set; }
     public DateTime? DepartureDateTime { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

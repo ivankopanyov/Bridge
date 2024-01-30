@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepSpecialRequestView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ComputedResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ComputedResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? Departure { get; set; }
-    public string DepartureChar { get; set; }
-    public string ArrivalChar { get; set; }
-    public string FullName { get; set; }
+    public string? DepartureChar { get; set; }
+    public string? ArrivalChar { get; set; }
+    public string? FullName { get; set; }
     public decimal? Persons { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string GroupName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string Vip { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? Vip { get; set; }
     public decimal? NoOfStays { get; set; }
-    public decimal SpecialRequestId { get; set; }
-    public string SpecialRequest { get; set; }
-    public string SpecialRequestDesc { get; set; }
+    public decimal? SpecialRequestId { get; set; }
+    public string? SpecialRequest { get; set; }
+    public string? SpecialRequestDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

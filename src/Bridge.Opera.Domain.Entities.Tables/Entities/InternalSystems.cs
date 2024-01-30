@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InternalSystems
 {
-    public string Code { get; set; }
-    public string Lic1 { get; set; }
-    public string Lic2 { get; set; }
+    public string? Code { get; set; }
+    public string? Lic1 { get; set; }
+    public string? Lic2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

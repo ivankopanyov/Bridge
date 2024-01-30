@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsErrorLog
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public DateTime LastUpdateTime { get; set; }
-    public decimal LastUpdateUser { get; set; }
-    public string RoomCategory { get; set; }
-    public string ErrorMessage { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public DateTime? LastUpdateTime { get; set; }
+    public decimal? LastUpdateUser { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? ErrorMessage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

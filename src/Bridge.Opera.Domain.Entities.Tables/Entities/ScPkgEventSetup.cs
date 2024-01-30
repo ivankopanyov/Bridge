@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScPkgEventSetup
 {
-    public string Resort { get; set; }
-    public decimal PkgLink { get; set; }
-    public decimal PkgEvId { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PkgLink { get; set; }
+    public decimal? PkgEvId { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DefaultYn { get; set; }
+    public string? DefaultYn { get; set; }
 
     public virtual RoomSetup R { get; set; }
 

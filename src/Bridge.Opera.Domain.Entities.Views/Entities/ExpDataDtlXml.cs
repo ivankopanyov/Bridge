@@ -7,19 +7,19 @@ public partial class ExpDataDtlXml
     public decimal? SeqNo { get; set; }
     public decimal? XmlLevel { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Path { get; set; }
-    public string IsLeaf { get; set; }
-    public string TagName { get; set; }
-    public string Formula { get; set; }
+    public string? Path { get; set; }
+    public string? IsLeaf { get; set; }
+    public string? TagName { get; set; }
+    public string? Formula { get; set; }
     public decimal? ParentDtlId { get; set; }
     public decimal? ExpFileDtlId { get; set; }
-    public string AddSourceView { get; set; }
-    public string XmlColType { get; set; }
-    public string Filter { get; set; }
-    public string IgnoreLengthYn { get; set; }
+    public string? AddSourceView { get; set; }
+    public string? XmlColType { get; set; }
+    public string? Filter { get; set; }
+    public string? IgnoreLengthYn { get; set; }
     public decimal? ColLength { get; set; }
-    public string TagRequiredYn { get; set; }
-    public string XmlAttributeYn { get; set; }
+    public string? TagRequiredYn { get; set; }
+    public string? XmlAttributeYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

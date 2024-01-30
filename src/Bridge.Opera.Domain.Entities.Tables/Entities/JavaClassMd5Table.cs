@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JavaClassMd5Table
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public Guid? Md5 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

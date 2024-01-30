@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpCateringEvents
 {
     public decimal? RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string TransactionType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? TransactionType { get; set; }
     public decimal? BookId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? EventId { get; set; }
-    public string EvStatus { get; set; }
-    public string EvType { get; set; }
+    public string? EvStatus { get; set; }
+    public string? EvType { get; set; }
     public decimal? TotalCateringRevenue { get; set; }
     public decimal? CurrRevGroup1Revenue { get; set; }
     public decimal? CurrRevGroup2Revenue { get; set; }
@@ -25,30 +25,30 @@ public partial class ExpCateringEvents
     public decimal? CurrRevGroup4RevenueNet { get; set; }
     public decimal? CurrRevGroup5RevenueNet { get; set; }
     public decimal? CurrRevGroup6RevenueNet { get; set; }
-    public string MealPeriod { get; set; }
+    public string? MealPeriod { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? Guaranteed { get; set; }
     public decimal? ActualAttendees { get; set; }
-    public string RoomSetup { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? MasterEventId { get; set; }
-    public string EventLinkType { get; set; }
+    public string? EventLinkType { get; set; }
     public decimal? EventLinkId { get; set; }
     public DateTime? EventStartDate { get; set; }
-    public string ForecastYn { get; set; }
-    public string EvName { get; set; }
-    public string Udfc06 { get; set; }
-    public string MasterEvent { get; set; }
+    public string? ForecastYn { get; set; }
+    public string? EvName { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? MasterEvent { get; set; }
     public decimal? CurrRentalAmount { get; set; }
-    public string Doorcard { get; set; }
-    public string ProblemYn { get; set; }
-    public string DontMoveYn { get; set; }
-    public string SpaceName { get; set; }
-    public string RoomSetupDesc { get; set; }
+    public string? Doorcard { get; set; }
+    public string? ProblemYn { get; set; }
+    public string? DontMoveYn { get; set; }
+    public string? SpaceName { get; set; }
+    public string? RoomSetupDesc { get; set; }
     public decimal? SetAttendees { get; set; }
     public DateTime? UpdateDateTime { get; set; }
     public decimal? UpdateUserId { get; set; }
@@ -58,12 +58,12 @@ public partial class ExpCateringEvents
     public decimal? DiscountPercentage { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string ExcludeFromForecastYn { get; set; }
+    public string? ExcludeFromForecastYn { get; set; }
     public decimal? CurrRevFood { get; set; }
     public decimal? CurrRevFoodNet { get; set; }
     public decimal? CurrRevBev { get; set; }
     public decimal? CurrRevBevNet { get; set; }
-    public string ExtEventId { get; set; }
+    public string? ExtEventId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

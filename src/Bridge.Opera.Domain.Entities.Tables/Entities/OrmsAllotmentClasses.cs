@@ -7,13 +7,13 @@ public partial class OrmsAllotmentClasses
         OrmsAllotmentClassesDetails = new HashSet<OrmsAllotmentClassesDetails>();
     }
 
-    public string Resort { get; set; }
-    public string ClassCode { get; set; }
-    public string ClassDescription { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? ClassCode { get; set; }
+    public string? ClassDescription { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<OrmsAllotmentClassesDetails> OrmsAllotmentClassesDetails { get; set; }
 

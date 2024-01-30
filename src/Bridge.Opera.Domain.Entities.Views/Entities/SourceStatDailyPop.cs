@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SourceStatDailyPop
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomType { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceMainGroup { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceMainGroup { get; set; }
     public decimal? NoOfDefiniteRooms { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? DayUseRooms { get; set; }

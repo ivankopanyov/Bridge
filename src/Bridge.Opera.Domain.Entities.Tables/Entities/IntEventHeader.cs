@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntEventHeader
 {
-    public string InterfaceId { get; set; }
-    public string BatchState { get; set; }
-    public string Resort { get; set; }
-    public decimal BatchId { get; set; }
-    public decimal EventCount { get; set; }
-    public decimal BatchSize { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime EventDate { get; set; }
-    public DateTime StateDate { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? BatchState { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BatchId { get; set; }
+    public decimal? EventCount { get; set; }
+    public decimal? BatchSize { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? EventDate { get; set; }
+    public DateTime? StateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileDocuments
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string DocumentResort { get; set; }
-    public string IntIdType { get; set; }
-    public string IdNumber { get; set; }
-    public string IdType { get; set; }
-    public string SIdNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? DocumentResort { get; set; }
+    public string? IntIdType { get; set; }
+    public string? IdNumber { get; set; }
+    public string? IdType { get; set; }
+    public string? SIdNumber { get; set; }
     public DateTime? IdDate { get; set; }
-    public string IdPlace { get; set; }
-    public string IdCountry { get; set; }
+    public string? IdPlace { get; set; }
+    public string? IdCountry { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

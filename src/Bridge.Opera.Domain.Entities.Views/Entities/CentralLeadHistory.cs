@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class CentralLeadHistory
 {
     public decimal? ProfileId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
@@ -14,17 +14,17 @@ public partial class CentralLeadHistory
     public decimal? ActualOtherRevenue { get; set; }
     public decimal? OriginalRoomNights { get; set; }
     public decimal? ContractRoomNights { get; set; }
-    public string MarketingRegion { get; set; }
-    public string MarketingCity { get; set; }
-    public string EventsYn { get; set; }
-    public string AllotmentCode { get; set; }
-    public string BookedResort { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? EventsYn { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? BookedResort { get; set; }
     public decimal? CurrentRoomNights { get; set; }
     public decimal? CurrentAvgRate { get; set; }
     public decimal? ProfileRevenueId { get; set; }
-    public string Destination { get; set; }
-    public string LostToDestination { get; set; }
-    public string LostToProperty { get; set; }
+    public string? Destination { get; set; }
+    public string? LostToDestination { get; set; }
+    public string? LostToProperty { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

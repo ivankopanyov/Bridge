@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmCateringSnapshotVw
 {
-    public decimal BookingId { get; set; }
+    public decimal? BookingId { get; set; }
     public decimal? PrimaryCompanyId { get; set; }
-    public string PrimaryCompanyName { get; set; }
+    public string? PrimaryCompanyName { get; set; }
     public decimal? CompanyContactId { get; set; }
-    public string CompanyContactName { get; set; }
+    public string? CompanyContactName { get; set; }
     public decimal? PrimarySourceId { get; set; }
-    public string PrimarySourceName { get; set; }
+    public string? PrimarySourceName { get; set; }
     public decimal? PrimaryAgentId { get; set; }
-    public string PrimaryAgentName { get; set; }
+    public string? PrimaryAgentName { get; set; }
     public decimal? AgentContactId { get; set; }
-    public string AgentContactName { get; set; }
-    public string Property { get; set; }
-    public string PropertyName { get; set; }
-    public string PropertyRegion { get; set; }
-    public string PropertyRegionDesc { get; set; }
-    public string PropertyCountry { get; set; }
-    public string PropertyCountryDesc { get; set; }
-    public string PropertyChain { get; set; }
-    public string PropertyChainDesc { get; set; }
-    public string MarketSegment { get; set; }
-    public string MarketSegmentDesc { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
-    public string CompanyPriority { get; set; }
+    public string? AgentContactName { get; set; }
+    public string? Property { get; set; }
+    public string? PropertyName { get; set; }
+    public string? PropertyRegion { get; set; }
+    public string? PropertyRegionDesc { get; set; }
+    public string? PropertyCountry { get; set; }
+    public string? PropertyCountryDesc { get; set; }
+    public string? PropertyChain { get; set; }
+    public string? PropertyChainDesc { get; set; }
+    public string? MarketSegment { get; set; }
+    public string? MarketSegmentDesc { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
+    public string? CompanyPriority { get; set; }
     public decimal? BlockOverallOwnerId { get; set; }
-    public string BlockOverallOwner { get; set; }
+    public string? BlockOverallOwner { get; set; }
     public decimal? BlockRoomsOwnerId { get; set; }
-    public string BlockRoomsOwner { get; set; }
+    public string? BlockRoomsOwner { get; set; }
     public decimal? BlockCateringOwnerId { get; set; }
-    public string BlockCateringOwner { get; set; }
-    public string BlockOrigin { get; set; }
-    public string CateringOnlyYn { get; set; }
-    public string BlockCurrentStatus { get; set; }
-    public DateTime BlockCreationDate { get; set; }
-    public DateTime BlockStartDate { get; set; }
-    public DateTime BlockEndDate { get; set; }
+    public string? BlockCateringOwner { get; set; }
+    public string? BlockOrigin { get; set; }
+    public string? CateringOnlyYn { get; set; }
+    public string? BlockCurrentStatus { get; set; }
+    public DateTime? BlockCreationDate { get; set; }
+    public DateTime? BlockStartDate { get; set; }
+    public DateTime? BlockEndDate { get; set; }
     public DateTime? BlockShoulderBeginDate { get; set; }
     public DateTime? BlockShoulderEndDate { get; set; }
-    public string AccountType { get; set; }
-    public string BookingType { get; set; }
-    public string CurrentCateringStatus { get; set; }
-    public DateTime CateringStatusChangeDate { get; set; }
-    public string CateringRevenueType { get; set; }
+    public string? AccountType { get; set; }
+    public string? BookingType { get; set; }
+    public string? CurrentCateringStatus { get; set; }
+    public DateTime? CateringStatusChangeDate { get; set; }
+    public string? CateringRevenueType { get; set; }
     public decimal? CateringRevenue { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? CExchangeRate { get; set; }

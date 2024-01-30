@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RateTransactionsTemp
 {
     public decimal? ReportId { get; set; }
-    public string EntityType { get; set; }
-    public string EntityValue { get; set; }
-    public string TrxCode { get; set; }
-    public string EntityValueDisp { get; set; }
+    public string? EntityType { get; set; }
+    public string? EntityValue { get; set; }
+    public string? TrxCode { get; set; }
+    public string? EntityValueDisp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

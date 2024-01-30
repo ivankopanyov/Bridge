@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationPace
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? SnapshotDate { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? StayRoomsResIndDed { get; set; }
@@ -18,8 +18,8 @@ public partial class ReservationPace
     public decimal? RoomRevenueBlkDed { get; set; }
     public decimal? RoomRevenueBlkNdd { get; set; }
     public decimal? OoRooms { get; set; }
-    public string MarketCode { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

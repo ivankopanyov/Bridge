@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileHistoryStatistics
 {
-    public string Resort { get; set; }
-    public string RecType { get; set; }
-    public string SourceCode { get; set; }
-    public string MarketCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RecType { get; set; }
+    public string? SourceCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? ResvNo { get; set; }
-    public string ReservationType { get; set; }
-    public string RateCode { get; set; }
+    public string? ReservationType { get; set; }
+    public string? RateCode { get; set; }
     public decimal? ShareRate { get; set; }
-    public string RoomNumber { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomType { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomType { get; set; }
     public decimal? RoomRate { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
@@ -20,45 +20,45 @@ public partial class ProfileHistoryStatistics
     public DateTime? ReserveBeginDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string AgentName { get; set; }
-    public string GroupName { get; set; }
-    public string SourceName { get; set; }
-    public string CompanyName { get; set; }
+    public string? AgentName { get; set; }
+    public string? GroupName { get; set; }
+    public string? SourceName { get; set; }
+    public string? CompanyName { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
-    public string ResvStatus { get; set; }
-    public string ModifyYn { get; set; }
-    public string RoomClass { get; set; }
-    public string NameUsageType { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ModifyYn { get; set; }
+    public string? RoomClass { get; set; }
+    public string? NameUsageType { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? TravelId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? MembershipId { get; set; }
-    public string MembershipNumber { get; set; }
-    public string GuestCountry { get; set; }
-    public string CompanyCountry { get; set; }
-    public string AgentCountry { get; set; }
-    public string SourceCountry { get; set; }
-    public string GroupCountry { get; set; }
-    public string CompanyZip { get; set; }
-    public string AgentZip { get; set; }
-    public string SourceZip { get; set; }
-    public string GroupZip { get; set; }
-    public string GuestZip { get; set; }
-    public string GuestSalesManager { get; set; }
-    public string CompanySalesManager { get; set; }
-    public string AgentSalesManager { get; set; }
-    public string SourceSalesManager { get; set; }
-    public string GroupSalesManager { get; set; }
-    public string ShareYn { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? CompanyCountry { get; set; }
+    public string? AgentCountry { get; set; }
+    public string? SourceCountry { get; set; }
+    public string? GroupCountry { get; set; }
+    public string? CompanyZip { get; set; }
+    public string? AgentZip { get; set; }
+    public string? SourceZip { get; set; }
+    public string? GroupZip { get; set; }
+    public string? GuestZip { get; set; }
+    public string? GuestSalesManager { get; set; }
+    public string? CompanySalesManager { get; set; }
+    public string? AgentSalesManager { get; set; }
+    public string? SourceSalesManager { get; set; }
+    public string? GroupSalesManager { get; set; }
+    public string? ShareYn { get; set; }
     public decimal? Nights { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

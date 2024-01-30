@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WorkDocFolioDetail
 {
-    public decimal WorkingDocId { get; set; }
+    public decimal? WorkingDocId { get; set; }
     public decimal? ResvNameIdDetail { get; set; }
     public decimal? SourceResvNameId { get; set; }
     public decimal? FolioNoDetail { get; set; }
     public decimal? BillNumberDetail { get; set; }
     public decimal? RevisionNumberDetail { get; set; }
     public decimal? WindowNo { get; set; }
-    public string FolioStyle { get; set; }
-    public string PhoneDetails { get; set; }
-    public string RoomNumberDetail { get; set; }
-    public string TrxDate { get; set; }
-    public string TransactionCode { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? PhoneDetails { get; set; }
+    public string? RoomNumberDetail { get; set; }
+    public string? TrxDate { get; set; }
+    public string? TransactionCode { get; set; }
     public decimal? Quantity { get; set; }
-    public string Reference { get; set; }
-    public string Description { get; set; }
-    public string Supplement { get; set; }
-    public string Debit { get; set; }
-    public string Credit { get; set; }
-    public string EuroDebit { get; set; }
-    public string EuroCredit { get; set; }
-    public string ExchangeRate { get; set; }
-    public string DetailCurrencyDebit { get; set; }
-    public string DetailCurrencyCredit { get; set; }
-    public string DetailCurrency { get; set; }
+    public string? Reference { get; set; }
+    public string? Description { get; set; }
+    public string? Supplement { get; set; }
+    public string? Debit { get; set; }
+    public string? Credit { get; set; }
+    public string? EuroDebit { get; set; }
+    public string? EuroCredit { get; set; }
+    public string? ExchangeRate { get; set; }
+    public string? DetailCurrencyDebit { get; set; }
+    public string? DetailCurrencyCredit { get; set; }
+    public string? DetailCurrency { get; set; }
     public decimal? DetailCurrencyExchangeRt { get; set; }
-    public string CcApprovalCode { get; set; }
+    public string? CcApprovalCode { get; set; }
     public DateTime? ExpiryDateDetail { get; set; }
-    public string CurrencyDetail { get; set; }
+    public string? CurrencyDetail { get; set; }
     public decimal? ExchRate { get; set; }
     public decimal? EuroExchRate { get; set; }
     public decimal? PostedAmount { get; set; }
-    public string PostedAmountChar { get; set; }
-    public string CurrFormatMask { get; set; }
-    public string Refinvo { get; set; }
-    public string ChequeNumber { get; set; }
-    public string NetAmount { get; set; }
-    public string GrossAmount { get; set; }
-    public string EuroNetAmount { get; set; }
-    public string EuroGrossAmount { get; set; }
+    public string? PostedAmountChar { get; set; }
+    public string? CurrFormatMask { get; set; }
+    public string? Refinvo { get; set; }
+    public string? ChequeNumber { get; set; }
+    public string? NetAmount { get; set; }
+    public string? GrossAmount { get; set; }
+    public string? EuroNetAmount { get; set; }
+    public string? EuroGrossAmount { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? TranActionId { get; set; }
     public DateTime? DirectTrxDate { get; set; }
@@ -55,67 +55,67 @@ public partial class WorkDocFolioDetail
     public decimal? DirectGross { get; set; }
     public decimal? DirectEuroNet { get; set; }
     public decimal? DirectEuroGross { get; set; }
-    public string RecordType { get; set; }
-    public string SourceRoomNumber { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TargetResort { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceRoomNumber { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TargetResort { get; set; }
     public decimal? TotalInclusiveTax { get; set; }
-    public string TaxElements { get; set; }
+    public string? TaxElements { get; set; }
     public decimal? NameIdDetail { get; set; }
-    public string GuestName { get; set; }
-    public string NetPrice { get; set; }
+    public string? GuestName { get; set; }
+    public string? NetPrice { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? InvoiceNumber { get; set; }
-    public string TcTransactionType { get; set; }
-    public string TaxInclusiveYn { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? TaxInclusiveYn { get; set; }
     public decimal? PricePerUnit { get; set; }
-    public string Tax1Amt { get; set; }
-    public string Tax2Amt { get; set; }
-    public string Tax3Amt { get; set; }
-    public string Tax4Amt { get; set; }
-    public string Tax5Amt { get; set; }
-    public string Tax6Amt { get; set; }
-    public string Tax7Amt { get; set; }
-    public string Tax8Amt { get; set; }
-    public string Tax9Amt { get; set; }
-    public string Tax10Amt { get; set; }
-    public string Tax11Amt { get; set; }
-    public string Tax12Amt { get; set; }
-    public string Tax13Amt { get; set; }
-    public string Tax14Amt { get; set; }
-    public string Tax15Amt { get; set; }
-    public string Tax16Amt { get; set; }
-    public string Tax17Amt { get; set; }
-    public string Tax18Amt { get; set; }
-    public string Tax19Amt { get; set; }
-    public string Tax20Amt { get; set; }
-    public string TotalNetPrice { get; set; }
-    public string FiscalTrxCodeType { get; set; }
-    public string ArrangementCode { get; set; }
-    public string ArrangementDescription { get; set; }
-    public string TaxCodeNo { get; set; }
-    public string ActualPostingDateTime { get; set; }
-    public string CreditCardNumberDetail { get; set; }
-    public string ExpiryDateCharDetail { get; set; }
-    public string BonusCheckNumberDetail { get; set; }
-    public string CouponNo { get; set; }
-    public string CreditDebitAmount { get; set; }
-    public string ParallelDebit { get; set; }
-    public string ParallelCredit { get; set; }
+    public string? Tax1Amt { get; set; }
+    public string? Tax2Amt { get; set; }
+    public string? Tax3Amt { get; set; }
+    public string? Tax4Amt { get; set; }
+    public string? Tax5Amt { get; set; }
+    public string? Tax6Amt { get; set; }
+    public string? Tax7Amt { get; set; }
+    public string? Tax8Amt { get; set; }
+    public string? Tax9Amt { get; set; }
+    public string? Tax10Amt { get; set; }
+    public string? Tax11Amt { get; set; }
+    public string? Tax12Amt { get; set; }
+    public string? Tax13Amt { get; set; }
+    public string? Tax14Amt { get; set; }
+    public string? Tax15Amt { get; set; }
+    public string? Tax16Amt { get; set; }
+    public string? Tax17Amt { get; set; }
+    public string? Tax18Amt { get; set; }
+    public string? Tax19Amt { get; set; }
+    public string? Tax20Amt { get; set; }
+    public string? TotalNetPrice { get; set; }
+    public string? FiscalTrxCodeType { get; set; }
+    public string? ArrangementCode { get; set; }
+    public string? ArrangementDescription { get; set; }
+    public string? TaxCodeNo { get; set; }
+    public string? ActualPostingDateTime { get; set; }
+    public string? CreditCardNumberDetail { get; set; }
+    public string? ExpiryDateCharDetail { get; set; }
+    public string? BonusCheckNumberDetail { get; set; }
+    public string? CouponNo { get; set; }
+    public string? CreditDebitAmount { get; set; }
+    public string? ParallelDebit { get; set; }
+    public string? ParallelCredit { get; set; }
     public decimal? DirectParallelDebit { get; set; }
     public decimal? DirectParallelCredit { get; set; }
     public decimal? InstallmentsDetail { get; set; }
-    public string CreditCardNo { get; set; }
+    public string? CreditCardNo { get; set; }
     public decimal? Taxamount { get; set; }
     public decimal? RoundingAmount { get; set; }
-    public string RevenuePaymentType { get; set; }
-    public string TrxServiceType { get; set; }
-    public string TrxTaxTypeCode { get; set; }
-    public string DataType { get; set; }
-    public string Comments { get; set; }
-    public string MemberPointEligibileInd { get; set; }
-    public string InstRedemptionEligibileInd { get; set; }
-    public string OriginalRoom { get; set; }
+    public string? RevenuePaymentType { get; set; }
+    public string? TrxServiceType { get; set; }
+    public string? TrxTaxTypeCode { get; set; }
+    public string? DataType { get; set; }
+    public string? Comments { get; set; }
+    public string? MemberPointEligibileInd { get; set; }
+    public string? InstRedemptionEligibileInd { get; set; }
+    public string? OriginalRoom { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

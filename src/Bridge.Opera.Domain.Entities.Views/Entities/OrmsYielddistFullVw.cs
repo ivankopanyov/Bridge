@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsYielddistFullVw
 {
-    public string Resort { get; set; }
-    public string YieldFlag { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public decimal Los { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldFlag { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public decimal? Los { get; set; }
     public bool MilestoneId { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

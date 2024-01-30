@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCompanyDimBase
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RegionCode { get; set; }
-    public string RegionDesc { get; set; }
-    public string CountryCode { get; set; }
-    public string CountryDesc { get; set; }
-    public decimal Company { get; set; }
-    public string CompanyDesc { get; set; }
-    public decimal CompanyId { get; set; }
-    public string CompanyCharId { get; set; }
-    public string ResortId { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RegionCode { get; set; }
+    public string? RegionDesc { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CountryDesc { get; set; }
+    public decimal? Company { get; set; }
+    public string? CompanyDesc { get; set; }
+    public decimal? CompanyId { get; set; }
+    public string? CompanyCharId { get; set; }
+    public string? ResortId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

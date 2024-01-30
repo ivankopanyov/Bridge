@@ -2,74 +2,74 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ContractBrowse
 {
-    public decimal ContractId { get; set; }
-    public string ContractNo { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Description { get; set; }
-    public string ContractType { get; set; }
-    public string Status { get; set; }
-    public string Booklink { get; set; }
-    public string Contractstatus { get; set; }
-    public string Origin { get; set; }
-    public string SentYn { get; set; }
-    public string ErrorMsg { get; set; }
-    public string Resort { get; set; }
-    public string CurrencyCode { get; set; }
-    public string ReceivedYn { get; set; }
-    public string ReplyStatus { get; set; }
-    public string RepliedYn { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? ContractNo { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Description { get; set; }
+    public string? ContractType { get; set; }
+    public string? Status { get; set; }
+    public string? Booklink { get; set; }
+    public string? Contractstatus { get; set; }
+    public string? Origin { get; set; }
+    public string? SentYn { get; set; }
+    public string? ErrorMsg { get; set; }
+    public string? Resort { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? ReceivedYn { get; set; }
+    public string? ReplyStatus { get; set; }
+    public string? RepliedYn { get; set; }
     public decimal? RespTime { get; set; }
-    public string RespTimeCode { get; set; }
+    public string? RespTimeCode { get; set; }
     public DateTime? DueDate { get; set; }
-    public string HideAccinfoYn { get; set; }
-    public string PendingSendYn { get; set; }
+    public string? HideAccinfoYn { get; set; }
+    public string? PendingSendYn { get; set; }
     public decimal? Owner { get; set; }
-    public string OwnerCode { get; set; }
-    public string OwnerResort { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? OwnerResort { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? AgentNameId { get; set; }
     public decimal? SourceNameId { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -131,36 +131,36 @@ public partial class ContractBrowse
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
     public int? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
-    public string Tracecode { get; set; }
-    public string RateCode { get; set; }
-    public string RateOverride { get; set; }
+    public string? SuperBlockResort { get; set; }
+    public string? Tracecode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateOverride { get; set; }
     public decimal? PotRoomNights { get; set; }
     public decimal? PotRoomRevenue { get; set; }
     public decimal? PotAvgRoomRate { get; set; }
     public decimal? PotFbRevenue { get; set; }
     public decimal? PotOtherRevenue { get; set; }
-    public string CommissionableYn { get; set; }
+    public string? CommissionableYn { get; set; }
     public decimal? CommissionablePerc { get; set; }
     public decimal? FitDiscountPerc { get; set; }
     public decimal? FitDiscountLevel { get; set; }
-    public string BfstInclYn { get; set; }
+    public string? BfstInclYn { get; set; }
     public decimal? BfstInclPrice { get; set; }
-    public string ServiceInclYn { get; set; }
+    public string? ServiceInclYn { get; set; }
     public decimal? ServicePerc { get; set; }
-    public string DblRmSupplementYn { get; set; }
+    public string? DblRmSupplementYn { get; set; }
     public decimal? DblRmSupplementPrice { get; set; }
-    public string TaxIncludedYn { get; set; }
+    public string? TaxIncludedYn { get; set; }
     public decimal? TaxIncludedPerc { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? ContactNameId { get; set; }
-    public string RateOverrideReason { get; set; }
-    public string FitContractType { get; set; }
-    public string FitDiscountType { get; set; }
+    public string? RateOverrideReason { get; set; }
+    public string? FitContractType { get; set; }
+    public string? FitDiscountType { get; set; }
     public decimal? LyActRoomNights { get; set; }
     public decimal? LyActRoomRevenue { get; set; }
     public decimal? LyActAvgRoomRate { get; set; }
@@ -171,12 +171,12 @@ public partial class ContractBrowse
     public decimal? Ly1ActAvgRoomRate { get; set; }
     public decimal? Ly1ActFbRevenue { get; set; }
     public decimal? Ly1ActOtherRevenue { get; set; }
-    public string FitContractMode { get; set; }
-    public string ResortName { get; set; }
-    public string ContractOwnerFullName { get; set; }
-    public string ContractStatusDescription { get; set; }
-    public string AllotmentClassification { get; set; }
-    public string Udescription { get; set; }
+    public string? FitContractMode { get; set; }
+    public string? ResortName { get; set; }
+    public string? ContractOwnerFullName { get; set; }
+    public string? ContractStatusDescription { get; set; }
+    public string? AllotmentClassification { get; set; }
+    public string? Udescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

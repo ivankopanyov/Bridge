@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchParameterDef
 {
-    public string ListCode { get; set; }
-    public string ParamCode { get; set; }
-    public string ParentParamCode { get; set; }
-    public string DisplayName { get; set; }
-    public string Datatype { get; set; }
-    public string DefaultValue { get; set; }
-    public string DeleteYn { get; set; }
+    public string? ListCode { get; set; }
+    public string? ParamCode { get; set; }
+    public string? ParentParamCode { get; set; }
+    public string? DisplayName { get; set; }
+    public string? Datatype { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? DeleteYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

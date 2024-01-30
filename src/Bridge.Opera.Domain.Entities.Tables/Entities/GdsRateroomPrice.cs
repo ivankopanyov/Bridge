@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateroomPrice
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime ReservationDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? ReservationDate { get; set; }
     public decimal? Amount1 { get; set; }
     public decimal? Amount2 { get; set; }
 

@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusinessProfile1
 {
-    public decimal ProfileId { get; set; }
+    public decimal? ProfileId { get; set; }
     public decimal? DestinationId { get; set; }
-    public string DestinationResort { get; set; }
-    public string RateCode { get; set; }
-    public string ProfName { get; set; }
-    public string ProfType { get; set; }
-    public DateTime StartPeriod { get; set; }
-    public DateTime EndPeriod { get; set; }
-    public string Frequency { get; set; }
+    public string? DestinationResort { get; set; }
+    public string? RateCode { get; set; }
+    public string? ProfName { get; set; }
+    public string? ProfType { get; set; }
+    public DateTime? StartPeriod { get; set; }
+    public DateTime? EndPeriod { get; set; }
+    public string? Frequency { get; set; }
     public decimal? LeadTimeNo { get; set; }
-    public string LeadTimeUnit { get; set; }
+    public string? LeadTimeUnit { get; set; }
     public decimal? DurationNo { get; set; }
-    public string DurationUnit { get; set; }
-    public string HotelType { get; set; }
-    public string Currency { get; set; }
-    public string Features { get; set; }
-    public string GeoPreferences { get; set; }
-    public string Months { get; set; }
+    public string? DurationUnit { get; set; }
+    public string? HotelType { get; set; }
+    public string? Currency { get; set; }
+    public string? Features { get; set; }
+    public string? GeoPreferences { get; set; }
+    public string? Months { get; set; }
     public decimal? PotentialRoomNights { get; set; }
     public decimal? PotentialRoomRevenue { get; set; }
     public decimal? PotentialRoomAvgrate { get; set; }
@@ -30,14 +30,14 @@ public partial class BusinessProfile1
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DownloadResort { get; set; }
+    public string? DownloadResort { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? DownloadDate { get; set; }
     public DateTime? UploadDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string Tracecode { get; set; }
-    public string MarketingRegion { get; set; }
-    public string SrepCode { get; set; }
+    public string? Tracecode { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? SrepCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

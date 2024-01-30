@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScCeilingAction
 {
-    public decimal ActionId { get; set; }
-    public string Resort { get; set; }
-    public DateTime CeilingDate { get; set; }
-    public string PmsRoomtype { get; set; }
+    public decimal? ActionId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? CeilingDate { get; set; }
+    public string? PmsRoomtype { get; set; }
     public decimal? OldQuantity { get; set; }
     public decimal? NewQuantity { get; set; }
-    public string ActionType { get; set; }
-    public string ActionDesc { get; set; }
-    public string Machine { get; set; }
-    public string TerminalId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? ActionType { get; set; }
+    public string? ActionDesc { get; set; }
+    public string? Machine { get; set; }
+    public string? TerminalId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

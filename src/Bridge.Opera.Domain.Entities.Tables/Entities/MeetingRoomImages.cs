@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MeetingRoomImages
 {
-    public decimal MrimgId { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string SetupCode { get; set; }
-    public decimal BlobId { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? MrimgId { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? SetupCode { get; set; }
+    public decimal? BlobId { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual OperaImages Blob { get; set; }
     public virtual Resort ResortNavigation { get; set; }

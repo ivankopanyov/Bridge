@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InternetCinRulesDetails
 {
-    public decimal RuleId { get; set; }
-    public string RuleType { get; set; }
-    public string Code { get; set; }
+    public decimal? RuleId { get; set; }
+    public string? RuleType { get; set; }
+    public string? Code { get; set; }
 
     public virtual InternetCinRules Rule { get; set; }
 

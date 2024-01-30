@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TraceCodes1
 {
-    public string Tracecode { get; set; }
-    public string Tracegroup { get; set; }
-    public string Description { get; set; }
+    public string? Tracecode { get; set; }
+    public string? Tracegroup { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

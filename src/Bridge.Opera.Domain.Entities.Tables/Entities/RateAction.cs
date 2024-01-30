@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateAction
 {
-    public decimal ActionInstanceId { get; set; }
-    public string RateModuleId { get; set; }
-    public string ActionType { get; set; }
-    public string Machine { get; set; }
-    public string Terminal { get; set; }
-    public string ActionDescription { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? RateModuleId { get; set; }
+    public string? ActionType { get; set; }
+    public string? Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? ActionDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateSetId { get; set; }
-    public string ProductId { get; set; }
-    public string SeasonCode { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
+    public string? ProductId { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? RestrictionId { get; set; }
-    public string YieldCategory { get; set; }
+    public string? YieldCategory { get; set; }
     public DateTime? HurdleDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DeptShiftPagersView
 {
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string ShiftId { get; set; }
-    public string ShiftPager { get; set; }
-    public string WorkCategories { get; set; }
-    public string Areas { get; set; }
-    public string InactiveYn { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? ShiftId { get; set; }
+    public string? ShiftPager { get; set; }
+    public string? WorkCategories { get; set; }
+    public string? Areas { get; set; }
+    public string? InactiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

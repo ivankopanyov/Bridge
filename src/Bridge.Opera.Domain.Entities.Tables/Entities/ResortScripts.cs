@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortScripts
 {
-    public string ResortType { get; set; }
-    public string Resort { get; set; }
-    public decimal ScriptId { get; set; }
-    public string LanguageCode { get; set; }
-    public string MembershipType { get; set; }
+    public string? ResortType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ScriptId { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? MembershipType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

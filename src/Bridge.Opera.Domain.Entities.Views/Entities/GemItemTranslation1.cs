@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemItemTranslation1
 {
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public string Language { get; set; }
-    public string Field { get; set; }
-    public string Text { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public string? Language { get; set; }
+    public string? Field { get; set; }
+    public string? Text { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

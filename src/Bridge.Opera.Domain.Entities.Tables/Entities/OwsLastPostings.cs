@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsLastPostings
 {
-    public decimal PostingId { get; set; }
-    public string ExternalPostingId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
+    public decimal? PostingId { get; set; }
+    public string? ExternalPostingId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

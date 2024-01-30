@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ImpocrmCefdTempHdrVw
 {
-    public decimal BatchId { get; set; }
-    public string InterfaceId { get; set; }
+    public decimal? BatchId { get; set; }
+    public string? InterfaceId { get; set; }
     public DateTime? ImportStartDate { get; set; }
     public DateTime? ImportEndDate { get; set; }
     public decimal? NewCount { get; set; }

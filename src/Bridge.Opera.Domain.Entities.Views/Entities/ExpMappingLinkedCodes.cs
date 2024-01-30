@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpMappingLinkedCodes
 {
-    public string ConfigType { get; set; }
-    public string Resort { get; set; }
-    public string LinkedCode { get; set; }
-    public decimal ExpMappingId { get; set; }
-    public string MappingType { get; set; }
-    public string TypeDesc { get; set; }
-    public string MappingCode { get; set; }
-    public string CodeDesc { get; set; }
-    public string DataType { get; set; }
+    public string? ConfigType { get; set; }
+    public string? Resort { get; set; }
+    public string? LinkedCode { get; set; }
+    public decimal? ExpMappingId { get; set; }
+    public string? MappingType { get; set; }
+    public string? TypeDesc { get; set; }
+    public string? MappingCode { get; set; }
+    public string? CodeDesc { get; set; }
+    public string? DataType { get; set; }
     public decimal? SeqNo { get; set; }
-    public string UseLovYn { get; set; }
-    public string LovName { get; set; }
-    public string RequiredYn { get; set; }
-    public string ExportValue { get; set; }
+    public string? UseLovYn { get; set; }
+    public string? LovName { get; set; }
+    public string? RequiredYn { get; set; }
+    public string? ExportValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

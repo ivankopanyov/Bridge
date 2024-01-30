@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestLoginUsers091118
 {
-    public string LoginName { get; set; }
-    public decimal NameId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Password { get; set; }
-    public string SecQuestionCode { get; set; }
-    public string SecAnswer { get; set; }
+    public string? LoginName { get; set; }
+    public decimal? NameId { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Password { get; set; }
+    public string? SecQuestionCode { get; set; }
+    public string? SecAnswer { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? LastLogginDate { get; set; }
-    public string InsertSource { get; set; }
-    public string Comments { get; set; }
+    public string? InsertSource { get; set; }
+    public string? Comments { get; set; }
     public DateTime? PasswordChangeDate { get; set; }
-    public string PwdSystemGenerated { get; set; }
+    public string? PwdSystemGenerated { get; set; }
     public DateTime? AccountLocked { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

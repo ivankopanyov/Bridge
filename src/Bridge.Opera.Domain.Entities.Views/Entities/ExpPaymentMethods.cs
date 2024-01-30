@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpPaymentMethods
 {
-    public string PaymentMethod { get; set; }
-    public string Description { get; set; }
-    public string CcCode { get; set; }
-    public string CcType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string IndBilling { get; set; }
-    public string IndAr { get; set; }
-    public string IndDepositYn { get; set; }
-    public string IndCash { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? Description { get; set; }
+    public string? CcCode { get; set; }
+    public string? CcType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? IndBilling { get; set; }
+    public string? IndAr { get; set; }
+    public string? IndDepositYn { get; set; }
+    public string? IndCash { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? IssueNumber { get; set; }
     public decimal? StartDate { get; set; }
-    public string PostYn { get; set; }
-    public string CardNumberLength { get; set; }
-    public string CardPrefix { get; set; }
-    public string ValidationRule { get; set; }
-    public string Formula { get; set; }
-    public string TrxUsage1 { get; set; }
-    public string TrxUsage2 { get; set; }
+    public string? PostYn { get; set; }
+    public string? CardNumberLength { get; set; }
+    public string? CardPrefix { get; set; }
+    public string? ValidationRule { get; set; }
+    public string? Formula { get; set; }
+    public string? TrxUsage1 { get; set; }
+    public string? TrxUsage2 { get; set; }
     public decimal? OrderBy { get; set; }
-    public string AuthAtCheckinYn { get; set; }
-    public string AuthDuringStayYn { get; set; }
-    public string AuthReversalYn { get; set; }
-    public string Cvv2CheckYn { get; set; }
-    public string AddressVerificationYn { get; set; }
-    public string CompPaymentYn { get; set; }
-    public string PromptAtCheckinYn { get; set; }
-    public string MerchantNumber { get; set; }
+    public string? AuthAtCheckinYn { get; set; }
+    public string? AuthDuringStayYn { get; set; }
+    public string? AuthReversalYn { get; set; }
+    public string? Cvv2CheckYn { get; set; }
+    public string? AddressVerificationYn { get; set; }
+    public string? CompPaymentYn { get; set; }
+    public string? PromptAtCheckinYn { get; set; }
+    public string? MerchantNumber { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

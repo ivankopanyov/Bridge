@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForecastGroup
 {
-    public string ForecastCode { get; set; }
-    public string Description { get; set; }
+    public string? ForecastCode { get; set; }
+    public string? Description { get; set; }
     public decimal? Sequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

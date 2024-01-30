@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmCmpgnEmailStatsVw
 {
-    public string CampaignCode { get; set; }
+    public string? CampaignCode { get; set; }
     public decimal? EmailSend { get; set; }
     public decimal? OpenEmail { get; set; }
     public decimal? ClicksOnEmail { get; set; }

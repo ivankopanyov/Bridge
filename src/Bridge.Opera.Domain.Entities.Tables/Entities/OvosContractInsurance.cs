@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosContractInsurance
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public string InsuranceType { get; set; }
-    public string PolicyNo { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Company { get; set; }
-    public string Add1 { get; set; }
-    public string Add2 { get; set; }
-    public string Add3 { get; set; }
-    public string Add4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string PostalCode { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? InsuranceType { get; set; }
+    public string? PolicyNo { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Company { get; set; }
+    public string? Add1 { get; set; }
+    public string? Add2 { get; set; }
+    public string? Add3 { get; set; }
+    public string? Add4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? PostalCode { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual OvosContracts OvosContracts { get; set; }
 

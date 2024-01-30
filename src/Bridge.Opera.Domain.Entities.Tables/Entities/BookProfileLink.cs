@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BookProfileLink
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal ProfileId { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
     public virtual BusinessProfile Profile { get; set; }

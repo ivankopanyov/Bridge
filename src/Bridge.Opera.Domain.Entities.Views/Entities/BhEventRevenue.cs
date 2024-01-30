@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BhEventRevenue
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string Description { get; set; }
-    public string CatStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Description { get; set; }
+    public string? CatStatus { get; set; }
     public decimal? CatOwner { get; set; }
-    public string StatusDesc { get; set; }
-    public decimal EventId { get; set; }
+    public string? StatusDesc { get; set; }
+    public decimal? EventId { get; set; }
     public decimal? Attendees { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
-    public string FlatYn { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
+    public string? FlatYn { get; set; }
     public decimal? ForecastRevenue { get; set; }
-    public string FbClass { get; set; }
+    public string? FbClass { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

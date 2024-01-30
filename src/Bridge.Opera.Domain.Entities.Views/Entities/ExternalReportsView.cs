@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExternalReportsView
 {
-    public decimal ModuleId { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string LanguageCode { get; set; }
-    public decimal GroupModuleId { get; set; }
-    public string GroupDesc { get; set; }
-    public string ActiveYn { get; set; }
-    public string ReportType { get; set; }
+    public decimal? ModuleId { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? LanguageCode { get; set; }
+    public decimal? GroupModuleId { get; set; }
+    public string? GroupDesc { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? ReportType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

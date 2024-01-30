@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CoversView
 {
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RevenueToday { get; set; }
     public decimal? ManualCoversToday { get; set; }
     public decimal? FinTrxCoversToday { get; set; }

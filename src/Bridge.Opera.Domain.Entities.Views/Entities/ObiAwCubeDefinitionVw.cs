@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAwCubeDefinitionVw
 {
-    public string SchemaName { get; set; }
-    public string AwName { get; set; }
-    public string CubeName { get; set; }
-    public string ActiveYn { get; set; }
+    public string? SchemaName { get; set; }
+    public string? AwName { get; set; }
+    public string? CubeName { get; set; }
+    public string? ActiveYn { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RepeatInterval { get; set; }
-    public string RebuildYn { get; set; }
+    public string? RepeatInterval { get; set; }
+    public string? RebuildYn { get; set; }
     public decimal? EstimatedSize { get; set; }
     public DateTime? EstimationDate { get; set; }
     public DateTime? StartTime { get; set; }
@@ -21,12 +21,12 @@ public partial class ObiAwCubeDefinitionVw
     public decimal? TempInsertRowLimit { get; set; }
     public decimal? DailyResubmitMins { get; set; }
     public decimal? FullResubmitMins { get; set; }
-    public string IncludeForecastYn { get; set; }
+    public string? IncludeForecastYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string SelectHint { get; set; }
+    public string? SelectHint { get; set; }
     public decimal? MaxLoadProcs { get; set; }
     public DateTime? LastCacheClearTime { get; set; }
 

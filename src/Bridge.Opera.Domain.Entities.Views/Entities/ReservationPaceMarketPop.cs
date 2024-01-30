@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationPaceMarketPop
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StayDate { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? StayRoomsResIndDed { get; set; }
     public decimal? StayRoomsResBlkDed { get; set; }
     public decimal? StayRoomsBlkDed { get; set; }

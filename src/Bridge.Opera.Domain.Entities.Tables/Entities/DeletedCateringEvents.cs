@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DeletedCateringEvents
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? MasterEventId { get; set; }
     public DateTime? Blockend { get; set; }
     public DateTime? Blockstart { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EvResort { get; set; }
+    public string? EvResort { get; set; }
     public decimal? EventId { get; set; }
     public decimal? EventLinkId { get; set; }
-    public string EventLinkType { get; set; }
-    public string EvType { get; set; }
-    public string MasterYn { get; set; }
+    public string? EventLinkType { get; set; }
+    public string? EvType { get; set; }
+    public string? MasterYn { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? Guaranteed { get; set; }
     public decimal? ActualAttendees { get; set; }
@@ -22,23 +22,23 @@ public partial class DeletedCateringEvents
     public decimal? PkgExpAttendees { get; set; }
     public decimal? PkgGuaAttendees { get; set; }
     public decimal? PkgId { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
-    public string EvStatus { get; set; }
-    public string TurntoStatus { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
+    public string? EvStatus { get; set; }
+    public string? TurntoStatus { get; set; }
     public DateTime? DeletedDate { get; set; }
     public decimal? DeletedUser { get; set; }
     public DateTime? ExportedDate { get; set; }
-    public string EvName { get; set; }
-    public string Doorcard { get; set; }
+    public string? EvName { get; set; }
+    public string? Doorcard { get; set; }
     public decimal? SetAttendees { get; set; }
     public decimal? RentalAmount { get; set; }
     public decimal? DiscountPercentage { get; set; }
-    public string ProblemYn { get; set; }
-    public string DontMoveYn { get; set; }
+    public string? ProblemYn { get; set; }
+    public string? DontMoveYn { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string ExcludeFromForecastYn { get; set; }
+    public string? ExcludeFromForecastYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

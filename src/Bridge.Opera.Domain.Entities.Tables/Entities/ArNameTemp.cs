@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArNameTemp
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RowId { get; set; }
-    public string Seeker { get; set; }
-    public string ArNumber { get; set; }
-    public string GuestName { get; set; }
+    public string? Seeker { get; set; }
+    public string? ArNumber { get; set; }
+    public string? GuestName { get; set; }
     public decimal? GuestNum { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

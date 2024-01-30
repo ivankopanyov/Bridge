@@ -7,23 +7,23 @@ public partial class FolioFooter
     public decimal? BillNumberFooter { get; set; }
     public decimal? RevisionNumberFooter { get; set; }
     public decimal? FolioViewFooter { get; set; }
-    public string TotalCredit { get; set; }
-    public string TotalDebit { get; set; }
-    public string TotalEuroDebit { get; set; }
-    public string TotalEuroCredit { get; set; }
-    public string TotalEuroBalance { get; set; }
+    public string? TotalCredit { get; set; }
+    public string? TotalDebit { get; set; }
+    public string? TotalEuroDebit { get; set; }
+    public string? TotalEuroCredit { get; set; }
+    public string? TotalEuroBalance { get; set; }
     public decimal? EuroExchangeRate { get; set; }
-    public string Balance { get; set; }
-    public string SummaryCurrencyDebit { get; set; }
-    public string SummaryCurrencyCredit { get; set; }
-    public string SummaryBalance { get; set; }
-    public string SummaryCurrency { get; set; }
+    public string? Balance { get; set; }
+    public string? SummaryCurrencyDebit { get; set; }
+    public string? SummaryCurrencyCredit { get; set; }
+    public string? SummaryBalance { get; set; }
+    public string? SummaryCurrency { get; set; }
     public decimal? SummaryCurrencyExchangeRt { get; set; }
-    public string TotalGross { get; set; }
-    public string TotalDiff { get; set; }
-    public string TotalEuroGross { get; set; }
-    public string TotalEuroDiff { get; set; }
-    public string MerchantNumberFooter { get; set; }
+    public string? TotalGross { get; set; }
+    public string? TotalDiff { get; set; }
+    public string? TotalEuroGross { get; set; }
+    public string? TotalEuroDiff { get; set; }
+    public string? MerchantNumberFooter { get; set; }
     public decimal? DirectTotalCredit { get; set; }
     public decimal? DirectTotalDebit { get; set; }
     public decimal? DirectTotalEuroDebit { get; set; }
@@ -33,13 +33,13 @@ public partial class FolioFooter
     public decimal? DirectSummaryCurrencyDebit { get; set; }
     public decimal? DirectSummaryCurrencyCredit { get; set; }
     public decimal? DirectSummaryBalance { get; set; }
-    public string TotalDebitInWords { get; set; }
-    public string TotalCreditInWords { get; set; }
-    public string BalanceInWords { get; set; }
-    public string ArNumberInFooter { get; set; }
-    public string RefInvNumber { get; set; }
-    public string MembershipFolioMessage { get; set; }
-    public string Deposits { get; set; }
+    public string? TotalDebitInWords { get; set; }
+    public string? TotalCreditInWords { get; set; }
+    public string? BalanceInWords { get; set; }
+    public string? ArNumberInFooter { get; set; }
+    public string? RefInvNumber { get; set; }
+    public string? MembershipFolioMessage { get; set; }
+    public string? Deposits { get; set; }
     public decimal? Paidouts { get; set; }
     public decimal? Settlements { get; set; }
     public decimal? TotalBaseExcl { get; set; }
@@ -58,8 +58,8 @@ public partial class FolioFooter
     public decimal? TotalVatInclEuro { get; set; }
     public decimal? NonhotelSupplies { get; set; }
     public decimal? TotalNet { get; set; }
-    public string TotalEuroNet { get; set; }
-    public string SignatureHash { get; set; }
+    public string? TotalEuroNet { get; set; }
+    public string? SignatureHash { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

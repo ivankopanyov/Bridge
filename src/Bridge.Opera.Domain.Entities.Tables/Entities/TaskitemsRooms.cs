@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TaskitemsRooms
 {
-    public string Resort { get; set; }
-    public decimal TaskitemNumber { get; set; }
-    public string Room { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaskitemNumber { get; set; }
+    public string? Room { get; set; }
     public decimal? RoomUseCount { get; set; }
     public decimal? LastRoomUseCount { get; set; }
     public decimal? MaintAfterNights { get; set; }

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SpgCommPrefView
 {
-    public string Resort { get; set; }
-    public string TopicType { get; set; }
+    public string? Resort { get; set; }
+    public string? TopicType { get; set; }
     public decimal? SpgTopicId { get; set; }
-    public string TopicDescription { get; set; }
+    public string? TopicDescription { get; set; }
     public decimal? OperaTopicId { get; set; }
     public decimal? ParentOperaTopicId { get; set; }
-    public string NodeType { get; set; }
-    public string OptInYn { get; set; }
+    public string? NodeType { get; set; }
+    public string? OptInYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public decimal? Depth { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

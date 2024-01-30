@@ -7,13 +7,13 @@ public partial class PseudoCityCodes
         PseudoCityNegRates = new HashSet<PseudoCityNegRates>();
     }
 
-    public string PseudoCityCode { get; set; }
-    public string PseudoCityDesc { get; set; }
-    public string City { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? PseudoCityCode { get; set; }
+    public string? PseudoCityDesc { get; set; }
+    public string? City { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual ICollection<PseudoCityNegRates> PseudoCityNegRates { get; set; }
 

@@ -2,42 +2,42 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmReservationVw
 {
-    public string RecordType { get; set; }
-    public string Resort { get; set; }
-    public string RegionCode { get; set; }
-    public string ChainCode { get; set; }
-    public string ReservationId { get; set; }
+    public string? RecordType { get; set; }
+    public string? Resort { get; set; }
+    public string? RegionCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ReservationId { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? SnapshotDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ReservationStatus { get; set; }
-    public string OccupancyType { get; set; }
-    public string DeductNondeductReservation { get; set; }
-    public string GroupResYn { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDescription { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDescription { get; set; }
-    public string SourceGroup { get; set; }
-    public string SourceGroupDescription { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceCodeDescription { get; set; }
-    public string Channel { get; set; }
-    public string ChannelDescription { get; set; }
-    public string RateClass { get; set; }
-    public string RateClassDescription { get; set; }
-    public string RateCategory { get; set; }
-    public string RateCategoryDescription { get; set; }
-    public string RateCode { get; set; }
-    public string RateCodeDescription { get; set; }
-    public string PromotionCode { get; set; }
-    public string PromotionCodeDescription { get; set; }
-    public string VipCode { get; set; }
-    public string VipCodeDescription { get; set; }
-    public string ResInsertSource { get; set; }
-    public string ResInsertSourceType { get; set; }
+    public string? ReservationStatus { get; set; }
+    public string? OccupancyType { get; set; }
+    public string? DeductNondeductReservation { get; set; }
+    public string? GroupResYn { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDescription { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDescription { get; set; }
+    public string? SourceGroup { get; set; }
+    public string? SourceGroupDescription { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceCodeDescription { get; set; }
+    public string? Channel { get; set; }
+    public string? ChannelDescription { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateClassDescription { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateCategoryDescription { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCodeDescription { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? PromotionCodeDescription { get; set; }
+    public string? VipCode { get; set; }
+    public string? VipCodeDescription { get; set; }
+    public string? ResInsertSource { get; set; }
+    public string? ResInsertSourceType { get; set; }
     public decimal? TotalRevenueNet { get; set; }
     public decimal? RoomsRevenueNet { get; set; }
     public decimal? FBRevenueNet { get; set; }
@@ -59,11 +59,11 @@ public partial class DmReservationVw
     public decimal? DepartureRooms { get; set; }
     public decimal? DeparturePersons { get; set; }
     public DateTime? Timestamp { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryCode { get; set; }
-    public string RoomCategoryDesc { get; set; }
-    public string RoomClassCode { get; set; }
-    public string RoomClassDesc { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryCode { get; set; }
+    public string? RoomCategoryDesc { get; set; }
+    public string? RoomClassCode { get; set; }
+    public string? RoomClassDesc { get; set; }
     public decimal? CExchangeRate { get; set; }
     public decimal? CTotalRevenueNet { get; set; }
     public decimal? CRoomsRevenueNet { get; set; }

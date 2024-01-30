@@ -3,33 +3,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class SidCashiersSys
 {
     public decimal? CashierId { get; set; }
-    public string Title { get; set; }
-    public string State { get; set; }
+    public string? Title { get; set; }
+    public string? State { get; set; }
     public decimal? AmtFloat { get; set; }
-    public string IncludeFloat { get; set; }
-    public string GenCashierYn { get; set; }
-    public string Timeoflastclose { get; set; }
-    public string CashierBal { get; set; }
-    public string Dateoflastuse { get; set; }
-    public string LastOpened { get; set; }
-    public string MaxNoOpen { get; set; }
-    public string Timeoffirstopen { get; set; }
-    public string TimesOpened { get; set; }
-    public string AmtDiffInitial { get; set; }
-    public string InsertUser { get; set; }
-    public string InsertDate { get; set; }
-    public string UpdateDate { get; set; }
-    public string UpdateUser { get; set; }
-    public string ActiveYn { get; set; }
-    public string Resort { get; set; }
-    public string TranActionId { get; set; }
-    public string CsrTrxNo { get; set; }
-    public string ClosureInProgressYn { get; set; }
-    public string ClosureNo { get; set; }
-    public string InterfaceCashierYn { get; set; }
-    public string InternalUpdateYn { get; set; }
-    public string KioskCashierYn { get; set; }
-    public string ReservedYn { get; set; }
+    public string? IncludeFloat { get; set; }
+    public string? GenCashierYn { get; set; }
+    public string? Timeoflastclose { get; set; }
+    public string? CashierBal { get; set; }
+    public string? Dateoflastuse { get; set; }
+    public string? LastOpened { get; set; }
+    public string? MaxNoOpen { get; set; }
+    public string? Timeoffirstopen { get; set; }
+    public string? TimesOpened { get; set; }
+    public string? AmtDiffInitial { get; set; }
+    public string? InsertUser { get; set; }
+    public string? InsertDate { get; set; }
+    public string? UpdateDate { get; set; }
+    public string? UpdateUser { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? Resort { get; set; }
+    public string? TranActionId { get; set; }
+    public string? CsrTrxNo { get; set; }
+    public string? ClosureInProgressYn { get; set; }
+    public string? ClosureNo { get; set; }
+    public string? InterfaceCashierYn { get; set; }
+    public string? InternalUpdateYn { get; set; }
+    public string? KioskCashierYn { get; set; }
+    public string? ReservedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

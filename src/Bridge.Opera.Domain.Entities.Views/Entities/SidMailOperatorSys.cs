@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMailOperatorSys
 {
-    public decimal OperatorId { get; set; }
-    public string DataType { get; set; }
-    public string Description { get; set; }
-    public string VirtualYn { get; set; }
-    public string DefaultYn { get; set; }
-    public string DerivedYn { get; set; }
+    public decimal? OperatorId { get; set; }
+    public string? DataType { get; set; }
+    public string? Description { get; set; }
+    public string? VirtualYn { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? DerivedYn { get; set; }
     public decimal? SourceId { get; set; }
-    public string FieldName { get; set; }
-    public string OperatorCode { get; set; }
-    public string InternalYn { get; set; }
-    public string UseNullYn { get; set; }
+    public string? FieldName { get; set; }
+    public string? OperatorCode { get; set; }
+    public string? InternalYn { get; set; }
+    public string? UseNullYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

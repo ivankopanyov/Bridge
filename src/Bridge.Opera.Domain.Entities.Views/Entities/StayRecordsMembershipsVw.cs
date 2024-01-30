@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class StayRecordsMembershipsVw
 {
-    public string Source { get; set; }
+    public string? Source { get; set; }
     public decimal? StayRecordId { get; set; }
-    public string MembershipType { get; set; }
-    public string RecordType { get; set; }
-    public string MembershipNumber { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? RecordType { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? NameId { get; set; }
-    public string NameRole { get; set; }
+    public string? NameRole { get; set; }
     public decimal? TotalPoints { get; set; }
     public decimal? TotalBasePoints { get; set; }
     public decimal? TotalBonusPoints { get; set; }
@@ -22,14 +22,14 @@ public partial class StayRecordsMembershipsVw
     public decimal? MembershipBonusRevenue { get; set; }
     public decimal? PointsCost { get; set; }
     public DateTime? PointsComputedDate { get; set; }
-    public string PromotionCode1 { get; set; }
-    public string PromotionCode2 { get; set; }
-    public string PromotionCode3 { get; set; }
-    public string PopulationMethod { get; set; }
-    public string ValidYn { get; set; }
-    public string PointsEligibleYn { get; set; }
-    public string ProcessingMessage { get; set; }
-    public string ErrorMessage { get; set; }
+    public string? PromotionCode1 { get; set; }
+    public string? PromotionCode2 { get; set; }
+    public string? PromotionCode3 { get; set; }
+    public string? PopulationMethod { get; set; }
+    public string? ValidYn { get; set; }
+    public string? PointsEligibleYn { get; set; }
+    public string? ProcessingMessage { get; set; }
+    public string? ErrorMessage { get; set; }
     public decimal? TotalEligibleCreditEarn { get; set; }
     public decimal? TotalEligibleAwardRedeem { get; set; }
     public decimal? QualifyingNights { get; set; }

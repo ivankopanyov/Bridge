@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventBookingAccountView
 {
-    public string Accountname { get; set; }
+    public string? Accountname { get; set; }
     public decimal? Accountnameid { get; set; }
-    public string Bookingname { get; set; }
-    public string Resort { get; set; }
-    public decimal Allotmentheaderid { get; set; }
-    public string Bookstatus { get; set; }
-    public string Catstatus { get; set; }
-    public DateTime Startdate { get; set; }
-    public DateTime Enddate { get; set; }
-    public decimal Eventid { get; set; }
-    public string Roomsetup { get; set; }
-    public string Eventname { get; set; }
-    public string Eventstatus { get; set; }
-    public string Eventroom { get; set; }
+    public string? Bookingname { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Allotmentheaderid { get; set; }
+    public string? Bookstatus { get; set; }
+    public string? Catstatus { get; set; }
+    public DateTime? Startdate { get; set; }
+    public DateTime? Enddate { get; set; }
+    public decimal? Eventid { get; set; }
+    public string? Roomsetup { get; set; }
+    public string? Eventname { get; set; }
+    public string? Eventstatus { get; set; }
+    public string? Eventroom { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? ExpectedAttendees { get; set; }
     public decimal? GuaranteedAttendees { get; set; }
     public decimal? ActualAttendees { get; set; }
-    public string Eventtype { get; set; }
+    public string? Eventtype { get; set; }
     public decimal? Setuptime { get; set; }
     public decimal? Setdowntime { get; set; }
-    public string EventResort { get; set; }
+    public string? EventResort { get; set; }
     public decimal? Guaranteed { get; set; }
     public decimal? EventLinkId { get; set; }
-    public string EventLinkType { get; set; }
+    public string? EventLinkType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

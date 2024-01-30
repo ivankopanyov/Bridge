@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestLoginDomains
 {
-    public string DomainCode { get; set; }
-    public string DomainName { get; set; }
-    public string ChainCode { get; set; }
-    public string IfcYn { get; set; }
-    public string DatabaseId { get; set; }
+    public string? DomainCode { get; set; }
+    public string? DomainName { get; set; }
+    public string? ChainCode { get; set; }
+    public string? IfcYn { get; set; }
+    public string? DatabaseId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string DefaultYn { get; set; }
+    public string? DefaultYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

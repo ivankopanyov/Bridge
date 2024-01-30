@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationItems
 {
-    public decimal ReservationItemId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ProductCode { get; set; }
-    public string RateCode { get; set; }
+    public decimal? ReservationItemId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ProductCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public decimal ItemId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? ItemId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? Quantity { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? ReservationProductId { get; set; }
 
     public virtual ReservationName Res { get; set; }

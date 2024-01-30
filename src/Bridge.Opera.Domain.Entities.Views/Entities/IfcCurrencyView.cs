@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcCurrencyView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string OperaCode { get; set; }
-    public string VendorCode { get; set; }
+    public string? OperaCode { get; set; }
+    public string? VendorCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

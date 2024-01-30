@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidPopupMessages
 {
-    public string Resort { get; set; }
-    public string MessageCode { get; set; }
-    public string Module { get; set; }
-    public string ModuleMode { get; set; }
-    public string Description { get; set; }
-    public string HideYn { get; set; }
-    public string DefaultValue { get; set; }
-    public string MessageType { get; set; }
-    public string LovClause { get; set; }
-    public string MessageDescription { get; set; }
-    public string UsedInApp { get; set; }
+    public string? Resort { get; set; }
+    public string? MessageCode { get; set; }
+    public string? Module { get; set; }
+    public string? ModuleMode { get; set; }
+    public string? Description { get; set; }
+    public string? HideYn { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? MessageType { get; set; }
+    public string? LovClause { get; set; }
+    public string? MessageDescription { get; set; }
+    public string? UsedInApp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

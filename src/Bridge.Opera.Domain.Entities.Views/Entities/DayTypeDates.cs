@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DayTypeDates
 {
-    public DateTime DtDate { get; set; }
-    public string DtCode { get; set; }
+    public DateTime? DtDate { get; set; }
+    public string? DtCode { get; set; }
     public decimal? RankValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

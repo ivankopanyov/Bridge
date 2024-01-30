@@ -7,11 +7,11 @@ public partial class SpareParts
         PartsUsed = new HashSet<PartsUsed>();
     }
 
-    public string Resort { get; set; }
-    public string PartGroup { get; set; }
-    public string Type { get; set; }
-    public string PartCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? PartGroup { get; set; }
+    public string? Type { get; set; }
+    public string? PartCode { get; set; }
+    public string? Description { get; set; }
     public decimal? UnitPrice { get; set; }
 
     public virtual ICollection<PartsUsed> PartsUsed { get; set; }

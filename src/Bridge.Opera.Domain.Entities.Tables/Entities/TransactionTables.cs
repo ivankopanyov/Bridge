@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TransactionTables
 {
-    public string TableName { get; set; }
-    public string TableOwner { get; set; }
-    public string DownloadType { get; set; }
-    public string UploadYn { get; set; }
-    public string ModuleName { get; set; }
+    public string? TableName { get; set; }
+    public string? TableOwner { get; set; }
+    public string? DownloadType { get; set; }
+    public string? UploadYn { get; set; }
+    public string? ModuleName { get; set; }
     public decimal? UploadSeq { get; set; }
-    public string PkColumn { get; set; }
+    public string? PkColumn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ColumnList { get; set; }
-    public string WhereClause { get; set; }
-    public string UpdateWhereclause { get; set; }
-    public string UpdateSetstring1 { get; set; }
-    public string UpdateSetstring2 { get; set; }
-    public string InsertCollist { get; set; }
-    public string InsertColvalues1 { get; set; }
-    public string InsertColvalues2 { get; set; }
+    public string? ColumnList { get; set; }
+    public string? WhereClause { get; set; }
+    public string? UpdateWhereclause { get; set; }
+    public string? UpdateSetstring1 { get; set; }
+    public string? UpdateSetstring2 { get; set; }
+    public string? InsertCollist { get; set; }
+    public string? InsertColvalues1 { get; set; }
+    public string? InsertColvalues2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

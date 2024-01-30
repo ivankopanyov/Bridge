@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScBusblockByActivity
 {
-    public string Type { get; set; }
-    public decimal ActId { get; set; }
-    public string ActResort { get; set; }
-    public string PrimaryYn { get; set; }
-    public string BusblockProperty { get; set; }
-    public decimal BusblockId { get; set; }
-    public DateTime BusblockArrival { get; set; }
-    public DateTime BusblockDeparture { get; set; }
-    public string BusblockName { get; set; }
+    public string? Type { get; set; }
+    public decimal? ActId { get; set; }
+    public string? ActResort { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? BusblockProperty { get; set; }
+    public decimal? BusblockId { get; set; }
+    public DateTime? BusblockArrival { get; set; }
+    public DateTime? BusblockDeparture { get; set; }
+    public string? BusblockName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

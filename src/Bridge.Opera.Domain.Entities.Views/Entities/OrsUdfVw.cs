@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrsUdfVw
 {
     public decimal? NameId { get; set; }
-    public string Colname { get; set; }
-    public string Col1 { get; set; }
+    public string? Colname { get; set; }
+    public string? Col1 { get; set; }
     public decimal? Col2 { get; set; }
     public DateTime? Col3 { get; set; }
 

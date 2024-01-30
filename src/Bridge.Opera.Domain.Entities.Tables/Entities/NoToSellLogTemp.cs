@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NoToSellLogTemp
 {
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
-    public string ActionType { get; set; }
+    public string? ActionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

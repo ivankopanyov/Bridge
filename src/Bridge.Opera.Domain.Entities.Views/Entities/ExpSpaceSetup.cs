@@ -3,16 +3,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpSpaceSetup
 {
     public decimal? RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string BusinessDate { get; set; }
-    public string SetupCode { get; set; }
-    public string Room { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? SetupCode { get; set; }
+    public string? Room { get; set; }
     public decimal? OccMin { get; set; }
     public decimal? OccMax { get; set; }
     public byte? SetupTime { get; set; }
     public byte? SetdownTime { get; set; }
-    public string SetupCodeDesc { get; set; }
+    public string? SetupCodeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -3,23 +3,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class RepGrmresTab
 {
     public decimal? BookId { get; set; }
-    public string Resort { get; set; }
-    public string RoomCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCode { get; set; }
     public decimal? RoomOrder { get; set; }
     public decimal? RoomSort { get; set; }
-    public string GridType { get; set; }
+    public string? GridType { get; set; }
     public decimal? GridGroup { get; set; }
     public decimal? GridOrder { get; set; }
-    public string XCell { get; set; }
-    public string XFormat { get; set; }
+    public string? XCell { get; set; }
+    public string? XFormat { get; set; }
     public DateTime? YCell { get; set; }
-    public string Cell { get; set; }
-    public string CellFormat { get; set; }
+    public string? Cell { get; set; }
+    public string? CellFormat { get; set; }
     public decimal? CellRoomCount { get; set; }
     public decimal? CellRoomRate { get; set; }
     public decimal? MasterBookId { get; set; }
-    public string MasterResort { get; set; }
-    public string MasterType { get; set; }
+    public string? MasterResort { get; set; }
+    public string? MasterType { get; set; }
     public decimal? MasterOrder { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPmsRoomDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string RoomId { get; set; }
-    public string RoomLabel { get; set; }
-    public string RoomCategory { get; set; }
-    public string Description { get; set; }
-    public string ShortDescription { get; set; }
-    public string RoomClass { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomId { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Description { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

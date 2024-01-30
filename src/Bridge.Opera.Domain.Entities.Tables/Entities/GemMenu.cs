@@ -10,21 +10,21 @@ public partial class GemMenu
         MenuEvtype = new HashSet<MenuEvtype>();
     }
 
-    public decimal MenuId { get; set; }
-    public string Resort { get; set; }
-    public decimal MencId { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public string BeverageClass { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MencId { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public string? BeverageClass { get; set; }
     public decimal? Price { get; set; }
-    public string Restriction { get; set; }
+    public string? Restriction { get; set; }
     public decimal? ServingId { get; set; }
-    public string ServingCode { get; set; }
-    public string Serving { get; set; }
+    public string? ServingCode { get; set; }
+    public string? Serving { get; set; }
     public decimal? PersonsPerTable { get; set; }
-    public string ConsumptionYn { get; set; }
-    public string MultiChoiceYn { get; set; }
-    public string ArticleNumber { get; set; }
+    public string? ConsumptionYn { get; set; }
+    public string? MultiChoiceYn { get; set; }
+    public string? ArticleNumber { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
@@ -34,8 +34,8 @@ public partial class GemMenu
     public DateTime? SellDateEnd { get; set; }
     public DateTime? BookDateStart { get; set; }
     public DateTime? BookDateEnd { get; set; }
-    public string InactiveYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual GemMenuClass Menc { get; set; }
     public virtual GemTranslation ServingNavigation { get; set; }

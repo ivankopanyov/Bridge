@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcDc
 {
-    public string Resort { get; set; }
-    public string Selector { get; set; }
-    public string DpCode { get; set; }
-    public string Text { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? Selector { get; set; }
+    public string? DpCode { get; set; }
+    public string? Text { get; set; }
+    public string? DbfLogo { get; set; }
     public decimal? RowNum { get; set; }
-    public string PostRoute { get; set; }
-    public string LineType { get; set; }
-    public string DialedDigits { get; set; }
-    public string ServingPeriod { get; set; }
-    public string RevenueCenter { get; set; }
-    public string Terminal { get; set; }
-    public string PaymentNumber { get; set; }
-    public string ItemNumber { get; set; }
-    public string Userid { get; set; }
+    public string? PostRoute { get; set; }
+    public string? LineType { get; set; }
+    public string? DialedDigits { get; set; }
+    public string? ServingPeriod { get; set; }
+    public string? RevenueCenter { get; set; }
+    public string? Terminal { get; set; }
+    public string? PaymentNumber { get; set; }
+    public string? ItemNumber { get; set; }
+    public string? Userid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

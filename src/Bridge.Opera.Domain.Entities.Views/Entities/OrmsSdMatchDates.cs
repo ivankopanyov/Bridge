@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsSdMatchDates
 {
     public decimal? Id { get; set; }
-    public string RecType { get; set; }
+    public string? RecType { get; set; }
     public decimal? CalId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StayDate { get; set; }
     public DateTime? MatchDate { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
     public decimal? Rnk { get; set; }
     public decimal? Maxrnk { get; set; }
 

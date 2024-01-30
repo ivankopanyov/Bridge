@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationProductsDetails
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ProductId { get; set; }
-    public string RateCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ProductId { get; set; }
+    public string? RateCode { get; set; }
     public decimal? Quantity { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ProductSource { get; set; }
+    public string? ProductSource { get; set; }
     public decimal? QtyExcluded { get; set; }
-    public string Formula { get; set; }
-    public string PostingRhythm { get; set; }
-    public string CurrencyCode { get; set; }
-    public string ProductGroup { get; set; }
-    public decimal ReservationProductId { get; set; }
-    public decimal InsertUser { get; set; }
-    public string PosAccountYn { get; set; }
-    public string AddToRateYn { get; set; }
-    public string PrintSeparateYn { get; set; }
-    public string PosNextDayYn { get; set; }
-    public string CalculationRule { get; set; }
+    public string? Formula { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? ProductGroup { get; set; }
+    public decimal? ReservationProductId { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? PosAccountYn { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? PrintSeparateYn { get; set; }
+    public string? PosNextDayYn { get; set; }
+    public string? CalculationRule { get; set; }
     public DateTime? FromValidTime { get; set; }
     public DateTime? ToValidTime { get; set; }
-    public string ForecastNextDayYn { get; set; }
-    public string CateringYn { get; set; }
+    public string? ForecastNextDayYn { get; set; }
+    public string? CateringYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

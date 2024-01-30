@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HttpErrors
 {
-    public decimal Id { get; set; }
-    public string XmlResponse { get; set; }
-    public string ErrMsg { get; set; }
-    public DateTime ErrorDate { get; set; }
-    public string Resort { get; set; }
+    public decimal? Id { get; set; }
+    public string? XmlResponse { get; set; }
+    public string? ErrMsg { get; set; }
+    public DateTime? ErrorDate { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

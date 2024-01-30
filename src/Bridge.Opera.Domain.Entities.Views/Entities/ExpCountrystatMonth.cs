@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpCountrystatMonth
 {
-    public string ResortName { get; set; }
-    public string PropertyCode { get; set; }
+    public string? ResortName { get; set; }
+    public string? PropertyCode { get; set; }
     public decimal? PropertyCurrencyDecimals { get; set; }
-    public string PropertyCurrencyCode { get; set; }
-    public string StatisticCode { get; set; }
-    public string MonthYear { get; set; }
-    public string NumberOfDays { get; set; }
+    public string? PropertyCurrencyCode { get; set; }
+    public string? StatisticCode { get; set; }
+    public string? MonthYear { get; set; }
+    public string? NumberOfDays { get; set; }
     public decimal? StayRooms { get; set; }
     public decimal? StayPersons { get; set; }
     public decimal? ArrPersons { get; set; }

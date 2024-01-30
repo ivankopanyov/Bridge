@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusheadChangeLog
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? Roomnights { get; set; }
     public decimal? RoomRevenue { get; set; }
-    public string BookingStatus { get; set; }
-    public string PriorStatus { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? PriorStatus { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string ChangeType { get; set; }
+    public string? ChangeType { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdateAppUser { get; set; }
-    public string UpdateUserName { get; set; }
+    public string? UpdateAppUser { get; set; }
+    public string? UpdateUserName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

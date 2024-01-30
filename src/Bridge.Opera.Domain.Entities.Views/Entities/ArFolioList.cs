@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArFolioList
 {
-    public string InvoiceStyle { get; set; }
+    public string? InvoiceStyle { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? NameId { get; set; }
     public int? FolioView { get; set; }
-    public string FolioStyle { get; set; }
-    public string TrxCode { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TrxNo { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? PostedAmount { get; set; }
     public decimal? Debit { get; set; }
     public decimal? PrintedDebit { get; set; }
     public decimal? Credit { get; set; }
     public decimal? PrintedCredit { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string Reference { get; set; }
-    public string ApprovalCode { get; set; }
+    public string? Reference { get; set; }
+    public string? ApprovalCode { get; set; }
     public DateTime? ExpiryDate { get; set; }
-    public string Currency { get; set; }
-    public string PrintedCurrency { get; set; }
-    public string PrintedExchInfo { get; set; }
-    public string PrintedExchRate { get; set; }
-    public string CurrFormatMask { get; set; }
+    public string? Currency { get; set; }
+    public string? PrintedCurrency { get; set; }
+    public string? PrintedExchInfo { get; set; }
+    public string? PrintedExchRate { get; set; }
+    public string? CurrFormatMask { get; set; }
     public decimal? ExchRate { get; set; }
     public decimal? EuroExchRate { get; set; }
     public decimal? BillNumber { get; set; }

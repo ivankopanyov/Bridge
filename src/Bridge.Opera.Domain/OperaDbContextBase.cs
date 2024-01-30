@@ -6,6 +6,10 @@ public abstract class OperaDbContextBase : DbContext
 
     private static IEnumerable<MethodInfo>? _methods;
 
+    public OperaDbContextBase() : base() { }
+
+    public OperaDbContextBase(DbContextOptions options) : base(options) { }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasDefaultSchema("OPERA");

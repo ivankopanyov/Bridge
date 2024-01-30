@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RevenueGroupsTranslation
 {
-    public string ChainCode { get; set; }
-    public string RevGroup { get; set; }
-    public string Field { get; set; }
-    public string Language { get; set; }
-    public string Description { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RevGroup { get; set; }
+    public string? Field { get; set; }
+    public string? Language { get; set; }
+    public string? Description { get; set; }
 
     public virtual RevenueGroups RevenueGroups { get; set; }
 

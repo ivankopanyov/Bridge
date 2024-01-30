@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PostalCodes
 {
-    public string CountryCode { get; set; }
-    public string StateCode { get; set; }
-    public string Description { get; set; }
-    public string RegionCode { get; set; }
-    public string PostalCodeFrom { get; set; }
-    public string PostalCodeTo { get; set; }
+    public string? CountryCode { get; set; }
+    public string? StateCode { get; set; }
+    public string? Description { get; set; }
+    public string? RegionCode { get; set; }
+    public string? PostalCodeFrom { get; set; }
+    public string? PostalCodeTo { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string FiscalRegionCode { get; set; }
-    public string City { get; set; }
-    public string Scity { get; set; }
-    public string District { get; set; }
-    public decimal Seq { get; set; }
-    public string TerritoryCode { get; set; }
+    public string? FiscalRegionCode { get; set; }
+    public string? City { get; set; }
+    public string? Scity { get; set; }
+    public string? District { get; set; }
+    public decimal? Seq { get; set; }
+    public string? TerritoryCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

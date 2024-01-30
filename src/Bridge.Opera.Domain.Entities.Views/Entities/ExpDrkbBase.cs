@@ -19,27 +19,27 @@ public partial class ExpDrkbBase
     public decimal? TotalAdjRoomRevenue { get; set; }
     public decimal? UpgradeUserId { get; set; }
     public decimal? ResvInsertUserId { get; set; }
-    public string RecordType { get; set; }
-    public string BusinessDateChar { get; set; }
-    public string CurrencyCode { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string RateWhy { get; set; }
-    public string UpgradeUser { get; set; }
-    public string UpgradeUserLastName { get; set; }
-    public string UpgradeUserFirstName { get; set; }
-    public string UpgradeBy { get; set; }
-    public string UpgradeWhy { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string ExternalReference { get; set; }
-    public string ResvStatus { get; set; }
-    public string RoomNumber { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomType { get; set; }
-    public string BookedRoomCategory { get; set; }
-    public string Rtc { get; set; }
-    public string RateCode { get; set; }
-    public string RateCurrency { get; set; }
+    public string? RecordType { get; set; }
+    public string? BusinessDateChar { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? RateWhy { get; set; }
+    public string? UpgradeUser { get; set; }
+    public string? UpgradeUserLastName { get; set; }
+    public string? UpgradeUserFirstName { get; set; }
+    public string? UpgradeBy { get; set; }
+    public string? UpgradeWhy { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomType { get; set; }
+    public string? BookedRoomCategory { get; set; }
+    public string? Rtc { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCurrency { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }

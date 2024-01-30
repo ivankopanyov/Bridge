@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UserScreenSetup
 {
-    public decimal AppUserId { get; set; }
+    public decimal? AppUserId { get; set; }
     public decimal? SetupId { get; set; }
-    public string UdfField { get; set; }
-    public string Description { get; set; }
+    public string? UdfField { get; set; }
+    public string? Description { get; set; }
 
     public virtual ApplicationUser AppUser { get; set; }
 

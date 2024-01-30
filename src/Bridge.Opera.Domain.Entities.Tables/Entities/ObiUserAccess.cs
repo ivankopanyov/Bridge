@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiUserAccess
 {
-    public decimal AppUserId { get; set; }
-    public string AccessLevel { get; set; }
-    public string AccessCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? AccessLevel { get; set; }
+    public string? AccessCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

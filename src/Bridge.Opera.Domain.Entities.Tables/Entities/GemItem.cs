@@ -14,46 +14,46 @@ public partial class GemItem
         ItemReservation = new HashSet<ItemReservation>();
     }
 
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public decimal ItemclassId { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public string OrderExternalYn { get; set; }
-    public string CriticalYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public decimal? ItemclassId { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public string? OrderExternalYn { get; set; }
+    public string? CriticalYn { get; set; }
     public decimal? QtyInStock { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string ArticleNumber { get; set; }
-    public string RevenueType { get; set; }
+    public string? ArticleNumber { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? Cost { get; set; }
-    public string ShowbeoYn { get; set; }
+    public string? ShowbeoYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ObjectType { get; set; }
+    public string? ObjectType { get; set; }
     public DateTime? AvailableFrom { get; set; }
     public DateTime? AvailableTo { get; set; }
-    public string DailyInventoryYn { get; set; }
+    public string? DailyInventoryYn { get; set; }
     public decimal? DefaultQty { get; set; }
-    public string DiscountableYn { get; set; }
-    public string MandatoryYn { get; set; }
-    public string SellSeparate { get; set; }
+    public string? DiscountableYn { get; set; }
+    public string? MandatoryYn { get; set; }
+    public string? SellSeparate { get; set; }
     public decimal? ItemPoolId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ActivityLinkYn { get; set; }
-    public string ActivityExtSystem { get; set; }
-    public string ActivityStatusCode { get; set; }
-    public string ActivityType { get; set; }
-    public string ActivityLocationCode { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? ActivityLinkYn { get; set; }
+    public string? ActivityExtSystem { get; set; }
+    public string? ActivityStatusCode { get; set; }
+    public string? ActivityType { get; set; }
+    public string? ActivityLocationCode { get; set; }
+    public string? WebBookingYn { get; set; }
     public decimal? DefaultDuration { get; set; }
-    public string AllowedOutsideStayYn { get; set; }
-    public string PromptFixedChargesYn { get; set; }
-    public string BraceletRuleCode { get; set; }
-    public string DisplayColor { get; set; }
+    public string? AllowedOutsideStayYn { get; set; }
+    public string? PromptFixedChargesYn { get; set; }
+    public string? BraceletRuleCode { get; set; }
+    public string? DisplayColor { get; set; }
 
     public virtual GemItemPool ItemPool { get; set; }
     public virtual GemItemClass Itemclass { get; set; }

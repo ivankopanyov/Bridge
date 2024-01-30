@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EnrollmentNumbers
 {
-    public string SeqType { get; set; }
-    public string SeqStatus { get; set; }
-    public decimal BeginSeq { get; set; }
-    public decimal EndSeq { get; set; }
-    public decimal CurrentSeq { get; set; }
-    public decimal RequestSeq { get; set; }
+    public string? SeqType { get; set; }
+    public string? SeqStatus { get; set; }
+    public decimal? BeginSeq { get; set; }
+    public decimal? EndSeq { get; set; }
+    public decimal? CurrentSeq { get; set; }
+    public decimal? RequestSeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

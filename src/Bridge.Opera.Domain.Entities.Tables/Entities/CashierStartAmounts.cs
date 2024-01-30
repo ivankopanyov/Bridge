@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CashierStartAmounts
 {
-    public string Resort { get; set; }
-    public decimal CashierId { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? CashierId { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? StartingAmount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

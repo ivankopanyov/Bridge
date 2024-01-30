@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileRelationshipHier
 {
-    public string RelType { get; set; }
-    public string RelToType { get; set; }
+    public string? RelType { get; set; }
+    public string? RelToType { get; set; }
     public decimal? TopId { get; set; }
     public decimal? TwoId { get; set; }
     public decimal? ThreeId { get; set; }
@@ -14,7 +14,7 @@ public partial class ProfileRelationshipHier
     public decimal? EightId { get; set; }
     public decimal? NineId { get; set; }
     public decimal? BottomId { get; set; }
-    public string BottomNameType { get; set; }
+    public string? BottomNameType { get; set; }
     public decimal? TotalLevels { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

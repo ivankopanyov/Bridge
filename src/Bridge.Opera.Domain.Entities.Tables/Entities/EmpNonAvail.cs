@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EmpNonAvail
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public DateTime AbsentFrom { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AbsentFrom { get; set; }
     public DateTime? ReturnOn { get; set; }
-    public string ReasonCode { get; set; }
-    public string Comments { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? Comments { get; set; }
 
     public virtual Reasons Re { get; set; }
 

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberPointsVw
 {
-    public string Application { get; set; }
+    public string? Application { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipClass { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string NameOnCard { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? NameOnCard { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
     public DateTime? MemberInactiveDate { get; set; }
     public decimal? PointsAvailable { get; set; }
-    public string PrimaryMembershipYn { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

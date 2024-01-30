@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAgingSummaryType
 {
-    public string AccountType { get; set; }
-    public string Style { get; set; }
-    public string TypeDesc { get; set; }
+    public string? AccountType { get; set; }
+    public string? Style { get; set; }
+    public string? TypeDesc { get; set; }
     public decimal? AccountTypeId { get; set; }
     public decimal? Aging1 { get; set; }
     public decimal? Aging2 { get; set; }

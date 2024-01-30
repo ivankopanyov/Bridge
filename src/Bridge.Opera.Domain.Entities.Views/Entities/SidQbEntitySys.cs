@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidQbEntitySys
 {
-    public string EntityName { get; set; }
-    public string EntityLabel { get; set; }
-    public string BaseTable { get; set; }
-    public string EntityAlias { get; set; }
-    public string EntityDesc { get; set; }
+    public string? EntityName { get; set; }
+    public string? EntityLabel { get; set; }
+    public string? BaseTable { get; set; }
+    public string? EntityAlias { get; set; }
+    public string? EntityDesc { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

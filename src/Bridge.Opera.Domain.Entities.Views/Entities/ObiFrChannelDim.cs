@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiFrChannelDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string ChannelCode { get; set; }
-    public string ChannelDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? ChannelDesc { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

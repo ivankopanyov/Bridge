@@ -10,24 +10,24 @@ public partial class YieldCategories
         ResortRoomCategory = new HashSet<ResortRoomCategory>();
     }
 
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public byte? Rank { get; set; }
     public decimal? MinHurdle { get; set; }
     public decimal? MaxTransfer { get; set; }
-    public string RefRoomCategory { get; set; }
-    public string RefRateCode { get; set; }
+    public string? RefRoomCategory { get; set; }
+    public string? RefRateCode { get; set; }
     public decimal? MaxDemandTransfer { get; set; }
     public decimal? MinOccCost { get; set; }
     public decimal? YWalkCost { get; set; }
     public decimal? NyWalkCost { get; set; }
     public decimal? NumSteps { get; set; }
-    public string DisplayDefault { get; set; }
+    public string? DisplayDefault { get; set; }
 
     public virtual ICollection<OrmsBookingClass> OrmsBookingClass { get; set; }
     public virtual ICollection<OrmsPriceSlices> OrmsPriceSlices { get; set; }

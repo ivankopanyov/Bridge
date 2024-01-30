@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemTranslation1
 {
-    public decimal CodeId { get; set; }
-    public string CodeType { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
+    public decimal? CodeId { get; set; }
+    public string? CodeType { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? WebBookingYn { get; set; }
     public decimal? WebSetup { get; set; }
     public decimal? WebSetdown { get; set; }
-    public string FulldayYn { get; set; }
+    public string? FulldayYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

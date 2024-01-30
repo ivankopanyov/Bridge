@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpCubeDimVw
 {
-    public string Cube { get; set; }
-    public string CubeDesc { get; set; }
-    public string Export { get; set; }
-    public string ExportTab { get; set; }
-    public string FileTypeDesc { get; set; }
-    public string DatamartYn { get; set; }
-    public string DimensionYn { get; set; }
-    public string LargeDimensionYn { get; set; }
-    public string FullDimensionYn { get; set; }
-    public string GlobalYn { get; set; }
-    public string ExportView { get; set; }
+    public string? Cube { get; set; }
+    public string? CubeDesc { get; set; }
+    public string? Export { get; set; }
+    public string? ExportTab { get; set; }
+    public string? FileTypeDesc { get; set; }
+    public string? DatamartYn { get; set; }
+    public string? DimensionYn { get; set; }
+    public string? LargeDimensionYn { get; set; }
+    public string? FullDimensionYn { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? ExportView { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

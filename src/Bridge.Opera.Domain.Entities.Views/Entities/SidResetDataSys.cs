@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResetDataSys
 {
-    public string TableName { get; set; }
-    public string Description { get; set; }
-    public string IncludeYn { get; set; }
-    public string ResortColumnName { get; set; }
+    public string? TableName { get; set; }
+    public string? Description { get; set; }
+    public string? IncludeYn { get; set; }
+    public string? ResortColumnName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -5,13 +5,13 @@ public partial class RepMealTypeProgressBiFram
     public decimal? StatusListOrderBy { get; set; }
     public decimal? MonthOrderBy { get; set; }
     public decimal? LeftLabelOrderBy { get; set; }
-    public string StatusListLabel { get; set; }
-    public string YearLabel { get; set; }
-    public string LeftLabel { get; set; }
-    public string LeftLabelDy { get; set; }
-    public string LeftLabelMmDd { get; set; }
-    public string LeftLabelPmsPDtfm { get; set; }
-    public string LeftLabelType { get; set; }
+    public string? StatusListLabel { get; set; }
+    public string? YearLabel { get; set; }
+    public string? LeftLabel { get; set; }
+    public string? LeftLabelDy { get; set; }
+    public string? LeftLabelMmDd { get; set; }
+    public string? LeftLabelPmsPDtfm { get; set; }
+    public string? LeftLabelType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

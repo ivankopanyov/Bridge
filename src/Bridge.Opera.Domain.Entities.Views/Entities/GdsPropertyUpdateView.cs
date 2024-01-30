@@ -2,55 +2,55 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsPropertyUpdateView
 {
-    public string PropAirdirt { get; set; }
-    public string PropTransport { get; set; }
-    public string PropDistunit { get; set; }
-    public string PropAirdist { get; set; }
-    public string PropAircode { get; set; }
-    public string PropGdsResort { get; set; }
-    public string PropRating { get; set; }
-    public string PropGdsHost { get; set; }
-    public string PropRoomcode { get; set; }
-    public string PropRoomdesc1 { get; set; }
-    public string PropRoomdesc2 { get; set; }
-    public string PropRoomdesc3 { get; set; }
-    public string PropRoomoccu { get; set; }
-    public string PropRoll { get; set; }
-    public string PropCode { get; set; }
+    public string? PropAirdirt { get; set; }
+    public string? PropTransport { get; set; }
+    public string? PropDistunit { get; set; }
+    public string? PropAirdist { get; set; }
+    public string? PropAircode { get; set; }
+    public string? PropGdsResort { get; set; }
+    public string? PropRating { get; set; }
+    public string? PropGdsHost { get; set; }
+    public string? PropRoomcode { get; set; }
+    public string? PropRoomdesc1 { get; set; }
+    public string? PropRoomdesc2 { get; set; }
+    public string? PropRoomdesc3 { get; set; }
+    public string? PropRoomoccu { get; set; }
+    public string? PropRoll { get; set; }
+    public string? PropCode { get; set; }
     public decimal? PropMax { get; set; }
-    public string PropCurr { get; set; }
-    public string PropAction { get; set; }
+    public string? PropCurr { get; set; }
+    public string? PropAction { get; set; }
     public decimal? PropFloor { get; set; }
     public decimal? PropSuite { get; set; }
     public decimal? PropRooms { get; set; }
-    public string PropCheckout { get; set; }
-    public string PropCheckin { get; set; }
-    public string GmtOffset { get; set; }
-    public string TimeOffset { get; set; }
+    public string? PropCheckout { get; set; }
+    public string? PropCheckin { get; set; }
+    public string? GmtOffset { get; set; }
+    public string? TimeOffset { get; set; }
     public DateTime? DateRenovated { get; set; }
-    public string YearlyClose { get; set; }
+    public string? YearlyClose { get; set; }
     public DateTime? DateOpened { get; set; }
-    public string Resort { get; set; }
-    public string Chain { get; set; }
+    public string? Resort { get; set; }
+    public string? Chain { get; set; }
     public decimal? PropId { get; set; }
-    public string PropStatus { get; set; }
-    public string Commission { get; set; }
-    public string PropName { get; set; }
-    public string PropStreet { get; set; }
-    public string PropCity { get; set; }
-    public string PropState { get; set; }
-    public string PropCountry { get; set; }
-    public string PropPostal { get; set; }
-    public string PropPhone { get; set; }
-    public string PropFax { get; set; }
-    public string PropDirection { get; set; }
-    public string PropLocation { get; set; }
-    public string PropAmenitycode { get; set; }
-    public string PropAmenityid { get; set; }
-    public string PropAmenityflg { get; set; }
-    public string PropDepositcc { get; set; }
-    public string PropGuarcc { get; set; }
-    public string PropError { get; set; }
+    public string? PropStatus { get; set; }
+    public string? Commission { get; set; }
+    public string? PropName { get; set; }
+    public string? PropStreet { get; set; }
+    public string? PropCity { get; set; }
+    public string? PropState { get; set; }
+    public string? PropCountry { get; set; }
+    public string? PropPostal { get; set; }
+    public string? PropPhone { get; set; }
+    public string? PropFax { get; set; }
+    public string? PropDirection { get; set; }
+    public string? PropLocation { get; set; }
+    public string? PropAmenitycode { get; set; }
+    public string? PropAmenityid { get; set; }
+    public string? PropAmenityflg { get; set; }
+    public string? PropDepositcc { get; set; }
+    public string? PropGuarcc { get; set; }
+    public string? PropError { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

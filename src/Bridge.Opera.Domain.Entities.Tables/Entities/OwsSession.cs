@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsSession
 {
-    public decimal SessionId { get; set; }
-    public DateTime SessionExpiration { get; set; }
-    public DateTime SessionCreated { get; set; }
+    public decimal? SessionId { get; set; }
+    public DateTime? SessionExpiration { get; set; }
+    public DateTime? SessionCreated { get; set; }
     public DateTime? SessionModified { get; set; }
     public decimal? NameId { get; set; }
 

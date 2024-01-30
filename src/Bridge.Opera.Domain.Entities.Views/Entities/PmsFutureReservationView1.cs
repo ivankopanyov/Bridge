@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsFutureReservationView1
 {
-    public string NameType { get; set; }
+    public string? NameType { get; set; }
     public decimal? ResvNo { get; set; }
-    public string FReservationtype { get; set; }
-    public string FResort { get; set; }
-    public string FRate { get; set; }
-    public string FRoom { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomType { get; set; }
+    public string? FReservationtype { get; set; }
+    public string? FResort { get; set; }
+    public string? FRate { get; set; }
+    public string? FRoom { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomType { get; set; }
     public decimal? FPrice { get; set; }
     public decimal? FAdults { get; set; }
     public decimal? FChildren { get; set; }
     public decimal? FNoofrooms { get; set; }
     public DateTime? FArrival { get; set; }
     public DateTime? FDeparture { get; set; }
-    public string FGuestName { get; set; }
+    public string? FGuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string FAgent { get; set; }
-    public string FGroup { get; set; }
-    public string FSourcename { get; set; }
-    public string FCompany { get; set; }
-    public string FRemarks { get; set; }
-    public string FContactName { get; set; }
-    public string ResvStatus { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string MarketCode { get; set; }
-    public string OriginOfBooking { get; set; }
+    public string? FAgent { get; set; }
+    public string? FGroup { get; set; }
+    public string? FSourcename { get; set; }
+    public string? FCompany { get; set; }
+    public string? FRemarks { get; set; }
+    public string? FContactName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? MarketCode { get; set; }
+    public string? OriginOfBooking { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

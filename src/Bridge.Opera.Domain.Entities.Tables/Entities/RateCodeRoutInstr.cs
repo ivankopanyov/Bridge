@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateCodeRoutInstr
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string TrxCode { get; set; }
-    public string ProfileType { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? ProfileType { get; set; }
     public decimal? ArrangementId { get; set; }
     public DateTime? InactiveDate { get; set; }
 

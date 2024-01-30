@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccountByBooking
 {
-    public string Resort { get; set; }
-    public decimal BookingId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookingId { get; set; }
     public decimal? AccountId { get; set; }
-    public string AccountName { get; set; }
-    public string AccountName2 { get; set; }
-    public string AccountName3 { get; set; }
-    public string AccountBusinessGreeting { get; set; }
-    public string AccountAddress1 { get; set; }
-    public string AccountAddress2 { get; set; }
-    public string AccountZipCode { get; set; }
-    public string AccountState { get; set; }
-    public string AccountCountry { get; set; }
-    public string AccountCity { get; set; }
-    public string AccountCityExt { get; set; }
-    public string XaccountName { get; set; }
-    public string AccountFaxNo { get; set; }
-    public string AccountPhoneNo { get; set; }
-    public string AccountEmailId { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountName2 { get; set; }
+    public string? AccountName3 { get; set; }
+    public string? AccountBusinessGreeting { get; set; }
+    public string? AccountAddress1 { get; set; }
+    public string? AccountAddress2 { get; set; }
+    public string? AccountZipCode { get; set; }
+    public string? AccountState { get; set; }
+    public string? AccountCountry { get; set; }
+    public string? AccountCity { get; set; }
+    public string? AccountCityExt { get; set; }
+    public string? XaccountName { get; set; }
+    public string? AccountFaxNo { get; set; }
+    public string? AccountPhoneNo { get; set; }
+    public string? AccountEmailId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

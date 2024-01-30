@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MenuUrls1
 {
-    public string Resort { get; set; }
-    public string FormModule { get; set; }
-    public string Description { get; set; }
-    public string Url { get; set; }
-    public string LicenseCode { get; set; }
-    public string ParameterName { get; set; }
-    public string ConfigMode { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string InactiveMode { get; set; }
-    public string BrowserWindowProperties { get; set; }
-    public string SsoWebserviceUrl { get; set; }
+    public string? Resort { get; set; }
+    public string? FormModule { get; set; }
+    public string? Description { get; set; }
+    public string? Url { get; set; }
+    public string? LicenseCode { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ConfigMode { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? InactiveMode { get; set; }
+    public string? BrowserWindowProperties { get; set; }
+    public string? SsoWebserviceUrl { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

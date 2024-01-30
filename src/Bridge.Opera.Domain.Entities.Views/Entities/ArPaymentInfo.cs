@@ -6,8 +6,8 @@ public partial class ArPaymentInfo
     public decimal? PayInvoiceNo { get; set; }
     public decimal? ConsBillNo { get; set; }
     public decimal? PayBillNo { get; set; }
-    public string ConsFolioType { get; set; }
-    public string PayFolioType { get; set; }
+    public string? ConsFolioType { get; set; }
+    public string? PayFolioType { get; set; }
     public DateTime? ConsBusinessDate { get; set; }
     public DateTime? PayBusinessDate { get; set; }
     public decimal? ConsAmount { get; set; }
@@ -16,10 +16,10 @@ public partial class ArPaymentInfo
     public decimal? PayArDebit { get; set; }
     public decimal? ConsArCredit { get; set; }
     public decimal? PayArCredit { get; set; }
-    public decimal ConsumptionTrx { get; set; }
-    public decimal PaymentTrx { get; set; }
-    public decimal AppliedAmt { get; set; }
-    public DateTime AppliedDate { get; set; }
+    public decimal? ConsumptionTrx { get; set; }
+    public decimal? PaymentTrx { get; set; }
+    public decimal? AppliedAmt { get; set; }
+    public DateTime? AppliedDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

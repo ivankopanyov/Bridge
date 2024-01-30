@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ApplicationUserPw
 {
-    public decimal AppUserId { get; set; }
-    public string Password { get; set; }
-    public string Terminal { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? Password { get; set; }
+    public string? Terminal { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

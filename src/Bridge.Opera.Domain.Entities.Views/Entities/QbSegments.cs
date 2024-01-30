@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbSegments
 {
-    public decimal SegId { get; set; }
-    public string SegCode { get; set; }
-    public string SegSourceType { get; set; }
-    public string Resort { get; set; }
-    public decimal OcrmProfileId { get; set; }
-    public string EspReplyStatus { get; set; }
+    public decimal? SegId { get; set; }
+    public string? SegCode { get; set; }
+    public string? SegSourceType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? OcrmProfileId { get; set; }
+    public string? EspReplyStatus { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NaManagerRoomClassView
 {
-    public string RoomClassDay { get; set; }
+    public string? RoomClassDay { get; set; }
     public decimal? RoomsDay { get; set; }
     public decimal? OccDay { get; set; }
     public decimal? CompDay { get; set; }
@@ -90,7 +90,7 @@ public partial class NaManagerRoomClassView
     public decimal? MemDepRmsDay { get; set; }
     public decimal? FitRoomRevDay { get; set; }
     public decimal? InhouseMaxOccDay { get; set; }
-    public string RoomClassMtd { get; set; }
+    public string? RoomClassMtd { get; set; }
     public decimal? RoomsMtd { get; set; }
     public decimal? OccMtd { get; set; }
     public decimal? CompMtd { get; set; }
@@ -123,15 +123,15 @@ public partial class NaManagerRoomClassView
     public decimal? LateCancelMtd { get; set; }
     public decimal? ReservationMadeMtd { get; set; }
     public decimal? TurnawayMtd { get; set; }
-    public string TomorrowArrivalRoomMtd { get; set; }
-    public string TomorrowArrivalPrsMtd { get; set; }
-    public string TomorrowDepartureRoomMtd { get; set; }
-    public string TomorrowDeparturePrsMtd { get; set; }
+    public string? TomorrowArrivalRoomMtd { get; set; }
+    public string? TomorrowArrivalPrsMtd { get; set; }
+    public string? TomorrowDepartureRoomMtd { get; set; }
+    public string? TomorrowDeparturePrsMtd { get; set; }
     public decimal? FoodBevRevMtd { get; set; }
-    public string OccPerTomorrowMtd { get; set; }
-    public string OccPerWeekMtd { get; set; }
-    public string OccPerMonthMtd { get; set; }
-    public string OccPerYearMtd { get; set; }
+    public string? OccPerTomorrowMtd { get; set; }
+    public string? OccPerWeekMtd { get; set; }
+    public string? OccPerMonthMtd { get; set; }
+    public string? OccPerYearMtd { get; set; }
     public decimal? RoomRevMtd { get; set; }
     public decimal? CleanRoomMtd { get; set; }
     public decimal? InspectedRoomMtd { get; set; }
@@ -178,7 +178,7 @@ public partial class NaManagerRoomClassView
     public decimal? MemDepRmsMtd { get; set; }
     public decimal? FitRoomRevMtd { get; set; }
     public decimal? InhouseMaxOccMtd { get; set; }
-    public string RoomClassYtd { get; set; }
+    public string? RoomClassYtd { get; set; }
     public decimal? RoomsYtd { get; set; }
     public decimal? OccYtd { get; set; }
     public decimal? CompYtd { get; set; }
@@ -211,15 +211,15 @@ public partial class NaManagerRoomClassView
     public decimal? LateCancelYtd { get; set; }
     public decimal? ReservationMadeYtd { get; set; }
     public decimal? TurnawayYtd { get; set; }
-    public string TomorrowArrivalRoomYtd { get; set; }
-    public string TomorrowArrivalPrsYtd { get; set; }
-    public string TomorrowDepartureRoomYtd { get; set; }
-    public string TomorrowDeparturePrsYtd { get; set; }
+    public string? TomorrowArrivalRoomYtd { get; set; }
+    public string? TomorrowArrivalPrsYtd { get; set; }
+    public string? TomorrowDepartureRoomYtd { get; set; }
+    public string? TomorrowDeparturePrsYtd { get; set; }
     public decimal? FoodBevRevYtd { get; set; }
-    public string OccPerTomorrowYtd { get; set; }
-    public string OccPerWeekYtd { get; set; }
-    public string OccPerMonthYtd { get; set; }
-    public string OccPerYearYtd { get; set; }
+    public string? OccPerTomorrowYtd { get; set; }
+    public string? OccPerWeekYtd { get; set; }
+    public string? OccPerMonthYtd { get; set; }
+    public string? OccPerYearYtd { get; set; }
     public decimal? RoomRevYtd { get; set; }
     public decimal? CleanRoomYtd { get; set; }
     public decimal? InspectedRoomYtd { get; set; }
@@ -266,7 +266,7 @@ public partial class NaManagerRoomClassView
     public decimal? MemDepRmsYtd { get; set; }
     public decimal? FitRoomRevYtd { get; set; }
     public decimal? InhouseMaxOccYtd { get; set; }
-    public string RoomClassLyday { get; set; }
+    public string? RoomClassLyday { get; set; }
     public decimal? RoomsLyday { get; set; }
     public decimal? OccLyday { get; set; }
     public decimal? CompLyday { get; set; }
@@ -354,7 +354,7 @@ public partial class NaManagerRoomClassView
     public decimal? MemDepRmsLyday { get; set; }
     public decimal? FitRoomRevLyday { get; set; }
     public decimal? InhouseMaxOccLyday { get; set; }
-    public string RoomClassLymtd { get; set; }
+    public string? RoomClassLymtd { get; set; }
     public decimal? RoomsLymtd { get; set; }
     public decimal? OccLymtd { get; set; }
     public decimal? CompLymtd { get; set; }
@@ -387,15 +387,15 @@ public partial class NaManagerRoomClassView
     public decimal? LateCancelLymtd { get; set; }
     public decimal? ReservationMadeLymtd { get; set; }
     public decimal? TurnawayLymtd { get; set; }
-    public string TomorrowArrivalRoomLymtd { get; set; }
-    public string TomorrowArrivalPrsLymtd { get; set; }
-    public string TomorrowDepartureRoomLymtd { get; set; }
-    public string TomorrowDeparturePrsLymtd { get; set; }
+    public string? TomorrowArrivalRoomLymtd { get; set; }
+    public string? TomorrowArrivalPrsLymtd { get; set; }
+    public string? TomorrowDepartureRoomLymtd { get; set; }
+    public string? TomorrowDeparturePrsLymtd { get; set; }
     public decimal? FoodBevRevLymtd { get; set; }
-    public string OccPerTomorrowLymtd { get; set; }
-    public string OccPerWeekLymtd { get; set; }
-    public string OccPerMonthLymtd { get; set; }
-    public string OccPerYearLymtd { get; set; }
+    public string? OccPerTomorrowLymtd { get; set; }
+    public string? OccPerWeekLymtd { get; set; }
+    public string? OccPerMonthLymtd { get; set; }
+    public string? OccPerYearLymtd { get; set; }
     public decimal? RoomRevLymtd { get; set; }
     public decimal? CleanRoomLymtd { get; set; }
     public decimal? InspectedRoomLymtd { get; set; }
@@ -442,7 +442,7 @@ public partial class NaManagerRoomClassView
     public decimal? MemDepRmsLymtd { get; set; }
     public decimal? FitRoomRevLymtd { get; set; }
     public decimal? InhouseMaxOccLymtd { get; set; }
-    public string RoomClassLyytd { get; set; }
+    public string? RoomClassLyytd { get; set; }
     public decimal? RoomsLyytd { get; set; }
     public decimal? OccLyytd { get; set; }
     public decimal? CompLyytd { get; set; }
@@ -475,15 +475,15 @@ public partial class NaManagerRoomClassView
     public decimal? LateCancelLyytd { get; set; }
     public decimal? ReservationMadeLyytd { get; set; }
     public decimal? TurnawayLyytd { get; set; }
-    public string TomorrowArrivalRoomLyytd { get; set; }
-    public string TomorrowArrivalPrsLyytd { get; set; }
-    public string TomorrowDepartureRoomLyytd { get; set; }
-    public string TomorrowDeparturePrsLyytd { get; set; }
+    public string? TomorrowArrivalRoomLyytd { get; set; }
+    public string? TomorrowArrivalPrsLyytd { get; set; }
+    public string? TomorrowDepartureRoomLyytd { get; set; }
+    public string? TomorrowDeparturePrsLyytd { get; set; }
     public decimal? FoodBevRevLyytd { get; set; }
-    public string OccPerTomorrowLyytd { get; set; }
-    public string OccPerWeekLyytd { get; set; }
-    public string OccPerMonthLyytd { get; set; }
-    public string OccPerYearLyytd { get; set; }
+    public string? OccPerTomorrowLyytd { get; set; }
+    public string? OccPerWeekLyytd { get; set; }
+    public string? OccPerMonthLyytd { get; set; }
+    public string? OccPerYearLyytd { get; set; }
     public decimal? RoomRevLyytd { get; set; }
     public decimal? CleanRoomLyytd { get; set; }
     public decimal? InspectedRoomLyytd { get; set; }

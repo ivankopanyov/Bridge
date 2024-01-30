@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PromoCouponBatchSummary
 {
-    public string Resort { get; set; }
-    public string PromotionCode { get; set; }
-    public string BatchCode { get; set; }
+    public string? Resort { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? BatchCode { get; set; }
     public decimal? MinCouponId { get; set; }
     public decimal? MaxCouponId { get; set; }
     public decimal? NoOfCoupons { get; set; }

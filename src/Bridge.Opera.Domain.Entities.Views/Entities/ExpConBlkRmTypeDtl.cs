@@ -10,7 +10,7 @@ public partial class ExpConBlkRmTypeDtl
     public decimal? BlkdRooms { get; set; }
     public decimal? SellLimit { get; set; }
     public decimal? Released { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? RoomTypeDtlStartDate { get; set; }
     public DateTime? RoomTypeDtlEndDate { get; set; }
 

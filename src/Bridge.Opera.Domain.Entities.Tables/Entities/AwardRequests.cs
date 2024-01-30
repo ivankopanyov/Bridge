@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AwardRequests
 {
-    public decimal AwardRequestId { get; set; }
-    public string Resort { get; set; }
-    public string AwardCode { get; set; }
-    public string MembershipNo { get; set; }
-    public decimal AwardQty { get; set; }
+    public decimal? AwardRequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? AwardCode { get; set; }
+    public string? MembershipNo { get; set; }
+    public decimal? AwardQty { get; set; }
     public DateTime? ProcessedDate { get; set; }
-    public string RequestAgentId { get; set; }
+    public string? RequestAgentId { get; set; }
     public DateTime? RequestTime { get; set; }
-    public string CancelAgentId { get; set; }
+    public string? CancelAgentId { get; set; }
     public DateTime? CancelTime { get; set; }
     public decimal? ConfirmationNumber { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string AwardOrderNo { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? AwardOrderNo { get; set; }
     public decimal? BalancePoints { get; set; }
     public decimal? NewPointBalance { get; set; }
-    public string SearchLastName { get; set; }
-    public string SearchFirstName { get; set; }
+    public string? SearchLastName { get; set; }
+    public string? SearchFirstName { get; set; }
     public DateTime? SearchAwardDate { get; set; }
-    public string RecordStatus { get; set; }
+    public string? RecordStatus { get; set; }
 
     public virtual Awards Awards { get; set; }
 

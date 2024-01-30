@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2hLog
 {
-    public string MigrationId { get; set; }
-    public decimal LogLine { get; set; }
-    public DateTime EntryTime { get; set; }
-    public string LogTxt { get; set; }
+    public string? MigrationId { get; set; }
+    public decimal? LogLine { get; set; }
+    public DateTime? EntryTime { get; set; }
+    public string? LogTxt { get; set; }
     public decimal? Duration { get; set; }
     public decimal? RowsProcessed { get; set; }
     public decimal? RowsFailed { get; set; }

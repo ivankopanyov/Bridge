@@ -6,7 +6,7 @@ public partial class ExpSys21TaxRate
     public decimal? ViewId { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

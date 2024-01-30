@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppModuleDependencies
 {
-    public decimal ModuleId { get; set; }
-    public decimal RModuleId { get; set; }
-    public string RType { get; set; }
-    public string CallParameters { get; set; }
+    public decimal? ModuleId { get; set; }
+    public decimal? RModuleId { get; set; }
+    public string? RType { get; set; }
+    public string? CallParameters { get; set; }
 
     public virtual AppModules Module { get; set; }
     public virtual AppModules RModule { get; set; }

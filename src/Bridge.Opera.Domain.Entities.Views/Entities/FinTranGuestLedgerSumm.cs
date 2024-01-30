@@ -2,55 +2,55 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinTranGuestLedgerSumm
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ChequeCount { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string FtGeneratedType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? FtGeneratedType { get; set; }
     public decimal? ResvNameId { get; set; }
     public int? FolioView { get; set; }
-    public string FtSubtype { get; set; }
-    public string TclCode1 { get; set; }
-    public string TclCode2 { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? TclCode1 { get; set; }
+    public string? TclCode2 { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? PricePerUnit { get; set; }
     public decimal? Amount { get; set; }
-    public string Currency { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public string UpdateUser { get; set; }
+    public string? Currency { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string ChequeNumber { get; set; }
+    public string? ChequeNumber { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? TranActionId { get; set; }
-    public string BillNo { get; set; }
-    public string RevisionNo { get; set; }
+    public string? BillNo { get; set; }
+    public string? RevisionNo { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string TargetResort { get; set; }
-    public string FolioType { get; set; }
-    public string DeferredTaxesYn { get; set; }
-    public string CheckFileId { get; set; }
+    public string? TargetResort { get; set; }
+    public string? FolioType { get; set; }
+    public string? DeferredTaxesYn { get; set; }
+    public string? CheckFileId { get; set; }
     public decimal? ParallelAmount { get; set; }
     public decimal? ContractAmount { get; set; }
     public DateTime? ChequeDate { get; set; }
-    public string AsbFlag { get; set; }
-    public string DepTaxTransferedYn { get; set; }
-    public string FbaCertificateNumber { get; set; }
+    public string? AsbFlag { get; set; }
+    public string? DepTaxTransferedYn { get; set; }
+    public string? FbaCertificateNumber { get; set; }
     public decimal? RoundLinkTrxno { get; set; }
-    public string DepPostingFlag { get; set; }
+    public string? DepPostingFlag { get; set; }
     public decimal? ReversePaymentTrxNo { get; set; }
-    public string AdvanceBillYn { get; set; }
-    public string AdvanceBillReversedYn { get; set; }
+    public string? AdvanceBillYn { get; set; }
+    public string? AdvanceBillReversedYn { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string GpAwardCode { get; set; }
-    public string GpAwardCancelCode { get; set; }
-    public string GpAwardCancelledYn { get; set; }
-    public string ExchangeDifferenceYn { get; set; }
+    public string? GpAwardCode { get; set; }
+    public string? GpAwardCancelCode { get; set; }
+    public string? GpAwardCancelledYn { get; set; }
+    public string? ExchangeDifferenceYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

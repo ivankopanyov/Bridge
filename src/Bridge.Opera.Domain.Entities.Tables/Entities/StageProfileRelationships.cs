@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileRelationships
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelatedToNameType { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelatedToNameType { get; set; }
     public decimal? RelatedToNameId { get; set; }
-    public string RelatedToName { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? RelatedToName { get; set; }
+    public string? PrimaryYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

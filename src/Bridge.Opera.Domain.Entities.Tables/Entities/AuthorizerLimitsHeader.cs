@@ -7,9 +7,9 @@ public partial class AuthorizerLimitsHeader
         AuthorizerLimitsDetails = new HashSet<AuthorizerLimitsDetails>();
     }
 
-    public decimal AuthHeaderId { get; set; }
-    public string Resort { get; set; }
-    public decimal AuthorizerId { get; set; }
+    public decimal? AuthHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AuthorizerId { get; set; }
     public decimal? CreditLimit { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

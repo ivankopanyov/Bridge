@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class O2hLogView
 {
-    public string MigrationId { get; set; }
-    public decimal LogLine { get; set; }
-    public DateTime EntryTime { get; set; }
-    public string LogTxt { get; set; }
+    public string? MigrationId { get; set; }
+    public decimal? LogLine { get; set; }
+    public DateTime? EntryTime { get; set; }
+    public string? LogTxt { get; set; }
     public decimal? Duration { get; set; }
     public decimal? RowsProcessed { get; set; }
     public decimal? RowsFailed { get; set; }
     public decimal? LogLevel { get; set; }
-    public string LogTxtSearch { get; set; }
+    public string? LogTxtSearch { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

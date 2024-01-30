@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ShResortRateCategory
 {
-    public string Resort { get; set; }
-    public string RateCategory { get; set; }
-    public string LastRoomAvailability { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCategory { get; set; }
+    public string? LastRoomAvailability { get; set; }
     public decimal? DefaultNoOrRooms { get; set; }
-    public string EntitlementsYn { get; set; }
+    public string? EntitlementsYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

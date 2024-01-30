@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReportGroups
 {
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

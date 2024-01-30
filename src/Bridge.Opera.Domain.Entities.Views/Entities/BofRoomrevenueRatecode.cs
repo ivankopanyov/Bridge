@@ -2,42 +2,42 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofRoomrevenueRatecode
 {
-    public string AccountPeriod { get; set; }
-    public string UserName { get; set; }
-    public string TrxCode { get; set; }
-    public string RateCode { get; set; }
-    public string TaxRateString { get; set; }
-    public string TrxDesc { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? AccountPeriod { get; set; }
+    public string? UserName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? TaxRateString { get; set; }
+    public string? TrxDesc { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string GrossDrCrFlag { get; set; }
+    public string? GrossDrCrFlag { get; set; }
     public decimal? NetAmount { get; set; }
-    public string NetDrCrFlag { get; set; }
+    public string? NetDrCrFlag { get; set; }
     public decimal? VatAmount { get; set; }
-    public string VatDrCrFlag { get; set; }
+    public string? VatDrCrFlag { get; set; }
     public decimal? CalcGrossAmount { get; set; }
     public decimal? CalcVatAmount { get; set; }
     public decimal? RevenueAmount { get; set; }
     public decimal? TaxAmount { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string ArInd { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? ArInd { get; set; }
     public decimal? RevBucketId { get; set; }
-    public string CashInd { get; set; }
-    public string ManualPostYn { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string ArrangementCode { get; set; }
+    public string? CashInd { get; set; }
+    public string? ManualPostYn { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? ArrangementCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
-    public string TaxCode { get; set; }
+    public string? TaxCode { get; set; }
     public decimal? TaxNo { get; set; }
     public decimal? BofIntfCode { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode4 { get; set; }
-    public string BofCode5 { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? BofCode5 { get; set; }
     public decimal? BofCode6 { get; set; }
     public decimal? BofCode7 { get; set; }
     public decimal? BofCode8 { get; set; }
@@ -48,16 +48,16 @@ public partial class BofRoomrevenueRatecode
     public DateTime? BofCode13 { get; set; }
     public DateTime? BofCode14 { get; set; }
     public DateTime? BofCode15 { get; set; }
-    public string BofCode16 { get; set; }
-    public string BofCode17 { get; set; }
-    public string BofCode18 { get; set; }
-    public string BofCode19 { get; set; }
-    public string BofCode20 { get; set; }
-    public string BofCode21 { get; set; }
-    public string BofCode22 { get; set; }
-    public string BofCode23 { get; set; }
-    public string BofCode24 { get; set; }
-    public string BofCode25 { get; set; }
+    public string? BofCode16 { get; set; }
+    public string? BofCode17 { get; set; }
+    public string? BofCode18 { get; set; }
+    public string? BofCode19 { get; set; }
+    public string? BofCode20 { get; set; }
+    public string? BofCode21 { get; set; }
+    public string? BofCode22 { get; set; }
+    public string? BofCode23 { get; set; }
+    public string? BofCode24 { get; set; }
+    public string? BofCode25 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

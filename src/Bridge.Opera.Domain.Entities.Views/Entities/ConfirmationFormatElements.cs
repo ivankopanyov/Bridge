@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ConfirmationFormatElements
 {
-    public string FormatType { get; set; }
-    public string FormatElement { get; set; }
+    public string? FormatType { get; set; }
+    public string? FormatElement { get; set; }
     public byte? OrderBy { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

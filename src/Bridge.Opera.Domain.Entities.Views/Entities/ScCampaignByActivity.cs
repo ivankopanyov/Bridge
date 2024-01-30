@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScCampaignByActivity
 {
-    public string Type { get; set; }
-    public decimal ActId { get; set; }
-    public string ActResort { get; set; }
-    public string PrimaryYn { get; set; }
-    public string CampaingProperty { get; set; }
-    public decimal CampaignId { get; set; }
-    public string CampaignName { get; set; }
+    public string? Type { get; set; }
+    public decimal? ActId { get; set; }
+    public string? ActResort { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? CampaingProperty { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? CampaignName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

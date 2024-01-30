@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ImpArAccountDelete
 {
-    public string Resort { get; set; }
-    public string AccountNo { get; set; }
+    public string? Resort { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? ImportId { get; set; }
-    public string ImportTabName { get; set; }
+    public string? ImportTabName { get; set; }
     public DateTime? ImportDate { get; set; }
     public decimal? BatchId { get; set; }
     public decimal? SeqNo { get; set; }
-    public string ImportStatus { get; set; }
+    public string? ImportStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

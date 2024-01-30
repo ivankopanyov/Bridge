@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateSetErrView
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public DateTime RateDate { get; set; }
-    public string RoomCategory { get; set; }
-    public decimal Los { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public DateTime? RateDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public decimal? Los { get; set; }
     public decimal? Amount { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MarketsInt
 {
-    public string Resort { get; set; }
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? Description { get; set; }
     public decimal? SellSequence { get; set; }
-    public string DisplayColor { get; set; }
-    public string InactiveDate { get; set; }
-    public string InActiveYn { get; set; }
+    public string? DisplayColor { get; set; }
+    public string? InactiveDate { get; set; }
+    public string? InActiveYn { get; set; }
     public decimal? ScOrderby { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

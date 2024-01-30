@@ -8,10 +8,10 @@ public partial class ScPkgRevenue1
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? OrderBy { get; set; }
-    public decimal PkgEvLink { get; set; }
-    public decimal PkgPriceLink { get; set; }
-    public string RevenueGroup { get; set; }
-    public string RevenueType { get; set; }
+    public decimal? PkgEvLink { get; set; }
+    public decimal? PkgPriceLink { get; set; }
+    public string? RevenueGroup { get; set; }
+    public string? RevenueType { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

@@ -8,13 +8,13 @@ public partial class ActionTypeSubscription
         ActionTypeSubscriptionWhere = new HashSet<ActionTypeSubscriptionWhere>();
     }
 
-    public string ExtSystemCode { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string UserWhereClause { get; set; }
-    public string WhereClause { get; set; }
-    public string FullOverlayYn { get; set; }
-    public string MandatoryWhereClause { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? UserWhereClause { get; set; }
+    public string? WhereClause { get; set; }
+    public string? FullOverlayYn { get; set; }
+    public string? MandatoryWhereClause { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

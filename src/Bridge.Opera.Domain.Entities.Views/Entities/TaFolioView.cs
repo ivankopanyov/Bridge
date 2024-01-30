@@ -4,20 +4,20 @@ public partial class TaFolioView
 {
     public decimal? ResvNameId { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string RateCode { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public string Currency { get; set; }
-    public string TaCommissionableYn { get; set; }
+    public string? RateCode { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? Currency { get; set; }
+    public string? TaCommissionableYn { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? GuestAccountDebit { get; set; }
-    public string FtSubtype { get; set; }
+    public string? FtSubtype { get; set; }
     public decimal? NetAmount { get; set; }
-    public string TaCommissionNetYn { get; set; }
-    public string SourceCommissionNetYn { get; set; }
+    public string? TaCommissionNetYn { get; set; }
+    public string? SourceCommissionNetYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

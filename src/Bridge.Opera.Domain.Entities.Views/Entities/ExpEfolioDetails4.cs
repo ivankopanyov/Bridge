@@ -6,20 +6,20 @@ public partial class ExpEfolioDetails4
     public decimal? RowSequence { get; set; }
     public decimal? PartySequence { get; set; }
     public decimal? DetailSequence { get; set; }
-    public string ExportType { get; set; }
-    public string Cardnum { get; set; }
-    public string Cardauthcode { get; set; }
-    public string Cardrefnum { get; set; }
-    public string Cardexpirationdate { get; set; }
-    public string Cardtype { get; set; }
-    public string Cardholdername { get; set; }
+    public string? ExportType { get; set; }
+    public string? Cardnum { get; set; }
+    public string? Cardauthcode { get; set; }
+    public string? Cardrefnum { get; set; }
+    public string? Cardexpirationdate { get; set; }
+    public string? Cardtype { get; set; }
+    public string? Cardholdername { get; set; }
     public decimal? Netvalue { get; set; }
     public decimal? Taxvalue { get; set; }
     public decimal? Grossvalue { get; set; }
     public decimal? PaymentAmount { get; set; }
     public DateTime? PaymentDate { get; set; }
-    public string ExpPaymentType { get; set; }
-    public string PaymentTrxDescription { get; set; }
+    public string? ExpPaymentType { get; set; }
+    public string? PaymentTrxDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

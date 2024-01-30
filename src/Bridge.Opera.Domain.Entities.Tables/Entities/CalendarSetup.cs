@@ -2,59 +2,59 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CalendarSetup
 {
-    public DateTime DateId { get; set; }
-    public string AllDates { get; set; }
-    public string AllDatesDesc { get; set; }
-    public DateTime AllEndDate { get; set; }
-    public decimal AllTimeSpan { get; set; }
-    public string YearId { get; set; }
-    public string YearDsc { get; set; }
-    public DateTime YearStartDate { get; set; }
-    public DateTime YearEndDate { get; set; }
-    public decimal YearTimespan { get; set; }
-    public string QuarterId { get; set; }
-    public string QuarterDsc { get; set; }
-    public DateTime QuarterStartDate { get; set; }
-    public DateTime QuarterEndDate { get; set; }
-    public decimal QuarterTimespan { get; set; }
-    public string MonthId { get; set; }
-    public string MonthDsc { get; set; }
-    public DateTime MonthStartDate { get; set; }
-    public DateTime MonthEndDate { get; set; }
-    public decimal MonthTimespan { get; set; }
-    public string MonthName { get; set; }
-    public string DayId { get; set; }
-    public string DayDesc { get; set; }
-    public DateTime DayEndDate { get; set; }
-    public decimal DayTimespan { get; set; }
-    public string Calendar { get; set; }
-    public string CalendarDesc { get; set; }
-    public string Resort { get; set; }
-    public decimal YearIdSeq { get; set; }
-    public string YearType { get; set; }
-    public string Description { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateTime? DateId { get; set; }
+    public string? AllDates { get; set; }
+    public string? AllDatesDesc { get; set; }
+    public DateTime? AllEndDate { get; set; }
+    public decimal? AllTimeSpan { get; set; }
+    public string? YearId { get; set; }
+    public string? YearDsc { get; set; }
+    public DateTime? YearStartDate { get; set; }
+    public DateTime? YearEndDate { get; set; }
+    public decimal? YearTimespan { get; set; }
+    public string? QuarterId { get; set; }
+    public string? QuarterDsc { get; set; }
+    public DateTime? QuarterStartDate { get; set; }
+    public DateTime? QuarterEndDate { get; set; }
+    public decimal? QuarterTimespan { get; set; }
+    public string? MonthId { get; set; }
+    public string? MonthDsc { get; set; }
+    public DateTime? MonthStartDate { get; set; }
+    public DateTime? MonthEndDate { get; set; }
+    public decimal? MonthTimespan { get; set; }
+    public string? MonthName { get; set; }
+    public string? DayId { get; set; }
+    public string? DayDesc { get; set; }
+    public DateTime? DayEndDate { get; set; }
+    public decimal? DayTimespan { get; set; }
+    public string? Calendar { get; set; }
+    public string? CalendarDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? YearIdSeq { get; set; }
+    public string? YearType { get; set; }
+    public string? Description { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? Year { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public decimal? DayOfYear { get; set; }
     public decimal? DayNoOfQuarter { get; set; }
     public decimal? DayNoOfMonth { get; set; }
-    public string WeekOfYear { get; set; }
+    public string? WeekOfYear { get; set; }
     public decimal? MonthOfYear { get; set; }
     public decimal? MonthOfQuarter { get; set; }
     public decimal? QuarterOfYear { get; set; }
-    public string MonthYrId { get; set; }
-    public string DayNoOfWeek { get; set; }
-    public string WeekDesc { get; set; }
+    public string? MonthYrId { get; set; }
+    public string? DayNoOfWeek { get; set; }
+    public string? WeekDesc { get; set; }
     public DateTime? WeekEndDate { get; set; }
-    public string WeekEndDateDesc { get; set; }
-    public string WeekEndId { get; set; }
-    public string WeekEndMonthDesc { get; set; }
+    public string? WeekEndDateDesc { get; set; }
+    public string? WeekEndId { get; set; }
+    public string? WeekEndMonthDesc { get; set; }
     public DateTime? WeekEndMonthEndDate { get; set; }
-    public string WeekId { get; set; }
-    public string WeekOfMonth { get; set; }
+    public string? WeekId { get; set; }
+    public string? WeekOfMonth { get; set; }
     public decimal? WeekTimespan { get; set; }
     public DateTime? WeekStartDate { get; set; }
 

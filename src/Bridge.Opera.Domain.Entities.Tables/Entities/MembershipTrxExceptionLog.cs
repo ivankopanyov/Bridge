@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTrxExceptionLog
 {
-    public decimal MembershipTrxId { get; set; }
-    public string ExceptionType { get; set; }
-    public decimal RelatedTrxId { get; set; }
-    public string ProcessingMsg { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public string? ExceptionType { get; set; }
+    public decimal? RelatedTrxId { get; set; }
+    public string? ProcessingMsg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

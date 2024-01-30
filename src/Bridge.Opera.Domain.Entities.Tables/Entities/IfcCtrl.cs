@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcCtrl
 {
-    public decimal RowId { get; set; }
-    public string IfcMenu { get; set; }
-    public string IfcType { get; set; }
-    public string Active { get; set; }
-    public string Name { get; set; }
-    public string Version { get; set; }
-    public string FktLogo { get; set; }
-    public string DbfLogo { get; set; }
+    public decimal? RowId { get; set; }
+    public string? IfcMenu { get; set; }
+    public string? IfcType { get; set; }
+    public string? Active { get; set; }
+    public string? Name { get; set; }
+    public string? Version { get; set; }
+    public string? FktLogo { get; set; }
+    public string? DbfLogo { get; set; }
     public decimal? ShellNum { get; set; }
-    public string Ch1 { get; set; }
-    public string Ch2 { get; set; }
-    public string Ch3 { get; set; }
-    public string Ch4 { get; set; }
-    public string InXlatId { get; set; }
-    public string OuXlatId { get; set; }
-    public string Features { get; set; }
-    public string Command { get; set; }
+    public string? Ch1 { get; set; }
+    public string? Ch2 { get; set; }
+    public string? Ch3 { get; set; }
+    public string? Ch4 { get; set; }
+    public string? InXlatId { get; set; }
+    public string? OuXlatId { get; set; }
+    public string? Features { get; set; }
+    public string? Command { get; set; }
     public decimal? PathId1 { get; set; }
     public decimal? PathId2 { get; set; }
     public decimal? PathId3 { get; set; }
     public decimal? PathId4 { get; set; }
-    public string SerialNum { get; set; }
+    public string? SerialNum { get; set; }
     public byte? Ifcnumber { get; set; }
-    public string ArticleNoPrefix { get; set; }
-    public string Acct { get; set; }
+    public string? ArticleNoPrefix { get; set; }
+    public string? Acct { get; set; }
     public decimal? Charge { get; set; }
-    public string Dc1 { get; set; }
-    public string Dc2 { get; set; }
-    public string CallAcct { get; set; }
-    public string WakeType { get; set; }
+    public string? Dc1 { get; set; }
+    public string? Dc2 { get; set; }
+    public string? CallAcct { get; set; }
+    public string? WakeType { get; set; }
     public decimal? WakeKeep { get; set; }
     public decimal? WakeMax { get; set; }
     public decimal? Recvbufsiz { get; set; }
@@ -42,42 +42,42 @@ public partial class IfcCtrl
     public decimal? WakeStart { get; set; }
     public decimal? WakeStop { get; set; }
     public decimal? WakeRes { get; set; }
-    public string WakeParam { get; set; }
-    public string CmdValid { get; set; }
+    public string? WakeParam { get; set; }
+    public string? CmdValid { get; set; }
     public DateTime? InitDate { get; set; }
     public decimal? CashierNr { get; set; }
-    public string MenuName { get; set; }
+    public string? MenuName { get; set; }
     public byte? Xpos { get; set; }
     public byte? Ypos { get; set; }
     public DateTime? AliveDate { get; set; }
-    public string CommAlarm { get; set; }
-    public string CommText { get; set; }
+    public string? CommAlarm { get; set; }
+    public string? CommText { get; set; }
     public decimal? FoServerJobId { get; set; }
-    public string TaxGenerateYn { get; set; }
+    public string? TaxGenerateYn { get; set; }
     public decimal? FoServerJobProcesses { get; set; }
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
-    public string DbfSwap { get; set; }
-    public string Ip { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
+    public string? DbfSwap { get; set; }
+    public string? Ip { get; set; }
     public decimal? Conversion { get; set; }
-    public string VnPools { get; set; }
-    public string Timeout { get; set; }
+    public string? VnPools { get; set; }
+    public string? Timeout { get; set; }
     public decimal? ScreenX { get; set; }
     public decimal? ScreenY { get; set; }
     public decimal? Prevwake { get; set; }
-    public string ForceAuthorizationYn { get; set; }
-    public string ResvAuthRequiredYn { get; set; }
+    public string? ForceAuthorizationYn { get; set; }
+    public string? ResvAuthRequiredYn { get; set; }
     public decimal? PingTime { get; set; }
     public decimal? PingRetry { get; set; }
-    public string IfcStatus { get; set; }
+    public string? IfcStatus { get; set; }
     public decimal? MachineId { get; set; }
-    public string DisplayMode { get; set; }
-    public string AutoStartYn { get; set; }
+    public string? DisplayMode { get; set; }
+    public string? AutoStartYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string IfcFktLogo { get; set; }
+    public string? IfcFktLogo { get; set; }
     public decimal? DeviceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OedsServiceRegistry
 {
-    public string ServiceName { get; set; }
-    public string MachineName { get; set; }
+    public string? ServiceName { get; set; }
+    public string? MachineName { get; set; }
     public DateTime? LastUpdateTime { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

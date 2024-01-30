@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaCheckListing
 {
-    public string Resort { get; set; }
-    public decimal AccountId { get; set; }
-    public string ChkCurrency { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? ChkCurrency { get; set; }
     public decimal? CheckNo { get; set; }
     public DateTime? CheckDate { get; set; }
-    public string ReferenceNo { get; set; }
-    public string Payee { get; set; }
-    public string ClearedYn { get; set; }
-    public string Status { get; set; }
+    public string? ReferenceNo { get; set; }
+    public string? Payee { get; set; }
+    public string? ClearedYn { get; set; }
+    public string? Status { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? Void { get; set; }
     public decimal? Closed { get; set; }

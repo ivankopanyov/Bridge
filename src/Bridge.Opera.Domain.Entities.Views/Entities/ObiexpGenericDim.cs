@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpGenericDim
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string TableName { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
-    public string AllKey { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Key1 { get; set; }
-    public string Code1 { get; set; }
-    public string Desc1 { get; set; }
-    public string Attribute11 { get; set; }
-    public string Attribute12 { get; set; }
-    public string Attribute13 { get; set; }
-    public string Attribute14 { get; set; }
-    public string Attribute15 { get; set; }
-    public string Key2 { get; set; }
-    public string Code2 { get; set; }
-    public string Desc2 { get; set; }
-    public string Attribute21 { get; set; }
-    public string Attribute22 { get; set; }
-    public string Attribute23 { get; set; }
-    public string Attribute24 { get; set; }
-    public string Attribute25 { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? TableName { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public string? AllKey { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Key1 { get; set; }
+    public string? Code1 { get; set; }
+    public string? Desc1 { get; set; }
+    public string? Attribute11 { get; set; }
+    public string? Attribute12 { get; set; }
+    public string? Attribute13 { get; set; }
+    public string? Attribute14 { get; set; }
+    public string? Attribute15 { get; set; }
+    public string? Key2 { get; set; }
+    public string? Code2 { get; set; }
+    public string? Desc2 { get; set; }
+    public string? Attribute21 { get; set; }
+    public string? Attribute22 { get; set; }
+    public string? Attribute23 { get; set; }
+    public string? Attribute24 { get; set; }
+    public string? Attribute25 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

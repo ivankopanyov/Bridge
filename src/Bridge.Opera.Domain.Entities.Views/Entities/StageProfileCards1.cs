@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class StageProfileCards1
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string CreditCardType { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string CreditCardName { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditCardName { get; set; }
     public DateTime? Creditcardbegindate { get; set; }
     public DateTime? CreditCardExpirationDate { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CreditCardExpirationStr { get; set; }
-    public string CreditCardNumberStr { get; set; }
-    public string CreditCardNumber4Digits { get; set; }
-    public string VaultId { get; set; }
-    public string EncCreditCardNumber { get; set; }
-    public string Rowidx { get; set; }
+    public string? CreditCardExpirationStr { get; set; }
+    public string? CreditCardNumberStr { get; set; }
+    public string? CreditCardNumber4Digits { get; set; }
+    public string? VaultId { get; set; }
+    public string? EncCreditCardNumber { get; set; }
+    public string? Rowidx { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

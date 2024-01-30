@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchHeader
 {
-    public string JobNameId { get; set; }
-    public string JobName { get; set; }
-    public string JobNameTitle { get; set; }
-    public string Command { get; set; }
+    public string? JobNameId { get; set; }
+    public string? JobName { get; set; }
+    public string? JobNameTitle { get; set; }
+    public string? Command { get; set; }
     public decimal? CommandUser { get; set; }
-    public string MsgLogFlg { get; set; }
+    public string? MsgLogFlg { get; set; }
     public decimal? DebugLogLevel { get; set; }
-    public string InitUser { get; set; }
+    public string? InitUser { get; set; }
     public byte[] Password { get; set; }
-    public string InitResort { get; set; }
-    public string InitApplication { get; set; }
-    public string InitCro { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ActionText { get; set; }
-    public string JobProcCode { get; set; }
-    public string ResortRegistered { get; set; }
-    public string CroRegistered { get; set; }
-    public string ChainCode { get; set; }
-    public string Comments { get; set; }
-    public string UserComments { get; set; }
+    public string? InitResort { get; set; }
+    public string? InitApplication { get; set; }
+    public string? InitCro { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ActionText { get; set; }
+    public string? JobProcCode { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? CroRegistered { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Comments { get; set; }
+    public string? UserComments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

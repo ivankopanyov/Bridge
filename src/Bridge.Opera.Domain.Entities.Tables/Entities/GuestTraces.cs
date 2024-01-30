@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestTraces
 {
-    public decimal TraceId { get; set; }
-    public string DeptId { get; set; }
-    public DateTime TraceDate { get; set; }
-    public string EnteredBy { get; set; }
-    public string TraceText { get; set; }
-    public string TraceType { get; set; }
-    public string InternalYn { get; set; }
-    public string RuleCode { get; set; }
-    public string ExternalTraceId { get; set; }
+    public decimal? TraceId { get; set; }
+    public string? DeptId { get; set; }
+    public DateTime? TraceDate { get; set; }
+    public string? EnteredBy { get; set; }
+    public string? TraceText { get; set; }
+    public string? TraceType { get; set; }
+    public string? InternalYn { get; set; }
+    public string? RuleCode { get; set; }
+    public string? ExternalTraceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

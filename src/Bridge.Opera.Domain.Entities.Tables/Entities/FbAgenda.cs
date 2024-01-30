@@ -9,24 +9,24 @@ public partial class FbAgenda
         FbAgendaRevenue = new HashSet<FbAgendaRevenue>();
     }
 
-    public decimal FbaId { get; set; }
-    public string Resort { get; set; }
-    public decimal Bookid { get; set; }
-    public string FbaName { get; set; }
-    public string EvType { get; set; }
-    public DateTime FbaDate { get; set; }
+    public decimal? FbaId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Bookid { get; set; }
+    public string? FbaName { get; set; }
+    public string? EvType { get; set; }
+    public DateTime? FbaDate { get; set; }
     public decimal? FbaDay { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? FbaBudget { get; set; }
-    public string RoomType { get; set; }
-    public string RoomSetup { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomSetup { get; set; }
     public byte? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string DownloadResort { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? DownloadResort { get; set; }
     public decimal? DownloadSrep { get; set; }
     public DateTime? DownloadDate { get; set; }
     public DateTime? UploadDate { get; set; }

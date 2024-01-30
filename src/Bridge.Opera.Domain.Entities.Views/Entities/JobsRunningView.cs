@@ -5,20 +5,20 @@ public partial class JobsRunningView
     public decimal? InstId { get; set; }
     public decimal? Sid { get; set; }
     public decimal? Job { get; set; }
-    public string SchemaOwner { get; set; }
-    public string What { get; set; }
+    public string? SchemaOwner { get; set; }
+    public string? What { get; set; }
     public decimal? Failures { get; set; }
     public DateTime? LastDate { get; set; }
-    public string LastSec { get; set; }
+    public string? LastSec { get; set; }
     public DateTime? ThisDate { get; set; }
-    public string ThisSec { get; set; }
+    public string? ThisSec { get; set; }
     public decimal? Instance { get; set; }
-    public string Owner { get; set; }
+    public string? Owner { get; set; }
     public DateTime? NextDate { get; set; }
-    public string Interval { get; set; }
-    public string Broken { get; set; }
+    public string? Interval { get; set; }
+    public string? Broken { get; set; }
     public decimal? TotalTime { get; set; }
-    public string NlsEnv { get; set; }
+    public string? NlsEnv { get; set; }
     public byte[] MiscEnv { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PromotionPayType
 {
-    public string Resort { get; set; }
-    public string PromoCode { get; set; }
-    public string CardType { get; set; }
+    public string? Resort { get; set; }
+    public string? PromoCode { get; set; }
+    public string? CardType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

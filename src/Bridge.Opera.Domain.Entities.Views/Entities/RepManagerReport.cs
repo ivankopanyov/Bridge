@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepManagerReport
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? GuestDay { get; set; }
     public decimal? RmsRevDay { get; set; }
     public decimal? RoomsDay { get; set; }

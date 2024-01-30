@@ -5,7 +5,7 @@ public partial class ExpConNegotiatiedRate
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
 

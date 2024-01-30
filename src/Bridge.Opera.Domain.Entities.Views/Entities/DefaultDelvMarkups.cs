@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DefaultDelvMarkups
 {
-    public string DeliveryType { get; set; }
-    public string MarkupType { get; set; }
-    public string MarkupScript { get; set; }
+    public string? DeliveryType { get; set; }
+    public string? MarkupType { get; set; }
+    public string? MarkupScript { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

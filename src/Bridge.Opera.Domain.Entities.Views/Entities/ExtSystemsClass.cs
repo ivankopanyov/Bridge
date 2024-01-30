@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExtSystemsClass
 {
-    public string InterfaceId { get; set; }
-    public string SystemType { get; set; }
-    public string SystemClass { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? SystemType { get; set; }
+    public string? SystemClass { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

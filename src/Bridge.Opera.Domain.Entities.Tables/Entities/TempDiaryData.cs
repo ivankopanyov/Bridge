@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempDiaryData
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRhmRoomTypeDimVw
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomClassDesc { get; set; }
-    public string RoomCategoryCode { get; set; }
-    public string RoomCategoryDesc { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ShortDescription { get; set; }
-    public string RoomClassCent { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomClassDesc { get; set; }
+    public string? RoomCategoryCode { get; set; }
+    public string? RoomCategoryDesc { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? RoomClassCent { get; set; }
     public decimal? OrderBy { get; set; }
-    public string PseudoYn { get; set; }
-    public string ResortId { get; set; }
-    public string RoomClassKey { get; set; }
-    public string RoomCategoryCodeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? ResortId { get; set; }
+    public string? RoomClassKey { get; set; }
+    public string? RoomCategoryCodeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

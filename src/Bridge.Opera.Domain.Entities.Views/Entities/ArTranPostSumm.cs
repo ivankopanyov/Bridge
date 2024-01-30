@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArTranPostSumm
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ArNumber { get; set; }
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? FolioNo { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? FinActionId { get; set; }
-    public string FinActionDesc { get; set; }
-    public string FinActionEvent { get; set; }
-    public string ReasonCode { get; set; }
+    public string? FinActionDesc { get; set; }
+    public string? FinActionEvent { get; set; }
+    public string? ReasonCode { get; set; }
     public DateTime? InsDateTz { get; set; }
     public DateTime? InsTimeTz { get; set; }
 

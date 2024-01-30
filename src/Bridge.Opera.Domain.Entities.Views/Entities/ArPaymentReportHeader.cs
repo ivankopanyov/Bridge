@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArPaymentReportHeader
 {
-    public decimal PaymentTrx { get; set; }
+    public decimal? PaymentTrx { get; set; }
     public decimal? ArNumber { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
-    public string GuestName { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? GuestName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? PaidAmount { get; set; }
-    public string AppUser { get; set; }
-    public string Reference { get; set; }
-    public string Currency { get; set; }
+    public string? AppUser { get; set; }
+    public string? Reference { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? PricePerUnit { get; set; }

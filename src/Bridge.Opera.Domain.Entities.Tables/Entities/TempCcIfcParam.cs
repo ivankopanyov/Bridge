@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class TempCcIfcParam
 {
     public decimal? Seq { get; set; }
-    public string ParamName { get; set; }
-    public string ParamValue { get; set; }
+    public string? ParamName { get; set; }
+    public string? ParamValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinTranPkgPostings
 {
-    public string Srs { get; set; }
+    public string? Srs { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string RateCode { get; set; }
-    public string Product { get; set; }
-    public string ProductDesc { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? RateCode { get; set; }
+    public string? Product { get; set; }
+    public string? ProductDesc { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? BusinessDate { get; set; }
@@ -24,9 +24,9 @@ public partial class FinTranPkgPostings
     public decimal? Children { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? ToResvNameId { get; set; }
-    public string FromRoom { get; set; }
-    public string TakenFromRoom { get; set; }
-    public string ConsumeOthers { get; set; }
+    public string? FromRoom { get; set; }
+    public string? TakenFromRoom { get; set; }
+    public string? ConsumeOthers { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? FtResvNameId { get; set; }
 

@@ -10,28 +10,28 @@ public partial class Taskitems
 
     public decimal? EstTime { get; set; }
     public DateTime? LastGeneratedDate { get; set; }
-    public string DeptId { get; set; }
-    public string TypeCode { get; set; }
+    public string? DeptId { get; set; }
+    public string? TypeCode { get; set; }
     public DateTime? FirstDueDate { get; set; }
-    public string Frequency { get; set; }
+    public string? Frequency { get; set; }
     public DateTime? LastMaintDate { get; set; }
     public decimal? MaintainedBy { get; set; }
     public DateTime? NextMaintDate { get; set; }
-    public string InHouseYn { get; set; }
-    public decimal TaskitemNumber { get; set; }
-    public string Notes { get; set; }
+    public string? InHouseYn { get; set; }
+    public decimal? TaskitemNumber { get; set; }
+    public string? Notes { get; set; }
     public decimal? PreAssignedTo { get; set; }
-    public string Resort { get; set; }
-    public decimal TaskCode { get; set; }
-    public string PlantItemCode { get; set; }
-    public string EstUotCode { get; set; }
-    public string FolderName { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaskCode { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? EstUotCode { get; set; }
+    public string? FolderName { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Purpose { get; set; }
+    public string? Purpose { get; set; }
     public decimal? Duration { get; set; }
-    public string DurationTimeCode { get; set; }
-    public string PrivateYn { get; set; }
+    public string? DurationTimeCode { get; set; }
+    public string? PrivateYn { get; set; }
 
     public virtual PlantItems PlantItems { get; set; }
     public virtual TaskitemsFolder TaskitemsFolder { get; set; }

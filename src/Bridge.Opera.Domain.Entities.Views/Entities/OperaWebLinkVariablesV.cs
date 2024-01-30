@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaWebLinkVariablesV
 {
-    public string VariableName { get; set; }
-    public string VariableDescription { get; set; }
-    public string ScreenAccess { get; set; }
-    public string WebLinkVariable { get; set; }
+    public string? VariableName { get; set; }
+    public string? VariableDescription { get; set; }
+    public string? ScreenAccess { get; set; }
+    public string? WebLinkVariable { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

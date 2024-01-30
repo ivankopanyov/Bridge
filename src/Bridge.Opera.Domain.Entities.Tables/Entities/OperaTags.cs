@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaTags
 {
-    public decimal TagId { get; set; }
-    public string TagName { get; set; }
-    public string MappingColumn { get; set; }
-    public string DefaultValue { get; set; }
-    public string TagType { get; set; }
+    public decimal? TagId { get; set; }
+    public string? TagName { get; set; }
+    public string? MappingColumn { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? TagType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

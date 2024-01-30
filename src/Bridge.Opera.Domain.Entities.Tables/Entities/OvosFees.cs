@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosFees
 {
-    public string Resort { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string Frequency { get; set; }
-    public string Formula { get; set; }
+    public string? Resort { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? Frequency { get; set; }
+    public string? Formula { get; set; }
     public decimal? Amount { get; set; }
-    public string TrxCode { get; set; }
-    public string AutoPost { get; set; }
+    public string? TrxCode { get; set; }
+    public string? AutoPost { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string PostTo { get; set; }
-    public string OccupiedBy { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? PostTo { get; set; }
+    public string? OccupiedBy { get; set; }
     public decimal? AccountCode { get; set; }
-    public string Schedule { get; set; }
-    public string AfterSplitYn { get; set; }
+    public string? Schedule { get; set; }
+    public string? AfterSplitYn { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
     public virtual TrxCodes TrxCodes { get; set; }

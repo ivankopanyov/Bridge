@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipResorts
 {
-    public string MembershipType { get; set; }
-    public string InternalRefValue { get; set; }
-    public string ExternalRefType { get; set; }
-    public string ExternalRefValue { get; set; }
+    public string? MembershipType { get; set; }
+    public string? InternalRefValue { get; set; }
+    public string? ExternalRefType { get; set; }
+    public string? ExternalRefValue { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

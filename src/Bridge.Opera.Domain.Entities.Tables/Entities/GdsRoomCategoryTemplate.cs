@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRoomCategoryTemplate
 {
-    public string GdsHost { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public string Description { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string RotationGroup { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? RotationGroup { get; set; }
 
     public virtual GdsHosts GdsHostNavigation { get; set; }
 

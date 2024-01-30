@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcAcct
 {
-    public string Resort { get; set; }
-    public string Selector { get; set; }
-    public string Acct { get; set; }
-    public string Text { get; set; }
-    public string DbfLogo { get; set; }
-    public string Flag { get; set; }
+    public string? Resort { get; set; }
+    public string? Selector { get; set; }
+    public string? Acct { get; set; }
+    public string? Text { get; set; }
+    public string? DbfLogo { get; set; }
+    public string? Flag { get; set; }
     public decimal? Id { get; set; }
-    public string SalesOutlet { get; set; }
+    public string? SalesOutlet { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

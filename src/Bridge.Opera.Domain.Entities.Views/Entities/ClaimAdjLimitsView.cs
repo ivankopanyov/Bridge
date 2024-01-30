@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ClaimAdjLimitsView
 {
-    public string ClaimAdjLimitCode { get; set; }
+    public string? ClaimAdjLimitCode { get; set; }
     public decimal? AwPtsLowerLimit { get; set; }
     public decimal? AwPtsUpperLimit { get; set; }
     public decimal? TierPtsStayLowerLimit { get; set; }
@@ -11,8 +11,8 @@ public partial class ClaimAdjLimitsView
     public decimal? TierPtsNightsUpperLimit { get; set; }
     public decimal? TierPtsRevLowerLimit { get; set; }
     public decimal? TierPtsRevUpperLimit { get; set; }
-    public string BillingGroup { get; set; }
-    public string Resorts { get; set; }
+    public string? BillingGroup { get; set; }
+    public string? Resorts { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

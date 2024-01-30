@@ -10,27 +10,27 @@ public partial class WorkDocCcFolioList
     public decimal? RevisionNumberMerchant { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? LedgerAmount { get; set; }
-    public string ApprovalCode { get; set; }
-    public string CreditCardType { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string CreditTransType { get; set; }
+    public string? ApprovalCode { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditTransType { get; set; }
     public decimal? ApprovalAmount { get; set; }
-    public string MerchantNumberMerchant { get; set; }
-    public string ExpiryDateMerchant { get; set; }
-    public string RespRef { get; set; }
-    public string RespType { get; set; }
-    public string TrxAmountMask { get; set; }
-    public string ApprovalAmountMask { get; set; }
-    public string CcCurrencyCode { get; set; }
+    public string? MerchantNumberMerchant { get; set; }
+    public string? ExpiryDateMerchant { get; set; }
+    public string? RespRef { get; set; }
+    public string? RespType { get; set; }
+    public string? TrxAmountMask { get; set; }
+    public string? ApprovalAmountMask { get; set; }
+    public string? CcCurrencyCode { get; set; }
     public decimal? CcExchangeRate { get; set; }
-    public string CcCurrencyAmount { get; set; }
+    public string? CcCurrencyAmount { get; set; }
     public decimal? DccReceiptNo { get; set; }
     public decimal? InstallmentsMerchant { get; set; }
-    public string PromotionalText1 { get; set; }
-    public string PromotionalText2 { get; set; }
-    public string CurrencyCodeMerchant { get; set; }
+    public string? PromotionalText1 { get; set; }
+    public string? PromotionalText2 { get; set; }
+    public string? CurrencyCodeMerchant { get; set; }
     public decimal? SettlementAmountFc { get; set; }
-    public string SettlementAmountFcMask { get; set; }
+    public string? SettlementAmountFcMask { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

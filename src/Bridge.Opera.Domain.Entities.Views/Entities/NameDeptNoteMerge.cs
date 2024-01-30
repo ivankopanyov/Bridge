@@ -2,42 +2,42 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameDeptNoteMerge
 {
-    public decimal FromNoteId { get; set; }
-    public decimal FromNameId { get; set; }
-    public string FromNoteCode { get; set; }
-    public string FromResort { get; set; }
-    public string FromShortNote { get; set; }
-    public string FromLongNote { get; set; }
+    public decimal? FromNoteId { get; set; }
+    public decimal? FromNameId { get; set; }
+    public string? FromNoteCode { get; set; }
+    public string? FromResort { get; set; }
+    public string? FromShortNote { get; set; }
+    public string? FromLongNote { get; set; }
     public DateTime? FromApprovalSubDate { get; set; }
     public DateTime? FromApprovalDate { get; set; }
     public decimal? FromApprovalUserId { get; set; }
-    public string FromResortLastUpdated { get; set; }
+    public string? FromResortLastUpdated { get; set; }
     public DateTime? FromInsertDate { get; set; }
     public decimal? FromInsertUser { get; set; }
     public DateTime? FromUpdateDate { get; set; }
     public decimal? FromUpdateUser { get; set; }
-    public string FromStatusFlg { get; set; }
+    public string? FromStatusFlg { get; set; }
     public DateTime? FromInactiveDate { get; set; }
-    public string FromSharedYn { get; set; }
-    public string FromDescStatus { get; set; }
-    public decimal ToNoteId { get; set; }
-    public decimal ToNameId { get; set; }
-    public string ToNoteCode { get; set; }
-    public string ToResort { get; set; }
-    public string ToShortNote { get; set; }
-    public string ToLongNote { get; set; }
+    public string? FromSharedYn { get; set; }
+    public string? FromDescStatus { get; set; }
+    public decimal? ToNoteId { get; set; }
+    public decimal? ToNameId { get; set; }
+    public string? ToNoteCode { get; set; }
+    public string? ToResort { get; set; }
+    public string? ToShortNote { get; set; }
+    public string? ToLongNote { get; set; }
     public DateTime? ToApprovalSubDate { get; set; }
     public DateTime? ToApprovalDate { get; set; }
     public decimal? ToApprovalUserId { get; set; }
-    public string ToResortLastUpdated { get; set; }
+    public string? ToResortLastUpdated { get; set; }
     public DateTime? ToInsertDate { get; set; }
     public decimal? ToInsertUser { get; set; }
     public DateTime? ToUpdateDate { get; set; }
     public decimal? ToUpdateUser { get; set; }
-    public string ToStatusFlg { get; set; }
+    public string? ToStatusFlg { get; set; }
     public DateTime? ToInactiveDate { get; set; }
-    public string ToSharedYn { get; set; }
-    public string ToDescStatus { get; set; }
+    public string? ToSharedYn { get; set; }
+    public string? ToDescStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

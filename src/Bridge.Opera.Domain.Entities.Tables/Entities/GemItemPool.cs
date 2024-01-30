@@ -7,13 +7,13 @@ public partial class GemItemPool
         GemItem = new HashSet<GemItem>();
     }
 
-    public decimal ItemPoolId { get; set; }
-    public string ItemPoolCode { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
+    public decimal? ItemPoolId { get; set; }
+    public string? ItemPoolCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertTs { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertTs { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateTs { get; set; }
     public decimal? UpdateUser { get; set; }
 

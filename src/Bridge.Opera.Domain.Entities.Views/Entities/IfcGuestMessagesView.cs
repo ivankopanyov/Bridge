@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcGuestMessagesView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public decimal Msgid { get; set; }
-    public DateTime Msgdate { get; set; }
-    public string Msgtime { get; set; }
-    public string Room { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public decimal? Msgid { get; set; }
+    public DateTime? Msgdate { get; set; }
+    public string? Msgtime { get; set; }
+    public string? Room { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? GroupId { get; set; }
-    public string Recipient { get; set; }
-    public string RecipientSearch { get; set; }
-    public string Operator { get; set; }
-    public string ReceivedBy { get; set; }
-    public string MsgType { get; set; }
-    public string MsgStatus { get; set; }
-    public string StatusDescription { get; set; }
-    public string PrintedStatus { get; set; }
-    public string MessageText { get; set; }
-    public string RoomResort { get; set; }
-    public string RgvResort { get; set; }
+    public string? Recipient { get; set; }
+    public string? RecipientSearch { get; set; }
+    public string? Operator { get; set; }
+    public string? ReceivedBy { get; set; }
+    public string? MsgType { get; set; }
+    public string? MsgStatus { get; set; }
+    public string? StatusDescription { get; set; }
+    public string? PrintedStatus { get; set; }
+    public string? MessageText { get; set; }
+    public string? RoomResort { get; set; }
+    public string? RgvResort { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
 

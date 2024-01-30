@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepProdRmsCatRows
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? EventId { get; set; }
-    public string BbStatus { get; set; }
-    public string BbCreditStatusYn { get; set; }
-    public string BbStatusChgDate { get; set; }
-    public string EvStatus { get; set; }
-    public string EvCreditStatusYn { get; set; }
-    public string EvStatusChgDate { get; set; }
+    public string? BbStatus { get; set; }
+    public string? BbCreditStatusYn { get; set; }
+    public string? BbStatusChgDate { get; set; }
+    public string? EvStatus { get; set; }
+    public string? EvCreditStatusYn { get; set; }
+    public string? EvStatusChgDate { get; set; }
     public decimal? BbNigthsTot { get; set; }
     public decimal? BbNigthsChg { get; set; }
     public decimal? BbRevenueTot { get; set; }

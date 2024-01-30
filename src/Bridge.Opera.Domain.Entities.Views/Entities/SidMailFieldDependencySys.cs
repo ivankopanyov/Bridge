@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMailFieldDependencySys
 {
-    public decimal FieldId { get; set; }
-    public decimal DependentFieldId { get; set; }
-    public string Param1 { get; set; }
-    public string Param2 { get; set; }
-    public string Param3 { get; set; }
+    public decimal? FieldId { get; set; }
+    public decimal? DependentFieldId { get; set; }
+    public string? Param1 { get; set; }
+    public string? Param2 { get; set; }
+    public string? Param3 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

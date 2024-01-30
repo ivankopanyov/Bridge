@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpHouseUseDay
 {
     public DateTime? BusinessDate { get; set; }
-    public string GuestLastName { get; set; }
-    public string Room { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? Room { get; set; }
     public decimal? Sequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

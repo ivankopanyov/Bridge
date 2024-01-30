@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiResvHistoryFactVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string MarketCode { get; set; }
-    public string RoomType { get; set; }
-    public string Country { get; set; }
-    public string RateCode { get; set; }
-    public string SourceCode { get; set; }
-    public string Rtc { get; set; }
-    public string Channel { get; set; }
-    public string ResInsertSource { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? Country { get; set; }
+    public string? RateCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Rtc { get; set; }
+    public string? Channel { get; set; }
+    public string? ResInsertSource { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? StayAdults { get; set; }
     public decimal? StayChildren { get; set; }

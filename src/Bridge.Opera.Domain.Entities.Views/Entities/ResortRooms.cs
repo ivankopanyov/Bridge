@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortRooms
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string RoomClass { get; set; }
-    public string Description { get; set; }
-    public string RoomStatus { get; set; }
-    public string Floor { get; set; }
-    public string Feature { get; set; }
-    public string FoStatus { get; set; }
-    public string MeetingroomYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Description { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? Floor { get; set; }
+    public string? Feature { get; set; }
+    public string? FoStatus { get; set; }
+    public string? MeetingroomYn { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? OrderBy2 { get; set; }
     public decimal? OrderBy3 { get; set; }
     public decimal? OrderBy4 { get; set; }
     public decimal? OrderBy5 { get; set; }
-    public string PseudoYn { get; set; }
-    public string RoomCategoryPseudoYn { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? RoomCategoryPseudoYn { get; set; }
     public decimal? RoomReservationStatus { get; set; }
     public decimal? RoomImageId { get; set; }
     public decimal? RoomCategoryImageId { get; set; }
     public decimal? NoOfBeds { get; set; }
-    public string MeetingroomType { get; set; }
-    public string Building { get; set; }
-    public string ComboYn { get; set; }
-    public string ComboElementYn { get; set; }
-    public string ShareableYn { get; set; }
-    public string ForceAlternateYn { get; set; }
-    public string WebBookingYn { get; set; }
-    public string DiaryName { get; set; }
+    public string? MeetingroomType { get; set; }
+    public string? Building { get; set; }
+    public string? ComboYn { get; set; }
+    public string? ComboElementYn { get; set; }
+    public string? ShareableYn { get; set; }
+    public string? ForceAlternateYn { get; set; }
+    public string? WebBookingYn { get; set; }
+    public string? DiaryName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

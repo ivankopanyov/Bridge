@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IntPerfHistoryData
 {
     public decimal? ConsolidationDay { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string Module { get; set; }
-    public string MessageType { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? Module { get; set; }
+    public string? MessageType { get; set; }
     public decimal? AvgTotTimeSec { get; set; }
     public decimal? AvgBufferGets { get; set; }
     public decimal? AvgCpuTimeSec { get; set; }

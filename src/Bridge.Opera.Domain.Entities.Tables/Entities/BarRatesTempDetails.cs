@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BarRatesTempDetails
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime RateDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? RateDate { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? RateableValue { get; set; }
     public decimal? BaseAmount { get; set; }

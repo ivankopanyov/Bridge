@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidPreferencesChn
 {
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Description { get; set; }
-    public string CrsPreferenceYn { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public string? CrsPreferenceYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string OwsAllowedYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? OwsAllowedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

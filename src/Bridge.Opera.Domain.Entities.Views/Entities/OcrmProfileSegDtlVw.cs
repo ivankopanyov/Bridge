@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmProfileSegDtlVw
 {
-    public decimal RecordId { get; set; }
-    public decimal SegBatchId { get; set; }
-    public string RecordLocator { get; set; }
+    public decimal? RecordId { get; set; }
+    public decimal? SegBatchId { get; set; }
+    public string? RecordLocator { get; set; }
     public decimal? OcrmProfileId { get; set; }
     public decimal? NameId { get; set; }
-    public string DisplayName { get; set; }
-    public string NameTypeDesc { get; set; }
-    public string EspRecordLocator { get; set; }
-    public string TargetEmail { get; set; }
-    public string TargetEmailFormatType { get; set; }
-    public string IndexEmail { get; set; }
-    public string TemplateCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string SendToEspStatusFlg { get; set; }
-    public string SendToEspProcessMsg { get; set; }
-    public string EspReplyStatus { get; set; }
+    public string? DisplayName { get; set; }
+    public string? NameTypeDesc { get; set; }
+    public string? EspRecordLocator { get; set; }
+    public string? TargetEmail { get; set; }
+    public string? TargetEmailFormatType { get; set; }
+    public string? IndexEmail { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? SendToEspStatusFlg { get; set; }
+    public string? SendToEspProcessMsg { get; set; }
+    public string? EspReplyStatus { get; set; }
     public DateTime? EspReplyDate { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }

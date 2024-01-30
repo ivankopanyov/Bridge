@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProtectedTemplate
 {
-    public string TemplateCode { get; set; }
-    public string TemplateGroupCode { get; set; }
-    public string NameType { get; set; }
-    public string ProtectedFor { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? TemplateGroupCode { get; set; }
+    public string? NameType { get; set; }
+    public string? ProtectedFor { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

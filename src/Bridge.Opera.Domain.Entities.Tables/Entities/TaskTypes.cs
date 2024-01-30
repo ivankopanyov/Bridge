@@ -8,9 +8,9 @@ public partial class TaskTypes
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string TypeCode { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
+    public string? TypeCode { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
 
     public virtual ICollection<Tasks> Tasks { get; set; }
     public virtual ICollection<WorkOrders> WorkOrders { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LocationLookupV
 {
-    public string LocCode { get; set; }
-    public string Type { get; set; }
-    public string ConcatCode { get; set; }
-    public string LocationDesc { get; set; }
-    public string Resort { get; set; }
+    public string? LocCode { get; set; }
+    public string? Type { get; set; }
+    public string? ConcatCode { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

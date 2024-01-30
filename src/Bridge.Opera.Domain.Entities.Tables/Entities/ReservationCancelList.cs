@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationCancelList
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? CancelAfter { get; set; }
-    public string DepositRequiredYn { get; set; }
+    public string? DepositRequiredYn { get; set; }
     public decimal? CcPendingDays { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMsg { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMsg { get; set; }
 
     public virtual ReservationName Res { get; set; }
 

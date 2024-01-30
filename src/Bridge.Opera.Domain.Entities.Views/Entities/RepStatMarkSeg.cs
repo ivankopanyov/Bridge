@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepStatMarkSeg
 {
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string Description { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? Description { get; set; }
     public decimal? RoomsDay { get; set; }
     public decimal? GuestDay { get; set; }
     public decimal? SingleOccDay { get; set; }

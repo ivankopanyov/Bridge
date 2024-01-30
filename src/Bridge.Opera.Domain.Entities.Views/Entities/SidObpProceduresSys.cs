@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidObpProceduresSys
 {
-    public string ProcedureName { get; set; }
-    public string Frequency { get; set; }
-    public string WhenToExecute { get; set; }
+    public string? ProcedureName { get; set; }
+    public string? Frequency { get; set; }
+    public string? WhenToExecute { get; set; }
     public DateTime? NextDate { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveYn { get; set; }
     public decimal? Sequence { get; set; }
-    public string MandatoryYn { get; set; }
-    public string PropertySpecificYn { get; set; }
+    public string? MandatoryYn { get; set; }
+    public string? PropertySpecificYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

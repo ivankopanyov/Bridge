@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ContactStatDaily
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public decimal NameId { get; set; }
-    public string RoomType { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public decimal? NameId { get; set; }
+    public string? RoomType { get; set; }
     public decimal? NoOfDefinitieRooms { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? SingleOccupancy { get; set; }
@@ -42,8 +42,8 @@ public partial class ContactStatDaily
     public decimal? DayUseReservations { get; set; }
     public decimal? CancelledReservations { get; set; }
     public decimal? NoShowReservations { get; set; }
-    public string BlockYn { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? BlockYn { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

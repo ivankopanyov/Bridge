@@ -4,20 +4,20 @@ public partial class OedsRequestMonitor
 {
     public DateTime? RequestDate { get; set; }
     public decimal? RequestProcessTime { get; set; }
-    public string RequestType { get; set; }
-    public string RequestSource { get; set; }
+    public string? RequestType { get; set; }
+    public string? RequestSource { get; set; }
     public decimal? RequestHour { get; set; }
-    public string RequestStatus { get; set; }
-    public string Resort { get; set; }
-    public string Channel { get; set; }
+    public string? RequestStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? Channel { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public decimal? Nights { get; set; }
-    public string AnyId { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string P1Char { get; set; }
-    public string P2Char { get; set; }
-    public string P3Char { get; set; }
+    public string? AnyId { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? P1Char { get; set; }
+    public string? P2Char { get; set; }
+    public string? P3Char { get; set; }
     public decimal? P1Num { get; set; }
     public decimal? P2Num { get; set; }
     public DateTime? P1Date { get; set; }

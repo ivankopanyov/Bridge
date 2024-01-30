@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SurveyByActivity
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Owner { get; set; }
-    public string SurveyName { get; set; }
-    public string Question { get; set; }
-    public string Answer { get; set; }
+    public string? Owner { get; set; }
+    public string? SurveyName { get; set; }
+    public string? Question { get; set; }
+    public string? Answer { get; set; }
     public decimal? Score { get; set; }
-    public decimal ActId { get; set; }
+    public decimal? ActId { get; set; }
     public decimal? AccId { get; set; }
-    public string AccName { get; set; }
+    public string? AccName { get; set; }
     public decimal? ConId { get; set; }
-    public string ConName { get; set; }
+    public string? ConName { get; set; }
     public decimal? BusblockId { get; set; }
-    public string BusblockName { get; set; }
+    public string? BusblockName { get; set; }
     public decimal? ActualRooms { get; set; }
     public decimal? ActualRevenue { get; set; }
     public decimal? ActualAvgRate { get; set; }

@@ -2,43 +2,43 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempTaxPopulation
 {
-    public string TaxInclusiveYn { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TclCodeDfltCl1 { get; set; }
-    public string TclCodeDfltCl2 { get; set; }
-    public string Class1MandatoryYn { get; set; }
-    public string Class2MandatoryYn { get; set; }
-    public string Description { get; set; }
-    public string TcTransactionType { get; set; }
-    public string IsManualPostAllowed { get; set; }
-    public string ResultIncludedInSumArray { get; set; }
-    public string CcType { get; set; }
+    public string? TaxInclusiveYn { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TclCodeDfltCl1 { get; set; }
+    public string? TclCodeDfltCl2 { get; set; }
+    public string? Class1MandatoryYn { get; set; }
+    public string? Class2MandatoryYn { get; set; }
+    public string? Description { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? IsManualPostAllowed { get; set; }
+    public string? ResultIncludedInSumArray { get; set; }
+    public string? CcType { get; set; }
     public decimal? Commission { get; set; }
-    public string CcCode { get; set; }
-    public string IndBilling { get; set; }
-    public string IndAr { get; set; }
-    public string Currency { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string AdjTrxCode { get; set; }
-    public string ArrangeCode { get; set; }
+    public string? CcCode { get; set; }
+    public string? IndBilling { get; set; }
+    public string? IndAr { get; set; }
+    public string? Currency { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? AdjTrxCode { get; set; }
+    public string? ArrangeCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
     public decimal? RevBucketId { get; set; }
     public decimal? RevGpId { get; set; }
-    public string IndCash { get; set; }
-    public string IndDepositYn { get; set; }
-    public string DeferredYn { get; set; }
+    public string? IndCash { get; set; }
+    public string? IndDepositYn { get; set; }
+    public string? DeferredYn { get; set; }
     public decimal? ArNameId { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TaxTrxCode { get; set; }
-    public string FlatPercentageFlag { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TaxTrxCode { get; set; }
+    public string? FlatPercentageFlag { get; set; }
     public decimal? TaxValue { get; set; }
-    public string UdfFunction { get; set; }
-    public string Last { get; set; }
-    public string NameTaxType { get; set; }
+    public string? UdfFunction { get; set; }
+    public string? Last { get; set; }
+    public string? NameTaxType { get; set; }
     public DateTime? StartDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

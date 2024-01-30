@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaLocks
 {
-    public decimal InstId { get; set; }
-    public decimal Audsid { get; set; }
+    public decimal? InstId { get; set; }
+    public decimal? Audsid { get; set; }
     public decimal? Sid { get; set; }
     public decimal? Serial { get; set; }
-    public string TableName { get; set; }
-    public string KeyValue1 { get; set; }
-    public string KeyValue2 { get; set; }
-    public string KeyValue3 { get; set; }
-    public string KeyValue4 { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? TableName { get; set; }
+    public string? KeyValue1 { get; set; }
+    public string? KeyValue2 { get; set; }
+    public string? KeyValue3 { get; set; }
+    public string? KeyValue4 { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? LockId { get; set; }
-    public string LockMode { get; set; }
-    public string StatelessYn { get; set; }
+    public string? LockMode { get; set; }
+    public string? StatelessYn { get; set; }
     public decimal? UserId { get; set; }
     public decimal? TimeToKeepLock { get; set; }
 

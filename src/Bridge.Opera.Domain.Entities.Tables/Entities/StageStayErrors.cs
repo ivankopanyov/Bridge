@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageStayErrors
 {
-    public decimal StageStayRecordId { get; set; }
-    public string ErrorField { get; set; }
-    public string ErrorDesc { get; set; }
-    public string ErrorValue { get; set; }
+    public decimal? StageStayRecordId { get; set; }
+    public string? ErrorField { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? ErrorValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

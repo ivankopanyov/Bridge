@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AqPmsForecastQueueTableT
 {
-    public DateTime NextDate { get; set; }
-    public string TxnId { get; set; }
+    public DateTime? NextDate { get; set; }
+    public string? TxnId { get; set; }
     public Guid Msgid { get; set; }
     public decimal? Action { get; set; }
 

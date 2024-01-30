@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CashierResortsView
 {
-    public string Resort { get; set; }
-    public string Name { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string CurrencyCode { get; set; }
-    public string CashShiftDrop { get; set; }
-    public string CheckShiftDrop { get; set; }
-    public string CheckTrxcode { get; set; }
-    public string ArCreditTrxCode { get; set; }
-    public string ResvYn { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? CashShiftDrop { get; set; }
+    public string? CheckShiftDrop { get; set; }
+    public string? CheckTrxcode { get; set; }
+    public string? ArCreditTrxCode { get; set; }
+    public string? ResvYn { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? ClosureNo { get; set; }
 

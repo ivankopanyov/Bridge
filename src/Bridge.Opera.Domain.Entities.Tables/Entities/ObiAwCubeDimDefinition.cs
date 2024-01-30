@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiAwCubeDimDefinition
 {
-    public string SchemaName { get; set; }
-    public string AwName { get; set; }
-    public string CubeName { get; set; }
-    public string DimensionName { get; set; }
-    public string ActiveYn { get; set; }
+    public string? SchemaName { get; set; }
+    public string? AwName { get; set; }
+    public string? CubeName { get; set; }
+    public string? DimensionName { get; set; }
+    public string? ActiveYn { get; set; }
     public decimal? EstimatedMembers { get; set; }
     public DateTime? EstimationDate { get; set; }
     public DateTime? RefreshTs { get; set; }

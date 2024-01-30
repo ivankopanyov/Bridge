@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinTranCashierPostDtl
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? CashierId { get; set; }
-    public string TrxCode { get; set; }
-    public string FtSubtype { get; set; }
-    public string Currency { get; set; }
+    public string? TrxCode { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? Currency { get; set; }
     public decimal? NoRecord { get; set; }
     public decimal? Amount { get; set; }
     public decimal? ClosureNo { get; set; }
-    public string TrxCodeDescription { get; set; }
-    public string IndCash { get; set; }
+    public string? TrxCodeDescription { get; set; }
+    public string? IndCash { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

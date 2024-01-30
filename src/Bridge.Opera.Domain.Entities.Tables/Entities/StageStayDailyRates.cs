@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageStayDailyRates
 {
-    public decimal StageStayRecordId { get; set; }
-    public DateTime TrxDate { get; set; }
-    public string RateCode { get; set; }
+    public decimal? StageStayRecordId { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateAmount { get; set; }
-    public string MarketCode { get; set; }
-    public string ValidYn { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ValidYn { get; set; }
     public decimal? NumberDays { get; set; }
-    public string CurrencyCode { get; set; }
-    public string RoomNumber { get; set; }
-    public string ResourceId { get; set; }
-    public string RoomLabel { get; set; }
-    public string PseudoYn { get; set; }
-    public string BookedRoomLabel { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? ResourceId { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? BookedRoomLabel { get; set; }
 
     public virtual StageStayRecords StageStayRecord { get; set; }
 

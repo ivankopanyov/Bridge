@@ -6,10 +6,10 @@ public partial class ExpSys21FolioWin
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioView { get; set; }
-    public string PaymentMethod { get; set; }
-    public string CcCode { get; set; }
-    public string ArNo { get; set; }
-    public string VoucherNumber { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? CcCode { get; set; }
+    public string? ArNo { get; set; }
+    public string? VoucherNumber { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

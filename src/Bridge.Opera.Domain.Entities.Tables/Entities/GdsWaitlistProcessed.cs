@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsWaitlistProcessed
 {
-    public decimal QId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? QId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? ProcessedDate { get; set; }
-    public string ResvStatus { get; set; }
-    public string Status { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

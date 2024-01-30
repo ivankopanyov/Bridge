@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmCampEmailFactVw
 {
-    public decimal FactRecId { get; set; }
-    public decimal DateId { get; set; }
-    public string DateType { get; set; }
-    public string DateCode { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? FactRecId { get; set; }
+    public decimal? DateId { get; set; }
+    public string? DateType { get; set; }
+    public string? DateCode { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? CampaignId { get; set; }
-    public string DataSource { get; set; }
+    public string? DataSource { get; set; }
     public decimal? EmailSend { get; set; }
     public decimal? OpenEmail { get; set; }
     public decimal? ClicksOnEmail { get; set; }

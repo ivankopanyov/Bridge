@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationChanges
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string ChangeType { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? ChangeType { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

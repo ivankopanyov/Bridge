@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllActivitiesView
 {
-    public decimal ActId { get; set; }
+    public decimal? ActId { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Purpose { get; set; }
+    public string? Purpose { get; set; }
     public decimal? AssignedBy { get; set; }
     public DateTime? AssignedOnDate { get; set; }
     public decimal? AssignedTo { get; set; }
@@ -18,78 +18,78 @@ public partial class AllActivitiesView
     public DateTime? DueDate { get; set; }
     public decimal? TotalLaborCost { get; set; }
     public decimal? TotalPartsCost { get; set; }
-    public string UserExt { get; set; }
-    public string DeptOfAction { get; set; }
-    public string GuestRoomYn { get; set; }
-    public string GuestOriginatedYn { get; set; }
-    public string PriorityChangedYn { get; set; }
+    public string? UserExt { get; set; }
+    public string? DeptOfAction { get; set; }
+    public string? GuestRoomYn { get; set; }
+    public string? GuestOriginatedYn { get; set; }
+    public string? PriorityChangedYn { get; set; }
     public decimal? Duration { get; set; }
-    public string DurationTimeCode { get; set; }
-    public string DurationTimeDesc { get; set; }
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string ReasonCode { get; set; }
-    public string LocationCode { get; set; }
-    public string PriorityCode { get; set; }
+    public string? DurationTimeCode { get; set; }
+    public string? DurationTimeDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? PriorityCode { get; set; }
     public decimal? PrioritySeqNumber { get; set; }
     public decimal? ParentActId { get; set; }
-    public string StatusCode { get; set; }
+    public string? StatusCode { get; set; }
     public decimal? TaskCode { get; set; }
     public decimal? TaskitemNumber { get; set; }
-    public string TypeCode { get; set; }
-    public string ActType { get; set; }
-    public string PlantItemCode { get; set; }
+    public string? TypeCode { get; set; }
+    public string? ActType { get; set; }
+    public string? PlantItemCode { get; set; }
     public decimal? DependingOnActId { get; set; }
-    public string MasterSub { get; set; }
-    public string Room { get; set; }
-    public string Notes { get; set; }
-    public string LocationDesc { get; set; }
-    public string PriorityDesc { get; set; }
-    public string WorkCategoryDesc { get; set; }
-    public string PlantItemDesc { get; set; }
-    public string StatusDesc { get; set; }
-    public string ReasonDesc { get; set; }
-    public string TaskDesc { get; set; }
-    public string CreatedByUser { get; set; }
-    public string TakenByUser { get; set; }
-    public string AssignedByUser { get; set; }
-    public string AssignedToUser { get; set; }
-    public string ReleasedByUser { get; set; }
-    public string CompletedByUser { get; set; }
+    public string? MasterSub { get; set; }
+    public string? Room { get; set; }
+    public string? Notes { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? PriorityDesc { get; set; }
+    public string? WorkCategoryDesc { get; set; }
+    public string? PlantItemDesc { get; set; }
+    public string? StatusDesc { get; set; }
+    public string? ReasonDesc { get; set; }
+    public string? TaskDesc { get; set; }
+    public string? CreatedByUser { get; set; }
+    public string? TakenByUser { get; set; }
+    public string? AssignedByUser { get; set; }
+    public string? AssignedToUser { get; set; }
+    public string? ReleasedByUser { get; set; }
+    public string? CompletedByUser { get; set; }
     public decimal? DurationWorked { get; set; }
-    public string DurationWorkedUot { get; set; }
-    public string DurationWorkedUotDesc { get; set; }
-    public string ColorCode { get; set; }
+    public string? DurationWorkedUot { get; set; }
+    public string? DurationWorkedUotDesc { get; set; }
+    public string? ColorCode { get; set; }
     public decimal? PpStatusCode { get; set; }
-    public string PrivateYn { get; set; }
-    public decimal CreatedBy { get; set; }
-    public DateTime CreatedDate { get; set; }
+    public string? PrivateYn { get; set; }
+    public decimal? CreatedBy { get; set; }
+    public DateTime? CreatedDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string ProblemDesc { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? ProblemDesc { get; set; }
     public decimal? EstTimeToComplete { get; set; }
-    public string EstUotCode { get; set; }
-    public string MultiAccount { get; set; }
-    public string MultiContact { get; set; }
-    public string MultiBblocks { get; set; }
-    public string MultiContract { get; set; }
-    public string MultiProfiles { get; set; }
-    public string Tracecode { get; set; }
+    public string? EstUotCode { get; set; }
+    public string? MultiAccount { get; set; }
+    public string? MultiContact { get; set; }
+    public string? MultiBblocks { get; set; }
+    public string? MultiContract { get; set; }
+    public string? MultiProfiles { get; set; }
+    public string? Tracecode { get; set; }
     public decimal? SurveyId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ActClass { get; set; }
+    public string? ActClass { get; set; }
     public decimal? Author { get; set; }
     public decimal? CampaignId { get; set; }
-    public string GeneratedByCampaign { get; set; }
-    public string Result { get; set; }
-    public string NotifiedYn { get; set; }
-    public string ExternalSystem { get; set; }
-    public string ExternalSystemId { get; set; }
-    public string InternalYn { get; set; }
+    public string? GeneratedByCampaign { get; set; }
+    public string? Result { get; set; }
+    public string? NotifiedYn { get; set; }
+    public string? ExternalSystem { get; set; }
+    public string? ExternalSystemId { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? MinutesBeforeAlert { get; set; }
-    public string TimezoneConvertedYn { get; set; }
+    public string? TimezoneConvertedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

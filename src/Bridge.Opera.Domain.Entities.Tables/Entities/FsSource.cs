@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsSource
 {
-    public string Src { get; set; }
-    public string SrcDesc { get; set; }
-    public string SrcTable { get; set; }
-    public string SrcCat { get; set; }
-    public string WsSoapAction { get; set; }
-    public string WsRequestXml { get; set; }
-    public string WsResponseXml { get; set; }
-    public string AuthWsSoapAction { get; set; }
-    public string AuthWsRequestXml { get; set; }
-    public string AuthWsResponseXml { get; set; }
-    public string InactiveYn { get; set; }
+    public string? Src { get; set; }
+    public string? SrcDesc { get; set; }
+    public string? SrcTable { get; set; }
+    public string? SrcCat { get; set; }
+    public string? WsSoapAction { get; set; }
+    public string? WsRequestXml { get; set; }
+    public string? WsResponseXml { get; set; }
+    public string? AuthWsSoapAction { get; set; }
+    public string? AuthWsRequestXml { get; set; }
+    public string? AuthWsResponseXml { get; set; }
+    public string? InactiveYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpParameters
 {
-    public decimal ExpFileId { get; set; }
-    public string ParamCode { get; set; }
-    public string ParamDesc { get; set; }
-    public string ParamValue { get; set; }
+    public decimal? ExpFileId { get; set; }
+    public string? ParamCode { get; set; }
+    public string? ParamDesc { get; set; }
+    public string? ParamValue { get; set; }
 
     public virtual ExpFileHdr ExpFile { get; set; }
 

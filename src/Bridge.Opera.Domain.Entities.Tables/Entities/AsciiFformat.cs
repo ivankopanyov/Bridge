@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AsciiFformat
 {
-    public string Resort { get; set; }
-    public string FormatType { get; set; }
-    public string CorporateId { get; set; }
-    public string HotelId { get; set; }
+    public string? Resort { get; set; }
+    public string? FormatType { get; set; }
+    public string? CorporateId { get; set; }
+    public string? HotelId { get; set; }
     public decimal? TaxId { get; set; }
-    public string TaxType { get; set; }
-    public string ChainName { get; set; }
-    public string ReportingCurrency { get; set; }
-    public string RemittingCurrency { get; set; }
-    public string ReportingMethod { get; set; }
-    public string TransmissionId { get; set; }
-    public string ExportFile { get; set; }
+    public string? TaxType { get; set; }
+    public string? ChainName { get; set; }
+    public string? ReportingCurrency { get; set; }
+    public string? RemittingCurrency { get; set; }
+    public string? ReportingMethod { get; set; }
+    public string? TransmissionId { get; set; }
+    public string? ExportFile { get; set; }
     public DateTime? LastExportDate { get; set; }
     public decimal? LastExportFileNo { get; set; }
-    public string CntryIsoInd { get; set; }
-    public string CompressedFileExt { get; set; }
-    public string CntryTaxingAuthority { get; set; }
-    public string Company { get; set; }
-    public string TransLettAddr1 { get; set; }
-    public string TransLettAddr2 { get; set; }
-    public string TransLettAddr4 { get; set; }
-    public string TransLettAddr5 { get; set; }
-    public string TransLettTel { get; set; }
-    public string TransLettFax { get; set; }
+    public string? CntryIsoInd { get; set; }
+    public string? CompressedFileExt { get; set; }
+    public string? CntryTaxingAuthority { get; set; }
+    public string? Company { get; set; }
+    public string? TransLettAddr1 { get; set; }
+    public string? TransLettAddr2 { get; set; }
+    public string? TransLettAddr4 { get; set; }
+    public string? TransLettAddr5 { get; set; }
+    public string? TransLettTel { get; set; }
+    public string? TransLettFax { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string TransLettAddr3 { get; set; }
+    public string? TransLettAddr3 { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

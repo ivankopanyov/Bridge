@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DatabaseWsSid
 {
-    public string WsCode { get; set; }
-    public string WsName { get; set; }
-    public string WsDescription { get; set; }
-    public string WsEndpoint { get; set; }
-    public string WsFunction { get; set; }
-    public string WsNamespace { get; set; }
-    public string VersionClientList { get; set; }
-    public string CurrentClientVer { get; set; }
+    public string? WsCode { get; set; }
+    public string? WsName { get; set; }
+    public string? WsDescription { get; set; }
+    public string? WsEndpoint { get; set; }
+    public string? WsFunction { get; set; }
+    public string? WsNamespace { get; set; }
+    public string? VersionClientList { get; set; }
+    public string? CurrentClientVer { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

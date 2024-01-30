@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileKeywords
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string KeywordType { get; set; }
-    public string Keyword { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? KeywordType { get; set; }
+    public string? Keyword { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }
 

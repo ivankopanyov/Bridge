@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidOrmsSystemParameters
 {
-    public string Resort { get; set; }
-    public string ConfigStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? ConfigStatus { get; set; }
     public decimal? MaxLos { get; set; }
     public decimal? HurdleSteps { get; set; }
-    public string AutoApplyYn { get; set; }
-    public string AllotmentClassType { get; set; }
+    public string? AutoApplyYn { get; set; }
+    public string? AllotmentClassType { get; set; }
     public DateTime? NextFullrunDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

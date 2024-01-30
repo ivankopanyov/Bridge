@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OcrmCmpgnResvProjectedVw
 {
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? LegNo { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? BookedDate { get; set; }
-    public string PromotionCode { get; set; }
-    public string CampaignCode { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? CampaignCode { get; set; }
     public decimal? Arrivals { get; set; }
     public decimal? Stays { get; set; }
     public decimal? AvgRoomRate { get; set; }

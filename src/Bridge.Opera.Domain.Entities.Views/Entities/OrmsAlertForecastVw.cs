@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsAlertForecastVw
 {
-    public decimal AlertId { get; set; }
-    public string Resort { get; set; }
-    public string AlertName { get; set; }
-    public string Code { get; set; }
-    public string AlertText { get; set; }
-    public string AlertOnlyYn { get; set; }
-    public string AlertColor { get; set; }
-    public string SeasonCode { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public decimal? AlertId { get; set; }
+    public string? Resort { get; set; }
+    public string? AlertName { get; set; }
+    public string? Code { get; set; }
+    public string? AlertText { get; set; }
+    public string? AlertOnlyYn { get; set; }
+    public string? AlertColor { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
     public decimal? LeaddayFrom { get; set; }
     public decimal? LeaddayTo { get; set; }
     public decimal? LowerForecast { get; set; }
     public decimal? UpperForecast { get; set; }
     public decimal? LowerOtb { get; set; }
     public decimal? UpperOtb { get; set; }
-    public string GrpTransScope { get; set; }
+    public string? GrpTransScope { get; set; }
     public decimal? Priority { get; set; }
-    public string ShowOnHome { get; set; }
-    public string ShowOnForecast { get; set; }
-    public string ShowOnBlock { get; set; }
-    public string ShowOnRateshopper { get; set; }
-    public string EventCodes { get; set; }
+    public string? ShowOnHome { get; set; }
+    public string? ShowOnForecast { get; set; }
+    public string? ShowOnBlock { get; set; }
+    public string? ShowOnRateshopper { get; set; }
+    public string? EventCodes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

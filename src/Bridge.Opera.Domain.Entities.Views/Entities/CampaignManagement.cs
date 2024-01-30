@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CampaignManagement
 {
-    public decimal CampaignId { get; set; }
-    public string Resort { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? Resort { get; set; }
     public decimal? OwnerId { get; set; }
-    public string Salesrep { get; set; }
-    public string CampaignDesc { get; set; }
+    public string? Salesrep { get; set; }
+    public string? CampaignDesc { get; set; }
     public decimal? EstTotalCost { get; set; }
-    public string StatusCode { get; set; }
-    public string TypeCode { get; set; }
-    public decimal CreatedBy { get; set; }
-    public DateTime CreatedDate { get; set; }
+    public string? StatusCode { get; set; }
+    public string? TypeCode { get; set; }
+    public decimal? CreatedBy { get; set; }
+    public DateTime? CreatedDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string ActClass { get; set; }
-    public string RateCode { get; set; }
-    public string PromotionCode { get; set; }
-    public string GenerateActivityYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? ActClass { get; set; }
+    public string? RateCode { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? GenerateActivityYn { get; set; }
     public decimal? TargetQueryId { get; set; }
     public decimal? EstRmNights { get; set; }
     public decimal? EstRmRevenue { get; set; }
     public decimal? EstCatRevenue { get; set; }
     public decimal? EstOtherRevenue { get; set; }
-    public string RequestTypeId { get; set; }
+    public string? RequestTypeId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CompletedYn { get; set; }
-    public string EmailSubject { get; set; }
+    public string? CompletedYn { get; set; }
+    public string? EmailSubject { get; set; }
     public decimal? RequestTypeTemplatesId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmCampaignEmailFactHdr
 {
-    public decimal ProcessBatchId { get; set; }
-    public string BatchComputeStatus { get; set; }
+    public decimal? ProcessBatchId { get; set; }
+    public string? BatchComputeStatus { get; set; }
     public DateTime? BatchComputeDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidSnapshotTypes
 {
-    public string SnapshotType { get; set; }
-    public string Resort { get; set; }
-    public string EditYn { get; set; }
-    public string SnapshotOrigin { get; set; }
+    public string? SnapshotType { get; set; }
+    public string? Resort { get; set; }
+    public string? EditYn { get; set; }
+    public string? SnapshotOrigin { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

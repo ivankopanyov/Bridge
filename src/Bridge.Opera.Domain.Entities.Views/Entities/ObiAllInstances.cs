@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAllInstances
 {
-    public string InstId { get; set; }
-    public string InstanceName { get; set; }
+    public string? InstId { get; set; }
+    public string? InstanceName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

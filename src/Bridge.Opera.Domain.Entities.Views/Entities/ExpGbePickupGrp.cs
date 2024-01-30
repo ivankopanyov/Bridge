@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpGbePickupGrp
 {
     public decimal? ExportId { get; set; }
-    public string GbeType { get; set; }
+    public string? GbeType { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? BlockedRoomCount { get; set; }
     public decimal? RoomPickupCount { get; set; }

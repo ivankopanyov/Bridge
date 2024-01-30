@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpGbeGroupHeader
 {
     public decimal? ExportId { get; set; }
-    public string GbeType { get; set; }
-    public string PropertyCode { get; set; }
-    public string PostingMasterType { get; set; }
+    public string? GbeType { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? PostingMasterType { get; set; }
     public decimal? GroupBookingNumber { get; set; }
-    public string PostingMasterNumber { get; set; }
-    public string FolioNumber { get; set; }
+    public string? PostingMasterNumber { get; set; }
+    public string? FolioNumber { get; set; }
     public decimal? CustomerPoNumber { get; set; }
-    public string InvoiceNumber { get; set; }
+    public string? InvoiceNumber { get; set; }
     public DateTime? InvoiceDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? BlockId { get; set; }

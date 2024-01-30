@@ -6,25 +6,25 @@ public partial class ExpEfolioParty
     public decimal? RowSequence { get; set; }
     public decimal? PartySequence { get; set; }
     public decimal? PNameId { get; set; }
-    public string ExportType { get; set; }
-    public string PPartyType { get; set; }
-    public string PName1 { get; set; }
-    public string PAddress1 { get; set; }
-    public string PAddress2 { get; set; }
-    public string PAddress3 { get; set; }
-    public string PAddress4 { get; set; }
-    public string PCity { get; set; }
-    public string PPostalCode { get; set; }
-    public string PTelephone { get; set; }
-    public string PCountryCode { get; set; }
-    public string PStateCode { get; set; }
-    public string PArAccountNo { get; set; }
-    public string PFax { get; set; }
-    public string PEmail { get; set; }
-    public string PAddressType { get; set; }
-    public string PName2 { get; set; }
-    public string PName3 { get; set; }
-    public string PMerchantId { get; set; }
+    public string? ExportType { get; set; }
+    public string? PPartyType { get; set; }
+    public string? PName1 { get; set; }
+    public string? PAddress1 { get; set; }
+    public string? PAddress2 { get; set; }
+    public string? PAddress3 { get; set; }
+    public string? PAddress4 { get; set; }
+    public string? PCity { get; set; }
+    public string? PPostalCode { get; set; }
+    public string? PTelephone { get; set; }
+    public string? PCountryCode { get; set; }
+    public string? PStateCode { get; set; }
+    public string? PArAccountNo { get; set; }
+    public string? PFax { get; set; }
+    public string? PEmail { get; set; }
+    public string? PAddressType { get; set; }
+    public string? PName2 { get; set; }
+    public string? PName3 { get; set; }
+    public string? PMerchantId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

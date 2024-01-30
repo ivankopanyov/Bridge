@@ -2,48 +2,48 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaJobSchVw
 {
-    public string JobNameId { get; set; }
-    public string JobName { get; set; }
-    public string JobNameTitle { get; set; }
-    public string Command { get; set; }
+    public string? JobNameId { get; set; }
+    public string? JobName { get; set; }
+    public string? JobNameTitle { get; set; }
+    public string? Command { get; set; }
     public decimal? CommandUser { get; set; }
-    public string MsgLogFlg { get; set; }
+    public string? MsgLogFlg { get; set; }
     public decimal? DebugLogLevel { get; set; }
-    public string InitUser { get; set; }
+    public string? InitUser { get; set; }
     public byte[] Password { get; set; }
-    public string InitResort { get; set; }
-    public string InitApplication { get; set; }
-    public string InitCro { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ActionText { get; set; }
-    public string JobSubname { get; set; }
-    public string JobCreator { get; set; }
-    public string ClientId { get; set; }
-    public string GlobalUid { get; set; }
-    public string ProgramOwner { get; set; }
-    public string ProgramName { get; set; }
-    public string JobType { get; set; }
-    public string JobAction { get; set; }
+    public string? InitResort { get; set; }
+    public string? InitApplication { get; set; }
+    public string? InitCro { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ActionText { get; set; }
+    public string? JobSubname { get; set; }
+    public string? JobCreator { get; set; }
+    public string? ClientId { get; set; }
+    public string? GlobalUid { get; set; }
+    public string? ProgramOwner { get; set; }
+    public string? ProgramName { get; set; }
+    public string? JobType { get; set; }
+    public string? JobAction { get; set; }
     public decimal? NumberOfArguments { get; set; }
-    public string ScheduleOwner { get; set; }
-    public string ScheduleName { get; set; }
-    public string ScheduleType { get; set; }
+    public string? ScheduleOwner { get; set; }
+    public string? ScheduleName { get; set; }
+    public string? ScheduleType { get; set; }
     public DateTime? StartDate { get; set; }
-    public string RepeatInterval { get; set; }
-    public string EventQueueOwner { get; set; }
-    public string EventQueueName { get; set; }
-    public string EventQueueAgent { get; set; }
-    public string EventCondition { get; set; }
-    public string EventRule { get; set; }
+    public string? RepeatInterval { get; set; }
+    public string? EventQueueOwner { get; set; }
+    public string? EventQueueName { get; set; }
+    public string? EventQueueAgent { get; set; }
+    public string? EventCondition { get; set; }
+    public string? EventRule { get; set; }
     public DateTime? EndDate { get; set; }
-    public string JobClass { get; set; }
-    public string Enabled { get; set; }
-    public string AutoDrop { get; set; }
-    public string Restartable { get; set; }
-    public string State { get; set; }
+    public string? JobClass { get; set; }
+    public string? Enabled { get; set; }
+    public string? AutoDrop { get; set; }
+    public string? Restartable { get; set; }
+    public string? State { get; set; }
     public decimal? JobPriority { get; set; }
     public decimal? RunCount { get; set; }
     public decimal? MaxRuns { get; set; }
@@ -52,22 +52,22 @@ public partial class OperaJobSchVw
     public decimal? RetryCount { get; set; }
     public DateTime? LastStartDate { get; set; }
     public DateTime? NextRunDate { get; set; }
-    public string LoggingLevel { get; set; }
-    public string StopOnWindowClose { get; set; }
-    public string InstanceStickiness { get; set; }
-    public string RaiseEvents { get; set; }
-    public string System { get; set; }
+    public string? LoggingLevel { get; set; }
+    public string? StopOnWindowClose { get; set; }
+    public string? InstanceStickiness { get; set; }
+    public string? RaiseEvents { get; set; }
+    public string? System { get; set; }
     public decimal? JobWeight { get; set; }
-    public string NlsEnv { get; set; }
-    public string Source { get; set; }
-    public string Destination { get; set; }
-    public string Comments { get; set; }
+    public string? NlsEnv { get; set; }
+    public string? Source { get; set; }
+    public string? Destination { get; set; }
+    public string? Comments { get; set; }
     public decimal? Flags { get; set; }
-    public string JobProcCode { get; set; }
-    public string ResortRegistered { get; set; }
-    public string CroRegistered { get; set; }
-    public string ChainCode { get; set; }
-    public string UserComments { get; set; }
+    public string? JobProcCode { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? CroRegistered { get; set; }
+    public string? ChainCode { get; set; }
+    public string? UserComments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

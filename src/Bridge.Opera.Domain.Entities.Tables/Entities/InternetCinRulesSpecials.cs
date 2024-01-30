@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InternetCinRulesSpecials
 {
-    public decimal RuleId { get; set; }
-    public decimal PreferenceSeqId { get; set; }
+    public decimal? RuleId { get; set; }
+    public decimal? PreferenceSeqId { get; set; }
 
     public virtual InternetCinRules Rule { get; set; }
 

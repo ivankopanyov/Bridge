@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsForecastView
 {
-    public string Resort { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public decimal BookingClassId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public decimal? BookingClassId { get; set; }
     public byte LeadDay { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
     public decimal? EventImpact { get; set; }
     public decimal? Actual { get; set; }
     public decimal? AdjustedActual { get; set; }

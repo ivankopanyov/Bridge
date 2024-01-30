@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmActivityElement
 {
-    public string ActElCode { get; set; }
-    public string Resort { get; set; }
-    public string ActType { get; set; }
-    public string ActDesc { get; set; }
-    public string ActLongDesc { get; set; }
-    public string InternalYn { get; set; }
-    public string CustomerYn { get; set; }
+    public string? ActElCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ActType { get; set; }
+    public string? ActDesc { get; set; }
+    public string? ActLongDesc { get; set; }
+    public string? InternalYn { get; set; }
+    public string? CustomerYn { get; set; }
     public decimal? DefaultDuration { get; set; }
     public decimal? MinDuration { get; set; }
     public decimal? IncrDuration { get; set; }
-    public string StatusOnStart { get; set; }
+    public string? StatusOnStart { get; set; }
     public decimal? OrderBy { get; set; }
-    public string StatusOnEnd { get; set; }
+    public string? StatusOnEnd { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

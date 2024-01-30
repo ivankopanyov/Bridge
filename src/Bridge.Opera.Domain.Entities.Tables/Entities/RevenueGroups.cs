@@ -8,18 +8,18 @@ public partial class RevenueGroups
         RevenueTypes = new HashSet<RevenueTypes>();
     }
 
-    public string RevGroup { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
+    public string? RevGroup { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? BiBucket { get; set; }
-    public string BiLabel { get; set; }
+    public string? BiLabel { get; set; }
 
     public virtual ICollection<RevenueGroupsTranslation> RevenueGroupsTranslation { get; set; }
     public virtual ICollection<RevenueTypes> RevenueTypes { get; set; }

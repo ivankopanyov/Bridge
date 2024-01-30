@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TaskitemsLink
 {
-    public decimal TiId { get; set; }
-    public string LinkType { get; set; }
-    public decimal LinkId { get; set; }
+    public decimal? TiId { get; set; }
+    public string? LinkType { get; set; }
+    public decimal? LinkId { get; set; }
 
     public virtual Taskitems Ti { get; set; }
 

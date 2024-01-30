@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class JobSchParameterInstVw
 {
-    public decimal ParamId { get; set; }
-    public decimal ParamListId { get; set; }
-    public string ListCode { get; set; }
-    public string ParamCode { get; set; }
-    public decimal SeqId { get; set; }
+    public decimal? ParamId { get; set; }
+    public decimal? ParamListId { get; set; }
+    public string? ListCode { get; set; }
+    public string? ParamCode { get; set; }
+    public decimal? SeqId { get; set; }
     public decimal? ParentParamId { get; set; }
-    public string ParamValue { get; set; }
-    public string Datatype { get; set; }
+    public string? ParamValue { get; set; }
+    public string? Datatype { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string ParentParamCode { get; set; }
+    public string? ParentParamCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

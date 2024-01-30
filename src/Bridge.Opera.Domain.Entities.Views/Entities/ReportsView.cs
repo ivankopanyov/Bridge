@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReportsView
 {
-    public string ReportId { get; set; }
-    public string ReportName { get; set; }
-    public string ReportDescription { get; set; }
+    public string? ReportId { get; set; }
+    public string? ReportName { get; set; }
+    public string? ReportDescription { get; set; }
     public decimal? StatusCode { get; set; }
-    public string StatusMessage { get; set; }
-    public string Owner { get; set; }
-    public string Destype { get; set; }
-    public string Filename { get; set; }
-    public string Desname { get; set; }
+    public string? StatusMessage { get; set; }
+    public string? Owner { get; set; }
+    public string? Destype { get; set; }
+    public string? Filename { get; set; }
+    public string? Desname { get; set; }
     public DateTime? Started { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? Finished { get; set; }
-    public string Gateway { get; set; }
-    public string Server { get; set; }
-    public string Scheduled { get; set; }
-    public string StationId { get; set; }
-    public string Format { get; set; }
-    public string Title { get; set; }
-    public string Resort { get; set; }
+    public string? Gateway { get; set; }
+    public string? Server { get; set; }
+    public string? Scheduled { get; set; }
+    public string? StationId { get; set; }
+    public string? Format { get; set; }
+    public string? Title { get; set; }
+    public string? Resort { get; set; }
     public decimal? ModuleId { get; set; }
-    public string Debug { get; set; }
-    public string JobType { get; set; }
-    public string CommandLine { get; set; }
+    public string? Debug { get; set; }
+    public string? JobType { get; set; }
+    public string? CommandLine { get; set; }
     public decimal? JobId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

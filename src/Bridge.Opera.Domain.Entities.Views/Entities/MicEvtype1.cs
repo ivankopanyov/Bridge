@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MicEvtype1
 {
-    public decimal MicId { get; set; }
-    public string EventType { get; set; }
+    public decimal? MicId { get; set; }
+    public string? EventType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

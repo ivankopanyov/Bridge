@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioType
 {
-    public string Resort { get; set; }
-    public string FolioType1 { get; set; }
-    public string NameTaxType { get; set; }
-    public string ClFlag { get; set; }
-    public string NationalityFlag { get; set; }
-    public string LocalCurrFlag { get; set; }
-    public string TaxNoFlag { get; set; }
-    public string CreditFlag { get; set; }
-    public string AllowConvertYn { get; set; }
-    public string ConvertFolioType { get; set; }
-    public string AllowCompressYn { get; set; }
-    public string AllowCreditbillYn { get; set; }
-    public string FolioName { get; set; }
-    public string ArfolioName { get; set; }
-    public string PasserbyfolioName { get; set; }
-    public string QueueName { get; set; }
-    public string CompressYn { get; set; }
-    public string FiscalYn { get; set; }
-    public string FiscalProgramName { get; set; }
-    public string ColumnSeparator { get; set; }
-    public string ManualFolioPrintTask { get; set; }
+    public string? Resort { get; set; }
+    public string? FolioType1 { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? ClFlag { get; set; }
+    public string? NationalityFlag { get; set; }
+    public string? LocalCurrFlag { get; set; }
+    public string? TaxNoFlag { get; set; }
+    public string? CreditFlag { get; set; }
+    public string? AllowConvertYn { get; set; }
+    public string? ConvertFolioType { get; set; }
+    public string? AllowCompressYn { get; set; }
+    public string? AllowCreditbillYn { get; set; }
+    public string? FolioName { get; set; }
+    public string? ArfolioName { get; set; }
+    public string? PasserbyfolioName { get; set; }
+    public string? QueueName { get; set; }
+    public string? CompressYn { get; set; }
+    public string? FiscalYn { get; set; }
+    public string? FiscalProgramName { get; set; }
+    public string? ColumnSeparator { get; set; }
+    public string? ManualFolioPrintTask { get; set; }
     public decimal? CurrActionId { get; set; }
     public decimal? GuestType { get; set; }
-    public string TrxServiceType { get; set; }
-    public string CorrectionFolioYn { get; set; }
-    public string DebitFlag { get; set; }
-    public string DepositFolioYn { get; set; }
-    public string CorrectionHeaderYn { get; set; }
-    public string SimpleFolioYn { get; set; }
-    public string InternalBillYn { get; set; }
-    public string WorkingDocsYn { get; set; }
-    public string DirectBillYn { get; set; }
+    public string? TrxServiceType { get; set; }
+    public string? CorrectionFolioYn { get; set; }
+    public string? DebitFlag { get; set; }
+    public string? DepositFolioYn { get; set; }
+    public string? CorrectionHeaderYn { get; set; }
+    public string? SimpleFolioYn { get; set; }
+    public string? InternalBillYn { get; set; }
+    public string? WorkingDocsYn { get; set; }
+    public string? DirectBillYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

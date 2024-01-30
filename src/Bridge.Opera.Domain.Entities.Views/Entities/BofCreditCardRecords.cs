@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofCreditCardRecords
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string CcCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? CcCode { get; set; }
+    public string? Description { get; set; }
     public decimal? ArNumber { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string IndAdjustmentYn { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public string Currency { get; set; }
+    public string? IndAdjustmentYn { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public DateTime? ArTransferDate { get; set; }
@@ -34,51 +34,51 @@ public partial class BofCreditCardRecords
     public decimal? ArLedDebit { get; set; }
     public decimal? ArLedCredit { get; set; }
     public decimal? Installments { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string Title { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? Title { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Salutation { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string PhoneNo { get; set; }
-    public string Fax { get; set; }
-    public string NameType { get; set; }
-    public string VipStatus { get; set; }
-    public string MemberNo { get; set; }
-    public string MemberType { get; set; }
-    public string MemberLevel { get; set; }
-    public string ArNo { get; set; }
-    public string Gender { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string Tax1No { get; set; }
-    public string Tax2No { get; set; }
-    public string AccountName { get; set; }
-    public string AccountAddress1 { get; set; }
-    public string AccountAddress2 { get; set; }
-    public string AccountAddress3 { get; set; }
-    public string AccountAddress4 { get; set; }
-    public string AccountCity { get; set; }
-    public string AccountState { get; set; }
-    public string AccountCountry { get; set; }
-    public string AccountCountryDesc { get; set; }
-    public string AccountZipCode { get; set; }
-    public string AccountPhoneNo { get; set; }
-    public string AccountFax { get; set; }
-    public string AccountNameType { get; set; }
-    public string AccountArNo { get; set; }
-    public string AccountTax1No { get; set; }
-    public string AccountTax2No { get; set; }
+    public string? Salutation { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? Fax { get; set; }
+    public string? NameType { get; set; }
+    public string? VipStatus { get; set; }
+    public string? MemberNo { get; set; }
+    public string? MemberType { get; set; }
+    public string? MemberLevel { get; set; }
+    public string? ArNo { get; set; }
+    public string? Gender { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? Tax1No { get; set; }
+    public string? Tax2No { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountAddress1 { get; set; }
+    public string? AccountAddress2 { get; set; }
+    public string? AccountAddress3 { get; set; }
+    public string? AccountAddress4 { get; set; }
+    public string? AccountCity { get; set; }
+    public string? AccountState { get; set; }
+    public string? AccountCountry { get; set; }
+    public string? AccountCountryDesc { get; set; }
+    public string? AccountZipCode { get; set; }
+    public string? AccountPhoneNo { get; set; }
+    public string? AccountFax { get; set; }
+    public string? AccountNameType { get; set; }
+    public string? AccountArNo { get; set; }
+    public string? AccountTax1No { get; set; }
+    public string? AccountTax2No { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

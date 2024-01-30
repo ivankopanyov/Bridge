@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofMenuList
 {
-    public string AttributeCode { get; set; }
-    public string MenuItem { get; set; }
+    public string? AttributeCode { get; set; }
+    public string? MenuItem { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

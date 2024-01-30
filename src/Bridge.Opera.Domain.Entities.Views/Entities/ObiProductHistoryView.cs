@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiProductHistoryView
 {
     public decimal? NameId { get; set; }
-    public string ProdMonth { get; set; }
+    public string? ProdMonth { get; set; }
     public DateTime? FirstOfMonth { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
@@ -38,11 +38,11 @@ public partial class ObiProductHistoryView
     public decimal? IndOtherRevenue { get; set; }
     public decimal? BlkFoodRevenue { get; set; }
     public decimal? BlkOtherRevenue { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string CurrencyCode { get; set; }
-    public string NameType { get; set; }
-    public decimal MasterNameId { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? NameType { get; set; }
+    public decimal? MasterNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

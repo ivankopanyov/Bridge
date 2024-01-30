@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SocialMediaSetupTemp
 {
-    public string SocialNetwork { get; set; }
-    public string PostToPage { get; set; }
-    public string PostToEmail { get; set; }
+    public string? SocialNetwork { get; set; }
+    public string? PostToPage { get; set; }
+    public string? PostToEmail { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

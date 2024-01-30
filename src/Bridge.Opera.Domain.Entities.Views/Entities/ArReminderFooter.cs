@@ -14,12 +14,12 @@ public partial class ArReminderFooter
     public decimal? TotalOpenBalance { get; set; }
     public decimal? TotalOrgAmount { get; set; }
     public decimal? TotalPaidAmount { get; set; }
-    public string PrintedTotPaidAmount { get; set; }
-    public string PrintedTotOrgAmount { get; set; }
-    public string PrintedTotOpenBalance { get; set; }
-    public string PrintedTotAmount { get; set; }
-    public string PrintedCurrency { get; set; }
-    public string PrintedExchRate { get; set; }
+    public string? PrintedTotPaidAmount { get; set; }
+    public string? PrintedTotOrgAmount { get; set; }
+    public string? PrintedTotOpenBalance { get; set; }
+    public string? PrintedTotAmount { get; set; }
+    public string? PrintedCurrency { get; set; }
+    public string? PrintedExchRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

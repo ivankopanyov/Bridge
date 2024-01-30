@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MailingHeader1
 {
-    public decimal QueryId { get; set; }
+    public decimal? QueryId { get; set; }
     public decimal? UserId { get; set; }
-    public string QueryName { get; set; }
-    public string Description { get; set; }
-    public string QueryStatement { get; set; }
+    public string? QueryName { get; set; }
+    public string? Description { get; set; }
+    public string? QueryStatement { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

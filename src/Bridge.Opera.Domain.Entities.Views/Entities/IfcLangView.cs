@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcLangView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string Selector { get; set; }
-    public string LangCode { get; set; }
+    public string? Selector { get; set; }
+    public string? LangCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

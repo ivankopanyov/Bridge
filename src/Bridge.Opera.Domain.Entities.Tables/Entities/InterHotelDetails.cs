@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InterHotelDetails
 {
-    public decimal TrxNo { get; set; }
+    public decimal? TrxNo { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? LinkTrxNo { get; set; }
-    public string PostRecFlag { get; set; }
-    public string ToResort { get; set; }
-    public string FromResort { get; set; }
+    public string? PostRecFlag { get; set; }
+    public string? ToResort { get; set; }
+    public string? FromResort { get; set; }
     public decimal? Amount { get; set; }
     public DateTime? ReconcileDate { get; set; }
     public DateTime? PaymentDate { get; set; }

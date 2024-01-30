@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResvAccessChangeableFields
 {
-    public string AccessSourceType { get; set; }
-    public string AccessSourceValue { get; set; }
-    public string FormName { get; set; }
-    public string StatusCode { get; set; }
-    public string FieldName { get; set; }
+    public string? AccessSourceType { get; set; }
+    public string? AccessSourceValue { get; set; }
+    public string? FormName { get; set; }
+    public string? StatusCode { get; set; }
+    public string? FieldName { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string Condition { get; set; }
+    public string? Condition { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

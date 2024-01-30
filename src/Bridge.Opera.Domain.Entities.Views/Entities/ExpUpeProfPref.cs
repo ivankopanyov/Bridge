@@ -7,13 +7,13 @@ public partial class ExpUpeProfPref
     public decimal? NameId { get; set; }
     public decimal? PrefTypeSeq { get; set; }
     public decimal? PrefSeq { get; set; }
-    public string PreferenceType { get; set; }
-    public string PrefGrp { get; set; }
-    public string PreferenceValue { get; set; }
-    public string Resort { get; set; }
-    public string GlobalYn { get; set; }
-    public string PrefDescription { get; set; }
-    public string UpePrefCode { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? PrefGrp { get; set; }
+    public string? PreferenceValue { get; set; }
+    public string? Resort { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? PrefDescription { get; set; }
+    public string? UpePrefCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

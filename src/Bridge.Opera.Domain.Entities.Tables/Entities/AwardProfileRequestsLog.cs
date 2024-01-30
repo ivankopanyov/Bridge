@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AwardProfileRequestsLog
 {
-    public decimal LogId { get; set; }
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string CrsConfirmationNumber { get; set; }
-    public string CrsHotelCode { get; set; }
-    public string CertificateNumber { get; set; }
-    public string MasterCertificateNumber { get; set; }
-    public string AwardCode { get; set; }
-    public string InstantRedemptionYn { get; set; }
-    public string FbaYn { get; set; }
-    public string PaidUpgradeYn { get; set; }
-    public decimal CertActionId { get; set; }
-    public string ActionType { get; set; }
+    public decimal? LogId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? CrsConfirmationNumber { get; set; }
+    public string? CrsHotelCode { get; set; }
+    public string? CertificateNumber { get; set; }
+    public string? MasterCertificateNumber { get; set; }
+    public string? AwardCode { get; set; }
+    public string? InstantRedemptionYn { get; set; }
+    public string? FbaYn { get; set; }
+    public string? PaidUpgradeYn { get; set; }
+    public decimal? CertActionId { get; set; }
+    public string? ActionType { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public DateTime InsertTs { get; set; }
-    public decimal InsertUser { get; set; }
-    public string FailureReason { get; set; }
+    public DateTime? InsertTs { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? FailureReason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

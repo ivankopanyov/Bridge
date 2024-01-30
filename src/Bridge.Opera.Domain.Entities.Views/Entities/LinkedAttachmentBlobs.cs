@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LinkedAttachmentBlobs
 {
-    public decimal AttachId { get; set; }
+    public decimal? AttachId { get; set; }
     public byte[] AttachmentBlob { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

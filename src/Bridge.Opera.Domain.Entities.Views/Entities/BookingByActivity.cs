@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BookingByActivity
 {
-    public string Type { get; set; }
-    public decimal ActId { get; set; }
-    public decimal BookingId { get; set; }
-    public DateTime BookingArrival { get; set; }
-    public DateTime BookingDeparture { get; set; }
-    public string BookingName { get; set; }
+    public string? Type { get; set; }
+    public decimal? ActId { get; set; }
+    public decimal? BookingId { get; set; }
+    public DateTime? BookingArrival { get; set; }
+    public DateTime? BookingDeparture { get; set; }
+    public string? BookingName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

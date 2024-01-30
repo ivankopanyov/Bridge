@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DayType
 {
-    public string DtCode { get; set; }
-    public string DtDesc { get; set; }
+    public string? DtCode { get; set; }
+    public string? DtDesc { get; set; }
     public decimal? DtAdder { get; set; }
-    public string DtRemarks { get; set; }
+    public string? DtRemarks { get; set; }
     public decimal? DtMultiplier { get; set; }
     public decimal? SellSequence { get; set; }
 

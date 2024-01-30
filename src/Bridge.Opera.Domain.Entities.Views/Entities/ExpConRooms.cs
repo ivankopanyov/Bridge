@@ -16,9 +16,9 @@ public partial class ExpConRooms
     public decimal? FlowThrough { get; set; }
     public decimal? PhysicalRoomsNextDay { get; set; }
     public decimal? OutOfOrderNextDay { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomType { get; set; }
-    public string RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomClass { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

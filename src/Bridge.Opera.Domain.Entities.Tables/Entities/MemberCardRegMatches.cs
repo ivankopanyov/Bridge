@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MemberCardRegMatches
 {
-    public string MemberCardRegCode { get; set; }
-    public decimal OcisNameId { get; set; }
-    public string DatabaseId { get; set; }
-    public string ChainCode { get; set; }
-    public string MatchDesc { get; set; }
+    public string? MemberCardRegCode { get; set; }
+    public decimal? OcisNameId { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MatchDesc { get; set; }
     public decimal? MatchWeight { get; set; }
-    public string ResortNameId { get; set; }
-    public string NameType { get; set; }
-    public string NameCode { get; set; }
-    public string Name { get; set; }
-    public string FirstName { get; set; }
-    public string AlternateName { get; set; }
-    public string AlternateFirst { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string CountryCode { get; set; }
-    public string Email { get; set; }
-    public string PrimaryPhone { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipNumber { get; set; }
-    public string FrequentFlyerType { get; set; }
-    public string FrequentFlyerNumber { get; set; }
-    public string Gender { get; set; }
-    public string ProcessingMessage { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? NameType { get; set; }
+    public string? NameCode { get; set; }
+    public string? Name { get; set; }
+    public string? FirstName { get; set; }
+    public string? AlternateName { get; set; }
+    public string? AlternateFirst { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Email { get; set; }
+    public string? PrimaryPhone { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? FrequentFlyerType { get; set; }
+    public string? FrequentFlyerNumber { get; set; }
+    public string? Gender { get; set; }
+    public string? ProcessingMessage { get; set; }
     public decimal? NameId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RouteDatabaseId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RouteDatabaseId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

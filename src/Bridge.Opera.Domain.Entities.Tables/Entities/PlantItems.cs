@@ -9,16 +9,16 @@ public partial class PlantItems
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string PlantItemCode { get; set; }
-    public string PlantItemName { get; set; }
+    public string? Resort { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? PlantItemName { get; set; }
     public decimal? ActualYtd { get; set; }
     public decimal? BudgetYtd { get; set; }
-    public string TypeCode { get; set; }
-    public string LocationCode { get; set; }
-    public string Room { get; set; }
-    public string ExternalInfo { get; set; }
-    public string PmRequiredYn { get; set; }
+    public string? TypeCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? Room { get; set; }
+    public string? ExternalInfo { get; set; }
+    public string? PmRequiredYn { get; set; }
     public DateTime? LastMaintDate { get; set; }
     public DateTime? NextMaintDueDate { get; set; }
     public decimal? LastMaintTask { get; set; }

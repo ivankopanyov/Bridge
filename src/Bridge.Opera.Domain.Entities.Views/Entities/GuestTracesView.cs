@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GuestTracesView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal TraceId { get; set; }
-    public string DeptId { get; set; }
-    public DateTime TraceDate { get; set; }
-    public DateTime TraceOn { get; set; }
-    public string StatusFlag { get; set; }
-    public string EnteredBy { get; set; }
-    public string TraceText { get; set; }
-    public string ResolvedOn { get; set; }
-    public string ResolvedBy { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? TraceId { get; set; }
+    public string? DeptId { get; set; }
+    public DateTime? TraceDate { get; set; }
+    public DateTime? TraceOn { get; set; }
+    public string? StatusFlag { get; set; }
+    public string? EnteredBy { get; set; }
+    public string? TraceText { get; set; }
+    public string? ResolvedOn { get; set; }
+    public string? ResolvedBy { get; set; }
     public DateTime? ResolvedOnDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Room { get; set; }
-    public string ResvStatus { get; set; }
-    public string GuestFullName { get; set; }
-    public string TraceTime { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Room { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? GuestFullName { get; set; }
+    public string? TraceTime { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string TraceType { get; set; }
-    public string InternalYn { get; set; }
-    public string ResvStatusDisplay { get; set; }
-    public decimal GuestNameId { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? TraceType { get; set; }
+    public string? InternalYn { get; set; }
+    public string? ResvStatusDisplay { get; set; }
+    public decimal? GuestNameId { get; set; }
     public decimal? ResvTraceId { get; set; }
-    public string ExternalTraceId { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ExternalTraceId { get; set; }
+    public string? ConfirmationNo { get; set; }
     public DateTime? TruncArrival { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

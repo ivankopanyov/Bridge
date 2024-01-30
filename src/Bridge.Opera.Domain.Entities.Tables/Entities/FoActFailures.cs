@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FoActFailures
 {
-    public string AppUsername { get; set; }
-    public string AppPassword { get; set; }
-    public string Resort { get; set; }
-    public string EventId { get; set; }
-    public string Command { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Register { get; set; }
-    public string Register2 { get; set; }
-    public string Result { get; set; }
-    public string GuestNum { get; set; }
-    public string Param1 { get; set; }
-    public string Param2 { get; set; }
-    public string Param3 { get; set; }
-    public string Param4 { get; set; }
-    public string Param5 { get; set; }
-    public string Param6 { get; set; }
-    public string Param7 { get; set; }
-    public string PStation { get; set; }
-    public string LoginName { get; set; }
-    public string FailureReason { get; set; }
-    public string LoggedInResort { get; set; }
+    public string? AppUsername { get; set; }
+    public string? AppPassword { get; set; }
+    public string? Resort { get; set; }
+    public string? EventId { get; set; }
+    public string? Command { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Register { get; set; }
+    public string? Register2 { get; set; }
+    public string? Result { get; set; }
+    public string? GuestNum { get; set; }
+    public string? Param1 { get; set; }
+    public string? Param2 { get; set; }
+    public string? Param3 { get; set; }
+    public string? Param4 { get; set; }
+    public string? Param5 { get; set; }
+    public string? Param6 { get; set; }
+    public string? Param7 { get; set; }
+    public string? PStation { get; set; }
+    public string? LoginName { get; set; }
+    public string? FailureReason { get; set; }
+    public string? LoggedInResort { get; set; }
     public decimal? RequeueResvNameId { get; set; }
     public DateTime? InsertTs { get; set; }
 

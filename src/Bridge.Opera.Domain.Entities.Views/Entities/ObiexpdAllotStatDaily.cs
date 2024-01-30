@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdAllotStatDaily
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime AllotmentDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? AllotmentDate { get; set; }
     public decimal? PmsAllotmentHeaderId { get; set; }
     public decimal? PmsAllotmentDetailId { get; set; }
-    public string AllotmentCode { get; set; }
+    public string? AllotmentCode { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? ToSell { get; set; }
     public decimal? Sold { get; set; }
@@ -22,9 +22,9 @@ public partial class ObiexpdAllotStatDaily
     public decimal? NonRevenue { get; set; }
     public decimal? TotalTax { get; set; }
     public decimal? Adults { get; set; }
-    public string ShoulderYn { get; set; }
+    public string? ShoulderYn { get; set; }
     public DateTime? DmProcessed { get; set; }
-    public string DmProcessedYn { get; set; }
+    public string? DmProcessedYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

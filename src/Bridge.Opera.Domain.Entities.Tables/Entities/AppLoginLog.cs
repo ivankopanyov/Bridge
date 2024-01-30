@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppLoginLog
 {
-    public decimal LogSeqId { get; set; }
+    public decimal? LogSeqId { get; set; }
     public decimal? AppUserId { get; set; }
-    public string StationId { get; set; }
+    public string? StationId { get; set; }
     public DateTime? LastLoggedTime { get; set; }
-    public string LastLoggedResort { get; set; }
+    public string? LastLoggedResort { get; set; }
     public decimal? Sid { get; set; }
     public decimal? Serial { get; set; }
     public decimal? InstId { get; set; }
-    public string LoggedTerminals { get; set; }
+    public string? LoggedTerminals { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

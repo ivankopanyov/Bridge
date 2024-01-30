@@ -7,37 +7,37 @@ public partial class GdsConvResorts
         GdsConvRateCodes = new HashSet<GdsConvRateCodes>();
     }
 
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
-    public string GdsResort { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public string? GdsResort { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ActivateYn { get; set; }
-    public string CityCode { get; set; }
-    public string ResortChainId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ActivateYn { get; set; }
+    public string? CityCode { get; set; }
+    public string? ResortChainId { get; set; }
     public decimal? MaxRoomLimit { get; set; }
-    public string AdsAriEnable { get; set; }
-    public string PrevailingYn { get; set; }
-    public string ArUrl { get; set; }
-    public string BrUrl { get; set; }
-    public string InitialUpload { get; set; }
+    public string? AdsAriEnable { get; set; }
+    public string? PrevailingYn { get; set; }
+    public string? ArUrl { get; set; }
+    public string? BrUrl { get; set; }
+    public string? InitialUpload { get; set; }
     public decimal? BookingLimit { get; set; }
-    public string DefaultRateCode { get; set; }
+    public string? DefaultRateCode { get; set; }
     public decimal? LowRevThreshold1 { get; set; }
     public decimal? HighRevThreshold1 { get; set; }
-    public string DefaultRateCode1 { get; set; }
+    public string? DefaultRateCode1 { get; set; }
     public decimal? LowRevThreshold2 { get; set; }
     public decimal? HighRevThreshold2 { get; set; }
-    public string DefaultRateCode2 { get; set; }
+    public string? DefaultRateCode2 { get; set; }
     public decimal? LowRevThreshold3 { get; set; }
     public decimal? HighRevThreshold3 { get; set; }
-    public string DefaultRateCode3 { get; set; }
-    public string AddOnLicense { get; set; }
+    public string? DefaultRateCode3 { get; set; }
+    public string? AddOnLicense { get; set; }
 
     public virtual GdsHosts GdsHostNavigation { get; set; }
     public virtual ICollection<GdsConvRateCodes> GdsConvRateCodes { get; set; }

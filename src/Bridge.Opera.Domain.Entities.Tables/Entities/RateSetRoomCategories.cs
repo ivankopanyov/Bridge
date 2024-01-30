@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateSetRoomCategories
 {
-    public decimal RateSetId { get; set; }
-    public string RoomCategory { get; set; }
+    public decimal? RateSetId { get; set; }
+    public string? RoomCategory { get; set; }
 
     public virtual RateSet RateSet { get; set; }
 

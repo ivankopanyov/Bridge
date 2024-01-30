@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationBalances
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? DepLedBalance { get; set; }
     public decimal? PackLedBalance { get; set; }
     public decimal? GuestLedBalance { get; set; }

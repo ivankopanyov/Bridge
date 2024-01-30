@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CcPaymentTransactions
 {
-    public string Resort { get; set; }
-    public decimal SeqNo { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterType { get; set; }
-    public string ParameterValue { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SeqNo { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterType { get; set; }
+    public string? ParameterValue { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

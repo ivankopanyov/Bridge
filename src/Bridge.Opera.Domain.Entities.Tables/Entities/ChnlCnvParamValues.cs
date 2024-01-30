@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ChnlCnvParamValues
 {
-    public string Resort { get; set; }
-    public string GdsHost { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
+    public string? Resort { get; set; }
+    public string? GdsHost { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
 
     public virtual ChnlCnvParamNames ParameterNameNavigation { get; set; }
 

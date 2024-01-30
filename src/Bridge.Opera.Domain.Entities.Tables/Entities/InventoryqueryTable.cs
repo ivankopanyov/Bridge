@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InventoryqueryTable
 {
-    public decimal Keynumber { get; set; }
-    public string QueryType { get; set; }
-    public string ChainCode { get; set; }
-    public string HotelCode { get; set; }
-    public string TimeUnitType { get; set; }
+    public decimal? Keynumber { get; set; }
+    public string? QueryType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? HotelCode { get; set; }
+    public string? TimeUnitType { get; set; }
     public DateTime? StartTime { get; set; }
     public decimal? NumberOfTimeUnits { get; set; }
-    public string RoomType { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMsg { get; set; }
+    public string? RoomType { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMsg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

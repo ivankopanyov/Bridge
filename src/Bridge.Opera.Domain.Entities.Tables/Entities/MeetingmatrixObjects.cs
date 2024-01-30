@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MeetingmatrixObjects
 {
-    public string ObjectGroup { get; set; }
-    public string ObjectType { get; set; }
-    public string ObjectName { get; set; }
-    public string ChainCode { get; set; }
+    public string? ObjectGroup { get; set; }
+    public string? ObjectType { get; set; }
+    public string? ObjectName { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

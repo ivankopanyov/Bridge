@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsSystemParameters
 {
-    public string Resort { get; set; }
-    public string ConfigStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? ConfigStatus { get; set; }
     public decimal? MaxLos { get; set; }
     public decimal? HurdleSteps { get; set; }
-    public string AutoApplyYn { get; set; }
-    public string AllotmentClassType { get; set; }
+    public string? AutoApplyYn { get; set; }
+    public string? AllotmentClassType { get; set; }
     public DateTime? NextFullrunDate { get; set; }
-    public string RefRoomCategory { get; set; }
+    public string? RefRoomCategory { get; set; }
     public decimal? OptimizerInterval { get; set; }
-    public string BookingClassType { get; set; }
-    public string OrmsCro { get; set; }
-    public string LosOptimization { get; set; }
-    public string CeilingAdjustment { get; set; }
-    public string DailyRateCode { get; set; }
-    public string EventsImpact { get; set; }
+    public string? BookingClassType { get; set; }
+    public string? OrmsCro { get; set; }
+    public string? LosOptimization { get; set; }
+    public string? CeilingAdjustment { get; set; }
+    public string? DailyRateCode { get; set; }
+    public string? EventsImpact { get; set; }
     public decimal? MaxFutureDays { get; set; }
     public decimal? MaxHistoryDays { get; set; }
     public DateTime? NextSeasonsCheckDate { get; set; }
     public decimal? CalendarDefaultDays { get; set; }
     public decimal? LosHurdlesToSend { get; set; }
-    public string AutoApplyObYn { get; set; }
-    public string IgnoreHurdleCeilingYn { get; set; }
+    public string? AutoApplyObYn { get; set; }
+    public string? IgnoreHurdleCeilingYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

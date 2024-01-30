@@ -3,58 +3,58 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class DmBookingVw
 {
     public decimal? PrimaryCompanyId { get; set; }
-    public string PrimaryCompanyName { get; set; }
+    public string? PrimaryCompanyName { get; set; }
     public decimal? CompanyContactId { get; set; }
-    public string CompanyContactName { get; set; }
+    public string? CompanyContactName { get; set; }
     public decimal? PrimarySourceId { get; set; }
-    public string PrimarySourceName { get; set; }
+    public string? PrimarySourceName { get; set; }
     public decimal? PrimaryAgentId { get; set; }
-    public string PrimaryAgentName { get; set; }
+    public string? PrimaryAgentName { get; set; }
     public decimal? AgentContactId { get; set; }
-    public string AgentContactName { get; set; }
-    public decimal BookingId { get; set; }
-    public string Property { get; set; }
-    public string PropertyName { get; set; }
-    public string PropertyRegion { get; set; }
-    public string PropertyRegionDesc { get; set; }
-    public string PropertyCountry { get; set; }
-    public string PropertyCountryDesc { get; set; }
-    public string PropertyChain { get; set; }
-    public string PropertyChainDesc { get; set; }
-    public string MarketSegment { get; set; }
-    public string MarketSegmentDesc { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
-    public string CompanyIndustry { get; set; }
-    public string CompanyPriority { get; set; }
+    public string? AgentContactName { get; set; }
+    public decimal? BookingId { get; set; }
+    public string? Property { get; set; }
+    public string? PropertyName { get; set; }
+    public string? PropertyRegion { get; set; }
+    public string? PropertyRegionDesc { get; set; }
+    public string? PropertyCountry { get; set; }
+    public string? PropertyCountryDesc { get; set; }
+    public string? PropertyChain { get; set; }
+    public string? PropertyChainDesc { get; set; }
+    public string? MarketSegment { get; set; }
+    public string? MarketSegmentDesc { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
+    public string? CompanyIndustry { get; set; }
+    public string? CompanyPriority { get; set; }
     public decimal? BlockOverallOwnerId { get; set; }
-    public string BlockOverallOwner { get; set; }
+    public string? BlockOverallOwner { get; set; }
     public decimal? BlockRoomsOwnerId { get; set; }
-    public string BlockRoomsOwner { get; set; }
+    public string? BlockRoomsOwner { get; set; }
     public decimal? BlockCateringOwnerId { get; set; }
-    public string BlockCateringOwner { get; set; }
-    public string BlockOrigin { get; set; }
-    public string ChangeCurrentStatus { get; set; }
+    public string? BlockCateringOwner { get; set; }
+    public string? BlockOrigin { get; set; }
+    public string? ChangeCurrentStatus { get; set; }
     public DateTime? StatusChangeDate { get; set; }
-    public DateTime BlockCreationDate { get; set; }
-    public DateTime BlockStartDate { get; set; }
-    public DateTime BlockEndDate { get; set; }
+    public DateTime? BlockCreationDate { get; set; }
+    public DateTime? BlockStartDate { get; set; }
+    public DateTime? BlockEndDate { get; set; }
     public DateTime? BlockShoulderBeginDate { get; set; }
     public DateTime? BlockShoulderEndDate { get; set; }
-    public string BookingType { get; set; }
-    public string AccountType { get; set; }
-    public string RevenueGroup1 { get; set; }
-    public string RevenueGroupDesc1 { get; set; }
-    public string RevenueGroup2 { get; set; }
-    public string RevenueGroupDesc2 { get; set; }
-    public string RevenueGroup3 { get; set; }
-    public string RevenueGroupDesc3 { get; set; }
-    public string RevenueGroup4 { get; set; }
-    public string RevenueGroupDesc4 { get; set; }
-    public string RevenueGroup5 { get; set; }
-    public string RevenueGroupDesc5 { get; set; }
-    public string RevenueGroup6 { get; set; }
-    public string RevenueGroupDesc6 { get; set; }
+    public string? BookingType { get; set; }
+    public string? AccountType { get; set; }
+    public string? RevenueGroup1 { get; set; }
+    public string? RevenueGroupDesc1 { get; set; }
+    public string? RevenueGroup2 { get; set; }
+    public string? RevenueGroupDesc2 { get; set; }
+    public string? RevenueGroup3 { get; set; }
+    public string? RevenueGroupDesc3 { get; set; }
+    public string? RevenueGroup4 { get; set; }
+    public string? RevenueGroupDesc4 { get; set; }
+    public string? RevenueGroup5 { get; set; }
+    public string? RevenueGroupDesc5 { get; set; }
+    public string? RevenueGroup6 { get; set; }
+    public string? RevenueGroupDesc6 { get; set; }
     public decimal? InitialTotalRoomNights { get; set; }
     public decimal? InitialTotalRoomRevenue { get; set; }
     public decimal? CurrBlockedTotalRmNights { get; set; }

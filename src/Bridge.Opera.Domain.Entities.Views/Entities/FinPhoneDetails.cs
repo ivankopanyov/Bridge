@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinPhoneDetails
 {
-    public decimal TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? ResvNameId { get; set; }
-    public DateTime TrxDate { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? Price { get; set; }
-    public string Time { get; set; }
-    public string Duration { get; set; }
-    public string NumberDailed { get; set; }
-    public string Resort { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Reference { get; set; }
+    public string? Time { get; set; }
+    public string? Duration { get; set; }
+    public string? NumberDailed { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Reference { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

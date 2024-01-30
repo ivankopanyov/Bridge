@@ -2,40 +2,40 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IrsEfileHdr
 {
-    public string Resort { get; set; }
-    public string ReturnType { get; set; }
-    public string TxForeignInd { get; set; }
-    public string TxTin { get; set; }
-    public string TxCtrlCode { get; set; }
-    public string TxName1 { get; set; }
-    public string TxName2 { get; set; }
-    public string TxCompanyName1 { get; set; }
-    public string TxCompanyName2 { get; set; }
-    public string TxCompanyAddress { get; set; }
-    public string TxCompanyCity { get; set; }
-    public string TxCompanyState { get; set; }
-    public string TxCompanyZip { get; set; }
-    public string TxContactName { get; set; }
-    public string TxContactPhone { get; set; }
-    public string TxContactEmail { get; set; }
-    public string TxMediaNo { get; set; }
-    public string TxIsPayerYn { get; set; }
-    public string PayerTin { get; set; }
-    public string PayerNameCtrl { get; set; }
-    public string FedStateCombinedInd { get; set; }
-    public string PayerForeignInd { get; set; }
-    public string FirstPayerName { get; set; }
-    public string SecondPayerName { get; set; }
-    public string TransferAgentInd { get; set; }
-    public string PayerAddress { get; set; }
-    public string PayerCity { get; set; }
-    public string PayerState { get; set; }
-    public string PayerZip { get; set; }
-    public string PayerPhone { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public string? ReturnType { get; set; }
+    public string? TxForeignInd { get; set; }
+    public string? TxTin { get; set; }
+    public string? TxCtrlCode { get; set; }
+    public string? TxName1 { get; set; }
+    public string? TxName2 { get; set; }
+    public string? TxCompanyName1 { get; set; }
+    public string? TxCompanyName2 { get; set; }
+    public string? TxCompanyAddress { get; set; }
+    public string? TxCompanyCity { get; set; }
+    public string? TxCompanyState { get; set; }
+    public string? TxCompanyZip { get; set; }
+    public string? TxContactName { get; set; }
+    public string? TxContactPhone { get; set; }
+    public string? TxContactEmail { get; set; }
+    public string? TxMediaNo { get; set; }
+    public string? TxIsPayerYn { get; set; }
+    public string? PayerTin { get; set; }
+    public string? PayerNameCtrl { get; set; }
+    public string? FedStateCombinedInd { get; set; }
+    public string? PayerForeignInd { get; set; }
+    public string? FirstPayerName { get; set; }
+    public string? SecondPayerName { get; set; }
+    public string? TransferAgentInd { get; set; }
+    public string? PayerAddress { get; set; }
+    public string? PayerCity { get; set; }
+    public string? PayerState { get; set; }
+    public string? PayerZip { get; set; }
+    public string? PayerPhone { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortAccess
 {
-    public string Resort { get; set; }
-    public decimal UserId { get; set; }
-    public string Responsibility { get; set; }
+    public string? Resort { get; set; }
+    public decimal? UserId { get; set; }
+    public string? Responsibility { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

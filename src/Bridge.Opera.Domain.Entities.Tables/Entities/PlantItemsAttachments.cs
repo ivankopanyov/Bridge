@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PlantItemsAttachments
 {
-    public string Resort { get; set; }
-    public string PlantItemCode { get; set; }
-    public string AttachmentName { get; set; }
-    public string AttachmentPath { get; set; }
-    public string AdditionalInfo { get; set; }
-    public string ApplicationToOpen { get; set; }
+    public string? Resort { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? AttachmentName { get; set; }
+    public string? AttachmentPath { get; set; }
+    public string? AdditionalInfo { get; set; }
+    public string? ApplicationToOpen { get; set; }
 
     public virtual PlantItems PlantItems { get; set; }
 

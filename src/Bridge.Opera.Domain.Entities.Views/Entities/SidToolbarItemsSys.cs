@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidToolbarItemsSys
 {
-    public string Application { get; set; }
-    public string WorkflowName { get; set; }
-    public string MenuItem { get; set; }
-    public string IconName { get; set; }
-    public string CommandToRun { get; set; }
+    public string? Application { get; set; }
+    public string? WorkflowName { get; set; }
+    public string? MenuItem { get; set; }
+    public string? IconName { get; set; }
+    public string? CommandToRun { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

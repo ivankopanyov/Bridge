@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidScreenPaintableFormsSys
 {
-    public string FormName { get; set; }
-    public string Application { get; set; }
-    public string Description { get; set; }
-    public string ManualSp { get; set; }
-    public string DesignMode { get; set; }
-    public string DynamicConditions { get; set; }
-    public string Udfs { get; set; }
-    public string Comments { get; set; }
+    public string? FormName { get; set; }
+    public string? Application { get; set; }
+    public string? Description { get; set; }
+    public string? ManualSp { get; set; }
+    public string? DesignMode { get; set; }
+    public string? DynamicConditions { get; set; }
+    public string? Udfs { get; set; }
+    public string? Comments { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ScPkgMenuItem
 {
     public decimal? PkgEvLink { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? MenuItemId { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Type { get; set; }
+    public string? Type { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MultiSelectTab
 {
-    public decimal TabRowId { get; set; }
-    public string SelectedYn { get; set; }
-    public string Id { get; set; }
-    public string Char1 { get; set; }
-    public string Char2 { get; set; }
-    public string Char3 { get; set; }
-    public string Char4 { get; set; }
-    public string Char5 { get; set; }
+    public decimal? TabRowId { get; set; }
+    public string? SelectedYn { get; set; }
+    public string? Id { get; set; }
+    public string? Char1 { get; set; }
+    public string? Char2 { get; set; }
+    public string? Char3 { get; set; }
+    public string? Char4 { get; set; }
+    public string? Char5 { get; set; }
     public decimal? Number1 { get; set; }
     public decimal? Number2 { get; set; }
     public decimal? Number3 { get; set; }
@@ -20,14 +20,14 @@ public partial class MultiSelectTab
     public DateTime? Date3 { get; set; }
     public DateTime? Date4 { get; set; }
     public DateTime? Date5 { get; set; }
-    public string RecordColor { get; set; }
-    public string Char6 { get; set; }
-    public string Char7 { get; set; }
+    public string? RecordColor { get; set; }
+    public string? Char6 { get; set; }
+    public string? Char7 { get; set; }
     public decimal? Number6 { get; set; }
     public decimal? Number7 { get; set; }
     public DateTime? Date6 { get; set; }
     public DateTime? Date7 { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? PrimaryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -3,57 +3,57 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RegretsDenialsView
 {
     public decimal? ReservationRegretId { get; set; }
-    public string RegretDenialFlg { get; set; }
-    public string Resort { get; set; }
+    public string? RegretDenialFlg { get; set; }
+    public string? Resort { get; set; }
     public decimal? NameId { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public decimal? Nights { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string TurnawayCode { get; set; }
-    public string TurnawayDesc { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? TurnawayCode { get; set; }
+    public string? TurnawayDesc { get; set; }
     public decimal? CreatedByUid { get; set; }
-    public string CreatedBy { get; set; }
+    public string? CreatedBy { get; set; }
     public DateTime? CreatedOn { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string TurnawayComments { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? TurnawayComments { get; set; }
     public decimal? RequestId { get; set; }
     public DateTime? RequestDate { get; set; }
-    public string RequestType { get; set; }
-    public string RequestSourceType { get; set; }
-    public string RequestSource { get; set; }
-    public string RequestedResort { get; set; }
+    public string? RequestType { get; set; }
+    public string? RequestSourceType { get; set; }
+    public string? RequestSource { get; set; }
+    public string? RequestedResort { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? SourceId { get; set; }
-    public string SourceName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? GroupId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string SgaCode { get; set; }
-    public string PseudoCity { get; set; }
-    public string City { get; set; }
-    public string PromotionCode { get; set; }
+    public string? CompanyName { get; set; }
+    public string? SgaCode { get; set; }
+    public string? PseudoCity { get; set; }
+    public string? City { get; set; }
+    public string? PromotionCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string AllotmentCode { get; set; }
-    public string RequestedRateCode { get; set; }
-    public string RegionCode { get; set; }
-    public string CallBegin { get; set; }
-    public string CallEnd { get; set; }
-    public string CallerName { get; set; }
-    public string CallerPhone { get; set; }
-    public string CallerFax { get; set; }
-    public string CallerEmail { get; set; }
-    public string IataNo { get; set; }
-    public string CorpNo { get; set; }
-    public string FpcNo { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? RequestedRateCode { get; set; }
+    public string? RegionCode { get; set; }
+    public string? CallBegin { get; set; }
+    public string? CallEnd { get; set; }
+    public string? CallerName { get; set; }
+    public string? CallerPhone { get; set; }
+    public string? CallerFax { get; set; }
+    public string? CallerEmail { get; set; }
+    public string? IataNo { get; set; }
+    public string? CorpNo { get; set; }
+    public string? FpcNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

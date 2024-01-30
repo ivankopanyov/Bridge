@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempRoomInventory
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string Room { get; set; }
-    public string RoomList { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Room { get; set; }
+    public string? RoomList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortRateProductPrices
 {
-    public decimal ResortRateProductDtlId { get; set; }
-    public string Resort { get; set; }
-    public string Product { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RateCode { get; set; }
-    public decimal Price { get; set; }
-    public string SeasonCode { get; set; }
+    public decimal? ResortRateProductDtlId { get; set; }
+    public string? Resort { get; set; }
+    public string? Product { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RateCode { get; set; }
+    public decimal? Price { get; set; }
+    public string? SeasonCode { get; set; }
     public decimal? AllowanceAmount { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? Bucket2Price { get; set; }
     public decimal? Bucket2AllowanceAmount { get; set; }
@@ -24,13 +24,13 @@ public partial class ResortRateProductPrices
     public decimal? MaxNights { get; set; }
     public decimal? MinPersons { get; set; }
     public decimal? MaxPersons { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
 
     public virtual RateSeason RateSeason { get; set; }
     public virtual ResortProducts ResortProducts { get; set; }

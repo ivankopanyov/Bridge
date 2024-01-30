@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentDetail
 {
-    public decimal AllotmentDetailId { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string ScRoomCategory { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string RoomClass { get; set; }
+    public decimal? AllotmentDetailId { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? ScRoomCategory { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? ToSell { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? Elastic { get; set; }
     public decimal? Sold { get; set; }
     public decimal? ElasticSold { get; set; }
     public decimal? Released { get; set; }
-    public string ShoulderYn { get; set; }
+    public string? ShoulderYn { get; set; }
     public decimal? RateAmount1 { get; set; }
     public decimal? RateAmount2 { get; set; }
     public decimal? RateAmount3 { get; set; }
@@ -44,22 +44,22 @@ public partial class AllotmentDetail
     public decimal? ContractOcc3 { get; set; }
     public decimal? ContractOcc4 { get; set; }
     public byte? LaptopChange { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? CutoffDate { get; set; }
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? InventoryDeduct { get; set; }
     public DateTime? InventoryDate { get; set; }
     public decimal? BookingPosition { get; set; }
     public decimal? SubBlockPickup { get; set; }
     public decimal? MaterializationAmnt { get; set; }
     public DateTime? ChangeDate { get; set; }
-    public string DiscountReasonCode { get; set; }
+    public string? DiscountReasonCode { get; set; }
     public decimal? DiscountAmt { get; set; }
     public decimal? DiscountPct { get; set; }
-    public string FixedRateYn { get; set; }
+    public string? FixedRateYn { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
     public virtual Resort ResortNavigation { get; set; }

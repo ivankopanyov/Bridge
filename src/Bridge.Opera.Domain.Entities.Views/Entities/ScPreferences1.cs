@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScPreferences1
 {
-    public decimal AppUserId { get; set; }
-    public string FormName { get; set; }
-    public string AppUser { get; set; }
-    public string PrefCode { get; set; }
-    public string PrefValue { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? FormName { get; set; }
+    public string? AppUser { get; set; }
+    public string? PrefCode { get; set; }
+    public string? PrefValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

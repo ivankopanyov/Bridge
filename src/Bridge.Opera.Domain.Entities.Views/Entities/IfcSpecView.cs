@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcSpecView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string Selector { get; set; }
-    public string Spec { get; set; }
-    public string Priority { get; set; }
-    public string Position { get; set; }
+    public string? Selector { get; set; }
+    public string? Spec { get; set; }
+    public string? Priority { get; set; }
+    public string? Position { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileMergeRules
 {
-    public string Region { get; set; }
-    public string NameType { get; set; }
-    public string ValidationItem { get; set; }
-    public string ValidationType { get; set; }
-    public string ValidationValue { get; set; }
+    public string? Region { get; set; }
+    public string? NameType { get; set; }
+    public string? ValidationItem { get; set; }
+    public string? ValidationType { get; set; }
+    public string? ValidationValue { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ApplyRuleYn { get; set; }
-    public string UserMaintainable { get; set; }
+    public string? ApplyRuleYn { get; set; }
+    public string? UserMaintainable { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

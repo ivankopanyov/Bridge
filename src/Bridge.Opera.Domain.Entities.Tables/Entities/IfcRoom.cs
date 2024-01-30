@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcRoom
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? PathId { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Type { get; set; }
-    public string BaseLine { get; set; }
-    public string XlatId { get; set; }
-    public string Mask { get; set; }
-    public string Stat { get; set; }
-    public string Vip { get; set; }
-    public string Name { get; set; }
-    public string Language { get; set; }
-    public string Data1 { get; set; }
-    public string Data2 { get; set; }
-    public string Data3 { get; set; }
-    public string Data4 { get; set; }
-    public string Data5 { get; set; }
-    public string Data6 { get; set; }
-    public string Data7 { get; set; }
-    public string Data8 { get; set; }
-    public string Data9 { get; set; }
-    public string VnSetup { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Type { get; set; }
+    public string? BaseLine { get; set; }
+    public string? XlatId { get; set; }
+    public string? Mask { get; set; }
+    public string? Stat { get; set; }
+    public string? Vip { get; set; }
+    public string? Name { get; set; }
+    public string? Language { get; set; }
+    public string? Data1 { get; set; }
+    public string? Data2 { get; set; }
+    public string? Data3 { get; set; }
+    public string? Data4 { get; set; }
+    public string? Data5 { get; set; }
+    public string? Data6 { get; set; }
+    public string? Data7 { get; set; }
+    public string? Data8 { get; set; }
+    public string? Data9 { get; set; }
+    public string? VnSetup { get; set; }
     public decimal? Sequence { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string UpdateUser { get; set; }
+    public string? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string InactiveYn { get; set; }
-    public string ExtnYn { get; set; }
-    public string MandatoryYn { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? ExtnYn { get; set; }
+    public string? MandatoryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

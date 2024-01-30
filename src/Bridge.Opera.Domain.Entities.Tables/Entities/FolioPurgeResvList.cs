@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioPurgeResvList
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal NameId { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? CompanyId { get; set; }

@@ -6,14 +6,14 @@ public partial class ExpEfolioDetails2
     public decimal? RowSequence { get; set; }
     public decimal? PartySequence { get; set; }
     public decimal? DetailSequence { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public decimal? HInvoiceNo { get; set; }
     public decimal? HByNameId { get; set; }
     public decimal? HPeNameId { get; set; }
     public decimal? HBillNo { get; set; }
     public decimal? HOrgInvoiceNo { get; set; }
-    public string HResort { get; set; }
-    public string HCurrency { get; set; }
+    public string? HResort { get; set; }
+    public string? HCurrency { get; set; }
     public decimal? HTotRevTaxable { get; set; }
     public decimal? HTotNonrevTaxable { get; set; }
     public decimal? HTotRevNontaxable { get; set; }
@@ -43,16 +43,16 @@ public partial class ExpEfolioDetails2
     public decimal? HNet10Amt { get; set; }
     public DateTime? HInsertDate { get; set; }
     public DateTime? HInvoicedate { get; set; }
-    public string HCcNo { get; set; }
-    public string HCcName { get; set; }
-    public string HCcType { get; set; }
-    public string HCcExpDtStr { get; set; }
-    public string HCcApprovalCode { get; set; }
-    public string HCcMerchantId { get; set; }
+    public string? HCcNo { get; set; }
+    public string? HCcName { get; set; }
+    public string? HCcType { get; set; }
+    public string? HCcExpDtStr { get; set; }
+    public string? HCcApprovalCode { get; set; }
+    public string? HCcMerchantId { get; set; }
     public DateTime? HArrival { get; set; }
     public DateTime? HDeparture { get; set; }
-    public string HConfirmationNo { get; set; }
-    public string HRoom { get; set; }
+    public string? HConfirmationNo { get; set; }
+    public string? HRoom { get; set; }
     public decimal? HRoomRate { get; set; }
     public decimal? HTax11Amt { get; set; }
     public decimal? HTax12Amt { get; set; }

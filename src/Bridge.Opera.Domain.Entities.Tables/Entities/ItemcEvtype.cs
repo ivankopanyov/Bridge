@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ItemcEvtype
 {
-    public decimal ItemclassId { get; set; }
-    public string EventType { get; set; }
+    public decimal? ItemclassId { get; set; }
+    public string? EventType { get; set; }
 
     public virtual GemItemClass Itemclass { get; set; }
 

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BookProfileHistory
 {
-    public decimal LeadId { get; set; }
-    public decimal ProfileId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal ProfRevId { get; set; }
-    public string SendYn { get; set; }
+    public decimal? LeadId { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? ProfRevId { get; set; }
+    public string? SendYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

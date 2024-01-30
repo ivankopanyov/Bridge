@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellRoomClassHrchy
 {
-    public string Resort { get; set; }
-    public string FromRoomClass { get; set; }
-    public string ToRoomClassList { get; set; }
+    public string? Resort { get; set; }
+    public string? FromRoomClass { get; set; }
+    public string? ToRoomClassList { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }

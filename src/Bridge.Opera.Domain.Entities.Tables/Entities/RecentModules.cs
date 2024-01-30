@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RecentModules
 {
-    public string ModuleName { get; set; }
-    public DateTime AccessDate { get; set; }
-    public string ModuleOpenInfo { get; set; }
-    public string ModuleViewInfo { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? ModuleName { get; set; }
+    public DateTime? AccessDate { get; set; }
+    public string? ModuleOpenInfo { get; set; }
+    public string? ModuleViewInfo { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

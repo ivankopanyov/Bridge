@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BookingLocalAttachments
 {
     public decimal? AttachId { get; set; }
-    public string AttachmentType { get; set; }
-    public string Description { get; set; }
-    public string Filename { get; set; }
-    public string Resort { get; set; }
+    public string? AttachmentType { get; set; }
+    public string? Description { get; set; }
+    public string? Filename { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
-    public string AttachmentLocation { get; set; }
-    public string GlobalYn { get; set; }
+    public string? AttachmentLocation { get; set; }
+    public string? GlobalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

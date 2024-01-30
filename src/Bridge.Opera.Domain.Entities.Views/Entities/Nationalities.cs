@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Nationalities
 {
-    public string Nationality { get; set; }
-    public string Description { get; set; }
+    public string? Nationality { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

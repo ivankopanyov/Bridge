@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ShRoomCategoryTemplate
 {
-    public string RoomCategory { get; set; }
-    public string SLabel { get; set; }
-    public string SBedtype { get; set; }
-    public string SellThruRuleYn { get; set; }
-    public string CrsDescription { get; set; }
-    public string ChainCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? SLabel { get; set; }
+    public string? SBedtype { get; set; }
+    public string? SellThruRuleYn { get; set; }
+    public string? CrsDescription { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

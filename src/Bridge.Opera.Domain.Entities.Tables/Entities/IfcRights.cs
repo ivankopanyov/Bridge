@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcRights
 {
-    public string Resort { get; set; }
-    public decimal IfcCtrlId { get; set; }
-    public decimal Right { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string ActiveYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? IfcCtrlId { get; set; }
+    public decimal? Right { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? ActiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

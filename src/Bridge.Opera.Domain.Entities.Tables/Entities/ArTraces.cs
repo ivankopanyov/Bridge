@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArTraces
 {
-    public string Status { get; set; }
-    public string Resort { get; set; }
-    public decimal AccountCode { get; set; }
-    public DateTime TraceDate { get; set; }
-    public string Trace { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? Status { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountCode { get; set; }
+    public DateTime? TraceDate { get; set; }
+    public string? Trace { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? ResolvedDate { get; set; }

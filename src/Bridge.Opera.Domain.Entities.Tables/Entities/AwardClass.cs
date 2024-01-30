@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AwardClass
 {
-    public string AwardClass1 { get; set; }
-    public string Description { get; set; }
+    public string? AwardClass1 { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

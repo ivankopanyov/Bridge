@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MailingHitlist1
 {
-    public decimal QueryIdLink { get; set; }
-    public string HitlistTable { get; set; }
+    public decimal? QueryIdLink { get; set; }
+    public string? HitlistTable { get; set; }
     public decimal? UserId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

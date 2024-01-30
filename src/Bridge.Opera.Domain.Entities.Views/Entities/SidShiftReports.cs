@@ -4,7 +4,7 @@ public partial class SidShiftReports
 {
     public decimal? ShiftGroupId { get; set; }
     public decimal? AttachedModuleId { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? CanDeleteYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

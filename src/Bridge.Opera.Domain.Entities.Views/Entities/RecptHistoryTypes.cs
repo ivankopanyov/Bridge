@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RecptHistoryTypes
 {
-    public string RecptType { get; set; }
-    public string RecptDescription { get; set; }
-    public string PaymentType { get; set; }
+    public string? RecptType { get; set; }
+    public string? RecptDescription { get; set; }
+    public string? PaymentType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

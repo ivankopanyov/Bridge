@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcWake
 {
-    public string WakeDest { get; set; }
-    public string Command { get; set; }
-    public string Result { get; set; }
-    public string FailCause { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public DateTime WakeDate { get; set; }
-    public DateTime WakeTime { get; set; }
-    public string WakeLang { get; set; }
+    public string? WakeDest { get; set; }
+    public string? Command { get; set; }
+    public string? Result { get; set; }
+    public string? FailCause { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public DateTime? WakeDate { get; set; }
+    public DateTime? WakeTime { get; set; }
+    public string? WakeLang { get; set; }
     public DateTime? SetDate { get; set; }
     public DateTime? SetTime { get; set; }
-    public string SetLogin { get; set; }
+    public string? SetLogin { get; set; }
     public DateTime? ResDate { get; set; }
     public DateTime? ResTime { get; set; }
-    public string ResLogin { get; set; }
+    public string? ResLogin { get; set; }
     public decimal? WakeRetry { get; set; }
-    public string WakeStart { get; set; }
-    public string GroupCode { get; set; }
-    public string Resort { get; set; }
-    public string ExtnNum { get; set; }
-    public string ExtnType { get; set; }
-    public string SpecialInstructions { get; set; }
+    public string? WakeStart { get; set; }
+    public string? GroupCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtnNum { get; set; }
+    public string? ExtnType { get; set; }
+    public string? SpecialInstructions { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? WakeupCallId { get; set; }
-    public string FollowUpCallYn { get; set; }
+    public string? FollowUpCallYn { get; set; }
     public decimal? ParentCallId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

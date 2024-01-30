@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaEcertResorts
 {
-    public decimal CertId { get; set; }
-    public string Resort { get; set; }
+    public decimal? CertId { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

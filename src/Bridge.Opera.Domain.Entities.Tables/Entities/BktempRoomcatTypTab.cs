@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class BktempRoomcatTypTab
 {
     public decimal? Keynumber { get; set; }
-    public string SummaryType { get; set; }
+    public string? SummaryType { get; set; }
     public DateTime? RecordDate { get; set; }
     public decimal? PmsToSell { get; set; }
     public decimal? PmsSold { get; set; }
     public decimal? CisSold { get; set; }
     public decimal? RequestId { get; set; }
-    public string Chain { get; set; }
-    public string Resort { get; set; }
-    public string Roomcat { get; set; }
-    public string ShortDesc { get; set; }
-    public string PmsRoomtyp { get; set; }
+    public string? Chain { get; set; }
+    public string? Resort { get; set; }
+    public string? Roomcat { get; set; }
+    public string? ShortDesc { get; set; }
+    public string? PmsRoomtyp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

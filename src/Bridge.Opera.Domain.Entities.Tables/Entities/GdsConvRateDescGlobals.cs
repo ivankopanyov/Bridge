@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvRateDescGlobals
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string Rp1 { get; set; }
-    public string Rp2 { get; set; }
-    public string Rp3 { get; set; }
-    public string Rpd { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? Rp1 { get; set; }
+    public string? Rp2 { get; set; }
+    public string? Rp3 { get; set; }
+    public string? Rpd { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

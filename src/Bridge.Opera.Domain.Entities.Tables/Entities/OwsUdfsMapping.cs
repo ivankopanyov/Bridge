@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsUdfsMapping
 {
-    public string ModuleName { get; set; }
-    public string UdfLabel { get; set; }
-    public string UdfName { get; set; }
-    public string UpdateYn { get; set; }
-    public string UdfType { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ModuleName { get; set; }
+    public string? UdfLabel { get; set; }
+    public string? UdfName { get; set; }
+    public string? UpdateYn { get; set; }
+    public string? UdfType { get; set; }
+    public string? ActiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

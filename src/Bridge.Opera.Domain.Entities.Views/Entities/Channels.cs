@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Channels
 {
-    public string SourceCode { get; set; }
-    public string ParentSourceCode { get; set; }
-    public string Description { get; set; }
+    public string? SourceCode { get; set; }
+    public string? ParentSourceCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? SellSequence { get; set; }
 

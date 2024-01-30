@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepPropAccProd
 {
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FoodRevenue { get; set; }

@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellConfig
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? MaxLos { get; set; }
     public decimal? MaxUpsellOffers { get; set; }
-    public string PhisicalInventoryYn { get; set; }
-    public string BlocksAllowedYn { get; set; }
-    public string DiscountAllowedYn { get; set; }
-    public string MultiRateAllowedYn { get; set; }
-    public string SharesAllowedYn { get; set; }
-    public string RankingMode { get; set; }
-    public string RoomStatus { get; set; }
-    public string TrxCode { get; set; }
-    public string FixedrateAllowedYn { get; set; }
+    public string? PhisicalInventoryYn { get; set; }
+    public string? BlocksAllowedYn { get; set; }
+    public string? DiscountAllowedYn { get; set; }
+    public string? MultiRateAllowedYn { get; set; }
+    public string? SharesAllowedYn { get; set; }
+    public string? RankingMode { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? TrxCode { get; set; }
+    public string? FixedrateAllowedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

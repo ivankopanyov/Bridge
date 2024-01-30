@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileAdjustments
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string AdjustmentCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? AdjustmentCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? AdjustmentAmount { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

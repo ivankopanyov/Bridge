@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventPosting1
 {
-    public decimal BookId { get; set; }
-    public string ChequeNumber { get; set; }
-    public decimal EventId { get; set; }
-    public decimal EvPostId { get; set; }
+    public decimal? BookId { get; set; }
+    public string? ChequeNumber { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? EvPostId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string PostedBy { get; set; }
+    public string? PostedBy { get; set; }
     public decimal? PostedById { get; set; }
-    public string PostedByResort { get; set; }
+    public string? PostedByResort { get; set; }
     public DateTime? PostedDateExtra { get; set; }
     public DateTime? PostedDateIncl { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RevenueExtra { get; set; }
     public decimal? RevenueIncluded { get; set; }
-    public string RevenueType { get; set; }
-    public string TrxCodeExtra { get; set; }
-    public string TrxCodeIncluded { get; set; }
+    public string? RevenueType { get; set; }
+    public string? TrxCodeExtra { get; set; }
+    public string? TrxCodeIncluded { get; set; }
     public decimal? TrxNoExtra { get; set; }
     public decimal? TrxNoIncl { get; set; }
     public DateTime? UpdateDate { get; set; }

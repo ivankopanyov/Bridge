@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkDailyTaskView
 {
-    public decimal TaskSeqNo { get; set; }
-    public DateTime TaskDate { get; set; }
-    public string TaskCode { get; set; }
-    public decimal TaskSheetNo { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public DateTime? TaskDate { get; set; }
+    public string? TaskCode { get; set; }
+    public decimal? TaskSheetNo { get; set; }
     public DateTime? TaskCompletedDate { get; set; }
     public decimal? TaskCredits { get; set; }
-    public string TaskInstructions { get; set; }
-    public string AutoGenerateInd { get; set; }
-    public string AutoGenerateFilters { get; set; }
-    public string EmpId { get; set; }
+    public string? TaskInstructions { get; set; }
+    public string? AutoGenerateInd { get; set; }
+    public string? AutoGenerateFilters { get; set; }
+    public string? EmpId { get; set; }
     public decimal? RoomCount { get; set; }
-    public string EmpSection { get; set; }
-    public string SimpleTaskYn { get; set; }
+    public string? EmpSection { get; set; }
+    public string? SimpleTaskYn { get; set; }
     public decimal? TravelingCredits { get; set; }
-    public string TaskSheetType { get; set; }
+    public string? TaskSheetType { get; set; }
     public decimal? HkBreakoutJobId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

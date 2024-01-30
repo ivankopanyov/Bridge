@@ -4,19 +4,19 @@ public partial class NamePreferencesTmp
 {
     public decimal? ResvNameId { get; set; }
     public decimal? PreferenceId { get; set; }
-    public string PreferenceType { get; set; }
-    public string PreferenceValue { get; set; }
-    public string PreferenceText { get; set; }
-    public string GuestHasYn { get; set; }
-    public string ResvHasYn { get; set; }
-    public string OldGuestHasYn { get; set; }
-    public string OldResvHasYn { get; set; }
-    public string GlobProp { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? PreferenceValue { get; set; }
+    public string? PreferenceText { get; set; }
+    public string? GuestHasYn { get; set; }
+    public string? ResvHasYn { get; set; }
+    public string? OldGuestHasYn { get; set; }
+    public string? OldResvHasYn { get; set; }
+    public string? GlobProp { get; set; }
     public DateTime? NpUpdateDate { get; set; }
     public DateTime? RpUpdateDate { get; set; }
     public decimal? TypeOrderBy { get; set; }
     public decimal? ValueOrderBy { get; set; }
-    public string ResvPrefYn { get; set; }
+    public string? ResvPrefYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

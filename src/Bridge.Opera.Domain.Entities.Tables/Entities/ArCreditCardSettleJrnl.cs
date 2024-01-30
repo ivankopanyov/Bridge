@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArCreditCardSettleJrnl
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? InvoiceNo { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string UpdateType { get; set; }
-    public string UpdateReason { get; set; }
+    public string? UpdateType { get; set; }
+    public string? UpdateReason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

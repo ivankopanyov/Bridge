@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailNotshowOpForField
 {
-    public decimal SourceId { get; set; }
-    public string Tablename { get; set; }
-    public string Fieldname { get; set; }
-    public decimal OperatorId { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? Tablename { get; set; }
+    public string? Fieldname { get; set; }
+    public decimal? OperatorId { get; set; }
 
     public virtual MailOperator Operator { get; set; }
 

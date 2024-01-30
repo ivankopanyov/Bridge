@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BqtChkRevSumByPBreak
 {
-    public string RevenueSumPBreak { get; set; }
-    public string RevenueSumName { get; set; }
-    public string RevenueSumCurrency { get; set; }
+    public string? RevenueSumPBreak { get; set; }
+    public string? RevenueSumName { get; set; }
+    public string? RevenueSumCurrency { get; set; }
     public decimal? RevenueSumAmount { get; set; }
     public decimal? ReportId { get; set; }
 

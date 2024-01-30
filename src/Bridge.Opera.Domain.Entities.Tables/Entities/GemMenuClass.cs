@@ -8,12 +8,12 @@ public partial class GemMenuClass
         MencEvtype = new HashSet<MencEvtype>();
     }
 
-    public decimal MencId { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
+    public decimal? MencId { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string InactiveYn { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual ICollection<GemMenu> GemMenu { get; set; }
     public virtual ICollection<MencEvtype> MencEvtype { get; set; }

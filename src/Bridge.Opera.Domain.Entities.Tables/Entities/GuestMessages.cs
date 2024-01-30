@@ -7,11 +7,11 @@ public partial class GuestMessages
         GuestRsvMessages = new HashSet<GuestRsvMessages>();
     }
 
-    public decimal Msgid { get; set; }
-    public DateTime MsgDate { get; set; }
-    public string Operator { get; set; }
-    public string MessageType { get; set; }
-    public string MessageText { get; set; }
+    public decimal? Msgid { get; set; }
+    public DateTime? MsgDate { get; set; }
+    public string? Operator { get; set; }
+    public string? MessageType { get; set; }
+    public string? MessageText { get; set; }
 
     public virtual ICollection<GuestRsvMessages> GuestRsvMessages { get; set; }
 

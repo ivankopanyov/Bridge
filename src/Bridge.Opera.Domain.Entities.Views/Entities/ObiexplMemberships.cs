@@ -2,102 +2,102 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexplMemberships
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
     public DateTime? RowInsertDate { get; set; }
     public DateTime? RowUpdateDate { get; set; }
-    public decimal MembershipId { get; set; }
-    public string MembershipIdKey { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipClass { get; set; }
-    public string MembershipClassDesc { get; set; }
-    public string MembershipLevelKey { get; set; }
-    public string MembershipLevel { get; set; }
-    public string MembershipLevelDesc { get; set; }
-    public string MembershipStatus { get; set; }
-    public string MembershipStatusDesc { get; set; }
-    public string MembershipTypeKey { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipTypeDesc { get; set; }
-    public string MemberIndicator { get; set; }
-    public string MemberInfoDispSet { get; set; }
-    public string MemberSubtype { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipIdKey { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? MembershipClassDesc { get; set; }
+    public string? MembershipLevelKey { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? MembershipLevelDesc { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? MembershipStatusDesc { get; set; }
+    public string? MembershipTypeKey { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipTypeDesc { get; set; }
+    public string? MemberIndicator { get; set; }
+    public string? MemberInfoDispSet { get; set; }
+    public string? MemberSubtype { get; set; }
     public decimal? MultipleRoomsLimit { get; set; }
-    public decimal NameId { get; set; }
-    public string GuestName { get; set; }
-    public string NameOnCard { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
+    public decimal? NameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? NameOnCard { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
     public decimal? Age { get; set; }
-    public string AllowDupCardYn { get; set; }
-    public string AllId { get; set; }
-    public string AutoCardNoBasedOn { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? AllowDupCardYn { get; set; }
+    public string? AllId { get; set; }
+    public string? AutoCardNoBasedOn { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public decimal? BatchDelayPeriod { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string BookerProgramYn { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? BookerProgramYn { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? CardValidYears { get; set; }
-    public string CentralSetupYn { get; set; }
-    public string ChainCode { get; set; }
-    public string ChipAndPinYn { get; set; }
-    public string City { get; set; }
-    public string Comments { get; set; }
-    public string Country { get; set; }
+    public string? CentralSetupYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ChipAndPinYn { get; set; }
+    public string? City { get; set; }
+    public string? Comments { get; set; }
+    public string? Country { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? CurrentPoints { get; set; }
-    public string DefaultMemStatus { get; set; }
-    public string DeviceCode { get; set; }
+    public string? DefaultMemStatus { get; set; }
+    public string? DeviceCode { get; set; }
     public DateTime? DeviceDisableDate { get; set; }
-    public string EarningPreference { get; set; }
-    public string EmailAddress { get; set; }
-    public string EnrolledAt { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string EnrollmentCodeReqYn { get; set; }
-    public string EnrollmentGroup { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string ExceptionType { get; set; }
+    public string? EarningPreference { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? EnrollmentCodeReqYn { get; set; }
+    public string? EnrollmentGroup { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? ExceptionType { get; set; }
     public DateTime? ExpirationDate { get; set; }
-    public string ExpirationDateRequired { get; set; }
+    public string? ExpirationDateRequired { get; set; }
     public decimal? ExpirationMonth { get; set; }
     public decimal? ExternalProcessDays { get; set; }
-    public string FrequentFlyerYn { get; set; }
-    public string Gender { get; set; }
-    public string GracePeriodIndicator { get; set; }
+    public string? FrequentFlyerYn { get; set; }
+    public string? Gender { get; set; }
+    public string? GracePeriodIndicator { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string InactiveYn { get; set; }
+    public string? InactiveYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? JoinedDate { get; set; }
-    public string LangCode { get; set; }
-    public string LevelRequired { get; set; }
-    public string LoyaltyProgramYn { get; set; }
+    public string? LangCode { get; set; }
+    public string? LevelRequired { get; set; }
+    public string? LoyaltyProgramYn { get; set; }
     public DateTime? MbrprefChangedDate { get; set; }
-    public string Nationality { get; set; }
-    public string NumericValidation { get; set; }
-    public string PartnerAccountNo { get; set; }
+    public string? Nationality { get; set; }
+    public string? NumericValidation { get; set; }
+    public string? PartnerAccountNo { get; set; }
     public decimal? PartnerMembershipId { get; set; }
-    public string PartnerType { get; set; }
-    public string PhoneNumber { get; set; }
-    public string PointsLabel { get; set; }
-    public string PointIndicator { get; set; }
-    public string PrimaryAirlinePartner { get; set; }
-    public string PrimaryMembershipYn { get; set; }
+    public string? PartnerType { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? PointsLabel { get; set; }
+    public string? PointIndicator { get; set; }
+    public string? PrimaryAirlinePartner { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
     public DateTime? ProcessExpirationDate { get; set; }
     public decimal? RankValue { get; set; }
-    public string Region { get; set; }
-    public string Resort { get; set; }
-    public string State { get; set; }
-    public string TrackData { get; set; }
-    public string TscDateFlag { get; set; }
+    public string? Region { get; set; }
+    public string? Resort { get; set; }
+    public string? State { get; set; }
+    public string? TrackData { get; set; }
+    public string? TscDateFlag { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ValidationByIfc { get; set; }
+    public string? ValidationByIfc { get; set; }
     public decimal? YearsToExpire { get; set; }
-    public string ZipCode { get; set; }
+    public string? ZipCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

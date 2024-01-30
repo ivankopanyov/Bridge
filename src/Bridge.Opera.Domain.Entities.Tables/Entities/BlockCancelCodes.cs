@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BlockCancelCodes
 {
-    public string Prevcanceltype { get; set; }
-    public string Prevreason { get; set; }
-    public string Previnformation { get; set; }
-    public string Prevdestination { get; set; }
+    public string? Prevcanceltype { get; set; }
+    public string? Prevreason { get; set; }
+    public string? Previnformation { get; set; }
+    public string? Prevdestination { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

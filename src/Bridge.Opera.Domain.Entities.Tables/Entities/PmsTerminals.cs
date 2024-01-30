@@ -7,22 +7,22 @@ public partial class PmsTerminals
         WorkstationPrinters = new HashSet<WorkstationPrinters>();
     }
 
-    public string StationId { get; set; }
+    public string? StationId { get; set; }
     public decimal? CCInterfaceSetupId { get; set; }
-    public string StationName { get; set; }
-    public string LastLoggedUser { get; set; }
+    public string? StationName { get; set; }
+    public string? LastLoggedUser { get; set; }
     public DateTime? LastLoginTime { get; set; }
-    public string CCReaderAttachedYn { get; set; }
-    public string Description { get; set; }
-    public string DomainPrinterStationId { get; set; }
-    public string FiscalPrinterAttachedYn { get; set; }
-    public string ChipPinDeviceAttachedYn { get; set; }
-    public string ChainCode { get; set; }
-    public string FiscalUnitSerialNumber { get; set; }
+    public string? CCReaderAttachedYn { get; set; }
+    public string? Description { get; set; }
+    public string? DomainPrinterStationId { get; set; }
+    public string? FiscalPrinterAttachedYn { get; set; }
+    public string? ChipPinDeviceAttachedYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? FiscalUnitSerialNumber { get; set; }
     public decimal? CCReaderDeviceId { get; set; }
-    public string SoftwareId { get; set; }
-    public string ElectronicSignatureDeviceYn { get; set; }
-    public string EsdNo { get; set; }
+    public string? SoftwareId { get; set; }
+    public string? ElectronicSignatureDeviceYn { get; set; }
+    public string? EsdNo { get; set; }
 
     public virtual CreditCardReaderDevices C { get; set; }
     public virtual ICollection<WorkstationPrinters> WorkstationPrinters { get; set; }

@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsQuoteHeaderVw
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public decimal QRequestId { get; set; }
-    public string QResort { get; set; }
-    public string QBlockCode { get; set; }
-    public decimal QAllotmentHeaderId { get; set; }
-    public string QBlockStatus { get; set; }
-    public DateTime QBlockBeginDate { get; set; }
-    public DateTime QBlockEndDate { get; set; }
-    public DateTime QRequestDate { get; set; }
-    public string QRequestType { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? QRequestId { get; set; }
+    public string? QResort { get; set; }
+    public string? QBlockCode { get; set; }
+    public decimal? QAllotmentHeaderId { get; set; }
+    public string? QBlockStatus { get; set; }
+    public DateTime? QBlockBeginDate { get; set; }
+    public DateTime? QBlockEndDate { get; set; }
+    public DateTime? QRequestDate { get; set; }
+    public string? QRequestType { get; set; }
     public decimal? QRequestedAmount { get; set; }
     public decimal? QTotalRooms { get; set; }
-    public string QInsertUserName { get; set; }
-    public decimal QInsertUser { get; set; }
-    public DateTime QInsertDate { get; set; }
-    public string QUpdateUserName { get; set; }
-    public decimal QUpdateUser { get; set; }
-    public DateTime QUpdateDate { get; set; }
-    public string BResort { get; set; }
-    public decimal BookId { get; set; }
-    public string AllotmentCode { get; set; }
+    public string? QInsertUserName { get; set; }
+    public decimal? QInsertUser { get; set; }
+    public DateTime? QInsertDate { get; set; }
+    public string? QUpdateUserName { get; set; }
+    public decimal? QUpdateUser { get; set; }
+    public DateTime? QUpdateDate { get; set; }
+    public string? BResort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? AllotmentCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string BookingStatus { get; set; }
-    public string Company { get; set; }
-    public string City { get; set; }
-    public string GroupName { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? Company { get; set; }
+    public string? City { get; set; }
+    public string? GroupName { get; set; }
     public decimal? TotalAmt { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? TotalCost { get; set; }
@@ -48,20 +48,20 @@ public partial class OrmsQuoteHeaderVw
     public decimal? RoomsOtbNonyieldable { get; set; }
     public decimal? RespAmtOtbNonyieldable { get; set; }
     public decimal? CostOtbNonyieldable { get; set; }
-    public string TotalDisplay { get; set; }
-    public string ForeEmptyDisplay { get; set; }
-    public string ForeYieldableDisplay { get; set; }
-    public string ForeNonyieldableDisplay { get; set; }
-    public string OtbYieldableDisplay { get; set; }
-    public string OtbNonyieldableDisplay { get; set; }
-    public string TotalCostDisplay { get; set; }
-    public string CostForeEmptyDisplay { get; set; }
-    public string CostForeYieldableDisplay { get; set; }
-    public string CostForeNonyieldableDisplay { get; set; }
-    public string CostOtbYieldableDisplay { get; set; }
-    public string CostOtbNonyieldableDisplay { get; set; }
-    public string TotalLabel { get; set; }
-    public string CostLabel { get; set; }
+    public string? TotalDisplay { get; set; }
+    public string? ForeEmptyDisplay { get; set; }
+    public string? ForeYieldableDisplay { get; set; }
+    public string? ForeNonyieldableDisplay { get; set; }
+    public string? OtbYieldableDisplay { get; set; }
+    public string? OtbNonyieldableDisplay { get; set; }
+    public string? TotalCostDisplay { get; set; }
+    public string? CostForeEmptyDisplay { get; set; }
+    public string? CostForeYieldableDisplay { get; set; }
+    public string? CostForeNonyieldableDisplay { get; set; }
+    public string? CostOtbYieldableDisplay { get; set; }
+    public string? CostOtbNonyieldableDisplay { get; set; }
+    public string? TotalLabel { get; set; }
+    public string? CostLabel { get; set; }
     public decimal? RequestedRooms { get; set; }
     public decimal? ORoomsForeEmpty { get; set; }
     public decimal? Offset { get; set; }

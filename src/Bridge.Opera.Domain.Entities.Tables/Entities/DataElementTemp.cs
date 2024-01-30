@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DataElementTemp
 {
-    public string Element { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
-    public string Status { get; set; }
+    public string? Element { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
+    public string? Status { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
 

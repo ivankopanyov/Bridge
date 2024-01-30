@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EInvLiableTracker
 {
-    public string Resort { get; set; }
-    public decimal TrxNo { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal FolioView { get; set; }
-    public decimal NameId { get; set; }
-    public decimal PayeeNameId { get; set; }
-    public string Tax1No { get; set; }
-    public string Tax2No { get; set; }
-    public string EInvoiceLiableYn { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrxNo { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? FolioView { get; set; }
+    public decimal? NameId { get; set; }
+    public decimal? PayeeNameId { get; set; }
+    public string? Tax1No { get; set; }
+    public string? Tax2No { get; set; }
+    public string? EInvoiceLiableYn { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? TotalAttempts { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

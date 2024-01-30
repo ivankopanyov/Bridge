@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PrAutomergeKeyvalues
 {
-    public string Label { get; set; }
-    public string SourceTable { get; set; }
-    public string SourceColumn { get; set; }
-    public string ProfileType { get; set; }
+    public string? Label { get; set; }
+    public string? SourceTable { get; set; }
+    public string? SourceColumn { get; set; }
+    public string? ProfileType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

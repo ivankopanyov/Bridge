@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScrPaintFormmodes
 {
-    public string FormName { get; set; }
-    public string FormMode { get; set; }
-    public string FormId { get; set; }
-    public string FormDesc { get; set; }
-    public string ModeDesc { get; set; }
-    public string Application { get; set; }
-    public string DisplayMode { get; set; }
+    public string? FormName { get; set; }
+    public string? FormMode { get; set; }
+    public string? FormId { get; set; }
+    public string? FormDesc { get; set; }
+    public string? ModeDesc { get; set; }
+    public string? Application { get; set; }
+    public string? DisplayMode { get; set; }
     public byte? SortOrder { get; set; }
     public byte? ModeSortOrder { get; set; }
-    public string FormMultiSaveYn { get; set; }
-    public string FormView { get; set; }
-    public string CheckLicenseYn { get; set; }
-    public string FormFieldsQuery { get; set; }
+    public string? FormMultiSaveYn { get; set; }
+    public string? FormView { get; set; }
+    public string? CheckLicenseYn { get; set; }
+    public string? FormFieldsQuery { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

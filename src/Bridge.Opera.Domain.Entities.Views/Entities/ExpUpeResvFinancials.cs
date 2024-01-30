@@ -30,42 +30,42 @@ public partial class ExpUpeResvFinancials
     public decimal? PostitNo { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? RoomCategory { get; set; }
-    public string TrxCode { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string FtSubtype { get; set; }
-    public string TrxType { get; set; }
-    public string Room { get; set; }
-    public string SourceCode { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketMainCode { get; set; }
-    public string Channel { get; set; }
-    public string CountryCode { get; set; }
-    public string CalcFinResvStatus { get; set; }
-    public string PostingType { get; set; }
-    public string Currency { get; set; }
-    public string Covers { get; set; }
-    public string TcTransactionType { get; set; }
-    public string IndCash { get; set; }
-    public string CcTrxFeePct { get; set; }
-    public string TaxElements { get; set; }
-    public string FolioId { get; set; }
-    public string TrxCodeType { get; set; }
-    public string IsPermanentBillingYn { get; set; }
-    public string PermanentBillingId { get; set; }
-    public string AccountNo { get; set; }
-    public string InclInFoliosYn { get; set; }
-    public string InclInFinalFoliosYn { get; set; }
-    public string DepPostingFlag { get; set; }
-    public string IsDepositLedTrxCodeYn { get; set; }
-    public string ChequeNumber { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? TrxType { get; set; }
+    public string? Room { get; set; }
+    public string? SourceCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketMainCode { get; set; }
+    public string? Channel { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CalcFinResvStatus { get; set; }
+    public string? PostingType { get; set; }
+    public string? Currency { get; set; }
+    public string? Covers { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? IndCash { get; set; }
+    public string? CcTrxFeePct { get; set; }
+    public string? TaxElements { get; set; }
+    public string? FolioId { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? IsPermanentBillingYn { get; set; }
+    public string? PermanentBillingId { get; set; }
+    public string? AccountNo { get; set; }
+    public string? InclInFoliosYn { get; set; }
+    public string? InclInFinalFoliosYn { get; set; }
+    public string? DepPostingFlag { get; set; }
+    public string? IsDepositLedTrxCodeYn { get; set; }
+    public string? ChequeNumber { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TransactionDescription { get; set; }
-    public string TcGroupDesc { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
+    public string? TransactionDescription { get; set; }
+    public string? TcGroupDesc { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

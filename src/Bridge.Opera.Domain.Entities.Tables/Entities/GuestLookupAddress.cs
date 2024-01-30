@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestLookupAddress
 {
-    public decimal LookupSeqId { get; set; }
-    public string AddressType { get; set; }
-    public string LanguageCode { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string SpgMailingsYn { get; set; }
+    public decimal? LookupSeqId { get; set; }
+    public string? AddressType { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? SpgMailingsYn { get; set; }
 
     public virtual GuestLookup LookupSeq { get; set; }
 

@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsCompetitorDataLog
 {
-    public decimal RecordId { get; set; }
-    public decimal RequestId { get; set; }
-    public DateTime RequestDate { get; set; }
-    public string Resort { get; set; }
-    public string ShopperCode { get; set; }
-    public string CompetitorResort { get; set; }
-    public string TravelsiteCode { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public decimal Los { get; set; }
-    public string TravelsiteRateCode { get; set; }
-    public string TravelsiteRoomtypeCode { get; set; }
-    public string AvailabilityStatus { get; set; }
+    public decimal? RecordId { get; set; }
+    public decimal? RequestId { get; set; }
+    public DateTime? RequestDate { get; set; }
+    public string? Resort { get; set; }
+    public string? ShopperCode { get; set; }
+    public string? CompetitorResort { get; set; }
+    public string? TravelsiteCode { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public decimal? Los { get; set; }
+    public string? TravelsiteRateCode { get; set; }
+    public string? TravelsiteRoomtypeCode { get; set; }
+    public string? AvailabilityStatus { get; set; }
     public decimal? Amount1 { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

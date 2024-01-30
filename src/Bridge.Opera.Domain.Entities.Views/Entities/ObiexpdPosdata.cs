@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdPosdata
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string CheckNumber { get; set; }
-    public decimal RecordNo { get; set; }
-    public string RecordUkey { get; set; }
-    public string RevCenter { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? CheckNumber { get; set; }
+    public decimal? RecordNo { get; set; }
+    public string? RecordUkey { get; set; }
+    public string? RevCenter { get; set; }
     public DateTime? TransactionDate { get; set; }
-    public string CheckNumberId { get; set; }
-    public string RecordType { get; set; }
-    public string RecordTypeId { get; set; }
+    public string? CheckNumberId { get; set; }
+    public string? RecordType { get; set; }
+    public string? RecordTypeId { get; set; }
     public decimal? RecordAmt { get; set; }
     public decimal? RecordQty { get; set; }
-    public string OrderType { get; set; }
-    public string PriceLevel { get; set; }
+    public string? OrderType { get; set; }
+    public string? PriceLevel { get; set; }
     public DateTime? OpenBusinessDate { get; set; }
     public DateTime? CloseBusinessDate { get; set; }
     public decimal? NumOfGuests { get; set; }
@@ -36,20 +36,20 @@ public partial class ObiexpdPosdata
     public decimal? SubTotal { get; set; }
     public decimal? RepRecordQty { get; set; }
     public decimal? RepRecordAmt { get; set; }
-    public string VoidYn { get; set; }
-    public string ReturnYn { get; set; }
-    public string EmployeeId { get; set; }
-    public string Ref1 { get; set; }
-    public string Ref2 { get; set; }
-    public string ShowOnRepYn { get; set; }
-    public string MasterPosRefId { get; set; }
-    public string WorkStationId { get; set; }
+    public string? VoidYn { get; set; }
+    public string? ReturnYn { get; set; }
+    public string? EmployeeId { get; set; }
+    public string? Ref1 { get; set; }
+    public string? Ref2 { get; set; }
+    public string? ShowOnRepYn { get; set; }
+    public string? MasterPosRefId { get; set; }
+    public string? WorkStationId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string MenuId { get; set; }
+    public string? MenuId { get; set; }
     public decimal? XRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

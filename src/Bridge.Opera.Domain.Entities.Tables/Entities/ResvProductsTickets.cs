@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResvProductsTickets
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? ReservationProductId { get; set; }
-    public string ProductId { get; set; }
-    public string Description { get; set; }
-    public string RateCode { get; set; }
+    public string? ProductId { get; set; }
+    public string? Description { get; set; }
+    public string? RateCode { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Price { get; set; }
     public DateTime? ConsumptionDate { get; set; }
-    public string PostingRhythm { get; set; }
-    public string TicketNumber { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? TicketNumber { get; set; }
     public DateTime? IssueDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

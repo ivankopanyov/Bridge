@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentCutoffSchedule
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public DateTime CutoffDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public DateTime? CutoffDate { get; set; }
     public decimal? CutoffPerc { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? CutoffRooms1 { get; set; }
     public decimal? CutoffRooms2 { get; set; }
     public decimal? CutoffRooms3 { get; set; }
     public decimal? CutoffRooms4 { get; set; }
     public decimal? CutoffSellRooms { get; set; }
-    public string RoomCategories { get; set; }
+    public string? RoomCategories { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
 

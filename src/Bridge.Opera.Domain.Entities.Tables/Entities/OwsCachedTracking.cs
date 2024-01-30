@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsCachedTracking
 {
-    public string Resort { get; set; }
-    public string Channel { get; set; }
+    public string? Resort { get; set; }
+    public string? Channel { get; set; }
     public DateTime? LastUpdateTime { get; set; }
     public decimal? UpdateUser { get; set; }
 

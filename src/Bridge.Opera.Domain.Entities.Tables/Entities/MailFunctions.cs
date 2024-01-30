@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailFunctions
 {
-    public decimal FunctionId { get; set; }
-    public string Description { get; set; }
-    public string DataType { get; set; }
-    public decimal SourceId { get; set; }
-    public string FunctionCode { get; set; }
-    public string HasParameterYn { get; set; }
-    public string ParameterDataType { get; set; }
-    public string DefaultYn { get; set; }
-    public string Realisation { get; set; }
-    public string Visualisation { get; set; }
-    public string ExecuteYn { get; set; }
+    public decimal? FunctionId { get; set; }
+    public string? Description { get; set; }
+    public string? DataType { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? FunctionCode { get; set; }
+    public string? HasParameterYn { get; set; }
+    public string? ParameterDataType { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? Realisation { get; set; }
+    public string? Visualisation { get; set; }
+    public string? ExecuteYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

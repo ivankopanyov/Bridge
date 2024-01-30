@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvConfirmCodes
 {
-    public string GdsHost { get; set; }
-    public string ConfirmCode { get; set; }
-    public string GdsConfirmCode { get; set; }
-    public string RequirementCode { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? GdsHost { get; set; }
+    public string? ConfirmCode { get; set; }
+    public string? GdsConfirmCode { get; set; }
+    public string? RequirementCode { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

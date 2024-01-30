@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaVouBenefitResortsVw
 {
-    public string VoucherBenefitCode { get; set; }
-    public string VoucherType { get; set; }
-    public string RefTypeCode { get; set; }
-    public string VoucherResort { get; set; }
-    public string Resort { get; set; }
+    public string? VoucherBenefitCode { get; set; }
+    public string? VoucherType { get; set; }
+    public string? RefTypeCode { get; set; }
+    public string? VoucherResort { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScCateringBudgetFact
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StartDate { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }

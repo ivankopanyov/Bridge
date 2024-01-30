@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AuthorizerGroupDetails1
 {
-    public string Resort { get; set; }
-    public string AuthGroupCode { get; set; }
-    public decimal GroupHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? AuthGroupCode { get; set; }
+    public decimal? GroupHeaderId { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? OccurrenceLimit { get; set; }
 

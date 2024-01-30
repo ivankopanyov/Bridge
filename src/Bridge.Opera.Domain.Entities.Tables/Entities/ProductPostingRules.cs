@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProductPostingRules
 {
-    public decimal PostingRuleId { get; set; }
-    public string Resort { get; set; }
-    public string Product { get; set; }
-    public string RType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TaxInclYn { get; set; }
+    public decimal? PostingRuleId { get; set; }
+    public string? Resort { get; set; }
+    public string? Product { get; set; }
+    public string? RType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TaxInclYn { get; set; }
 
     public virtual ResortProducts ResortProducts { get; set; }
     public virtual TrxCodes TrxCodes { get; set; }

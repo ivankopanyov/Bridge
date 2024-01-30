@@ -2,40 +2,40 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortTrackitItems
 {
-    public string Resort { get; set; }
-    public decimal TrackitId { get; set; }
-    public string TiGroup { get; set; }
-    public string TicketNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrackitId { get; set; }
+    public string? TiGroup { get; set; }
+    public string? TicketNo { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Location { get; set; }
-    public string Action { get; set; }
-    public string TrackitType { get; set; }
-    public string Status { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Room { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Location { get; set; }
+    public string? Action { get; set; }
+    public string? TrackitType { get; set; }
+    public string? Status { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Room { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string InsertUserName { get; set; }
+    public string? InsertUserName { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdateUserName { get; set; }
+    public string? UpdateUserName { get; set; }
     public DateTime? BusinessDateResolved { get; set; }
     public decimal? ResolvedUser { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public DateTime? FollowUp { get; set; }
-    public string LocationDesc { get; set; }
-    public string ActionDesc { get; set; }
-    public string TypeDesc { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? ActionDesc { get; set; }
+    public string? TypeDesc { get; set; }
     public decimal? Quantity { get; set; }
-    public string ReferenceNo { get; set; }
+    public string? ReferenceNo { get; set; }
     public decimal? Msgid { get; set; }
-    public string ExternalId { get; set; }
+    public string? ExternalId { get; set; }
     public DateTime? LastUpdate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

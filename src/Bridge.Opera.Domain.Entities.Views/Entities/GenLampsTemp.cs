@@ -5,19 +5,19 @@ public partial class GenLampsTemp
     public decimal? LayoutId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? GroupOrderBy { get; set; }
-    public string LampId { get; set; }
-    public string ItemName { get; set; }
-    public string Description { get; set; }
-    public string LampInfo { get; set; }
-    public string LampType { get; set; }
-    public string ActionBehavior { get; set; }
-    public string ItemEnabled { get; set; }
-    public string ItemVisualAttribute { get; set; }
+    public string? LampId { get; set; }
+    public string? ItemName { get; set; }
+    public string? Description { get; set; }
+    public string? LampInfo { get; set; }
+    public string? LampType { get; set; }
+    public string? ActionBehavior { get; set; }
+    public string? ItemEnabled { get; set; }
+    public string? ItemVisualAttribute { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? AbsoluteRow { get; set; }
     public decimal? AbsoluteColumn { get; set; }
     public decimal? AbsoluteOrderBy { get; set; }
-    public string UserTag { get; set; }
+    public string? UserTag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

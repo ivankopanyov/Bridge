@@ -3,16 +3,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class PartsUsed
 {
     public decimal? PartsCost { get; set; }
-    public decimal Qty { get; set; }
-    public decimal WoNumber { get; set; }
-    public string Resort { get; set; }
-    public string PartCode { get; set; }
-    public decimal PartsUsedSeqNo { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? Qty { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? PartCode { get; set; }
+    public decimal? PartsUsedSeqNo { get; set; }
+    public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UnitPrice { get; set; }
-    public decimal UserId { get; set; }
-    public DateTime PartsUsedDate { get; set; }
+    public decimal? UserId { get; set; }
+    public DateTime? PartsUsedDate { get; set; }
 
     public virtual SpareParts SpareParts { get; set; }
     public virtual WorkOrders WorkOrders { get; set; }

@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CroImg10Vw
 {
-    public string CroCode { get; set; }
-    public string CroFeature01 { get; set; }
-    public string Description01 { get; set; }
+    public string? CroCode { get; set; }
+    public string? CroFeature01 { get; set; }
+    public string? Description01 { get; set; }
     public decimal? BlobId01 { get; set; }
     public byte[] ImageBlob01 { get; set; }
-    public string CroFeature02 { get; set; }
-    public string Description02 { get; set; }
+    public string? CroFeature02 { get; set; }
+    public string? Description02 { get; set; }
     public decimal? BlobId02 { get; set; }
     public byte[] ImageBlob02 { get; set; }
-    public string CroFeature03 { get; set; }
-    public string Description03 { get; set; }
+    public string? CroFeature03 { get; set; }
+    public string? Description03 { get; set; }
     public decimal? BlobId03 { get; set; }
     public byte[] ImageBlob03 { get; set; }
-    public string CroFeature04 { get; set; }
-    public string Description04 { get; set; }
+    public string? CroFeature04 { get; set; }
+    public string? Description04 { get; set; }
     public decimal? BlobId04 { get; set; }
     public byte[] ImageBlob04 { get; set; }
-    public string CroFeature05 { get; set; }
-    public string Description05 { get; set; }
+    public string? CroFeature05 { get; set; }
+    public string? Description05 { get; set; }
     public decimal? BlobId05 { get; set; }
     public byte[] ImageBlob05 { get; set; }
-    public string CroFeature06 { get; set; }
-    public string Description06 { get; set; }
+    public string? CroFeature06 { get; set; }
+    public string? Description06 { get; set; }
     public decimal? BlobId06 { get; set; }
     public byte[] ImageBlob06 { get; set; }
-    public string CroFeature07 { get; set; }
-    public string Description07 { get; set; }
+    public string? CroFeature07 { get; set; }
+    public string? Description07 { get; set; }
     public decimal? BlobId07 { get; set; }
     public byte[] ImageBlob07 { get; set; }
-    public string CroFeature08 { get; set; }
-    public string Description08 { get; set; }
+    public string? CroFeature08 { get; set; }
+    public string? Description08 { get; set; }
     public decimal? BlobId08 { get; set; }
     public byte[] ImageBlob08 { get; set; }
-    public string CroFeature09 { get; set; }
-    public string Description09 { get; set; }
+    public string? CroFeature09 { get; set; }
+    public string? Description09 { get; set; }
     public decimal? BlobId09 { get; set; }
     public byte[] ImageBlob09 { get; set; }
-    public string CroFeature10 { get; set; }
-    public string Description10 { get; set; }
+    public string? CroFeature10 { get; set; }
+    public string? Description10 { get; set; }
     public decimal? BlobId10 { get; set; }
     public byte[] ImageBlob10 { get; set; }
 

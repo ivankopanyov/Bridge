@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileInfo
 {
-    public decimal NameId { get; set; }
-    public string AcctContact { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
+    public decimal? NameId { get; set; }
+    public string? AcctContact { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string City { get; set; }
-    public string Comments { get; set; }
-    public string Company { get; set; }
-    public string Country { get; set; }
-    public string First { get; set; }
-    public string HistoryYn { get; set; }
-    public string Language { get; set; }
-    public string Last { get; set; }
-    public string Nationality { get; set; }
-    public string Passport { get; set; }
-    public string Salutation { get; set; }
-    public string State { get; set; }
-    public string Title { get; set; }
-    public string VipStatus { get; set; }
-    public string ZipCode { get; set; }
-    public string Newcode1 { get; set; }
-    public string TaxCode { get; set; }
+    public string? City { get; set; }
+    public string? Comments { get; set; }
+    public string? Company { get; set; }
+    public string? Country { get; set; }
+    public string? First { get; set; }
+    public string? HistoryYn { get; set; }
+    public string? Language { get; set; }
+    public string? Last { get; set; }
+    public string? Nationality { get; set; }
+    public string? Passport { get; set; }
+    public string? Salutation { get; set; }
+    public string? State { get; set; }
+    public string? Title { get; set; }
+    public string? VipStatus { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Newcode1 { get; set; }
+    public string? TaxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

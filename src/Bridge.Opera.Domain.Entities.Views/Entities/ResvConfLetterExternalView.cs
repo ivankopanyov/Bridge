@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvConfLetterExternalView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
     public decimal? NameId { get; set; }
-    public string DestinationRole { get; set; }
-    public string DestinationType { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? DestinationRole { get; set; }
+    public string? DestinationType { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? DestinationId { get; set; }
-    public string DestinationValue { get; set; }
-    public string SelectedYn { get; set; }
-    public string EmailLanguage { get; set; }
+    public string? DestinationValue { get; set; }
+    public string? SelectedYn { get; set; }
+    public string? EmailLanguage { get; set; }
     public decimal? DisplaySeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -7,12 +7,12 @@ public partial class CommissionPayments
         ComputedCommissions = new HashSet<ComputedCommissions>();
     }
 
-    public string Resort { get; set; }
-    public decimal PaymentId { get; set; }
-    public decimal TravelAgentId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PaymentId { get; set; }
+    public decimal? TravelAgentId { get; set; }
     public DateTime? PaymentDate { get; set; }
-    public string PaymentMethod { get; set; }
-    public string ApprovedBy { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? ApprovedBy { get; set; }
     public decimal? CommissionAmount { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

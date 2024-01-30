@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameTaxTypes1
 {
-    public string Resort { get; set; }
-    public string NameTaxType { get; set; }
-    public string Description { get; set; }
-    public string CollectingAgentYn { get; set; }
+    public string? Resort { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? Description { get; set; }
+    public string? CollectingAgentYn { get; set; }
     public decimal? ReportExemptDays { get; set; }
     public decimal? ReportTaxPerc { get; set; }
 

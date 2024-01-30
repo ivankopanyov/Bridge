@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMailInactiveFieldsSys
 {
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string ParameterName { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? ParameterName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

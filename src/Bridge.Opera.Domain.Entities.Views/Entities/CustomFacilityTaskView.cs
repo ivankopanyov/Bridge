@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CustomFacilityTaskView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string FacilityTask { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? FacilityTask { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? InsertUser { get; set; }

@@ -7,71 +7,71 @@ public partial class ExpEspExportDay
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? RecordType { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string Last { get; set; }
-    public string First { get; set; }
-    public string Title { get; set; }
-    public string Haddress1 { get; set; }
-    public string Haddress2 { get; set; }
-    public string Haddress3 { get; set; }
-    public string Hcity { get; set; }
-    public string Hcountry { get; set; }
-    public string Hstate { get; set; }
-    public string Hzip { get; set; }
-    public string Baddress1 { get; set; }
-    public string Baddress2 { get; set; }
-    public string Baddress3 { get; set; }
-    public string Bcity { get; set; }
-    public string Bcountry { get; set; }
-    public string Bstate { get; set; }
-    public string Bzip { get; set; }
-    public string Middle { get; set; }
-    public string Suffix { get; set; }
-    public string Gender { get; set; }
-    public string ThirdPartyYn { get; set; }
-    public string Company { get; set; }
-    public string BusinessTitle { get; set; }
-    public string FfNo { get; set; }
-    public string FfCode { get; set; }
-    public string AddressType { get; set; }
-    public string HomeNo { get; set; }
-    public string BusinessNo { get; set; }
-    public string BusinessExt { get; set; }
-    public string Email { get; set; }
-    public string EmailFormat { get; set; }
-    public string AltEmail { get; set; }
-    public string AltEmailFormat { get; set; }
-    public string CcTypePrimary { get; set; }
-    public string CcNumberPrimary { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Last { get; set; }
+    public string? First { get; set; }
+    public string? Title { get; set; }
+    public string? Haddress1 { get; set; }
+    public string? Haddress2 { get; set; }
+    public string? Haddress3 { get; set; }
+    public string? Hcity { get; set; }
+    public string? Hcountry { get; set; }
+    public string? Hstate { get; set; }
+    public string? Hzip { get; set; }
+    public string? Baddress1 { get; set; }
+    public string? Baddress2 { get; set; }
+    public string? Baddress3 { get; set; }
+    public string? Bcity { get; set; }
+    public string? Bcountry { get; set; }
+    public string? Bstate { get; set; }
+    public string? Bzip { get; set; }
+    public string? Middle { get; set; }
+    public string? Suffix { get; set; }
+    public string? Gender { get; set; }
+    public string? ThirdPartyYn { get; set; }
+    public string? Company { get; set; }
+    public string? BusinessTitle { get; set; }
+    public string? FfNo { get; set; }
+    public string? FfCode { get; set; }
+    public string? AddressType { get; set; }
+    public string? HomeNo { get; set; }
+    public string? BusinessNo { get; set; }
+    public string? BusinessExt { get; set; }
+    public string? Email { get; set; }
+    public string? EmailFormat { get; set; }
+    public string? AltEmail { get; set; }
+    public string? AltEmailFormat { get; set; }
+    public string? CcTypePrimary { get; set; }
+    public string? CcNumberPrimary { get; set; }
     public DateTime? CcExpDatePrimary { get; set; }
-    public string CcPrefPrimary { get; set; }
-    public string Language { get; set; }
-    public string SponsorId { get; set; }
-    public string BedType { get; set; }
-    public string PrefPriority { get; set; }
-    public string SmkPref { get; set; }
-    public string AccPref { get; set; }
-    public string FloorPref { get; set; }
-    public string PillowPref { get; set; }
-    public string TowelPref { get; set; }
+    public string? CcPrefPrimary { get; set; }
+    public string? Language { get; set; }
+    public string? SponsorId { get; set; }
+    public string? BedType { get; set; }
+    public string? PrefPriority { get; set; }
+    public string? SmkPref { get; set; }
+    public string? AccPref { get; set; }
+    public string? FloorPref { get; set; }
+    public string? PillowPref { get; set; }
+    public string? TowelPref { get; set; }
     public decimal? Bnights { get; set; }
     public decimal? Lnights { get; set; }
-    public string EmailReceive { get; set; }
-    public string AltEmailReceive { get; set; }
-    public string EarningPref { get; set; }
+    public string? EmailReceive { get; set; }
+    public string? AltEmailReceive { get; set; }
+    public string? EarningPref { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? TotRev { get; set; }
     public decimal? TotalNights { get; set; }
-    public string PropCurrCode { get; set; }
+    public string? PropCurrCode { get; set; }
     public decimal? PropDec { get; set; }
-    public string RateCode { get; set; }
-    public string BonusCodes { get; set; }
-    public string CertificateNumbers { get; set; }
-    public string PaymentCcType { get; set; }
-    public string PaymentCcNumber { get; set; }
+    public string? RateCode { get; set; }
+    public string? BonusCodes { get; set; }
+    public string? CertificateNumbers { get; set; }
+    public string? PaymentCcType { get; set; }
+    public string? PaymentCcNumber { get; set; }
     public DateTime? PaymentCcExpyDate { get; set; }
-    public string ResvEarningPref { get; set; }
+    public string? ResvEarningPref { get; set; }
     public DateTime? ResvInsertDate { get; set; }
     public decimal? RevenueBkt1 { get; set; }
     public decimal? RevenueBkt2 { get; set; }
@@ -83,36 +83,36 @@ public partial class ExpEspExportDay
     public decimal? RevenueBkt8 { get; set; }
     public decimal? RevenueBkt9 { get; set; }
     public decimal? RevenueBkt10 { get; set; }
-    public string PrefAddress { get; set; }
-    public string HostMultFlag { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string FoamPillowPref { get; set; }
-    public string MembershipType { get; set; }
+    public string? PrefAddress { get; set; }
+    public string? HostMultFlag { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? FoamPillowPref { get; set; }
+    public string? MembershipType { get; set; }
     public decimal? NameId { get; set; }
-    public string Phones { get; set; }
+    public string? Phones { get; set; }
     public decimal? EnrollmentSequence { get; set; }
     public decimal? UpdateSequence { get; set; }
     public decimal? StaySequence { get; set; }
-    public string BprimaryYn { get; set; }
-    public string HprimaryYn { get; set; }
-    public string H { get; set; }
-    public string B { get; set; }
-    public string CcTypeSec { get; set; }
-    public string CcNumberSec { get; set; }
+    public string? BprimaryYn { get; set; }
+    public string? HprimaryYn { get; set; }
+    public string? H { get; set; }
+    public string? B { get; set; }
+    public string? CcTypeSec { get; set; }
+    public string? CcNumberSec { get; set; }
     public DateTime? CcExpDateSec { get; set; }
-    public string CcPrefSec { get; set; }
-    public string PrefExist { get; set; }
-    public string MemCurrCode { get; set; }
-    public string MemExchType { get; set; }
-    public string EmailDeletedYn { get; set; }
-    public string AltEmailDeletedYn { get; set; }
-    public string BusinessPhoneDeletedYn { get; set; }
-    public string FaxDeletedYn { get; set; }
-    public string HomePhoneDeletedYn { get; set; }
-    public string MobilePhoneDeletedYn { get; set; }
-    public string Cardinality { get; set; }
-    public string Instance { get; set; }
-    public string OverflowCode { get; set; }
+    public string? CcPrefSec { get; set; }
+    public string? PrefExist { get; set; }
+    public string? MemCurrCode { get; set; }
+    public string? MemExchType { get; set; }
+    public string? EmailDeletedYn { get; set; }
+    public string? AltEmailDeletedYn { get; set; }
+    public string? BusinessPhoneDeletedYn { get; set; }
+    public string? FaxDeletedYn { get; set; }
+    public string? HomePhoneDeletedYn { get; set; }
+    public string? MobilePhoneDeletedYn { get; set; }
+    public string? Cardinality { get; set; }
+    public string? Instance { get; set; }
+    public string? OverflowCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

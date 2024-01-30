@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EnrollmentPartnerAirlines
 {
-    public string Resort { get; set; }
-    public string ExtSystem { get; set; }
-    public string MembershipType { get; set; }
-    public string Description { get; set; }
-    public string MembershipClass { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtSystem { get; set; }
+    public string? MembershipType { get; set; }
+    public string? Description { get; set; }
+    public string? MembershipClass { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

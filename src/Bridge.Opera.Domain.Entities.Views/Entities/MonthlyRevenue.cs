@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MonthlyRevenue
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubGroup { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubGroup { get; set; }
     public decimal? RevenueAmt { get; set; }
     public decimal? BudgetAmt { get; set; }
     public decimal? DiffAmt { get; set; }

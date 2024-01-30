@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpSpaceLinks
 {
     public decimal? RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string BusinessDate { get; set; }
-    public string ComboElement { get; set; }
-    public string ComboRoom { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? ComboElement { get; set; }
+    public string? ComboRoom { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

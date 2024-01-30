@@ -6,7 +6,7 @@ public partial class ExpConStatAppSet
     public decimal? ViewId { get; set; }
     public decimal? StatGrpId { get; set; }
     public decimal? StatId { get; set; }
-    public string StatAppSetCode { get; set; }
+    public string? StatAppSetCode { get; set; }
     public DateTime? BusinessDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

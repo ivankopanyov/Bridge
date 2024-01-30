@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameGoal1
 {
-    public decimal GoalId { get; set; }
+    public decimal? GoalId { get; set; }
     public decimal? NameId { get; set; }
-    public string GoalType { get; set; }
-    public string Resort { get; set; }
-    public string ArrivalGoalYn { get; set; }
+    public string? GoalType { get; set; }
+    public string? Resort { get; set; }
+    public string? ArrivalGoalYn { get; set; }
     public DateTime? ProductionStartdate { get; set; }
     public DateTime? ProductionEnddate { get; set; }
     public DateTime? ArrivalStartdate { get; set; }
     public DateTime? ArrivalEnddate { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgRate { get; set; }
@@ -19,15 +19,15 @@ public partial class NameGoal1
     public decimal? CateringFbRevenue { get; set; }
     public decimal? CateringAvgCheck { get; set; }
     public decimal? CateringOtherRevenue { get; set; }
-    public string ActType { get; set; }
+    public string? ActType { get; set; }
     public decimal? ActNumber { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string PeriodType { get; set; }
-    public string PeriodCode { get; set; }
-    public string BudgetType { get; set; }
+    public string? PeriodType { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? BudgetType { get; set; }
     public decimal? YearId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

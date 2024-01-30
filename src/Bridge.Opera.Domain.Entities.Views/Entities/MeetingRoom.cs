@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MeetingRoom
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string Description { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MeetingroomType { get; set; }
-    public string SuiteType { get; set; }
-    public string RoomStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? Description { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MeetingroomType { get; set; }
+    public string? SuiteType { get; set; }
+    public string? RoomStatus { get; set; }
     public DateTime? RmStatusFromDate { get; set; }
     public DateTime? RmStatusToDate { get; set; }
-    public string RmStatusReason { get; set; }
-    public string RmStatusRemarks { get; set; }
-    public string Floor { get; set; }
+    public string? RmStatusReason { get; set; }
+    public string? RmStatusRemarks { get; set; }
+    public string? Floor { get; set; }
     public decimal? OrderBy { get; set; }
-    public string KeyCode { get; set; }
-    public string Building { get; set; }
+    public string? KeyCode { get; set; }
+    public string? Building { get; set; }
     public decimal? MaxOccupancy { get; set; }
     public decimal? MinOccupancy { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Remarks { get; set; }
-    public string ShareableYn { get; set; }
-    public string DiaryDisplayYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Remarks { get; set; }
+    public string? ShareableYn { get; set; }
+    public string? DiaryDisplayYn { get; set; }
     public decimal? AreaF { get; set; }
     public decimal? AreaM { get; set; }
     public decimal? LengthF { get; set; }
@@ -39,31 +39,31 @@ public partial class MeetingRoom
     public decimal? HeightmaxM { get; set; }
     public decimal? WeightF { get; set; }
     public decimal? WeightM { get; set; }
-    public string Light { get; set; }
-    public string Facing { get; set; }
-    public string Doors { get; set; }
-    public string LoudspeakersYn { get; set; }
+    public string? Light { get; set; }
+    public string? Facing { get; set; }
+    public string? Doors { get; set; }
+    public string? LoudspeakersYn { get; set; }
     public decimal? TvRadioSockets { get; set; }
     public decimal? TranslationboothNum { get; set; }
     public decimal? MicrophoneSockets { get; set; }
-    public string MicrophoneSocketTypes { get; set; }
-    public string HandicapYn { get; set; }
-    public string ComboYn { get; set; }
-    public string DiaryName { get; set; }
+    public string? MicrophoneSocketTypes { get; set; }
+    public string? HandicapYn { get; set; }
+    public string? ComboYn { get; set; }
+    public string? DiaryName { get; set; }
     public decimal? OrderBy2 { get; set; }
     public decimal? OrderBy3 { get; set; }
     public decimal? OrderBy4 { get; set; }
     public decimal? OrderBy5 { get; set; }
-    public string ForceAlternateYn { get; set; }
+    public string? ForceAlternateYn { get; set; }
     public decimal? FullUtilizationTime { get; set; }
-    public string ExcludedEventTypes { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? ExcludedEventTypes { get; set; }
+    public string? WebBookingYn { get; set; }
     public decimal? MinAdvance { get; set; }
     public decimal? MaxAdvance { get; set; }
     public decimal? MinimumRevenue { get; set; }
     public decimal? MaxCapacity { get; set; }
-    public string VisibleOnWebYn { get; set; }
-    public string SetupNotes { get; set; }
+    public string? VisibleOnWebYn { get; set; }
+    public string? SetupNotes { get; set; }
     public decimal? MaxSharedGroups { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

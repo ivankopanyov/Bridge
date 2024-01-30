@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BillingSummaryView
 {
     public decimal? ResvNameId { get; set; }
-    public string ArrangeTrxCode { get; set; }
+    public string? ArrangeTrxCode { get; set; }
     public decimal? Amount { get; set; }
-    public string GuestCompFlag { get; set; }
+    public string? GuestCompFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

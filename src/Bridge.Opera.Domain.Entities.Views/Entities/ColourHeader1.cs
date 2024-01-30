@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ColourHeader1
 {
-    public decimal ColourId { get; set; }
-    public string Colourname { get; set; }
-    public string Descr { get; set; }
+    public decimal? ColourId { get; set; }
+    public string? Colourname { get; set; }
+    public string? Descr { get; set; }
     public decimal? OwnerUser { get; set; }
-    public string WhereClause { get; set; }
-    public string FormName { get; set; }
-    public string Colour { get; set; }
+    public string? WhereClause { get; set; }
+    public string? FormName { get; set; }
+    public string? Colour { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

@@ -3,20 +3,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RateHeaderNegotiatBaseView
 {
     public decimal? AllotmentHeaderId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public string CaId { get; set; }
-    public string CommissionCode { get; set; }
-    public string DatabaseId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public string? CaId { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? DatabaseId { get; set; }
     public DateTime? EndDate { get; set; }
-    public string IfcCreatedYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal NameId { get; set; }
+    public string? IfcCreatedYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string RateCode { get; set; }
-    public string Resort { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RateCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

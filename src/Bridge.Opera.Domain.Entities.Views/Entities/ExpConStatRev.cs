@@ -7,9 +7,9 @@ public partial class ExpConStatRev
     public decimal? StatGrpId { get; set; }
     public decimal? StatId { get; set; }
     public decimal? Amount { get; set; }
-    public string StatAppSetCode { get; set; }
-    public string RevenueCatCode { get; set; }
-    public string Currency { get; set; }
+    public string? StatAppSetCode { get; set; }
+    public string? RevenueCatCode { get; set; }
+    public string? Currency { get; set; }
     public DateTime? BusinessDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

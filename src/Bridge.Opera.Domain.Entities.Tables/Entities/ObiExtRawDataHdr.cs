@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiExtRawDataHdr
 {
-    public decimal ExtHdrId { get; set; }
-    public string DatamartName { get; set; }
-    public string RawDataName { get; set; }
-    public decimal ExpDataId { get; set; }
-    public DateTime SrcDate { get; set; }
+    public decimal? ExtHdrId { get; set; }
+    public string? DatamartName { get; set; }
+    public string? RawDataName { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public DateTime? SrcDate { get; set; }
     public decimal? TotalRows { get; set; }
-    public string Resort { get; set; }
-    public string SrcVer { get; set; }
-    public string SrcType { get; set; }
-    public string SrcJob { get; set; }
-    public string SrcScriptVer { get; set; }
+    public string? Resort { get; set; }
+    public string? SrcVer { get; set; }
+    public string? SrcType { get; set; }
+    public string? SrcJob { get; set; }
+    public string? SrcScriptVer { get; set; }
     public decimal? SrcSeq { get; set; }
-    public string SrcFileName { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Status { get; set; }
-    public string Error { get; set; }
+    public string? SrcFileName { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Status { get; set; }
+    public string? Error { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }

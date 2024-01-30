@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventReservationShare
 {
-    public string Resort { get; set; }
-    public decimal EvResIdLink { get; set; }
-    public decimal ResvId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? EvResIdLink { get; set; }
+    public decimal? ResvId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? Attendees { get; set; }

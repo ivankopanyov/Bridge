@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class PositivePayCheckView
 {
     public decimal? ReportId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountId { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? BatchId { get; set; }
     public decimal? PaymentId { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountNo { get; set; }
     public DateTime? ProcessingDate { get; set; }
     public decimal? CheckNo { get; set; }
     public DateTime? PaymentDate { get; set; }
     public decimal? Amount { get; set; }
-    public string TransactionCode { get; set; }
+    public string? TransactionCode { get; set; }
     public decimal? TotalRecords { get; set; }
     public decimal? TotalAmount { get; set; }
 

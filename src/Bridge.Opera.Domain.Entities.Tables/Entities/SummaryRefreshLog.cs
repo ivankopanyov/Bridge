@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SummaryRefreshLog
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? LastRefreshTime { get; set; }
-    public string TableName { get; set; }
-    public string ProgramName { get; set; }
-    public string LastProcessedKey { get; set; }
-    public string SuccessFlag { get; set; }
+    public string? TableName { get; set; }
+    public string? ProgramName { get; set; }
+    public string? LastProcessedKey { get; set; }
+    public string? SuccessFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

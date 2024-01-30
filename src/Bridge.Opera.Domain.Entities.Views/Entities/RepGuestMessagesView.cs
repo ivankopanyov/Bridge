@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepGuestMessagesView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal Msgid { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string MsgDate { get; set; }
-    public string MsgTime { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? Msgid { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? MsgDate { get; set; }
+    public string? MsgTime { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string GroupName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string Arrival { get; set; }
-    public string GuestName { get; set; }
-    public string Departure { get; set; }
-    public string Operator { get; set; }
-    public string StatusFlag { get; set; }
-    public string Description { get; set; }
-    public string MessageText { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
+    public string? Arrival { get; set; }
+    public string? GuestName { get; set; }
+    public string? Departure { get; set; }
+    public string? Operator { get; set; }
+    public string? StatusFlag { get; set; }
+    public string? Description { get; set; }
+    public string? MessageText { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
-    public string Sname { get; set; }
-    public string ShortResvStatus { get; set; }
+    public string? Sname { get; set; }
+    public string? ShortResvStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

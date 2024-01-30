@@ -9,30 +9,30 @@ public partial class GvSessionView
     public decimal? Audsid { get; set; }
     public byte[] Paddr { get; set; }
     public decimal? User { get; set; }
-    public string Username { get; set; }
+    public string? Username { get; set; }
     public decimal? Command { get; set; }
     public decimal? Ownerid { get; set; }
-    public string Taddr { get; set; }
-    public string Lockwait { get; set; }
-    public string Status { get; set; }
-    public string Server { get; set; }
+    public string? Taddr { get; set; }
+    public string? Lockwait { get; set; }
+    public string? Status { get; set; }
+    public string? Server { get; set; }
     public decimal? Schema { get; set; }
-    public string Schemaname { get; set; }
-    public string Osuser { get; set; }
-    public string Process { get; set; }
-    public string Machine { get; set; }
-    public string Terminal { get; set; }
-    public string Program { get; set; }
-    public string Type { get; set; }
+    public string? Schemaname { get; set; }
+    public string? Osuser { get; set; }
+    public string? Process { get; set; }
+    public string? Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? Program { get; set; }
+    public string? Type { get; set; }
     public byte[] SqlAddress { get; set; }
     public decimal? SqlHashValue { get; set; }
     public byte[] PrevSqlAddr { get; set; }
     public decimal? PrevHashValue { get; set; }
-    public string Module { get; set; }
+    public string? Module { get; set; }
     public decimal? ModuleHash { get; set; }
-    public string Action { get; set; }
+    public string? Action { get; set; }
     public decimal? ActionHash { get; set; }
-    public string ClientInfo { get; set; }
+    public string? ClientInfo { get; set; }
     public decimal? FixedTableSequence { get; set; }
     public decimal? RowWaitObj { get; set; }
     public decimal? RowWaitFile { get; set; }
@@ -40,20 +40,20 @@ public partial class GvSessionView
     public decimal? RowWaitRow { get; set; }
     public DateTime? LogonTime { get; set; }
     public decimal? LastCallEt { get; set; }
-    public string PdmlEnabled { get; set; }
-    public string FailoverType { get; set; }
-    public string FailoverMethod { get; set; }
-    public string FailedOver { get; set; }
-    public string ResourceConsumerGroup { get; set; }
-    public string PdmlStatus { get; set; }
-    public string PddlStatus { get; set; }
-    public string PqStatus { get; set; }
+    public string? PdmlEnabled { get; set; }
+    public string? FailoverType { get; set; }
+    public string? FailoverMethod { get; set; }
+    public string? FailedOver { get; set; }
+    public string? ResourceConsumerGroup { get; set; }
+    public string? PdmlStatus { get; set; }
+    public string? PddlStatus { get; set; }
+    public string? PqStatus { get; set; }
     public decimal? CurrentQueueDuration { get; set; }
-    public string ClientIdentifier { get; set; }
-    public string OperaUser { get; set; }
-    public string OperaTerminal { get; set; }
-    public string ParentAudsid { get; set; }
-    public string Operauniquesessid { get; set; }
+    public string? ClientIdentifier { get; set; }
+    public string? OperaUser { get; set; }
+    public string? OperaTerminal { get; set; }
+    public string? ParentAudsid { get; set; }
+    public string? Operauniquesessid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

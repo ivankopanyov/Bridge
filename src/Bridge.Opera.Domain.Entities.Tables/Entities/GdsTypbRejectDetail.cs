@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsTypbRejectDetail
 {
-    public decimal TypbRejectId { get; set; }
-    public string TypbErrorCategory { get; set; }
-    public string TypbErrorAttribute { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string TypbErrorField { get; set; }
+    public decimal? TypbRejectId { get; set; }
+    public string? TypbErrorCategory { get; set; }
+    public string? TypbErrorAttribute { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? TypbErrorField { get; set; }
     public decimal? SegmentNumber { get; set; }
     public decimal? Sequence { get; set; }
-    public string TypeRetryAttribute { get; set; }
+    public string? TypeRetryAttribute { get; set; }
 
     public virtual GdsTypbRejectHeader TypbReject { get; set; }
 

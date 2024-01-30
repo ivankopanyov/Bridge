@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class XmlUploadLogs
 {
-    public string Resort { get; set; }
-    public string ObjectType { get; set; }
-    public string ObjectCode { get; set; }
-    public string Action { get; set; }
+    public string? Resort { get; set; }
+    public string? ObjectType { get; set; }
+    public string? ObjectCode { get; set; }
+    public string? Action { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? ErrorDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScrPaintCanvases
 {
-    public string FormId { get; set; }
-    public string CanvasName { get; set; }
-    public string ParentCanvas { get; set; }
-    public decimal XPos { get; set; }
-    public decimal YPos { get; set; }
-    public decimal Height { get; set; }
-    public decimal Width { get; set; }
-    public string DisplayMode { get; set; }
-    public string Tabed { get; set; }
-    public string Appearance { get; set; }
+    public string? FormId { get; set; }
+    public string? CanvasName { get; set; }
+    public string? ParentCanvas { get; set; }
+    public decimal? XPos { get; set; }
+    public decimal? YPos { get; set; }
+    public decimal? Height { get; set; }
+    public decimal? Width { get; set; }
+    public string? DisplayMode { get; set; }
+    public string? Tabed { get; set; }
+    public string? Appearance { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

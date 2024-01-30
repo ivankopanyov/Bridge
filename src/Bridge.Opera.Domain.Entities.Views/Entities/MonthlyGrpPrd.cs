@@ -3,21 +3,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MonthlyGrpPrd
 {
     public decimal? RecordId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string FirstStatus { get; set; }
+    public string? FirstStatus { get; set; }
     public DateTime? FirstStatusChgDate { get; set; }
     public decimal? FirstRoomNights { get; set; }
     public decimal? FirstRoomRevenue { get; set; }
-    public string FirstFlagNewStatus { get; set; }
-    public string SecondStatus { get; set; }
+    public string? FirstFlagNewStatus { get; set; }
+    public string? SecondStatus { get; set; }
     public DateTime? SecondStatusChgDate { get; set; }
     public decimal? SecondRoomNights { get; set; }
     public decimal? SecondRoomRevenue { get; set; }
-    public string SecondFlagNewStatus { get; set; }
+    public string? SecondFlagNewStatus { get; set; }
     public decimal? VarianceRoomNights { get; set; }
     public decimal? VarianceRoomRevenue { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

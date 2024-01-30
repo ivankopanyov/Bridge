@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MaldivesTax
 {
-    public string Resort { get; set; }
-    public decimal TaxRegistrationNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaxRegistrationNo { get; set; }
     public decimal? ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
     public DateTime? TaxArrivalDate { get; set; }
     public DateTime? TaxDepartureDate { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ArrivalCarrierCode { get; set; }
-    public string DepartureCarrierCode { get; set; }
+    public string? ArrivalCarrierCode { get; set; }
+    public string? DepartureCarrierCode { get; set; }
     public decimal? TaxDays { get; set; }
     public decimal? TaxNoOfStays { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
-    public string GuestCountry { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
+    public string? GuestCountry { get; set; }
     public decimal? GuestAge { get; set; }
-    public string Profession { get; set; }
-    public string VisaNumber { get; set; }
+    public string? Profession { get; set; }
+    public string? VisaNumber { get; set; }
     public DateTime? VisaIssueDate { get; set; }
     public DateTime? VisaExpirationDate { get; set; }
     public DateTime? TruncTaxArrival { get; set; }
     public DateTime? TruncTaxDeparture { get; set; }
-    public string Remarks { get; set; }
+    public string? Remarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

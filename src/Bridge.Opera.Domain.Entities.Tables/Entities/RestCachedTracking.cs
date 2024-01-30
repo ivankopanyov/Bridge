@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RestCachedTracking
 {
-    public string Resort { get; set; }
-    public DateTime LastUpdateTime { get; set; }
-    public decimal LastUpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? LastUpdateTime { get; set; }
+    public decimal? LastUpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

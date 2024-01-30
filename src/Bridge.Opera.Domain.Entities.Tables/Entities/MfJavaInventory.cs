@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MfJavaInventory
 {
-    public string JarFile { get; set; }
-    public string JavaFile { get; set; }
-    public string FileType { get; set; }
-    public decimal FileSize { get; set; }
-    public DateTime FileDate { get; set; }
-    public decimal TimeStamp { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? JarFile { get; set; }
+    public string? JavaFile { get; set; }
+    public string? FileType { get; set; }
+    public decimal? FileSize { get; set; }
+    public DateTime? FileDate { get; set; }
+    public decimal? TimeStamp { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

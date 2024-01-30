@@ -2,55 +2,55 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTimeMonthsDim
 {
-    public string AllDates { get; set; }
-    public string AllDatesDesc { get; set; }
-    public string MonthId { get; set; }
-    public string MonthYrId { get; set; }
-    public string MonthDsc { get; set; }
+    public string? AllDates { get; set; }
+    public string? AllDatesDesc { get; set; }
+    public string? MonthId { get; set; }
+    public string? MonthYrId { get; set; }
+    public string? MonthDsc { get; set; }
     public decimal? MonthTimespan { get; set; }
     public DateTime? MonthEndDate { get; set; }
     public decimal? MonthOfQuarter { get; set; }
     public decimal? MonthOfYear { get; set; }
-    public string QuarterId { get; set; }
-    public string QuarterDsc { get; set; }
+    public string? QuarterId { get; set; }
+    public string? QuarterDsc { get; set; }
     public decimal? QuarterTimespan { get; set; }
     public DateTime? QuarterEndDate { get; set; }
-    public string QuarterOfYear { get; set; }
-    public string YearId { get; set; }
-    public string YearDsc { get; set; }
+    public string? QuarterOfYear { get; set; }
+    public string? YearId { get; set; }
+    public string? YearDsc { get; set; }
     public decimal? YearTimespan { get; set; }
     public DateTime? YearEndDate { get; set; }
-    public string PriorMonthId { get; set; }
-    public string PriorYearId { get; set; }
-    public string PriorYearQuarterId { get; set; }
-    public string PriorYearMonthId { get; set; }
+    public string? PriorMonthId { get; set; }
+    public string? PriorYearId { get; set; }
+    public string? PriorYearQuarterId { get; set; }
+    public string? PriorYearMonthId { get; set; }
     public decimal? YearLagPriorYear { get; set; }
     public decimal? QuarterLagPriorYear { get; set; }
     public decimal? MonthLagPriorYear { get; set; }
-    public string ParentQuarter { get; set; }
-    public string ParentYear { get; set; }
-    public string MonthName { get; set; }
-    public string FAllDates { get; set; }
-    public string FAllDatesDesc { get; set; }
-    public string FYearId { get; set; }
+    public string? ParentQuarter { get; set; }
+    public string? ParentYear { get; set; }
+    public string? MonthName { get; set; }
+    public string? FAllDates { get; set; }
+    public string? FAllDatesDesc { get; set; }
+    public string? FYearId { get; set; }
     public DateTime? FYearEndDate { get; set; }
     public decimal? FYearTimespan { get; set; }
-    public string FYearDsc { get; set; }
+    public string? FYearDsc { get; set; }
     public DateTime? FYearStartDate { get; set; }
-    public string FQuarterId { get; set; }
+    public string? FQuarterId { get; set; }
     public DateTime? FQuarterEndDate { get; set; }
     public decimal? FQuarterTimespan { get; set; }
-    public string FQuarterDsc { get; set; }
+    public string? FQuarterDsc { get; set; }
     public DateTime? FQuarterStartDate { get; set; }
     public decimal? FQuarterOfYear { get; set; }
-    public string FMonthId { get; set; }
+    public string? FMonthId { get; set; }
     public DateTime? FMonthEndDate { get; set; }
     public decimal? FMonthTimespan { get; set; }
-    public string FMonthDsc { get; set; }
+    public string? FMonthDsc { get; set; }
     public decimal? FMonthOfYear { get; set; }
-    public string FMonthName { get; set; }
+    public string? FMonthName { get; set; }
     public decimal? FMonthOfQuarter { get; set; }
-    public string FMonthYrId { get; set; }
+    public string? FMonthYrId { get; set; }
     public DateTime? AllEndDate { get; set; }
     public decimal? AllTimeSpan { get; set; }
 

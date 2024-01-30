@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OcrmProfEmailStatsVw
 {
     public decimal? NameId { get; set; }
-    public string DisplayName { get; set; }
+    public string? DisplayName { get; set; }
     public decimal? EmailSend { get; set; }
     public decimal? OpenEmail { get; set; }
     public decimal? ClicksOnEmail { get; set; }

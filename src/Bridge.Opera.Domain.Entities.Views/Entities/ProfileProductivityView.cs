@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileProductivityView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? Departure { get; set; }
-    public string GuestName { get; set; }
-    public string GuestCountry { get; set; }
-    public string GuestCountryDesc { get; set; }
-    public decimal GuestNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? GuestCountryDesc { get; set; }
+    public decimal? GuestNameId { get; set; }
     public decimal? AddressId { get; set; }
     public DateTime? ActualCheckInDate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
@@ -24,26 +24,26 @@ public partial class ProfileProductivityView
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string SourceName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? SourceId { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public DateTime RoomReservationDate { get; set; }
-    public decimal ShareId { get; set; }
+    public string? Room { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public DateTime? RoomReservationDate { get; set; }
+    public decimal? ShareId { get; set; }
     public decimal? ResvNo { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string SguestName { get; set; }
+    public string? SguestName { get; set; }
     public decimal? PrimaryYn { get; set; }
-    public string BlockCode { get; set; }
+    public string? BlockCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

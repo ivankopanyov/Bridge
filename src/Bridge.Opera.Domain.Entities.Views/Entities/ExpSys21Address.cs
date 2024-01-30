@@ -7,18 +7,18 @@ public partial class ExpSys21Address
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? AddressId { get; set; }
-    public string AddressType { get; set; }
-    public string City { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string BusinessName { get; set; }
-    public string PhoneNum { get; set; }
-    public string FaxNum { get; set; }
-    public string Email { get; set; }
+    public string? AddressType { get; set; }
+    public string? City { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? BusinessName { get; set; }
+    public string? PhoneNum { get; set; }
+    public string? FaxNum { get; set; }
+    public string? Email { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

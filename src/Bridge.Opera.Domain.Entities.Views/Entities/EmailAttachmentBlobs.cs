@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EmailAttachmentBlobs
 {
-    public decimal EmailId { get; set; }
-    public decimal AttachId { get; set; }
+    public decimal? EmailId { get; set; }
+    public decimal? AttachId { get; set; }
     public byte[] Attachment { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiBookingStatusDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Status { get; set; }
-    public string Description { get; set; }
-    public string DeductInventory { get; set; }
-    public string AllowPickup { get; set; }
-    public string ReturnToInventory { get; set; }
-    public string StatusType { get; set; }
-    public string StartingStatus { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Status { get; set; }
+    public string? Description { get; set; }
+    public string? DeductInventory { get; set; }
+    public string? AllowPickup { get; set; }
+    public string? ReturnToInventory { get; set; }
+    public string? StatusType { get; set; }
+    public string? StartingStatus { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Color { get; set; }
-    public string CatStatusType { get; set; }
-    public string CatDeductInventory { get; set; }
-    public string LeadStatusYn { get; set; }
-    public string DeductInventoryStatusYn { get; set; }
+    public string? Color { get; set; }
+    public string? CatStatusType { get; set; }
+    public string? CatDeductInventory { get; set; }
+    public string? LeadStatusYn { get; set; }
+    public string? DeductInventoryStatusYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

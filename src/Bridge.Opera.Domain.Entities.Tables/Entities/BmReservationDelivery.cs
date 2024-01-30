@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BmReservationDelivery
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime DeliveryDate { get; set; }
-    public string ResInsertSource { get; set; }
-    public string DeliveryMethod { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? DeliveryDate { get; set; }
+    public string? ResInsertSource { get; set; }
+    public string? DeliveryMethod { get; set; }
     public decimal? Osn { get; set; }
-    public string InterfaceId { get; set; }
+    public string? InterfaceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PaymentTaxJrnl
 {
-    public string Resort { get; set; }
-    public string TaxInvNo { get; set; }
-    public string TaxInvNoLink { get; set; }
+    public string? Resort { get; set; }
+    public string? TaxInvNo { get; set; }
+    public string? TaxInvNoLink { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
-    public string PaymentType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? PaymentType { get; set; }
     public decimal? PaymentAmount { get; set; }
     public decimal? VatableAmount { get; set; }
     public decimal? NonVatableAmount { get; set; }
@@ -20,13 +20,13 @@ public partial class PaymentTaxJrnl
     public decimal? CashierId { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? AccountCode { get; set; }
-    public string JrnlOperation { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? JrnlOperation { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string ProcessType { get; set; }
+    public string? ProcessType { get; set; }
     public DateTime? PaymentDate { get; set; }
     public decimal? Tax2 { get; set; }
     public decimal? Tax3 { get; set; }

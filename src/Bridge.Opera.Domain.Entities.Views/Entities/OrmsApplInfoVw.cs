@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsApplInfoVw
 {
-    public string Titlebusinessdate { get; set; }
-    public string Operaversion { get; set; }
-    public string Operauser { get; set; }
-    public string JavaDateFormat { get; set; }
-    public string JavaTimeFormat { get; set; }
+    public string? Titlebusinessdate { get; set; }
+    public string? Operaversion { get; set; }
+    public string? Operauser { get; set; }
+    public string? JavaDateFormat { get; set; }
+    public string? JavaTimeFormat { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

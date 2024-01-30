@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DestinationLevel1
 {
-    public decimal LevelId { get; set; }
-    public string LevelDesc { get; set; }
+    public decimal? LevelId { get; set; }
+    public string? LevelDesc { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

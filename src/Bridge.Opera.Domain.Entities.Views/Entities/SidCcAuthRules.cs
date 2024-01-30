@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidCcAuthRules
 {
-    public string Resort { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string SourceCode { get; set; }
+    public string? Resort { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? SourceCode { get; set; }
     public decimal? ApprovalAmountCalcMethod { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }

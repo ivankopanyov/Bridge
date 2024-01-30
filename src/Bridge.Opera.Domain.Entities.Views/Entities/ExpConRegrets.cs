@@ -7,15 +7,15 @@ public partial class ExpConRegrets
     public decimal? NumOfRooms { get; set; }
     public decimal? NumOfNights { get; set; }
     public decimal? RoomRate { get; set; }
-    public string RoomType { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string TurnawayCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string DayTypeCode { get; set; }
-    public string BlockCode { get; set; }
-    public string ExtRefNum { get; set; }
+    public string? RoomType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? TurnawayCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? DayTypeCode { get; set; }
+    public string? BlockCode { get; set; }
+    public string? ExtRefNum { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? BusinessDate { get; set; }
 

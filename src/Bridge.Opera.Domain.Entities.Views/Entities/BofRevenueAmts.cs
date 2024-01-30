@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofRevenueAmts
 {
-    public string AccountPeriod { get; set; }
+    public string? AccountPeriod { get; set; }
     public decimal? UserId { get; set; }
-    public string UserName { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? UserName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxType { get; set; }
+    public string? TrxType { get; set; }
     public decimal? InhCredit { get; set; }
     public decimal? InhDebit { get; set; }
     public decimal? DepLedDebit { get; set; }
@@ -24,22 +24,22 @@ public partial class BofRevenueAmts
     public decimal? CashierLedDebit { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? CalcGrossAmount { get; set; }
-    public string GrossDrCrFlag { get; set; }
+    public string? GrossDrCrFlag { get; set; }
     public decimal? NetAmount { get; set; }
-    public string NetDrCrFlag { get; set; }
+    public string? NetDrCrFlag { get; set; }
     public decimal? VatAmount { get; set; }
-    public string VatDrCrFlag { get; set; }
+    public string? VatDrCrFlag { get; set; }
     public decimal? TaxAmount { get; set; }
-    public string TaxDrCrFlag { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string ArInd { get; set; }
+    public string? TaxDrCrFlag { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? ArInd { get; set; }
     public decimal? RevBucketId { get; set; }
-    public string CashInd { get; set; }
-    public string ManualPostYn { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string ArrangementCode { get; set; }
+    public string? CashInd { get; set; }
+    public string? ManualPostYn { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? ArrangementCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
 

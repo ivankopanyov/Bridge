@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AuthorizerLimitsHeader1
 {
-    public string Resort { get; set; }
-    public decimal AuthHeaderId { get; set; }
-    public decimal AuthorizerId { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AuthHeaderId { get; set; }
+    public decimal? AuthorizerId { get; set; }
+    public string? Description { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? OccurrenceLimit { get; set; }
 

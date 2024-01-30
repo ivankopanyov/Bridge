@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpMappingCodesToLink
 {
-    public string ConfigType { get; set; }
-    public string Resort { get; set; }
-    public string LinkedCode { get; set; }
-    public string LinkedDesc { get; set; }
+    public string? ConfigType { get; set; }
+    public string? Resort { get; set; }
+    public string? LinkedCode { get; set; }
+    public string? LinkedDesc { get; set; }
     public decimal? SeqNo { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

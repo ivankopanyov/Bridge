@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiObjectOwners
 {
-    public string Obj { get; set; }
-    public string Owner { get; set; }
-    public string ObjectName { get; set; }
+    public string? Obj { get; set; }
+    public string? Owner { get; set; }
+    public string? ObjectName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

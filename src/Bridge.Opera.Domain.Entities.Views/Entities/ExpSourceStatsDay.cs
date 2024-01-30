@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpSourceStatsDay
 {
     public DateTime? BusinessDate { get; set; }
-    public string SourceCode { get; set; }
-    public string Description { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Description { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? NoOfRooms { get; set; }

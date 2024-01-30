@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NoteTypes
 {
-    public string NoteType { get; set; }
-    public string NoteCode { get; set; }
-    public string Description { get; set; }
+    public string? NoteType { get; set; }
+    public string? NoteCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string InternalYn { get; set; }
-    public string DefaultYn { get; set; }
-    public string OverrideInternal { get; set; }
-    public string ChainCode { get; set; }
-    public string NoteClass { get; set; }
-    public string DeptNoteYn { get; set; }
-    public string HelpText { get; set; }
-    public string GlobalYn { get; set; }
-    public string ProtectDescriptionYn { get; set; }
-    public string WebProposalYn { get; set; }
-    public string NotificationAreas { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? InternalYn { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? OverrideInternal { get; set; }
+    public string? ChainCode { get; set; }
+    public string? NoteClass { get; set; }
+    public string? DeptNoteYn { get; set; }
+    public string? HelpText { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? ProtectDescriptionYn { get; set; }
+    public string? WebProposalYn { get; set; }
+    public string? NotificationAreas { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

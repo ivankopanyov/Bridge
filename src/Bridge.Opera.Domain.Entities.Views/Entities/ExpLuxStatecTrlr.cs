@@ -6,10 +6,10 @@ public partial class ExpLuxStatecTrlr
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Country { get; set; }
-    public string BirthPlace { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestName { get; set; }
+    public string? Country { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

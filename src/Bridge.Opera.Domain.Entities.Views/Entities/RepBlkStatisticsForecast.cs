@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBlkStatisticsForecast
 {
-    public string Resort { get; set; }
-    public string RecType { get; set; }
+    public string? Resort { get; set; }
+    public string? RecType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string MarketCode { get; set; }
-    public string Bookingtype { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Bookingtype { get; set; }
     public decimal? NoRooms { get; set; }
     public decimal? NoPersons { get; set; }
     public decimal? ArrivalRooms { get; set; }
     public decimal? DepartureRooms { get; set; }
     public decimal? ComplimentaryRooms { get; set; }
     public decimal? HouseUseRooms { get; set; }
-    public string DeductYn { get; set; }
-    public string GroupYn { get; set; }
+    public string? DeductYn { get; set; }
+    public string? GroupYn { get; set; }
     public decimal? NetRoomRevenue { get; set; }
     public decimal? TotalPackageRevenue { get; set; }
     public decimal? TotalRevenue { get; set; }

@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AgencyTemp
 {
-    public string Iata { get; set; }
-    public string Address { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string StateCode { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string MailingAddress { get; set; }
-    public string MailingCity { get; set; }
-    public string MailingState { get; set; }
-    public string MailingStateCode { get; set; }
-    public string MailingCountry { get; set; }
-    public string MailingZipcode { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
-    public string Telex { get; set; }
-    public string TrxCode { get; set; }
-    public string OldIata { get; set; }
-    public string LastChange { get; set; }
-    public string PhonePrefix1 { get; set; }
-    public string PhonePrefix2 { get; set; }
-    public string FaxPrefix1 { get; set; }
-    public string FaxPrefix2 { get; set; }
-    public string MailingAddress2 { get; set; }
-    public string TapeType { get; set; }
-    public string IataCheck { get; set; }
-    public string Legal1 { get; set; }
-    public string Legal2 { get; set; }
-    public string Legal3 { get; set; }
-    public string Dba1 { get; set; }
-    public string Dba2 { get; set; }
-    public string Email { get; set; }
-    public string MailYn { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
+    public string? Iata { get; set; }
+    public string? Address { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? StateCode { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? MailingAddress { get; set; }
+    public string? MailingCity { get; set; }
+    public string? MailingState { get; set; }
+    public string? MailingStateCode { get; set; }
+    public string? MailingCountry { get; set; }
+    public string? MailingZipcode { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
+    public string? Telex { get; set; }
+    public string? TrxCode { get; set; }
+    public string? OldIata { get; set; }
+    public string? LastChange { get; set; }
+    public string? PhonePrefix1 { get; set; }
+    public string? PhonePrefix2 { get; set; }
+    public string? FaxPrefix1 { get; set; }
+    public string? FaxPrefix2 { get; set; }
+    public string? MailingAddress2 { get; set; }
+    public string? TapeType { get; set; }
+    public string? IataCheck { get; set; }
+    public string? Legal1 { get; set; }
+    public string? Legal2 { get; set; }
+    public string? Legal3 { get; set; }
+    public string? Dba1 { get; set; }
+    public string? Dba2 { get; set; }
+    public string? Email { get; set; }
+    public string? MailYn { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
-    public string TypeOf1099 { get; set; }
-    public string Tax1No { get; set; }
+    public string? TypeOf1099 { get; set; }
+    public string? Tax1No { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

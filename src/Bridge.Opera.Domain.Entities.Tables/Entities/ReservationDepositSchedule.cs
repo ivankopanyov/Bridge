@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationDepositSchedule
 {
-    public decimal ResvDepositScheduleId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ProductId { get; set; }
+    public decimal? ResvDepositScheduleId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ProductId { get; set; }
     public decimal? DepositAmount { get; set; }
     public DateTime? DepositDueDate { get; set; }
     public decimal? CancelPnltyAmount { get; set; }
     public DateTime? CancelDeadline { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? InsertActionInstanceId { get; set; }
     public decimal? DmlSeqNo { get; set; }
-    public string Type { get; set; }
+    public string? Type { get; set; }
     public decimal? Percentage { get; set; }
-    public string PaymentFlag { get; set; }
-    public string Description { get; set; }
-    public string ProcessedYn { get; set; }
+    public string? PaymentFlag { get; set; }
+    public string? Description { get; set; }
+    public string? ProcessedYn { get; set; }
     public decimal? ForeignDepositAmount { get; set; }
-    public string ExchangeRateInfo { get; set; }
-    public string RuleCode { get; set; }
+    public string? ExchangeRateInfo { get; set; }
+    public string? RuleCode { get; set; }
     public decimal? RateDcSeq { get; set; }
     public decimal? RoomDeposit { get; set; }
     public decimal? ActivityDeposit { get; set; }
-    public string ExternalId { get; set; }
-    public string ManualYn { get; set; }
+    public string? ExternalId { get; set; }
+    public string? ManualYn { get; set; }
     public decimal? DepositReqReceiptNo { get; set; }
-    public string DepositReqReversalYn { get; set; }
+    public string? DepositReqReversalYn { get; set; }
     public decimal? DepositReqLinkId { get; set; }
     public DateTime? TrxDate { get; set; }
 

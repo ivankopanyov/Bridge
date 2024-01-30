@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepDepositDtlView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
-    public string ArrivalChar { get; set; }
-    public string PaymentMethod { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public decimal GuestId { get; set; }
-    public string FullName { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string PreferredRoomType { get; set; }
-    public string ResType { get; set; }
-    public string Departure { get; set; }
-    public string GuestTitle { get; set; }
-    public string GuestMiddleName { get; set; }
+    public string? ArrivalChar { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public decimal? GuestId { get; set; }
+    public string? FullName { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? PreferredRoomType { get; set; }
+    public string? ResType { get; set; }
+    public string? Departure { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? GuestMiddleName { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? GroupId { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
-    public string GroupName { get; set; }
-    public string RateCode { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? GroupName { get; set; }
+    public string? RateCode { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? PaidAmt { get; set; }
     public DateTime? PaidDate { get; set; }
     public decimal? DepositAsked { get; set; }
     public DateTime? MaxPaidDate { get; set; }
-    public string RoomType { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string GuaranteeCodeDesc { get; set; }
+    public string? RoomType { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? GuaranteeCodeDesc { get; set; }
     public DateTime? DepositDueDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

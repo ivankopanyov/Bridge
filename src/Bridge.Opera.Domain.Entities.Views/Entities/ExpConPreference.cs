@@ -5,12 +5,12 @@ public partial class ExpConPreference
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
-    public string PreferenceType { get; set; }
-    public string Resort { get; set; }
-    public string ResortActual { get; set; }
-    public string PreferenceValue { get; set; }
-    public string PreferenceDescription { get; set; }
-    public string PreferenceTypeDescription { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortActual { get; set; }
+    public string? PreferenceValue { get; set; }
+    public string? PreferenceDescription { get; set; }
+    public string? PreferenceTypeDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MassRateRef
 {
-    public decimal MassRateRefId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public decimal Nights { get; set; }
-    public string RoomType { get; set; }
-    public decimal Rooms { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string RateCode { get; set; }
-    public string DepositRule { get; set; }
-    public decimal DepositPaid { get; set; }
-    public decimal DepositReq { get; set; }
-    public decimal RefreshedNights { get; set; }
-    public decimal PreviousTotal { get; set; }
-    public decimal NewTotal { get; set; }
-    public string TaggedYn { get; set; }
-    public string ProcessedYn { get; set; }
-    public string CorrespType { get; set; }
-    public string CorrespAddress { get; set; }
-    public string CorrespStatus { get; set; }
-    public string ErrCondition { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? MassRateRefId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public decimal? Nights { get; set; }
+    public string? RoomType { get; set; }
+    public decimal? Rooms { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? DepositRule { get; set; }
+    public decimal? DepositPaid { get; set; }
+    public decimal? DepositReq { get; set; }
+    public decimal? RefreshedNights { get; set; }
+    public decimal? PreviousTotal { get; set; }
+    public decimal? NewTotal { get; set; }
+    public string? TaggedYn { get; set; }
+    public string? ProcessedYn { get; set; }
+    public string? CorrespType { get; set; }
+    public string? CorrespAddress { get; set; }
+    public string? CorrespStatus { get; set; }
+    public string? ErrCondition { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

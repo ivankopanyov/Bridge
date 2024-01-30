@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortCommissionDetailRes
 {
-    public string Resort { get; set; }
-    public string CommissionCode { get; set; }
-    public string PerNight { get; set; }
-    public string PerStay { get; set; }
+    public string? Resort { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? PerNight { get; set; }
+    public string? PerStay { get; set; }
     public decimal? Amount { get; set; }
     public decimal? WkndAmt { get; set; }
-    public string CommFlatPercentage { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? CommFlatPercentage { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ResortCommission ResortCommission { get; set; }
 

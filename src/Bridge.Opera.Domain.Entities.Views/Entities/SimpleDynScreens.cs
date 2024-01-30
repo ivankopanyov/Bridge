@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SimpleDynScreens
 {
-    public string ScreenName { get; set; }
-    public string Description { get; set; }
-    public string NewScreenYn { get; set; }
+    public string? ScreenName { get; set; }
+    public string? Description { get; set; }
+    public string? NewScreenYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

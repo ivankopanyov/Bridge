@@ -16,64 +16,64 @@ public partial class AppModules
         ShiftReportsShiftGroup = new HashSet<ShiftReports>();
     }
 
-    public decimal ModuleId { get; set; }
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string LanguageCode { get; set; }
-    public string Destination { get; set; }
-    public string IconName { get; set; }
-    public string GraphFileName { get; set; }
-    public string CallParameters { get; set; }
+    public decimal? ModuleId { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Destination { get; set; }
+    public string? IconName { get; set; }
+    public string? GraphFileName { get; set; }
+    public string? CallParameters { get; set; }
     public decimal? NaSequence { get; set; }
-    public string ScreenYn { get; set; }
-    public string SystemYn { get; set; }
-    public string FileYn { get; set; }
-    public string PrintYn { get; set; }
-    public string ActiveYn { get; set; }
-    public string OutputFile { get; set; }
-    public string WhenToExecute { get; set; }
-    public string Frequency { get; set; }
+    public string? ScreenYn { get; set; }
+    public string? SystemYn { get; set; }
+    public string? FileYn { get; set; }
+    public string? PrintYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? OutputFile { get; set; }
+    public string? WhenToExecute { get; set; }
+    public string? Frequency { get; set; }
     public DateTime? Date1 { get; set; }
     public DateTime? Date2 { get; set; }
     public DateTime? Date3 { get; set; }
     public DateTime? Date4 { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? RModuleId { get; set; }
-    public string Resort { get; set; }
-    public string CanBeRunSeparately { get; set; }
-    public string DefaultModuleType { get; set; }
-    public string ReportProcedureYn { get; set; }
-    public string FormToRun { get; set; }
+    public string? Resort { get; set; }
+    public string? CanBeRunSeparately { get; set; }
+    public string? DefaultModuleType { get; set; }
+    public string? ReportProcedureYn { get; set; }
+    public string? FormToRun { get; set; }
     public decimal? TotalRuns { get; set; }
     public DateTime? LastRun { get; set; }
     public decimal? LastRunUser { get; set; }
-    public string ProtectedYn { get; set; }
-    public string UsedInApp { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string AllowDeleteYn { get; set; }
-    public string AllowMultipleYn { get; set; }
-    public string UserDefinedYn { get; set; }
-    public string MultiPapersizeYn { get; set; }
+    public string? ProtectedYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? AllowDeleteYn { get; set; }
+    public string? AllowMultipleYn { get; set; }
+    public string? UserDefinedYn { get; set; }
+    public string? MultiPapersizeYn { get; set; }
     public decimal? Copies { get; set; }
-    public string ChainCode { get; set; }
-    public string StreamPrintingYn { get; set; }
-    public string DataSourceType { get; set; }
-    public string DataSource { get; set; }
-    public string WatermarkMode { get; set; }
-    public string WatermarkText { get; set; }
+    public string? ChainCode { get; set; }
+    public string? StreamPrintingYn { get; set; }
+    public string? DataSourceType { get; set; }
+    public string? DataSource { get; set; }
+    public string? WatermarkMode { get; set; }
+    public string? WatermarkText { get; set; }
     public decimal? WatermarkXpos { get; set; }
     public decimal? WatermarkYpos { get; set; }
     public decimal? WatermarkAngle { get; set; }
     public decimal? WatermarkColorR { get; set; }
     public decimal? WatermarkColorG { get; set; }
     public decimal? WatermarkColorB { get; set; }
-    public string WatermarkFont { get; set; }
+    public string? WatermarkFont { get; set; }
     public decimal? WatermarkFontSize { get; set; }
-    public string OutputExcelYn { get; set; }
+    public string? OutputExcelYn { get; set; }
 
     public virtual AppModules RModule { get; set; }
     public virtual ICollection<AppModuleDependencies> AppModuleDependenciesModule { get; set; }

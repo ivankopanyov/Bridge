@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepcontDetails
 {
-    public decimal AttachId { get; set; }
-    public string Tablename { get; set; }
-    public string Fieldname { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? AttachId { get; set; }
+    public string? Tablename { get; set; }
+    public string? Fieldname { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

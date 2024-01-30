@@ -3,23 +3,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArAgingReportAccounts
 {
     public decimal? AccountCode { get; set; }
-    public string Style { get; set; }
-    public string AccountName { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountType { get; set; }
-    public string TypeDesc { get; set; }
+    public string? Style { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountType { get; set; }
+    public string? TypeDesc { get; set; }
     public decimal? AccountTypeId { get; set; }
-    public string Contact { get; set; }
-    public string City { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Country { get; set; }
-    public string Zip { get; set; }
-    public string Phone { get; set; }
-    public string State { get; set; }
-    public string BatchStmtYn { get; set; }
-    public string PermAcctYn { get; set; }
+    public string? Contact { get; set; }
+    public string? City { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Country { get; set; }
+    public string? Zip { get; set; }
+    public string? Phone { get; set; }
+    public string? State { get; set; }
+    public string? BatchStmtYn { get; set; }
+    public string? PermAcctYn { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? Age1 { get; set; }
     public decimal? Age2 { get; set; }
@@ -28,7 +28,7 @@ public partial class ArAgingReportAccounts
     public decimal? Age5 { get; set; }
     public decimal? Age6 { get; set; }
     public decimal? Total { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? AccTypeFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

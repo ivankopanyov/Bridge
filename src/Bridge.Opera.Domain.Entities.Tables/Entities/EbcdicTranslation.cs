@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class EbcdicTranslation
 {
     public decimal? EbcdicValue { get; set; }
-    public string Character { get; set; }
+    public string? Character { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

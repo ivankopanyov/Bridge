@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsHistVw
 {
-    public string Resort { get; set; }
-    public string YieldFlag { get; set; }
-    public DateTime PastArrival { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldFlag { get; set; }
+    public DateTime? PastArrival { get; set; }
     public DateTime? TruncArrival { get; set; }
-    public decimal Los { get; set; }
+    public decimal? Los { get; set; }
     public bool MilestoneId { get; set; }
     public decimal? Cnt { get; set; }
     public decimal? Rn { get; set; }

@@ -7,10 +7,10 @@ public partial class GemEventgroup
         GemEvent = new HashSet<GemEvent>();
     }
 
-    public decimal GroupId { get; set; }
-    public decimal BookId { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
+    public decimal? GroupId { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
     public virtual ICollection<GemEvent> GemEvent { get; set; }

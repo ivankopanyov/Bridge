@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateCategory
 {
-    public string RateCategory1 { get; set; }
-    public string RateClass { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? RateCategory1 { get; set; }
+    public string? RateClass { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string DisplayDefaultYn { get; set; }
-    public string DisplaySet { get; set; }
+    public string? DisplayDefaultYn { get; set; }
+    public string? DisplaySet { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? SellSequence { get; set; }
-    public string RateTier { get; set; }
-    public string ChainCode { get; set; }
-    public string ExportBucketCode { get; set; }
+    public string? RateTier { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ExportBucketCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

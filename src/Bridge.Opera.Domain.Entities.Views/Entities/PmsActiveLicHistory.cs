@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsActiveLicHistory
 {
-    public string Resort { get; set; }
-    public DateTime ActiveStatusBeginDate { get; set; }
-    public string PmsActiveYn { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ActiveStatusBeginDate { get; set; }
+    public string? PmsActiveYn { get; set; }
     public DateTime? ActiveStatusEndDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

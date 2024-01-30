@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2hMappings
 {
-    public decimal MapId { get; set; }
-    public decimal SourceId { get; set; }
+    public decimal? MapId { get; set; }
+    public decimal? SourceId { get; set; }
     public decimal? TargetId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

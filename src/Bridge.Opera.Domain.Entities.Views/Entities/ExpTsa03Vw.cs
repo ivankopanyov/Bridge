@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpTsa03Vw
 {
-    public string BusinessDate { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string RoomType { get; set; }
-    public string RoomTypeDesc { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomClassDesc { get; set; }
-    public decimal ExistingRoom { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomTypeDesc { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomClassDesc { get; set; }
+    public decimal? ExistingRoom { get; set; }
     public decimal? OoRoom { get; set; }
     public decimal? OsRoom { get; set; }
     public decimal? NoOfDefiniteRoom { get; set; }

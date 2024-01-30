@@ -2,91 +2,91 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofResvRevenueRecords
 {
-    public string AccountPeriod { get; set; }
+    public string? AccountPeriod { get; set; }
     public decimal? UserId { get; set; }
-    public string UserName { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string TrxType { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? UserName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? TrxType { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? PayeeNameId { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? DepLedDebit { get; set; }
     public decimal? DepLedCredit { get; set; }
     public decimal? DepLedControl { get; set; }
-    public string DepLedControlFlag { get; set; }
+    public string? DepLedControlFlag { get; set; }
     public decimal? GuestLedDebit { get; set; }
     public decimal? GuestLedCredit { get; set; }
     public decimal? GuestLedControl { get; set; }
-    public string GuestLedControlFlag { get; set; }
+    public string? GuestLedControlFlag { get; set; }
     public decimal? PackageLedDebit { get; set; }
     public decimal? PackageLedCredit { get; set; }
     public decimal? PackageLedControl { get; set; }
-    public string PackageLedControlFlag { get; set; }
+    public string? PackageLedControlFlag { get; set; }
     public decimal? ArLedDebit { get; set; }
     public decimal? ArLedCredit { get; set; }
     public decimal? ArLedControl { get; set; }
-    public string ArLedControlFlag { get; set; }
+    public string? ArLedControlFlag { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string GrossDrCrFlag { get; set; }
-    public string NetDrCrFlag { get; set; }
+    public string? GrossDrCrFlag { get; set; }
+    public string? NetDrCrFlag { get; set; }
     public decimal? VatAmount { get; set; }
-    public string VatDrCrFlag { get; set; }
+    public string? VatDrCrFlag { get; set; }
     public decimal? CalcGrossAmount { get; set; }
     public decimal? CalcVatAmount { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string ArInd { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? ArInd { get; set; }
     public decimal? RevBucketId { get; set; }
-    public string CashInd { get; set; }
-    public string ManualPostYn { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string ArrangementCode { get; set; }
+    public string? CashInd { get; set; }
+    public string? ManualPostYn { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? ArrangementCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
     public decimal? Commission { get; set; }
-    public string TaxCode { get; set; }
+    public string? TaxCode { get; set; }
     public decimal? TaxCodeNo { get; set; }
-    public string PayeeLastName { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Title { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Title { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Salutation { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string PhoneNo { get; set; }
-    public string Fax { get; set; }
-    public string NameType { get; set; }
-    public string GuestVipStatus { get; set; }
-    public string GuestMemberNo { get; set; }
-    public string GuestMemberType { get; set; }
-    public string GuestMemberLevel { get; set; }
-    public string ArNo { get; set; }
-    public string Gender { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string ProfileTaxId { get; set; }
+    public string? Salutation { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? Fax { get; set; }
+    public string? NameType { get; set; }
+    public string? GuestVipStatus { get; set; }
+    public string? GuestMemberNo { get; set; }
+    public string? GuestMemberType { get; set; }
+    public string? GuestMemberLevel { get; set; }
+    public string? ArNo { get; set; }
+    public string? Gender { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? ProfileTaxId { get; set; }
     public decimal? BofIntfCode { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode4 { get; set; }
-    public string BofCode5 { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? BofCode5 { get; set; }
     public decimal? BofCode6 { get; set; }
     public decimal? BofCode7 { get; set; }
     public decimal? BofCode8 { get; set; }
@@ -97,16 +97,16 @@ public partial class BofResvRevenueRecords
     public DateTime? BofCode13 { get; set; }
     public DateTime? BofCode14 { get; set; }
     public DateTime? BofCode15 { get; set; }
-    public string BofCode16 { get; set; }
-    public string BofCode17 { get; set; }
-    public string BofCode18 { get; set; }
-    public string BofCode19 { get; set; }
-    public string BofCode20 { get; set; }
-    public string BofCode21 { get; set; }
-    public string BofCode22 { get; set; }
-    public string BofCode23 { get; set; }
-    public string BofCode24 { get; set; }
-    public string BofCode25 { get; set; }
+    public string? BofCode16 { get; set; }
+    public string? BofCode17 { get; set; }
+    public string? BofCode18 { get; set; }
+    public string? BofCode19 { get; set; }
+    public string? BofCode20 { get; set; }
+    public string? BofCode21 { get; set; }
+    public string? BofCode22 { get; set; }
+    public string? BofCode23 { get; set; }
+    public string? BofCode24 { get; set; }
+    public string? BofCode25 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmBookingpaceVw
 {
-    public string Resort { get; set; }
-    public string RegionCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RegionCode { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? SnapshotDate { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDesc { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDesc { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
     public decimal? TotalRoomOccDeduct { get; set; }
     public decimal? RoomsOccDeductInd { get; set; }
     public decimal? RoomsOccDeductBlk { get; set; }

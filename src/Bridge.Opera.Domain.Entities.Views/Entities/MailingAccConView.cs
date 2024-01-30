@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MailingAccConView
 {
-    public decimal BookingId { get; set; }
-    public string LinkType { get; set; }
+    public decimal? BookingId { get; set; }
+    public string? LinkType { get; set; }
     public decimal? AccountId { get; set; }
     public decimal? ContactId { get; set; }
 

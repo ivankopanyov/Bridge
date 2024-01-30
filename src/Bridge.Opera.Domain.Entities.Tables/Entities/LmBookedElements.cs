@@ -7,21 +7,21 @@ public partial class LmBookedElements
         LmBookedResource = new HashSet<LmBookedResource>();
     }
 
-    public decimal BookedElId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookedActId { get; set; }
-    public string ActElCode { get; set; }
-    public DateTime BeginTime { get; set; }
-    public DateTime EndTime { get; set; }
-    public string Status { get; set; }
-    public string OutletCode { get; set; }
+    public decimal? BookedElId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookedActId { get; set; }
+    public string? ActElCode { get; set; }
+    public DateTime? BeginTime { get; set; }
+    public DateTime? EndTime { get; set; }
+    public string? Status { get; set; }
+    public string? OutletCode { get; set; }
     public DateTime? CancelDate { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual LmBookedActivity LmBookedActivity { get; set; }
     public virtual ICollection<LmBookedResource> LmBookedResource { get; set; }

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberTscPointsVw
 {
-    public string Application { get; set; }
-    public decimal MembershipTrxId { get; set; }
+    public string? Application { get; set; }
+    public decimal? MembershipTrxId { get; set; }
     public DateTime? MembershipTrxDate { get; set; }
-    public string RecordType { get; set; }
-    public decimal MembershipId { get; set; }
+    public string? RecordType { get; set; }
+    public decimal? MembershipId { get; set; }
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
-    public string PmsResvNo { get; set; }
-    public string OrsBookNo { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public DateTime DepartureDate { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? OrsBookNo { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public DateTime? DepartureDate { get; set; }
     public decimal? StayRecordId { get; set; }
-    public string PointsCalculatedYn { get; set; }
+    public string? PointsCalculatedYn { get; set; }
     public decimal? MembershipBaseStay { get; set; }
     public decimal? MembershipBonusStay { get; set; }
     public decimal? MembershipBaseNights { get; set; }
@@ -26,12 +26,12 @@ public partial class MemberTscPointsVw
     public decimal? TotalMiscPoints { get; set; }
     public DateTime? PointsCreditDate { get; set; }
     public DateTime? PointsExpirationDate { get; set; }
-    public string AdjustmentYn { get; set; }
+    public string? AdjustmentYn { get; set; }
     public decimal? StatementId { get; set; }
-    public decimal TrxInsertUser { get; set; }
-    public DateTime TrxInsertDate { get; set; }
-    public decimal TrxUpdateUser { get; set; }
-    public DateTime TrxUpdateDate { get; set; }
+    public decimal? TrxInsertUser { get; set; }
+    public DateTime? TrxInsertDate { get; set; }
+    public decimal? TrxUpdateUser { get; set; }
+    public DateTime? TrxUpdateDate { get; set; }
     public DateTime? TrxInactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

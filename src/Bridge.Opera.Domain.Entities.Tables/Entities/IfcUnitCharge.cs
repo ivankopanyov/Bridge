@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IfcUnitCharge
 {
     public decimal? IfcCtrlId { get; set; }
-    public string TrunkId { get; set; }
-    public string LineType { get; set; }
-    public string VipCode { get; set; }
+    public string? TrunkId { get; set; }
+    public string? LineType { get; set; }
+    public string? VipCode { get; set; }
     public decimal? StartUnit { get; set; }
     public decimal? EndUnit { get; set; }
     public decimal? PricePerUnit { get; set; }

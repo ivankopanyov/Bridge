@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BiImportFiles
 {
-    public string Filename { get; set; }
-    public string FileType { get; set; }
+    public string? Filename { get; set; }
+    public string? FileType { get; set; }
     public DateTime? LastAccess { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

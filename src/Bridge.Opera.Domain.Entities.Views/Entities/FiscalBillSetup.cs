@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FiscalBillSetup
 {
-    public string Resort { get; set; }
-    public string Period { get; set; }
-    public string Description { get; set; }
-    public string Prefix { get; set; }
+    public string? Resort { get; set; }
+    public string? Period { get; set; }
+    public string? Description { get; set; }
+    public string? Prefix { get; set; }
     public decimal? BeginNo { get; set; }
     public decimal? EndNo { get; set; }
     public decimal? OrderBy { get; set; }

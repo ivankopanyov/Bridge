@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OedsRequestLogSummaryVw
 {
-    public DateTime RequestDate { get; set; }
-    public decimal ProcessHour { get; set; }
-    public string RequestType { get; set; }
-    public decimal TotalOwsSuccessRequest { get; set; }
-    public decimal TotalOwsFailRequest { get; set; }
-    public decimal TotalOwsTime { get; set; }
+    public DateTime? RequestDate { get; set; }
+    public decimal? ProcessHour { get; set; }
+    public string? RequestType { get; set; }
+    public decimal? TotalOwsSuccessRequest { get; set; }
+    public decimal? TotalOwsFailRequest { get; set; }
+    public decimal? TotalOwsTime { get; set; }
     public decimal? AvegOws { get; set; }
-    public decimal TotalGdsSuccessRequest { get; set; }
-    public decimal TotalGdsFailRequest { get; set; }
-    public decimal TotalGdsTime { get; set; }
+    public decimal? TotalGdsSuccessRequest { get; set; }
+    public decimal? TotalGdsFailRequest { get; set; }
+    public decimal? TotalGdsTime { get; set; }
     public decimal? AvegGds { get; set; }
-    public decimal TotalAdsSuccessRequest { get; set; }
-    public decimal TotalAdsFailRequest { get; set; }
-    public decimal TotalAdsTime { get; set; }
+    public decimal? TotalAdsSuccessRequest { get; set; }
+    public decimal? TotalAdsFailRequest { get; set; }
+    public decimal? TotalAdsTime { get; set; }
     public decimal? AvegAds { get; set; }
-    public decimal TotalUiSuccessRequest { get; set; }
-    public decimal TotalUiFailRequest { get; set; }
-    public decimal TotalUiTime { get; set; }
+    public decimal? TotalUiSuccessRequest { get; set; }
+    public decimal? TotalUiFailRequest { get; set; }
+    public decimal? TotalUiTime { get; set; }
     public decimal? AvegUi { get; set; }
-    public string MachineName { get; set; }
+    public string? MachineName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

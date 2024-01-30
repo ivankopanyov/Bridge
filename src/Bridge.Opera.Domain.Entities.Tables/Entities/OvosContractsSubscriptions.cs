@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosContractsSubscriptions
 {
-    public decimal ContractId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ExtContractNumber { get; set; }
-    public string ExtContractType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtContractNumber { get; set; }
+    public string? ExtContractType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual OvosContracts OvosContracts { get; set; }
 

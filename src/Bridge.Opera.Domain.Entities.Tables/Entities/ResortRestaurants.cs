@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortRestaurants
 {
-    public string Resort { get; set; }
-    public string RestaurantCode { get; set; }
-    public string RestaurantName { get; set; }
-    public string Type { get; set; }
-    public string Hours { get; set; }
-    public string PriceRange { get; set; }
-    public string Comments { get; set; }
+    public string? Resort { get; set; }
+    public string? RestaurantCode { get; set; }
+    public string? RestaurantName { get; set; }
+    public string? Type { get; set; }
+    public string? Hours { get; set; }
+    public string? PriceRange { get; set; }
+    public string? Comments { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
@@ -17,7 +17,7 @@ public partial class ResortRestaurants
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Category { get; set; }
+    public string? Category { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

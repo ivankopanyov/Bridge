@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidWorkCategories
 {
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string Description { get; set; }
-    public string Printer { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? Description { get; set; }
+    public string? Printer { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

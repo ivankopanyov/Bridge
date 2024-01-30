@@ -5,9 +5,9 @@ public partial class ExpConMembership
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string MembershipCardNo { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? MembershipCardNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

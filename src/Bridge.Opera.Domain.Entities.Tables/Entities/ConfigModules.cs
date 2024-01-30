@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ConfigModules
 {
-    public string DefaultModule { get; set; }
-    public string ConfigMode { get; set; }
-    public string ModuleType { get; set; }
-    public string NewModule { get; set; }
-    public string Remarks { get; set; }
+    public string? DefaultModule { get; set; }
+    public string? ConfigMode { get; set; }
+    public string? ModuleType { get; set; }
+    public string? NewModule { get; set; }
+    public string? Remarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TrxCodePriceSchedules1
 {
-    public string Resort { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public DateTime StartDate { get; set; }
+    public string? Resort { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public DateTime? StartDate { get; set; }
     public decimal? Amount { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? Percentage { get; set; }
-    public string NameTaxType { get; set; }
-    public string UdfFunction { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? UdfFunction { get; set; }
     public decimal? PercentageBaseCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

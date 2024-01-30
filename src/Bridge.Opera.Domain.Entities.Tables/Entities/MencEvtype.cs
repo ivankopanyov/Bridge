@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MencEvtype
 {
-    public decimal MencId { get; set; }
-    public string EventType { get; set; }
+    public decimal? MencId { get; set; }
+    public string? EventType { get; set; }
 
     public virtual GemMenuClass Menc { get; set; }
 

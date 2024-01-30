@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsFcClasstypesDtls
 {
-    public string ClassType { get; set; }
-    public string AttributeCode { get; set; }
-    public string AttributeDesc { get; set; }
+    public string? ClassType { get; set; }
+    public string? AttributeCode { get; set; }
+    public string? AttributeDesc { get; set; }
     public decimal? SellSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

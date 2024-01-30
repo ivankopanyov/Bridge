@@ -3,29 +3,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class BktempRoomResvTypTab
 {
     public decimal? Keynumber { get; set; }
-    public string SummaryType { get; set; }
-    public string Chain { get; set; }
-    public string Resort { get; set; }
-    public string PmsStatus { get; set; }
-    public string PmsTimeUnitType { get; set; }
+    public string? SummaryType { get; set; }
+    public string? Chain { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsStatus { get; set; }
+    public string? PmsTimeUnitType { get; set; }
     public DateTime? PmsStartTime { get; set; }
     public decimal? PmsNumberOfTimeUnits { get; set; }
-    public string PmsPmsId { get; set; }
-    public string PmsCrsId { get; set; }
-    public string PmsRoomType { get; set; }
+    public string? PmsPmsId { get; set; }
+    public string? PmsCrsId { get; set; }
+    public string? PmsRoomType { get; set; }
     public decimal? PmsNumberOfRooms { get; set; }
-    public string CrsStatus { get; set; }
-    public string CrsTimeUnitType { get; set; }
+    public string? CrsStatus { get; set; }
+    public string? CrsTimeUnitType { get; set; }
     public DateTime? CrsStartTime { get; set; }
     public decimal? CrsNumberOfTimeUnits { get; set; }
-    public string CrsPmsId { get; set; }
-    public string CrsCrsId { get; set; }
-    public string CrsRoomType { get; set; }
+    public string? CrsPmsId { get; set; }
+    public string? CrsCrsId { get; set; }
+    public string? CrsRoomType { get; set; }
     public decimal? CrsNumberOfRooms { get; set; }
-    public string RoomTypeShortDesc { get; set; }
+    public string? RoomTypeShortDesc { get; set; }
     public decimal? RequestId { get; set; }
-    public string CrsShareNo { get; set; }
-    public string CrsDeductInventory { get; set; }
+    public string? CrsShareNo { get; set; }
+    public string? CrsDeductInventory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

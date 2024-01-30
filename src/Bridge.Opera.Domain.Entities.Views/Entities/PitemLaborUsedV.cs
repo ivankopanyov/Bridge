@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PitemLaborUsedV
 {
-    public string PlantItemCode { get; set; }
-    public string PlantItemName { get; set; }
-    public decimal WoNumber { get; set; }
-    public string TypeCode { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? PlantItemName { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? TypeCode { get; set; }
     public decimal? CompletedBy { get; set; }
-    public string Resort { get; set; }
-    public string UserName { get; set; }
+    public string? Resort { get; set; }
+    public string? UserName { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string DurationWorked { get; set; }
-    public string LaborCostCurrency { get; set; }
+    public string? DurationWorked { get; set; }
+    public string? LaborCostCurrency { get; set; }
     public decimal? LaborCost { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

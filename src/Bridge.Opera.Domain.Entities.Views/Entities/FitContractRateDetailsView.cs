@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractRateDetailsView
 {
-    public decimal RateSetId { get; set; }
-    public decimal ContractId { get; set; }
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string CurrencyCode { get; set; }
+    public decimal? RateSetId { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Rate1 { get; set; }
     public decimal? Rate2 { get; set; }
     public decimal? Rate3 { get; set; }
     public decimal? Rate4 { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? RateAp { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string RoomDescription { get; set; }
+    public string? RoomDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

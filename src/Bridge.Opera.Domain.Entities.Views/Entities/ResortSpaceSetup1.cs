@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortSpaceSetup1
 {
-    public decimal SpaceInfoId { get; set; }
-    public string Resort { get; set; }
-    public string SetupStyle { get; set; }
+    public decimal? SpaceInfoId { get; set; }
+    public string? Resort { get; set; }
+    public string? SetupStyle { get; set; }
     public decimal? SetupCapacity { get; set; }
-    public string SpaceType { get; set; }
+    public string? SpaceType { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

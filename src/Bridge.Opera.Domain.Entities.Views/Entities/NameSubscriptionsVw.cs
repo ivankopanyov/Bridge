@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameSubscriptionsVw
 {
-    public decimal NameId { get; set; }
-    public string DatabaseId { get; set; }
-    public string DatabaseNameId { get; set; }
-    public string InterfaceId { get; set; }
-    public string PmsResort { get; set; }
-    public string ExternalResort { get; set; }
-    public string BeConsumerName { get; set; }
-    public string SystemType { get; set; }
+    public decimal? NameId { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? DatabaseNameId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? PmsResort { get; set; }
+    public string? ExternalResort { get; set; }
+    public string? BeConsumerName { get; set; }
+    public string? SystemType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

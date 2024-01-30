@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EmpAvexceptionV
 {
-    public decimal NameId { get; set; }
-    public string Last { get; set; }
-    public string First { get; set; }
-    public string FullName { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string DeptName { get; set; }
-    public DateTime AbsentFrom { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Last { get; set; }
+    public string? First { get; set; }
+    public string? FullName { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? DeptName { get; set; }
+    public DateTime? AbsentFrom { get; set; }
     public DateTime? ReturnOn { get; set; }
-    public string ReasonCode { get; set; }
-    public string ReasonDesc { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? ReasonDesc { get; set; }
     public decimal? UserPbxId { get; set; }
     public DateTime? InactiveFrom { get; set; }
     public DateTime? InactiveTo { get; set; }
-    public string InactiveReasonCode { get; set; }
-    public string Comments { get; set; }
-    public string EmpStatus { get; set; }
-    public string JobCode { get; set; }
-    public string Position { get; set; }
+    public string? InactiveReasonCode { get; set; }
+    public string? Comments { get; set; }
+    public string? EmpStatus { get; set; }
+    public string? JobCode { get; set; }
+    public string? Position { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

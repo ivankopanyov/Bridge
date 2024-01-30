@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HttpsCertificates
 {
-    public string Resort { get; set; }
-    public string Provider { get; set; }
-    public string Certificate { get; set; }
-    public string CertificateType { get; set; }
+    public string? Resort { get; set; }
+    public string? Provider { get; set; }
+    public string? Certificate { get; set; }
+    public string? CertificateType { get; set; }
     public decimal? ChainSequence { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

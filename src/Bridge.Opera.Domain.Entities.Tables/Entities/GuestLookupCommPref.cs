@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestLookupCommPref
 {
-    public decimal LookupSeqId { get; set; }
-    public string PhoneNumber { get; set; }
-    public decimal TopicId { get; set; }
-    public string OptInYn { get; set; }
+    public decimal? LookupSeqId { get; set; }
+    public string? PhoneNumber { get; set; }
+    public decimal? TopicId { get; set; }
+    public string? OptInYn { get; set; }
 
     public virtual GuestLookup LookupSeq { get; set; }
 

@@ -7,21 +7,21 @@ public partial class Awards
         AwardRequests = new HashSet<AwardRequests>();
     }
 
-    public decimal AwardSeqId { get; set; }
-    public string Resort { get; set; }
-    public string AwardCode { get; set; }
-    public string Mpcode { get; set; }
-    public string AwardDesc { get; set; }
+    public decimal? AwardSeqId { get; set; }
+    public string? Resort { get; set; }
+    public string? AwardCode { get; set; }
+    public string? Mpcode { get; set; }
+    public string? AwardDesc { get; set; }
     public decimal? AwardQty { get; set; }
     public decimal? AwardMiles { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string NumberRequiredType { get; set; }
-    public string IsPackage { get; set; }
-    public string IsUpgrade { get; set; }
-    public string HotelCategory { get; set; }
-    public string IsGift { get; set; }
-    public string DefaultYn { get; set; }
+    public string? NumberRequiredType { get; set; }
+    public string? IsPackage { get; set; }
+    public string? IsUpgrade { get; set; }
+    public string? HotelCategory { get; set; }
+    public string? IsGift { get; set; }
+    public string? DefaultYn { get; set; }
     public decimal? OrderBy { get; set; }
 
     public virtual MarketingPrograms MarketingPrograms { get; set; }

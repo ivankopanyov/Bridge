@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2hCmappings
 {
-    public decimal MapId { get; set; }
-    public string SourceId { get; set; }
-    public string TargetId { get; set; }
+    public decimal? MapId { get; set; }
+    public string? SourceId { get; set; }
+    public string? TargetId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HurdleRates
 {
-    public string Resort { get; set; }
-    public DateTime HurdleDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string YieldCategory { get; set; }
-    public decimal Los { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? HurdleDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? YieldCategory { get; set; }
+    public decimal? Los { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? Delta { get; set; }
     public decimal? Hurdle { get; set; }
-    public string Override { get; set; }
+    public string? Override { get; set; }
     public decimal? Upsolds { get; set; }
     public decimal? Ceiling { get; set; }
     public decimal? Maxsolds { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string YmCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? YmCode { get; set; }
     public decimal? OrmsPriceRoomDelta { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

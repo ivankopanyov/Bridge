@@ -7,16 +7,16 @@ public partial class RfmCodeDetails
         RfmScoreCard = new HashSet<RfmScoreCard>();
     }
 
-    public string ChainCode { get; set; }
-    public string RfmCode { get; set; }
-    public string DetailCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string FormulaLabel { get; set; }
-    public string BasedOn { get; set; }
-    public string RevenueGroup { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RfmCode { get; set; }
+    public string? DetailCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? FormulaLabel { get; set; }
+    public string? BasedOn { get; set; }
+    public string? RevenueGroup { get; set; }
 
     public virtual RfmCodes RfmCodes { get; set; }
     public virtual ICollection<RfmScoreCard> RfmScoreCard { get; set; }

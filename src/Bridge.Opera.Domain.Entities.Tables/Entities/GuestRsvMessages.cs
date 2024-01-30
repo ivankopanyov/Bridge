@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestRsvMessages
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal Msgid { get; set; }
-    public string Recipient { get; set; }
-    public string StatusFlag { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? Msgid { get; set; }
+    public string? Recipient { get; set; }
+    public string? StatusFlag { get; set; }
     public DateTime? StatusDate { get; set; }
-    public string ReceivedBy { get; set; }
-    public string Description { get; set; }
-    public string PrintedStatus { get; set; }
+    public string? ReceivedBy { get; set; }
+    public string? Description { get; set; }
+    public string? PrintedStatus { get; set; }
     public DateTime? PrintedDate { get; set; }
     public DateTime? SmsSentOn { get; set; }
-    public string SmsSentBy { get; set; }
-    public string SentToRoomYn { get; set; }
+    public string? SmsSentBy { get; set; }
+    public string? SentToRoomYn { get; set; }
 
     public virtual GuestMessages Msg { get; set; }
     public virtual ReservationName Res { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrsResvName
 {
-    public decimal RequestId { get; set; }
-    public decimal NameId { get; set; }
-    public string NameType { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
+    public decimal? RequestId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? NameType { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
     public decimal? ResvContactId { get; set; }
     public decimal? BillingContactId { get; set; }
 

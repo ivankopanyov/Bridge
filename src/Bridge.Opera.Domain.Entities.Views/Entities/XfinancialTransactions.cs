@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class XfinancialTransactions
 {
-    public string Resort { get; set; }
-    public decimal TrxNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrxNo { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? LinkTrxNo { get; set; }
     public decimal? LinkTrxNoInIhd { get; set; }
-    public string TargetResort { get; set; }
-    public string TrxCode { get; set; }
-    public string Room { get; set; }
-    public string FtSubtype { get; set; }
+    public string? TargetResort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Room { get; set; }
+    public string? FtSubtype { get; set; }
     public DateTime? TrxDate { get; set; }
-    public DateTime BusinessDate { get; set; }
+    public DateTime? BusinessDate { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? TrxNoHeader { get; set; }
-    public string Product { get; set; }
+    public string? Product { get; set; }
     public decimal? TrxNoAgainstPackage { get; set; }
     public decimal? TranActionId { get; set; }
     public decimal? PricePerUnit { get; set; }
@@ -34,13 +34,13 @@ public partial class XfinancialTransactions
     public decimal? CashierDebit { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? NetAmount { get; set; }
-    public string TaxInclusiveYn { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public string TaxGeneratedYn { get; set; }
-    public string FromResort { get; set; }
-    public string ToResort { get; set; }
-    public string PostRecFlag { get; set; }
+    public string? TaxInclusiveYn { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? TaxGeneratedYn { get; set; }
+    public string? FromResort { get; set; }
+    public string? ToResort { get; set; }
+    public string? PostRecFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,13 +7,13 @@ public partial class RoomInspections
         RoomInspectionDetails = new HashSet<RoomInspectionDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal RiId { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public string RiTemplateLocationCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RiId { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public string? RiTemplateLocationCode { get; set; }
     public DateTime? RiDate { get; set; }
     public decimal? RiBy { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
 
     public virtual SurveyTemplate R { get; set; }
     public virtual Locations RNavigation { get; set; }

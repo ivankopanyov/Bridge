@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidAppParamNamesSys
 {
-    public string ParameterName { get; set; }
-    public string Description { get; set; }
-    public string ParameterGroup { get; set; }
-    public string LovValues { get; set; }
-    public string Explanation { get; set; }
-    public string DisplayYn { get; set; }
-    public string UsedInApp { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string ParameterType { get; set; }
-    public string StoredInResort { get; set; }
-    public string ParameterDisplay { get; set; }
-    public string CopyYn { get; set; }
-    public string CoreYn { get; set; }
+    public string? ParameterName { get; set; }
+    public string? Description { get; set; }
+    public string? ParameterGroup { get; set; }
+    public string? LovValues { get; set; }
+    public string? Explanation { get; set; }
+    public string? DisplayYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? ParameterType { get; set; }
+    public string? StoredInResort { get; set; }
+    public string? ParameterDisplay { get; set; }
+    public string? CopyYn { get; set; }
+    public string? CoreYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

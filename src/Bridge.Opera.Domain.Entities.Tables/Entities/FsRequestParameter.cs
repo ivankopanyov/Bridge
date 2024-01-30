@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsRequestParameter
 {
-    public decimal ReqId { get; set; }
-    public string Par { get; set; }
-    public string ParValue { get; set; }
+    public decimal? ReqId { get; set; }
+    public string? Par { get; set; }
+    public string? ParValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

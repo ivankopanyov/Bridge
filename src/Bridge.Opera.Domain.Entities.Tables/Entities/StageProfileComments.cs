@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileComments
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public decimal LineNo { get; set; }
-    public string CommentType { get; set; }
-    public string Comments { get; set; }
-    public string CommentTitle { get; set; }
-    public string ValidFlg { get; set; }
-    public string CommentResort { get; set; }
-    public string ConfidentialYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public decimal? LineNo { get; set; }
+    public string? CommentType { get; set; }
+    public string? Comments { get; set; }
+    public string? CommentTitle { get; set; }
+    public string? ValidFlg { get; set; }
+    public string? CommentResort { get; set; }
+    public string? ConfidentialYn { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

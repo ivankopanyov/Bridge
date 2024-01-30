@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileIdCountries
 {
-    public string CountryCode { get; set; }
-    public string CountryName { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CountryName { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BqtChkBbInfo
 {
     public decimal? Bookid { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Bbstatus { get; set; }
-    public string Catstatus { get; set; }
-    public string Status { get; set; }
-    public string Description { get; set; }
-    public string Bbtype { get; set; }
+    public string? Bbstatus { get; set; }
+    public string? Catstatus { get; set; }
+    public string? Status { get; set; }
+    public string? Description { get; set; }
+    public string? Bbtype { get; set; }
     public decimal? Company { get; set; }
     public decimal? ReportId { get; set; }
 

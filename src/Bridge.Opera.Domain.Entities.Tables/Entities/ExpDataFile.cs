@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpDataFile
 {
-    public decimal ExpDataId { get; set; }
-    public decimal ExpFileSeq { get; set; }
-    public string ExpFileLoc { get; set; }
-    public string FileName { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public decimal? ExpFileSeq { get; set; }
+    public string? ExpFileLoc { get; set; }
+    public string? FileName { get; set; }
     public decimal? RecordStart { get; set; }
     public decimal? RecordEnd { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string FileExtn { get; set; }
-    public string ErrorText { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? FileExtn { get; set; }
+    public string? ErrorText { get; set; }
 
     public virtual ExpDataHdr ExpData { get; set; }
 

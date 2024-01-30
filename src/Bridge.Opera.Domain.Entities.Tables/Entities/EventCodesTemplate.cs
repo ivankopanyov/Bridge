@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventCodesTemplate
 {
-    public string EventCode { get; set; }
-    public string EventDesc { get; set; }
+    public string? EventCode { get; set; }
+    public string? EventDesc { get; set; }
     public decimal? SellSequence { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ChainCode { get; set; }
-    public string BlackoutYn { get; set; }
-    public string ShowInOperaYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ChainCode { get; set; }
+    public string? BlackoutYn { get; set; }
+    public string? ShowInOperaYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

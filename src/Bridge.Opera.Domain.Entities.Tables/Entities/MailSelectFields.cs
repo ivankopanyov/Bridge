@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailSelectFields
 {
-    public decimal ListId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string VirtualYn { get; set; }
+    public decimal? ListId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? VirtualYn { get; set; }
 
     public virtual MailFieldList List { get; set; }
 

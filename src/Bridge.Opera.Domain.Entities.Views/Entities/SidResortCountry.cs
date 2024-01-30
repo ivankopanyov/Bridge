@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResortCountry
 {
-    public string Resort { get; set; }
-    public string CountryCode { get; set; }
-    public string CountryName { get; set; }
-    public string GuestAddressFormat { get; set; }
-    public string StatisticCode { get; set; }
-    public string RegionCode { get; set; }
+    public string? Resort { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CountryName { get; set; }
+    public string? GuestAddressFormat { get; set; }
+    public string? StatisticCode { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? ShowSequence { get; set; }
     public decimal? PrintSequence { get; set; }
-    public string CountryMainGroup { get; set; }
+    public string? CountryMainGroup { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string AddressdoctorMode { get; set; }
-    public string DisplayCountryFlagYn { get; set; }
+    public string? AddressdoctorMode { get; set; }
+    public string? DisplayCountryFlagYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

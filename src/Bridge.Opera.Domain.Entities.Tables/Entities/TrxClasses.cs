@@ -7,17 +7,17 @@ public partial class TrxClasses
         TrxClassRelationships = new HashSet<TrxClassRelationships>();
     }
 
-    public string Resort { get; set; }
-    public string TclCode { get; set; }
-    public string TctType { get; set; }
-    public string Description { get; set; }
-    public string Class1MandatoryYn { get; set; }
-    public string Class2MandatoryYn { get; set; }
-    public string ResultIncludedInSumArray { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public string? TclCode { get; set; }
+    public string? TctType { get; set; }
+    public string? Description { get; set; }
+    public string? Class1MandatoryYn { get; set; }
+    public string? Class2MandatoryYn { get; set; }
+    public string? ResultIncludedInSumArray { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
     public virtual TrxClassTypes TctTypeNavigation { get; set; }
     public virtual ICollection<TrxClassRelationships> TrxClassRelationships { get; set; }

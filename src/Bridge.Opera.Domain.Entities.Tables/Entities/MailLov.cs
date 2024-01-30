@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailLov
 {
-    public decimal SourceId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string Description { get; set; }
-    public string LovQuery { get; set; }
-    public string MultiSelectYn { get; set; }
-    public string Column1Desc { get; set; }
-    public string Column2Desc { get; set; }
-    public string Column3Desc { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? Description { get; set; }
+    public string? LovQuery { get; set; }
+    public string? MultiSelectYn { get; set; }
+    public string? Column1Desc { get; set; }
+    public string? Column2Desc { get; set; }
+    public string? Column3Desc { get; set; }
     public decimal? ColumnNum { get; set; }
-    public string ResortColumn { get; set; }
-    public string OrderBy { get; set; }
+    public string? ResortColumn { get; set; }
+    public string? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

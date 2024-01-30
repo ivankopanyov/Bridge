@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpIterations
 {
-    public string Resort { get; set; }
-    public string ExportType { get; set; }
-    public DateTime BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? ExportType { get; set; }
+    public DateTime? BusinessDate { get; set; }
     public decimal? Iteration { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

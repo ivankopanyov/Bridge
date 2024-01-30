@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SocialMediaPostingsTemp
 {
-    public string SocialNetwork { get; set; }
-    public string PostCode { get; set; }
-    public string PostedToPage { get; set; }
-    public string PostedToEmail { get; set; }
-    public string PostedMessage { get; set; }
+    public string? SocialNetwork { get; set; }
+    public string? PostCode { get; set; }
+    public string? PostedToPage { get; set; }
+    public string? PostedToEmail { get; set; }
+    public string? PostedMessage { get; set; }
     public DateTime? PostedDate { get; set; }
     public decimal? PostedByUser { get; set; }
-    public decimal PostSequence { get; set; }
+    public decimal? PostSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

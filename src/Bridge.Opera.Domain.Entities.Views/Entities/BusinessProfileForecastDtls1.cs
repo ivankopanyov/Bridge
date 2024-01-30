@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusinessProfileForecastDtls1
 {
-    public decimal ProfileId { get; set; }
-    public string ForecastType { get; set; }
-    public string PeriodCode { get; set; }
-    public string Period { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? ForecastType { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? Period { get; set; }
     public DateTime? PeriodStart { get; set; }
     public DateTime? PeriodEnd { get; set; }
     public decimal? RoomNights { get; set; }
@@ -20,9 +20,9 @@ public partial class BusinessProfileForecastDtls1
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string Resort { get; set; }
-    public string ForecastSplitMode { get; set; }
-    public string ForecastSplitDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ForecastSplitMode { get; set; }
+    public string? ForecastSplitDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

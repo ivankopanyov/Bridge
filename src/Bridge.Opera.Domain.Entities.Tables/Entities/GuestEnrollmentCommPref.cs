@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestEnrollmentCommPref
 {
-    public decimal EnrollmentSeqId { get; set; }
-    public string PhoneNumber { get; set; }
-    public decimal TopicId { get; set; }
-    public string OptInYn { get; set; }
+    public decimal? EnrollmentSeqId { get; set; }
+    public string? PhoneNumber { get; set; }
+    public decimal? TopicId { get; set; }
+    public string? OptInYn { get; set; }
 
     public virtual GuestEnrollment EnrollmentSeq { get; set; }
 

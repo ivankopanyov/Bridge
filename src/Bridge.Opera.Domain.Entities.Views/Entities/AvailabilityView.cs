@@ -6,7 +6,7 @@ public partial class AvailabilityView
     public decimal? TotalRooms { get; set; }
     public decimal? OutOfOrder { get; set; }
     public decimal? OutOfService { get; set; }
-    public string Event { get; set; }
+    public string? Event { get; set; }
     public decimal? DefBlocks { get; set; }
     public decimal? TotGrpRooms { get; set; }
     public decimal? TentBlocks { get; set; }

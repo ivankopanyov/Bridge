@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BofDefRecords
 {
-    public decimal BofRecordId { get; set; }
-    public string Resort { get; set; }
-    public decimal BofIntfCode { get; set; }
-    public string RecordType { get; set; }
+    public decimal? BofRecordId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BofIntfCode { get; set; }
+    public string? RecordType { get; set; }
     public decimal? MainSequenceNo { get; set; }
-    public string FileType { get; set; }
-    public string RecordDescription { get; set; }
-    public string ExportFileLocation { get; set; }
-    public string ExportFileName { get; set; }
-    public string AppendToFile { get; set; }
-    public string FromClause { get; set; }
-    public string GroupBy { get; set; }
-    public string WhereCondition { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode5 { get; set; }
-    public string BofCode4 { get; set; }
-    public string PreExpProc { get; set; }
-    public string PostExpProc { get; set; }
+    public string? FileType { get; set; }
+    public string? RecordDescription { get; set; }
+    public string? ExportFileLocation { get; set; }
+    public string? ExportFileName { get; set; }
+    public string? AppendToFile { get; set; }
+    public string? FromClause { get; set; }
+    public string? GroupBy { get; set; }
+    public string? WhereCondition { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode5 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? PreExpProc { get; set; }
+    public string? PostExpProc { get; set; }
 
     public virtual BofInterface BofInterface { get; set; }
 

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileStageUserStats
 {
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string Action { get; set; }
-    public string Resort { get; set; }
-    public string NameType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? Action { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
     public decimal? OrsNameId { get; set; }
-    public string PmsNameId { get; set; }
-    public string OrsName { get; set; }
-    public string OrsFirst { get; set; }
-    public string PmsName { get; set; }
-    public string PmsFirst { get; set; }
+    public string? PmsNameId { get; set; }
+    public string? OrsName { get; set; }
+    public string? OrsFirst { get; set; }
+    public string? PmsName { get; set; }
+    public string? PmsFirst { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

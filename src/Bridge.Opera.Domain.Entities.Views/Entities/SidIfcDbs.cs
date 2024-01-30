@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIfcDbs
 {
-    public string DbfLogo { get; set; }
-    public string Type { get; set; }
-    public string Field { get; set; }
-    public string Data { get; set; }
+    public string? DbfLogo { get; set; }
+    public string? Type { get; set; }
+    public string? Field { get; set; }
+    public string? Data { get; set; }
     public int? RowNum { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

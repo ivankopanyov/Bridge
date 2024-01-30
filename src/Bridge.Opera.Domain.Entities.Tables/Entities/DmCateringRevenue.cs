@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DmCateringRevenue
 {
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public decimal EventId { get; set; }
-    public string RevGroup { get; set; }
-    public string RevType { get; set; }
-    public string EvType { get; set; }
-    public string CoverableYn { get; set; }
-    public string EvStatus { get; set; }
-    public string Room { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string FlatYn { get; set; }
-    public string CustomYn { get; set; }
-    public string ForecastEditedYn { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? EventId { get; set; }
+    public string? RevGroup { get; set; }
+    public string? RevType { get; set; }
+    public string? EvType { get; set; }
+    public string? CoverableYn { get; set; }
+    public string? EvStatus { get; set; }
+    public string? Room { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? FlatYn { get; set; }
+    public string? CustomYn { get; set; }
+    public string? ForecastEditedYn { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }
     public decimal? BilledRevenue { get; set; }
     public decimal? ActualRevenue { get; set; }
-    public string IgnoreForecastYn { get; set; }
-    public string PkgRevenueYn { get; set; }
+    public string? IgnoreForecastYn { get; set; }
+    public string? PkgRevenueYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? DmProcessed { get; set; }
-    public string DmProcessedYn { get; set; }
+    public string? DmProcessedYn { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? OtbRevenue { get; set; }
-    public string PropertyCurrency { get; set; }
+    public string? PropertyCurrency { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string CatCurrency { get; set; }
+    public string? CatCurrency { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

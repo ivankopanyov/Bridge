@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchDynamicCodes
 {
-    public string DynCodeId { get; set; }
-    public string ProcedureName { get; set; }
-    public string ProcedureDesc { get; set; }
-    public string ProcedureType { get; set; }
-    public string CodeText { get; set; }
-    public string XmlText { get; set; }
+    public string? DynCodeId { get; set; }
+    public string? ProcedureName { get; set; }
+    public string? ProcedureDesc { get; set; }
+    public string? ProcedureType { get; set; }
+    public string? CodeText { get; set; }
+    public string? XmlText { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ListCode { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? ListCode { get; set; }
+    public string? CanDeleteYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

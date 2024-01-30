@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PrHistoryResvDailyStats
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? ProfileNameId { get; set; }
-    public string ProfileNameType { get; set; }
-    public string ProfileContactYn { get; set; }
+    public string? ProfileNameType { get; set; }
+    public string? ProfileContactYn { get; set; }
     public DateTime? ProfileBeginDate { get; set; }
     public DateTime? ProfileEndDate { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? ResArrival { get; set; }
     public DateTime? ResDeparture { get; set; }
     public decimal? ResNights { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string ResDayUseYn { get; set; }
+    public string? ResDayUseYn { get; set; }
     public decimal? ProfileNights { get; set; }
     public decimal? IsPrimaryFlag { get; set; }
-    public string CountNightYn { get; set; }
-    public string PsuedoYn { get; set; }
-    public string CountDayusenightYn { get; set; }
+    public string? CountNightYn { get; set; }
+    public string? PsuedoYn { get; set; }
+    public string? CountDayusenightYn { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FbRevenue { get; set; }

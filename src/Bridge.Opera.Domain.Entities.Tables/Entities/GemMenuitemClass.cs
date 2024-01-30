@@ -8,14 +8,14 @@ public partial class GemMenuitemClass
         GemMenuitemcDepartment = new HashSet<GemMenuitemcDepartment>();
     }
 
-    public decimal MicId { get; set; }
-    public string Resort { get; set; }
-    public string MicName { get; set; }
-    public string BeverageClass { get; set; }
-    public string IconName { get; set; }
+    public decimal? MicId { get; set; }
+    public string? Resort { get; set; }
+    public string? MicName { get; set; }
+    public string? BeverageClass { get; set; }
+    public string? IconName { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? WebBookingYn { get; set; }
 
     public virtual ICollection<GemMenuitem> GemMenuitem { get; set; }
     public virtual ICollection<GemMenuitemcDepartment> GemMenuitemcDepartment { get; set; }

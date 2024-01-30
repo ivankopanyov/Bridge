@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestCheckDetails
 {
-    public string CheckNumber { get; set; }
-    public string CheckDetail { get; set; }
-    public DateTime CheckDate { get; set; }
-    public string CheckOutlet { get; set; }
+    public string? CheckNumber { get; set; }
+    public string? CheckDetail { get; set; }
+    public DateTime? CheckDate { get; set; }
+    public string? CheckOutlet { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IntIataCorrectionTemp
 {
     public decimal? NameId { get; set; }
-    public string Travelagentname { get; set; }
-    public string Oldiatanumber { get; set; }
-    public string Newiatanumber { get; set; }
-    public string Status { get; set; }
+    public string? Travelagentname { get; set; }
+    public string? Oldiatanumber { get; set; }
+    public string? Newiatanumber { get; set; }
+    public string? Status { get; set; }
     public DateTime? Insertdate { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

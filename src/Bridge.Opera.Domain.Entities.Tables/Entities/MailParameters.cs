@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailParameters
 {
-    public decimal QueryId { get; set; }
+    public decimal? QueryId { get; set; }
     public decimal? ParamValue { get; set; }
 
     public virtual MailQuery Query { get; set; }

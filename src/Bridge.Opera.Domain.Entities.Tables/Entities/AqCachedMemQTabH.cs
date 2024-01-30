@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class AqCachedMemQTabH
 {
     public Guid Msgid { get; set; }
-    public decimal Subscriber { get; set; }
-    public string Name { get; set; }
-    public decimal Address { get; set; }
+    public decimal? Subscriber { get; set; }
+    public string? Name { get; set; }
+    public decimal? Address { get; set; }
     public DateTime? DequeueTime { get; set; }
-    public string TransactionId { get; set; }
-    public string DequeueUser { get; set; }
+    public string? TransactionId { get; set; }
+    public string? DequeueUser { get; set; }
     public Guid? PropagatedMsgid { get; set; }
     public decimal? RetryCount { get; set; }
-    public string Hint { get; set; }
+    public string? Hint { get; set; }
     public Guid? Spare { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

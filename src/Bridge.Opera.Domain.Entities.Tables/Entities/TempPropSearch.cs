@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempPropSearch
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public string ResortType { get; set; }
-    public string ChainCode { get; set; }
-    public string Location { get; set; }
-    public string Feature1 { get; set; }
-    public string Feature2 { get; set; }
-    public string Feature3 { get; set; }
-    public string Feature4 { get; set; }
-    public string Feature5 { get; set; }
-    public string Feature6 { get; set; }
-    public string Feature7 { get; set; }
-    public string Feature8 { get; set; }
-    public string Feature9 { get; set; }
-    public string Feature10 { get; set; }
-    public string PhotoName { get; set; }
-    public string MapName { get; set; }
-    public string AreaMapName { get; set; }
-    public string PropertyAvailabilityYn { get; set; }
-    public string PropertyAvailReason { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortType { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Location { get; set; }
+    public string? Feature1 { get; set; }
+    public string? Feature2 { get; set; }
+    public string? Feature3 { get; set; }
+    public string? Feature4 { get; set; }
+    public string? Feature5 { get; set; }
+    public string? Feature6 { get; set; }
+    public string? Feature7 { get; set; }
+    public string? Feature8 { get; set; }
+    public string? Feature9 { get; set; }
+    public string? Feature10 { get; set; }
+    public string? PhotoName { get; set; }
+    public string? MapName { get; set; }
+    public string? AreaMapName { get; set; }
+    public string? PropertyAvailabilityYn { get; set; }
+    public string? PropertyAvailReason { get; set; }
     public byte? Availability { get; set; }
     public short? LowRate { get; set; }
     public int? HighRate { get; set; }

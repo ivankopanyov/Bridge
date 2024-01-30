@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UserBiGroupsLink
 {
-    public decimal AppUserId { get; set; }
-    public string BiGroupCode { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? BiGroupCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

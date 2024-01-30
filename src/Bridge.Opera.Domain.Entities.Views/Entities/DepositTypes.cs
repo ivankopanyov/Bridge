@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DepositTypes
 {
-    public string DepositTypeDesc { get; set; }
-    public string DepositType { get; set; }
+    public string? DepositTypeDesc { get; set; }
+    public string? DepositType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

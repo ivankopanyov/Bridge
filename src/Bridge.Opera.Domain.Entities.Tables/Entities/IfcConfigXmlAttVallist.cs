@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcConfigXmlAttVallist
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? IfcCtrlId { get; set; }
-    public decimal ConfigId { get; set; }
-    public string ListValues { get; set; }
+    public decimal? ConfigId { get; set; }
+    public string? ListValues { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateCodeRoutInstr1
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string TrxCode { get; set; }
-    public string ProfileType { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? ProfileType { get; set; }
     public decimal? ArrangementId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

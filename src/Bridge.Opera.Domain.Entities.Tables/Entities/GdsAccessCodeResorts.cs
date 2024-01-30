@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAccessCodeResorts
 {
-    public decimal NameId { get; set; }
-    public string Channel { get; set; }
-    public string RateCode { get; set; }
-    public string AccessCode { get; set; }
-    public string RealAccessCode { get; set; }
-    public string Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Channel { get; set; }
+    public string? RateCode { get; set; }
+    public string? AccessCode { get; set; }
+    public string? RealAccessCode { get; set; }
+    public string? Resort { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

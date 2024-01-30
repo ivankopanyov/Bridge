@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProtectedObjectsVw
 {
-    public string TemplateCode { get; set; }
-    public string NameType { get; set; }
-    public string ProtectedFor { get; set; }
-    public string TemplateGroupCode { get; set; }
-    public string ObjectCode { get; set; }
-    public string DisplayName { get; set; }
-    public string ObjAllowNew { get; set; }
-    public string ObjAllowEdit { get; set; }
-    public string ObjAllowDelete { get; set; }
-    public string UsrAllowNew { get; set; }
-    public string UsrAllowEdit { get; set; }
-    public string UsrAllowDelete { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? NameType { get; set; }
+    public string? ProtectedFor { get; set; }
+    public string? TemplateGroupCode { get; set; }
+    public string? ObjectCode { get; set; }
+    public string? DisplayName { get; set; }
+    public string? ObjAllowNew { get; set; }
+    public string? ObjAllowEdit { get; set; }
+    public string? ObjAllowDelete { get; set; }
+    public string? UsrAllowNew { get; set; }
+    public string? UsrAllowEdit { get; set; }
+    public string? UsrAllowDelete { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

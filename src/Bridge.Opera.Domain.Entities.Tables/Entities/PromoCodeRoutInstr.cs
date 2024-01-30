@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PromoCodeRoutInstr
 {
-    public string Resort { get; set; }
-    public string PromoCode { get; set; }
-    public string TrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? PromoCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? ArrangementId { get; set; }
-    public string PromptForAuthorizerYn { get; set; }
+    public string? PromptForAuthorizerYn { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? RoutingPercent { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? AuthorizerId { get; set; }
     public decimal? FolioView { get; set; }
-    public string AutoPopulateRoutingYn { get; set; }
+    public string? AutoPopulateRoutingYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
     public decimal? RoutingCovers { get; set; }
-    public string DailyYn { get; set; }
+    public string? DailyYn { get; set; }
 
     public virtual Promotions Promotions { get; set; }
 

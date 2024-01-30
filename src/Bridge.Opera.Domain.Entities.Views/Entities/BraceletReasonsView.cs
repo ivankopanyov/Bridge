@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BraceletReasonsView
 {
-    public string ReasonCode { get; set; }
-    public string ReasonDesc { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? ReasonDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

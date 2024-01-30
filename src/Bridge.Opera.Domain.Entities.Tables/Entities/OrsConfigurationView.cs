@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrsConfigurationView
 {
-    public string MenuName { get; set; }
-    public string Flg { get; set; }
+    public string? MenuName { get; set; }
+    public string? Flg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

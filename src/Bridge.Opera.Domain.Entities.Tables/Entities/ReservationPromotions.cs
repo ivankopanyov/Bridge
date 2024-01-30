@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationPromotions
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string PromoCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? PromoCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
     public virtual Promotions Promotions { get; set; }
     public virtual ReservationName Res { get; set; }

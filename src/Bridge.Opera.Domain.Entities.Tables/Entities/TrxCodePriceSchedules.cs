@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class TrxCodePriceSchedules
 {
     public decimal? Percentage { get; set; }
-    public DateTime StartDate { get; set; }
+    public DateTime? StartDate { get; set; }
     public decimal? Amount { get; set; }
-    public string Currency { get; set; }
-    public string TrxCode { get; set; }
-    public string Resort { get; set; }
-    public string NameTaxType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string UdfFunction { get; set; }
+    public string? Currency { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? UdfFunction { get; set; }
     public decimal? PercentageBaseCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

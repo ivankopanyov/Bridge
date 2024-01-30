@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameMergeList
 {
-    public decimal NameId { get; set; }
+    public decimal? NameId { get; set; }
     public DateTime? EvaluationDate { get; set; }
     public DateTime? LastUpdateDate { get; set; }
-    public string EvaluateYn { get; set; }
+    public string? EvaluateYn { get; set; }
     public decimal? NoOfTimesEvaluated { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

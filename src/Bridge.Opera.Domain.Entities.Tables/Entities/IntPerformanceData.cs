@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntPerformanceData
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string Module { get; set; }
-    public string MessageType { get; set; }
-    public string MessageStatus { get; set; }
-    public decimal MessageId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? Module { get; set; }
+    public string? MessageType { get; set; }
+    public string? MessageStatus { get; set; }
+    public decimal? MessageId { get; set; }
     public DateTime? MessageDateTime { get; set; }
     public decimal? TotTimeSec { get; set; }
     public decimal? BufferGets { get; set; }
     public decimal? CpuTimeSec { get; set; }
     public decimal? PgaKb { get; set; }
-    public string SwDescription { get; set; }
+    public string? SwDescription { get; set; }
     public DateTime? EnqueueTime { get; set; }
     public DateTime? DequeueTime { get; set; }
     public decimal? NumOfMsgs { get; set; }
     public decimal? BePriority { get; set; }
-    public string ActionType { get; set; }
-    public string ReviewedYn { get; set; }
+    public string? ActionType { get; set; }
+    public string? ReviewedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

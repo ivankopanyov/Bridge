@@ -4,26 +4,26 @@ public partial class TaskitemsView
 {
     public decimal? TaskitemNumber { get; set; }
     public decimal? TaskCode { get; set; }
-    public string TaskDesc { get; set; }
-    public string PlantItemCode { get; set; }
-    public string PlantItemName { get; set; }
+    public string? TaskDesc { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? PlantItemName { get; set; }
     public DateTime? DueDate { get; set; }
-    public string InHouseYn { get; set; }
-    public string Frequency { get; set; }
-    public string FrequencyDesc { get; set; }
-    public string FolderName { get; set; }
-    public string FolderDescription { get; set; }
-    public string LocationCode { get; set; }
-    public string LocationDesc { get; set; }
-    public string DeptId { get; set; }
-    public string DeptName { get; set; }
+    public string? InHouseYn { get; set; }
+    public string? Frequency { get; set; }
+    public string? FrequencyDesc { get; set; }
+    public string? FolderName { get; set; }
+    public string? FolderDescription { get; set; }
+    public string? LocationCode { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? DeptId { get; set; }
+    public string? DeptName { get; set; }
     public decimal? MaintainedBy { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? NextMaintDate { get; set; }
     public DateTime? FirstDueDate { get; set; }
-    public string Resort { get; set; }
-    public string MasterInd { get; set; }
+    public string? Resort { get; set; }
+    public string? MasterInd { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

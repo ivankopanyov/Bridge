@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosRotationPoints
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ContractId { get; set; }
     public decimal? RandomPoints { get; set; }
     public decimal? CalculatedPoints { get; set; }
     public decimal? AveragePoints { get; set; }
     public decimal? AdjustmentPoints { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? ForecastedPoints { get; set; }
     public decimal? BalanceForwardPoints { get; set; }
     public decimal? ManualAdjustmentPoints { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RegCardListView
 {
-    public string RegCard { get; set; }
-    public string RegCardDesc { get; set; }
-    public decimal RegCardId { get; set; }
-    public string DefaultModuleType { get; set; }
-    public string ModuleName { get; set; }
+    public string? RegCard { get; set; }
+    public string? RegCardDesc { get; set; }
+    public decimal? RegCardId { get; set; }
+    public string? DefaultModuleType { get; set; }
+    public string? ModuleName { get; set; }
     public decimal? Copies { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

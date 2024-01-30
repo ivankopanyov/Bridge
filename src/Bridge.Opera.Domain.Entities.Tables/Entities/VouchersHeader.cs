@@ -7,14 +7,14 @@ public partial class VouchersHeader
         VouchersDetails = new HashSet<VouchersDetails>();
     }
 
-    public decimal VoucherId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal VoucherAmount { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? VoucherId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? VoucherAmount { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
     public virtual ReservationName Res { get; set; }
     public virtual ICollection<VouchersDetails> VouchersDetails { get; set; }

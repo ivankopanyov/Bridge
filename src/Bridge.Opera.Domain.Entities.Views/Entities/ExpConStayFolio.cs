@@ -28,30 +28,30 @@ public partial class ExpConStayFolio
     public decimal? Children { get; set; }
     public decimal? NameId { get; set; }
     public decimal? NumOfRooms { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestName { get; set; }
-    public string FfMemType { get; set; }
-    public string FfMemNumber { get; set; }
-    public string LoyalMemType { get; set; }
-    public string LoyalMemNumber { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomType { get; set; }
-    public string RoomNumber { get; set; }
-    public string PseudoRoomYn { get; set; }
-    public string AccomSeqNum { get; set; }
-    public string MarketCode { get; set; }
-    public string TaNumber { get; set; }
-    public string Udfc31 { get; set; }
-    public string CurrencyCode { get; set; }
-    public string RateCode { get; set; }
-    public string OriginalRateCode { get; set; }
-    public string BlockCode { get; set; }
-    public string AcctContact { get; set; }
-    public string GroupName { get; set; }
-    public string CompanyNameCode { get; set; }
-    public string PayType { get; set; }
-    public string PayRef { get; set; }
-    public string ExtRefNum { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestName { get; set; }
+    public string? FfMemType { get; set; }
+    public string? FfMemNumber { get; set; }
+    public string? LoyalMemType { get; set; }
+    public string? LoyalMemNumber { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? PseudoRoomYn { get; set; }
+    public string? AccomSeqNum { get; set; }
+    public string? MarketCode { get; set; }
+    public string? TaNumber { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? OriginalRateCode { get; set; }
+    public string? BlockCode { get; set; }
+    public string? AcctContact { get; set; }
+    public string? GroupName { get; set; }
+    public string? CompanyNameCode { get; set; }
+    public string? PayType { get; set; }
+    public string? PayRef { get; set; }
+    public string? ExtRefNum { get; set; }
     public DateTime? StayDate { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? ArrivalTime { get; set; }

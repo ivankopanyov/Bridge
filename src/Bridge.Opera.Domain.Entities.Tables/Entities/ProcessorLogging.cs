@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProcessorLogging
 {
-    public string Job { get; set; }
+    public string? Job { get; set; }
     public DateTime? WhenStarted { get; set; }
     public DateTime? WhenStopped { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
     public decimal? Sid { get; set; }
-    public string ModuleInfo { get; set; }
-    public string ClientInfo { get; set; }
-    public string ProgramInfo { get; set; }
-    public string Machine { get; set; }
+    public string? ModuleInfo { get; set; }
+    public string? ClientInfo { get; set; }
+    public string? ProgramInfo { get; set; }
+    public string? Machine { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

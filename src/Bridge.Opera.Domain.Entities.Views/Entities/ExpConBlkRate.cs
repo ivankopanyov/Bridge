@@ -12,11 +12,11 @@ public partial class ExpConBlkRate
     public decimal? RateAmtBefTax { get; set; }
     public decimal? RateAmtAftTax { get; set; }
     public decimal? CommissionInd { get; set; }
-    public string RoomCategory { get; set; }
-    public string RateCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDesc { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RateCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDesc { get; set; }
     public DateTime? RateStartDate { get; set; }
     public DateTime? RateEndDate { get; set; }
 

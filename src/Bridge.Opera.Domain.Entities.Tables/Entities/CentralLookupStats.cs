@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CentralLookupStats
 {
-    public string Resort { get; set; }
-    public string NameType { get; set; }
-    public DateTime LookupDate { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
+    public DateTime? LookupDate { get; set; }
     public decimal? ProfileCounter { get; set; }
     public decimal? LookupFailed { get; set; }
     public decimal? LookupSuccess { get; set; }

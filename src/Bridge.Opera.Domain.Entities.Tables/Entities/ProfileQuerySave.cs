@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileQuerySave
 {
-    public decimal QueryId { get; set; }
-    public string QueryCode { get; set; }
-    public string ShortDescription { get; set; }
-    public string ToSubscribe { get; set; }
-    public string FromDatabaseLst { get; set; }
-    public string FromCountryLst { get; set; }
-    public string FromTerritoryLst { get; set; }
-    public string NameType { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevelLst { get; set; }
-    public string NationalityLst { get; set; }
-    public string VipStatusLst { get; set; }
-    public string Restricted { get; set; }
-    public string KeywordType { get; set; }
-    public string Keyword { get; set; }
-    public string GuestLanguageLst { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? QueryId { get; set; }
+    public string? QueryCode { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? ToSubscribe { get; set; }
+    public string? FromDatabaseLst { get; set; }
+    public string? FromCountryLst { get; set; }
+    public string? FromTerritoryLst { get; set; }
+    public string? NameType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevelLst { get; set; }
+    public string? NationalityLst { get; set; }
+    public string? VipStatusLst { get; set; }
+    public string? Restricted { get; set; }
+    public string? KeywordType { get; set; }
+    public string? Keyword { get; set; }
+    public string? GuestLanguageLst { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? FromStayDate { get; set; }
     public DateTime? ToStayDate { get; set; }
-    public string RoomLabelLst { get; set; }
-    public string StayResortLst { get; set; }
-    public string StayChainLst { get; set; }
+    public string? RoomLabelLst { get; set; }
+    public string? StayResortLst { get; set; }
+    public string? StayChainLst { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? TotalRoomRevenue { get; set; }
     public decimal? TotalNights { get; set; }
     public decimal? TotalStays { get; set; }
     public decimal? MinNoStayResorts { get; set; }
     public DateTime? LastRunDate { get; set; }
-    public string IncludeInactiveProfiles { get; set; }
-    public string CreditRating { get; set; }
+    public string? IncludeInactiveProfiles { get; set; }
+    public string? CreditRating { get; set; }
     public decimal? TopNumber { get; set; }
-    public string TopBasedOn { get; set; }
-    public string ExcludeStay { get; set; }
-    public string RevenueType { get; set; }
+    public string? TopBasedOn { get; set; }
+    public string? ExcludeStay { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? TotalRevTypeAmt { get; set; }
-    public string CustomFilter { get; set; }
+    public string? CustomFilter { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

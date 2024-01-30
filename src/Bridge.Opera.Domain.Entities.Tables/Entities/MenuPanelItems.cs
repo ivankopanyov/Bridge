@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MenuPanelItems
 {
-    public string Resort { get; set; }
-    public string ApplicationName { get; set; }
-    public string PanelName { get; set; }
-    public string MenuName { get; set; }
+    public string? Resort { get; set; }
+    public string? ApplicationName { get; set; }
+    public string? PanelName { get; set; }
+    public string? MenuName { get; set; }
     public decimal? MenuSequence { get; set; }
-    public string MenuModule { get; set; }
-    public string ParentMenuName { get; set; }
-    public string HideYn { get; set; }
-    public string ToggleMenuModule { get; set; }
-    public string ToggleMenuName { get; set; }
-    public string ToggleCheckRoutine { get; set; }
-    public string ResvYn { get; set; }
+    public string? MenuModule { get; set; }
+    public string? ParentMenuName { get; set; }
+    public string? HideYn { get; set; }
+    public string? ToggleMenuModule { get; set; }
+    public string? ToggleMenuName { get; set; }
+    public string? ToggleCheckRoutine { get; set; }
+    public string? ResvYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

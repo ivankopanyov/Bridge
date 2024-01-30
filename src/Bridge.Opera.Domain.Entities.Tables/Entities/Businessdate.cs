@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Businessdate
 {
-    public string Weather { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate1 { get; set; }
-    public string State { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string MandatoryProcsProgress { get; set; }
+    public string? Weather { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate1 { get; set; }
+    public string? State { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? MandatoryProcsProgress { get; set; }
     public decimal? NaTranActionId { get; set; }
-    public string LedgersBalancedYn { get; set; }
-    public string LedgersFixedYn { get; set; }
+    public string? LedgersBalancedYn { get; set; }
+    public string? LedgersFixedYn { get; set; }
     public DateTime? LedgersFixedDate { get; set; }
     public DateTime? QrushSmsSentOn { get; set; }
-    public string QrushSmsSentBy { get; set; }
-    public string PmsActiveYn { get; set; }
+    public string? QrushSmsSentBy { get; set; }
+    public string? PmsActiveYn { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

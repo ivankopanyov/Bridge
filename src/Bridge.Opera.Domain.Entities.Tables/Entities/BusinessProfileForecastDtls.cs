@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BusinessProfileForecastDtls
 {
-    public decimal ProfileId { get; set; }
-    public string ForecastType { get; set; }
-    public string Period { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? ForecastType { get; set; }
+    public string? Period { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? RoomAvgrate { get; set; }
@@ -15,12 +15,12 @@ public partial class BusinessProfileForecastDtls
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PeriodCode { get; set; }
+    public string? PeriodCode { get; set; }
     public DateTime? PeriodStart { get; set; }
     public DateTime? PeriodEnd { get; set; }
     public byte? LaptopChange { get; set; }
-    public string Resort { get; set; }
-    public string ForecastSplitMode { get; set; }
+    public string? Resort { get; set; }
+    public string? ForecastSplitMode { get; set; }
 
     public virtual BusinessProfile Profile { get; set; }
 

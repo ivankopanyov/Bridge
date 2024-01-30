@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExsumFolioDetail
 {
-    public decimal ResvNameId { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? FolioNo { get; set; }
-    public string FolioView { get; set; }
-    public string FolioStyle { get; set; }
-    public string Room { get; set; }
+    public string? FolioView { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? Room { get; set; }
     public decimal? FromId { get; set; }
     public decimal? TrxCode { get; set; }
-    public string Description { get; set; }
-    public string Text { get; set; }
+    public string? Description { get; set; }
+    public string? Text { get; set; }
     public decimal? Debit { get; set; }
     public decimal? Credit { get; set; }
 

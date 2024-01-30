@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepAllotmentSummary
 {
-    public string AllotmentCode { get; set; }
-    public string Description { get; set; }
-    public string Status { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string RateCode { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? Description { get; set; }
+    public string? Status { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? RateCode { get; set; }
     public DateTime? D { get; set; }
     public decimal? Tosell { get; set; }
     public decimal? Pickup { get; set; }
     public decimal? Original { get; set; }
     public decimal? Change { get; set; }
     public decimal? Remain { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

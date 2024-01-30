@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CCConfigV
 {
-    public string Resort { get; set; }
-    public string HotelId { get; set; }
+    public string? Resort { get; set; }
+    public string? HotelId { get; set; }
     public decimal? TimeOut { get; set; }
     public decimal? ApprovalAmountCalcMethod { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }
     public decimal? CCInterfaceSetupId { get; set; }
     public decimal? CCReaderDeviceId { get; set; }
-    public string CcOverHttpEnabledYn { get; set; }
-    public string CcHttpServiceProvider { get; set; }
-    public string CcHttpServiceUrl { get; set; }
+    public string? CcOverHttpEnabledYn { get; set; }
+    public string? CcHttpServiceProvider { get; set; }
+    public string? CcHttpServiceUrl { get; set; }
     public decimal? CcDefaultCashier { get; set; }
-    public string SdcLocationYn { get; set; }
-    public string SdcTerminalYn { get; set; }
-    public string CcAmexDirectYn { get; set; }
-    public string CcEodYn { get; set; }
-    public string AutoAuthActiveYn { get; set; }
+    public string? SdcLocationYn { get; set; }
+    public string? SdcTerminalYn { get; set; }
+    public string? CcAmexDirectYn { get; set; }
+    public string? CcEodYn { get; set; }
+    public string? AutoAuthActiveYn { get; set; }
     public decimal? AutoAuthInterval { get; set; }
     public decimal? AuthorizationValidForDays { get; set; }
 

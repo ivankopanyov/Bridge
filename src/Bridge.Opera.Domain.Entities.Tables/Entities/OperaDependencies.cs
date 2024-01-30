@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaDependencies
 {
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string ParentTableName { get; set; }
-    public string ParentColumnName { get; set; }
-    public string Filter { get; set; }
-    public string ForeignKeyYn { get; set; }
-    public string Remark { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? ParentTableName { get; set; }
+    public string? ParentColumnName { get; set; }
+    public string? Filter { get; set; }
+    public string? ForeignKeyYn { get; set; }
+    public string? Remark { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ActiveSinceSp { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveSinceSp { get; set; }
+    public string? ActiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

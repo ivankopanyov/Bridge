@@ -3,18 +3,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsQuoteHeaderGridVw
 {
     public decimal? RequestId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string YieldCategory { get; set; }
-    public string SummaryType { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? SummaryType { get; set; }
     public decimal? RoomsReq { get; set; }
-    public string RoomsNCost { get; set; }
-    public string ForeEmpty { get; set; }
-    public string ForeYieldable { get; set; }
-    public string ForeNonyieldable { get; set; }
-    public string OtbYieldable { get; set; }
-    public string OtbNonyieldable { get; set; }
+    public string? RoomsNCost { get; set; }
+    public string? ForeEmpty { get; set; }
+    public string? ForeYieldable { get; set; }
+    public string? ForeNonyieldable { get; set; }
+    public string? OtbYieldable { get; set; }
+    public string? OtbNonyieldable { get; set; }
     public decimal? TotalRooms { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

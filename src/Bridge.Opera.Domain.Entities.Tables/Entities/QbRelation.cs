@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class QbRelation
 {
-    public string EntiryName { get; set; }
-    public string FieldName { get; set; }
-    public string REntiryName { get; set; }
-    public string RFieldName { get; set; }
+    public string? EntiryName { get; set; }
+    public string? FieldName { get; set; }
+    public string? REntiryName { get; set; }
+    public string? RFieldName { get; set; }
     public decimal? Position { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual QbField QbField { get; set; }
     public virtual QbField R { get; set; }

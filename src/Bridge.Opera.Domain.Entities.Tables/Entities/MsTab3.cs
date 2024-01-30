@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class MsTab3
 {
     public decimal? TabRowId { get; set; }
-    public string Id { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
-    public string SelectedYn { get; set; }
-    public string Char1 { get; set; }
-    public string Char2 { get; set; }
-    public string Char3 { get; set; }
-    public string Char4 { get; set; }
-    public string Char5 { get; set; }
+    public string? Id { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
+    public string? SelectedYn { get; set; }
+    public string? Char1 { get; set; }
+    public string? Char2 { get; set; }
+    public string? Char3 { get; set; }
+    public string? Char4 { get; set; }
+    public string? Char5 { get; set; }
     public decimal? Number1 { get; set; }
     public decimal? Number2 { get; set; }
     public decimal? Number3 { get; set; }

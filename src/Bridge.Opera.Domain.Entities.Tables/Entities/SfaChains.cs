@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SfaChains
 {
-    public string SfaCode { get; set; }
-    public string ChainCode { get; set; }
-    public string DefaultYn { get; set; }
+    public string? SfaCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DefaultYn { get; set; }
 
     public virtual Resort SfaCodeNavigation { get; set; }
 

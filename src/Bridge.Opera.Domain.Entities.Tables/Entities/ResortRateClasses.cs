@@ -7,18 +7,18 @@ public partial class ResortRateClasses
         ResortRateCategory = new HashSet<ResortRateCategory>();
     }
 
-    public string Resort { get; set; }
-    public string RateClass { get; set; }
-    public string Descr { get; set; }
+    public string? Resort { get; set; }
+    public string? RateClass { get; set; }
+    public string? Descr { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? SellSequence { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string ResortResort { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? ResortResort { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
     public virtual ICollection<ResortRateCategory> ResortRateCategory { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcFrmView
 {
-    public string Resort { get; set; }
-    public string Id { get; set; }
-    public string ExpTable { get; set; }
-    public string Expression { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? Id { get; set; }
+    public string? ExpTable { get; set; }
+    public string? Expression { get; set; }
+    public string? DbfLogo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

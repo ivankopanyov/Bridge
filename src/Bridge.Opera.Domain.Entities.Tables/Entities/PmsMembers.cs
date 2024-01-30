@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PmsMembers
 {
-    public string PmsObjectName { get; set; }
-    public string PmsObjectType { get; set; }
+    public string? PmsObjectName { get; set; }
+    public string? PmsObjectType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

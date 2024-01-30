@@ -6,15 +6,15 @@ public partial class ExpFolioDetail
     public decimal? NameId { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? FolioType { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? FromResvId { get; set; }
-    public string Room { get; set; }
-    public string FolioStyle { get; set; }
+    public string? Room { get; set; }
+    public string? FolioStyle { get; set; }
     public decimal? FromId { get; set; }
-    public string Description { get; set; }
-    public string FullName { get; set; }
-    public string DetailCurrency { get; set; }
+    public string? Description { get; set; }
+    public string? FullName { get; set; }
+    public string? DetailCurrency { get; set; }
     public decimal? CurrExchangeRate { get; set; }
     public decimal? Exp1Amt { get; set; }
     public decimal? Exp2Amt { get; set; }

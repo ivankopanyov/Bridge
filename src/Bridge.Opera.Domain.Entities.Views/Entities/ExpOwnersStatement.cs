@@ -4,28 +4,28 @@ public partial class ExpOwnersStatement
 {
     public decimal? ExportId { get; set; }
     public decimal? RowSequence { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
     public decimal? NameId { get; set; }
-    public string OwnerName { get; set; }
-    public string AccountNo { get; set; }
-    public string Units { get; set; }
+    public string? OwnerName { get; set; }
+    public string? AccountNo { get; set; }
+    public string? Units { get; set; }
     public decimal? OpnBalance { get; set; }
     public decimal? OwnerShare { get; set; }
     public decimal? Fees { get; set; }
     public decimal? OtherActivity { get; set; }
     public decimal? Payment { get; set; }
     public decimal? Balance { get; set; }
-    public string OwnerAddress1 { get; set; }
-    public string OwnerAddress2 { get; set; }
-    public string OwnerAddress3 { get; set; }
-    public string OwnerAddress4 { get; set; }
-    public string OwnerCity { get; set; }
-    public string OwnerZip { get; set; }
-    public string OwnerCountry { get; set; }
-    public string OwnerState { get; set; }
-    public string OwnerPhone { get; set; }
+    public string? OwnerAddress1 { get; set; }
+    public string? OwnerAddress2 { get; set; }
+    public string? OwnerAddress3 { get; set; }
+    public string? OwnerAddress4 { get; set; }
+    public string? OwnerCity { get; set; }
+    public string? OwnerZip { get; set; }
+    public string? OwnerCountry { get; set; }
+    public string? OwnerState { get; set; }
+    public string? OwnerPhone { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

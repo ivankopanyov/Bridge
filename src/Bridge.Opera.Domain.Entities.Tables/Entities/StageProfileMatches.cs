@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileMatches
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public decimal NameId { get; set; }
-    public string MatchDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MatchDesc { get; set; }
     public decimal? MatchWeight { get; set; }
     public decimal? Sequence { get; set; }
     public decimal? ProcessTime { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidActionTypeMandWhereSys
 {
-    public string ExtSystemCode { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string MandatoryWhereClause { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? MandatoryWhereClause { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

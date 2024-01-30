@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntUploadStats
 {
-    public string Resort { get; set; }
-    public string MessageType { get; set; }
-    public DateTime UploadDate { get; set; }
+    public string? Resort { get; set; }
+    public string? MessageType { get; set; }
+    public DateTime? UploadDate { get; set; }
     public decimal? Stage { get; set; }
     public decimal? Success { get; set; }
     public decimal? Fail { get; set; }

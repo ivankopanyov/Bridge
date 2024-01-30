@@ -7,18 +7,18 @@ public partial class ResortCalendarEvents
         ResortCalendarEventDates = new HashSet<ResortCalendarEventDates>();
     }
 
-    public string Resort { get; set; }
-    public string EventCode { get; set; }
+    public string? Resort { get; set; }
+    public string? EventCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string EventDesc { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? EventDesc { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? SellSequence { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string OrmsEventYn { get; set; }
-    public string BlackoutYn { get; set; }
-    public string ShowInOperaYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? OrmsEventYn { get; set; }
+    public string? BlackoutYn { get; set; }
+    public string? ShowInOperaYn { get; set; }
 
     public virtual ICollection<ResortCalendarEventDates> ResortCalendarEventDates { get; set; }
 

@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidExpFileDtlSys
 {
-    public decimal ExpFileId { get; set; }
-    public decimal ExpFileDtlId { get; set; }
-    public string ColName { get; set; }
+    public decimal? ExpFileId { get; set; }
+    public decimal? ExpFileDtlId { get; set; }
+    public string? ColName { get; set; }
     public decimal? ColLength { get; set; }
-    public string ColFormat { get; set; }
-    public string ColAlignment { get; set; }
+    public string? ColFormat { get; set; }
+    public string? ColAlignment { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ColType { get; set; }
-    public string DatabaseYn { get; set; }
-    public string Formula { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? ColType { get; set; }
+    public string? DatabaseYn { get; set; }
+    public string? Formula { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string PromptYn { get; set; }
-    public string DefaultValue { get; set; }
-    public string GenDataType { get; set; }
-    public string IgnoreLengthYn { get; set; }
-    public string XmlColType { get; set; }
+    public string? PromptYn { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? GenDataType { get; set; }
+    public string? IgnoreLengthYn { get; set; }
+    public string? XmlColType { get; set; }
     public decimal? ExpDtlLinkId { get; set; }
-    public string AddSourceView { get; set; }
-    public string Filter { get; set; }
-    public string TagRequiredYn { get; set; }
-    public string XmlAttributeYn { get; set; }
+    public string? AddSourceView { get; set; }
+    public string? Filter { get; set; }
+    public string? TagRequiredYn { get; set; }
+    public string? XmlAttributeYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

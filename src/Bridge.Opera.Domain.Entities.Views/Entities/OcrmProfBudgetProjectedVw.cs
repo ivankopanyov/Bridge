@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OcrmProfBudgetProjectedVw
 {
     public decimal? NameId { get; set; }
-    public string DisplayName { get; set; }
+    public string? DisplayName { get; set; }
     public decimal? TotalArrivals { get; set; }
     public decimal? TotalStays { get; set; }
     public decimal? AvgRoomRate { get; set; }

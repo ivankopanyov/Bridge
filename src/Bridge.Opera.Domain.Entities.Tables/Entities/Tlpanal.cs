@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Tlpanal
 {
-    public string Hotelcode { get; set; }
-    public string Groupid { get; set; }
-    public string Workstatid { get; set; }
-    public string Analystype { get; set; }
-    public string Groupchgd { get; set; }
-    public DateTime Arrdate { get; set; }
+    public string? Hotelcode { get; set; }
+    public string? Groupid { get; set; }
+    public string? Workstatid { get; set; }
+    public string? Analystype { get; set; }
+    public string? Groupchgd { get; set; }
+    public DateTime? Arrdate { get; set; }
     public DateTime? Depdate { get; set; }
     public decimal? Navgrte { get; set; }
     public decimal? Nadjavgrte { get; set; }
@@ -21,7 +21,7 @@ public partial class Tlpanal
     public decimal? Ntrnrevimp { get; set; }
     public decimal? Nwlkpen { get; set; }
     public decimal? Nbkgpts { get; set; }
-    public string Oldresults { get; set; }
+    public string? Oldresults { get; set; }
     public DateTime? Oarrdate { get; set; }
     public DateTime? Odepdate { get; set; }
     public decimal? Oavgrte { get; set; }

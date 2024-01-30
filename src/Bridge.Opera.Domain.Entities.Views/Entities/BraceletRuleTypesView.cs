@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BraceletRuleTypesView
 {
-    public string RuleTypeCode { get; set; }
-    public string RuleTypeDescription { get; set; }
+    public string? RuleTypeCode { get; set; }
+    public string? RuleTypeDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

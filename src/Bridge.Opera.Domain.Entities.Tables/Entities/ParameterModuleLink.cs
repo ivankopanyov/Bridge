@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ParameterModuleLink
 {
-    public string ParameterName { get; set; }
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

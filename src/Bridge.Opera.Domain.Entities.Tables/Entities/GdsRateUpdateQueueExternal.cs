@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateUpdateQueueExternal
 {
-    public string Resort { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsRateCode { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string EchoToken { get; set; }
-    public string Status { get; set; }
-    public string ErrorMessage { get; set; }
+    public string? Resort { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? EchoToken { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorMessage { get; set; }
     public decimal? RetryCount { get; set; }
-    public string ErrorCode { get; set; }
-    public string SubCode { get; set; }
-    public string OldEchoToken { get; set; }
-    public string ResendYn { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? SubCode { get; set; }
+    public string? OldEchoToken { get; set; }
+    public string? ResendYn { get; set; }
     public decimal? ResendCount { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ActionType { get; set; }
-    public decimal RateTier { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ActionType { get; set; }
+    public decimal? RateTier { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TaskTemplateDetails
 {
-    public string Resort { get; set; }
-    public decimal TemplateId { get; set; }
-    public decimal TaskCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TemplateId { get; set; }
+    public decimal? TaskCode { get; set; }
 
     public virtual Tasks Tasks { get; set; }
 

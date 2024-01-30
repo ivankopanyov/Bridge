@@ -10,42 +10,42 @@ public partial class Promotions
         ReservationPromotions = new HashSet<ReservationPromotions>();
     }
 
-    public decimal PromoSeqId { get; set; }
-    public string Resort { get; set; }
-    public string PromoCode { get; set; }
-    public string Mpcode { get; set; }
-    public string PromoName { get; set; }
+    public decimal? PromoSeqId { get; set; }
+    public string? Resort { get; set; }
+    public string? PromoCode { get; set; }
+    public string? Mpcode { get; set; }
+    public string? PromoName { get; set; }
     public DateTime? BookingStartdate { get; set; }
     public DateTime? BookingEnddate { get; set; }
     public DateTime? StayStartdate { get; set; }
     public DateTime? StayEnddate { get; set; }
-    public string Category { get; set; }
-    public string CategoryDesc { get; set; }
+    public string? Category { get; set; }
+    public string? CategoryDesc { get; set; }
     public DateTime? CheckinTime { get; set; }
     public DateTime? CheckoutTime { get; set; }
-    public string PromoInstructions { get; set; }
-    public string UpgradeAllowedYn { get; set; }
-    public string IdRequiredYn { get; set; }
-    public string IdRequiredDesc { get; set; }
-    public string SetOrAccountFlag { get; set; }
+    public string? PromoInstructions { get; set; }
+    public string? UpgradeAllowedYn { get; set; }
+    public string? IdRequiredYn { get; set; }
+    public string? IdRequiredDesc { get; set; }
+    public string? SetOrAccountFlag { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PromoInformation { get; set; }
+    public string? PromoInformation { get; set; }
     public decimal? AuthorizerId { get; set; }
-    public string LimitedTimePromotionYn { get; set; }
+    public string? LimitedTimePromotionYn { get; set; }
     public decimal? CouponLength { get; set; }
-    public string CouponGenOption { get; set; }
-    public string LockedByType { get; set; }
-    public string LockedByCode { get; set; }
+    public string? CouponGenOption { get; set; }
+    public string? LockedByType { get; set; }
+    public string? LockedByCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdResvOutsideBookingDts { get; set; }
-    public string CouponPrefix { get; set; }
-    public string CouponSuffix { get; set; }
-    public string CouponExChars { get; set; }
-    public string CouponGenFormat { get; set; }
-    public string VoucherBenefitCode { get; set; }
+    public string? UpdResvOutsideBookingDts { get; set; }
+    public string? CouponPrefix { get; set; }
+    public string? CouponSuffix { get; set; }
+    public string? CouponExChars { get; set; }
+    public string? CouponGenFormat { get; set; }
+    public string? VoucherBenefitCode { get; set; }
 
     public virtual MarketingPrograms MarketingPrograms { get; set; }
     public virtual ICollection<PromoInformation> PromoInformationNavigation { get; set; }

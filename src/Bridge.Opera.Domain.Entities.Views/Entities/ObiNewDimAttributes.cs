@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiNewDimAttributes
 {
-    public string AttrCode { get; set; }
-    public string AttrDesc { get; set; }
+    public string? AttrCode { get; set; }
+    public string? AttrDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DimName { get; set; }
-    public string DimTable { get; set; }
-    public string DimKeyCol { get; set; }
-    public string ReturnCol { get; set; }
-    public string ReturnDescCol { get; set; }
-    public string ReturnValues { get; set; }
-    public string DisplayLabel { get; set; }
-    public string DimWhere { get; set; }
+    public string? DimName { get; set; }
+    public string? DimTable { get; set; }
+    public string? DimKeyCol { get; set; }
+    public string? ReturnCol { get; set; }
+    public string? ReturnDescCol { get; set; }
+    public string? ReturnValues { get; set; }
+    public string? DisplayLabel { get; set; }
+    public string? DimWhere { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DevHelpMapping
 {
-    public string BlockName { get; set; }
-    public string FieldName { get; set; }
-    public string FormName { get; set; }
-    public string PathTopicId { get; set; }
-    public string SubTopicName { get; set; }
-    public string Notes { get; set; }
+    public string? BlockName { get; set; }
+    public string? FieldName { get; set; }
+    public string? FormName { get; set; }
+    public string? PathTopicId { get; set; }
+    public string? SubTopicName { get; set; }
+    public string? Notes { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Version { get; set; }
+    public string? Version { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -6,7 +6,7 @@ public partial class ExpConResvComment
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GstViewable { get; set; }
-    public string GstText { get; set; }
+    public string? GstText { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

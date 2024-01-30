@@ -7,15 +7,15 @@ public partial class OrmsBookingClassCodes
         OrmsBookingClassCodeDtls = new HashSet<OrmsBookingClassCodeDtls>();
     }
 
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public string ClassCode { get; set; }
-    public string ClassDescription { get; set; }
-    public string ClassType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? ClassCode { get; set; }
+    public string? ClassDescription { get; set; }
+    public string? ClassType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<OrmsBookingClassCodeDtls> OrmsBookingClassCodeDtls { get; set; }
 

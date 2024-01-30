@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DemoSequenceAttributes
 {
-    public string SequenceName { get; set; }
+    public string? SequenceName { get; set; }
     public decimal? CacheSize { get; set; }
     public decimal? LastNumber { get; set; }
 

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SystemAction
 {
-    public decimal ActionInstanceId { get; set; }
-    public string ActionType { get; set; }
-    public string ActionDescription { get; set; }
-    public string ModuleType { get; set; }
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string ActionDescriptionFull { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? ActionType { get; set; }
+    public string? ActionDescription { get; set; }
+    public string? ModuleType { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? ActionDescriptionFull { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

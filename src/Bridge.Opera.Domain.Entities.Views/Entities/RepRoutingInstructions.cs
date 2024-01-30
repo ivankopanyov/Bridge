@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRoutingInstructions
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? ToResvNameId { get; set; }
-    public string FromText { get; set; }
-    public string ToText { get; set; }
-    public string RoutingType { get; set; }
+    public string? FromText { get; set; }
+    public string? ToText { get; set; }
+    public string? RoutingType { get; set; }
     public decimal? BillToNameId { get; set; }
-    public string Comments { get; set; }
-    public string RoutingDecode { get; set; }
+    public string? Comments { get; set; }
+    public string? RoutingDecode { get; set; }
     public decimal? FolioView { get; set; }
-    public string RoomName { get; set; }
-    public string FromRoomName { get; set; }
-    public string AddressName { get; set; }
-    public string DateRange { get; set; }
-    public string BillingInstrnCode { get; set; }
-    public string FromText2 { get; set; }
-    public string ToText2 { get; set; }
+    public string? RoomName { get; set; }
+    public string? FromRoomName { get; set; }
+    public string? AddressName { get; set; }
+    public string? DateRange { get; set; }
+    public string? BillingInstrnCode { get; set; }
+    public string? FromText2 { get; set; }
+    public string? ToText2 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

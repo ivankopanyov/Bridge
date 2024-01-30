@@ -3,36 +3,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwResv
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string PmsConfirmationNo { get; set; }
-    public string ExternalReferenceNo { get; set; }
-    public string ResvStatus { get; set; }
+    public string? PmsConfirmationNo { get; set; }
+    public string? ExternalReferenceNo { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public DateTime? CreationDate { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string BrandId { get; set; }
-    public string HotelCode { get; set; }
+    public string? BrandId { get; set; }
+    public string? HotelCode { get; set; }
     public decimal? Nights { get; set; }
-    public string OriginOfBooking { get; set; }
-    public string MarketSegment { get; set; }
-    public string PmsCrsResv { get; set; }
+    public string? OriginOfBooking { get; set; }
+    public string? MarketSegment { get; set; }
+    public string? PmsCrsResv { get; set; }
     public decimal? InsertUser { get; set; }
-    public string CompanyCorpId { get; set; }
-    public string AgentIataNo { get; set; }
-    public string LoyaltyMembershipNumber { get; set; }
-    public string MarketMainGroup { get; set; }
+    public string? CompanyCorpId { get; set; }
+    public string? AgentIataNo { get; set; }
+    public string? LoyaltyMembershipNumber { get; set; }
+    public string? MarketMainGroup { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PaymentReference { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PaymentReference { get; set; }
     public decimal? HgtTotalRevenue { get; set; }
     public decimal? LeadDays { get; set; }
-    public string OriginTypeCode { get; set; }
+    public string? OriginTypeCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

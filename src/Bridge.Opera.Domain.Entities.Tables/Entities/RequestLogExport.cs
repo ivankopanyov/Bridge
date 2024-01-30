@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RequestLogExport
 {
-    public decimal RequestId { get; set; }
-    public DateTime RequestDate { get; set; }
-    public string RequestType { get; set; }
-    public string RequestSourceType { get; set; }
-    public string RequestSource { get; set; }
-    public string Resort { get; set; }
+    public decimal? RequestId { get; set; }
+    public DateTime? RequestDate { get; set; }
+    public string? RequestType { get; set; }
+    public string? RequestSourceType { get; set; }
+    public string? RequestSource { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public decimal? Nights { get; set; }
     public decimal? Rooms { get; set; }
@@ -18,21 +18,21 @@ public partial class RequestLogExport
     public decimal? GroupId { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? NameId { get; set; }
-    public string SgaCode { get; set; }
-    public string PseudoCity { get; set; }
-    public string City { get; set; }
-    public string PromotionCode { get; set; }
+    public string? SgaCode { get; set; }
+    public string? PseudoCity { get; set; }
+    public string? City { get; set; }
+    public string? PromotionCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string RequestStatus { get; set; }
-    public string RequestError { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RequestStatus { get; set; }
+    public string? RequestError { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? CallHeaderId { get; set; }
-    public string RateCode { get; set; }
-    public string RegionCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RegionCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

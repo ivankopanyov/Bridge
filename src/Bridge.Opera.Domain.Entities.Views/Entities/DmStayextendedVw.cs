@@ -2,60 +2,60 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmStayextendedVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ReservationId { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string RegionCode { get; set; }
+    public string? RegionCode { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? DateOfReservation { get; set; }
     public DateTime? DateOfCancellation { get; set; }
-    public string ReservationStatus { get; set; }
-    public string OccupancyType { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDesc { get; set; }
-    public string SourceGroup { get; set; }
-    public string SourceGroupDesc { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceCodeDesc { get; set; }
-    public string Channel { get; set; }
-    public string ChannelDesc { get; set; }
-    public string RateClass { get; set; }
-    public string RateClassDesc { get; set; }
-    public string RateCategory { get; set; }
-    public string RateCategoryDesc { get; set; }
-    public string RateCode { get; set; }
-    public string RateCodeDesc { get; set; }
-    public string RoomCategoryId { get; set; }
-    public string RoomCategoryCode { get; set; }
-    public string RoomCategoryDesc { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomClassDesc { get; set; }
-    public string PromotionCode { get; set; }
-    public string PromotionCodeDesc { get; set; }
-    public string VipCode { get; set; }
-    public string VipCodeDesc { get; set; }
-    public string NationalityCountryCode { get; set; }
-    public string NationalityCountryDesc { get; set; }
-    public string NationalityRegionCode { get; set; }
-    public string NationalityRegionDesc { get; set; }
-    public string ResidenceRegionCode { get; set; }
-    public string ResidenceRegionDesc { get; set; }
-    public string ResidenceCountryCode { get; set; }
-    public string ResidenceCountryDesc { get; set; }
-    public string ResidenceCity { get; set; }
-    public string ResidenceState { get; set; }
-    public string ResidenceStateDesc { get; set; }
-    public string ResidenceZipCode { get; set; }
-    public string Gender { get; set; }
-    public string WalkinYn { get; set; }
-    public string UpgradeReasonCode { get; set; }
-    public string UpgradeReasonDesc { get; set; }
-    public string DiscountReasonCode { get; set; }
-    public string DiscountReasonDesc { get; set; }
-    public string GroupReservationYn { get; set; }
+    public string? ReservationStatus { get; set; }
+    public string? OccupancyType { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDesc { get; set; }
+    public string? SourceGroup { get; set; }
+    public string? SourceGroupDesc { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceCodeDesc { get; set; }
+    public string? Channel { get; set; }
+    public string? ChannelDesc { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateClassDesc { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateCategoryDesc { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCodeDesc { get; set; }
+    public string? RoomCategoryId { get; set; }
+    public string? RoomCategoryCode { get; set; }
+    public string? RoomCategoryDesc { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomClassDesc { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? PromotionCodeDesc { get; set; }
+    public string? VipCode { get; set; }
+    public string? VipCodeDesc { get; set; }
+    public string? NationalityCountryCode { get; set; }
+    public string? NationalityCountryDesc { get; set; }
+    public string? NationalityRegionCode { get; set; }
+    public string? NationalityRegionDesc { get; set; }
+    public string? ResidenceRegionCode { get; set; }
+    public string? ResidenceRegionDesc { get; set; }
+    public string? ResidenceCountryCode { get; set; }
+    public string? ResidenceCountryDesc { get; set; }
+    public string? ResidenceCity { get; set; }
+    public string? ResidenceState { get; set; }
+    public string? ResidenceStateDesc { get; set; }
+    public string? ResidenceZipCode { get; set; }
+    public string? Gender { get; set; }
+    public string? WalkinYn { get; set; }
+    public string? UpgradeReasonCode { get; set; }
+    public string? UpgradeReasonDesc { get; set; }
+    public string? DiscountReasonCode { get; set; }
+    public string? DiscountReasonDesc { get; set; }
+    public string? GroupReservationYn { get; set; }
     public decimal? TotalRevenueNet { get; set; }
     public decimal? RoomsRevenueNet { get; set; }
     public decimal? FBRevenueNet { get; set; }
@@ -86,20 +86,20 @@ public partial class DmStayextendedVw
     public decimal? DepartureRooms { get; set; }
     public decimal? DeparturePersons { get; set; }
     public DateTime? Timestamp { get; set; }
-    public string FgMembershipNumber { get; set; }
-    public string FgMembershipClass { get; set; }
-    public string FgMembershipClassDesc { get; set; }
-    public string FgMembershipType { get; set; }
-    public string FgMembershipTypeDesc { get; set; }
-    public string FgMembershipLevel { get; set; }
-    public string FgMembershipLevelDesc { get; set; }
-    public string FfMembershipNumber { get; set; }
-    public string FfMembershipClass { get; set; }
-    public string FfMembershipClassDesc { get; set; }
-    public string FfMembershipType { get; set; }
-    public string FfMembershipTypeDesc { get; set; }
-    public string FfMembershipLevel { get; set; }
-    public string FfMembershipLevelDesc { get; set; }
+    public string? FgMembershipNumber { get; set; }
+    public string? FgMembershipClass { get; set; }
+    public string? FgMembershipClassDesc { get; set; }
+    public string? FgMembershipType { get; set; }
+    public string? FgMembershipTypeDesc { get; set; }
+    public string? FgMembershipLevel { get; set; }
+    public string? FgMembershipLevelDesc { get; set; }
+    public string? FfMembershipNumber { get; set; }
+    public string? FfMembershipClass { get; set; }
+    public string? FfMembershipClassDesc { get; set; }
+    public string? FfMembershipType { get; set; }
+    public string? FfMembershipTypeDesc { get; set; }
+    public string? FfMembershipLevel { get; set; }
+    public string? FfMembershipLevelDesc { get; set; }
     public decimal? CExchangeRate { get; set; }
     public decimal? CTotalRevenueNet { get; set; }
     public decimal? CRoomsRevenueNet { get; set; }

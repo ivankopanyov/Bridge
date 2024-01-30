@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsYieldCategoryInfo
 {
-    public string Description { get; set; }
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
     public decimal? MaxDemandTransfer { get; set; }
     public decimal? MaxTransfer { get; set; }
     public decimal? MinHurdle { get; set; }
     public decimal? MinOccCost { get; set; }
     public byte? Rank { get; set; }
-    public string RefRateCode { get; set; }
-    public string RefRoomCategory { get; set; }
+    public string? RefRateCode { get; set; }
+    public string? RefRoomCategory { get; set; }
     public decimal? NyWalkCost { get; set; }
     public decimal? YWalkCost { get; set; }
-    public string Label { get; set; }
-    public string Resort1 { get; set; }
-    public string RoomCategory { get; set; }
-    public string ShortDescription { get; set; }
-    public string YieldableYn { get; set; }
-    public string DisplayDefault { get; set; }
+    public string? Label { get; set; }
+    public string? Resort1 { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? YieldableYn { get; set; }
+    public string? DisplayDefault { get; set; }
     public decimal? Sumnumberrooms { get; set; }
     public decimal? Sumnumberroomstotal { get; set; }
 

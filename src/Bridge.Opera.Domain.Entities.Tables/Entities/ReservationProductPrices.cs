@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationProductPrices
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal ReservationProductId { get; set; }
-    public DateTime ConsumptionDate { get; set; }
-    public string Product { get; set; }
-    public decimal Price { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? ReservationProductId { get; set; }
+    public DateTime? ConsumptionDate { get; set; }
+    public string? Product { get; set; }
+    public decimal? Price { get; set; }
     public decimal? AllowanceAmount { get; set; }
     public decimal? Bucket2Price { get; set; }
     public decimal? Bucket2AllowanceAmount { get; set; }
     public decimal? Bucket3Price { get; set; }
     public decimal? Bucket3AllowanceAmount { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? DeliveryTime { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string FixedPackageYn { get; set; }
+    public string? FixedPackageYn { get; set; }
     public decimal? QtyExcluded { get; set; }
     public decimal? Quantity { get; set; }
-    public string PosAccountYn { get; set; }
-    public string AddToRateYn { get; set; }
-    public string PrintSeparateYn { get; set; }
-    public string PosNextDayYn { get; set; }
-    public string CalculationRule { get; set; }
-    public string PostingRhythm { get; set; }
-    public string ProductSource { get; set; }
+    public string? PosAccountYn { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? PrintSeparateYn { get; set; }
+    public string? PosNextDayYn { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? ProductSource { get; set; }
     public decimal? OrigPrice { get; set; }
     public decimal? OrigAllowance { get; set; }
     public decimal? OrigBucket2Price { get; set; }
     public decimal? OrigBucket2AllowanceAmount { get; set; }
     public decimal? OrigBucket3Price { get; set; }
     public decimal? OrigBucket3AllowanceAmount { get; set; }
-    public string OverrideFixedRateYn { get; set; }
-    public string GenPlAtEodOfCoDate { get; set; }
+    public string? OverrideFixedRateYn { get; set; }
+    public string? GenPlAtEodOfCoDate { get; set; }
 
     public virtual ReservationProducts Res { get; set; }
 

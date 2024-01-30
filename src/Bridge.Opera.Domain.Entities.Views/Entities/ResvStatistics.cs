@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvStatistics
 {
-    public string Resort { get; set; }
-    public string MasterType { get; set; }
-    public string RoomType { get; set; }
-    public string MasterValue { get; set; }
+    public string? Resort { get; set; }
+    public string? MasterType { get; set; }
+    public string? RoomType { get; set; }
+    public string? MasterValue { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? NoOfDefRoomsToday { get; set; }
     public decimal? NoOfGuestsToday { get; set; }

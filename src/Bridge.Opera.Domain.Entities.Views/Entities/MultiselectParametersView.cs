@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MultiselectParametersView
 {
-    public string ParameterName { get; set; }
-    public string WinTtl { get; set; }
-    public string DescLabel { get; set; }
-    public string ValidationFunction { get; set; }
+    public string? ParameterName { get; set; }
+    public string? WinTtl { get; set; }
+    public string? DescLabel { get; set; }
+    public string? ValidationFunction { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

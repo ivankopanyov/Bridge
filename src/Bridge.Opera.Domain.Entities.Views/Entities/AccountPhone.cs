@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccountPhone
 {
-    public decimal PhoneId { get; set; }
-    public decimal NameId { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneRole { get; set; }
-    public string PrimaryYn { get; set; }
-    public string PhoneNumber { get; set; }
+    public decimal? PhoneId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneRole { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? PhoneNumber { get; set; }
     public decimal? DisplaySeq { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

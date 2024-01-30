@@ -4,26 +4,26 @@ public partial class OvosDiscrepantResv
 {
     public decimal? Casenum { get; set; }
     public decimal? ContractId { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ProfileType { get; set; }
-    public string OwnerRentalHotel { get; set; }
-    public string OwnerFfFlag { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ResvStatus { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ProfileType { get; set; }
+    public string? OwnerRentalHotel { get; set; }
+    public string? OwnerFfFlag { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? Departure { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string RateCode { get; set; }
-    public string Room { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? RateCode { get; set; }
+    public string? Room { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string OwnerRoomCategory { get; set; }
+    public string? OwnerRoomCategory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

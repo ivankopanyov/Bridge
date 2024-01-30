@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BuildadminSidList
 {
-    public string ViewName { get; set; }
+    public string? ViewName { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

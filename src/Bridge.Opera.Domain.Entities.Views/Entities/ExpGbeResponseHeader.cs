@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpGbeResponseHeader
 {
     public decimal? ExportId { get; set; }
-    public string GbeType { get; set; }
-    public string PropertyCode { get; set; }
-    public string RunType { get; set; }
+    public string? GbeType { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? RunType { get; set; }
     public DateTime? RequestDate { get; set; }
     public DateTime? RunDate { get; set; }
     public DateTime? RunTime { get; set; }

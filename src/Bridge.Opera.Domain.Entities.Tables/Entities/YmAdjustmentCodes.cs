@@ -8,17 +8,17 @@ public partial class YmAdjustmentCodes
         YmRateSetAdjustments = new HashSet<YmRateSetAdjustments>();
     }
 
-    public string Resort { get; set; }
-    public string AdjustmentCode { get; set; }
-    public string Description { get; set; }
-    public string AdjustmentType { get; set; }
+    public string? Resort { get; set; }
+    public string? AdjustmentCode { get; set; }
+    public string? Description { get; set; }
+    public string? AdjustmentType { get; set; }
     public decimal? AdjustmentAmount { get; set; }
-    public string CurrencyCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string FlatOrPercentage { get; set; }
+    public string? CurrencyCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? FlatOrPercentage { get; set; }
 
     public virtual ICollection<YmNameAdjustments> YmNameAdjustments { get; set; }
     public virtual ICollection<YmRateSetAdjustments> YmRateSetAdjustments { get; set; }

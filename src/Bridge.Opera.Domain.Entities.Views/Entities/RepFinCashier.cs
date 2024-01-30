@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepFinCashier
 {
-    public decimal CashierId { get; set; }
-    public string Title { get; set; }
+    public decimal? CashierId { get; set; }
+    public string? Title { get; set; }
     public DateTime? Timeoffirstopen { get; set; }
     public DateTime? Timeoflastclose { get; set; }
     public DateTime? Dateoflastuse { get; set; }

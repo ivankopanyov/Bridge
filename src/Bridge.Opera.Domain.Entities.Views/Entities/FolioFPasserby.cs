@@ -15,7 +15,7 @@ public partial class FolioFPasserby
     public decimal? SummaryCurrencyDebit { get; set; }
     public decimal? SummaryCurrencyCredit { get; set; }
     public decimal? SummaryBalance { get; set; }
-    public string SummaryCurrency { get; set; }
+    public string? SummaryCurrency { get; set; }
     public decimal? SummaryCurrencyExchangeRt { get; set; }
     public decimal? TotalNet { get; set; }
     public decimal? TotalGross { get; set; }

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppAddonLicenses
 {
-    public string Application { get; set; }
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
-    public string LicName { get; set; }
-    public string LicDesc { get; set; }
-    public string LicCode { get; set; }
+    public string? Application { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
+    public string? LicName { get; set; }
+    public string? LicDesc { get; set; }
+    public string? LicCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveYn { get; set; }
     public decimal? NoOfLaptops { get; set; }
 
     public virtual InstalledAppLicenses InstalledAppLicenses { get; set; }

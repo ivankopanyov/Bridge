@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameSubscriptions
 {
-    public decimal NameId { get; set; }
-    public string DatabaseId { get; set; }
-    public string DatabaseNameId { get; set; }
-    public string DistributeYn { get; set; }
-    public string ForceYn { get; set; }
+    public decimal? NameId { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? DatabaseNameId { get; set; }
+    public string? DistributeYn { get; set; }
+    public string? ForceYn { get; set; }
     public DateTime? LastDistributeDate { get; set; }
     public DateTime? LastActivityDate { get; set; }
     public decimal? InsertUser { get; set; }
@@ -14,8 +14,8 @@ public partial class NameSubscriptions
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string AllowDuplicateYn { get; set; }
-    public string QueryCode { get; set; }
+    public string? AllowDuplicateYn { get; set; }
+    public string? QueryCode { get; set; }
     public decimal? PendingAction { get; set; }
 
     public virtual Databases Database { get; set; }

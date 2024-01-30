@@ -7,7 +7,7 @@ public partial class FolioTaxJrnl
     public DateTime? BillGenerationDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? RevisionNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? TotRevTaxable { get; set; }
@@ -42,28 +42,28 @@ public partial class FolioTaxJrnl
     public decimal? Net8Amt { get; set; }
     public decimal? Net9Amt { get; set; }
     public decimal? Net10Amt { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
     public decimal? PayeeNameId { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string TaxId { get; set; }
-    public string FolioType { get; set; }
+    public string? TaxId { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? ClTrxNo { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? BillPaymentTrxNo { get; set; }
-    public string StatusFlag { get; set; }
+    public string? StatusFlag { get; set; }
     public decimal? Xtax1Amt { get; set; }
     public decimal? Xtax2Amt { get; set; }
     public decimal? Xtax3Amt { get; set; }
@@ -89,25 +89,25 @@ public partial class FolioTaxJrnl
     public decimal? CollTax3 { get; set; }
     public decimal? CollTax4 { get; set; }
     public decimal? CollTax5 { get; set; }
-    public string PalmVideoFlag { get; set; }
-    public string FiscalBillNo { get; set; }
+    public string? PalmVideoFlag { get; set; }
+    public string? FiscalBillNo { get; set; }
     public decimal? FiscalBillCheckDigit { get; set; }
-    public string BillGenerationTime { get; set; }
-    public string PostitYn { get; set; }
+    public string? BillGenerationTime { get; set; }
+    public string? PostitYn { get; set; }
     public decimal? PostitNo { get; set; }
-    public string Terminal { get; set; }
-    public string FiscalUnitControlCode { get; set; }
+    public string? Terminal { get; set; }
+    public string? FiscalUnitControlCode { get; set; }
     public decimal? FolioAttachmentLinkId { get; set; }
     public decimal? FolioAttachmentStatus { get; set; }
-    public string CreditBillGeneratedYn { get; set; }
+    public string? CreditBillGeneratedYn { get; set; }
     public decimal? AddresseeNameId { get; set; }
     public DateTime? SystemDate { get; set; }
     public DateTime? JrnlBusinessDate { get; set; }
-    public string SignatureHash { get; set; }
-    public string LastSignatureHash { get; set; }
-    public string SignatureKeyVersion { get; set; }
-    public string FolioAddress { get; set; }
-    public string FolioAddressCorrectedYn { get; set; }
+    public string? SignatureHash { get; set; }
+    public string? LastSignatureHash { get; set; }
+    public string? SignatureKeyVersion { get; set; }
+    public string? FolioAddress { get; set; }
+    public string? FolioAddressCorrectedYn { get; set; }
     public decimal? Tax11Amt { get; set; }
     public decimal? Tax12Amt { get; set; }
     public decimal? Tax13Amt { get; set; }

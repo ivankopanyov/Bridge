@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class VouchersDetails
 {
-    public string Resort { get; set; }
-    public decimal VoucherNo { get; set; }
-    public decimal VoucherId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime VoucherDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public decimal? VoucherNo { get; set; }
+    public decimal? VoucherId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? VoucherDate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? ValidUntilDate { get; set; }
-    public string Validity { get; set; }
+    public string? Validity { get; set; }
     public decimal? MaxVouchersPerCheck { get; set; }
     public DateTime? InactiveDate { get; set; }
 

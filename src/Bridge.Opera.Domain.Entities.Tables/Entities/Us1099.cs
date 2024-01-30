@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Us1099
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public string PeriodId { get; set; }
-    public decimal NameId { get; set; }
-    public string TaxId { get; set; }
-    public string AccountNo { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public string? PeriodId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? TaxId { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? Income { get; set; }
-    public string SentYn { get; set; }
-    public string Name { get; set; }
-    public string FirstName { get; set; }
+    public string? SentYn { get; set; }
+    public string? Name { get; set; }
+    public string? FirstName { get; set; }
     public decimal? AddressId { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string Country { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Middle { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? Country { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Middle { get; set; }
     public decimal? Denomination100 { get; set; }
     public decimal? Denomination50 { get; set; }
     public decimal? Denomination20 { get; set; }
@@ -34,20 +34,20 @@ public partial class Us1099
     public decimal? Denomination1 { get; set; }
     public decimal? DenominationMisc { get; set; }
     public decimal? AmountPaid { get; set; }
-    public string Currency { get; set; }
-    public string TrxNo { get; set; }
-    public string DocumentType { get; set; }
-    public string DocumentNo { get; set; }
-    public string IssuedBy { get; set; }
-    public string Occupation { get; set; }
+    public string? Currency { get; set; }
+    public string? TrxNo { get; set; }
+    public string? DocumentType { get; set; }
+    public string? DocumentNo { get; set; }
+    public string? IssuedBy { get; set; }
+    public string? Occupation { get; set; }
     public DateTime? DateOfBirth { get; set; }
-    public string PrintedYn { get; set; }
+    public string? PrintedYn { get; set; }
     public DateTime? LastPrinted { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? TriggerDate { get; set; }
-    public string MultiplePaymentsYn { get; set; }
-    public string OverrideReason { get; set; }
+    public string? MultiplePaymentsYn { get; set; }
+    public string? OverrideReason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

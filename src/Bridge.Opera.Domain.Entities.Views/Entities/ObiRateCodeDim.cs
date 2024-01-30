@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRateCodeDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public string RateCodeLocked { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public string? RateCodeLocked { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

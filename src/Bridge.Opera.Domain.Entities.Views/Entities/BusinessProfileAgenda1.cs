@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusinessProfileAgenda1
 {
-    public decimal AgendaId { get; set; }
-    public decimal ProfileId { get; set; }
-    public string AgendaName { get; set; }
-    public string EvType { get; set; }
+    public decimal? AgendaId { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? AgendaName { get; set; }
+    public string? EvType { get; set; }
     public decimal? AgendaDay { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? FbaBudget { get; set; }
     public decimal? BudgetPerUnit { get; set; }
     public decimal? DiscountPercentage { get; set; }
-    public string RoomType { get; set; }
-    public string RoomSetup { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RoomType { get; set; }
+    public string? RoomSetup { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public string AgendaStartTime { get; set; }
-    public string AgendaEndTime { get; set; }
+    public string? AgendaStartTime { get; set; }
+    public string? AgendaEndTime { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

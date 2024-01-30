@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTurnawayFactVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? CreateDate { get; set; }
     public DateTime? ArrivalDate { get; set; }
-    public string Hour { get; set; }
-    public string Turnaway { get; set; }
-    public string Market { get; set; }
-    public string Rate { get; set; }
-    public string InsertUser { get; set; }
+    public string? Hour { get; set; }
+    public string? Turnaway { get; set; }
+    public string? Market { get; set; }
+    public string? Rate { get; set; }
+    public string? InsertUser { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? Nights { get; set; }
     public decimal? Rooms { get; set; }

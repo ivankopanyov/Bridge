@@ -5,8 +5,8 @@ public partial class ExpFolioFooter
     public decimal? ResvNameId { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? FolioType { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? Totexp1Amt { get; set; }
     public decimal? Totexp2Amt { get; set; }
     public decimal? Totexp3Amt { get; set; }
@@ -35,7 +35,7 @@ public partial class ExpFolioFooter
     public decimal? DebitCurrAmt { get; set; }
     public decimal? Totpayments { get; set; }
     public decimal? CreditCurrAmt { get; set; }
-    public string SummCurr { get; set; }
+    public string? SummCurr { get; set; }
     public decimal? SummExchRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

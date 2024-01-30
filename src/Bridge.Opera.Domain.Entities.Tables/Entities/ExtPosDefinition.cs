@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtPosDefinition
 {
-    public string Resort { get; set; }
-    public string RecordType { get; set; }
-    public string RecordTypeId { get; set; }
-    public string RecordDesc { get; set; }
-    public string MajorGroup { get; set; }
-    public string MenuItem { get; set; }
-    public string MenuItemDesc { get; set; }
-    public string MajorGroupDesc { get; set; }
-    public string FamilyGroup { get; set; }
-    public string FamilyGroupDesc { get; set; }
-    public string DiscountYn { get; set; }
+    public string? Resort { get; set; }
+    public string? RecordType { get; set; }
+    public string? RecordTypeId { get; set; }
+    public string? RecordDesc { get; set; }
+    public string? MajorGroup { get; set; }
+    public string? MenuItem { get; set; }
+    public string? MenuItemDesc { get; set; }
+    public string? MajorGroupDesc { get; set; }
+    public string? FamilyGroup { get; set; }
+    public string? FamilyGroupDesc { get; set; }
+    public string? DiscountYn { get; set; }
     public decimal? DiscountPcnt { get; set; }
-    public string ChargeTipYn { get; set; }
-    public string TenderMediaType { get; set; }
+    public string? ChargeTipYn { get; set; }
+    public string? TenderMediaType { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

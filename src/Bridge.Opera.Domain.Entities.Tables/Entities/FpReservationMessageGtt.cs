@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FpReservationMessageGtt
 {
-    public string Resort { get; set; }
-    public string ActionType { get; set; }
-    public decimal ActionInstanceId { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public string? ActionType { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? OldBeginDate { get; set; }
     public DateTime? OldEndDate { get; set; }
     public DateTime? NewBeginDate { get; set; }
     public DateTime? NewEndDate { get; set; }
-    public string EventParameters { get; set; }
-    public DateTime InsertTs { get; set; }
+    public string? EventParameters { get; set; }
+    public DateTime? InsertTs { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

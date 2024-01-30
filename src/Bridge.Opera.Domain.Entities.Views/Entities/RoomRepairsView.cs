@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomRepairsView
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public DateTime? RepairDate { get; set; }
-    public decimal Seq { get; set; }
-    public string RepairType { get; set; }
-    public string ReasonCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RoomStatus { get; set; }
+    public decimal? Seq { get; set; }
+    public string? RepairType { get; set; }
+    public string? ReasonCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RoomStatus { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string ReturnStatus { get; set; }
-    public string RepairRemarks { get; set; }
+    public string? ReturnStatus { get; set; }
+    public string? RepairRemarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

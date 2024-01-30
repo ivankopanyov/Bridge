@@ -4,16 +4,16 @@ public partial class SidControlSeqInfo
 {
     public decimal? IncrementValue { get; set; }
     public decimal? SeqValue { get; set; }
-    public string KeyValue { get; set; }
-    public string RoomClass { get; set; }
-    public string Resort { get; set; }
+    public string? KeyValue { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Resort { get; set; }
     public decimal? MinValue { get; set; }
     public decimal? MaxValue { get; set; }
     public DateTime? SeqDate { get; set; }
-    public string ResetAtNewDateYn { get; set; }
-    public string PaymentType { get; set; }
-    public string FolioType { get; set; }
-    public string PrefixSeqNo { get; set; }
+    public string? ResetAtNewDateYn { get; set; }
+    public string? PaymentType { get; set; }
+    public string? FolioType { get; set; }
+    public string? PrefixSeqNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class StatusTypeCodesV
 {
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string StatusType { get; set; }
-    public string DeductType { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? StatusType { get; set; }
+    public string? DeductType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

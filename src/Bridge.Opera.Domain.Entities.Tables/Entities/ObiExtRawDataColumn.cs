@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiExtRawDataColumn
 {
-    public string DatamartName { get; set; }
-    public string RawDataName { get; set; }
-    public string ColumnName { get; set; }
-    public string DataType { get; set; }
-    public string IntColName { get; set; }
-    public string ExtColName { get; set; }
-    public string OperaColName { get; set; }
-    public string ColumnDesc { get; set; }
-    public string PrimaryKeyYn { get; set; }
-    public string DimMeasDm { get; set; }
-    public string TimeFrameDateYn { get; set; }
-    public string Formula { get; set; }
+    public string? DatamartName { get; set; }
+    public string? RawDataName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? DataType { get; set; }
+    public string? IntColName { get; set; }
+    public string? ExtColName { get; set; }
+    public string? OperaColName { get; set; }
+    public string? ColumnDesc { get; set; }
+    public string? PrimaryKeyYn { get; set; }
+    public string? DimMeasDm { get; set; }
+    public string? TimeFrameDateYn { get; set; }
+    public string? Formula { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? DataLength { get; set; }
-    public string HdrColYn { get; set; }
-    public string ColumnSeperator { get; set; }
-    public string ParentColumnName { get; set; }
-    public string ExtAttrColumn { get; set; }
-    public string FormatMask { get; set; }
-    public string OperaFormula { get; set; }
-    public string OperaFormatMask { get; set; }
-    public string OperaConversionCode { get; set; }
-    public string OperaDeleteYn { get; set; }
+    public string? HdrColYn { get; set; }
+    public string? ColumnSeperator { get; set; }
+    public string? ParentColumnName { get; set; }
+    public string? ExtAttrColumn { get; set; }
+    public string? FormatMask { get; set; }
+    public string? OperaFormula { get; set; }
+    public string? OperaFormatMask { get; set; }
+    public string? OperaConversionCode { get; set; }
+    public string? OperaDeleteYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

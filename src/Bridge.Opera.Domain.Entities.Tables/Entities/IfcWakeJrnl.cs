@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcWakeJrnl
 {
-    public decimal ActionInstanceId { get; set; }
-    public string RoomNo { get; set; }
-    public string ActionType { get; set; }
-    public string GuestName { get; set; }
-    public string GroupName { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? RoomNo { get; set; }
+    public string? ActionType { get; set; }
+    public string? GuestName { get; set; }
+    public string? GroupName { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertTime { get; set; }
-    public string InsertUser { get; set; }
-    public string ActionDescription { get; set; }
-    public string ExtnNum { get; set; }
-    public string ExtnType { get; set; }
+    public string? InsertTime { get; set; }
+    public string? InsertUser { get; set; }
+    public string? ActionDescription { get; set; }
+    public string? ExtnNum { get; set; }
+    public string? ExtnType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

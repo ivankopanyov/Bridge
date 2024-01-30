@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PrHistoryReservationDates
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
-    public string ContactYn { get; set; }
+    public string? NameType { get; set; }
+    public string? ContactYn { get; set; }
     public DateTime? ProfileBeginDate { get; set; }
     public DateTime? ProfileEndDate { get; set; }
 

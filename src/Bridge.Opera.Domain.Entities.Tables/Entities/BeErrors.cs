@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BeErrors
 {
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string Resort { get; set; }
-    public string CodeLocation { get; set; }
-    public string ErrorMessage { get; set; }
-    public string MessageType { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? Resort { get; set; }
+    public string? CodeLocation { get; set; }
+    public string? ErrorMessage { get; set; }
+    public string? MessageType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LeadNotification
 {
-    public string Resort { get; set; }
-    public string NotificationGroup { get; set; }
-    public string NotificationCode { get; set; }
-    public decimal LeadId { get; set; }
-    public string DataYn { get; set; }
-    public string EmailYn { get; set; }
+    public string? Resort { get; set; }
+    public string? NotificationGroup { get; set; }
+    public string? NotificationCode { get; set; }
+    public decimal? LeadId { get; set; }
+    public string? DataYn { get; set; }
+    public string? EmailYn { get; set; }
     public DateTime? NotificationDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

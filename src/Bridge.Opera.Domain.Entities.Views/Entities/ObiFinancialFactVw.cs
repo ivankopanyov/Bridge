@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiFinancialFactVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string TrxcodeId { get; set; }
-    public string MarketCode { get; set; }
+    public string? TrxcodeId { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? CNetAmount { get; set; }

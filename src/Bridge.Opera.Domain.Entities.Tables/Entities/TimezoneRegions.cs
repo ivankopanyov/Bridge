@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TimezoneRegions
 {
-    public string TimezoneRegion { get; set; }
-    public string Description { get; set; }
+    public string? TimezoneRegion { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

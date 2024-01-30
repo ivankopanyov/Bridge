@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRatingUpdate
 {
-    public string Resort { get; set; }
-    public string Rating { get; set; }
-    public decimal PropupId { get; set; }
+    public string? Resort { get; set; }
+    public string? Rating { get; set; }
+    public decimal? PropupId { get; set; }
 
     public virtual GdsPropupUpdate Propup { get; set; }
 

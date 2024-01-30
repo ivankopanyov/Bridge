@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class IfcPostingAcctsView
 {
     public decimal? Id { get; set; }
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
-    public string Selector { get; set; }
-    public string SalesOutlet { get; set; }
-    public string Acct { get; set; }
-    public string AcctDesc { get; set; }
-    public string Flag { get; set; }
-    public string DpCode { get; set; }
-    public string DeptDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
+    public string? Selector { get; set; }
+    public string? SalesOutlet { get; set; }
+    public string? Acct { get; set; }
+    public string? AcctDesc { get; set; }
+    public string? Flag { get; set; }
+    public string? DpCode { get; set; }
+    public string? DeptDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MealVouchersTemp
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string GuestName { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? GuestName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string RoomNumber { get; set; }
+    public string? RoomNumber { get; set; }
     public decimal? GroupId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public int? Adults { get; set; }
     public int? Children { get; set; }
-    public string ProductId { get; set; }
-    public string ProductDesc { get; set; }
-    public string PrintSeperateYn { get; set; }
-    public string AddToRateYn { get; set; }
-    public string SeperatelySoldYn { get; set; }
-    public string CalculationRule { get; set; }
-    public string PostingRhythm { get; set; }
-    public string ResvStatus { get; set; }
-    public string FirstName { get; set; }
-    public string GuestTitle { get; set; }
-    public string RoomClass { get; set; }
+    public string? ProductId { get; set; }
+    public string? ProductDesc { get; set; }
+    public string? PrintSeperateYn { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? SeperatelySoldYn { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? FirstName { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? GuestNameId { get; set; }
     public long? Batchno { get; set; }
     public DateTime? PrintDate { get; set; }
-    public string PrintTime { get; set; }
+    public string? PrintTime { get; set; }
     public long? SerialNo { get; set; }
-    public string BlockCode { get; set; }
-    public DateTime ValidDate { get; set; }
+    public string? BlockCode { get; set; }
+    public DateTime? ValidDate { get; set; }
     public int? Reprints { get; set; }
-    public string ProductSource { get; set; }
+    public string? ProductSource { get; set; }
     public decimal? NoOfVouchers { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

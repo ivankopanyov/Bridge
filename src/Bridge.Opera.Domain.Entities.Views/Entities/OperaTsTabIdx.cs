@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaTsTabIdx
 {
-    public string TablespaceName { get; set; }
-    public string TableName { get; set; }
-    public string IndexName { get; set; }
+    public string? TablespaceName { get; set; }
+    public string? TableName { get; set; }
+    public string? IndexName { get; set; }
     public decimal? Count1 { get; set; }
     public decimal? GrpId { get; set; }
 

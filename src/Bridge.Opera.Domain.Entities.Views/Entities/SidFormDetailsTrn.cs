@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidFormDetailsTrn
 {
-    public string FormName { get; set; }
-    public string Description { get; set; }
+    public string? FormName { get; set; }
+    public string? Description { get; set; }
     public DateTime? ExtractedOn { get; set; }
-    public string Application { get; set; }
-    public string ModuleName { get; set; }
-    public string Owner { get; set; }
-    public string FormMenu { get; set; }
-    public string ApplicationFlow { get; set; }
+    public string? Application { get; set; }
+    public string? ModuleName { get; set; }
+    public string? Owner { get; set; }
+    public string? FormMenu { get; set; }
+    public string? ApplicationFlow { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

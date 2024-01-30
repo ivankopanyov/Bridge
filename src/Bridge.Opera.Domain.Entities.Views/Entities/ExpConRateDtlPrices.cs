@@ -9,7 +9,7 @@ public partial class ExpConRateDtlPrices
     public decimal? NumOfGuests { get; set; }
     public decimal? AmtAfterTax { get; set; }
     public decimal? ExtraAdult { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

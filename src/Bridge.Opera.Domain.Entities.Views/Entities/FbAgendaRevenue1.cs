@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FbAgendaRevenue1
 {
-    public decimal FbaId { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? FbaId { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? BudgetRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
-    public string CustomYn { get; set; }
+    public string? CustomYn { get; set; }
     public byte? LaptopChange { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

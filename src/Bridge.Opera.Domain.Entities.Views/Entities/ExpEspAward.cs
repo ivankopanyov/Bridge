@@ -7,8 +7,8 @@ public partial class ExpEspAward
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? RecordType { get; set; }
-    public string AwardIndicator { get; set; }
-    public string AwardCode { get; set; }
+    public string? AwardIndicator { get; set; }
+    public string? AwardCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

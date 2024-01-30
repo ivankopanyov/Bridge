@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArMailingHistory1
 {
-    public string RecordType { get; set; }
-    public string Resort { get; set; }
-    public string AccountNo { get; set; }
+    public string? RecordType { get; set; }
+    public string? Resort { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? AccountCode { get; set; }
     public DateTime? LetterDate { get; set; }
     public DateTime? TruncLetterDate { get; set; }
-    public string AccountSname { get; set; }
-    public string AccountName { get; set; }
+    public string? AccountSname { get; set; }
+    public string? AccountName { get; set; }
     public decimal? AccountTypeId { get; set; }
-    public string AccountType { get; set; }
+    public string? AccountType { get; set; }
     public DateTime? ForwardDate { get; set; }
     public DateTime? TillDate { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
-    public string PrintzeroYn { get; set; }
-    public string PrintfullYn { get; set; }
-    public string PromotionalText { get; set; }
-    public string LetterName { get; set; }
-    public string Fax { get; set; }
+    public string? PrintzeroYn { get; set; }
+    public string? PrintfullYn { get; set; }
+    public string? PromotionalText { get; set; }
+    public string? LetterName { get; set; }
+    public string? Fax { get; set; }
     public decimal? Age { get; set; }
     public decimal? SequenceId { get; set; }
     public decimal? StatementNo { get; set; }

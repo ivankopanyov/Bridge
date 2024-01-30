@@ -5,11 +5,11 @@ public partial class ExpUpeResvRates
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? ShareAmount { get; set; }
-    public string RateDescription { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? RateDescription { get; set; }
+    public string? CurrencyCode { get; set; }
     public DateTime? RateBeginDate { get; set; }
     public DateTime? RateEndDate { get; set; }
 

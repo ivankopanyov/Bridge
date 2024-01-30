@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PromoRates
 {
-    public string PromoCode { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RateUseDesc { get; set; }
+    public string? PromoCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateUseDesc { get; set; }
 
     public virtual Promotions Promotions { get; set; }
 

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventAttendeePreferences1
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
     public decimal? AttendeeProfileId { get; set; }
-    public string PreferenceType { get; set; }
-    public string Preference { get; set; }
-    public string PreferenceDesc { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

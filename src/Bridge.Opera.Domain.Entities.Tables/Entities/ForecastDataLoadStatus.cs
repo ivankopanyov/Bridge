@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForecastDataLoadStatus
 {
-    public string EventType { get; set; }
-    public string EventId { get; set; }
-    public string Status { get; set; }
-    public DateTime TimeDone { get; set; }
+    public string? EventType { get; set; }
+    public string? EventId { get; set; }
+    public string? Status { get; set; }
+    public DateTime? TimeDone { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActivityLink
 {
-    public decimal ActId { get; set; }
-    public string LinkType { get; set; }
-    public decimal LinkId { get; set; }
-    public string PrimaryYn { get; set; }
+    public decimal? ActId { get; set; }
+    public string? LinkType { get; set; }
+    public decimal? LinkId { get; set; }
+    public string? PrimaryYn { get; set; }
     public byte? LaptopChange { get; set; }
-    public string ActResort { get; set; }
+    public string? ActResort { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
@@ -15,10 +15,10 @@ public partial class ActivityLink
     public decimal? UpdateUser { get; set; }
     public decimal? AddressId { get; set; }
     public decimal? EmailId { get; set; }
-    public string AttachmentYn { get; set; }
-    public string LinkResort { get; set; }
-    public string Relationship { get; set; }
-    public string ToType { get; set; }
+    public string? AttachmentYn { get; set; }
+    public string? LinkResort { get; set; }
+    public string? Relationship { get; set; }
+    public string? ToType { get; set; }
 
     public virtual WorkOrders Act { get; set; }
 

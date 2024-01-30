@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipPointsExchRates
 {
-    public string ChainCode { get; set; }
-    public string ExchangeCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ExchangeCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? Points { get; set; }
     public decimal? Value { get; set; }
     public DateTime? InsertDate { get; set; }

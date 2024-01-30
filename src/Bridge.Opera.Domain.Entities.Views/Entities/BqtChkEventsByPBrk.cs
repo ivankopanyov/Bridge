@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BqtChkEventsByPBrk
 {
-    public string EventsPBreak { get; set; }
+    public string? EventsPBreak { get; set; }
     public DateTime? GeStartDateNTime { get; set; }
-    public string GeEvDate { get; set; }
-    public string GeEvTime { get; set; }
-    public string GeEvName { get; set; }
-    public string GeRoom { get; set; }
+    public string? GeEvDate { get; set; }
+    public string? GeEvTime { get; set; }
+    public string? GeEvName { get; set; }
+    public string? GeRoom { get; set; }
     public decimal? GeGtd { get; set; }
     public decimal? EventsOnPBreak { get; set; }
     public decimal? ReportId { get; set; }

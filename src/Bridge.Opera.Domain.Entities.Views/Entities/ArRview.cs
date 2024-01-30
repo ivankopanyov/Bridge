@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArRview
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountType { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountNo { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string AccountName { get; set; }
+    public string? AccountName { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? PostDate { get; set; }
     public decimal? TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? Invoice { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? OrgAmt { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string InvStatus { get; set; }
-    public string AccountStatus { get; set; }
-    public string InvoiceType { get; set; }
+    public string? InvStatus { get; set; }
+    public string? AccountStatus { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? TranActionId { get; set; }
     public DateTime? CheckOutDate { get; set; }
     public decimal? CashierId { get; set; }
-    public string PasserbyInd { get; set; }
-    public string PurgeYn { get; set; }
+    public string? PasserbyInd { get; set; }
+    public string? PurgeYn { get; set; }
     public decimal? BillNumber { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? AccTypeFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

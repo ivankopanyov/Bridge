@@ -7,12 +7,12 @@ public partial class ExpConBlkContact
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ParentNameId { get; set; }
-    public string ProfileType { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string NameCode { get; set; }
-    public string AccountType { get; set; }
-    public string RelationshipType { get; set; }
+    public string? ProfileType { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? NameCode { get; set; }
+    public string? AccountType { get; set; }
+    public string? RelationshipType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

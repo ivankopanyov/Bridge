@@ -4,8 +4,8 @@ public partial class ExpUpePbills
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string FolioId { get; set; }
-    public string ProfileType { get; set; }
+    public string? FolioId { get; set; }
+    public string? ProfileType { get; set; }
     public decimal? NameId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
@@ -16,17 +16,17 @@ public partial class ExpUpePbills
     public decimal? GuestBalance { get; set; }
     public decimal? Postings { get; set; }
     public decimal? Payments { get; set; }
-    public string SourceCode { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketMainCode { get; set; }
-    public string CountryCode { get; set; }
-    public string Channel { get; set; }
-    public string NameTaxType { get; set; }
-    public string TaxExemptNo { get; set; }
+    public string? SourceCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketMainCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Channel { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? TaxExemptNo { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? BillingContactId { get; set; }
     public decimal? PmsSeqNo { get; set; }
-    public string PermanentBillingId { get; set; }
+    public string? PermanentBillingId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

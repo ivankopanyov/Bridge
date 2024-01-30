@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusinessProfileOwner1
 {
-    public decimal ProfileId { get; set; }
-    public string UserResort { get; set; }
-    public decimal UserId { get; set; }
-    public string PrimaryYn { get; set; }
-    public string Relationship { get; set; }
-    public string ToType { get; set; }
-    public string Description { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? UserResort { get; set; }
+    public decimal? UserId { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? Relationship { get; set; }
+    public string? ToType { get; set; }
+    public string? Description { get; set; }
     public byte? LaptopChange { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

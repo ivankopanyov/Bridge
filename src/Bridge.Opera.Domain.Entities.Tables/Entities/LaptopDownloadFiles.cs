@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LaptopDownloadFiles
 {
-    public decimal FileId { get; set; }
-    public string FileName { get; set; }
+    public decimal? FileId { get; set; }
+    public string? FileName { get; set; }
     public byte[] FileContents { get; set; }
-    public string FileUsage { get; set; }
+    public string? FileUsage { get; set; }
     public decimal? SrepId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

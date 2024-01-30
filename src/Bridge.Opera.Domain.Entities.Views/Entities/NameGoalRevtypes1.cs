@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameGoalRevtypes1
 {
-    public decimal GoalId { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? GoalId { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? Amount { get; set; }
     public byte? LaptopChange { get; set; }
     public DateTime? InsertDate { get; set; }

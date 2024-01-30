@@ -3,22 +3,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class CompanyGroup
 {
     public decimal? NameXrefId { get; set; }
-    public string CompanyGroupId { get; set; }
+    public string? CompanyGroupId { get; set; }
     public decimal? CompanyGroupSeq { get; set; }
-    public string NameType { get; set; }
-    public string CompanyGroupName { get; set; }
-    public string Sname { get; set; }
-    public string CompanyGroupParentSeq { get; set; }
-    public string ParentNameType { get; set; }
-    public string CompanyGroupParentName { get; set; }
-    public string ParentSname { get; set; }
-    public string ResortRegistered { get; set; }
+    public string? NameType { get; set; }
+    public string? CompanyGroupName { get; set; }
+    public string? Sname { get; set; }
+    public string? CompanyGroupParentSeq { get; set; }
+    public string? ParentNameType { get; set; }
+    public string? CompanyGroupParentName { get; set; }
+    public string? ParentSname { get; set; }
+    public string? ResortRegistered { get; set; }
     public decimal? AppUserId { get; set; }
-    public string AppUser { get; set; }
-    public string DeptId { get; set; }
-    public string BookerPermission { get; set; }
-    public string BookerPermissionDisplay { get; set; }
-    public string PublicRatesPermissionYn { get; set; }
+    public string? AppUser { get; set; }
+    public string? DeptId { get; set; }
+    public string? BookerPermission { get; set; }
+    public string? BookerPermissionDisplay { get; set; }
+    public string? PublicRatesPermissionYn { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

@@ -2,82 +2,82 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpfBlock
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string AllotmentId { get; set; }
-    public string AllotmentDesc { get; set; }
-    public string ResortDesc { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string AllotmentType { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string AllotmentCode { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? AllotmentId { get; set; }
+    public string? AllotmentDesc { get; set; }
+    public string? ResortDesc { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? AllotmentType { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? AllotmentCode { get; set; }
     public decimal? CompanyId { get; set; }
-    public string Company { get; set; }
+    public string? Company { get; set; }
     public decimal? AgentId { get; set; }
-    public string Agent { get; set; }
+    public string? Agent { get; set; }
     public decimal? SourceId { get; set; }
-    public string Source { get; set; }
+    public string? Source { get; set; }
     public decimal? CompanyContactId { get; set; }
-    public string CompanyContact { get; set; }
+    public string? CompanyContact { get; set; }
     public decimal? AgentContactId { get; set; }
-    public string AgentContact { get; set; }
-    public string Channel { get; set; }
-    public string ChannelDesc { get; set; }
-    public string AllotmentOrigion { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
-    public string BookingStatusDesc { get; set; }
-    public string RoomsOwner { get; set; }
-    public string RmsOwnerCode { get; set; }
-    public string RmsOwnerDesc { get; set; }
-    public string RmsOwnerResort { get; set; }
-    public string RmsOwnerResortDesc { get; set; }
-    public string Owner { get; set; }
-    public string OwnerCode { get; set; }
-    public string OwnerDesc { get; set; }
-    public string OwnerResort { get; set; }
-    public string OwnerResortDesc { get; set; }
+    public string? AgentContact { get; set; }
+    public string? Channel { get; set; }
+    public string? ChannelDesc { get; set; }
+    public string? AllotmentOrigion { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? BookingStatusDesc { get; set; }
+    public string? RoomsOwner { get; set; }
+    public string? RmsOwnerCode { get; set; }
+    public string? RmsOwnerDesc { get; set; }
+    public string? RmsOwnerResort { get; set; }
+    public string? RmsOwnerResortDesc { get; set; }
+    public string? Owner { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? OwnerDesc { get; set; }
+    public string? OwnerResort { get; set; }
+    public string? OwnerResortDesc { get; set; }
     public DateTime? CancellationDate { get; set; }
     public DateTime? ShoulderBeginDate { get; set; }
     public DateTime? ShoulderEndDate { get; set; }
-    public string CustomCol1 { get; set; }
-    public string CustomDesc1 { get; set; }
-    public string CustomLabel1 { get; set; }
-    public string CustomCol2 { get; set; }
-    public string CustomDesc2 { get; set; }
-    public string CustomLabel2 { get; set; }
-    public string CustomCol3 { get; set; }
-    public string CustomDesc3 { get; set; }
-    public string CustomLabel3 { get; set; }
-    public string CustomCol4 { get; set; }
-    public string CustomDesc4 { get; set; }
-    public string CustomLabel4 { get; set; }
-    public string CustomCol5 { get; set; }
-    public string CustomDesc5 { get; set; }
-    public string CustomLabel5 { get; set; }
-    public string CustomCol6 { get; set; }
-    public string CustomDesc6 { get; set; }
-    public string CustomLabel6 { get; set; }
-    public string CustomCol7 { get; set; }
-    public string CustomDesc7 { get; set; }
-    public string CustomLabel7 { get; set; }
-    public string CustomCol8 { get; set; }
-    public string CustomDesc8 { get; set; }
-    public string CustomLabel8 { get; set; }
-    public string CustomCol9 { get; set; }
-    public string CustomDesc9 { get; set; }
-    public string CustomLabel9 { get; set; }
-    public string CustomCol10 { get; set; }
-    public string CustomDesc10 { get; set; }
-    public string CustomLabel10 { get; set; }
-    public string ResortId { get; set; }
-    public string AllKey { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
+    public string? CustomCol1 { get; set; }
+    public string? CustomDesc1 { get; set; }
+    public string? CustomLabel1 { get; set; }
+    public string? CustomCol2 { get; set; }
+    public string? CustomDesc2 { get; set; }
+    public string? CustomLabel2 { get; set; }
+    public string? CustomCol3 { get; set; }
+    public string? CustomDesc3 { get; set; }
+    public string? CustomLabel3 { get; set; }
+    public string? CustomCol4 { get; set; }
+    public string? CustomDesc4 { get; set; }
+    public string? CustomLabel4 { get; set; }
+    public string? CustomCol5 { get; set; }
+    public string? CustomDesc5 { get; set; }
+    public string? CustomLabel5 { get; set; }
+    public string? CustomCol6 { get; set; }
+    public string? CustomDesc6 { get; set; }
+    public string? CustomLabel6 { get; set; }
+    public string? CustomCol7 { get; set; }
+    public string? CustomDesc7 { get; set; }
+    public string? CustomLabel7 { get; set; }
+    public string? CustomCol8 { get; set; }
+    public string? CustomDesc8 { get; set; }
+    public string? CustomLabel8 { get; set; }
+    public string? CustomCol9 { get; set; }
+    public string? CustomDesc9 { get; set; }
+    public string? CustomLabel9 { get; set; }
+    public string? CustomCol10 { get; set; }
+    public string? CustomDesc10 { get; set; }
+    public string? CustomLabel10 { get; set; }
+    public string? ResortId { get; set; }
+    public string? AllKey { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

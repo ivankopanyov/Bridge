@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InventoryGroups
 {
-    public string Resort { get; set; }
-    public string GroupId { get; set; }
-    public string GroupName { get; set; }
+    public string? Resort { get; set; }
+    public string? GroupId { get; set; }
+    public string? GroupName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

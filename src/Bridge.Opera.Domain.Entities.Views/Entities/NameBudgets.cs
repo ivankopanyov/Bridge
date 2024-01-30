@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class NameBudgets
 {
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
-    public string TransactionYear { get; set; }
+    public string? Resort { get; set; }
+    public string? TransactionYear { get; set; }
     public decimal? Arrivals { get; set; }
     public decimal? TotalStays { get; set; }
     public decimal? AvgRoomRate { get; set; }
@@ -18,9 +18,9 @@ public partial class NameBudgets
     public decimal? OtherRevenue { get; set; }
     public decimal? LastRate { get; set; }
     public DateTime? LastStay { get; set; }
-    public string LastRoom { get; set; }
-    public string LastGroup { get; set; }
-    public string LastSource { get; set; }
+    public string? LastRoom { get; set; }
+    public string? LastGroup { get; set; }
+    public string? LastSource { get; set; }
     public decimal? NonRevenue { get; set; }
     public decimal? NoShowRes { get; set; }
     public decimal? CancelRes { get; set; }

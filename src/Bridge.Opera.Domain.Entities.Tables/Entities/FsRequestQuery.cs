@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsRequestQuery
 {
-    public decimal ReqId { get; set; }
-    public string Src { get; set; }
-    public string Query { get; set; }
-    public string QueryFull { get; set; }
+    public decimal? ReqId { get; set; }
+    public string? Src { get; set; }
+    public string? Query { get; set; }
+    public string? QueryFull { get; set; }
     public decimal? TimeMsec { get; set; }
-    public string QueryError { get; set; }
-    public string RequestXml { get; set; }
-    public string ResponseXml { get; set; }
-    public string AuthRequestXml { get; set; }
-    public string AuthResponseXml { get; set; }
+    public string? QueryError { get; set; }
+    public string? RequestXml { get; set; }
+    public string? ResponseXml { get; set; }
+    public string? AuthRequestXml { get; set; }
+    public string? AuthResponseXml { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

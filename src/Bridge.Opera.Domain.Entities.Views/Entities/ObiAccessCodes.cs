@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAccessCodes
 {
-    public string AccessLevel { get; set; }
-    public string AccessCode { get; set; }
-    public string AccessDesc { get; set; }
+    public string? AccessLevel { get; set; }
+    public string? AccessCode { get; set; }
+    public string? AccessDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

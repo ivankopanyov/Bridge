@@ -8,25 +8,25 @@ public partial class TcSubgroups
         TrxRoutingInstructions = new HashSet<TrxRoutingInstructions>();
     }
 
-    public string Resort { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string Description { get; set; }
-    public string TcTransactionType { get; set; }
-    public string Class1MandatoryYn { get; set; }
-    public string Class2MandatoryYn { get; set; }
-    public string TaxYn { get; set; }
-    public string ResultIncludedInSumArray { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string SubGpType { get; set; }
-    public string InternalYn { get; set; }
+    public string? Resort { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? Description { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? Class1MandatoryYn { get; set; }
+    public string? Class2MandatoryYn { get; set; }
+    public string? TaxYn { get; set; }
+    public string? ResultIncludedInSumArray { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? SubGpType { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string FrequentFlyerYn { get; set; }
-    public string GpPointsRedemptionYn { get; set; }
+    public string? FrequentFlyerYn { get; set; }
+    public string? GpPointsRedemptionYn { get; set; }
 
     public virtual TcGroups TcGroups { get; set; }
     public virtual ICollection<TrxCodes> TrxCodes { get; set; }

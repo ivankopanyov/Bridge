@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DepositDetails
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
-    public string TrxCode { get; set; }
-    public DateTime TrxDate { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public decimal TrxNo { get; set; }
+    public string? FolioType { get; set; }
+    public string? TrxCode { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public decimal? TrxNo { get; set; }
     public decimal? DepLedDebit { get; set; }
     public decimal? DepLedCredit { get; set; }
     public decimal? GuestAccountDebit { get; set; }
     public decimal? GuestAccountCredit { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string FtSubtype { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? FtSubtype { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? PayeeNameId { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Covers { get; set; }
+    public string? Covers { get; set; }
     public decimal? TrxNoHeader { get; set; }
-    public string GrossSign { get; set; }
+    public string? GrossSign { get; set; }
     public decimal? TaxNo { get; set; }
     public decimal? TaxPercnt { get; set; }
 

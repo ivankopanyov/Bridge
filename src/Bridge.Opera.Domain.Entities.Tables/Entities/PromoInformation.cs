@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PromoInformation
 {
-    public decimal PromoSeqId { get; set; }
-    public string InfoType { get; set; }
-    public decimal InfoSeqNo { get; set; }
-    public string InfoText { get; set; }
-    public string InfoDesc { get; set; }
-    public decimal InfoDescSeqNbr { get; set; }
+    public decimal? PromoSeqId { get; set; }
+    public string? InfoType { get; set; }
+    public decimal? InfoSeqNo { get; set; }
+    public string? InfoText { get; set; }
+    public string? InfoDesc { get; set; }
+    public decimal? InfoDescSeqNbr { get; set; }
 
     public virtual Promotions PromoSeq { get; set; }
 

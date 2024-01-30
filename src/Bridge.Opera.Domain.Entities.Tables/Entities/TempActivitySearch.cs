@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempActivitySearch
 {
-    public string LinkType { get; set; }
+    public string? LinkType { get; set; }
     public decimal? LinkId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipLevelRules
 {
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal MembershipRuleNo { get; set; }
-    public string RuleType { get; set; }
-    public string RuleBasedOn { get; set; }
-    public decimal UnitsRequired { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? MembershipRuleNo { get; set; }
+    public string? RuleType { get; set; }
+    public string? RuleBasedOn { get; set; }
+    public decimal? UnitsRequired { get; set; }
     public decimal? UnitsThreshold { get; set; }
     public decimal? Months { get; set; }
     public decimal? MonthsEffective { get; set; }
-    public string RecordType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ChainCode { get; set; }
+    public string? RecordType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? NoOfChains { get; set; }
-    public string OrgMembershipLevel { get; set; }
+    public string? OrgMembershipLevel { get; set; }
 
     public virtual MembershipLevels MembershipLevels { get; set; }
 

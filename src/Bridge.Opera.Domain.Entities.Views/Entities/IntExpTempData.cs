@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntExpTempData
 {
-    public decimal ExpTempId { get; set; }
+    public decimal? ExpTempId { get; set; }
     public decimal? ExpFileId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ExpClobData { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ExpClobData { get; set; }
     public DateTime? DataDate { get; set; }
-    public string IfcExpType { get; set; }
-    public string UploadType { get; set; }
-    public string OxiFileName { get; set; }
+    public string? IfcExpType { get; set; }
+    public string? UploadType { get; set; }
+    public string? OxiFileName { get; set; }
     public DateTime? GeneratedBusinessDate { get; set; }
     public DateTime? InsertDate { get; set; }
 

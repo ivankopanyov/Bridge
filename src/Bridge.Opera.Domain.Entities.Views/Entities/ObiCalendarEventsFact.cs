@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCalendarEventsFact
 {
-    public string Resort { get; set; }
-    public DateTime EventDate { get; set; }
-    public string EventCode { get; set; }
-    public string EventNotes { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? EventDate { get; set; }
+    public string? EventCode { get; set; }
+    public string? EventNotes { get; set; }
     public decimal? Rowcnt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

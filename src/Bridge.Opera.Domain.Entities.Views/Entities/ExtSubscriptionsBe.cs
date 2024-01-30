@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExtSubscriptionsBe
 {
-    public decimal DataElementId { get; set; }
-    public string ActionType { get; set; }
-    public decimal ActionInstanceId { get; set; }
-    public string TargetId { get; set; }
+    public decimal? DataElementId { get; set; }
+    public string? ActionType { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? TargetId { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string TargetSystem { get; set; }
+    public string? TargetSystem { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

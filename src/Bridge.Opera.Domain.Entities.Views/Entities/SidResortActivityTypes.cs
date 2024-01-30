@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResortActivityTypes
 {
-    public string Resort { get; set; }
-    public string ActivityType { get; set; }
-    public string Description { get; set; }
-    public string CentralYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ActivityType { get; set; }
+    public string? Description { get; set; }
+    public string? CentralYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string SendMethod { get; set; }
-    public string Url { get; set; }
-    public string TypeCode { get; set; }
-    public string AttachTemplateId { get; set; }
-    public string SurveyTemplateId { get; set; }
-    public string RequestId { get; set; }
-    public string ActivityClass { get; set; }
+    public string? SendMethod { get; set; }
+    public string? Url { get; set; }
+    public string? TypeCode { get; set; }
+    public string? AttachTemplateId { get; set; }
+    public string? SurveyTemplateId { get; set; }
+    public string? RequestId { get; set; }
+    public string? ActivityClass { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

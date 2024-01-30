@@ -8,17 +8,17 @@ public partial class MailOperator
         MailNotshowOpForField = new HashSet<MailNotshowOpForField>();
     }
 
-    public decimal OperatorId { get; set; }
-    public string DataType { get; set; }
-    public string Description { get; set; }
-    public string VirtualYn { get; set; }
-    public string DefaultYn { get; set; }
-    public string DerivedYn { get; set; }
+    public decimal? OperatorId { get; set; }
+    public string? DataType { get; set; }
+    public string? Description { get; set; }
+    public string? VirtualYn { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? DerivedYn { get; set; }
     public decimal? SourceId { get; set; }
-    public string FieldName { get; set; }
-    public string OperatorCode { get; set; }
-    public string InternalYn { get; set; }
-    public string UseNullYn { get; set; }
+    public string? FieldName { get; set; }
+    public string? OperatorCode { get; set; }
+    public string? InternalYn { get; set; }
+    public string? UseNullYn { get; set; }
     public decimal? SubqueryId { get; set; }
     public decimal? DefaultOrderby { get; set; }
 

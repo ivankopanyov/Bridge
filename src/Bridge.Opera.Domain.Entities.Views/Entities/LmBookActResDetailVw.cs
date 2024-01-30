@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmBookActResDetailVw
 {
-    public string Resort { get; set; }
-    public decimal BookedActId { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookedActId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string GuestName { get; set; }
-    public string ActCode { get; set; }
-    public string ActDesc { get; set; }
-    public string ActStatus { get; set; }
-    public decimal BookedResId { get; set; }
-    public string ResType { get; set; }
-    public string ResId { get; set; }
-    public string ResDesc { get; set; }
-    public string AddonYn { get; set; }
-    public decimal Price { get; set; }
-    public decimal Priority010 { get; set; }
+    public string? GuestName { get; set; }
+    public string? ActCode { get; set; }
+    public string? ActDesc { get; set; }
+    public string? ActStatus { get; set; }
+    public decimal? BookedResId { get; set; }
+    public string? ResType { get; set; }
+    public string? ResId { get; set; }
+    public string? ResDesc { get; set; }
+    public string? AddonYn { get; set; }
+    public decimal? Price { get; set; }
+    public decimal? Priority010 { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? OrderBy { get; set; }
 

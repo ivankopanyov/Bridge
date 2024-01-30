@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DefWoAgingGraph
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? SeqNumber { get; set; }
     public decimal? FromRange { get; set; }
-    public string FromUot { get; set; }
+    public string? FromUot { get; set; }
     public decimal? ToRange { get; set; }
-    public string ToUot { get; set; }
-    public string PriorityCode { get; set; }
-    public string PmYn { get; set; }
-    public string QtYn { get; set; }
+    public string? ToUot { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? PmYn { get; set; }
+    public string? QtYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcAnView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string Selector { get; set; }
-    public string An { get; set; }
-    public string Description { get; set; }
+    public string? Selector { get; set; }
+    public string? An { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

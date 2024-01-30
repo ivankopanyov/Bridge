@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTypeExchRates
 {
-    public decimal ExchRateId { get; set; }
-    public string ChainCode { get; set; }
-    public string PrimaryMembershipType { get; set; }
-    public string FfMembershipType { get; set; }
+    public decimal? ExchRateId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? PrimaryMembershipType { get; set; }
+    public string? FfMembershipType { get; set; }
     public decimal? AwPtsExchRateSell { get; set; }
     public decimal? MinAwTxPts { get; set; }
     public decimal? AwPointsTxBaseBlock { get; set; }
-    public string AwPtsTxFractionFlg { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string BillingGroup { get; set; }
+    public string? AwPtsTxFractionFlg { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? BillingGroup { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

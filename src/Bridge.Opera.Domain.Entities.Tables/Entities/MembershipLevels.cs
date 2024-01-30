@@ -8,24 +8,24 @@ public partial class MembershipLevels
         MembershipLevelRules = new HashSet<MembershipLevelRules>();
     }
 
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
     public decimal? MembershipLevelRank { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string MaxDowngradeLevel { get; set; }
-    public string FulfillmentYn { get; set; }
+    public string? MaxDowngradeLevel { get; set; }
+    public string? FulfillmentYn { get; set; }
     public decimal? CardValidYears { get; set; }
     public decimal? NoOfTrx { get; set; }
-    public string ChainCode { get; set; }
-    public string DisplayColor { get; set; }
-    public string VipStatus { get; set; }
-    public string ChangesRestrictedYn { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DisplayColor { get; set; }
+    public string? VipStatus { get; set; }
+    public string? ChangesRestrictedYn { get; set; }
 
     public virtual MembershipTypes MembershipTypes { get; set; }
     public virtual ICollection<EnrollmentPaymentMethods> EnrollmentPaymentMethods { get; set; }

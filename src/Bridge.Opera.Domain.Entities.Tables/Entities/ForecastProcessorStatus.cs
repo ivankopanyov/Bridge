@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForecastProcessorStatus
 {
-    public decimal SessionId { get; set; }
-    public string EventType { get; set; }
-    public string EventId { get; set; }
-    public DateTime TimeDequeued { get; set; }
+    public decimal? SessionId { get; set; }
+    public string? EventType { get; set; }
+    public string? EventId { get; set; }
+    public DateTime? TimeDequeued { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

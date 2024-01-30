@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DepositScheduledPaid
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string SguestName { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? SguestName { get; set; }
+    public string? ConfirmationNo { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string DepositResort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? DepositResort { get; set; }
     public decimal? ResvDepositScheduleId { get; set; }
     public DateTime? DepositDueDate { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string PaymentMethod { get; set; }
-    public string ResvStatus { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string ComputedResvStatus { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? ComputedResvStatus { get; set; }
     public decimal? DepositAmount { get; set; }
     public decimal? DepositTotal { get; set; }
     public decimal? DepositTotalCnt { get; set; }
@@ -32,11 +32,11 @@ public partial class DepositScheduledPaid
     public decimal? PaidDeposit { get; set; }
     public decimal? PaidAddTotal { get; set; }
     public decimal? DepositUnpaidTotal { get; set; }
-    public string ExtTrxId { get; set; }
+    public string? ExtTrxId { get; set; }
     public DateTime? CancellationDate { get; set; }
     public DateTime? PostingDate { get; set; }
-    public string ExtSysResultMsg { get; set; }
-    public string RateCode { get; set; }
+    public string? ExtSysResultMsg { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
 

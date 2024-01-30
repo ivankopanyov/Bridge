@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ErrorCodes
 {
-    public string Module { get; set; }
-    public string ReferenceId { get; set; }
-    public string ErrCode { get; set; }
-    public string ErrDesc { get; set; }
+    public string? Module { get; set; }
+    public string? ReferenceId { get; set; }
+    public string? ErrCode { get; set; }
+    public string? ErrDesc { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

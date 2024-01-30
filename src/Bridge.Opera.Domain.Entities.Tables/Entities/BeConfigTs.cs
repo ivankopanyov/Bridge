@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BeConfigTs
 {
-    public DateTime ChangedAt { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? ChangedAt { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

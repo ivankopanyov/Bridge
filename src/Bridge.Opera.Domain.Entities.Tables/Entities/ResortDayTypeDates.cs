@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortDayTypeDates
 {
-    public string Resort { get; set; }
-    public DateTime DtDate { get; set; }
-    public string DtCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? DtDate { get; set; }
+    public string? DtCode { get; set; }
     public decimal? RankValue { get; set; }
 
     public virtual ResortDayType ResortDayType { get; set; }

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DatabaseResorts
 {
-    public string DatabaseId { get; set; }
-    public string Resort { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? Resort { get; set; }
 
     public virtual Databases Database { get; set; }
     public virtual Resort ResortNavigation { get; set; }

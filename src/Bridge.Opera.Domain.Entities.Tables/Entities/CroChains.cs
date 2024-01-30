@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CroChains
 {
-    public string CroCode { get; set; }
-    public string ChainCode { get; set; }
-    public string DefaultYn { get; set; }
+    public string? CroCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DefaultYn { get; set; }
 
     public virtual Resort CroCodeNavigation { get; set; }
 

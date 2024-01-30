@@ -3,25 +3,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class BktempAllotTyp
 {
     public decimal? Keynumber { get; set; }
-    public string SummaryType { get; set; }
-    public string Chain { get; set; }
-    public string Resort { get; set; }
-    public string PmsAllotmentCode { get; set; }
+    public string? SummaryType { get; set; }
+    public string? Chain { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsAllotmentCode { get; set; }
     public decimal? PmsNumberAllotted { get; set; }
     public decimal? PmsNumberPickup { get; set; }
-    public string CrsAllotmentCode { get; set; }
+    public string? CrsAllotmentCode { get; set; }
     public decimal? CrsToSell { get; set; }
     public decimal? CrsSold { get; set; }
     public decimal? CrsElasticSold { get; set; }
     public decimal? CrsElastic { get; set; }
     public DateTime? CrsInactiveDate { get; set; }
     public decimal? RequestId { get; set; }
-    public string PmsRoomcat { get; set; }
-    public string CrsRoomcat { get; set; }
-    public string RoomcatShortDesc { get; set; }
-    public string CrsBookingStatus { get; set; }
-    public string CrsStatus { get; set; }
-    public string CrsDeductInventory { get; set; }
+    public string? PmsRoomcat { get; set; }
+    public string? CrsRoomcat { get; set; }
+    public string? RoomcatShortDesc { get; set; }
+    public string? CrsBookingStatus { get; set; }
+    public string? CrsStatus { get; set; }
+    public string? CrsDeductInventory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

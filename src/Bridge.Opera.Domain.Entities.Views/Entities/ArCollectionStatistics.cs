@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArCollectionStatistics
 {
     public decimal? ReportId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? Amount { get; set; }
@@ -14,12 +14,12 @@ public partial class ArCollectionStatistics
     public DateTime? ArTransferDate { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
-    public string GuestName { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? AccountTypeId { get; set; }
-    public string AccountType { get; set; }
-    public string AccountTypeDesc { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountTypeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExternalReportRequestsView
 {
-    public string Resort { get; set; }
-    public decimal OperaRequestId { get; set; }
-    public string ExternalSystem { get; set; }
-    public string ExternalRequestId { get; set; }
-    public string ReportType { get; set; }
-    public decimal OperaModuleId { get; set; }
-    public string ReportName { get; set; }
-    public string ReportDesc { get; set; }
-    public DateTime RequestDateTime { get; set; }
-    public decimal RequestedBy { get; set; }
-    public string RequestStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? OperaRequestId { get; set; }
+    public string? ExternalSystem { get; set; }
+    public string? ExternalRequestId { get; set; }
+    public string? ReportType { get; set; }
+    public decimal? OperaModuleId { get; set; }
+    public string? ReportName { get; set; }
+    public string? ReportDesc { get; set; }
+    public DateTime? RequestDateTime { get; set; }
+    public decimal? RequestedBy { get; set; }
+    public string? RequestStatus { get; set; }
     public DateTime? RequestAcknowledgedDateTime { get; set; }
     public DateTime? ResponseGeneratedDateTime { get; set; }
     public DateTime? ResponseReceivedDateTime { get; set; }
     public DateTime? ResponseProcessedDateTime { get; set; }
-    public string FailureReason { get; set; }
+    public string? FailureReason { get; set; }
     public DateTime? ReportBeginDate { get; set; }
     public DateTime? ReportEndDate { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? BlockId { get; set; }
-    public string BlockCode { get; set; }
-    public string Duration { get; set; }
+    public string? BlockCode { get; set; }
+    public string? Duration { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmResvStayOfferLink
 {
-    public decimal ResvLinkId { get; set; }
-    public decimal OfferId { get; set; }
-    public decimal CampaignId { get; set; }
+    public decimal? ResvLinkId { get; set; }
+    public decimal? OfferId { get; set; }
+    public decimal? CampaignId { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

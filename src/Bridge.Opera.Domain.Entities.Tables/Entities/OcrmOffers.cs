@@ -7,16 +7,16 @@ public partial class OcrmOffers
         OcrmResvStayOfferLink = new HashSet<OcrmResvStayOfferLink>();
     }
 
-    public decimal OfferId { get; set; }
-    public string OfferType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? OfferId { get; set; }
+    public string? OfferType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal CampaignId { get; set; }
-    public string Resort { get; set; }
-    public string PromotionCode { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? Resort { get; set; }
+    public string? PromotionCode { get; set; }
 
     public virtual OcrmCampaigns Campaign { get; set; }
     public virtual ICollection<OcrmResvStayOfferLink> OcrmResvStayOfferLink { get; set; }

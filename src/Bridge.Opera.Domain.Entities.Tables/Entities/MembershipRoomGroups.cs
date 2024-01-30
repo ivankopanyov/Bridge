@@ -7,9 +7,9 @@ public partial class MembershipRoomGroups
         MembershipRoomLabelGroups = new HashSet<MembershipRoomLabelGroups>();
     }
 
-    public string ChainCode { get; set; }
-    public string MemRoomGroup { get; set; }
-    public string Description { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MemRoomGroup { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

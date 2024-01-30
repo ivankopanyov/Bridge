@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BudgetCodeLov
 {
-    public string BudgetCode { get; set; }
-    public string BudgetCodeType { get; set; }
-    public string ParentBudgetCodeType { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
-    public string OrderBy { get; set; }
+    public string? BudgetCode { get; set; }
+    public string? BudgetCodeType { get; set; }
+    public string? ParentBudgetCodeType { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
+    public string? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

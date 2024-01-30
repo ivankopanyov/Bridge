@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortHkDailyTaskEmp
 {
-    public decimal TaskSeqNo { get; set; }
-    public string EmpId { get; set; }
-    public string Resort { get; set; }
-    public string EmpInstructions { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? EmpId { get; set; }
+    public string? Resort { get; set; }
+    public string? EmpInstructions { get; set; }
 
     public virtual ResortHkEmployees ResortHkEmployees { get; set; }
     public virtual ResortHkDailyTask TaskSeqNoNavigation { get; set; }

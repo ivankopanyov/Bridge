@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScGrcData
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string Description { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public DateTime DepartureDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Description { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public DateTime? DepartureDate { get; set; }
     public decimal? Owner { get; set; }
     public decimal? RoomsOwner { get; set; }
-    public string AllotmentOrigion { get; set; }
-    public string BookingType { get; set; }
+    public string? AllotmentOrigion { get; set; }
+    public string? BookingType { get; set; }
     public int? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
+    public string? SuperBlockResort { get; set; }
     public DateTime? AllotmentDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string BaseCurrency { get; set; }
-    public string Name { get; set; }
+    public string? BaseCurrency { get; set; }
+    public string? Name { get; set; }
     public decimal? AccountId { get; set; }
     public decimal? ContactId { get; set; }
     public decimal? AgentId { get; set; }
     public decimal? SourceId { get; set; }
-    public string RoomMgrCode { get; set; }
-    public string RateProtection { get; set; }
-    public string NonCompete { get; set; }
-    public string ConversionCode { get; set; }
-    public string RankingCode { get; set; }
-    public string NonCompeteCode { get; set; }
+    public string? RoomMgrCode { get; set; }
+    public string? RateProtection { get; set; }
+    public string? NonCompete { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? RankingCode { get; set; }
+    public string? NonCompeteCode { get; set; }
     public decimal? Revenue { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? ContractQuantity { get; set; }

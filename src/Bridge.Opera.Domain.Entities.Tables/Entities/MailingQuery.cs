@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailingQuery
 {
-    public decimal QueryId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Query { get; set; }
-    public string ColumnList { get; set; }
+    public decimal? QueryId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Query { get; set; }
+    public string? ColumnList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScCompanyOwnerDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string SrepCode { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? SrepCode { get; set; }
     public decimal? NameId { get; set; }
-    public string FullName { get; set; }
-    public string SrepTitle { get; set; }
-    public string SrepPhone { get; set; }
-    public string SrepEmail { get; set; }
-    public string SrepFax { get; set; }
+    public string? FullName { get; set; }
+    public string? SrepTitle { get; set; }
+    public string? SrepPhone { get; set; }
+    public string? SrepEmail { get; set; }
+    public string? SrepFax { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

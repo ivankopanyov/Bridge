@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BeHeaderGtt
 {
-    public DateTime InsertTs { get; set; }
+    public DateTime? InsertTs { get; set; }
     public Guid? QueueHandle { get; set; }
     public decimal? StepNo { get; set; }
     public decimal? SequenceOverride { get; set; }

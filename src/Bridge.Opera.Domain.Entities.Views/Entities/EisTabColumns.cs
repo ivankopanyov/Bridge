@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisTabColumns
 {
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string Comments { get; set; }
-    public string DataType { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? Comments { get; set; }
+    public string? DataType { get; set; }
     public decimal? DataLength { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

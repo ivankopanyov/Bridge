@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExternalReportRequestParams
 {
-    public decimal OperaRequestId { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
+    public decimal? OperaRequestId { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
 
     public virtual ExternalReportRequests OperaRequest { get; set; }
 

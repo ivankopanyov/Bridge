@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationPaymentMethods
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal FolioView { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? FolioView { get; set; }
+    public string? PaymentMethod { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? ApprovalAmountCalcMethod { get; set; }
     public decimal? AmountPercent { get; set; }
@@ -14,9 +14,9 @@ public partial class ReservationPaymentMethods
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? BonusCheckId { get; set; }
-    public string DirectBillVerifyResponse { get; set; }
-    public string EmailFolioYn { get; set; }
-    public string EmailAddress { get; set; }
+    public string? DirectBillVerifyResponse { get; set; }
+    public string? EmailFolioYn { get; set; }
+    public string? EmailAddress { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

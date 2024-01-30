@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QmsSectionsView
 {
-    public string Resort { get; set; }
-    public string DeptIds { get; set; }
-    public string SectionId { get; set; }
-    public string SectionDesc { get; set; }
-    public string LocCodes { get; set; }
-    public decimal DeptGroupSeqNo { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptIds { get; set; }
+    public string? SectionId { get; set; }
+    public string? SectionDesc { get; set; }
+    public string? LocCodes { get; set; }
+    public decimal? DeptGroupSeqNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

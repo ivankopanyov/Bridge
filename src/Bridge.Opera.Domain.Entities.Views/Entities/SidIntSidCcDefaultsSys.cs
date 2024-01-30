@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntSidCcDefaultsSys
 {
-    public string ConversionCode { get; set; }
-    public string InterfaceId { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? InterfaceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

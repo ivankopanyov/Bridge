@@ -4,30 +4,30 @@ public partial class FolioDPasserby
 {
     public decimal? NameId { get; set; }
     public int? FolioView { get; set; }
-    public string FolioStyle { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
-    public DateTime TrxDate { get; set; }
+    public string? FolioStyle { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? Quantity { get; set; }
-    public string Reference { get; set; }
+    public string? Reference { get; set; }
     public decimal? Debit { get; set; }
     public decimal? Credit { get; set; }
-    public decimal FolioNo { get; set; }
+    public decimal? FolioNo { get; set; }
     public decimal? EuroDebit { get; set; }
     public decimal? EuroCredit { get; set; }
-    public string ExchangeRate { get; set; }
+    public string? ExchangeRate { get; set; }
     public decimal? DetailCurrencyDebit { get; set; }
     public decimal? DetailCurrencyCredit { get; set; }
-    public string DetailCurrency { get; set; }
-    public string DetailCurrencyExchangeRate { get; set; }
-    public string ApprovalCode { get; set; }
+    public string? DetailCurrency { get; set; }
+    public string? DetailCurrencyExchangeRate { get; set; }
+    public string? ApprovalCode { get; set; }
     public DateTime? ExpiryDate { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? PostedAmount { get; set; }
-    public DateTime Timestamp { get; set; }
-    public decimal FolioNameId { get; set; }
+    public DateTime? Timestamp { get; set; }
+    public decimal? FolioNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

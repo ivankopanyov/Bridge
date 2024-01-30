@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpResInsSrcBase
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string ResInsSrcType { get; set; }
-    public string ResInsSrcTypeDesc { get; set; }
-    public string ResInsSrc { get; set; }
-    public string ResInsSrcDesc { get; set; }
-    public string ResortId { get; set; }
-    public string ResInsSrcTypeKey { get; set; }
-    public string ResInsSrcKey { get; set; }
-    public string AllKey { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? ResInsSrcType { get; set; }
+    public string? ResInsSrcTypeDesc { get; set; }
+    public string? ResInsSrc { get; set; }
+    public string? ResInsSrcDesc { get; set; }
+    public string? ResortId { get; set; }
+    public string? ResInsSrcTypeKey { get; set; }
+    public string? ResInsSrcKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

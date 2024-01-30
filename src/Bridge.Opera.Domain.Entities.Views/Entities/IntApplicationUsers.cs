@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntApplicationUsers
 {
-    public string ExtSystemCode { get; set; }
+    public string? ExtSystemCode { get; set; }
     public decimal? AppUserId { get; set; }
-    public string SystemType { get; set; }
+    public string? SystemType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

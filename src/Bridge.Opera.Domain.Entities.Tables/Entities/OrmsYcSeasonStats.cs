@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsYcSeasonStats
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string SeasonCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? SeasonCode { get; set; }
     public DateTime? OneWeekBeginDate { get; set; }
     public decimal? MaxRate { get; set; }
-    public string MaxRateCode { get; set; }
+    public string? MaxRateCode { get; set; }
     public decimal? MinRate { get; set; }
-    public string MinRateCode { get; set; }
+    public string? MinRateCode { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

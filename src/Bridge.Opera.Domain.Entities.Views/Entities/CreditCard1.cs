@@ -2,48 +2,48 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CreditCard1
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ExtraPerc { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string CardType { get; set; }
-    public string CcTypeIfc { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? CardType { get; set; }
+    public string? CcTypeIfc { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string MerchantNumber { get; set; }
-    public string ExpirationRule { get; set; }
-    public string FormatMask { get; set; }
+    public string? MerchantNumber { get; set; }
+    public string? ExpirationRule { get; set; }
+    public string? FormatMask { get; set; }
     public decimal? NumberDigits { get; set; }
-    public string Description { get; set; }
-    public string TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? TrxCode { get; set; }
     public bool? IssueNumber { get; set; }
     public bool? StartDate { get; set; }
-    public string PostYn { get; set; }
-    public string CardNumberLength { get; set; }
-    public string CardPrefix { get; set; }
-    public string ValidationRule { get; set; }
-    public string Formula { get; set; }
-    public string TrxUsage1 { get; set; }
-    public string TrxUsage2 { get; set; }
+    public string? PostYn { get; set; }
+    public string? CardNumberLength { get; set; }
+    public string? CardPrefix { get; set; }
+    public string? ValidationRule { get; set; }
+    public string? Formula { get; set; }
+    public string? TrxUsage1 { get; set; }
+    public string? TrxUsage2 { get; set; }
     public decimal? OrderBy { get; set; }
-    public string AuthAtCheckinYn { get; set; }
-    public string AuthReversalYn { get; set; }
-    public string AuthDuringStayYn { get; set; }
-    public string Cvv2CheckYn { get; set; }
-    public string AddressVerificationYn { get; set; }
-    public string PromptAtCheckinYn { get; set; }
-    public string ChipPinYn { get; set; }
-    public string ResvPaymentYn { get; set; }
-    public string CalcPoints { get; set; }
-    public string AutopayAtCheckinYn { get; set; }
+    public string? AuthAtCheckinYn { get; set; }
+    public string? AuthReversalYn { get; set; }
+    public string? AuthDuringStayYn { get; set; }
+    public string? Cvv2CheckYn { get; set; }
+    public string? AddressVerificationYn { get; set; }
+    public string? PromptAtCheckinYn { get; set; }
+    public string? ChipPinYn { get; set; }
+    public string? ResvPaymentYn { get; set; }
+    public string? CalcPoints { get; set; }
+    public string? AutopayAtCheckinYn { get; set; }
     public decimal? CcTrxFeePct { get; set; }
     public decimal? CcTrxFeeThreshold { get; set; }
-    public string AuthStlmtAtCheckOutYn { get; set; }
-    public string BonusCheckType { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PrintAuthReceiptYn { get; set; }
+    public string? AuthStlmtAtCheckOutYn { get; set; }
+    public string? BonusCheckType { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PrintAuthReceiptYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

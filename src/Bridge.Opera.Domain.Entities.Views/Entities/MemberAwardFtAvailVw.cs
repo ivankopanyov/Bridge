@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberAwardFtAvailVw
 {
-    public string Application { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
+    public string? Application { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? SellBeginDate { get; set; }
     public DateTime? SellEndDate { get; set; }
-    public string ResortCurrency { get; set; }
-    public string OcisCurrency { get; set; }
+    public string? ResortCurrency { get; set; }
+    public string? OcisCurrency { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? AwardValue { get; set; }
-    public string ExchangeRateType { get; set; }
+    public string? ExchangeRateType { get; set; }
     public decimal? MaxPercentAllowed { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyCharge { get; set; }
-    public string CancelPenaltyType { get; set; }
-    public string IssueKey { get; set; }
+    public string? CancelPenaltyType { get; set; }
+    public string? IssueKey { get; set; }
     public byte[] IssueKeyRaw { get; set; }
-    public string PtsSchCode { get; set; }
+    public string? PtsSchCode { get; set; }
     public decimal? OriginalPointsRequired { get; set; }
-    public string IgnoreFtTrxYn { get; set; }
-    public string DisplaySet { get; set; }
+    public string? IgnoreFtTrxYn { get; set; }
+    public string? DisplaySet { get; set; }
     public decimal? TotalLocalBillAmt { get; set; }
     public decimal? TotalLocalBillAmtAllowed { get; set; }
     public decimal? TotalCentralBillAmt { get; set; }

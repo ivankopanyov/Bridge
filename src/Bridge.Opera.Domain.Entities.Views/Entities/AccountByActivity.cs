@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccountByActivity
 {
-    public string Type { get; set; }
-    public decimal ActId { get; set; }
-    public string Name { get; set; }
-    public decimal AccountId { get; set; }
-    public string AccountOwner { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string PhoneNo { get; set; }
-    public string ActiveYn { get; set; }
-    public string NameType { get; set; }
+    public string? Type { get; set; }
+    public decimal? ActId { get; set; }
+    public string? Name { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? AccountOwner { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? NameType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

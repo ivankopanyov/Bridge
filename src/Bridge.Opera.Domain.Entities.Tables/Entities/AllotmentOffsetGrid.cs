@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentOffsetGrid
 {
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string OffsetType { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string ScRoomCategory { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? OffsetType { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? ScRoomCategory { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Occ1 { get; set; }
     public decimal? Occ2 { get; set; }
@@ -24,10 +24,10 @@ public partial class AllotmentOffsetGrid
     public decimal? Rate3 { get; set; }
     public decimal? Rate4 { get; set; }
     public decimal? Rateap { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual AllotmentOffsetType AllotmentOffsetType { get; set; }
 

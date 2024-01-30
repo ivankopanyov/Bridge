@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ShRateHeader
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string StayDays { get; set; }
-    public string GroupYn { get; set; }
-    public string RivMarketSegment { get; set; }
-    public string IdRequirements { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? StayDays { get; set; }
+    public string? GroupYn { get; set; }
+    public string? RivMarketSegment { get; set; }
+    public string? IdRequirements { get; set; }
     public int? ShMingrprms { get; set; }
     public int? ShMaxgrprms { get; set; }
 

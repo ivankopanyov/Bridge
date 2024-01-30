@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmManagerVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string TypeOfValue { get; set; }
+    public string? TypeOfValue { get; set; }
     public decimal? RoomsOccupied { get; set; }
     public decimal? RoomsOccupiedMtd { get; set; }
     public decimal? RoomsOccupiedYtd { get; set; }

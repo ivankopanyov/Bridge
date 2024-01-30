@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipClaimsHistory
 {
-    public decimal MembershipClaimId { get; set; }
-    public decimal Sequence { get; set; }
-    public DateTime ClaimDate { get; set; }
-    public string ClaimActivity { get; set; }
-    public string Comments { get; set; }
+    public decimal? MembershipClaimId { get; set; }
+    public decimal? Sequence { get; set; }
+    public DateTime? ClaimDate { get; set; }
+    public string? ClaimActivity { get; set; }
+    public string? Comments { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

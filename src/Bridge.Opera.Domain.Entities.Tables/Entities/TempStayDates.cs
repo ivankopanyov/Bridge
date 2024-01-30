@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempStayDates
 {
-    public DateTime StayDate { get; set; }
-    public string DayType { get; set; }
+    public DateTime? StayDate { get; set; }
+    public string? DayType { get; set; }
     public decimal? Multiplier { get; set; }
     public decimal? Adder { get; set; }
 

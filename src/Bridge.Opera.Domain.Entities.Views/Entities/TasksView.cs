@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TasksView
 {
-    public string Resort { get; set; }
-    public decimal TaskCode { get; set; }
-    public string Description { get; set; }
-    public string TypeCode { get; set; }
-    public string CategoryCode { get; set; }
-    public string CategoryDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaskCode { get; set; }
+    public string? Description { get; set; }
+    public string? TypeCode { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? CategoryDesc { get; set; }
     public decimal? EstTime { get; set; }
     public decimal? InMins { get; set; }
-    public string EstUotCode { get; set; }
-    public string EstTimeDesc { get; set; }
-    public string Frequency { get; set; }
-    public string FrequencyDesc { get; set; }
-    public string PriorityCode { get; set; }
-    public string PriorityDesc { get; set; }
-    public string ActiveYn { get; set; }
-    public string Notes { get; set; }
+    public string? EstUotCode { get; set; }
+    public string? EstTimeDesc { get; set; }
+    public string? Frequency { get; set; }
+    public string? FrequencyDesc { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? PriorityDesc { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? Notes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

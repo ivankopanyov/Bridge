@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsResortVw
 {
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
-    public string LegalOwner { get; set; }
-    public string Street { get; set; }
-    public string PostCode { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string CountryCode { get; set; }
-    public string Telephone { get; set; }
-    public string Fax { get; set; }
-    public string Webaddress { get; set; }
-    public string Tollfree { get; set; }
-    public string Email { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
+    public string? LegalOwner { get; set; }
+    public string? Street { get; set; }
+    public string? PostCode { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Telephone { get; set; }
+    public string? Fax { get; set; }
+    public string? Webaddress { get; set; }
+    public string? Tollfree { get; set; }
+    public string? Email { get; set; }
     public decimal? MaxLos { get; set; }
     public decimal? ForeMaxSlices { get; set; }
     public decimal? OptMaxSlices { get; set; }
-    public string ConfigStatus { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? ConfigStatus { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? CurrencyDecimal { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

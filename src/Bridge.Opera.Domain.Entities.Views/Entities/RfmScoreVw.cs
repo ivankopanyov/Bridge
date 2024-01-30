@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RfmScoreVw
 {
-    public decimal RfmScoreHdrId { get; set; }
-    public string ChainCode { get; set; }
-    public string RfmCode { get; set; }
-    public string RfmFormula { get; set; }
-    public string HdrProcessingMessage { get; set; }
+    public decimal? RfmScoreHdrId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RfmCode { get; set; }
+    public string? RfmFormula { get; set; }
+    public string? HdrProcessingMessage { get; set; }
     public DateTime? HdrProcessingDate { get; set; }
     public DateTime? EvaluationDate { get; set; }
-    public decimal RfmScoreDtlId { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? RfmScoreDtlId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? NameScore { get; set; }
-    public string DtlProcessingMessage { get; set; }
+    public string? DtlProcessingMessage { get; set; }
     public DateTime? DtlProcessingDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

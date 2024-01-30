@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortBraceletRulesView
 {
-    public string Resort { get; set; }
-    public string RuleCode { get; set; }
-    public string Description { get; set; }
-    public string RuleType { get; set; }
-    public string RuleTypeDescription { get; set; }
-    public decimal QueryId { get; set; }
-    public string Logic { get; set; }
+    public string? Resort { get; set; }
+    public string? RuleCode { get; set; }
+    public string? Description { get; set; }
+    public string? RuleType { get; set; }
+    public string? RuleTypeDescription { get; set; }
+    public decimal? QueryId { get; set; }
+    public string? Logic { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
 

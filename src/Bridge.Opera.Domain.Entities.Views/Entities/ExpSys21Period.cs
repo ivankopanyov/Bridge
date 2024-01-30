@@ -5,7 +5,7 @@ public partial class ExpSys21Period
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? PeriodSeq { get; set; }
-    public string Year { get; set; }
+    public string? Year { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
 

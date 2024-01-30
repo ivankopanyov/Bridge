@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkEmployees
 {
-    public string EmpId { get; set; }
-    public string HkSectionCode { get; set; }
-    public string EmpName { get; set; }
-    public string Available { get; set; }
-    public string Floor { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string JobCode { get; set; }
+    public string? EmpId { get; set; }
+    public string? HkSectionCode { get; set; }
+    public string? EmpName { get; set; }
+    public string? Available { get; set; }
+    public string? Floor { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? JobCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

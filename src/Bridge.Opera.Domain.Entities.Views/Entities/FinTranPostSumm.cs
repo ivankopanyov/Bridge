@@ -4,22 +4,22 @@ public partial class FinTranPostSumm
 {
     public decimal? ResvNameId { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? FinActionId { get; set; }
-    public string FinActionDesc { get; set; }
-    public string FinActionEvent { get; set; }
-    public string ReasonCode { get; set; }
-    public string AdjustReason { get; set; }
-    public string TargetResort { get; set; }
+    public string? FinActionDesc { get; set; }
+    public string? FinActionEvent { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? AdjustReason { get; set; }
+    public string? TargetResort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string ReasonDesc { get; set; }
-    public string AppUser { get; set; }
-    public string GuestName { get; set; }
-    public string IsCcSurchargeYn { get; set; }
-    public string AutoSettleYn { get; set; }
+    public string? ReasonDesc { get; set; }
+    public string? AppUser { get; set; }
+    public string? GuestName { get; set; }
+    public string? IsCcSurchargeYn { get; set; }
+    public string? AutoSettleYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

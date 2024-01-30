@@ -4,18 +4,18 @@ public partial class ExpMhglExport
 {
     public decimal? ExportId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? RecordTypeSeq { get; set; }
     public decimal? LedgerSeq { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string CurrencyCode { get; set; }
-    public string HotelCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? HotelCode { get; set; }
     public decimal? Product { get; set; }
     public decimal? LedgerAmount { get; set; }
     public decimal? StatisticsAmount { get; set; }
-    public string LineReference { get; set; }
-    public string LineDescription { get; set; }
-    public string Country { get; set; }
+    public string? LineReference { get; set; }
+    public string? LineDescription { get; set; }
+    public string? Country { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

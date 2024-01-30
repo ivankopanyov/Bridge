@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PaymentMethodLov
 {
-    public string Resort { get; set; }
-    public string CardType { get; set; }
-    public string Description { get; set; }
-    public string CcTypeIfc { get; set; }
-    public string CreditCardRowid { get; set; }
-    public string CcType { get; set; }
+    public string? Resort { get; set; }
+    public string? CardType { get; set; }
+    public string? Description { get; set; }
+    public string? CcTypeIfc { get; set; }
+    public string? CreditCardRowid { get; set; }
+    public string? CcType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

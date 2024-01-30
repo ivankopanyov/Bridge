@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphAllotmentDetail
 {
-    public string DelphiId { get; set; }
-    public string AllotmentDate { get; set; }
-    public string RoomType { get; set; }
-    public string NoRoomsBlocked { get; set; }
-    public string SingleRoomsBlock { get; set; }
-    public string DoubleRoomsBlock { get; set; }
-    public string TripleRoomsBlock { get; set; }
-    public string QuadRoomsBlock { get; set; }
-    public string SingleRate { get; set; }
-    public string DoubleRate { get; set; }
-    public string TripleRate { get; set; }
-    public string QuadRate { get; set; }
-    public string NoRoomsAgreed { get; set; }
-    public string SingleRoomsAgreed { get; set; }
-    public string DoubleRoomsAgreed { get; set; }
-    public string TripleRoomsAgreed { get; set; }
-    public string QuadRoomsAgreed { get; set; }
-    public string Dummy { get; set; }
+    public string? DelphiId { get; set; }
+    public string? AllotmentDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? NoRoomsBlocked { get; set; }
+    public string? SingleRoomsBlock { get; set; }
+    public string? DoubleRoomsBlock { get; set; }
+    public string? TripleRoomsBlock { get; set; }
+    public string? QuadRoomsBlock { get; set; }
+    public string? SingleRate { get; set; }
+    public string? DoubleRate { get; set; }
+    public string? TripleRate { get; set; }
+    public string? QuadRate { get; set; }
+    public string? NoRoomsAgreed { get; set; }
+    public string? SingleRoomsAgreed { get; set; }
+    public string? DoubleRoomsAgreed { get; set; }
+    public string? TripleRoomsAgreed { get; set; }
+    public string? QuadRoomsAgreed { get; set; }
+    public string? Dummy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

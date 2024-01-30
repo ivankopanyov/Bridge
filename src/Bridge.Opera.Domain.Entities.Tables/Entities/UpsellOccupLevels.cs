@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellOccupLevels
 {
-    public string Resort { get; set; }
-    public decimal LevelId { get; set; }
-    public decimal FromOccup { get; set; }
-    public decimal ToOccup { get; set; }
+    public string? Resort { get; set; }
+    public decimal? LevelId { get; set; }
+    public decimal? FromOccup { get; set; }
+    public decimal? ToOccup { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellRuleMembshpTypes
 {
-    public decimal UpsellRuleId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public decimal? UpsellRuleId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BookBilling
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal OrderBy { get; set; }
-    public string BillType { get; set; }
-    public string BillCode { get; set; }
-    public string RoutingCode { get; set; }
-    public string RoutingNbr { get; set; }
-    public string Comments { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? OrderBy { get; set; }
+    public string? BillType { get; set; }
+    public string? BillCode { get; set; }
+    public string? RoutingCode { get; set; }
+    public string? RoutingNbr { get; set; }
+    public string? Comments { get; set; }
     public decimal? LaptopChange { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

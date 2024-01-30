@@ -7,11 +7,11 @@ public partial class Survey
         SurveyDetails = new HashSet<SurveyDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal SurveyId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SurveyId { get; set; }
     public decimal? LinkedToId { get; set; }
-    public string LinkedToType { get; set; }
-    public string SurveyName { get; set; }
+    public string? LinkedToType { get; set; }
+    public string? SurveyName { get; set; }
     public decimal? SurveyTemplateId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

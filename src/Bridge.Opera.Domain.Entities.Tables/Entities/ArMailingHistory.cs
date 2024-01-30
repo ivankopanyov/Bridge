@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArMailingHistory
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? SequenceId { get; set; }
-    public string ReportFlag { get; set; }
-    public string ReportName { get; set; }
-    public string InsertUser { get; set; }
-    public string InsertDate { get; set; }
+    public string? ReportFlag { get; set; }
+    public string? ReportName { get; set; }
+    public string? InsertUser { get; set; }
+    public string? InsertDate { get; set; }
     public decimal? ReminderLevel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IntWizardLog
 {
     public DateTime? LogDate { get; set; }
-    public string TraceNotes { get; set; }
+    public string? TraceNotes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

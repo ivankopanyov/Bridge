@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberAwardUpdAvailSumVw
 {
-    public string Application { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string Resort { get; set; }
-    public string FromRoom { get; set; }
-    public string ToRoom { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomLabel { get; set; }
+    public string? Application { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? Resort { get; set; }
+    public string? FromRoom { get; set; }
+    public string? ToRoom { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomLabel { get; set; }
     public decimal? TotalPointsRequired { get; set; }
     public decimal? TotalCancelPenaltyPoints { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyCharge { get; set; }
-    public string CancelPenaltyType { get; set; }
+    public string? CancelPenaltyType { get; set; }
     public DateTime? SellBeginDate { get; set; }
     public DateTime? SellEndDate { get; set; }
     public decimal? TotalOpr { get; set; }

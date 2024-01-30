@@ -8,21 +8,21 @@ public partial class FinTranPostDtl
     public decimal? TrxNo { get; set; }
     public decimal? TrxNoHeader { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? NetAmount { get; set; }
-    public string Reference { get; set; }
-    public string ActionDesc { get; set; }
-    public string TransType { get; set; }
-    public string FinActionEvent { get; set; }
+    public string? Reference { get; set; }
+    public string? ActionDesc { get; set; }
+    public string? TransType { get; set; }
+    public string? FinActionEvent { get; set; }
     public decimal? FinDmlSeqNo { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string ForexType { get; set; }
+    public string? ForexType { get; set; }
     public decimal? ForexCommPerc { get; set; }
     public decimal? ForexCommAmount { get; set; }
     public decimal? PostedAmount { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? PricePerUnit { get; set; }
 

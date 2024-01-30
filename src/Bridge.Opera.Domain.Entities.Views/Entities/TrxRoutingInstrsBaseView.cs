@@ -2,48 +2,48 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TrxRoutingInstrsBaseView
 {
-    public string DailyYn { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string TrxCode { get; set; }
+    public string? DailyYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? BillToNameId { get; set; }
     public decimal? FolioView { get; set; }
     public DateTime? BeginDate { get; set; }
     public decimal? ToResvNameId { get; set; }
     public decimal? BillingInstrnCode { get; set; }
     public DateTime? EndDate { get; set; }
-    public string AddTrxYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? AddTrxYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? AddressId { get; set; }
     public decimal? AuthorizerId { get; set; }
-    public string RequestedBy { get; set; }
-    public string AccountCode { get; set; }
+    public string? RequestedBy { get; set; }
+    public string? AccountCode { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? LimitUsed { get; set; }
-    public string Comments { get; set; }
-    public string DeclinedYn { get; set; }
+    public string? Comments { get; set; }
+    public string? DeclinedYn { get; set; }
     public decimal? DeclinedBy { get; set; }
-    public string CompVoucherNo { get; set; }
+    public string? CompVoucherNo { get; set; }
     public decimal? CompCovers { get; set; }
-    public string CompTypeCode { get; set; }
+    public string? CompTypeCode { get; set; }
     public decimal? RoutingPercent { get; set; }
-    public string RoutingLimitType { get; set; }
+    public string? RoutingLimitType { get; set; }
     public decimal? MembershipId { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string DayString { get; set; }
-    public string RoutingType { get; set; }
-    public decimal RoutingInstructionsId { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? DayString { get; set; }
+    public string? RoutingType { get; set; }
+    public decimal? RoutingInstructionsId { get; set; }
     public decimal? RoutingLinkId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsAvhUpdateView
 {
-    public string Host { get; set; }
-    public string Resort { get; set; }
-    public string Chain { get; set; }
+    public string? Host { get; set; }
+    public string? Resort { get; set; }
+    public string? Chain { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
-    public string ActCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public string? ActCode { get; set; }
     public decimal? Nights { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

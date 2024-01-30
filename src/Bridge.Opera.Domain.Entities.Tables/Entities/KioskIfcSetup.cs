@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class KioskIfcSetup
 {
-    public string Resort { get; set; }
-    public string ExtCcAuthorizationYn { get; set; }
-    public string AdvanceBillAtCheckinYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtCcAuthorizationYn { get; set; }
+    public string? AdvanceBillAtCheckinYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string AllowCheckoutWindows { get; set; }
-    public string CheckoutPayeeGuestYn { get; set; }
-    public string AllowCheckinYn { get; set; }
-    public string AllowCheckoutYn { get; set; }
-    public string NameValidationYn { get; set; }
-    public string AllowedRateCodes { get; set; }
-    public string ReportGenerationType { get; set; }
+    public string? AllowCheckoutWindows { get; set; }
+    public string? CheckoutPayeeGuestYn { get; set; }
+    public string? AllowCheckinYn { get; set; }
+    public string? AllowCheckoutYn { get; set; }
+    public string? NameValidationYn { get; set; }
+    public string? AllowedRateCodes { get; set; }
+    public string? ReportGenerationType { get; set; }
     public DateTime? CheckinStartTime { get; set; }
     public DateTime? CheckinStopTime { get; set; }
     public DateTime? CheckoutStartTime { get; set; }
     public DateTime? CheckoutStopTime { get; set; }
-    public string DefaultMarketCode { get; set; }
-    public string DefaultSourceCode { get; set; }
-    public string AvailablePackageCodes { get; set; }
-    public string RmtyUpdRateChngYn { get; set; }
-    public string RmtyUpdMultRateYn { get; set; }
+    public string? DefaultMarketCode { get; set; }
+    public string? DefaultSourceCode { get; set; }
+    public string? AvailablePackageCodes { get; set; }
+    public string? RmtyUpdRateChngYn { get; set; }
+    public string? RmtyUpdMultRateYn { get; set; }
     public byte? PriceDeltaUpPct { get; set; }
     public byte? PriceDeltaLowPct { get; set; }
-    public string CkinPaymentMethods { get; set; }
-    public string PrintPayeeGuestYn { get; set; }
-    public string ChannelCode { get; set; }
+    public string? CkinPaymentMethods { get; set; }
+    public string? PrintPayeeGuestYn { get; set; }
+    public string? ChannelCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

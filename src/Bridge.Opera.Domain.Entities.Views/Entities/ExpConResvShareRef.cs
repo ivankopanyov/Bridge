@@ -5,9 +5,9 @@ public partial class ExpConResvShareRef
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ResIdType { get; set; }
-    public string ResIdValue { get; set; }
-    public string ResvIdSource { get; set; }
+    public string? ResIdType { get; set; }
+    public string? ResIdValue { get; set; }
+    public string? ResvIdSource { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -8,8 +8,8 @@ public partial class TraceGroups
         TraceCodes = new HashSet<TraceCodes>();
     }
 
-    public string Groupcode { get; set; }
-    public string Description { get; set; }
+    public string? Groupcode { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
 
     public virtual ICollection<ScFields> ScFields { get; set; }

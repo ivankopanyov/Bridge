@@ -8,22 +8,22 @@ public partial class RepInvForecastTmpview
     public DateTime? InventoryDate { get; set; }
     public decimal? AvailableQty { get; set; }
     public decimal? ReservedQty { get; set; }
-    public string ItemCode { get; set; }
-    public string ItemName { get; set; }
-    public string Room { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string DisplayName { get; set; }
+    public string? ItemCode { get; set; }
+    public string? ItemName { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? DisplayName { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string ResStatus { get; set; }
+    public string? ResStatus { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string RateCode { get; set; }
-    public string Products { get; set; }
-    public string AllotmentCode { get; set; }
-    public string ItemPoolCode { get; set; }
-    public string ItemPoolDescription { get; set; }
+    public string? RateCode { get; set; }
+    public string? Products { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? ItemPoolCode { get; set; }
+    public string? ItemPoolDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

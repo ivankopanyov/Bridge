@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HotelNegrates
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public decimal NameId { get; set; }
-    public string Name { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Name { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpUserConfig
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public decimal UserId { get; set; }
-    public string UserPrimaryPhone { get; set; }
-    public string UserPrimaryFax { get; set; }
-    public string UserPrimaryEmail { get; set; }
+    public decimal? UserId { get; set; }
+    public string? UserPrimaryPhone { get; set; }
+    public string? UserPrimaryFax { get; set; }
+    public string? UserPrimaryEmail { get; set; }
     public DateTime? ExpiresOn { get; set; }
-    public string EmpStatus { get; set; }
+    public string? EmpStatus { get; set; }
     public DateTime? InsertDateTime { get; set; }
-    public string UserName { get; set; }
-    public string UserTitleDesc { get; set; }
-    public string UserTitleCode { get; set; }
-    public string First { get; set; }
-    public string Last { get; set; }
-    public string Middle { get; set; }
-    public string MaleFemale { get; set; }
+    public string? UserName { get; set; }
+    public string? UserTitleDesc { get; set; }
+    public string? UserTitleCode { get; set; }
+    public string? First { get; set; }
+    public string? Last { get; set; }
+    public string? Middle { get; set; }
+    public string? MaleFemale { get; set; }
     public decimal? InsertUserId { get; set; }
     public DateTime? UpdateDateTime { get; set; }
     public decimal? UpdateUserId { get; set; }
-    public string SrepCode { get; set; }
-    public string DeptCode { get; set; }
-    public string DeptDesc { get; set; }
+    public string? SrepCode { get; set; }
+    public string? DeptCode { get; set; }
+    public string? DeptDesc { get; set; }
     public DateTime? DisabledUntil { get; set; }
     public DateTime? DateHired { get; set; }
-    public string InternalYn { get; set; }
+    public string? InternalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

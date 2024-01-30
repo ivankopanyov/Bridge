@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTrHourDim
 {
-    public string AllDates { get; set; }
-    public string AllDatesDesc { get; set; }
-    public string ObiHour { get; set; }
+    public string? AllDates { get; set; }
+    public string? AllDatesDesc { get; set; }
+    public string? ObiHour { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

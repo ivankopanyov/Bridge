@@ -2,47 +2,47 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsRategridviewRedeem
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? SellSequence { get; set; }
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public string CurrencyCode { get; set; }
-    public string YieldableYn { get; set; }
-    public string OperatorType { get; set; }
-    public string BaseRateCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? YieldableYn { get; set; }
+    public string? OperatorType { get; set; }
+    public string? BaseRateCode { get; set; }
     public DateTime? BeginBookingDate { get; set; }
     public DateTime? EndBookingDate { get; set; }
     public decimal? LosUnit { get; set; }
-    public string PackageYn { get; set; }
+    public string? PackageYn { get; set; }
     public decimal? DisplaySequence { get; set; }
-    public string ClosedToArrival { get; set; }
+    public string? ClosedToArrival { get; set; }
     public decimal? RateStatus { get; set; }
-    public string ShowRateAmountYn { get; set; }
-    public string BackToBackYn { get; set; }
+    public string? ShowRateAmountYn { get; set; }
+    public string? BackToBackYn { get; set; }
     public decimal? MaxLos { get; set; }
     public decimal? AdvanceBooking { get; set; }
-    public string ShortInfo { get; set; }
-    public string RoResort { get; set; }
-    public string RoRateCode { get; set; }
-    public string YieldAs { get; set; }
-    public string NegRateSource { get; set; }
-    public string RateCalendarYn { get; set; }
-    public string Addition { get; set; }
-    public string Multiplication { get; set; }
+    public string? ShortInfo { get; set; }
+    public string? RoResort { get; set; }
+    public string? RoRateCode { get; set; }
+    public string? YieldAs { get; set; }
+    public string? NegRateSource { get; set; }
+    public string? RateCalendarYn { get; set; }
+    public string? Addition { get; set; }
+    public string? Multiplication { get; set; }
     public decimal? NegRateOrder { get; set; }
-    public string Negotiated { get; set; }
-    public string DisplaySet { get; set; }
-    public string AwardType { get; set; }
-    public string YmCode { get; set; }
+    public string? Negotiated { get; set; }
+    public string? DisplaySet { get; set; }
+    public string? AwardType { get; set; }
+    public string? YmCode { get; set; }
     public decimal? OrsSellSequence { get; set; }
-    public string AsbRateCycle { get; set; }
-    public string AdvBaseRateCode { get; set; }
-    public string LongInfo { get; set; }
-    public string BbarCompareYn { get; set; }
-    public string GroupCode { get; set; }
-    public string BbarBasedYn { get; set; }
-    public string BbarBaseFltPct { get; set; }
-    public string BbarBaseRounding { get; set; }
+    public string? AsbRateCycle { get; set; }
+    public string? AdvBaseRateCode { get; set; }
+    public string? LongInfo { get; set; }
+    public string? BbarCompareYn { get; set; }
+    public string? GroupCode { get; set; }
+    public string? BbarBasedYn { get; set; }
+    public string? BbarBaseFltPct { get; set; }
+    public string? BbarBaseRounding { get; set; }
     public decimal? BbarBaseAmount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

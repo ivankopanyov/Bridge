@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsCntrpnlYcVw
 {
-    public string Resort { get; set; }
-    public DateTime RecordDate { get; set; }
-    public string YieldCategory { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? RecordDate { get; set; }
+    public string? YieldCategory { get; set; }
     public decimal? InvPhysical { get; set; }
     public decimal? InvOoo { get; set; }
     public decimal? InvOversell { get; set; }
@@ -24,8 +24,8 @@ public partial class OrmsCntrpnlYcVw
     public decimal? TrnResvFore { get; set; }
     public decimal? TrnCnclFore { get; set; }
     public decimal? TrnStayFore { get; set; }
-    public string DisplayText { get; set; }
-    public string SeasonColor { get; set; }
+    public string? DisplayText { get; set; }
+    public string? SeasonColor { get; set; }
     public decimal? OversellForecast { get; set; }
     public decimal? OtbOccupancyPct { get; set; }
     public decimal? OtbOccupancyPctComp { get; set; }
@@ -48,7 +48,7 @@ public partial class OrmsCntrpnlYcVw
     public decimal? ForRevparComp { get; set; }
     public decimal? ForRevparWoOooComp { get; set; }
     public decimal? ForOccupancy { get; set; }
-    public string CeilingOooYn { get; set; }
+    public string? CeilingOooYn { get; set; }
     public decimal? TransientOtb { get; set; }
     public decimal? GrpTotTbBlocks { get; set; }
     public decimal? GrpTotNontbBlocks { get; set; }

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BookerTravelerLink
 {
-    public decimal BookerUserId { get; set; }
-    public decimal TravelerNameId { get; set; }
-    public string PermissionType { get; set; }
+    public decimal? BookerUserId { get; set; }
+    public decimal? TravelerNameId { get; set; }
+    public string? PermissionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

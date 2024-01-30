@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArTrnsSrch
 {
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public string AccountSname { get; set; }
-    public string XaccountSname { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountSname { get; set; }
+    public string? XaccountSname { get; set; }
+    public string? AccountNo { get; set; }
     public DateTime? InvoiceDate { get; set; }
     public decimal? TrxNo { get; set; }
-    public string GuestName { get; set; }
-    public string XguestName { get; set; }
+    public string? GuestName { get; set; }
+    public string? XguestName { get; set; }
     public decimal? NameId { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? FolioNo { get; set; }
@@ -18,15 +18,15 @@ public partial class ArTrnsSrch
     public decimal? Amount { get; set; }
     public decimal? Paid { get; set; }
     public decimal? Balance { get; set; }
-    public string AdjustYn { get; set; }
-    public string PaymentRef { get; set; }
-    public string Remark { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? PaymentRef { get; set; }
+    public string? Remark { get; set; }
     public decimal? CashierId { get; set; }
-    public string CashierName { get; set; }
+    public string? CashierName { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string Room { get; set; }
-    public string TrxCode { get; set; }
-    public string DepartureTime { get; set; }
+    public string? Room { get; set; }
+    public string? TrxCode { get; set; }
+    public string? DepartureTime { get; set; }
     public DateTime? TransferDate { get; set; }
     public decimal? TranActionId { get; set; }
     public DateTime? UpdateDate { get; set; }
@@ -34,13 +34,13 @@ public partial class ArTrnsSrch
     public decimal? TrnsFromAcct { get; set; }
     public decimal? TrnsToAcct { get; set; }
     public decimal? BillNo { get; set; }
-    public string FiscalBillNo { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? FiscalBillNo { get; set; }
+    public string? AccTypeFlag { get; set; }
     public decimal? MasterInvoiceNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public decimal? AddresseeNameId { get; set; }
-    public string AddresseeName { get; set; }
-    public string XaddresseeName { get; set; }
+    public string? AddresseeName { get; set; }
+    public string? XaddresseeName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

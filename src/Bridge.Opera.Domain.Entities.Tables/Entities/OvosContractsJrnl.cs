@@ -2,54 +2,54 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosContractsJrnl
 {
-    public decimal JrnlId { get; set; }
-    public decimal ActionInstanceId { get; set; }
-    public string UDFlag { get; set; }
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public string Status { get; set; }
-    public string TemplateCode { get; set; }
-    public string ContractNumber { get; set; }
-    public string Description { get; set; }
+    public decimal? JrnlId { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? UDFlag { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? Status { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? ContractNumber { get; set; }
+    public string? Description { get; set; }
     public decimal? NameId { get; set; }
     public decimal? AddressId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ContractType { get; set; }
-    public string Unit { get; set; }
+    public string? ContractType { get; set; }
+    public string? Unit { get; set; }
     public decimal? AdvBookingDays { get; set; }
-    public string ContractPassword { get; set; }
-    public string RentalProgramYn { get; set; }
+    public string? ContractPassword { get; set; }
+    public string? RentalProgramYn { get; set; }
     public DateTime? RentalBeginDate { get; set; }
     public DateTime? RentalEndDate { get; set; }
-    public string AutoRenewalYn { get; set; }
-    public string OptOutPenaltyFormula { get; set; }
+    public string? AutoRenewalYn { get; set; }
+    public string? OptOutPenaltyFormula { get; set; }
     public decimal? OptOutPenalty { get; set; }
     public decimal? OwnerRevShare { get; set; }
-    public string RevShareFormula { get; set; }
+    public string? RevShareFormula { get; set; }
     public decimal? CommByOwner { get; set; }
-    public string SalesAssociate { get; set; }
+    public string? SalesAssociate { get; set; }
     public DateTime? ContractPresentedDate { get; set; }
-    public string SsnTaxId { get; set; }
+    public string? SsnTaxId { get; set; }
     public DateTime? EstimatedClosingDate { get; set; }
     public decimal? PurchasePrice { get; set; }
-    public string RealEstateAgent { get; set; }
-    public string SpecialChangesToUnit { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
+    public string? RealEstateAgent { get; set; }
+    public string? SpecialChangesToUnit { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -80,13 +80,13 @@ public partial class OvosContractsJrnl
     public DateTime? Udfd13 { get; set; }
     public DateTime? Udfd14 { get; set; }
     public DateTime? Udfd15 { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string OwnerRoomCategory { get; set; }
-    public string FractionalYn { get; set; }
-    public string RepeatCycle { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? OwnerRoomCategory { get; set; }
+    public string? FractionalYn { get; set; }
+    public string? RepeatCycle { get; set; }
     public decimal? RepeatLength { get; set; }
     public DateTime? RepeatStart { get; set; }
 

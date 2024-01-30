@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepStatsView
 {
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string Description { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? Description { get; set; }
     public decimal? DailyRoomRevenue { get; set; }
     public decimal? MonthlyRoomRevenue { get; set; }
     public decimal? YearlyRoomRevenue { get; set; }
@@ -14,7 +14,7 @@ public partial class RepStatsView
     public decimal? DailyPersons { get; set; }
     public decimal? MonthlyPersons { get; set; }
     public decimal? YearlyPersons { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

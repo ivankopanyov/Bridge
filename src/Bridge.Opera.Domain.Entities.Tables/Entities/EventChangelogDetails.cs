@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventChangelogDetails
 {
-    public decimal ChangeId { get; set; }
-    public string Fieldname { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? ChangeId { get; set; }
+    public string? Fieldname { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
 
     public virtual EventChangelog Change { get; set; }
 

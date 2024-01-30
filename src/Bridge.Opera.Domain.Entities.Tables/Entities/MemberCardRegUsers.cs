@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MemberCardRegUsers
 {
-    public string AppUserRegCode { get; set; }
-    public string ChainCode { get; set; }
+    public string? AppUserRegCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? AppUserId { get; set; }
-    public string AppUserUniq { get; set; }
-    public string AppUser { get; set; }
-    public string UserFirst { get; set; }
-    public string UserLast { get; set; }
+    public string? AppUserUniq { get; set; }
+    public string? AppUser { get; set; }
+    public string? UserFirst { get; set; }
+    public string? UserLast { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string MemberCardRegCro { get; set; }
-    public string MemberCardRegResort { get; set; }
-    public string AppUserEmail { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? MemberCardRegCro { get; set; }
+    public string? MemberCardRegResort { get; set; }
+    public string? AppUserEmail { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

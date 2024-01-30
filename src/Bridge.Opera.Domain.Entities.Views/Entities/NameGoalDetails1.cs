@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameGoalDetails1
 {
-    public decimal DetailId { get; set; }
-    public string GoaltypeCode { get; set; }
+    public decimal? DetailId { get; set; }
+    public string? GoaltypeCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public decimal NgoalGoalId { get; set; }
+    public decimal? NgoalGoalId { get; set; }
     public decimal? RoomAvgRate { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }

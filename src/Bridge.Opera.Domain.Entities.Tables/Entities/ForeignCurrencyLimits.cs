@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForeignCurrencyLimits
 {
-    public string CurrencyCode { get; set; }
-    public string LocalYn { get; set; }
-    public string ChainCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? LocalYn { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? DailyLimit { get; set; }
     public decimal? MonthlyLimit { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ForeignCurrency C { get; set; }
 

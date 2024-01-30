@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HiroOverrideView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? OverrideDate { get; set; }
-    public string CharOverrideDate { get; set; }
-    public string OverrideTime { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string ExternalReference { get; set; }
+    public string? CharOverrideDate { get; set; }
+    public string? OverrideTime { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? ExternalReference { get; set; }
     public DateTime? Arrival { get; set; }
-    public string CharArrival { get; set; }
-    public string RoomType { get; set; }
+    public string? CharArrival { get; set; }
+    public string? RoomType { get; set; }
     public decimal? Nights { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? Rate { get; set; }
     public decimal? Hurdle { get; set; }
-    public string GuestName { get; set; }
-    public string Id { get; set; }
-    public string OverrideAction { get; set; }
-    public string ActionDescription { get; set; }
+    public string? GuestName { get; set; }
+    public string? Id { get; set; }
+    public string? OverrideAction { get; set; }
+    public string? ActionDescription { get; set; }
     public decimal? RateableValue { get; set; }
-    public string BlockCode { get; set; }
+    public string? BlockCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

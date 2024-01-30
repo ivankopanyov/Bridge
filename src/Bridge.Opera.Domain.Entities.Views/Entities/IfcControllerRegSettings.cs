@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class IfcControllerRegSettings
 {
     public decimal? Id { get; set; }
-    public string Machine { get; set; }
-    public string CntrlRegSetting { get; set; }
-    public string Data { get; set; }
-    public string Description { get; set; }
+    public string? Machine { get; set; }
+    public string? CntrlRegSetting { get; set; }
+    public string? Data { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortMarketingCities1
 {
-    public string Resort { get; set; }
-    public string MarketingCity { get; set; }
-    public string RegionCode { get; set; }
+    public string? Resort { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? RegionCode { get; set; }
     public decimal? Distance { get; set; }
-    public string DistanceType { get; set; }
-    public string Direction { get; set; }
-    public string DrivingTime { get; set; }
+    public string? DistanceType { get; set; }
+    public string? Direction { get; set; }
+    public string? DrivingTime { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

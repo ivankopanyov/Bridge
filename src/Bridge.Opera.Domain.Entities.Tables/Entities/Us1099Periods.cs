@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Us1099Periods
 {
-    public decimal PeriodId { get; set; }
-    public string Resort { get; set; }
-    public string Period { get; set; }
-    public string RecipientType { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string FilingMode { get; set; }
+    public decimal? PeriodId { get; set; }
+    public string? Resort { get; set; }
+    public string? Period { get; set; }
+    public string? RecipientType { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? FilingMode { get; set; }
     public DateTime? FirstSentDate { get; set; }
     public decimal? SentCount { get; set; }
     public DateTime? LastSentDate { get; set; }
-    public string FileStatus { get; set; }
-    public string CorrectionRefFile { get; set; }
+    public string? FileStatus { get; set; }
+    public string? CorrectionRefFile { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
 

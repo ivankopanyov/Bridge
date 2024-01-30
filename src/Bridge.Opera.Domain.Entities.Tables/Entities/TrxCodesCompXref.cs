@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrxCodesCompXref
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string CompTrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? CompTrxCode { get; set; }
 
     public virtual TrxCodes TrxCodes { get; set; }
     public virtual TrxCodes TrxCodesNavigation { get; set; }

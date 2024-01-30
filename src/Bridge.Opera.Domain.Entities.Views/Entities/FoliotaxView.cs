@@ -7,7 +7,7 @@ public partial class FoliotaxView
     public DateTime? BillGenerationDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? RevisionNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? TotRevTaxable { get; set; }
@@ -62,17 +62,17 @@ public partial class FoliotaxView
     public decimal? Net18Amt { get; set; }
     public decimal? Net19Amt { get; set; }
     public decimal? Net20Amt { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
-    public string TaxId { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? TaxId { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? ClTrxNo { get; set; }
@@ -84,7 +84,7 @@ public partial class FoliotaxView
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? AssociatedBillDate { get; set; }
-    public string FullName { get; set; }
+    public string? FullName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

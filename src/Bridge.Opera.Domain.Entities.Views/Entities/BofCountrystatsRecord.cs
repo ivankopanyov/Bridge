@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofCountrystatsRecord
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string StatisticCode { get; set; }
-    public string CountryCode { get; set; }
+    public string? StatisticCode { get; set; }
+    public string? CountryCode { get; set; }
     public decimal? NoOfRooms { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? ArrPersons { get; set; }

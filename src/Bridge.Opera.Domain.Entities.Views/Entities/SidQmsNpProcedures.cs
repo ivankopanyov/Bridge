@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidQmsNpProcedures
 {
-    public string Resort { get; set; }
-    public string Status { get; set; }
-    public decimal ProcedureSeq { get; set; }
-    public string ProcedureName { get; set; }
-    public string ProcedureDescription { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public decimal CreatedBy { get; set; }
+    public string? Resort { get; set; }
+    public string? Status { get; set; }
+    public decimal? ProcedureSeq { get; set; }
+    public string? ProcedureName { get; set; }
+    public string? ProcedureDescription { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public decimal? CreatedBy { get; set; }
     public DateTime? UpdatedDate { get; set; }
     public decimal? UpdatedBy { get; set; }
-    public string ExecuteToday { get; set; }
+    public string? ExecuteToday { get; set; }
     public DateTime? ExecutedDate { get; set; }
     public decimal? ExecutedBy { get; set; }
-    public string ToBeLogged { get; set; }
-    public string LogFile { get; set; }
+    public string? ToBeLogged { get; set; }
+    public string? LogFile { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipPointsGroupRules
 {
-    public string ChainCode { get; set; }
-    public string MembershipType { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public string RuleGroup { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public string? RuleGroup { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

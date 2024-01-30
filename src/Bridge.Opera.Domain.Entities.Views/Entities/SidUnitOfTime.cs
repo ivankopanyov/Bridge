@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidUnitOfTime
 {
-    public string Resort { get; set; }
-    public string UotCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? UotCode { get; set; }
+    public string? Description { get; set; }
     public decimal? InDays { get; set; }
     public decimal? InHours { get; set; }
     public decimal? InMinutes { get; set; }
-    public decimal DurationInMinutes { get; set; }
+    public decimal? DurationInMinutes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

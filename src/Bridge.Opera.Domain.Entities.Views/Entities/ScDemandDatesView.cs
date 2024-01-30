@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScDemandDatesView
 {
-    public string Resort { get; set; }
-    public string DtCode { get; set; }
-    public string Description { get; set; }
-    public DateTime DtDate { get; set; }
-    public string DisplayColor { get; set; }
+    public string? Resort { get; set; }
+    public string? DtCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? DtDate { get; set; }
+    public string? DisplayColor { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

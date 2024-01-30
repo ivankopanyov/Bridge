@@ -2,57 +2,57 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QroomsView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string QueueStartTime { get; set; }
-    public string QueueEndTime { get; set; }
+    public string? QueueStartTime { get; set; }
+    public string? QueueEndTime { get; set; }
     public decimal? QueueDuration { get; set; }
     public decimal? QueuePriority { get; set; }
     public DateTime? QueueStart { get; set; }
     public DateTime? QueueEnd { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string ResvStatus { get; set; }
-    public string SharedYn { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? SharedYn { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string Vip { get; set; }
-    public string MessageYn { get; set; }
-    public string AccompanyingYn { get; set; }
-    public string RoutingYn { get; set; }
-    public string FolioYn { get; set; }
-    public string TraceYn { get; set; }
-    public string AuthorisedBillingYn { get; set; }
-    public string LocatorYn { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? Vip { get; set; }
+    public string? MessageYn { get; set; }
+    public string? AccompanyingYn { get; set; }
+    public string? RoutingYn { get; set; }
+    public string? FolioYn { get; set; }
+    public string? TraceYn { get; set; }
+    public string? AuthorisedBillingYn { get; set; }
+    public string? LocatorYn { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? FixedCharge { get; set; }
-    public string MasterShare { get; set; }
+    public string? MasterShare { get; set; }
     public decimal? Nights { get; set; }
-    public string MultipleYn { get; set; }
-    public string NameType { get; set; }
-    public string SguestName { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string ExtnNumber { get; set; }
-    public string GuestTitle { get; set; }
+    public string? MultipleYn { get; set; }
+    public string? NameType { get; set; }
+    public string? SguestName { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? ExtnNumber { get; set; }
+    public string? GuestTitle { get; set; }
     public DateTime? SmsSentOn { get; set; }
-    public string SmsSentBy { get; set; }
+    public string? SmsSentBy { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string FullName { get; set; }
-    public string XdisplayName { get; set; }
-    public string CTSName { get; set; }
-    public string ExternalReference { get; set; }
-    public string DisplayColor { get; set; }
-    public string MarketCode { get; set; }
-    public string BlockCode { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? FullName { get; set; }
+    public string? XdisplayName { get; set; }
+    public string? CTSName { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? DisplayColor { get; set; }
+    public string? MarketCode { get; set; }
+    public string? BlockCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

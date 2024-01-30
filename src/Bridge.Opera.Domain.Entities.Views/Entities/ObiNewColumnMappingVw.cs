@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiNewColumnMappingVw
 {
-    public string BiTableName { get; set; }
-    public string BiCode { get; set; }
-    public string BiLabel { get; set; }
-    public string BiCodeDesc { get; set; }
+    public string? BiTableName { get; set; }
+    public string? BiCode { get; set; }
+    public string? BiLabel { get; set; }
+    public string? BiCodeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DphPmsMap
 {
-    public string Resort { get; set; }
-    public string RecordType { get; set; }
-    public string PmsCode { get; set; }
-    public string DphCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RecordType { get; set; }
+    public string? PmsCode { get; set; }
+    public string? DphCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

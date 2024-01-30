@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipRejectComments
 {
-    public decimal MembershipTrxId { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public string MembershipType { get; set; }
-    public string Comments { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public string? MembershipType { get; set; }
+    public string? Comments { get; set; }
 
     public virtual MembershipTransactions MembershipTrx { get; set; }
 

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitNoteTypes
 {
-    public string NoteCode { get; set; }
-    public string Description { get; set; }
+    public string? NoteCode { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

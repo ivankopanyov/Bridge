@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsRoomOccupyStats
 {
-    public string RoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? Totalavailrooms { get; set; }
     public decimal? Physical { get; set; }
     public decimal? Logical { get; set; }

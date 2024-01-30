@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class QroomsStatView
 {
     public decimal? QuerySort { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ShortDescription { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ShortDescription { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? TotalCount { get; set; }
 

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScPkgRevenueSearch
 {
-    public decimal DayOrder { get; set; }
-    public string EvType { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? DayOrder { get; set; }
+    public string? EvType { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public decimal PkgPriceLink { get; set; }
-    public decimal PkgEvLink { get; set; }
-    public string RevenueType { get; set; }
-    public string RevenueGroup { get; set; }
+    public decimal? PkgPriceLink { get; set; }
+    public decimal? PkgEvLink { get; set; }
+    public string? RevenueType { get; set; }
+    public string? RevenueGroup { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? ExpectedCost { get; set; }

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageStayMemberships
 {
-    public decimal StageStayRecordId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipNumber { get; set; }
+    public decimal? StageStayRecordId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipNumber { get; set; }
     public decimal? BasePoints { get; set; }
     public decimal? BaseRevenue { get; set; }
     public decimal? BonusPoints { get; set; }
     public decimal? BonusRevenue { get; set; }
-    public string ValidYn { get; set; }
-    public string PointsEligibleYn { get; set; }
+    public string? ValidYn { get; set; }
+    public string? PointsEligibleYn { get; set; }
 
     public virtual StageStayRecords StageStayRecord { get; set; }
 

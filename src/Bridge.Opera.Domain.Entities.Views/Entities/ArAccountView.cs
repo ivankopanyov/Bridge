@@ -2,62 +2,62 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAccountView
 {
-    public string Resort { get; set; }
-    public string AccountNo { get; set; }
-    public decimal AccountCode { get; set; }
-    public decimal NameId { get; set; }
-    public string NameType { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AccountType { get; set; }
-    public string AccountName { get; set; }
-    public string AccountSname { get; set; }
-    public string Status { get; set; }
-    public string Vip { get; set; }
+    public string? Resort { get; set; }
+    public string? AccountNo { get; set; }
+    public decimal? AccountCode { get; set; }
+    public decimal? NameId { get; set; }
+    public string? NameType { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountSname { get; set; }
+    public string? Status { get; set; }
+    public string? Vip { get; set; }
     public decimal? Balance { get; set; }
-    public string Contact { get; set; }
-    public string City { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Country { get; set; }
-    public string Zip { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
-    public string State { get; set; }
-    public string BatchStmtYn { get; set; }
-    public string PermAcctYn { get; set; }
+    public string? Contact { get; set; }
+    public string? City { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Country { get; set; }
+    public string? Zip { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
+    public string? State { get; set; }
+    public string? BatchStmtYn { get; set; }
+    public string? PermAcctYn { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string SumCurCode { get; set; }
+    public string? SumCurCode { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? LstStmtSent { get; set; }
-    public string LastRemFaxNo { get; set; }
-    public string LastStmtFaxNo { get; set; }
-    public DateTime Updatedate { get; set; }
+    public string? LastRemFaxNo { get; set; }
+    public string? LastStmtFaxNo { get; set; }
+    public DateTime? Updatedate { get; set; }
     public decimal? NoOfPersons { get; set; }
     public DateTime? LstRemPrtDate { get; set; }
-    public string StatementName { get; set; }
-    public string XdisplayName { get; set; }
-    public string Sxname { get; set; }
-    public string PrintInvoiceDetailsYn { get; set; }
-    public string EmailAddress { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? StatementName { get; set; }
+    public string? XdisplayName { get; set; }
+    public string? Sxname { get; set; }
+    public string? PrintInvoiceDetailsYn { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? AccTypeFlag { get; set; }
     public decimal? DayForFinanceCharge { get; set; }
     public decimal? FinanceChargeAmount { get; set; }
     public decimal? FinanceChargePercentage { get; set; }
     public decimal? MinDaysOlder { get; set; }
-    public string UnallocatedPaymentsYn { get; set; }
-    public string AccountStatusMsg { get; set; }
+    public string? UnallocatedPaymentsYn { get; set; }
+    public string? AccountStatusMsg { get; set; }
     public decimal? AgentUserId { get; set; }
     public decimal? AddressId { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? PhoneId { get; set; }
     public decimal? FaxId { get; set; }
     public decimal? EmailId { get; set; }
-    public string ProfileLastName { get; set; }
-    public string ProfileFirstName { get; set; }
+    public string? ProfileLastName { get; set; }
+    public string? ProfileFirstName { get; set; }
     public decimal? PaymentDueDays { get; set; }
-    public string UnformattedAccountNo { get; set; }
-    public string ArContact { get; set; }
+    public string? UnformattedAccountNo { get; set; }
+    public string? ArContact { get; set; }
     public DateTime? LastActivityDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipTrxExpVw
 {
-    public decimal TrxMembershipTrxId { get; set; }
+    public decimal? TrxMembershipTrxId { get; set; }
     public DateTime? TrxMembershipTrxDate { get; set; }
-    public string TrxRecordType { get; set; }
-    public string TrxResort { get; set; }
-    public decimal TrxNameId { get; set; }
-    public decimal TrxMembershipId { get; set; }
-    public string TrxMembershipType { get; set; }
-    public string TrxMembershipCardNo { get; set; }
-    public string TrxMembershipLevel { get; set; }
-    public DateTime TrxBeginDate { get; set; }
-    public DateTime TrxEndDate { get; set; }
-    public string TrxPmsNameId { get; set; }
-    public string TrxPmsResvNo { get; set; }
-    public string TrxPmsResvNameId { get; set; }
+    public string? TrxRecordType { get; set; }
+    public string? TrxResort { get; set; }
+    public decimal? TrxNameId { get; set; }
+    public decimal? TrxMembershipId { get; set; }
+    public string? TrxMembershipType { get; set; }
+    public string? TrxMembershipCardNo { get; set; }
+    public string? TrxMembershipLevel { get; set; }
+    public DateTime? TrxBeginDate { get; set; }
+    public DateTime? TrxEndDate { get; set; }
+    public string? TrxPmsNameId { get; set; }
+    public string? TrxPmsResvNo { get; set; }
+    public string? TrxPmsResvNameId { get; set; }
     public decimal? TrxStayRecordId { get; set; }
-    public string TrxPopulationMethod { get; set; }
+    public string? TrxPopulationMethod { get; set; }
     public decimal? TrxAwardRequestId { get; set; }
     public decimal? TrxAwardOrderNo { get; set; }
     public decimal? TrxStay { get; set; }
     public decimal? TrxNights { get; set; }
-    public string TrxCurrencyCode { get; set; }
-    public string TrxPromotionCode1 { get; set; }
-    public string TrxPromotionCode2 { get; set; }
-    public string TrxPromotionCode3 { get; set; }
+    public string? TrxCurrencyCode { get; set; }
+    public string? TrxPromotionCode1 { get; set; }
+    public string? TrxPromotionCode2 { get; set; }
+    public string? TrxPromotionCode3 { get; set; }
     public decimal? TrxTotalRevenue { get; set; }
     public decimal? TrxTotalPoints { get; set; }
     public decimal? TrxTotalBasePoints { get; set; }
@@ -38,76 +38,76 @@ public partial class MembershipTrxExpVw
     public decimal? TrxMembershipBonusRevenue { get; set; }
     public decimal? TrxPointsCost { get; set; }
     public DateTime? TrxPointsCreditDate { get; set; }
-    public string TrxPointsCalculatedYn { get; set; }
-    public string TrxProcessingMessages { get; set; }
-    public string TrxDataExportedYn { get; set; }
+    public string? TrxPointsCalculatedYn { get; set; }
+    public string? TrxProcessingMessages { get; set; }
+    public string? TrxDataExportedYn { get; set; }
     public DateTime? TrxDataExportedDate { get; set; }
-    public decimal TrxInsertUser { get; set; }
-    public DateTime TrxInsertDate { get; set; }
-    public decimal TrxUpdateUser { get; set; }
-    public DateTime TrxUpdateDate { get; set; }
+    public decimal? TrxInsertUser { get; set; }
+    public DateTime? TrxInsertDate { get; set; }
+    public decimal? TrxUpdateUser { get; set; }
+    public DateTime? TrxUpdateDate { get; set; }
     public DateTime? TrxInactiveDate { get; set; }
-    public string TrxAutomaticYn { get; set; }
-    public string TrxAdjustmentYn { get; set; }
+    public string? TrxAutomaticYn { get; set; }
+    public string? TrxAdjustmentYn { get; set; }
     public decimal? TrxParentMembershipTrxId { get; set; }
-    public string TrxCrsBookNo { get; set; }
-    public string TrxTransactionType { get; set; }
+    public string? TrxCrsBookNo { get; set; }
+    public string? TrxTransactionType { get; set; }
     public decimal? TrxMembershipBaseStay { get; set; }
     public decimal? TrxMembershipBonusStay { get; set; }
-    public string TrxPointsRejectedReason { get; set; }
+    public string? TrxPointsRejectedReason { get; set; }
     public decimal? TrxStatementId { get; set; }
     public decimal? TrxMemberStatementId { get; set; }
     public decimal? TrxMultipleMembershipId { get; set; }
     public DateTime? TrxPointsExpirationDate { get; set; }
-    public decimal TrxMembershipTrxLinkId { get; set; }
-    public string TrxUserNotes { get; set; }
-    public string TrxExceptionType { get; set; }
-    public string TrxPointsAcYn { get; set; }
+    public decimal? TrxMembershipTrxLinkId { get; set; }
+    public string? TrxUserNotes { get; set; }
+    public string? TrxExceptionType { get; set; }
+    public string? TrxPointsAcYn { get; set; }
     public decimal? TrxCentralAvgRate { get; set; }
-    public string TrxRoomLabel { get; set; }
-    public string TrxPosCode { get; set; }
-    public string StRecordType { get; set; }
+    public string? TrxRoomLabel { get; set; }
+    public string? TrxPosCode { get; set; }
+    public string? StRecordType { get; set; }
     public DateTime? StBookDate { get; set; }
     public DateTime? StBookedArrivalDate { get; set; }
     public DateTime? StBookedDepartureDate { get; set; }
-    public string StShareNo { get; set; }
-    public string StPrimarySharer { get; set; }
+    public string? StShareNo { get; set; }
+    public string? StPrimarySharer { get; set; }
     public DateTime? StCancellationDate { get; set; }
     public decimal? StCancelledRoomNights { get; set; }
     public decimal? StNoshowRoomNights { get; set; }
     public decimal? StAdults { get; set; }
     public decimal? StChildren { get; set; }
-    public string StCrsBookNo { get; set; }
-    public string StRoomLabel { get; set; }
-    public string StRoomNumber { get; set; }
-    public string StPmsCurrencyCode { get; set; }
-    public string StSourceCode { get; set; }
-    public string StChannel { get; set; }
-    public string StPaymentMethod { get; set; }
-    public string StCompYn { get; set; }
+    public string? StCrsBookNo { get; set; }
+    public string? StRoomLabel { get; set; }
+    public string? StRoomNumber { get; set; }
+    public string? StPmsCurrencyCode { get; set; }
+    public string? StSourceCode { get; set; }
+    public string? StChannel { get; set; }
+    public string? StPaymentMethod { get; set; }
+    public string? StCompYn { get; set; }
     public decimal? StGuestNameId { get; set; }
     public decimal? StCompanyNameId { get; set; }
     public decimal? StTravelNameId { get; set; }
     public decimal? StWholesalerNameId { get; set; }
     public decimal? StGroupNameId { get; set; }
     public decimal? StMiscNameId { get; set; }
-    public string StResInsertSource { get; set; }
-    public string StResInsertSourceType { get; set; }
+    public string? StResInsertSource { get; set; }
+    public string? StResInsertSourceType { get; set; }
     public decimal? StTotalRevenue { get; set; }
     public decimal? StRoomRevenue { get; set; }
     public decimal? StFbRevenue { get; set; }
     public decimal? StExchangeRate { get; set; }
-    public string StAllotmentCode { get; set; }
-    public string StUdfc01 { get; set; }
-    public string StUdfc02 { get; set; }
-    public string StUdfc03 { get; set; }
-    public string StUdfc04 { get; set; }
-    public string StUdfc05 { get; set; }
-    public string StUdfc06 { get; set; }
-    public string StUdfc07 { get; set; }
-    public string StUdfc08 { get; set; }
-    public string StUdfc09 { get; set; }
-    public string StUdfc10 { get; set; }
+    public string? StAllotmentCode { get; set; }
+    public string? StUdfc01 { get; set; }
+    public string? StUdfc02 { get; set; }
+    public string? StUdfc03 { get; set; }
+    public string? StUdfc04 { get; set; }
+    public string? StUdfc05 { get; set; }
+    public string? StUdfc06 { get; set; }
+    public string? StUdfc07 { get; set; }
+    public string? StUdfc08 { get; set; }
+    public string? StUdfc09 { get; set; }
+    public string? StUdfc10 { get; set; }
     public decimal? StUdfn01 { get; set; }
     public decimal? StUdfn02 { get; set; }
     public decimal? StUdfn03 { get; set; }
@@ -122,190 +122,190 @@ public partial class MembershipTrxExpVw
     public decimal? StOtherRevenue { get; set; }
     public decimal? StNumberStay { get; set; }
     public decimal? StNumberNights { get; set; }
-    public string StAdjustmentYn { get; set; }
-    public string StUserNotes { get; set; }
-    public string StPosCode { get; set; }
-    public string StIataConsortia { get; set; }
-    public string StWholesalerRecordLocator { get; set; }
+    public string? StAdjustmentYn { get; set; }
+    public string? StUserNotes { get; set; }
+    public string? StPosCode { get; set; }
+    public string? StIataConsortia { get; set; }
+    public string? StWholesalerRecordLocator { get; set; }
     public decimal? StAllotmentHeaderId { get; set; }
     public decimal? StRoomRevenueTax { get; set; }
     public decimal? StFbRevenueTax { get; set; }
     public decimal? StMiscRevenueTax { get; set; }
     public decimal? StOtherRevenueTax { get; set; }
-    public string MemMembershipType { get; set; }
-    public string MemMembershipCardNo { get; set; }
-    public string MemMembershipLevel { get; set; }
-    public string MemNameOnCard { get; set; }
-    public string MemComments { get; set; }
+    public string? MemMembershipType { get; set; }
+    public string? MemMembershipCardNo { get; set; }
+    public string? MemMembershipLevel { get; set; }
+    public string? MemNameOnCard { get; set; }
+    public string? MemComments { get; set; }
     public DateTime? MemJoinedDate { get; set; }
     public DateTime? MemExpirationDate { get; set; }
     public decimal? MemCreditLimit { get; set; }
-    public string MemPrimaryAirlinePartner { get; set; }
-    public string MemPointIndicator { get; set; }
+    public string? MemPrimaryAirlinePartner { get; set; }
+    public string? MemPointIndicator { get; set; }
     public decimal? MemCurrentPoints { get; set; }
-    public string MemMemberIndicator { get; set; }
-    public string MemMemberSubtype { get; set; }
+    public string? MemMemberIndicator { get; set; }
+    public string? MemMemberSubtype { get; set; }
     public DateTime? MemInactiveDate { get; set; }
     public decimal? MemOrderBy { get; set; }
     public DateTime? MemProcessExpirationDate { get; set; }
-    public string MemEnrollmentCode { get; set; }
-    public string MemGracePeriodIndicator { get; set; }
-    public string MemMembershipStatus { get; set; }
-    public string MemTrackData { get; set; }
+    public string? MemEnrollmentCode { get; set; }
+    public string? MemGracePeriodIndicator { get; set; }
+    public string? MemMembershipStatus { get; set; }
+    public string? MemTrackData { get; set; }
     public decimal? MemPointsAvailable { get; set; }
-    public string MemPrimaryMembershipYn { get; set; }
-    public string MemCentralSetupYn { get; set; }
-    public string MemMembershipClass { get; set; }
-    public string MemCalculationMethod { get; set; }
+    public string? MemPrimaryMembershipYn { get; set; }
+    public string? MemCentralSetupYn { get; set; }
+    public string? MemMembershipClass { get; set; }
+    public string? MemCalculationMethod { get; set; }
     public decimal? MemCalculationMonths { get; set; }
     public decimal? MemExpirationMonth { get; set; }
     public decimal? MemCardValidYears { get; set; }
     public decimal? MemYearsToExpire { get; set; }
-    public string MemExpirationDateRequired { get; set; }
-    public string MemLevelRequired { get; set; }
-    public string MemAwardGenerationMethod { get; set; }
+    public string? MemExpirationDateRequired { get; set; }
+    public string? MemLevelRequired { get; set; }
+    public string? MemAwardGenerationMethod { get; set; }
     public decimal? MemBatchDelayPeriod { get; set; }
-    public string MemAllowDupCardYn { get; set; }
-    public string MemExceptionType { get; set; }
+    public string? MemAllowDupCardYn { get; set; }
+    public string? MemExceptionType { get; set; }
     public decimal? MemMultipleRoomsLimit { get; set; }
-    public string MemBookerProgramYn { get; set; }
-    public string MemPointsLabel { get; set; }
-    public string MemEarningPreference { get; set; }
-    public string MemMemberInfoDispSet { get; set; }
-    public string MemAutoCardNoBasedOn { get; set; }
-    public string MemDefaultMemStatus { get; set; }
-    public string MemEnrollmentCodeReqYn { get; set; }
-    public string NamName { get; set; }
-    public string NamFirst { get; set; }
-    public string NamMiddle { get; set; }
-    public string NamDisplayName { get; set; }
-    public string NamSalutation { get; set; }
-    public string NamName2 { get; set; }
-    public string NamName3 { get; set; }
-    public string NamSname { get; set; }
-    public string NamSfirst { get; set; }
-    public string NamNameType { get; set; }
-    public string NamNameTypeDesc { get; set; }
-    public string NamTitle { get; set; }
-    public string NamTitleName { get; set; }
-    public string NamPosition { get; set; }
-    public string NamProfession { get; set; }
-    public string NamLegalCompany { get; set; }
-    public string NamContactYn { get; set; }
-    public string NamStreet1 { get; set; }
-    public string NamStreet2 { get; set; }
-    public string NamStreet3 { get; set; }
-    public string NamStreet4 { get; set; }
-    public string NamCity { get; set; }
-    public string NamState { get; set; }
-    public string NamStateDesc { get; set; }
-    public string NamCountry { get; set; }
-    public string NamCountryDesc { get; set; }
-    public string NamZip { get; set; }
-    public string NamCityExt { get; set; }
-    public string NamAddrLanguageCode { get; set; }
-    public string NamAddrLanguageDesc { get; set; }
-    public string NamAddressindicator { get; set; }
-    public string NamAddressTypeDesc { get; set; }
+    public string? MemBookerProgramYn { get; set; }
+    public string? MemPointsLabel { get; set; }
+    public string? MemEarningPreference { get; set; }
+    public string? MemMemberInfoDispSet { get; set; }
+    public string? MemAutoCardNoBasedOn { get; set; }
+    public string? MemDefaultMemStatus { get; set; }
+    public string? MemEnrollmentCodeReqYn { get; set; }
+    public string? NamName { get; set; }
+    public string? NamFirst { get; set; }
+    public string? NamMiddle { get; set; }
+    public string? NamDisplayName { get; set; }
+    public string? NamSalutation { get; set; }
+    public string? NamName2 { get; set; }
+    public string? NamName3 { get; set; }
+    public string? NamSname { get; set; }
+    public string? NamSfirst { get; set; }
+    public string? NamNameType { get; set; }
+    public string? NamNameTypeDesc { get; set; }
+    public string? NamTitle { get; set; }
+    public string? NamTitleName { get; set; }
+    public string? NamPosition { get; set; }
+    public string? NamProfession { get; set; }
+    public string? NamLegalCompany { get; set; }
+    public string? NamContactYn { get; set; }
+    public string? NamStreet1 { get; set; }
+    public string? NamStreet2 { get; set; }
+    public string? NamStreet3 { get; set; }
+    public string? NamStreet4 { get; set; }
+    public string? NamCity { get; set; }
+    public string? NamState { get; set; }
+    public string? NamStateDesc { get; set; }
+    public string? NamCountry { get; set; }
+    public string? NamCountryDesc { get; set; }
+    public string? NamZip { get; set; }
+    public string? NamCityExt { get; set; }
+    public string? NamAddrLanguageCode { get; set; }
+    public string? NamAddrLanguageDesc { get; set; }
+    public string? NamAddressindicator { get; set; }
+    public string? NamAddressTypeDesc { get; set; }
     public decimal? NamAddressId { get; set; }
-    public string NamPreferredlanguage { get; set; }
-    public string NamLanguageDesc { get; set; }
-    public string NamCompany { get; set; }
-    public string NamAltname { get; set; }
-    public string NamAltfirst { get; set; }
-    public string NamAltlanguage { get; set; }
-    public string NamAlttitle { get; set; }
-    public string NamAltsalution { get; set; }
-    public string NamAddresslanguage { get; set; }
-    public string NamSxname { get; set; }
-    public string NamSxfirstName { get; set; }
-    public string NamXdisplayName { get; set; }
-    public string NamXlanguageDesc { get; set; }
-    public string NamMailblock { get; set; }
-    public string NamPassport { get; set; }
+    public string? NamPreferredlanguage { get; set; }
+    public string? NamLanguageDesc { get; set; }
+    public string? NamCompany { get; set; }
+    public string? NamAltname { get; set; }
+    public string? NamAltfirst { get; set; }
+    public string? NamAltlanguage { get; set; }
+    public string? NamAlttitle { get; set; }
+    public string? NamAltsalution { get; set; }
+    public string? NamAddresslanguage { get; set; }
+    public string? NamSxname { get; set; }
+    public string? NamSxfirstName { get; set; }
+    public string? NamXdisplayName { get; set; }
+    public string? NamXlanguageDesc { get; set; }
+    public string? NamMailblock { get; set; }
+    public string? NamPassport { get; set; }
     public DateTime? NamBirthDate { get; set; }
-    public string NamNationality { get; set; }
-    public string NamNationalityDesc { get; set; }
+    public string? NamNationality { get; set; }
+    public string? NamNationalityDesc { get; set; }
     public decimal? NamPhoneId { get; set; }
-    public string NamPhoneNo { get; set; }
-    public string NamPhoneType { get; set; }
+    public string? NamPhoneNo { get; set; }
+    public string? NamPhoneType { get; set; }
     public decimal? NamFaxId { get; set; }
-    public string NamFaxNo { get; set; }
+    public string? NamFaxNo { get; set; }
     public decimal? NamEmailId { get; set; }
-    public string NamEmail { get; set; }
+    public string? NamEmail { get; set; }
     public decimal? NamHomePhoneId { get; set; }
-    public string NamHomePhoneNumber { get; set; }
+    public string? NamHomePhoneNumber { get; set; }
     public decimal? NamBusinessPhoneId { get; set; }
-    public string NamBusinessPhoneNumber { get; set; }
+    public string? NamBusinessPhoneNumber { get; set; }
     public decimal? NamMobilePhoneId { get; set; }
-    public string NamMobilePhoneNumber { get; set; }
+    public string? NamMobilePhoneNumber { get; set; }
     public decimal? NamWebPageId { get; set; }
-    public string NamWebPage { get; set; }
-    public string NamActiveYn { get; set; }
-    public string NamHistoryYn { get; set; }
-    public string NamAcctContact { get; set; }
-    public string NamCblInd { get; set; }
-    public string NamBlMsg { get; set; }
-    public string NamVipStatus { get; set; }
-    public string NamVipName { get; set; }
-    public string NamArNo { get; set; }
-    public string NamIataCorpNo { get; set; }
-    public string NamIataCompType { get; set; }
-    public string NamNameKeywords { get; set; }
-    public string NamGender { get; set; }
-    public string NamBirthPlace { get; set; }
-    public string NamBirthCountry { get; set; }
+    public string? NamWebPage { get; set; }
+    public string? NamActiveYn { get; set; }
+    public string? NamHistoryYn { get; set; }
+    public string? NamAcctContact { get; set; }
+    public string? NamCblInd { get; set; }
+    public string? NamBlMsg { get; set; }
+    public string? NamVipStatus { get; set; }
+    public string? NamVipName { get; set; }
+    public string? NamArNo { get; set; }
+    public string? NamIataCorpNo { get; set; }
+    public string? NamIataCompType { get; set; }
+    public string? NamNameKeywords { get; set; }
+    public string? NamGender { get; set; }
+    public string? NamBirthPlace { get; set; }
+    public string? NamBirthCountry { get; set; }
     public decimal? NamCreditCardId { get; set; }
-    public string NamCreditCardType { get; set; }
-    public string NamCreditCardNumber { get; set; }
-    public string NamCreditCardName { get; set; }
+    public string? NamCreditCardType { get; set; }
+    public string? NamCreditCardNumber { get; set; }
+    public string? NamCreditCardName { get; set; }
     public DateTime? NamCreditCardExpDate { get; set; }
-    public string NamEnvelopeGreeting { get; set; }
-    public string NamXenvelopeGreeting { get; set; }
-    public string NamEmailYn { get; set; }
-    public string NamPhoneYn { get; set; }
-    public string NamSmsYn { get; set; }
-    public string NamProtected { get; set; }
-    public string NamUdfc01 { get; set; }
-    public string NamUdfc02 { get; set; }
-    public string NamUdfc03 { get; set; }
-    public string NamUdfc04 { get; set; }
-    public string NamUdfc05 { get; set; }
-    public string NamUdfc06 { get; set; }
-    public string NamUdfc07 { get; set; }
-    public string NamUdfc08 { get; set; }
-    public string NamUdfc09 { get; set; }
-    public string NamUdfc10 { get; set; }
-    public string NamUdfc11 { get; set; }
-    public string NamUdfc12 { get; set; }
-    public string NamUdfc13 { get; set; }
-    public string NamUdfc14 { get; set; }
-    public string NamUdfc15 { get; set; }
-    public string NamUdfc16 { get; set; }
-    public string NamUdfc17 { get; set; }
-    public string NamUdfc18 { get; set; }
-    public string NamUdfc19 { get; set; }
-    public string NamUdfc20 { get; set; }
-    public string NamUdfc21 { get; set; }
-    public string NamUdfc22 { get; set; }
-    public string NamUdfc23 { get; set; }
-    public string NamUdfc24 { get; set; }
-    public string NamUdfc25 { get; set; }
-    public string NamUdfc26 { get; set; }
-    public string NamUdfc27 { get; set; }
-    public string NamUdfc28 { get; set; }
-    public string NamUdfc29 { get; set; }
-    public string NamUdfc30 { get; set; }
-    public string NamUdfc31 { get; set; }
-    public string NamUdfc32 { get; set; }
-    public string NamUdfc33 { get; set; }
-    public string NamUdfc34 { get; set; }
-    public string NamUdfc35 { get; set; }
-    public string NamUdfc36 { get; set; }
-    public string NamUdfc37 { get; set; }
-    public string NamUdfc38 { get; set; }
-    public string NamUdfc39 { get; set; }
-    public string NamUdfc40 { get; set; }
+    public string? NamEnvelopeGreeting { get; set; }
+    public string? NamXenvelopeGreeting { get; set; }
+    public string? NamEmailYn { get; set; }
+    public string? NamPhoneYn { get; set; }
+    public string? NamSmsYn { get; set; }
+    public string? NamProtected { get; set; }
+    public string? NamUdfc01 { get; set; }
+    public string? NamUdfc02 { get; set; }
+    public string? NamUdfc03 { get; set; }
+    public string? NamUdfc04 { get; set; }
+    public string? NamUdfc05 { get; set; }
+    public string? NamUdfc06 { get; set; }
+    public string? NamUdfc07 { get; set; }
+    public string? NamUdfc08 { get; set; }
+    public string? NamUdfc09 { get; set; }
+    public string? NamUdfc10 { get; set; }
+    public string? NamUdfc11 { get; set; }
+    public string? NamUdfc12 { get; set; }
+    public string? NamUdfc13 { get; set; }
+    public string? NamUdfc14 { get; set; }
+    public string? NamUdfc15 { get; set; }
+    public string? NamUdfc16 { get; set; }
+    public string? NamUdfc17 { get; set; }
+    public string? NamUdfc18 { get; set; }
+    public string? NamUdfc19 { get; set; }
+    public string? NamUdfc20 { get; set; }
+    public string? NamUdfc21 { get; set; }
+    public string? NamUdfc22 { get; set; }
+    public string? NamUdfc23 { get; set; }
+    public string? NamUdfc24 { get; set; }
+    public string? NamUdfc25 { get; set; }
+    public string? NamUdfc26 { get; set; }
+    public string? NamUdfc27 { get; set; }
+    public string? NamUdfc28 { get; set; }
+    public string? NamUdfc29 { get; set; }
+    public string? NamUdfc30 { get; set; }
+    public string? NamUdfc31 { get; set; }
+    public string? NamUdfc32 { get; set; }
+    public string? NamUdfc33 { get; set; }
+    public string? NamUdfc34 { get; set; }
+    public string? NamUdfc35 { get; set; }
+    public string? NamUdfc36 { get; set; }
+    public string? NamUdfc37 { get; set; }
+    public string? NamUdfc38 { get; set; }
+    public string? NamUdfc39 { get; set; }
+    public string? NamUdfc40 { get; set; }
     public decimal? NamUdfn01 { get; set; }
     public decimal? NamUdfn02 { get; set; }
     public decimal? NamUdfn03 { get; set; }
@@ -366,10 +366,10 @@ public partial class MembershipTrxExpVw
     public DateTime? NamUdfd18 { get; set; }
     public DateTime? NamUdfd19 { get; set; }
     public DateTime? NamUdfd20 { get; set; }
-    public string SetExpDataYn { get; set; }
-    public decimal MemNameId { get; set; }
-    public string TrxBookedRoomLabel { get; set; }
-    public string StBookedRoomLabel { get; set; }
+    public string? SetExpDataYn { get; set; }
+    public decimal? MemNameId { get; set; }
+    public string? TrxBookedRoomLabel { get; set; }
+    public string? StBookedRoomLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

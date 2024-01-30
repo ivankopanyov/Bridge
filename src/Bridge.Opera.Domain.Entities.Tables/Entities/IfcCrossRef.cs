@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcCrossRef
 {
-    public decimal IfcCtrlId { get; set; }
-    public string PmsVal { get; set; }
-    public string IfcVal { get; set; }
-    public string ValType { get; set; }
+    public decimal? IfcCtrlId { get; set; }
+    public string? PmsVal { get; set; }
+    public string? IfcVal { get; set; }
+    public string? ValType { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DeptLogbook
 {
-    public decimal LogbookId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public DateTime LogDate { get; set; }
-    public string LogText { get; set; }
+    public decimal? LogbookId { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public DateTime? LogDate { get; set; }
+    public string? LogText { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

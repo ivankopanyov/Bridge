@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberAwardRateAvailVw
 {
-    public string Application { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
+    public string? Application { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateSetId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyCharge { get; set; }
-    public string CancelPenaltyType { get; set; }
+    public string? CancelPenaltyType { get; set; }
     public decimal? CancelPenaltyPoints { get; set; }
-    public string ClosedToArrival { get; set; }
-    public string RedemptionRateYn { get; set; }
+    public string? ClosedToArrival { get; set; }
+    public string? RedemptionRateYn { get; set; }
     public DateTime? SellBeginDate { get; set; }
     public DateTime? SellEndDate { get; set; }
-    public string IssueKey { get; set; }
+    public string? IssueKey { get; set; }
     public byte[] IssueKeyRaw { get; set; }
     public DateTime? StayDate { get; set; }
-    public string PtsSchCode { get; set; }
+    public string? PtsSchCode { get; set; }
     public decimal? OriginalPointsRequired { get; set; }
-    public string CancelPolicyType { get; set; }
+    public string? CancelPolicyType { get; set; }
     public decimal? NumberOfNights { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

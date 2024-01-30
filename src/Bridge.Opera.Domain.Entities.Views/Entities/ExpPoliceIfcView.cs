@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpPoliceIfcView
 {
-    public string HotelKey { get; set; }
-    public string HotelCode { get; set; }
-    public string RoomUser { get; set; }
-    public string LastName { get; set; }
-    public string Accompany { get; set; }
-    public string FirstName { get; set; }
-    public string Sex { get; set; }
-    public string BirthDate { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string Nationality { get; set; }
-    public string Profession { get; set; }
-    public string Address1 { get; set; }
-    public string ZipCityCountry { get; set; }
-    public string City { get; set; }
-    public string Zip { get; set; }
-    public string Country { get; set; }
-    public string Arrival { get; set; }
-    public string Departure { get; set; }
-    public string TransportMethod { get; set; }
-    public string DocType { get; set; }
-    public string DocIssueDate { get; set; }
-    public string DocIssuePlace { get; set; }
-    public string DocIssueCountry { get; set; }
-    public string GuestType { get; set; }
-    public string ActionType { get; set; }
-    public string PoliceNo { get; set; }
+    public string? HotelKey { get; set; }
+    public string? HotelCode { get; set; }
+    public string? RoomUser { get; set; }
+    public string? LastName { get; set; }
+    public string? Accompany { get; set; }
+    public string? FirstName { get; set; }
+    public string? Sex { get; set; }
+    public string? BirthDate { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? Nationality { get; set; }
+    public string? Profession { get; set; }
+    public string? Address1 { get; set; }
+    public string? ZipCityCountry { get; set; }
+    public string? City { get; set; }
+    public string? Zip { get; set; }
+    public string? Country { get; set; }
+    public string? Arrival { get; set; }
+    public string? Departure { get; set; }
+    public string? TransportMethod { get; set; }
+    public string? DocType { get; set; }
+    public string? DocIssueDate { get; set; }
+    public string? DocIssuePlace { get; set; }
+    public string? DocIssueCountry { get; set; }
+    public string? GuestType { get; set; }
+    public string? ActionType { get; set; }
+    public string? PoliceNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

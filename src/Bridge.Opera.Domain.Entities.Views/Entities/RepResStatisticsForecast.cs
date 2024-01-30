@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResStatisticsForecast
 {
-    public string Resort { get; set; }
-    public string RecType { get; set; }
+    public string? Resort { get; set; }
+    public string? RecType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string MarketCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? NoRooms { get; set; }
     public decimal? NoPersons { get; set; }
     public decimal? ArrivalRooms { get; set; }
@@ -16,12 +16,12 @@ public partial class RepResStatisticsForecast
     public decimal? HouseUseRooms { get; set; }
     public decimal? DayUseRooms { get; set; }
     public decimal? NoShowRooms { get; set; }
-    public string DeductYn { get; set; }
-    public string GroupYn { get; set; }
+    public string? DeductYn { get; set; }
+    public string? GroupYn { get; set; }
     public decimal? NetRoomRevenue { get; set; }
     public decimal? TotalPackageRevenue { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string EventType { get; set; }
+    public string? EventType { get; set; }
     public decimal? OwnerRooms { get; set; }
     public decimal? FfRooms { get; set; }
     public decimal? TotalRevenue { get; set; }
@@ -29,7 +29,7 @@ public partial class RepResStatisticsForecast
     public decimal? RoomRevenueTax { get; set; }
     public decimal? TotalRevenueTax { get; set; }
     public decimal? NonRevenueTax { get; set; }
-    public string OwnerRentalFlag { get; set; }
+    public string? OwnerRentalFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

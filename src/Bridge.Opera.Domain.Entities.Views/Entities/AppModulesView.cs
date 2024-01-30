@@ -2,44 +2,44 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AppModulesView
 {
-    public decimal ModuleId { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string ModuleType { get; set; }
+    public decimal? ModuleId { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? ModuleType { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string InsertUser { get; set; }
-    public string InsertDate { get; set; }
-    public string RelModName { get; set; }
-    public string AnyParameters { get; set; }
-    public string CanBeRunSeparately { get; set; }
-    public string ReportProcedureYn { get; set; }
-    public string LanguageCode { get; set; }
-    public string FormToRun { get; set; }
-    public string Destination { get; set; }
-    public string ProtectedYn { get; set; }
-    public string UsedInApp { get; set; }
-    public string UserDefinedYn { get; set; }
-    public string GroupInApp { get; set; }
+    public string? InsertUser { get; set; }
+    public string? InsertDate { get; set; }
+    public string? RelModName { get; set; }
+    public string? AnyParameters { get; set; }
+    public string? CanBeRunSeparately { get; set; }
+    public string? ReportProcedureYn { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? FormToRun { get; set; }
+    public string? Destination { get; set; }
+    public string? ProtectedYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? UserDefinedYn { get; set; }
+    public string? GroupInApp { get; set; }
     public decimal? Copies { get; set; }
-    public decimal GroupModuleId { get; set; }
-    public string GroupDesc { get; set; }
-    public string DefaultModuleType { get; set; }
-    public string DataSourceType { get; set; }
-    public string DataSource { get; set; }
-    public string ActiveYn { get; set; }
-    public string SystemYn { get; set; }
-    public string WatermarkMode { get; set; }
-    public string WatermarkText { get; set; }
+    public decimal? GroupModuleId { get; set; }
+    public string? GroupDesc { get; set; }
+    public string? DefaultModuleType { get; set; }
+    public string? DataSourceType { get; set; }
+    public string? DataSource { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? SystemYn { get; set; }
+    public string? WatermarkMode { get; set; }
+    public string? WatermarkText { get; set; }
     public decimal? WatermarkXpos { get; set; }
     public decimal? WatermarkYpos { get; set; }
     public decimal? WatermarkAngle { get; set; }
     public decimal? WatermarkColorR { get; set; }
     public decimal? WatermarkColorG { get; set; }
     public decimal? WatermarkColorB { get; set; }
-    public string WatermarkFont { get; set; }
+    public string? WatermarkFont { get; set; }
     public decimal? WatermarkFontSize { get; set; }
-    public string OutputExcelYn { get; set; }
+    public string? OutputExcelYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

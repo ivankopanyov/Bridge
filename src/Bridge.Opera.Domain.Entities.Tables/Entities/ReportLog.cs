@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReportLog
 {
-    public decimal SeqNo { get; set; }
-    public string ReportId { get; set; }
-    public decimal LogLevel { get; set; }
-    public DateTime LogTime { get; set; }
-    public string CodeLoc { get; set; }
-    public string LogText { get; set; }
-    public string FractionSeconds { get; set; }
+    public decimal? SeqNo { get; set; }
+    public string? ReportId { get; set; }
+    public decimal? LogLevel { get; set; }
+    public DateTime? LogTime { get; set; }
+    public string? CodeLoc { get; set; }
+    public string? LogText { get; set; }
+    public string? FractionSeconds { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

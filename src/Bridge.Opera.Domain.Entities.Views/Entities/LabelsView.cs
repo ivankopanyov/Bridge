@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LabelsView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string SguestName { get; set; }
-    public string GuestLanguage { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? SguestName { get; set; }
+    public string? GuestLanguage { get; set; }
     public decimal? Nights { get; set; }
-    public string CompanyName { get; set; }
-    public string SourceName { get; set; }
-    public string GroupName { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? SourceName { get; set; }
+    public string? GroupName { get; set; }
+    public string? TravelAgentName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string MarketCode { get; set; }
-    public string VipStatus { get; set; }
-    public string MailList { get; set; }
-    public string MailType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? VipStatus { get; set; }
+    public string? MailList { get; set; }
+    public string? MailType { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string CountryCode { get; set; }
-    public string RoomDetail { get; set; }
-    public string ZipCode { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomClass { get; set; }
-    public string Room { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string XcompanyName { get; set; }
-    public string XtravelAgentName { get; set; }
-    public string XgroupName { get; set; }
-    public string XsourceName { get; set; }
+    public string? CountryCode { get; set; }
+    public string? RoomDetail { get; set; }
+    public string? ZipCode { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? Room { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? XtravelAgentName { get; set; }
+    public string? XgroupName { get; set; }
+    public string? XsourceName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

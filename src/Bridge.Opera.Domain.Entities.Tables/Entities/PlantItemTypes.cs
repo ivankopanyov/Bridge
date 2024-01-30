@@ -7,9 +7,9 @@ public partial class PlantItemTypes
         PlantItems = new HashSet<PlantItems>();
     }
 
-    public string Resort { get; set; }
-    public string TypeCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? TypeCode { get; set; }
+    public string? Description { get; set; }
 
     public virtual ICollection<PlantItems> PlantItems { get; set; }
 

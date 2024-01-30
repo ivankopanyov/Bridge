@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofFoliotaxAndCcPayments
 {
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? BillNo { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? PayeeNameId { get; set; }
@@ -62,21 +62,21 @@ public partial class BofFoliotaxAndCcPayments
     public decimal? Net18Amount { get; set; }
     public decimal? Net19Amount { get; set; }
     public decimal? Net20Amount { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string TaxId { get; set; }
-    public string FolioType { get; set; }
+    public string? TaxId { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? ClTrxNo { get; set; }
@@ -84,28 +84,28 @@ public partial class BofFoliotaxAndCcPayments
     public decimal? TotalNonRevenueAmount { get; set; }
     public decimal? DepositAmount { get; set; }
     public decimal? AddressId { get; set; }
-    public string PayeeAddress1 { get; set; }
-    public string PayeeAddress2 { get; set; }
-    public string PayeeCity { get; set; }
-    public string PayeeState { get; set; }
-    public string PayeeCountry { get; set; }
-    public string PayeeCountryDesc { get; set; }
-    public string PayeeZipCode { get; set; }
-    public string PayeeArNo { get; set; }
-    public string PayeeLastName { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeTax1No { get; set; }
-    public string PayeeTax2No { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestAddress1 { get; set; }
-    public string GuestAddress2 { get; set; }
-    public string GuestCity { get; set; }
-    public string GuestCountry { get; set; }
-    public string GuestCountryDesc { get; set; }
-    public string GuestZipCode { get; set; }
-    public string GuestTax1No { get; set; }
-    public string GuestTax2No { get; set; }
+    public string? PayeeAddress1 { get; set; }
+    public string? PayeeAddress2 { get; set; }
+    public string? PayeeCity { get; set; }
+    public string? PayeeState { get; set; }
+    public string? PayeeCountry { get; set; }
+    public string? PayeeCountryDesc { get; set; }
+    public string? PayeeZipCode { get; set; }
+    public string? PayeeArNo { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeTax1No { get; set; }
+    public string? PayeeTax2No { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestAddress1 { get; set; }
+    public string? GuestAddress2 { get; set; }
+    public string? GuestCity { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? GuestCountryDesc { get; set; }
+    public string? GuestZipCode { get; set; }
+    public string? GuestTax1No { get; set; }
+    public string? GuestTax2No { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

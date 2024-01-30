@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidBankMaster
 {
-    public string Resort { get; set; }
-    public string BankCode { get; set; }
-    public string BranchCode { get; set; }
-    public string BankName { get; set; }
+    public string? Resort { get; set; }
+    public string? BankCode { get; set; }
+    public string? BranchCode { get; set; }
+    public string? BankName { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

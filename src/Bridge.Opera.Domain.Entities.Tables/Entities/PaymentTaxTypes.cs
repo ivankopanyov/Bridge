@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PaymentTaxTypes
 {
-    public string PaymentType { get; set; }
-    public string Description { get; set; }
+    public string? PaymentType { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

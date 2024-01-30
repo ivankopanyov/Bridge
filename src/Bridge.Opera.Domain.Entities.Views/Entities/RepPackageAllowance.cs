@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepPackageAllowance
 {
-    public string Room { get; set; }
-    public string RateCode { get; set; }
-    public string Product { get; set; }
-    public string Description { get; set; }
-    public string PosNextDayYn { get; set; }
+    public string? Room { get; set; }
+    public string? RateCode { get; set; }
+    public string? Product { get; set; }
+    public string? Description { get; set; }
+    public string? PosNextDayYn { get; set; }
     public decimal? Allowance { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

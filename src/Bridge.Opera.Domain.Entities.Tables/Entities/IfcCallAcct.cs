@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IfcCallAcct
 {
     public decimal? IfcCtrlId { get; set; }
-    public string DialedDigits { get; set; }
-    public string TrunkId { get; set; }
+    public string? DialedDigits { get; set; }
+    public string? TrunkId { get; set; }
     public decimal? TimeId { get; set; }
     public decimal? DayId { get; set; }
     public decimal? StartDuration { get; set; }
     public decimal? EndDuration { get; set; }
     public decimal? NumOfUnits { get; set; }
     public decimal? Tariff { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

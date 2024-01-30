@@ -3,33 +3,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class FinTranGuestLedgerDeposits
 {
     public decimal? TrxNo { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string FtGeneratedType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? FtGeneratedType { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string FtSubtype { get; set; }
+    public string? FtSubtype { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? PricePerUnit { get; set; }
     public decimal? DepLedCredit { get; set; }
-    public string Currency { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public string? Currency { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? ResvDepositId { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? RecptNo { get; set; }
-    public string Comments { get; set; }
-    public string TargetResort { get; set; }
-    public string Resort { get; set; }
+    public string? Comments { get; set; }
+    public string? TargetResort { get; set; }
+    public string? Resort { get; set; }
     public decimal? FromResvId { get; set; }
     public decimal? ToResvNameId { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public decimal? FolioNo { get; set; }
     public int? FolioView { get; set; }
     public decimal? CashierId { get; set; }

@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepPkgResvView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
-    public string Arrival { get; set; }
-    public string ArrivalTime { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Arrival { get; set; }
+    public string? ArrivalTime { get; set; }
     public decimal? Nights { get; set; }
-    public string DepartureTime { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string FullName { get; set; }
-    public string NameUsageType { get; set; }
-    public string Products { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? FullName { get; set; }
+    public string? NameUsageType { get; set; }
+    public string? Products { get; set; }
     public decimal? Balance { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? Persons { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public string Vip { get; set; }
-    public string RateCode { get; set; }
-    public string PackageYn { get; set; }
-    public string DepCode { get; set; }
-    public string Product { get; set; }
-    public string ProductDesc { get; set; }
-    public string AddToRateYn { get; set; }
-    public string PosNextDayYn { get; set; }
-    public decimal ResortRateProductDtlId { get; set; }
+    public string? Room { get; set; }
+    public string? Vip { get; set; }
+    public string? RateCode { get; set; }
+    public string? PackageYn { get; set; }
+    public string? DepCode { get; set; }
+    public string? Product { get; set; }
+    public string? ProductDesc { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? PosNextDayYn { get; set; }
+    public decimal? ResortRateProductDtlId { get; set; }
     public decimal? AllowanceAmount { get; set; }
-    public decimal Price { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string TcDesc { get; set; }
-    public string TrxCode { get; set; }
+    public decimal? Price { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? TcDesc { get; set; }
+    public string? TrxCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

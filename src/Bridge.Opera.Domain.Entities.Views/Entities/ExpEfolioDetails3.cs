@@ -7,16 +7,16 @@ public partial class ExpEfolioDetails3
     public decimal? PartySequence { get; set; }
     public decimal? DetailSequence { get; set; }
     public decimal? DetailCountSequence { get; set; }
-    public string ExportType { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? ExportType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Gad { get; set; }
     public decimal? TaxAmount { get; set; }
     public decimal? PricePerUnit { get; set; }
     public DateTime? InvoiceDate { get; set; }
     public DateTime? PostingDate { get; set; }
-    public string MapValue { get; set; }
+    public string? MapValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

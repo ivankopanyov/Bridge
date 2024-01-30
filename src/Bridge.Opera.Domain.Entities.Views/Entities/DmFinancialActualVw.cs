@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmFinancialActualVw
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxCodeDescription { get; set; }
-    public string TrxSubgroup { get; set; }
-    public string TrxSubgroupDescription { get; set; }
-    public string TrxGroup { get; set; }
-    public string TrxGroupDescription { get; set; }
-    public string PmsDeptCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxCodeDescription { get; set; }
+    public string? TrxSubgroup { get; set; }
+    public string? TrxSubgroupDescription { get; set; }
+    public string? TrxGroup { get; set; }
+    public string? TrxGroupDescription { get; set; }
+    public string? PmsDeptCode { get; set; }
     public decimal? AmountNet { get; set; }
     public decimal? AmountNetMtd { get; set; }
     public decimal? AmountNetYtd { get; set; }

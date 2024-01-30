@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileRequestTypes
 {
-    public string Resort { get; set; }
-    public string ActivityType { get; set; }
-    public string Description { get; set; }
-    public string CentralYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ActivityType { get; set; }
+    public string? Description { get; set; }
+    public string? CentralYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string SendMethod { get; set; }
-    public string Url { get; set; }
-    public string TypeCode { get; set; }
+    public string? SendMethod { get; set; }
+    public string? Url { get; set; }
+    public string? TypeCode { get; set; }
     public decimal? RequestId { get; set; }
     public decimal? AttachTemplateId { get; set; }
 

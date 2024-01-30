@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationAwards
 {
-    public decimal ResvAwardId { get; set; }
+    public decimal? ResvAwardId { get; set; }
     public decimal? IssuedAwardId { get; set; }
-    public string AwardVoucherNo { get; set; }
-    public string Resort { get; set; }
+    public string? AwardVoucherNo { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ChainCode { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string AwardStatus { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? AwardStatus { get; set; }
     public DateTime? DateAwarded { get; set; }
     public DateTime? ConsumptionDate { get; set; }
     public decimal? PointsRequired { get; set; }
-    public string RateCode { get; set; }
-    public string RoomLabel { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomLabel { get; set; }
-    public string Product { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomLabel { get; set; }
+    public string? Product { get; set; }
     public decimal? AwardCancellationNo { get; set; }
     public DateTime? AwardCancelDate { get; set; }
     public decimal? InsertUser { get; set; }
@@ -29,10 +29,10 @@ public partial class ReservationAwards
     public decimal? ProductId { get; set; }
     public decimal? CancelPenaltyPoints { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
-    public string CancelPolicyType { get; set; }
+    public string? CancelPolicyType { get; set; }
     public decimal? NumberOfNights { get; set; }
     public decimal? ActualCancelPoints { get; set; }
-    public string CanCancelYn { get; set; }
+    public string? CanCancelYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

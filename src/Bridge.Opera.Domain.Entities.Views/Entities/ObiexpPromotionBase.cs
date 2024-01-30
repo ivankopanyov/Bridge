@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpPromotionBase
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string PromoCode { get; set; }
-    public string PromoDesc { get; set; }
-    public string Mpcode { get; set; }
-    public string MpcodeDesc { get; set; }
-    public string ResortId { get; set; }
-    public string PromoCodeKey { get; set; }
-    public string MpcodeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? PromoCode { get; set; }
+    public string? PromoDesc { get; set; }
+    public string? Mpcode { get; set; }
+    public string? MpcodeDesc { get; set; }
+    public string? ResortId { get; set; }
+    public string? PromoCodeKey { get; set; }
+    public string? MpcodeKey { get; set; }
+    public string? AllKey { get; set; }
     public DateTime? BookingStartdate { get; set; }
     public DateTime? BookingEnddate { get; set; }
     public DateTime? StayStartdate { get; set; }
     public DateTime? StayEnddate { get; set; }
-    public string Category { get; set; }
-    public string CategoryDesc { get; set; }
+    public string? Category { get; set; }
+    public string? CategoryDesc { get; set; }
     public DateTime? CheckinTime { get; set; }
     public DateTime? CheckoutTime { get; set; }
-    public string PromoInstructions { get; set; }
-    public string UpgradeAllowedYn { get; set; }
-    public string IdRequiredYn { get; set; }
-    public string IdRequiredDesc { get; set; }
-    public string SetOrAccountFlag { get; set; }
+    public string? PromoInstructions { get; set; }
+    public string? UpgradeAllowedYn { get; set; }
+    public string? IdRequiredYn { get; set; }
+    public string? IdRequiredDesc { get; set; }
+    public string? SetOrAccountFlag { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PromoInformation { get; set; }
-    public string LimitedTimePromotionYn { get; set; }
+    public string? PromoInformation { get; set; }
+    public string? LimitedTimePromotionYn { get; set; }
     public decimal? CouponLength { get; set; }
-    public string CouponGenOption { get; set; }
+    public string? CouponGenOption { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

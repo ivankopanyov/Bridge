@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmActivity
 {
-    public string ActCode { get; set; }
-    public string Resort { get; set; }
-    public string ActDesc { get; set; }
-    public string ActType { get; set; }
-    public string ActLongDesc { get; set; }
-    public string CustomerYn { get; set; }
-    public string PostOnEvent { get; set; }
+    public string? ActCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ActDesc { get; set; }
+    public string? ActType { get; set; }
+    public string? ActLongDesc { get; set; }
+    public string? CustomerYn { get; set; }
+    public string? PostOnEvent { get; set; }
     public decimal? SellInterval { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? MinNoOfPeople { get; set; }
     public decimal? MaxNoOfPeople { get; set; }
 

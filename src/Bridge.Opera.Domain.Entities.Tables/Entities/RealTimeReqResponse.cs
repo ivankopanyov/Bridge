@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RealTimeReqResponse
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public string InterfaceId { get; set; }
-    public string Request { get; set; }
-    public string Response { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Request { get; set; }
+    public string? Response { get; set; }
     public DateTime? RequestDate { get; set; }
     public decimal? UserId { get; set; }
-    public string Status { get; set; }
-    public string DatabaseId { get; set; }
-    public string ServiceCode { get; set; }
-    public string WsUrl { get; set; }
-    public string WsFunction { get; set; }
-    public string ErrorMessage { get; set; }
+    public string? Status { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? ServiceCode { get; set; }
+    public string? WsUrl { get; set; }
+    public string? WsFunction { get; set; }
+    public string? ErrorMessage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

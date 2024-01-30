@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidPriorities
 {
-    public string Resort { get; set; }
-    public string PriorityCode { get; set; }
-    public string Description { get; set; }
-    public decimal PrioritySeqNumber { get; set; }
-    public string ColorCode { get; set; }
-    public string ColorCodeDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? Description { get; set; }
+    public decimal? PrioritySeqNumber { get; set; }
+    public string? ColorCode { get; set; }
+    public string? ColorCodeDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

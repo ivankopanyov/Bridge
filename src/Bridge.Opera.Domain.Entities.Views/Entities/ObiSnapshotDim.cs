@@ -2,53 +2,53 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiSnapshotDim
 {
-    public string AllDates { get; set; }
-    public string AllDatesDesc { get; set; }
-    public DateTime DayId { get; set; }
+    public string? AllDates { get; set; }
+    public string? AllDatesDesc { get; set; }
+    public DateTime? DayId { get; set; }
     public decimal? DayTimespan { get; set; }
-    public DateTime DayEndDate { get; set; }
+    public DateTime? DayEndDate { get; set; }
     public decimal? DayOfYear { get; set; }
-    public string DayDesc { get; set; }
-    public string MonthId { get; set; }
-    public string MonthYrId { get; set; }
-    public string MonthDsc { get; set; }
+    public string? DayDesc { get; set; }
+    public string? MonthId { get; set; }
+    public string? MonthYrId { get; set; }
+    public string? MonthDsc { get; set; }
     public decimal? MonthTimespan { get; set; }
     public DateTime? MonthEndDate { get; set; }
     public decimal? MonthOfQuarter { get; set; }
     public decimal? MonthOfYear { get; set; }
-    public string QuarterId { get; set; }
-    public string QuarterDsc { get; set; }
+    public string? QuarterId { get; set; }
+    public string? QuarterDsc { get; set; }
     public decimal? QuarterTimespan { get; set; }
     public DateTime? QuarterEndDate { get; set; }
-    public string QuarterOfYear { get; set; }
-    public string YearId { get; set; }
-    public string YearDsc { get; set; }
+    public string? QuarterOfYear { get; set; }
+    public string? YearId { get; set; }
+    public string? YearDsc { get; set; }
     public decimal? YearTimespan { get; set; }
     public DateTime? YearEndDate { get; set; }
-    public string PriorMonthId { get; set; }
-    public string PriorYearId { get; set; }
-    public string WeekId { get; set; }
-    public string WeekDsc { get; set; }
-    public string WeekOfYear { get; set; }
+    public string? PriorMonthId { get; set; }
+    public string? PriorYearId { get; set; }
+    public string? WeekId { get; set; }
+    public string? WeekDsc { get; set; }
+    public string? WeekOfYear { get; set; }
     public decimal? WeekTimespan { get; set; }
     public DateTime? WeekEndDate { get; set; }
-    public string WeekOfMonth { get; set; }
-    public string PriorWeekId { get; set; }
-    public string DayNoOfWeek { get; set; }
-    public string DayOfWeek { get; set; }
-    public string IsoWeekOfYear { get; set; }
-    public string JulianDayId { get; set; }
-    public string PriorJulianDayId { get; set; }
-    public string WeekEndId { get; set; }
-    public string WeekEndDsc { get; set; }
+    public string? WeekOfMonth { get; set; }
+    public string? PriorWeekId { get; set; }
+    public string? DayNoOfWeek { get; set; }
+    public string? DayOfWeek { get; set; }
+    public string? IsoWeekOfYear { get; set; }
+    public string? JulianDayId { get; set; }
+    public string? PriorJulianDayId { get; set; }
+    public string? WeekEndId { get; set; }
+    public string? WeekEndDsc { get; set; }
     public DateTime? WeekEndMonthEndDate { get; set; }
-    public string WeekEndMonthDsc { get; set; }
+    public string? WeekEndMonthDsc { get; set; }
     public DateTime? PriorYearDayId { get; set; }
-    public string PriorYearWeekId { get; set; }
-    public string PriorYearQuarterId { get; set; }
-    public string PriorYearMonthId { get; set; }
+    public string? PriorYearWeekId { get; set; }
+    public string? PriorYearQuarterId { get; set; }
+    public string? PriorYearMonthId { get; set; }
     public DateTime? LastYearDayId { get; set; }
-    public string MonthName { get; set; }
+    public string? MonthName { get; set; }
     public DateTime? AllEndDate { get; set; }
     public decimal? AllTimeSpan { get; set; }
 

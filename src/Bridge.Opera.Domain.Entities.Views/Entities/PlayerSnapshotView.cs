@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PlayerSnapshotView
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string SharedYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? SharedYn { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? CompBalance { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipNumber { get; set; }
-    public string Vip { get; set; }
-    public string Status { get; set; }
-    public string ResvStatus { get; set; }
-    public string ComputedResvStatus { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? Vip { get; set; }
+    public string? Status { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ComputedResvStatus { get; set; }
     public decimal? Balance { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

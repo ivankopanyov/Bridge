@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsHostsConfLetters
 {
-    public string GdsHost { get; set; }
-    public string LanguageCode { get; set; }
-    public string LetterType { get; set; }
-    public string ConfirmLetterName { get; set; }
+    public string? GdsHost { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? LetterType { get; set; }
+    public string? ConfirmLetterName { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ModuleId { get; set; }
 
     public virtual GdsHosts GdsHostNavigation { get; set; }

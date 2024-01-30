@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvMealVouchers
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string RoomNumber { get; set; }
-    public string BlockCode { get; set; }
-    public string GroupName { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? BlockCode { get; set; }
+    public string? GroupName { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string ProductId { get; set; }
-    public string ProductDesc { get; set; }
-    public string PrintSeperateYn { get; set; }
-    public string AddToRateYn { get; set; }
-    public string CalculationRule { get; set; }
-    public string PostingRhythm { get; set; }
-    public string ResvStatus { get; set; }
-    public string FirstName { get; set; }
-    public string GuestTitle { get; set; }
-    public string RoomClass { get; set; }
+    public string? ProductId { get; set; }
+    public string? ProductDesc { get; set; }
+    public string? PrintSeperateYn { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? FirstName { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string RoomCategory { get; set; }
-    public string RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

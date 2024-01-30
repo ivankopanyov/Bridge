@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateSetView
 {
-    public decimal RateSetId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string SeasonCode { get; set; }
+    public decimal? RateSetId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? SeasonCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Amount1 { get; set; }
     public decimal? Amount2 { get; set; }
     public decimal? Amount3 { get; set; }
@@ -27,13 +27,13 @@ public partial class RateSetView
     public decimal? PackageChildrenStayOver { get; set; }
     public decimal? PackageAdultStayOver { get; set; }
     public decimal? RoomCost { get; set; }
-    public string DepositRequieredYn { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
+    public string? DepositRequieredYn { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
     public byte? MinimumClosingProbability { get; set; }
-    public string RatesActiveYn { get; set; }
-    public string GlobalRateUpdateYn { get; set; }
-    public string CalculationFlag { get; set; }
+    public string? RatesActiveYn { get; set; }
+    public string? GlobalRateUpdateYn { get; set; }
+    public string? CalculationFlag { get; set; }
     public decimal? FlatIncrease { get; set; }
     public decimal? PercentIncrease { get; set; }
     public decimal? RoundToNearest { get; set; }
@@ -43,9 +43,9 @@ public partial class RateSetView
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string RoomTypes { get; set; }
-    public string Products { get; set; }
-    public string SysStatus { get; set; }
+    public string? RoomTypes { get; set; }
+    public string? Products { get; set; }
+    public string? SysStatus { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? ChildCharge1 { get; set; }
     public decimal? ChildCharge2 { get; set; }
@@ -63,7 +63,7 @@ public partial class RateSetView
     public decimal? PerChildOwnCharge2 { get; set; }
     public decimal? PerChildOwnCharge3 { get; set; }
     public decimal? PerChildOwnCharge4 { get; set; }
-    public string RateRule { get; set; }
+    public string? RateRule { get; set; }
     public decimal? Los1Amt { get; set; }
     public decimal? Los2Amt { get; set; }
     public decimal? Los3Amt { get; set; }
@@ -86,40 +86,40 @@ public partial class RateSetView
     public decimal? AdultsThresholdCharge { get; set; }
     public decimal? ChildrenThresholdCharge { get; set; }
     public decimal? OccupantsThresholdCharge { get; set; }
-    public string AdvBaseFltPct { get; set; }
+    public string? AdvBaseFltPct { get; set; }
     public decimal? AdvBaseAmount { get; set; }
-    public string ChildExcThreshold1 { get; set; }
-    public string ChildExcThreshold2 { get; set; }
-    public string ChildExcThreshold3 { get; set; }
-    public string BarYn { get; set; }
-    public string Amount1Type { get; set; }
-    public string DiffPercentage1Yn { get; set; }
-    public string DiffPercentage2Yn { get; set; }
-    public string DiffPercentage3Yn { get; set; }
-    public string DiffPercentage4Yn { get; set; }
-    public string DiffPercentage5Yn { get; set; }
-    public string DiffPercentageExtraAdultYn { get; set; }
+    public string? ChildExcThreshold1 { get; set; }
+    public string? ChildExcThreshold2 { get; set; }
+    public string? ChildExcThreshold3 { get; set; }
+    public string? BarYn { get; set; }
+    public string? Amount1Type { get; set; }
+    public string? DiffPercentage1Yn { get; set; }
+    public string? DiffPercentage2Yn { get; set; }
+    public string? DiffPercentage3Yn { get; set; }
+    public string? DiffPercentage4Yn { get; set; }
+    public string? DiffPercentage5Yn { get; set; }
+    public string? DiffPercentageExtraAdultYn { get; set; }
     public decimal? DiffAmount1 { get; set; }
     public decimal? DiffAmount2 { get; set; }
     public decimal? DiffAmount3 { get; set; }
     public decimal? DiffAmount4 { get; set; }
     public decimal? DiffAmount5 { get; set; }
     public decimal? DiffAmountExtraAdult { get; set; }
-    public string Amount2Type { get; set; }
-    public string Amount3Type { get; set; }
-    public string Amount4Type { get; set; }
-    public string Amount5Type { get; set; }
-    public string ExtraAdultType { get; set; }
-    public string CatPkgPriceCode { get; set; }
+    public string? Amount2Type { get; set; }
+    public string? Amount3Type { get; set; }
+    public string? Amount4Type { get; set; }
+    public string? Amount5Type { get; set; }
+    public string? ExtraAdultType { get; set; }
+    public string? CatPkgPriceCode { get; set; }
     public decimal? BarAmount { get; set; }
-    public string BarFltPct { get; set; }
-    public string BarRounding { get; set; }
+    public string? BarFltPct { get; set; }
+    public string? BarRounding { get; set; }
     public decimal? MinimumAmount1 { get; set; }
     public decimal? MinimumAmount2 { get; set; }
     public decimal? MaximumAmount1 { get; set; }
     public decimal? MaximumAmount2 { get; set; }
-    public string AdvDailyBaseRateCode { get; set; }
-    public string AdvBaseCompareYn { get; set; }
+    public string? AdvDailyBaseRateCode { get; set; }
+    public string? AdvBaseCompareYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

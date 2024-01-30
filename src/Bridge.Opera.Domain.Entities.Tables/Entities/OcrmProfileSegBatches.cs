@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmProfileSegBatches
 {
-    public decimal SegBatchId { get; set; }
-    public DateTime StartDate { get; set; }
+    public decimal? SegBatchId { get; set; }
+    public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Status { get; set; }
-    public decimal SegId { get; set; }
+    public string? Status { get; set; }
+    public decimal? SegId { get; set; }
     public decimal? RecordCount { get; set; }
-    public string JobNameId { get; set; }
+    public string? JobNameId { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
@@ -16,7 +16,7 @@ public partial class OcrmProfileSegBatches
     public DateTime? UpdateDate { get; set; }
     public decimal? ParamListId { get; set; }
     public decimal? TaskInstId { get; set; }
-    public string EspBatchCode { get; set; }
+    public string? EspBatchCode { get; set; }
 
     public virtual OcrmProfileSegHdr Seg { get; set; }
 

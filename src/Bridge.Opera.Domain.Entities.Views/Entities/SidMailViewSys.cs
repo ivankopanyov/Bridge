@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidMailViewSys
 {
-    public decimal SourceId { get; set; }
-    public string SourceType { get; set; }
-    public decimal ViewOrder { get; set; }
-    public string Description { get; set; }
-    public string CharColumn1 { get; set; }
-    public string NumberColumn1 { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? SourceType { get; set; }
+    public decimal? ViewOrder { get; set; }
+    public string? Description { get; set; }
+    public string? CharColumn1 { get; set; }
+    public string? NumberColumn1 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

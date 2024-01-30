@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortProfileStatDaily
 {
-    public string Resort { get; set; }
-    public DateTime StatDate { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StatDate { get; set; }
     public decimal? PropertyPrefCreatedCount { get; set; }
     public decimal? GlobalPrefCreatedCount { get; set; }
     public decimal? InternalNotesCreatedCount { get; set; }
@@ -12,7 +12,7 @@ public partial class ResortProfileStatDaily
     public decimal? InternalNotesACount { get; set; }
     public decimal? InternalNotesArCount { get; set; }
     public DateTime? LastTransferedDate { get; set; }
-    public string TransferredFlgYn { get; set; }
+    public string? TransferredFlgYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

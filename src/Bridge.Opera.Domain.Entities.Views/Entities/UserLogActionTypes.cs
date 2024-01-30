@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class UserLogActionTypes
 {
-    public string ActionTypeDescription { get; set; }
-    public string ActionType { get; set; }
-    public string ActionGroup { get; set; }
-    public string ActionGroupDescription { get; set; }
+    public string? ActionTypeDescription { get; set; }
+    public string? ActionType { get; set; }
+    public string? ActionGroup { get; set; }
+    public string? ActionGroupDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -6,8 +6,8 @@ public partial class ExpSys21ClCreditCard
     public decimal? ViewId { get; set; }
     public decimal? TransId { get; set; }
     public decimal? EntryAmount { get; set; }
-    public string AccountingId { get; set; }
-    public string EntryType { get; set; }
+    public string? AccountingId { get; set; }
+    public string? EntryType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

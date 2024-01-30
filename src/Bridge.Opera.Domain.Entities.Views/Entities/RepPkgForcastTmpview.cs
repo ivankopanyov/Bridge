@@ -6,22 +6,22 @@ public partial class RepPkgForcastTmpview
     public DateTime? InsertDate { get; set; }
     public decimal? Number1 { get; set; }
     public DateTime? StayDate { get; set; }
-    public string StayDateChar { get; set; }
-    public string InResort { get; set; }
-    public string InRepType { get; set; }
+    public string? StayDateChar { get; set; }
+    public string? InResort { get; set; }
+    public string? InRepType { get; set; }
     public DateTime? InFromDate { get; set; }
     public DateTime? InToDate { get; set; }
-    public string InForcastGrpList { get; set; }
-    public string InProductList { get; set; }
-    public string InRoomClassList { get; set; }
-    public string InResvType { get; set; }
-    public string InInclBlocksYn { get; set; }
-    public string InInclResvDetails { get; set; }
+    public string? InForcastGrpList { get; set; }
+    public string? InProductList { get; set; }
+    public string? InRoomClassList { get; set; }
+    public string? InResvType { get; set; }
+    public string? InInclBlocksYn { get; set; }
+    public string? InInclResvDetails { get; set; }
     public decimal? TotalPkgs { get; set; }
-    public string ArrivalDayYn { get; set; }
-    public string StayDay { get; set; }
+    public string? ArrivalDayYn { get; set; }
+    public string? StayDay { get; set; }
     public decimal? PkgQty { get; set; }
-    public string CalculationRule { get; set; }
+    public string? CalculationRule { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Persons { get; set; }
     public decimal? Adults { get; set; }
@@ -31,36 +31,36 @@ public partial class RepPkgForcastTmpview
     public DateTime? TruncDeparture { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string RoomClass { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestName { get; set; }
-    public string DisplayName { get; set; }
-    public string ResvStatus { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResStatus { get; set; }
-    public string RateCode { get; set; }
-    public string Products { get; set; }
-    public string ProductId { get; set; }
-    public string PosNextDayYn { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string ReserveInventoryYn { get; set; }
-    public string PkgForcastGroup { get; set; }
-    public string GroupSellSeq { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? RoomClass { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestName { get; set; }
+    public string? DisplayName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResStatus { get; set; }
+    public string? RateCode { get; set; }
+    public string? Products { get; set; }
+    public string? ProductId { get; set; }
+    public string? PosNextDayYn { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? ReserveInventoryYn { get; set; }
+    public string? PkgForcastGroup { get; set; }
+    public string? GroupSellSeq { get; set; }
     public decimal? RoomsOccupied { get; set; }
     public decimal? AdultsInHouse { get; set; }
     public decimal? ChildrenInHouse { get; set; }
     public decimal? ArrivalPersons { get; set; }
     public decimal? DeparturePersons { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string RowType { get; set; }
-    public string ProductDesc { get; set; }
-    public string DataType { get; set; }
-    public string BookedRoomCategory { get; set; }
-    public string BookedRoomCategoryLabel { get; set; }
-    public string ForecastNextDayYn { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? RowType { get; set; }
+    public string? ProductDesc { get; set; }
+    public string? DataType { get; set; }
+    public string? BookedRoomCategory { get; set; }
+    public string? BookedRoomCategoryLabel { get; set; }
+    public string? ForecastNextDayYn { get; set; }
     public decimal? Children1 { get; set; }
     public decimal? Children2 { get; set; }
     public decimal? Children3 { get; set; }

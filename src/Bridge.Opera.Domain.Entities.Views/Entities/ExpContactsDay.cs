@@ -2,52 +2,52 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpContactsDay
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string TransactionType { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? TransactionType { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? ContactId { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Middle { get; set; }
-    public string Title { get; set; }
-    public string ConAddress1 { get; set; }
-    public string ConAddress2 { get; set; }
-    public string ConAddress3 { get; set; }
-    public string ConAddress4 { get; set; }
-    public string ConCity { get; set; }
-    public string ConState { get; set; }
-    public string ConZipCode { get; set; }
-    public string ConRegion { get; set; }
-    public string ConCountry { get; set; }
-    public string ConPhoneNo { get; set; }
-    public string ConPhoneExt { get; set; }
-    public string Position { get; set; }
-    public string ActiveYn { get; set; }
-    public string EmailYn { get; set; }
-    public string MailList { get; set; }
-    public string Markets { get; set; }
-    public string Language { get; set; }
-    public string Udfc07 { get; set; }
-    public string PrPreferencesSmoking { get; set; }
-    public string PrPreferencesRoom { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? Middle { get; set; }
+    public string? Title { get; set; }
+    public string? ConAddress1 { get; set; }
+    public string? ConAddress2 { get; set; }
+    public string? ConAddress3 { get; set; }
+    public string? ConAddress4 { get; set; }
+    public string? ConCity { get; set; }
+    public string? ConState { get; set; }
+    public string? ConZipCode { get; set; }
+    public string? ConRegion { get; set; }
+    public string? ConCountry { get; set; }
+    public string? ConPhoneNo { get; set; }
+    public string? ConPhoneExt { get; set; }
+    public string? Position { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? EmailYn { get; set; }
+    public string? MailList { get; set; }
+    public string? Markets { get; set; }
+    public string? Language { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? PrPreferencesSmoking { get; set; }
+    public string? PrPreferencesRoom { get; set; }
     public DateTime? InsertDateTime { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDateTime { get; set; }
     public decimal? AccountId { get; set; }
-    public string ConZipExt { get; set; }
-    public string ConPrimaryFax { get; set; }
-    public string ConPrimaryEmail { get; set; }
-    public string Udfc04Code { get; set; }
-    public string Udfc04Desc { get; set; }
-    public string Udfc05Code { get; set; }
-    public string Udfc05Desc { get; set; }
-    public string Udfc06Code { get; set; }
-    public string Udfc06Desc { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipType { get; set; }
+    public string? ConZipExt { get; set; }
+    public string? ConPrimaryFax { get; set; }
+    public string? ConPrimaryEmail { get; set; }
+    public string? Udfc04Code { get; set; }
+    public string? Udfc04Desc { get; set; }
+    public string? Udfc05Code { get; set; }
+    public string? Udfc05Desc { get; set; }
+    public string? Udfc06Code { get; set; }
+    public string? Udfc06Desc { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

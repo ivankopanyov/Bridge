@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationLinkageCnr
 {
-    public string Resort { get; set; }
-    public decimal ConnectToResvNameId { get; set; }
-    public decimal ConnectedResvNameId { get; set; }
-    public string ConnectToRoom { get; set; }
-    public string ConnectedRoom { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ConnectToResvNameId { get; set; }
+    public decimal? ConnectedResvNameId { get; set; }
+    public string? ConnectToRoom { get; set; }
+    public string? ConnectedRoom { get; set; }
 
     public virtual ReservationName ReservationName { get; set; }
     public virtual ReservationName ReservationNameNavigation { get; set; }

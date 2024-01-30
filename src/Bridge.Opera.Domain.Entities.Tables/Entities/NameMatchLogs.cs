@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameMatchLogs
 {
-    public decimal LogId { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string NameType { get; set; }
+    public decimal? LogId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
     public DateTime? RunDate { get; set; }
     public decimal? LastNameId { get; set; }
     public DateTime? LastMatchDate { get; set; }
-    public string RuleCode { get; set; }
+    public string? RuleCode { get; set; }
     public decimal? MatchesFound { get; set; }
     public decimal? ProfilesMerged { get; set; }
     public DateTime? InsertDate { get; set; }

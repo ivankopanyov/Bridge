@@ -9,25 +9,25 @@ public partial class ResortCommission
         ResortCommissionDetailRes = new HashSet<ResortCommissionDetailRes>();
     }
 
-    public string Resort { get; set; }
-    public string CommissionCode { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? SellSequence { get; set; }
     public decimal? VatAmount { get; set; }
-    public string CommissionFlatPercentage { get; set; }
-    public string CommissionCalcRule { get; set; }
+    public string? CommissionFlatPercentage { get; set; }
+    public string? CommissionCalcRule { get; set; }
     public decimal? Amount { get; set; }
-    public string PerNight { get; set; }
-    public string PerStay { get; set; }
-    public string CommType { get; set; }
-    public string HoldArYn { get; set; }
-    public string HoldPrepaidYn { get; set; }
-    public string HoldAlwaysYn { get; set; }
+    public string? PerNight { get; set; }
+    public string? PerStay { get; set; }
+    public string? CommType { get; set; }
+    public string? HoldArYn { get; set; }
+    public string? HoldPrepaidYn { get; set; }
+    public string? HoldAlwaysYn { get; set; }
 
     public virtual ICollection<RateHeader> RateHeader { get; set; }
     public virtual ICollection<ResortCommissionDetail> ResortCommissionDetail { get; set; }

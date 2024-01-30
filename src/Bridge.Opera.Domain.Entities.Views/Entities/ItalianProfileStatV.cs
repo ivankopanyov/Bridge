@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ItalianProfileStatV
 {
-    public decimal ResvNameId { get; set; }
-    public decimal NameId { get; set; }
-    public string IsoCountry { get; set; }
-    public string Country { get; set; }
-    public string CountryName { get; set; }
-    public string State { get; set; }
-    public string StateName { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? IsoCountry { get; set; }
+    public string? Country { get; set; }
+    public string? CountryName { get; set; }
+    public string? State { get; set; }
+    public string? StateName { get; set; }
     public decimal? NoOfSharers { get; set; }
     public decimal? Adults { get; set; }
-    public string Name { get; set; }
-    public string Room { get; set; }
+    public string? Name { get; set; }
+    public string? Room { get; set; }
     public decimal? AddressId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepGuestLedgerDetail
 {
-    public decimal ResvNameId { get; set; }
-    public string ResvStatus { get; set; }
-    public string Arrival { get; set; }
-    public string Departure { get; set; }
-    public string PaymentMethod { get; set; }
-    public string FullName { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? Arrival { get; set; }
+    public string? Departure { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? FullName { get; set; }
     public decimal? Persons { get; set; }
     public decimal? ShareAmount { get; set; }
-    public string RateCode { get; set; }
-    public string Room { get; set; }
+    public string? RateCode { get; set; }
+    public string? Room { get; set; }
     public decimal? Credits { get; set; }
     public decimal? Fixed { get; set; }
     public decimal? Extras { get; set; }

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AgendaResource
 {
-    public string ResourceCode { get; set; }
-    public string Description { get; set; }
-    public string LanguageCode { get; set; }
+    public string? ResourceCode { get; set; }
+    public string? Description { get; set; }
+    public string? LanguageCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

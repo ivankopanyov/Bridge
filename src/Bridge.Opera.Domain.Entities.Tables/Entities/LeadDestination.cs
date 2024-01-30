@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LeadDestination
 {
-    public decimal LeadId { get; set; }
-    public string LeadResort { get; set; }
-    public string LeadDestination1 { get; set; }
-    public string DestinationDesc { get; set; }
-    public string DestinationLocation { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? LeadId { get; set; }
+    public string? LeadResort { get; set; }
+    public string? LeadDestination1 { get; set; }
+    public string? DestinationDesc { get; set; }
+    public string? DestinationLocation { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
     public virtual AllotmentHeader Lead { get; set; }
 

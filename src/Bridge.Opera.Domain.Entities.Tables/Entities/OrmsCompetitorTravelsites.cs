@@ -9,18 +9,18 @@ public partial class OrmsCompetitorTravelsites
         OrmsCompetitorRoomtypes = new HashSet<OrmsCompetitorRoomtypes>();
     }
 
-    public string Resort { get; set; }
-    public string ShopperCode { get; set; }
-    public string CompetitorResort { get; set; }
-    public string TravelsiteCode { get; set; }
-    public string TravelsiteName { get; set; }
-    public string TravelsiteDesc { get; set; }
-    public string OperaChannel { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ChannelYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ShopperCode { get; set; }
+    public string? CompetitorResort { get; set; }
+    public string? TravelsiteCode { get; set; }
+    public string? TravelsiteName { get; set; }
+    public string? TravelsiteDesc { get; set; }
+    public string? OperaChannel { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ChannelYn { get; set; }
 
     public virtual OrmsResortCompetitors OrmsResortCompetitors { get; set; }
     public virtual ICollection<OrmsCompetitorData> OrmsCompetitorData { get; set; }

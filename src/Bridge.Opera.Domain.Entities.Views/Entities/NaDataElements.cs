@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NaDataElements
 {
-    public decimal ActionInstanceId { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
-    public decimal NaDataElementId { get; set; }
+    public decimal? NaDataElementId { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string ElementType { get; set; }
-    public string ElementRole { get; set; }
+    public string? ElementType { get; set; }
+    public string? ElementRole { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailVirtualFields
 {
-    public decimal FieldId { get; set; }
-    public decimal SourceId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string Description { get; set; }
-    public string DataType { get; set; }
-    public string Realisation { get; set; }
-    public string ParameterUseYn { get; set; }
-    public string ParameterYn { get; set; }
-    public string ReplaceableYn { get; set; }
-    public string ConditionYn { get; set; }
-    public string CalculatedYn { get; set; }
-    public string FieldCode { get; set; }
-    public string SubqueryYn { get; set; }
-    public string TagYn { get; set; }
+    public decimal? FieldId { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? Description { get; set; }
+    public string? DataType { get; set; }
+    public string? Realisation { get; set; }
+    public string? ParameterUseYn { get; set; }
+    public string? ParameterYn { get; set; }
+    public string? ReplaceableYn { get; set; }
+    public string? ConditionYn { get; set; }
+    public string? CalculatedYn { get; set; }
+    public string? FieldCode { get; set; }
+    public string? SubqueryYn { get; set; }
+    public string? TagYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

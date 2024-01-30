@@ -4,20 +4,20 @@ public partial class ExpSys21Base
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string HotelCode { get; set; }
-    public string ResortType { get; set; }
-    public string HotelName { get; set; }
-    public string OperaVersion { get; set; }
-    public string CurrencyCode { get; set; }
-    public string HotelCity { get; set; }
-    public string HotelStreet { get; set; }
-    public string HotelAddress1 { get; set; }
-    public string HotelAddress2 { get; set; }
-    public string HotelPostalCode { get; set; }
-    public string HotelTelephone { get; set; }
-    public string HotelCountryCode { get; set; }
-    public string HotelState { get; set; }
-    public string PmsType { get; set; }
+    public string? HotelCode { get; set; }
+    public string? ResortType { get; set; }
+    public string? HotelName { get; set; }
+    public string? OperaVersion { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? HotelCity { get; set; }
+    public string? HotelStreet { get; set; }
+    public string? HotelAddress1 { get; set; }
+    public string? HotelAddress2 { get; set; }
+    public string? HotelPostalCode { get; set; }
+    public string? HotelTelephone { get; set; }
+    public string? HotelCountryCode { get; set; }
+    public string? HotelState { get; set; }
+    public string? PmsType { get; set; }
     public decimal? UtcOffsetMinutes { get; set; }
     public decimal? HilstarInd { get; set; }
     public DateTime? ConsideredDate { get; set; }

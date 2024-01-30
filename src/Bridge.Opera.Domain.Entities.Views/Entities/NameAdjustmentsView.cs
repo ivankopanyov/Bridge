@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameAdjustmentsView
 {
-    public decimal NameId { get; set; }
-    public string AdjustmentType { get; set; }
-    public string AdjustmentCode { get; set; }
+    public decimal? NameId { get; set; }
+    public string? AdjustmentType { get; set; }
+    public string? AdjustmentCode { get; set; }
     public decimal? AdjustmentAmount { get; set; }
-    public string FormattedAdjAmount { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? FormattedAdjAmount { get; set; }
+    public string? CurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

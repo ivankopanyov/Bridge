@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpMgrRepByRoomClass
 {
-    public string RoomClass { get; set; }
+    public string? RoomClass { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? DepPrsDay { get; set; }
     public decimal? DepRoomDay { get; set; }

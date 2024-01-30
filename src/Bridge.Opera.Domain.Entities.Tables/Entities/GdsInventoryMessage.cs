@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsInventoryMessage
 {
-    public string EchoToken { get; set; }
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public string RoomCategory { get; set; }
+    public string? EchoToken { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? PropRoomAvail { get; set; }
     public decimal? RoomAvail { get; set; }
-    public string BlockCode { get; set; }
-    public string Status { get; set; }
-    public string ErrorText { get; set; }
-    public string Source { get; set; }
+    public string? BlockCode { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorText { get; set; }
+    public string? Source { get; set; }
     public decimal? RetryCount { get; set; }
-    public string ErrorCode { get; set; }
-    public string SubCode { get; set; }
-    public string OldEchoToken { get; set; }
-    public string ResendYn { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? SubCode { get; set; }
+    public string? OldEchoToken { get; set; }
+    public string? ResendYn { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? ResendCount { get; set; }
-    public decimal BooklimitSeqId { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? BooklimitSeqId { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? BlockAvail { get; set; }
-    public string BookinglimitType { get; set; }
-    public string ResyncYn { get; set; }
+    public string? BookinglimitType { get; set; }
+    public string? ResyncYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

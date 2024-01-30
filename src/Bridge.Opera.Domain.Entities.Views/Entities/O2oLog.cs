@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class O2oLog
 {
-    public string ProcId { get; set; }
-    public decimal LogLine { get; set; }
-    public string EntryTime { get; set; }
-    public string LogTxt { get; set; }
-    public string O2oMigId { get; set; }
+    public string? ProcId { get; set; }
+    public decimal? LogLine { get; set; }
+    public string? EntryTime { get; set; }
+    public string? LogTxt { get; set; }
+    public string? O2oMigId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

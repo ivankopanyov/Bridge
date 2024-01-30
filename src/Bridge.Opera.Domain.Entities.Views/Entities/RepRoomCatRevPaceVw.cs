@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepRoomCatRevPaceVw
 {
     public decimal? ReportId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
-    public string CatOnlyYn { get; set; }
+    public string? CatOnlyYn { get; set; }
     public decimal? Owner { get; set; }
     public decimal? RmsOwner { get; set; }
     public decimal? CatOwner { get; set; }
@@ -34,7 +34,7 @@ public partial class RepRoomCatRevPaceVw
     public decimal? OtbStat2StlyRev { get; set; }
     public decimal? OtbStat3StlyRms { get; set; }
     public decimal? OtbStat3StlyRev { get; set; }
-    public string CatBudgetYn { get; set; }
+    public string? CatBudgetYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

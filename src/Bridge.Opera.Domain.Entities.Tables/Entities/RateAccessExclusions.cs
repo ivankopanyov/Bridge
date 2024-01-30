@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateAccessExclusions
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string AccessSourceType { get; set; }
-    public string AccessSourceValue { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? AccessSourceType { get; set; }
+    public string? AccessSourceValue { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string PermModify { get; set; }
-    public string PermCancel { get; set; }
-    public string HideFromAvailYn { get; set; }
-    public string PermCreate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? PermModify { get; set; }
+    public string? PermCancel { get; set; }
+    public string? HideFromAvailYn { get; set; }
+    public string? PermCreate { get; set; }
 
     public virtual RateHeader R { get; set; }
 

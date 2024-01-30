@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpHskRsActionData
 {
-    public string AttendantId { get; set; }
-    public string AttendantName { get; set; }
-    public string JobTitleCode { get; set; }
-    public string Room { get; set; }
-    public string BlockCode { get; set; }
-    public string TimeIn { get; set; }
-    public string TimeOut { get; set; }
+    public string? AttendantId { get; set; }
+    public string? AttendantName { get; set; }
+    public string? JobTitleCode { get; set; }
+    public string? Room { get; set; }
+    public string? BlockCode { get; set; }
+    public string? TimeIn { get; set; }
+    public string? TimeOut { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

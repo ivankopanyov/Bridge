@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class WorkOrdersView
 {
-    public decimal WoNumber { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public decimal CreatedBy { get; set; }
-    public string ProblemDesc { get; set; }
+    public decimal? WoNumber { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public decimal? CreatedBy { get; set; }
+    public string? ProblemDesc { get; set; }
     public decimal? AssignedBy { get; set; }
     public DateTime? AssignedOnDate { get; set; }
     public decimal? AssignedTo { get; set; }
@@ -18,48 +18,48 @@ public partial class WorkOrdersView
     public DateTime? DueDate { get; set; }
     public decimal? TotalLaborCost { get; set; }
     public decimal? TotalPartsCost { get; set; }
-    public string UserExt { get; set; }
-    public string DeptOfAction { get; set; }
-    public string GuestRoomYn { get; set; }
-    public string GuestOriginatedYn { get; set; }
-    public string PriorityChangedYn { get; set; }
+    public string? UserExt { get; set; }
+    public string? DeptOfAction { get; set; }
+    public string? GuestRoomYn { get; set; }
+    public string? GuestOriginatedYn { get; set; }
+    public string? PriorityChangedYn { get; set; }
     public decimal? EstTimeToComplete { get; set; }
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string ReasonCode { get; set; }
-    public string LocationCode { get; set; }
-    public string PriorityCode { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? PriorityCode { get; set; }
     public decimal? ParentWoNumber { get; set; }
-    public string StatusCode { get; set; }
+    public string? StatusCode { get; set; }
     public decimal? TaskCode { get; set; }
     public decimal? TaskitemNumber { get; set; }
-    public string TypeCode { get; set; }
-    public string PlantItemCode { get; set; }
-    public string EstUotCode { get; set; }
+    public string? TypeCode { get; set; }
+    public string? PlantItemCode { get; set; }
+    public string? EstUotCode { get; set; }
     public decimal? DependingOnWoNumber { get; set; }
-    public string MasterSub { get; set; }
-    public string Room { get; set; }
-    public string Notes { get; set; }
-    public string LocationDesc { get; set; }
-    public string PriorityDesc { get; set; }
-    public string WorkCategoryDesc { get; set; }
-    public string PlantItemDesc { get; set; }
-    public string StatusDesc { get; set; }
-    public string ReasonDesc { get; set; }
-    public string TaskDesc { get; set; }
-    public string EstUotDesc { get; set; }
-    public string CreatedByUser { get; set; }
-    public string TakenByUser { get; set; }
-    public string AssignedByUser { get; set; }
-    public string AssignedToUser { get; set; }
-    public string ReleasedByUser { get; set; }
-    public string CompletedByUser { get; set; }
+    public string? MasterSub { get; set; }
+    public string? Room { get; set; }
+    public string? Notes { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? PriorityDesc { get; set; }
+    public string? WorkCategoryDesc { get; set; }
+    public string? PlantItemDesc { get; set; }
+    public string? StatusDesc { get; set; }
+    public string? ReasonDesc { get; set; }
+    public string? TaskDesc { get; set; }
+    public string? EstUotDesc { get; set; }
+    public string? CreatedByUser { get; set; }
+    public string? TakenByUser { get; set; }
+    public string? AssignedByUser { get; set; }
+    public string? AssignedToUser { get; set; }
+    public string? ReleasedByUser { get; set; }
+    public string? CompletedByUser { get; set; }
     public decimal? DurationWorked { get; set; }
-    public string DurationWorkedUot { get; set; }
-    public string DurationWorkedUotDesc { get; set; }
-    public string ColorCode { get; set; }
+    public string? DurationWorkedUot { get; set; }
+    public string? DurationWorkedUotDesc { get; set; }
+    public string? ColorCode { get; set; }
     public decimal? LatestUserId { get; set; }
-    public string LatestUser { get; set; }
+    public string? LatestUser { get; set; }
     public DateTime? LatestDate { get; set; }
     public decimal? Age { get; set; }
     public decimal? PrioritySeqNumber { get; set; }
@@ -68,14 +68,14 @@ public partial class WorkOrdersView
     public DateTime? EndDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string PrivateYn { get; set; }
-    public string FoRoomStatus { get; set; }
-    public string GuestInRoomYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? PrivateYn { get; set; }
+    public string? FoRoomStatus { get; set; }
+    public string? GuestInRoomYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public DateTime? ShowOn { get; set; }
-    public string TypeDisplay { get; set; }
-    public string FoStatusDisplay { get; set; }
+    public string? TypeDisplay { get; set; }
+    public string? FoStatusDisplay { get; set; }
     public decimal? OntimeColorCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

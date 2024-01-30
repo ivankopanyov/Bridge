@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofTranslation2
 {
-    public string Resort { get; set; }
-    public string TransCode { get; set; }
-    public string BofTransCode { get; set; }
-    public decimal BofIntfCode { get; set; }
-    public decimal BofTransId { get; set; }
-    public string BofDataType { get; set; }
+    public string? Resort { get; set; }
+    public string? TransCode { get; set; }
+    public string? BofTransCode { get; set; }
+    public decimal? BofIntfCode { get; set; }
+    public decimal? BofTransId { get; set; }
+    public string? BofDataType { get; set; }
     public decimal? BofDataLength { get; set; }
-    public string BofTransText { get; set; }
-    public string InclDeptCodeYn { get; set; }
-    public string InclSubgroupYn { get; set; }
-    public string InclGroupYn { get; set; }
-    public string InclMarketYn { get; set; }
-    public string InclCountryYn { get; set; }
+    public string? BofTransText { get; set; }
+    public string? InclDeptCodeYn { get; set; }
+    public string? InclSubgroupYn { get; set; }
+    public string? InclGroupYn { get; set; }
+    public string? InclMarketYn { get; set; }
+    public string? InclCountryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

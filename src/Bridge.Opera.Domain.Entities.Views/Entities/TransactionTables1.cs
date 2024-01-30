@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TransactionTables1
 {
-    public string TableName { get; set; }
-    public string TableOwner { get; set; }
-    public string DownloadType { get; set; }
-    public string WhereClause { get; set; }
+    public string? TableName { get; set; }
+    public string? TableOwner { get; set; }
+    public string? DownloadType { get; set; }
+    public string? WhereClause { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

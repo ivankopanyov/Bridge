@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsAllotmentQuotResp
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string YieldCategory { get; set; }
-    public string RespType { get; set; }
-    public decimal Rooms { get; set; }
-    public decimal RespAmount { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? RespType { get; set; }
+    public decimal? Rooms { get; set; }
+    public decimal? RespAmount { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual OrmsAllotmentQuotDtl OrmsAllotmentQuotDtl { get; set; }
 

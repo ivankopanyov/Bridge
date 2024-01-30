@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidEvAuditConfigSys
 {
-    public string Tablename { get; set; }
-    public string Fieldname { get; set; }
-    public string InsertYn { get; set; }
-    public string UpdateYn { get; set; }
-    public string DeleteYn { get; set; }
-    public string ResourceType { get; set; }
+    public string? Tablename { get; set; }
+    public string? Fieldname { get; set; }
+    public string? InsertYn { get; set; }
+    public string? UpdateYn { get; set; }
+    public string? DeleteYn { get; set; }
+    public string? ResourceType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

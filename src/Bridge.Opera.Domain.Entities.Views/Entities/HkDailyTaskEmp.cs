@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkDailyTaskEmp
 {
-    public decimal TaskSeqNo { get; set; }
-    public string EmpId { get; set; }
-    public string EmpInstructions { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? EmpId { get; set; }
+    public string? EmpInstructions { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

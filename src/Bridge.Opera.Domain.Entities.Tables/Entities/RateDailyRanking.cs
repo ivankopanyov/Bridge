@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateDailyRanking
 {
-    public decimal RateDailyRankingId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public DateTime BookingBeginDate { get; set; }
-    public DateTime BookingEndDate { get; set; }
+    public decimal? RateDailyRankingId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public DateTime? BookingBeginDate { get; set; }
+    public DateTime? BookingEndDate { get; set; }
     public decimal? RankValue { get; set; }
     public decimal? RankAdjustmentFactor { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
 

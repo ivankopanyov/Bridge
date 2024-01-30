@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsSignedDocs
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Type { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Type { get; set; }
     public int? FolioView { get; set; }
-    public string FileType { get; set; }
+    public string? FileType { get; set; }
     public byte[] FileData { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }

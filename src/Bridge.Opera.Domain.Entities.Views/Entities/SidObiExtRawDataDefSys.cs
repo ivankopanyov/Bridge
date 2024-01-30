@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidObiExtRawDataDefSys
 {
-    public string DatamartName { get; set; }
-    public string RawDataName { get; set; }
-    public string Description { get; set; }
-    public string ExtName { get; set; }
-    public string OperaTableName { get; set; }
-    public string FileNameLike { get; set; }
-    public string XmlFormatYn { get; set; }
-    public string ExtHdrName { get; set; }
+    public string? DatamartName { get; set; }
+    public string? RawDataName { get; set; }
+    public string? Description { get; set; }
+    public string? ExtName { get; set; }
+    public string? OperaTableName { get; set; }
+    public string? FileNameLike { get; set; }
+    public string? XmlFormatYn { get; set; }
+    public string? ExtHdrName { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

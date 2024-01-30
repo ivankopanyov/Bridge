@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileProdStatistics
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
+    public string? NameType { get; set; }
     public decimal? MasterNameId { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? StayMonth { get; set; }
     public decimal? StayYear { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? IndRoomNights { get; set; }
     public decimal? IndRoomRevenue { get; set; }
     public decimal? IndFoodRevenue { get; set; }

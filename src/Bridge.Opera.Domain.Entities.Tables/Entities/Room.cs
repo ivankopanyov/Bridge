@@ -14,64 +14,64 @@ public partial class Room
         RoomVnPool = new HashSet<RoomVnPool>();
     }
 
-    public string Resort { get; set; }
-    public string Room1 { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomStatus { get; set; }
-    public string SuiteType { get; set; }
+    public string? Resort { get; set; }
+    public string? Room1 { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? SuiteType { get; set; }
     public DateTime? RmStatusToDate { get; set; }
-    public string RmStatusReason { get; set; }
-    public string RmStatusRemarks { get; set; }
-    public string ReturnStatus { get; set; }
+    public string? RmStatusReason { get; set; }
+    public string? RmStatusRemarks { get; set; }
+    public string? ReturnStatus { get; set; }
     public decimal? Credits { get; set; }
     public decimal? CreditsDeparture { get; set; }
-    public string FoStatus { get; set; }
+    public string? FoStatus { get; set; }
     public decimal? FoPers { get; set; }
-    public string FrontDeskLocation { get; set; }
+    public string? FrontDeskLocation { get; set; }
     public decimal? SquareUnits { get; set; }
-    public string SquareUnitMeasurement { get; set; }
-    public string Floor { get; set; }
-    public string Unit { get; set; }
-    public string PhoneNumber { get; set; }
+    public string? SquareUnitMeasurement { get; set; }
+    public string? Floor { get; set; }
+    public string? Unit { get; set; }
+    public string? PhoneNumber { get; set; }
     public decimal? OrderBy { get; set; }
-    public string KeyCode { get; set; }
-    public string Pcode { get; set; }
-    public string Building { get; set; }
+    public string? KeyCode { get; set; }
+    public string? Pcode { get; set; }
+    public string? Building { get; set; }
     public decimal? MaxOccupancy { get; set; }
     public decimal? MinOccupancy { get; set; }
     public decimal? LastMeterReading { get; set; }
-    public string AssignStatus { get; set; }
+    public string? AssignStatus { get; set; }
     public DateTime? RmStatusFromDate { get; set; }
-    public string AssignType { get; set; }
-    public string AssignReason { get; set; }
-    public string OccupancyCondition { get; set; }
-    public string HkStatus { get; set; }
+    public string? AssignType { get; set; }
+    public string? AssignReason { get; set; }
+    public string? OccupancyCondition { get; set; }
+    public string? HkStatus { get; set; }
     public decimal? HkPers { get; set; }
-    public string HkInspFlag { get; set; }
+    public string? HkInspFlag { get; set; }
     public DateTime? HkInspDate { get; set; }
-    public string HkInspEmpId { get; set; }
-    public string HkSectionCode { get; set; }
-    public string RateCode { get; set; }
+    public string? HkInspEmpId { get; set; }
+    public string? HkSectionCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RackRate { get; set; }
-    public string HkEveningSection { get; set; }
+    public string? HkEveningSection { get; set; }
     public decimal? RoomUseCount { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? AssignUid { get; set; }
     public DateTime? AssignDate { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public decimal? OccupantDiscrepancy { get; set; }
     public decimal? PersonDiscrepancy { get; set; }
-    public string SmokingPreference { get; set; }
-    public string PseudoYn { get; set; }
-    public string MeetingroomYn { get; set; }
-    public string Remarks { get; set; }
-    public string ShareableYn { get; set; }
-    public string DiaryDisplayYn { get; set; }
-    public string DiaryName { get; set; }
+    public string? SmokingPreference { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? MeetingroomYn { get; set; }
+    public string? Remarks { get; set; }
+    public string? ShareableYn { get; set; }
+    public string? DiaryDisplayYn { get; set; }
+    public string? DiaryName { get; set; }
     public decimal? AreaF { get; set; }
     public decimal? AreaM { get; set; }
     public decimal? LengthF { get; set; }
@@ -85,45 +85,45 @@ public partial class Room
     public decimal? WeightF { get; set; }
     public decimal? WeightM { get; set; }
     public decimal? ImageId { get; set; }
-    public string Light { get; set; }
-    public string Facing { get; set; }
-    public string Doors { get; set; }
-    public string LoudspeakersYn { get; set; }
+    public string? Light { get; set; }
+    public string? Facing { get; set; }
+    public string? Doors { get; set; }
+    public string? LoudspeakersYn { get; set; }
     public decimal? TvRadioSockets { get; set; }
     public decimal? TranslationboothNum { get; set; }
     public decimal? MicrophoneSockets { get; set; }
-    public string MicrophoneSocketTypes { get; set; }
-    public string HandicapYn { get; set; }
-    public string ComboYn { get; set; }
-    public string MeetingroomType { get; set; }
-    public string TurndownYn { get; set; }
+    public string? MicrophoneSocketTypes { get; set; }
+    public string? HandicapYn { get; set; }
+    public string? ComboYn { get; set; }
+    public string? MeetingroomType { get; set; }
+    public string? TurndownYn { get; set; }
     public decimal? MaxSharedGroups { get; set; }
     public decimal? OrderBy2 { get; set; }
     public decimal? OrderBy3 { get; set; }
     public decimal? OrderBy4 { get; set; }
     public decimal? OrderBy5 { get; set; }
-    public string SetupNotes { get; set; }
+    public string? SetupNotes { get; set; }
     public decimal? CreditsPickup { get; set; }
-    public string ServiceStatus { get; set; }
-    public string ForceAlternateYn { get; set; }
+    public string? ServiceStatus { get; set; }
+    public string? ForceAlternateYn { get; set; }
     public decimal? CreditsTurndown { get; set; }
     public decimal? FullUtilizationTime { get; set; }
-    public string ExcludedEventTypes { get; set; }
-    public string OnlinePrintingYn { get; set; }
+    public string? ExcludedEventTypes { get; set; }
+    public string? OnlinePrintingYn { get; set; }
     public DateTime? HoldDateTime { get; set; }
     public decimal? HoldUser { get; set; }
-    public string HoldType { get; set; }
-    public string Comments { get; set; }
+    public string? HoldType { get; set; }
+    public string? Comments { get; set; }
     public decimal? NoOfBeds { get; set; }
     public DateTime? LastCheckOutDate { get; set; }
-    public string WebBookingYn { get; set; }
+    public string? WebBookingYn { get; set; }
     public decimal? MinAdvance { get; set; }
     public decimal? MaxAdvance { get; set; }
     public decimal? MinimumRevenue { get; set; }
-    public string OvosUnitYn { get; set; }
+    public string? OvosUnitYn { get; set; }
     public decimal? MaxCapacity { get; set; }
-    public string VisibleOnWebYn { get; set; }
-    public string OvosGradeCode { get; set; }
+    public string? VisibleOnWebYn { get; set; }
+    public string? OvosGradeCode { get; set; }
 
     public virtual ResortRoomClasses R { get; set; }
     public virtual ResortAssignmentReasons ResortAssignmentReasons { get; set; }

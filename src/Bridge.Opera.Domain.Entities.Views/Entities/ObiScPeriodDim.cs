@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScPeriodDim
 {
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Year { get; set; }
-    public string PeriodCode { get; set; }
-    public string Resort { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Year { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

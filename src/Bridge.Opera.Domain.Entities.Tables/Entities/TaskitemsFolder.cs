@@ -7,10 +7,10 @@ public partial class TaskitemsFolder
         Taskitems = new HashSet<Taskitems>();
     }
 
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string FolderName { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? FolderName { get; set; }
+    public string? Description { get; set; }
 
     public virtual ICollection<Taskitems> Taskitems { get; set; }
 

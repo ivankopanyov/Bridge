@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidOperaMastersSys
 {
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string ColumnType { get; set; }
-    public string SequenceName { get; set; }
-    public string Remark { get; set; }
-    public string Expression { get; set; }
-    public string Filter { get; set; }
-    public string RegenerateYn { get; set; }
-    public string MappingExpression { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? ColumnType { get; set; }
+    public string? SequenceName { get; set; }
+    public string? Remark { get; set; }
+    public string? Expression { get; set; }
+    public string? Filter { get; set; }
+    public string? RegenerateYn { get; set; }
+    public string? MappingExpression { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempV5iBlockinfo
 {
-    public string Hotelcode { get; set; }
-    public decimal Groupid { get; set; }
-    public string Blockcode { get; set; }
-    public string Groupname { get; set; }
+    public string? Hotelcode { get; set; }
+    public decimal? Groupid { get; set; }
+    public string? Blockcode { get; set; }
+    public string? Groupname { get; set; }
     public decimal? Mastergroupid { get; set; }
-    public string Status { get; set; }
-    public string Mktseg { get; set; }
+    public string? Status { get; set; }
+    public string? Mktseg { get; set; }
     public DateTime? Arrdate { get; set; }
     public DateTime? Depdate { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Grouptype { get; set; }
+    public string? Grouptype { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

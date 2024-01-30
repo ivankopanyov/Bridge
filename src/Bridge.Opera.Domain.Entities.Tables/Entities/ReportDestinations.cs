@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReportDestinations
 {
-    public string ReportId { get; set; }
-    public decimal Destseq { get; set; }
-    public string Desttype { get; set; }
-    public string Destname { get; set; }
-    public string Desturl { get; set; }
+    public string? ReportId { get; set; }
+    public decimal? Destseq { get; set; }
+    public string? Desttype { get; set; }
+    public string? Destname { get; set; }
+    public string? Desturl { get; set; }
     public decimal? Copies { get; set; }
-    public string Format { get; set; }
-    public string DeliveryType { get; set; }
-    public string Subject { get; set; }
-    public string BodyText { get; set; }
-    public string DeliveryResort { get; set; }
-    public string ProcessedYn { get; set; }
-    public string AttachmentName { get; set; }
-    public string FromEmail { get; set; }
-    public string WatermarkMode { get; set; }
-    public string WatermarkText { get; set; }
+    public string? Format { get; set; }
+    public string? DeliveryType { get; set; }
+    public string? Subject { get; set; }
+    public string? BodyText { get; set; }
+    public string? DeliveryResort { get; set; }
+    public string? ProcessedYn { get; set; }
+    public string? AttachmentName { get; set; }
+    public string? FromEmail { get; set; }
+    public string? WatermarkMode { get; set; }
+    public string? WatermarkText { get; set; }
     public decimal? WatermarkXpos { get; set; }
     public decimal? WatermarkYpos { get; set; }
     public decimal? WatermarkAngle { get; set; }
     public decimal? WatermarkColorR { get; set; }
     public decimal? WatermarkColorG { get; set; }
     public decimal? WatermarkColorB { get; set; }
-    public string WatermarkFont { get; set; }
+    public string? WatermarkFont { get; set; }
     public decimal? WatermarkFontSize { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

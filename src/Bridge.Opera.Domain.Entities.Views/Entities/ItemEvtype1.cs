@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ItemEvtype1
 {
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public string EventType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public string? EventType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

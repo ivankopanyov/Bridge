@@ -7,27 +7,27 @@ public partial class ActTrace
         ActTraceDetail = new HashSet<ActTraceDetail>();
     }
 
-    public decimal TraceId { get; set; }
-    public string Tracecode { get; set; }
-    public string Tracegroup { get; set; }
-    public string Tablename { get; set; }
-    public string Fieldname { get; set; }
-    public string OnCreateYn { get; set; }
-    public string OnChangeYn { get; set; }
-    public string OnDeleteYn { get; set; }
-    public string Resort { get; set; }
-    public string ActType { get; set; }
-    public string ActPurpose { get; set; }
-    public string ActDate { get; set; }
+    public decimal? TraceId { get; set; }
+    public string? Tracecode { get; set; }
+    public string? Tracegroup { get; set; }
+    public string? Tablename { get; set; }
+    public string? Fieldname { get; set; }
+    public string? OnCreateYn { get; set; }
+    public string? OnChangeYn { get; set; }
+    public string? OnDeleteYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ActType { get; set; }
+    public string? ActPurpose { get; set; }
+    public string? ActDate { get; set; }
     public DateTime? ActTime { get; set; }
     public decimal? ActSrep { get; set; }
-    public string Condition { get; set; }
-    public string Operator { get; set; }
+    public string? Condition { get; set; }
+    public string? Operator { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ActClass { get; set; }
+    public string? ActClass { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual ResortActivityTypes ResortActivityTypes { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpMappingLinks
 {
-    public decimal ExpMappingId { get; set; }
-    public string MappingCode { get; set; }
-    public string LinkedCode { get; set; }
-    public string ExportValue { get; set; }
+    public decimal? ExpMappingId { get; set; }
+    public string? MappingCode { get; set; }
+    public string? LinkedCode { get; set; }
+    public string? ExportValue { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

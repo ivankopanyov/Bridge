@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAuditDetails
 {
-    public string GdsMessageNo { get; set; }
-    public string MessageType { get; set; }
-    public string MessageSwitch { get; set; }
-    public string ChannelName { get; set; }
-    public string GdsProperty { get; set; }
-    public string GdsRateCode { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public string Corpacctnos { get; set; }
-    public string Creditcardinfo { get; set; }
-    public string Specialrequest { get; set; }
-    public string Guestinfo { get; set; }
+    public string? GdsMessageNo { get; set; }
+    public string? MessageType { get; set; }
+    public string? MessageSwitch { get; set; }
+    public string? ChannelName { get; set; }
+    public string? GdsProperty { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public string? Corpacctnos { get; set; }
+    public string? Creditcardinfo { get; set; }
+    public string? Specialrequest { get; set; }
+    public string? Guestinfo { get; set; }
     public DateTime? Arrivaldate { get; set; }
     public DateTime? Departuredate { get; set; }
-    public string EventStatus { get; set; }
-    public string Eventdescription { get; set; }
-    public string Errormessage { get; set; }
+    public string? EventStatus { get; set; }
+    public string? Eventdescription { get; set; }
+    public string? Errormessage { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? TransactionDate { get; set; }

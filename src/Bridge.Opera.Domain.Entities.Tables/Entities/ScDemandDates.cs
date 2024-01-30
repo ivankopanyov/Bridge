@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScDemandDates
 {
-    public string Resort { get; set; }
-    public string DtCode { get; set; }
-    public DateTime DtDate { get; set; }
+    public string? Resort { get; set; }
+    public string? DtCode { get; set; }
+    public DateTime? DtDate { get; set; }
 
     public virtual ScDemandDayType ScDemandDayType { get; set; }
 

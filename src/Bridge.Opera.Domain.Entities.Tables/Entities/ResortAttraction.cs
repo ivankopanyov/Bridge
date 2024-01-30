@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortAttraction
 {
-    public string Resort { get; set; }
-    public string AttractionCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Directions { get; set; }
+    public string? Resort { get; set; }
+    public string? AttractionCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Directions { get; set; }
     public decimal? Distance { get; set; }
-    public string DistanceType { get; set; }
-    public string DrivingTime { get; set; }
-    public string Direction { get; set; }
+    public string? DistanceType { get; set; }
+    public string? DrivingTime { get; set; }
+    public string? Direction { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string AttractionType { get; set; }
-    public string AttractionClass { get; set; }
-    public string GeneralDirections { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string HoursOperation { get; set; }
-    public string Region { get; set; }
+    public string? AttractionType { get; set; }
+    public string? AttractionClass { get; set; }
+    public string? GeneralDirections { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? HoursOperation { get; set; }
+    public string? Region { get; set; }
     public decimal? LatlongXPosition { get; set; }
     public decimal? LatlongYPosition { get; set; }
-    public string CoordinateSupplier { get; set; }
-    public string Name { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string PriceRange { get; set; }
+    public string? CoordinateSupplier { get; set; }
+    public string? Name { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? PriceRange { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Website { get; set; }
+    public string? Website { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

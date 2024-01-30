@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BillItemTemp
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RowId { get; set; }
-    public string Seeker { get; set; }
-    public string PostedRoomNo { get; set; }
-    public string ResvNameId { get; set; }
+    public string? Seeker { get; set; }
+    public string? PostedRoomNo { get; set; }
+    public string? ResvNameId { get; set; }
     public decimal? Window { get; set; }
-    public string PostingDate { get; set; }
-    public string PostingTime { get; set; }
-    public string DeptCode { get; set; }
-    public string Text { get; set; }
-    public string Supplement { get; set; }
+    public string? PostingDate { get; set; }
+    public string? PostingTime { get; set; }
+    public string? DeptCode { get; set; }
+    public string? Text { get; set; }
+    public string? Supplement { get; set; }
     public decimal? Amount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LaptopDownloadRecords
 {
-    public string Resort { get; set; }
-    public string RecordType { get; set; }
-    public decimal RecordId { get; set; }
-    public decimal AccountId { get; set; }
-    public decimal SrepId { get; set; }
-    public string DownloadMode { get; set; }
+    public string? Resort { get; set; }
+    public string? RecordType { get; set; }
+    public decimal? RecordId { get; set; }
+    public decimal? AccountId { get; set; }
+    public decimal? SrepId { get; set; }
+    public string? DownloadMode { get; set; }
     public decimal? BlobId { get; set; }
-    public string RecordStatus { get; set; }
+    public string? RecordStatus { get; set; }
     public DateTime? ExpectedCheckin { get; set; }
     public DateTime? DownloadDate { get; set; }
 

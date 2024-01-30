@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempV5iCurrencyExchange
 {
-    public string Resort { get; set; }
-    public string BaseCurrencyCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? BaseCurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public decimal? ExchangeRate { get; set; }
 

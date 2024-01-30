@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiCalculatedMeasures
 {
-    public string CalcMeasureId { get; set; }
-    public string CalcMeasureDesc { get; set; }
+    public string? CalcMeasureId { get; set; }
+    public string? CalcMeasureDesc { get; set; }
     public decimal? SortOrder { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRoomMaintanence
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomStatus { get; set; }
-    public string FoStatus { get; set; }
-    public string RoomClass { get; set; }
-    public string RateCode { get; set; }
-    public string MaintenanceCode { get; set; }
-    public string MaintanenceDesc { get; set; }
-    public string Remarks { get; set; }
-    public string ResolvedName { get; set; }
-    public string ResolvedDateChar { get; set; }
-    public string ResolvedTime { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? FoStatus { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RateCode { get; set; }
+    public string? MaintenanceCode { get; set; }
+    public string? MaintanenceDesc { get; set; }
+    public string? Remarks { get; set; }
+    public string? ResolvedName { get; set; }
+    public string? ResolvedDateChar { get; set; }
+    public string? ResolvedTime { get; set; }
     public DateTime? ResolvedDate { get; set; }
-    public string InsertedBy { get; set; }
-    public string EnteredDate { get; set; }
-    public string EnteredTime { get; set; }
+    public string? InsertedBy { get; set; }
+    public string? EnteredDate { get; set; }
+    public string? EnteredTime { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

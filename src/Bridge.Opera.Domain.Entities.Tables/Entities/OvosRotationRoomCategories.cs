@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosRotationRoomCategories
 {
-    public decimal Id { get; set; }
-    public string RoomCategory { get; set; }
+    public decimal? Id { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

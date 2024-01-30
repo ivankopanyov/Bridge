@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofRevenueTaxRecords
 {
-    public string AccountPeriod { get; set; }
+    public string? AccountPeriod { get; set; }
     public decimal? UserId { get; set; }
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string GrossAmtFlag { get; set; }
+    public string? GrossAmtFlag { get; set; }
     public decimal? NetAmount { get; set; }
-    public string NetAmtFlag { get; set; }
+    public string? NetAmtFlag { get; set; }
     public decimal? Tax1 { get; set; }
     public decimal? Tax2 { get; set; }
     public decimal? Tax3 { get; set; }
@@ -32,22 +32,22 @@ public partial class BofRevenueTaxRecords
     public decimal? Tax18 { get; set; }
     public decimal? Tax19 { get; set; }
     public decimal? Tax20 { get; set; }
-    public string TrxCodeType { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string ArInd { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? ArInd { get; set; }
     public decimal? RevBucketId { get; set; }
-    public string CashInd { get; set; }
-    public string ManualPostYn { get; set; }
-    public string IndRevenueGp { get; set; }
-    public string ArrangeCode { get; set; }
+    public string? CashInd { get; set; }
+    public string? ManualPostYn { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? ArrangeCode { get; set; }
     public decimal? ExpenseFolio { get; set; }
     public decimal? GroupFolio { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode4 { get; set; }
-    public string BofCode5 { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? BofCode5 { get; set; }
     public decimal? BofCode6 { get; set; }
     public decimal? BofCode7 { get; set; }
     public decimal? BofCode8 { get; set; }

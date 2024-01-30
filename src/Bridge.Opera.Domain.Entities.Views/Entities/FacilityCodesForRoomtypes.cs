@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FacilityCodesForRoomtypes
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string FacilityTask { get; set; }
-    public string TaskDescription { get; set; }
-    public string FacilityCode { get; set; }
-    public string FacilityCodeDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? FacilityTask { get; set; }
+    public string? TaskDescription { get; set; }
+    public string? FacilityCode { get; set; }
+    public string? FacilityCodeDescription { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

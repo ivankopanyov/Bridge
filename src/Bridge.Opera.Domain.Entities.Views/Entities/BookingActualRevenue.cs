@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BookingActualRevenue
 {
-    public string ResortBooked { get; set; }
-    public decimal ProfileId { get; set; }
-    public decimal BookId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string Description { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Resort { get; set; }
+    public string? ResortBooked { get; set; }
+    public decimal? ProfileId { get; set; }
+    public decimal? BookId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? Description { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Resort { get; set; }
     public decimal? Rooms { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? AvgRate { get; set; }
     public decimal? FbRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
-    public string LostToDestination { get; set; }
-    public string LostToProperty { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? LostToDestination { get; set; }
+    public string? LostToProperty { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

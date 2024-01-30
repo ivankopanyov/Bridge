@@ -5,25 +5,25 @@ public partial class ExpUpeRelationships
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameXrefId { get; set; }
-    public string Resort { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelationshipDesc { get; set; }
-    public string PrimaryYn { get; set; }
-    public string RelationshipRole { get; set; }
+    public string? Resort { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelationshipDesc { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? RelationshipRole { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string LaptopChange { get; set; }
+    public string? LaptopChange { get; set; }
     public decimal? NameId { get; set; }
     public decimal? RelationToNameId { get; set; }
-    public string Name { get; set; }
-    public string RName { get; set; }
-    public string First { get; set; }
-    public string RFirst { get; set; }
-    public string NameType { get; set; }
-    public string RNameType { get; set; }
+    public string? Name { get; set; }
+    public string? RName { get; set; }
+    public string? First { get; set; }
+    public string? RFirst { get; set; }
+    public string? NameType { get; set; }
+    public string? RNameType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

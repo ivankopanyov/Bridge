@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateDailyStatus
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime RateBeginDate { get; set; }
-    public string SStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? RateBeginDate { get; set; }
+    public string? SStatus { get; set; }
     public decimal? SMinlos { get; set; }
     public decimal? SMaxlos { get; set; }
-    public string SHurdleYn { get; set; }
-    public string AStatus { get; set; }
+    public string? SHurdleYn { get; set; }
+    public string? AStatus { get; set; }
     public decimal? AMinlos { get; set; }
     public decimal? AMaxlos { get; set; }
-    public string DStatus { get; set; }
+    public string? DStatus { get; set; }
     public decimal? BookMinAdvance { get; set; }
     public decimal? BookMaxAdvance { get; set; }
-    public decimal Amount1 { get; set; }
+    public decimal? Amount1 { get; set; }
     public decimal? Amount2 { get; set; }
     public decimal? Amount3 { get; set; }
     public decimal? Amount4 { get; set; }
@@ -27,20 +27,20 @@ public partial class RateDailyStatus
     public decimal? PackageChildrenStayOver { get; set; }
     public decimal? PackageAdultStayOver { get; set; }
     public decimal? RoomCost { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Adder { get; set; }
     public decimal? Multiplier { get; set; }
-    public decimal InsertRateSetId { get; set; }
-    public decimal UpdateRateSetId { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string Los1Yn { get; set; }
-    public string Los2Yn { get; set; }
-    public string Los3Yn { get; set; }
-    public string Los4Yn { get; set; }
-    public string Los5Yn { get; set; }
-    public string Los6Yn { get; set; }
-    public string Los7Yn { get; set; }
+    public decimal? InsertRateSetId { get; set; }
+    public decimal? UpdateRateSetId { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Los1Yn { get; set; }
+    public string? Los2Yn { get; set; }
+    public string? Los3Yn { get; set; }
+    public string? Los4Yn { get; set; }
+    public string? Los5Yn { get; set; }
+    public string? Los6Yn { get; set; }
+    public string? Los7Yn { get; set; }
     public decimal? ChildCharge1 { get; set; }
     public decimal? ChildCharge2 { get; set; }
     public decimal? ChildCharge3 { get; set; }

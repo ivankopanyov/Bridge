@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepDepositTransferedCi
 {
-    public string Arrival { get; set; }
-    public string Departure { get; set; }
+    public string? Arrival { get; set; }
+    public string? Departure { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string FullName { get; set; }
-    public string Room { get; set; }
-    public DateTime PaidDate { get; set; }
+    public string? FullName { get; set; }
+    public string? Room { get; set; }
+    public DateTime? PaidDate { get; set; }
     public decimal? AmountAsked { get; set; }
     public decimal? AmountPaid { get; set; }
 

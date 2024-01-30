@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccountInfoView
 {
-    public decimal NameId { get; set; }
+    public decimal? NameId { get; set; }
     public DateTime? LastStay { get; set; }
     public decimal? LastRate { get; set; }
-    public string LastGroup { get; set; }
-    public string LastSource { get; set; }
-    public string LastRoom { get; set; }
+    public string? LastGroup { get; set; }
+    public string? LastSource { get; set; }
+    public string? LastRoom { get; set; }
     public DateTime? NextStay { get; set; }
     public decimal? NextResvnameid { get; set; }
     public decimal? TotalStays { get; set; }

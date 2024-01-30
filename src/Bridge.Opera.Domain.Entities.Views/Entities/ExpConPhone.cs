@@ -6,11 +6,11 @@ public partial class ExpConPhone
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? DefaultIndicator { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneNumber { get; set; }
-    public string PrimaryYn { get; set; }
-    public string PhoneRole { get; set; }
-    public string ShareEmailYn { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? PhoneRole { get; set; }
+    public string? ShareEmailYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

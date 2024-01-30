@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SpModes
 {
-    public string ModeValue { get; set; }
+    public string? ModeValue { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Description { get; set; }
-    public string UsedInForm { get; set; }
+    public string? Description { get; set; }
+    public string? UsedInForm { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

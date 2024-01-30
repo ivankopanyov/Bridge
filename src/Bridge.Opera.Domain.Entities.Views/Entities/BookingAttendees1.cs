@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BookingAttendees1
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal AttendeeProfileId { get; set; }
-    public string AttendeeName { get; set; }
-    public string VipStatus { get; set; }
-    public string Preferences { get; set; }
-    public string PreferencesDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? AttendeeProfileId { get; set; }
+    public string? AttendeeName { get; set; }
+    public string? VipStatus { get; set; }
+    public string? Preferences { get; set; }
+    public string? PreferencesDesc { get; set; }
     public decimal? EventsRegistered { get; set; }
-    public string ActiveResType { get; set; }
-    public string AttendeeFirstName { get; set; }
-    public string AttendeeLastName { get; set; }
+    public string? ActiveResType { get; set; }
+    public string? AttendeeFirstName { get; set; }
+    public string? AttendeeLastName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

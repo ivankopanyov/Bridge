@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SpgAccounts
 {
-    public decimal SetNumber { get; set; }
-    public string AccountName { get; set; }
+    public decimal? SetNumber { get; set; }
+    public string? AccountName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

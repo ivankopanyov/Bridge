@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TmpTaxcalc
 {
-    public decimal Tmpsid { get; set; }
-    public DateTime Tdate { get; set; }
-    public string Tratecode { get; set; }
-    public string Troomcategory { get; set; }
-    public decimal Tshareamount { get; set; }
+    public decimal? Tmpsid { get; set; }
+    public DateTime? Tdate { get; set; }
+    public string? Tratecode { get; set; }
+    public string? Troomcategory { get; set; }
+    public decimal? Tshareamount { get; set; }
     public decimal? Netamount { get; set; }
     public decimal? Grossamount { get; set; }
     public decimal? RoomRevenue { get; set; }
@@ -33,7 +33,7 @@ public partial class TmpTaxcalc
     public decimal? FcOtherRevenueTax { get; set; }
     public decimal? FcTotalRevenueTax { get; set; }
     public decimal? FcNonRevenueTax { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public DateTime? ExchangeDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

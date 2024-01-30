@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class WwwMaps
 {
-    public string SiteName { get; set; }
-    public string SiteAddress { get; set; }
-    public string DefaultFlg { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? SiteName { get; set; }
+    public string? SiteAddress { get; set; }
+    public string? DefaultFlg { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? CanDeleteYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

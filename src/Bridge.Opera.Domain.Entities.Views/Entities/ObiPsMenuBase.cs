@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPsMenuBase
 {
-    public string Resort { get; set; }
-    public string MenuId { get; set; }
-    public string MenuKeyId { get; set; }
-    public string MenuDesc { get; set; }
-    public string MajorGroup { get; set; }
-    public string MajorGroupDesc { get; set; }
-    public string FamilyGroup { get; set; }
-    public string FamilyGroupDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? MenuId { get; set; }
+    public string? MenuKeyId { get; set; }
+    public string? MenuDesc { get; set; }
+    public string? MajorGroup { get; set; }
+    public string? MajorGroupDesc { get; set; }
+    public string? FamilyGroup { get; set; }
+    public string? FamilyGroupDesc { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

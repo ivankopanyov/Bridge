@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsPropupdErrorDetail
 {
-    public decimal PropupdId { get; set; }
-    public string ErrorId { get; set; }
-    public string ErrorText { get; set; }
-    public string ErrorType { get; set; }
-    public string Warning { get; set; }
+    public decimal? PropupdId { get; set; }
+    public string? ErrorId { get; set; }
+    public string? ErrorText { get; set; }
+    public string? ErrorType { get; set; }
+    public string? Warning { get; set; }
     public decimal? RetryCount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

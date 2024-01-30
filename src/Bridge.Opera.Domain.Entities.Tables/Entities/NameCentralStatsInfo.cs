@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameCentralStatsInfo
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
     public decimal? TotalGuestNights { get; set; }
     public decimal? TotalGuestStays { get; set; }
     public decimal? TotalGuestNightsR { get; set; }
     public decimal? TotalGuestStaysR { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

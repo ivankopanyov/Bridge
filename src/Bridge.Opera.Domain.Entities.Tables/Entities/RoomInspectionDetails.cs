@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomInspectionDetails
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? WoGenerated { get; set; }
     public decimal? TaskCode { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public decimal RiId { get; set; }
-    public decimal RiQuestionId { get; set; }
-    public string QuestionType { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public decimal? RiId { get; set; }
+    public decimal? RiQuestionId { get; set; }
+    public string? QuestionType { get; set; }
     public decimal? RiQuestionSeq { get; set; }
     public decimal? RiAnswerValue { get; set; }
-    public string RiAnswerNote { get; set; }
+    public string? RiAnswerNote { get; set; }
     public decimal? RiPointsAchieved { get; set; }
     public decimal? RiQualityLevel { get; set; }
 

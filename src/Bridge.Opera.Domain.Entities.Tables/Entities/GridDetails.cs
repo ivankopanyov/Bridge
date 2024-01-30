@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GridDetails
 {
-    public decimal GridHeaderLink { get; set; }
+    public decimal? GridHeaderLink { get; set; }
     public decimal? ColPos { get; set; }
-    public string ColName { get; set; }
-    public string ColTitle { get; set; }
+    public string? ColName { get; set; }
+    public string? ColTitle { get; set; }
     public decimal? ColWidth { get; set; }
-    public string EditableYn { get; set; }
-    public string VisibleYn { get; set; }
-    public string DataType { get; set; }
-    public string FooterFunction { get; set; }
+    public string? EditableYn { get; set; }
+    public string? VisibleYn { get; set; }
+    public string? DataType { get; set; }
+    public string? FooterFunction { get; set; }
 
     public virtual GridHeader GridHeaderLinkNavigation { get; set; }
 

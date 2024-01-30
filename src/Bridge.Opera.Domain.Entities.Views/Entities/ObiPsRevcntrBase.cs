@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPsRevcntrBase
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RvcKeyId { get; set; }
-    public string RevCenter { get; set; }
-    public string Resort { get; set; }
-    public string RevCenterDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RvcKeyId { get; set; }
+    public string? RevCenter { get; set; }
+    public string? Resort { get; set; }
+    public string? RevCenterDesc { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? NumOfTables { get; set; }
     public decimal? AutoSvcCharge { get; set; }
-    public string MasterRevCenter { get; set; }
-    public string MasterRevcntrId { get; set; }
-    public string MasterRevcntrDesc { get; set; }
+    public string? MasterRevCenter { get; set; }
+    public string? MasterRevcntrId { get; set; }
+    public string? MasterRevcntrDesc { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationFeatures
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal PreferenceSeqId { get; set; }
-    public string ExternalFeatureId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? PreferenceSeqId { get; set; }
+    public string? ExternalFeatureId { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual Preferences PreferenceSeq { get; set; }
     public virtual ReservationName Res { get; set; }

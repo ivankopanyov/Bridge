@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcKeysView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Track1 { get; set; }
-    public string Track2 { get; set; }
+    public string? Track1 { get; set; }
+    public string? Track2 { get; set; }
     public decimal? KeyCount { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Track3 { get; set; }
+    public string? Track3 { get; set; }
     public decimal? KeyIfcId { get; set; }
     public decimal? SvIfcId { get; set; }
     public decimal? NameId { get; set; }
-    public string CardLastname { get; set; }
-    public string CardFirstname { get; set; }
-    public string NopostYn { get; set; }
-    public string KeyOptions { get; set; }
-    public string KeyType { get; set; }
-    public string InactiveYn { get; set; }
-    public string SvYn { get; set; }
-    public string DisplayYn { get; set; }
+    public string? CardLastname { get; set; }
+    public string? CardFirstname { get; set; }
+    public string? NopostYn { get; set; }
+    public string? KeyOptions { get; set; }
+    public string? KeyType { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? SvYn { get; set; }
+    public string? DisplayYn { get; set; }
     public DateTime? ExpiryDate { get; set; }
     public decimal? KeyNumber { get; set; }
-    public string AdultChild { get; set; }
+    public string? AdultChild { get; set; }
     public decimal? OrigCardLimit { get; set; }
     public decimal? CardBalance { get; set; }
-    public string MobileRefid { get; set; }
-    public string MobileNumber { get; set; }
-    public string Email { get; set; }
-    public string Status { get; set; }
+    public string? MobileRefid { get; set; }
+    public string? MobileNumber { get; set; }
+    public string? Email { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

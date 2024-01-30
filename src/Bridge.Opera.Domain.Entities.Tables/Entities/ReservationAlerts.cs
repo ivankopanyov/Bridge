@@ -2,47 +2,47 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationAlerts
 {
-    public decimal ResvAlertId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Area { get; set; }
-    public string AlertCode { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string ValueRating { get; set; }
-    public string VipStatus { get; set; }
-    public string Language { get; set; }
+    public decimal? ResvAlertId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Area { get; set; }
+    public string? AlertCode { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? ValueRating { get; set; }
+    public string? VipStatus { get; set; }
+    public string? Language { get; set; }
     public decimal? BrandStayCnt { get; set; }
     public decimal? PropertyStayCnt { get; set; }
-    public string LastStayLocation { get; set; }
+    public string? LastStayLocation { get; set; }
     public DateTime? LastStayDate { get; set; }
-    public string Comments { get; set; }
-    public string Pref1 { get; set; }
-    public string Pref2 { get; set; }
-    public string Pref3 { get; set; }
+    public string? Comments { get; set; }
+    public string? Pref1 { get; set; }
+    public string? Pref2 { get; set; }
+    public string? Pref3 { get; set; }
     public decimal? QueryId { get; set; }
-    public string ScreenYn { get; set; }
-    public string PrinterYn { get; set; }
-    public string ReportName { get; set; }
-    public string PrinterName { get; set; }
+    public string? ScreenYn { get; set; }
+    public string? PrinterYn { get; set; }
+    public string? ReportName { get; set; }
+    public string? PrinterName { get; set; }
     public DateTime? PropertyStayDate { get; set; }
-    public string ExternalAlertId { get; set; }
-    public string HasTagsYn { get; set; }
-    public string MembershipAlertYn { get; set; }
-    public string AlertText { get; set; }
+    public string? ExternalAlertId { get; set; }
+    public string? HasTagsYn { get; set; }
+    public string? MembershipAlertYn { get; set; }
+    public string? AlertText { get; set; }
     public decimal? OrderBy { get; set; }
-    public string EmailYn { get; set; }
-    public string EmailAddress { get; set; }
-    public string SmsYn { get; set; }
-    public string SmsNumber { get; set; }
-    public string Department { get; set; }
-    public string ValidationAlertYn { get; set; }
-    public string ValidationOverridePermission { get; set; }
-    public string SkipGuestOverviewYn { get; set; }
+    public string? EmailYn { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? SmsYn { get; set; }
+    public string? SmsNumber { get; set; }
+    public string? Department { get; set; }
+    public string? ValidationAlertYn { get; set; }
+    public string? ValidationOverridePermission { get; set; }
+    public string? SkipGuestOverviewYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

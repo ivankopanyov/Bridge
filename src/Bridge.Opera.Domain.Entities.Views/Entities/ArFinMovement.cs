@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArFinMovement
 {
-    public decimal AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public string AccountNo { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public decimal NameId { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountNo { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? Payments { get; set; }
     public decimal? InvoiceAmount { get; set; }
-    public string InvoiceNumber { get; set; }
+    public string? InvoiceNumber { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? Paid { get; set; }
@@ -28,12 +28,12 @@ public partial class ArFinMovement
     public decimal? LineBalance { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioView { get; set; }
-    public string PrintedYn { get; set; }
+    public string? PrintedYn { get; set; }
     public decimal? StatementNo { get; set; }
-    public string PurgeYn { get; set; }
-    public string AppliedPaymentNo { get; set; }
-    public string FolioType { get; set; }
-    public string InvoiceType { get; set; }
+    public string? PurgeYn { get; set; }
+    public string? AppliedPaymentNo { get; set; }
+    public string? FolioType { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? InvoicesCount { get; set; }
 

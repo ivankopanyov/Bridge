@@ -5,8 +5,8 @@ public partial class ExpConMaillist
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? NameId { get; set; }
-    public string MaillistCode { get; set; }
-    public string MaillistDescription { get; set; }
+    public string? MaillistCode { get; set; }
+    public string? MaillistDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

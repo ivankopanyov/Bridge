@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpCreditCardDetails
 {
-    public decimal ExpDataId { get; set; }
-    public decimal ExpDataDtlId { get; set; }
-    public decimal ExpSeqNo { get; set; }
-    public string CreditCardNumber { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public decimal? ExpDataDtlId { get; set; }
+    public decimal? ExpSeqNo { get; set; }
+    public string? CreditCardNumber { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? CreditCardNumberLength { get; set; }
 

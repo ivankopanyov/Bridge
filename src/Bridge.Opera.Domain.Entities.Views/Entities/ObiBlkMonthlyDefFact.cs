@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiBlkMonthlyDefFact
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? BlkRms { get; set; }
     public decimal? BlkRmsCatY { get; set; }
     public decimal? BlkRmsCatN { get; set; }

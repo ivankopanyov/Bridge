@@ -7,11 +7,11 @@ public partial class GemEventPkg
         GemEventPkgRevenue = new HashSet<GemEventPkgRevenue>();
     }
 
-    public decimal PkgId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string PkgCode { get; set; }
-    public string PkgName { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? PkgCode { get; set; }
+    public string? PkgName { get; set; }
     public decimal? Duration { get; set; }
     public decimal? TotalRevenue { get; set; }
     public DateTime? InsertDate { get; set; }
@@ -21,11 +21,11 @@ public partial class GemEventPkg
     public decimal? ExpectedAttendees { get; set; }
     public decimal? GuaranteedAttendees { get; set; }
     public decimal? ActualAttendees { get; set; }
-    public string AttendeesChangeableYn { get; set; }
-    public string PriceCode { get; set; }
-    public string PriceCodeDesc { get; set; }
+    public string? AttendeesChangeableYn { get; set; }
+    public string? PriceCode { get; set; }
+    public string? PriceCodeDesc { get; set; }
     public decimal? PkgPriceId { get; set; }
-    public string PkgResort { get; set; }
+    public string? PkgResort { get; set; }
     public decimal? GroupId { get; set; }
 
     public virtual ICollection<GemEventPkgRevenue> GemEventPkgRevenue { get; set; }

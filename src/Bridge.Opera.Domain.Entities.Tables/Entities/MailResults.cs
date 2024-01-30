@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class MailResults
 {
     public decimal? HitlistId { get; set; }
-    public string Tagged { get; set; }
-    public string Column1 { get; set; }
-    public string Column2 { get; set; }
-    public string Column3 { get; set; }
-    public string CharRecordId1 { get; set; }
+    public string? Tagged { get; set; }
+    public string? Column1 { get; set; }
+    public string? Column2 { get; set; }
+    public string? Column3 { get; set; }
+    public string? CharRecordId1 { get; set; }
     public decimal? NumberRecordId1 { get; set; }
     public decimal? NumberRecordId2 { get; set; }
-    public string Column1Key { get; set; }
-    public string Column2Key { get; set; }
-    public string Column3Key { get; set; }
-    public string Resort { get; set; }
+    public string? Column1Key { get; set; }
+    public string? Column2Key { get; set; }
+    public string? Column3Key { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

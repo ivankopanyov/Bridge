@@ -6,16 +6,16 @@ public partial class ArTranAdjDtl
     public decimal? AccountCode { get; set; }
     public decimal? OldTranActionId { get; set; }
     public decimal? TranActionId { get; set; }
-    public decimal TrxNo { get; set; }
+    public decimal? TrxNo { get; set; }
     public decimal? TrxNoHeader { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string Reference { get; set; }
-    public string ActionDesc { get; set; }
-    public string TransType { get; set; }
-    public string FinActionEvent { get; set; }
+    public string? Reference { get; set; }
+    public string? ActionDesc { get; set; }
+    public string? TransType { get; set; }
+    public string? FinActionEvent { get; set; }
     public decimal? FinDmlSeqNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

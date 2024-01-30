@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RiTemplates
 {
-    public string Resort { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public string RiTemplateName { get; set; }
-    public string RiTemplateType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public string? RiTemplateName { get; set; }
+    public string? RiTemplateType { get; set; }
     public DateTime? LastRiDate { get; set; }
     public decimal? LastRiBy { get; set; }
 

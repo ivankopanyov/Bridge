@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationDailyElements
 {
-    public string Resort { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public decimal ResvDailyElSeq { get; set; }
-    public string ResvStatus { get; set; }
-    public string ExternalReference { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string BookedRoomCategory { get; set; }
-    public string Room { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public decimal? ResvDailyElSeq { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? BookedRoomCategory { get; set; }
+    public string? Room { get; set; }
     public decimal? CancellationNo { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationCode { get; set; }
-    public string CancellationReasonDesc { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string MarketCode { get; set; }
-    public string OriginOfBooking { get; set; }
+    public string? CancellationCode { get; set; }
+    public string? CancellationReasonDesc { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? OriginOfBooking { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? OriginalBaseRate { get; set; }
     public decimal? BaseRateAmount { get; set; }
@@ -28,24 +28,24 @@ public partial class ReservationDailyElements
     public decimal? Children { get; set; }
     public decimal? PhysicalQuantity { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string DayUseYn { get; set; }
-    public string DueOutYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? DayUseYn { get; set; }
+    public string? DueOutYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? InsertActionInstanceId { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? ExtSeqNo { get; set; }
     public decimal? ExtSegNo { get; set; }
     public decimal? Cribs { get; set; }
     public decimal? ExtraBeds { get; set; }
-    public string AllotmentRecordType { get; set; }
-    public string BlockResort { get; set; }
+    public string? AllotmentRecordType { get; set; }
+    public string? BlockResort { get; set; }
     public decimal? BlockId { get; set; }
-    public string TurndownStatus { get; set; }
-    public string AwdUpgrFrom { get; set; }
-    public string AwdUpgrTo { get; set; }
+    public string? TurndownStatus { get; set; }
+    public string? AwdUpgrFrom { get; set; }
+    public string? AwdUpgrTo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

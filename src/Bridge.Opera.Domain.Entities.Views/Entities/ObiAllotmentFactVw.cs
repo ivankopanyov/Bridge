@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiAllotmentFactVw
 {
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string AllotmentId { get; set; }
-    public string RoomType { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string CompanyId { get; set; }
-    public string AgentId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? AllotmentId { get; set; }
+    public string? RoomType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? CompanyId { get; set; }
+    public string? AgentId { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? ToSell { get; set; }
     public decimal? Sold { get; set; }

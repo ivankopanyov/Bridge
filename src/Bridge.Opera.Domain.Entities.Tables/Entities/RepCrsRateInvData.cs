@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepCrsRateInvData
 {
-    public decimal OperaRequestId { get; set; }
-    public string RecordType { get; set; }
+    public decimal? OperaRequestId { get; set; }
+    public string? RecordType { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
-    public string RateType { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateType { get; set; }
     public decimal? RoomsAllotted { get; set; }
     public decimal? RoomsSold { get; set; }
     public decimal? RoomsAvailable { get; set; }

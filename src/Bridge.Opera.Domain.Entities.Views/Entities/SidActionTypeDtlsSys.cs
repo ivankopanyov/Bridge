@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidActionTypeDtlsSys
 {
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
-    public string UsageContext { get; set; }
-    public string DataElementDatatype { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
+    public string? UsageContext { get; set; }
+    public string? DataElementDatatype { get; set; }
     public decimal? LovSequence { get; set; }
-    public string Xmltagname { get; set; }
-    public string Grpxmltagname { get; set; }
+    public string? Xmltagname { get; set; }
+    public string? Grpxmltagname { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

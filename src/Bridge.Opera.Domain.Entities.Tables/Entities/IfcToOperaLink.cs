@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcToOperaLink
 {
-    public string IfcType { get; set; }
-    public string DbLinkName { get; set; }
-    public string Alias { get; set; }
-    public string UserId { get; set; }
-    public string Password { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string HostName { get; set; }
-    public string InstanceName { get; set; }
+    public string? IfcType { get; set; }
+    public string? DbLinkName { get; set; }
+    public string? Alias { get; set; }
+    public string? UserId { get; set; }
+    public string? Password { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? HostName { get; set; }
+    public string? InstanceName { get; set; }
     public decimal? Port { get; set; }
-    public string Comments { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

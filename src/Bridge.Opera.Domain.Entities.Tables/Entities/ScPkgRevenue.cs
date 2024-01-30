@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScPkgRevenue
 {
-    public decimal PkgPriceLink { get; set; }
-    public decimal PkgEvLink { get; set; }
-    public string RevenueType { get; set; }
-    public string RevenueGroup { get; set; }
+    public decimal? PkgPriceLink { get; set; }
+    public decimal? PkgEvLink { get; set; }
+    public string? RevenueType { get; set; }
+    public string? RevenueGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }

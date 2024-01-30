@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BalanceSummary
 {
-    public string Resort { get; set; }
-    public string Ltype { get; set; }
+    public string? Resort { get; set; }
+    public string? Ltype { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? FtLedDiff { get; set; }
     public decimal? TbLedDiff { get; set; }
     public decimal? FtLedDr { get; set; }

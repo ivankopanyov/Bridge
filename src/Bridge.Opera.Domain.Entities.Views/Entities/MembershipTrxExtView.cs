@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipTrxExtView
 {
-    public decimal MembershipTrxId { get; set; }
+    public decimal? MembershipTrxId { get; set; }
     public decimal? AccTotalPoints { get; set; }
     public decimal? AccTotalBasePoints { get; set; }
     public decimal? AccTotalBonusPoints { get; set; }

@@ -2,114 +2,114 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipLevelRuleGridVw
 {
-    public string MembershipType { get; set; }
-    public string OrgMembershipLevel { get; set; }
-    public string OrgLabel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? OrgMembershipLevel { get; set; }
+    public string? OrgLabel { get; set; }
     public decimal? OrgMembershipLevelRank { get; set; }
     public decimal? MinDisplayRank { get; set; }
-    public string G01MembershipLevel { get; set; }
-    public string G01LevelLabel01 { get; set; }
+    public string? G01MembershipLevel { get; set; }
+    public string? G01LevelLabel01 { get; set; }
     public decimal? G01LevelRank01 { get; set; }
     public decimal? G01RStRuleNo { get; set; }
-    public string G01RStRuleType { get; set; }
-    public string G01RStRuleBasedOn { get; set; }
-    public string G01RStRecordType { get; set; }
+    public string? G01RStRuleType { get; set; }
+    public string? G01RStRuleBasedOn { get; set; }
+    public string? G01RStRecordType { get; set; }
     public decimal? G01RStUnitsRequired { get; set; }
     public decimal? G01RStUnitsThreshold { get; set; }
     public decimal? G01RNtRuleNo { get; set; }
-    public string G01RNtRuleType { get; set; }
-    public string G01RNtRuleBasedOn { get; set; }
-    public string G01RNtRecordType { get; set; }
+    public string? G01RNtRuleType { get; set; }
+    public string? G01RNtRuleBasedOn { get; set; }
+    public string? G01RNtRecordType { get; set; }
     public decimal? G01RNtUnitsRequired { get; set; }
     public decimal? G01RNtUnitsThreshold { get; set; }
     public decimal? G01RRvRuleNo { get; set; }
-    public string G01RRvRuleType { get; set; }
-    public string G01RRvRuleBasedOn { get; set; }
-    public string G01RRvRecordType { get; set; }
+    public string? G01RRvRuleType { get; set; }
+    public string? G01RRvRuleBasedOn { get; set; }
+    public string? G01RRvRecordType { get; set; }
     public decimal? G01RRvUnitsRequired { get; set; }
     public decimal? G01RRvUnitsThreshold { get; set; }
-    public string G02MembershipLevel { get; set; }
-    public string G02LevelLabel01 { get; set; }
+    public string? G02MembershipLevel { get; set; }
+    public string? G02LevelLabel01 { get; set; }
     public decimal? G02LevelRank01 { get; set; }
     public decimal? G02RStRuleNo { get; set; }
-    public string G02RStRuleType { get; set; }
-    public string G02RStRuleBasedOn { get; set; }
-    public string G02RStRecordType { get; set; }
+    public string? G02RStRuleType { get; set; }
+    public string? G02RStRuleBasedOn { get; set; }
+    public string? G02RStRecordType { get; set; }
     public decimal? G02RStUnitsRequired { get; set; }
     public decimal? G02RStUnitsThreshold { get; set; }
     public decimal? G02RNtRuleNo { get; set; }
-    public string G02RNtRuleType { get; set; }
-    public string G02RNtRuleBasedOn { get; set; }
-    public string G02RNtRecordType { get; set; }
+    public string? G02RNtRuleType { get; set; }
+    public string? G02RNtRuleBasedOn { get; set; }
+    public string? G02RNtRecordType { get; set; }
     public decimal? G02RNtUnitsRequired { get; set; }
     public decimal? G02RNtUnitsThreshold { get; set; }
     public decimal? G02RRvRuleNo { get; set; }
-    public string G02RRvRuleType { get; set; }
-    public string G02RRvRuleBasedOn { get; set; }
-    public string G02RRvRecordType { get; set; }
+    public string? G02RRvRuleType { get; set; }
+    public string? G02RRvRuleBasedOn { get; set; }
+    public string? G02RRvRecordType { get; set; }
     public decimal? G02RRvUnitsRequired { get; set; }
     public decimal? G02RRvUnitsThreshold { get; set; }
-    public string G03MembershipLevel { get; set; }
-    public string G03LevelLabel01 { get; set; }
+    public string? G03MembershipLevel { get; set; }
+    public string? G03LevelLabel01 { get; set; }
     public decimal? G03LevelRank01 { get; set; }
     public decimal? G03RStRuleNo { get; set; }
-    public string G03RStRuleType { get; set; }
-    public string G03RStRuleBasedOn { get; set; }
-    public string G03RStRecordType { get; set; }
+    public string? G03RStRuleType { get; set; }
+    public string? G03RStRuleBasedOn { get; set; }
+    public string? G03RStRecordType { get; set; }
     public decimal? G03RStUnitsRequired { get; set; }
     public decimal? G03RStUnitsThreshold { get; set; }
     public decimal? G03RNtRuleNo { get; set; }
-    public string G03RNtRuleType { get; set; }
-    public string G03RNtRuleBasedOn { get; set; }
-    public string G03RNtRecordType { get; set; }
+    public string? G03RNtRuleType { get; set; }
+    public string? G03RNtRuleBasedOn { get; set; }
+    public string? G03RNtRecordType { get; set; }
     public decimal? G03RNtUnitsRequired { get; set; }
     public decimal? G03RNtUnitsThreshold { get; set; }
     public decimal? G03RRvRuleNo { get; set; }
-    public string G03RRvRuleType { get; set; }
-    public string G03RRvRuleBasedOn { get; set; }
-    public string G03RRvRecordType { get; set; }
+    public string? G03RRvRuleType { get; set; }
+    public string? G03RRvRuleBasedOn { get; set; }
+    public string? G03RRvRecordType { get; set; }
     public decimal? G03RRvUnitsRequired { get; set; }
     public decimal? G03RRvUnitsThreshold { get; set; }
-    public string G04MembershipLevel { get; set; }
-    public string G04LevelLabel01 { get; set; }
+    public string? G04MembershipLevel { get; set; }
+    public string? G04LevelLabel01 { get; set; }
     public decimal? G04LevelRank01 { get; set; }
     public decimal? G04RStRuleNo { get; set; }
-    public string G04RStRuleType { get; set; }
-    public string G04RStRuleBasedOn { get; set; }
-    public string G04RStRecordType { get; set; }
+    public string? G04RStRuleType { get; set; }
+    public string? G04RStRuleBasedOn { get; set; }
+    public string? G04RStRecordType { get; set; }
     public decimal? G04RStUnitsRequired { get; set; }
     public decimal? G04RStUnitsThreshold { get; set; }
     public decimal? G04RNtRuleNo { get; set; }
-    public string G04RNtRuleType { get; set; }
-    public string G04RNtRuleBasedOn { get; set; }
-    public string G04RNtRecordType { get; set; }
+    public string? G04RNtRuleType { get; set; }
+    public string? G04RNtRuleBasedOn { get; set; }
+    public string? G04RNtRecordType { get; set; }
     public decimal? G04RNtUnitsRequired { get; set; }
     public decimal? G04RNtUnitsThreshold { get; set; }
     public decimal? G04RRvRuleNo { get; set; }
-    public string G04RRvRuleType { get; set; }
-    public string G04RRvRuleBasedOn { get; set; }
-    public string G04RRvRecordType { get; set; }
+    public string? G04RRvRuleType { get; set; }
+    public string? G04RRvRuleBasedOn { get; set; }
+    public string? G04RRvRecordType { get; set; }
     public decimal? G04RRvUnitsRequired { get; set; }
     public decimal? G04RRvUnitsThreshold { get; set; }
-    public string G05MembershipLevel { get; set; }
-    public string G05LevelLabel01 { get; set; }
+    public string? G05MembershipLevel { get; set; }
+    public string? G05LevelLabel01 { get; set; }
     public decimal? G05LevelRank01 { get; set; }
     public decimal? G05RStRuleNo { get; set; }
-    public string G05RStRuleType { get; set; }
-    public string G05RStRuleBasedOn { get; set; }
-    public string G05RStRecordType { get; set; }
+    public string? G05RStRuleType { get; set; }
+    public string? G05RStRuleBasedOn { get; set; }
+    public string? G05RStRecordType { get; set; }
     public decimal? G05RStUnitsRequired { get; set; }
     public decimal? G05RStUnitsThreshold { get; set; }
     public decimal? G05RNtRuleNo { get; set; }
-    public string G05RNtRuleType { get; set; }
-    public string G05RNtRuleBasedOn { get; set; }
-    public string G05RNtRecordType { get; set; }
+    public string? G05RNtRuleType { get; set; }
+    public string? G05RNtRuleBasedOn { get; set; }
+    public string? G05RNtRecordType { get; set; }
     public decimal? G05RNtUnitsRequired { get; set; }
     public decimal? G05RNtUnitsThreshold { get; set; }
     public decimal? G05RRvRuleNo { get; set; }
-    public string G05RRvRuleType { get; set; }
-    public string G05RRvRuleBasedOn { get; set; }
-    public string G05RRvRecordType { get; set; }
+    public string? G05RRvRuleType { get; set; }
+    public string? G05RRvRuleBasedOn { get; set; }
+    public string? G05RRvRecordType { get; set; }
     public decimal? G05RRvUnitsRequired { get; set; }
     public decimal? G05RRvUnitsThreshold { get; set; }
 

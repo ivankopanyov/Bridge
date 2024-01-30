@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcReservationView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ResvStatus { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GroupName { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ResvStatus { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string Room { get; set; }
-    public string SguestName { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string Vip { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string SharedYn { get; set; }
-    public string GuestTitle { get; set; }
-    public string Sxname { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string XcompanyName { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Room { get; set; }
+    public string? SguestName { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? Vip { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? SharedYn { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? Sxname { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XcompanyName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string MasterShare { get; set; }
+    public string? MasterShare { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
 

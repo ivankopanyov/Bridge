@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberAwardOtherAvailVw
 {
-    public string Application { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? Application { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? AwardQuantity { get; set; }
-    public string AwardBasedOn { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? AwardBasedOn { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? PointsRequired { get; set; }
-    public string MessageLine1 { get; set; }
-    public string MessageLine2 { get; set; }
-    public string MessageLine3 { get; set; }
-    public string MessageLine4 { get; set; }
+    public string? MessageLine1 { get; set; }
+    public string? MessageLine2 { get; set; }
+    public string? MessageLine3 { get; set; }
+    public string? MessageLine4 { get; set; }
     public decimal? AwardValue { get; set; }
-    public string ExchangeRateType { get; set; }
+    public string? ExchangeRateType { get; set; }
     public decimal? MaxPercentAllowed { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyCharge { get; set; }
-    public string CancelPenaltyType { get; set; }
-    public string PtsSchCode { get; set; }
-    public string AutoConsumeYn { get; set; }
-    public string ForceVerificationYn { get; set; }
+    public string? CancelPenaltyType { get; set; }
+    public string? PtsSchCode { get; set; }
+    public string? AutoConsumeYn { get; set; }
+    public string? ForceVerificationYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? OriginalPointsRequired { get; set; }
 

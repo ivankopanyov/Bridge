@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntExchangedEntities
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string Entity { get; set; }
-    public string Code { get; set; }
-    public string MasterCode { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? Entity { get; set; }
+    public string? Code { get; set; }
+    public string? MasterCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

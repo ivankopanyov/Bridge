@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArPayHist
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
+    public string? AccountName { get; set; }
     public DateTime? PostDate { get; set; }
     public decimal? TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? Invoice { get; set; }
     public decimal? FolioNo { get; set; }
@@ -18,19 +18,19 @@ public partial class ArPayHist
     public decimal? Amount { get; set; }
     public decimal? Paid { get; set; }
     public decimal? Aropen { get; set; }
-    public string AdjustYn { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string InvStatus { get; set; }
-    public string RecType { get; set; }
+    public string? InvStatus { get; set; }
+    public string? RecType { get; set; }
     public decimal? TranActionId { get; set; }
-    public string ActionEvent { get; set; }
-    public string AppFull { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string UpdateUser { get; set; }
+    public string? ActionEvent { get; set; }
+    public string? AppFull { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? UpdateUser { get; set; }
     public decimal? CreditedToTrxNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

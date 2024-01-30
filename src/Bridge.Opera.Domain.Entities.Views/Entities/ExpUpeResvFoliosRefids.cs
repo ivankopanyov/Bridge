@@ -5,10 +5,10 @@ public partial class ExpUpeResvFoliosRefids
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string FolioId { get; set; }
-    public string ReferenceIdType { get; set; }
-    public string ReferenceId { get; set; }
-    public string ReferenceIdContext { get; set; }
+    public string? FolioId { get; set; }
+    public string? ReferenceIdType { get; set; }
+    public string? ReferenceId { get; set; }
+    public string? ReferenceIdContext { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

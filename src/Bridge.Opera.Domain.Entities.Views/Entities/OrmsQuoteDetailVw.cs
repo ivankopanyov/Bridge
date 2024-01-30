@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsQuoteDetailVw
 {
     public decimal? RequestId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? AllotmentDate { get; set; }
-    public string YieldCategory { get; set; }
+    public string? YieldCategory { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? RowTotalAmt { get; set; }
     public decimal? RowTotalRooms { get; set; }
@@ -19,17 +19,17 @@ public partial class OrmsQuoteDetailVw
     public decimal? RespAmtOtbYieldable { get; set; }
     public decimal? RoomsOtbNonyieldable { get; set; }
     public decimal? RespAmtOtbNonyieldable { get; set; }
-    public string AllotmentDateDisplay { get; set; }
-    public string TotalDisplay { get; set; }
-    public string ForeEmptyDisplay { get; set; }
-    public string ForeYieldableDisplay { get; set; }
-    public string ForeNonyieldableDisplay { get; set; }
-    public string OtbYieldableDisplay { get; set; }
-    public string OtbNonyieldableDisplay { get; set; }
+    public string? AllotmentDateDisplay { get; set; }
+    public string? TotalDisplay { get; set; }
+    public string? ForeEmptyDisplay { get; set; }
+    public string? ForeYieldableDisplay { get; set; }
+    public string? ForeNonyieldableDisplay { get; set; }
+    public string? OtbYieldableDisplay { get; set; }
+    public string? OtbNonyieldableDisplay { get; set; }
     public decimal? RequestedRooms { get; set; }
     public decimal? ORoomsForeEmpty { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string BlockCode { get; set; }
+    public string? BlockCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

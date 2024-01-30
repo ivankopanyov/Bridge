@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrxCodesAction
 {
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public decimal TrxActionId { get; set; }
-    public string TrxActionDesc { get; set; }
-    public string TrxActionEvent { get; set; }
-    public string ReasonCode { get; set; }
-    public string Resort { get; set; }
-    public string ChainCode { get; set; }
+    public decimal? TrxActionId { get; set; }
+    public string? TrxActionDesc { get; set; }
+    public string? TrxActionEvent { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomRepairs
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public decimal Seq { get; set; }
-    public string RepairType { get; set; }
-    public string ReasonCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RoomStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public decimal? Seq { get; set; }
+    public string? RepairType { get; set; }
+    public string? ReasonCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RoomStatus { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string ReturnStatus { get; set; }
-    public string RepairRemarks { get; set; }
-    public string CalculateRotationYn { get; set; }
+    public string? ReturnStatus { get; set; }
+    public string? RepairRemarks { get; set; }
+    public string? CalculateRotationYn { get; set; }
 
     public virtual ResortRoomStatusReason Re { get; set; }
 

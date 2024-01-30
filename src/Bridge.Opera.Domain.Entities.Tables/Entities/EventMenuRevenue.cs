@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventMenuRevenue
 {
-    public decimal EventId { get; set; }
-    public decimal EventMenuId { get; set; }
-    public string RevType { get; set; }
-    public string CustomYn { get; set; }
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? EventMenuId { get; set; }
+    public string? RevType { get; set; }
+    public string? CustomYn { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? RevenueSplit { get; set; }
     public decimal? ItemPrice { get; set; }
@@ -34,10 +34,10 @@ public partial class EventMenuRevenue
     public decimal? GuaExtraCost { get; set; }
     public decimal? ActExtraCost { get; set; }
     public decimal? BilledExtraCost { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? Discount { get; set; }
 
     public virtual EventMenu Event { get; set; }

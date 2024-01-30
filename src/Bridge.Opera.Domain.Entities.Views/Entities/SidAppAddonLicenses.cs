@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidAppAddonLicenses
 {
-    public string Application { get; set; }
-    public string Resort { get; set; }
-    public string LicName { get; set; }
-    public string LicDesc { get; set; }
+    public string? Application { get; set; }
+    public string? Resort { get; set; }
+    public string? LicName { get; set; }
+    public string? LicDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SpgDefaultCommPref
 {
-    public string Resort { get; set; }
-    public string TopicType { get; set; }
+    public string? Resort { get; set; }
+    public string? TopicType { get; set; }
     public decimal? SpgTopicId { get; set; }
-    public string TopicDescription { get; set; }
-    public decimal OperaTopicId { get; set; }
-    public decimal ParentOperaTopicId { get; set; }
-    public string NodeType { get; set; }
-    public string OptInYn { get; set; }
+    public string? TopicDescription { get; set; }
+    public decimal? OperaTopicId { get; set; }
+    public decimal? ParentOperaTopicId { get; set; }
+    public string? NodeType { get; set; }
+    public string? OptInYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string DisplayYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? DisplayYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

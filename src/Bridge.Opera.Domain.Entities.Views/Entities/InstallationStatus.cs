@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class InstallationStatus
 {
-    public string ObjectName { get; set; }
-    public string ObjectType { get; set; }
-    public string DiscrepancyLevel { get; set; }
+    public string? ObjectName { get; set; }
+    public string? ObjectType { get; set; }
+    public string? DiscrepancyLevel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

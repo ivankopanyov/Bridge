@@ -7,8 +7,8 @@ public partial class AmandaOfficeCodes
         AmandaInfo = new HashSet<AmandaInfo>();
     }
 
-    public string AmadeusOfficeCode { get; set; }
-    public string PrinterId { get; set; }
+    public string? AmadeusOfficeCode { get; set; }
+    public string? PrinterId { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

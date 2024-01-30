@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateCodeStatDaily
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
     public decimal? NoOfDefinitieRooms { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? DayUseRooms { get; set; }
@@ -79,7 +79,7 @@ public partial class RateCodeStatDaily
     public decimal? TotalNonRevenueYtd { get; set; }
     public decimal? TotalNonRevenueTaxYtd { get; set; }
     public decimal? TotalPackageNonRevenueYtd { get; set; }
-    public string RowMigratedFromV6Yn { get; set; }
+    public string? RowMigratedFromV6Yn { get; set; }
     public decimal? AdvTotalFoodRevenue { get; set; }
     public decimal? AdvTotalFoodRevenueMtd { get; set; }
     public decimal? AdvTotalFoodRevenueYtd { get; set; }

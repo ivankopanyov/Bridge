@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtSystemsSubscription
 {
-    public string SupSystem { get; set; }
-    public string SupResort { get; set; }
-    public string Subscriber { get; set; }
+    public string? SupSystem { get; set; }
+    public string? SupResort { get; set; }
+    public string? Subscriber { get; set; }
 
     public virtual ExtSystems SubscriberNavigation { get; set; }
 

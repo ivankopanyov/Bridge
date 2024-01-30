@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailHitlist
 {
-    public decimal HitlistId { get; set; }
-    public decimal QueryId { get; set; }
-    public decimal SourceId { get; set; }
-    public string Description { get; set; }
+    public decimal? HitlistId { get; set; }
+    public decimal? QueryId { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? Description { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
 
     public virtual MailQuery Query { get; set; }
     public virtual MailSource Source { get; set; }

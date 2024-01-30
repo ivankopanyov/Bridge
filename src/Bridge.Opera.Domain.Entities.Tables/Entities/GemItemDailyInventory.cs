@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemItemDailyInventory
 {
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public DateTime InventoryDate { get; set; }
-    public decimal Quantity { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public DateTime? InventoryDate { get; set; }
+    public decimal? Quantity { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual GemItem GemItem { get; set; }
 

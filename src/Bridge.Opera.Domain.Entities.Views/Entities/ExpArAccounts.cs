@@ -2,46 +2,46 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpArAccounts
 {
-    public string Resort { get; set; }
-    public decimal AccountCode { get; set; }
-    public string AccountNo { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AccountName { get; set; }
-    public string CompanyName { get; set; }
-    public string AccountSname { get; set; }
-    public string Status { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string Zip { get; set; }
-    public string Phone { get; set; }
-    public string Fax { get; set; }
-    public string Contact { get; set; }
-    public string BatchStmtYn { get; set; }
-    public string PermAcctYn { get; set; }
-    public string SumCurCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountNo { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AccountName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? AccountSname { get; set; }
+    public string? Status { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? Zip { get; set; }
+    public string? Phone { get; set; }
+    public string? Fax { get; set; }
+    public string? Contact { get; set; }
+    public string? BatchStmtYn { get; set; }
+    public string? PermAcctYn { get; set; }
+    public string? SumCurCode { get; set; }
     public decimal? CreditLimit { get; set; }
     public DateTime? LstRemSent { get; set; }
     public DateTime? LstStmtSent { get; set; }
-    public string LstRemText { get; set; }
+    public string? LstRemText { get; set; }
     public decimal? Age { get; set; }
-    public string Remarks { get; set; }
-    public decimal NameId { get; set; }
+    public string? Remarks { get; set; }
+    public decimal? NameId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string LastStmtFaxNo { get; set; }
-    public string LastRemFaxNo { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? LastStmtFaxNo { get; set; }
+    public string? LastRemFaxNo { get; set; }
     public decimal? NoOfPersons { get; set; }
     public decimal? Balance { get; set; }
     public DateTime? LstRemPrtDate { get; set; }
-    public string AccountStatus { get; set; }
-    public string EmailAddress { get; set; }
+    public string? AccountStatus { get; set; }
+    public string? EmailAddress { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

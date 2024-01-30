@@ -2,108 +2,108 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationServiceView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
-    public string ArrivalTime { get; set; }
+    public string? ArrivalTime { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? Departure { get; set; }
-    public string DepartureTime { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PaymentMethodDesc { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestLastNameSdx { get; set; }
-    public string GuestFirstNameSdx { get; set; }
-    public string GuestTitle { get; set; }
-    public string Sname { get; set; }
-    public string GuestTitleDesc { get; set; }
-    public string GuestMiddleName { get; set; }
-    public string GuestLanguage { get; set; }
-    public string GuestLanguageDesc { get; set; }
-    public string GuestPhone { get; set; }
-    public string GuestCountry { get; set; }
-    public string GuestCountryDesc { get; set; }
-    public decimal GuestNameId { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PaymentMethodDesc { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestLastNameSdx { get; set; }
+    public string? GuestFirstNameSdx { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? Sname { get; set; }
+    public string? GuestTitleDesc { get; set; }
+    public string? GuestMiddleName { get; set; }
+    public string? GuestLanguage { get; set; }
+    public string? GuestLanguageDesc { get; set; }
+    public string? GuestPhone { get; set; }
+    public string? GuestCountry { get; set; }
+    public string? GuestCountryDesc { get; set; }
+    public decimal? GuestNameId { get; set; }
     public decimal? PhoneId { get; set; }
     public decimal? AddressId { get; set; }
-    public string NameUsageType { get; set; }
-    public string WalkinYn { get; set; }
-    public string CancellationNo { get; set; }
+    public string? NameUsageType { get; set; }
+    public string? WalkinYn { get; set; }
+    public string? CancellationNo { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationReasonCode { get; set; }
-    public string CancellationReasonDesc { get; set; }
+    public string? CancellationReasonCode { get; set; }
+    public string? CancellationReasonDesc { get; set; }
     public DateTime? ActualCheckInDate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
     public DateTime? TruncActualCheckOutDate { get; set; }
     public DateTime? OriginalEndDate { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string GuaranteeCodeDesc { get; set; }
-    public string Comments { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? GuaranteeCodeDesc { get; set; }
+    public string? Comments { get; set; }
     public decimal? ParentResvNameId { get; set; }
-    public string PartyCode { get; set; }
+    public string? PartyCode { get; set; }
     public decimal? MembershipId { get; set; }
-    public string MembershipNumber { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? ShareAmount { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CompanyName { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string SourceName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? SourceId { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketDesc { get; set; }
-    public string RateCode { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketDesc { get; set; }
+    public string? RateCode { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public DateTime RdenReservationDate { get; set; }
-    public decimal ShareId { get; set; }
-    public string MultipleYn { get; set; }
-    public string SharedYn { get; set; }
-    public string AccompanyingYn { get; set; }
-    public string MessageYn { get; set; }
-    public string TraceYn { get; set; }
-    public string RoutingYn { get; set; }
-    public string LocatorYn { get; set; }
-    public string Vip { get; set; }
-    public string GuestVipDesc { get; set; }
-    public string AccompanyingNames { get; set; }
-    public string RoomFeatures { get; set; }
+    public string? Room { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public DateTime? RdenReservationDate { get; set; }
+    public decimal? ShareId { get; set; }
+    public string? MultipleYn { get; set; }
+    public string? SharedYn { get; set; }
+    public string? AccompanyingYn { get; set; }
+    public string? MessageYn { get; set; }
+    public string? TraceYn { get; set; }
+    public string? RoutingYn { get; set; }
+    public string? LocatorYn { get; set; }
+    public string? Vip { get; set; }
+    public string? GuestVipDesc { get; set; }
+    public string? AccompanyingNames { get; set; }
+    public string? RoomFeatures { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string SguestName { get; set; }
-    public string NameType { get; set; }
-    public string ExtnNumber { get; set; }
-    public string ExtnType { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string XcompanyName { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
+    public string? SguestName { get; set; }
+    public string? NameType { get; set; }
+    public string? ExtnNumber { get; set; }
+    public string? ExtnType { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
     public decimal? Children1 { get; set; }
     public decimal? Children2 { get; set; }
     public decimal? Children3 { get; set; }
-    public string ServiceStatus { get; set; }
-    public string DisplayColor { get; set; }
-    public string PostingAllowedYn { get; set; }
+    public string? ServiceStatus { get; set; }
+    public string? DisplayColor { get; set; }
+    public string? PostingAllowedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

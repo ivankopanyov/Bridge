@@ -13,27 +13,27 @@ public partial class MembershipTypes
         Memberships = new HashSet<Memberships>();
     }
 
-    public string MembershipType { get; set; }
-    public string Description { get; set; }
-    public string MembershipClass { get; set; }
-    public string CardPrefix { get; set; }
+    public string? MembershipType { get; set; }
+    public string? Description { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CardPrefix { get; set; }
     public decimal? CardLength { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? ExpirationMonth { get; set; }
-    public string NumericValidation { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PointsLabel { get; set; }
-    public string FolioMessage { get; set; }
+    public string? NumericValidation { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PointsLabel { get; set; }
+    public string? FolioMessage { get; set; }
     public decimal? CostPerPoint { get; set; }
-    public string CentralSetupYn { get; set; }
+    public string? CentralSetupYn { get; set; }
     public decimal? TransactionMaxPoints { get; set; }
-    public string PointsIssuedCentrallyYn { get; set; }
-    public string MembershipAction { get; set; }
-    public string AllowSharesYn { get; set; }
-    public string AllowAdhocMultiplierYn { get; set; }
-    public string UdfCardValidationYn { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? PointsIssuedCentrallyYn { get; set; }
+    public string? MembershipAction { get; set; }
+    public string? AllowSharesYn { get; set; }
+    public string? AllowAdhocMultiplierYn { get; set; }
+    public string? UdfCardValidationYn { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public decimal? BatchDelayPeriod { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
@@ -42,40 +42,40 @@ public partial class MembershipTypes
     public decimal? UpdateUser { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? GraceExpirationMonth { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string ExchangeRateType { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? ExchangeRateType { get; set; }
     public decimal? YearsToExpire { get; set; }
-    public string FulfilmentYn { get; set; }
-    public string ExpirationDateRequired { get; set; }
-    public string LevelRequired { get; set; }
-    public string PrimaryMembershipYn { get; set; }
-    public string FolioMessageNonmembers { get; set; }
-    public string UdfFormula { get; set; }
+    public string? FulfilmentYn { get; set; }
+    public string? ExpirationDateRequired { get; set; }
+    public string? LevelRequired { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
+    public string? FolioMessageNonmembers { get; set; }
+    public string? UdfFormula { get; set; }
     public decimal? CardValidYears { get; set; }
     public decimal? UpgradePeriod { get; set; }
     public decimal? DowngradePeriod { get; set; }
-    public string AllowDupCardYn { get; set; }
-    public string ExceptionType { get; set; }
+    public string? AllowDupCardYn { get; set; }
+    public string? ExceptionType { get; set; }
     public decimal? MultipleRoomsLimit { get; set; }
-    public string BookerProgramYn { get; set; }
-    public string AutoCardNoBasedOn { get; set; }
-    public string MemberInfoDispSet { get; set; }
-    public string ChainCode { get; set; }
-    public string DefaultMemStatus { get; set; }
-    public string EnrollmentCodeReqYn { get; set; }
-    public string TscDateFlag { get; set; }
-    public string SendChkoutToIfc { get; set; }
-    public string PromptAtCheckin { get; set; }
-    public string ValidationByIfc { get; set; }
-    public string FolioMessageNq { get; set; }
-    public string FolioMessageNonmembersNq { get; set; }
+    public string? BookerProgramYn { get; set; }
+    public string? AutoCardNoBasedOn { get; set; }
+    public string? MemberInfoDispSet { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DefaultMemStatus { get; set; }
+    public string? EnrollmentCodeReqYn { get; set; }
+    public string? TscDateFlag { get; set; }
+    public string? SendChkoutToIfc { get; set; }
+    public string? PromptAtCheckin { get; set; }
+    public string? ValidationByIfc { get; set; }
+    public string? FolioMessageNq { get; set; }
+    public string? FolioMessageNonmembersNq { get; set; }
     public decimal? ExternalProcessDays { get; set; }
-    public string PromptAtNewReservation { get; set; }
-    public string PromptAtUpdateReservation { get; set; }
-    public string PromptAtCheckOut { get; set; }
-    public string FolioMessageCredits { get; set; }
-    public string ExternallyControlledYn { get; set; }
-    public string ChipAndPinYn { get; set; }
+    public string? PromptAtNewReservation { get; set; }
+    public string? PromptAtUpdateReservation { get; set; }
+    public string? PromptAtCheckOut { get; set; }
+    public string? FolioMessageCredits { get; set; }
+    public string? ExternallyControlledYn { get; set; }
+    public string? ChipAndPinYn { get; set; }
 
     public virtual ICollection<MembershipAwards> MembershipAwards { get; set; }
     public virtual ICollection<MembershipCardReaderFmt> MembershipCardReaderFmt { get; set; }

@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwProfNumber
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string NumberType { get; set; }
-    public string NumberPmsType { get; set; }
-    public string ProfNumber { get; set; }
+    public string? NumberType { get; set; }
+    public string? NumberPmsType { get; set; }
+    public string? ProfNumber { get; set; }
     public DateTime? NumberExpiration { get; set; }
     public DateTime? NumberEnrollment { get; set; }
 

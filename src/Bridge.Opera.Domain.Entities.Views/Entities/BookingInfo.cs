@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BookingInfo
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
     public decimal? RmsBlocked { get; set; }
     public decimal? RmsReserved { get; set; }
     public decimal? RmsAvail { get; set; }

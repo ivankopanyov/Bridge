@@ -4,10 +4,10 @@ public partial class ExpUpeAllotmentDtl
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string ExpGroupId { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string RateCode { get; set; }
+    public string? ExpGroupId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? ToSell { get; set; }

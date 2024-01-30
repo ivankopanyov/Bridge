@@ -3,35 +3,35 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class Folios
 {
     public decimal? ResvDeptRno { get; set; }
-    public string FolioStatus { get; set; }
+    public string? FolioStatus { get; set; }
     public decimal? CurrExchRno { get; set; }
     public decimal? CheckExchRno { get; set; }
-    public decimal FolioNo { get; set; }
-    public string State { get; set; }
+    public decimal? FolioNo { get; set; }
+    public string? State { get; set; }
     public decimal? NumberReprints { get; set; }
-    public DateTime Timestamp { get; set; }
+    public DateTime? Timestamp { get; set; }
     public decimal? CashierId { get; set; }
-    public string FolioStyle { get; set; }
-    public decimal NameId { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal FolioView { get; set; }
+    public string? FolioStyle { get; set; }
+    public decimal? NameId { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? FolioView { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public string FltType { get; set; }
-    public string TemplatePath { get; set; }
-    public string PhoneDetails { get; set; }
-    public string ProcessIdent { get; set; }
+    public string? Resort { get; set; }
+    public string? FltType { get; set; }
+    public string? TemplatePath { get; set; }
+    public string? PhoneDetails { get; set; }
+    public string? ProcessIdent { get; set; }
     public decimal? NoOfPersons { get; set; }
     public DateTime? FoDate { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? RevisionNo { get; set; }
-    public decimal FolioSeqNo { get; set; }
+    public decimal? FolioSeqNo { get; set; }
     public DateTime? BillGenerationDate { get; set; }
-    public string FolioType { get; set; }
-    public string PostitYn { get; set; }
+    public string? FolioType { get; set; }
+    public string? PostitYn { get; set; }
     public decimal? PostitNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

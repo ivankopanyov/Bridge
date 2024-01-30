@@ -10,11 +10,11 @@ public partial class ActionType
         OcrmCampaigns = new HashSet<OcrmCampaigns>();
     }
 
-    public string Module { get; set; }
-    public string ActionType1 { get; set; }
-    public string UserLogPresentation { get; set; }
-    public string DeImpactWhenYn { get; set; }
-    public string InheritDeFromModule { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType1 { get; set; }
+    public string? UserLogPresentation { get; set; }
+    public string? DeImpactWhenYn { get; set; }
+    public string? InheritDeFromModule { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 

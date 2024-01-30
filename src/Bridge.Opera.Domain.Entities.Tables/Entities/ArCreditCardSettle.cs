@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArCreditCardSettle
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? InvoiceNo { get; set; }
 

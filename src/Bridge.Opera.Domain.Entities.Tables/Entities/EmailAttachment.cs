@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EmailAttachment
 {
-    public decimal EmailId { get; set; }
-    public string FileName { get; set; }
+    public decimal? EmailId { get; set; }
+    public string? FileName { get; set; }
     public byte[] Attachment { get; set; }
-    public decimal AttachId { get; set; }
-    public string Description { get; set; }
+    public decimal? AttachId { get; set; }
+    public string? Description { get; set; }
     public byte[] BfileLocator { get; set; }
-    public string AttachmentLocation { get; set; }
+    public string? AttachmentLocation { get; set; }
 
     public virtual EmailJournal Email { get; set; }
 

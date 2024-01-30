@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsGraphOversellVw
 {
-    public decimal Code { get; set; }
-    public string Val { get; set; }
+    public decimal? Code { get; set; }
+    public string? Val { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntPerformanceSnapshot
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public DateTime SnapshotFrom { get; set; }
-    public DateTime SnapshotTo { get; set; }
-    public string Module { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? SnapshotFrom { get; set; }
+    public DateTime? SnapshotTo { get; set; }
+    public string? Module { get; set; }
     public decimal? BePriority { get; set; }
-    public string MessageType { get; set; }
+    public string? MessageType { get; set; }
     public decimal? Success { get; set; }
     public decimal? Failed { get; set; }
     public decimal? Rejected { get; set; }

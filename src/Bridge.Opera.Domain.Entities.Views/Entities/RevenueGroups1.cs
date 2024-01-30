@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RevenueGroups1
 {
-    public string RevGroup { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
+    public string? RevGroup { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? BiBucket { get; set; }
-    public string BiLabel { get; set; }
+    public string? BiLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateActionDataElements
 {
-    public decimal ActionInstanceId { get; set; }
-    public string ActionType { get; set; }
-    public string DataElements { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElements { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string ElementType { get; set; }
-    public string ElementRole { get; set; }
-    public decimal RateDataElementId { get; set; }
+    public string? ElementType { get; set; }
+    public string? ElementRole { get; set; }
+    public decimal? RateDataElementId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

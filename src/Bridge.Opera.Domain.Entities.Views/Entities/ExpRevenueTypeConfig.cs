@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpRevenueTypeConfig
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string RevenueType { get; set; }
-    public string Description { get; set; }
+    public string? RevenueType { get; set; }
+    public string? Description { get; set; }
     public decimal? Vat { get; set; }
-    public string FbClass { get; set; }
+    public string? FbClass { get; set; }
     public DateTime? NbtInactive { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTrxBucketLink
 {
-    public decimal BucketId { get; set; }
-    public decimal MembershipTrxId { get; set; }
-    public decimal BucketQuantity { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? BucketId { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public decimal? BucketQuantity { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameResort
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string NameTaxType { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? NameTaxType { get; set; }
     public decimal? TaxPerc1 { get; set; }
     public decimal? TaxPerc2 { get; set; }
     public decimal? TaxPerc3 { get; set; }
     public decimal? TaxPerc4 { get; set; }
     public decimal? TaxPerc5 { get; set; }
-    public string Actioncode { get; set; }
+    public string? Actioncode { get; set; }
     public decimal? GuestType { get; set; }
-    public string PaymentMethod { get; set; }
-    public string AutoPopulateRoutingYn { get; set; }
-    public string Priority { get; set; }
-    public string RoomsPotential { get; set; }
-    public string CompetitionCode { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? AutoPopulateRoutingYn { get; set; }
+    public string? Priority { get; set; }
+    public string? RoomsPotential { get; set; }
+    public string? CompetitionCode { get; set; }
     public DateTime? LastPrivacyPromptDate { get; set; }
 
     public virtual Name Name { get; set; }

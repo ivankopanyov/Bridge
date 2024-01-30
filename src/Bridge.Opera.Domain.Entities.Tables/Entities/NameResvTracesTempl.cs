@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameResvTracesTempl
 {
-    public decimal ResvTraceTemplId { get; set; }
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string TraceText { get; set; }
-    public string InternalNote { get; set; }
+    public decimal? ResvTraceTemplId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? TraceText { get; set; }
+    public string? InternalNote { get; set; }
     public DateTime? ActionTime { get; set; }
     public DateTime? GoodThrough { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string FrequencyCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? FrequencyCode { get; set; }
     public DateTime? TraceTime { get; set; }
     public decimal? ResvNameId { get; set; }
 

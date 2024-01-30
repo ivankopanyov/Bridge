@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepAllotmentView
 {
-    public decimal HeaderId { get; set; }
-    public string Resort { get; set; }
-    public string RoomType { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string InsertFormatDate { get; set; }
-    public string InsertTime { get; set; }
+    public decimal? HeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomType { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? InsertFormatDate { get; set; }
+    public string? InsertTime { get; set; }
     public decimal? CurrentToSell { get; set; }
     public decimal? Original { get; set; }
     public decimal? Change { get; set; }
@@ -17,44 +17,44 @@ public partial class RepAllotmentView
     public decimal? Double { get; set; }
     public decimal? Triple { get; set; }
     public decimal? Quad { get; set; }
-    public string BlockName { get; set; }
+    public string? BlockName { get; set; }
     public DateTime? CutOffDate { get; set; }
     public decimal? InvCutoffDays { get; set; }
     public decimal? MasterNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
-    public string CompanyName { get; set; }
-    public string AgentName { get; set; }
-    public string SourceName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? AgentName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? AgentNameId { get; set; }
     public decimal? SourceNameId { get; set; }
-    public string Description { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? Description { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CancelRule { get; set; }
-    public string RateCode { get; set; }
-    public string Status { get; set; }
+    public string? CancelRule { get; set; }
+    public string? RateCode { get; set; }
+    public string? Status { get; set; }
     public decimal? Elastic { get; set; }
     public decimal? TentativeLevel { get; set; }
-    public string Info { get; set; }
-    public string MarketCode { get; set; }
-    public string Source { get; set; }
-    public string Channel { get; set; }
+    public string? Info { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Source { get; set; }
+    public string? Channel { get; set; }
     public decimal? AvgPeoplePerRoom { get; set; }
-    public string OriginalRateCode { get; set; }
-    public string BookingId { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? OriginalRateCode { get; set; }
+    public string? BookingId { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? CancellationNo { get; set; }
-    public string CancellationCode { get; set; }
+    public string? CancellationCode { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationDesc { get; set; }
+    public string? CancellationDesc { get; set; }
     public decimal? RoomsPerDay { get; set; }
     public decimal? AverageRate { get; set; }
-    public string AllotmentOrigion { get; set; }
-    public string SuperBlockResort { get; set; }
+    public string? AllotmentOrigion { get; set; }
+    public string? SuperBlockResort { get; set; }
     public int? SuperBlockId { get; set; }
-    public string AllotmentCode { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? AllotmentCode { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

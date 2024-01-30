@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PaymentMethodsInt
 {
-    public string PaymentMethod { get; set; }
-    public string Description { get; set; }
-    public string CcCode { get; set; }
-    public string TrxCode { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? Description { get; set; }
+    public string? CcCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? IssueNumber { get; set; }
     public decimal? StartDate { get; set; }
-    public string ResvPaymentYn { get; set; }
+    public string? ResvPaymentYn { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

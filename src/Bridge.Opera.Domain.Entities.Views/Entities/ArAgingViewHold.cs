@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAgingViewHold
 {
-    public string Resort { get; set; }
-    public string AgingStyle { get; set; }
-    public decimal AccountCode { get; set; }
-    public string AccountType { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AccountTypeDesc { get; set; }
-    public string AccountName { get; set; }
+    public string? Resort { get; set; }
+    public string? AgingStyle { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountType { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AccountTypeDesc { get; set; }
+    public string? AccountName { get; set; }
     public decimal? FromAge { get; set; }
     public decimal? ToAge { get; set; }
-    public string AgeRange { get; set; }
+    public string? AgeRange { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
     public decimal? Bal { get; set; }
@@ -19,7 +19,7 @@ public partial class ArAgingViewHold
     public decimal? SeqNo { get; set; }
     public decimal? RemSeqNo { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string AccountNo { get; set; }
+    public string? AccountNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

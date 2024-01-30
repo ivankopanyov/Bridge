@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntIfcRulesTabSys
 {
-    public string InterfaceId { get; set; }
-    public string Region { get; set; }
-    public string ProfileType { get; set; }
-    public string DisplayName { get; set; }
-    public string OrsTable { get; set; }
-    public string OrsColumn { get; set; }
-    public string PmsTable { get; set; }
-    public string PmsColumn { get; set; }
-    public string ToOrs { get; set; }
-    public string ToPms { get; set; }
-    public string Broadcast { get; set; }
-    public string OrsMandatory { get; set; }
-    public string PmsCaseSetting { get; set; }
-    public string PmsMandatory { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Region { get; set; }
+    public string? ProfileType { get; set; }
+    public string? DisplayName { get; set; }
+    public string? OrsTable { get; set; }
+    public string? OrsColumn { get; set; }
+    public string? PmsTable { get; set; }
+    public string? PmsColumn { get; set; }
+    public string? ToOrs { get; set; }
+    public string? ToPms { get; set; }
+    public string? Broadcast { get; set; }
+    public string? OrsMandatory { get; set; }
+    public string? PmsCaseSetting { get; set; }
+    public string? PmsMandatory { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string OptionsToOrs { get; set; }
-    public string RequiredYn { get; set; }
-    public string DataElement { get; set; }
-    public string UdfRule { get; set; }
-    public string ModuleName { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? OptionsToOrs { get; set; }
+    public string? RequiredYn { get; set; }
+    public string? DataElement { get; set; }
+    public string? UdfRule { get; set; }
+    public string? ModuleName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

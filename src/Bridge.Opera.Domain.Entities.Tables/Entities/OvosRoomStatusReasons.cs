@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class OvosRoomStatusReasons
 {
     public decimal? Id { get; set; }
-    public string ReasonCode { get; set; }
+    public string? ReasonCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScNameGoalFact
 {
-    public string Resort { get; set; }
-    public string ActType { get; set; }
-    public string MarketCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ActType { get; set; }
+    public string? MarketCode { get; set; }
     public DateTime? GoalStartdate { get; set; }
     public DateTime? GoalEnddate { get; set; }
-    public string GoalType { get; set; }
+    public string? GoalType { get; set; }
     public decimal? OwnerNameId { get; set; }
     public decimal? GoalRoomNights { get; set; }
     public decimal? GoalRoomRevenue { get; set; }

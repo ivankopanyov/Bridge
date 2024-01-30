@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortFnsRules
 {
-    public string Resort { get; set; }
-    public decimal MinOccupancy { get; set; }
-    public decimal MaxOccupancy { get; set; }
-    public string CalculationType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MinOccupancy { get; set; }
+    public decimal? MaxOccupancy { get; set; }
+    public string? CalculationType { get; set; }
     public decimal? FnsAmount { get; set; }
     public decimal? AdrPercentage { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

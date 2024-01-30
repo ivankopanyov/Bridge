@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AutoFolioSettleView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? Balance { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string Room { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? Room { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
     public DateTime? LastSettleDate { get; set; }
     public decimal? AutoSettleDays { get; set; }
-    public string CanAutoSettleYn { get; set; }
-    public string DirectBillBatchType { get; set; }
-    public string AutoSettleYn { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? CanAutoSettleYn { get; set; }
+    public string? DirectBillBatchType { get; set; }
+    public string? AutoSettleYn { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? DaysSinceLastSettle { get; set; }
-    public string RateCode { get; set; }
-    public DateTime ReservationDate { get; set; }
+    public string? RateCode { get; set; }
+    public DateTime? ReservationDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

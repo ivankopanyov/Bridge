@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntActionTypeSubscription
 {
-    public string Code { get; set; }
-    public string Resort { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
+    public string? Code { get; set; }
+    public string? Resort { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

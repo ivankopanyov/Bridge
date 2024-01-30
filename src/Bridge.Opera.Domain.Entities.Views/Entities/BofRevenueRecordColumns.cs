@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofRevenueRecordColumns
 {
-    public string TableType { get; set; }
-    public string TableName { get; set; }
-    public string DataType { get; set; }
-    public string ColumnName { get; set; }
-    public string ColumnDefinition { get; set; }
+    public string? TableType { get; set; }
+    public string? TableName { get; set; }
+    public string? DataType { get; set; }
+    public string? ColumnName { get; set; }
+    public string? ColumnDefinition { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SessionMemoryLog
 {
-    public decimal SmlSeqno { get; set; }
-    public decimal Sid { get; set; }
-    public decimal Audsid { get; set; }
-    public string FormName { get; set; }
+    public decimal? SmlSeqno { get; set; }
+    public decimal? Sid { get; set; }
+    public decimal? Audsid { get; set; }
+    public string? FormName { get; set; }
     public decimal? UgaMemory { get; set; }
     public decimal? PgaMemory { get; set; }
-    public string Terminal { get; set; }
-    public string Resort { get; set; }
-    public string ModuleInfo { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? Terminal { get; set; }
+    public string? Resort { get; set; }
+    public string? ModuleInfo { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? AppMemory { get; set; }
     public decimal? AppPrivMemory { get; set; }
     public decimal? AppPrivMemoryPeak { get; set; }
     public decimal? BufferGets { get; set; }
     public decimal? DiffBufferGets { get; set; }
-    public string TransactionInfoText { get; set; }
-    public string ProcessInfo { get; set; }
-    public string CharInsertDate { get; set; }
+    public string? TransactionInfoText { get; set; }
+    public string? ProcessInfo { get; set; }
+    public string? CharInsertDate { get; set; }
     public decimal? InstanceId { get; set; }
     public decimal? PgaMemoryDiff { get; set; }
 

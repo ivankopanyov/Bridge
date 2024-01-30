@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageFinStatDaily
 {
-    public decimal StageRecordId { get; set; }
-    public string InterfaceId { get; set; }
+    public decimal? StageRecordId { get; set; }
+    public string? InterfaceId { get; set; }
     public DateTime? ImportDate { get; set; }
-    public string StageStatus { get; set; }
-    public string StageSuspenseReason { get; set; }
+    public string? StageStatus { get; set; }
+    public string? StageSuspenseReason { get; set; }
     public decimal? SetId { get; set; }
-    public string ConfirmationId { get; set; }
-    public string ReservationId { get; set; }
+    public string? ConfirmationId { get; set; }
+    public string? ReservationId { get; set; }
     public decimal? MfConfirmationLegNo { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string PmsResvNo { get; set; }
-    public string PmsDeptCode { get; set; }
-    public string PmsNameId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? PmsDeptCode { get; set; }
+    public string? PmsNameId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string TrxCode { get; set; }
-    public string TcSubgroup { get; set; }
-    public string MarketCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
     public decimal? CompanyId { get; set; }
-    public string CheckNumber { get; set; }
-    public string CheckNumberId { get; set; }
+    public string? CheckNumber { get; set; }
+    public string? CheckNumberId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

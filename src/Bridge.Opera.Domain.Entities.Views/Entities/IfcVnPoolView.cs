@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcVnPoolView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string LineType { get; set; }
-    public string PoolIds { get; set; }
-    public string PriorityPool { get; set; }
+    public string? LineType { get; set; }
+    public string? PoolIds { get; set; }
+    public string? PriorityPool { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

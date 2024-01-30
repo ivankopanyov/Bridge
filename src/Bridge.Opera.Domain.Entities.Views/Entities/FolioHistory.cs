@@ -2,66 +2,66 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FolioHistory
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? BillNo { get; set; }
     public DateTime? BillGenerationDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? RevisionNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? Clpay { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
     public decimal? PayeeNameId { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? AccountCode { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string GuestName { get; set; }
-    public string PayeeName { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? GuestName { get; set; }
+    public string? PayeeName { get; set; }
     public decimal? Gross { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? ClTrxNo { get; set; }
     public DateTime? AssociatedBillDate { get; set; }
     public decimal? Deposit { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string FolioPdfName { get; set; }
-    public string PalmVideoFlag { get; set; }
-    public string CheckoutYn { get; set; }
-    public string ArYn { get; set; }
-    public string CompressYn { get; set; }
-    public string PalmYn { get; set; }
-    public string VideoYn { get; set; }
-    public string FiscalFolioNo { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? FolioPdfName { get; set; }
+    public string? PalmVideoFlag { get; set; }
+    public string? CheckoutYn { get; set; }
+    public string? ArYn { get; set; }
+    public string? CompressYn { get; set; }
+    public string? PalmYn { get; set; }
+    public string? VideoYn { get; set; }
+    public string? FiscalFolioNo { get; set; }
     public decimal? BillSeqNo { get; set; }
-    public string BillPrefix { get; set; }
+    public string? BillPrefix { get; set; }
     public decimal? NoOfPages { get; set; }
     public decimal? PostitNo { get; set; }
-    public string ActionName { get; set; }
+    public string? ActionName { get; set; }
     public decimal? FolioAttachmentLinkId { get; set; }
     public decimal? FolioAttachmentStatus { get; set; }
     public decimal? AddresseeNameId { get; set; }
-    public string AddresseeName { get; set; }
-    public string XaddresseeName { get; set; }
+    public string? AddresseeName { get; set; }
+    public string? XaddresseeName { get; set; }
     public decimal? BillPaymentTrxNo { get; set; }
-    public string CreditBillGeneratedYn { get; set; }
-    public string FolioAddressCorrectedYn { get; set; }
-    public string TaxId { get; set; }
-    public string EInvoiceStatus { get; set; }
-    public string EInvoiceNumber { get; set; }
-    public string EInvoiceLiableYn { get; set; }
-    public string Tax1No { get; set; }
-    public string Tax2No { get; set; }
+    public string? CreditBillGeneratedYn { get; set; }
+    public string? FolioAddressCorrectedYn { get; set; }
+    public string? TaxId { get; set; }
+    public string? EInvoiceStatus { get; set; }
+    public string? EInvoiceNumber { get; set; }
+    public string? EInvoiceLiableYn { get; set; }
+    public string? Tax1No { get; set; }
+    public string? Tax2No { get; set; }
     public decimal? FolioTaxSeqNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

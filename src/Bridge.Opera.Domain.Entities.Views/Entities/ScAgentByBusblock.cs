@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScAgentByBusblock
 {
-    public string BusblockProperty { get; set; }
-    public decimal BusblockId { get; set; }
-    public string AgentRelationship { get; set; }
-    public string AgentRelationshipDesc { get; set; }
-    public string AgentPrimaryYn { get; set; }
-    public decimal AgentId { get; set; }
-    public string AgentName { get; set; }
-    public string AgentName2 { get; set; }
-    public string AgentName3 { get; set; }
-    public string AgentAddress1 { get; set; }
-    public string AgentAddress2 { get; set; }
-    public string AgentState { get; set; }
-    public string AgentCountry { get; set; }
-    public string AgentCountryDesc { get; set; }
-    public string AgentCity { get; set; }
-    public string AgentCityExt { get; set; }
-    public string AgentZipcode { get; set; }
-    public string AgentPhone { get; set; }
-    public string AgentFax { get; set; }
-    public string AgentEmail { get; set; }
-    public string IataCorpNo { get; set; }
-    public string XagentName { get; set; }
-    public string AgentXfirstName { get; set; }
-    public string AgentXtitle { get; set; }
-    public string AgentXsalutation { get; set; }
-    public string AgentXdisplayName { get; set; }
-    public string AgentXenvelopeGreeting { get; set; }
-    public string AgentXlanguage { get; set; }
-    public string AgentXlanguageDesc { get; set; }
+    public string? BusblockProperty { get; set; }
+    public decimal? BusblockId { get; set; }
+    public string? AgentRelationship { get; set; }
+    public string? AgentRelationshipDesc { get; set; }
+    public string? AgentPrimaryYn { get; set; }
+    public decimal? AgentId { get; set; }
+    public string? AgentName { get; set; }
+    public string? AgentName2 { get; set; }
+    public string? AgentName3 { get; set; }
+    public string? AgentAddress1 { get; set; }
+    public string? AgentAddress2 { get; set; }
+    public string? AgentState { get; set; }
+    public string? AgentCountry { get; set; }
+    public string? AgentCountryDesc { get; set; }
+    public string? AgentCity { get; set; }
+    public string? AgentCityExt { get; set; }
+    public string? AgentZipcode { get; set; }
+    public string? AgentPhone { get; set; }
+    public string? AgentFax { get; set; }
+    public string? AgentEmail { get; set; }
+    public string? IataCorpNo { get; set; }
+    public string? XagentName { get; set; }
+    public string? AgentXfirstName { get; set; }
+    public string? AgentXtitle { get; set; }
+    public string? AgentXsalutation { get; set; }
+    public string? AgentXdisplayName { get; set; }
+    public string? AgentXenvelopeGreeting { get; set; }
+    public string? AgentXlanguage { get; set; }
+    public string? AgentXlanguageDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

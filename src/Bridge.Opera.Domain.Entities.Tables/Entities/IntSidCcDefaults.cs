@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntSidCcDefaults
 {
-    public string ConversionCode { get; set; }
-    public string InterfaceId { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? InterfaceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

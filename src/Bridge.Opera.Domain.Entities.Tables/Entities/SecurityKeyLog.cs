@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SecurityKeyLog
 {
-    public string AppUser { get; set; }
-    public string LoggedSecurityKey { get; set; }
-    public DateTime LastLoggedTimestamp { get; set; }
+    public string? AppUser { get; set; }
+    public string? LoggedSecurityKey { get; set; }
+    public DateTime? LastLoggedTimestamp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

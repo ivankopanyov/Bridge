@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SentToPage
 {
-    public decimal ToPageSeqNo { get; set; }
+    public decimal? ToPageSeqNo { get; set; }
     public decimal? TotalAttemptsMade { get; set; }
-    public string Resort { get; set; }
-    public string ToPageString { get; set; }
-    public DateTime LastPageRequestedDate { get; set; }
+    public string? Resort { get; set; }
+    public string? ToPageString { get; set; }
+    public DateTime? LastPageRequestedDate { get; set; }
     public DateTime? LastPageSentDate { get; set; }
-    public string PagerNumber { get; set; }
-    public string PageSentYn { get; set; }
+    public string? PagerNumber { get; set; }
+    public string? PageSentYn { get; set; }
     public decimal? PageCount { get; set; }
-    public string NumericPageYn { get; set; }
+    public string? NumericPageYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

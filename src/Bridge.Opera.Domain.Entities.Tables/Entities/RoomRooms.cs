@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomRooms
 {
-    public string ComponentRoom { get; set; }
-    public string MasterEntryYn { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? ComponentRoom { get; set; }
+    public string? MasterEntryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? VnPriority { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

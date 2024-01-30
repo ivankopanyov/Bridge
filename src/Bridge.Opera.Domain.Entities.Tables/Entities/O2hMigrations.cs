@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2hMigrations
 {
-    public string MigrationId { get; set; }
-    public string MigrationPhase { get; set; }
-    public string MigrationStatus { get; set; }
-    public string MigrationStep { get; set; }
+    public string? MigrationId { get; set; }
+    public string? MigrationPhase { get; set; }
+    public string? MigrationStatus { get; set; }
+    public string? MigrationStep { get; set; }
     public decimal? MigratedRows { get; set; }
-    public string TargetChainCode { get; set; }
-    public string AutoContinueYn { get; set; }
-    public string AppVersion { get; set; }
-    public string Dblink { get; set; }
+    public string? TargetChainCode { get; set; }
+    public string? AutoContinueYn { get; set; }
+    public string? AppVersion { get; set; }
+    public string? Dblink { get; set; }
     public DateTime? CutoffDate { get; set; }
-    public string StopOnErrorYn { get; set; }
-    public string ProcId { get; set; }
-    public string SourceSchema { get; set; }
-    public string SourceServiceName { get; set; }
-    public string SourcePortNo { get; set; }
-    public string SourceHost { get; set; }
+    public string? StopOnErrorYn { get; set; }
+    public string? ProcId { get; set; }
+    public string? SourceSchema { get; set; }
+    public string? SourceServiceName { get; set; }
+    public string? SourcePortNo { get; set; }
+    public string? SourceHost { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string SourceChainCode { get; set; }
-    public string SourceResort { get; set; }
-    public string AllProfilesYn { get; set; }
-    public string ProfilesQuery { get; set; }
-    public string MigrateSidYn { get; set; }
-    public string LastKey { get; set; }
-    public string DebugYn { get; set; }
+    public string? SourceChainCode { get; set; }
+    public string? SourceResort { get; set; }
+    public string? AllProfilesYn { get; set; }
+    public string? ProfilesQuery { get; set; }
+    public string? MigrateSidYn { get; set; }
+    public string? LastKey { get; set; }
+    public string? DebugYn { get; set; }
     public DateTime? SourceChainDate { get; set; }
-    public string OriginalMigrationId { get; set; }
+    public string? OriginalMigrationId { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? StartDate { get; set; }
     public decimal? NoOfRestarts { get; set; }
-    public string CodeConversionYn { get; set; }
-    public string ShareProfilesYn { get; set; }
+    public string? CodeConversionYn { get; set; }
+    public string? ShareProfilesYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

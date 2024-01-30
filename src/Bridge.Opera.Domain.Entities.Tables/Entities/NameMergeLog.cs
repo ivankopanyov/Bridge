@@ -4,29 +4,29 @@ public partial class NameMergeLog
 {
     public decimal? NameIdFrom { get; set; }
     public decimal? NameIdTo { get; set; }
-    public string ReportedYn { get; set; }
+    public string? ReportedYn { get; set; }
     public DateTime? TransactionDate { get; set; }
-    public string NameTypeF { get; set; }
-    public string NameTypeT { get; set; }
-    public string LastF { get; set; }
-    public string LastT { get; set; }
-    public string FirstF { get; set; }
-    public string FirstT { get; set; }
-    public string DisplayNameF { get; set; }
-    public string DisplayNameT { get; set; }
-    public string XfirstnameF { get; set; }
-    public string XfirstnameT { get; set; }
-    public string XlastnameF { get; set; }
-    public string XlastnameT { get; set; }
-    public string AddressTypeF { get; set; }
-    public string AddressTypeT { get; set; }
-    public string AddressF { get; set; }
-    public string AddressT { get; set; }
-    public string DatabaseId { get; set; }
-    public string DatabaseNameIdF { get; set; }
-    public string DatabaseNameIdT { get; set; }
-    public string NameCodeF { get; set; }
-    public string NameCodeT { get; set; }
+    public string? NameTypeF { get; set; }
+    public string? NameTypeT { get; set; }
+    public string? LastF { get; set; }
+    public string? LastT { get; set; }
+    public string? FirstF { get; set; }
+    public string? FirstT { get; set; }
+    public string? DisplayNameF { get; set; }
+    public string? DisplayNameT { get; set; }
+    public string? XfirstnameF { get; set; }
+    public string? XfirstnameT { get; set; }
+    public string? XlastnameF { get; set; }
+    public string? XlastnameT { get; set; }
+    public string? AddressTypeF { get; set; }
+    public string? AddressTypeT { get; set; }
+    public string? AddressF { get; set; }
+    public string? AddressT { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? DatabaseNameIdF { get; set; }
+    public string? DatabaseNameIdT { get; set; }
+    public string? NameCodeF { get; set; }
+    public string? NameCodeT { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? InsertUser { get; set; }
 

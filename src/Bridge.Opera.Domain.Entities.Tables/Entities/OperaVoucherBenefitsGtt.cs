@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaVoucherBenefitsGtt
 {
-    public string TabName { get; set; }
-    public decimal TabRowId { get; set; }
-    public string SelectedYn { get; set; }
+    public string? TabName { get; set; }
+    public decimal? TabRowId { get; set; }
+    public string? SelectedYn { get; set; }
     public decimal? ResvVoucherId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ResvPromotion { get; set; }
-    public string VoucherNo { get; set; }
-    public string VoucherType { get; set; }
-    public string VoucherBenefitCode { get; set; }
-    public string VoucherBenefitDtlCode { get; set; }
+    public string? ResvPromotion { get; set; }
+    public string? VoucherNo { get; set; }
+    public string? VoucherType { get; set; }
+    public string? VoucherBenefitCode { get; set; }
+    public string? VoucherBenefitDtlCode { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? StayDay { get; set; }
-    public string BenefitBasedOn { get; set; }
+    public string? BenefitBasedOn { get; set; }
     public decimal? NoOfUnits { get; set; }
-    public string VouRateCode { get; set; }
-    public string ResvRateCode { get; set; }
+    public string? VouRateCode { get; set; }
+    public string? ResvRateCode { get; set; }
     public decimal? ApplySeq { get; set; }
-    public string RetroBenefitYn { get; set; }
-    public string ECertificateNo { get; set; }
-    public string RefTypeCode { get; set; }
+    public string? RetroBenefitYn { get; set; }
+    public string? ECertificateNo { get; set; }
+    public string? RefTypeCode { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? ExpDate { get; set; }
-    public string SysStatus { get; set; }
-    public string ValidFlg { get; set; }
-    public string ErrCode { get; set; }
-    public string ErrDesc { get; set; }
+    public string? SysStatus { get; set; }
+    public string? ValidFlg { get; set; }
+    public string? ErrCode { get; set; }
+    public string? ErrDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidChnlCnvParamNamesSys
 {
-    public string ParameterName { get; set; }
-    public string ParameterDisplay { get; set; }
-    public string Description { get; set; }
-    public string ParameterScope { get; set; }
-    public string ParameterType { get; set; }
-    public string ParameterGroup { get; set; }
-    public string DefaultValue { get; set; }
-    public string LovValues { get; set; }
-    public string UsedInApp { get; set; }
-    public string HiddenYn { get; set; }
-    public string ForbidCopyYn { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string NullAllowedYn { get; set; }
-    public string FreeTextYn { get; set; }
-    public string MixedCaseYn { get; set; }
-    public string ExtendedLovYn { get; set; }
-    public string MultiselectYn { get; set; }
-    public string LovWindowTtl { get; set; }
-    public string LovDescLbl { get; set; }
-    public string LovValidateFunc { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterDisplay { get; set; }
+    public string? Description { get; set; }
+    public string? ParameterScope { get; set; }
+    public string? ParameterType { get; set; }
+    public string? ParameterGroup { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? LovValues { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? HiddenYn { get; set; }
+    public string? ForbidCopyYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? NullAllowedYn { get; set; }
+    public string? FreeTextYn { get; set; }
+    public string? MixedCaseYn { get; set; }
+    public string? ExtendedLovYn { get; set; }
+    public string? MultiselectYn { get; set; }
+    public string? LovWindowTtl { get; set; }
+    public string? LovDescLbl { get; set; }
+    public string? LovValidateFunc { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ParamProperties { get; set; }
+    public string? ParamProperties { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

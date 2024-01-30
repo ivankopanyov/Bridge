@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsExpdatesVw
 {
-    public decimal Seq { get; set; }
+    public decimal? Seq { get; set; }
     public DateTime? ExpDate { get; set; }
-    public string DateDesc { get; set; }
+    public string? DateDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

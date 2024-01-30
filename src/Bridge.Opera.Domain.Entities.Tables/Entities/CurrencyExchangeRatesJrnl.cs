@@ -4,16 +4,16 @@ public partial class CurrencyExchangeRatesJrnl
 {
     public DateTime? BeginDate { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string LockRateYn { get; set; }
-    public string Comments { get; set; }
+    public string? LockRateYn { get; set; }
+    public string? Comments { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string Resort { get; set; }
-    public string ExchangeRateType { get; set; }
-    public string BaseCurrCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ExchangeRateType { get; set; }
+    public string? BaseCurrCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? CurrActionId { get; set; }
     public decimal? OldCurrActionId { get; set; }
     public decimal? BuyCommPerc { get; set; }

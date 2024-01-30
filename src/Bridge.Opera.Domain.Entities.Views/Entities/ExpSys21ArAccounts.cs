@@ -12,9 +12,9 @@ public partial class ExpSys21ArAccounts
     public decimal? AgeBucket5Balance { get; set; }
     public decimal? AgeBucket6Balance { get; set; }
     public decimal? TotalBalance { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountType { get; set; }
-    public string AccountTypeDesc { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountTypeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

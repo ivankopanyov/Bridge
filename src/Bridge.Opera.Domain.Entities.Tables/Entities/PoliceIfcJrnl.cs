@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PoliceIfcJrnl
 {
-    public decimal JrnlSeqNo { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public decimal PoliceId { get; set; }
+    public decimal? JrnlSeqNo { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PoliceId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string PoliceNumber { get; set; }
-    public string PoliceStatus { get; set; }
-    public string Room { get; set; }
-    public string ResvType { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Gender { get; set; }
+    public string? PoliceNumber { get; set; }
+    public string? PoliceStatus { get; set; }
+    public string? Room { get; set; }
+    public string? ResvType { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Gender { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string Address1 { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string Nationality { get; set; }
-    public string Profession { get; set; }
-    public string TransportMethod { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? Address1 { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? Nationality { get; set; }
+    public string? Profession { get; set; }
+    public string? TransportMethod { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string IdType { get; set; }
-    public string IdNumber { get; set; }
+    public string? IdType { get; set; }
+    public string? IdNumber { get; set; }
     public DateTime? IdDate { get; set; }
-    public string IdPlace { get; set; }
-    public string IdCountry { get; set; }
+    public string? IdPlace { get; set; }
+    public string? IdCountry { get; set; }
     public decimal? AccompanyNameId { get; set; }
-    public string AccompanyLast { get; set; }
-    public string AccompanyFirst { get; set; }
-    public string ErrorMessage { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string HotelKey { get; set; }
-    public string BirthDateStr { get; set; }
+    public string? AccompanyLast { get; set; }
+    public string? AccompanyFirst { get; set; }
+    public string? ErrorMessage { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? HotelKey { get; set; }
+    public string? BirthDateStr { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

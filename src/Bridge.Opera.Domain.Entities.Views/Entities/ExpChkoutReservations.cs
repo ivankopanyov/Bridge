@@ -9,138 +9,138 @@ public partial class ExpChkoutReservations
     public decimal? RecordType { get; set; }
     public decimal? TrxCounter { get; set; }
     public decimal? ReservationCounter { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestTitleCode { get; set; }
-    public string GuestAddress1 { get; set; }
-    public string GuestAddress2 { get; set; }
-    public string GuestCountryCode { get; set; }
-    public string GuestStateCode { get; set; }
-    public string GuestBusinessTitle { get; set; }
-    public string GuestSpecialsCodes { get; set; }
-    public string GuestCity { get; set; }
-    public string GuestPostalCode { get; set; }
-    public string GuestTelephone { get; set; }
-    public string GuestCountryDescription { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestTitleCode { get; set; }
+    public string? GuestAddress1 { get; set; }
+    public string? GuestAddress2 { get; set; }
+    public string? GuestCountryCode { get; set; }
+    public string? GuestStateCode { get; set; }
+    public string? GuestBusinessTitle { get; set; }
+    public string? GuestSpecialsCodes { get; set; }
+    public string? GuestCity { get; set; }
+    public string? GuestPostalCode { get; set; }
+    public string? GuestTelephone { get; set; }
+    public string? GuestCountryDescription { get; set; }
     public decimal? Cribs { get; set; }
     public decimal? ExtraBeds { get; set; }
     public decimal? RoomNightsTotal { get; set; }
     public decimal? GuestNightsTotal { get; set; }
-    public string AgentIataNo { get; set; }
-    public string ReserverName { get; set; }
-    public string ReserverContactName { get; set; }
-    public string ReserverAddress1 { get; set; }
-    public string ReserverAddress2 { get; set; }
-    public string ReserverAddress3 { get; set; }
-    public string ReserverCity { get; set; }
-    public string ReserverState { get; set; }
-    public string ReserverPostalCode { get; set; }
-    public string ReserverCountry { get; set; }
-    public string ReserverTelephone { get; set; }
-    public string ReserverFax { get; set; }
-    public string CompanyCorpId { get; set; }
-    public string CompanyName { get; set; }
-    public string CompanyContactName { get; set; }
-    public string CompanyAddress1 { get; set; }
-    public string CompanyAddress2 { get; set; }
-    public string CompanyAddress3 { get; set; }
-    public string CompanyState { get; set; }
-    public string CompanyCity { get; set; }
-    public string CompanyPostalCode { get; set; }
-    public string CompanyCountry { get; set; }
-    public string CompanyTelephone { get; set; }
-    public string CompanyFax { get; set; }
-    public string LoyaltyMemberNo { get; set; }
-    public string AirlineMemberNo { get; set; }
-    public string LoyaltyMemberType { get; set; }
-    public string AirlineMemberType { get; set; }
-    public string GuestLanguage { get; set; }
-    public string SourceCode { get; set; }
-    public string ChannelCode { get; set; }
-    public string CrsConfirmationNo { get; set; }
-    public string PaymentCode { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
-    public string ArAccountNo { get; set; }
+    public string? AgentIataNo { get; set; }
+    public string? ReserverName { get; set; }
+    public string? ReserverContactName { get; set; }
+    public string? ReserverAddress1 { get; set; }
+    public string? ReserverAddress2 { get; set; }
+    public string? ReserverAddress3 { get; set; }
+    public string? ReserverCity { get; set; }
+    public string? ReserverState { get; set; }
+    public string? ReserverPostalCode { get; set; }
+    public string? ReserverCountry { get; set; }
+    public string? ReserverTelephone { get; set; }
+    public string? ReserverFax { get; set; }
+    public string? CompanyCorpId { get; set; }
+    public string? CompanyName { get; set; }
+    public string? CompanyContactName { get; set; }
+    public string? CompanyAddress1 { get; set; }
+    public string? CompanyAddress2 { get; set; }
+    public string? CompanyAddress3 { get; set; }
+    public string? CompanyState { get; set; }
+    public string? CompanyCity { get; set; }
+    public string? CompanyPostalCode { get; set; }
+    public string? CompanyCountry { get; set; }
+    public string? CompanyTelephone { get; set; }
+    public string? CompanyFax { get; set; }
+    public string? LoyaltyMemberNo { get; set; }
+    public string? AirlineMemberNo { get; set; }
+    public string? LoyaltyMemberType { get; set; }
+    public string? AirlineMemberType { get; set; }
+    public string? GuestLanguage { get; set; }
+    public string? SourceCode { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? CrsConfirmationNo { get; set; }
+    public string? PaymentCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public string? ArAccountNo { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string PropertyCode { get; set; }
-    public string PropertyCurrencyCode { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? PropertyCurrencyCode { get; set; }
     public decimal? PropertyCurrencyDecimals { get; set; }
-    public string PmsVersion { get; set; }
+    public string? PmsVersion { get; set; }
     public decimal? ExpRoomNightsTotal { get; set; }
-    public string ReservationInsertUserName { get; set; }
-    public string ReservationStatus { get; set; }
+    public string? ReservationInsertUserName { get; set; }
+    public string? ReservationStatus { get; set; }
     public decimal? GuestAddressId { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string PreferredRoomType { get; set; }
-    public string Room { get; set; }
+    public string? PreferredRoomType { get; set; }
+    public string? Room { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? ShareAmount { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string RateFolioText { get; set; }
+    public string? RateFolioText { get; set; }
     public decimal? ConfirmationLetterId { get; set; }
     public decimal? ReservationRoomRevenue { get; set; }
     public decimal? ReservationOtherRevenue { get; set; }
     public decimal? ReservationCredit { get; set; }
-    public string AgentName { get; set; }
-    public string GroupName { get; set; }
-    public string SourceName { get; set; }
+    public string? AgentName { get; set; }
+    public string? GroupName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? GroupNameId { get; set; }
     public decimal? AgentNameId { get; set; }
     public decimal? SourceNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
-    public string BlockCode { get; set; }
-    public string ComplimentaryYn { get; set; }
-    public string CreditCardNo { get; set; }
+    public string? BlockCode { get; set; }
+    public string? ComplimentaryYn { get; set; }
+    public string? CreditCardNo { get; set; }
     public DateTime? CreditCardExpiration { get; set; }
     public decimal? ReservationFolioNumber { get; set; }
     public decimal? ReservationInsertUserId { get; set; }
-    public string Packages { get; set; }
+    public string? Packages { get; set; }
     public decimal? ExchangeRate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
-    public string CurrencyCode { get; set; }
-    public string RateRoomType { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? RateRoomType { get; set; }
     public DateTime? OriginalDeparture { get; set; }
     public decimal? ReservationUpdateUserId { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCategory { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCategory { get; set; }
     public decimal? TrxAmount { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxDescription { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxDescription { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? CashierId { get; set; }
-    public string MarketGroup { get; set; }
-    public string ExportBucket { get; set; }
-    public string ReserverIdTag { get; set; }
-    public string CompanyIdTag { get; set; }
-    public string InputSource { get; set; }
-    public string GnrNumber { get; set; }
-    public string PostingPlanIndicator { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? ExportBucket { get; set; }
+    public string? ReserverIdTag { get; set; }
+    public string? CompanyIdTag { get; set; }
+    public string? InputSource { get; set; }
+    public string? GnrNumber { get; set; }
+    public string? PostingPlanIndicator { get; set; }
     public decimal? BillNo { get; set; }
-    public string PaymentCreditCardNo { get; set; }
+    public string? PaymentCreditCardNo { get; set; }
     public DateTime? PaymentCreditCardExpy { get; set; }
-    public string PaymentType { get; set; }
-    public string DirectBillName { get; set; }
-    public string GuestAddress3 { get; set; }
-    public string LoyaltyMemberLevel { get; set; }
-    public string AirlineMemberLevel { get; set; }
+    public string? PaymentType { get; set; }
+    public string? DirectBillName { get; set; }
+    public string? GuestAddress3 { get; set; }
+    public string? LoyaltyMemberLevel { get; set; }
+    public string? AirlineMemberLevel { get; set; }
     public decimal? TrxNumber { get; set; }
-    public string ChequeNo { get; set; }
-    public string SccMembershipNo { get; set; }
-    public string SccMembershipLevel { get; set; }
-    public string MailListYn { get; set; }
-    public string MktResearchYn { get; set; }
-    public string ThirdPartyYn { get; set; }
-    public string AutoenrollYn { get; set; }
+    public string? ChequeNo { get; set; }
+    public string? SccMembershipNo { get; set; }
+    public string? SccMembershipLevel { get; set; }
+    public string? MailListYn { get; set; }
+    public string? MktResearchYn { get; set; }
+    public string? ThirdPartyYn { get; set; }
+    public string? AutoenrollYn { get; set; }
     public decimal? Revenue1 { get; set; }
     public decimal? Revenue2 { get; set; }
     public decimal? Revenue3 { get; set; }
@@ -177,49 +177,49 @@ public partial class ExpChkoutReservations
     public decimal? RevenueBkt1Amount9 { get; set; }
     public decimal? RevenueBkt1Amount10 { get; set; }
     public decimal? PseudoTotalPoints { get; set; }
-    public string PseudoMemType { get; set; }
-    public string DayType { get; set; }
-    public string TrxPrintedYn { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? PseudoMemType { get; set; }
+    public string? DayType { get; set; }
+    public string? TrxPrintedYn { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }
@@ -281,26 +281,26 @@ public partial class ExpChkoutReservations
     public DateTime? Udfd19 { get; set; }
     public DateTime? Udfd20 { get; set; }
     public decimal? UpsellCharge { get; set; }
-    public string Xname { get; set; }
-    public string XfirstName { get; set; }
-    public string Xlanguage { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string Xaddress1 { get; set; }
-    public string Xaddress2 { get; set; }
-    public string Xaddress3 { get; set; }
-    public string Xcity { get; set; }
-    public string XstateCode { get; set; }
-    public string XpostalCode { get; set; }
-    public string Xcountry { get; set; }
-    public string PUdfc38 { get; set; }
-    public string PUdfc39 { get; set; }
-    public string SocialMediaId { get; set; }
-    public string BrMembershipId { get; set; }
-    public string GuestEmail { get; set; }
-    public string CustomReference { get; set; }
-    public string PhoneType { get; set; }
+    public string? Xname { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xlanguage { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? Xaddress1 { get; set; }
+    public string? Xaddress2 { get; set; }
+    public string? Xaddress3 { get; set; }
+    public string? Xcity { get; set; }
+    public string? XstateCode { get; set; }
+    public string? XpostalCode { get; set; }
+    public string? Xcountry { get; set; }
+    public string? PUdfc38 { get; set; }
+    public string? PUdfc39 { get; set; }
+    public string? SocialMediaId { get; set; }
+    public string? BrMembershipId { get; set; }
+    public string? GuestEmail { get; set; }
+    public string? CustomReference { get; set; }
+    public string? PhoneType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

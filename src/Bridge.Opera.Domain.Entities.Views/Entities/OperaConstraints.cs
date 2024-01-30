@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OperaConstraints
 {
-    public string TableName { get; set; }
-    public string ConstraintName { get; set; }
-    public string RConstraintName { get; set; }
+    public string? TableName { get; set; }
+    public string? ConstraintName { get; set; }
+    public string? RConstraintName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

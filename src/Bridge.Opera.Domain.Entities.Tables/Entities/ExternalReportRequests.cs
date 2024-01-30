@@ -7,20 +7,20 @@ public partial class ExternalReportRequests
         ExternalReportRequestParams = new HashSet<ExternalReportRequestParams>();
     }
 
-    public string Resort { get; set; }
-    public decimal OperaRequestId { get; set; }
-    public string ExternalSystem { get; set; }
-    public string ExternalRequestId { get; set; }
-    public string ReportType { get; set; }
-    public decimal OperaModuleId { get; set; }
-    public DateTime RequestDateTime { get; set; }
-    public decimal RequestedBy { get; set; }
-    public string RequestStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? OperaRequestId { get; set; }
+    public string? ExternalSystem { get; set; }
+    public string? ExternalRequestId { get; set; }
+    public string? ReportType { get; set; }
+    public decimal? OperaModuleId { get; set; }
+    public DateTime? RequestDateTime { get; set; }
+    public decimal? RequestedBy { get; set; }
+    public string? RequestStatus { get; set; }
     public DateTime? RequestAcknowledgedDateTime { get; set; }
     public DateTime? ResponseGeneratedDateTime { get; set; }
     public DateTime? ResponseReceivedDateTime { get; set; }
     public DateTime? ResponseProcessedDateTime { get; set; }
-    public string FailureReason { get; set; }
+    public string? FailureReason { get; set; }
 
     public virtual ICollection<ExternalReportRequestParams> ExternalReportRequestParams { get; set; }
 

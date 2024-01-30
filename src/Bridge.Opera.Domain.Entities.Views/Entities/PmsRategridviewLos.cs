@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsRategridviewLos
 {
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string YieldCategory { get; set; }
-    public DateTime HurdleDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? YieldCategory { get; set; }
+    public DateTime? HurdleDate { get; set; }
     public decimal? Los1Amt { get; set; }
     public decimal? Los2Amt { get; set; }
     public decimal? Los3Amt { get; set; }

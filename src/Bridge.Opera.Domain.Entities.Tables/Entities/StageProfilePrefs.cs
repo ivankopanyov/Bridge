@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfilePrefs
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string PreferenceType { get; set; }
-    public string PreferenceValue { get; set; }
-    public string Requestcomments { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
-    public string ResortPref { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? PreferenceValue { get; set; }
+    public string? Requestcomments { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? ResortPref { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }

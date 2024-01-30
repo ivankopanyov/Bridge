@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BillingInstructionsView
 {
-    public string Resort { get; set; }
-    public string ArrangementId { get; set; }
-    public string ArrangementCode { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
-    public string Blltype { get; set; }
-    public string TrxCodeType { get; set; }
-    public string CompYn { get; set; }
-    public string TcTransactionType { get; set; }
-    public string IsManualPostAllowed { get; set; }
-    public string SearchCode { get; set; }
-    public string ExportBucket { get; set; }
-    public string GroupFolio { get; set; }
-    public string AdjTrxCode { get; set; }
-    public string AdjIsManualPostAllowed { get; set; }
+    public string? Resort { get; set; }
+    public string? ArrangementId { get; set; }
+    public string? ArrangementCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? Blltype { get; set; }
+    public string? TrxCodeType { get; set; }
+    public string? CompYn { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? IsManualPostAllowed { get; set; }
+    public string? SearchCode { get; set; }
+    public string? ExportBucket { get; set; }
+    public string? GroupFolio { get; set; }
+    public string? AdjTrxCode { get; set; }
+    public string? AdjIsManualPostAllowed { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? RoutingAmount { get; set; }
     public decimal? RoutingPercent { get; set; }
     public decimal? RoutingCovers { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string DailyYn { get; set; }
-    public string DepositPostingOnlyYn { get; set; }
-    public string InhDepositYn { get; set; }
-    public string InhPayYn { get; set; }
-    public string InhSalesYn { get; set; }
-    public string IndRevenueGp { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? DailyYn { get; set; }
+    public string? DepositPostingOnlyYn { get; set; }
+    public string? InhDepositYn { get; set; }
+    public string? InhPayYn { get; set; }
+    public string? InhSalesYn { get; set; }
+    public string? IndRevenueGp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

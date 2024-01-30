@@ -3,16 +3,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsSdReservationSummary
 {
     public decimal? Id { get; set; }
-    public string RecType { get; set; }
+    public string? RecType { get; set; }
     public decimal? CalId { get; set; }
     public decimal? MatchId { get; set; }
-    public string GraphType { get; set; }
-    public string IdType { get; set; }
-    public string Resort { get; set; }
+    public string? GraphType { get; set; }
+    public string? IdType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StayDate { get; set; }
-    public string YieldCategory { get; set; }
-    public string BookingClass { get; set; }
-    public string SeriesCode { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? BookingClass { get; set; }
+    public string? SeriesCode { get; set; }
     public decimal? Maxrnk { get; set; }
     public decimal? Rooms { get; set; }
 

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HltnGlTrxCodesView
 {
-    public string ItemId { get; set; }
-    public string AllowDrillDownYn { get; set; }
-    public string TrxCode { get; set; }
-    public string AccountCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string StatCode { get; set; }
-    public string TrxDescription { get; set; }
+    public string? ItemId { get; set; }
+    public string? AllowDrillDownYn { get; set; }
+    public string? TrxCode { get; set; }
+    public string? AccountCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? StatCode { get; set; }
+    public string? TrxDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

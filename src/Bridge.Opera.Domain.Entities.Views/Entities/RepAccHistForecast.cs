@@ -4,27 +4,27 @@ public partial class RepAccHistForecast
 {
     public decimal? LEVEL { get; set; }
     public decimal? MasterAccountId { get; set; }
-    public string MasterAccountName { get; set; }
+    public string? MasterAccountName { get; set; }
     public decimal? AccountNameId { get; set; }
-    public string AccountName { get; set; }
-    public string AccountName2 { get; set; }
-    public string AccountName3 { get; set; }
-    public string Address { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string Keyword { get; set; }
-    public string Priority { get; set; }
-    public string AccountType { get; set; }
-    public string BusinessSegment { get; set; }
-    public string Territory { get; set; }
-    public string OwnerName { get; set; }
-    public string OwnerCode { get; set; }
-    public string Property { get; set; }
-    public string PropertyName { get; set; }
-    public string PropertyCity { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountName2 { get; set; }
+    public string? AccountName3 { get; set; }
+    public string? Address { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? Keyword { get; set; }
+    public string? Priority { get; set; }
+    public string? AccountType { get; set; }
+    public string? BusinessSegment { get; set; }
+    public string? Territory { get; set; }
+    public string? OwnerName { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? Property { get; set; }
+    public string? PropertyName { get; set; }
+    public string? PropertyCity { get; set; }
     public decimal? IndRoomNights { get; set; }
     public decimal? IndRoomRevenue { get; set; }
     public decimal? IndFbRevenue { get; set; }

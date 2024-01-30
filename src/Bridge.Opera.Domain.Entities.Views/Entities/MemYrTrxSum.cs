@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemYrTrxSum
 {
-    public decimal MembershipId { get; set; }
-    public string Year { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? Year { get; set; }
     public decimal? TotalNights { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? TotalStays { get; set; }

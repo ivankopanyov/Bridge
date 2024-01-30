@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RoomPaceExport
 {
     public decimal? ExportId { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string ArrivePeriod { get; set; }
-    public string ArriveYear { get; set; }
-    public string ProductionPeriod { get; set; }
-    public string ProductionYear { get; set; }
+    public string? ArrivePeriod { get; set; }
+    public string? ArriveYear { get; set; }
+    public string? ProductionPeriod { get; set; }
+    public string? ProductionYear { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? Rooms { get; set; }
     public decimal? GroupCateringRevenue { get; set; }

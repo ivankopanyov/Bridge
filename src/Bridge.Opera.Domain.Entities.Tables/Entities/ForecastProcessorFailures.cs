@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForecastProcessorFailures
 {
-    public string EventType { get; set; }
-    public string EventId { get; set; }
-    public string ErrorMessage { get; set; }
-    public DateTime TimeFailed { get; set; }
-    public string EventParameters { get; set; }
+    public string? EventType { get; set; }
+    public string? EventId { get; set; }
+    public string? ErrorMessage { get; set; }
+    public DateTime? TimeFailed { get; set; }
+    public string? EventParameters { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

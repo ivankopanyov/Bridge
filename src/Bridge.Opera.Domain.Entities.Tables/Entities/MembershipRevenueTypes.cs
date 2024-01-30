@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipRevenueTypes
 {
-    public string MembershipRevenueType { get; set; }
-    public string Description { get; set; }
-    public string Label { get; set; }
-    public string MembershipPoints { get; set; }
-    public string FrequentFlyerPoints { get; set; }
-    public string TierPoints { get; set; }
+    public string? MembershipRevenueType { get; set; }
+    public string? Description { get; set; }
+    public string? Label { get; set; }
+    public string? MembershipPoints { get; set; }
+    public string? FrequentFlyerPoints { get; set; }
+    public string? TierPoints { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ExportBucketCode { get; set; }
+    public string? ExportBucketCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

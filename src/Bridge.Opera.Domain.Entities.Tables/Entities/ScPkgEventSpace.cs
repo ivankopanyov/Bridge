@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScPkgEventSpace
 {
-    public string Resort { get; set; }
-    public decimal PkgLink { get; set; }
-    public decimal PkgEvId { get; set; }
-    public string Room { get; set; }
-    public string RoomSetup { get; set; }
-    public string RoomRate { get; set; }
-    public string ShareableYn { get; set; }
-    public decimal OrderBy { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PkgLink { get; set; }
+    public decimal? PkgEvId { get; set; }
+    public string? Room { get; set; }
+    public string? RoomSetup { get; set; }
+    public string? RoomRate { get; set; }
+    public string? ShareableYn { get; set; }
+    public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

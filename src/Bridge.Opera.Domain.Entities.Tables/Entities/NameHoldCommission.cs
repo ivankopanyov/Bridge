@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameHoldCommission
 {
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public string HoldCode { get; set; }
-    public string HoldDesc { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public string? HoldCode { get; set; }
+    public string? HoldDesc { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PropertyPriceRange
 {
-    public string Resort { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? MinRate { get; set; }
     public decimal? MaxRate { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

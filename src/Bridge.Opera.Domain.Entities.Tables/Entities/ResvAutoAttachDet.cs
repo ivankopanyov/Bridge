@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResvAutoAttachDet
 {
-    public decimal AttachId { get; set; }
-    public string Resort { get; set; }
-    public string RuleCode { get; set; }
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
+    public decimal? AttachId { get; set; }
+    public string? Resort { get; set; }
+    public string? RuleCode { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
     public decimal? ItemId { get; set; }
-    public string Product { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string TraceDeptId { get; set; }
-    public string TraceText { get; set; }
-    public string PromoCode { get; set; }
+    public string? Product { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? TraceDeptId { get; set; }
+    public string? TraceText { get; set; }
+    public string? PromoCode { get; set; }
 
     public virtual ResvAutoAttachRules R { get; set; }
 

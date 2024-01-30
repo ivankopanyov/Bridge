@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRoomclassDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomClassDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomClassDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ResortId { get; set; }
-    public string RoomClassKey { get; set; }
-    public string AllKey { get; set; }
+    public string? ResortId { get; set; }
+    public string? RoomClassKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

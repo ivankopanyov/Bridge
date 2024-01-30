@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaskTranslationV
 {
-    public string Resort { get; set; }
-    public decimal TaskCode { get; set; }
-    public string TDescription { get; set; }
-    public string TNotes { get; set; }
-    public string LanguageCode { get; set; }
-    public string Description { get; set; }
-    public string Notes { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TaskCode { get; set; }
+    public string? TDescription { get; set; }
+    public string? TNotes { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Description { get; set; }
+    public string? Notes { get; set; }
     public decimal? LastUpdatedBy { get; set; }
-    public string LastUpdatedByName { get; set; }
+    public string? LastUpdatedByName { get; set; }
     public DateTime? LastUpdatedDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

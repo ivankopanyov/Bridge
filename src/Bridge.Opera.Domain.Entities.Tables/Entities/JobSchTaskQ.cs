@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchTaskQ
 {
-    public string QCode { get; set; }
-    public string TaskCode { get; set; }
-    public decimal ExecutionSeq { get; set; }
+    public string? QCode { get; set; }
+    public string? TaskCode { get; set; }
+    public decimal? ExecutionSeq { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? CanDeleteYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

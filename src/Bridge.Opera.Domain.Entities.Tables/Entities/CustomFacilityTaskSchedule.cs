@@ -7,14 +7,14 @@ public partial class CustomFacilityTaskSchedule
         CustomFacilityCodesSchedule = new HashSet<CustomFacilityCodesSchedule>();
     }
 
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string Room { get; set; }
-    public string FacilityTask { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Room { get; set; }
+    public string? FacilityTask { get; set; }
     public decimal? Credits { get; set; }
-    public string Frequency { get; set; }
+    public string? Frequency { get; set; }
     public decimal? FrequencyDays { get; set; }
     public decimal? Priority { get; set; }
     public DateTime? InsertDate { get; set; }

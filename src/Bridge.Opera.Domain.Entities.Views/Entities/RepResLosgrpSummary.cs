@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResLosgrpSummary
 {
-    public string Resort { get; set; }
-    public string RecType { get; set; }
+    public string? Resort { get; set; }
+    public string? RecType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? LosTier { get; set; }
     public decimal? LengthOfStay { get; set; }
     public decimal? NoRooms { get; set; }

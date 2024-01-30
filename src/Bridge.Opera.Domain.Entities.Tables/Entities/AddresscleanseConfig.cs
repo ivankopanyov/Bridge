@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AddresscleanseConfig
 {
-    public string Customerid { get; set; }
-    public string Password { get; set; }
-    public string Campaignid { get; set; }
-    public string Jobtoken { get; set; }
-    public string Countryoforigin { get; set; }
-    public string Streetwithhno { get; set; }
-    public string Countrytype { get; set; }
-    public string Lineseparator { get; set; }
-    public string Preferredlanguage { get; set; }
-    public string Capitalization { get; set; }
-    public string Httpserver { get; set; }
-    public string ServiceType { get; set; }
-    public string HttpserverBatch { get; set; }
-    public string HttpserverFast { get; set; }
-    public string Httpaction { get; set; }
-    public string HttpactionBatch { get; set; }
-    public string HttpactionFast { get; set; }
+    public string? Customerid { get; set; }
+    public string? Password { get; set; }
+    public string? Campaignid { get; set; }
+    public string? Jobtoken { get; set; }
+    public string? Countryoforigin { get; set; }
+    public string? Streetwithhno { get; set; }
+    public string? Countrytype { get; set; }
+    public string? Lineseparator { get; set; }
+    public string? Preferredlanguage { get; set; }
+    public string? Capitalization { get; set; }
+    public string? Httpserver { get; set; }
+    public string? ServiceType { get; set; }
+    public string? HttpserverBatch { get; set; }
+    public string? HttpserverFast { get; set; }
+    public string? Httpaction { get; set; }
+    public string? HttpactionBatch { get; set; }
+    public string? HttpactionFast { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

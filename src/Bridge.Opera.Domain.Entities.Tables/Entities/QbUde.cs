@@ -7,21 +7,21 @@ public partial class QbUde
         QbUdeParam = new HashSet<QbUdeParam>();
     }
 
-    public string UdeCode { get; set; }
-    public string UdeGroup { get; set; }
-    public string UdeDesc { get; set; }
-    public string UdeName { get; set; }
-    public string EntityName { get; set; }
-    public string DataType { get; set; }
-    public string UdeType { get; set; }
-    public string UdeLov { get; set; }
-    public string UdeText { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string SidYn { get; set; }
-    public string Resort { get; set; }
+    public string? UdeCode { get; set; }
+    public string? UdeGroup { get; set; }
+    public string? UdeDesc { get; set; }
+    public string? UdeName { get; set; }
+    public string? EntityName { get; set; }
+    public string? DataType { get; set; }
+    public string? UdeType { get; set; }
+    public string? UdeLov { get; set; }
+    public string? UdeText { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? SidYn { get; set; }
+    public string? Resort { get; set; }
 
     public virtual ICollection<QbUdeParam> QbUdeParam { get; set; }
 

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationStaysDailySold
 {
-    public string Resort { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? TransientResvDeduct { get; set; }
     public decimal? TransientResvNonDeduct { get; set; }
     public decimal? BlockResvDeduct { get; set; }

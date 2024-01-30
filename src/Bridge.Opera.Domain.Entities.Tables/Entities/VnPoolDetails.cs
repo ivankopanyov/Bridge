@@ -7,13 +7,13 @@ public partial class VnPoolDetails
         ReservationVirtual = new HashSet<ReservationVirtual>();
     }
 
-    public string Resort { get; set; }
-    public decimal Pool { get; set; }
-    public string Virtual { get; set; }
-    public string CurrentlyAllocatedYn { get; set; }
-    public decimal NoTimesUsed { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Pool { get; set; }
+    public string? Virtual { get; set; }
+    public string? CurrentlyAllocatedYn { get; set; }
+    public decimal? NoTimesUsed { get; set; }
     public DateTime? LastUsed { get; set; }
-    public string LastRoom { get; set; }
+    public string? LastRoom { get; set; }
     public decimal? PermanentlyAssignedTo { get; set; }
 
     public virtual VnPool VnPool { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RevenueTypesDetails1
 {
-    public string RevType { get; set; }
-    public string Resort { get; set; }
+    public string? RevType { get; set; }
+    public string? Resort { get; set; }
     public decimal? Vat { get; set; }
-    public string ContributeMinRevenueYn { get; set; }
+    public string? ContributeMinRevenueYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GuestEnrollmentPref
 {
-    public decimal EnrollmentSeqId { get; set; }
-    public string Preference { get; set; }
-    public string PreferenceType { get; set; }
-    public string Description { get; set; }
+    public decimal? EnrollmentSeqId { get; set; }
+    public string? Preference { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Description { get; set; }
 
     public virtual GuestEnrollment EnrollmentSeq { get; set; }
     public virtual SpgPreferences PreferenceNavigation { get; set; }

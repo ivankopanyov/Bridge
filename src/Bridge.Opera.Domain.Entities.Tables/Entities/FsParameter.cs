@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsParameter
 {
-    public string Par { get; set; }
-    public string ParDesc { get; set; }
-    public string ParCat { get; set; }
-    public string Datatype { get; set; }
+    public string? Par { get; set; }
+    public string? ParDesc { get; set; }
+    public string? ParCat { get; set; }
+    public string? Datatype { get; set; }
     public decimal? OrderBy { get; set; }
-    public string InternalYn { get; set; }
+    public string? InternalYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

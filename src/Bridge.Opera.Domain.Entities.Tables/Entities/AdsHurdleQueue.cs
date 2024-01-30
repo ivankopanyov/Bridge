@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AdsHurdleQueue
 {
-    public decimal ActionId { get; set; }
-    public string Resort { get; set; }
-    public DateTime HurdleDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string YieldCategory { get; set; }
+    public decimal? ActionId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? HurdleDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? YieldCategory { get; set; }
     public decimal? Los { get; set; }
     public decimal? Delta { get; set; }
     public decimal? Hurdle { get; set; }
-    public string Override { get; set; }
+    public string? Override { get; set; }
     public decimal? Upsolds { get; set; }
     public decimal? Ceiling { get; set; }
     public decimal? Maxsolds { get; set; }
-    public string YmCode { get; set; }
-    public string ActionType { get; set; }
-    public string Consumer { get; set; }
+    public string? YmCode { get; set; }
+    public string? ActionType { get; set; }
+    public string? Consumer { get; set; }
     public decimal? BeActionId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

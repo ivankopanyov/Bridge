@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NaReportParameters
 {
-    public decimal RequestId { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
     public virtual NaFinreportStatus Request { get; set; }
 

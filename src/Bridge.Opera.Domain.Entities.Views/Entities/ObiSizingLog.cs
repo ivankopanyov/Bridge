@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiSizingLog
 {
     public decimal? SizingId { get; set; }
-    public decimal LogId { get; set; }
-    public string Action { get; set; }
-    public string ProgramName { get; set; }
-    public string Comments { get; set; }
+    public decimal? LogId { get; set; }
+    public string? Action { get; set; }
+    public string? ProgramName { get; set; }
+    public string? Comments { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

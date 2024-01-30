@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RiTemplateDetails
 {
-    public string Resort { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public decimal RiQuestionId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public decimal? RiQuestionId { get; set; }
     public decimal? RiQuestionSeq { get; set; }
-    public string RiPointsAchieved { get; set; }
-    public string RiQualityLevel { get; set; }
+    public string? RiPointsAchieved { get; set; }
+    public string? RiQualityLevel { get; set; }
     public decimal? RiGenerateTask { get; set; }
-    public string QuestionType { get; set; }
+    public string? QuestionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

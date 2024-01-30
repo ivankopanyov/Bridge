@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemEventPkgRevenue
 {
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal PkgId { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? ActualAttendees { get; set; }

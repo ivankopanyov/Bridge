@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class IntBehubConsumers
 {
     public byte? MachineId { get; set; }
-    public string Resort { get; set; }
-    public string ConsumerName { get; set; }
+    public string? Resort { get; set; }
+    public string? ConsumerName { get; set; }
     public byte? TimeLimitSec { get; set; }
     public DateTime? FirstMessageAt { get; set; }
 

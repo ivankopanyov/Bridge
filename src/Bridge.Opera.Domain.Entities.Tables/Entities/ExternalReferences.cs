@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExternalReferences
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ExternalReferenceType { get; set; }
-    public string ExternalReference { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ExternalReferenceType { get; set; }
+    public string? ExternalReference { get; set; }
     public decimal? ExternalLegNo { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string UpperExternalReference { get; set; }
-    public string ManualYn { get; set; }
-    public string ExternalStatus { get; set; }
-    public string ExtCancellationNo { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? UpperExternalReference { get; set; }
+    public string? ManualYn { get; set; }
+    public string? ExternalStatus { get; set; }
+    public string? ExtCancellationNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

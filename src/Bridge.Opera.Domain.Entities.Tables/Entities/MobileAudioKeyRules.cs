@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MobileAudioKeyRules
 {
-    public string Resort { get; set; }
-    public string PaymentMethods { get; set; }
-    public string GuaranteeCodes { get; set; }
-    public string MembershipTypes { get; set; }
-    public string VipStatus { get; set; }
-    public string MobilePhoneType { get; set; }
-    public string MobileNumberYn { get; set; }
-    public string EmailYn { get; set; }
+    public string? Resort { get; set; }
+    public string? PaymentMethods { get; set; }
+    public string? GuaranteeCodes { get; set; }
+    public string? MembershipTypes { get; set; }
+    public string? VipStatus { get; set; }
+    public string? MobilePhoneType { get; set; }
+    public string? MobileNumberYn { get; set; }
+    public string? EmailYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

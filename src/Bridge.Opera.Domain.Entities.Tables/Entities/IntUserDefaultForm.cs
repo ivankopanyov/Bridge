@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntUserDefaultForm
 {
-    public string UserName { get; set; }
-    public string FormName { get; set; }
-    public string Parameter { get; set; }
-    public string Application { get; set; }
+    public string? UserName { get; set; }
+    public string? FormName { get; set; }
+    public string? Parameter { get; set; }
+    public string? Application { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

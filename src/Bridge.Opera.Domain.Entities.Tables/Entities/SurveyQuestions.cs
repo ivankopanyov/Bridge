@@ -7,10 +7,10 @@ public partial class SurveyQuestions
         SurveyTemplateDetails = new HashSet<SurveyTemplateDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal QuestionId { get; set; }
-    public string QuestionType { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? QuestionId { get; set; }
+    public string? QuestionType { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

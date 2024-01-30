@@ -4,25 +4,25 @@ public partial class ExpGbeChargesGrp
 {
     public decimal? ExportId { get; set; }
     public DateTime? ChargeDate { get; set; }
-    public string GbeType { get; set; }
-    public string ChargeCodeNumber { get; set; }
-    public string ChargeCodeDescription { get; set; }
-    public string ChargeCodeGroup { get; set; }
-    public string ChargeCodeSubgroup { get; set; }
-    public string ChargeDescription { get; set; }
+    public string? GbeType { get; set; }
+    public string? ChargeCodeNumber { get; set; }
+    public string? ChargeCodeDescription { get; set; }
+    public string? ChargeCodeGroup { get; set; }
+    public string? ChargeCodeSubgroup { get; set; }
+    public string? ChargeDescription { get; set; }
     public decimal? WindowNumber { get; set; }
-    public string ChargeSource { get; set; }
-    public string ChargeReference { get; set; }
+    public string? ChargeSource { get; set; }
+    public string? ChargeReference { get; set; }
     public decimal? ChargeAmount { get; set; }
     public decimal? ChargeGeneratedBy { get; set; }
-    public string ChargeCurrency { get; set; }
+    public string? ChargeCurrency { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? BlockId { get; set; }
     public decimal? Chargenumber { get; set; }
     public decimal? Originalreservationnumber { get; set; }
-    public string Originalroom { get; set; }
-    public string Originalresvlastname { get; set; }
-    public string Originalresvfirstname { get; set; }
+    public string? Originalroom { get; set; }
+    public string? Originalresvlastname { get; set; }
+    public string? Originalresvfirstname { get; set; }
     public DateTime? Businessdate { get; set; }
     public decimal? Packagelinknumber { get; set; }
     public decimal? Transactiongroupnumber { get; set; }

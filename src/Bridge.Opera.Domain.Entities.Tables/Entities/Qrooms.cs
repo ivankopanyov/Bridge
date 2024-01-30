@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Qrooms
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? QueueStart { get; set; }
     public DateTime? QueueEnd { get; set; }
     public decimal? QueuePriority { get; set; }
@@ -13,7 +13,7 @@ public partial class Qrooms
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? SmsSentOn { get; set; }
-    public string SmsSentBy { get; set; }
+    public string? SmsSentBy { get; set; }
 
     public virtual ReservationName Res { get; set; }
 

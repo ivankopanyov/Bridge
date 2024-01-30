@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ImpconsortiaTemp
 {
-    public string ConsortiaCode { get; set; }
-    public string IataCode { get; set; }
-    public string ImportStatus { get; set; }
-    public DateTime ImportDate { get; set; }
+    public string? ConsortiaCode { get; set; }
+    public string? IataCode { get; set; }
+    public string? ImportStatus { get; set; }
+    public DateTime? ImportDate { get; set; }
     public DateTime? ProfileUpdateDate { get; set; }
     public decimal? NameId { get; set; }
-    public string ImportCode { get; set; }
-    public string ImportMsg { get; set; }
+    public string? ImportCode { get; set; }
+    public string? ImportMsg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

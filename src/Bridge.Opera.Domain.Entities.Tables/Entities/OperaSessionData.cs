@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaSessionData
 {
-    public decimal SessionId { get; set; }
-    public string XmlData { get; set; }
-    public string ExternalId { get; set; }
+    public decimal? SessionId { get; set; }
+    public string? XmlData { get; set; }
+    public string? ExternalId { get; set; }
     public DateTime? CreatedOn { get; set; }
     public DateTime? ExpiresOn { get; set; }
 

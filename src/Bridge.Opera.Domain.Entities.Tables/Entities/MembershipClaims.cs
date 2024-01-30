@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipClaims
 {
-    public decimal MembershipClaimId { get; set; }
-    public DateTime ClaimDate { get; set; }
+    public decimal? MembershipClaimId { get; set; }
+    public DateTime? ClaimDate { get; set; }
     public DateTime? ReplyByDate { get; set; }
-    public string RecordType { get; set; }
-    public string Resort { get; set; }
-    public string PmsResvNo { get; set; }
-    public string CrsBookNo { get; set; }
-    public string ClaimStatus { get; set; }
+    public string? RecordType { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? CrsBookNo { get; set; }
+    public string? ClaimStatus { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
     public decimal? NameId { get; set; }
     public decimal? MembershipId { get; set; }
-    public string CallerName { get; set; }
-    public string CallerInformation { get; set; }
-    public string Comments { get; set; }
+    public string? CallerName { get; set; }
+    public string? CallerInformation { get; set; }
+    public string? Comments { get; set; }
     public decimal? MembershipTrxId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? CloseDate { get; set; }
     public decimal? ClaimOwner { get; set; }
-    public string ClaimType { get; set; }
-    public string ApproveReject { get; set; }
-    public string ClaimSource { get; set; }
-    public string ClaimAdjLimitCode { get; set; }
+    public string? ClaimType { get; set; }
+    public string? ApproveReject { get; set; }
+    public string? ClaimSource { get; set; }
+    public string? ClaimAdjLimitCode { get; set; }
     public decimal? TotalBasePoints { get; set; }
     public decimal? TotalBonusPoints { get; set; }
     public decimal? TotalMiscPoints { get; set; }
@@ -39,7 +39,7 @@ public partial class MembershipClaims
     public decimal? MembershipBaseRevenue { get; set; }
     public decimal? MembershipBonusNights { get; set; }
     public decimal? MembershipBonusRevenue { get; set; }
-    public string ClaimOrigin { get; set; }
+    public string? ClaimOrigin { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

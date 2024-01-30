@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsRateRoomView
 {
-    public string RoomCat { get; set; }
-    public string RateCat { get; set; }
-    public string RateCode { get; set; }
-    public string NativeCurrencyCode { get; set; }
-    public string TaxDescription { get; set; }
+    public string? RoomCat { get; set; }
+    public string? RateCat { get; set; }
+    public string? RateCode { get; set; }
+    public string? NativeCurrencyCode { get; set; }
+    public string? TaxDescription { get; set; }
     public decimal? BookedAmount { get; set; }
     public decimal? TotalBookedAmount { get; set; }
     public decimal? HighRate { get; set; }
     public decimal? FirstNightRate { get; set; }
     public decimal? MostCommonRate { get; set; }
-    public string RateChangeIndicator { get; set; }
-    public string RateDescription { get; set; }
-    public string RoomDescription { get; set; }
-    public string RateFrequency { get; set; }
-    public string CancelTime { get; set; }
+    public string? RateChangeIndicator { get; set; }
+    public string? RateDescription { get; set; }
+    public string? RoomDescription { get; set; }
+    public string? RateFrequency { get; set; }
+    public string? CancelTime { get; set; }
     public DateTime? CnclTime { get; set; }
     public DateTime? CancelDate { get; set; }
-    public string DepositDate { get; set; }
-    public string MandatoryDeposit { get; set; }
-    public string DepositGuaranteeFlag { get; set; }
-    public string LateArrivalTime { get; set; }
+    public string? DepositDate { get; set; }
+    public string? MandatoryDeposit { get; set; }
+    public string? DepositGuaranteeFlag { get; set; }
+    public string? LateArrivalTime { get; set; }
     public decimal? CommissionAmount { get; set; }
-    public string OnRequest { get; set; }
-    public string HoldExists { get; set; }
-    public string CorpAccountNumber { get; set; }
-    public string FrequentGuestNumber { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string MiddleName { get; set; }
-    public string CompanyName { get; set; }
-    public string NegRateCode { get; set; }
+    public string? OnRequest { get; set; }
+    public string? HoldExists { get; set; }
+    public string? CorpAccountNumber { get; set; }
+    public string? FrequentGuestNumber { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? MiddleName { get; set; }
+    public string? CompanyName { get; set; }
+    public string? NegRateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

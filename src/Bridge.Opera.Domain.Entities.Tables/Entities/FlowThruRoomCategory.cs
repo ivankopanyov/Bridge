@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FlowThruRoomCategory
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
 

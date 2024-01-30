@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentOffsetType1
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string OffsetType { get; set; }
-    public string IgnoreOffsetYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? OffsetType { get; set; }
+    public string? IgnoreOffsetYn { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

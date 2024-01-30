@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameGuestListVw
 {
-    public decimal ListId { get; set; }
+    public decimal? ListId { get; set; }
     public decimal? NameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string MiddleName { get; set; }
-    public string Email { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? MiddleName { get; set; }
+    public string? Email { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

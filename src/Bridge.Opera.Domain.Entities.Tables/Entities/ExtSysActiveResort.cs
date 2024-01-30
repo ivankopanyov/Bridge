@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtSysActiveResort
 {
-    public string Resort { get; set; }
-    public string Code { get; set; }
-    public string DisplayYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Code { get; set; }
+    public string? DisplayYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ConsumerName { get; set; }
-    public string SsoExternalValidationUrl { get; set; }
+    public string? ConsumerName { get; set; }
+    public string? SsoExternalValidationUrl { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

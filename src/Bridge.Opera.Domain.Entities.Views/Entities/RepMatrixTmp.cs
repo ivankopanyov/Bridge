@@ -3,23 +3,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepMatrixTmp
 {
     public decimal? ReportId { get; set; }
-    public string VerticalCode { get; set; }
+    public string? VerticalCode { get; set; }
     public decimal? VerticalOrder { get; set; }
-    public string VerticalDescription { get; set; }
-    public string HorizontalCode { get; set; }
+    public string? VerticalDescription { get; set; }
+    public string? HorizontalCode { get; set; }
     public decimal? HorizontalOrder { get; set; }
-    public string HorizontalDescription { get; set; }
-    public string ValueCode { get; set; }
+    public string? HorizontalDescription { get; set; }
+    public string? ValueCode { get; set; }
     public decimal? ValueOrder { get; set; }
-    public string ValueDescription { get; set; }
+    public string? ValueDescription { get; set; }
     public decimal? Amount { get; set; }
-    public string FormattedAmount { get; set; }
-    public string AmountFormatType { get; set; }
-    public string AmountFormatMask { get; set; }
-    public string IsTotalYn { get; set; }
-    public string PrintLineYn { get; set; }
-    public string PeriodMode { get; set; }
-    public string ReportMode { get; set; }
+    public string? FormattedAmount { get; set; }
+    public string? AmountFormatType { get; set; }
+    public string? AmountFormatMask { get; set; }
+    public string? IsTotalYn { get; set; }
+    public string? PrintLineYn { get; set; }
+    public string? PeriodMode { get; set; }
+    public string? ReportMode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

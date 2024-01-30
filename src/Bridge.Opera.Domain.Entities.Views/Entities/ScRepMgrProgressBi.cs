@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ScRepMgrProgressBi
 {
     public decimal? ReportId { get; set; }
-    public string LabelGroupingId { get; set; }
-    public string StayGroupingId { get; set; }
-    public string BeginProductionDate { get; set; }
-    public string EndProductionDate { get; set; }
+    public string? LabelGroupingId { get; set; }
+    public string? StayGroupingId { get; set; }
+    public string? BeginProductionDate { get; set; }
+    public string? EndProductionDate { get; set; }
     public decimal? OwnerId { get; set; }
     public decimal? NewDefData { get; set; }
     public decimal? CancelData { get; set; }

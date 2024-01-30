@@ -7,8 +7,8 @@ public partial class ExpConBlkRmType
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? RoomTypeStartDateNum { get; set; }
     public decimal? RoomTypeEndDateNum { get; set; }
-    public string RoomTypeLabel { get; set; }
-    public string RoomCategory { get; set; }
+    public string? RoomTypeLabel { get; set; }
+    public string? RoomCategory { get; set; }
     public DateTime? RoomTypeStartDate { get; set; }
     public DateTime? RoomTypeEndDate { get; set; }
 

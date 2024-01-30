@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntSidParametersSys
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ParameterGroup { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
-    public string Description { get; set; }
-    public string LovValues { get; set; }
-    public string DisplayYn { get; set; }
-    public string UpperCase { get; set; }
-    public string DisplayName { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ParameterGroup { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
+    public string? Description { get; set; }
+    public string? LovValues { get; set; }
+    public string? DisplayYn { get; set; }
+    public string? UpperCase { get; set; }
+    public string? DisplayName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

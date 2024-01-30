@@ -7,19 +7,19 @@ public partial class FilterHeader
         UserView = new HashSet<UserView>();
     }
 
-    public decimal FilterId { get; set; }
-    public string Filtername { get; set; }
-    public string Descr { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? FilterId { get; set; }
+    public string? Filtername { get; set; }
+    public string? Descr { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? OwnerUser { get; set; }
-    public string WhereClause { get; set; }
-    public string GlobalYn { get; set; }
-    public string Caller { get; set; }
+    public string? WhereClause { get; set; }
+    public string? GlobalYn { get; set; }
+    public string? Caller { get; set; }
     public decimal? GroupId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? GridId { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ICollection<UserView> UserView { get; set; }
 

@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OrmsGraphOversell
 {
     public decimal? Id { get; set; }
-    public string SeriesCode { get; set; }
+    public string? SeriesCode { get; set; }
     public DateTime? OversellDate { get; set; }
     public decimal? Rooms { get; set; }
 

@@ -2,49 +2,49 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpOcrmMemberAwardsFt
 {
-    public decimal KeyCampaignId { get; set; }
-    public string KeyCampaignCode { get; set; }
+    public decimal? KeyCampaignId { get; set; }
+    public string? KeyCampaignCode { get; set; }
     public decimal? KeySegId { get; set; }
-    public decimal KeySegBatchId { get; set; }
-    public string KeyRecordLocator { get; set; }
+    public decimal? KeySegBatchId { get; set; }
+    public string? KeyRecordLocator { get; set; }
     public decimal? KeyOcrmProfileId { get; set; }
-    public string KeyEmail { get; set; }
-    public string KeyTemplateCode { get; set; }
-    public string TemplateCode { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
+    public string? KeyEmail { get; set; }
+    public string? KeyTemplateCode { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
     public DateTime? SellBeginDate { get; set; }
     public DateTime? SellEndDate { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public DateTime? AwardInactiveDate { get; set; }
-    public string AwardBasedOn { get; set; }
+    public string? AwardBasedOn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string MessageLine1 { get; set; }
-    public string MessageLine2 { get; set; }
-    public string MessageLine3 { get; set; }
-    public string MessageLine4 { get; set; }
-    public decimal IssuedAwardId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal MembershipId { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string PmsResvNo { get; set; }
-    public string Resort { get; set; }
-    public string CrsBookNo { get; set; }
+    public string? MessageLine1 { get; set; }
+    public string? MessageLine2 { get; set; }
+    public string? MessageLine3 { get; set; }
+    public string? MessageLine4 { get; set; }
+    public decimal? IssuedAwardId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? Resort { get; set; }
+    public string? CrsBookNo { get; set; }
     public DateTime? DateAwarded { get; set; }
-    public string AwardSource { get; set; }
+    public string? AwardSource { get; set; }
     public DateTime? ConsumptionDate { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? AwardPoints { get; set; }
-    public string RateCode { get; set; }
-    public string CancellationNumber { get; set; }
+    public string? RateCode { get; set; }
+    public string? CancellationNumber { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string RoomLabel { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomLabel { get; set; }
-    public string Product { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomLabel { get; set; }
+    public string? Product { get; set; }
     public decimal? ActualCancelPoints { get; set; }
     public decimal? AwardCancellationNo { get; set; }
     public DateTime? AwardCancelDate { get; set; }
@@ -58,33 +58,33 @@ public partial class ExpOcrmMemberAwardsFt
     public decimal? MemberStatementId { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? AwardValue { get; set; }
-    public string Name { get; set; }
-    public string DisplayName { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Sname { get; set; }
-    public string AddressType { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayName { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Sname { get; set; }
+    public string? AddressType { get; set; }
     public decimal? AddressId { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string CityExt { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CityExt { get; set; }
     public decimal? PhoneId { get; set; }
-    public string PhoneNo { get; set; }
-    public string PhoneType { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? PhoneType { get; set; }
     public decimal? FaxId { get; set; }
-    public string FaxNo { get; set; }
+    public string? FaxNo { get; set; }
     public decimal? EmailId { get; set; }
-    public string Email { get; set; }
+    public string? Email { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

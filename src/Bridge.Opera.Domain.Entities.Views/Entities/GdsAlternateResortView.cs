@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsAlternateResortView
 {
-    public string ChainCode { get; set; }
-    public string ResortName { get; set; }
-    public string ResortId { get; set; }
-    public string Address { get; set; }
-    public string City { get; set; }
-    public string CityCode { get; set; }
-    public string Country { get; set; }
-    public string State { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ResortName { get; set; }
+    public string? ResortId { get; set; }
+    public string? Address { get; set; }
+    public string? City { get; set; }
+    public string? CityCode { get; set; }
+    public string? Country { get; set; }
+    public string? State { get; set; }
     public decimal? Distance { get; set; }
-    public string DistType { get; set; }
-    public string Direction { get; set; }
-    public string AlternateResort { get; set; }
+    public string? DistType { get; set; }
+    public string? Direction { get; set; }
+    public string? AlternateResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

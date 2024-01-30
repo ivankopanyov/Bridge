@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class AccountRelationView
 {
     public decimal? NameXrefId { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public decimal? DetailNameId { get; set; }
     public decimal? MasterNameId { get; set; }
-    public string City { get; set; }
-    public string Country { get; set; }
-    public string Ntype { get; set; }
-    public string Relationship { get; set; }
+    public string? City { get; set; }
+    public string? Country { get; set; }
+    public string? Ntype { get; set; }
+    public string? Relationship { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

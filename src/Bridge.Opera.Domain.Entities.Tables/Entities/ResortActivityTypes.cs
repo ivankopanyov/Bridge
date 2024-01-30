@@ -10,24 +10,24 @@ public partial class ResortActivityTypes
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string ActivityType { get; set; }
-    public string Description { get; set; }
-    public string CentralYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ActivityType { get; set; }
+    public string? Description { get; set; }
+    public string? CentralYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? SurveyTemplateId { get; set; }
-    public string SendMethod { get; set; }
-    public string Url { get; set; }
-    public string TypeCode { get; set; }
+    public string? SendMethod { get; set; }
+    public string? Url { get; set; }
+    public string? TypeCode { get; set; }
     public decimal? RequestId { get; set; }
     public decimal? AttachTemplateId { get; set; }
-    public string ActivityClass { get; set; }
-    public string AlertOnCreationYn { get; set; }
+    public string? ActivityClass { get; set; }
+    public string? AlertOnCreationYn { get; set; }
     public decimal? MinutesBeforeAlert { get; set; }
-    public string InternalYn { get; set; }
-    public string WebProposalYn { get; set; }
-    public string AutoIcalYn { get; set; }
+    public string? InternalYn { get; set; }
+    public string? WebProposalYn { get; set; }
+    public string? AutoIcalYn { get; set; }
 
     public virtual ICollection<ActTrace> ActTrace { get; set; }
     public virtual ICollection<NameGoal> NameGoal { get; set; }

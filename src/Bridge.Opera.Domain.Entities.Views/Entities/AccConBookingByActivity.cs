@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AccConBookingByActivity
 {
-    public decimal ActId { get; set; }
+    public decimal? ActId { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ActType { get; set; }
-    public string Purpose { get; set; }
+    public string? ActType { get; set; }
+    public string? Purpose { get; set; }
     public decimal? AssignedTo { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string SrepCode { get; set; }
+    public string? SrepCode { get; set; }
     public decimal? AccountId { get; set; }
     public decimal? ContactId { get; set; }
     public decimal? BookingId { get; set; }
-    public string AccName { get; set; }
-    public string AccAddress1 { get; set; }
-    public string AccAddress2 { get; set; }
-    public string AccCity { get; set; }
-    public string AccState { get; set; }
-    public string AccCountry { get; set; }
-    public string AccZipCode { get; set; }
-    public string ConName { get; set; }
-    public string ConAddress1 { get; set; }
-    public string ConAddress2 { get; set; }
-    public string ConCity { get; set; }
-    public string ConState { get; set; }
-    public string ConCountry { get; set; }
-    public string ConZipCode { get; set; }
-    public string ContactBusinessGreeting { get; set; }
-    public string ContactLetterGreeting { get; set; }
-    public string BookingName { get; set; }
+    public string? AccName { get; set; }
+    public string? AccAddress1 { get; set; }
+    public string? AccAddress2 { get; set; }
+    public string? AccCity { get; set; }
+    public string? AccState { get; set; }
+    public string? AccCountry { get; set; }
+    public string? AccZipCode { get; set; }
+    public string? ConName { get; set; }
+    public string? ConAddress1 { get; set; }
+    public string? ConAddress2 { get; set; }
+    public string? ConCity { get; set; }
+    public string? ConState { get; set; }
+    public string? ConCountry { get; set; }
+    public string? ConZipCode { get; set; }
+    public string? ContactBusinessGreeting { get; set; }
+    public string? ContactLetterGreeting { get; set; }
+    public string? BookingName { get; set; }
     public DateTime? BookingArrival { get; set; }
     public DateTime? BookingDeparture { get; set; }
 

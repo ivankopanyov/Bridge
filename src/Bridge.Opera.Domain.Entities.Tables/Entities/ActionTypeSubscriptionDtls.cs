@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActionTypeSubscriptionDtls
 {
-    public string ExtSystemCode { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

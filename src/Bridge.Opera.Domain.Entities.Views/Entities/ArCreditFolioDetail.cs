@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArCreditFolioDetail
 {
-    public decimal AccountCode { get; set; }
+    public decimal? AccountCode { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
     public DateTime? TransferDate { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? FolioNo { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string TrxCode { get; set; }
-    public decimal AccNameId { get; set; }
+    public string? TrxCode { get; set; }
+    public decimal? AccNameId { get; set; }
     public decimal? BillNumber { get; set; }
-    public string CreditCardNumberStr { get; set; }
-    public string CreditCardExpDateStr { get; set; }
+    public string? CreditCardNumberStr { get; set; }
+    public string? CreditCardExpDateStr { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

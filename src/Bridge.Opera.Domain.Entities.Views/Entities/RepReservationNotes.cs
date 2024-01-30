@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepReservationNotes
 {
-    public decimal ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public decimal NoteId { get; set; }
-    public string NoteCode { get; set; }
-    public string RepNoteCode { get; set; }
-    public string Notes { get; set; }
-    public string InternalYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Description { get; set; }
-    public string UserModifiableYn { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NoteId { get; set; }
+    public string? NoteCode { get; set; }
+    public string? RepNoteCode { get; set; }
+    public string? Notes { get; set; }
+    public string? InternalYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public string? UserModifiableYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

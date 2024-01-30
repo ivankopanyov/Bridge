@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ActivityTypes
 {
-    public string ActivityType { get; set; }
-    public string Description { get; set; }
-    public string ActivityClass { get; set; }
+    public string? ActivityType { get; set; }
+    public string? Description { get; set; }
+    public string? ActivityClass { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? MinutesBeforeAlert { get; set; }
-    public string AlertOnCreationYn { get; set; }
+    public string? AlertOnCreationYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

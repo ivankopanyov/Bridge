@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ApplicationInventory
 {
-    public string ApplicationName { get; set; }
-    public string MemberName { get; set; }
-    public string MemberType { get; set; }
+    public string? ApplicationName { get; set; }
+    public string? MemberName { get; set; }
+    public string? MemberType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

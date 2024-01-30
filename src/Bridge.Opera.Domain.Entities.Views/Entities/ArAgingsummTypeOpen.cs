@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAgingsummTypeOpen
 {
-    public string AccountType { get; set; }
-    public string TypeDesc { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AgeRange { get; set; }
+    public string? AccountType { get; set; }
+    public string? TypeDesc { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AgeRange { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
     public decimal? AgeSeq { get; set; }

@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RmonInterfaces
 {
-    public string SiteCode { get; set; }
-    public string InterfaceId { get; set; }
+    public string? SiteCode { get; set; }
+    public string? InterfaceId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string MonitorStatus { get; set; }
-    public string InBoundYn { get; set; }
-    public string OutBoundYn { get; set; }
-    public string ExportYn { get; set; }
-    public string LookupYn { get; set; }
-    public string InterfaceType { get; set; }
-    public string ExternalResort { get; set; }
-    public string CanStartYn { get; set; }
-    public string CanStopYn { get; set; }
-    public string CanRestartYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? MonitorStatus { get; set; }
+    public string? InBoundYn { get; set; }
+    public string? OutBoundYn { get; set; }
+    public string? ExportYn { get; set; }
+    public string? LookupYn { get; set; }
+    public string? InterfaceType { get; set; }
+    public string? ExternalResort { get; set; }
+    public string? CanStartYn { get; set; }
+    public string? CanStopYn { get; set; }
+    public string? CanRestartYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

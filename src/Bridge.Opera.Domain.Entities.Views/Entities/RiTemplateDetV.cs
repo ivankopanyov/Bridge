@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RiTemplateDetV
 {
-    public decimal RiTemplateId { get; set; }
-    public string RiTemplateName { get; set; }
-    public string Resort { get; set; }
-    public string RiTemplateType { get; set; }
-    public decimal RiQuestionId { get; set; }
-    public string QuestionDesc { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public string? RiTemplateName { get; set; }
+    public string? Resort { get; set; }
+    public string? RiTemplateType { get; set; }
+    public decimal? RiQuestionId { get; set; }
+    public string? QuestionDesc { get; set; }
     public decimal? RiQuestionSeq { get; set; }
-    public string RiQualityLevel { get; set; }
+    public string? RiQualityLevel { get; set; }
     public decimal? RiGenerateTask { get; set; }
-    public string QuestionType { get; set; }
-    public string TypeDescription { get; set; }
-    public string TaskDescription { get; set; }
-    public decimal RiTemplateDetailId { get; set; }
-    public string AnswerRequiredYn { get; set; }
+    public string? QuestionType { get; set; }
+    public string? TypeDescription { get; set; }
+    public string? TaskDescription { get; set; }
+    public decimal? RiTemplateDetailId { get; set; }
+    public string? AnswerRequiredYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

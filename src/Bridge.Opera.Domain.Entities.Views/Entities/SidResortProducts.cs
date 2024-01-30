@@ -2,46 +2,46 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResortProducts
 {
-    public string Resort { get; set; }
-    public string Product { get; set; }
-    public string Description { get; set; }
-    public string ShortDescription { get; set; }
-    public string PrintSeparateYn { get; set; }
-    public string AddToRateYn { get; set; }
-    public string SeparatelySoldYn { get; set; }
-    public string CalculationRule { get; set; }
-    public string PostingRhythm { get; set; }
-    public string Formula { get; set; }
-    public string PosAccountYn { get; set; }
-    public string PosNextDayYn { get; set; }
-    public string ForecastGroupCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Product { get; set; }
+    public string? Description { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? PrintSeparateYn { get; set; }
+    public string? AddToRateYn { get; set; }
+    public string? SeparatelySoldYn { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? Formula { get; set; }
+    public string? PosAccountYn { get; set; }
+    public string? PosNextDayYn { get; set; }
+    public string? ForecastGroupCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public DateTime? FromValidTime { get; set; }
     public DateTime? ToValidTime { get; set; }
-    public string ProductType { get; set; }
-    public string OutletCode { get; set; }
+    public string? ProductType { get; set; }
+    public string? OutletCode { get; set; }
     public decimal? StandardDuration { get; set; }
     public decimal? BookingDuration { get; set; }
-    public string FlexibleDurationYn { get; set; }
-    public string StandardPersons { get; set; }
-    public string MaxPersons { get; set; }
-    public string InventoriedYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ExternalLocked { get; set; }
-    public string RedemptionProductYn { get; set; }
-    public string PkgForcastGroup { get; set; }
-    public string ForecastNextDayYn { get; set; }
-    public string CateringYn { get; set; }
-    public string SellOwsYn { get; set; }
-    public string ArrangementCode { get; set; }
-    public string TicketsYn { get; set; }
-    public string OverrideFixedRateYn { get; set; }
+    public string? FlexibleDurationYn { get; set; }
+    public string? StandardPersons { get; set; }
+    public string? MaxPersons { get; set; }
+    public string? InventoriedYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ExternalLocked { get; set; }
+    public string? RedemptionProductYn { get; set; }
+    public string? PkgForcastGroup { get; set; }
+    public string? ForecastNextDayYn { get; set; }
+    public string? CateringYn { get; set; }
+    public string? SellOwsYn { get; set; }
+    public string? ArrangementCode { get; set; }
+    public string? TicketsYn { get; set; }
+    public string? OverrideFixedRateYn { get; set; }
     public DateTime? BeginBookingDate { get; set; }
     public DateTime? EndBookingDate { get; set; }
-    public string GenPlAtEodOfCoDate { get; set; }
+    public string? GenPlAtEodOfCoDate { get; set; }
     public decimal? MinAdvBookDays { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

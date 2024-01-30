@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class GlobalMessages
 {
     public decimal? MesgSeq { get; set; }
-    public string MesgFileName { get; set; }
-    public string MesgText { get; set; }
+    public string? MesgFileName { get; set; }
+    public string? MesgText { get; set; }
     public decimal? DisplayInterval { get; set; }
     public DateTime? DisplayStartDate { get; set; }
     public DateTime? DisplayEndDate { get; set; }
-    public string DisplayLink { get; set; }
+    public string? DisplayLink { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

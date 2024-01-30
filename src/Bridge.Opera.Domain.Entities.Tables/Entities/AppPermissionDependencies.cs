@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppPermissionDependencies
 {
-    public string ParentPermission { get; set; }
-    public string ChildPermission { get; set; }
-    public string GrantYn { get; set; }
-    public string RevokeYn { get; set; }
+    public string? ParentPermission { get; set; }
+    public string? ChildPermission { get; set; }
+    public string? GrantYn { get; set; }
+    public string? RevokeYn { get; set; }
 
     public virtual AppPermissions ChildPermissionNavigation { get; set; }
     public virtual AppPermissions ParentPermissionNavigation { get; set; }

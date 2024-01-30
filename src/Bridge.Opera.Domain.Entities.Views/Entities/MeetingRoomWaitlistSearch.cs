@@ -4,31 +4,31 @@ public partial class MeetingRoomWaitlistSearch
 {
     public decimal? Attendees { get; set; }
     public DateTime? BeginDate { get; set; }
-    public decimal BookId { get; set; }
-    public string CateringYn { get; set; }
-    public string CatStatus { get; set; }
-    public string BookingStatus { get; set; }
+    public decimal? BookId { get; set; }
+    public string? CateringYn { get; set; }
+    public string? CatStatus { get; set; }
+    public string? BookingStatus { get; set; }
     public DateTime? EndDate { get; set; }
-    public decimal EventId { get; set; }
-    public string EventType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal Priority { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string Description { get; set; }
-    public string TurntoStatus { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime WaitlistDate { get; set; }
-    public decimal WaitlistId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EventType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? Priority { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? Description { get; set; }
+    public string? TurntoStatus { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? WaitlistDate { get; set; }
+    public decimal? WaitlistId { get; set; }
     public decimal? EventRev { get; set; }
     public decimal? TotblkRev { get; set; }
     public decimal? TotalRev { get; set; }
-    public string BookName { get; set; }
-    public string AccountName { get; set; }
+    public string? BookName { get; set; }
+    public string? AccountName { get; set; }
     public decimal? AccId { get; set; }
-    public string RoomResort { get; set; }
+    public string? RoomResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

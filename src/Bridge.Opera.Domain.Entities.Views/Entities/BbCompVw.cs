@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BbCompVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
-    public string Description { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
+    public string? Description { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? ExchangeRate { get; set; }

@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Reports
 {
-    public string ReportName { get; set; }
-    public string ReportDescription { get; set; }
-    public string ReportType { get; set; }
-    public string Destination { get; set; }
+    public string? ReportName { get; set; }
+    public string? ReportDescription { get; set; }
+    public string? ReportType { get; set; }
+    public string? Destination { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Gateway { get; set; }
-    public string Server { get; set; }
-    public string StationId { get; set; }
-    public string Scheduled { get; set; }
-    public string Format { get; set; }
-    public string Title { get; set; }
-    public string Debug { get; set; }
-    public string ChainCode { get; set; }
-    public string ReportUrl { get; set; }
-    public string ReportId { get; set; }
-    public string Owner { get; set; }
-    public string Resort { get; set; }
+    public string? Gateway { get; set; }
+    public string? Server { get; set; }
+    public string? StationId { get; set; }
+    public string? Scheduled { get; set; }
+    public string? Format { get; set; }
+    public string? Title { get; set; }
+    public string? Debug { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ReportUrl { get; set; }
+    public string? ReportId { get; set; }
+    public string? Owner { get; set; }
+    public string? Resort { get; set; }
     public decimal? ModuleId { get; set; }
-    public string ReportStatus { get; set; }
+    public string? ReportStatus { get; set; }
     public decimal? BatchNo { get; set; }
     public decimal? DownloadTime { get; set; }
     public decimal? PrintspoolTime { get; set; }

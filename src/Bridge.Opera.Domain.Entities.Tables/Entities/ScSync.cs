@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScSync
 {
-    public string Resort { get; set; }
-    public decimal SyncId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SyncId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? SyncDate { get; set; }
     public decimal? SyncUser { get; set; }
-    public string TableName { get; set; }
-    public string TableRowid { get; set; }
-    public string Action { get; set; }
-    public string LogTxt { get; set; }
+    public string? TableName { get; set; }
+    public string? TableRowid { get; set; }
+    public string? Action { get; set; }
+    public string? LogTxt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

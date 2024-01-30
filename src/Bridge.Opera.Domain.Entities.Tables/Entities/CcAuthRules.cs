@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CcAuthRules
 {
-    public string Resort { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string SourceCode { get; set; }
+    public string? Resort { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? SourceCode { get; set; }
     public decimal? ApprovalAmountCalcMethod { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
 
     public virtual ResortRateCategory R { get; set; }
     public virtual ResortRoomCategory R1 { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ShRateHeaderLovInt
 {
-    public string RateCode { get; set; }
-    public string StayDays { get; set; }
-    public string GroupYn { get; set; }
-    public string RivMarketSegment { get; set; }
-    public string IdRequirements { get; set; }
+    public string? RateCode { get; set; }
+    public string? StayDays { get; set; }
+    public string? GroupYn { get; set; }
+    public string? RivMarketSegment { get; set; }
+    public string? IdRequirements { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

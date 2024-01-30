@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProcessorControl
 {
-    public string Process { get; set; }
-    public decimal Thread { get; set; }
-    public string EnabledYn { get; set; }
-    public string Schema { get; set; }
-    public string Command { get; set; }
-    public string State { get; set; }
-    public string Machine { get; set; }
+    public string? Process { get; set; }
+    public decimal? Thread { get; set; }
+    public string? EnabledYn { get; set; }
+    public string? Schema { get; set; }
+    public string? Command { get; set; }
+    public string? State { get; set; }
+    public string? Machine { get; set; }
     public DateTime? CommandDate { get; set; }
     public decimal? CommandUser { get; set; }
     public DateTime? StateDate { get; set; }

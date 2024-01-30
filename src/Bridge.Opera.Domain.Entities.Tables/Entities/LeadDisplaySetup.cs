@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LeadDisplaySetup
 {
-    public string Resort { get; set; }
-    public string LeadStatus { get; set; }
-    public string ContactYn { get; set; }
-    public string BusblockYn { get; set; }
-    public string RoomnightsYn { get; set; }
-    public string RoomgridYn { get; set; }
-    public string MeetingagendaYn { get; set; }
-    public string BusblockNotesYn { get; set; }
-    public string BusblockNoteTypes { get; set; }
-    public string LeadNotesYn { get; set; }
-    public string LeadNoteTypes { get; set; }
-    public string RespondYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string LeadType { get; set; }
-    public string AccountYn { get; set; }
-    public string AgentYn { get; set; }
-    public string AgentContactYn { get; set; }
+    public string? Resort { get; set; }
+    public string? LeadStatus { get; set; }
+    public string? ContactYn { get; set; }
+    public string? BusblockYn { get; set; }
+    public string? RoomnightsYn { get; set; }
+    public string? RoomgridYn { get; set; }
+    public string? MeetingagendaYn { get; set; }
+    public string? BusblockNotesYn { get; set; }
+    public string? BusblockNoteTypes { get; set; }
+    public string? LeadNotesYn { get; set; }
+    public string? LeadNoteTypes { get; set; }
+    public string? RespondYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? LeadType { get; set; }
+    public string? AccountYn { get; set; }
+    public string? AgentYn { get; set; }
+    public string? AgentContactYn { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NoteTypeDept
 {
-    public string ChainCode { get; set; }
-    public string NoteType { get; set; }
-    public string NoteCode { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? NoteType { get; set; }
+    public string? NoteCode { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

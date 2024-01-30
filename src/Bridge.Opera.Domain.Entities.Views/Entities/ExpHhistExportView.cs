@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpHhistExportView
 {
     public decimal? Rooms { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string RateCode { get; set; }
-    public string PropertyCode { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? RateCode { get; set; }
+    public string? PropertyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

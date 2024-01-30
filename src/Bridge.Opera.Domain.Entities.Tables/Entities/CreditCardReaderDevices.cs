@@ -7,22 +7,22 @@ public partial class CreditCardReaderDevices
         PmsTerminals = new HashSet<PmsTerminals>();
     }
 
-    public decimal CCReaderDeviceId { get; set; }
-    public string Description { get; set; }
-    public string Track2Seperator { get; set; }
-    public string ExpyDateStartCharacter { get; set; }
-    public string NameSeperator { get; set; }
-    public string EndOfTrackSeperator { get; set; }
-    public string ChainCode { get; set; }
-    public string SecureDeviceYn { get; set; }
-    public string AdditionalInfoSeparator { get; set; }
+    public decimal? CCReaderDeviceId { get; set; }
+    public string? Description { get; set; }
+    public string? Track2Seperator { get; set; }
+    public string? ExpyDateStartCharacter { get; set; }
+    public string? NameSeperator { get; set; }
+    public string? EndOfTrackSeperator { get; set; }
+    public string? ChainCode { get; set; }
+    public string? SecureDeviceYn { get; set; }
+    public string? AdditionalInfoSeparator { get; set; }
     public decimal? KsnFieldPosition { get; set; }
     public decimal? Et1FieldPosition { get; set; }
     public decimal? Et2FieldPosition { get; set; }
-    public string EncryptionFormatCode { get; set; }
-    public string SoftwareId { get; set; }
-    public string AdditionalInfoEndSeparator { get; set; }
-    public string AdditionalInfoFormatType { get; set; }
+    public string? EncryptionFormatCode { get; set; }
+    public string? SoftwareId { get; set; }
+    public string? AdditionalInfoEndSeparator { get; set; }
+    public string? AdditionalInfoFormatType { get; set; }
 
     public virtual ICollection<PmsTerminals> PmsTerminals { get; set; }
 

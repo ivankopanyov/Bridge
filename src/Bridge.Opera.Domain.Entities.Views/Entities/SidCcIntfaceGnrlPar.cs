@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidCcIntfaceGnrlPar
 {
-    public string Resort { get; set; }
-    public string HotelId { get; set; }
+    public string? Resort { get; set; }
+    public string? HotelId { get; set; }
     public decimal? TimeOut { get; set; }
     public decimal? ApprovalAmountCalcMethod { get; set; }
     public decimal? AmountPercent { get; set; }
-    public string AuthorizationAtCheckinYn { get; set; }
-    public string AuthStlmtAtCheckOutYn { get; set; }
-    public string OnLineSettlementYn { get; set; }
-    public string BatchSettlementYn { get; set; }
-    public string NightAuditRemoteAuthYn { get; set; }
-    public string CourtseyCardHandlingYn { get; set; }
-    public string CreditCardUsageChoicesYn { get; set; }
-    public string CreditCardTypeCheckYn { get; set; }
-    public string BonusCheckValidationYn { get; set; }
-    public string CcReversalAllowedYn { get; set; }
-    public string IgnoreDepositsYn { get; set; }
-    public string CcOverHttpEnabledYn { get; set; }
-    public string CcHttpServiceProvider { get; set; }
-    public string CcHttpServiceUrl { get; set; }
+    public string? AuthorizationAtCheckinYn { get; set; }
+    public string? AuthStlmtAtCheckOutYn { get; set; }
+    public string? OnLineSettlementYn { get; set; }
+    public string? BatchSettlementYn { get; set; }
+    public string? NightAuditRemoteAuthYn { get; set; }
+    public string? CourtseyCardHandlingYn { get; set; }
+    public string? CreditCardUsageChoicesYn { get; set; }
+    public string? CreditCardTypeCheckYn { get; set; }
+    public string? BonusCheckValidationYn { get; set; }
+    public string? CcReversalAllowedYn { get; set; }
+    public string? IgnoreDepositsYn { get; set; }
+    public string? CcOverHttpEnabledYn { get; set; }
+    public string? CcHttpServiceProvider { get; set; }
+    public string? CcHttpServiceUrl { get; set; }
     public decimal? CcDefaultCashier { get; set; }
-    public string SdcLocationYn { get; set; }
-    public string SdcTerminalYn { get; set; }
-    public string CcAmexDirectYn { get; set; }
-    public string CcEodYn { get; set; }
-    public string SendTotalTaxYn { get; set; }
-    public string AuthRequiredAtCheckinYn { get; set; }
+    public string? SdcLocationYn { get; set; }
+    public string? SdcTerminalYn { get; set; }
+    public string? CcAmexDirectYn { get; set; }
+    public string? CcEodYn { get; set; }
+    public string? SendTotalTaxYn { get; set; }
+    public string? AuthRequiredAtCheckinYn { get; set; }
     public decimal? MaxDaysToAuthorize { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Percentage { get; set; }
-    public string AuthorizationDuringStayYn { get; set; }
-    public string ManualAuthYn { get; set; }
-    public string AutoAuthActiveYn { get; set; }
+    public string? AuthorizationDuringStayYn { get; set; }
+    public string? ManualAuthYn { get; set; }
+    public string? AutoAuthActiveYn { get; set; }
     public decimal? AutoAuthInterval { get; set; }
-    public string Cvv2CheckYn { get; set; }
-    public string AddressVerificationYn { get; set; }
+    public string? Cvv2CheckYn { get; set; }
+    public string? AddressVerificationYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

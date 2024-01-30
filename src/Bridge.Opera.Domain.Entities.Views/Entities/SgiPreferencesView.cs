@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SgiPreferencesView
 {
-    public string PreferenceType { get; set; }
-    public string Description { get; set; }
-    public string PreferenceValue { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? Description { get; set; }
+    public string? PreferenceValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

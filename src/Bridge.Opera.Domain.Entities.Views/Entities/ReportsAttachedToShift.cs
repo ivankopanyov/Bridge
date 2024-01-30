@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReportsAttachedToShift
 {
-    public decimal ShiftGroupId { get; set; }
-    public decimal ModuleId { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string ReportGroup { get; set; }
-    public string UserDefinedYn { get; set; }
+    public decimal? ShiftGroupId { get; set; }
+    public decimal? ModuleId { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? ReportGroup { get; set; }
+    public string? UserDefinedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

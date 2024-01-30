@@ -4,8 +4,8 @@ public partial class ExpUpePbillsProfiles
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string FolioId { get; set; }
-    public string ProfileType { get; set; }
+    public string? FolioId { get; set; }
+    public string? ProfileType { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

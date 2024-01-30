@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiRpmFactVw
 {
     public DateTime? SnapshotDate { get; set; }
-    public string Resort { get; set; }
-    public string StayMonth { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string EventId { get; set; }
+    public string? Resort { get; set; }
+    public string? StayMonth { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? EventId { get; set; }
     public decimal? StayRoomsResIndDed { get; set; }
     public decimal? StayRoomsResIndNdd { get; set; }
     public decimal? StayRoomsResBlkDed { get; set; }

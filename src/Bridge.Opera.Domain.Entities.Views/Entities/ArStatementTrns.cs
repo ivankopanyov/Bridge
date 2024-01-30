@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArStatementTrns
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public DateTime PostDate { get; set; }
+    public string? AccountName { get; set; }
+    public DateTime? PostDate { get; set; }
     public decimal? TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? Invoice { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
@@ -23,32 +23,32 @@ public partial class ArStatementTrns
     public decimal? ForwardPaid { get; set; }
     public decimal? Ardebit { get; set; }
     public decimal? Arcredit { get; set; }
-    public string AdjustYn { get; set; }
-    public string Currency { get; set; }
-    public string CurrencyDesc { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? Currency { get; set; }
+    public string? CurrencyDesc { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? PostedAmount { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string InvStatus { get; set; }
-    public string RecType { get; set; }
+    public string? InvStatus { get; set; }
+    public string? RecType { get; set; }
     public decimal? TranActionId { get; set; }
-    public string AppFull { get; set; }
-    public string InvoiceType { get; set; }
+    public string? AppFull { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? InvoiceAge { get; set; }
-    public DateTime UpdDate { get; set; }
+    public DateTime? UpdDate { get; set; }
     public DateTime? TrnsActivityDate { get; set; }
     public decimal? TrnsFromAcct { get; set; }
     public decimal? TrnsToAcct { get; set; }
     public int? FolioView { get; set; }
-    public string PrintedYn { get; set; }
+    public string? PrintedYn { get; set; }
     public decimal? StatementNo { get; set; }
-    public string PurgeYn { get; set; }
-    public string PaymentNo { get; set; }
-    public string FolioType { get; set; }
+    public string? PurgeYn { get; set; }
+    public string? PaymentNo { get; set; }
+    public string? FolioType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

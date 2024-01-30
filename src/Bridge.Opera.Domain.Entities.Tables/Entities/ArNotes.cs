@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArNotes
 {
-    public decimal NoteId { get; set; }
-    public string Resort { get; set; }
-    public decimal AccountCode { get; set; }
-    public string NoteCode { get; set; }
-    public string NoteTitle { get; set; }
-    public string Notes { get; set; }
+    public decimal? NoteId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? NoteCode { get; set; }
+    public string? NoteTitle { get; set; }
+    public string? Notes { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string InternalYn { get; set; }
+    public string? InternalYn { get; set; }
 
     public virtual ArAccount ArAccount { get; set; }
 

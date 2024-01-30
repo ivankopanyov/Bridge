@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArCorrectionErrors
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? TrxNo { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxCode { get; set; }
-    public string FolioType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? FolioType { get; set; }
     public decimal? ArNumber { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? NameId { get; set; }
@@ -15,9 +15,9 @@ public partial class ArCorrectionErrors
     public decimal? TranActionId { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? Amount { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
-    public string ErrorDescription { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
+    public string? ErrorDescription { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

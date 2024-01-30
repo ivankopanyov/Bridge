@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpRoomTypeConfig
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Label { get; set; }
-    public string RoomClass { get; set; }
-    public string ShortDescription { get; set; }
-    public string RoomClassDescription { get; set; }
+    public string? Label { get; set; }
+    public string? RoomClass { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? RoomClassDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

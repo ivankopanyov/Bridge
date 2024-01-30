@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExportRoomGridDay
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string TransactionType { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? TransactionType { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public DateTime? AllotmentDate { get; set; }
-    public string BookingStatus { get; set; }
+    public string? BookingStatus { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? CutoffDate { get; set; }
-    public string RoomCategoryCode { get; set; }
-    public string RoomClass { get; set; }
+    public string? RoomCategoryCode { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? ProjectedOcc1 { get; set; }
     public decimal? ProjectedOcc2 { get; set; }
     public decimal? ProjectedOcc3 { get; set; }
@@ -32,13 +32,13 @@ public partial class ExportRoomGridDay
     public decimal? ProjectedRooms { get; set; }
     public decimal? ProjectedRev { get; set; }
     public decimal? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
-    public string BlockCode { get; set; }
-    public string PaymentMethod { get; set; }
-    public string Bookingmethod { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string Udfc06 { get; set; }
-    public string RmsCurrencyCode { get; set; }
+    public string? SuperBlockResort { get; set; }
+    public string? BlockCode { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? Bookingmethod { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? RmsCurrencyCode { get; set; }
     public decimal? OriginalRooms { get; set; }
     public decimal? SnapProjectedOcc1 { get; set; }
     public decimal? SnapProjectedOcc2 { get; set; }

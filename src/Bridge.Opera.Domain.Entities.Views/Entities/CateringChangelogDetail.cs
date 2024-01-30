@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CateringChangelogDetail
 {
-    public decimal ChangeId { get; set; }
-    public string Fieldname { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? ChangeId { get; set; }
+    public string? Fieldname { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

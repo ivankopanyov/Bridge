@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmPrices
 {
-    public decimal ServiceId { get; set; }
-    public string Resort { get; set; }
-    public decimal PriceId { get; set; }
-    public string PriceCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string BeginTimeHh24mi { get; set; }
-    public string EndTimeHh24mi { get; set; }
-    public string Dayofweek { get; set; }
-    public decimal Price { get; set; }
+    public decimal? ServiceId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PriceId { get; set; }
+    public string? PriceCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? BeginTimeHh24mi { get; set; }
+    public string? EndTimeHh24mi { get; set; }
+    public string? Dayofweek { get; set; }
+    public decimal? Price { get; set; }
     public decimal? PriceDuration { get; set; }
     public decimal? AllowedOvertimePerc { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

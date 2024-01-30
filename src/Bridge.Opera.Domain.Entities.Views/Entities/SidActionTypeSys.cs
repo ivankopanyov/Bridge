@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidActionTypeSys
 {
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string UserLogPresentation { get; set; }
-    public string DeImpactWhenYn { get; set; }
-    public string InheritDeFromModule { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? UserLogPresentation { get; set; }
+    public string? DeImpactWhenYn { get; set; }
+    public string? InheritDeFromModule { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

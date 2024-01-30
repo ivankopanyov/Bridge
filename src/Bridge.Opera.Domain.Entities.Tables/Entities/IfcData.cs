@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IfcData
 {
     public decimal? TrnId { get; set; }
-    public string TrnData { get; set; }
+    public string? TrnData { get; set; }
     public DateTime? TrnDate { get; set; }
-    public string Dest { get; set; }
-    public string Src { get; set; }
+    public string? Dest { get; set; }
+    public string? Src { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

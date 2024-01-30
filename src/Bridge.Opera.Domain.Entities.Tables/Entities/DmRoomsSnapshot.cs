@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DmRoomsSnapshot
 {
-    public decimal ActionId { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
-    public string CurrentStatus { get; set; }
-    public string PriorStatus { get; set; }
+    public decimal? ActionId { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? CurrentStatus { get; set; }
+    public string? PriorStatus { get; set; }
     public decimal? AvgRate { get; set; }
     public decimal? TotalRooms { get; set; }
     public DateTime? InactiveDate { get; set; }
@@ -15,7 +15,7 @@ public partial class DmRoomsSnapshot
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? DmProcessed { get; set; }
-    public string DmProcessedYn { get; set; }
+    public string? DmProcessedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

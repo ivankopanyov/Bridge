@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BlockDefiniteSnapshot
 {
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime ArriveDate { get; set; }
-    public string Udfc02 { get; set; }
-    public string Bookingtype { get; set; }
-    public string CreateOwnerCode { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? ArriveDate { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Bookingtype { get; set; }
+    public string? CreateOwnerCode { get; set; }
     public decimal? DefPeakRoomsBlocked { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

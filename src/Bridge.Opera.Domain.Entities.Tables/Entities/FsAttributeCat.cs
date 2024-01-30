@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsAttributeCat
 {
-    public string AtrCat { get; set; }
-    public string AtrCatDesc { get; set; }
+    public string? AtrCat { get; set; }
+    public string? AtrCatDesc { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

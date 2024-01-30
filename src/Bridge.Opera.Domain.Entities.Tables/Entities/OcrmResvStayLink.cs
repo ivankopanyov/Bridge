@@ -7,19 +7,19 @@ public partial class OcrmResvStayLink
         OcrmResvStayOfferLink = new HashSet<OcrmResvStayOfferLink>();
     }
 
-    public decimal ResvLinkId { get; set; }
-    public string Resort { get; set; }
+    public decimal? ResvLinkId { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string PmsResvNameId { get; set; }
-    public string PosCode { get; set; }
+    public string? PmsResvNameId { get; set; }
+    public string? PosCode { get; set; }
     public decimal? LegNo { get; set; }
-    public decimal OcrmProfileId { get; set; }
+    public decimal? OcrmProfileId { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string DataSource { get; set; }
+    public string? DataSource { get; set; }
 
     public virtual ICollection<OcrmResvStayOfferLink> OcrmResvStayOfferLink { get; set; }
 

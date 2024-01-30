@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Tlprate
 {
-    public string Hotelcode { get; set; }
-    public string Groupid { get; set; }
-    public string Workstatid { get; set; }
-    public string Rmtypecode { get; set; }
-    public DateTime Blockdate { get; set; }
+    public string? Hotelcode { get; set; }
+    public string? Groupid { get; set; }
+    public string? Workstatid { get; set; }
+    public string? Rmtypecode { get; set; }
+    public DateTime? Blockdate { get; set; }
     public decimal? Sglrte { get; set; }
     public decimal? Dblrte { get; set; }
     public decimal? Tplrte { get; set; }

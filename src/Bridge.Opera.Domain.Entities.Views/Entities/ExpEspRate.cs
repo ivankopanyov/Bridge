@@ -7,8 +7,8 @@ public partial class ExpEspRate
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? RecordType { get; set; }
-    public string RateCode { get; set; }
-    public string RateIndicator { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateIndicator { get; set; }
     public decimal? RateNights { get; set; }
     public decimal? EligibleRevenue { get; set; }
 

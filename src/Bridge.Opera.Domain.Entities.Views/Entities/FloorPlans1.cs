@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FloorPlans1
 {
-    public string Resort { get; set; }
-    public string Floor { get; set; }
-    public string ItemName { get; set; }
-    public decimal XPos { get; set; }
-    public decimal YPos { get; set; }
-    public string Name { get; set; }
-    public string DisplayedYn { get; set; }
-    public string NavigableYn { get; set; }
-    public string DefaultValue { get; set; }
+    public string? Resort { get; set; }
+    public string? Floor { get; set; }
+    public string? ItemName { get; set; }
+    public decimal? XPos { get; set; }
+    public decimal? YPos { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayedYn { get; set; }
+    public string? NavigableYn { get; set; }
+    public string? DefaultValue { get; set; }
     public decimal? TabOrder { get; set; }
     public decimal? LineHeight { get; set; }
     public decimal? LineWidth { get; set; }

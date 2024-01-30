@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepMealTypeProgressBiData
 {
     public decimal? ReportId { get; set; }
-    public string YearLabel { get; set; }
+    public string? YearLabel { get; set; }
     public decimal? MonthOrderBy { get; set; }
-    public string StatusListLabel { get; set; }
-    public string LeftLabel { get; set; }
+    public string? StatusListLabel { get; set; }
+    public string? LeftLabel { get; set; }
     public decimal? MealType1Covers { get; set; }
     public decimal? MealType2Covers { get; set; }
     public decimal? MealType3Covers { get; set; }

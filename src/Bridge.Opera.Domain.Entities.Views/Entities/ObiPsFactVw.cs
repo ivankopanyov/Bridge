@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPsFactVw
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RecTypeKeyId { get; set; }
-    public string MenuKeyId { get; set; }
-    public string RvcKeyId { get; set; }
-    public string NameKeyId { get; set; }
-    public string MarketKeyId { get; set; }
-    public string HourKeyId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RecTypeKeyId { get; set; }
+    public string? MenuKeyId { get; set; }
+    public string? RvcKeyId { get; set; }
+    public string? NameKeyId { get; set; }
+    public string? MarketKeyId { get; set; }
+    public string? HourKeyId { get; set; }
     public decimal? RecordAmt { get; set; }
     public decimal? RecordQty { get; set; }
     public decimal? NumOfGuests { get; set; }

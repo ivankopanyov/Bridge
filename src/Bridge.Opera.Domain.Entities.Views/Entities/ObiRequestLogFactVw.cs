@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRequestLogFactVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RequestDate { get; set; }
     public DateTime? ArrivalDate { get; set; }
-    public string RequestType { get; set; }
-    public string RequestSource { get; set; }
-    public string InsertUser { get; set; }
-    public string InsertHour { get; set; }
+    public string? RequestType { get; set; }
+    public string? RequestSource { get; set; }
+    public string? InsertUser { get; set; }
+    public string? InsertHour { get; set; }
     public decimal? Nights { get; set; }
     public decimal? Rooms { get; set; }
     public decimal? Adults { get; set; }

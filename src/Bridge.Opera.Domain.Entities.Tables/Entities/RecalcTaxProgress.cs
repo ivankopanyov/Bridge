@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RecalcTaxProgress
 {
-    public decimal Sid { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? Sid { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? FolioView { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

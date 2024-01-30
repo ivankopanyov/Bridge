@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DocumentTemplates
 {
-    public decimal DocId { get; set; }
-    public string DocumentTag { get; set; }
-    public string DocumentName { get; set; }
-    public string Description { get; set; }
+    public decimal? DocId { get; set; }
+    public string? DocumentTag { get; set; }
+    public string? DocumentName { get; set; }
+    public string? Description { get; set; }
     public byte[] DocumentBlob { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string DefaultYn { get; set; }
-    public string ChainCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

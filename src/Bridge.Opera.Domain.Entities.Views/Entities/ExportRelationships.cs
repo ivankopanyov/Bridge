@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExportRelationships
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string BusinessDate { get; set; }
-    public decimal NameId { get; set; }
-    public string Udfc40 { get; set; }
-    public string ProfileName { get; set; }
-    public decimal RelationToNameId { get; set; }
-    public string RelationToName { get; set; }
-    public string RelationToDesc { get; set; }
-    public string RelationToUdfc40 { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelationshipDesc { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? BusinessDate { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Udfc40 { get; set; }
+    public string? ProfileName { get; set; }
+    public decimal? RelationToNameId { get; set; }
+    public string? RelationToName { get; set; }
+    public string? RelationToDesc { get; set; }
+    public string? RelationToUdfc40 { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelationshipDesc { get; set; }
+    public string? PrimaryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

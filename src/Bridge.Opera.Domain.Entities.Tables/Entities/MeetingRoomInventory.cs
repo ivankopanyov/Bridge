@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MeetingRoomInventory
 {
-    public decimal MriId { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public decimal BookId { get; set; }
+    public decimal? MriId { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public decimal? BookId { get; set; }
     public decimal? EventId { get; set; }
     public DateTime? EventStart { get; set; }
     public DateTime? EventEnd { get; set; }
     public decimal? Attendees { get; set; }
-    public string SharedYn { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ComboRoom { get; set; }
-    public string DontMoveYn { get; set; }
-    public string Status { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomResort { get; set; }
+    public string? SharedYn { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ComboRoom { get; set; }
+    public string? DontMoveYn { get; set; }
+    public string? Status { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomResort { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
 

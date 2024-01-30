@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipType
 {
-    public string MembershipType { get; set; }
-    public string Description { get; set; }
-    public string MembershipClass { get; set; }
-    public string CardPrefix { get; set; }
+    public string? MembershipType { get; set; }
+    public string? Description { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CardPrefix { get; set; }
     public decimal? CardLength { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? ExpirationMonth { get; set; }
     public decimal? CalculationMonths { get; set; }
-    public string NumericValidation { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PointsLabel { get; set; }
-    public string FolioMessage { get; set; }
+    public string? NumericValidation { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PointsLabel { get; set; }
+    public string? FolioMessage { get; set; }
     public decimal? CostPerPoint { get; set; }
-    public string CentralSetupYn { get; set; }
-    public string MembershipAction { get; set; }
+    public string? CentralSetupYn { get; set; }
+    public string? MembershipAction { get; set; }
     public decimal? TransactionMaxPoints { get; set; }
-    public string PointsIssuedCentrallyYn { get; set; }
-    public string AllowSharesYn { get; set; }
-    public string AllowAdhocMultiplierYn { get; set; }
-    public string UdfCardValidationYn { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? PointsIssuedCentrallyYn { get; set; }
+    public string? AllowSharesYn { get; set; }
+    public string? AllowAdhocMultiplierYn { get; set; }
+    public string? UdfCardValidationYn { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public decimal? BatchDelayPeriod { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ExchangeRateType { get; set; }
+    public string? ExchangeRateType { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ExceptionType { get; set; }
+    public string? ExceptionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

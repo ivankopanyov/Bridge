@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RmonParameters
 {
-    public string ParameterName { get; set; }
-    public string ParameterPriority { get; set; }
-    public string ParameterDisplay { get; set; }
-    public string ParameterValue { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterPriority { get; set; }
+    public string? ParameterDisplay { get; set; }
+    public string? ParameterValue { get; set; }
     public decimal? ParameterValueFrom { get; set; }
     public decimal? ParameterValueTo { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

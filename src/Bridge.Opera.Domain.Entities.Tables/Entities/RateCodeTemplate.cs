@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateCodeTemplate
 {
-    public string RateCode { get; set; }
-    public string Description { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
     public decimal? Lvl { get; set; }
-    public string GroupCode { get; set; }
-    public DateTime BeginBookingDate { get; set; }
+    public string? GroupCode { get; set; }
+    public DateTime? BeginBookingDate { get; set; }
     public DateTime? EndBookingDate { get; set; }
     public decimal? DisplaySeq { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ExternalValue { get; set; }
-    public string ChainCode { get; set; }
-    public string NegotiatedYn { get; set; }
-    public string MfnUploadYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ExternalValue { get; set; }
+    public string? ChainCode { get; set; }
+    public string? NegotiatedYn { get; set; }
+    public string? MfnUploadYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

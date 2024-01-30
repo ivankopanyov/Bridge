@@ -7,22 +7,22 @@ public partial class OrmsAllotmentQuotHdr
         OrmsAllotmentQuotDtl = new HashSet<OrmsAllotmentQuotDtl>();
     }
 
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string BlockStatus { get; set; }
-    public DateTime RequestDate { get; set; }
-    public string RequestType { get; set; }
-    public DateTime BlockBeginDate { get; set; }
-    public DateTime BlockEndDate { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? BlockStatus { get; set; }
+    public DateTime? RequestDate { get; set; }
+    public string? RequestType { get; set; }
+    public DateTime? BlockBeginDate { get; set; }
+    public DateTime? BlockEndDate { get; set; }
     public decimal? RequestedAmount { get; set; }
-    public string ResponseStatus { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? ResponseStatus { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? TotalRooms { get; set; }
-    public string BlockCode { get; set; }
+    public string? BlockCode { get; set; }
 
     public virtual ICollection<OrmsAllotmentQuotDtl> OrmsAllotmentQuotDtl { get; set; }
 

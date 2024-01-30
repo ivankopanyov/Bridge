@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MarketingCities
 {
-    public string RegionRegionCode { get; set; }
-    public string City { get; set; }
+    public string? RegionRegionCode { get; set; }
+    public string? City { get; set; }
     public decimal? Distance { get; set; }
-    public string Type { get; set; }
-    public string Direction { get; set; }
-    public string DrivingTime { get; set; }
+    public string? Type { get; set; }
+    public string? Direction { get; set; }
+    public string? DrivingTime { get; set; }
     public decimal? DisplaySeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

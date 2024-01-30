@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbMembershipIssuedAwards
 {
-    public decimal IssuedAwardId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal MembershipId { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string PmsResvNo { get; set; }
-    public string Resort { get; set; }
-    public string CrsBookNo { get; set; }
-    public string AwardStatus { get; set; }
+    public decimal? IssuedAwardId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? Resort { get; set; }
+    public string? CrsBookNo { get; set; }
+    public string? AwardStatus { get; set; }
     public DateTime? DateAwarded { get; set; }
-    public string AwardSource { get; set; }
+    public string? AwardSource { get; set; }
     public DateTime? DateOfExpiry { get; set; }
     public DateTime? ConsumptionDate { get; set; }
     public decimal? PointsRequired { get; set; }
-    public string RateCode { get; set; }
-    public string CancellationNumber { get; set; }
+    public string? RateCode { get; set; }
+    public string? CancellationNumber { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? MembershipAwardId { get; set; }
-    public string RoomLabel { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomLabel { get; set; }
-    public string Product { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomLabel { get; set; }
+    public string? Product { get; set; }
     public decimal? ActualCancelPoints { get; set; }
     public decimal? AwardCancellationNo { get; set; }
     public decimal? StayRecordId { get; set; }
-    public string AutoConsumedYn { get; set; }
-    public string AwardConsumedYn { get; set; }
-    public string IssuedManuallyYn { get; set; }
+    public string? AutoConsumedYn { get; set; }
+    public string? AwardConsumedYn { get; set; }
+    public string? IssuedManuallyYn { get; set; }
     public DateTime? AwardCancelDate { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyPoints { get; set; }
@@ -46,25 +46,25 @@ public partial class QbMembershipIssuedAwards
     public decimal? AwardValue { get; set; }
     public decimal? CancelStatementId { get; set; }
     public decimal? CancelMemberStatementId { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? TrxNo { get; set; }
-    public string ExtTrxNo { get; set; }
-    public string TrxCode { get; set; }
+    public string? ExtTrxNo { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TotalLocalAmount { get; set; }
     public decimal? RedeemedLocalAmount { get; set; }
     public decimal? TotalCentralAmount { get; set; }
     public decimal? RedeemedCentralAmount { get; set; }
-    public string ExchangeRateType { get; set; }
-    public string Comments { get; set; }
-    public string BillingGroup { get; set; }
-    public string CancelPolicyType { get; set; }
+    public string? ExchangeRateType { get; set; }
+    public string? Comments { get; set; }
+    public string? BillingGroup { get; set; }
+    public string? CancelPolicyType { get; set; }
     public decimal? NumberOfNights { get; set; }
-    public string AwardVoucherNo { get; set; }
-    public string PtsSchCode { get; set; }
+    public string? AwardVoucherNo { get; set; }
+    public string? PtsSchCode { get; set; }
     public decimal? LocalResvNameId { get; set; }
-    public string RoomLabelName { get; set; }
-    public string FromRoomLabelName { get; set; }
-    public string ToRoomLabelName { get; set; }
+    public string? RoomLabelName { get; set; }
+    public string? FromRoomLabelName { get; set; }
+    public string? ToRoomLabelName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

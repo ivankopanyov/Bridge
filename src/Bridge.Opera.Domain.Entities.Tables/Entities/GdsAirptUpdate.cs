@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAirptUpdate
 {
-    public string Resort { get; set; }
-    public string AirportCode { get; set; }
-    public string Distance { get; set; }
-    public string Direction { get; set; }
-    public string DistanceUnits { get; set; }
-    public string PrimaryTransport { get; set; }
+    public string? Resort { get; set; }
+    public string? AirportCode { get; set; }
+    public string? Distance { get; set; }
+    public string? Direction { get; set; }
+    public string? DistanceUnits { get; set; }
+    public string? PrimaryTransport { get; set; }
     public decimal? PropupId { get; set; }
 
     public virtual GdsPropupUpdate Propup { get; set; }

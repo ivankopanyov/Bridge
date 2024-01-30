@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class ArNofaxRecords
 {
     public decimal? Sid { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
-    public string LetterName { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? LetterName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

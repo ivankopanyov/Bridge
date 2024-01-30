@@ -8,19 +8,19 @@ public partial class QbField
         QbRelationR = new HashSet<QbRelation>();
     }
 
-    public string EntityName { get; set; }
-    public string FieldName { get; set; }
-    public string FieldLabel { get; set; }
-    public string FieldDesc { get; set; }
-    public string BaseColumn { get; set; }
-    public string DataType { get; set; }
-    public string FieldLov { get; set; }
-    public string IdxLeadYn { get; set; }
-    public string IdxPartYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? EntityName { get; set; }
+    public string? FieldName { get; set; }
+    public string? FieldLabel { get; set; }
+    public string? FieldDesc { get; set; }
+    public string? BaseColumn { get; set; }
+    public string? DataType { get; set; }
+    public string? FieldLov { get; set; }
+    public string? IdxLeadYn { get; set; }
+    public string? IdxPartYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual QbEntity EntityNameNavigation { get; set; }
     public virtual ICollection<QbRelation> QbRelationQbField { get; set; }

@@ -11,27 +11,27 @@ public partial class Tasks
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string PmsReasonCode { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsReasonCode { get; set; }
     public decimal? ResponseTime { get; set; }
-    public string ResponseTimeCode { get; set; }
-    public string StatusAtResponse { get; set; }
-    public string RmStatusAtCreation { get; set; }
-    public string RmStatusAtCompletion { get; set; }
-    public string RmStatusIfOccupied { get; set; }
-    public string AlertPmsUserYn { get; set; }
-    public decimal TaskCode { get; set; }
-    public string Description { get; set; }
+    public string? ResponseTimeCode { get; set; }
+    public string? StatusAtResponse { get; set; }
+    public string? RmStatusAtCreation { get; set; }
+    public string? RmStatusAtCompletion { get; set; }
+    public string? RmStatusIfOccupied { get; set; }
+    public string? AlertPmsUserYn { get; set; }
+    public decimal? TaskCode { get; set; }
+    public string? Description { get; set; }
     public decimal? EstTime { get; set; }
-    public string Notes { get; set; }
-    public string PriorityCode { get; set; }
-    public string CategoryCode { get; set; }
-    public string TypeCode { get; set; }
-    public string EstUotCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string Frequency { get; set; }
-    public string ActiveYn { get; set; }
-    public string NotifyYn { get; set; }
+    public string? Notes { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? TypeCode { get; set; }
+    public string? EstUotCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Frequency { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? NotifyYn { get; set; }
 
     public virtual Priorities Priorities { get; set; }
     public virtual UnitOfTime Res { get; set; }

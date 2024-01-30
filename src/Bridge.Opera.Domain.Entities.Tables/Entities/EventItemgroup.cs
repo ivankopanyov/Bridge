@@ -7,15 +7,15 @@ public partial class EventItemgroup
         EventItem = new HashSet<EventItem>();
     }
 
-    public decimal EventItemgId { get; set; }
-    public decimal EventId { get; set; }
-    public decimal ItmgId { get; set; }
-    public string ItmgName { get; set; }
-    public string HourlyYn { get; set; }
+    public decimal? EventItemgId { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? ItmgId { get; set; }
+    public string? ItmgName { get; set; }
+    public string? HourlyYn { get; set; }
     public decimal? Price { get; set; }
-    public string PriceCode { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
+    public string? PriceCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
     public decimal? Discount { get; set; }
 
     public virtual GemEvent Event { get; set; }

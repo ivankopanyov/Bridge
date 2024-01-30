@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ModuleDataElements
 {
-    public string Module { get; set; }
-    public string DataElement { get; set; }
-    public string DataElementDatatype { get; set; }
+    public string? Module { get; set; }
+    public string? DataElement { get; set; }
+    public string? DataElementDatatype { get; set; }
     public decimal? LovSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RfmScoreHeader
 {
-    public decimal RfmScoreHdrId { get; set; }
-    public string ChainCode { get; set; }
-    public string RfmCode { get; set; }
-    public string RfmFormula { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ProcessingMessage { get; set; }
+    public decimal? RfmScoreHdrId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RfmCode { get; set; }
+    public string? RfmFormula { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ProcessingMessage { get; set; }
     public DateTime? ProcessingDate { get; set; }
     public DateTime? EvaluationDate { get; set; }
 

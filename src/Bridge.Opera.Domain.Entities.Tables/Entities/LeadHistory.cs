@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LeadHistory
 {
-    public decimal LeadHistoryId { get; set; }
-    public decimal LeadId { get; set; }
-    public string Resort { get; set; }
-    public string BookedResort { get; set; }
-    public string AllotmentCode { get; set; }
-    public string MarketingRegion { get; set; }
-    public string MarketingCity { get; set; }
+    public decimal? LeadHistoryId { get; set; }
+    public decimal? LeadId { get; set; }
+    public string? Resort { get; set; }
+    public string? BookedResort { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? MarketingCity { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? OriginalRoomNights { get; set; }
@@ -18,13 +18,13 @@ public partial class LeadHistory
     public decimal? ActualAvgrate { get; set; }
     public decimal? ActualFbRevenue { get; set; }
     public decimal? ActualOtherRevenue { get; set; }
-    public string EventsYn { get; set; }
+    public string? EventsYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string LostToProperty { get; set; }
-    public string LostToDestination { get; set; }
+    public string? LostToProperty { get; set; }
+    public string? LostToDestination { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
 

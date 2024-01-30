@@ -7,16 +7,16 @@ public partial class SunUploadHeader
         SunUploadDetail = new HashSet<SunUploadDetail>();
     }
 
-    public decimal HeaderId { get; set; }
+    public decimal? HeaderId { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string RecordType { get; set; }
-    public string Version { get; set; }
-    public string BankCode { get; set; }
-    public string MerchantUsn { get; set; }
-    public string FileProcessingDate { get; set; }
-    public string ApplicationId { get; set; }
-    public string MerchantName { get; set; }
-    public string Status { get; set; }
+    public string? RecordType { get; set; }
+    public string? Version { get; set; }
+    public string? BankCode { get; set; }
+    public string? MerchantUsn { get; set; }
+    public string? FileProcessingDate { get; set; }
+    public string? ApplicationId { get; set; }
+    public string? MerchantName { get; set; }
+    public string? Status { get; set; }
 
     public virtual ICollection<SunUploadDetail> SunUploadDetail { get; set; }
 

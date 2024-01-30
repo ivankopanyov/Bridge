@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RepProdChSummary
 {
-    public decimal BbId { get; set; }
-    public string Salesmgr { get; set; }
-    public string Status { get; set; }
+    public decimal? BbId { get; set; }
+    public string? Salesmgr { get; set; }
+    public string? Status { get; set; }
     public decimal? Rmnghts { get; set; }
     public decimal? RmnghtsChange { get; set; }
     public decimal? Rmrevenue { get; set; }
     public decimal? RmrevenueChange { get; set; }
-    public string Resort { get; set; }
-    public string StatuschangeYn { get; set; }
+    public string? Resort { get; set; }
+    public string? StatuschangeYn { get; set; }
     public DateTime? ChangeDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

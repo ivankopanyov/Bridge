@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinNoFolios
 {
-    public string GuestName { get; set; }
-    public string Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? Room { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
     public int? FolioView { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

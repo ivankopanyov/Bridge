@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BatchProcLog
 {
-    public string ProcId { get; set; }
-    public decimal LogLine { get; set; }
-    public string EntryTime { get; set; }
-    public string LogTxt { get; set; }
+    public string? ProcId { get; set; }
+    public decimal? LogLine { get; set; }
+    public string? EntryTime { get; set; }
+    public string? LogTxt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

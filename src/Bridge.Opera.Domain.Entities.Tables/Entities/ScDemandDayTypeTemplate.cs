@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScDemandDayTypeTemplate
 {
-    public string ChainCode { get; set; }
-    public string DtCode { get; set; }
-    public string Description { get; set; }
-    public string DisplayColor { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DtCode { get; set; }
+    public string? Description { get; set; }
+    public string? DisplayColor { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

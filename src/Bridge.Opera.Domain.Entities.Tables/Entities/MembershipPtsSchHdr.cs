@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipPtsSchHdr
 {
-    public string ChainCode { get; set; }
-    public string PtsSchCode { get; set; }
-    public string Description { get; set; }
+    public string? ChainCode { get; set; }
+    public string? PtsSchCode { get; set; }
+    public string? Description { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

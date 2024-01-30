@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpVisaInvoiceDetail
 {
-    public decimal ExpDataId { get; set; }
+    public decimal? ExpDataId { get; set; }
     public decimal? ExpViewId { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string Resort { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? ExpInvoiceId { get; set; }
     public decimal? DetailSequence { get; set; }
     public decimal? Quantity { get; set; }
@@ -15,12 +15,12 @@ public partial class ExpVisaInvoiceDetail
     public decimal? TrxNo { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? FinDmlSeqNo { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
-    public string PartNum { get; set; }
-    public string PostingDateTime { get; set; }
-    public string FtSubtype { get; set; }
-    public string PaymentType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? PartNum { get; set; }
+    public string? PostingDateTime { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? PaymentType { get; set; }
     public DateTime? TrxDate { get; set; }
     public DateTime? PostingDate { get; set; }
 

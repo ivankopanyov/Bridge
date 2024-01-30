@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaSsoLog
 {
-    public decimal LogId { get; set; }
-    public string SourceSystemId { get; set; }
-    public string TargetSystemId { get; set; }
-    public string OperaAppUser { get; set; }
+    public decimal? LogId { get; set; }
+    public string? SourceSystemId { get; set; }
+    public string? TargetSystemId { get; set; }
+    public string? OperaAppUser { get; set; }
     public DateTime? AccessTs { get; set; }
-    public string Token { get; set; }
-    public string LandingZone { get; set; }
-    public string SuccessYn { get; set; }
-    public string FailureReason { get; set; }
+    public string? Token { get; set; }
+    public string? LandingZone { get; set; }
+    public string? SuccessYn { get; set; }
+    public string? FailureReason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

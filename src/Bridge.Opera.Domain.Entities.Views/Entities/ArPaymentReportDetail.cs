@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArPaymentReportDetail
 {
-    public decimal PaymentTrx { get; set; }
-    public decimal AppliedAmt { get; set; }
-    public DateTime AppliedDate { get; set; }
+    public decimal? PaymentTrx { get; set; }
+    public decimal? AppliedAmt { get; set; }
+    public DateTime? AppliedDate { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? InvoiceAmt { get; set; }
-    public string Reference { get; set; }
-    public string Currency { get; set; }
-    public string AppUser { get; set; }
+    public string? Reference { get; set; }
+    public string? Currency { get; set; }
+    public string? AppUser { get; set; }
     public decimal? BillNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

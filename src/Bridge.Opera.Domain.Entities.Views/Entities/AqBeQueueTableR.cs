@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AqBeQueueTableR
 {
-    public string Queue { get; set; }
-    public string Name { get; set; }
-    public string Address { get; set; }
+    public string? Queue { get; set; }
+    public string? Name { get; set; }
+    public string? Address { get; set; }
     public decimal? Protocol { get; set; }
-    public string Rule { get; set; }
-    public string RuleSet { get; set; }
-    public string Transformation { get; set; }
+    public string? Rule { get; set; }
+    public string? RuleSet { get; set; }
+    public string? Transformation { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

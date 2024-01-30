@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTaResInsSrcDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string ResInsSrcType { get; set; }
-    public string ResInsSrcTypeDesc { get; set; }
-    public string ResInsSrc { get; set; }
-    public string ResInsSrcDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? ResInsSrcType { get; set; }
+    public string? ResInsSrcTypeDesc { get; set; }
+    public string? ResInsSrc { get; set; }
+    public string? ResInsSrcDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

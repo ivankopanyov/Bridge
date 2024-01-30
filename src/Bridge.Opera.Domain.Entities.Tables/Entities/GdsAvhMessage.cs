@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAvhMessage
 {
-    public decimal GdsAvhId { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsResort { get; set; }
-    public string ChainCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public decimal Nights { get; set; }
-    public string GdsRateCode { get; set; }
-    public string GdsRoomCategory { get; set; }
-    public string ActionCode { get; set; }
+    public decimal? GdsAvhId { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsResort { get; set; }
+    public string? ChainCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public decimal? Nights { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? GdsRoomCategory { get; set; }
+    public string? ActionCode { get; set; }
     public decimal? Los { get; set; }
-    public string LosDays { get; set; }
+    public string? LosDays { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

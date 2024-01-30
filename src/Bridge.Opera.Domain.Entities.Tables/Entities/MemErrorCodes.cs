@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MemErrorCodes
 {
-    public string OperaErrorCode { get; set; }
-    public string OperaErrorDescription { get; set; }
-    public string AcceptRejectIndicator { get; set; }
+    public string? OperaErrorCode { get; set; }
+    public string? OperaErrorDescription { get; set; }
+    public string? AcceptRejectIndicator { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InsertDate { get; set; }

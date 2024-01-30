@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepHkRepairView
 {
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomNo { get; set; }
-    public string RoomDesc { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomStatus { get; set; }
-    public string ReturnStatus { get; set; }
-    public string ReasonCode { get; set; }
-    public string ReasonDesc { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RepairRemarks { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
+    public string? RoomDesc { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? ReturnStatus { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? ReasonDesc { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RepairRemarks { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string RepairType { get; set; }
-    public string RoomClass { get; set; }
+    public string? RepairType { get; set; }
+    public string? RoomClass { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

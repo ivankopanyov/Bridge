@@ -9,10 +9,10 @@ public partial class WorkCategories
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string CategoryCode { get; set; }
-    public string Description { get; set; }
-    public string Printer { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? Description { get; set; }
+    public string? Printer { get; set; }
 
     public virtual ICollection<EmpWorkCategories> EmpWorkCategories { get; set; }
     public virtual ICollection<Tasks> Tasks { get; set; }

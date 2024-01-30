@@ -2,46 +2,46 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepGuestTracesView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string ResvStatus { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string Departure { get; set; }
-    public string Arrival { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomNo { get; set; }
-    public string GuestName { get; set; }
-    public string CompanyName { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? Departure { get; set; }
+    public string? Arrival { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomNo { get; set; }
+    public string? GuestName { get; set; }
+    public string? CompanyName { get; set; }
     public decimal? GroupId { get; set; }
-    public string GroupName { get; set; }
-    public string BlockCode { get; set; }
-    public decimal TraceId { get; set; }
-    public string TraceDate { get; set; }
-    public DateTime TraceDateDate { get; set; }
-    public string TraceTime { get; set; }
-    public string EnteredBy { get; set; }
-    public string TraceText { get; set; }
-    public string StatusFlag { get; set; }
-    public DateTime TraceOn { get; set; }
+    public string? GroupName { get; set; }
+    public string? BlockCode { get; set; }
+    public decimal? TraceId { get; set; }
+    public string? TraceDate { get; set; }
+    public DateTime? TraceDateDate { get; set; }
+    public string? TraceTime { get; set; }
+    public string? EnteredBy { get; set; }
+    public string? TraceText { get; set; }
+    public string? StatusFlag { get; set; }
+    public DateTime? TraceOn { get; set; }
     public DateTime? ResolvedOn { get; set; }
-    public string ResolvedTime { get; set; }
-    public string ResolvedBy { get; set; }
+    public string? ResolvedTime { get; set; }
+    public string? ResolvedBy { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? Persons { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Vip { get; set; }
+    public string? Vip { get; set; }
     public decimal? Nights { get; set; }
     public decimal? NoOfStays { get; set; }
-    public string DeptId { get; set; }
-    public string SpecialRequests { get; set; }
-    public string Comments { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string ExternalReference { get; set; }
+    public string? DeptId { get; set; }
+    public string? SpecialRequests { get; set; }
+    public string? Comments { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? ExternalReference { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

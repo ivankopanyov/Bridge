@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipFtIssuedAw
 {
-    public decimal TrxNo { get; set; }
-    public string AwardVoucherNo { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? AwardVoucherNo { get; set; }
     public decimal? LocalIssuedAwardId { get; set; }
     public decimal? TotalLocalAmount { get; set; }
     public decimal? RedeemedLocalAmount { get; set; }

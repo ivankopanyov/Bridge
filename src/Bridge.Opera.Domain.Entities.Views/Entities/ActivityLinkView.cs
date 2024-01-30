@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ActivityLinkView
 {
-    public decimal ActId { get; set; }
-    public string LinkType { get; set; }
-    public decimal LinkId { get; set; }
-    public string PrimaryYn { get; set; }
+    public decimal? ActId { get; set; }
+    public string? LinkType { get; set; }
+    public decimal? LinkId { get; set; }
+    public string? PrimaryYn { get; set; }
     public byte? LaptopChange { get; set; }
-    public string ActResort { get; set; }
+    public string? ActResort { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string LinkResort { get; set; }
-    public string Relationship { get; set; }
-    public string ToType { get; set; }
+    public string? LinkResort { get; set; }
+    public string? Relationship { get; set; }
+    public string? ToType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

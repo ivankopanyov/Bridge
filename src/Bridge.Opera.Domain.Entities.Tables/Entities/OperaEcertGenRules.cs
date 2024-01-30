@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaEcertGenRules
 {
-    public decimal RuleId { get; set; }
-    public string CertCode { get; set; }
-    public string ChainCode { get; set; }
-    public string RuleBasedOn { get; set; }
+    public decimal? RuleId { get; set; }
+    public string? CertCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RuleBasedOn { get; set; }
     public decimal? UnitsRequired { get; set; }
     public decimal? MinNoOfChains { get; set; }
     public decimal? EvaluationMonths { get; set; }
-    public string EvaluationPeriod { get; set; }
+    public string? EvaluationPeriod { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? LastProcessedDate { get; set; }
     public decimal? LastProcessedId { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string UniqueRbo { get; set; }
+    public string? UniqueRbo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

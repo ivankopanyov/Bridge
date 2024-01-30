@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntResRateGc
 {
-    public string RateGcSeq { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string BlockCode { get; set; }
-    public string GuaranteeClass { get; set; }
-    public string CancelPolicy { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? RateGcSeq { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? BlockCode { get; set; }
+    public string? GuaranteeClass { get; set; }
+    public string? CancelPolicy { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

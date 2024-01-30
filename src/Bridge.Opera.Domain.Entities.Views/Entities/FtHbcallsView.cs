@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FtHbcallsView
 {
-    public string Resort { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Type { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Type { get; set; }
     public decimal? Price { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public DateTime? CallTime { get; set; }
-    public string DialedDigits { get; set; }
+    public string? DialedDigits { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? PostDate { get; set; }
-    public string Supplement { get; set; }
-    public string Duration { get; set; }
+    public string? Supplement { get; set; }
+    public string? Duration { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

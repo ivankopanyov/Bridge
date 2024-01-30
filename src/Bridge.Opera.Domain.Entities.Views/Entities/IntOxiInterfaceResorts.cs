@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntOxiInterfaceResorts
 {
-    public string InterfaceId { get; set; }
-    public string IntDescription { get; set; }
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? IntDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
     public DateTime? BeInactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

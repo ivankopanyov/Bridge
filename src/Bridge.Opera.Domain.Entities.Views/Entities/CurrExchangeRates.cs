@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CurrExchangeRates
 {
-    public DateTime BeginDate { get; set; }
+    public DateTime? BeginDate { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string Resort { get; set; }
-    public string ExchangeRateType { get; set; }
-    public string BaseCurrCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string ExchangeYn { get; set; }
-    public string SettlementYn { get; set; }
-    public string ForecastYn { get; set; }
-    public string PostingYn { get; set; }
-    public string TaCommYn { get; set; }
-    public string MembershipYn { get; set; }
-    public string ExchangeCheckYn { get; set; }
-    public string OcisEcertYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ExchangeRateType { get; set; }
+    public string? BaseCurrCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? ExchangeYn { get; set; }
+    public string? SettlementYn { get; set; }
+    public string? ForecastYn { get; set; }
+    public string? PostingYn { get; set; }
+    public string? TaCommYn { get; set; }
+    public string? MembershipYn { get; set; }
+    public string? ExchangeCheckYn { get; set; }
+    public string? OcisEcertYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

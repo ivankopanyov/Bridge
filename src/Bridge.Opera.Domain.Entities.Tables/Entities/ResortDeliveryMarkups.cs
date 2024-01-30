@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortDeliveryMarkups
 {
-    public string Resort { get; set; }
-    public string DeliveryType { get; set; }
-    public string MarkupType { get; set; }
-    public string MarkupScript { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public string? DeliveryType { get; set; }
+    public string? MarkupType { get; set; }
+    public string? MarkupScript { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

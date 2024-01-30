@@ -6,9 +6,9 @@ public partial class RepAccStatsData
     public decimal? CompanyId { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? SourceId { get; set; }
-    public string MarketSegmentCode { get; set; }
-    public string OriginCode { get; set; }
-    public string SourceCode { get; set; }
+    public string? MarketSegmentCode { get; set; }
+    public string? OriginCode { get; set; }
+    public string? SourceCode { get; set; }
     public decimal? ReservationNoOfStays { get; set; }
     public decimal? IndRoomNights { get; set; }
     public decimal? BlkRoomNights { get; set; }

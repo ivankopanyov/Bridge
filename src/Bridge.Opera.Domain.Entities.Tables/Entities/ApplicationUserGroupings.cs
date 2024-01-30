@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ApplicationUserGroupings
 {
-    public decimal AppUserId { get; set; }
-    public string Resort { get; set; }
-    public decimal AppUserIdMember { get; set; }
-    public string ProxyOfAppUserIdYn { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AppUserIdMember { get; set; }
+    public string? ProxyOfAppUserIdYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

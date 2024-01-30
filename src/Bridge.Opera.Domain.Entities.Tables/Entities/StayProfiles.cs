@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StayProfiles
 {
-    public decimal StayRecordId { get; set; }
-    public string PmsNameId { get; set; }
-    public string ProfileRole { get; set; }
-    public string PrimaryYn { get; set; }
+    public decimal? StayRecordId { get; set; }
+    public string? PmsNameId { get; set; }
+    public string? ProfileRole { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

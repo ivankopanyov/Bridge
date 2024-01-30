@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScRoomsData
 {
-    public decimal MasterOrder { get; set; }
+    public decimal? MasterOrder { get; set; }
     public decimal? DetailUse { get; set; }
     public decimal? SummaryUse { get; set; }
     public decimal? Status1Use { get; set; }
     public decimal? Status2Use { get; set; }
     public decimal? TypePointer { get; set; }
-    public string Period { get; set; }
-    public DateTime PeriodStart { get; set; }
-    public DateTime PeriodEnd { get; set; }
+    public string? Period { get; set; }
+    public DateTime? PeriodStart { get; set; }
+    public DateTime? PeriodEnd { get; set; }
     public DateTime? CurDate { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? Rooms { get; set; }
     public decimal? Revenue { get; set; }
     public decimal? DeductedRooms { get; set; }
@@ -26,7 +26,7 @@ public partial class ScRoomsData
     public decimal? TotalRooms { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? TotalAvgrate { get; set; }
-    public string EventCode { get; set; }
+    public string? EventCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

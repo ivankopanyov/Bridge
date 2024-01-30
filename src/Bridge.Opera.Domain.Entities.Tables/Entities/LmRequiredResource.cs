@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmRequiredResource
 {
-    public decimal ReqSeq { get; set; }
-    public string Resort { get; set; }
-    public string ActElCode { get; set; }
-    public string ActCode { get; set; }
-    public string ResType { get; set; }
-    public decimal Quantity { get; set; }
-    public string ForceAssignYn { get; set; }
-    public decimal Priority010 { get; set; }
+    public decimal? ReqSeq { get; set; }
+    public string? Resort { get; set; }
+    public string? ActElCode { get; set; }
+    public string? ActCode { get; set; }
+    public string? ResType { get; set; }
+    public decimal? Quantity { get; set; }
+    public string? ForceAssignYn { get; set; }
+    public decimal? Priority010 { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

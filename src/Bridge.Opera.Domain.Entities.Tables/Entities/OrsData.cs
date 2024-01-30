@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrsData
 {
-    public DateTime OrsDate { get; set; }
-    public string Resort { get; set; }
-    public string OpenYn { get; set; }
+    public DateTime? OrsDate { get; set; }
+    public string? Resort { get; set; }
+    public string? OpenYn { get; set; }
     public decimal? Inventory { get; set; }
     public decimal? MinAmt1 { get; set; }
     public decimal? MinAmt2 { get; set; }

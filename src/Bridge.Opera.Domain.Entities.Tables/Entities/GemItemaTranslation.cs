@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GemItemaTranslation
 {
-    public decimal ItmaId { get; set; }
-    public string Language { get; set; }
-    public string Field { get; set; }
-    public string Text { get; set; }
+    public decimal? ItmaId { get; set; }
+    public string? Language { get; set; }
+    public string? Field { get; set; }
+    public string? Text { get; set; }
 
     public virtual GemItemAttributes Itma { get; set; }
 

@@ -2,54 +2,54 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidGdsHostsSys
 {
-    public string GdsHost { get; set; }
-    public string Name { get; set; }
-    public string ChannelType { get; set; }
-    public string RateType { get; set; }
-    public string MultiCurrencyYn { get; set; }
-    public string SessionControl { get; set; }
-    public string AlternateResort { get; set; }
-    public string MatchAmenities { get; set; }
-    public string AvstatAllRateCode { get; set; }
-    public string AvstatAllRoomCategory { get; set; }
-    public string AvstatGdsAddress { get; set; }
-    public string RateChange { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Name { get; set; }
+    public string? ChannelType { get; set; }
+    public string? RateType { get; set; }
+    public string? MultiCurrencyYn { get; set; }
+    public string? SessionControl { get; set; }
+    public string? AlternateResort { get; set; }
+    public string? MatchAmenities { get; set; }
+    public string? AvstatAllRateCode { get; set; }
+    public string? AvstatAllRoomCategory { get; set; }
+    public string? AvstatGdsAddress { get; set; }
+    public string? RateChange { get; set; }
     public decimal? MaxRatePeriods { get; set; }
     public decimal? MaxDataloadDays { get; set; }
     public decimal? FutureAvailabilityDays { get; set; }
     public DateTime? LastRolloverDate { get; set; }
     public decimal? MaxAvailabilityItems { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ActivateYn { get; set; }
-    public string AvstatUpdate { get; set; }
-    public string PropUpdateYn { get; set; }
-    public string CorpidReqdYn { get; set; }
-    public string SellBy { get; set; }
-    public string AcceptLowerRatesYn { get; set; }
-    public string UseAccessCodeYn { get; set; }
-    public string ErrorLowerGdsRates { get; set; }
-    public string NegotiatedOnly { get; set; }
-    public string CnclPnlyOverride { get; set; }
-    public string SessionModificationYn { get; set; }
-    public string RateUpdateYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ActivateYn { get; set; }
+    public string? AvstatUpdate { get; set; }
+    public string? PropUpdateYn { get; set; }
+    public string? CorpidReqdYn { get; set; }
+    public string? SellBy { get; set; }
+    public string? AcceptLowerRatesYn { get; set; }
+    public string? UseAccessCodeYn { get; set; }
+    public string? ErrorLowerGdsRates { get; set; }
+    public string? NegotiatedOnly { get; set; }
+    public string? CnclPnlyOverride { get; set; }
+    public string? SessionModificationYn { get; set; }
+    public string? RateUpdateYn { get; set; }
     public decimal? NoNightLimits { get; set; }
     public decimal? MaximumPropertyDispLimit { get; set; }
-    public string AlternateRaterangeYn { get; set; }
-    public string SearchByRatelevel { get; set; }
-    public string ConfirmLetterName { get; set; }
-    public string CancelLetterName { get; set; }
-    public string OverrideYn { get; set; }
-    public string AcceptBookingNorate { get; set; }
+    public string? AlternateRaterangeYn { get; set; }
+    public string? SearchByRatelevel { get; set; }
+    public string? ConfirmLetterName { get; set; }
+    public string? CancelLetterName { get; set; }
+    public string? OverrideYn { get; set; }
+    public string? AcceptBookingNorate { get; set; }
     public decimal? GdsRateCodeLength { get; set; }
-    public string GdsRateCategoryYn { get; set; }
-    public string BlockSearch { get; set; }
+    public string? GdsRateCategoryYn { get; set; }
+    public string? BlockSearch { get; set; }
     public decimal? MaxRoomLimit { get; set; }
     public DateTime? RateRolloverDate { get; set; }
-    public string ExternalYn { get; set; }
+    public string? ExternalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

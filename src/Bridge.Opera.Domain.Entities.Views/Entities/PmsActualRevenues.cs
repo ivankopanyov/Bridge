@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsActualRevenues
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? RoomRevenue { get; set; }

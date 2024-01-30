@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TransactionSequences
 {
-    public string TableName { get; set; }
-    public string ColumnName { get; set; }
-    public string SequenceName { get; set; }
-    public string ParentSequence { get; set; }
+    public string? TableName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? SequenceName { get; set; }
+    public string? ParentSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

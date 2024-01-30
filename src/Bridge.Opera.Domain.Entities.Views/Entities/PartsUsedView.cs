@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PartsUsedView
 {
-    public decimal PartsUsedSeqNo { get; set; }
-    public string Resort { get; set; }
-    public string PartCode { get; set; }
-    public string PartDesc { get; set; }
-    public decimal WoNumber { get; set; }
-    public decimal Qty { get; set; }
+    public decimal? PartsUsedSeqNo { get; set; }
+    public string? Resort { get; set; }
+    public string? PartCode { get; set; }
+    public string? PartDesc { get; set; }
+    public decimal? WoNumber { get; set; }
+    public decimal? Qty { get; set; }
     public decimal? UnitPrice { get; set; }
     public decimal? PartsCost { get; set; }
-    public decimal UserId { get; set; }
-    public string UserName { get; set; }
-    public DateTime PartsUsedDate { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? UserId { get; set; }
+    public string? UserName { get; set; }
+    public DateTime? PartsUsedDate { get; set; }
+    public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

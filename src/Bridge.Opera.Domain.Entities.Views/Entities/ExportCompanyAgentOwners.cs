@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExportCompanyAgentOwners
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string BusinessDate { get; set; }
-    public decimal ProfileId { get; set; }
-    public string Udfc40 { get; set; }
-    public string ProfileName { get; set; }
-    public string OwnerCode { get; set; }
-    public string OwnerName { get; set; }
-    public string PrimaryYn { get; set; }
-    public string ProfileResort { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? BusinessDate { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? Udfc40 { get; set; }
+    public string? ProfileName { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? OwnerName { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? ProfileResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

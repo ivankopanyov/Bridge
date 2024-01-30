@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemMenuRevenue1
 {
-    public decimal MenuId { get; set; }
-    public string RevType { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? RevType { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ItemCost { get; set; }
     public decimal? ItemPrice { get; set; }
     public decimal? RevenueSplit { get; set; }
-    public string CustomYn { get; set; }
+    public string? CustomYn { get; set; }
     public decimal? DemandCost { get; set; }
     public decimal? DemandPrice { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RevGroup { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RevGroup { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

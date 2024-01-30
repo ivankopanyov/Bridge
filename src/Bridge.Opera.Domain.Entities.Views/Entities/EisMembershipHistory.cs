@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipHistory
 {
-    public decimal MembershipId { get; set; }
-    public string ChangeType { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? ChangeType { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

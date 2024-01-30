@@ -2,52 +2,52 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcWakeView
 {
-    public string RoomNo { get; set; }
-    public string RoomClass { get; set; }
-    public string GuestName { get; set; }
-    public string GroupName { get; set; }
+    public string? RoomNo { get; set; }
+    public string? RoomClass { get; set; }
+    public string? GuestName { get; set; }
+    public string? GroupName { get; set; }
     public DateTime? WakeDate { get; set; }
-    public string WakeTime { get; set; }
-    public string Status { get; set; }
+    public string? WakeTime { get; set; }
+    public string? Status { get; set; }
     public DateTime? SetDate { get; set; }
-    public string SetTime { get; set; }
-    public string SetBy { get; set; }
+    public string? SetTime { get; set; }
+    public string? SetBy { get; set; }
     public DateTime? ResDate { get; set; }
-    public string ResTime { get; set; }
-    public string FirstName { get; set; }
-    public string GroupCode { get; set; }
-    public string SguestName { get; set; }
-    public string SfirstName { get; set; }
+    public string? ResTime { get; set; }
+    public string? FirstName { get; set; }
+    public string? GroupCode { get; set; }
+    public string? SguestName { get; set; }
+    public string? SfirstName { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Resort { get; set; }
-    public string RoomResort { get; set; }
-    public string ResvStatus { get; set; }
-    public string RoomNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? RoomNumber { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Result { get; set; }
-    public string ResortW { get; set; }
+    public string? Result { get; set; }
+    public string? ResortW { get; set; }
     public DateTime? WakeTimeDate { get; set; }
-    public string ExtnNum { get; set; }
-    public string BlockCode { get; set; }
-    public string Vip { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string SharedYn { get; set; }
-    public string GuestTitle { get; set; }
-    public string Sxname { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string XcompanyName { get; set; }
-    public string SpecialInstructions { get; set; }
+    public string? ExtnNum { get; set; }
+    public string? BlockCode { get; set; }
+    public string? Vip { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? SharedYn { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? Sxname { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? SpecialInstructions { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string MasterShare { get; set; }
+    public string? MasterShare { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string DisplayStatus { get; set; }
-    public string RoomCategory { get; set; }
+    public string? DisplayStatus { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? WakeupCallId { get; set; }
-    public string FollowUpCallYn { get; set; }
+    public string? FollowUpCallYn { get; set; }
     public decimal? ParentCallId { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }

@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResvMasterListVw
 {
-    public string ConfirmationNo { get; set; }
-    public string Action { get; set; }
-    public string Sname { get; set; }
-    public string ResvStatus { get; set; }
-    public string RateCode { get; set; }
-    public string NameCode { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Action { get; set; }
+    public string? Sname { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? RateCode { get; set; }
+    public string? NameCode { get; set; }
     public DateTime? TruncActualCheckInDate { get; set; }
     public decimal? Nights { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string ResInsertSource { get; set; }
-    public string MarketCode { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? ResInsertSource { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? EffectiveRateAmount { get; set; }
-    public string Resort { get; set; }
-    public string TravelAgentName { get; set; }
-    public string OriginOfBooking { get; set; }
-    public string OriginOfBookingDesc { get; set; }
-    public string ResvContactName { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? Resort { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? OriginOfBooking { get; set; }
+    public string? OriginOfBookingDesc { get; set; }
+    public string? ResvContactName { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

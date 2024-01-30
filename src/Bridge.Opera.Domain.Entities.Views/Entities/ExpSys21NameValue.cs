@@ -6,8 +6,8 @@ public partial class ExpSys21NameValue
     public decimal? ViewId { get; set; }
     public decimal? NameValueType { get; set; }
     public decimal? NameValueId { get; set; }
-    public string NameElement { get; set; }
-    public string ValueElement { get; set; }
+    public string? NameElement { get; set; }
+    public string? ValueElement { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

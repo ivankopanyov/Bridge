@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateDailySold
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string ComponentRoomYn { get; set; }
-    public decimal NumberSold { get; set; }
-    public string RoomClass { get; set; }
-    public string OutOfOrderYn { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? ComponentRoomYn { get; set; }
+    public decimal? NumberSold { get; set; }
+    public string? RoomClass { get; set; }
+    public string? OutOfOrderYn { get; set; }
     public decimal? OwnerNumberSold { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

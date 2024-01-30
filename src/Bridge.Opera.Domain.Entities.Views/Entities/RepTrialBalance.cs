@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepTrialBalance
 {
     public DateTime? TrxDate { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
-    public string TrxType { get; set; }
-    public string TrxTypeDescription { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? TrxType { get; set; }
+    public string? TrxTypeDescription { get; set; }
     public decimal? TrxTypeSort { get; set; }
     public decimal? IsTbTrxType01 { get; set; }
     public decimal? TbAmount { get; set; }
@@ -64,9 +64,9 @@ public partial class RepTrialBalance
     public decimal? Net18Amt { get; set; }
     public decimal? Net19Amt { get; set; }
     public decimal? Net20Amt { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
-    public string TrxCodeType { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCodeType { get; set; }
     public decimal? OwnerLedDebit { get; set; }
     public decimal? OwnerLedCredit { get; set; }
     public decimal? DepFolioDebit { get; set; }

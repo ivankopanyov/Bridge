@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class FitContractRev
 {
     public decimal? ReportId { get; set; }
-    public string ColLabel { get; set; }
+    public string? ColLabel { get; set; }
     public decimal? Projected { get; set; }
     public decimal? LastYearActual { get; set; }
     public decimal? LastYear1Actual { get; set; }

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IsoCountryCodes
 {
-    public string Country { get; set; }
-    public string CharCode2 { get; set; }
-    public string CharCode3 { get; set; }
-    public string NumCode3 { get; set; }
-    public string TextMessageYn { get; set; }
+    public string? Country { get; set; }
+    public string? CharCode2 { get; set; }
+    public string? CharCode3 { get; set; }
+    public string? NumCode3 { get; set; }
+    public string? TextMessageYn { get; set; }
     public decimal? CountryDialingCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

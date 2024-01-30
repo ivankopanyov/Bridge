@@ -7,19 +7,19 @@ public partial class ResortHkDailyTask
         HkDailyTaskRoom = new HashSet<HkDailyTaskRoom>();
     }
 
-    public decimal TaskSeqNo { get; set; }
-    public DateTime TaskDate { get; set; }
-    public string TaskCode { get; set; }
-    public decimal TaskSheetNo { get; set; }
-    public string Resort { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public DateTime? TaskDate { get; set; }
+    public string? TaskCode { get; set; }
+    public decimal? TaskSheetNo { get; set; }
+    public string? Resort { get; set; }
     public DateTime? TaskCompletedDate { get; set; }
     public decimal? TaskCredits { get; set; }
-    public string TaskInstructions { get; set; }
-    public string AutoGenerateInd { get; set; }
-    public string AutoGenerateFilters { get; set; }
-    public string SimpleTaskYn { get; set; }
+    public string? TaskInstructions { get; set; }
+    public string? AutoGenerateInd { get; set; }
+    public string? AutoGenerateFilters { get; set; }
+    public string? SimpleTaskYn { get; set; }
     public decimal? TravelingCredits { get; set; }
-    public string TaskSheetType { get; set; }
+    public string? TaskSheetType { get; set; }
     public decimal? HkBreakoutJobId { get; set; }
 
     public virtual ResortHkBreakout HkBreakoutJob { get; set; }

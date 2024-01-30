@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmBookActElDetailVw
 {
-    public string Resort { get; set; }
-    public decimal BookedActId { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookedActId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string GuestName { get; set; }
-    public string ActCode { get; set; }
-    public string ActDesc { get; set; }
-    public string ActStatus { get; set; }
-    public decimal BookedElId { get; set; }
-    public string ActElCode { get; set; }
-    public string ActElDesc { get; set; }
-    public DateTime BeginTime { get; set; }
-    public DateTime EndTime { get; set; }
-    public string ActElStatus { get; set; }
-    public string OutletCode { get; set; }
-    public string CustomerYn { get; set; }
-    public string InternalYn { get; set; }
+    public string? GuestName { get; set; }
+    public string? ActCode { get; set; }
+    public string? ActDesc { get; set; }
+    public string? ActStatus { get; set; }
+    public decimal? BookedElId { get; set; }
+    public string? ActElCode { get; set; }
+    public string? ActElDesc { get; set; }
+    public DateTime? BeginTime { get; set; }
+    public DateTime? EndTime { get; set; }
+    public string? ActElStatus { get; set; }
+    public string? OutletCode { get; set; }
+    public string? CustomerYn { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? NoOfPeople { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

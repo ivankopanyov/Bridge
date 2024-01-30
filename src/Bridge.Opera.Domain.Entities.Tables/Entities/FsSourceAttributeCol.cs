@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsSourceAttributeCol
 {
-    public string Atr { get; set; }
-    public string Src { get; set; }
-    public string SrcCol { get; set; }
-    public string SrcColFormula { get; set; }
+    public string? Atr { get; set; }
+    public string? Src { get; set; }
+    public string? SrcCol { get; set; }
+    public string? SrcColFormula { get; set; }
     public decimal? SummaryOrderBy { get; set; }
-    public string AuthParYn { get; set; }
+    public string? AuthParYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

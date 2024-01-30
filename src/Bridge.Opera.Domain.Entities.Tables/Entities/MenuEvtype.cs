@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MenuEvtype
 {
-    public decimal MenuId { get; set; }
-    public string EventType { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? EventType { get; set; }
 
     public virtual GemMenu Menu { get; set; }
 

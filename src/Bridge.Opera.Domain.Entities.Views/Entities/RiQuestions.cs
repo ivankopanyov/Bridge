@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RiQuestions
 {
-    public string Resort { get; set; }
-    public string QuestionType { get; set; }
-    public decimal RiQuestionsId { get; set; }
-    public string RiQuestionsDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? QuestionType { get; set; }
+    public decimal? RiQuestionsId { get; set; }
+    public string? RiQuestionsDescription { get; set; }
     public decimal? RiQuestionsSeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InternetCinRulesTime
 {
-    public decimal RuleId { get; set; }
-    public string AbsoluteYn { get; set; }
+    public decimal? RuleId { get; set; }
+    public string? AbsoluteYn { get; set; }
     public decimal? AbsoluteEarliestCinDays { get; set; }
     public DateTime? AbsoluteEarliestCinTime { get; set; }
     public decimal? AbsoluteLatestCinDays { get; set; }

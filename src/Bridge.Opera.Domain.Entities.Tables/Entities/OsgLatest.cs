@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OsgLatest
 {
-    public string Resort { get; set; }
-    public string DocumentType { get; set; }
-    public string Last { get; set; }
-    public string LastKv { get; set; }
-    public DateTime InsertTs { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? Resort { get; set; }
+    public string? DocumentType { get; set; }
+    public string? Last { get; set; }
+    public string? LastKv { get; set; }
+    public DateTime? InsertTs { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateTs { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? LastBusinessDate { get; set; }

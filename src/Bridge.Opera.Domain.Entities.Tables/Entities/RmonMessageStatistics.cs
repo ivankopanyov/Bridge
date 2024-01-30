@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RmonMessageStatistics
 {
-    public string SiteCode { get; set; }
-    public string SnapId { get; set; }
+    public string? SiteCode { get; set; }
+    public string? SnapId { get; set; }
     public DateTime? SnapFrom { get; set; }
     public DateTime? SnapTo { get; set; }
-    public string InterfaceId { get; set; }
-    public string RemoteResort { get; set; }
-    public string MessageType { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? RemoteResort { get; set; }
+    public string? MessageType { get; set; }
     public decimal? TotalSuccess { get; set; }
     public decimal? TotalFailed { get; set; }
     public decimal? TotalExtSuccess { get; set; }
@@ -22,8 +22,8 @@ public partial class RmonMessageStatistics
     public decimal? TotalElapsedMin { get; set; }
     public decimal? TotalElapsedMean { get; set; }
     public decimal? TotalGenerated { get; set; }
-    public string Priority { get; set; }
-    public string StatisticType { get; set; }
+    public string? Priority { get; set; }
+    public string? StatisticType { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

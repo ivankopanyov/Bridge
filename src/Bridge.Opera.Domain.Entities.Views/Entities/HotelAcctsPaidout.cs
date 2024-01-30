@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HotelAcctsPaidout
 {
-    public string Resort { get; set; }
-    public string AcctCode { get; set; }
-    public string AcctDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? AcctCode { get; set; }
+    public string? AcctDesc { get; set; }
     public decimal? DayPaidout { get; set; }
     public decimal? MonthPaidout { get; set; }
     public decimal? YearPaidout { get; set; }

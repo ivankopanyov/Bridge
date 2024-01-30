@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpResCancelDtBase
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public DateTime StayDate { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCode { get; set; }
-    public string SourceCode { get; set; }
-    public string Channel { get; set; }
-    public string ResInsertSource { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StayDate { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Channel { get; set; }
+    public string? ResInsertSource { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? PhysicalQuantity { get; set; }
-    public string DueOutYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? DueOutYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? Cancellations { get; set; }
     public decimal? CancelRooms { get; set; }
 

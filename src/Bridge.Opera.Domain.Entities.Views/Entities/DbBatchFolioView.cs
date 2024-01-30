@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DbBatchFolioView
 {
-    public string Resort { get; set; }
-    public string RoomResort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GuestName { get; set; }
-    public string Room { get; set; }
-    public string Vip { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomResort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? Room { get; set; }
+    public string? Vip { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public DateTime? LastDirectBillBatchDate { get; set; }
-    public string DirectBillBatchType { get; set; }
+    public string? DirectBillBatchType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

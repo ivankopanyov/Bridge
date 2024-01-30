@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CroImages
 {
-    public string CroFeature { get; set; }
+    public string? CroFeature { get; set; }
     public decimal? BlobId { get; set; }
-    public string Description { get; set; }
-    public string FeatureDescription { get; set; }
+    public string? Description { get; set; }
+    public string? FeatureDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

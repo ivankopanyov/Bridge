@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class BudgetCateringRevtypes
 {
     public decimal? Amount { get; set; }
-    public decimal GoalId { get; set; }
+    public decimal? GoalId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public byte? LaptopChange { get; set; }
-    public string RevGroup { get; set; }
-    public string RevType { get; set; }
+    public string? RevGroup { get; set; }
+    public string? RevType { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBeoRevPakDet
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
     public DateTime? StartDate { get; set; }
-    public string EventType { get; set; }
-    public string EventDesc { get; set; }
-    public string RevenueType { get; set; }
-    public string RevenueDesc { get; set; }
+    public string? EventType { get; set; }
+    public string? EventDesc { get; set; }
+    public string? RevenueType { get; set; }
+    public string? RevenueDesc { get; set; }
     public decimal? Total { get; set; }
     public decimal? PkgId { get; set; }
 

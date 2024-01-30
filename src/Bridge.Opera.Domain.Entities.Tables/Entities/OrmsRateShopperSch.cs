@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsRateShopperSch
 {
-    public string Resort { get; set; }
-    public string ShopperCode { get; set; }
-    public string ScheduleCode { get; set; }
-    public string ScheduleDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ShopperCode { get; set; }
+    public string? ScheduleCode { get; set; }
+    public string? ScheduleDesc { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
-    public string FrequencyType { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
+    public string? FrequencyType { get; set; }
     public decimal? Frequency { get; set; }
     public DateTime? LastRunDate { get; set; }
     public DateTime? NextRunDate { get; set; }
-    public decimal ArrivalFromdays { get; set; }
-    public decimal TotalDays { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? ArrivalFromdays { get; set; }
+    public decimal? TotalDays { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual OrmsRateShoppers OrmsRateShoppers { get; set; }
 

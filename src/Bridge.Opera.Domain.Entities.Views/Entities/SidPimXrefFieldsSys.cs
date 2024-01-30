@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidPimXrefFieldsSys
 {
-    public string PimCode { get; set; }
-    public string OperaType { get; set; }
-    public string OperaTable { get; set; }
-    public string OperaField { get; set; }
-    public string PimField { get; set; }
-    public string PkField { get; set; }
-    public string UpdateTable { get; set; }
-    public string UpdateField { get; set; }
-    public string UpdatePkField { get; set; }
-    public string FieldDatatype { get; set; }
+    public string? PimCode { get; set; }
+    public string? OperaType { get; set; }
+    public string? OperaTable { get; set; }
+    public string? OperaField { get; set; }
+    public string? PimField { get; set; }
+    public string? PkField { get; set; }
+    public string? UpdateTable { get; set; }
+    public string? UpdateField { get; set; }
+    public string? UpdatePkField { get; set; }
+    public string? FieldDatatype { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string Version { get; set; }
+    public string? Version { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

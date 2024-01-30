@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StatDataElements
 {
-    public decimal ActionInstanceId { get; set; }
-    public string ActionType { get; set; }
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
-    public decimal RaDataElementId { get; set; }
-    public string StatsProcessedYn { get; set; }
-    public string Resort { get; set; }
+    public decimal? RaDataElementId { get; set; }
+    public string? StatsProcessedYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? InsertDate { get; set; }

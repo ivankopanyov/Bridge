@@ -3,28 +3,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MailServerView
 {
     public decimal? Seq { get; set; }
-    public string Id { get; set; }
-    public string Changekey { get; set; }
-    public string Subject { get; set; }
-    public string Toname { get; set; }
-    public string Toemailaddress { get; set; }
-    public string Ccname { get; set; }
-    public string Ccemailaddress { get; set; }
-    public string Fromemailaddress { get; set; }
+    public string? Id { get; set; }
+    public string? Changekey { get; set; }
+    public string? Subject { get; set; }
+    public string? Toname { get; set; }
+    public string? Toemailaddress { get; set; }
+    public string? Ccname { get; set; }
+    public string? Ccemailaddress { get; set; }
+    public string? Fromemailaddress { get; set; }
     public decimal? Esize { get; set; }
-    public string Sensitivity { get; set; }
-    public string Bodytype { get; set; }
-    public string Body { get; set; }
+    public string? Sensitivity { get; set; }
+    public string? Bodytype { get; set; }
+    public string? Body { get; set; }
     public DateTime? Datetimesent { get; set; }
     public DateTime? Datetimecreated { get; set; }
-    public string Forwarditem { get; set; }
-    public string Hasattachments { get; set; }
-    public string Isreadreceiptrequested { get; set; }
-    public string Isread { get; set; }
-    public string Forwarditemx { get; set; }
-    public string Hasattachmentsx { get; set; }
-    public string Isreadreceiptrequestedx { get; set; }
-    public string Isreadx { get; set; }
+    public string? Forwarditem { get; set; }
+    public string? Hasattachments { get; set; }
+    public string? Isreadreceiptrequested { get; set; }
+    public string? Isread { get; set; }
+    public string? Forwarditemx { get; set; }
+    public string? Hasattachmentsx { get; set; }
+    public string? Isreadreceiptrequestedx { get; set; }
+    public string? Isreadx { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

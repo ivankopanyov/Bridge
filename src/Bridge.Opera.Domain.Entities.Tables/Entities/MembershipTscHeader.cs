@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTscHeader
 {
-    public decimal ReportId { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? ReportId { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public string RecordType { get; set; }
-    public string MembershipType { get; set; }
-    public string ReportStatus { get; set; }
+    public string? RecordType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? ReportStatus { get; set; }
     public DateTime? EvalDate { get; set; }
-    public string ReportLog { get; set; }
-    public string ReportError { get; set; }
+    public string? ReportLog { get; set; }
+    public string? ReportError { get; set; }
     public decimal? InsertUser { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? RfmScoreHdrId { get; set; }
-    public string ReQualifyYn { get; set; }
-    public string TmrActiveYn { get; set; }
+    public string? ReQualifyYn { get; set; }
+    public string? TmrActiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

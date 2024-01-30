@@ -2,34 +2,34 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LeadFind
 {
-    public decimal Leadid { get; set; }
-    public string Resort { get; set; }
-    public decimal Booklink { get; set; }
-    public string LeadNewYn { get; set; }
-    public string LeadOrigin { get; set; }
-    public string LeadDestination { get; set; }
-    public string Leadstatus { get; set; }
-    public string Replstatus { get; set; }
-    public string RepliedYn { get; set; }
-    public string Description { get; set; }
+    public decimal? Leadid { get; set; }
+    public string? Resort { get; set; }
+    public decimal? Booklink { get; set; }
+    public string? LeadNewYn { get; set; }
+    public string? LeadOrigin { get; set; }
+    public string? LeadDestination { get; set; }
+    public string? Leadstatus { get; set; }
+    public string? Replstatus { get; set; }
+    public string? RepliedYn { get; set; }
+    public string? Description { get; set; }
     public DateTime? DueDate { get; set; }
     public DateTime? SentDate { get; set; }
-    public string SentYn { get; set; }
-    public string OwnerCode { get; set; }
-    public string HideAccinfoYn { get; set; }
-    public string PendingSendYn { get; set; }
-    public string AllotmentType { get; set; }
+    public string? SentYn { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? HideAccinfoYn { get; set; }
+    public string? PendingSendYn { get; set; }
+    public string? AllotmentType { get; set; }
     public int? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
-    public string TdlReason { get; set; }
-    public DateTime Arrival { get; set; }
-    public string Tourcode { get; set; }
-    public string AttachmentUrl { get; set; }
-    public string AttachmentUrlModified { get; set; }
+    public string? SuperBlockResort { get; set; }
+    public string? TdlReason { get; set; }
+    public DateTime? Arrival { get; set; }
+    public string? Tourcode { get; set; }
+    public string? AttachmentUrl { get; set; }
+    public string? AttachmentUrlModified { get; set; }
     public DateTime? DueDateOrd { get; set; }
-    public DateTime EndDate { get; set; }
-    public string RemoteAttachmentUrl { get; set; }
-    public string Udescription { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? RemoteAttachmentUrl { get; set; }
+    public string? Udescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

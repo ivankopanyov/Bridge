@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventItem1
 {
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
-    public decimal EventItemId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? EventItemId { get; set; }
     public decimal? EventItemgId { get; set; }
     public decimal? ItemId { get; set; }
-    public decimal BookId { get; set; }
+    public decimal? BookId { get; set; }
     public decimal? ItmgId { get; set; }
     public decimal? OrderBy { get; set; }
-    public string CustomYn { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
+    public string? CustomYn { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? ActualQuantity { get; set; }
-    public string HourlyYn { get; set; }
+    public string? HourlyYn { get; set; }
     public decimal? Price { get; set; }
-    public string PriceCode { get; set; }
+    public string? PriceCode { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public string RevenueType { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }
     public decimal? ActualRevenue { get; set; }
-    public string OrderExternalYn { get; set; }
-    public string ItmaName { get; set; }
+    public string? OrderExternalYn { get; set; }
+    public string? ItmaName { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string ArticleNumber { get; set; }
+    public string? ArticleNumber { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
@@ -39,7 +39,7 @@ public partial class EventItem1
     public decimal? ExtCost { get; set; }
     public decimal? Discount { get; set; }
     public decimal? VendorId { get; set; }
-    public string ShowbeoYn { get; set; }
+    public string? ShowbeoYn { get; set; }
     public decimal? GuaranteedQuantity { get; set; }
     public decimal? BilledQuantity { get; set; }
     public decimal? ActExtQuantity { get; set; }
@@ -47,11 +47,11 @@ public partial class EventItem1
     public decimal? ActExtCost { get; set; }
     public decimal? ActIntCost { get; set; }
     public decimal? PkgId { get; set; }
-    public string ItemResort { get; set; }
+    public string? ItemResort { get; set; }
     public decimal? ItmaId { get; set; }
     public decimal? ItemrateId { get; set; }
     public decimal? ItmcId { get; set; }
-    public string DiscountableYn { get; set; }
+    public string? DiscountableYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

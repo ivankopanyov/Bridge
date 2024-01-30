@@ -7,11 +7,11 @@ public partial class ExpEspBkts
     public DateTime? ConsideredDate { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? Amount { get; set; }
-    public string BktIndicator { get; set; }
-    public string BktCode { get; set; }
+    public string? BktIndicator { get; set; }
+    public string? BktCode { get; set; }
     public decimal? BillNo { get; set; }
-    public string MemCurrCode { get; set; }
-    public string MemExchType { get; set; }
+    public string? MemCurrCode { get; set; }
+    public string? MemExchType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

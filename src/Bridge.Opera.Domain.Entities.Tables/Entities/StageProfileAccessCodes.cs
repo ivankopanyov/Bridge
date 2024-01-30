@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileAccessCodes
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string RateCode { get; set; }
-    public string ChannelCode { get; set; }
-    public string AccessCode { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? RateCode { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? AccessCode { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string AccessChannelCode { get; set; }
+    public string? AccessChannelCode { get; set; }
     public decimal? AccessCodeSeqno { get; set; }
-    public string AllResortsYn { get; set; }
+    public string? AllResortsYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

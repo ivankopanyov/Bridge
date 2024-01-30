@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameTaxTypes
 {
-    public string NameTaxType { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
-    public string CollectingAgentYn { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
+    public string? CollectingAgentYn { get; set; }
     public decimal? ReportExemptDays { get; set; }
     public decimal? ReportTaxPerc { get; set; }
-    public string PrintAutoAdjustYn { get; set; }
+    public string? PrintAutoAdjustYn { get; set; }
     public decimal? MinLengthOfStay { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

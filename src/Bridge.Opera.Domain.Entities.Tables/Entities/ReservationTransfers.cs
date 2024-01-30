@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationTransfers
 {
-    public string TransferFromResort { get; set; }
-    public decimal TransferFromResvNameId { get; set; }
-    public string TransferToResort { get; set; }
-    public decimal TransferToResvNameId { get; set; }
-    public string TransferReasonCode { get; set; }
-    public DateTime TransferBusinessDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? TransferFromResort { get; set; }
+    public decimal? TransferFromResvNameId { get; set; }
+    public string? TransferToResort { get; set; }
+    public decimal? TransferToResvNameId { get; set; }
+    public string? TransferReasonCode { get; set; }
+    public DateTime? TransferBusinessDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

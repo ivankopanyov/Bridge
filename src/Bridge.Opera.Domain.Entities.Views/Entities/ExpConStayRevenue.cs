@@ -5,7 +5,7 @@ public partial class ExpConStayRevenue
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? RevAmount { get; set; }
-    public string RevType { get; set; }
+    public string? RevType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

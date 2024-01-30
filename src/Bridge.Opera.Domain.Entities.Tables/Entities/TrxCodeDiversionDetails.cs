@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrxCodeDiversionDetails
 {
-    public decimal DiversionId { get; set; }
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? DiversionId { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual TrxCodeDiversions Diversion { get; set; }
 

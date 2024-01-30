@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationDailyElementName
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime ReservationDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? ReservationDate { get; set; }
     public decimal? ResvDailyElSeq { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? GroupId { get; set; }
-    public string SharePaymentType { get; set; }
+    public string? SharePaymentType { get; set; }
     public decimal? ShareAmount { get; set; }
     public decimal? SharePrcnt { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? DiscountAmt { get; set; }
     public decimal? DiscountPrcnt { get; set; }
-    public string DiscountReasonCode { get; set; }
-    public string FixedRateYn { get; set; }
+    public string? DiscountReasonCode { get; set; }
+    public string? FixedRateYn { get; set; }
     public decimal? BaseRateAmount { get; set; }
     public decimal? AutoPostAmount { get; set; }
     public decimal? SharePriority { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string LastShareCalculation { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? LastShareCalculation { get; set; }
     public decimal? InsertActionInstanceId { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? NetRoomAmt { get; set; }
@@ -39,33 +39,33 @@ public partial class ReservationDailyElementName
     public decimal? Children1 { get; set; }
     public decimal? Children2 { get; set; }
     public decimal? Children3 { get; set; }
-    public string RateCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string ExchangePostingType { get; set; }
+    public string? RateCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? ExchangePostingType { get; set; }
     public decimal? MembershipPoints { get; set; }
     public decimal? Children4 { get; set; }
     public decimal? Children5 { get; set; }
-    public string CommissionCode { get; set; }
-    public string AwardCode1 { get; set; }
-    public string AwardCode2 { get; set; }
-    public string AwardCode3 { get; set; }
-    public string AwardCode4 { get; set; }
-    public string AwardCode5 { get; set; }
-    public string AwardVoucher1 { get; set; }
-    public string AwardVoucher2 { get; set; }
-    public string AwardVoucher3 { get; set; }
-    public string AwardVoucher4 { get; set; }
-    public string AwardVoucher5 { get; set; }
-    public string DoNotMoveYn { get; set; }
-    public string AwardCode { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? AwardCode1 { get; set; }
+    public string? AwardCode2 { get; set; }
+    public string? AwardCode3 { get; set; }
+    public string? AwardCode4 { get; set; }
+    public string? AwardCode5 { get; set; }
+    public string? AwardVoucher1 { get; set; }
+    public string? AwardVoucher2 { get; set; }
+    public string? AwardVoucher3 { get; set; }
+    public string? AwardVoucher4 { get; set; }
+    public string? AwardVoucher5 { get; set; }
+    public string? DoNotMoveYn { get; set; }
+    public string? AwardCode { get; set; }
     public decimal? Points { get; set; }
     public decimal? UpsellCharge { get; set; }
-    public string PointsEligibilityCode { get; set; }
+    public string? PointsEligibilityCode { get; set; }
     public decimal? CommissionPaid { get; set; }
     public decimal? ResvContactId { get; set; }
     public decimal? BillingContactId { get; set; }
     public decimal? ShareAmountOriginal { get; set; }
-    public string ReferralYn { get; set; }
+    public string? ReferralYn { get; set; }
 
     public virtual ReservationName Res { get; set; }
 

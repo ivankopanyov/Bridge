@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExpTempData
 {
-    public decimal ExpDataId { get; set; }
-    public string ExpClobData { get; set; }
+    public decimal? ExpDataId { get; set; }
+    public string? ExpClobData { get; set; }
     public decimal? OxiGroupId { get; set; }
-    public string OxiResort { get; set; }
+    public string? OxiResort { get; set; }
     public int? OxiUploadKeyId { get; set; }
-    public string OxiStatus { get; set; }
-    public string OxiRecordType { get; set; }
-    public string OxiFileName { get; set; }
+    public string? OxiStatus { get; set; }
+    public string? OxiRecordType { get; set; }
+    public string? OxiFileName { get; set; }
     public DateTime? OxiInsertDate { get; set; }
-    public string OxiInterfaceId { get; set; }
-    public string OxiUploadType { get; set; }
+    public string? OxiInterfaceId { get; set; }
+    public string? OxiUploadType { get; set; }
     public byte[] ExpBlobData { get; set; }
     public DateTime? ExportDate { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string ExportType { get; set; }
-    public string FileName { get; set; }
-    public string PmsStatus { get; set; }
-    public string Resort { get; set; }
+    public string? ExportType { get; set; }
+    public string? FileName { get; set; }
+    public string? PmsStatus { get; set; }
+    public string? Resort { get; set; }
     public decimal? ExpFileId { get; set; }
-    public string AuthKey { get; set; }
+    public string? AuthKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

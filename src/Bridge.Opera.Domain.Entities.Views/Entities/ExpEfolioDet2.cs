@@ -4,9 +4,9 @@ public partial class ExpEfolioDet2
 {
     public decimal? ExportId { get; set; }
     public decimal? RowSequence { get; set; }
-    public string ExportType { get; set; }
-    public string TrxCode { get; set; }
-    public string TrxDesc { get; set; }
+    public string? ExportType { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Gad { get; set; }
     public decimal? TaxAmount { get; set; }

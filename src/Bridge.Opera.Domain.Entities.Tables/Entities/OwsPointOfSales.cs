@@ -7,15 +7,15 @@ public partial class OwsPointOfSales
         OwsPointOfSalesDetail = new HashSet<OwsPointOfSalesDetail>();
     }
 
-    public decimal PointOfSaleId { get; set; }
-    public string PointOfSaleName { get; set; }
-    public string PointOfSaleUrl { get; set; }
-    public string Resort { get; set; }
-    public string GdsHost { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? PointOfSaleId { get; set; }
+    public string? PointOfSaleName { get; set; }
+    public string? PointOfSaleUrl { get; set; }
+    public string? Resort { get; set; }
+    public string? GdsHost { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? DisplaySeq { get; set; }
     public DateTime? InactiveDate { get; set; }
 

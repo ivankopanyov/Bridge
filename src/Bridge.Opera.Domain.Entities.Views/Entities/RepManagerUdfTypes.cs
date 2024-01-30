@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepManagerUdfTypes
 {
-    public string UdfType { get; set; }
-    public string UdfDescription { get; set; }
+    public string? UdfType { get; set; }
+    public string? UdfDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

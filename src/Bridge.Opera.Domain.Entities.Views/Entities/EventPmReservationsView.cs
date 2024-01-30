@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventPmReservationsView
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomResort { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomResort { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PostingAllowedYn { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PostingAllowedYn { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? EventId { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? SourceId { get; set; }
-    public string OriginOfBooking { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCode { get; set; }
+    public string? OriginOfBooking { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string PsuedoRoomType { get; set; }
-    public string Room { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? PsuedoRoomType { get; set; }
+    public string? Room { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string ArrivalTime { get; set; }
-    public string DepartureTime { get; set; }
+    public string? ArrivalTime { get; set; }
+    public string? DepartureTime { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

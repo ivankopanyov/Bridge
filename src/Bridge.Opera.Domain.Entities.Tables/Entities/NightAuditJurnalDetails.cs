@@ -3,7 +3,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class NightAuditJurnalDetails
 {
     public decimal? SysJobId { get; set; }
-    public string Remarks { get; set; }
+    public string? Remarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

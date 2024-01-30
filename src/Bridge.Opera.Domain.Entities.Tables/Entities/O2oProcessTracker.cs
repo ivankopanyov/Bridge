@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oProcessTracker
 {
-    public decimal ProcessId { get; set; }
-    public string O2oMigId { get; set; }
-    public string EventName { get; set; }
-    public string EventIdChar { get; set; }
+    public decimal? ProcessId { get; set; }
+    public string? O2oMigId { get; set; }
+    public string? EventName { get; set; }
+    public string? EventIdChar { get; set; }
     public decimal? EventIdNum { get; set; }
-    public string Status { get; set; }
-    public DateTime StartDate { get; set; }
+    public string? Status { get; set; }
+    public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Comments { get; set; }
-    public string OracleJobId { get; set; }
+    public string? Comments { get; set; }
+    public string? OracleJobId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

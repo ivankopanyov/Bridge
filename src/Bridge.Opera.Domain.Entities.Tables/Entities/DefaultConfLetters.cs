@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DefaultConfLetters
 {
-    public string OwnerResort { get; set; }
-    public string Resort { get; set; }
+    public string? OwnerResort { get; set; }
+    public string? Resort { get; set; }
     public decimal? GuestConfLetterId { get; set; }
     public decimal? CompanyConfLetterId { get; set; }
     public decimal? AgentConfLetterId { get; set; }
     public decimal? GroupConfLetterId { get; set; }
     public decimal? SourceConfLetterId { get; set; }
     public decimal? ContactConfLetterId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
 

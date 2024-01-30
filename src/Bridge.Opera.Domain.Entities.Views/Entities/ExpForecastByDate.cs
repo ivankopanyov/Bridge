@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpForecastByDate
 {
-    public string PropertyCode { get; set; }
+    public string? PropertyCode { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? OutOfOrder { get; set; }
     public decimal? OutOfService { get; set; }
-    public string Event { get; set; }
+    public string? Event { get; set; }
     public decimal? DefBlocks { get; set; }
     public decimal? TotGrpRooms { get; set; }
     public decimal? TentBlocks { get; set; }
@@ -19,25 +19,25 @@ public partial class ExpForecastByDate
     public decimal? ArrivalPerson { get; set; }
     public decimal? DepartureRoom { get; set; }
     public decimal? DeparturePerson { get; set; }
-    public string Code1 { get; set; }
+    public string? Code1 { get; set; }
     public decimal? F1 { get; set; }
-    public string Code2 { get; set; }
+    public string? Code2 { get; set; }
     public decimal? F2 { get; set; }
-    public string Code3 { get; set; }
+    public string? Code3 { get; set; }
     public decimal? F3 { get; set; }
-    public string Code4 { get; set; }
+    public string? Code4 { get; set; }
     public decimal? F4 { get; set; }
-    public string Code5 { get; set; }
+    public string? Code5 { get; set; }
     public decimal? F5 { get; set; }
-    public string Code6 { get; set; }
+    public string? Code6 { get; set; }
     public decimal? F6 { get; set; }
-    public string Code7 { get; set; }
+    public string? Code7 { get; set; }
     public decimal? F7 { get; set; }
-    public string Code8 { get; set; }
+    public string? Code8 { get; set; }
     public decimal? F8 { get; set; }
-    public string Code9 { get; set; }
+    public string? Code9 { get; set; }
     public decimal? F9 { get; set; }
-    public string Code10 { get; set; }
+    public string? Code10 { get; set; }
     public decimal? F10 { get; set; }
     public decimal? DefRoomRevenue { get; set; }
     public decimal? GroupDefRoomRevenue { get; set; }

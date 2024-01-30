@@ -2,39 +2,39 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvRateCodes
 {
-    public string GdsHost { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string GdsRateCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string GdsRateCodeName { get; set; }
-    public string GdsRateDescription { get; set; }
-    public string GdsRateCategory { get; set; }
-    public string GdsRateLevel { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? GdsRateCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? GdsRateCodeName { get; set; }
+    public string? GdsRateDescription { get; set; }
+    public string? GdsRateCategory { get; set; }
+    public string? GdsRateLevel { get; set; }
     public decimal? GdsRateCodeOrder { get; set; }
-    public string RatesToGdsYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RateCreateYn { get; set; }
-    public string RateUpdateYn { get; set; }
+    public string? RatesToGdsYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RateCreateYn { get; set; }
+    public string? RateUpdateYn { get; set; }
     public DateTime? RateUpdateDate { get; set; }
-    public string ActivateYn { get; set; }
-    public string GdsRateShortDesc { get; set; }
-    public string AvailabilityUpdateYn { get; set; }
-    public string DisplayRegionalYn { get; set; }
-    public string BlockRateIndicator { get; set; }
-    public string Rp1 { get; set; }
-    public string Rp2 { get; set; }
-    public string Rp3 { get; set; }
-    public string Rpd { get; set; }
-    public string PromoCode { get; set; }
-    public string PublicYn { get; set; }
-    public string BbarYn { get; set; }
+    public string? ActivateYn { get; set; }
+    public string? GdsRateShortDesc { get; set; }
+    public string? AvailabilityUpdateYn { get; set; }
+    public string? DisplayRegionalYn { get; set; }
+    public string? BlockRateIndicator { get; set; }
+    public string? Rp1 { get; set; }
+    public string? Rp2 { get; set; }
+    public string? Rp3 { get; set; }
+    public string? Rpd { get; set; }
+    public string? PromoCode { get; set; }
+    public string? PublicYn { get; set; }
+    public string? BbarYn { get; set; }
     public decimal? RateTier { get; set; }
-    public string ResvPromotionCode { get; set; }
+    public string? ResvPromotionCode { get; set; }
 
     public virtual GdsRateLevel Gds { get; set; }
     public virtual GdsConvResorts GdsConvResorts { get; set; }

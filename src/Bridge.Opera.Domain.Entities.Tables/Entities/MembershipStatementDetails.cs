@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipStatementDetails
 {
-    public decimal MemberStatementId { get; set; }
-    public decimal StatementBatchId { get; set; }
-    public decimal MembershipId { get; set; }
-    public string PrintYn { get; set; }
-    public string Status { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? MemberStatementId { get; set; }
+    public decimal? StatementBatchId { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? PrintYn { get; set; }
+    public string? Status { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? OpeningBalance { get; set; }
     public decimal? StCreditPoints { get; set; }
     public decimal? StDebitPoints { get; set; }
@@ -32,12 +32,12 @@ public partial class MembershipStatementDetails
     public decimal? TotalNightPoints { get; set; }
     public decimal? TotalRevenuePoints { get; set; }
     public decimal? StNameId { get; set; }
-    public string StMembershipCardNo { get; set; }
-    public string StMembershipLevel { get; set; }
-    public string StDisplayName { get; set; }
-    public string UserKeyword { get; set; }
-    public string StatementNotes { get; set; }
-    public string ErrorLog { get; set; }
+    public string? StMembershipCardNo { get; set; }
+    public string? StMembershipLevel { get; set; }
+    public string? StDisplayName { get; set; }
+    public string? UserKeyword { get; set; }
+    public string? StatementNotes { get; set; }
+    public string? ErrorLog { get; set; }
 
     public virtual MembershipStatementHeader StatementBatch { get; set; }
 

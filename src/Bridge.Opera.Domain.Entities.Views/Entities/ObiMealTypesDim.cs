@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiMealTypesDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string MealType { get; set; }
-    public string Description { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? MealType { get; set; }
+    public string? Description { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
 

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaVoucherBenefitDtl
 {
-    public string VoucherBenefitDtlCode { get; set; }
-    public string VoucherBenefitCode { get; set; }
-    public string BenefitBasedOn { get; set; }
+    public string? VoucherBenefitDtlCode { get; set; }
+    public string? VoucherBenefitCode { get; set; }
+    public string? BenefitBasedOn { get; set; }
     public decimal? NoOfUnits { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCode { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? ApplySeq { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

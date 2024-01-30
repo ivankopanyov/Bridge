@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemEventgroup1
 {
-    public decimal GroupId { get; set; }
-    public decimal BookId { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
+    public decimal? GroupId { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

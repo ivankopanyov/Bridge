@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExportBucketFolioAmounts
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ExportBucketType { get; set; }
-    public string ExportBucketCode { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ExportBucketType { get; set; }
+    public string? ExportBucketCode { get; set; }
     public decimal? ExportBucketId { get; set; }
     public decimal? Amount { get; set; }
     public decimal? FolioView { get; set; }

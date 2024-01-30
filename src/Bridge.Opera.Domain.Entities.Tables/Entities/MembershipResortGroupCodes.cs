@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipResortGroupCodes
 {
-    public string MemResortGroup { get; set; }
-    public string Resort { get; set; }
+    public string? MemResortGroup { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RequiredYn { get; set; }
-    public string ChainCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RequiredYn { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MembershipResortGroups MembershipResortGroups { get; set; }
 

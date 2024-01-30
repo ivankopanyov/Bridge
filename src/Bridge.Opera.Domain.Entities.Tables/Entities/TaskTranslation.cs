@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TaskTranslation
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? LastUpdatedDate { get; set; }
     public decimal? LastUpdatedBy { get; set; }
-    public decimal TaskCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string Description { get; set; }
-    public string Notes { get; set; }
+    public decimal? TaskCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Description { get; set; }
+    public string? Notes { get; set; }
 
     public virtual Tasks Tasks { get; set; }
 

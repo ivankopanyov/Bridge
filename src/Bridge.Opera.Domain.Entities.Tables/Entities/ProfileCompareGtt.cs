@@ -3,27 +3,27 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class ProfileCompareGtt
 {
     public decimal? NameId { get; set; }
-    public string RecordType { get; set; }
-    public string NameType { get; set; }
-    public string NameCode { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string Gender { get; set; }
-    public string ResortRegistered { get; set; }
-    public string ChainCode { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
+    public string? RecordType { get; set; }
+    public string? NameType { get; set; }
+    public string? NameCode { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? Gender { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

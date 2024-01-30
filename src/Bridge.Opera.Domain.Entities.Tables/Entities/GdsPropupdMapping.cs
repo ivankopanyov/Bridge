@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsPropupdMapping
 {
-    public string Resort { get; set; }
-    public string CategoryType { get; set; }
-    public string SubcategoryType { get; set; }
-    public string OperaCode { get; set; }
-    public string GdsCode { get; set; }
-    public string Type1 { get; set; }
-    public string Type2 { get; set; }
-    public string Type3 { get; set; }
-    public string Type4 { get; set; }
-    public string Type5 { get; set; }
-    public string Type6 { get; set; }
-    public string Type7 { get; set; }
-    public string Type8 { get; set; }
+    public string? Resort { get; set; }
+    public string? CategoryType { get; set; }
+    public string? SubcategoryType { get; set; }
+    public string? OperaCode { get; set; }
+    public string? GdsCode { get; set; }
+    public string? Type1 { get; set; }
+    public string? Type2 { get; set; }
+    public string? Type3 { get; set; }
+    public string? Type4 { get; set; }
+    public string? Type5 { get; set; }
+    public string? Type6 { get; set; }
+    public string? Type7 { get; set; }
+    public string? Type8 { get; set; }
     public decimal? AmountQty { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Dow { get; set; }
-    public string CategoryId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Dow { get; set; }
+    public string? CategoryId { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

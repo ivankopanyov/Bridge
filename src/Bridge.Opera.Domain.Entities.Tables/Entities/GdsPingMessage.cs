@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsPingMessage
 {
-    public string EchoToken { get; set; }
-    public string Status { get; set; }
-    public string ErrorText { get; set; }
+    public string? EchoToken { get; set; }
+    public string? Status { get; set; }
+    public string? ErrorText { get; set; }
     public decimal? RetryCount { get; set; }
-    public string ErrorCode { get; set; }
-    public string SubCode { get; set; }
-    public string OldEchoToken { get; set; }
-    public string ResendYn { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? SubCode { get; set; }
+    public string? OldEchoToken { get; set; }
+    public string? ResendYn { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

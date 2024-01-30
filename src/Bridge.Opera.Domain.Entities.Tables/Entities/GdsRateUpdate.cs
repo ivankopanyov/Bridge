@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateUpdate
 {
-    public decimal GdsRateUpdateId { get; set; }
-    public decimal GdsRefreshId { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsResort { get; set; }
-    public string GdsRecord { get; set; }
+    public decimal? GdsRateUpdateId { get; set; }
+    public decimal? GdsRefreshId { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsResort { get; set; }
+    public string? GdsRecord { get; set; }
     public DateTime? BeginDate { get; set; }
-    public string OrderBy { get; set; }
-    public string Status { get; set; }
+    public string? OrderBy { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

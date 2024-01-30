@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NightAuditProcedures1
 {
-    public decimal NaId { get; set; }
+    public decimal? NaId { get; set; }
     public DateTime? Date4 { get; set; }
     public DateTime? Date3 { get; set; }
     public DateTime? Date2 { get; set; }
     public DateTime? Date1 { get; set; }
-    public string Frequency { get; set; }
-    public string WhenToExecute { get; set; }
-    public string OutputFile { get; set; }
-    public string BeforeIncomeAuditYn { get; set; }
-    public string ActiveYn { get; set; }
-    public string PrintYn { get; set; }
-    public string FileYn { get; set; }
-    public string ScreenYn { get; set; }
-    public string ReportProcedureFlag { get; set; }
-    public string ListName { get; set; }
+    public string? Frequency { get; set; }
+    public string? WhenToExecute { get; set; }
+    public string? OutputFile { get; set; }
+    public string? BeforeIncomeAuditYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? PrintYn { get; set; }
+    public string? FileYn { get; set; }
+    public string? ScreenYn { get; set; }
+    public string? ReportProcedureFlag { get; set; }
+    public string? ListName { get; set; }
     public decimal? NaSequence { get; set; }
-    public string ProcedureName { get; set; }
+    public string? ProcedureName { get; set; }
     public decimal? ModuleId { get; set; }
     public byte? Copies { get; set; }
-    public string MandatoryYn { get; set; }
-    public string SpoolName { get; set; }
-    public string FileFormat { get; set; }
-    public string DeviceDriver { get; set; }
+    public string? MandatoryYn { get; set; }
+    public string? SpoolName { get; set; }
+    public string? FileFormat { get; set; }
+    public string? DeviceDriver { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

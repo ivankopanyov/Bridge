@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberAwardsVw
 {
-    public string Application { get; set; }
+    public string? Application { get; set; }
     public decimal? IssuedAwardId { get; set; }
     public DateTime? DateAwarded { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string AwardBasedOn { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? AwardBasedOn { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
-    public string PmsResvNo { get; set; }
-    public string OrsBookNo { get; set; }
+    public string? Resort { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? OrsBookNo { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string RateCode { get; set; }
-    public string RateRoomCategory { get; set; }
-    public string RateRoomLabel { get; set; }
-    public string FromRoomCategory { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomCategory { get; set; }
-    public string ToRoomLabel { get; set; }
-    public string Product { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateRoomCategory { get; set; }
+    public string? RateRoomLabel { get; set; }
+    public string? FromRoomCategory { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomCategory { get; set; }
+    public string? ToRoomLabel { get; set; }
+    public string? Product { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? CancelPenaltyDays { get; set; }
     public decimal? CancelPenaltyPoints { get; set; }
     public decimal? AwardCancellationNo { get; set; }
     public DateTime? AwardCancelDate { get; set; }
-    public string ResvCancelNo { get; set; }
+    public string? ResvCancelNo { get; set; }
     public decimal? ActualCancelPoints { get; set; }
     public DateTime? StayDate { get; set; }
 

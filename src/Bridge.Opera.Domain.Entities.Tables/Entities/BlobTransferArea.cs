@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BlobTransferArea
 {
-    public decimal BlobId { get; set; }
+    public decimal? BlobId { get; set; }
     public byte[] BlobItem { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string FileName { get; set; }
-    public string ClobItem { get; set; }
+    public string? FileName { get; set; }
+    public string? ClobItem { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

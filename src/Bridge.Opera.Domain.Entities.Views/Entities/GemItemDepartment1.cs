@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemItemDepartment1
 {
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public string DeptId { get; set; }
-    public string TraceText { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public string? DeptId { get; set; }
+    public string? TraceText { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,16 +7,16 @@ public partial class BmStatementPeriods
         BmStatements = new HashSet<BmStatements>();
     }
 
-    public decimal StatementId { get; set; }
-    public DateTime StatementDate { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string ExportedYn { get; set; }
-    public string Note { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? StatementId { get; set; }
+    public DateTime? StatementDate { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? ExportedYn { get; set; }
+    public string? Note { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? FreezeDate { get; set; }
 
     public virtual ICollection<BmStatements> BmStatements { get; set; }

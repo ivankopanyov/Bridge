@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Locales
 {
-    public string OracleLanguage { get; set; }
-    public string Locale { get; set; }
-    public string Description { get; set; }
+    public string? OracleLanguage { get; set; }
+    public string? Locale { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

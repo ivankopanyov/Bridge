@@ -2,30 +2,30 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OsaAllBookings
 {
-    public decimal LinkId { get; set; }
-    public string LinkType { get; set; }
-    public string Resort { get; set; }
-    public string EasActivityId { get; set; }
-    public string ExternalSystem { get; set; }
-    public decimal ActivityId { get; set; }
-    public string ActivityType { get; set; }
-    public string LocationCode { get; set; }
-    public string LocationDesc { get; set; }
-    public string StatusDesc { get; set; }
-    public string ActivityDesc { get; set; }
+    public decimal? LinkId { get; set; }
+    public string? LinkType { get; set; }
+    public string? Resort { get; set; }
+    public string? EasActivityId { get; set; }
+    public string? ExternalSystem { get; set; }
+    public decimal? ActivityId { get; set; }
+    public string? ActivityType { get; set; }
+    public string? LocationCode { get; set; }
+    public string? LocationDesc { get; set; }
+    public string? StatusDesc { get; set; }
+    public string? ActivityDesc { get; set; }
     public decimal? Pax { get; set; }
-    public string Notes { get; set; }
+    public string? Notes { get; set; }
     public DateTime? StartDate { get; set; }
-    public string StartTime { get; set; }
+    public string? StartTime { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EndTime { get; set; }
-    public string Duration { get; set; }
-    public string StatusCode { get; set; }
+    public string? EndTime { get; set; }
+    public string? Duration { get; set; }
+    public string? StatusCode { get; set; }
     public decimal? DepositAmount { get; set; }
-    public string DepositOwner { get; set; }
+    public string? DepositOwner { get; set; }
     public decimal? ActivityAmount { get; set; }
-    public string ProblemDesc { get; set; }
-    public string GuestType { get; set; }
+    public string? ProblemDesc { get; set; }
+    public string? GuestType { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OlmResvNameId { get; set; }
     public decimal? OlmNameId { get; set; }

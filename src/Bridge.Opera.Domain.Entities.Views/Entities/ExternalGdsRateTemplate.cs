@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExternalGdsRateTemplate
 {
-    public string RateCode { get; set; }
-    public string Description { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsRateCode { get; set; }
-    public string GdsRateCategory { get; set; }
-    public string GdsRateLevel { get; set; }
-    public string NegRateCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? Description { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRateCode { get; set; }
+    public string? GdsRateCategory { get; set; }
+    public string? GdsRateLevel { get; set; }
+    public string? NegRateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

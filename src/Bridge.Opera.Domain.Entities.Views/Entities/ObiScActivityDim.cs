@@ -2,38 +2,38 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScActivityDim
 {
-    public decimal ActId { get; set; }
-    public string Resort { get; set; }
-    public string ActType { get; set; }
-    public string Purpose { get; set; }
+    public decimal? ActId { get; set; }
+    public string? Resort { get; set; }
+    public string? ActType { get; set; }
+    public string? Purpose { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? StartTime { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? EndTime { get; set; }
     public DateTime? CompletedDate { get; set; }
     public decimal? Bookid { get; set; }
-    public string Bookresort { get; set; }
-    public string Bookingname { get; set; }
+    public string? Bookresort { get; set; }
+    public string? Bookingname { get; set; }
     public decimal? Contactid { get; set; }
-    public string Contactname { get; set; }
+    public string? Contactname { get; set; }
     public decimal? Accountid { get; set; }
-    public string Accname { get; set; }
-    public string PriorityCode { get; set; }
-    public string PriorityDesc { get; set; }
-    public string Notes { get; set; }
-    public string CreatedByUser { get; set; }
-    public string AssignedToUser { get; set; }
+    public string? Accname { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? PriorityDesc { get; set; }
+    public string? Notes { get; set; }
+    public string? CreatedByUser { get; set; }
+    public string? AssignedToUser { get; set; }
     public decimal? AssignedToUserid { get; set; }
-    public string PrivateYn { get; set; }
+    public string? PrivateYn { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Tracecode { get; set; }
-    public string ActClass { get; set; }
-    public string Author { get; set; }
+    public string? Tracecode { get; set; }
+    public string? ActClass { get; set; }
+    public string? Author { get; set; }
     public decimal? Authorid { get; set; }
-    public string ContactPhone { get; set; }
-    public string ContactFax { get; set; }
-    public string ContactEmail { get; set; }
-    public string CompletedYn { get; set; }
+    public string? ContactPhone { get; set; }
+    public string? ContactFax { get; set; }
+    public string? ContactEmail { get; set; }
+    public string? CompletedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

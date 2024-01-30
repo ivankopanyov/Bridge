@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepRoomStatusSumm
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
     public decimal? ClOcc { get; set; }
     public decimal? DiOcc { get; set; }
     public decimal? ClVac { get; set; }

@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidExpFileDeliverySys
 {
-    public decimal ExpFileId { get; set; }
-    public string CommType { get; set; }
-    public string HostUrl { get; set; }
-    public string UserId { get; set; }
-    public string Password { get; set; }
-    public string Directory { get; set; }
-    public string SafeCreateYn { get; set; }
-    public string TempDirectory { get; set; }
-    public string FtpPassiveYn { get; set; }
-    public string AsciiTransferYn { get; set; }
-    public string CompressYn { get; set; }
-    public string SoapYn { get; set; }
-    public string SoapVersion { get; set; }
-    public string SoapAction { get; set; }
-    public decimal RetryCount { get; set; }
+    public decimal? ExpFileId { get; set; }
+    public string? CommType { get; set; }
+    public string? HostUrl { get; set; }
+    public string? UserId { get; set; }
+    public string? Password { get; set; }
+    public string? Directory { get; set; }
+    public string? SafeCreateYn { get; set; }
+    public string? TempDirectory { get; set; }
+    public string? FtpPassiveYn { get; set; }
+    public string? AsciiTransferYn { get; set; }
+    public string? CompressYn { get; set; }
+    public string? SoapYn { get; set; }
+    public string? SoapVersion { get; set; }
+    public string? SoapAction { get; set; }
+    public decimal? RetryCount { get; set; }
     public decimal? RetryIntervalSec { get; set; }
     public DateTime? DeliveryTime { get; set; }
-    public string HxExportYn { get; set; }
-    public string HxVersionNo { get; set; }
-    public string HxSystemType { get; set; }
-    public string DeliveryStatus { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? HxExportYn { get; set; }
+    public string? HxVersionNo { get; set; }
+    public string? HxSystemType { get; set; }
+    public string? DeliveryStatus { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

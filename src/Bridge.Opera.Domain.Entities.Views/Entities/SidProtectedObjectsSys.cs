@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidProtectedObjectsSys
 {
-    public string TemplateCode { get; set; }
-    public string ObjectCode { get; set; }
-    public string ActionList { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? ObjectCode { get; set; }
+    public string? ActionList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidBankAccount
 {
-    public string Resort { get; set; }
-    public decimal AccountId { get; set; }
-    public string AccountNo { get; set; }
-    public string BankCode { get; set; }
-    public string BranchCode { get; set; }
-    public string RoutingNo { get; set; }
-    public string PaymentMethod { get; set; }
-    public string Format { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountId { get; set; }
+    public string? AccountNo { get; set; }
+    public string? BankCode { get; set; }
+    public string? BranchCode { get; set; }
+    public string? RoutingNo { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? Format { get; set; }
     public decimal? CurrentCheckNo { get; set; }
     public decimal? MaxCheckNo { get; set; }
     public decimal? MinProcessingAmt { get; set; }
-    public string CheckEditYn { get; set; }
+    public string? CheckEditYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public decimal? CheckStubLines { get; set; }
-    public string DefaultYn { get; set; }
-    public string ValidateIataYn { get; set; }
-    public string LanguageCode { get; set; }
-    public string Report1099Yn { get; set; }
-    public string BankAcctType { get; set; }
-    public string PositivePayYn { get; set; }
-    public string SourceImportDir { get; set; }
-    public string TargetImportDir { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? ValidateIataYn { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Report1099Yn { get; set; }
+    public string? BankAcctType { get; set; }
+    public string? PositivePayYn { get; set; }
+    public string? SourceImportDir { get; set; }
+    public string? TargetImportDir { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

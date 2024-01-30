@@ -5,7 +5,7 @@ public partial class ExpUpePbillsReservations
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

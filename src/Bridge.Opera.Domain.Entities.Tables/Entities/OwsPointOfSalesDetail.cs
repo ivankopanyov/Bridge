@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsPointOfSalesDetail
 {
-    public decimal PointOfSaleId { get; set; }
-    public string Language { get; set; }
-    public string Country { get; set; }
-    public string Currency { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Status { get; set; }
+    public decimal? PointOfSaleId { get; set; }
+    public string? Language { get; set; }
+    public string? Country { get; set; }
+    public string? Currency { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Status { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual OwsPointOfSales PointOfSale { get; set; }

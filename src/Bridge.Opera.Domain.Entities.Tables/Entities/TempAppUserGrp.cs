@@ -4,7 +4,7 @@ public partial class TempAppUserGrp
 {
     public decimal? AppUserId { get; set; }
     public decimal? AppUserIdMember { get; set; }
-    public string Action { get; set; }
+    public string? Action { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

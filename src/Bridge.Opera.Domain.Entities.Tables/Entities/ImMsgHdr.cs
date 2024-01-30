@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ImMsgHdr
 {
-    public decimal RecordId { get; set; }
-    public string Resort { get; set; }
-    public string RefType { get; set; }
-    public string RefCode { get; set; }
+    public decimal? RecordId { get; set; }
+    public string? Resort { get; set; }
+    public string? RefType { get; set; }
+    public string? RefCode { get; set; }
     public DateTime? ProcessStartTime { get; set; }
     public DateTime? ProcessEndTime { get; set; }
     public decimal? ProcessStartMillistime { get; set; }
     public decimal? ProcessEndMillistime { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public decimal? RequestId { get; set; }
     public decimal? RequestFailedCount { get; set; }
-    public string RequestFailedCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RequestFailedCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

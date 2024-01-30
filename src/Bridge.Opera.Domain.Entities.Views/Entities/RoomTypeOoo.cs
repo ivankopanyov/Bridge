@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomTypeOoo
 {
-    public string Resort { get; set; }
-    public DateTime OooDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public decimal Ooo { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? OooDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public decimal? Ooo { get; set; }
     public decimal? OwnerOoo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

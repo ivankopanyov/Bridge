@@ -4,7 +4,7 @@ public partial class ExpConCrsTypes
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string CrsType { get; set; }
+    public string? CrsType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

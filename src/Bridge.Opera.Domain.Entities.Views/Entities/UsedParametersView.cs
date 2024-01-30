@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class UsedParametersView
 {
-    public string Resort { get; set; }
-    public string ParameterName { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
-    public string ParameterGroup { get; set; }
+    public string? Resort { get; set; }
+    public string? ParameterName { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
+    public string? ParameterGroup { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

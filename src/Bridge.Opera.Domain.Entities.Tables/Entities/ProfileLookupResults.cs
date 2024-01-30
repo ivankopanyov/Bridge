@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileLookupResults
 {
-    public decimal RequestId { get; set; }
-    public string DatabaseId { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? DatabaseId { get; set; }
     public decimal? DatasetRowCount { get; set; }
-    public string SuccessYn { get; set; }
-    public string ProcessingMessage { get; set; }
+    public string? SuccessYn { get; set; }
+    public string? ProcessingMessage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

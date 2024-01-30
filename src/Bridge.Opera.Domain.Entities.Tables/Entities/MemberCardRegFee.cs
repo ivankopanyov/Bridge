@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MemberCardRegFee
 {
-    public decimal FeeRecId { get; set; }
-    public string MemberCardRegCode { get; set; }
+    public decimal? FeeRecId { get; set; }
+    public string? MemberCardRegCode { get; set; }
     public DateTime? PaymentDate { get; set; }
-    public string SourceType { get; set; }
-    public string Source { get; set; }
-    public string MembershipType { get; set; }
-    public string OrigMembershipLevel { get; set; }
-    public string FinalMembershipLevel { get; set; }
+    public string? SourceType { get; set; }
+    public string? Source { get; set; }
+    public string? MembershipType { get; set; }
+    public string? OrigMembershipLevel { get; set; }
+    public string? FinalMembershipLevel { get; set; }
     public DateTime? OrigExpirationDate { get; set; }
     public DateTime? FinalExpirationDate { get; set; }
-    public string MemberCardRegAction { get; set; }
-    public string FeeCode { get; set; }
-    public decimal FeeAmount { get; set; }
-    public string CentralCurrencyCode { get; set; }
-    public string PaymentComments { get; set; }
-    public string CreditCardType { get; set; }
-    public string PaymentType { get; set; }
+    public string? MemberCardRegAction { get; set; }
+    public string? FeeCode { get; set; }
+    public decimal? FeeAmount { get; set; }
+    public string? CentralCurrencyCode { get; set; }
+    public string? PaymentComments { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? PaymentType { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? MembershipId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntCrsInventory
 {
-    public decimal CrsInventorySeq { get; set; }
-    public string Crsid { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public decimal Inventory { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Resort { get; set; }
-    public string RateCategory { get; set; }
+    public decimal? CrsInventorySeq { get; set; }
+    public string? Crsid { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public decimal? Inventory { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCategory { get; set; }
     public decimal? InventoryLowerThreshold { get; set; }
     public decimal? InventoryUpperThreshold { get; set; }
-    public string IncludeSellLimitYn { get; set; }
-    public string IncludeOooYn { get; set; }
+    public string? IncludeSellLimitYn { get; set; }
+    public string? IncludeOooYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

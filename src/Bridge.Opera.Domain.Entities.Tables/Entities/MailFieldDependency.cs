@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailFieldDependency
 {
-    public decimal FieldId { get; set; }
-    public decimal DependentFieldId { get; set; }
-    public string Param1 { get; set; }
-    public string Param2 { get; set; }
-    public string Param3 { get; set; }
+    public decimal? FieldId { get; set; }
+    public decimal? DependentFieldId { get; set; }
+    public string? Param1 { get; set; }
+    public string? Param2 { get; set; }
+    public string? Param3 { get; set; }
 
     public virtual MailVirtualFields DependentField { get; set; }
     public virtual MailVirtualFields Field { get; set; }

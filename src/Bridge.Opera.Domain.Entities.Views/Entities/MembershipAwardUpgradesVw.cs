@@ -3,11 +3,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MembershipAwardUpgradesVw
 {
     public decimal? MembershipAwardId { get; set; }
-    public string Resort { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string FromRoom { get; set; }
-    public string ToRoom { get; set; }
+    public string? Resort { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? FromRoom { get; set; }
+    public string? ToRoom { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? PointsRequired { get; set; }
@@ -16,7 +16,7 @@ public partial class MembershipAwardUpgradesVw
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

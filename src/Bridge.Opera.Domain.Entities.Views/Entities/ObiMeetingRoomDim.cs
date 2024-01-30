@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiMeetingRoomDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string Description { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomStatus { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Description { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomStatus { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Location { get; set; }
-    public string SpaceType { get; set; }
-    public string Floor { get; set; }
+    public string? Location { get; set; }
+    public string? SpaceType { get; set; }
+    public string? Floor { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

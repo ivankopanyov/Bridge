@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateInfoView
 {
-    public string RateCode { get; set; }
-    public string RateCodeShortDesc { get; set; }
-    public string RateCodeLongDesc { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCodeShortDesc { get; set; }
+    public string? RateCodeLongDesc { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? RateDate { get; set; }
-    public string RateDow { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? RateDow { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string RoomRevenue { get; set; }
-    public string PkgRevenue { get; set; }
-    public string TotalAmount { get; set; }
-    public string GeneratesAmount { get; set; }
-    public string GrandTotal { get; set; }
-    public string SumTotal { get; set; }
-    public string SumGrandTotal { get; set; }
-    public string WeekendRow { get; set; }
+    public string? RoomRevenue { get; set; }
+    public string? PkgRevenue { get; set; }
+    public string? TotalAmount { get; set; }
+    public string? GeneratesAmount { get; set; }
+    public string? GrandTotal { get; set; }
+    public string? SumTotal { get; set; }
+    public string? SumGrandTotal { get; set; }
+    public string? WeekendRow { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

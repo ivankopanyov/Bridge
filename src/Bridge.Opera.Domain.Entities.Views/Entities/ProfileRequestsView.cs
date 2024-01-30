@@ -2,75 +2,75 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ProfileRequestsView
 {
-    public decimal WoNumber { get; set; }
-    public string Resort { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public decimal CreatedBy { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public decimal? CreatedBy { get; set; }
     public decimal? CompletedBy { get; set; }
     public DateTime? CompletedDate { get; set; }
-    public string ActType { get; set; }
-    public string TypeCode { get; set; }
-    public string SendMethod { get; set; }
-    public string CompletedYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? ActType { get; set; }
+    public string? TypeCode { get; set; }
+    public string? SendMethod { get; set; }
+    public string? CompletedYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string ActTypeDesc { get; set; }
-    public string DefaultSendMethod { get; set; }
-    public string Url { get; set; }
+    public string? ActTypeDesc { get; set; }
+    public string? DefaultSendMethod { get; set; }
+    public string? Url { get; set; }
     public decimal? RequestId { get; set; }
     public decimal? AttachTemplateId { get; set; }
-    public string LinkType { get; set; }
-    public decimal LinkId { get; set; }
-    public decimal NameId { get; set; }
-    public string NameType { get; set; }
-    public string NameTypeDesc { get; set; }
-    public string Name { get; set; }
-    public string DisplayName { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Sname { get; set; }
-    public string Sfirst { get; set; }
-    public string ContactYn { get; set; }
-    public string Language { get; set; }
-    public string LanguageDesc { get; set; }
-    public string AddressType { get; set; }
+    public string? LinkType { get; set; }
+    public decimal? LinkId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? NameType { get; set; }
+    public string? NameTypeDesc { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayName { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Sname { get; set; }
+    public string? Sfirst { get; set; }
+    public string? ContactYn { get; set; }
+    public string? Language { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? AddressType { get; set; }
     public decimal? AddressId { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string ZipCode { get; set; }
-    public string StateDesc { get; set; }
-    public string CountryDesc { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? ZipCode { get; set; }
+    public string? StateDesc { get; set; }
+    public string? CountryDesc { get; set; }
     public decimal? EmailId { get; set; }
-    public string Email { get; set; }
-    public string Xname { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string XdisplayName { get; set; }
+    public string? Email { get; set; }
+    public string? Xname { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? XdisplayName { get; set; }
     public decimal? RequestAddressId { get; set; }
     public decimal? PrimaryAddressId { get; set; }
     public decimal? RequestEmailId { get; set; }
     public decimal? PrimaryEmailId { get; set; }
-    public string Title { get; set; }
-    public string Salutation { get; set; }
-    public string ProductInterest { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string Xlanguage { get; set; }
-    public string XlanguageDesc { get; set; }
+    public string? Title { get; set; }
+    public string? Salutation { get; set; }
+    public string? ProductInterest { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? Xlanguage { get; set; }
+    public string? XlanguageDesc { get; set; }
     public decimal? ParentWoNumber { get; set; }
-    public string CampaignDesc { get; set; }
-    public string LoggedSrepCode { get; set; }
+    public string? CampaignDesc { get; set; }
+    public string? LoggedSrepCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipExtracts
 {
-    public decimal ExtractId { get; set; }
-    public decimal MembershipId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string ExtractCode { get; set; }
+    public decimal? ExtractId { get; set; }
+    public decimal? MembershipId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? ExtractCode { get; set; }
     public DateTime? ExtractedDate { get; set; }
     public decimal? ExtractBatchId { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string ExcludeExtractYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? ExcludeExtractYn { get; set; }
     public decimal? TscReportId { get; set; }
 
     public virtual Memberships Membership { get; set; }

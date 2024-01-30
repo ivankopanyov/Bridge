@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpAccountType
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string AccountType { get; set; }
-    public string AccountTypeDesc { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountTypeDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ResortId { get; set; }
-    public string AccountTypeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? ResortId { get; set; }
+    public string? AccountTypeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CentralLookupStatDetails
 {
-    public string Resort { get; set; }
-    public string NameType { get; set; }
-    public DateTime LookupDate { get; set; }
-    public string LookupCriteria { get; set; }
-    public string LookupRequestedBy { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
+    public DateTime? LookupDate { get; set; }
+    public string? LookupCriteria { get; set; }
+    public string? LookupRequestedBy { get; set; }
     public decimal? ProfileFetched { get; set; }
     public decimal? ProcessTime { get; set; }
-    public string ErrorYn { get; set; }
+    public string? ErrorYn { get; set; }
     public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

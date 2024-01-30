@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScAttachment1
 {
-    public decimal AttachId { get; set; }
-    public string LinkType { get; set; }
-    public decimal LinkId { get; set; }
-    public string Resort { get; set; }
-    public string BlobType { get; set; }
+    public decimal? AttachId { get; set; }
+    public string? LinkType { get; set; }
+    public decimal? LinkId { get; set; }
+    public string? Resort { get; set; }
+    public string? BlobType { get; set; }
     public byte[] BlobItem { get; set; }
-    public string Description { get; set; }
-    public string Filename { get; set; }
-    public string ImgType { get; set; }
+    public string? Description { get; set; }
+    public string? Filename { get; set; }
+    public string? ImgType { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string TemplateType { get; set; }
-    public string Language { get; set; }
+    public string? TemplateType { get; set; }
+    public string? Language { get; set; }
     public decimal? Owner { get; set; }
-    public string GlobalYn { get; set; }
+    public string? GlobalYn { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

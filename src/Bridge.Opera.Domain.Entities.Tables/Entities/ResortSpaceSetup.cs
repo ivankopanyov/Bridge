@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortSpaceSetup
 {
-    public string Resort { get; set; }
-    public string SetupStyle { get; set; }
+    public string? Resort { get; set; }
+    public string? SetupStyle { get; set; }
     public decimal? SetupCapacity { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string SpaceType { get; set; }
-    public decimal SpaceInfoId { get; set; }
+    public string? SpaceType { get; set; }
+    public decimal? SpaceInfoId { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
     public virtual ResortSpaceInfo SpaceInfo { get; set; }

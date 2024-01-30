@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinCashierSummary
 {
-    public string Title { get; set; }
+    public string? Title { get; set; }
     public DateTime? Timeoffirstopen { get; set; }
     public DateTime? Timeoflastclose { get; set; }
     public decimal? TimesOpened { get; set; }
-    public string TrxCode { get; set; }
-    public string Currency { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Currency { get; set; }
     public decimal? CashierId { get; set; }
-    public string TrxDesc { get; set; }
+    public string? TrxDesc { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? PostedAmount { get; set; }

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsOversellView
 {
-    public string Resort { get; set; }
-    public DateTime OversellDate { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? OversellDate { get; set; }
     public decimal? ActualCancel { get; set; }
     public decimal? ForeCancel { get; set; }
     public decimal? RemainingCancellation { get; set; }

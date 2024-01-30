@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oMembershipTypes
 {
-    public string O2oMigId { get; set; }
-    public string MembershipType { get; set; }
-    public string UsageType { get; set; }
+    public string? O2oMigId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? UsageType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -8,28 +8,28 @@ public partial class ArAccountTypes
         ArReminderCycle = new HashSet<ArReminderCycle>();
     }
 
-    public string Resort { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AccountType { get; set; }
-    public string TypeDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AccountType { get; set; }
+    public string? TypeDesc { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string StatementName { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string PrintInvoiceDetailsYn { get; set; }
-    public string StatementTypeMode { get; set; }
-    public string OwnerStatementName { get; set; }
-    public string ReminderCycles { get; set; }
-    public string LetterNameEndOfMonth { get; set; }
+    public string? StatementName { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? PrintInvoiceDetailsYn { get; set; }
+    public string? StatementTypeMode { get; set; }
+    public string? OwnerStatementName { get; set; }
+    public string? ReminderCycles { get; set; }
+    public string? LetterNameEndOfMonth { get; set; }
     public decimal? DayForFinanceCharge { get; set; }
     public decimal? FinanceChargeAmount { get; set; }
     public decimal? FinanceChargePercentage { get; set; }
     public decimal? MinDaysOlder { get; set; }
-    public string UnallocatedPaymentsYn { get; set; }
-    public string OwnerSummaryName { get; set; }
-    public string OwnerCashbookName { get; set; }
+    public string? UnallocatedPaymentsYn { get; set; }
+    public string? OwnerSummaryName { get; set; }
+    public string? OwnerCashbookName { get; set; }
 
     public virtual ICollection<ArAccount> ArAccount { get; set; }
     public virtual ICollection<ArReminderCycle> ArReminderCycle { get; set; }

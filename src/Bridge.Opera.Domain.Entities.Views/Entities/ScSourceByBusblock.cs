@@ -2,35 +2,35 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScSourceByBusblock
 {
-    public string BusblockProperty { get; set; }
-    public decimal BusblockId { get; set; }
-    public string SourceRelationship { get; set; }
-    public string SourceRelationshipDesc { get; set; }
-    public string SourcePrimaryYn { get; set; }
-    public decimal SourceId { get; set; }
-    public string SourceName { get; set; }
-    public string SourceName2 { get; set; }
-    public string SourceName3 { get; set; }
-    public string SourceBusinessGreeting { get; set; }
-    public string SourceAddress1 { get; set; }
-    public string SourceAddress2 { get; set; }
-    public string SourceState { get; set; }
-    public string SourceCountry { get; set; }
-    public string SourceCountryDesc { get; set; }
-    public string SourceCity { get; set; }
-    public string SourceCityExt { get; set; }
-    public string SourceZipcode { get; set; }
-    public string SourcePhone { get; set; }
-    public string SourceFax { get; set; }
-    public string SourceEmail { get; set; }
-    public string XsourceName { get; set; }
-    public string SourceXfirstName { get; set; }
-    public string SourceXtitle { get; set; }
-    public string SourceXsalutation { get; set; }
-    public string SourceXdisplayName { get; set; }
-    public string SourceXenvelopeGreeting { get; set; }
-    public string SourceXlanguage { get; set; }
-    public string SourceXlanguageDesc { get; set; }
+    public string? BusblockProperty { get; set; }
+    public decimal? BusblockId { get; set; }
+    public string? SourceRelationship { get; set; }
+    public string? SourceRelationshipDesc { get; set; }
+    public string? SourcePrimaryYn { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? SourceName { get; set; }
+    public string? SourceName2 { get; set; }
+    public string? SourceName3 { get; set; }
+    public string? SourceBusinessGreeting { get; set; }
+    public string? SourceAddress1 { get; set; }
+    public string? SourceAddress2 { get; set; }
+    public string? SourceState { get; set; }
+    public string? SourceCountry { get; set; }
+    public string? SourceCountryDesc { get; set; }
+    public string? SourceCity { get; set; }
+    public string? SourceCityExt { get; set; }
+    public string? SourceZipcode { get; set; }
+    public string? SourcePhone { get; set; }
+    public string? SourceFax { get; set; }
+    public string? SourceEmail { get; set; }
+    public string? XsourceName { get; set; }
+    public string? SourceXfirstName { get; set; }
+    public string? SourceXtitle { get; set; }
+    public string? SourceXsalutation { get; set; }
+    public string? SourceXdisplayName { get; set; }
+    public string? SourceXenvelopeGreeting { get; set; }
+    public string? SourceXlanguage { get; set; }
+    public string? SourceXlanguageDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BmReservations
 {
-    public decimal ResvNameId { get; set; }
-    public decimal NameId { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string ChannelType { get; set; }
-    public string Channel { get; set; }
-    public DateTime BusinessDateCreated { get; set; }
-    public string Year { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ChannelType { get; set; }
+    public string? Channel { get; set; }
+    public DateTime? BusinessDateCreated { get; set; }
+    public string? Year { get; set; }
     public DateTime? ResvInsertDate { get; set; }
-    public DateTime Arrival { get; set; }
-    public DateTime Departure { get; set; }
-    public string RateCode { get; set; }
-    public string RoomType { get; set; }
-    public string Status { get; set; }
-    public decimal ContractId { get; set; }
-    public decimal Seq { get; set; }
+    public DateTime? Arrival { get; set; }
+    public DateTime? Departure { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? Status { get; set; }
+    public decimal? ContractId { get; set; }
+    public decimal? Seq { get; set; }
     public decimal? StatementId { get; set; }
     public decimal? ChannelTrxNo { get; set; }
     public decimal? ChannelTypeTrxNo { get; set; }
     public decimal? UnitPrice { get; set; }
-    public string Currency { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Last { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? Currency { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Last { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string Range { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public string ArNo { get; set; }
+    public string? Range { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? ArNo { get; set; }
     public decimal? NoOfRooms { get; set; }
 
     public virtual BmContractElements BmContractElements { get; set; }

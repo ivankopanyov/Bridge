@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileGuestLogins
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string LoginName { get; set; }
-    public string Password { get; set; }
-    public string SecQuestionCode { get; set; }
-    public string SecAnswer { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? LoginName { get; set; }
+    public string? Password { get; set; }
+    public string? SecQuestionCode { get; set; }
+    public string? SecAnswer { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? PasswordChangeDate { get; set; }
-    public string PwdSystemGenerated { get; set; }
+    public string? PwdSystemGenerated { get; set; }
     public DateTime? AccountLocked { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

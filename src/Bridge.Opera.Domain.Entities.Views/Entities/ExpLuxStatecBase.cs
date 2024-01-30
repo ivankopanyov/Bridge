@@ -6,8 +6,8 @@ public partial class ExpLuxStatecBase
     public decimal? ViewId { get; set; }
     public decimal? TransmissionId { get; set; }
     public DateTime? RunDate { get; set; }
-    public string RunType { get; set; }
-    public string HotelCode { get; set; }
+    public string? RunType { get; set; }
+    public string? HotelCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

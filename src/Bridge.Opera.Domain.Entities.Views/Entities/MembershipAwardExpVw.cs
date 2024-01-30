@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipAwardExpVw
 {
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
     public DateTime? SellBeginDate { get; set; }
     public DateTime? SellEndDate { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public DateTime? AwardInactiveDate { get; set; }
-    public string AwardBasedOn { get; set; }
+    public string? AwardBasedOn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string MessageLine1 { get; set; }
-    public string MessageLine2 { get; set; }
-    public string MessageLine3 { get; set; }
-    public string MessageLine4 { get; set; }
-    public string IgnoreFtTrxYn { get; set; }
-    public decimal IssuedAwardId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipLevel { get; set; }
-    public decimal MembershipId { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string PmsResvNo { get; set; }
-    public string Resort { get; set; }
-    public string CrsBookNo { get; set; }
+    public string? MessageLine1 { get; set; }
+    public string? MessageLine2 { get; set; }
+    public string? MessageLine3 { get; set; }
+    public string? MessageLine4 { get; set; }
+    public string? IgnoreFtTrxYn { get; set; }
+    public decimal? IssuedAwardId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipLevel { get; set; }
+    public decimal? MembershipId { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? Resort { get; set; }
+    public string? CrsBookNo { get; set; }
     public DateTime? DateAwarded { get; set; }
-    public string AwardSource { get; set; }
+    public string? AwardSource { get; set; }
     public DateTime? ConsumptionDate { get; set; }
     public decimal? PointsRequired { get; set; }
     public decimal? AwardPoints { get; set; }
-    public string RateCode { get; set; }
-    public string CancellationNumber { get; set; }
+    public string? RateCode { get; set; }
+    public string? CancellationNumber { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string RoomLabel { get; set; }
-    public string FromRoomLabel { get; set; }
-    public string ToRoomLabel { get; set; }
-    public string Product { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? FromRoomLabel { get; set; }
+    public string? ToRoomLabel { get; set; }
+    public string? Product { get; set; }
     public decimal? ActualCancelPoints { get; set; }
     public decimal? AwardCancellationNo { get; set; }
     public DateTime? AwardCancelDate { get; set; }
@@ -50,21 +50,21 @@ public partial class MembershipAwardExpVw
     public decimal? MemberStatementId { get; set; }
     public DateTime? StayDate { get; set; }
     public decimal? AwardValue { get; set; }
-    public string DeliveryFirstName { get; set; }
-    public string DeliveryLastName { get; set; }
-    public string DeliveryMiddleName { get; set; }
-    public string DeliveryCompanyName { get; set; }
-    public string DeliveryPhoneNo { get; set; }
-    public string DeliveryAddress1 { get; set; }
-    public string DeliveryAddress2 { get; set; }
-    public string DeliveryAddress3 { get; set; }
-    public string DeliveryAddress4 { get; set; }
-    public string DeliveryCity { get; set; }
-    public string DeliveryCountry { get; set; }
-    public string DeliveryProvince { get; set; }
-    public string DeliveryState { get; set; }
-    public string DeliveryZip { get; set; }
-    public string DeliveryCityExt { get; set; }
+    public string? DeliveryFirstName { get; set; }
+    public string? DeliveryLastName { get; set; }
+    public string? DeliveryMiddleName { get; set; }
+    public string? DeliveryCompanyName { get; set; }
+    public string? DeliveryPhoneNo { get; set; }
+    public string? DeliveryAddress1 { get; set; }
+    public string? DeliveryAddress2 { get; set; }
+    public string? DeliveryAddress3 { get; set; }
+    public string? DeliveryAddress4 { get; set; }
+    public string? DeliveryCity { get; set; }
+    public string? DeliveryCountry { get; set; }
+    public string? DeliveryProvince { get; set; }
+    public string? DeliveryState { get; set; }
+    public string? DeliveryZip { get; set; }
+    public string? DeliveryCityExt { get; set; }
     public decimal? DeliveryInsertUser { get; set; }
     public DateTime? DeliveryInsertDate { get; set; }
     public decimal? DeliveryUpdateUser { get; set; }
@@ -79,26 +79,26 @@ public partial class MembershipAwardExpVw
     public decimal? Udfn03 { get; set; }
     public decimal? Udfn04 { get; set; }
     public decimal? Udfn05 { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

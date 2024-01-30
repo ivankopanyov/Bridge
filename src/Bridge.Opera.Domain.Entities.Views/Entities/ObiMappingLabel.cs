@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiMappingLabel
 {
-    public string RateLabel { get; set; }
-    public string RateLabelDesc { get; set; }
+    public string? RateLabel { get; set; }
+    public string? RateLabelDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

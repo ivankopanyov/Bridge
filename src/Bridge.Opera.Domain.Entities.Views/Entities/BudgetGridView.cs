@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BudgetGridView
 {
-    public string Resort { get; set; }
-    public decimal AccountingYear { get; set; }
-    public string AccountingType { get; set; }
-    public string BudgetCodeType { get; set; }
-    public string BudgetCodeValue { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountingYear { get; set; }
+    public string? AccountingType { get; set; }
+    public string? BudgetCodeType { get; set; }
+    public string? BudgetCodeValue { get; set; }
     public decimal? TotalBudgetRevenue { get; set; }
     public decimal? TotalBudgetNights { get; set; }
     public decimal? TotalForecastRevenue { get; set; }
@@ -59,7 +59,7 @@ public partial class BudgetGridView
     public decimal? ForecastNightsMonth10 { get; set; }
     public decimal? ForecastNightsMonth11 { get; set; }
     public decimal? ForecastNightsMonth12 { get; set; }
-    public string BudgetCodeDesc { get; set; }
+    public string? BudgetCodeDesc { get; set; }
     public decimal? TotalRevenueVar { get; set; }
     public decimal? TotalNightsVar { get; set; }
     public decimal? TotalRevenueVarPercent { get; set; }

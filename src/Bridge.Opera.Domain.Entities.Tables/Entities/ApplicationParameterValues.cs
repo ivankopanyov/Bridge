@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ApplicationParameterValues
 {
-    public string Resort { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
-    public string DisplayYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
+    public string? DisplayYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

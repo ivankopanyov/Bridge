@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppModuleDetails
 {
-    public decimal AppModuleId { get; set; }
-    public string ParameterName { get; set; }
-    public string ParameterLabel { get; set; }
-    public string DataType { get; set; }
-    public string ParameterValue { get; set; }
-    public string DateFormatMask { get; set; }
+    public decimal? AppModuleId { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterLabel { get; set; }
+    public string? DataType { get; set; }
+    public string? ParameterValue { get; set; }
+    public string? DateFormatMask { get; set; }
     public decimal? OrderBy { get; set; }
-    public string LovSql { get; set; }
-    public string LovValidate { get; set; }
+    public string? LovSql { get; set; }
+    public string? LovValidate { get; set; }
     public decimal? Offset { get; set; }
 
     public virtual AppModules AppModule { get; set; }

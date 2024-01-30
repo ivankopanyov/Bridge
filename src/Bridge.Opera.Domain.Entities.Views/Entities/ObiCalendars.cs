@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiCalendars
 {
-    public string Calendar { get; set; }
-    public string CalendarDesc { get; set; }
+    public string? Calendar { get; set; }
+    public string? CalendarDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

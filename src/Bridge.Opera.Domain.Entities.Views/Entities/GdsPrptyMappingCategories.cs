@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GdsPrptyMappingCategories
 {
-    public string CategoryType { get; set; }
-    public string SubcategoryType { get; set; }
+    public string? CategoryType { get; set; }
+    public string? SubcategoryType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

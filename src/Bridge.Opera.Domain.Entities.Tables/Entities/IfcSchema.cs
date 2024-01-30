@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcSchema
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? RowId { get; set; }
-    public string DbfLogo { get; set; }
-    public string SchemaName { get; set; }
-    public string ActionName { get; set; }
-    public string Schema { get; set; }
+    public string? DbfLogo { get; set; }
+    public string? SchemaName { get; set; }
+    public string? ActionName { get; set; }
+    public string? Schema { get; set; }
     public decimal? AttrCount { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }

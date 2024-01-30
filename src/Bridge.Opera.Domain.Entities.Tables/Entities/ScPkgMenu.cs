@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScPkgMenu
 {
-    public decimal PkgEvLink { get; set; }
-    public decimal MenuId { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
+    public decimal? PkgEvLink { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }

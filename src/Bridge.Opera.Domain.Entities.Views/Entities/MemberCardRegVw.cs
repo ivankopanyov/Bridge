@@ -2,69 +2,69 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MemberCardRegVw
 {
-    public string MemberCardRegCode { get; set; }
-    public string MemberCardRegAction { get; set; }
-    public string MemberCardRegCro { get; set; }
-    public string MemberCardRegResort { get; set; }
-    public string MemberCardRegNo { get; set; }
-    public string SourceType { get; set; }
-    public string AppUser { get; set; }
-    public string AppUserRegCode { get; set; }
-    public string AppUserUniq { get; set; }
-    public string AppUserFirst { get; set; }
-    public string AppUserLast { get; set; }
-    public string AppUserEmail { get; set; }
+    public string? MemberCardRegCode { get; set; }
+    public string? MemberCardRegAction { get; set; }
+    public string? MemberCardRegCro { get; set; }
+    public string? MemberCardRegResort { get; set; }
+    public string? MemberCardRegNo { get; set; }
+    public string? SourceType { get; set; }
+    public string? AppUser { get; set; }
+    public string? AppUserRegCode { get; set; }
+    public string? AppUserUniq { get; set; }
+    public string? AppUserFirst { get; set; }
+    public string? AppUserLast { get; set; }
+    public string? AppUserEmail { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string BirthDateStr { get; set; }
-    public string EnvelopeGreeting { get; set; }
-    public string First { get; set; }
-    public string Gender { get; set; }
-    public string Language { get; set; }
-    public string Last { get; set; }
-    public string Middle { get; set; }
-    public string NameCode { get; set; }
+    public string? BirthDateStr { get; set; }
+    public string? EnvelopeGreeting { get; set; }
+    public string? First { get; set; }
+    public string? Gender { get; set; }
+    public string? Language { get; set; }
+    public string? Last { get; set; }
+    public string? Middle { get; set; }
+    public string? NameCode { get; set; }
     public decimal? NameId { get; set; }
-    public string Sfirst { get; set; }
-    public string Sname { get; set; }
-    public string Suffix { get; set; }
-    public string SxfirstName { get; set; }
-    public string Sxname { get; set; }
-    public string Title { get; set; }
+    public string? Sfirst { get; set; }
+    public string? Sname { get; set; }
+    public string? Suffix { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? Sxname { get; set; }
+    public string? Title { get; set; }
     public decimal? TitleSuffix { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string XfirstName { get; set; }
-    public string Xlanguage { get; set; }
-    public string XlastName { get; set; }
-    public string XmiddleName { get; set; }
-    public string Xsalutation { get; set; }
-    public string Xtitle { get; set; }
-    public string ChainCode { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string OrigMembershipLevel { get; set; }
-    public string FinalMembershipLevel { get; set; }
-    public string NameOnCard { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xlanguage { get; set; }
+    public string? XlastName { get; set; }
+    public string? XmiddleName { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? Xtitle { get; set; }
+    public string? ChainCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? OrigMembershipLevel { get; set; }
+    public string? FinalMembershipLevel { get; set; }
+    public string? NameOnCard { get; set; }
     public DateTime? OrigExpirationDate { get; set; }
     public DateTime? FinalExpirationDate { get; set; }
-    public string EnrollmentCode { get; set; }
+    public string? EnrollmentCode { get; set; }
     public DateTime? PaymentDate { get; set; }
-    public string FeeCode { get; set; }
+    public string? FeeCode { get; set; }
     public decimal? FeeAmount { get; set; }
-    public string PaymentComments { get; set; }
-    public string CreditCardType { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? PaymentComments { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? PaymentMethod { get; set; }
     public decimal? FeeRecId { get; set; }
     public decimal? MatchPointsUpperThershold { get; set; }
     public decimal? MatchPointsLowerThershold { get; set; }
-    public string RuleCode { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? RuleCode { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RecordStatus { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RecordStatus { get; set; }
     public DateTime? JoinedDate { get; set; }
     public decimal? BatchId { get; set; }
     public DateTime? ImportDate { get; set; }

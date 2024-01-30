@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GridHeader1
 {
-    public decimal GridId { get; set; }
-    public string FormName { get; set; }
-    public string GridName { get; set; }
-    public string TableName { get; set; }
+    public decimal? GridId { get; set; }
+    public string? FormName { get; set; }
+    public string? GridName { get; set; }
+    public string? TableName { get; set; }
     public decimal? UserId { get; set; }
     public decimal? GroupId { get; set; }
-    public string Resort { get; set; }
-    public string GroupBy { get; set; }
+    public string? Resort { get; set; }
+    public string? GroupBy { get; set; }
     public decimal? ColourId { get; set; }
-    public string FooterYn { get; set; }
-    public string SubtotalsYn { get; set; }
+    public string? FooterYn { get; set; }
+    public string? SubtotalsYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

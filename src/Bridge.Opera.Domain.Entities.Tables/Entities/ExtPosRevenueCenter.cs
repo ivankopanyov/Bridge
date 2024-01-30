@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtPosRevenueCenter
 {
-    public string RevCenter { get; set; }
-    public string Resort { get; set; }
-    public string RevCenterDesc { get; set; }
+    public string? RevCenter { get; set; }
+    public string? Resort { get; set; }
+    public string? RevCenterDesc { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? NumOfTables { get; set; }
     public decimal? AutoSvcCharge { get; set; }
-    public string MasterRevCenter { get; set; }
+    public string? MasterRevCenter { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

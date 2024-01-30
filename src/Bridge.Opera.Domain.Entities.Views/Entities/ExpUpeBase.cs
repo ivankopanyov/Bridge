@@ -4,15 +4,15 @@ public partial class ExpUpeBase
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string IsoLanguageCode { get; set; }
-    public string RetransmissionIndicator { get; set; }
+    public string? IsoLanguageCode { get; set; }
+    public string? RetransmissionIndicator { get; set; }
     public decimal? Iteration { get; set; }
-    public string HotelCode { get; set; }
-    public string HotelName { get; set; }
-    public string CurrencyCode { get; set; }
-    public string CountryCode { get; set; }
-    public string RateCode { get; set; }
-    public string RateCurrencyCode { get; set; }
+    public string? HotelCode { get; set; }
+    public string? HotelName { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCurrencyCode { get; set; }
     public decimal? RateAmount1 { get; set; }
     public decimal? RateAmount2 { get; set; }
     public decimal? RateAmount3 { get; set; }

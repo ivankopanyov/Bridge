@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResSpecialsStat
 {
-    public string Preference { get; set; }
-    public string Description { get; set; }
-    public decimal SpecialRequestId { get; set; }
+    public string? Preference { get; set; }
+    public string? Description { get; set; }
+    public decimal? SpecialRequestId { get; set; }
     public decimal? RoomsDay { get; set; }
     public decimal? RoomsMonth { get; set; }
     public decimal? RoomsYear { get; set; }

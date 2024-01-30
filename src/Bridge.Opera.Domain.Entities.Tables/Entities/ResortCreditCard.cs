@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortCreditCard
 {
-    public string Resort { get; set; }
-    public string CardType { get; set; }
+    public string? Resort { get; set; }
+    public string? CardType { get; set; }
     public byte? MinimumClosingProbability { get; set; }
-    public string MerchantNumber { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? MerchantNumber { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual CreditCard CreditCard { get; set; }

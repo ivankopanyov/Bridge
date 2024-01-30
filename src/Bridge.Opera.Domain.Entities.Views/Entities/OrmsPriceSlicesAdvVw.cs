@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsPriceSlicesAdvVw
 {
-    public DateTime StayDate { get; set; }
-    public string Resort { get; set; }
+    public DateTime? StayDate { get; set; }
+    public string? Resort { get; set; }
     public decimal? HeaderId { get; set; }
-    public string YieldCategory { get; set; }
-    public decimal PricesliceId { get; set; }
+    public string? YieldCategory { get; set; }
+    public decimal? PricesliceId { get; set; }
     public decimal? SliceFrom { get; set; }
     public decimal? SliceTo { get; set; }
 

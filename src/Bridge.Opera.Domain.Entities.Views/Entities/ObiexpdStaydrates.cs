@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdStaydrates
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public DateTime DailyRateDate { get; set; }
-    public string RateCode { get; set; }
+    public DateTime? DailyRateDate { get; set; }
+    public string? RateCode { get; set; }
     public decimal? NumberDays { get; set; }
     public decimal? LocalRateAmount { get; set; }
     public decimal? CentralRateAmount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string MarketCode { get; set; }
-    public decimal MembershipTrxLinkId { get; set; }
-    public string RoomNumber { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public decimal? MembershipTrxLinkId { get; set; }
+    public string? RoomNumber { get; set; }
     public decimal? ShareNights { get; set; }
-    public string Resort { get; set; }
-    public string ResourceId { get; set; }
-    public string RoomLabel { get; set; }
-    public string PseudoYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResourceId { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? PseudoYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

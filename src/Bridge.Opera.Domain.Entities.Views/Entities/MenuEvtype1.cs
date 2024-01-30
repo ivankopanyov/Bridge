@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MenuEvtype1
 {
-    public decimal MenuId { get; set; }
-    public string EventType { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? EventType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

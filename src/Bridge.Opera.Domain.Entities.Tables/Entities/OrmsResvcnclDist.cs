@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsResvcnclDist
 {
-    public string Resort { get; set; }
-    public string ResvCnclFlag { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public decimal BookingClassId { get; set; }
+    public string? Resort { get; set; }
+    public string? ResvCnclFlag { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public decimal? BookingClassId { get; set; }
     public byte LeadDay { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
     public decimal? Actual { get; set; }
     public decimal? AdjustedActual { get; set; }
     public decimal? History { get; set; }
@@ -20,10 +20,10 @@ public partial class OrmsResvcnclDist
     public decimal? MinForecast { get; set; }
     public decimal? MaxForecast { get; set; }
     public decimal? EventImpact { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual OrmsBookingClass BookingClass { get; set; }
     public virtual OrmsResvData OrmsResvData { get; set; }

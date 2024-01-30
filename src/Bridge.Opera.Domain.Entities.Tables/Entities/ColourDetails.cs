@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ColourDetails
 {
-    public decimal ColourId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string FieldType { get; set; }
-    public string OpenYn { get; set; }
-    public string Operator { get; set; }
-    public string Value { get; set; }
-    public string CloseYn { get; set; }
+    public decimal? ColourId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? FieldType { get; set; }
+    public string? OpenYn { get; set; }
+    public string? Operator { get; set; }
+    public string? Value { get; set; }
+    public string? CloseYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string Connector { get; set; }
-    public string Colour { get; set; }
-    public string ChainCode { get; set; }
+    public string? Connector { get; set; }
+    public string? Colour { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ColourHeader C { get; set; }
 

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtractionErrors
 {
-    public string FormName { get; set; }
-    public string ErrorDescription { get; set; }
-    public string Comments { get; set; }
+    public string? FormName { get; set; }
+    public string? ErrorDescription { get; set; }
+    public string? Comments { get; set; }
     public DateTime? CreatedDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

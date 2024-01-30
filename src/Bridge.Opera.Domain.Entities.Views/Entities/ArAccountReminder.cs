@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAccountReminder
 {
-    public decimal AccountCode { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
-    public string AccountSname { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
-    public string LetterName { get; set; }
+    public decimal? AccountCode { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountSname { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public string? LetterName { get; set; }
     public decimal? Age { get; set; }
-    public string DateForAging { get; set; }
-    public string Fax { get; set; }
+    public string? DateForAging { get; set; }
+    public string? Fax { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

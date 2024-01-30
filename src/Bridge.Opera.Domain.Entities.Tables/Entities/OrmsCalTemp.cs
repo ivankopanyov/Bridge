@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsCalTemp
 {
-    public decimal Id { get; set; }
-    public DateTime Dt { get; set; }
+    public decimal? Id { get; set; }
+    public DateTime? Dt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

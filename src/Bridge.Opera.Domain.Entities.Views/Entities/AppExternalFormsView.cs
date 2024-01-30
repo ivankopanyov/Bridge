@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AppExternalFormsView
 {
-    public decimal ModuleId { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string ModuleType { get; set; }
+    public decimal? ModuleId { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? ModuleType { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string InsertUser { get; set; }
-    public string InsertDate { get; set; }
-    public string RelModName { get; set; }
-    public string AnyParameters { get; set; }
-    public string CanBeRunSeparately { get; set; }
-    public string LanguageCode { get; set; }
-    public string FormToRun { get; set; }
-    public string ProtectedYn { get; set; }
-    public string UsedInApp { get; set; }
-    public string UserDefinedYn { get; set; }
-    public string GroupInApp { get; set; }
-    public decimal GroupModuleId { get; set; }
+    public string? InsertUser { get; set; }
+    public string? InsertDate { get; set; }
+    public string? RelModName { get; set; }
+    public string? AnyParameters { get; set; }
+    public string? CanBeRunSeparately { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? FormToRun { get; set; }
+    public string? ProtectedYn { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? UserDefinedYn { get; set; }
+    public string? GroupInApp { get; set; }
+    public decimal? GroupModuleId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

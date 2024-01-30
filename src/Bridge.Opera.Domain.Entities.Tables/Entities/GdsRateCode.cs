@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateCode
 {
-    public string RateCode { get; set; }
-    public string GdsHost { get; set; }
-    public string GdsRateCode1 { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string GdsRateCategory { get; set; }
-    public string GdsRateLevel { get; set; }
-    public string NegRateCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? GdsHost { get; set; }
+    public string? GdsRateCode1 { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? GdsRateCategory { get; set; }
+    public string? GdsRateLevel { get; set; }
+    public string? NegRateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

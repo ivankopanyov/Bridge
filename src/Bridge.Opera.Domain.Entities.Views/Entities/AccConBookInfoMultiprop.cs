@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class AccConBookInfoMultiprop
 {
     public decimal? BookingId { get; set; }
-    public string Description { get; set; }
-    public string RmsOwner { get; set; }
+    public string? Description { get; set; }
+    public string? RmsOwner { get; set; }
     public decimal? RmsOwnerId { get; set; }
-    public string CatOwner { get; set; }
+    public string? CatOwner { get; set; }
     public decimal? CatOwnerId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string BookingType { get; set; }
+    public string? BookingType { get; set; }
     public decimal? TotalRoomNights { get; set; }
     public decimal? AverageRate { get; set; }
     public decimal? TotalRoomRevenue { get; set; }
@@ -18,10 +18,10 @@ public partial class AccConBookInfoMultiprop
     public decimal? ActualAverageRate { get; set; }
     public decimal? TotalActualRoomRevenue { get; set; }
     public DateTime? BookedDate { get; set; }
-    public string Source { get; set; }
-    public string MarketCode { get; set; }
-    public string IndustryCode { get; set; }
-    public string CateringonlyYn { get; set; }
+    public string? Source { get; set; }
+    public string? MarketCode { get; set; }
+    public string? IndustryCode { get; set; }
+    public string? CateringonlyYn { get; set; }
     public decimal? TotalFoodRevenue { get; set; }
     public decimal? TotalBeverageRevenue { get; set; }
     public decimal? TotalRentalRevenue { get; set; }
@@ -30,48 +30,48 @@ public partial class AccConBookInfoMultiprop
     public decimal? TotalActualBeverageRevenue { get; set; }
     public decimal? TotalActualRentalRevenue { get; set; }
     public decimal? TotalActualMiscRevenue { get; set; }
-    public string AccountName { get; set; }
-    public string AgentName { get; set; }
-    public string SourceName { get; set; }
-    public string ContactName { get; set; }
-    public string ContactPosition { get; set; }
-    public string ContactGreeting { get; set; }
-    public string ContactAddress1 { get; set; }
-    public string ContactCity { get; set; }
-    public string ContactState { get; set; }
-    public string ContactZipCode { get; set; }
-    public string ContactPrimaryPhone { get; set; }
-    public string ContactRelationship { get; set; }
-    public string ContactFirst { get; set; }
-    public string ContactLast { get; set; }
-    public string BookingStatus { get; set; }
-    public string CatStatus { get; set; }
+    public string? AccountName { get; set; }
+    public string? AgentName { get; set; }
+    public string? SourceName { get; set; }
+    public string? ContactName { get; set; }
+    public string? ContactPosition { get; set; }
+    public string? ContactGreeting { get; set; }
+    public string? ContactAddress1 { get; set; }
+    public string? ContactCity { get; set; }
+    public string? ContactState { get; set; }
+    public string? ContactZipCode { get; set; }
+    public string? ContactPrimaryPhone { get; set; }
+    public string? ContactRelationship { get; set; }
+    public string? ContactFirst { get; set; }
+    public string? ContactLast { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? CatStatus { get; set; }
     public decimal? ActualCovers { get; set; }
-    public string RoomsManager { get; set; }
-    public string CateringManager { get; set; }
-    public string BlockCode { get; set; }
+    public string? RoomsManager { get; set; }
+    public string? CateringManager { get; set; }
+    public string? BlockCode { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? BookedCovers { get; set; }
     public decimal? GuaranteedAttendees { get; set; }
     public decimal? AccountId { get; set; }
-    public string ContactName2 { get; set; }
-    public string ContactPosition2 { get; set; }
-    public string ContactGreeting2 { get; set; }
-    public string ContactAddress12 { get; set; }
-    public string ContactCity2 { get; set; }
-    public string ContactState2 { get; set; }
-    public string ContactZipCode2 { get; set; }
-    public string ContactPrimaryPhoneNo2 { get; set; }
-    public string ContactFirst2 { get; set; }
-    public string ContactLast2 { get; set; }
-    public string XaccountName { get; set; }
-    public string XcontactFullName { get; set; }
-    public string ContactEmail { get; set; }
-    public string XcontactFullName2 { get; set; }
-    public string ContactEmail2 { get; set; }
-    public string CatQuoteCurr { get; set; }
-    public string RmsQuoteCurr { get; set; }
-    public string Resort { get; set; }
+    public string? ContactName2 { get; set; }
+    public string? ContactPosition2 { get; set; }
+    public string? ContactGreeting2 { get; set; }
+    public string? ContactAddress12 { get; set; }
+    public string? ContactCity2 { get; set; }
+    public string? ContactState2 { get; set; }
+    public string? ContactZipCode2 { get; set; }
+    public string? ContactPrimaryPhoneNo2 { get; set; }
+    public string? ContactFirst2 { get; set; }
+    public string? ContactLast2 { get; set; }
+    public string? XaccountName { get; set; }
+    public string? XcontactFullName { get; set; }
+    public string? ContactEmail { get; set; }
+    public string? XcontactFullName2 { get; set; }
+    public string? ContactEmail2 { get; set; }
+    public string? CatQuoteCurr { get; set; }
+    public string? RmsQuoteCurr { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidRateTransactions
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string EntityType { get; set; }
-    public string EntityValue { get; set; }
-    public string TrxCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? EntityType { get; set; }
+    public string? EntityValue { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

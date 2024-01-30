@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrmsHurdleRates
 {
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public DateTime HurdleDate { get; set; }
-    public decimal Los { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public DateTime? HurdleDate { get; set; }
+    public decimal? Los { get; set; }
     public decimal? Hurdle { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? OverrideHurdle { get; set; }
-    public string ApprovedYn { get; set; }
+    public string? ApprovedYn { get; set; }
     public decimal? ApprovedBy { get; set; }
     public DateTime? ApprovedDate { get; set; }
     public DateTime? ExpiryDate { get; set; }
@@ -20,9 +20,9 @@ public partial class OrmsHurdleRates
     public DateTime? OverrideDate { get; set; }
     public decimal? HurdleCeiling { get; set; }
     public decimal? RuleHurdle { get; set; }
-    public string ScheduledYn { get; set; }
+    public string? ScheduledYn { get; set; }
     public decimal? AlertId { get; set; }
-    public string AlertKey { get; set; }
+    public string? AlertKey { get; set; }
     public decimal? AppliedHurdle { get; set; }
     public decimal? PricesliceId { get; set; }
     public decimal? PriceConfigHeaderId { get; set; }

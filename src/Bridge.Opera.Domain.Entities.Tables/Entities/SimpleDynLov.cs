@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SimpleDynLov
 {
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ObjectName { get; set; }
-    public decimal ColumnNumbers { get; set; }
-    public string Title { get; set; }
-    public string Column1 { get; set; }
-    public string Column2 { get; set; }
-    public string Column3 { get; set; }
-    public string LovQuery { get; set; }
-    public string OrderBy { get; set; }
-    public string MultiSelectYn { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ObjectName { get; set; }
+    public decimal? ColumnNumbers { get; set; }
+    public string? Title { get; set; }
+    public string? Column1 { get; set; }
+    public string? Column2 { get; set; }
+    public string? Column3 { get; set; }
+    public string? LovQuery { get; set; }
+    public string? OrderBy { get; set; }
+    public string? MultiSelectYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

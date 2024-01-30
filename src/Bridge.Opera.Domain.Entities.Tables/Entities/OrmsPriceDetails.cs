@@ -7,14 +7,14 @@ public partial class OrmsPriceDetails
         OrmsPriceRoomDelta = new HashSet<OrmsPriceRoomDelta>();
     }
 
-    public string Resort { get; set; }
-    public decimal HeaderId { get; set; }
-    public decimal PricesliceId { get; set; }
-    public decimal PriceFrom { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? HeaderId { get; set; }
+    public decimal? PricesliceId { get; set; }
+    public decimal? PriceFrom { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual OrmsPriceHeader OrmsPriceHeader { get; set; }
     public virtual OrmsPriceSlices Priceslice { get; set; }

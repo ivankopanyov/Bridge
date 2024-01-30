@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DmAllotmentChanges
 {
-    public decimal AllotmentChangeId { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string AllotmentCode { get; set; }
+    public decimal? AllotmentChangeId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? AllotmentCode { get; set; }
     public DateTime? ArrivalDate { get; set; }
-    public DateTime StayDate { get; set; }
+    public DateTime? StayDate { get; set; }
     public decimal? Roomnights { get; set; }
     public decimal? RoomRevenue { get; set; }
-    public string BookingStatus { get; set; }
-    public string MainSrepResort { get; set; }
-    public string MainSrepCode { get; set; }
-    public string RmsSrepResort { get; set; }
-    public string RmsSrepCode { get; set; }
-    public string CatSrepResort { get; set; }
-    public string CatSrepCode { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? MainSrepResort { get; set; }
+    public string? MainSrepCode { get; set; }
+    public string? RmsSrepResort { get; set; }
+    public string? RmsSrepCode { get; set; }
+    public string? CatSrepResort { get; set; }
+    public string? CatSrepCode { get; set; }
     public DateTime? DmProcessed { get; set; }
-    public string DmProcessedYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? DmProcessedYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

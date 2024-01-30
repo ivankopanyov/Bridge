@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ScSecContactByBusblock
 {
-    public string BusblockProperty { get; set; }
-    public decimal BusblockId { get; set; }
-    public string SecConRelationship { get; set; }
-    public string SecConRelationshipDesc { get; set; }
-    public decimal SecConId { get; set; }
-    public string SecConLastName { get; set; }
-    public string SecConFirstName { get; set; }
-    public string SecConMiddleName { get; set; }
-    public string SecConFullName { get; set; }
-    public string SecConAddress1 { get; set; }
-    public string SecConAddress2 { get; set; }
-    public string SecConAddress3 { get; set; }
-    public string SecConAddress4 { get; set; }
-    public string SecConState { get; set; }
-    public string SecConCountry { get; set; }
-    public string SecConCity { get; set; }
-    public string SecConCityExt { get; set; }
-    public string SecConZipCode { get; set; }
-    public string SecConFax { get; set; }
-    public string SecConPhone { get; set; }
-    public string SecConEmail { get; set; }
-    public string SecConBusinessGreeting { get; set; }
-    public string SecConLetterGreeting { get; set; }
-    public string SecConPosition { get; set; }
-    public string SecConDepartment { get; set; }
-    public string SecConXfirstName { get; set; }
-    public string SecConXlastName { get; set; }
-    public string SecConXfullName { get; set; }
-    public string SecConXtitle { get; set; }
-    public string SecConXsalutation { get; set; }
-    public string SecConXenvelopeGreeting { get; set; }
+    public string? BusblockProperty { get; set; }
+    public decimal? BusblockId { get; set; }
+    public string? SecConRelationship { get; set; }
+    public string? SecConRelationshipDesc { get; set; }
+    public decimal? SecConId { get; set; }
+    public string? SecConLastName { get; set; }
+    public string? SecConFirstName { get; set; }
+    public string? SecConMiddleName { get; set; }
+    public string? SecConFullName { get; set; }
+    public string? SecConAddress1 { get; set; }
+    public string? SecConAddress2 { get; set; }
+    public string? SecConAddress3 { get; set; }
+    public string? SecConAddress4 { get; set; }
+    public string? SecConState { get; set; }
+    public string? SecConCountry { get; set; }
+    public string? SecConCity { get; set; }
+    public string? SecConCityExt { get; set; }
+    public string? SecConZipCode { get; set; }
+    public string? SecConFax { get; set; }
+    public string? SecConPhone { get; set; }
+    public string? SecConEmail { get; set; }
+    public string? SecConBusinessGreeting { get; set; }
+    public string? SecConLetterGreeting { get; set; }
+    public string? SecConPosition { get; set; }
+    public string? SecConDepartment { get; set; }
+    public string? SecConXfirstName { get; set; }
+    public string? SecConXlastName { get; set; }
+    public string? SecConXfullName { get; set; }
+    public string? SecConXtitle { get; set; }
+    public string? SecConXsalutation { get; set; }
+    public string? SecConXenvelopeGreeting { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

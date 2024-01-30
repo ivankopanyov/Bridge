@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class UserAccessView
 {
-    public string AppUser { get; set; }
-    public string FullName { get; set; }
+    public string? AppUser { get; set; }
+    public string? FullName { get; set; }
     public decimal? AppUserId { get; set; }
     public decimal? NameId { get; set; }
-    public string Resort { get; set; }
-    public string Skipcompare { get; set; }
+    public string? Resort { get; set; }
+    public string? Skipcompare { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

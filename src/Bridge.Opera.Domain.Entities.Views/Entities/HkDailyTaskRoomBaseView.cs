@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class HkDailyTaskRoomBaseView
 {
     public decimal? Credits { get; set; }
-    public string CreditsRem { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public string RoomInstructions { get; set; }
-    public string ServiceTime { get; set; }
-    public decimal TaskSeqNo { get; set; }
-    public string Turndown { get; set; }
+    public string? CreditsRem { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomInstructions { get; set; }
+    public string? ServiceTime { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? Turndown { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

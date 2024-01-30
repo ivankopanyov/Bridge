@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BudgetMonthlyView
 {
-    public string Resort { get; set; }
-    public decimal AccountingYear { get; set; }
-    public string AccountingType { get; set; }
-    public string BudgetType { get; set; }
-    public string BudgetCodeType { get; set; }
-    public string BudgetCodeValue { get; set; }
-    public string BudgetMonth { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountingYear { get; set; }
+    public string? AccountingType { get; set; }
+    public string? BudgetType { get; set; }
+    public string? BudgetCodeType { get; set; }
+    public string? BudgetCodeValue { get; set; }
+    public string? BudgetMonth { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? TotalNights { get; set; }
     public decimal? OrderBy { get; set; }

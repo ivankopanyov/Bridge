@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OneTimePromoCouponresortVw
 {
-    public string PromotionType { get; set; }
-    public string CouponCode { get; set; }
-    public string Resort { get; set; }
-    public string VbhResort { get; set; }
-    public string BenefitSummary { get; set; }
-    public string AvailOnlyYn { get; set; }
-    public string PromotionCode { get; set; }
-    public string PromoName { get; set; }
-    public string Status { get; set; }
-    public string IsCouponAvailableYn { get; set; }
+    public string? PromotionType { get; set; }
+    public string? CouponCode { get; set; }
+    public string? Resort { get; set; }
+    public string? VbhResort { get; set; }
+    public string? BenefitSummary { get; set; }
+    public string? AvailOnlyYn { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? PromoName { get; set; }
+    public string? Status { get; set; }
+    public string? IsCouponAvailableYn { get; set; }
     public decimal? UsedInResvNameId { get; set; }
-    public string UsedInResvResort { get; set; }
-    public string InactiveYn { get; set; }
-    public string VoucherBenefitCode { get; set; }
+    public string? UsedInResvResort { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? VoucherBenefitCode { get; set; }
     public DateTime? VbhBeginDate { get; set; }
     public DateTime? VbhEndDate { get; set; }
     public DateTime? VbhInactiveDate { get; set; }
@@ -23,11 +23,11 @@ public partial class OneTimePromoCouponresortVw
     public DateTime? PromoBookingEnddate { get; set; }
     public DateTime? PromoStayStartdate { get; set; }
     public DateTime? PromoStayEnddate { get; set; }
-    public string PromoInstructions { get; set; }
-    public string CategoryDesc { get; set; }
-    public string PromoInformation { get; set; }
-    public string DatabaseId { get; set; }
-    public string OtpcUiFlg { get; set; }
+    public string? PromoInstructions { get; set; }
+    public string? CategoryDesc { get; set; }
+    public string? PromoInformation { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? OtpcUiFlg { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

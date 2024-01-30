@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AttractionClass
 {
-    public string AttractionClass1 { get; set; }
-    public string Description { get; set; }
+    public string? AttractionClass1 { get; set; }
+    public string? Description { get; set; }
     public decimal? AttractionId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

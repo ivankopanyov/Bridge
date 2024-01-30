@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NoteGroups
 {
-    public string NoteType { get; set; }
-    public string Desc1 { get; set; }
+    public string? NoteType { get; set; }
+    public string? Desc1 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

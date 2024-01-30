@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MarketingCitiesTemplate
 {
-    public string RegionCode { get; set; }
-    public string MarketingCity { get; set; }
-    public string DistanceType { get; set; }
-    public string Direction { get; set; }
-    public string DrivingTime { get; set; }
+    public string? RegionCode { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? DistanceType { get; set; }
+    public string? Direction { get; set; }
+    public string? DrivingTime { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? Distance { get; set; }
-    public string CityDescription { get; set; }
-    public string ChainCode { get; set; }
+    public string? CityDescription { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? DisplaySeq { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

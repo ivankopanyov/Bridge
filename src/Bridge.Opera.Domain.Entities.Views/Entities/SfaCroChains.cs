@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SfaCroChains
 {
-    public string CroCode { get; set; }
-    public string ChainCode { get; set; }
-    public string DefaultYn { get; set; }
+    public string? CroCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? DefaultYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

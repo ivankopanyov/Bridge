@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class GuestLookupActivities
 {
     public decimal? LookupSeqId { get; set; }
-    public string LookupRequestId { get; set; }
-    public string ActivityType { get; set; }
-    public string ActivityLocation { get; set; }
+    public string? LookupRequestId { get; set; }
+    public string? ActivityType { get; set; }
+    public string? ActivityLocation { get; set; }
     public decimal? NoOfPersons { get; set; }
-    public string Notes { get; set; }
+    public string? Notes { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Duration { get; set; }
+    public string? Duration { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

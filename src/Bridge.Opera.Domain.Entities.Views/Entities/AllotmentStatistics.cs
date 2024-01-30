@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentStatistics
 {
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
     public decimal? DefiniteRooms { get; set; }
     public decimal? TentativeRooms { get; set; }
     public decimal? AvailableRooms { get; set; }

@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oMigrationTasks
 {
-    public string TaskName { get; set; }
+    public string? TaskName { get; set; }
     public decimal? TaskId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

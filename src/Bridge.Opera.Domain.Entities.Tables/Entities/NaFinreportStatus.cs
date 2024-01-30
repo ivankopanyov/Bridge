@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NaFinreportStatus
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public decimal Reportid { get; set; }
-    public string Status { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public decimal? Reportid { get; set; }
+    public string? Status { get; set; }
     public decimal? OrderBy { get; set; }
-    public string InterimYn { get; set; }
-    public decimal RequestId { get; set; }
-    public string LinkedReportId { get; set; }
+    public string? InterimYn { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? LinkedReportId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

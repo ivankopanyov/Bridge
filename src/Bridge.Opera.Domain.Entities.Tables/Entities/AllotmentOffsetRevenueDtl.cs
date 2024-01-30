@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AllotmentOffsetRevenueDtl
 {
-    public decimal Id { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public DateTime ConsideredDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string RateCode { get; set; }
-    public string ResvType { get; set; }
-    public string ResvInvType { get; set; }
-    public string PseudoRoomYn { get; set; }
+    public decimal? Id { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public DateTime? ConsideredDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? ResvType { get; set; }
+    public string? ResvInvType { get; set; }
+    public string? PseudoRoomYn { get; set; }
     public decimal? Occupancy1 { get; set; }
     public decimal? Occupancy2 { get; set; }
     public decimal? Occupancy3 { get; set; }
     public decimal? Occupancy4 { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FoodRevenue { get; set; }
     public decimal? OtherRevenue { get; set; }
@@ -29,12 +29,12 @@ public partial class AllotmentOffsetRevenueDtl
     public decimal? OtherRevenueTax { get; set; }
     public decimal? TotalRevenueTax { get; set; }
     public decimal? NonRevenueTax { get; set; }
-    public string OffsetType { get; set; }
+    public string? OffsetType { get; set; }
     public DateTime? ExchangeDate { get; set; }
-    public string ExchangeCurrency { get; set; }
+    public string? ExchangeCurrency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? TotalRevenue { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? RoomRevenueCat { get; set; }
     public decimal? FoodRevenueCat { get; set; }
     public decimal? OtherRevenueCat { get; set; }

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class InactivePermissionGroupView
 {
-    public string PermissionGroup { get; set; }
-    public string ParameterName { get; set; }
+    public string? PermissionGroup { get; set; }
+    public string? ParameterName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SnapshotTables1
 {
-    public string TableName { get; set; }
-    public string TableOwner { get; set; }
+    public string? TableName { get; set; }
+    public string? TableOwner { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OvosNoshowExtensions
 {
-    public decimal NoshowExtId { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public decimal ResvNameId { get; set; }
+    public decimal? NoshowExtId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? OriginalBeginDate { get; set; }
     public decimal? ActionInstanceId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
-    public string PaymentMethod { get; set; }
+    public string? PaymentMethod { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string GuaranteeCode { get; set; }
+    public string? GuaranteeCode { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? ShareAmount { get; set; }
@@ -22,22 +22,22 @@ public partial class OvosNoshowExtensions
     public decimal? TravelAgentId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? SourceId { get; set; }
-    public string OriginOfBooking { get; set; }
-    public string MarketCode { get; set; }
-    public string RateCode { get; set; }
+    public string? OriginOfBooking { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string BlockCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string BookedRoomCategory { get; set; }
+    public string? BlockCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? BookedRoomCategory { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string Room { get; set; }
-    public string SharedYn { get; set; }
+    public string? Room { get; set; }
+    public string? SharedYn { get; set; }
     public decimal? Cribs { get; set; }
     public decimal? ExtraBeds { get; set; }
-    public string PrimaryShareYn { get; set; }
-    public string RoomClass { get; set; }
+    public string? PrimaryShareYn { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string SharingPersons { get; set; }
+    public string? SharingPersons { get; set; }
     public decimal? PhysicalQuantity { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

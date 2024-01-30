@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphAvailability
 {
-    public string PropertyCode { get; set; }
-    public string ReservationDate { get; set; }
-    public string RoomType { get; set; }
-    public string NonGroup { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? ReservationDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? NonGroup { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MitEvtype
 {
-    public string Resort { get; set; }
-    public decimal MitId { get; set; }
-    public string EventType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MitId { get; set; }
+    public string? EventType { get; set; }
 
     public virtual GemMenuitem GemMenuitem { get; set; }
 

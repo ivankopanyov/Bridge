@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScRoomDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
 

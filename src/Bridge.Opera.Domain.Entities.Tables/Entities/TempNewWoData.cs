@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempNewWoData
 {
-    public decimal WoNumber { get; set; }
-    public string Resort { get; set; }
-    public string ActClass { get; set; }
-    public string ActType { get; set; }
+    public decimal? WoNumber { get; set; }
+    public string? Resort { get; set; }
+    public string? ActClass { get; set; }
+    public string? ActType { get; set; }
     public decimal? AssignedTo { get; set; }
     public decimal? Author { get; set; }
     public decimal? CompletedBy { get; set; }
@@ -13,11 +13,11 @@ public partial class TempNewWoData
     public decimal? CreatedBy { get; set; }
     public DateTime? CreatedDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Notes { get; set; }
-    public string PriorityCode { get; set; }
-    public string PrivateYn { get; set; }
+    public string? Notes { get; set; }
+    public string? PriorityCode { get; set; }
+    public string? PrivateYn { get; set; }
     public DateTime? StartDate { get; set; }
-    public string Tracecode { get; set; }
+    public string? Tracecode { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }

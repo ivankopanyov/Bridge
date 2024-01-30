@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemMenuitemDepartment1
 {
-    public decimal MitId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
+    public decimal? MitId { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

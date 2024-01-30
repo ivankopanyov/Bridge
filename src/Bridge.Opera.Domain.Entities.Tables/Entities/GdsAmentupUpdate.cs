@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsAmentupUpdate
 {
-    public string Resort { get; set; }
-    public string AmenityCode { get; set; }
-    public string AmenityCodeIdentifier { get; set; }
-    public string AmenityCodeFlag { get; set; }
+    public string? Resort { get; set; }
+    public string? AmenityCode { get; set; }
+    public string? AmenityCodeIdentifier { get; set; }
+    public string? AmenityCodeFlag { get; set; }
     public decimal? PropupId { get; set; }
-    public string GdsHost { get; set; }
+    public string? GdsHost { get; set; }
 
     public virtual GdsPropupUpdate Propup { get; set; }
 

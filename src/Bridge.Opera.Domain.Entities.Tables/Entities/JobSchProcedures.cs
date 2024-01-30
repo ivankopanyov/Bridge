@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class JobSchProcedures
 {
-    public string JobProcCode { get; set; }
-    public string DisplayTitle { get; set; }
-    public decimal JobCreateMode { get; set; }
-    public string JobType { get; set; }
-    public string JobProcGroup { get; set; }
-    public string Comments { get; set; }
+    public string? JobProcCode { get; set; }
+    public string? DisplayTitle { get; set; }
+    public decimal? JobCreateMode { get; set; }
+    public string? JobType { get; set; }
+    public string? JobProcGroup { get; set; }
+    public string? Comments { get; set; }
     public decimal? MaxInstances { get; set; }
-    public string MaxInstancesFlag { get; set; }
-    public string UsedInApp { get; set; }
-    public string DefaultApplication { get; set; }
-    public string JobAction { get; set; }
+    public string? MaxInstancesFlag { get; set; }
+    public string? UsedInApp { get; set; }
+    public string? DefaultApplication { get; set; }
+    public string? JobAction { get; set; }
     public decimal? NumberOfArguments { get; set; }
-    public string JobClass { get; set; }
-    public string AutoDropYn { get; set; }
-    public string ProgramName { get; set; }
-    public string ScheduleName { get; set; }
-    public string EventCondition { get; set; }
-    public string EventQueue { get; set; }
-    public string QueueSpec { get; set; }
-    public string RepeatInterval { get; set; }
+    public string? JobClass { get; set; }
+    public string? AutoDropYn { get; set; }
+    public string? ProgramName { get; set; }
+    public string? ScheduleName { get; set; }
+    public string? EventCondition { get; set; }
+    public string? EventQueue { get; set; }
+    public string? QueueSpec { get; set; }
+    public string? RepeatInterval { get; set; }
     public decimal? AutoRunExpHrs { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

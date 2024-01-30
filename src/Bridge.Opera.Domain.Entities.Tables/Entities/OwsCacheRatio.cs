@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsCacheRatio
 {
-    public string Resort { get; set; }
-    public string Channel { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public decimal Nights { get; set; }
-    public string DataInfo { get; set; }
-    public DateTime LastUpdateTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public string? Channel { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public decimal? Nights { get; set; }
+    public string? DataInfo { get; set; }
+    public DateTime? LastUpdateTimestamp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

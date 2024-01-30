@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArStmtHistory
 {
-    public string Resort { get; set; }
-    public decimal AccountCode { get; set; }
-    public DateTime StmtSentDate { get; set; }
-    public DateTime TruncStmtSentDate { get; set; }
-    public string AccountNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountCode { get; set; }
+    public DateTime? StmtSentDate { get; set; }
+    public DateTime? TruncStmtSentDate { get; set; }
+    public string? AccountNo { get; set; }
     public DateTime? ForwardDate { get; set; }
     public DateTime? TillDate { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
-    public string PrintzeroYn { get; set; }
-    public string PrintfullYn { get; set; }
-    public string PromotionalText { get; set; }
+    public string? PrintzeroYn { get; set; }
+    public string? PrintfullYn { get; set; }
+    public string? PromotionalText { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdateUser { get; set; }
-    public string ReportName { get; set; }
+    public string? UpdateUser { get; set; }
+    public string? ReportName { get; set; }
     public decimal? StatementNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

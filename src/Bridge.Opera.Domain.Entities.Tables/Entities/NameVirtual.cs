@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NameVirtual
 {
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
-    public decimal Pool { get; set; }
-    public string Virtual { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public decimal? Pool { get; set; }
+    public string? Virtual { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

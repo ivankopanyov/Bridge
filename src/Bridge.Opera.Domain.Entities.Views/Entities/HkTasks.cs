@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkTasks
 {
-    public string TaskCode { get; set; }
-    public string Description { get; set; }
-    public string LongDescription { get; set; }
+    public string? TaskCode { get; set; }
+    public string? Description { get; set; }
+    public string? LongDescription { get; set; }
     public DateTime? TaskAssignDate { get; set; }
     public decimal? Credits { get; set; }
     public decimal? CreditsDeparture { get; set; }
     public decimal? OrderSeq { get; set; }
-    public string Color { get; set; }
-    public string Frequency { get; set; }
-    public string UnitOfFrequency { get; set; }
-    public string DepartureRoomDefaultYn { get; set; }
-    public string CustomizableYn { get; set; }
-    public string LinenChangeYn { get; set; }
-    public string GuestRequestedYn { get; set; }
+    public string? Color { get; set; }
+    public string? Frequency { get; set; }
+    public string? UnitOfFrequency { get; set; }
+    public string? DepartureRoomDefaultYn { get; set; }
+    public string? CustomizableYn { get; set; }
+    public string? LinenChangeYn { get; set; }
+    public string? GuestRequestedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

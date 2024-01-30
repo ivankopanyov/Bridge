@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractReplyStatus
 {
-    public string StatusCode { get; set; }
-    public string Label { get; set; }
+    public string? StatusCode { get; set; }
+    public string? Label { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipProfileTypes
 {
-    public string MembershipType { get; set; }
-    public string NameType { get; set; }
+    public string? MembershipType { get; set; }
+    public string? NameType { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

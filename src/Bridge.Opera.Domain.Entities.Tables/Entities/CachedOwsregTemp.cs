@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CachedOwsregTemp
 {
-    public string ChannelCode { get; set; }
-    public string Resort { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public decimal Nights { get; set; }
-    public decimal Adults { get; set; }
-    public decimal Children { get; set; }
-    public decimal Children1 { get; set; }
-    public decimal Children2 { get; set; }
-    public decimal Children3 { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public decimal? Nights { get; set; }
+    public decimal? Adults { get; set; }
+    public decimal? Children { get; set; }
+    public decimal? Children1 { get; set; }
+    public decimal? Children2 { get; set; }
+    public decimal? Children3 { get; set; }
     public decimal? LastUpdateUser { get; set; }
     public DateTime? LastUpdateTime { get; set; }
-    public string V1 { get; set; }
-    public string V2 { get; set; }
+    public string? V1 { get; set; }
+    public string? V2 { get; set; }
     public decimal? N1 { get; set; }
     public DateTime? D1 { get; set; }
-    public string SearchCode { get; set; }
-    public string SearchType { get; set; }
-    public string PropertyList { get; set; }
-    public decimal NoRooms { get; set; }
-    public decimal MaxRate { get; set; }
-    public decimal MinRate { get; set; }
-    public string CurrencyCode { get; set; }
-    public string RateCalcMethod { get; set; }
-    public string MatchQualifier { get; set; }
-    public string RateCodeList { get; set; }
-    public string QualifiedList { get; set; }
-    public string QualifiedTypes { get; set; }
-    public string ChainCode { get; set; }
-    public string RegionCode { get; set; }
-    public string CityCode { get; set; }
-    public string StateCode { get; set; }
-    public string CountryCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string CommissionCode { get; set; }
-    public string AvailRoomTypes { get; set; }
+    public string? SearchCode { get; set; }
+    public string? SearchType { get; set; }
+    public string? PropertyList { get; set; }
+    public decimal? NoRooms { get; set; }
+    public decimal? MaxRate { get; set; }
+    public decimal? MinRate { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? RateCalcMethod { get; set; }
+    public string? MatchQualifier { get; set; }
+    public string? RateCodeList { get; set; }
+    public string? QualifiedList { get; set; }
+    public string? QualifiedTypes { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RegionCode { get; set; }
+    public string? CityCode { get; set; }
+    public string? StateCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? AvailRoomTypes { get; set; }
     public decimal? ReturnValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

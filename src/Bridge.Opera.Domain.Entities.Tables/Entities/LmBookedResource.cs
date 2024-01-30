@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmBookedResource
 {
-    public decimal BookedResId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookedActId { get; set; }
+    public decimal? BookedResId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookedActId { get; set; }
     public decimal? BookedElId { get; set; }
-    public string ResType { get; set; }
-    public string ResId { get; set; }
-    public decimal Price { get; set; }
-    public decimal Qty { get; set; }
-    public decimal Priority010 { get; set; }
-    public string AddonYn { get; set; }
+    public string? ResType { get; set; }
+    public string? ResId { get; set; }
+    public decimal? Price { get; set; }
+    public decimal? Qty { get; set; }
+    public decimal? Priority010 { get; set; }
+    public string? AddonYn { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual LmBookedElements LmBookedElements { get; set; }
 

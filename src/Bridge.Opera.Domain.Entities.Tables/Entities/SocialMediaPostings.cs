@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SocialMediaPostings
 {
-    public decimal PostSequence { get; set; }
-    public decimal SocialMediaPgId { get; set; }
-    public string SocialNetwork { get; set; }
-    public string PostCode { get; set; }
-    public string PostedToPage { get; set; }
-    public string PostedToEmail { get; set; }
-    public string PostedMessage { get; set; }
+    public decimal? PostSequence { get; set; }
+    public decimal? SocialMediaPgId { get; set; }
+    public string? SocialNetwork { get; set; }
+    public string? PostCode { get; set; }
+    public string? PostedToPage { get; set; }
+    public string? PostedToEmail { get; set; }
+    public string? PostedMessage { get; set; }
     public DateTime? PostedDate { get; set; }
     public decimal? PostedByUser { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

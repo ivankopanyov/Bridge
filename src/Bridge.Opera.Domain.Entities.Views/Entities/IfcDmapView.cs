@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcDmapView
 {
-    public string Resort { get; set; }
-    public string DbfLogo { get; set; }
+    public string? Resort { get; set; }
+    public string? DbfLogo { get; set; }
     public int? RowNum { get; set; }
-    public string PStation { get; set; }
-    public string DlsId { get; set; }
-    public string Location { get; set; }
-    public string Etype { get; set; }
+    public string? PStation { get; set; }
+    public string? DlsId { get; set; }
+    public string? Location { get; set; }
+    public string? Etype { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

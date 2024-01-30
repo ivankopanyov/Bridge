@@ -4,40 +4,40 @@ public partial class ExpGl2000
 {
     public decimal? ExportId { get; set; }
     public decimal? RowSequence { get; set; }
-    public string ExportType { get; set; }
+    public string? ExportType { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestTitleCode { get; set; }
-    public string CompanyName { get; set; }
-    public string GuestPosition { get; set; }
-    public string GuestAddress1 { get; set; }
-    public string GuestAddress2 { get; set; }
-    public string GuestCity { get; set; }
-    public string GuestPostalCode { get; set; }
-    public string GuestTelephone { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestTitleCode { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GuestPosition { get; set; }
+    public string? GuestAddress1 { get; set; }
+    public string? GuestAddress2 { get; set; }
+    public string? GuestCity { get; set; }
+    public string? GuestPostalCode { get; set; }
+    public string? GuestTelephone { get; set; }
     public decimal? LeadDays { get; set; }
-    public string GuestProfession { get; set; }
+    public string? GuestProfession { get; set; }
     public decimal? RoomNightsTotal { get; set; }
     public decimal? GuestNightsTotal { get; set; }
-    public string GroupFlag { get; set; }
+    public string? GroupFlag { get; set; }
     public decimal? AgentIataNo { get; set; }
     public decimal? CompanyCorpId { get; set; }
     public decimal? LoyaltyMemberNo { get; set; }
     public decimal? AirlineMemberNo { get; set; }
-    public string AirlineBonusPoints { get; set; }
-    public string GuestLanguage { get; set; }
-    public string SourceCode { get; set; }
-    public string Geo1Code { get; set; }
-    public string Geo2Code { get; set; }
-    public string ChannelCode { get; set; }
-    public string CrsConfirmationNo { get; set; }
-    public string GuestCountryCode { get; set; }
-    public string GuestStateCode { get; set; }
-    public string GuestBusinessTitle { get; set; }
-    public string GuestSpecialsCodes { get; set; }
-    public string PaymentCode { get; set; }
+    public string? AirlineBonusPoints { get; set; }
+    public string? GuestLanguage { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Geo1Code { get; set; }
+    public string? Geo2Code { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? CrsConfirmationNo { get; set; }
+    public string? GuestCountryCode { get; set; }
+    public string? GuestStateCode { get; set; }
+    public string? GuestBusinessTitle { get; set; }
+    public string? GuestSpecialsCodes { get; set; }
+    public string? PaymentCode { get; set; }
     public decimal? RevenueAmount1 { get; set; }
     public decimal? RevenueAmount2 { get; set; }
     public decimal? RevenueAmount3 { get; set; }
@@ -48,44 +48,44 @@ public partial class ExpGl2000
     public decimal? RevenueAmount8 { get; set; }
     public decimal? RevenueAmount9 { get; set; }
     public decimal? RevenueAmount10 { get; set; }
-    public string MarketCode1 { get; set; }
-    public string MarketCode2 { get; set; }
-    public string MarketCode3 { get; set; }
+    public string? MarketCode1 { get; set; }
+    public string? MarketCode2 { get; set; }
+    public string? MarketCode3 { get; set; }
     public decimal? MktRoomNights1 { get; set; }
     public decimal? MktRoomNights2 { get; set; }
     public decimal? MktRoomNights3 { get; set; }
     public decimal? MktRoomRevenue1 { get; set; }
     public decimal? MktRoomRevenue2 { get; set; }
     public decimal? MktRoomRevenue3 { get; set; }
-    public string ReservationStatusFlag { get; set; }
-    public string GuestCompanyName { get; set; }
-    public string RoomType { get; set; }
-    public string RateCode { get; set; }
+    public string? ReservationStatusFlag { get; set; }
+    public string? GuestCompanyName { get; set; }
+    public string? RoomType { get; set; }
+    public string? RateCode { get; set; }
     public decimal? AgentProfileNo { get; set; }
     public decimal? CompanyProfileNo { get; set; }
     public decimal? GuestProfileNo { get; set; }
     public decimal? CreditCardNo { get; set; }
     public decimal? ArAccountNo { get; set; }
-    public string ContactName { get; set; }
+    public string? ContactName { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string LoyaltyMemberType { get; set; }
-    public string AirlineMemberType { get; set; }
-    public string ErrorFlag1 { get; set; }
-    public string ErrorFlag2 { get; set; }
-    public string ErrorFlag3 { get; set; }
-    public string ErrorFlag4 { get; set; }
-    public string PropertyCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? LoyaltyMemberType { get; set; }
+    public string? AirlineMemberType { get; set; }
+    public string? ErrorFlag1 { get; set; }
+    public string? ErrorFlag2 { get; set; }
+    public string? ErrorFlag3 { get; set; }
+    public string? ErrorFlag4 { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? CurrencyDecimals { get; set; }
-    public string PmsVersion { get; set; }
+    public string? PmsVersion { get; set; }
     public decimal? ExpRoomNightsTotal { get; set; }
     public decimal? ErrorFlag1Count { get; set; }
     public decimal? ErrorFlag2Count { get; set; }
     public decimal? ErrorFlag3Count { get; set; }
     public decimal? ErrorFlag4Count { get; set; }
-    public string ReservationInsertUser { get; set; }
-    public string ReservationStatus { get; set; }
+    public string? ReservationInsertUser { get; set; }
+    public string? ReservationStatus { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? GuestAddressId { get; set; }
     public decimal? TotalErrorCount { get; set; }

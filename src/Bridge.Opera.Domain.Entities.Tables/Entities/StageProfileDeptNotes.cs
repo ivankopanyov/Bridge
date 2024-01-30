@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileDeptNotes
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string NoteCode { get; set; }
-    public string NoteResort { get; set; }
-    public string ShortNote { get; set; }
-    public string LongNote { get; set; }
-    public string ResortLastUpdated { get; set; }
-    public string ValidFlg { get; set; }
-    public string ErrorMsg { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? NoteCode { get; set; }
+    public string? NoteResort { get; set; }
+    public string? ShortNote { get; set; }
+    public string? LongNote { get; set; }
+    public string? ResortLastUpdated { get; set; }
+    public string? ValidFlg { get; set; }
+    public string? ErrorMsg { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? ApprovalDate { get; set; }
 

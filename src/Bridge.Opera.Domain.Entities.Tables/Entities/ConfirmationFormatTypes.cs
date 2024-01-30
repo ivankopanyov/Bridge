@@ -8,13 +8,13 @@ public partial class ConfirmationFormatTypes
         ConfirmationFormats = new HashSet<ConfirmationFormats>();
     }
 
-    public string FormatType { get; set; }
-    public string Description { get; set; }
+    public string? FormatType { get; set; }
+    public string? Description { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? CanDeleteYn { get; set; }
 
     public virtual ICollection<ConfirmFormatElements> ConfirmFormatElements { get; set; }
     public virtual ICollection<ConfirmationFormats> ConfirmationFormats { get; set; }

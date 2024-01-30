@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class IntTravelAgentStatus
 {
     public decimal? NameId { get; set; }
-    public string IataNumber { get; set; }
-    public string TravelAgentName { get; set; }
-    public string Status { get; set; }
+    public string? IataNumber { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

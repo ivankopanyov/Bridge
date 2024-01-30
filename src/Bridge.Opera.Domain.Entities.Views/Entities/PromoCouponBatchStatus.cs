@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PromoCouponBatchStatus
 {
-    public string Resort { get; set; }
-    public string PromotionCode { get; set; }
-    public string BatchCode { get; set; }
-    public string CouponStatus { get; set; }
+    public string? Resort { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? BatchCode { get; set; }
+    public string? CouponStatus { get; set; }
     public decimal? NoOfCoupons { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

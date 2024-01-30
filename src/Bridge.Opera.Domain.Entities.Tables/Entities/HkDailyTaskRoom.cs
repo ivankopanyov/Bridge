@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HkDailyTaskRoom
 {
-    public decimal TaskSeqNo { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? Credits { get; set; }
-    public string CreditsRem { get; set; }
-    public string RoomInstructions { get; set; }
-    public string Turndown { get; set; }
-    public string ServiceTime { get; set; }
-    public string AutoAssignedYn { get; set; }
-    public string AssignmentCode { get; set; }
-    public string AssignmentComments { get; set; }
+    public string? CreditsRem { get; set; }
+    public string? RoomInstructions { get; set; }
+    public string? Turndown { get; set; }
+    public string? ServiceTime { get; set; }
+    public string? AutoAssignedYn { get; set; }
+    public string? AssignmentCode { get; set; }
+    public string? AssignmentComments { get; set; }
 
     public virtual ResortHkDailyTask TaskSeqNoNavigation { get; set; }
 

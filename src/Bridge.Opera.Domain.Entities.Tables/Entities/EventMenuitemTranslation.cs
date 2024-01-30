@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventMenuitemTranslation
 {
-    public string Resort { get; set; }
-    public decimal MitId { get; set; }
-    public string Language { get; set; }
-    public string Field { get; set; }
-    public string Text { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MitId { get; set; }
+    public string? Language { get; set; }
+    public string? Field { get; set; }
+    public string? Text { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

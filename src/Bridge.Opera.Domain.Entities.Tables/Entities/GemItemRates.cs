@@ -8,18 +8,18 @@ public partial class GemItemRates
         GemItemrTranslation = new HashSet<GemItemrTranslation>();
     }
 
-    public decimal ItemrateId { get; set; }
-    public string Resort { get; set; }
-    public decimal ItemId { get; set; }
-    public string Name { get; set; }
-    public string HourlyYn { get; set; }
+    public decimal? ItemrateId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ItemId { get; set; }
+    public string? Name { get; set; }
+    public string? HourlyYn { get; set; }
     public decimal? Price { get; set; }
-    public string PriceCode { get; set; }
+    public string? PriceCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string DefaultYn { get; set; }
+    public string? DefaultYn { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual GemItem GemItem { get; set; }

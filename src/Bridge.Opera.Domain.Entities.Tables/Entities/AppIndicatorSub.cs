@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AppIndicatorSub
 {
-    public string IndicatorId { get; set; }
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
+    public string? IndicatorId { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

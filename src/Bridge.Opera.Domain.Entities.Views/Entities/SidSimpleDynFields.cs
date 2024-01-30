@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidSimpleDynFields
 {
-    public string Resort { get; set; }
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ObjectType { get; set; }
-    public string ObjectName { get; set; }
-    public string HideYn { get; set; }
-    public string ExecuteYn { get; set; }
-    public string DefaultValue { get; set; }
+    public string? Resort { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ObjectType { get; set; }
+    public string? ObjectName { get; set; }
+    public string? HideYn { get; set; }
+    public string? ExecuteYn { get; set; }
+    public string? DefaultValue { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

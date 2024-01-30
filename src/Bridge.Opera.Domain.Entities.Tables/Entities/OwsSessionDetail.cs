@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsSessionDetail
 {
-    public decimal SessionId { get; set; }
-    public string SessionData { get; set; }
+    public decimal? SessionId { get; set; }
+    public string? SessionData { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

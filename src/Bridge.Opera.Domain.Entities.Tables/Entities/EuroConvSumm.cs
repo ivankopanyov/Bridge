@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EuroConvSumm
 {
-    public string TableName { get; set; }
+    public string? TableName { get; set; }
     public decimal? MaxRecords { get; set; }
-    public string ProcedureName { get; set; }
+    public string? ProcedureName { get; set; }
     public decimal? JobNo { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

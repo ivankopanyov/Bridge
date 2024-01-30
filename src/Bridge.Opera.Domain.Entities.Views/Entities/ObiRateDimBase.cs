@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRateDimBase
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string RateDesc { get; set; }
-    public string RateCategory { get; set; }
-    public string RateCategoryDesc { get; set; }
-    public string RateClass { get; set; }
-    public string RateClassDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateDesc { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateCategoryDesc { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateClassDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string YieldableYn { get; set; }
-    public string NegotiatedYn { get; set; }
-    public string ComplimentaryYn { get; set; }
-    public string HouseUseYn { get; set; }
-    public string GdsAllowedYn { get; set; }
-    public string LoyaltyProgramYn { get; set; }
+    public string? YieldableYn { get; set; }
+    public string? NegotiatedYn { get; set; }
+    public string? ComplimentaryYn { get; set; }
+    public string? HouseUseYn { get; set; }
+    public string? GdsAllowedYn { get; set; }
+    public string? LoyaltyProgramYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

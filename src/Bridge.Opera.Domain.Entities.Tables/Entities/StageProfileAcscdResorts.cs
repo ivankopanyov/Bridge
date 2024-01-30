@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileAcscdResorts
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public decimal AccessCdSeqno { get; set; }
-    public string ExtResortCode { get; set; }
-    public string OperaResortCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public decimal? AccessCdSeqno { get; set; }
+    public string? ExtResortCode { get; set; }
+    public string? OperaResortCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

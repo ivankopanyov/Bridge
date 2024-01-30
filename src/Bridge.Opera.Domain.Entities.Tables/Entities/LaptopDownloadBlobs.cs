@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LaptopDownloadBlobs
 {
-    public decimal SrepId { get; set; }
-    public decimal BlobId { get; set; }
+    public decimal? SrepId { get; set; }
+    public decimal? BlobId { get; set; }
     public byte[] BlobItem { get; set; }
-    public string ClobItem { get; set; }
-    public string TransferYn { get; set; }
-    public string Origin { get; set; }
+    public string? ClobItem { get; set; }
+    public string? TransferYn { get; set; }
+    public string? Origin { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

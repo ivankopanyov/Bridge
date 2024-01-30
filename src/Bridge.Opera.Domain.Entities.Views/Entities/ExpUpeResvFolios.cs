@@ -4,10 +4,10 @@ public partial class ExpUpeResvFolios
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string FolioId { get; set; }
+    public string? FolioId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public decimal? BillNo { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
@@ -16,19 +16,19 @@ public partial class ExpUpeResvFolios
     public decimal? NameId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? CashierId { get; set; }
-    public string CalcResvStatus { get; set; }
-    public string Channel { get; set; }
+    public string? CalcResvStatus { get; set; }
+    public string? Channel { get; set; }
     public decimal? Persons { get; set; }
-    public string GuestCountry { get; set; }
+    public string? GuestCountry { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? ArNumber { get; set; }
     public decimal? PostitNo { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? RoomCategory { get; set; }
-    public string IsPermanentBillingYn { get; set; }
-    public string PermanentBillingId { get; set; }
-    public string InclInFoliosYn { get; set; }
-    public string InclInFinalFoliosYn { get; set; }
+    public string? IsPermanentBillingYn { get; set; }
+    public string? PermanentBillingId { get; set; }
+    public string? InclInFoliosYn { get; set; }
+    public string? InclInFinalFoliosYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

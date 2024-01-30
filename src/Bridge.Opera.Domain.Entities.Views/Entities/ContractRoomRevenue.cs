@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ContractRoomRevenue
 {
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public string ContractName { get; set; }
-    public string ContractNumber { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string ContractStatus { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? ContractName { get; set; }
+    public string? ContractNumber { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? ContractStatus { get; set; }
     public decimal? OwnerId { get; set; }
-    public string Owner { get; set; }
+    public string? Owner { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? ContactNameId { get; set; }
-    public string AccountName { get; set; }
-    public string ContactName { get; set; }
-    public string SendStatus { get; set; }
-    public string ReplyStatus { get; set; }
-    public string RateCode { get; set; }
-    public string RateOverride { get; set; }
-    public string RateOverrideReason { get; set; }
+    public string? AccountName { get; set; }
+    public string? ContactName { get; set; }
+    public string? SendStatus { get; set; }
+    public string? ReplyStatus { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateOverride { get; set; }
+    public string? RateOverrideReason { get; set; }
     public decimal? DiscountLevel { get; set; }
     public decimal? DiscountPercentage { get; set; }
     public decimal? ProjectedRoomNights { get; set; }
     public decimal? ProjectedRevenue { get; set; }
     public decimal? ProjectedFbRevenue { get; set; }
     public decimal? ProjectedOtherRevenue { get; set; }
-    public string ChainProductionCode { get; set; }
+    public string? ChainProductionCode { get; set; }
     public decimal? TotalProjectedRoomNights { get; set; }
     public decimal? ContractedRooms { get; set; }
     public decimal? NegotiatedRooms { get; set; }
@@ -52,9 +52,9 @@ public partial class ContractRoomRevenue
     public decimal? AllRmsPrior2Yrs { get; set; }
     public decimal? AllRmsInclSubsPriorYr { get; set; }
     public decimal? AllRmsInclSubsPrior2Yrs { get; set; }
-    public string FitContractType { get; set; }
-    public string FitDiscountType { get; set; }
-    public string LoggedSrepCode { get; set; }
+    public string? FitContractType { get; set; }
+    public string? FitDiscountType { get; set; }
+    public string? LoggedSrepCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

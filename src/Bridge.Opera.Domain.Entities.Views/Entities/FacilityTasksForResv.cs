@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FacilityTasksForResv
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string Room { get; set; }
-    public string RoomCategory { get; set; }
-    public string RdeResort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RdeResort { get; set; }
     public DateTime? RdeReservationDate { get; set; }
-    public string FacilityTask { get; set; }
-    public string Frequency { get; set; }
+    public string? FacilityTask { get; set; }
+    public string? Frequency { get; set; }
     public decimal? FrequencyDays { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? Priority { get; set; }
-    public string Customized { get; set; }
-    public string TaskYn { get; set; }
+    public string? Customized { get; set; }
+    public string? TaskYn { get; set; }
     public decimal? FacilityTaskSeq { get; set; }
     public decimal? Credits { get; set; }
     public decimal? CycleStartDay { get; set; }

@@ -3,26 +3,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpSpaceConfig
 {
     public decimal? RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string BusinessDate { get; set; }
-    public string Room { get; set; }
-    public string Description { get; set; }
-    public string ComboYn { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? Room { get; set; }
+    public string? Description { get; set; }
+    public string? ComboYn { get; set; }
     public decimal? AreaF { get; set; }
     public decimal? AreaM { get; set; }
-    public string MeetingroomType { get; set; }
-    public string EndDate { get; set; }
-    public string BeginDate { get; set; }
-    public string RoomStatus { get; set; }
-    public string ReasonCode { get; set; }
+    public string? MeetingroomType { get; set; }
+    public string? EndDate { get; set; }
+    public string? BeginDate { get; set; }
+    public string? RoomStatus { get; set; }
+    public string? ReasonCode { get; set; }
     public decimal? ScMinCap { get; set; }
     public decimal? ScMaxCap { get; set; }
-    public string ScBuilding { get; set; }
-    public string Floor { get; set; }
-    public string DiaryDisplayYn { get; set; }
-    public string ShareableYn { get; set; }
-    public string ForceAlternateYn { get; set; }
+    public string? ScBuilding { get; set; }
+    public string? Floor { get; set; }
+    public string? DiaryDisplayYn { get; set; }
+    public string? ShareableYn { get; set; }
+    public string? ForceAlternateYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

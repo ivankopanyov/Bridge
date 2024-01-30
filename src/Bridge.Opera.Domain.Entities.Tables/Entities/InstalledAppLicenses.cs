@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InstalledAppLicenses
 {
-    public string Application { get; set; }
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
+    public string? Application { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
     public decimal? NumberRooms { get; set; }
     public DateTime? ExpiryDate { get; set; }
-    public string LicenseCode { get; set; }
-    public string ProductCode { get; set; }
+    public string? LicenseCode { get; set; }
+    public string? ProductCode { get; set; }
     public decimal? NoOfChains { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveYn { get; set; }
 
     public virtual InstalledApp ApplicationNavigation { get; set; }
 

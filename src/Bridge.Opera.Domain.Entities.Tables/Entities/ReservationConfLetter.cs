@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationConfLetter
 {
-    public string Resort { get; set; }
-    public decimal ResvConfLetterId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal ToNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvConfLetterId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? ToNameId { get; set; }
     public decimal? ModuleId { get; set; }
-    public string SendTo { get; set; }
+    public string? SendTo { get; set; }
     public decimal? NoOfSuccessfulTries { get; set; }
-    public string LastStatus { get; set; }
-    public string Destination { get; set; }
+    public string? LastStatus { get; set; }
+    public string? Destination { get; set; }
     public DateTime? LastTimeAttempted { get; set; }
-    public string FailureReason { get; set; }
-    public string PersonalizeText { get; set; }
-    public string DestinationId { get; set; }
-    public string InsertUser { get; set; }
-    public string UpdateUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? FailureReason { get; set; }
+    public string? PersonalizeText { get; set; }
+    public string? DestinationId { get; set; }
+    public string? InsertUser { get; set; }
+    public string? UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? InsertActionInstanceId { get; set; }
     public decimal? DmlSeqNo { get; set; }
     public decimal? AddressId { get; set; }
     public decimal? FaxId { get; set; }
     public decimal? EmailId { get; set; }
-    public string FaxLastStatus { get; set; }
+    public string? FaxLastStatus { get; set; }
     public DateTime? FaxLastAttempted { get; set; }
     public decimal? FaxSuccessfulTries { get; set; }
-    public string EmailLastStatus { get; set; }
+    public string? EmailLastStatus { get; set; }
     public DateTime? EmailLastAttempted { get; set; }
     public decimal? EmailSuccessfulTries { get; set; }
-    public string CustomizeYn { get; set; }
+    public string? CustomizeYn { get; set; }
     public decimal? MobileId { get; set; }
-    public string SmsLastStatus { get; set; }
+    public string? SmsLastStatus { get; set; }
     public DateTime? SmsLastAttempted { get; set; }
     public decimal? SmsSuccessfulTries { get; set; }
-    public string FromEmail { get; set; }
-    public string OptionalEmail { get; set; }
+    public string? FromEmail { get; set; }
+    public string? OptionalEmail { get; set; }
 
     public virtual AppModules Module { get; set; }
     public virtual ReservationName Res { get; set; }

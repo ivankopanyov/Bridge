@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class O2oUserPreferencesTgtInfo
 {
-    public string O2oMigId { get; set; }
-    public string ExternalResort { get; set; }
-    public string ProfilesWOMembershipsYn { get; set; }
-    public string ExclProfilesMemTypes { get; set; }
-    public string SendProfilesFirstYn { get; set; }
-    public string OnlyProfilesResvsBlocksAr { get; set; }
-    public string NTargetResort { get; set; }
-    public string TargetProperty { get; set; }
-    public string Resort { get; set; }
+    public string? O2oMigId { get; set; }
+    public string? ExternalResort { get; set; }
+    public string? ProfilesWOMembershipsYn { get; set; }
+    public string? ExclProfilesMemTypes { get; set; }
+    public string? SendProfilesFirstYn { get; set; }
+    public string? OnlyProfilesResvsBlocksAr { get; set; }
+    public string? NTargetResort { get; set; }
+    public string? TargetProperty { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ReservationHistCutoffDate { get; set; }
     public decimal? Prof1StayInLastNDays { get; set; }
     public decimal? ProfAtleastNPrevStays { get; set; }
     public DateTime? ProfLastUpdated { get; set; }
     public DateTime? ActiveStartDate { get; set; }
-    public string SendRelatedProfilesFirstYn { get; set; }
-    public string MigrationStatus { get; set; }
-    public string InclStatisticsYn { get; set; }
+    public string? SendRelatedProfilesFirstYn { get; set; }
+    public string? MigrationStatus { get; set; }
+    public string? InclStatisticsYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

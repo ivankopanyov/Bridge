@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BroadcastRules
 {
-    public string ChainCode { get; set; }
-    public string NameType { get; set; }
-    public string BroadcastYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? ChainCode { get; set; }
+    public string? NameType { get; set; }
+    public string? BroadcastYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual ChainCode ChainCodeNavigation { get; set; }
     public virtual NameClass NameTypeNavigation { get; set; }

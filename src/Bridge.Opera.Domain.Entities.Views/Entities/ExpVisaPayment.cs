@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpVisaPayment
 {
-    public decimal ExpDataId { get; set; }
+    public decimal? ExpDataId { get; set; }
     public decimal? ExpViewId { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string Resort { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? ExpInvoiceId { get; set; }
     public decimal? PaymentSequence { get; set; }
     public decimal? GuestAccountCredit { get; set; }
-    public string CcNo { get; set; }
-    public string CcApprovalCode { get; set; }
-    public string CcRefNum { get; set; }
-    public string CreditCardExpirationDtStr { get; set; }
-    public string CreditCardType { get; set; }
-    public string CreditCardName { get; set; }
-    public string ExpPaymentType { get; set; }
-    public string PaymentTrxDescription { get; set; }
+    public string? CcNo { get; set; }
+    public string? CcApprovalCode { get; set; }
+    public string? CcRefNum { get; set; }
+    public string? CreditCardExpirationDtStr { get; set; }
+    public string? CreditCardType { get; set; }
+    public string? CreditCardName { get; set; }
+    public string? ExpPaymentType { get; set; }
+    public string? PaymentTrxDescription { get; set; }
     public DateTime? PaymentDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,31 +2,31 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinancialTransactionsExport
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? GuestAccountCredit { get; set; }
-    public DateTime TrxDate { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? DepLedCredit { get; set; }
-    public string FtSubtype { get; set; }
+    public string? FtSubtype { get; set; }
     public decimal? DepLedDebit { get; set; }
     public decimal? PackageCredit { get; set; }
     public decimal? PackageDebit { get; set; }
     public decimal? GuestAccountDebit { get; set; }
     public decimal? TrxNoAgainstPackage { get; set; }
-    public string Product { get; set; }
+    public string? Product { get; set; }
     public decimal? TrxAmount { get; set; }
     public decimal? BillNo { get; set; }
-    public string RateCode { get; set; }
-    public string PostingType { get; set; }
-    public decimal TrxNo { get; set; }
+    public string? RateCode { get; set; }
+    public string? PostingType { get; set; }
+    public decimal? TrxNo { get; set; }
     public decimal? FolioView { get; set; }
-    public string FixedChargesYn { get; set; }
+    public string? FixedChargesYn { get; set; }
     public decimal? PkgBillNo { get; set; }
     public decimal? FtBillNo { get; set; }
     public decimal? PostingSourceNameId { get; set; }
-    public string ChequeNumber { get; set; }
-    public string Covers { get; set; }
+    public string? ChequeNumber { get; set; }
+    public string? Covers { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

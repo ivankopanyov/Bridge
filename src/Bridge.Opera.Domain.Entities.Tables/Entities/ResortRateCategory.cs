@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortRateCategory
 {
-    public string Resort { get; set; }
-    public string RateCategory { get; set; }
-    public string Descr { get; set; }
-    public string RateClass { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCategory { get; set; }
+    public string? Descr { get; set; }
+    public string? RateClass { get; set; }
     public decimal? SellSequence { get; set; }
-    public string RateTier { get; set; }
+    public string? RateTier { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string DisplayDefaultYn { get; set; }
-    public string DisplaySet { get; set; }
-    public string ExportBucketCode { get; set; }
+    public string? DisplayDefaultYn { get; set; }
+    public string? DisplaySet { get; set; }
+    public string? ExportBucketCode { get; set; }
 
     public virtual ResortRateClasses R { get; set; }
     public virtual Resort ResortNavigation { get; set; }

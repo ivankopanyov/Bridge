@@ -7,26 +7,26 @@ public partial class MembershipStatementHeader
         MembershipStatementDetails = new HashSet<MembershipStatementDetails>();
     }
 
-    public decimal StatementBatchId { get; set; }
-    public DateTime StatementDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string MembershipType { get; set; }
-    public string Status { get; set; }
-    public string PrintIfNull { get; set; }
-    public string IncludeIfNull { get; set; }
-    public string LockStatement { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? StatementBatchId { get; set; }
+    public DateTime? StatementDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? MembershipType { get; set; }
+    public string? Status { get; set; }
+    public string? PrintIfNull { get; set; }
+    public string? IncludeIfNull { get; set; }
+    public string? LockStatement { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? AwPointsAbove { get; set; }
     public decimal? AwPointsBelow { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? MembershipLevel { get; set; }
     public decimal? NoOfMembersIncluded { get; set; }
     public decimal? NoOfTrxIncluded { get; set; }
-    public string ErrorLog { get; set; }
-    public string StatementNotes { get; set; }
-    public string ChainCode { get; set; }
+    public string? ErrorLog { get; set; }
+    public string? StatementNotes { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual ICollection<MembershipStatementDetails> MembershipStatementDetails { get; set; }
 

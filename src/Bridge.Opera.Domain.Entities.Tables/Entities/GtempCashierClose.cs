@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GtempCashierClose
 {
-    public string Resort { get; set; }
-    public string ResortCurrency { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortCurrency { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExpectCashierBalance { get; set; }
     public decimal? ActualCashierBalance { get; set; }
     public decimal? CashierCredit { get; set; }
     public decimal? CashierDebit { get; set; }
     public decimal? CashierOpeningBalance { get; set; }
     public decimal? ToGeneralCashier { get; set; }
-    public string TrxType { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxType { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? ClosureNo { get; set; }

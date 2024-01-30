@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvAccessCtlCondsVw
 {
-    public string Condition { get; set; }
-    public string Description { get; set; }
+    public string? Condition { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

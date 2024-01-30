@@ -3,45 +3,45 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpEdwProfile
 {
     public decimal? ExportId { get; set; }
-    public string EdwType { get; set; }
-    public string PmsVersion { get; set; }
+    public string? EdwType { get; set; }
+    public string? PmsVersion { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string MiddleName { get; set; }
-    public string NamePrefix { get; set; }
-    public string NameSuffix { get; set; }
-    public string BusinessTitle { get; set; }
-    public string HomeAddress1 { get; set; }
-    public string HomeAddress2 { get; set; }
-    public string HomeAddress3 { get; set; }
-    public string HomeAddress4 { get; set; }
-    public string HomeCity { get; set; }
-    public string HomeState { get; set; }
-    public string HomeZipCode { get; set; }
-    public string HomeCountry { get; set; }
-    public string BusinessName { get; set; }
-    public string BusinessAddress1 { get; set; }
-    public string BusinessAddress2 { get; set; }
-    public string BusinessAddress3 { get; set; }
-    public string BusinessAddress4 { get; set; }
-    public string BusinessCity { get; set; }
-    public string BusinessState { get; set; }
-    public string BusinessZip { get; set; }
-    public string BusinessCountry { get; set; }
-    public string EmailAddress { get; set; }
-    public string MailListYn { get; set; }
-    public string MarketResearchYn { get; set; }
-    public string AutoenrollYn { get; set; }
-    public string ThirdPartyYn { get; set; }
-    public string BrandId { get; set; }
-    public string HotelCode { get; set; }
-    public string RestrictionType { get; set; }
-    public string RestrictionLevel { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? MiddleName { get; set; }
+    public string? NamePrefix { get; set; }
+    public string? NameSuffix { get; set; }
+    public string? BusinessTitle { get; set; }
+    public string? HomeAddress1 { get; set; }
+    public string? HomeAddress2 { get; set; }
+    public string? HomeAddress3 { get; set; }
+    public string? HomeAddress4 { get; set; }
+    public string? HomeCity { get; set; }
+    public string? HomeState { get; set; }
+    public string? HomeZipCode { get; set; }
+    public string? HomeCountry { get; set; }
+    public string? BusinessName { get; set; }
+    public string? BusinessAddress1 { get; set; }
+    public string? BusinessAddress2 { get; set; }
+    public string? BusinessAddress3 { get; set; }
+    public string? BusinessAddress4 { get; set; }
+    public string? BusinessCity { get; set; }
+    public string? BusinessState { get; set; }
+    public string? BusinessZip { get; set; }
+    public string? BusinessCountry { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? MailListYn { get; set; }
+    public string? MarketResearchYn { get; set; }
+    public string? AutoenrollYn { get; set; }
+    public string? ThirdPartyYn { get; set; }
+    public string? BrandId { get; set; }
+    public string? HotelCode { get; set; }
+    public string? RestrictionType { get; set; }
+    public string? RestrictionLevel { get; set; }
     public DateTime? DateOfBirth { get; set; }
-    public string Gender { get; set; }
+    public string? Gender { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

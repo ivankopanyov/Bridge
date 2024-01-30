@@ -4,15 +4,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActivityReservationGuest
 {
-    public decimal NameId { get; set; }
-    public string Last { get; set; }
-    public string First { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelationshipTypeDesc { get; set; }
-    public string OcNameId { get; set; }
-    public string GcNameId { get; set; }
-    public string CreateRelationshipYn { get; set; }
-    public string IncludeGuestYn { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Last { get; set; }
+    public string? First { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelationshipTypeDesc { get; set; }
+    public string? OcNameId { get; set; }
+    public string? GcNameId { get; set; }
+    public string? CreateRelationshipYn { get; set; }
+    public string? IncludeGuestYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,18 +7,18 @@ public partial class RfmCodes
         RfmCodeDetails = new HashSet<RfmCodeDetails>();
     }
 
-    public string ChainCode { get; set; }
-    public string RfmCode { get; set; }
-    public string Description { get; set; }
-    public string CalculationBasedOn { get; set; }
-    public string CalculationPeriod { get; set; }
+    public string? ChainCode { get; set; }
+    public string? RfmCode { get; set; }
+    public string? Description { get; set; }
+    public string? CalculationBasedOn { get; set; }
+    public string? CalculationPeriod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? CalendarMonth { get; set; }
-    public string RfmFormula { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? RfmFormula { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual ICollection<RfmCodeDetails> RfmCodeDetails { get; set; }

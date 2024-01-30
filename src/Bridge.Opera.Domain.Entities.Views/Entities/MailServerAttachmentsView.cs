@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MailServerAttachmentsView
 {
-    public string Id { get; set; }
-    public string AttachmentName { get; set; }
-    public string AttachmentId { get; set; }
+    public string? Id { get; set; }
+    public string? AttachmentName { get; set; }
+    public string? AttachmentId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

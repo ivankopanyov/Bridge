@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmRoomCatInventoryVw
 {
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string GenericYn { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? GenericYn { get; set; }
     public decimal? PhysicalRooms { get; set; }
     public decimal? RoomTypeOverbook { get; set; }
     public decimal? OutOfOrder { get; set; }

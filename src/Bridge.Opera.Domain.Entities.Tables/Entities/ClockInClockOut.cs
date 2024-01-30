@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ClockInClockOut
 {
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
-    public DateTime ClockedIn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public DateTime? ClockedIn { get; set; }
     public DateTime? ClockedOut { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

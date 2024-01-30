@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsAvailabilityVw
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? RecordDate { get; set; }
-    public string Code1 { get; set; }
+    public string? Code1 { get; set; }
     public decimal? Value1 { get; set; }
-    public string Code2 { get; set; }
+    public string? Code2 { get; set; }
     public decimal? Value2 { get; set; }
-    public string Code3 { get; set; }
+    public string? Code3 { get; set; }
     public decimal? Value3 { get; set; }
     public decimal? OrderSeq { get; set; }
 

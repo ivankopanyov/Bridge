@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ContractBatchSend
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BlockId { get; set; }
-    public string Description { get; set; }
-    public string BlockCode { get; set; }
+    public string? Description { get; set; }
+    public string? BlockCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string BookStatus { get; set; }
-    public string CatStatus { get; set; }
+    public string? BookStatus { get; set; }
+    public string? CatStatus { get; set; }
     public DateTime? RmsDecision { get; set; }
     public DateTime? RmsFollowup { get; set; }
-    public string Tourcode { get; set; }
-    public string TourYn { get; set; }
-    public string LeadYn { get; set; }
-    public string ContractTo { get; set; }
-    public string ModuleName { get; set; }
-    public string ModuleDesc { get; set; }
-    public string Address { get; set; }
-    public string Fax { get; set; }
-    public string Email { get; set; }
+    public string? Tourcode { get; set; }
+    public string? TourYn { get; set; }
+    public string? LeadYn { get; set; }
+    public string? ContractTo { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ModuleDesc { get; set; }
+    public string? Address { get; set; }
+    public string? Fax { get; set; }
+    public string? Email { get; set; }
     public decimal? ToNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

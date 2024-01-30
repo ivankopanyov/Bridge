@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class QmsSections
 {
-    public string Resort { get; set; }
-    public string DeptId { get; set; }
-    public string SectionId { get; set; }
-    public string SectionDesc { get; set; }
-    public string LocCode { get; set; }
-    public string LocType { get; set; }
-    public decimal DeptGroupSeqNo { get; set; }
+    public string? Resort { get; set; }
+    public string? DeptId { get; set; }
+    public string? SectionId { get; set; }
+    public string? SectionDesc { get; set; }
+    public string? LocCode { get; set; }
+    public string? LocType { get; set; }
+    public decimal? DeptGroupSeqNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

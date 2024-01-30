@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class SpgTranslationView
 {
     public decimal? FieldId { get; set; }
-    public string FieldName { get; set; }
-    public string OriginalValue { get; set; }
-    public string TranslatedValue { get; set; }
-    public string SameAsOriginalYn { get; set; }
+    public string? FieldName { get; set; }
+    public string? OriginalValue { get; set; }
+    public string? TranslatedValue { get; set; }
+    public string? SameAsOriginalYn { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

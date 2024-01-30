@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CashierClosures1
 {
-    public string Resort { get; set; }
-    public decimal CashierId { get; set; }
-    public string Title { get; set; }
-    public decimal ClosureNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? CashierId { get; set; }
+    public string? Title { get; set; }
+    public decimal? ClosureNo { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string OpenDate { get; set; }
-    public string CloseDate { get; set; }
+    public string? OpenDate { get; set; }
+    public string? CloseDate { get; set; }
     public decimal? FromTranActionId { get; set; }
     public decimal? ToTranActionId { get; set; }
     public decimal? ClosedBy { get; set; }
     public decimal? Reprints { get; set; }
-    public string AppUser { get; set; }
+    public string? AppUser { get; set; }
     public decimal? TotalCashReceived { get; set; }
     public decimal? TotalPaidouts { get; set; }
     public decimal? TotalCheckReceived { get; set; }

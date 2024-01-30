@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventTypesTranslation
 {
-    public string EventType { get; set; }
-    public string Language { get; set; }
-    public string Description { get; set; }
-    public string ChainCode { get; set; }
+    public string? EventType { get; set; }
+    public string? Language { get; set; }
+    public string? Description { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual EventTypes EventTypes { get; set; }
 

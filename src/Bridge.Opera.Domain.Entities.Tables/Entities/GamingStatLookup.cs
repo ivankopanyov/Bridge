@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GamingStatLookup
 {
-    public string Corrid { get; set; }
-    public decimal Rowseq { get; set; }
-    public string LabelText { get; set; }
-    public string DataValue { get; set; }
-    public string DataType { get; set; }
-    public string FormatMask { get; set; }
+    public string? Corrid { get; set; }
+    public decimal? Rowseq { get; set; }
+    public string? LabelText { get; set; }
+    public string? DataValue { get; set; }
+    public string? DataType { get; set; }
+    public string? FormatMask { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

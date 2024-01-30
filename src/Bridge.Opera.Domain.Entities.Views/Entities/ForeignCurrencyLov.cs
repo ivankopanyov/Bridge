@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ForeignCurrencyLov
 {
-    public string CurrencyCode { get; set; }
-    public string FormatMask { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? FormatMask { get; set; }
     public decimal? DecimalPositions { get; set; }
-    public string Description { get; set; }
-    public string TrianMethodYn { get; set; }
-    public string PreviousLocalCurrencyYn { get; set; }
+    public string? Description { get; set; }
+    public string? TrianMethodYn { get; set; }
+    public string? PreviousLocalCurrencyYn { get; set; }
     public decimal? CurrActionId { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string CurrencySymbol { get; set; }
-    public string SellCurrencyYn { get; set; }
-    public string ChainCode { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? CurrencySymbol { get; set; }
+    public string? SellCurrencyYn { get; set; }
+    public string? ChainCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

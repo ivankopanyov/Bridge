@@ -4,39 +4,39 @@ public partial class ConfirmationUpsellsView
 {
     public decimal? ResvNameId { get; set; }
     public decimal? UpsellOfferId { get; set; }
-    public string ToRateCode { get; set; }
-    public string FromRoomCategory { get; set; }
-    public string ToRoomCategory { get; set; }
-    public string ToRoomCategoryLabel { get; set; }
-    public string FromRoomClass { get; set; }
-    public string ToRoomClass { get; set; }
+    public string? ToRateCode { get; set; }
+    public string? FromRoomCategory { get; set; }
+    public string? ToRoomCategory { get; set; }
+    public string? ToRoomCategoryLabel { get; set; }
+    public string? FromRoomClass { get; set; }
+    public string? ToRoomClass { get; set; }
     public decimal? FirstNightRateAmt { get; set; }
     public decimal? TotalStayAmt { get; set; }
     public decimal? FirstNightUpsell { get; set; }
     public decimal? TotUpsellMoneyAmt { get; set; }
     public decimal? TotalRankingValue { get; set; }
-    public string RateSourceType { get; set; }
-    public string RateSource { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Channel { get; set; }
-    public string GuaranteeType { get; set; }
-    public string MarketCode { get; set; }
+    public string? RateSourceType { get; set; }
+    public string? RateSource { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Channel { get; set; }
+    public string? GuaranteeType { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? UpsellRuleId { get; set; }
-    public string UpsellCode { get; set; }
-    public string InConfResort { get; set; }
+    public string? UpsellCode { get; set; }
+    public string? InConfResort { get; set; }
     public decimal? FirstNightUpsellCharge { get; set; }
     public decimal? TotalUpsellCharge { get; set; }
-    public string RoomCategoryDescription { get; set; }
-    public string RoomFeatures { get; set; }
-    public string VFirstNightAmtFmt { get; set; }
-    public string VTotalStayAmtFmt { get; set; }
-    public string VFirstNgtUpsellFmt { get; set; }
-    public string VTotUpsellMoneyFmt { get; set; }
-    public string VFirstNightChrgFmt { get; set; }
-    public string VTotUpsellChrgFmt { get; set; }
-    public string CurrencyCode { get; set; }
-    public string RoomCategoryDescriptionLong { get; set; }
+    public string? RoomCategoryDescription { get; set; }
+    public string? RoomFeatures { get; set; }
+    public string? VFirstNightAmtFmt { get; set; }
+    public string? VTotalStayAmtFmt { get; set; }
+    public string? VFirstNgtUpsellFmt { get; set; }
+    public string? VTotUpsellMoneyFmt { get; set; }
+    public string? VFirstNightChrgFmt { get; set; }
+    public string? VTotUpsellChrgFmt { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? RoomCategoryDescriptionLong { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

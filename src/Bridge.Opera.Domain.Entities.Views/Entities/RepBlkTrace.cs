@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepBlkTrace
 {
-    public DateTime TraceDate { get; set; }
-    public string FormatedTraceDate { get; set; }
-    public string Resort { get; set; }
-    public string TraceText { get; set; }
-    public string AllotDesc { get; set; }
-    public string AllotmentCode { get; set; }
-    public string AllotmentType { get; set; }
-    public string Status { get; set; }
+    public DateTime? TraceDate { get; set; }
+    public string? FormatedTraceDate { get; set; }
+    public string? Resort { get; set; }
+    public string? TraceText { get; set; }
+    public string? AllotDesc { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? AllotmentType { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

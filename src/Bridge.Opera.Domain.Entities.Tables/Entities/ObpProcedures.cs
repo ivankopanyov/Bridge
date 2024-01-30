@@ -7,14 +7,14 @@ public partial class ObpProcedures
         ObpStatus = new HashSet<ObpStatus>();
     }
 
-    public string ProcedureName { get; set; }
-    public string Frequency { get; set; }
-    public string WhenToExecute { get; set; }
+    public string? ProcedureName { get; set; }
+    public string? Frequency { get; set; }
+    public string? WhenToExecute { get; set; }
     public DateTime? NextDate { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveYn { get; set; }
     public decimal? Sequence { get; set; }
-    public string MandatoryYn { get; set; }
-    public string PropertySpecificYn { get; set; }
+    public string? MandatoryYn { get; set; }
+    public string? PropertySpecificYn { get; set; }
 
     public virtual ICollection<ObpStatus> ObpStatus { get; set; }
 

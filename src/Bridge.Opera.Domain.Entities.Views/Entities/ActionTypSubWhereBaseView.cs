@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ActionTypSubWhereBaseView
 {
-    public decimal ClauseId { get; set; }
-    public string ExtSystemCode { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string DataElementState { get; set; }
-    public string DataElement { get; set; }
-    public string Operator { get; set; }
-    public string DeValue { get; set; }
-    public string Andor { get; set; }
+    public decimal? ClauseId { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? DataElementState { get; set; }
+    public string? DataElement { get; set; }
+    public string? Operator { get; set; }
+    public string? DeValue { get; set; }
+    public string? Andor { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

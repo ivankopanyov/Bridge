@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpGdpduFolio
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
@@ -13,46 +13,46 @@ public partial class ExpGdpduFolio
     public decimal? RevisionNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? InsertDateFoliotax { get; set; }
     public decimal? InsertUserFoliotax { get; set; }
     public DateTime? UpdateDateFoliotax { get; set; }
     public decimal? UpdateUserFoliotax { get; set; }
     public decimal? CashierId { get; set; }
-    public string CurrencyCode { get; set; }
-    public string TrxCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TrxAmountGross { get; set; }
     public decimal? TrxAmountNet { get; set; }
     public decimal? TrxAmountTax { get; set; }
-    public string TransactionDescription { get; set; }
-    public string ChequeNumber { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
-    public string TrxType { get; set; }
-    public string PackageArrangementCode { get; set; }
+    public string? TransactionDescription { get; set; }
+    public string? ChequeNumber { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
+    public string? TrxType { get; set; }
+    public string? PackageArrangementCode { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string BlockCode { get; set; }
-    public string Room { get; set; }
+    public string? BlockCode { get; set; }
+    public string? Room { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestTitle { get; set; }
-    public string PayeeTitle { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeLastName { get; set; }
-    public string PayeeMiddleName { get; set; }
-    public string PayeeName2 { get; set; }
-    public string PayeeName3 { get; set; }
-    public string PayeeCompany { get; set; }
-    public string PayeeAddress { get; set; }
-    public string PayeeAddress2 { get; set; }
-    public string PayeeAddress3 { get; set; }
-    public string PayeeAddress4 { get; set; }
-    public string PayeeCity { get; set; }
-    public string PayeeZipCode { get; set; }
-    public string PayeeCountry { get; set; }
-    public string PayeeCountryDesc { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? PayeeTitle { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? PayeeMiddleName { get; set; }
+    public string? PayeeName2 { get; set; }
+    public string? PayeeName3 { get; set; }
+    public string? PayeeCompany { get; set; }
+    public string? PayeeAddress { get; set; }
+    public string? PayeeAddress2 { get; set; }
+    public string? PayeeAddress3 { get; set; }
+    public string? PayeeAddress4 { get; set; }
+    public string? PayeeCity { get; set; }
+    public string? PayeeZipCode { get; set; }
+    public string? PayeeCountry { get; set; }
+    public string? PayeeCountryDesc { get; set; }
     public decimal? TotalGross { get; set; }
     public decimal? TotalNet { get; set; }
     public decimal? TotRevTaxable { get; set; }
@@ -145,13 +145,13 @@ public partial class ExpGdpduFolio
     public decimal? Xnet19Amt { get; set; }
     public decimal? Xnet20Amt { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
-    public string TaxId { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? TaxId { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? ClTrxNo { get; set; }
 

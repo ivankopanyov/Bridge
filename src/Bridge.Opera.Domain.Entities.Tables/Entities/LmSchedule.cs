@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class LmSchedule
 {
-    public decimal ScheduleId { get; set; }
-    public string Resort { get; set; }
-    public string OutletCode { get; set; }
-    public string ResId { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string BeginTimeHh24mi { get; set; }
-    public string EndTimeHh24mi { get; set; }
-    public string Dayofweek { get; set; }
+    public decimal? ScheduleId { get; set; }
+    public string? Resort { get; set; }
+    public string? OutletCode { get; set; }
+    public string? ResId { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? BeginTimeHh24mi { get; set; }
+    public string? EndTimeHh24mi { get; set; }
+    public string? Dayofweek { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? OrderBy { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

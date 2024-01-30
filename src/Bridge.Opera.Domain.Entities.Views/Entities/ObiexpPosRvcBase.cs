@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpPosRvcBase
 {
-    public string RowKey { get; set; }
+    public string? RowKey { get; set; }
     public DateTime? RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RvcKeyId { get; set; }
-    public string RevCenter { get; set; }
-    public string RevCenterDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RvcKeyId { get; set; }
+    public string? RevCenter { get; set; }
+    public string? RevCenterDesc { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? NumOfTables { get; set; }
     public decimal? AutoSvcCharge { get; set; }
-    public string MasterRevCenter { get; set; }
-    public string MasterRevcntrId { get; set; }
-    public string MasterRevcntrDesc { get; set; }
-    public string ResortId { get; set; }
-    public string AllKey { get; set; }
+    public string? MasterRevCenter { get; set; }
+    public string? MasterRevcntrId { get; set; }
+    public string? MasterRevcntrDesc { get; set; }
+    public string? ResortId { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

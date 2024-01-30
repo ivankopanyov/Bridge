@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OneTimePromoCoupons
 {
-    public string BatchCode { get; set; }
-    public decimal CouponId { get; set; }
-    public string CouponCode { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
-    public string PromotionCode { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Status { get; set; }
+    public string? BatchCode { get; set; }
+    public decimal? CouponId { get; set; }
+    public string? CouponCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
+    public string? PromotionCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Status { get; set; }
     public decimal? UsedInResvNameId { get; set; }
-    public string UsedInResvResort { get; set; }
+    public string? UsedInResvResort { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? ExportDate { get; set; }
 

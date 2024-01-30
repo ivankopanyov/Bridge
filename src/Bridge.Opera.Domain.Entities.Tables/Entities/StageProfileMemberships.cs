@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileMemberships
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Membershipcategorycode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Membershipcategorycode { get; set; }
     public DateTime? ExpirationDate { get; set; }
     public DateTime? JoinedDate { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
-    public string ResortRegistered { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string NameOnCard { get; set; }
-    public string MembershipStatus { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? NameOnCard { get; set; }
+    public string? MembershipStatus { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PointIndicator { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string EnrolledAt { get; set; }
-    public string DeviceCode { get; set; }
+    public string? PointIndicator { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? DeviceCode { get; set; }
     public DateTime? DeviceDisableDate { get; set; }
-    public string UpdateExistingMembershipYn { get; set; }
+    public string? UpdateExistingMembershipYn { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }
 

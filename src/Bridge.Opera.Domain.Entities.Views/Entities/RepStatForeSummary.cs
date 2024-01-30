@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepStatForeSummary
 {
-    public string RecType { get; set; }
-    public string Resort { get; set; }
+    public string? RecType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketMainGroup { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceMainGroup { get; set; }
-    public string Channel { get; set; }
-    public string RateCode { get; set; }
-    public string RateCategory { get; set; }
-    public string Country { get; set; }
-    public string RegionCode { get; set; }
-    public string PsuedoRoomYn { get; set; }
-    public string District { get; set; }
-    public string State { get; set; }
-    public string City { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketMainGroup { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceMainGroup { get; set; }
+    public string? Channel { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? Country { get; set; }
+    public string? RegionCode { get; set; }
+    public string? PsuedoRoomYn { get; set; }
+    public string? District { get; set; }
+    public string? State { get; set; }
+    public string? City { get; set; }
     public decimal? StayRooms { get; set; }
     public decimal? StayPersons { get; set; }
     public decimal? AdultsTaxFree { get; set; }

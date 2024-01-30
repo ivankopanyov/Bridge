@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BusinessEvents
 {
-    public string Module { get; set; }
+    public string? Module { get; set; }
     public decimal? ActionId { get; set; }
-    public string ExtSystemCode { get; set; }
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string ElementType { get; set; }
-    public string ElementRole { get; set; }
-    public string Resort { get; set; }
+    public string? ElementType { get; set; }
+    public string? ElementRole { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

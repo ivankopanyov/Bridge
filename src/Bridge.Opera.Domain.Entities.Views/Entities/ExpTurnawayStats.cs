@@ -3,26 +3,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpTurnawayStats
 {
     public DateTime? ArrivalDate { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? Nights { get; set; }
     public decimal? Rooms { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomType { get; set; }
-    public string Description { get; set; }
-    public string RateCode { get; set; }
-    public string TurnawayCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomType { get; set; }
+    public string? Description { get; set; }
+    public string? RateCode { get; set; }
+    public string? TurnawayCode { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? Adults { get; set; }
-    public string DayTypeCode { get; set; }
-    public string PropertyCode { get; set; }
+    public string? DayTypeCode { get; set; }
+    public string? PropertyCode { get; set; }
     public decimal? PropertyCurrencyDecimals { get; set; }
-    public string PropertyCurrencyCode { get; set; }
+    public string? PropertyCurrencyCode { get; set; }
     public decimal? TrxCounter { get; set; }
     public decimal? ReservationCounter { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public DateTime? TruncCreatedDate { get; set; }
-    public string Resort { get; set; }
-    public string RateCategory { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCategory { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

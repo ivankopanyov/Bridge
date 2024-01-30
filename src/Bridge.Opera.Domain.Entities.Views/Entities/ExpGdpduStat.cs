@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpGdpduStat
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? TtlRoomsInHotel { get; set; }
     public decimal? RoomOcc { get; set; }

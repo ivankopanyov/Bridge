@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipPointsAccBucket
 {
-    public string BucketType { get; set; }
+    public string? BucketType { get; set; }
     public decimal? MembershipTrxId { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? NameId { get; set; }
-    public string MembershipType { get; set; }
+    public string? MembershipType { get; set; }
     public decimal? MembershipPointsSeqno { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? MaxBucketSize { get; set; }
     public decimal? MinPropertiesReq { get; set; }
     public decimal? BucketQuantity { get; set; }
@@ -16,9 +16,9 @@ public partial class MembershipPointsAccBucket
     public decimal? BucketPoints { get; set; }
     public decimal? Points { get; set; }
     public decimal? DaysFromEnroll { get; set; }
-    public string PointsRatioPercentYn { get; set; }
-    public string PointsRatioRoundingFlg { get; set; }
-    public string RtcYn { get; set; }
+    public string? PointsRatioPercentYn { get; set; }
+    public string? PointsRatioRoundingFlg { get; set; }
+    public string? RtcYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

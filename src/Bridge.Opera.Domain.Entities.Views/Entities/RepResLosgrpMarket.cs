@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResLosgrpMarket
 {
-    public string Resort { get; set; }
-    public string RecType { get; set; }
+    public string? Resort { get; set; }
+    public string? RecType { get; set; }
     public DateTime? ConsideredDate { get; set; }
-    public string MarketCode { get; set; }
-    public string ParentMarketCode { get; set; }
-    public string RateCode { get; set; }
-    public string BookedRoomCategory { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
-    public string UpgradeYn { get; set; }
-    public string LosGroup { get; set; }
+    public string? MarketCode { get; set; }
+    public string? ParentMarketCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? BookedRoomCategory { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
+    public string? UpgradeYn { get; set; }
+    public string? LosGroup { get; set; }
     public decimal? LosTier { get; set; }
-    public string LosDescr { get; set; }
-    public string LosShortDesc { get; set; }
+    public string? LosDescr { get; set; }
+    public string? LosShortDesc { get; set; }
     public decimal? LengthOfStay { get; set; }
     public decimal? NoRoomsFore { get; set; }
     public decimal? NetRoomRevenueFore { get; set; }

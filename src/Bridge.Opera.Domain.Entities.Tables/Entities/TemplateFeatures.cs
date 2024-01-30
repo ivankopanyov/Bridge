@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TemplateFeatures
 {
-    public string ChainCode { get; set; }
-    public string Feature { get; set; }
-    public string Type { get; set; }
-    public string FeatureType { get; set; }
-    public string Description { get; set; }
-    public string Comments { get; set; }
-    public string PriceRange { get; set; }
-    public string Hours { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Feature { get; set; }
+    public string? Type { get; set; }
+    public string? FeatureType { get; set; }
+    public string? Description { get; set; }
+    public string? Comments { get; set; }
+    public string? PriceRange { get; set; }
+    public string? Hours { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? OrderBy { get; set; }

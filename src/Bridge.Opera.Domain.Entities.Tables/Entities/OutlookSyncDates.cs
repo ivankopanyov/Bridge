@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OutlookSyncDates
 {
-    public string Resort { get; set; }
-    public decimal SrepId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SrepId { get; set; }
     public DateTime? OutlookUpdateDate { get; set; }
     public DateTime? OperaUpdateDate { get; set; }
-    public string ClientTerminal { get; set; }
+    public string? ClientTerminal { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

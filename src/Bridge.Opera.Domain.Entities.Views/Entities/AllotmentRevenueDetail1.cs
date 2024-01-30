@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentRevenueDetail1
 {
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public DateTime ConsideredDate { get; set; }
-    public string RoomClass { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string RateCode { get; set; }
-    public string ResvType { get; set; }
-    public string Status { get; set; }
-    public string BookingStatus { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public DateTime? ConsideredDate { get; set; }
+    public string? RoomClass { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? ResvType { get; set; }
+    public string? Status { get; set; }
+    public string? BookingStatus { get; set; }
     public decimal? SingleOccupancy { get; set; }
     public decimal? MultipleOccupancy { get; set; }
     public decimal? RoomRevenue { get; set; }

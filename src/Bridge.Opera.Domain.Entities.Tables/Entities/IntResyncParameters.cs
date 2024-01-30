@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntResyncParameters
 {
-    public decimal Id { get; set; }
-    public string Name { get; set; }
-    public string Value { get; set; }
-    public string DataType { get; set; }
+    public decimal? Id { get; set; }
+    public string? Name { get; set; }
+    public string? Value { get; set; }
+    public string? DataType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

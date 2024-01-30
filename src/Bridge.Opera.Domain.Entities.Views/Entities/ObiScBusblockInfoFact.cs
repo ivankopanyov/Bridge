@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiScBusblockInfoFact
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? NoOfNights { get; set; }
     public decimal? RmsBlocked { get; set; }
@@ -19,10 +19,10 @@ public partial class ObiScBusblockInfoFact
     public decimal? OtherRevenue { get; set; }
     public decimal? RmsContracted { get; set; }
     public decimal? PeakRooms { get; set; }
-    public string RelatedResorts { get; set; }
-    public string AllOwners { get; set; }
-    public string RmsOwners { get; set; }
-    public string CatOwners { get; set; }
+    public string? RelatedResorts { get; set; }
+    public string? AllOwners { get; set; }
+    public string? RmsOwners { get; set; }
+    public string? CatOwners { get; set; }
     public decimal? RevContracted { get; set; }
     public decimal? AvgRateNet { get; set; }
     public decimal? RevBlockedNet { get; set; }
@@ -85,9 +85,9 @@ public partial class ObiScBusblockInfoFact
     public decimal? OtbGroup3Rev { get; set; }
     public decimal? OtbGroup4Rev { get; set; }
     public decimal? OtbGroup5Rev { get; set; }
-    public string AllCompanyOwners { get; set; }
-    public string AllAgentOwners { get; set; }
-    public string AllSourceOwners { get; set; }
+    public string? AllCompanyOwners { get; set; }
+    public string? AllAgentOwners { get; set; }
+    public string? AllSourceOwners { get; set; }
     public decimal? DepositPaidAmt { get; set; }
     public decimal? DepositRequestAmt { get; set; }
     public decimal? DepositUnpaidAmt { get; set; }

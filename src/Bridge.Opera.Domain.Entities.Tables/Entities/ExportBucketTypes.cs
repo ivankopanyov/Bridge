@@ -7,14 +7,14 @@ public partial class ExportBucketTypes
         TrxCodeArrangement = new HashSet<TrxCodeArrangement>();
     }
 
-    public string Resort { get; set; }
-    public string ExportBucketType { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public string? ExportBucketType { get; set; }
+    public string? Description { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string CompYn { get; set; }
+    public string? CompYn { get; set; }
 
     public virtual ICollection<TrxCodeArrangement> TrxCodeArrangement { get; set; }
 

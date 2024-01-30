@@ -4,53 +4,53 @@ public partial class EventMenuDetails1
 {
     public decimal? ActualNumber { get; set; }
     public decimal? ActualRevenue { get; set; }
-    public string ArticleNumber { get; set; }
-    public string Beverage { get; set; }
-    public decimal BookId { get; set; }
-    public string Container { get; set; }
+    public string? ArticleNumber { get; set; }
+    public string? Beverage { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Container { get; set; }
     public decimal? Cost { get; set; }
     public decimal? Course { get; set; }
     public decimal? CourseOrder { get; set; }
-    public string CustomYn { get; set; }
-    public string Description { get; set; }
-    public decimal EventId { get; set; }
+    public string? CustomYn { get; set; }
+    public string? Description { get; set; }
+    public decimal? EventId { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? ExpectedNumber { get; set; }
     public decimal? GuaranteedNumber { get; set; }
     public decimal? GuaranteedRevenue { get; set; }
-    public string IncludedYn { get; set; }
+    public string? IncludedYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? MenuId { get; set; }
     public decimal? MitId { get; set; }
-    public string Name1 { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Portion { get; set; }
+    public string? Name1 { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Portion { get; set; }
     public decimal? Price { get; set; }
-    public string Resort { get; set; }
-    public string RevenueType { get; set; }
+    public string? Resort { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? Serving { get; set; }
     public decimal? SetNumber { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public byte? Year { get; set; }
-    public string Origin1 { get; set; }
-    public string Origin2 { get; set; }
-    public string Origin3 { get; set; }
-    public decimal EventMenuId { get; set; }
-    public decimal EmdId { get; set; }
+    public string? Origin1 { get; set; }
+    public string? Origin2 { get; set; }
+    public string? Origin3 { get; set; }
+    public decimal? EventMenuId { get; set; }
+    public decimal? EmdId { get; set; }
     public decimal? BilledNumber { get; set; }
-    public string ShowbeoYn { get; set; }
+    public string? ShowbeoYn { get; set; }
     public decimal? DemandFactor { get; set; }
-    public string Restrictions { get; set; }
+    public string? Restrictions { get; set; }
     public decimal? PkgId { get; set; }
-    public string MenuitemResort { get; set; }
-    public string ConsumptionYn { get; set; }
-    public string MandatoryYn { get; set; }
+    public string? MenuitemResort { get; set; }
+    public string? ConsumptionYn { get; set; }
+    public string? MandatoryYn { get; set; }
     public decimal? DiscountPercentage { get; set; }
     public decimal? DiscountedPrice { get; set; }
-    public string DiscPriceNoDisc { get; set; }
+    public string? DiscPriceNoDisc { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

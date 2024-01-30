@@ -9,38 +9,38 @@ public partial class BofInterface
         BofTranslation = new HashSet<BofTranslation>();
     }
 
-    public decimal BofInterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string BofInterfaceName { get; set; }
-    public string BofBatchMode { get; set; }
-    public string BofAccPeriodYn { get; set; }
-    public string BofCode1 { get; set; }
-    public string BofCode2 { get; set; }
-    public string BofCode3 { get; set; }
-    public string BofCode4 { get; set; }
-    public string BofCode5 { get; set; }
-    public string BofCode6 { get; set; }
-    public string BofCode7 { get; set; }
-    public string BofCode8 { get; set; }
-    public string BofCode9 { get; set; }
-    public string BofCode10 { get; set; }
-    public string BofCode11 { get; set; }
-    public string BofCode12 { get; set; }
-    public string BofCode13 { get; set; }
-    public string BofCode14 { get; set; }
-    public string BofCode15 { get; set; }
+    public decimal? BofInterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? BofInterfaceName { get; set; }
+    public string? BofBatchMode { get; set; }
+    public string? BofAccPeriodYn { get; set; }
+    public string? BofCode1 { get; set; }
+    public string? BofCode2 { get; set; }
+    public string? BofCode3 { get; set; }
+    public string? BofCode4 { get; set; }
+    public string? BofCode5 { get; set; }
+    public string? BofCode6 { get; set; }
+    public string? BofCode7 { get; set; }
+    public string? BofCode8 { get; set; }
+    public string? BofCode9 { get; set; }
+    public string? BofCode10 { get; set; }
+    public string? BofCode11 { get; set; }
+    public string? BofCode12 { get; set; }
+    public string? BofCode13 { get; set; }
+    public string? BofCode14 { get; set; }
+    public string? BofCode15 { get; set; }
     public DateTime? LstRevTransDate { get; set; }
     public DateTime? LstCityTransDate { get; set; }
     public decimal? LstRevSeqNo { get; set; }
     public decimal? LstCitySeqNo { get; set; }
-    public string BofActiveFlag { get; set; }
-    public string CanDeleteYn { get; set; }
+    public string? BofActiveFlag { get; set; }
+    public string? CanDeleteYn { get; set; }
     public DateTime? LstMktTransDate { get; set; }
     public DateTime? LstStaTransDate { get; set; }
     public decimal? LstMktSeqNo { get; set; }
     public decimal? LstStaSeqNo { get; set; }
-    public string OxiUploadYn { get; set; }
-    public string OxiInterfaceId { get; set; }
+    public string? OxiUploadYn { get; set; }
+    public string? OxiInterfaceId { get; set; }
 
     public virtual ICollection<BofDefRecords> BofDefRecords { get; set; }
     public virtual ICollection<BofIntsetup> BofIntsetup { get; set; }

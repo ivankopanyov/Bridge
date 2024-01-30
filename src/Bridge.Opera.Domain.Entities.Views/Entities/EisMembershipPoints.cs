@@ -2,41 +2,41 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipPoints
 {
-    public string MembershipType { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public string CalculationRule { get; set; }
-    public string TypeOfPoints { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public string? CalculationRule { get; set; }
+    public string? TypeOfPoints { get; set; }
     public decimal? PointsRatio { get; set; }
     public decimal? PointsBase { get; set; }
-    public string Resort { get; set; }
-    public string MemberLevel { get; set; }
-    public string RuleBasedOn { get; set; }
-    public string RuleBasedOnValue { get; set; }
-    public string MemRateGroup { get; set; }
-    public string RateCode { get; set; }
-    public string MemMarketGroup { get; set; }
-    public string MarketCode { get; set; }
-    public string RevenueGroup { get; set; }
-    public string PromotionCode { get; set; }
-    public string ResortGroup { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? Resort { get; set; }
+    public string? MemberLevel { get; set; }
+    public string? RuleBasedOn { get; set; }
+    public string? RuleBasedOnValue { get; set; }
+    public string? MemRateGroup { get; set; }
+    public string? RateCode { get; set; }
+    public string? MemMarketGroup { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RevenueGroup { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? ResortGroup { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? MinimumNights { get; set; }
     public decimal? MaximumNights { get; set; }
     public decimal? MinimumRateAmount { get; set; }
     public decimal? CostPerPoint { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? DaysFromEnroll { get; set; }
-    public string PointsRatioPercentYn { get; set; }
-    public string PointsRatioRoundingFlg { get; set; }
-    public string RtcYn { get; set; }
-    public string MemRoomGroup { get; set; }
-    public string EarningRhythmFlg { get; set; }
+    public string? PointsRatioPercentYn { get; set; }
+    public string? PointsRatioRoundingFlg { get; set; }
+    public string? RtcYn { get; set; }
+    public string? MemRoomGroup { get; set; }
+    public string? EarningRhythmFlg { get; set; }
     public decimal? EarningRhythmNights { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PromoSpecialServices
 {
-    public decimal PromoSeqId { get; set; }
-    public string Resort { get; set; }
-    public string SpecialRequestCode { get; set; }
+    public decimal? PromoSeqId { get; set; }
+    public string? Resort { get; set; }
+    public string? SpecialRequestCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Frequency { get; set; }
-    public string ServiceDesc { get; set; }
+    public string? Frequency { get; set; }
+    public string? ServiceDesc { get; set; }
 
     public virtual Promotions PromoSeq { get; set; }
 

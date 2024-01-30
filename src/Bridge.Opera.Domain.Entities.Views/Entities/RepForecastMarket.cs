@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepForecastMarket
 {
     public DateTime? ConsideredDate { get; set; }
-    public string DayDesc { get; set; }
-    public string DayDescription { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDesc { get; set; }
+    public string? DayDesc { get; set; }
+    public string? DayDescription { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDesc { get; set; }
     public decimal? IndRmsMkt { get; set; }
     public decimal? OpenBlkMkt { get; set; }
     public decimal? GrpRmsMarket { get; set; }

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RwServerJobQueue
 {
-    public string JobQueue { get; set; }
+    public string? JobQueue { get; set; }
     public decimal? JobId { get; set; }
-    public string JobType { get; set; }
-    public string JobName { get; set; }
+    public string? JobType { get; set; }
+    public string? JobName { get; set; }
     public decimal? StatusCode { get; set; }
-    public string StatusMessage { get; set; }
-    public string CommandLine { get; set; }
-    public string Owner { get; set; }
-    public string Destype { get; set; }
-    public string Desname { get; set; }
-    public string Server { get; set; }
+    public string? StatusMessage { get; set; }
+    public string? CommandLine { get; set; }
+    public string? Owner { get; set; }
+    public string? Destype { get; set; }
+    public string? Desname { get; set; }
+    public string? Server { get; set; }
     public DateTime? Queued { get; set; }
     public DateTime? Started { get; set; }
     public DateTime? Finished { get; set; }
@@ -20,10 +20,10 @@ public partial class RwServerJobQueue
     public decimal? TotalElapse { get; set; }
     public DateTime? LastRun { get; set; }
     public DateTime? NextRun { get; set; }
-    public string Frmsid { get; set; }
+    public string? Frmsid { get; set; }
     public decimal? RepeatInterval { get; set; }
     public decimal? RepeatPattern { get; set; }
-    public string CacheKey { get; set; }
+    public string? CacheKey { get; set; }
     public decimal? CacheHit { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

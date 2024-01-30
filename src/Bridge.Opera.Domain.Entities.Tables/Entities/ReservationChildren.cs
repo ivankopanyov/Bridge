@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationChildren
 {
-    public decimal ResvChildId { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal Age { get; set; }
+    public decimal? ResvChildId { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? Age { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

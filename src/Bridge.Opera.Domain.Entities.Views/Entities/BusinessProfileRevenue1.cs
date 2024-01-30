@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BusinessProfileRevenue1
 {
-    public decimal ProfileRevenueId { get; set; }
-    public decimal ProfileId { get; set; }
-    public string Resort { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? ProfileRevenueId { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? ActualRoomNights { get; set; }
     public decimal? ActualRoomRevenue { get; set; }
     public decimal? ActualAvgrate { get; set; }
@@ -24,11 +24,11 @@ public partial class BusinessProfileRevenue1
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public byte? LaptopChange { get; set; }
-    public string PeriodCode { get; set; }
-    public string MarketingRegion { get; set; }
-    public string MarketingCity { get; set; }
-    public string EventsYn { get; set; }
-    public string CompetitorYn { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? EventsYn { get; set; }
+    public string? CompetitorYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

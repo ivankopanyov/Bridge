@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Locators
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal LocatorId { get; set; }
-    public string LocatorText { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? LocatorId { get; set; }
+    public string? LocatorText { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? FromTime { get; set; }
     public DateTime? ToTime { get; set; }
-    public string EnteredBy { get; set; }
+    public string? EnteredBy { get; set; }
     public DateTime? EnteredOn { get; set; }
 
     public virtual ReservationName Res { get; set; }

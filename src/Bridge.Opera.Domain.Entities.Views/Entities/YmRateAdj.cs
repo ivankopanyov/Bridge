@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class YmRateAdj
 {
-    public string AdjOverriden { get; set; }
-    public string Resort { get; set; }
-    public decimal RateSetId { get; set; }
-    public string AdjustmentCode { get; set; }
-    public string AdjustmentType { get; set; }
+    public string? AdjOverriden { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RateSetId { get; set; }
+    public string? AdjustmentCode { get; set; }
+    public string? AdjustmentType { get; set; }
     public decimal? AdjustmentAmount { get; set; }
-    public string CurrencyCode { get; set; }
-    public string Description { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

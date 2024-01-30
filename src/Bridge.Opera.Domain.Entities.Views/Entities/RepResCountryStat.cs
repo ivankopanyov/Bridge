@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepResCountryStat
 {
-    public string Resort { get; set; }
-    public string Country { get; set; }
-    public DateTime BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? Country { get; set; }
+    public DateTime? BusinessDate { get; set; }
     public decimal? StayRooms { get; set; }
     public decimal? StayPersons { get; set; }
     public decimal? TotalRevenue { get; set; }

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsRatedistFullVw
 {
-    public string Resort { get; set; }
-    public string YieldCategory { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public decimal Los { get; set; }
-    public decimal PricesliceId { get; set; }
-    public decimal BookingClassId { get; set; }
+    public string? Resort { get; set; }
+    public string? YieldCategory { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public decimal? Los { get; set; }
+    public decimal? PricesliceId { get; set; }
+    public decimal? BookingClassId { get; set; }
     public bool MilestoneId { get; set; }
-    public string Dowseason { get; set; }
+    public string? Dowseason { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

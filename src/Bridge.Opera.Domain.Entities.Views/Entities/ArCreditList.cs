@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArCreditList
 {
-    public string Resort { get; set; }
-    public string TrxCode { get; set; }
-    public string CcSetId { get; set; }
+    public string? Resort { get; set; }
+    public string? TrxCode { get; set; }
+    public string? CcSetId { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public DateTime PostDate { get; set; }
-    public decimal TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? AccountName { get; set; }
+    public DateTime? PostDate { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? Invoice { get; set; }
     public decimal? FolioNo { get; set; }
@@ -19,25 +19,25 @@ public partial class ArCreditList
     public decimal? Amount { get; set; }
     public decimal? Paid { get; set; }
     public decimal? Aropen { get; set; }
-    public string AdjustYn { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
-    public string CreditCardNumberStr { get; set; }
-    public string Currency { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public string? CreditCardNumberStr { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string InvStatus { get; set; }
-    public string RecType { get; set; }
+    public string? InvStatus { get; set; }
+    public string? RecType { get; set; }
     public decimal? TranActionId { get; set; }
-    public string AppFull { get; set; }
-    public string InvoiceType { get; set; }
+    public string? AppFull { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? ArNameId { get; set; }
     public decimal? Commission { get; set; }
     public decimal? BillNumber { get; set; }
-    public DateTime TrxDate { get; set; }
+    public DateTime? TrxDate { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string FiscalBillNo { get; set; }
+    public string? FiscalBillNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

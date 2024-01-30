@@ -2,44 +2,44 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FiscalFolioTax
 {
-    public string Resort { get; set; }
-    public string BillNo { get; set; }
-    public string FolioType { get; set; }
-    public string QueueName { get; set; }
-    public string Status { get; set; }
-    public string MessageText { get; set; }
-    public string BillGenerationDate { get; set; }
-    public string TotalGrossAmount { get; set; }
-    public string TotalNetAmount { get; set; }
-    public string Tax1Amt { get; set; }
-    public string Tax2Amt { get; set; }
-    public string Tax3Amt { get; set; }
-    public string Tax4Amt { get; set; }
-    public string Tax5Amt { get; set; }
-    public string Tax6Amt { get; set; }
-    public string Tax7Amt { get; set; }
-    public string Tax8Amt { get; set; }
-    public string Tax9Amt { get; set; }
-    public string Tax10Amt { get; set; }
+    public string? Resort { get; set; }
+    public string? BillNo { get; set; }
+    public string? FolioType { get; set; }
+    public string? QueueName { get; set; }
+    public string? Status { get; set; }
+    public string? MessageText { get; set; }
+    public string? BillGenerationDate { get; set; }
+    public string? TotalGrossAmount { get; set; }
+    public string? TotalNetAmount { get; set; }
+    public string? Tax1Amt { get; set; }
+    public string? Tax2Amt { get; set; }
+    public string? Tax3Amt { get; set; }
+    public string? Tax4Amt { get; set; }
+    public string? Tax5Amt { get; set; }
+    public string? Tax6Amt { get; set; }
+    public string? Tax7Amt { get; set; }
+    public string? Tax8Amt { get; set; }
+    public string? Tax9Amt { get; set; }
+    public string? Tax10Amt { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string FiscalBillNo { get; set; }
-    public string CollTax1 { get; set; }
-    public string CollTax2 { get; set; }
-    public string CollTax3 { get; set; }
-    public string CollTax4 { get; set; }
-    public string CollTax5 { get; set; }
+    public string? FiscalBillNo { get; set; }
+    public string? CollTax1 { get; set; }
+    public string? CollTax2 { get; set; }
+    public string? CollTax3 { get; set; }
+    public string? CollTax4 { get; set; }
+    public string? CollTax5 { get; set; }
     public decimal? PageNumber { get; set; }
-    public string Tax11Amt { get; set; }
-    public string Tax12Amt { get; set; }
-    public string Tax13Amt { get; set; }
-    public string Tax14Amt { get; set; }
-    public string Tax15Amt { get; set; }
-    public string Tax16Amt { get; set; }
-    public string Tax17Amt { get; set; }
-    public string Tax18Amt { get; set; }
-    public string Tax19Amt { get; set; }
-    public string Tax20Amt { get; set; }
+    public string? Tax11Amt { get; set; }
+    public string? Tax12Amt { get; set; }
+    public string? Tax13Amt { get; set; }
+    public string? Tax14Amt { get; set; }
+    public string? Tax15Amt { get; set; }
+    public string? Tax16Amt { get; set; }
+    public string? Tax17Amt { get; set; }
+    public string? Tax18Amt { get; set; }
+    public string? Tax19Amt { get; set; }
+    public string? Tax20Amt { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

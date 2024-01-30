@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ForecastProcessorJrnl
 {
-    public decimal JrnlId { get; set; }
-    public decimal FpSeq { get; set; }
+    public decimal? JrnlId { get; set; }
+    public decimal? FpSeq { get; set; }
     public decimal? FpSid { get; set; }
     public decimal? FpInstId { get; set; }
-    public string FpSchema { get; set; }
-    public string FpSourceSchema { get; set; }
+    public string? FpSchema { get; set; }
+    public string? FpSourceSchema { get; set; }
     public DateTime? StartupTime { get; set; }
     public DateTime? ShutdownTime { get; set; }
-    public string FpCommand { get; set; }
+    public string? FpCommand { get; set; }
     public decimal? NrProcessedMsg { get; set; }
-    public string ActionType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? ActionType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

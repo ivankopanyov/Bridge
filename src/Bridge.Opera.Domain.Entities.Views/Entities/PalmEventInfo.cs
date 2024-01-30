@@ -2,43 +2,43 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PalmEventInfo
 {
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string EvType { get; set; }
-    public string EvStatus { get; set; }
-    public string EvName { get; set; }
-    public string AccountName { get; set; }
-    public string ContactName { get; set; }
-    public string CatSrepCode { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string StartTime { get; set; }
-    public string EndTime { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? EvType { get; set; }
+    public string? EvStatus { get; set; }
+    public string? EvName { get; set; }
+    public string? AccountName { get; set; }
+    public string? ContactName { get; set; }
+    public string? CatSrepCode { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? StartTime { get; set; }
+    public string? EndTime { get; set; }
     public DateTime? Blockstart { get; set; }
     public DateTime? Blockend { get; set; }
-    public string BlockstartTime { get; set; }
-    public string BlockendTime { get; set; }
+    public string? BlockstartTime { get; set; }
+    public string? BlockendTime { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? Guaranteed { get; set; }
-    public string Doorcard { get; set; }
-    public string ProblemYn { get; set; }
+    public string? Doorcard { get; set; }
+    public string? ProblemYn { get; set; }
     public decimal? MasterEventId { get; set; }
-    public string MasterEventName { get; set; }
-    public string SubeventYn { get; set; }
-    public string RoomResort { get; set; }
-    public string Room { get; set; }
-    public string RoomName { get; set; }
-    public string RoomSetup { get; set; }
+    public string? MasterEventName { get; set; }
+    public string? SubeventYn { get; set; }
+    public string? RoomResort { get; set; }
+    public string? Room { get; set; }
+    public string? RoomName { get; set; }
+    public string? RoomSetup { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
-    public string WaitlistYn { get; set; }
-    public string NotesYn { get; set; }
-    public string InspectedYn { get; set; }
+    public string? WaitlistYn { get; set; }
+    public string? NotesYn { get; set; }
+    public string? InspectedYn { get; set; }
     public DateTime? InspectedDate { get; set; }
     public decimal? InspectedUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
 

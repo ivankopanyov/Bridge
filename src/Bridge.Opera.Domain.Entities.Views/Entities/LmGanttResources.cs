@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LmGanttResources
 {
-    public string GanttType { get; set; }
-    public string Resort { get; set; }
-    public string GanttResource { get; set; }
-    public string GanttDesc { get; set; }
+    public string? GanttType { get; set; }
+    public string? Resort { get; set; }
+    public string? GanttResource { get; set; }
+    public string? GanttDesc { get; set; }
     public DateTime? BeginTime { get; set; }
     public DateTime? EndTime { get; set; }
 

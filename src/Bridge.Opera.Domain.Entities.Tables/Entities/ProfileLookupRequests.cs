@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileLookupRequests
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public string NameType { get; set; }
-    public string NameCode { get; set; }
-    public string Name { get; set; }
-    public string FirstName { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string CountryCode { get; set; }
-    public string Communication { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipNumber { get; set; }
-    public string LegalCompany { get; set; }
-    public string KeywordType { get; set; }
-    public string Keyword { get; set; }
-    public string LoginUserName { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? NameType { get; set; }
+    public string? NameCode { get; set; }
+    public string? Name { get; set; }
+    public string? FirstName { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Communication { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? LegalCompany { get; set; }
+    public string? KeywordType { get; set; }
+    public string? Keyword { get; set; }
+    public string? LoginUserName { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string RelationshipListFlg { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelatedToNameType { get; set; }
-    public string RelatedToNameCode { get; set; }
-    public string RelatedToName { get; set; }
-    public string RelatedToNameFirst { get; set; }
-    public string RelatedFrHostNameId { get; set; }
-    public string RelatedFrClientNameId { get; set; }
+    public string? RelationshipListFlg { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelatedToNameType { get; set; }
+    public string? RelatedToNameCode { get; set; }
+    public string? RelatedToName { get; set; }
+    public string? RelatedToNameFirst { get; set; }
+    public string? RelatedFrHostNameId { get; set; }
+    public string? RelatedFrClientNameId { get; set; }
     public decimal? MaxRecReturned { get; set; }
-    public string ExtAccnameYn { get; set; }
-    public string AccountType { get; set; }
+    public string? ExtAccnameYn { get; set; }
+    public string? AccountType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

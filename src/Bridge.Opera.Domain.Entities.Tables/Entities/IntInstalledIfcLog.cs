@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntInstalledIfcLog
 {
-    public string Interfacename { get; set; }
-    public string Interfacetype { get; set; }
-    public string Version { get; set; }
+    public string? Interfacename { get; set; }
+    public string? Interfacetype { get; set; }
+    public string? Version { get; set; }
     public DateTime? InstalledDate { get; set; }
     public DateTime? InsertDate { get; set; }
 

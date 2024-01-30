@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BeOutqStat
 {
-    public string ConsumerName { get; set; }
-    public string MessageState { get; set; }
+    public string? ConsumerName { get; set; }
+    public string? MessageState { get; set; }
     public DateTime? FirstMessageAt { get; set; }
     public DateTime? LastMessageAt { get; set; }
     public decimal? RecCount { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string SystemType { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? SystemType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

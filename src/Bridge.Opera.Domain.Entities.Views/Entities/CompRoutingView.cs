@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CompRoutingView
 {
-    public string RoutingType { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? RoutingType { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string BillingInstrnCode { get; set; }
+    public string? BillingInstrnCode { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? CompCovers { get; set; }
-    public string UserName { get; set; }
-    public string CompTypeCode { get; set; }
-    public string ResvStatus { get; set; }
-    public string RoutingInstructionList { get; set; }
+    public string? UserName { get; set; }
+    public string? CompTypeCode { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? RoutingInstructionList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

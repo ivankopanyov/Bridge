@@ -7,38 +7,38 @@ public partial class NameAddress
         ArAccount = new HashSet<ArAccount>();
     }
 
-    public decimal AddressId { get; set; }
-    public decimal NameId { get; set; }
-    public string AddressType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? AddressId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? AddressType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string Country { get; set; }
-    public string Province { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? Country { get; set; }
+    public string? Province { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string PrimaryYn { get; set; }
-    public string ForeignCountry { get; set; }
-    public string InCareOf { get; set; }
-    public string CityExt { get; set; }
+    public string? PrimaryYn { get; set; }
+    public string? ForeignCountry { get; set; }
+    public string? InCareOf { get; set; }
+    public string? CityExt { get; set; }
     public byte? LaptopChange { get; set; }
-    public string LanguageCode { get; set; }
-    public string CleansedStatus { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? CleansedStatus { get; set; }
     public DateTime? CleansedDatetime { get; set; }
-    public string CleansedErrormsg { get; set; }
-    public string CleansedValidationstatus { get; set; }
-    public string CleansedMatchstatus { get; set; }
-    public string Barcode { get; set; }
-    public string LastUpdatedResort { get; set; }
+    public string? CleansedErrormsg { get; set; }
+    public string? CleansedValidationstatus { get; set; }
+    public string? CleansedMatchstatus { get; set; }
+    public string? Barcode { get; set; }
+    public string? LastUpdatedResort { get; set; }
 
     public virtual Name Name { get; set; }
     public virtual ICollection<ArAccount> ArAccount { get; set; }

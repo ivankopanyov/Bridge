@@ -2,268 +2,268 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GenExpEcertsVw
 {
-    public decimal EcertCertId { get; set; }
-    public string EcertVoucherNo { get; set; }
-    public string EcertCertCode { get; set; }
-    public string EcertChainCode { get; set; }
-    public string EcertCertificateNo { get; set; }
-    public string EcertMembType { get; set; }
-    public string EcertAwardType { get; set; }
-    public string EcertPromotionCode { get; set; }
-    public string EcertResort { get; set; }
-    public string EcertShortDesc { get; set; }
-    public string EcertLongDesc { get; set; }
-    public string EcertExpiryDate { get; set; }
+    public decimal? EcertCertId { get; set; }
+    public string? EcertVoucherNo { get; set; }
+    public string? EcertCertCode { get; set; }
+    public string? EcertChainCode { get; set; }
+    public string? EcertCertificateNo { get; set; }
+    public string? EcertMembType { get; set; }
+    public string? EcertAwardType { get; set; }
+    public string? EcertPromotionCode { get; set; }
+    public string? EcertResort { get; set; }
+    public string? EcertShortDesc { get; set; }
+    public string? EcertLongDesc { get; set; }
+    public string? EcertExpiryDate { get; set; }
     public DateTime? EcertExpiryDt { get; set; }
-    public string EcertResvCertYn { get; set; }
+    public string? EcertResvCertYn { get; set; }
     public decimal? EcertValue { get; set; }
     public decimal? EcertCost { get; set; }
-    public string EcertCertLabel { get; set; }
+    public string? EcertCertLabel { get; set; }
     public decimal? EcertNameId { get; set; }
-    public string EcertResortConsumed { get; set; }
-    public string EcertConsumedAt { get; set; }
-    public string EcertConsumeLastnm { get; set; }
-    public string EcertConsumeFirstnm { get; set; }
-    public string EcertConsumeMiddlenm { get; set; }
-    public string EcertConsumeEmail { get; set; }
-    public string EcertConsumeDate { get; set; }
+    public string? EcertResortConsumed { get; set; }
+    public string? EcertConsumedAt { get; set; }
+    public string? EcertConsumeLastnm { get; set; }
+    public string? EcertConsumeFirstnm { get; set; }
+    public string? EcertConsumeMiddlenm { get; set; }
+    public string? EcertConsumeEmail { get; set; }
+    public string? EcertConsumeDate { get; set; }
     public DateTime? EcertConsumeDt { get; set; }
-    public string EcertConsumeUserName { get; set; }
-    public string EcertUserNotes { get; set; }
-    public string EcertOcisCurrencyCode { get; set; }
-    public string EcertStatus { get; set; }
-    public string EcertPrintStatus { get; set; }
-    public string EcertConsumeRefNo { get; set; }
-    public string EcertOwsConsumedYn { get; set; }
-    public string EcertPmsConsumedYn { get; set; }
-    public string EcertForChainCode { get; set; }
-    public string EcertIssuedDate { get; set; }
+    public string? EcertConsumeUserName { get; set; }
+    public string? EcertUserNotes { get; set; }
+    public string? EcertOcisCurrencyCode { get; set; }
+    public string? EcertStatus { get; set; }
+    public string? EcertPrintStatus { get; set; }
+    public string? EcertConsumeRefNo { get; set; }
+    public string? EcertOwsConsumedYn { get; set; }
+    public string? EcertPmsConsumedYn { get; set; }
+    public string? EcertForChainCode { get; set; }
+    public string? EcertIssuedDate { get; set; }
     public DateTime? EcertInsertDate { get; set; }
     public decimal? EcertInsertUser { get; set; }
-    public string EcertUpdateDate { get; set; }
+    public string? EcertUpdateDate { get; set; }
     public decimal? EcertUpdateUser { get; set; }
-    public string EcertInactiveDate { get; set; }
+    public string? EcertInactiveDate { get; set; }
     public DateTime? EcertInactiveDt { get; set; }
     public decimal? EcertMembershipAwardId { get; set; }
-    public string EcertConsumptionRefType { get; set; }
-    public string EcertConsumptionLegNo { get; set; }
-    public string EcertIssuedDatabaseId { get; set; }
-    public string EcertIssueSource { get; set; }
-    public string EcertVerifyCertNoYn { get; set; }
-    public string EcertIssueType { get; set; }
+    public string? EcertConsumptionRefType { get; set; }
+    public string? EcertConsumptionLegNo { get; set; }
+    public string? EcertIssuedDatabaseId { get; set; }
+    public string? EcertIssueSource { get; set; }
+    public string? EcertVerifyCertNoYn { get; set; }
+    public string? EcertIssueType { get; set; }
     public decimal? EcertAwardPoints { get; set; }
     public decimal? MvMembershipId { get; set; }
     public decimal? MvNameId { get; set; }
-    public string MvMembershipType { get; set; }
-    public string MvMembershipCardNo { get; set; }
-    public string MvMembershipLevel { get; set; }
-    public string MvNameOnCard { get; set; }
-    public string MvComments { get; set; }
-    public string MvJoinedDate { get; set; }
-    public string MvExpirationDate { get; set; }
+    public string? MvMembershipType { get; set; }
+    public string? MvMembershipCardNo { get; set; }
+    public string? MvMembershipLevel { get; set; }
+    public string? MvNameOnCard { get; set; }
+    public string? MvComments { get; set; }
+    public string? MvJoinedDate { get; set; }
+    public string? MvExpirationDate { get; set; }
     public decimal? MvCreditLimit { get; set; }
-    public string MvPrimaryAirlinePartner { get; set; }
-    public string MvPointIndicator { get; set; }
+    public string? MvPrimaryAirlinePartner { get; set; }
+    public string? MvPointIndicator { get; set; }
     public decimal? MvCurrentPoints { get; set; }
-    public string MvMemberIndicator { get; set; }
-    public string MvMemberSubtype { get; set; }
-    public string MvInactiveDate { get; set; }
+    public string? MvMemberIndicator { get; set; }
+    public string? MvMemberSubtype { get; set; }
+    public string? MvInactiveDate { get; set; }
     public decimal? MvInsertUser { get; set; }
-    public string MvInsertDate { get; set; }
+    public string? MvInsertDate { get; set; }
     public decimal? MvUpdateUser { get; set; }
-    public string MvUpdateDate { get; set; }
+    public string? MvUpdateDate { get; set; }
     public decimal? MvOrderBy { get; set; }
-    public string MvProcessExpirationDate { get; set; }
-    public string MvEnrollmentCode { get; set; }
-    public string MvGracePeriodIndicator { get; set; }
-    public string MvMembershipStatus { get; set; }
-    public string MvTrackData { get; set; }
+    public string? MvProcessExpirationDate { get; set; }
+    public string? MvEnrollmentCode { get; set; }
+    public string? MvGracePeriodIndicator { get; set; }
+    public string? MvMembershipStatus { get; set; }
+    public string? MvTrackData { get; set; }
     public decimal? MvPointsAvailable { get; set; }
-    public string MvPrimaryMembershipYn { get; set; }
-    public string MvCentralSetupYn { get; set; }
-    public string MvMembershipClass { get; set; }
-    public string MvCalculationMethod { get; set; }
+    public string? MvPrimaryMembershipYn { get; set; }
+    public string? MvCentralSetupYn { get; set; }
+    public string? MvMembershipClass { get; set; }
+    public string? MvCalculationMethod { get; set; }
     public decimal? MvCalculationMonths { get; set; }
     public decimal? MvExpirationMonth { get; set; }
     public decimal? MvCardValidYears { get; set; }
     public decimal? MvYearsToExpire { get; set; }
-    public string MvExpDateRequired { get; set; }
-    public string MvLevelRequired { get; set; }
-    public string MvAwardGenerationMethod { get; set; }
+    public string? MvExpDateRequired { get; set; }
+    public string? MvLevelRequired { get; set; }
+    public string? MvAwardGenerationMethod { get; set; }
     public decimal? MvBatchDelayPeriod { get; set; }
-    public string MvAllowDupCardYn { get; set; }
-    public string MvExceptionType { get; set; }
+    public string? MvAllowDupCardYn { get; set; }
+    public string? MvExceptionType { get; set; }
     public decimal? MvMultipleRoomsLimit { get; set; }
-    public string MvBookerProgramYn { get; set; }
-    public string MvPointsLabel { get; set; }
-    public string MvEarningPreference { get; set; }
-    public string MvMemberInfoDispSet { get; set; }
-    public string MvAutoCardNoBasedOn { get; set; }
-    public string MvDefaultMemStatus { get; set; }
-    public string MvEnrollmentCodeReqYn { get; set; }
-    public string MvTscDateFlag { get; set; }
-    public string MvNumericValidation { get; set; }
-    public string MvValidationByIfc { get; set; }
-    public string MvLoyaltyProgramYn { get; set; }
-    public string MvFrequentFlyerYn { get; set; }
+    public string? MvBookerProgramYn { get; set; }
+    public string? MvPointsLabel { get; set; }
+    public string? MvEarningPreference { get; set; }
+    public string? MvMemberInfoDispSet { get; set; }
+    public string? MvAutoCardNoBasedOn { get; set; }
+    public string? MvDefaultMemStatus { get; set; }
+    public string? MvEnrollmentCodeReqYn { get; set; }
+    public string? MvTscDateFlag { get; set; }
+    public string? MvNumericValidation { get; set; }
+    public string? MvValidationByIfc { get; set; }
+    public string? MvLoyaltyProgramYn { get; set; }
+    public string? MvFrequentFlyerYn { get; set; }
     public decimal? MvExternalProcessDays { get; set; }
-    public decimal NmNameId { get; set; }
-    public string NmNameType { get; set; }
-    public string NmNameTypeDesc { get; set; }
-    public string NmContactYn { get; set; }
-    public string NmName { get; set; }
-    public string NmDisplayName { get; set; }
-    public string NmFirst { get; set; }
-    public string NmMiddle { get; set; }
-    public string NmName2 { get; set; }
-    public string NmName3 { get; set; }
-    public string NmSname { get; set; }
-    public string NmPassport { get; set; }
+    public decimal? NmNameId { get; set; }
+    public string? NmNameType { get; set; }
+    public string? NmNameTypeDesc { get; set; }
+    public string? NmContactYn { get; set; }
+    public string? NmName { get; set; }
+    public string? NmDisplayName { get; set; }
+    public string? NmFirst { get; set; }
+    public string? NmMiddle { get; set; }
+    public string? NmName2 { get; set; }
+    public string? NmName3 { get; set; }
+    public string? NmSname { get; set; }
+    public string? NmPassport { get; set; }
     public DateTime? NmBirthDate { get; set; }
-    public string NmTitle { get; set; }
-    public string NmTitleName { get; set; }
-    public string NmLanguage { get; set; }
-    public string NmLanguageDesc { get; set; }
-    public string NmNationality { get; set; }
-    public string NmNationalityDesc { get; set; }
-    public string NmSalutation { get; set; }
-    public string NmLetterGreeting { get; set; }
-    public string NmAddressType { get; set; }
+    public string? NmTitle { get; set; }
+    public string? NmTitleName { get; set; }
+    public string? NmLanguage { get; set; }
+    public string? NmLanguageDesc { get; set; }
+    public string? NmNationality { get; set; }
+    public string? NmNationalityDesc { get; set; }
+    public string? NmSalutation { get; set; }
+    public string? NmLetterGreeting { get; set; }
+    public string? NmAddressType { get; set; }
     public decimal? NmAddressId { get; set; }
-    public string NmAddress1 { get; set; }
-    public string NmAddress2 { get; set; }
-    public string NmAddress3 { get; set; }
-    public string NmAddress4 { get; set; }
-    public string NmCity { get; set; }
-    public string NmState { get; set; }
-    public string NmStateDesc { get; set; }
-    public string NmCountry { get; set; }
-    public string NmCountryDesc { get; set; }
-    public string NmZipCode { get; set; }
-    public string NmCityExt { get; set; }
-    public string NmDeptId { get; set; }
-    public string NmDepartment { get; set; }
+    public string? NmAddress1 { get; set; }
+    public string? NmAddress2 { get; set; }
+    public string? NmAddress3 { get; set; }
+    public string? NmAddress4 { get; set; }
+    public string? NmCity { get; set; }
+    public string? NmState { get; set; }
+    public string? NmStateDesc { get; set; }
+    public string? NmCountry { get; set; }
+    public string? NmCountryDesc { get; set; }
+    public string? NmZipCode { get; set; }
+    public string? NmCityExt { get; set; }
+    public string? NmDeptId { get; set; }
+    public string? NmDepartment { get; set; }
     public decimal? NmPhoneId { get; set; }
-    public string NmPhoneNo { get; set; }
-    public string NmPhoneType { get; set; }
+    public string? NmPhoneNo { get; set; }
+    public string? NmPhoneType { get; set; }
     public decimal? NmFaxId { get; set; }
-    public string NmFaxNo { get; set; }
+    public string? NmFaxNo { get; set; }
     public decimal? NmEmailId { get; set; }
-    public string NmEmail { get; set; }
-    public string NmActiveYn { get; set; }
-    public string NmHistoryYn { get; set; }
-    public string NmAcctContact { get; set; }
-    public string NmCblInd { get; set; }
-    public string NmBlMsg { get; set; }
-    public string NmVipStatus { get; set; }
-    public string NmVipName { get; set; }
-    public string NmBusinessTitle { get; set; }
-    public string NmNameComment { get; set; }
-    public string NmMembershipNumber { get; set; }
-    public string NmMembershipType { get; set; }
-    public string NmMembershipLevel { get; set; }
-    public string NmCommissionCode { get; set; }
-    public string NmCurrencyCode { get; set; }
-    public string NmCommPayCentral { get; set; }
-    public string NmIataCorpNo { get; set; }
-    public string NmIataCompType { get; set; }
-    public string NmUploadDate { get; set; }
-    public string NmInsertDate { get; set; }
-    public string NmUpdateDate { get; set; }
-    public decimal NmInsertUser { get; set; }
-    public decimal NmUpdateUser { get; set; }
-    public string NmInsertUserName { get; set; }
-    public string NmUpdateUserName { get; set; }
-    public string NmHasattachments { get; set; }
-    public string NmHasnotes { get; set; }
-    public string NmGender { get; set; }
-    public string NmBirthPlace { get; set; }
-    public string NmBirthCountry { get; set; }
-    public string NmProfession { get; set; }
-    public string NmIdType { get; set; }
-    public string NmIdNumber { get; set; }
-    public string NmComm1Id { get; set; }
-    public string NmComm1Type { get; set; }
-    public string NmComm1Value { get; set; }
-    public string NmComm2Id { get; set; }
-    public string NmComm2Type { get; set; }
-    public string NmComm2Value { get; set; }
-    public string NmComm3Id { get; set; }
-    public string NmComm3Type { get; set; }
-    public string NmComm3Value { get; set; }
+    public string? NmEmail { get; set; }
+    public string? NmActiveYn { get; set; }
+    public string? NmHistoryYn { get; set; }
+    public string? NmAcctContact { get; set; }
+    public string? NmCblInd { get; set; }
+    public string? NmBlMsg { get; set; }
+    public string? NmVipStatus { get; set; }
+    public string? NmVipName { get; set; }
+    public string? NmBusinessTitle { get; set; }
+    public string? NmNameComment { get; set; }
+    public string? NmMembershipNumber { get; set; }
+    public string? NmMembershipType { get; set; }
+    public string? NmMembershipLevel { get; set; }
+    public string? NmCommissionCode { get; set; }
+    public string? NmCurrencyCode { get; set; }
+    public string? NmCommPayCentral { get; set; }
+    public string? NmIataCorpNo { get; set; }
+    public string? NmIataCompType { get; set; }
+    public string? NmUploadDate { get; set; }
+    public string? NmInsertDate { get; set; }
+    public string? NmUpdateDate { get; set; }
+    public decimal? NmInsertUser { get; set; }
+    public decimal? NmUpdateUser { get; set; }
+    public string? NmInsertUserName { get; set; }
+    public string? NmUpdateUserName { get; set; }
+    public string? NmHasattachments { get; set; }
+    public string? NmHasnotes { get; set; }
+    public string? NmGender { get; set; }
+    public string? NmBirthPlace { get; set; }
+    public string? NmBirthCountry { get; set; }
+    public string? NmProfession { get; set; }
+    public string? NmIdType { get; set; }
+    public string? NmIdNumber { get; set; }
+    public string? NmComm1Id { get; set; }
+    public string? NmComm1Type { get; set; }
+    public string? NmComm1Value { get; set; }
+    public string? NmComm2Id { get; set; }
+    public string? NmComm2Type { get; set; }
+    public string? NmComm2Value { get; set; }
+    public string? NmComm3Id { get; set; }
+    public string? NmComm3Type { get; set; }
+    public string? NmComm3Value { get; set; }
     public decimal? NmMembershipId { get; set; }
-    public string NmMembershipExpirationDate { get; set; }
-    public string NmMembershipNameOnCard { get; set; }
-    public string NmSfirst { get; set; }
-    public string NmCompany { get; set; }
-    public string NmLastGroup { get; set; }
-    public string NmLastSource { get; set; }
+    public string? NmMembershipExpirationDate { get; set; }
+    public string? NmMembershipNameOnCard { get; set; }
+    public string? NmSfirst { get; set; }
+    public string? NmCompany { get; set; }
+    public string? NmLastGroup { get; set; }
+    public string? NmLastSource { get; set; }
     public decimal? NmNextResvnameid { get; set; }
     public DateTime? NmNextStay { get; set; }
-    public string NmNameTaxType { get; set; }
-    public string NmCisHistoryYn { get; set; }
-    public string NmXname { get; set; }
-    public string NmXfirstName { get; set; }
-    public string NmXtitle { get; set; }
-    public string NmXsalutation { get; set; }
-    public string NmSxname { get; set; }
-    public string NmSxfirstName { get; set; }
-    public string NmXdisplayName { get; set; }
+    public string? NmNameTaxType { get; set; }
+    public string? NmCisHistoryYn { get; set; }
+    public string? NmXname { get; set; }
+    public string? NmXfirstName { get; set; }
+    public string? NmXtitle { get; set; }
+    public string? NmXsalutation { get; set; }
+    public string? NmSxname { get; set; }
+    public string? NmSxfirstName { get; set; }
+    public string? NmXdisplayName { get; set; }
     public DateTime? NmInactiveDate { get; set; }
-    public string NmEnvelopeGreeting { get; set; }
-    public string NmXenvelopeGreeting { get; set; }
-    public string NmContractNo { get; set; }
+    public string? NmEnvelopeGreeting { get; set; }
+    public string? NmXenvelopeGreeting { get; set; }
+    public string? NmContractNo { get; set; }
     public DateTime? NmContractRecvDate { get; set; }
-    public string NmGuestPrivYn { get; set; }
-    public string NmEmailYn { get; set; }
-    public string NmMailYn { get; set; }
-    public string NmPhoneYn { get; set; }
-    public string NmSmsYn { get; set; }
-    public string NmProtected { get; set; }
-    public string NmLegalCompany { get; set; }
-    public string NmAddrLanguageCode { get; set; }
-    public string NmAddrLanguageDesc { get; set; }
-    public string NmResortRegistered { get; set; }
-    public string NmLastUpdatedResort { get; set; }
-    public string NmAllOwners { get; set; }
+    public string? NmGuestPrivYn { get; set; }
+    public string? NmEmailYn { get; set; }
+    public string? NmMailYn { get; set; }
+    public string? NmPhoneYn { get; set; }
+    public string? NmSmsYn { get; set; }
+    public string? NmProtected { get; set; }
+    public string? NmLegalCompany { get; set; }
+    public string? NmAddrLanguageCode { get; set; }
+    public string? NmAddrLanguageDesc { get; set; }
+    public string? NmResortRegistered { get; set; }
+    public string? NmLastUpdatedResort { get; set; }
+    public string? NmAllOwners { get; set; }
     public decimal? NmHomePhoneId { get; set; }
-    public string NmHomePhoneNumber { get; set; }
+    public string? NmHomePhoneNumber { get; set; }
     public decimal? NmBusinessPhoneId { get; set; }
-    public string NmBusinessPhoneNumber { get; set; }
+    public string? NmBusinessPhoneNumber { get; set; }
     public decimal? NmMobilePhoneId { get; set; }
-    public string NmMobilePhoneNumber { get; set; }
+    public string? NmMobilePhoneNumber { get; set; }
     public decimal? NmWebPageId { get; set; }
-    public string NmWebPage { get; set; }
-    public string NmXlanguage { get; set; }
-    public string NmXlanguageDesc { get; set; }
-    public string NmMembershipStatus { get; set; }
-    public string NmAddressTypeDesc { get; set; }
-    public string NmIncognitoYn { get; set; }
-    public string NmIncognitoName { get; set; }
-    public string NmIncognitoFirst { get; set; }
-    public string NmIncognitoDisplayname { get; set; }
-    public string NmChainCode { get; set; }
+    public string? NmWebPage { get; set; }
+    public string? NmXlanguage { get; set; }
+    public string? NmXlanguageDesc { get; set; }
+    public string? NmMembershipStatus { get; set; }
+    public string? NmAddressTypeDesc { get; set; }
+    public string? NmIncognitoYn { get; set; }
+    public string? NmIncognitoName { get; set; }
+    public string? NmIncognitoFirst { get; set; }
+    public string? NmIncognitoDisplayname { get; set; }
+    public string? NmChainCode { get; set; }
     public decimal? EcertRuleId { get; set; }
-    public string EcertRuleValue { get; set; }
-    public string EcertRuleValueType { get; set; }
+    public string? EcertRuleValue { get; set; }
+    public string? EcertRuleValueType { get; set; }
     public decimal? EcertResvNameId { get; set; }
-    public string EcertRuleValtypeDisp { get; set; }
-    public string EcertCertNoDisp { get; set; }
+    public string? EcertRuleValtypeDisp { get; set; }
+    public string? EcertCertNoDisp { get; set; }
     public decimal? EcertLocalValue { get; set; }
     public decimal? EcertLocalCost { get; set; }
-    public string EcertCurrency { get; set; }
-    public string NmBirthDateStr { get; set; }
-    public string EcertOrigCertNo { get; set; }
+    public string? EcertCurrency { get; set; }
+    public string? NmBirthDateStr { get; set; }
+    public string? EcertOrigCertNo { get; set; }
     public decimal? EcertCertSeqNo { get; set; }
-    public string EcertIssueDate { get; set; }
-    public string EcertServiceDate { get; set; }
-    public string EcertCancelReqDate { get; set; }
-    public string EcertCancelAllowedYn { get; set; }
-    public string EcertGenInLieuYn { get; set; }
-    public string EcertComputedStatus { get; set; }
+    public string? EcertIssueDate { get; set; }
+    public string? EcertServiceDate { get; set; }
+    public string? EcertCancelReqDate { get; set; }
+    public string? EcertCancelAllowedYn { get; set; }
+    public string? EcertGenInLieuYn { get; set; }
+    public string? EcertComputedStatus { get; set; }
     public decimal? EcertExtendTimes { get; set; }
     public decimal? EcertExtendApplied { get; set; }
-    public string EcertVBenefitCode { get; set; }
+    public string? EcertVBenefitCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

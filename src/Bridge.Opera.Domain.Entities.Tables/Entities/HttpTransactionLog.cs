@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HttpTransactionLog
 {
-    public decimal Id { get; set; }
-    public string InputMsg { get; set; }
-    public DateTime RequestDt { get; set; }
+    public decimal? Id { get; set; }
+    public string? InputMsg { get; set; }
+    public DateTime? RequestDt { get; set; }
     public DateTime? ResponseDt { get; set; }
-    public string Request { get; set; }
-    public string Response { get; set; }
-    public string SessionInfo { get; set; }
-    public string Resort { get; set; }
+    public string? Request { get; set; }
+    public string? Response { get; set; }
+    public string? SessionInfo { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvNameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

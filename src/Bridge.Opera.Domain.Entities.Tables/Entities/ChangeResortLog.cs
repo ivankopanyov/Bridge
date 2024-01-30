@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ChangeResortLog
 {
-    public string TableName { get; set; }
-    public string ConstraintName { get; set; }
-    public string TriggerName { get; set; }
-    public string ColumnName { get; set; }
-    public string IntendedAction { get; set; }
-    public string ActionResult { get; set; }
-    public string ErrorCode { get; set; }
-    public string ErrorMessage { get; set; }
+    public string? TableName { get; set; }
+    public string? ConstraintName { get; set; }
+    public string? TriggerName { get; set; }
+    public string? ColumnName { get; set; }
+    public string? IntendedAction { get; set; }
+    public string? ActionResult { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? ErrorMessage { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? SequenceNumber { get; set; }
-    public string FromResort { get; set; }
-    public string ToResort { get; set; }
-    public string SuccessYn { get; set; }
+    public string? FromResort { get; set; }
+    public string? ToResort { get; set; }
+    public string? SuccessYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

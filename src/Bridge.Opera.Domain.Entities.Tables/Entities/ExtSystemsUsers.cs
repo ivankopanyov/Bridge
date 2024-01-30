@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtSystemsUsers
 {
-    public decimal AppUserId { get; set; }
-    public string Resort { get; set; }
-    public string ExtSystemCode { get; set; }
-    public string ExternalId { get; set; }
-    public string InToken { get; set; }
+    public decimal? AppUserId { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtSystemCode { get; set; }
+    public string? ExternalId { get; set; }
+    public string? InToken { get; set; }
     public DateTime? InTokenexpTs { get; set; }
-    public string OutToken { get; set; }
+    public string? OutToken { get; set; }
     public DateTime? OutTokenexpTs { get; set; }
-    public string LoginYn { get; set; }
-    public string Sourcememberid { get; set; }
+    public string? LoginYn { get; set; }
+    public string? Sourcememberid { get; set; }
     public DateTime? InTokenRcvTs { get; set; }
 
     public virtual ApplicationUser AppUser { get; set; }

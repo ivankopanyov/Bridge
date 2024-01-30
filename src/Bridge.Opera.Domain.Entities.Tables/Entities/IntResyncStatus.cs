@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntResyncStatus
 {
-    public decimal Id { get; set; }
-    public string Interface { get; set; }
-    public string PmsResort { get; set; }
-    public string Module { get; set; }
-    public string Status { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? Interface { get; set; }
+    public string? PmsResort { get; set; }
+    public string? Module { get; set; }
+    public string? Status { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? Processed { get; set; }
     public decimal? Failed { get; set; }
-    public string Remarks { get; set; }
+    public string? Remarks { get; set; }
     public decimal? Total { get; set; }
     public decimal? Sid { get; set; }
     public decimal? SerialNo { get; set; }

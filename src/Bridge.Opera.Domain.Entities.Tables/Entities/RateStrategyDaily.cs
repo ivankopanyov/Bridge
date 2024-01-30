@@ -3,19 +3,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class RateStrategyDaily
 {
     public decimal? RateStrategyId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StrategyDate { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RateCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateCode { get; set; }
     public DateTime? ControlStartDate { get; set; }
     public DateTime? ControlEndDate { get; set; }
     public decimal? ApplySequence { get; set; }
     public decimal? MaxCanSellRoom { get; set; }
-    public string ConditionType { get; set; }
-    public string RestrictionType { get; set; }
+    public string? ConditionType { get; set; }
+    public string? RestrictionType { get; set; }
     public decimal? LosUnit { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

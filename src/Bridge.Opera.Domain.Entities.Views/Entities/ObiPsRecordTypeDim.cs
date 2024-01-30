@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiPsRecordTypeDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RecordType { get; set; }
-    public string RecordTypeDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RecordType { get; set; }
+    public string? RecordTypeDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ResortId { get; set; }
-    public string RecordTypeKey { get; set; }
-    public string AllKey { get; set; }
+    public string? ResortId { get; set; }
+    public string? RecordTypeKey { get; set; }
+    public string? AllKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

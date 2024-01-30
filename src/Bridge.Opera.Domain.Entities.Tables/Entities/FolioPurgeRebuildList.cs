@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FolioPurgeRebuildList
 {
-    public string Resort { get; set; }
-    public string TableName { get; set; }
+    public string? Resort { get; set; }
+    public string? TableName { get; set; }
     public decimal? RowsPurged { get; set; }
     public DateTime? PurgeDate { get; set; }
-    public string RebuildFlag { get; set; }
+    public string? RebuildFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

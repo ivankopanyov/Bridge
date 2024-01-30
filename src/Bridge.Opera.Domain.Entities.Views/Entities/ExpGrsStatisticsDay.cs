@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpGrsStatisticsDay
 {
-    public string RoomCategoryLabel { get; set; }
-    public string Reward { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? Reward { get; set; }
     public DateTime? ConsideredDate { get; set; }
     public decimal? GtdSatisfied { get; set; }
     public decimal? RqstSatisfied { get; set; }

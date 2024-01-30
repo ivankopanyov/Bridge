@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomInspectionDetV
 {
-    public string Template { get; set; }
-    public string Question { get; set; }
-    public string Quality { get; set; }
-    public string Resort { get; set; }
+    public string? Template { get; set; }
+    public string? Question { get; set; }
+    public string? Quality { get; set; }
+    public string? Resort { get; set; }
     public decimal? WoGenerated { get; set; }
     public decimal? TaskCode { get; set; }
-    public string TaskDesc { get; set; }
-    public decimal RiTemplateId { get; set; }
-    public decimal RiId { get; set; }
-    public decimal RiQuestionId { get; set; }
+    public string? TaskDesc { get; set; }
+    public decimal? RiTemplateId { get; set; }
+    public decimal? RiId { get; set; }
+    public decimal? RiQuestionId { get; set; }
     public decimal? RiQuestionSeq { get; set; }
     public decimal? RiAnswerValue { get; set; }
-    public string Answer { get; set; }
-    public string RiAnswerNote { get; set; }
+    public string? Answer { get; set; }
+    public string? RiAnswerNote { get; set; }
     public decimal? RiPointsAchieved { get; set; }
     public decimal? MaxPoints { get; set; }
     public decimal? Score { get; set; }
     public decimal? RiQualityLevel { get; set; }
-    public string TaskStatus { get; set; }
-    public string StatusDesc { get; set; }
-    public string QuestionType { get; set; }
+    public string? TaskStatus { get; set; }
+    public string? StatusDesc { get; set; }
+    public string? QuestionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PrePostRules
 {
-    public string Resort { get; set; }
-    public string ResvQueueYn { get; set; }
-    public string DaysPriorYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ResvQueueYn { get; set; }
+    public string? DaysPriorYn { get; set; }
     public decimal? DaysPrior { get; set; }
-    public string PaymentTypePreYn { get; set; }
-    public string ResvTypeYn { get; set; }
-    public string CreditCardYn { get; set; }
-    public string PaymentTypePostYn { get; set; }
-    public string IfcPostYn { get; set; }
-    public string OtherPostYn { get; set; }
-    public string DefaultPreYn { get; set; }
-    public string DefaultPostYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? PaymentTypePreYn { get; set; }
+    public string? ResvTypeYn { get; set; }
+    public string? CreditCardYn { get; set; }
+    public string? PaymentTypePostYn { get; set; }
+    public string? IfcPostYn { get; set; }
+    public string? OtherPostYn { get; set; }
+    public string? DefaultPreYn { get; set; }
+    public string? DefaultPostYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

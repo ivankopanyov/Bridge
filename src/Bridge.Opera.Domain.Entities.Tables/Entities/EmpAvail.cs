@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EmpAvail
 {
-    public decimal AvailId { get; set; }
-    public string Resort { get; set; }
-    public decimal NameId { get; set; }
-    public DateTime Starttime { get; set; }
-    public DateTime Endtime { get; set; }
+    public decimal? AvailId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? NameId { get; set; }
+    public DateTime? Starttime { get; set; }
+    public DateTime? Endtime { get; set; }
     public decimal? TemplateId { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

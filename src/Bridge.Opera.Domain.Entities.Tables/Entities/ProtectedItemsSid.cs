@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProtectedItemsSid
 {
-    public string ObjectCode { get; set; }
-    public string ModuleName { get; set; }
-    public string ItemName { get; set; }
-    public string ItemType { get; set; }
-    public string ActionList { get; set; }
+    public string? ObjectCode { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ItemName { get; set; }
+    public string? ItemType { get; set; }
+    public string? ActionList { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

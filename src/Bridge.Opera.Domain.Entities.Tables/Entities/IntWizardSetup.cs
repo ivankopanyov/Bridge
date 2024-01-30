@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntWizardSetup
 {
-    public decimal WizSetupId { get; set; }
-    public decimal WizconfigId { get; set; }
-    public string Properties { get; set; }
-    public string Disabled { get; set; }
-    public string MandatRecom { get; set; }
-    public string Remarks { get; set; }
-    public string Auditlog { get; set; }
+    public decimal? WizSetupId { get; set; }
+    public decimal? WizconfigId { get; set; }
+    public string? Properties { get; set; }
+    public string? Disabled { get; set; }
+    public string? MandatRecom { get; set; }
+    public string? Remarks { get; set; }
+    public string? Auditlog { get; set; }
 
     public virtual IntWizardConfig Wizconfig { get; set; }
 

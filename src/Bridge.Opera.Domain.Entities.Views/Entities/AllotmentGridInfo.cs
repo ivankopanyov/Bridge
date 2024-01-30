@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AllotmentGridInfo
 {
-    public decimal AllotmentDetailId { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public DateTime GridDate { get; set; }
-    public string RoomCategory { get; set; }
-    public string AllotmentCode { get; set; }
-    public DateTime AllotmentBeginDate { get; set; }
-    public DateTime AllotmentEndDate { get; set; }
-    public string AllotmentState { get; set; }
-    public string AllotmentStatus { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public decimal? AllotmentDetailId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public DateTime? GridDate { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? AllotmentCode { get; set; }
+    public DateTime? AllotmentBeginDate { get; set; }
+    public DateTime? AllotmentEndDate { get; set; }
+    public string? AllotmentState { get; set; }
+    public string? AllotmentStatus { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? CutoffDate { get; set; }
     public decimal? ForcastedToSell { get; set; }
     public decimal? ToSell { get; set; }
@@ -39,12 +39,12 @@ public partial class AllotmentGridInfo
     public decimal? PickupOcc2 { get; set; }
     public decimal? PickupOcc3 { get; set; }
     public decimal? PickupOcc4 { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? Allotted { get; set; }
-    public string ReserveInventoryYn { get; set; }
+    public string? ReserveInventoryYn { get; set; }
     public decimal? ReservedCheckedinCnt { get; set; }
     public decimal? DeductAllotted { get; set; }
     public decimal? Available { get; set; }

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateRulesMemberships
 {
-    public string Resort { get; set; }
-    public string RuleCode { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? Resort { get; set; }
+    public string? RuleCode { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
 
     public virtual RateRules R { get; set; }
 

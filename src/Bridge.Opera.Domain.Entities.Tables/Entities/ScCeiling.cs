@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScCeiling
 {
-    public decimal CeilingId { get; set; }
-    public string Resort { get; set; }
-    public DateTime CeilingDate { get; set; }
-    public string PmsRoomtype { get; set; }
+    public decimal? CeilingId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? CeilingDate { get; set; }
+    public string? PmsRoomtype { get; set; }
     public short? Quantity { get; set; }
-    public string RestrictedYn { get; set; }
-    public string ProtectedYn { get; set; }
-    public DateTime CutoffDate { get; set; }
+    public string? RestrictedYn { get; set; }
+    public string? ProtectedYn { get; set; }
+    public DateTime? CutoffDate { get; set; }
     public decimal? Booked { get; set; }
     public decimal? Overbooked { get; set; }
     public DateTime? InsertDate { get; set; }

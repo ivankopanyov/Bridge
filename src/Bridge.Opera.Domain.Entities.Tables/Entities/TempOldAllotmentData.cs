@@ -2,112 +2,112 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempOldAllotmentData
 {
-    public decimal AllotmentHeaderId { get; set; }
-    public string Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? Resort { get; set; }
     public decimal? AgentNameId { get; set; }
-    public string Alias { get; set; }
-    public string AllotmentCode { get; set; }
-    public string AllotmentOrigion { get; set; }
+    public string? Alias { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? AllotmentOrigion { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? AverageRate { get; set; }
     public decimal? AvgPeoplePerRoom { get; set; }
     public DateTime? BeginDate { get; set; }
-    public string BfstDesc { get; set; }
+    public string? BfstDesc { get; set; }
     public decimal? BfstPrice { get; set; }
-    public string BfstYn { get; set; }
-    public string Bookingmethod { get; set; }
-    public string Bookingtype { get; set; }
-    public string BookingStatus { get; set; }
-    public string CancellationCode { get; set; }
+    public string? BfstYn { get; set; }
+    public string? Bookingmethod { get; set; }
+    public string? Bookingtype { get; set; }
+    public string? BookingStatus { get; set; }
+    public string? CancellationCode { get; set; }
     public DateTime? CancellationDate { get; set; }
-    public string CancellationDesc { get; set; }
+    public string? CancellationDesc { get; set; }
     public decimal? CancellationNo { get; set; }
-    public string CateringonlyYn { get; set; }
-    public string CateringPkgsYn { get; set; }
-    public string CatCanxCode { get; set; }
+    public string? CateringonlyYn { get; set; }
+    public string? CateringPkgsYn { get; set; }
+    public string? CatCanxCode { get; set; }
     public DateTime? CatCanxDate { get; set; }
-    public string CatCanxDesc { get; set; }
+    public string? CatCanxDesc { get; set; }
     public decimal? CatCanxNo { get; set; }
     public DateTime? CatCutoff { get; set; }
     public DateTime? CatDecision { get; set; }
     public decimal? CatExchange { get; set; }
     public DateTime? CatFollowup { get; set; }
-    public string CatOwnerCode { get; set; }
-    public string CatQuoteCurr { get; set; }
-    public string CatStatus { get; set; }
-    public string Channel { get; set; }
-    public string Commission { get; set; }
+    public string? CatOwnerCode { get; set; }
+    public string? CatQuoteCurr { get; set; }
+    public string? CatStatus { get; set; }
+    public string? Channel { get; set; }
+    public string? Commission { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? ContactNameId { get; set; }
     public decimal? AgentContactNameId { get; set; }
-    public string ContractNr { get; set; }
+    public string? ContractNr { get; set; }
     public DateTime? DateAcl { get; set; }
     public DateTime? DateCfl { get; set; }
     public DateTime? DateLsl { get; set; }
     public DateTime? DatePel { get; set; }
     public DateTime? DateTdl { get; set; }
-    public string Description { get; set; }
-    public string DetailsOkYn { get; set; }
-    public string DistributedYn { get; set; }
+    public string? Description { get; set; }
+    public string? DetailsOkYn { get; set; }
+    public string? DistributedYn { get; set; }
     public DateTime? DueDate { get; set; }
     public decimal? Elastic { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EventsGuaranteedYn { get; set; }
+    public string? EventsGuaranteedYn { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string Functiontype { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string HideAccInfoYn { get; set; }
-    public string Infoboard { get; set; }
+    public string? Functiontype { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? HideAccInfoYn { get; set; }
+    public string? Infoboard { get; set; }
     public DateTime? InvCutoffDate { get; set; }
     public decimal? InvCutoffDays { get; set; }
-    public string Leadstatus { get; set; }
-    public string LeadNewYn { get; set; }
-    public string LeadOrigin { get; set; }
-    public string LeadReceivedYn { get; set; }
-    public string Mainmarket { get; set; }
-    public string MarketCode { get; set; }
+    public string? Leadstatus { get; set; }
+    public string? LeadNewYn { get; set; }
+    public string? LeadOrigin { get; set; }
+    public string? LeadReceivedYn { get; set; }
+    public string? Mainmarket { get; set; }
+    public string? MarketCode { get; set; }
     public DateTime? MethodDue { get; set; }
-    public string OwnerCode { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PendingSendYn { get; set; }
+    public string? OwnerCode { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PendingSendYn { get; set; }
     public decimal? PorteragePrice { get; set; }
-    public string PorterageYn { get; set; }
+    public string? PorterageYn { get; set; }
     public DateTime? ProposalSentDate { get; set; }
-    public string ProposalViewToken { get; set; }
-    public string RateCode { get; set; }
+    public string? ProposalViewToken { get; set; }
+    public string? RateCode { get; set; }
     public decimal? ReplyBy { get; set; }
     public DateTime? ReplyDate { get; set; }
-    public string ReplyStatus { get; set; }
-    public string ReplyVia { get; set; }
-    public string Representative { get; set; }
+    public string? ReplyStatus { get; set; }
+    public string? ReplyVia { get; set; }
+    public string? Representative { get; set; }
     public DateTime? RmsDecision { get; set; }
     public decimal? RmsExchange { get; set; }
     public DateTime? RmsFollowup { get; set; }
-    public string RmsOwnerCode { get; set; }
-    public string RmsQuoteCurr { get; set; }
+    public string? RmsOwnerCode { get; set; }
+    public string? RmsQuoteCurr { get; set; }
     public decimal? RoomsPerDay { get; set; }
     public decimal? SentBy { get; set; }
     public DateTime? SentDate { get; set; }
-    public string SentVia { get; set; }
-    public string SentYn { get; set; }
+    public string? SentVia { get; set; }
+    public string? SentYn { get; set; }
     public decimal? ServiceCharge { get; set; }
     public DateTime? ShoulderBeginDate { get; set; }
     public DateTime? ShoulderEndDate { get; set; }
-    public string Source { get; set; }
+    public string? Source { get; set; }
     public decimal? SourceNameId { get; set; }
     public decimal? TaxAmount { get; set; }
-    public string TdlReason { get; set; }
-    public string Tracecode { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
+    public string? TdlReason { get; set; }
+    public string? Tracecode { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }

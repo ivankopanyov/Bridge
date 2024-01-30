@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventRegisteredAttendees
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public decimal AttendeeProfileId { get; set; }
-    public string AllottedTable { get; set; }
-    public string AllottedSeat { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? AttendeeProfileId { get; set; }
+    public string? AllottedTable { get; set; }
+    public string? AllottedSeat { get; set; }
 
     public virtual Name AttendeeProfile { get; set; }
     public virtual GemEvent Event { get; set; }

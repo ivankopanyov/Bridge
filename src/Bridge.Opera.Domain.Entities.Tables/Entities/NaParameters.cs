@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class NaParameters
 {
-    public string Resort { get; set; }
-    public string UserName { get; set; }
-    public string Password { get; set; }
+    public string? Resort { get; set; }
+    public string? UserName { get; set; }
+    public string? Password { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? CashierId { get; set; }
-    public string StopNightAudit { get; set; }
-    public string Terminal { get; set; }
+    public string? StopNightAudit { get; set; }
+    public string? Terminal { get; set; }
     public decimal? NightAuditSid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

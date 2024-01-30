@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TranslationData
 {
-    public string FormName { get; set; }
-    public string ObjectType { get; set; }
-    public string BlockName { get; set; }
-    public string ObjectName { get; set; }
-    public string LanguageCode { get; set; }
-    public string ObjectValue { get; set; }
-    public string DisplayedYn { get; set; }
-    public string CanvasName { get; set; }
-    public string Tooltip { get; set; }
-    public string AccessKey { get; set; }
-    public string Version { get; set; }
-    public string CreatedBy { get; set; }
+    public string? FormName { get; set; }
+    public string? ObjectType { get; set; }
+    public string? BlockName { get; set; }
+    public string? ObjectName { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? ObjectValue { get; set; }
+    public string? DisplayedYn { get; set; }
+    public string? CanvasName { get; set; }
+    public string? Tooltip { get; set; }
+    public string? AccessKey { get; set; }
+    public string? Version { get; set; }
+    public string? CreatedBy { get; set; }
     public DateTime? CreateDate { get; set; }
-    public string UpdatedBy { get; set; }
+    public string? UpdatedBy { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string Datatype { get; set; }
+    public string? Datatype { get; set; }
     public decimal? Height { get; set; }
     public decimal? Width { get; set; }
     public decimal? ItemLength { get; set; }
-    public string SubclassGroup { get; set; }
-    public string TabInd { get; set; }
-    public string Comments { get; set; }
-    public string ObjInd { get; set; }
+    public string? SubclassGroup { get; set; }
+    public string? TabInd { get; set; }
+    public string? Comments { get; set; }
+    public string? ObjInd { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

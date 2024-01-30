@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MeetingRoomWaitlist
 {
-    public decimal WaitlistId { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public decimal Priority { get; set; }
-    public DateTime WaitlistDate { get; set; }
+    public decimal? WaitlistId { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? Priority { get; set; }
+    public DateTime? WaitlistDate { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string EventType { get; set; }
+    public string? EventType { get; set; }
     public decimal? Attendees { get; set; }
-    public string CateringYn { get; set; }
-    public string CatStatus { get; set; }
-    public string TurntoStatus { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string RoomResort { get; set; }
+    public string? CateringYn { get; set; }
+    public string? CatStatus { get; set; }
+    public string? TurntoStatus { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? RoomResort { get; set; }
 
     public virtual GemEvent Event { get; set; }
     public virtual Room RoomNavigation { get; set; }

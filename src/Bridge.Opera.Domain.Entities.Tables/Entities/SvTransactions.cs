@@ -4,11 +4,11 @@ public partial class SvTransactions
 {
     public decimal? IfcCtrlId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string AccountNumber { get; set; }
-    public string TransNumber { get; set; }
-    public string TransactionType { get; set; }
+    public string? AccountNumber { get; set; }
+    public string? TransNumber { get; set; }
+    public string? TransactionType { get; set; }
     public DateTime? TransactionDate { get; set; }
-    public string ActiveYn { get; set; }
+    public string? ActiveYn { get; set; }
     public decimal? FinTrxNo { get; set; }
     public decimal? Amount { get; set; }
     public DateTime? InsertDate { get; set; }

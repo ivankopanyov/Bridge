@@ -2,62 +2,62 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class LeadBrowse
 {
-    public decimal Leadid { get; set; }
-    public string LeadType { get; set; }
-    public string Booklink { get; set; }
-    public string Leadstatus { get; set; }
-    public string Origin { get; set; }
-    public string SentYn { get; set; }
-    public string ErrorMsg { get; set; }
-    public string Destination { get; set; }
-    public string ReceivedYn { get; set; }
-    public string Replstatus { get; set; }
-    public string RepliedYn { get; set; }
+    public decimal? Leadid { get; set; }
+    public string? LeadType { get; set; }
+    public string? Booklink { get; set; }
+    public string? Leadstatus { get; set; }
+    public string? Origin { get; set; }
+    public string? SentYn { get; set; }
+    public string? ErrorMsg { get; set; }
+    public string? Destination { get; set; }
+    public string? ReceivedYn { get; set; }
+    public string? Replstatus { get; set; }
+    public string? RepliedYn { get; set; }
     public decimal? RespTime { get; set; }
-    public string RespTimeCode { get; set; }
+    public string? RespTimeCode { get; set; }
     public DateTime? DueDate { get; set; }
-    public string HideAccinfoYn { get; set; }
-    public string PendingSendYn { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? HideAccinfoYn { get; set; }
+    public string? PendingSendYn { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -119,11 +119,11 @@ public partial class LeadBrowse
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
     public int? SuperBlockId { get; set; }
-    public string SuperBlockResort { get; set; }
+    public string? SuperBlockResort { get; set; }
     public DateTime? SentDate { get; set; }
     public DateTime? ReplyDate { get; set; }
-    public string LeadchangeBypropertyYn { get; set; }
-    public string KeepLeadControlYn { get; set; }
+    public string? LeadchangeBypropertyYn { get; set; }
+    public string? KeepLeadControlYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

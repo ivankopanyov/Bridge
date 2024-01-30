@@ -2,69 +2,69 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExportBookingStatusSnapshot
 {
-    public string PropertyCode { get; set; }
-    public string Owner { get; set; }
-    public string LeadSource { get; set; }
-    public string MarketCode { get; set; }
-    public DateTime ArrivalDate { get; set; }
-    public DateTime DepartureDate { get; set; }
-    public string Status { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? Owner { get; set; }
+    public string? LeadSource { get; set; }
+    public string? MarketCode { get; set; }
+    public DateTime? ArrivalDate { get; set; }
+    public DateTime? DepartureDate { get; set; }
+    public string? Status { get; set; }
     public DateTime? StatusChangeDate { get; set; }
-    public string AccountName { get; set; }
-    public string AccountCity { get; set; }
-    public string AccountState { get; set; }
-    public string AccountCountry { get; set; }
-    public string BlockName { get; set; }
-    public string AgentName { get; set; }
-    public string AgentCity { get; set; }
-    public string AgentState { get; set; }
-    public string AgentCountry { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountCity { get; set; }
+    public string? AccountState { get; set; }
+    public string? AccountCountry { get; set; }
+    public string? BlockName { get; set; }
+    public string? AgentName { get; set; }
+    public string? AgentCity { get; set; }
+    public string? AgentState { get; set; }
+    public string? AgentCountry { get; set; }
     public decimal? TotalContractRooms { get; set; }
     public decimal? AverageContractRate { get; set; }
     public decimal? TotalStatusRooms { get; set; }
     public decimal? TotalRoomNights { get; set; }
     public decimal? AverageRate { get; set; }
     public decimal? TotalPickup { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public DateTime? Udfd01 { get; set; }
     public DateTime? Udfd02 { get; set; }
     public DateTime? Udfd03 { get; set; }
@@ -125,42 +125,42 @@ public partial class ExportBookingStatusSnapshot
     public decimal? Udfn38 { get; set; }
     public decimal? Udfn39 { get; set; }
     public decimal? Udfn40 { get; set; }
-    public string CompanyContactFirstName { get; set; }
-    public string CompanyContactLastName { get; set; }
-    public string CompanyContactMiddleName { get; set; }
-    public string CompanyContactTitle { get; set; }
-    public string CompanyContactFullName { get; set; }
-    public string CompanyContactAddress1 { get; set; }
-    public string CompanyContactAddress2 { get; set; }
-    public string CompanyContactAddress3 { get; set; }
-    public string CompanyContactAddress4 { get; set; }
-    public string CompanyContactCity { get; set; }
-    public string CompanyContactCityExtension { get; set; }
-    public string CompanyContactPostalCode { get; set; }
-    public string CompanyContactState { get; set; }
-    public string CompanyContactCountry { get; set; }
-    public string CompanyContactCountryDesc { get; set; }
-    public string CompanyContactEmail { get; set; }
-    public string CompanyContactFax { get; set; }
-    public string CompanyContactPhone { get; set; }
-    public string AgentContactFirstName { get; set; }
-    public string AgentContactLastName { get; set; }
-    public string AgentContactMiddleName { get; set; }
-    public string AgentContactTitle { get; set; }
-    public string AgentContactFullName { get; set; }
-    public string AgentContactAddress1 { get; set; }
-    public string AgentContactAddress2 { get; set; }
-    public string AgentContactAddress3 { get; set; }
-    public string AgentContactAddress4 { get; set; }
-    public string AgentContactCity { get; set; }
-    public string AgentContactCityExtension { get; set; }
-    public string AgentContactPostalCode { get; set; }
-    public string AgentContactState { get; set; }
-    public string AgentContactCountry { get; set; }
-    public string AgentContactCountryDesc { get; set; }
-    public string AgentContactEmail { get; set; }
-    public string AgentContactFax { get; set; }
-    public string AgentContactPhone { get; set; }
+    public string? CompanyContactFirstName { get; set; }
+    public string? CompanyContactLastName { get; set; }
+    public string? CompanyContactMiddleName { get; set; }
+    public string? CompanyContactTitle { get; set; }
+    public string? CompanyContactFullName { get; set; }
+    public string? CompanyContactAddress1 { get; set; }
+    public string? CompanyContactAddress2 { get; set; }
+    public string? CompanyContactAddress3 { get; set; }
+    public string? CompanyContactAddress4 { get; set; }
+    public string? CompanyContactCity { get; set; }
+    public string? CompanyContactCityExtension { get; set; }
+    public string? CompanyContactPostalCode { get; set; }
+    public string? CompanyContactState { get; set; }
+    public string? CompanyContactCountry { get; set; }
+    public string? CompanyContactCountryDesc { get; set; }
+    public string? CompanyContactEmail { get; set; }
+    public string? CompanyContactFax { get; set; }
+    public string? CompanyContactPhone { get; set; }
+    public string? AgentContactFirstName { get; set; }
+    public string? AgentContactLastName { get; set; }
+    public string? AgentContactMiddleName { get; set; }
+    public string? AgentContactTitle { get; set; }
+    public string? AgentContactFullName { get; set; }
+    public string? AgentContactAddress1 { get; set; }
+    public string? AgentContactAddress2 { get; set; }
+    public string? AgentContactAddress3 { get; set; }
+    public string? AgentContactAddress4 { get; set; }
+    public string? AgentContactCity { get; set; }
+    public string? AgentContactCityExtension { get; set; }
+    public string? AgentContactPostalCode { get; set; }
+    public string? AgentContactState { get; set; }
+    public string? AgentContactCountry { get; set; }
+    public string? AgentContactCountryDesc { get; set; }
+    public string? AgentContactEmail { get; set; }
+    public string? AgentContactFax { get; set; }
+    public string? AgentContactPhone { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

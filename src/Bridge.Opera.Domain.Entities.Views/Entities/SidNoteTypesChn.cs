@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidNoteTypesChn
 {
-    public string ChainCode { get; set; }
-    public string NoteType { get; set; }
-    public string NoteCode { get; set; }
-    public string Description { get; set; }
+    public string? ChainCode { get; set; }
+    public string? NoteType { get; set; }
+    public string? NoteCode { get; set; }
+    public string? Description { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string DefaultYn { get; set; }
-    public string InternalYn { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string OverrideInternal { get; set; }
-    public string ProtectDescriptionYn { get; set; }
+    public string? OverrideInternal { get; set; }
+    public string? ProtectDescriptionYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

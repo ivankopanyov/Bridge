@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileUdfs
 {
-    public string Resort { get; set; }
-    public string UdfType { get; set; }
-    public string ResortNameId { get; set; }
-    public string UdfAttribute { get; set; }
-    public string PmsTableName { get; set; }
-    public string ValidYn { get; set; }
-    public string ErrorDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? UdfType { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? UdfAttribute { get; set; }
+    public string? PmsTableName { get; set; }
+    public string? ValidYn { get; set; }
+    public string? ErrorDesc { get; set; }
 
     public virtual StageProfiles ResortNavigation { get; set; }
 

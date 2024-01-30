@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateSetProductsDetails
 {
-    public string Resort { get; set; }
-    public decimal RateSetId { get; set; }
-    public string Product { get; set; }
-    public string GroupProduct { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RateSetId { get; set; }
+    public string? Product { get; set; }
+    public string? GroupProduct { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

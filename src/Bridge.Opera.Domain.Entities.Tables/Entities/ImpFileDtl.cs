@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ImpFileDtl
 {
-    public string Resort { get; set; }
-    public string ImpFileType { get; set; }
-    public string ImpFileCode { get; set; }
-    public string ImpDesc { get; set; }
-    public string ImpCntrlName { get; set; }
-    public string ImpPreProcess { get; set; }
-    public string ImpProcess { get; set; }
-    public string InactiveYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ImpFileType { get; set; }
+    public string? ImpFileCode { get; set; }
+    public string? ImpDesc { get; set; }
+    public string? ImpCntrlName { get; set; }
+    public string? ImpPreProcess { get; set; }
+    public string? ImpProcess { get; set; }
+    public string? InactiveYn { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

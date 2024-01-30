@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmCampaignTemplates
 {
-    public decimal CampaignId { get; set; }
-    public string TemplateCode { get; set; }
-    public string Resort { get; set; }
-    public string DefaultYn { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? Resort { get; set; }
+    public string? DefaultYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

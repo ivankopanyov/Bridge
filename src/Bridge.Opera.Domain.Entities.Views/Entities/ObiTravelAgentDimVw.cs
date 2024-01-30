@@ -2,51 +2,51 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiTravelAgentDimVw
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RegionCode { get; set; }
-    public string RegionDesc { get; set; }
-    public string CountryCode { get; set; }
-    public string CountryDesc { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RegionCode { get; set; }
+    public string? RegionDesc { get; set; }
+    public string? CountryCode { get; set; }
+    public string? CountryDesc { get; set; }
     public decimal? TravelAgent { get; set; }
-    public string TaDesc { get; set; }
+    public string? TaDesc { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string TravelAgentCharId { get; set; }
-    public string CustomCol1 { get; set; }
-    public string CustomDesc1 { get; set; }
-    public string CustomLabel1 { get; set; }
-    public string CustomCol2 { get; set; }
-    public string CustomDesc2 { get; set; }
-    public string CustomLabel2 { get; set; }
-    public string CustomCol3 { get; set; }
-    public string CustomDesc3 { get; set; }
-    public string CustomLabel3 { get; set; }
-    public string CustomCol4 { get; set; }
-    public string CustomDesc4 { get; set; }
-    public string CustomLabel4 { get; set; }
-    public string CustomCol5 { get; set; }
-    public string CustomDesc5 { get; set; }
-    public string CustomLabel5 { get; set; }
-    public string CustomCol6 { get; set; }
-    public string CustomDesc6 { get; set; }
-    public string CustomLabel6 { get; set; }
-    public string CustomCol7 { get; set; }
-    public string CustomDesc7 { get; set; }
-    public string CustomLabel7 { get; set; }
-    public string CustomCol8 { get; set; }
-    public string CustomDesc8 { get; set; }
-    public string CustomLabel8 { get; set; }
-    public string CustomCol9 { get; set; }
-    public string CustomDesc9 { get; set; }
-    public string CustomLabel9 { get; set; }
-    public string CustomCol10 { get; set; }
-    public string CustomDesc10 { get; set; }
-    public string CustomLabel10 { get; set; }
-    public string ResortId { get; set; }
-    public string AllKey { get; set; }
-    public string RegionKey { get; set; }
-    public string CountryKey { get; set; }
-    public string TravelAgentKey { get; set; }
+    public string? TravelAgentCharId { get; set; }
+    public string? CustomCol1 { get; set; }
+    public string? CustomDesc1 { get; set; }
+    public string? CustomLabel1 { get; set; }
+    public string? CustomCol2 { get; set; }
+    public string? CustomDesc2 { get; set; }
+    public string? CustomLabel2 { get; set; }
+    public string? CustomCol3 { get; set; }
+    public string? CustomDesc3 { get; set; }
+    public string? CustomLabel3 { get; set; }
+    public string? CustomCol4 { get; set; }
+    public string? CustomDesc4 { get; set; }
+    public string? CustomLabel4 { get; set; }
+    public string? CustomCol5 { get; set; }
+    public string? CustomDesc5 { get; set; }
+    public string? CustomLabel5 { get; set; }
+    public string? CustomCol6 { get; set; }
+    public string? CustomDesc6 { get; set; }
+    public string? CustomLabel6 { get; set; }
+    public string? CustomCol7 { get; set; }
+    public string? CustomDesc7 { get; set; }
+    public string? CustomLabel7 { get; set; }
+    public string? CustomCol8 { get; set; }
+    public string? CustomDesc8 { get; set; }
+    public string? CustomLabel8 { get; set; }
+    public string? CustomCol9 { get; set; }
+    public string? CustomDesc9 { get; set; }
+    public string? CustomLabel9 { get; set; }
+    public string? CustomCol10 { get; set; }
+    public string? CustomDesc10 { get; set; }
+    public string? CustomLabel10 { get; set; }
+    public string? ResortId { get; set; }
+    public string? AllKey { get; set; }
+    public string? RegionKey { get; set; }
+    public string? CountryKey { get; set; }
+    public string? TravelAgentKey { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

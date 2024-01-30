@@ -3,9 +3,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepConProduction
 {
     public decimal? NameId { get; set; }
-    public string MasterGrouping { get; set; }
-    public string DetailGrouping { get; set; }
-    public string BookedStayed { get; set; }
+    public string? MasterGrouping { get; set; }
+    public string? DetailGrouping { get; set; }
+    public string? BookedStayed { get; set; }
     public decimal? RoomNights { get; set; }
     public decimal? RoomRevenue { get; set; }
     public decimal? FoodRevenue { get; set; }

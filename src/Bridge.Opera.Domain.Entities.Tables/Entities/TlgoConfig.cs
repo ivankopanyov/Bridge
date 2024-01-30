@@ -7,11 +7,11 @@ public partial class TlgoConfig
         AllotmentTlgo = new HashSet<AllotmentTlgo>();
     }
 
-    public string Type { get; set; }
-    public string Code { get; set; }
-    public string Description { get; set; }
-    public string DetailReqYn { get; set; }
-    public string NumberYn { get; set; }
+    public string? Type { get; set; }
+    public string? Code { get; set; }
+    public string? Description { get; set; }
+    public string? DetailReqYn { get; set; }
+    public string? NumberYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }

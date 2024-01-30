@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ConfLetterListView
 {
-    public string Letter { get; set; }
-    public decimal LetterId { get; set; }
-    public string LanguageCode { get; set; }
-    public string Destination { get; set; }
-    public string Description { get; set; }
+    public string? Letter { get; set; }
+    public decimal? LetterId { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? Destination { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

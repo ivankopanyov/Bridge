@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResortProfileStatDailyView
 {
-    public string Resort { get; set; }
-    public DateTime StatDate { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StatDate { get; set; }
     public decimal? InternalPrefCount { get; set; }
     public decimal? GlobalPrefCount { get; set; }
     public decimal? InternalNotesCount { get; set; }
@@ -17,7 +17,7 @@ public partial class ResortProfileStatDailyView
     public decimal? ResvCreatedCount { get; set; }
     public decimal? InternalNotesSCount { get; set; }
     public DateTime? LastTransferedDate { get; set; }
-    public string TransferredFlgYn { get; set; }
+    public string? TransferredFlgYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

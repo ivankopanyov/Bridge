@@ -5,8 +5,8 @@ public partial class RepStateYr
     public decimal? RoomsYr { get; set; }
     public decimal? PersonsYr { get; set; }
     public decimal? RevenueYr { get; set; }
-    public string State { get; set; }
-    public string ReservationDate { get; set; }
+    public string? State { get; set; }
+    public string? ReservationDate { get; set; }
     public decimal? ResYr { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

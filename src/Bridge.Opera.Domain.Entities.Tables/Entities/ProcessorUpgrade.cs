@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProcessorUpgrade
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public byte[] Image { get; set; }
-    public DateTime ImageDate { get; set; }
-    public decimal ImageSize { get; set; }
-    public string ImageVersion { get; set; }
-    public string CompressedYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public DateTime? ImageDate { get; set; }
+    public decimal? ImageSize { get; set; }
+    public string? ImageVersion { get; set; }
+    public string? CompressedYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? CompressedSize { get; set; }
     public decimal? Crc { get; set; }
 

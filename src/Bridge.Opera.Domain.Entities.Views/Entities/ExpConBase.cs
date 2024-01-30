@@ -4,19 +4,19 @@ public partial class ExpConBase
 {
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
-    public string HotelCode { get; set; }
-    public string BrandCode { get; set; }
-    public string ChainCode { get; set; }
-    public string IsoDateTime { get; set; }
-    public string CurrencyCode { get; set; }
-    public string HotelName { get; set; }
-    public string Region { get; set; }
-    public string SubRegion { get; set; }
-    public string PmsType { get; set; }
-    public string MajorVersion { get; set; }
-    public string SubVersion { get; set; }
-    public string PatchLevel { get; set; }
-    public string CrsType { get; set; }
+    public string? HotelCode { get; set; }
+    public string? BrandCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? IsoDateTime { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? HotelName { get; set; }
+    public string? Region { get; set; }
+    public string? SubRegion { get; set; }
+    public string? PmsType { get; set; }
+    public string? MajorVersion { get; set; }
+    public string? SubVersion { get; set; }
+    public string? PatchLevel { get; set; }
+    public string? CrsType { get; set; }
     public decimal? PmsNoOfRecords { get; set; }
     public decimal? GuestsNoOfRecords { get; set; }
     public decimal? ReservationsNoOfRecords { get; set; }

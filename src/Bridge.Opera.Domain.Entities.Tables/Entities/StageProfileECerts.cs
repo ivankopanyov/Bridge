@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StageProfileECerts
 {
-    public string Resort { get; set; }
-    public string ResortNameId { get; set; }
-    public string VoucherNo { get; set; }
-    public string CertCode { get; set; }
-    public string CertificateNo { get; set; }
-    public string MembershipType { get; set; }
-    public string AwardType { get; set; }
-    public string PromotionCode { get; set; }
-    public string EcertResort { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortNameId { get; set; }
+    public string? VoucherNo { get; set; }
+    public string? CertCode { get; set; }
+    public string? CertificateNo { get; set; }
+    public string? MembershipType { get; set; }
+    public string? AwardType { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? EcertResort { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
     public DateTime? ExpiryDate { get; set; }
-    public string ReservationCertYn { get; set; }
+    public string? ReservationCertYn { get; set; }
     public decimal? Value { get; set; }
     public decimal? Cost { get; set; }
-    public string CertLabel { get; set; }
-    public string ResortConsumed { get; set; }
-    public string ConsumedAt { get; set; }
-    public string ConsumerLastName { get; set; }
-    public string ConsumerFirstName { get; set; }
-    public string ConsumerMiddleName { get; set; }
-    public string ConsumerEmail { get; set; }
+    public string? CertLabel { get; set; }
+    public string? ResortConsumed { get; set; }
+    public string? ConsumedAt { get; set; }
+    public string? ConsumerLastName { get; set; }
+    public string? ConsumerFirstName { get; set; }
+    public string? ConsumerMiddleName { get; set; }
+    public string? ConsumerEmail { get; set; }
     public DateTime? ConsumptionDate { get; set; }
-    public string ConsumptionUserName { get; set; }
-    public string UserNotes { get; set; }
-    public string OcisCurrencyCode { get; set; }
-    public string Status { get; set; }
-    public string PrintStatus { get; set; }
-    public string ConsumptionRefNo { get; set; }
-    public string OwsConsumedYn { get; set; }
-    public string PmsConsumedYn { get; set; }
-    public string ForChainCode { get; set; }
+    public string? ConsumptionUserName { get; set; }
+    public string? UserNotes { get; set; }
+    public string? OcisCurrencyCode { get; set; }
+    public string? Status { get; set; }
+    public string? PrintStatus { get; set; }
+    public string? ConsumptionRefNo { get; set; }
+    public string? OwsConsumedYn { get; set; }
+    public string? PmsConsumedYn { get; set; }
+    public string? ForChainCode { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string VerifyCertNoYn { get; set; }
-    public string IssueType { get; set; }
+    public string? VerifyCertNoYn { get; set; }
+    public string? IssueType { get; set; }
     public decimal? AwardPoints { get; set; }
-    public string ConsumptionRefType { get; set; }
-    public string ConsumptionLegNo { get; set; }
-    public string AuthCode { get; set; }
+    public string? ConsumptionRefType { get; set; }
+    public string? ConsumptionLegNo { get; set; }
+    public string? AuthCode { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? ServiceDate { get; set; }
     public DateTime? CancelRequestDate { get; set; }

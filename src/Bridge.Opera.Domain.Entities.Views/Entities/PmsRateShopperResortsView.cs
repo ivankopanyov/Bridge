@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PmsRateShopperResortsView
 {
-    public string Resort { get; set; }
-    public string Name { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

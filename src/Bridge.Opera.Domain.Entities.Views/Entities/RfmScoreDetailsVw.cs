@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RfmScoreDetailsVw
 {
-    public decimal RfmScoreDtlId { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal RfmScoreHdrId { get; set; }
-    public decimal NameId { get; set; }
+    public decimal? RfmScoreDtlId { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? RfmScoreHdrId { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? NameScore { get; set; }
-    public string ProcessingMessage { get; set; }
+    public string? ProcessingMessage { get; set; }
     public DateTime? ProcessingDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

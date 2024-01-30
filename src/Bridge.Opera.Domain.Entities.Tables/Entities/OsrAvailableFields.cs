@@ -7,26 +7,26 @@ public partial class OsrAvailableFields
         OsrFields = new HashSet<OsrFields>();
     }
 
-    public decimal Fieldid { get; set; }
-    public string Content { get; set; }
-    public string Description { get; set; }
-    public string Label { get; set; }
-    public string Source { get; set; }
-    public string Alias { get; set; }
-    public string Link { get; set; }
+    public decimal? Fieldid { get; set; }
+    public string? Content { get; set; }
+    public string? Description { get; set; }
+    public string? Label { get; set; }
+    public string? Source { get; set; }
+    public string? Alias { get; set; }
+    public string? Link { get; set; }
     public decimal? Width { get; set; }
-    public string Alignment { get; set; }
-    public string Type { get; set; }
-    public string Parametertype { get; set; }
-    public string Value { get; set; }
-    public string Format { get; set; }
-    public string Selectlov { get; set; }
-    public string Reserve { get; set; }
+    public string? Alignment { get; set; }
+    public string? Type { get; set; }
+    public string? Parametertype { get; set; }
+    public string? Value { get; set; }
+    public string? Format { get; set; }
+    public string? Selectlov { get; set; }
+    public string? Reserve { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string Filter { get; set; }
+    public string? Filter { get; set; }
 
     public virtual ICollection<OsrFields> OsrFields { get; set; }
 

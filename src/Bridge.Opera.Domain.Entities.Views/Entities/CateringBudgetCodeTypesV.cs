@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CateringBudgetCodeTypesV
 {
-    public string TypeCode { get; set; }
-    public string Descr { get; set; }
-    public string BudgetType { get; set; }
-    public string ImportCode { get; set; }
-    public string CateringOnlyYn { get; set; }
-    public string ActiveYn { get; set; }
-    public string IsEventType { get; set; }
-    public string IsMarketGroupType { get; set; }
-    public string IsMealType { get; set; }
-    public string IsRevenueType { get; set; }
+    public string? TypeCode { get; set; }
+    public string? Descr { get; set; }
+    public string? BudgetType { get; set; }
+    public string? ImportCode { get; set; }
+    public string? CateringOnlyYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? IsEventType { get; set; }
+    public string? IsMarketGroupType { get; set; }
+    public string? IsMealType { get; set; }
+    public string? IsRevenueType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

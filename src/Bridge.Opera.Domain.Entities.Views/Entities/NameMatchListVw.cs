@@ -2,50 +2,50 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class NameMatchListVw
 {
-    public decimal MergeId { get; set; }
-    public decimal N1NameId { get; set; }
-    public string N1NameType { get; set; }
-    public string N1NameTypeDisp { get; set; }
-    public string N1DisplayName { get; set; }
-    public string N1NameCode { get; set; }
-    public string N1ChainCode { get; set; }
-    public string N1ResortRegistererd { get; set; }
-    public string N1Last { get; set; }
-    public string N1First { get; set; }
-    public string N1Sname { get; set; }
-    public string N1SfirstName { get; set; }
-    public string N1Sxname { get; set; }
-    public string N1SxfirstName { get; set; }
-    public decimal N2NameId { get; set; }
-    public string N2NameType { get; set; }
-    public string N2NameTypeDisp { get; set; }
-    public string N2DisplayName { get; set; }
-    public string N2NameCode { get; set; }
-    public string N2ChainCode { get; set; }
-    public string N2ResortRegistererd { get; set; }
-    public string N2Last { get; set; }
-    public string N2First { get; set; }
-    public string N2Sname { get; set; }
-    public string N2SfirstName { get; set; }
-    public string N2Sxname { get; set; }
-    public string N2SxfirstName { get; set; }
-    public string MergeKey { get; set; }
-    public string DoNotMergeFlg { get; set; }
+    public decimal? MergeId { get; set; }
+    public decimal? N1NameId { get; set; }
+    public string? N1NameType { get; set; }
+    public string? N1NameTypeDisp { get; set; }
+    public string? N1DisplayName { get; set; }
+    public string? N1NameCode { get; set; }
+    public string? N1ChainCode { get; set; }
+    public string? N1ResortRegistererd { get; set; }
+    public string? N1Last { get; set; }
+    public string? N1First { get; set; }
+    public string? N1Sname { get; set; }
+    public string? N1SfirstName { get; set; }
+    public string? N1Sxname { get; set; }
+    public string? N1SxfirstName { get; set; }
+    public decimal? N2NameId { get; set; }
+    public string? N2NameType { get; set; }
+    public string? N2NameTypeDisp { get; set; }
+    public string? N2DisplayName { get; set; }
+    public string? N2NameCode { get; set; }
+    public string? N2ChainCode { get; set; }
+    public string? N2ResortRegistererd { get; set; }
+    public string? N2Last { get; set; }
+    public string? N2First { get; set; }
+    public string? N2Sname { get; set; }
+    public string? N2SfirstName { get; set; }
+    public string? N2Sxname { get; set; }
+    public string? N2SxfirstName { get; set; }
+    public string? MergeKey { get; set; }
+    public string? DoNotMergeFlg { get; set; }
     public decimal? DoNotMergeUid { get; set; }
     public DateTime? DoNotMergeDate { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMessage { get; set; }
-    public string UserMessage { get; set; }
-    public string MergeCriteriaRuleCode { get; set; }
-    public string MatchDesc { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMessage { get; set; }
+    public string? UserMessage { get; set; }
+    public string? MergeCriteriaRuleCode { get; set; }
+    public string? MatchDesc { get; set; }
     public decimal? MatchPoints { get; set; }
     public DateTime? PointsComputedDate { get; set; }
-    public string RuleCode { get; set; }
-    public string MergeDirectionFlg { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? RuleCode { get; set; }
+    public string? MergeDirectionFlg { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

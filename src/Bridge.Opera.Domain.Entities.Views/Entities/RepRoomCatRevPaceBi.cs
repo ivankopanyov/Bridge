@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepRoomCatRevPaceBi
 {
     public decimal? ReportId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? StayYear { get; set; }
     public DateTime? StayDate { get; set; }
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? NewDefRev { get; set; }
     public decimal? CancelRev { get; set; }
     public decimal? Revaluation { get; set; }

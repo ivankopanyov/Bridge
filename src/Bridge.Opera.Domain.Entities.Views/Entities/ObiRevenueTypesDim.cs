@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRevenueTypesDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string RevType { get; set; }
-    public string Description { get; set; }
-    public string RevGroup { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? RevType { get; set; }
+    public string? Description { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
-    public string FbClass { get; set; }
+    public string? FbClass { get; set; }
     public decimal? Vat { get; set; }
-    public string ContributeToMinRevenue { get; set; }
+    public string? ContributeToMinRevenue { get; set; }
     public DateTime? InactiveDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FitContractConfig
 {
-    public string ConfigCode { get; set; }
-    public string Description { get; set; }
-    public string DisplayYn { get; set; }
-    public string PrintYn { get; set; }
+    public string? ConfigCode { get; set; }
+    public string? Description { get; set; }
+    public string? DisplayYn { get; set; }
+    public string? PrintYn { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }

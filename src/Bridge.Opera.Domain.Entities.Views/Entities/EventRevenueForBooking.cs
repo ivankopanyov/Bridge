@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventRevenueForBooking
 {
-    public string BlockResort { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string RevType { get; set; }
+    public string? BlockResort { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? RevType { get; set; }
     public decimal? ForecastRevenue { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }

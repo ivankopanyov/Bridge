@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidDynamicProceduresSys
 {
-    public string ProcedureGroup { get; set; }
-    public string ProcedureType { get; set; }
+    public string? ProcedureGroup { get; set; }
+    public string? ProcedureType { get; set; }
     public decimal? ProcedureBlockSeq { get; set; }
-    public string ProcedureBlock { get; set; }
+    public string? ProcedureBlock { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

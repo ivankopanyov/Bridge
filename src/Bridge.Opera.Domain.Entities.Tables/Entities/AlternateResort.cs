@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AlternateResort
 {
-    public string Resort { get; set; }
-    public string AlternateResort1 { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? Resort { get; set; }
+    public string? AlternateResort1 { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public decimal? Distance { get; set; }
-    public string DistanceType { get; set; }
-    public string DrivingTime { get; set; }
-    public string Direction { get; set; }
-    public string Comments { get; set; }
+    public string? DistanceType { get; set; }
+    public string? DrivingTime { get; set; }
+    public string? Direction { get; set; }
+    public string? Comments { get; set; }
     public decimal? OrderBy { get; set; }
-    public string CrossBookingYn { get; set; }
-    public string CrossPostingYn { get; set; }
-    public string CrossBlockingYn { get; set; }
-    public string AlternateYn { get; set; }
-    public string CrossReportingYn { get; set; }
+    public string? CrossBookingYn { get; set; }
+    public string? CrossPostingYn { get; set; }
+    public string? CrossBlockingYn { get; set; }
+    public string? AlternateYn { get; set; }
+    public string? CrossReportingYn { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

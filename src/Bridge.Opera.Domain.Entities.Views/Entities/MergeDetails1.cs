@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MergeDetails1
 {
-    public decimal MergeIdLink { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
+    public decimal? MergeIdLink { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

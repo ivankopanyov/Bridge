@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipResorts
 {
-    public string MembershipType { get; set; }
-    public string InternalRefValue { get; set; }
-    public string ExternalRefType { get; set; }
-    public string ExternalRefValue { get; set; }
+    public string? MembershipType { get; set; }
+    public string? InternalRefValue { get; set; }
+    public string? ExternalRefType { get; set; }
+    public string? ExternalRefValue { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ChainCode { get; set; }
+    public string? ChainCode { get; set; }
 
     public virtual MembershipTypes MembershipTypes { get; set; }
 

@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CreditCardInterfaceSetups
 {
-    public decimal CCReaderDeviceId { get; set; }
-    public string Resort { get; set; }
-    public decimal CCInterfaceSetupId { get; set; }
+    public decimal? CCReaderDeviceId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? CCInterfaceSetupId { get; set; }
 
     public virtual CreditCardIntfaceGnrlPar ResortNavigation { get; set; }
 

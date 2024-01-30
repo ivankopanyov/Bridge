@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MessageRecvBin
 {
-    public decimal MessageId { get; set; }
-    public string Recipient { get; set; }
+    public decimal? MessageId { get; set; }
+    public string? Recipient { get; set; }
     public decimal? Sid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

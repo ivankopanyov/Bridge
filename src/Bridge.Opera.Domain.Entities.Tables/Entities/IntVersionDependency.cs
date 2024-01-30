@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntVersionDependency
 {
-    public string Interfacename { get; set; }
-    public string Interfacetype { get; set; }
-    public string IntVersion { get; set; }
-    public string PmsVersion { get; set; }
-    public DateTime InsertDate { get; set; }
-    public string Comments { get; set; }
+    public string? Interfacename { get; set; }
+    public string? Interfacetype { get; set; }
+    public string? IntVersion { get; set; }
+    public string? PmsVersion { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

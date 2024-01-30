@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcMessages
 {
-    public string Resort { get; set; }
-    public string Machine { get; set; }
+    public string? Resort { get; set; }
+    public string? Machine { get; set; }
     public decimal? RowId { get; set; }
-    public string DbfLogo { get; set; }
-    public string Message { get; set; }
+    public string? DbfLogo { get; set; }
+    public string? Message { get; set; }
     public decimal? SeqNum { get; set; }
     public decimal? Priority { get; set; }
-    public string Operation { get; set; }
+    public string? Operation { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string RequestId { get; set; }
-    public string IfcFktLogo { get; set; }
-    public string ControlYn { get; set; }
+    public string? RequestId { get; set; }
+    public string? IfcFktLogo { get; set; }
+    public string? ControlYn { get; set; }
     public DateTime? ExpiryTime { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

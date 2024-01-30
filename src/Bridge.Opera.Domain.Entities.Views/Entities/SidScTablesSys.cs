@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidScTablesSys
 {
-    public string Tablename { get; set; }
-    public string Language { get; set; }
-    public string DisplayName { get; set; }
-    public string SystemYn { get; set; }
-    public string ObjType { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? Tablename { get; set; }
+    public string? Language { get; set; }
+    public string? DisplayName { get; set; }
+    public string? SystemYn { get; set; }
+    public string? ObjType { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

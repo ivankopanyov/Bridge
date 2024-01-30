@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidConfigModulesSys
 {
-    public string DefaultModule { get; set; }
-    public string ConfigMode { get; set; }
-    public string ModuleType { get; set; }
-    public string NewModule { get; set; }
-    public string Remarks { get; set; }
+    public string? DefaultModule { get; set; }
+    public string? ConfigMode { get; set; }
+    public string? ModuleType { get; set; }
+    public string? NewModule { get; set; }
+    public string? Remarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

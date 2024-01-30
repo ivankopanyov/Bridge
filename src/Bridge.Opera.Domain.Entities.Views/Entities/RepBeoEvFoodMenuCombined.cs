@@ -4,36 +4,36 @@ public partial class RepBeoEvFoodMenuCombined
 {
     public decimal? ActualCovers { get; set; }
     public decimal? ActualNumber { get; set; }
-    public string BeverageClass { get; set; }
-    public decimal BookId { get; set; }
-    public string ConsumptionYn { get; set; }
-    public string Description { get; set; }
+    public string? BeverageClass { get; set; }
+    public decimal? BookId { get; set; }
+    public string? ConsumptionYn { get; set; }
+    public string? Description { get; set; }
     public decimal? EventId { get; set; }
-    public string CombinedEventIds { get; set; }
+    public string? CombinedEventIds { get; set; }
     public decimal? ExpectedNumber { get; set; }
-    public string GratuityYn { get; set; }
+    public string? GratuityYn { get; set; }
     public decimal? GuaranteedNumber { get; set; }
     public decimal? MenuId { get; set; }
-    public string CombinedMenuIds { get; set; }
-    public string Name { get; set; }
+    public string? CombinedMenuIds { get; set; }
+    public string? Name { get; set; }
     public decimal? Price { get; set; }
-    public string Restriction { get; set; }
-    public string Serving { get; set; }
+    public string? Restriction { get; set; }
+    public string? Serving { get; set; }
     public DateTime? ServingEnd { get; set; }
     public DateTime? ServingStart { get; set; }
     public decimal? SetNumber { get; set; }
-    public string Tickets { get; set; }
+    public string? Tickets { get; set; }
     public decimal? BilledNumber { get; set; }
     public decimal? ComplimentaryNumber { get; set; }
     public decimal? EventMenuId { get; set; }
-    public string CombinedEventMenuIds { get; set; }
+    public string? CombinedEventMenuIds { get; set; }
     public decimal? PersonsPerTable { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? PkgId { get; set; }
-    public string CombinedPkgIds { get; set; }
-    public string MultiChoiceYn { get; set; }
-    public string MenuResort { get; set; }
+    public string? CombinedPkgIds { get; set; }
+    public string? MultiChoiceYn { get; set; }
+    public string? MenuResort { get; set; }
     public decimal? PkgExpNumber { get; set; }
     public decimal? PkgGuaNumber { get; set; }
     public decimal? PkgActNumber { get; set; }

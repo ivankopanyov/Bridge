@@ -2,202 +2,202 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinancialTransactBaseView
 {
-    public string AccTypeFlag { get; set; }
-    public string AdvancedGenerateYn { get; set; }
-    public string AdvGenerateAdjustment { get; set; }
-    public string AdvGenerateTrxCode { get; set; }
-    public string AllowanceType { get; set; }
-    public string ApprovalCode { get; set; }
+    public string? AccTypeFlag { get; set; }
+    public string? AdvancedGenerateYn { get; set; }
+    public string? AdvGenerateAdjustment { get; set; }
+    public string? AdvGenerateTrxCode { get; set; }
+    public string? AllowanceType { get; set; }
+    public string? ApprovalCode { get; set; }
     public DateTime? ApprovalDate { get; set; }
-    public string ApprovalStatus { get; set; }
+    public string? ApprovalStatus { get; set; }
     public decimal? ArrangementId { get; set; }
     public decimal? ArticleId { get; set; }
-    public string ArChargeTransferYn { get; set; }
+    public string? ArChargeTransferYn { get; set; }
     public decimal? ArLedCredit { get; set; }
     public decimal? ArLedDebit { get; set; }
     public decimal? ArNumber { get; set; }
-    public string ArState { get; set; }
+    public string? ArState { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string AsbFlag { get; set; }
+    public string? AsbFlag { get; set; }
     public decimal? AuthorizerId { get; set; }
-    public string AutoSettleYn { get; set; }
+    public string? AutoSettleYn { get; set; }
     public decimal? BillNo { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string CalcPointsYn { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? CalcPointsYn { get; set; }
     public decimal? CashierCredit { get; set; }
     public decimal? CashierDebit { get; set; }
     public decimal? CashierId { get; set; }
     public decimal? CashierOpeningBalance { get; set; }
     public decimal? CcTrxFeeAmount { get; set; }
     public decimal? ChangeDue { get; set; }
-    public string CheckFileId { get; set; }
-    public string ChequeNumber { get; set; }
+    public string? CheckFileId { get; set; }
+    public string? ChequeNumber { get; set; }
     public decimal? ClosureNo { get; set; }
-    public string CollAgentPostingYn { get; set; }
-    public string Comments { get; set; }
-    public string CompressedYn { get; set; }
-    public string CompLinkTrxCode { get; set; }
+    public string? CollAgentPostingYn { get; set; }
+    public string? Comments { get; set; }
+    public string? CompressedYn { get; set; }
+    public string? CompLinkTrxCode { get; set; }
     public decimal? CompLinkTrxNo { get; set; }
-    public string CompTypeCode { get; set; }
-    public string ContractCurrency { get; set; }
+    public string? CompTypeCode { get; set; }
+    public string? ContractCurrency { get; set; }
     public decimal? ContractGrossAmount { get; set; }
     public decimal? ContractGuestCredit { get; set; }
     public decimal? ContractGuestDebit { get; set; }
     public decimal? ContractNetAmount { get; set; }
-    public string CouponNo { get; set; }
-    public string Covers { get; set; }
+    public string? CouponNo { get; set; }
+    public string? Covers { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string Currency { get; set; }
-    public string DeferredTaxesYn { get; set; }
-    public string DeferredYn { get; set; }
+    public string? Currency { get; set; }
+    public string? DeferredTaxesYn { get; set; }
+    public string? DeferredYn { get; set; }
     public decimal? DepLedCredit { get; set; }
     public decimal? DepLedDebit { get; set; }
-    public string DisplayYn { get; set; }
+    public string? DisplayYn { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public DateTime? ExchangeDate { get; set; }
-    public string ExchangeDifferenceYn { get; set; }
+    public string? ExchangeDifferenceYn { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string ExchangeType { get; set; }
-    public string ExtSysResultMsg { get; set; }
-    public string ExtTrxId { get; set; }
+    public string? ExchangeType { get; set; }
+    public string? ExtSysResultMsg { get; set; }
+    public string? ExtTrxId { get; set; }
     public decimal? FinDmlSeqNo { get; set; }
-    public string FiscalBillNo { get; set; }
-    public string FiscalTrxCodeType { get; set; }
-    public string FixedChargesYn { get; set; }
+    public string? FiscalBillNo { get; set; }
+    public string? FiscalTrxCodeType { get; set; }
+    public string? FixedChargesYn { get; set; }
     public decimal? FolioNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public int? FolioView { get; set; }
     public decimal? ForexCommAmount { get; set; }
     public decimal? ForexCommPerc { get; set; }
-    public string ForexType { get; set; }
+    public string? ForexType { get; set; }
     public decimal? FromResvId { get; set; }
-    public string FtGeneratedType { get; set; }
-    public string FtSubtype { get; set; }
+    public string? FtGeneratedType { get; set; }
+    public string? FtSubtype { get; set; }
     public decimal? GenCashierId { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? GuestAccountCredit { get; set; }
     public decimal? GuestAccountDebit { get; set; }
-    public string HoldYn { get; set; }
-    public string HotelAcct { get; set; }
-    public string IndAdjustmentYn { get; set; }
+    public string? HoldYn { get; set; }
+    public string? HotelAcct { get; set; }
+    public string? IndAdjustmentYn { get; set; }
     public decimal? InhCredit { get; set; }
     public decimal? InhDebit { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public decimal? Installments { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string InvoiceType { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? LinkTrxNo { get; set; }
-    public string MarketCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? MtrxNoAgainstPackage { get; set; }
     public decimal? NameId { get; set; }
-    public string NameTaxType { get; set; }
+    public string? NameTaxType { get; set; }
     public decimal? NetAmount { get; set; }
-    public string NumberDialed { get; set; }
+    public string? NumberDialed { get; set; }
     public decimal? OrgArLedDebit { get; set; }
     public decimal? OrgBillNo { get; set; }
-    public string OrgFolioType { get; set; }
+    public string? OrgFolioType { get; set; }
     public decimal? OriginalResvNameId { get; set; }
-    public string OriginalRoom { get; set; }
-    public string OTrxDesc { get; set; }
+    public string? OriginalRoom { get; set; }
+    public string? OTrxDesc { get; set; }
     public decimal? PackageAllowance { get; set; }
     public decimal? PackageCredit { get; set; }
     public decimal? PackageDebit { get; set; }
-    public string PackageTrxType { get; set; }
-    public string ParallelCurrency { get; set; }
+    public string? PackageTrxType { get; set; }
+    public string? ParallelCurrency { get; set; }
     public decimal? ParallelGrossAmount { get; set; }
     public decimal? ParallelGuestCredit { get; set; }
     public decimal? ParallelGuestDebit { get; set; }
     public decimal? ParallelNetAmount { get; set; }
-    public string PasserByName { get; set; }
-    public string PaymentType { get; set; }
+    public string? PasserByName { get; set; }
+    public string? PaymentType { get; set; }
     public decimal? PostedAmount { get; set; }
     public DateTime? PostingDate { get; set; }
     public decimal? PostingSourceNameId { get; set; }
-    public string PostingType { get; set; }
+    public string? PostingType { get; set; }
     public decimal? PostitNo { get; set; }
-    public string PostitYn { get; set; }
+    public string? PostitYn { get; set; }
     public decimal? PricePerUnit { get; set; }
-    public string Processed8300Yn { get; set; }
-    public string Product { get; set; }
-    public string ProfitLossFlag { get; set; }
-    public string ProformaYn { get; set; }
+    public string? Processed8300Yn { get; set; }
+    public string? Product { get; set; }
+    public string? ProfitLossFlag { get; set; }
+    public string? ProformaYn { get; set; }
     public decimal? Quantity { get; set; }
-    public string QueueName { get; set; }
-    public string RateCode { get; set; }
-    public string ReasonCode { get; set; }
+    public string? QueueName { get; set; }
+    public string? RateCode { get; set; }
+    public string? ReasonCode { get; set; }
     public decimal? RecptNo { get; set; }
-    public string RecptType { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
-    public string Resort { get; set; }
+    public string? RecptType { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
+    public string? Resort { get; set; }
     public decimal? ResvDepositId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? RevenueAmt { get; set; }
     public decimal? RevisionNo { get; set; }
-    public string Room { get; set; }
-    public string RoomClass { get; set; }
+    public string? Room { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? RoomNts { get; set; }
     public DateTime? RoutingDate { get; set; }
     public decimal? RoutingInstrnId { get; set; }
-    public string SettlementFlag { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceCommissionNetYn { get; set; }
-    public string TargetResort { get; set; }
-    public string TaxElements { get; set; }
-    public string TaxGeneratedYn { get; set; }
-    public string TaxInclusiveYn { get; set; }
-    public string TaxInvNo { get; set; }
-    public string TaCommissionableYn { get; set; }
-    public string TaCommissionNetYn { get; set; }
-    public string TclCode1 { get; set; }
-    public string TclCode2 { get; set; }
-    public string TcGroup { get; set; }
-    public string TcSubgroup { get; set; }
+    public string? SettlementFlag { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceCommissionNetYn { get; set; }
+    public string? TargetResort { get; set; }
+    public string? TaxElements { get; set; }
+    public string? TaxGeneratedYn { get; set; }
+    public string? TaxInclusiveYn { get; set; }
+    public string? TaxInvNo { get; set; }
+    public string? TaCommissionableYn { get; set; }
+    public string? TaCommissionNetYn { get; set; }
+    public string? TclCode1 { get; set; }
+    public string? TclCode2 { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
     public decimal? ToResvNameId { get; set; }
     public decimal? TranActionId { get; set; }
     public DateTime? TrnsActivityDate { get; set; }
     public decimal? TrnsFromAcct { get; set; }
     public decimal? TrnsToAcct { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string TrxCode { get; set; }
-    public DateTime TrxDate { get; set; }
-    public decimal TrxNo { get; set; }
+    public string? TrxCode { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public decimal? TrxNo { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? TrxNoAdjust { get; set; }
     public decimal? TrxNoAgainstPackage { get; set; }
     public decimal? TrxNoHeader { get; set; }
-    public string TrxServiceType { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string DepTaxTransferedYn { get; set; }
-    public string AutoCreditbillYn { get; set; }
+    public string? TrxServiceType { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? DepTaxTransferedYn { get; set; }
+    public string? AutoCreditbillYn { get; set; }
     public decimal? BonusCheckId { get; set; }
-    public string PostingRhythm { get; set; }
-    public string FbaCertificateNumber { get; set; }
-    public string ExpInvoiceType { get; set; }
-    public string ExpOriginalInvoice { get; set; }
-    public string AsbTaxFlag { get; set; }
-    public string AsbOnlyPostTaxesOnceYn { get; set; }
+    public string? PostingRhythm { get; set; }
+    public string? FbaCertificateNumber { get; set; }
+    public string? ExpInvoiceType { get; set; }
+    public string? ExpOriginalInvoice { get; set; }
+    public string? AsbTaxFlag { get; set; }
+    public string? AsbOnlyPostTaxesOnceYn { get; set; }
     public decimal? RoundLinkTrxno { get; set; }
-    public string RoundFactorYn { get; set; }
-    public string DepPostingFlag { get; set; }
+    public string? RoundFactorYn { get; set; }
+    public string? DepPostingFlag { get; set; }
     public DateTime? EffectiveDate { get; set; }
-    public string PackageArrangementCode { get; set; }
-    public string CorrectionYn { get; set; }
-    public string RoutedYn { get; set; }
-    public string UpsellChargeYn { get; set; }
+    public string? PackageArrangementCode { get; set; }
+    public string? CorrectionYn { get; set; }
+    public string? RoutedYn { get; set; }
+    public string? UpsellChargeYn { get; set; }
     public decimal? ReversePaymentTrxNo { get; set; }
-    public string AdvanceBillYn { get; set; }
-    public string AdvanceBillReversedYn { get; set; }
-    public string GpAwardCode { get; set; }
-    public string GpAwardCancelCode { get; set; }
-    public string GpAwardCancelledYn { get; set; }
+    public string? AdvanceBillYn { get; set; }
+    public string? AdvanceBillReversedYn { get; set; }
+    public string? GpAwardCode { get; set; }
+    public string? GpAwardCancelCode { get; set; }
+    public string? GpAwardCancelledYn { get; set; }
     public decimal? OrgPostedAmount { get; set; }
-    public string IncTaxDeductedYn { get; set; }
-    public string CcRefundPosting { get; set; }
+    public string? IncTaxDeductedYn { get; set; }
+    public string? CcRefundPosting { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -8,15 +8,15 @@ public partial class RoomSetup
         ScPkgEventSetup = new HashSet<ScPkgEventSetup>();
     }
 
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public decimal SetupcodeId { get; set; }
-    public string SetupCode { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public decimal? SetupcodeId { get; set; }
+    public string? SetupCode { get; set; }
     public byte? SetupTime { get; set; }
     public byte? SetdownTime { get; set; }
     public decimal? OccMin { get; set; }
     public decimal? OccMax { get; set; }
-    public string DefaultYn { get; set; }
+    public string? DefaultYn { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual Room R { get; set; }

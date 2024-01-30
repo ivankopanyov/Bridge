@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpLogView
 {
-    public string ExpLogId { get; set; }
-    public decimal ExpLogSeq { get; set; }
-    public string LogTxt { get; set; }
-    public string CharInsertTime { get; set; }
+    public string? ExpLogId { get; set; }
+    public decimal? ExpLogSeq { get; set; }
+    public string? LogTxt { get; set; }
+    public string? CharInsertTime { get; set; }
     public DateTime? InsertTime { get; set; }
-    public string FileId { get; set; }
-    public string DataId { get; set; }
-    public string Sid { get; set; }
-    public string Resort { get; set; }
+    public string? FileId { get; set; }
+    public string? DataId { get; set; }
+    public string? Sid { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

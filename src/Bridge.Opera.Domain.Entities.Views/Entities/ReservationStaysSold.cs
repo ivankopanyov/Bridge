@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ReservationStaysSold
 {
-    public string Resort { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string RoomCategory { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? RoomCount { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
     public decimal? DeductReservationCount { get; set; }
     public decimal? InventoryNights { get; set; }
     public decimal? ReservationCount { get; set; }
-    public decimal ResvDailyElSeq { get; set; }
+    public decimal? ResvDailyElSeq { get; set; }
     public decimal? ResvNameIdMin { get; set; }
     public decimal? ResvNameIdMax { get; set; }
 

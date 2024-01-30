@@ -9,10 +9,10 @@ public partial class SurveyTemplate
         SurveyTemplateDetails = new HashSet<SurveyTemplateDetails>();
     }
 
-    public string Resort { get; set; }
-    public decimal SurveyTemplateId { get; set; }
-    public string SurveyTemplateName { get; set; }
-    public string SurveyTemplateType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? SurveyTemplateId { get; set; }
+    public string? SurveyTemplateName { get; set; }
+    public string? SurveyTemplateType { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

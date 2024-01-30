@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SimpleDynFieldsSidVw
 {
-    public string ModuleType { get; set; }
-    public string ModuleName { get; set; }
-    public string ObjectType { get; set; }
-    public string ObjectName { get; set; }
-    public string ChildObjectType1 { get; set; }
-    public string ChildObjectName1 { get; set; }
-    public string ChildObjectType2 { get; set; }
-    public string ChildObjectName2 { get; set; }
-    public string ObjectDatatype { get; set; }
-    public string HideYn { get; set; }
-    public string DefaultYn { get; set; }
-    public string Resort { get; set; }
-    public string Hide { get; set; }
-    public string ExecuteYn { get; set; }
-    public string DefaultValue { get; set; }
-    public string ScreenLabel { get; set; }
+    public string? ModuleType { get; set; }
+    public string? ModuleName { get; set; }
+    public string? ObjectType { get; set; }
+    public string? ObjectName { get; set; }
+    public string? ChildObjectType1 { get; set; }
+    public string? ChildObjectName1 { get; set; }
+    public string? ChildObjectType2 { get; set; }
+    public string? ChildObjectName2 { get; set; }
+    public string? ObjectDatatype { get; set; }
+    public string? HideYn { get; set; }
+    public string? DefaultYn { get; set; }
+    public string? Resort { get; set; }
+    public string? Hide { get; set; }
+    public string? ExecuteYn { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? ScreenLabel { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string DefaultValueDisp { get; set; }
+    public string? DefaultValueDisp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

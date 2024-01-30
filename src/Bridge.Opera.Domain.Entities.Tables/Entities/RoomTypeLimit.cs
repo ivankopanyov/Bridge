@@ -7,10 +7,10 @@ public partial class RoomTypeLimit
         RoomTypeLimitDetails = new HashSet<RoomTypeLimitDetails>();
     }
 
-    public decimal LimitId { get; set; }
-    public string Description { get; set; }
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
+    public decimal? LimitId { get; set; }
+    public string? Description { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

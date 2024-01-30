@@ -2,51 +2,51 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpAccountsDay
 {
-    public string RecordType { get; set; }
-    public string SourceSystem { get; set; }
-    public string PropertyCode { get; set; }
-    public string TransactionType { get; set; }
+    public string? RecordType { get; set; }
+    public string? SourceSystem { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? TransactionType { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Keyword { get; set; }
-    public string ActiveYn { get; set; }
-    public string AccAddress1 { get; set; }
-    public string AccAddress2 { get; set; }
-    public string AccAddress3 { get; set; }
-    public string AccAddress4 { get; set; }
-    public string AccCity { get; set; }
-    public string AccState { get; set; }
-    public string AccZipCode { get; set; }
-    public string AccRegionCode { get; set; }
-    public string AccCountry { get; set; }
-    public string AccPhoneNo { get; set; }
-    public string AccPhoneExt { get; set; }
+    public string? Keyword { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? AccAddress1 { get; set; }
+    public string? AccAddress2 { get; set; }
+    public string? AccAddress3 { get; set; }
+    public string? AccAddress4 { get; set; }
+    public string? AccCity { get; set; }
+    public string? AccState { get; set; }
+    public string? AccZipCode { get; set; }
+    public string? AccRegionCode { get; set; }
+    public string? AccCountry { get; set; }
+    public string? AccPhoneNo { get; set; }
+    public string? AccPhoneExt { get; set; }
     public decimal? AccountId { get; set; }
     public decimal? MasterId { get; set; }
-    public string AccPrimaryFax { get; set; }
-    public string IataCompType { get; set; }
-    public string IataCorpNo { get; set; }
-    public string NameType { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc01 { get; set; }
-    public string IndustryCode { get; set; }
+    public string? AccPrimaryFax { get; set; }
+    public string? IataCompType { get; set; }
+    public string? IataCorpNo { get; set; }
+    public string? NameType { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? IndustryCode { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDateTime { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDateTime { get; set; }
-    public string Udfc02Desc { get; set; }
-    public string Udfc02Code { get; set; }
-    public string Udfc06 { get; set; }
-    public string ProfileId { get; set; }
-    public string AccName { get; set; }
-    public string AccName2 { get; set; }
-    public string AccName3 { get; set; }
-    public string AddressType { get; set; }
-    public string AccPrimaryWeb { get; set; }
-    public string BusSegment { get; set; }
-    public string AccountType { get; set; }
-    public string AccountSource { get; set; }
-    public string CompetitionCode { get; set; }
-    public string CompetitionDesc { get; set; }
+    public string? Udfc02Desc { get; set; }
+    public string? Udfc02Code { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? ProfileId { get; set; }
+    public string? AccName { get; set; }
+    public string? AccName2 { get; set; }
+    public string? AccName3 { get; set; }
+    public string? AddressType { get; set; }
+    public string? AccPrimaryWeb { get; set; }
+    public string? BusSegment { get; set; }
+    public string? AccountType { get; set; }
+    public string? AccountSource { get; set; }
+    public string? CompetitionCode { get; set; }
+    public string? CompetitionDesc { get; set; }
     public decimal? ParentId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

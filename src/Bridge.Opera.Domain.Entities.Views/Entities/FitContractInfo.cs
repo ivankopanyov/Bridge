@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractInfo
 {
-    public decimal ContractId { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
-    public string ContractPeriod { get; set; }
-    public string ContractNo { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
+    public string? ContractPeriod { get; set; }
+    public string? ContractNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

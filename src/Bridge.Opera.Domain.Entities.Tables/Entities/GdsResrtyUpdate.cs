@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsResrtyUpdate
 {
-    public string Resort { get; set; }
-    public string RoomTypeCode { get; set; }
-    public string Description1 { get; set; }
-    public string Description2 { get; set; }
-    public string Description3 { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomTypeCode { get; set; }
+    public string? Description1 { get; set; }
+    public string? Description2 { get; set; }
+    public string? Description3 { get; set; }
     public decimal? MaxRoomOccupancy { get; set; }
     public decimal? PropupId { get; set; }
-    public string GdsHost { get; set; }
+    public string? GdsHost { get; set; }
 
     public virtual GdsPropupUpdate Propup { get; set; }
 

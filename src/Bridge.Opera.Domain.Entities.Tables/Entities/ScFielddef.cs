@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScFielddef
 {
-    public decimal FldId { get; set; }
-    public string Tablename { get; set; }
-    public string FldName { get; set; }
-    public string Resort { get; set; }
-    public string Action { get; set; }
-    public string FldValue { get; set; }
-    public string FldFunctionYn { get; set; }
-    public string CustomYn { get; set; }
-    public string ParentYn { get; set; }
-    public string ComputeDateYn { get; set; }
+    public decimal? FldId { get; set; }
+    public string? Tablename { get; set; }
+    public string? FldName { get; set; }
+    public string? Resort { get; set; }
+    public string? Action { get; set; }
+    public string? FldValue { get; set; }
+    public string? FldFunctionYn { get; set; }
+    public string? CustomYn { get; set; }
+    public string? ParentYn { get; set; }
+    public string? ComputeDateYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

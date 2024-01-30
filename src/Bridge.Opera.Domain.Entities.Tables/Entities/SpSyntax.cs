@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SpSyntax
 {
-    public decimal SyntaxId { get; set; }
-    public string SyntaxMeaning { get; set; }
-    public string SyntaxType { get; set; }
-    public string Syntax { get; set; }
-    public string Comments { get; set; }
+    public decimal? SyntaxId { get; set; }
+    public string? SyntaxMeaning { get; set; }
+    public string? SyntaxType { get; set; }
+    public string? Syntax { get; set; }
+    public string? Comments { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

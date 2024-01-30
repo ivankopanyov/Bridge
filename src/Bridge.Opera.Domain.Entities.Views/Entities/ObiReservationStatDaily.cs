@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiReservationStatDaily
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? NameId { get; set; }
-    public string RateCode { get; set; }
-    public string SourceCode { get; set; }
-    public string MarketCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomType { get; set; }
+    public string? RateCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomType { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? AgentId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? SourceProfId { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public DateTime? TruncBeginDate { get; set; }
     public DateTime? TruncEndDate { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? PhysicalQuantity { get; set; }
-    public string DueOutYn { get; set; }
-    public string RoomResvStatus { get; set; }
+    public string? DueOutYn { get; set; }
+    public string? RoomResvStatus { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? RoomAdults { get; set; }
@@ -39,23 +39,23 @@ public partial class ObiReservationStatDaily
     public decimal? TotalTax { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? OriginalEndDate { get; set; }
-    public string WalkinYn { get; set; }
+    public string? WalkinYn { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string RoomClass { get; set; }
-    public string VipStatus { get; set; }
+    public string? RoomClass { get; set; }
+    public string? VipStatus { get; set; }
     public DateTime? CancellationDate { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? MembershipId { get; set; }
     public decimal? ContactId { get; set; }
-    public string RateCategory { get; set; }
-    public string MarketMainGroup { get; set; }
-    public string SourceMainGroup { get; set; }
-    public string Channel { get; set; }
-    public string Country { get; set; }
-    public string RegionCode { get; set; }
-    public string Nationality { get; set; }
-    public string PsuedoRoomYn { get; set; }
+    public string? RateCategory { get; set; }
+    public string? MarketMainGroup { get; set; }
+    public string? SourceMainGroup { get; set; }
+    public string? Channel { get; set; }
+    public string? Country { get; set; }
+    public string? RegionCode { get; set; }
+    public string? Nationality { get; set; }
+    public string? PsuedoRoomYn { get; set; }
     public decimal? AdultsTaxFree { get; set; }
     public decimal? ChildrenTaxFree { get; set; }
     public decimal? StayRooms { get; set; }
@@ -79,9 +79,9 @@ public partial class ObiReservationStatDaily
     public decimal? OtherRevenue { get; set; }
     public decimal? PackageOtherRevenue { get; set; }
     public decimal? TotalOtherTax { get; set; }
-    public string CountryMainGroup { get; set; }
-    public string State { get; set; }
-    public string FiscalRegionCode { get; set; }
+    public string? CountryMainGroup { get; set; }
+    public string? State { get; set; }
+    public string? FiscalRegionCode { get; set; }
     public decimal? NonRevenue { get; set; }
     public decimal? PackageNonRevenue { get; set; }
     public decimal? TotalNonRevenueTax { get; set; }
@@ -108,28 +108,28 @@ public partial class ObiReservationStatDaily
     public decimal? DayUseReservations { get; set; }
     public decimal? CancelledReservations { get; set; }
     public decimal? NoShowReservations { get; set; }
-    public string City { get; set; }
-    public string ZipCode { get; set; }
-    public string District { get; set; }
+    public string? City { get; set; }
+    public string? ZipCode { get; set; }
+    public string? District { get; set; }
     public decimal? CashRoomNts { get; set; }
     public decimal? CompRoomNts { get; set; }
     public decimal? CashRoomRevenue { get; set; }
     public decimal? CompRoomRevenue { get; set; }
-    public string ResInsertSource { get; set; }
-    public string ResInsertSourceType { get; set; }
+    public string? ResInsertSource { get; set; }
+    public string? ResInsertSourceType { get; set; }
     public decimal? Children1 { get; set; }
     public decimal? Children2 { get; set; }
     public decimal? Children3 { get; set; }
     public decimal? Children4 { get; set; }
     public decimal? Children5 { get; set; }
-    public string FfMembershipType { get; set; }
-    public string FgMembershipType { get; set; }
-    public string PromotionCode { get; set; }
-    public string OwnerFfFlag { get; set; }
-    public string OwnerRentalFlag { get; set; }
-    public string CentralCurrencyCode { get; set; }
-    public string BookedRoomCategory { get; set; }
-    public string BookedRoomType { get; set; }
+    public string? FfMembershipType { get; set; }
+    public string? FgMembershipType { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? OwnerFfFlag { get; set; }
+    public string? OwnerRentalFlag { get; set; }
+    public string? CentralCurrencyCode { get; set; }
+    public string? BookedRoomCategory { get; set; }
+    public string? BookedRoomType { get; set; }
     public decimal? ActualRevenue { get; set; }
     public decimal? ActualRooms { get; set; }
     public decimal? RoomRevenueResIndDed { get; set; }
@@ -201,7 +201,7 @@ public partial class ObiReservationStatDaily
     public decimal? UpsoldRoom { get; set; }
     public decimal? UpgradeRoom { get; set; }
     public decimal? RegularRoom { get; set; }
-    public string StayMonth { get; set; }
+    public string? StayMonth { get; set; }
     public decimal? Stays { get; set; }
     public decimal? Los { get; set; }
     public decimal? LosA { get; set; }

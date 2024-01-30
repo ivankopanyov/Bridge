@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RateInfoTemplate
 {
-    public string Resort { get; set; }
-    public string LongInfo { get; set; }
+    public string? Resort { get; set; }
+    public string? LongInfo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

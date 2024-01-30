@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RoomStatisticsView
 {
-    public string Resort { get; set; }
-    public DateTime StatDate { get; set; }
-    public string RoomsSynchronizedYn { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StatDate { get; set; }
+    public string? RoomsSynchronizedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

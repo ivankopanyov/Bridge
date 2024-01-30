@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsRateSet
 {
-    public decimal KeyId { get; set; }
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string OldRateCode { get; set; }
-    public string RoomType { get; set; }
+    public decimal? KeyId { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? OldRateCode { get; set; }
+    public string? RoomType { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
     public decimal? Amount1 { get; set; }
     public decimal? Amount2 { get; set; }
     public decimal? Amount3 { get; set; }
@@ -30,7 +30,7 @@ public partial class OwsRateSet
     public decimal? ChildOwnCharge2 { get; set; }
     public decimal? ChildOwnCharge3 { get; set; }
     public decimal? ChildOwnCharge4 { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? InsertUser { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? InsertDate { get; set; }

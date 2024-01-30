@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ScPkgTranslation
 {
-    public string Resort { get; set; }
-    public decimal PkgId { get; set; }
-    public string Language { get; set; }
-    public string Field { get; set; }
-    public string Text { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? Language { get; set; }
+    public string? Field { get; set; }
+    public string? Text { get; set; }
 
     public virtual ScPackage Pkg { get; set; }
 

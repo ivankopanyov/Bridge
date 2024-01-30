@@ -3,19 +3,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class OgriddisplayarrayView
 {
     public DateTime? FDate { get; set; }
-    public string FLabel { get; set; }
-    public string FCell1 { get; set; }
-    public string FCell2 { get; set; }
-    public string FCell3 { get; set; }
-    public string FCell4 { get; set; }
-    public string FCell5 { get; set; }
-    public string FCell6 { get; set; }
-    public string FCell7 { get; set; }
-    public string FCell8 { get; set; }
-    public string FCell9 { get; set; }
-    public string FCell10 { get; set; }
-    public string FCell11 { get; set; }
-    public string FCell12 { get; set; }
+    public string? FLabel { get; set; }
+    public string? FCell1 { get; set; }
+    public string? FCell2 { get; set; }
+    public string? FCell3 { get; set; }
+    public string? FCell4 { get; set; }
+    public string? FCell5 { get; set; }
+    public string? FCell6 { get; set; }
+    public string? FCell7 { get; set; }
+    public string? FCell8 { get; set; }
+    public string? FCell9 { get; set; }
+    public string? FCell10 { get; set; }
+    public string? FCell11 { get; set; }
+    public string? FCell12 { get; set; }
     public decimal? FId1 { get; set; }
     public decimal? FId2 { get; set; }
     public decimal? FId3 { get; set; }
@@ -30,7 +30,7 @@ public partial class OgriddisplayarrayView
     public decimal? FId12 { get; set; }
     public decimal? FDaytotal { get; set; }
     public decimal? FTotalbook { get; set; }
-    public string FInternalLabel { get; set; }
+    public string? FInternalLabel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

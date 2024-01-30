@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcCallHist
 {
-    public string Resort { get; set; }
-    public decimal RowId { get; set; }
-    public string RoomNum { get; set; }
-    public string LineNum { get; set; }
-    public string Type { get; set; }
-    public string Register { get; set; }
+    public string? Resort { get; set; }
+    public decimal? RowId { get; set; }
+    public string? RoomNum { get; set; }
+    public string? LineNum { get; set; }
+    public string? Type { get; set; }
+    public string? Register { get; set; }
     public decimal? Units { get; set; }
-    public decimal Price { get; set; }
-    public string Dc { get; set; }
-    public string Cashier { get; set; }
-    public string TrunkId { get; set; }
-    public string GuestName { get; set; }
+    public decimal? Price { get; set; }
+    public string? Dc { get; set; }
+    public string? Cashier { get; set; }
+    public string? TrunkId { get; set; }
+    public string? GuestName { get; set; }
     public DateTime? CallTime { get; set; }
-    public string DialedDigits { get; set; }
+    public string? DialedDigits { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? PostDate { get; set; }
-    public string CheckNum { get; set; }
-    public string Supplement { get; set; }
+    public string? CheckNum { get; set; }
+    public string? Supplement { get; set; }
     public decimal? Duration { get; set; }
     public decimal? TrxNo { get; set; }
 

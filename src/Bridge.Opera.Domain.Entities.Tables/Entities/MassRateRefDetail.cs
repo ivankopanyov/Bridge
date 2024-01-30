@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MassRateRefDetail
 {
-    public decimal MassRateRefId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public DateTime ResvDate { get; set; }
-    public decimal PreviousRate { get; set; }
-    public decimal NewRate { get; set; }
-    public string RateCode { get; set; }
+    public decimal? MassRateRefId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public DateTime? ResvDate { get; set; }
+    public decimal? PreviousRate { get; set; }
+    public decimal? NewRate { get; set; }
+    public string? RateCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

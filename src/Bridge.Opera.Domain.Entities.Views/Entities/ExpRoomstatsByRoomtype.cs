@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpRoomstatsByRoomtype
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string Description { get; set; }
-    public DateTime BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? Description { get; set; }
+    public DateTime? BusinessDate { get; set; }
     public decimal? NoRooms { get; set; }
     public decimal? NoAdults { get; set; }
     public decimal? NoChildren { get; set; }

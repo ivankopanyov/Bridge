@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomClassExceptions
 {
-    public string Resort { get; set; }
-    public string TableName { get; set; }
-    public string RoomCategory { get; set; }
-    public string ToRoomClass { get; set; }
+    public string? Resort { get; set; }
+    public string? TableName { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? ToRoomClass { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
 

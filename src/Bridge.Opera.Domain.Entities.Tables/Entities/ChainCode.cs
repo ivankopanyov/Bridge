@@ -8,34 +8,34 @@ public partial class ChainCode
         BroadcastRules = new HashSet<BroadcastRules>();
     }
 
-    public string ChainCode1 { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime BeginDate { get; set; }
+    public string? ChainCode1 { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? NameId { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? ScriptId { get; set; }
-    public string LogoFileName { get; set; }
+    public string? LogoFileName { get; set; }
     public decimal? ImgChainId { get; set; }
-    public string ShareProfiles { get; set; }
-    public string AspYn { get; set; }
-    public string HoStreet { get; set; }
-    public string HoCity { get; set; }
-    public string HoPostCode { get; set; }
-    public string HoCountry { get; set; }
-    public string HoState { get; set; }
-    public string HoTelephone { get; set; }
-    public string HoFax { get; set; }
-    public string HoEmail { get; set; }
-    public string FrequentFlierCardsAcceptYn { get; set; }
-    public string BookingConditions { get; set; }
-    public string LoyaltyProgram { get; set; }
-    public string MarketingText { get; set; }
+    public string? ShareProfiles { get; set; }
+    public string? AspYn { get; set; }
+    public string? HoStreet { get; set; }
+    public string? HoCity { get; set; }
+    public string? HoPostCode { get; set; }
+    public string? HoCountry { get; set; }
+    public string? HoState { get; set; }
+    public string? HoTelephone { get; set; }
+    public string? HoFax { get; set; }
+    public string? HoEmail { get; set; }
+    public string? FrequentFlierCardsAcceptYn { get; set; }
+    public string? BookingConditions { get; set; }
+    public string? LoyaltyProgram { get; set; }
+    public string? MarketingText { get; set; }
 
     public virtual ICollection<AlternateChains> AlternateChains { get; set; }
     public virtual ICollection<BroadcastRules> BroadcastRules { get; set; }

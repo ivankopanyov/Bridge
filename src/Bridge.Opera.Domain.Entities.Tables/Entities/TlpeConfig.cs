@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TlpeConfig
 {
-    public string UserId { get; set; }
-    public string Password { get; set; }
-    public string Url { get; set; }
-    public string Httpaction { get; set; }
+    public string? UserId { get; set; }
+    public string? Password { get; set; }
+    public string? Url { get; set; }
+    public string? Httpaction { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CachedOwsCalTemp
 {
-    public string ChannelCode { get; set; }
-    public string Resort { get; set; }
-    public DateTime StayDate { get; set; }
-    public decimal Adults { get; set; }
-    public decimal Children { get; set; }
-    public decimal Children1 { get; set; }
-    public decimal Children2 { get; set; }
-    public decimal Children3 { get; set; }
-    public string RateCodes { get; set; }
-    public string RoomTypes { get; set; }
-    public decimal NoRooms { get; set; }
-    public decimal CompanyId { get; set; }
+    public string? ChannelCode { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StayDate { get; set; }
+    public decimal? Adults { get; set; }
+    public decimal? Children { get; set; }
+    public decimal? Children1 { get; set; }
+    public decimal? Children2 { get; set; }
+    public decimal? Children3 { get; set; }
+    public string? RateCodes { get; set; }
+    public string? RoomTypes { get; set; }
+    public decimal? NoRooms { get; set; }
+    public decimal? CompanyId { get; set; }
     public decimal? Amount { get; set; }
-    public string RestrictionTypes { get; set; }
-    public DateTime LastUpdateTime { get; set; }
-    public decimal LastUpdateUser { get; set; }
-    public string RateDescription { get; set; }
-    public string CurrencyCode { get; set; }
-    public decimal Nights { get; set; }
+    public string? RestrictionTypes { get; set; }
+    public DateTime? LastUpdateTime { get; set; }
+    public decimal? LastUpdateUser { get; set; }
+    public string? RateDescription { get; set; }
+    public string? CurrencyCode { get; set; }
+    public decimal? Nights { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

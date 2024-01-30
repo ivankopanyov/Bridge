@@ -2,47 +2,47 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidResortRoomCategory
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomClass { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? NumberRooms { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
-    public string Compiled { get; set; }
-    public string PsuedoRoomType { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
+    public string? Compiled { get; set; }
+    public string? PsuedoRoomType { get; set; }
     public DateTime? ActiveDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string ReplacesCategory { get; set; }
+    public string? ReplacesCategory { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? MaxOccupancy { get; set; }
     public decimal? MaxRollaways { get; set; }
-    public string RateCategory { get; set; }
-    public string Label { get; set; }
-    public string GenericFlag { get; set; }
-    public string SuiteYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string RateCode { get; set; }
+    public string? RateCategory { get; set; }
+    public string? Label { get; set; }
+    public string? GenericFlag { get; set; }
+    public string? SuiteYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? RateCode { get; set; }
     public decimal? RateAmount { get; set; }
     public decimal? DefOccupancy { get; set; }
     public decimal? ImageId { get; set; }
-    public string MeetingroomYn { get; set; }
-    public string PseudoYn { get; set; }
-    public string SendToInterfaceYn { get; set; }
-    public string YieldableYn { get; set; }
-    public string YieldCategory { get; set; }
-    public string Housekeeping { get; set; }
-    public string CanDeleteYn { get; set; }
-    public string AutoIncludeYn { get; set; }
-    public string AutoRoomAssignYn { get; set; }
+    public string? MeetingroomYn { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? SendToInterfaceYn { get; set; }
+    public string? YieldableYn { get; set; }
+    public string? YieldCategory { get; set; }
+    public string? Housekeeping { get; set; }
+    public string? CanDeleteYn { get; set; }
+    public string? AutoIncludeYn { get; set; }
+    public string? AutoRoomAssignYn { get; set; }
     public decimal? Increments { get; set; }
     public decimal? InitialRoundUp { get; set; }
-    public string OwnerYn { get; set; }
-    public string RoominfoUrl { get; set; }
-    public string RotationGroup { get; set; }
-    public string SalesFlag { get; set; }
+    public string? OwnerYn { get; set; }
+    public string? RoominfoUrl { get; set; }
+    public string? RotationGroup { get; set; }
+    public string? SalesFlag { get; set; }
     public decimal? MaxOccupancyAdults { get; set; }
     public decimal? MaxOccupancyChildren { get; set; }
 

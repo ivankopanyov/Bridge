@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIsoCountryCodesSys
 {
-    public string Country { get; set; }
-    public string CharCode2 { get; set; }
-    public string CharCode3 { get; set; }
-    public string NumCode3 { get; set; }
+    public string? Country { get; set; }
+    public string? CharCode2 { get; set; }
+    public string? CharCode3 { get; set; }
+    public string? NumCode3 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

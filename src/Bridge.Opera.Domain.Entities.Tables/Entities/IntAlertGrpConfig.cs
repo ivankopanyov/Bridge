@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntAlertGrpConfig
 {
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string GrpCode { get; set; }
-    public string GrpEsclIntrL1 { get; set; }
-    public string GrpEsclIntrL2 { get; set; }
-    public string GrpEsclIntrL3 { get; set; }
-    public string GrpL1EmailId { get; set; }
-    public string GrpL2EmailId { get; set; }
-    public string GrpL3EmailId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? GrpCode { get; set; }
+    public string? GrpEsclIntrL1 { get; set; }
+    public string? GrpEsclIntrL2 { get; set; }
+    public string? GrpEsclIntrL3 { get; set; }
+    public string? GrpL1EmailId { get; set; }
+    public string? GrpL2EmailId { get; set; }
+    public string? GrpL3EmailId { get; set; }
     public decimal? GrpL1SmsNo { get; set; }
     public decimal? GrpL2SmsNo { get; set; }
     public decimal? GrpL3SmsNo { get; set; }
-    public string GrpAltFmtL1 { get; set; }
-    public string GrpAltFmtL2 { get; set; }
-    public string GrpAltFmtL3 { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? GrpAltFmtL1 { get; set; }
+    public string? GrpAltFmtL2 { get; set; }
+    public string? GrpAltFmtL3 { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

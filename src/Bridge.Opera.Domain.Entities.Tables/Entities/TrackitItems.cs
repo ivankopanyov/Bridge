@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TrackitItems
 {
-    public string Resort { get; set; }
-    public decimal TrackitId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TrackitId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? GuestNameId { get; set; }
-    public string TicketNo { get; set; }
-    public string ReferenceNo { get; set; }
-    public string TiGroup { get; set; }
+    public string? TicketNo { get; set; }
+    public string? ReferenceNo { get; set; }
+    public string? TiGroup { get; set; }
     public DateTime? FollowUp { get; set; }
-    public string Status { get; set; }
+    public string? Status { get; set; }
     public DateTime? BusinessDateCreated { get; set; }
     public DateTime? BusinessDateResolved { get; set; }
     public decimal? ResolvedUser { get; set; }
-    public string Description { get; set; }
-    public string Location { get; set; }
-    public string Action { get; set; }
-    public string TrackitType { get; set; }
+    public string? Description { get; set; }
+    public string? Location { get; set; }
+    public string? Action { get; set; }
+    public string? TrackitType { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? Msgid { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string ExternalId { get; set; }
+    public string? ExternalId { get; set; }
     public decimal? AssignedTo { get; set; }
 
     public virtual Name GuestName { get; set; }

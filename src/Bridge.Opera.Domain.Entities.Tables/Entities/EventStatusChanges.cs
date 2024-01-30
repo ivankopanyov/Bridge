@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EventStatusChanges
 {
-    public decimal EvChangeId { get; set; }
-    public decimal EventId { get; set; }
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public string PriorStatus { get; set; }
-    public string CurrentStatus { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? EvChangeId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public string? PriorStatus { get; set; }
+    public string? CurrentStatus { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }
     public virtual GemEvent Event { get; set; }

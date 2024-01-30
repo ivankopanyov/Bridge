@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MeetingRoomInventory1
 {
-    public decimal MriId { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
-    public DateTime BeginDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? MriId { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
+    public DateTime? BeginDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public DateTime? EventStart { get; set; }
     public DateTime? EventEnd { get; set; }
     public decimal? Attendees { get; set; }
-    public string SharedYn { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string ComboRoom { get; set; }
-    public string DontMoveYn { get; set; }
-    public string Status { get; set; }
+    public string? SharedYn { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ComboRoom { get; set; }
+    public string? DontMoveYn { get; set; }
+    public string? Status { get; set; }
     public decimal? EventId { get; set; }
-    public string DeductInventory { get; set; }
-    public string ShowdiaryYn { get; set; }
-    public decimal BookId { get; set; }
-    public string RoomResort { get; set; }
+    public string? DeductInventory { get; set; }
+    public string? ShowdiaryYn { get; set; }
+    public decimal? BookId { get; set; }
+    public string? RoomResort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

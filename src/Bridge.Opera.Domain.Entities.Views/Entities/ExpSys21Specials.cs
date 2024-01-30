@@ -5,8 +5,8 @@ public partial class ExpSys21Specials
     public decimal? ExportId { get; set; }
     public decimal? ViewId { get; set; }
     public decimal? StayId { get; set; }
-    public string SpecialRequest { get; set; }
-    public string SpecialRequestDesc { get; set; }
+    public string? SpecialRequest { get; set; }
+    public string? SpecialRequestDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

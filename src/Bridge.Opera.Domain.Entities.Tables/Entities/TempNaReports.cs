@@ -4,9 +4,9 @@ public partial class TempNaReports
 {
     public decimal? SessionId { get; set; }
     public decimal? ModuleId { get; set; }
-    public string ActiveYn { get; set; }
-    public string BeforeIaFlag { get; set; }
-    public string TraceYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? BeforeIaFlag { get; set; }
+    public string? TraceYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

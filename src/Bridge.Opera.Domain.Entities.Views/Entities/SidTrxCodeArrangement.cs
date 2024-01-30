@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidTrxCodeArrangement
 {
-    public string Resort { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public decimal ArrangementId { get; set; }
-    public string ArrangementCode { get; set; }
-    public string Type { get; set; }
-    public string ArrangementDesc { get; set; }
-    public string EligibleYn { get; set; }
-    public string ExportBucketType { get; set; }
-    public string CompYn { get; set; }
-    public string InheritAuthRatecodeYn { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? Resort { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public decimal? ArrangementId { get; set; }
+    public string? ArrangementCode { get; set; }
+    public string? Type { get; set; }
+    public string? ArrangementDesc { get; set; }
+    public string? EligibleYn { get; set; }
+    public string? ExportBucketType { get; set; }
+    public string? CompYn { get; set; }
+    public string? InheritAuthRatecodeYn { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
     public decimal? RoutingAmount { get; set; }
     public decimal? RoutingCovers { get; set; }
     public decimal? RoutingPercent { get; set; }

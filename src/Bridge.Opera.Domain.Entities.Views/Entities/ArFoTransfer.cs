@@ -3,33 +3,33 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArFoTransfer
 {
     public decimal? ArNumber { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string AccountNo { get; set; }
-    public string AccountName { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? AccountNo { get; set; }
+    public string? AccountName { get; set; }
     public DateTime? TrxDate { get; set; }
-    public string TrxTime { get; set; }
+    public string? TrxTime { get; set; }
     public decimal? TrxNo { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TrxAmount { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public string AdjustYn { get; set; }
-    public string FoStatus { get; set; }
-    public string ResvStatus { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? FoStatus { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? InvoiceAge { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? BillNumber { get; set; }
-    public string FolioType { get; set; }
-    public string Resort { get; set; }
+    public string? FolioType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string CompressedYn { get; set; }
+    public string? CompressedYn { get; set; }
     public decimal? MasterInvoiceNo { get; set; }
-    public string PurgeYn { get; set; }
+    public string? PurgeYn { get; set; }
     public decimal? ActualAgingBucket { get; set; }
-    public decimal PayeeNameId { get; set; }
-    public string FiscalBillNo { get; set; }
+    public decimal? PayeeNameId { get; set; }
+    public string? FiscalBillNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

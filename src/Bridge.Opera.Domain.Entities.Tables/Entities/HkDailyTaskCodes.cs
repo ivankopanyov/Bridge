@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class HkDailyTaskCodes
 {
-    public decimal TaskSeqNo { get; set; }
-    public string TaskCode { get; set; }
+    public decimal? TaskSeqNo { get; set; }
+    public string? TaskCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

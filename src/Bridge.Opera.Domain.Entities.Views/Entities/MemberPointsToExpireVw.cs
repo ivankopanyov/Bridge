@@ -6,8 +6,8 @@ public partial class MemberPointsToExpireVw
     public DateTime? PointsExpirationDate { get; set; }
     public decimal? PointsToExpire { get; set; }
     public decimal? PreviousPointsToExpire { get; set; }
-    public string PtsThatCanBeExtndExistYn { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? PtsThatCanBeExtndExistYn { get; set; }
+    public string? AwardGenerationMethod { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

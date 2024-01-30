@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FinTranAction1
 {
-    public string Terminal { get; set; }
-    public string Machine { get; set; }
+    public string? Terminal { get; set; }
+    public string? Machine { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public decimal FinActionId { get; set; }
-    public string FinActionDesc { get; set; }
-    public string FinActionEvent { get; set; }
-    public string ReasonCode { get; set; }
-    public string AdjustReason { get; set; }
+    public decimal? FinActionId { get; set; }
+    public string? FinActionDesc { get; set; }
+    public string? FinActionEvent { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? AdjustReason { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Resort { get; set; }
-    public string StatsProcessedYn { get; set; }
+    public string? Resort { get; set; }
+    public string? StatsProcessedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

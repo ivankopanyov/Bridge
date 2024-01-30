@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArAgingReportDetail
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public string AccountNo { get; set; }
-    public decimal AccountTypeId { get; set; }
-    public string Contact { get; set; }
+    public string? AccountName { get; set; }
+    public string? AccountNo { get; set; }
+    public decimal? AccountTypeId { get; set; }
+    public string? Contact { get; set; }
     public decimal? TrxNo { get; set; }
     public DateTime? PostDate { get; set; }
     public decimal? Invoice { get; set; }
@@ -20,12 +20,12 @@ public partial class ArAgingReportDetail
     public decimal? Age6 { get; set; }
     public decimal? Aropen { get; set; }
     public decimal? InvoiceAge { get; set; }
-    public string InvoiceStatus { get; set; }
+    public string? InvoiceStatus { get; set; }
     public decimal? ArLedDebit { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? NameId { get; set; }
     public decimal? BillNo { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? AccTypeFlag { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

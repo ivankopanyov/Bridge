@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class AmandaInfo
 {
-    public decimal ResvNameId { get; set; }
-    public string Resort { get; set; }
-    public string AmadeusOfficeCode { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string TravelFileNumber { get; set; }
-    public string CustomerCode { get; set; }
-    public string CustomerName { get; set; }
-    public string SalesType { get; set; }
-    public string Remark { get; set; }
-    public string SalesChannel { get; set; }
-    public string ProductCode { get; set; }
-    public string Agent { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public string? AmadeusOfficeCode { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? TravelFileNumber { get; set; }
+    public string? CustomerCode { get; set; }
+    public string? CustomerName { get; set; }
+    public string? SalesType { get; set; }
+    public string? Remark { get; set; }
+    public string? SalesChannel { get; set; }
+    public string? ProductCode { get; set; }
+    public string? Agent { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

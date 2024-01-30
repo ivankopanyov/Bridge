@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HiroHurdlePoint
 {
-    public DateTime HurdleDate { get; set; }
-    public string CharHurdleDate { get; set; }
-    public string ProductClass { get; set; }
+    public DateTime? HurdleDate { get; set; }
+    public string? CharHurdleDate { get; set; }
+    public string? ProductClass { get; set; }
     public decimal? HurdlePoint { get; set; }
     public decimal? SellToCapacity { get; set; }
     public decimal? TotalRoomsAvailable { get; set; }

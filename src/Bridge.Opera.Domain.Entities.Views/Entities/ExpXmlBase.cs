@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpXmlBase
 {
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
-    public string ResortOwner { get; set; }
-    public string ResortCountryCode { get; set; }
-    public string ResortStreet { get; set; }
-    public string ResortPostCode { get; set; }
-    public string ResortCity { get; set; }
-    public string ResortState { get; set; }
-    public string ResortTelephone { get; set; }
-    public string ResortFax { get; set; }
-    public string ResortWebaddress { get; set; }
-    public string ResortTollfree { get; set; }
-    public string ResortEmail { get; set; }
-    public string ResortRegion { get; set; }
-    public string ResortType { get; set; }
-    public string ResortHotelType { get; set; }
-    public string HotelCode { get; set; }
-    public string ResortCurrencyCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
+    public string? ResortOwner { get; set; }
+    public string? ResortCountryCode { get; set; }
+    public string? ResortStreet { get; set; }
+    public string? ResortPostCode { get; set; }
+    public string? ResortCity { get; set; }
+    public string? ResortState { get; set; }
+    public string? ResortTelephone { get; set; }
+    public string? ResortFax { get; set; }
+    public string? ResortWebaddress { get; set; }
+    public string? ResortTollfree { get; set; }
+    public string? ResortEmail { get; set; }
+    public string? ResortRegion { get; set; }
+    public string? ResortType { get; set; }
+    public string? ResortHotelType { get; set; }
+    public string? HotelCode { get; set; }
+    public string? ResortCurrencyCode { get; set; }
     public decimal? ResortCurrencyDecimals { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

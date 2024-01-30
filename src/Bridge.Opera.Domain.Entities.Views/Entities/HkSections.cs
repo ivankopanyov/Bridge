@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HkSections
 {
-    public string SectionCode { get; set; }
-    public string Description { get; set; }
-    public string ActiveYn { get; set; }
+    public string? SectionCode { get; set; }
+    public string? Description { get; set; }
+    public string? ActiveYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

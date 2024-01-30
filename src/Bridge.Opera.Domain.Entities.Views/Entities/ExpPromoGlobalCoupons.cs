@@ -2,47 +2,47 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpPromoGlobalCoupons
 {
-    public string CBatchCode { get; set; }
-    public decimal CCouponId { get; set; }
-    public string CCouponCode { get; set; }
-    public string CChainCode { get; set; }
-    public string CResort { get; set; }
-    public string CPromotionCode { get; set; }
-    public DateTime CInsertDate { get; set; }
-    public decimal CInsertUser { get; set; }
-    public DateTime CUpdateDate { get; set; }
-    public decimal CUpdateUser { get; set; }
-    public string CStatus { get; set; }
+    public string? CBatchCode { get; set; }
+    public decimal? CCouponId { get; set; }
+    public string? CCouponCode { get; set; }
+    public string? CChainCode { get; set; }
+    public string? CResort { get; set; }
+    public string? CPromotionCode { get; set; }
+    public DateTime? CInsertDate { get; set; }
+    public decimal? CInsertUser { get; set; }
+    public DateTime? CUpdateDate { get; set; }
+    public decimal? CUpdateUser { get; set; }
+    public string? CStatus { get; set; }
     public decimal? CUsedInResvNameId { get; set; }
-    public string CUsedInResvResort { get; set; }
+    public string? CUsedInResvResort { get; set; }
     public DateTime? CInactiveDate { get; set; }
     public DateTime? CExportDate { get; set; }
-    public string PMpcode { get; set; }
-    public string PPromoName { get; set; }
+    public string? PMpcode { get; set; }
+    public string? PPromoName { get; set; }
     public DateTime? PBookingStartdate { get; set; }
     public DateTime? PBookingEnddate { get; set; }
     public DateTime? PStayStartdate { get; set; }
     public DateTime? PStayEnddate { get; set; }
-    public string PCategory { get; set; }
-    public string PCategoryDesc { get; set; }
+    public string? PCategory { get; set; }
+    public string? PCategoryDesc { get; set; }
     public DateTime? PCheckinTime { get; set; }
     public DateTime? PCheckoutTime { get; set; }
-    public string PPromoInstructions { get; set; }
-    public string PUpgradeAllowedYn { get; set; }
-    public string PIdRequiredYn { get; set; }
-    public string PIdRequiredDesc { get; set; }
-    public string PSetOrAccountFlag { get; set; }
+    public string? PPromoInstructions { get; set; }
+    public string? PUpgradeAllowedYn { get; set; }
+    public string? PIdRequiredYn { get; set; }
+    public string? PIdRequiredDesc { get; set; }
+    public string? PSetOrAccountFlag { get; set; }
     public DateTime? PInactiveDate { get; set; }
-    public string PPromoInformation { get; set; }
-    public string PMembershipType { get; set; }
-    public string PChainCode { get; set; }
-    public string PLimitedTimePromotionYn { get; set; }
+    public string? PPromoInformation { get; set; }
+    public string? PMembershipType { get; set; }
+    public string? PChainCode { get; set; }
+    public string? PLimitedTimePromotionYn { get; set; }
     public decimal? PCouponLength { get; set; }
-    public string PCouponGenOption { get; set; }
-    public string PCouponPrefix { get; set; }
-    public string PCouponSuffix { get; set; }
-    public string PCouponExChars { get; set; }
-    public string PCouponGenFormat { get; set; }
+    public string? PCouponGenOption { get; set; }
+    public string? PCouponPrefix { get; set; }
+    public string? PCouponSuffix { get; set; }
+    public string? PCouponExChars { get; set; }
+    public string? PCouponGenFormat { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

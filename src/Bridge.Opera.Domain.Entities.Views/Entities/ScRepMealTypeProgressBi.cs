@@ -7,9 +7,9 @@ public partial class ScRepMealTypeProgressBi
     public decimal? StatusListOrderBy { get; set; }
     public decimal? MonthOrderBy { get; set; }
     public decimal? LeftLabelOrderBy { get; set; }
-    public string StatusListLabel { get; set; }
-    public string YearLabel { get; set; }
-    public string LeftLabel { get; set; }
+    public string? StatusListLabel { get; set; }
+    public string? YearLabel { get; set; }
+    public string? LeftLabel { get; set; }
     public decimal? MealType1Covers { get; set; }
     public decimal? MealType2Covers { get; set; }
     public decimal? MealType3Covers { get; set; }

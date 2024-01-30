@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidRmCategoryFacilityTasks
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public string FacilityTask { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? FacilityTask { get; set; }
     public decimal? Credits { get; set; }
-    public string Frequency { get; set; }
+    public string? Frequency { get; set; }
     public decimal? Priority { get; set; }
     public decimal? FrequencyDays { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string SpecialRequests { get; set; }
-    public string VipStatuses { get; set; }
+    public string? SpecialRequests { get; set; }
+    public string? VipStatuses { get; set; }
     public decimal? FacilityTaskSeq { get; set; }
-    public string Day1 { get; set; }
-    public string Day2 { get; set; }
-    public string Day3 { get; set; }
-    public string Day4 { get; set; }
-    public string Day5 { get; set; }
-    public string Day6 { get; set; }
-    public string Day7 { get; set; }
+    public string? Day1 { get; set; }
+    public string? Day2 { get; set; }
+    public string? Day3 { get; set; }
+    public string? Day4 { get; set; }
+    public string? Day5 { get; set; }
+    public string? Day6 { get; set; }
+    public string? Day7 { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

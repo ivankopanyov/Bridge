@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RepAccHistForecastResort
 {
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string City { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? City { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

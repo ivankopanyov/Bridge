@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpVisaInvoice
 {
-    public decimal ExpDataId { get; set; }
+    public decimal? ExpDataId { get; set; }
     public decimal? ExpViewId { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string Resort { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? ExpInvoiceId { get; set; }
     public decimal? ByNameId { get; set; }
     public decimal? PeNameId { get; set; }
@@ -20,10 +20,10 @@ public partial class ExpVisaInvoice
     public decimal? TotalNet { get; set; }
     public decimal? TaxValue { get; set; }
     public decimal? TotalGross { get; set; }
-    public string Currency { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string Room { get; set; }
-    public string FolioType { get; set; }
+    public string? Currency { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Room { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? Invoicedate { get; set; }
     public DateTime? Arrival { get; set; }

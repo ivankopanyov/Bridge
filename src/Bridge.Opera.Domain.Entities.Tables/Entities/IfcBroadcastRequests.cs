@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcBroadcastRequests
 {
-    public string Resort { get; set; }
-    public string RequestId { get; set; }
+    public string? Resort { get; set; }
+    public string? RequestId { get; set; }
     public decimal? IfcCtrlId { get; set; }
-    public string RequestAction { get; set; }
-    public string Username { get; set; }
-    public decimal SessionId { get; set; }
+    public string? RequestAction { get; set; }
+    public string? Username { get; set; }
+    public decimal? SessionId { get; set; }
     public DateTime? ExpiryTime { get; set; }
-    public string RequestInfo { get; set; }
-    public string TimeoutYn { get; set; }
-    public string Wsnum { get; set; }
-    public string Keycoder { get; set; }
-    public string Guestnum { get; set; }
-    public string Roomnum { get; set; }
-    public string Sequencenum { get; set; }
-    public string Parameters { get; set; }
-    public string ReceiptInfo { get; set; }
+    public string? RequestInfo { get; set; }
+    public string? TimeoutYn { get; set; }
+    public string? Wsnum { get; set; }
+    public string? Keycoder { get; set; }
+    public string? Guestnum { get; set; }
+    public string? Roomnum { get; set; }
+    public string? Sequencenum { get; set; }
+    public string? Parameters { get; set; }
+    public string? ReceiptInfo { get; set; }
     public decimal? KeyNumber { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

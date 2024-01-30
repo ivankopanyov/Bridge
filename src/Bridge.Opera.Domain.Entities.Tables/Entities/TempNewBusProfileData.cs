@@ -2,32 +2,32 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempNewBusProfileData
 {
-    public decimal ProfileId { get; set; }
+    public decimal? ProfileId { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? AverageRate { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? DestinationId { get; set; }
-    public string DestinationResort { get; set; }
+    public string? DestinationResort { get; set; }
     public decimal? DurationNo { get; set; }
-    public string DurationUnit { get; set; }
+    public string? DurationUnit { get; set; }
     public DateTime? EndPeriod { get; set; }
-    public string Features { get; set; }
-    public string ForecastYn { get; set; }
-    public string Frequency { get; set; }
-    public string GeoPreferences { get; set; }
-    public string HotelType { get; set; }
+    public string? Features { get; set; }
+    public string? ForecastYn { get; set; }
+    public string? Frequency { get; set; }
+    public string? GeoPreferences { get; set; }
+    public string? HotelType { get; set; }
     public decimal? LeadTimeNo { get; set; }
-    public string LeadTimeUnit { get; set; }
-    public string MarketingCity { get; set; }
-    public string MarketingRegion { get; set; }
-    public string MarketCode { get; set; }
-    public string Months { get; set; }
+    public string? LeadTimeUnit { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? MarketCode { get; set; }
+    public string? Months { get; set; }
     public decimal? PeakRooms { get; set; }
-    public string ProfName { get; set; }
-    public string ProfType { get; set; }
-    public string RateCode { get; set; }
+    public string? ProfName { get; set; }
+    public string? ProfType { get; set; }
+    public string? RateCode { get; set; }
     public DateTime? StartPeriod { get; set; }
-    public string Tracecode { get; set; }
+    public string? Tracecode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

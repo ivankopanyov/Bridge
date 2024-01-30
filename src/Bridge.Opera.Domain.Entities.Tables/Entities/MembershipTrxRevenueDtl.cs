@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MembershipTrxRevenueDtl
 {
-    public decimal MemTrxRevDtlId { get; set; }
-    public DateTime TransactionDate { get; set; }
-    public string TransactionRevenueType { get; set; }
+    public decimal? MemTrxRevDtlId { get; set; }
+    public DateTime? TransactionDate { get; set; }
+    public string? TransactionRevenueType { get; set; }
     public decimal? LocalRevenueAmount { get; set; }
-    public string FolioView { get; set; }
+    public string? FolioView { get; set; }
     public decimal? CentralRevenueAmount { get; set; }
-    public decimal MembershipTrxLinkId { get; set; }
+    public decimal? MembershipTrxLinkId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

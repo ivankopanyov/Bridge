@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SourceByBooking
 {
-    public string Resort { get; set; }
-    public decimal BookingId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookingId { get; set; }
     public decimal? SourceId { get; set; }
-    public string SourceName { get; set; }
-    public string SourceName2 { get; set; }
-    public string SourceName3 { get; set; }
-    public string SourceBusinessGreeting { get; set; }
-    public string SourceAddress1 { get; set; }
-    public string SourceAddress2 { get; set; }
-    public string SourceZipCode { get; set; }
-    public string SourceState { get; set; }
-    public string SourceCountry { get; set; }
-    public string SourceCity { get; set; }
-    public string SourceCityExt { get; set; }
-    public string SourceFaxNo { get; set; }
-    public string SourcePhoneNo { get; set; }
-    public string SourceEmailId { get; set; }
-    public string XsourceName { get; set; }
+    public string? SourceName { get; set; }
+    public string? SourceName2 { get; set; }
+    public string? SourceName3 { get; set; }
+    public string? SourceBusinessGreeting { get; set; }
+    public string? SourceAddress1 { get; set; }
+    public string? SourceAddress2 { get; set; }
+    public string? SourceZipCode { get; set; }
+    public string? SourceState { get; set; }
+    public string? SourceCountry { get; set; }
+    public string? SourceCity { get; set; }
+    public string? SourceCityExt { get; set; }
+    public string? SourceFaxNo { get; set; }
+    public string? SourcePhoneNo { get; set; }
+    public string? SourceEmailId { get; set; }
+    public string? XsourceName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

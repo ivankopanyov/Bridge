@@ -3,14 +3,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class EmployeeAction
 {
     public decimal? ActionId { get; set; }
-    public string ActionType { get; set; }
-    public string ActionDescription { get; set; }
-    public string Machine { get; set; }
+    public string? ActionType { get; set; }
+    public string? ActionDescription { get; set; }
+    public string? Machine { get; set; }
     public decimal? PermissionAppUserId { get; set; }
-    public string Terminal { get; set; }
+    public string? Terminal { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string ModuleType { get; set; }
+    public string? ModuleType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

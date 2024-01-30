@@ -7,24 +7,24 @@ public partial class NameNotifications
         NameNotificationResorts = new HashSet<NameNotificationResorts>();
     }
 
-    public decimal NotificationId { get; set; }
-    public decimal NameId { get; set; }
-    public string NoteCode { get; set; }
-    public string NoteTitle { get; set; }
-    public string NoteText { get; set; }
-    public string AllResortsYn { get; set; }
-    public string AllDepartmentsYn { get; set; }
-    public string InternalYn { get; set; }
-    public string ConfidentialYn { get; set; }
-    public string NotificationAreas { get; set; }
+    public decimal? NotificationId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? NoteCode { get; set; }
+    public string? NoteTitle { get; set; }
+    public string? NoteText { get; set; }
+    public string? AllResortsYn { get; set; }
+    public string? AllDepartmentsYn { get; set; }
+    public string? InternalYn { get; set; }
+    public string? ConfidentialYn { get; set; }
+    public string? NotificationAreas { get; set; }
     public DateTime? ResolvedOn { get; set; }
     public decimal? ResolvedBy { get; set; }
     public decimal? UniversalNotificationId { get; set; }
-    public string SharedYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? SharedYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual Name Name { get; set; }

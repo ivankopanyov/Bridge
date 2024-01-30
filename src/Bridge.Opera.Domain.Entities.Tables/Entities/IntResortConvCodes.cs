@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntResortConvCodes
 {
-    public decimal IntCcSeqno { get; set; }
-    public string Resort { get; set; }
-    public string InterfaceId { get; set; }
-    public string ConversionCode { get; set; }
-    public string ActiveYn { get; set; }
-    public string GlobalActiveYn { get; set; }
+    public decimal? IntCcSeqno { get; set; }
+    public string? Resort { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? GlobalActiveYn { get; set; }
 
     public virtual IntInterfaceSetup IntInterfaceSetup { get; set; }
 

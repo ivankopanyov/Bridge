@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EisMembershipLevels
 {
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string Label { get; set; }
-    public string Description { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? Label { get; set; }
+    public string? Description { get; set; }
     public decimal? MembershipLevelRank { get; set; }
-    public string UpgradePoints { get; set; }
-    public string UpgradeMonths { get; set; }
-    public string DowngradePoints { get; set; }
-    public string DowngradeMonths { get; set; }
-    public string MonthsEffective { get; set; }
+    public string? UpgradePoints { get; set; }
+    public string? UpgradeMonths { get; set; }
+    public string? DowngradePoints { get; set; }
+    public string? DowngradeMonths { get; set; }
+    public string? MonthsEffective { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
-    public string MaxDowngradeLevel { get; set; }
+    public string? MaxDowngradeLevel { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

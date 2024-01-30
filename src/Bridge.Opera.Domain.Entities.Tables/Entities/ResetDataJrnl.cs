@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResetDataJrnl
 {
-    public string ObjectName { get; set; }
+    public string? ObjectName { get; set; }
     public DateTime? InsertDate { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdatedBy { get; set; }
-    public string Status { get; set; }
-    public string ObjectType { get; set; }
-    public string Action { get; set; }
-    public string ErrorNumber { get; set; }
-    public string ErrorDescription { get; set; }
+    public string? Status { get; set; }
+    public string? ObjectType { get; set; }
+    public string? Action { get; set; }
+    public string? ErrorNumber { get; set; }
+    public string? ErrorDescription { get; set; }
     public decimal? ResetTableSeqno { get; set; }
-    public string WorkstationId { get; set; }
+    public string? WorkstationId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

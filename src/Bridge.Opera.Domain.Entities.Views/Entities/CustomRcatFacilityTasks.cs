@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CustomRcatFacilityTasks
 {
-    public string Resort { get; set; }
-    public string RoomCategory { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string RoomCategoryLabel { get; set; }
-    public string FacilityTask { get; set; }
-    public string TaskDescription { get; set; }
+    public string? Resort { get; set; }
+    public string? RoomCategory { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? RoomCategoryLabel { get; set; }
+    public string? FacilityTask { get; set; }
+    public string? TaskDescription { get; set; }
     public decimal? Credits { get; set; }
-    public string Frequency { get; set; }
+    public string? Frequency { get; set; }
     public decimal? FrequencyDays { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }

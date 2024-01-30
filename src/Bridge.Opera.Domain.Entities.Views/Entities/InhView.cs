@@ -2,72 +2,72 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class InhView
 {
-    public string RoomResort { get; set; }
-    public DateTime ReservationDate { get; set; }
+    public string? RoomResort { get; set; }
+    public DateTime? ReservationDate { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string SharedYn { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string ResvStatus { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? SharedYn { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? Nights { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string Room { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? Room { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? Balance { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string CompanyName { get; set; }
-    public string GroupName { get; set; }
-    public string TravelAgentName { get; set; }
-    public string SourceName { get; set; }
-    public string RateCode { get; set; }
-    public string MarketCode { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? CompanyName { get; set; }
+    public string? GroupName { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? SourceName { get; set; }
+    public string? RateCode { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string BlockCode { get; set; }
+    public string? BlockCode { get; set; }
     public DateTime? TruncArrival { get; set; }
-    public string MasterShare { get; set; }
-    public string Resort { get; set; }
-    public string AccompanyingYn { get; set; }
-    public string MessageYn { get; set; }
-    public string RoutingYn { get; set; }
-    public string FolioYn { get; set; }
-    public string TraceYn { get; set; }
-    public string LocatorYn { get; set; }
-    public string Comments { get; set; }
-    public string AuthorisedBillingYn { get; set; }
+    public string? MasterShare { get; set; }
+    public string? Resort { get; set; }
+    public string? AccompanyingYn { get; set; }
+    public string? MessageYn { get; set; }
+    public string? RoutingYn { get; set; }
+    public string? FolioYn { get; set; }
+    public string? TraceYn { get; set; }
+    public string? LocatorYn { get; set; }
+    public string? Comments { get; set; }
+    public string? AuthorisedBillingYn { get; set; }
     public decimal? FixedCharge { get; set; }
-    public string XlastName { get; set; }
-    public string XfirstName { get; set; }
-    public string PartyCode { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomCategory { get; set; }
-    public string SguestName { get; set; }
+    public string? XlastName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? PartyCode { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? SguestName { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? CompanyId { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string PostCoFlag { get; set; }
-    public string PreChargingYn { get; set; }
-    public string PostChargingYn { get; set; }
-    public string PostingAllowedYn { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? PostCoFlag { get; set; }
+    public string? PreChargingYn { get; set; }
+    public string? PostChargingYn { get; set; }
+    public string? PostingAllowedYn { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string CreditCardNumber { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string CreditCardNumberStr { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? CreditCardNumberStr { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string NameType { get; set; }
-    public string Sxname { get; set; }
-    public DateTime RdenReservationDate { get; set; }
-    public string ArrivalTransportType { get; set; }
-    public string DepartureTransportType { get; set; }
-    public string ArrivalTransportCode { get; set; }
-    public string DepartureTransportCode { get; set; }
-    public string XcompanyName { get; set; }
-    public string SfirstGuestName { get; set; }
+    public string? NameType { get; set; }
+    public string? Sxname { get; set; }
+    public DateTime? RdenReservationDate { get; set; }
+    public string? ArrivalTransportType { get; set; }
+    public string? DepartureTransportType { get; set; }
+    public string? ArrivalTransportCode { get; set; }
+    public string? DepartureTransportCode { get; set; }
+    public string? XcompanyName { get; set; }
+    public string? SfirstGuestName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

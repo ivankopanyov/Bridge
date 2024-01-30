@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class Schedules
 {
-    public string JobName { get; set; }
-    public string JobSubname { get; set; }
-    public string JobCreator { get; set; }
-    public string JobType { get; set; }
+    public string? JobName { get; set; }
+    public string? JobSubname { get; set; }
+    public string? JobCreator { get; set; }
+    public string? JobType { get; set; }
     public decimal? NumberOfArguments { get; set; }
-    public string ScheduleOwner { get; set; }
+    public string? ScheduleOwner { get; set; }
     public DateTime? StartDate { get; set; }
-    public string RepeatInterval { get; set; }
+    public string? RepeatInterval { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Enabled { get; set; }
-    public string State { get; set; }
+    public string? Enabled { get; set; }
+    public string? State { get; set; }
     public decimal? RunCount { get; set; }
     public decimal? FailureCount { get; set; }
     public DateTime? LastStartDate { get; set; }
     public DateTime? NextRunDate { get; set; }
-    public string Comments { get; set; }
-    public string AppUser { get; set; }
-    public string RepeatIntervalDisplay { get; set; }
-    public string Resort { get; set; }
+    public string? Comments { get; set; }
+    public string? AppUser { get; set; }
+    public string? RepeatIntervalDisplay { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

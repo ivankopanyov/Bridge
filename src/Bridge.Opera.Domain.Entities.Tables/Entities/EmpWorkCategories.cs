@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EmpWorkCategories
 {
-    public decimal EmpId { get; set; }
-    public string Resort { get; set; }
-    public string WcCode { get; set; }
+    public decimal? EmpId { get; set; }
+    public string? Resort { get; set; }
+    public string? WcCode { get; set; }
 
     public virtual WorkCategories WorkCategories { get; set; }
 

@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StayRecordHistory
 {
-    public decimal StayRecordId { get; set; }
+    public decimal? StayRecordId { get; set; }
     public decimal? StayRecordExternalId { get; set; }
-    public string ExternalPropertyCode { get; set; }
-    public string ExternalPropertyName { get; set; }
-    public string PmsResvNo { get; set; }
-    public string RecordType { get; set; }
+    public string? ExternalPropertyCode { get; set; }
+    public string? ExternalPropertyName { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? RecordType { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
     public DateTime? BookDate { get; set; }
-    public string ShareNo { get; set; }
+    public string? ShareNo { get; set; }
     public DateTime? CancellationDate { get; set; }
     public decimal? CancelledRoomNights { get; set; }
     public decimal? NoshowRoomNights { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string CrsBookNo { get; set; }
-    public string RoomLabel { get; set; }
-    public string RoomNumber { get; set; }
-    public decimal GuestNameId { get; set; }
+    public string? CrsBookNo { get; set; }
+    public string? RoomLabel { get; set; }
+    public string? RoomNumber { get; set; }
+    public decimal? GuestNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? TravelNameId { get; set; }
     public decimal? WholesalerNameId { get; set; }
     public decimal? GroupNameId { get; set; }
     public decimal? MiscNameId { get; set; }
-    public string AllotmentCode { get; set; }
-    public string PmsResvNameId { get; set; }
-    public string PosCode { get; set; }
-    public string PseudoYn { get; set; }
-    public string RateCode { get; set; }
-    public string ExternalSystemCode { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? PmsResvNameId { get; set; }
+    public string? PosCode { get; set; }
+    public string? PseudoYn { get; set; }
+    public string? RateCode { get; set; }
+    public string? ExternalSystemCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

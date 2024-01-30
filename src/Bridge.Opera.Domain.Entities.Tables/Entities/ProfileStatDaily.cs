@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileStatDaily
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? NoOfDefinitieRooms { get; set; }
     public decimal? NoOfGuests { get; set; }
     public decimal? SingleOccupancy { get; set; }
@@ -23,9 +23,9 @@ public partial class ProfileStatDaily
     public decimal? TotalRoomTax { get; set; }
     public decimal? TotalFBTax { get; set; }
     public decimal? TotalOtherTax { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string RoomType { get; set; }
-    public decimal NameId { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? RoomType { get; set; }
+    public decimal? NameId { get; set; }
     public decimal? DayUseRooms { get; set; }
     public decimal? NoShowRooms { get; set; }
     public decimal? CancelRomms { get; set; }

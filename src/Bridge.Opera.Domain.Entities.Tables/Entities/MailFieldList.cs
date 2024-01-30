@@ -7,16 +7,16 @@ public partial class MailFieldList
         MailSelectFields = new HashSet<MailSelectFields>();
     }
 
-    public decimal ListId { get; set; }
-    public decimal SourceId { get; set; }
-    public string Description { get; set; }
+    public decimal? ListId { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? Description { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string ListCode { get; set; }
-    public string ChainCode { get; set; }
-    public string Resort { get; set; }
+    public string? ListCode { get; set; }
+    public string? ChainCode { get; set; }
+    public string? Resort { get; set; }
 
     public virtual MailSource Source { get; set; }
     public virtual ICollection<MailSelectFields> MailSelectFields { get; set; }

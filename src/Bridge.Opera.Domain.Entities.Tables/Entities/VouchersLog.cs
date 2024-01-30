@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class VouchersLog
 {
-    public decimal VoucherId { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal VoucherNo { get; set; }
-    public string PrintType { get; set; }
-    public decimal PrintUser { get; set; }
-    public DateTime PrintDate { get; set; }
+    public decimal? VoucherId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? VoucherNo { get; set; }
+    public string? PrintType { get; set; }
+    public decimal? PrintUser { get; set; }
+    public DateTime? PrintDate { get; set; }
 
     public virtual VouchersDetails VouchersDetails { get; set; }
     public virtual VouchersHeader VouchersHeader { get; set; }

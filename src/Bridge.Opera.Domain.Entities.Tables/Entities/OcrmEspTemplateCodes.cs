@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmEspTemplateCodes
 {
-    public string TemplateCode { get; set; }
-    public string Resort { get; set; }
-    public string EspTemplateCode { get; set; }
-    public string EspCode { get; set; }
-    public string TemplateUrl { get; set; }
-    public string LanguageCode { get; set; }
+    public string? TemplateCode { get; set; }
+    public string? Resort { get; set; }
+    public string? EspTemplateCode { get; set; }
+    public string? EspCode { get; set; }
+    public string? TemplateUrl { get; set; }
+    public string? LanguageCode { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

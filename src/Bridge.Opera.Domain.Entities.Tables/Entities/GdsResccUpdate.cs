@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsResccUpdate
 {
-    public string Resort { get; set; }
-    public decimal PropupId { get; set; }
-    public string DepositCreditCard { get; set; }
-    public string GuaranteeCreditCard { get; set; }
-    public string GdsHost { get; set; }
+    public string? Resort { get; set; }
+    public decimal? PropupId { get; set; }
+    public string? DepositCreditCard { get; set; }
+    public string? GuaranteeCreditCard { get; set; }
+    public string? GdsHost { get; set; }
 
     public virtual GdsPropupUpdate Propup { get; set; }
 

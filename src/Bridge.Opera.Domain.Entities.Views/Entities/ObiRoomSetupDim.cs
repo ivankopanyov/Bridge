@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRoomSetupDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string Resort { get; set; }
-    public string Room { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? Room { get; set; }
     public decimal? SetupcodeId { get; set; }
-    public string SetupCode { get; set; }
+    public string? SetupCode { get; set; }
     public decimal? SetupTime { get; set; }
     public decimal? SetdownTime { get; set; }
     public decimal? OccMin { get; set; }

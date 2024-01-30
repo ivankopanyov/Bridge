@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidQbFieldSys
 {
-    public string EntityName { get; set; }
-    public string FieldName { get; set; }
-    public string FieldLabel { get; set; }
-    public string FieldDesc { get; set; }
-    public string BaseColumn { get; set; }
-    public string DataType { get; set; }
-    public string FieldLov { get; set; }
-    public string IdxLeadYn { get; set; }
-    public string IdxPartYn { get; set; }
+    public string? EntityName { get; set; }
+    public string? FieldName { get; set; }
+    public string? FieldLabel { get; set; }
+    public string? FieldDesc { get; set; }
+    public string? BaseColumn { get; set; }
+    public string? DataType { get; set; }
+    public string? FieldLov { get; set; }
+    public string? IdxLeadYn { get; set; }
+    public string? IdxPartYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

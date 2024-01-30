@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaCommissionView
 {
-    public string Resort { get; set; }
-    public decimal TravelAgentId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? TravelAgentId { get; set; }
     public decimal? AccountId { get; set; }
-    public string TaName { get; set; }
-    public string StaName { get; set; }
-    public string City { get; set; }
-    public string IataNo { get; set; }
-    public string HoldCode { get; set; }
-    public string Ptype { get; set; }
-    public string CommissionCode { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? TaName { get; set; }
+    public string? StaName { get; set; }
+    public string? City { get; set; }
+    public string? IataNo { get; set; }
+    public string? HoldCode { get; set; }
+    public string? Ptype { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? CurrencyCode { get; set; }
     public decimal? CommissionAmt { get; set; }
     public decimal? ARAmt { get; set; }
     public decimal? PrepaidComm { get; set; }
@@ -21,7 +21,7 @@ public partial class TaCommissionView
     public decimal? FcHoldAmt { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? DecimalPositions { get; set; }
-    public string Tax1No { get; set; }
+    public string? Tax1No { get; set; }
     public decimal? HoldCounter { get; set; }
     public decimal? RecordCounter { get; set; }
     public decimal? JoinedArHoldCounter { get; set; }

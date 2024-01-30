@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OwsUiConfig
 {
-    public decimal Id { get; set; }
-    public string ConfigurationType { get; set; }
-    public string ConfigurationValue { get; set; }
-    public string ResortCode { get; set; }
-    public string ChannelCode { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? Id { get; set; }
+    public string? ConfigurationType { get; set; }
+    public string? ConfigurationValue { get; set; }
+    public string? ResortCode { get; set; }
+    public string? ChannelCode { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

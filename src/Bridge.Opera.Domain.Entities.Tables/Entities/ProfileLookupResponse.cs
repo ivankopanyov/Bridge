@@ -2,45 +2,45 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ProfileLookupResponse
 {
-    public decimal ResponseRecId { get; set; }
-    public decimal RequestId { get; set; }
-    public string DatabaseId { get; set; }
-    public string ResortNameId { get; set; }
+    public decimal? ResponseRecId { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? DatabaseId { get; set; }
+    public string? ResortNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
-    public string NameCode { get; set; }
-    public string Name { get; set; }
-    public string FirstName { get; set; }
-    public string AlternateName { get; set; }
-    public string AlternateFirst { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string CountryCode { get; set; }
-    public string Email { get; set; }
-    public string PrimaryPhone { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipNumber { get; set; }
-    public string FrequentFlyerType { get; set; }
-    public string FrequentFlyerNumber { get; set; }
-    public string LegalCompany { get; set; }
-    public string Passport { get; set; }
-    public string IdType { get; set; }
-    public string IdNumber { get; set; }
-    public string RouteDatabaseId { get; set; }
-    public string ActiveYn { get; set; }
-    public string RelatedFrHostNameId { get; set; }
-    public string RelatedFrClientNameId { get; set; }
-    public string RelationshipType { get; set; }
-    public string RelationshipTypeLst { get; set; }
-    public string RequestProfileFetchFlag { get; set; }
+    public string? NameType { get; set; }
+    public string? NameCode { get; set; }
+    public string? Name { get; set; }
+    public string? FirstName { get; set; }
+    public string? AlternateName { get; set; }
+    public string? AlternateFirst { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Email { get; set; }
+    public string? PrimaryPhone { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? FrequentFlyerType { get; set; }
+    public string? FrequentFlyerNumber { get; set; }
+    public string? LegalCompany { get; set; }
+    public string? Passport { get; set; }
+    public string? IdType { get; set; }
+    public string? IdNumber { get; set; }
+    public string? RouteDatabaseId { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? RelatedFrHostNameId { get; set; }
+    public string? RelatedFrClientNameId { get; set; }
+    public string? RelationshipType { get; set; }
+    public string? RelationshipTypeLst { get; set; }
+    public string? RequestProfileFetchFlag { get; set; }
     public decimal? FetchProfileClientNameId { get; set; }
-    public string FetchProfileError { get; set; }
-    public string AccountType { get; set; }
-    public string PrimaryOwnerDisplayName { get; set; }
-    public string PrimaryOwnerId { get; set; }
+    public string? FetchProfileError { get; set; }
+    public string? AccountType { get; set; }
+    public string? PrimaryOwnerDisplayName { get; set; }
+    public string? PrimaryOwnerId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

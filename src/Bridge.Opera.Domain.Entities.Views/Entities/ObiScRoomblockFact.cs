@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiScRoomblockFact
 {
     public decimal? BookId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? NoOfNights { get; set; }
-    public string ScRoomCategory { get; set; }
-    public string ScRoomLabel { get; set; }
-    public string PmsRoomCategory { get; set; }
-    public string PmsRoomLabel { get; set; }
-    public string RoomStatusCode { get; set; }
+    public string? ScRoomCategory { get; set; }
+    public string? ScRoomLabel { get; set; }
+    public string? PmsRoomCategory { get; set; }
+    public string? PmsRoomLabel { get; set; }
+    public string? RoomStatusCode { get; set; }
     public DateTime? AllotmentDate { get; set; }
-    public string SnapshotType { get; set; }
-    public string IgnoreOffsetYn { get; set; }
-    public string OffsetType { get; set; }
+    public string? SnapshotType { get; set; }
+    public string? IgnoreOffsetYn { get; set; }
+    public string? OffsetType { get; set; }
     public decimal? AvailableRooms { get; set; }
     public decimal? CurrentRooms { get; set; }
     public decimal? ContractRooms { get; set; }

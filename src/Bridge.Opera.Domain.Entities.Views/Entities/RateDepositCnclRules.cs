@@ -3,15 +3,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RateDepositCnclRules
 {
     public decimal? RateSetId { get; set; }
-    public decimal RateDcSeq { get; set; }
+    public decimal? RateDcSeq { get; set; }
     public decimal? DepDaysPriorToArrival { get; set; }
     public decimal? DepDaysAfterBooking { get; set; }
     public decimal? DepAmount { get; set; }
-    public string DepAmountType { get; set; }
+    public string? DepAmountType { get; set; }
     public decimal? CnclDaysPriorToArrival { get; set; }
     public DateTime? CnclBeforeTime { get; set; }
     public decimal? CnclPenltyAmount { get; set; }
-    public string CnclPnltyAmountType { get; set; }
+    public string? CnclPnltyAmountType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

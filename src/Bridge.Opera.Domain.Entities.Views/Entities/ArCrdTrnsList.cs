@@ -4,25 +4,25 @@ public partial class ArCrdTrnsList
 {
     public decimal? SessionId { get; set; }
     public decimal? AccountCode { get; set; }
-    public string TrxCode { get; set; }
-    public decimal TrxNo { get; set; }
-    public string GuestName { get; set; }
+    public string? TrxCode { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? GuestName { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? Amount { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string CreditCardNo { get; set; }
-    public string ExpiryDate { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? CreditCardNo { get; set; }
+    public string? ExpiryDate { get; set; }
     public decimal? Commission { get; set; }
     public decimal? BillNo { get; set; }
-    public string AccountName { get; set; }
-    public string GuestAddress { get; set; }
-    public string Resort { get; set; }
-    public string CreditCardNumberStr { get; set; }
-    public string CreditCardExpDateStr { get; set; }
+    public string? AccountName { get; set; }
+    public string? GuestAddress { get; set; }
+    public string? Resort { get; set; }
+    public string? CreditCardNumberStr { get; set; }
+    public string? CreditCardExpDateStr { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

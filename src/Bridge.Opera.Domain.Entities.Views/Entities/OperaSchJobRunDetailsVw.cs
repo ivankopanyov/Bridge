@@ -4,19 +4,19 @@ public partial class OperaSchJobRunDetailsVw
 {
     public decimal? LogId { get; set; }
     public DateTime? LogDate { get; set; }
-    public string Owner { get; set; }
-    public string JobName { get; set; }
-    public string JobSubname { get; set; }
-    public string Status { get; set; }
+    public string? Owner { get; set; }
+    public string? JobName { get; set; }
+    public string? JobSubname { get; set; }
+    public string? Status { get; set; }
     public decimal? Error { get; set; }
     public DateTime? ReqStartDate { get; set; }
     public DateTime? ActualStartDate { get; set; }
     public TimeSpan? RunDuration { get; set; }
     public decimal? InstanceId { get; set; }
-    public string SessionId { get; set; }
-    public string SlavePid { get; set; }
+    public string? SessionId { get; set; }
+    public string? SlavePid { get; set; }
     public TimeSpan? CpuUsed { get; set; }
-    public string AdditionalInfo { get; set; }
+    public string? AdditionalInfo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

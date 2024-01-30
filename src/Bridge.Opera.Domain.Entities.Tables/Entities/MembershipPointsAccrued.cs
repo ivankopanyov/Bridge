@@ -3,17 +3,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class MembershipPointsAccrued
 {
     public decimal? CostPerPoint { get; set; }
-    public decimal MembershipTrxId { get; set; }
-    public string MembershipType { get; set; }
-    public decimal MembershipPointsSeqno { get; set; }
-    public decimal Points { get; set; }
-    public string TypeOfPoints { get; set; }
-    public string BillingGroup { get; set; }
+    public decimal? MembershipTrxId { get; set; }
+    public string? MembershipType { get; set; }
+    public decimal? MembershipPointsSeqno { get; set; }
+    public decimal? Points { get; set; }
+    public string? TypeOfPoints { get; set; }
+    public string? BillingGroup { get; set; }
     public decimal? AwBucketQuantity { get; set; }
     public decimal? TierBucketQuantity { get; set; }
     public decimal? AwPoints { get; set; }
     public decimal? TierPoints { get; set; }
-    public string RuleGroup { get; set; }
+    public string? RuleGroup { get; set; }
     public decimal? CentralQualifiedRevenue { get; set; }
 
     public virtual MembershipTransactions MembershipTrx { get; set; }

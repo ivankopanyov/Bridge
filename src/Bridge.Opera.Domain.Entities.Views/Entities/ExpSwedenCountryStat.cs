@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpSwedenCountryStat
 {
-    public string Resort { get; set; }
-    public string ResortName { get; set; }
-    public string HotelCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortName { get; set; }
+    public string? HotelCode { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string CountryCode { get; set; }
+    public string? CountryCode { get; set; }
     public decimal? ArrRooms { get; set; }
     public decimal? StayRooms { get; set; }
     public decimal? StayBeds { get; set; }

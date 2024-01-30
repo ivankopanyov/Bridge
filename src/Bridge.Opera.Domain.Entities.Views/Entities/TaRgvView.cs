@@ -2,46 +2,46 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaRgvView
 {
-    public string Resort { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string Room { get; set; }
-    public string RoomCategoryLabel { get; set; }
+    public string? Resort { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? Room { get; set; }
+    public string? RoomCategoryLabel { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public decimal? NoOfRooms { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public string ResvStatus { get; set; }
-    public string TravelAgentName { get; set; }
-    public string SourceName { get; set; }
-    public string CompanyName { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? TravelAgentName { get; set; }
+    public string? SourceName { get; set; }
+    public string? CompanyName { get; set; }
+    public decimal? ResvNameId { get; set; }
     public decimal? SourceId { get; set; }
     public decimal? CompanyId { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? GroupId { get; set; }
     public decimal? CommissionPaid { get; set; }
-    public string PartyCode { get; set; }
+    public string? PartyCode { get; set; }
     public decimal? RoomRevenue { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
-    public string HistoryYn { get; set; }
-    public string SguestName { get; set; }
-    public string SfirstGuestName { get; set; }
-    public string XfirstName { get; set; }
-    public string XlastName { get; set; }
-    public string SxfirstName { get; set; }
-    public string Sxname { get; set; }
-    public string RateCode { get; set; }
-    public string ExternalReference { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string PaidYn { get; set; }
-    public string TravelAgentPaidYn { get; set; }
-    public string SourcePaidYn { get; set; }
-    public string FullName { get; set; }
-    public string XfullName { get; set; }
-    public string SharedYn { get; set; }
-    public decimal InsertUser { get; set; }
+    public string? HistoryYn { get; set; }
+    public string? SguestName { get; set; }
+    public string? SfirstGuestName { get; set; }
+    public string? XfirstName { get; set; }
+    public string? XlastName { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? Sxname { get; set; }
+    public string? RateCode { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? PaidYn { get; set; }
+    public string? TravelAgentPaidYn { get; set; }
+    public string? SourcePaidYn { get; set; }
+    public string? FullName { get; set; }
+    public string? XfullName { get; set; }
+    public string? SharedYn { get; set; }
+    public decimal? InsertUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

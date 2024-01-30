@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OvosExpView
 {
-    public string Resort { get; set; }
-    public decimal ContractId { get; set; }
-    public string Unit { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ContractId { get; set; }
+    public string? Unit { get; set; }
     public decimal? OwnerNameId { get; set; }
-    public string DisplayName { get; set; }
-    public string ContractNumber { get; set; }
+    public string? DisplayName { get; set; }
+    public string? ContractNumber { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? RentalBeginDate { get; set; }
     public DateTime? RentalEndDate { get; set; }
-    public string RentalProgramYn { get; set; }
+    public string? RentalProgramYn { get; set; }
     public DateTime? InsuranceExpDate { get; set; }
     public DateTime? BlackoutExpDate { get; set; }
     public DateTime? CompNightsExpDate { get; set; }

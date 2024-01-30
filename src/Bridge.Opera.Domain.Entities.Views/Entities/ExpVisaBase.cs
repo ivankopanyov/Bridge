@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpVisaBase
 {
-    public decimal ExpDataId { get; set; }
+    public decimal? ExpDataId { get; set; }
     public decimal? ExpViewId { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string Resort { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? Resort { get; set; }
     public decimal? NoOfInvoices { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

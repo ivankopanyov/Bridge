@@ -4,19 +4,19 @@ public partial class ExpRevStatistics
 {
     public decimal? ExportId { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string PropertyCode { get; set; }
-    public string ExportBucket1 { get; set; }
-    public string ExportBucket2 { get; set; }
-    public string ExportBucket3 { get; set; }
-    public string ExportBucket4 { get; set; }
-    public string ExportBucket5 { get; set; }
-    public string ExportBucket6 { get; set; }
-    public string ExportBucket7 { get; set; }
-    public string ExportBucket8 { get; set; }
-    public string ExportBucket9 { get; set; }
-    public string ExportBucket10 { get; set; }
-    public string ExportBucket11 { get; set; }
-    public string ExportBucket12 { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? ExportBucket1 { get; set; }
+    public string? ExportBucket2 { get; set; }
+    public string? ExportBucket3 { get; set; }
+    public string? ExportBucket4 { get; set; }
+    public string? ExportBucket5 { get; set; }
+    public string? ExportBucket6 { get; set; }
+    public string? ExportBucket7 { get; set; }
+    public string? ExportBucket8 { get; set; }
+    public string? ExportBucket9 { get; set; }
+    public string? ExportBucket10 { get; set; }
+    public string? ExportBucket11 { get; set; }
+    public string? ExportBucket12 { get; set; }
     public decimal? Revenue1 { get; set; }
     public decimal? Revenue2 { get; set; }
     public decimal? Revenue3 { get; set; }
@@ -52,7 +52,7 @@ public partial class ExpRevStatistics
     public decimal? SingleOccRoom { get; set; }
     public decimal? MultiOccRoom { get; set; }
     public decimal? RoomAvail { get; set; }
-    public string PropertyCurrencyCode { get; set; }
+    public string? PropertyCurrencyCode { get; set; }
     public decimal? PropertyCurrencyDecimals { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

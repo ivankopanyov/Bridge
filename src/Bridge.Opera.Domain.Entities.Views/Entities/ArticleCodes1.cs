@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ArticleCodes1
 {
-    public string Resort { get; set; }
-    public decimal ArticleId { get; set; }
-    public string ArticleCode { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ArticleId { get; set; }
+    public string? ArticleCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? DefaultPrice { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string TrxDescription { get; set; }
-    public string ManualPostYn { get; set; }
+    public string? TrxDescription { get; set; }
+    public string? ManualPostYn { get; set; }
     public decimal? OrderBy { get; set; }
-    public string PostitYn { get; set; }
-    public string PostitColour { get; set; }
+    public string? PostitYn { get; set; }
+    public string? PostitColour { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

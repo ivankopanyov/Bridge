@@ -2,40 +2,40 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CompRequestsView
 {
-    public string Resort { get; set; }
-    public string ReservationResort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
+    public string? Resort { get; set; }
+    public string? ReservationResort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string MembershipNumber { get; set; }
-    public string Vip { get; set; }
-    public string ShortResvStatus { get; set; }
-    public string ActionedBy { get; set; }
-    public string Comments { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? Vip { get; set; }
+    public string? ShortResvStatus { get; set; }
+    public string? ActionedBy { get; set; }
+    public string? Comments { get; set; }
     public decimal? AuthorizerId { get; set; }
-    public string DeclinedYn { get; set; }
+    public string? DeclinedYn { get; set; }
     public decimal? DeclinedBy { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
     public DateTime? TruncArrival { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string ArrivalTime { get; set; }
-    public string DepartureTime { get; set; }
-    public string RoutingType { get; set; }
-    public string RoutingDecode { get; set; }
-    public string ResvStatus { get; set; }
+    public string? ArrivalTime { get; set; }
+    public string? DepartureTime { get; set; }
+    public string? RoutingType { get; set; }
+    public string? RoutingDecode { get; set; }
+    public string? ResvStatus { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? ToResvNameId { get; set; }
-    public string RoutingDesc { get; set; }
-    public string CompVoucherNo { get; set; }
-    public string RequestedBy { get; set; }
-    public string CompTypeCode { get; set; }
-    public string ComputedResvStatus { get; set; }
-    public decimal NameId { get; set; }
-    public string GuaranteeCode { get; set; }
-    public string DispResvStatus { get; set; }
+    public string? RoutingDesc { get; set; }
+    public string? CompVoucherNo { get; set; }
+    public string? RequestedBy { get; set; }
+    public string? CompTypeCode { get; set; }
+    public string? ComputedResvStatus { get; set; }
+    public decimal? NameId { get; set; }
+    public string? GuaranteeCode { get; set; }
+    public string? DispResvStatus { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

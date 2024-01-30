@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BookingStatusChanges
 {
-    public decimal ActionId { get; set; }
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string PriorStatus { get; set; }
-    public string CurrentStatus { get; set; }
+    public decimal? ActionId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? PriorStatus { get; set; }
+    public string? CurrentStatus { get; set; }
     public decimal? TotalRooms { get; set; }
     public decimal? AvgRate { get; set; }
     public DateTime? InactiveDate { get; set; }
@@ -32,7 +32,7 @@ public partial class BookingStatusChanges
     public decimal? BiGroupRev3 { get; set; }
     public decimal? BiGroupRev4 { get; set; }
     public decimal? BiGroupRev5 { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

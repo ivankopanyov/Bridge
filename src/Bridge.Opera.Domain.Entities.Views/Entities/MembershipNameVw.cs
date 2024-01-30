@@ -2,165 +2,165 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MembershipNameVw
 {
-    public decimal MembershipId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string NameOnCard { get; set; }
-    public string Comments { get; set; }
+    public decimal? MembershipId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? NameOnCard { get; set; }
+    public string? Comments { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string PrimaryAirlinePartner { get; set; }
-    public string PointIndicator { get; set; }
+    public string? PrimaryAirlinePartner { get; set; }
+    public string? PointIndicator { get; set; }
     public decimal? CurrentPoints { get; set; }
-    public string MemberIndicator { get; set; }
-    public string MemberSubtype { get; set; }
+    public string? MemberIndicator { get; set; }
+    public string? MemberSubtype { get; set; }
     public DateTime? ProcessExpirationDate { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string GracePeriodIndicator { get; set; }
-    public string MembershipStatus { get; set; }
-    public string TrackData { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? GracePeriodIndicator { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? TrackData { get; set; }
     public decimal? PointsAvailable { get; set; }
-    public string PrimaryMembershipYn { get; set; }
-    public string CentralSetupYn { get; set; }
-    public string MembershipClass { get; set; }
-    public string CalculationMethod { get; set; }
+    public string? PrimaryMembershipYn { get; set; }
+    public string? CentralSetupYn { get; set; }
+    public string? MembershipClass { get; set; }
+    public string? CalculationMethod { get; set; }
     public decimal? CalculationMonths { get; set; }
     public decimal? ExpirationMonth { get; set; }
     public decimal? CardValidYears { get; set; }
     public decimal? YearsToExpire { get; set; }
-    public string ExpirationDateRequired { get; set; }
-    public string LevelRequired { get; set; }
-    public string AwardGenerationMethod { get; set; }
+    public string? ExpirationDateRequired { get; set; }
+    public string? LevelRequired { get; set; }
+    public string? AwardGenerationMethod { get; set; }
     public decimal? BatchDelayPeriod { get; set; }
-    public string AllowDupCardYn { get; set; }
-    public string ExceptionType { get; set; }
+    public string? AllowDupCardYn { get; set; }
+    public string? ExceptionType { get; set; }
     public decimal? MultipleRoomsLimit { get; set; }
-    public string BookerProgramYn { get; set; }
-    public string PointsLabel { get; set; }
-    public string EarningPreference { get; set; }
-    public string MemberInfoDispSet { get; set; }
-    public string AutoCardNoBasedOn { get; set; }
-    public string DefaultMemStatus { get; set; }
-    public string EnrollmentCodeReqYn { get; set; }
-    public string TscDateFlag { get; set; }
-    public string NumericValidation { get; set; }
-    public string ValidationByIfc { get; set; }
-    public string LoyaltyProgramYn { get; set; }
-    public string FrequentFlyerYn { get; set; }
+    public string? BookerProgramYn { get; set; }
+    public string? PointsLabel { get; set; }
+    public string? EarningPreference { get; set; }
+    public string? MemberInfoDispSet { get; set; }
+    public string? AutoCardNoBasedOn { get; set; }
+    public string? DefaultMemStatus { get; set; }
+    public string? EnrollmentCodeReqYn { get; set; }
+    public string? TscDateFlag { get; set; }
+    public string? NumericValidation { get; set; }
+    public string? ValidationByIfc { get; set; }
+    public string? LoyaltyProgramYn { get; set; }
+    public string? FrequentFlyerYn { get; set; }
     public decimal? ExternalProcessDays { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string EnrolledAt { get; set; }
-    public string NameType { get; set; }
-    public string NameTypeDesc { get; set; }
-    public string ContactYn { get; set; }
-    public string Name { get; set; }
-    public string DisplayName { get; set; }
-    public string First { get; set; }
-    public string Middle { get; set; }
-    public string Name2 { get; set; }
-    public string Name3 { get; set; }
-    public string Sname { get; set; }
-    public string Passport { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? NameType { get; set; }
+    public string? NameTypeDesc { get; set; }
+    public string? ContactYn { get; set; }
+    public string? Name { get; set; }
+    public string? DisplayName { get; set; }
+    public string? First { get; set; }
+    public string? Middle { get; set; }
+    public string? Name2 { get; set; }
+    public string? Name3 { get; set; }
+    public string? Sname { get; set; }
+    public string? Passport { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Title { get; set; }
-    public string TitleName { get; set; }
-    public string Language { get; set; }
-    public string LanguageDesc { get; set; }
-    public string Nationality { get; set; }
-    public string NationalityDesc { get; set; }
-    public string Salutation { get; set; }
-    public string LetterGreeting { get; set; }
-    public string AddressType { get; set; }
+    public string? Title { get; set; }
+    public string? TitleName { get; set; }
+    public string? Language { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? Nationality { get; set; }
+    public string? NationalityDesc { get; set; }
+    public string? Salutation { get; set; }
+    public string? LetterGreeting { get; set; }
+    public string? AddressType { get; set; }
     public decimal? AddressId { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string CityExt { get; set; }
-    public string DeptId { get; set; }
-    public string Department { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? CityExt { get; set; }
+    public string? DeptId { get; set; }
+    public string? Department { get; set; }
     public decimal? PhoneId { get; set; }
-    public string PhoneNo { get; set; }
-    public string PhoneType { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? PhoneType { get; set; }
     public decimal? FaxId { get; set; }
-    public string FaxNo { get; set; }
+    public string? FaxNo { get; set; }
     public decimal? EmailId { get; set; }
-    public string Email { get; set; }
-    public string ActiveYn { get; set; }
-    public string HistoryYn { get; set; }
-    public string AcctContact { get; set; }
-    public string CblInd { get; set; }
-    public string BlMsg { get; set; }
-    public string VipStatus { get; set; }
-    public string VipName { get; set; }
-    public string BusinessTitle { get; set; }
-    public string RateCode { get; set; }
-    public string ArNo { get; set; }
-    public string MailList { get; set; }
-    public string MailType { get; set; }
-    public string AvailoverYn { get; set; }
-    public string Interest { get; set; }
-    public string Salesrep { get; set; }
-    public string SrepCode { get; set; }
-    public string SrepId { get; set; }
-    public string NameComment { get; set; }
-    public string Gender { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string Profession { get; set; }
-    public string IdType { get; set; }
-    public string IdNumber { get; set; }
+    public string? Email { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? HistoryYn { get; set; }
+    public string? AcctContact { get; set; }
+    public string? CblInd { get; set; }
+    public string? BlMsg { get; set; }
+    public string? VipStatus { get; set; }
+    public string? VipName { get; set; }
+    public string? BusinessTitle { get; set; }
+    public string? RateCode { get; set; }
+    public string? ArNo { get; set; }
+    public string? MailList { get; set; }
+    public string? MailType { get; set; }
+    public string? AvailoverYn { get; set; }
+    public string? Interest { get; set; }
+    public string? Salesrep { get; set; }
+    public string? SrepCode { get; set; }
+    public string? SrepId { get; set; }
+    public string? NameComment { get; set; }
+    public string? Gender { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? Profession { get; set; }
+    public string? IdType { get; set; }
+    public string? IdNumber { get; set; }
     public DateTime? IdDate { get; set; }
-    public string IdPlace { get; set; }
-    public string IdCountry { get; set; }
+    public string? IdPlace { get; set; }
+    public string? IdCountry { get; set; }
     public decimal? IdDocumentAttachId { get; set; }
-    public string Comm1Id { get; set; }
-    public string Comm1Type { get; set; }
-    public string Comm1Value { get; set; }
-    public string Comm2Id { get; set; }
-    public string Comm2Type { get; set; }
-    public string Comm2Value { get; set; }
-    public string Comm3Id { get; set; }
-    public string Comm3Type { get; set; }
-    public string Comm3Value { get; set; }
-    public string Xname { get; set; }
-    public string XfirstName { get; set; }
-    public string Xtitle { get; set; }
-    public string Xsalutation { get; set; }
-    public string Sxname { get; set; }
-    public string SxfirstName { get; set; }
-    public string XdisplayName { get; set; }
-    public string EnvelopeGreeting { get; set; }
-    public string XenvelopeGreeting { get; set; }
-    public string ContractNo { get; set; }
+    public string? Comm1Id { get; set; }
+    public string? Comm1Type { get; set; }
+    public string? Comm1Value { get; set; }
+    public string? Comm2Id { get; set; }
+    public string? Comm2Type { get; set; }
+    public string? Comm2Value { get; set; }
+    public string? Comm3Id { get; set; }
+    public string? Comm3Type { get; set; }
+    public string? Comm3Value { get; set; }
+    public string? Xname { get; set; }
+    public string? XfirstName { get; set; }
+    public string? Xtitle { get; set; }
+    public string? Xsalutation { get; set; }
+    public string? Sxname { get; set; }
+    public string? SxfirstName { get; set; }
+    public string? XdisplayName { get; set; }
+    public string? EnvelopeGreeting { get; set; }
+    public string? XenvelopeGreeting { get; set; }
+    public string? ContractNo { get; set; }
     public DateTime? ContractRecvDate { get; set; }
-    public string GuestPrivYn { get; set; }
-    public string EmailYn { get; set; }
-    public string MailYn { get; set; }
-    public string PhoneYn { get; set; }
-    public string SmsYn { get; set; }
-    public string Protected { get; set; }
-    public string AddrLanguageCode { get; set; }
-    public string AddrLanguageDesc { get; set; }
-    public string ResortRegistered { get; set; }
-    public string LastUpdatedResort { get; set; }
+    public string? GuestPrivYn { get; set; }
+    public string? EmailYn { get; set; }
+    public string? MailYn { get; set; }
+    public string? PhoneYn { get; set; }
+    public string? SmsYn { get; set; }
+    public string? Protected { get; set; }
+    public string? AddrLanguageCode { get; set; }
+    public string? AddrLanguageDesc { get; set; }
+    public string? ResortRegistered { get; set; }
+    public string? LastUpdatedResort { get; set; }
     public decimal? HomePhoneId { get; set; }
-    public string HomePhoneNumber { get; set; }
+    public string? HomePhoneNumber { get; set; }
     public decimal? BusinessPhoneId { get; set; }
-    public string BusinessPhoneNumber { get; set; }
+    public string? BusinessPhoneNumber { get; set; }
     public decimal? MobilePhoneId { get; set; }
-    public string MobilePhoneNumber { get; set; }
+    public string? MobilePhoneNumber { get; set; }
     public decimal? WebPageId { get; set; }
-    public string WebPage { get; set; }
+    public string? WebPage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

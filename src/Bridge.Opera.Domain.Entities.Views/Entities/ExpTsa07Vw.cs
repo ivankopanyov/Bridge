@@ -2,26 +2,26 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpTsa07Vw
 {
-    public string BusinessDate { get; set; }
-    public string Resort { get; set; }
-    public string Name { get; set; }
-    public string Room { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string InsertDate { get; set; }
-    public string InsertTme { get; set; }
-    public string TrxCode { get; set; }
-    public string Description { get; set; }
+    public string? BusinessDate { get; set; }
+    public string? Resort { get; set; }
+    public string? Name { get; set; }
+    public string? Room { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? InsertDate { get; set; }
+    public string? InsertTme { get; set; }
+    public string? TrxCode { get; set; }
+    public string? Description { get; set; }
     public decimal? CashierId { get; set; }
-    public string AppUser { get; set; }
+    public string? AppUser { get; set; }
     public decimal? Quantity { get; set; }
     public decimal? PostedAmount { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? UsdRate { get; set; }
     public decimal? UsdPrice { get; set; }
-    public string CreateUser { get; set; }
-    public string CreateDate { get; set; }
+    public string? CreateUser { get; set; }
+    public string? CreateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

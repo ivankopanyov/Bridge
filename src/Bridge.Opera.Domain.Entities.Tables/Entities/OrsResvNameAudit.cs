@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OrsResvNameAudit
 {
-    public decimal ActionInstanceId { get; set; }
-    public decimal DmlSeqNo { get; set; }
-    public string IudFlag { get; set; }
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string OldResort { get; set; }
-    public string NewResort { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public decimal? DmlSeqNo { get; set; }
+    public string? IudFlag { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? OldResort { get; set; }
+    public string? NewResort { get; set; }
     public DateTime? OldArrival { get; set; }
     public DateTime? NewArrival { get; set; }
     public decimal? OldNights { get; set; }
@@ -17,18 +17,18 @@ public partial class OrsResvNameAudit
     public DateTime? NewCancelDate { get; set; }
     public decimal? OldRooms { get; set; }
     public decimal? NewRooms { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string OldRateCode { get; set; }
-    public string NewRateCode { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? OldRateCode { get; set; }
+    public string? NewRateCode { get; set; }
     public decimal? OldRate { get; set; }
     public decimal? NewRate { get; set; }
-    public string ShareLabel { get; set; }
-    public string OldOriginOfBooking { get; set; }
-    public string NewOriginOfBooking { get; set; }
+    public string? ShareLabel { get; set; }
+    public string? OldOriginOfBooking { get; set; }
+    public string? NewOriginOfBooking { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

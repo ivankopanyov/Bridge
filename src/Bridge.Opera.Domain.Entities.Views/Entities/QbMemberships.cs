@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbMemberships
 {
-    public decimal MembershipId { get; set; }
-    public decimal NameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipCardNo { get; set; }
-    public string MembershipLevel { get; set; }
-    public string NameOnCard { get; set; }
-    public string Comments { get; set; }
+    public decimal? MembershipId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipCardNo { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? NameOnCard { get; set; }
+    public string? Comments { get; set; }
     public DateTime? JoinedDate { get; set; }
     public DateTime? ExpirationDate { get; set; }
     public decimal? CreditLimit { get; set; }
-    public string PrimaryAirlinePartner { get; set; }
-    public string PointIndicator { get; set; }
+    public string? PrimaryAirlinePartner { get; set; }
+    public string? PointIndicator { get; set; }
     public decimal? CurrentPoints { get; set; }
-    public string MemberIndicator { get; set; }
-    public string MemberSubtype { get; set; }
+    public string? MemberIndicator { get; set; }
+    public string? MemberSubtype { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
@@ -24,15 +24,15 @@ public partial class QbMemberships
     public DateTime? UpdateDate { get; set; }
     public decimal? OrderBy { get; set; }
     public DateTime? ProcessExpirationDate { get; set; }
-    public string EnrollmentCode { get; set; }
-    public string GracePeriodIndicator { get; set; }
-    public string MembershipStatus { get; set; }
-    public string TrackData { get; set; }
-    public string EarningPreference { get; set; }
-    public string ChainCode { get; set; }
-    public string EnrollmentSource { get; set; }
-    public string EnrolledAt { get; set; }
-    public string DeviceCode { get; set; }
+    public string? EnrollmentCode { get; set; }
+    public string? GracePeriodIndicator { get; set; }
+    public string? MembershipStatus { get; set; }
+    public string? TrackData { get; set; }
+    public string? EarningPreference { get; set; }
+    public string? ChainCode { get; set; }
+    public string? EnrollmentSource { get; set; }
+    public string? EnrolledAt { get; set; }
+    public string? DeviceCode { get; set; }
     public DateTime? DeviceDisableDate { get; set; }
     public decimal? RankValue { get; set; }
     public decimal? PartnerMembershipId { get; set; }

@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiErrorLog
 {
-    public string SchemaName { get; set; }
-    public string AwName { get; set; }
-    public string CubeName { get; set; }
-    public string DimensionName { get; set; }
-    public string ProgramName { get; set; }
-    public string BusinessDate { get; set; }
+    public string? SchemaName { get; set; }
+    public string? AwName { get; set; }
+    public string? CubeName { get; set; }
+    public string? DimensionName { get; set; }
+    public string? ProgramName { get; set; }
+    public string? BusinessDate { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string Action { get; set; }
-    public string InsertUser { get; set; }
-    public string Comments { get; set; }
-    public decimal LogId { get; set; }
+    public string? Action { get; set; }
+    public string? InsertUser { get; set; }
+    public string? Comments { get; set; }
+    public decimal? LogId { get; set; }
     public decimal? Loadid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

@@ -7,15 +7,15 @@ public partial class OrmsAllotmentQuotDtl
         OrmsAllotmentQuotResp = new HashSet<OrmsAllotmentQuotResp>();
     }
 
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string YieldCategory { get; set; }
-    public decimal RequestedRooms { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? YieldCategory { get; set; }
+    public decimal? RequestedRooms { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
     public virtual OrmsAllotmentQuotHdr Request { get; set; }
     public virtual ICollection<OrmsAllotmentQuotResp> OrmsAllotmentQuotResp { get; set; }

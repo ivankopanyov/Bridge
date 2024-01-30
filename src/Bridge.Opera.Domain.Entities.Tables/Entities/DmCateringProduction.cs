@@ -2,33 +2,33 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class DmCateringProduction
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public string EventStatus { get; set; }
-    public string EventType { get; set; }
-    public DateTime EventStartDate { get; set; }
-    public DateTime EventEndDate { get; set; }
-    public string EventSpace { get; set; }
-    public string CoverableYn { get; set; }
-    public decimal ChangeId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public string? EventStatus { get; set; }
+    public string? EventType { get; set; }
+    public DateTime? EventStartDate { get; set; }
+    public DateTime? EventEndDate { get; set; }
+    public string? EventSpace { get; set; }
+    public string? CoverableYn { get; set; }
+    public decimal? ChangeId { get; set; }
     public DateTime? ChangeDate { get; set; }
-    public string ChangeEventStatus { get; set; }
+    public string? ChangeEventStatus { get; set; }
     public decimal? ChangeAttendees { get; set; }
     public decimal? ChangeCatSrep { get; set; }
-    public string ChangeCatSrepResort { get; set; }
+    public string? ChangeCatSrepResort { get; set; }
     public decimal? ChangeRevenue { get; set; }
-    public string ChangeRevenueType { get; set; }
-    public string ChangeRevenueByPkgYn { get; set; }
-    public string CatCurrency { get; set; }
-    public string PropertyCurrency { get; set; }
+    public string? ChangeRevenueType { get; set; }
+    public string? ChangeRevenueByPkgYn { get; set; }
+    public string? CatCurrency { get; set; }
+    public string? PropertyCurrency { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? DmProcessed { get; set; }
-    public string DmProcessedYn { get; set; }
+    public string? DmProcessedYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

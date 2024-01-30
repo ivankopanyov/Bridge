@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpIlBkmvFoliotax
 {
-    public string CurrencyCode { get; set; }
-    public string IsDualYn { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? IsDualYn { get; set; }
     public decimal? TotalNetIls { get; set; }
     public decimal? TotalTaxIls { get; set; }
     public DateTime? BusinessDate { get; set; }
@@ -97,25 +97,25 @@ public partial class ExpIlBkmvFoliotax
     public decimal? Pnet18Amt { get; set; }
     public decimal? Pnet19Amt { get; set; }
     public decimal? Pnet20Amt { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string BillGenerationTime { get; set; }
-    public string PayeeName { get; set; }
-    public string PayeeAddress1 { get; set; }
-    public string PayeeAddress2 { get; set; }
-    public string PayeeAddress3 { get; set; }
-    public string PayeeAddress4 { get; set; }
-    public string PayeeCity { get; set; }
-    public string PayeeZipCode { get; set; }
-    public string PayeeCountry { get; set; }
-    public string PayeePhoneNo { get; set; }
-    public string PayeeTax1No { get; set; }
-    public string PayeeTax2No { get; set; }
+    public string? BillGenerationTime { get; set; }
+    public string? PayeeName { get; set; }
+    public string? PayeeAddress1 { get; set; }
+    public string? PayeeAddress2 { get; set; }
+    public string? PayeeAddress3 { get; set; }
+    public string? PayeeAddress4 { get; set; }
+    public string? PayeeCity { get; set; }
+    public string? PayeeZipCode { get; set; }
+    public string? PayeeCountry { get; set; }
+    public string? PayeePhoneNo { get; set; }
+    public string? PayeeTax1No { get; set; }
+    public string? PayeeTax2No { get; set; }
     public decimal? PtotRevTaxable { get; set; }
     public decimal? PtotNonrevTaxable { get; set; }
     public decimal? PtotRevNontaxable { get; set; }
     public decimal? PtotNonrevNontaxable { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

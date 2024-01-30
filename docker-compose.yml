@@ -6,6 +6,12 @@ services:
     build:
       context: .
       dockerfile: src/Bridge.Fias/Dockerfile
+
+  opera:
+    image: ${DOCKER_REGISTRY-}bridgeopera
+    build:
+      context: .
+      dockerfile: Bridge.Opera/Dockerfile
   
   elasticsearch:
     image: elasticsearch:${ELASTIC_VERSION}
@@ -15,3 +21,4 @@ services:
 
   rabbitmq:
     image: rabbitmq:3.12.12-management-alpine
+

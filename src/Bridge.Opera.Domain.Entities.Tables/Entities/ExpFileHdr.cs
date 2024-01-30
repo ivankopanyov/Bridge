@@ -9,63 +9,63 @@ public partial class ExpFileHdr
         ExpParameters = new HashSet<ExpParameters>();
     }
 
-    public decimal ExpFileId { get; set; }
-    public string FileType { get; set; }
-    public string FileGroupId { get; set; }
-    public string Resort { get; set; }
-    public string FileTypeDesc { get; set; }
-    public string ProgramName { get; set; }
-    public string Company { get; set; }
-    public string SourceViewCode { get; set; }
-    public string FileName { get; set; }
-    public string FileExtension { get; set; }
-    public string FileLocation { get; set; }
-    public string ColSeperator { get; set; }
-    public string WhereClause { get; set; }
-    public string RunInNaYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
+    public decimal? ExpFileId { get; set; }
+    public string? FileType { get; set; }
+    public string? FileGroupId { get; set; }
+    public string? Resort { get; set; }
+    public string? FileTypeDesc { get; set; }
+    public string? ProgramName { get; set; }
+    public string? Company { get; set; }
+    public string? SourceViewCode { get; set; }
+    public string? FileName { get; set; }
+    public string? FileExtension { get; set; }
+    public string? FileLocation { get; set; }
+    public string? ColSeperator { get; set; }
+    public string? WhereClause { get; set; }
+    public string? RunInNaYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string InactiveYn { get; set; }
-    public string ZipFileLoc { get; set; }
-    public string CompressdataYn { get; set; }
-    public string ZipFileName { get; set; }
-    public string PreExpProc { get; set; }
-    public string PostExpProc { get; set; }
-    public string ParameterForm { get; set; }
+    public string? InactiveYn { get; set; }
+    public string? ZipFileLoc { get; set; }
+    public string? CompressdataYn { get; set; }
+    public string? ZipFileName { get; set; }
+    public string? PreExpProc { get; set; }
+    public string? PostExpProc { get; set; }
+    public string? ParameterForm { get; set; }
     public decimal? BatchSeq { get; set; }
-    public string AddNewlineYn { get; set; }
-    public string NaFrequency { get; set; }
-    public string AlwaysHdrfooterYn { get; set; }
-    public string FtpUploadYn { get; set; }
-    public string UploadType { get; set; }
-    public string OxiInterfaceId { get; set; }
-    public string HttpUploadYn { get; set; }
-    public string HttpAddress { get; set; }
-    public string NaWhenToExport { get; set; }
-    public string ComponentExportYn { get; set; }
+    public string? AddNewlineYn { get; set; }
+    public string? NaFrequency { get; set; }
+    public string? AlwaysHdrfooterYn { get; set; }
+    public string? FtpUploadYn { get; set; }
+    public string? UploadType { get; set; }
+    public string? OxiInterfaceId { get; set; }
+    public string? HttpUploadYn { get; set; }
+    public string? HttpAddress { get; set; }
+    public string? NaWhenToExport { get; set; }
+    public string? ComponentExportYn { get; set; }
     public decimal? ParentId { get; set; }
     public decimal? ExportSequence { get; set; }
-    public string AppendToFileYn { get; set; }
-    public string TransferMethod { get; set; }
-    public string SoapAction { get; set; }
-    public string XmlYn { get; set; }
-    public string XmlDocName { get; set; }
-    public string AutoExportYn { get; set; }
-    public string SftpYn { get; set; }
-    public string EncryptType { get; set; }
-    public string EncryptKey { get; set; }
+    public string? AppendToFileYn { get; set; }
+    public string? TransferMethod { get; set; }
+    public string? SoapAction { get; set; }
+    public string? XmlYn { get; set; }
+    public string? XmlDocName { get; set; }
+    public string? AutoExportYn { get; set; }
+    public string? SftpYn { get; set; }
+    public string? EncryptType { get; set; }
+    public string? EncryptKey { get; set; }
     public decimal? LogLevel { get; set; }
-    public string ExportType { get; set; }
-    public string LargeRecLengthYn { get; set; }
-    public string XmlEncoding { get; set; }
-    public string XmlProcessingInstructions { get; set; }
-    public string XmlDocumentTypeName { get; set; }
-    public string XmlDocumentTypeSysid { get; set; }
-    public string XmlDocumentTypePubid { get; set; }
-    public string MultiPropertyYn { get; set; }
-    public string ChainCode { get; set; }
+    public string? ExportType { get; set; }
+    public string? LargeRecLengthYn { get; set; }
+    public string? XmlEncoding { get; set; }
+    public string? XmlProcessingInstructions { get; set; }
+    public string? XmlDocumentTypeName { get; set; }
+    public string? XmlDocumentTypeSysid { get; set; }
+    public string? XmlDocumentTypePubid { get; set; }
+    public string? MultiPropertyYn { get; set; }
+    public string? ChainCode { get; set; }
     public decimal? PreDefinedDeliveryId { get; set; }
 
     public virtual ExpFileDelivery ExpFileDelivery { get; set; }

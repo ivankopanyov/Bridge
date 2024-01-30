@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidAppParamValuesSys
 {
-    public string ParameterName { get; set; }
-    public string ParameterValue { get; set; }
+    public string? ParameterName { get; set; }
+    public string? ParameterValue { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

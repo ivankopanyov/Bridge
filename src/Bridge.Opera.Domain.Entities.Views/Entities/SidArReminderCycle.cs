@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidArReminderCycle
 {
-    public string Resort { get; set; }
-    public string GlobalAcctYn { get; set; }
-    public decimal ReminderCode { get; set; }
+    public string? Resort { get; set; }
+    public string? GlobalAcctYn { get; set; }
+    public decimal? ReminderCode { get; set; }
     public decimal? AccountTypeId { get; set; }
     public decimal? NoOfDays { get; set; }
-    public decimal InsertUser { get; set; }
-    public string LetterName { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public string? LetterName { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

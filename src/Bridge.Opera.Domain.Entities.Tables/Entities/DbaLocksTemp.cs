@@ -3,13 +3,13 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 public partial class DbaLocksTemp
 {
     public decimal? SessionId { get; set; }
-    public string LockType { get; set; }
-    public string ModeHeld { get; set; }
-    public string ModeRequested { get; set; }
-    public string LockId1 { get; set; }
-    public string LockId2 { get; set; }
+    public string? LockType { get; set; }
+    public string? ModeHeld { get; set; }
+    public string? ModeRequested { get; set; }
+    public string? LockId1 { get; set; }
+    public string? LockId2 { get; set; }
     public decimal? LastConvert { get; set; }
-    public string BlockingOthers { get; set; }
+    public string? BlockingOthers { get; set; }
     public decimal? InstanceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

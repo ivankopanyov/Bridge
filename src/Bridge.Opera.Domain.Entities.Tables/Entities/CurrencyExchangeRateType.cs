@@ -8,21 +8,21 @@ public partial class CurrencyExchangeRateType
         CurrencyExchangeRatesBak = new HashSet<CurrencyExchangeRatesBak>();
     }
 
-    public string ExchangeRateType { get; set; }
-    public string ExchangeYn { get; set; }
-    public string SettlementYn { get; set; }
-    public string ForecastYn { get; set; }
-    public string Description { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Resort { get; set; }
-    public string PostingYn { get; set; }
-    public string TaCommYn { get; set; }
-    public string MembershipYn { get; set; }
-    public string ExchangeCheckYn { get; set; }
-    public string OcisEcertYn { get; set; }
+    public string? ExchangeRateType { get; set; }
+    public string? ExchangeYn { get; set; }
+    public string? SettlementYn { get; set; }
+    public string? ForecastYn { get; set; }
+    public string? Description { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Resort { get; set; }
+    public string? PostingYn { get; set; }
+    public string? TaCommYn { get; set; }
+    public string? MembershipYn { get; set; }
+    public string? ExchangeCheckYn { get; set; }
+    public string? OcisEcertYn { get; set; }
 
     public virtual ICollection<CurrencyExchangeRates> CurrencyExchangeRates { get; set; }
     public virtual ICollection<CurrencyExchangeRatesBak> CurrencyExchangeRatesBak { get; set; }

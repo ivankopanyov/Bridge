@@ -3,12 +3,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ObiFutureResFactVw
 {
     public DateTime? StayDate { get; set; }
-    public string Resort { get; set; }
-    public string Market { get; set; }
-    public string Rate { get; set; }
-    public string SourceCode { get; set; }
-    public string Channel { get; set; }
-    public string ResInsertSource { get; set; }
+    public string? Resort { get; set; }
+    public string? Market { get; set; }
+    public string? Rate { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Channel { get; set; }
+    public string? ResInsertSource { get; set; }
     public decimal? OoRooms { get; set; }
     public decimal? CompRoomNts { get; set; }
     public decimal? Stays { get; set; }

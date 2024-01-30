@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRateRefreshDetail
 {
-    public decimal GdsRefreshId { get; set; }
-    public string GdsHost { get; set; }
-    public string Status { get; set; }
+    public decimal? GdsRefreshId { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Status { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

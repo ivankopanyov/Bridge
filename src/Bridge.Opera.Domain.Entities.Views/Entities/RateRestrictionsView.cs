@@ -3,18 +3,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RateRestrictionsView
 {
     public DateTime? RateDate { get; set; }
-    public string SStatus { get; set; }
-    public string AStatus { get; set; }
-    public string DStatus { get; set; }
-    public string BookMinAdvance { get; set; }
-    public string BookMaxAdvance { get; set; }
-    public string AMinlos { get; set; }
-    public string AMaxlos { get; set; }
-    public string SMinlos { get; set; }
-    public string SMaxlos { get; set; }
-    public string LosRestriction { get; set; }
-    public string MinOcc { get; set; }
-    public string MaxOcc { get; set; }
+    public string? SStatus { get; set; }
+    public string? AStatus { get; set; }
+    public string? DStatus { get; set; }
+    public string? BookMinAdvance { get; set; }
+    public string? BookMaxAdvance { get; set; }
+    public string? AMinlos { get; set; }
+    public string? AMaxlos { get; set; }
+    public string? SMinlos { get; set; }
+    public string? SMaxlos { get; set; }
+    public string? LosRestriction { get; set; }
+    public string? MinOcc { get; set; }
+    public string? MaxOcc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

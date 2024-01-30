@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FacilityScheduleDates
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
     public DateTime? LastRoomMove { get; set; }
     public DateTime? RescheduleStart { get; set; }
-    public string CustomizedYn { get; set; }
+    public string? CustomizedYn { get; set; }
 
     public virtual ReservationName Res { get; set; }
 

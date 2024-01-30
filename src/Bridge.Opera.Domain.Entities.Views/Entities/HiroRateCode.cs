@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HiroRateCode
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? ReservationDate { get; set; }
-    public string CharReservationDate { get; set; }
-    public string RateCode { get; set; }
+    public string? CharReservationDate { get; set; }
+    public string? RateCode { get; set; }
     public decimal? Authorization { get; set; }
     public decimal? RoomSold { get; set; }
     public decimal? LeftToSell { get; set; }

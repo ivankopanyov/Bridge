@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MicEvtype
 {
-    public decimal MicId { get; set; }
-    public string EventType { get; set; }
+    public decimal? MicId { get; set; }
+    public string? EventType { get; set; }
 
     public virtual GemMenuitemClass Mic { get; set; }
 

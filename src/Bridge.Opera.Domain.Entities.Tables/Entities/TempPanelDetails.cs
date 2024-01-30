@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TempPanelDetails
 {
-    public string ApplicationName { get; set; }
-    public string PanelName { get; set; }
+    public string? ApplicationName { get; set; }
+    public string? PanelName { get; set; }
     public decimal? StartIndex { get; set; }
     public decimal? TotalMenuItems { get; set; }
 

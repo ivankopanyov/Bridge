@@ -3,44 +3,44 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class TaGuestCommissions
 {
     public decimal? CommissionId { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? ResvNameId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? NameId { get; set; }
-    public string NameType { get; set; }
-    public string ManualEditYn { get; set; }
-    public string ResvStatus { get; set; }
-    public string GuestName { get; set; }
-    public string SguestName { get; set; }
+    public string? NameType { get; set; }
+    public string? ManualEditYn { get; set; }
+    public string? ResvStatus { get; set; }
+    public string? GuestName { get; set; }
+    public string? SguestName { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string CommCode { get; set; }
-    public string CommissionHoldCode { get; set; }
-    public string CommissionHoldDesc { get; set; }
+    public string? CommCode { get; set; }
+    public string? CommissionHoldCode { get; set; }
+    public string? CommissionHoldDesc { get; set; }
     public decimal? PaymentId { get; set; }
-    public string CommType { get; set; }
-    public string Currency { get; set; }
-    public string ManualResvYn { get; set; }
-    public string PpdRemarks { get; set; }
-    public string PpdEditYn { get; set; }
-    public string CommCodeDiffYn { get; set; }
+    public string? CommType { get; set; }
+    public string? Currency { get; set; }
+    public string? ManualResvYn { get; set; }
+    public string? PpdRemarks { get; set; }
+    public string? PpdEditYn { get; set; }
+    public string? CommCodeDiffYn { get; set; }
     public decimal? CommissionRevenue { get; set; }
     public decimal? CommissionAmount { get; set; }
     public decimal? GrossCommAmt { get; set; }
     public decimal? VatAmount { get; set; }
     public decimal? PrepaidComm { get; set; }
     public decimal? ARAmount { get; set; }
-    public string GuestLastName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestDisplayName { get; set; }
-    public string GuestTax1No { get; set; }
-    public string ConfirmationNo { get; set; }
+    public string? GuestLastName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestDisplayName { get; set; }
+    public string? GuestTax1No { get; set; }
+    public string? ConfirmationNo { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? BookingDate { get; set; }
-    public string CommissionHoldRemarks { get; set; }
-    public string ArYn { get; set; }
+    public string? CommissionHoldRemarks { get; set; }
+    public string? ArYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

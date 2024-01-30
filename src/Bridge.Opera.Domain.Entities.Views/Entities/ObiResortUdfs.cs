@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiResortUdfs
 {
-    public string Resort { get; set; }
-    public string UdfCategory { get; set; }
-    public string UdfType { get; set; }
-    public string UdfTypeDesc { get; set; }
-    public string UdfAttribute { get; set; }
+    public string? Resort { get; set; }
+    public string? UdfCategory { get; set; }
+    public string? UdfType { get; set; }
+    public string? UdfTypeDesc { get; set; }
+    public string? UdfAttribute { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

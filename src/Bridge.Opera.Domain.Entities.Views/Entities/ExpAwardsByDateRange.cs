@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpAwardsByDateRange
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string IsNoShowYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? IsNoShowYn { get; set; }
     public DateTime? AwardFromDate { get; set; }
     public DateTime? AwardToDate { get; set; }
-    public string AwardVoucher1 { get; set; }
-    public string LoyaltyMemberNo { get; set; }
-    public string LoyaltyMemberType { get; set; }
-    public string PropertyCode { get; set; }
-    public string PropertyCurrencyCode { get; set; }
-    public string InstAwardCode { get; set; }
-    public string InstAwardAmount { get; set; }
+    public string? AwardVoucher1 { get; set; }
+    public string? LoyaltyMemberNo { get; set; }
+    public string? LoyaltyMemberType { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? PropertyCurrencyCode { get; set; }
+    public string? InstAwardCode { get; set; }
+    public string? InstAwardAmount { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

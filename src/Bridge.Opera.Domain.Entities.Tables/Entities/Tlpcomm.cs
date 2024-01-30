@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class Tlpcomm
 {
-    public string Hotelcode { get; set; }
-    public string Groupid { get; set; }
-    public string Workstatid { get; set; }
-    public string Opcode { get; set; }
-    public string Transtime { get; set; }
-    public string Msgtext { get; set; }
+    public string? Hotelcode { get; set; }
+    public string? Groupid { get; set; }
+    public string? Workstatid { get; set; }
+    public string? Opcode { get; set; }
+    public string? Transtime { get; set; }
+    public string? Msgtext { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

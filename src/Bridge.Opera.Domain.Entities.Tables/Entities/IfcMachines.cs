@@ -2,36 +2,36 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcMachines
 {
-    public decimal Id { get; set; }
-    public string Machine { get; set; }
-    public string Program { get; set; }
-    public decimal ControllerPort { get; set; }
-    public string ConfigFile { get; set; }
+    public decimal? Id { get; set; }
+    public string? Machine { get; set; }
+    public string? Program { get; set; }
+    public decimal? ControllerPort { get; set; }
+    public string? ConfigFile { get; set; }
     public decimal? VncPort { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string Status { get; set; }
-    public string StatusMsg { get; set; }
-    public string Ctrlver { get; set; }
-    public string Dbrstconninterval { get; set; }
-    public string Dbrstconntime { get; set; }
-    public string Loglevel { get; set; }
-    public string Logmax { get; set; }
-    public string Logpath { get; set; }
-    public string Logpurge { get; set; }
-    public string Operadb { get; set; }
-    public string Operaifcws { get; set; }
-    public string RbRowid { get; set; }
-    public string SendcfgxmlYn { get; set; }
-    public string Sendinterval { get; set; }
-    public string UseclobYn { get; set; }
-    public string Wsmaxretry { get; set; }
-    public string Wsretryinterval { get; set; }
-    public string Wstimeout { get; set; }
-    public string Rbinterval { get; set; }
-    public string ControllerStarttime { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? Status { get; set; }
+    public string? StatusMsg { get; set; }
+    public string? Ctrlver { get; set; }
+    public string? Dbrstconninterval { get; set; }
+    public string? Dbrstconntime { get; set; }
+    public string? Loglevel { get; set; }
+    public string? Logmax { get; set; }
+    public string? Logpath { get; set; }
+    public string? Logpurge { get; set; }
+    public string? Operadb { get; set; }
+    public string? Operaifcws { get; set; }
+    public string? RbRowid { get; set; }
+    public string? SendcfgxmlYn { get; set; }
+    public string? Sendinterval { get; set; }
+    public string? UseclobYn { get; set; }
+    public string? Wsmaxretry { get; set; }
+    public string? Wsretryinterval { get; set; }
+    public string? Wstimeout { get; set; }
+    public string? Rbinterval { get; set; }
+    public string? ControllerStarttime { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

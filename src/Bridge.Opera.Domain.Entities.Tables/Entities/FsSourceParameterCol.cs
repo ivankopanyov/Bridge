@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsSourceParameterCol
 {
-    public string Par { get; set; }
-    public string Src { get; set; }
-    public string SrcCol { get; set; }
-    public string SrcColFormula { get; set; }
-    public string RequiredYn { get; set; }
-    public string UseForAuthYn { get; set; }
-    public string DefaultValue { get; set; }
-    public string EncryptYn { get; set; }
+    public string? Par { get; set; }
+    public string? Src { get; set; }
+    public string? SrcCol { get; set; }
+    public string? SrcColFormula { get; set; }
+    public string? RequiredYn { get; set; }
+    public string? UseForAuthYn { get; set; }
+    public string? DefaultValue { get; set; }
+    public string? EncryptYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

@@ -7,22 +7,22 @@ public partial class EmailJournal
         EmailAttachment = new HashSet<EmailAttachment>();
     }
 
-    public decimal EmailSeqno { get; set; }
-    public string Origin { get; set; }
-    public decimal OriginId { get; set; }
-    public string SenderEmail { get; set; }
+    public decimal? EmailSeqno { get; set; }
+    public string? Origin { get; set; }
+    public decimal? OriginId { get; set; }
+    public string? SenderEmail { get; set; }
     public decimal? SenderId { get; set; }
-    public string ToRecipients { get; set; }
-    public string CcRecipients { get; set; }
-    public string BccRecipients { get; set; }
-    public string EmailSubject { get; set; }
-    public string EmailBody { get; set; }
+    public string? ToRecipients { get; set; }
+    public string? CcRecipients { get; set; }
+    public string? BccRecipients { get; set; }
+    public string? EmailSubject { get; set; }
+    public string? EmailBody { get; set; }
     public DateTime? SendDate { get; set; }
-    public string Attachments { get; set; }
+    public string? Attachments { get; set; }
     public decimal? ResendForId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
-    public string PlainTextYn { get; set; }
+    public string? PlainTextYn { get; set; }
 
     public virtual ICollection<EmailAttachment> EmailAttachment { get; set; }
 

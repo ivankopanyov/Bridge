@@ -2,57 +2,57 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpScactivityView
 {
-    public decimal ActId { get; set; }
-    public string Resort { get; set; }
+    public decimal? ActId { get; set; }
+    public string? Resort { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string Purpose { get; set; }
-    public string AssignedBy { get; set; }
+    public string? Purpose { get; set; }
+    public string? AssignedBy { get; set; }
     public DateTime? AssignedOnDate { get; set; }
-    public string AssignedTo { get; set; }
+    public string? AssignedTo { get; set; }
     public decimal? CompletedBy { get; set; }
     public DateTime? CompletedDate { get; set; }
     public DateTime? DueDate { get; set; }
-    public string UserExt { get; set; }
-    public string DeptOfAction { get; set; }
+    public string? UserExt { get; set; }
+    public string? DeptOfAction { get; set; }
     public decimal? Duration { get; set; }
-    public string DurationTimeCode { get; set; }
-    public string DurationTimeDesc { get; set; }
-    public string CategoryCode { get; set; }
-    public string ReasonCode { get; set; }
-    public string LocationCode { get; set; }
-    public string PriorityCode { get; set; }
+    public string? DurationTimeCode { get; set; }
+    public string? DurationTimeDesc { get; set; }
+    public string? CategoryCode { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? LocationCode { get; set; }
+    public string? PriorityCode { get; set; }
     public decimal? ParentActId { get; set; }
-    public string StatusCode { get; set; }
+    public string? StatusCode { get; set; }
     public decimal? TaskCode { get; set; }
     public decimal? TaskitemNumber { get; set; }
-    public string ActType { get; set; }
+    public string? ActType { get; set; }
     public decimal? DependingOnActId { get; set; }
-    public string MasterSub { get; set; }
-    public string Room { get; set; }
-    public string Notes { get; set; }
-    public string CreatedByUser { get; set; }
-    public string TakenByUser { get; set; }
-    public string AssignedByUser { get; set; }
-    public string AssignedToUser { get; set; }
-    public string ReleasedByUser { get; set; }
-    public string CompletedByUser { get; set; }
-    public string PrivateYn { get; set; }
-    public decimal CreatedBy { get; set; }
+    public string? MasterSub { get; set; }
+    public string? Room { get; set; }
+    public string? Notes { get; set; }
+    public string? CreatedByUser { get; set; }
+    public string? TakenByUser { get; set; }
+    public string? AssignedByUser { get; set; }
+    public string? AssignedToUser { get; set; }
+    public string? ReleasedByUser { get; set; }
+    public string? CompletedByUser { get; set; }
+    public string? PrivateYn { get; set; }
+    public decimal? CreatedBy { get; set; }
     public DateTime? CreatedDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public decimal InsertUser { get; set; }
+    public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string ProblemDesc { get; set; }
+    public string? ProblemDesc { get; set; }
     public decimal? EstTimeToComplete { get; set; }
-    public string Tracecode { get; set; }
+    public string? Tracecode { get; set; }
     public decimal? AccId { get; set; }
-    public string AccName { get; set; }
+    public string? AccName { get; set; }
     public decimal? ConId { get; set; }
-    public string ConName { get; set; }
+    public string? ConName { get; set; }
     public decimal? BusblockId { get; set; }
-    public string BusblockName { get; set; }
+    public string? BusblockName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

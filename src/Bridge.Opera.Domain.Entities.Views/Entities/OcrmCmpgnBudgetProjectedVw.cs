@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OcrmCmpgnBudgetProjectedVw
 {
-    public string CampaignCode { get; set; }
+    public string? CampaignCode { get; set; }
     public decimal? TotalArrivals { get; set; }
     public decimal? TotalStays { get; set; }
     public decimal? AvgRoomRate { get; set; }

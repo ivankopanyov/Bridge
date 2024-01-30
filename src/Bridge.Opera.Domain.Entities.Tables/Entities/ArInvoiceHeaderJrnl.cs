@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ArInvoiceHeaderJrnl
 {
-    public string Resort { get; set; }
-    public string JrnlOperation { get; set; }
+    public string? Resort { get; set; }
+    public string? JrnlOperation { get; set; }
     public DateTime? JrnlTime { get; set; }
-    public string JrnlDesc { get; set; }
+    public string? JrnlDesc { get; set; }
     public decimal? AccountCode { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string TrxCode { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? OrgAmt { get; set; }
@@ -21,54 +21,54 @@ public partial class ArInvoiceHeaderJrnl
     public decimal? Paid { get; set; }
     public DateTime? InvoiceCloseDate { get; set; }
     public DateTime? ArTransferDate { get; set; }
-    public string InvStatus { get; set; }
+    public string? InvStatus { get; set; }
     public decimal? TranActionId { get; set; }
-    public string PurgeYn { get; set; }
+    public string? PurgeYn { get; set; }
     public decimal? AgingBucket { get; set; }
     public decimal? ArLedDebit { get; set; }
     public decimal? ArLedCredit { get; set; }
-    public string AdjustmentYn { get; set; }
+    public string? AdjustmentYn { get; set; }
     public DateTime? CheckOutDate { get; set; }
     public decimal? CashierId { get; set; }
-    public string InvoiceType { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public string? InvoiceType { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public DateTime? TrnsActivityDate { get; set; }
     public decimal? TrnsFromAcct { get; set; }
     public decimal? TrnsToAcct { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public decimal? MasterInvoiceNo { get; set; }
-    public string CompressedYn { get; set; }
+    public string? CompressedYn { get; set; }
     public DateTime? CompressDate { get; set; }
     public decimal? ReminderCycle { get; set; }
     public DateTime? ReminderDate { get; set; }
-    public string InvoiceClosedBy { get; set; }
+    public string? InvoiceClosedBy { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string InsertUser { get; set; }
+    public string? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string UpdateUser { get; set; }
-    public string FiscalBillNo { get; set; }
-    public string AccTypeFlag { get; set; }
+    public string? UpdateUser { get; set; }
+    public string? FiscalBillNo { get; set; }
+    public string? AccTypeFlag { get; set; }
     public decimal? CreditedToTrxNo { get; set; }
-    public string PrintedYn { get; set; }
+    public string? PrintedYn { get; set; }
     public DateTime? PrintedDate { get; set; }
-    public string OwnerRoom { get; set; }
+    public string? OwnerRoom { get; set; }
     public decimal? StatementNo { get; set; }
-    public string FolioText1 { get; set; }
-    public string FolioText2 { get; set; }
+    public string? FolioText1 { get; set; }
+    public string? FolioText2 { get; set; }
     public decimal? OrgAmtCurrDiff { get; set; }
     public decimal? OrgAmtParallel { get; set; }
     public decimal? OrgAmtContract { get; set; }
-    public string ContractCurrencyCode { get; set; }
-    public string ParallelCurrencyCode { get; set; }
+    public string? ContractCurrencyCode { get; set; }
+    public string? ParallelCurrencyCode { get; set; }
     public decimal? ParallelCurrDiff { get; set; }
     public decimal? ContractCurrDiff { get; set; }
-    public string ExpOriginalInvoice { get; set; }
-    public string ExpInvoiceType { get; set; }
+    public string? ExpOriginalInvoice { get; set; }
+    public string? ExpInvoiceType { get; set; }
     public decimal? AddresseeNameId { get; set; }
     public decimal? JrnlUser { get; set; }
-    public string PaymentNo { get; set; }
+    public string? PaymentNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

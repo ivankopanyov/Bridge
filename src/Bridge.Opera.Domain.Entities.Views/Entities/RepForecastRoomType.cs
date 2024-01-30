@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class RepForecastRoomType
 {
     public DateTime? ConsideredDate { get; set; }
-    public string DayDesc { get; set; }
-    public string DayDescription { get; set; }
-    public string RoomCategory { get; set; }
-    public string Description { get; set; }
+    public string? DayDesc { get; set; }
+    public string? DayDescription { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Description { get; set; }
     public decimal? Avialability { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

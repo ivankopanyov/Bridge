@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortBudgetForecast
 {
-    public string Resort { get; set; }
-    public decimal AccountingYear { get; set; }
-    public string AccountingType { get; set; }
-    public string BudgetType { get; set; }
-    public string BudgetCodeType { get; set; }
-    public string BudgetCodeValue { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public string PeriodType { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AccountingYear { get; set; }
+    public string? AccountingType { get; set; }
+    public string? BudgetType { get; set; }
+    public string? BudgetCodeType { get; set; }
+    public string? BudgetCodeValue { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+    public string? PeriodType { get; set; }
     public decimal? Revenue { get; set; }
     public decimal? RoomNights { get; set; }
-    public string LockedYn { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? LockedYn { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

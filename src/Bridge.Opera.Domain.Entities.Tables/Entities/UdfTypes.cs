@@ -7,18 +7,18 @@ public partial class UdfTypes
         UdfAttributes = new HashSet<UdfAttributes>();
     }
 
-    public string TableName { get; set; }
-    public string UdfType { get; set; }
-    public string Description { get; set; }
-    public string AttributeType { get; set; }
-    public string AttributeVerified { get; set; }
-    public string MultipleYn { get; set; }
+    public string? TableName { get; set; }
+    public string? UdfType { get; set; }
+    public string? Description { get; set; }
+    public string? AttributeType { get; set; }
+    public string? AttributeVerified { get; set; }
+    public string? MultipleYn { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string UdfCategory { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? UdfCategory { get; set; }
     public decimal? OrderBy { get; set; }
 
     public virtual ICollection<UdfAttributes> UdfAttributes { get; set; }

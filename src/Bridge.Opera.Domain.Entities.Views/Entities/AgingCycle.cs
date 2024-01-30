@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class AgingCycle
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? FromAge { get; set; }
     public decimal? ToAge { get; set; }
-    public string AgeRange { get; set; }
+    public string? AgeRange { get; set; }
     public DateTime? FromDate { get; set; }
     public DateTime? ToDate { get; set; }
-    public string DateForAging { get; set; }
+    public string? DateForAging { get; set; }
     public decimal? SeqNo { get; set; }
     public decimal? AgeSeq { get; set; }
 

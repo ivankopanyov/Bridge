@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpdFinStatDaily
 {
-    public string RowKey { get; set; }
-    public DateTime RowTimestamp { get; set; }
-    public string Resort { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string PmsResvNo { get; set; }
-    public string PmsDeptCode { get; set; }
-    public string PmsNameId { get; set; }
+    public string? RowKey { get; set; }
+    public DateTime? RowTimestamp { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? PmsResvNo { get; set; }
+    public string? PmsDeptCode { get; set; }
+    public string? PmsNameId { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? NameId { get; set; }
-    public string TrxCode { get; set; }
-    public string TcSubgroup { get; set; }
-    public string MarketCode { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? MarketCode { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
-    public string CentralCurrencyCode { get; set; }
+    public string? CentralCurrencyCode { get; set; }
     public decimal? CentralExchangeRate { get; set; }
-    public string CheckNumber { get; set; }
-    public string CheckNumberId { get; set; }
+    public string? CheckNumber { get; set; }
+    public string? CheckNumberId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

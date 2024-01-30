@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class PmsForecastCorrelation
 {
-    public string CorrId { get; set; }
+    public string? CorrId { get; set; }
     public Guid MsgId { get; set; }
     public DateTime? InsertDate { get; set; }
 

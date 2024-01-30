@@ -8,17 +8,17 @@ public partial class OrmsResvData
         OrmsResvcnclDist = new HashSet<OrmsResvcnclDist>();
     }
 
-    public string Resort { get; set; }
-    public DateTime TruncArrivalDate { get; set; }
-    public string Dowseason { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? TruncArrivalDate { get; set; }
+    public string? Dowseason { get; set; }
     public decimal? UnconstDemandPct { get; set; }
-    public string ReoptimizeYn { get; set; }
+    public string? ReoptimizeYn { get; set; }
     public decimal? MinVariance { get; set; }
     public decimal? MaxVariance { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual ICollection<OrmsRateDist> OrmsRateDist { get; set; }
     public virtual ICollection<OrmsResvcnclDist> OrmsResvcnclDist { get; set; }

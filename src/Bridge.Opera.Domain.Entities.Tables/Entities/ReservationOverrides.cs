@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ReservationOverrides
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal ResvOverrideId { get; set; }
-    public string OverrideType { get; set; }
-    public DateTime OverrideDate { get; set; }
-    public decimal OverrideBy { get; set; }
-    public string OverrideReason { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string UserOverrideReasonCode { get; set; }
-    public string UserOverrideReasonDesc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? ResvOverrideId { get; set; }
+    public string? OverrideType { get; set; }
+    public DateTime? OverrideDate { get; set; }
+    public decimal? OverrideBy { get; set; }
+    public string? OverrideReason { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? UserOverrideReasonCode { get; set; }
+    public string? UserOverrideReasonDesc { get; set; }
 
     public virtual ReservationName Res { get; set; }
 

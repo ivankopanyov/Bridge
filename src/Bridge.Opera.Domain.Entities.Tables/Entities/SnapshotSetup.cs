@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class SnapshotSetup
 {
-    public decimal SnapshotId { get; set; }
-    public string Resort { get; set; }
-    public string SnapshotDescription { get; set; }
-    public string OverrideYn { get; set; }
-    public string ActiveYn { get; set; }
-    public string SnapshotType { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? SnapshotId { get; set; }
+    public string? Resort { get; set; }
+    public string? SnapshotDescription { get; set; }
+    public string? OverrideYn { get; set; }
+    public string? ActiveYn { get; set; }
+    public string? SnapshotType { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
     public virtual SnapshotTypes SnapshotTypes { get; set; }
 

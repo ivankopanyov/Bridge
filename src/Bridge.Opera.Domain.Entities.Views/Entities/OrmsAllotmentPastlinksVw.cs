@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsAllotmentPastlinksVw
 {
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string BlockType { get; set; }
-    public string OrmsBlockClass { get; set; }
-    public string AllotmentCode { get; set; }
-    public string Description { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? BlockType { get; set; }
+    public string? OrmsBlockClass { get; set; }
+    public string? AllotmentCode { get; set; }
+    public string? Description { get; set; }
     public decimal? LinkSequence { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

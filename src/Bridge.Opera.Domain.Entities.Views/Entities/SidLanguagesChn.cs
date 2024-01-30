@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidLanguagesChn
 {
-    public string ChainCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string LanguageDesc { get; set; }
-    public string TranslationLanguageCode { get; set; }
-    public string NlsLanguage { get; set; }
-    public string Preferredlanguage { get; set; }
+    public string? ChainCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? TranslationLanguageCode { get; set; }
+    public string? NlsLanguage { get; set; }
+    public string? Preferredlanguage { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

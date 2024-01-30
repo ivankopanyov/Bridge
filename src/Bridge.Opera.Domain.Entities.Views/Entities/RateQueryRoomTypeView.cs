@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RateQueryRoomTypeView
 {
-    public string RoomCategory { get; set; }
-    public string Label { get; set; }
-    public string ShortDescription { get; set; }
-    public string LongDescription { get; set; }
-    public string Available { get; set; }
-    public string AvailableLevel { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? Label { get; set; }
+    public string? ShortDescription { get; set; }
+    public string? LongDescription { get; set; }
+    public string? Available { get; set; }
+    public string? AvailableLevel { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

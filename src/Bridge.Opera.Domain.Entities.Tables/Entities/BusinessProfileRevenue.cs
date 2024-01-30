@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class BusinessProfileRevenue
 {
-    public decimal ProfileRevenueId { get; set; }
-    public decimal ProfileId { get; set; }
-    public string Resort { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public decimal? ProfileRevenueId { get; set; }
+    public decimal? ProfileId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
     public decimal? ActualRoomNights { get; set; }
     public decimal? ActualRoomRevenue { get; set; }
     public decimal? ActualAvgrate { get; set; }
@@ -19,18 +19,18 @@ public partial class BusinessProfileRevenue
     public decimal? RoomNightsThu { get; set; }
     public decimal? RoomNightsFri { get; set; }
     public decimal? RoomNightsSat { get; set; }
-    public string NoOfBookings { get; set; }
+    public string? NoOfBookings { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public byte? LaptopChange { get; set; }
-    public string PeriodCode { get; set; }
-    public string MarketingRegion { get; set; }
-    public string MarketingCity { get; set; }
-    public string CompetitorYn { get; set; }
-    public string EventsYn { get; set; }
-    public string LostReason { get; set; }
+    public string? PeriodCode { get; set; }
+    public string? MarketingRegion { get; set; }
+    public string? MarketingCity { get; set; }
+    public string? CompetitorYn { get; set; }
+    public string? EventsYn { get; set; }
+    public string? LostReason { get; set; }
     public decimal? OriginalRoomNights { get; set; }
     public decimal? ContractRoomNights { get; set; }
 

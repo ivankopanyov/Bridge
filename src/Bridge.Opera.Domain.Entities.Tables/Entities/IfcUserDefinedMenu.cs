@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcUserDefinedMenu
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? IfcCtrlId { get; set; }
     public decimal? UserdefId { get; set; }
     public decimal? ParentId { get; set; }
-    public string Description { get; set; }
-    public string UserInputYn { get; set; }
-    public string PreConfText { get; set; }
-    public string InputDataType { get; set; }
+    public string? Description { get; set; }
+    public string? UserInputYn { get; set; }
+    public string? PreConfText { get; set; }
+    public string? InputDataType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

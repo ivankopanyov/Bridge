@@ -2,37 +2,37 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DmStayVw
 {
-    public string Resort { get; set; }
-    public string RegionCode { get; set; }
-    public string ReservationId { get; set; }
+    public string? Resort { get; set; }
+    public string? RegionCode { get; set; }
+    public string? ReservationId { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string ReservationStatus { get; set; }
-    public string OccupancyType { get; set; }
-    public string MarketCode { get; set; }
-    public string MarketCodeDesc { get; set; }
-    public string MarketGroup { get; set; }
-    public string MarketGroupDesc { get; set; }
-    public string SourceGroup { get; set; }
-    public string SourceGroupDesc { get; set; }
-    public string SourceCode { get; set; }
-    public string SourceCodeDesc { get; set; }
-    public string Channel { get; set; }
-    public string ChannelDesc { get; set; }
-    public string RateClass { get; set; }
-    public string RateClassDesc { get; set; }
-    public string RateCategory { get; set; }
-    public string RateCategoryDesc { get; set; }
-    public string RateCode { get; set; }
-    public string RateCodeDesc { get; set; }
-    public string RoomCategoryCode { get; set; }
-    public string RoomCategoryDesc { get; set; }
-    public string RoomClass { get; set; }
-    public string RoomClassDesc { get; set; }
-    public string PromotionCode { get; set; }
-    public string PromotionCodeDesc { get; set; }
-    public string VipCode { get; set; }
-    public string VipCodeDesc { get; set; }
+    public string? ReservationStatus { get; set; }
+    public string? OccupancyType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? MarketCodeDesc { get; set; }
+    public string? MarketGroup { get; set; }
+    public string? MarketGroupDesc { get; set; }
+    public string? SourceGroup { get; set; }
+    public string? SourceGroupDesc { get; set; }
+    public string? SourceCode { get; set; }
+    public string? SourceCodeDesc { get; set; }
+    public string? Channel { get; set; }
+    public string? ChannelDesc { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateClassDesc { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RateCategoryDesc { get; set; }
+    public string? RateCode { get; set; }
+    public string? RateCodeDesc { get; set; }
+    public string? RoomCategoryCode { get; set; }
+    public string? RoomCategoryDesc { get; set; }
+    public string? RoomClass { get; set; }
+    public string? RoomClassDesc { get; set; }
+    public string? PromotionCode { get; set; }
+    public string? PromotionCodeDesc { get; set; }
+    public string? VipCode { get; set; }
+    public string? VipCodeDesc { get; set; }
     public decimal? TotalRevenueNet { get; set; }
     public decimal? RoomRevenueNet { get; set; }
     public decimal? FBRevenueNet { get; set; }
@@ -47,7 +47,7 @@ public partial class DmStayVw
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
     public decimal? Nights { get; set; }
-    public DateTime Timestamp { get; set; }
+    public DateTime? Timestamp { get; set; }
     public decimal? CExchangeRate { get; set; }
     public decimal? CTotalRevenueNet { get; set; }
     public decimal? CRoomRevenueNet { get; set; }

@@ -2,20 +2,20 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbPreferences
 {
-    public string PreferenceType { get; set; }
-    public string PreferenceValue { get; set; }
-    public decimal NameId { get; set; }
-    public string Resort { get; set; }
-    public string Description { get; set; }
-    public string ChargeYn { get; set; }
+    public string? PreferenceType { get; set; }
+    public string? PreferenceValue { get; set; }
+    public decimal? NameId { get; set; }
+    public string? Resort { get; set; }
+    public string? Description { get; set; }
+    public string? ChargeYn { get; set; }
     public byte? LaptopChange { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Mpcode { get; set; }
-    public string ExternalPreferenceId { get; set; }
+    public string? Mpcode { get; set; }
+    public string? ExternalPreferenceId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpsellRuleRates
 {
-    public decimal UpsellRuleId { get; set; }
-    public string RateSource { get; set; }
+    public decimal? UpsellRuleId { get; set; }
+    public string? RateSource { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

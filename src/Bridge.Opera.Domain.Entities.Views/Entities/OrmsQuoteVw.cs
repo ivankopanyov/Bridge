@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OrmsQuoteVw
 {
-    public decimal RequestId { get; set; }
-    public string Resort { get; set; }
-    public DateTime AllotmentDate { get; set; }
-    public string YieldCategory { get; set; }
+    public decimal? RequestId { get; set; }
+    public string? Resort { get; set; }
+    public DateTime? AllotmentDate { get; set; }
+    public string? YieldCategory { get; set; }
     public decimal? RoomsOtbYieldable { get; set; }
     public decimal? RoomsForeYieldable { get; set; }
     public decimal? RoomsForeEmpty { get; set; }

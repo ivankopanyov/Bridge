@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GenBatchUtil
 {
-    public decimal SeqNo { get; set; }
-    public string ReportId { get; set; }
-    public string ReportType { get; set; }
-    public string Resort { get; set; }
-    public string OldGenval1 { get; set; }
-    public string OldGenval2 { get; set; }
-    public string OldGenval3 { get; set; }
-    public string NewGenval1 { get; set; }
-    public string NewGenval2 { get; set; }
-    public string NewGenval3 { get; set; }
-    public string Status { get; set; }
-    public string ProcessingMsg { get; set; }
+    public decimal? SeqNo { get; set; }
+    public string? ReportId { get; set; }
+    public string? ReportType { get; set; }
+    public string? Resort { get; set; }
+    public string? OldGenval1 { get; set; }
+    public string? OldGenval2 { get; set; }
+    public string? OldGenval3 { get; set; }
+    public string? NewGenval1 { get; set; }
+    public string? NewGenval2 { get; set; }
+    public string? NewGenval3 { get; set; }
+    public string? Status { get; set; }
+    public string? ProcessingMsg { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
 

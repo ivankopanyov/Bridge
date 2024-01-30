@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OcrmProfileSegBatchesBe
 {
-    public decimal SegBatchId { get; set; }
-    public decimal DataElementId { get; set; }
-    public string BeHeaderPk { get; set; }
-    public string Module { get; set; }
-    public decimal ActionInstanceId { get; set; }
-    public string DataElement { get; set; }
-    public string OldValue { get; set; }
-    public string NewValue { get; set; }
+    public decimal? SegBatchId { get; set; }
+    public decimal? DataElementId { get; set; }
+    public string? BeHeaderPk { get; set; }
+    public string? Module { get; set; }
+    public decimal? ActionInstanceId { get; set; }
+    public string? DataElement { get; set; }
+    public string? OldValue { get; set; }
+    public string? NewValue { get; set; }
     public DateTime? ScopeFrom { get; set; }
     public DateTime? ScopeTo { get; set; }
     public decimal? ElementSeq { get; set; }
-    public string ElementType { get; set; }
-    public string ElementRole { get; set; }
-    public string Resort { get; set; }
-    public string ActionType { get; set; }
+    public string? ElementType { get; set; }
+    public string? ElementRole { get; set; }
+    public string? Resort { get; set; }
+    public string? ActionType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

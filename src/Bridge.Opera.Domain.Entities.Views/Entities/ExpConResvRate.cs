@@ -8,8 +8,8 @@ public partial class ExpConResvRate
     public decimal? UnitMultiplier { get; set; }
     public decimal? RtAmtNoIncTax { get; set; }
     public decimal? RtAmtIncTax { get; set; }
-    public string RtCurrencyCode { get; set; }
-    public string RtTimeUnit { get; set; }
+    public string? RtCurrencyCode { get; set; }
+    public string? RtTimeUnit { get; set; }
     public DateTime? RtEffectiveDt { get; set; }
     public DateTime? RtExpireDt { get; set; }
 

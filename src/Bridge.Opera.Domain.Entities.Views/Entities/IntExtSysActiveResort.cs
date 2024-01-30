@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntExtSysActiveResort
 {
-    public string Code { get; set; }
-    public string Resort { get; set; }
+    public string? Code { get; set; }
+    public string? Resort { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

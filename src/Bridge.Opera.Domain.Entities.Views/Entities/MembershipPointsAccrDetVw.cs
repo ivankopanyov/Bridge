@@ -3,76 +3,76 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class MembershipPointsAccrDetVw
 {
     public decimal? MpaCostPerPoint { get; set; }
-    public decimal MpaMembershipTrxId { get; set; }
-    public string MpaMembershipType { get; set; }
-    public decimal MpaMembershipPointsSeqno { get; set; }
-    public decimal MpaPoints { get; set; }
-    public string MpaTypeOfPoints { get; set; }
-    public string MpaBillingGroup { get; set; }
+    public decimal? MpaMembershipTrxId { get; set; }
+    public string? MpaMembershipType { get; set; }
+    public decimal? MpaMembershipPointsSeqno { get; set; }
+    public decimal? MpaPoints { get; set; }
+    public string? MpaTypeOfPoints { get; set; }
+    public string? MpaBillingGroup { get; set; }
     public decimal? MpaAwBucketQuantity { get; set; }
     public decimal? MpaTierBucketQuantity { get; set; }
     public decimal? MpaAwPoints { get; set; }
     public decimal? MpaTierPoints { get; set; }
-    public string MpCalculationRule { get; set; }
-    public string MpTypeOfPoints { get; set; }
+    public string? MpCalculationRule { get; set; }
+    public string? MpTypeOfPoints { get; set; }
     public decimal? MpPointsRatio { get; set; }
     public decimal? MpPointsBase { get; set; }
-    public string MpResort { get; set; }
-    public string MpMemberLevel { get; set; }
-    public string MpRuleBasedOn { get; set; }
-    public string MpMemRateGroup { get; set; }
-    public string MpRateCode { get; set; }
-    public string MpMemMarketGroup { get; set; }
-    public string MpMarketCode { get; set; }
-    public string MpRevenueGroup { get; set; }
-    public string MpPromotionCode { get; set; }
-    public string MpResortGroup { get; set; }
-    public DateTime MpBeginDate { get; set; }
+    public string? MpResort { get; set; }
+    public string? MpMemberLevel { get; set; }
+    public string? MpRuleBasedOn { get; set; }
+    public string? MpMemRateGroup { get; set; }
+    public string? MpRateCode { get; set; }
+    public string? MpMemMarketGroup { get; set; }
+    public string? MpMarketCode { get; set; }
+    public string? MpRevenueGroup { get; set; }
+    public string? MpPromotionCode { get; set; }
+    public string? MpResortGroup { get; set; }
+    public DateTime? MpBeginDate { get; set; }
     public DateTime? MpEndDate { get; set; }
     public decimal? MpMinimumNights { get; set; }
     public decimal? MpMaximumNights { get; set; }
     public decimal? MpMinimumRateAmount { get; set; }
     public decimal? MpCostPerPoint { get; set; }
-    public string MpDescription { get; set; }
+    public string? MpDescription { get; set; }
     public DateTime? MpInactiveDate { get; set; }
-    public string MpTransactionType { get; set; }
-    public string MpProgramType { get; set; }
-    public string MpQualifyingRatesYn { get; set; }
-    public string MpMemRevenueGroup { get; set; }
-    public string MpEnrollCode { get; set; }
-    public string MpMemEnrollGroup { get; set; }
+    public string? MpTransactionType { get; set; }
+    public string? MpProgramType { get; set; }
+    public string? MpQualifyingRatesYn { get; set; }
+    public string? MpMemRevenueGroup { get; set; }
+    public string? MpEnrollCode { get; set; }
+    public string? MpMemEnrollGroup { get; set; }
     public DateTime? MpExpirationDate { get; set; }
     public decimal? MpMinimumStays { get; set; }
     public decimal? MpMinimumRevenue { get; set; }
     public decimal? MpMaximumRevenue { get; set; }
-    public string MpDay1 { get; set; }
-    public string MpDay2 { get; set; }
-    public string MpDay3 { get; set; }
-    public string MpDay4 { get; set; }
-    public string MpDay5 { get; set; }
-    public string MpDay6 { get; set; }
-    public string MpDay7 { get; set; }
+    public string? MpDay1 { get; set; }
+    public string? MpDay2 { get; set; }
+    public string? MpDay3 { get; set; }
+    public string? MpDay4 { get; set; }
+    public string? MpDay5 { get; set; }
+    public string? MpDay6 { get; set; }
+    public string? MpDay7 { get; set; }
     public decimal? MpNoTimesEligible { get; set; }
-    public string MpElegibleDate { get; set; }
-    public string MpMemRategroupExcYn { get; set; }
-    public string MpUserpostingOnlyYn { get; set; }
+    public string? MpElegibleDate { get; set; }
+    public string? MpMemRategroupExcYn { get; set; }
+    public string? MpUserpostingOnlyYn { get; set; }
     public decimal? MpAvgRateAmount { get; set; }
-    public string MpPseudoRuleYn { get; set; }
-    public string MpRoomLabel { get; set; }
-    public string MpRoomClass { get; set; }
-    public string MpRuleCode { get; set; }
-    public string MpChainCode { get; set; }
-    public string MpExportLabel { get; set; }
+    public string? MpPseudoRuleYn { get; set; }
+    public string? MpRoomLabel { get; set; }
+    public string? MpRoomClass { get; set; }
+    public string? MpRuleCode { get; set; }
+    public string? MpChainCode { get; set; }
+    public string? MpExportLabel { get; set; }
     public decimal? MpMaxBucketSize { get; set; }
     public decimal? MpMinPropertiesReq { get; set; }
-    public string MpExcludeRevGroup { get; set; }
-    public string MpExcludeMktGroup { get; set; }
-    public string MpBillingGroup { get; set; }
-    public string MpaRuleGroup { get; set; }
+    public string? MpExcludeRevGroup { get; set; }
+    public string? MpExcludeMktGroup { get; set; }
+    public string? MpBillingGroup { get; set; }
+    public string? MpaRuleGroup { get; set; }
     public decimal? MpDaysFromEnroll { get; set; }
-    public string MpPtsRatioPercentYn { get; set; }
-    public string MpPtsRatioRoundFlg { get; set; }
-    public string MpRtcYn { get; set; }
+    public string? MpPtsRatioPercentYn { get; set; }
+    public string? MpPtsRatioRoundFlg { get; set; }
+    public string? MpRtcYn { get; set; }
     public decimal? MpaCQualifiedRev { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

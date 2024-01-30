@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OedsRequestLog
 {
-    public decimal RequestId { get; set; }
-    public DateTime RequestDate { get; set; }
+    public decimal? RequestId { get; set; }
+    public DateTime? RequestDate { get; set; }
     public decimal? RequestProcessTime { get; set; }
     public decimal? RequestDbTime { get; set; }
-    public string RequestSource { get; set; }
-    public string RequestType { get; set; }
-    public decimal ProcessHour { get; set; }
-    public string RequestStatus { get; set; }
-    public string MachineName { get; set; }
+    public string? RequestSource { get; set; }
+    public string? RequestType { get; set; }
+    public decimal? ProcessHour { get; set; }
+    public string? RequestStatus { get; set; }
+    public string? MachineName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

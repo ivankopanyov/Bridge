@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiexpCubeVw
 {
-    public string CubeName { get; set; }
-    public string CubeDesc { get; set; }
+    public string? CubeName { get; set; }
+    public string? CubeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -8,10 +8,10 @@ public partial class Reasons
         WorkOrders = new HashSet<WorkOrders>();
     }
 
-    public string Resort { get; set; }
-    public string ReasonCode { get; set; }
-    public string Description { get; set; }
-    public string StatusCode { get; set; }
+    public string? Resort { get; set; }
+    public string? ReasonCode { get; set; }
+    public string? Description { get; set; }
+    public string? StatusCode { get; set; }
 
     public virtual StatusCode StatusCodeNavigation { get; set; }
     public virtual ICollection<EmpNonAvail> EmpNonAvail { get; set; }

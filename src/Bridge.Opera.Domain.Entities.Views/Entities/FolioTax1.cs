@@ -7,7 +7,7 @@ public partial class FolioTax1
     public DateTime? BillGenerationDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? RevisionNo { get; set; }
     public decimal? FolioView { get; set; }
     public decimal? TotRevTaxable { get; set; }
@@ -62,17 +62,17 @@ public partial class FolioTax1
     public decimal? Net18Amt { get; set; }
     public decimal? Net19Amt { get; set; }
     public decimal? Net20Amt { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? Clarpay { get; set; }
-    public string Status { get; set; }
-    public string QueueName { get; set; }
-    public string AssociatedBillNo { get; set; }
-    public string NameTaxType { get; set; }
-    public string TaxId { get; set; }
+    public string? Status { get; set; }
+    public string? QueueName { get; set; }
+    public string? AssociatedBillNo { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? TaxId { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillStartDate { get; set; }
-    public string CompressBillNo { get; set; }
+    public string? CompressBillNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? AccountCode { get; set; }
     public decimal? ClTrxNo { get; set; }
@@ -84,14 +84,14 @@ public partial class FolioTax1
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
     public DateTime? AssociatedBillDate { get; set; }
-    public string FiscalBillNo { get; set; }
+    public string? FiscalBillNo { get; set; }
     public decimal? CollTax1 { get; set; }
     public decimal? CollTax2 { get; set; }
     public decimal? CollTax3 { get; set; }
     public decimal? CollTax4 { get; set; }
     public decimal? CollTax5 { get; set; }
     public decimal? FiscalBillCheckDigit { get; set; }
-    public string PalmVideoFlag { get; set; }
+    public string? PalmVideoFlag { get; set; }
     public decimal? Xtax1Amt { get; set; }
     public decimal? Xtax2Amt { get; set; }
     public decimal? Xtax3Amt { get; set; }
@@ -132,10 +132,10 @@ public partial class FolioTax1
     public decimal? Xnet18Amt { get; set; }
     public decimal? Xnet19Amt { get; set; }
     public decimal? Xnet20Amt { get; set; }
-    public string BillPrefix { get; set; }
+    public string? BillPrefix { get; set; }
     public decimal? NoOfPages { get; set; }
     public decimal? BillSeqNo { get; set; }
-    public string InternalYn { get; set; }
+    public string? InternalYn { get; set; }
     public decimal? Ptax1Amt { get; set; }
     public decimal? Ptax2Amt { get; set; }
     public decimal? Ptax3Amt { get; set; }
@@ -176,29 +176,29 @@ public partial class FolioTax1
     public decimal? Pnet18Amt { get; set; }
     public decimal? Pnet19Amt { get; set; }
     public decimal? Pnet20Amt { get; set; }
-    public string BillGenerationTime { get; set; }
+    public string? BillGenerationTime { get; set; }
     public decimal? PostitNo { get; set; }
-    public string Terminal { get; set; }
-    public string FiscalUnitControlCode { get; set; }
+    public string? Terminal { get; set; }
+    public string? FiscalUnitControlCode { get; set; }
     public decimal? FolioAttachmentLinkId { get; set; }
     public decimal? FolioAttachmentStatus { get; set; }
-    public string CreditBillGeneratedYn { get; set; }
+    public string? CreditBillGeneratedYn { get; set; }
     public decimal? AddresseeNameId { get; set; }
-    public string SignatureHash { get; set; }
-    public string LastSignatureHash { get; set; }
-    public string SignatureKeyVersion { get; set; }
-    public string FolioAddress { get; set; }
-    public string FolioAddressCorrectedYn { get; set; }
+    public string? SignatureHash { get; set; }
+    public string? LastSignatureHash { get; set; }
+    public string? SignatureKeyVersion { get; set; }
+    public string? FolioAddress { get; set; }
+    public string? FolioAddressCorrectedYn { get; set; }
     public decimal? DepositReqReceiptNo { get; set; }
     public decimal? PtotRevTaxable { get; set; }
     public decimal? PtotNonrevTaxable { get; set; }
     public decimal? PtotRevNontaxable { get; set; }
     public decimal? PtotNonrevNontaxable { get; set; }
-    public string EInvoiceStatus { get; set; }
-    public string EInvoiceNumber { get; set; }
+    public string? EInvoiceStatus { get; set; }
+    public string? EInvoiceNumber { get; set; }
     public decimal? FolioTaxSeqNo { get; set; }
     public decimal? WorkingDocId { get; set; }
-    public string HasWatermarkYn { get; set; }
+    public string? HasWatermarkYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

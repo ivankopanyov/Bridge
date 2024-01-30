@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidQbRelationSys
 {
-    public string EntiryName { get; set; }
-    public string FieldName { get; set; }
-    public string REntiryName { get; set; }
-    public string RFieldName { get; set; }
+    public string? EntiryName { get; set; }
+    public string? FieldName { get; set; }
+    public string? REntiryName { get; set; }
+    public string? RFieldName { get; set; }
     public decimal? Position { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

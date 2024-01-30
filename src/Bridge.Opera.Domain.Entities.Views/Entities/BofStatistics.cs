@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofStatistics
 {
-    public string Resort { get; set; }
-    public string Code { get; set; }
+    public string? Resort { get; set; }
+    public string? Code { get; set; }
     public DateTime? BusinessDate { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     public decimal? NetAmount { get; set; }
     public decimal? GrossAmount { get; set; }
     public decimal? Revenue { get; set; }

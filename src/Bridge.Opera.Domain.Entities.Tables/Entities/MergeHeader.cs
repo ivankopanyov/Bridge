@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MergeHeader
 {
-    public decimal MergeId { get; set; }
-    public string Description { get; set; }
-    public string SystemYn { get; set; }
+    public decimal? MergeId { get; set; }
+    public string? Description { get; set; }
+    public string? SystemYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

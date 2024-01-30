@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class MailingSource1
 {
-    public decimal QueryIdLink { get; set; }
-    public string TableName { get; set; }
+    public decimal? QueryIdLink { get; set; }
+    public string? TableName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

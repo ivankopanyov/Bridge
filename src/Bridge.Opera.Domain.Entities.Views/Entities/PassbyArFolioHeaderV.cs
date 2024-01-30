@@ -2,82 +2,82 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class PassbyArFolioHeaderV
 {
-    public decimal GuestNameId { get; set; }
-    public string Title { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string GuestCompany { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string CountryCode { get; set; }
-    public string ZipCode { get; set; }
-    public string City { get; set; }
-    public string TodayDate { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? Title { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? GuestCompany { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? CountryCode { get; set; }
+    public string? ZipCode { get; set; }
+    public string? City { get; set; }
+    public string? TodayDate { get; set; }
     public DateTime? DirectTodayDate { get; set; }
-    public string LongDate { get; set; }
-    public string FolioType { get; set; }
-    public string QueueName { get; set; }
-    public string FAddress { get; set; }
+    public string? LongDate { get; set; }
+    public string? FolioType { get; set; }
+    public string? QueueName { get; set; }
+    public string? FAddress { get; set; }
     public decimal? CashierNo { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? InvoiceNo { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? FolioView { get; set; }
-    public string Language { get; set; }
+    public string? Language { get; set; }
     public decimal? ArNumber { get; set; }
-    public string Tax1No { get; set; }
-    public string Tax2No { get; set; }
-    public string Room { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string Country { get; set; }
-    public string CompanyName { get; set; }
-    public string CompanyAddress { get; set; }
-    public string IdType { get; set; }
-    public string IdNumber { get; set; }
+    public string? Tax1No { get; set; }
+    public string? Tax2No { get; set; }
+    public string? Room { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? Country { get; set; }
+    public string? CompanyName { get; set; }
+    public string? CompanyAddress { get; set; }
+    public string? IdType { get; set; }
+    public string? IdNumber { get; set; }
     public DateTime? IdDate { get; set; }
-    public string IdPlace { get; set; }
-    public string IdCountry { get; set; }
-    public string Udfc01 { get; set; }
-    public string Udfc02 { get; set; }
-    public string Udfc03 { get; set; }
-    public string Udfc04 { get; set; }
-    public string Udfc05 { get; set; }
-    public string Udfc06 { get; set; }
-    public string Udfc07 { get; set; }
-    public string Udfc08 { get; set; }
-    public string Udfc09 { get; set; }
-    public string Udfc10 { get; set; }
-    public string Udfc11 { get; set; }
-    public string Udfc12 { get; set; }
-    public string Udfc13 { get; set; }
-    public string Udfc14 { get; set; }
-    public string Udfc15 { get; set; }
-    public string Udfc16 { get; set; }
-    public string Udfc17 { get; set; }
-    public string Udfc18 { get; set; }
-    public string Udfc19 { get; set; }
-    public string Udfc20 { get; set; }
-    public string Udfc21 { get; set; }
-    public string Udfc22 { get; set; }
-    public string Udfc23 { get; set; }
-    public string Udfc24 { get; set; }
-    public string Udfc25 { get; set; }
-    public string Udfc26 { get; set; }
-    public string Udfc27 { get; set; }
-    public string Udfc28 { get; set; }
-    public string Udfc29 { get; set; }
-    public string Udfc30 { get; set; }
-    public string Udfc31 { get; set; }
-    public string Udfc32 { get; set; }
-    public string Udfc33 { get; set; }
-    public string Udfc34 { get; set; }
-    public string Udfc35 { get; set; }
-    public string Udfc36 { get; set; }
-    public string Udfc37 { get; set; }
-    public string Udfc38 { get; set; }
-    public string Udfc39 { get; set; }
-    public string Udfc40 { get; set; }
+    public string? IdPlace { get; set; }
+    public string? IdCountry { get; set; }
+    public string? Udfc01 { get; set; }
+    public string? Udfc02 { get; set; }
+    public string? Udfc03 { get; set; }
+    public string? Udfc04 { get; set; }
+    public string? Udfc05 { get; set; }
+    public string? Udfc06 { get; set; }
+    public string? Udfc07 { get; set; }
+    public string? Udfc08 { get; set; }
+    public string? Udfc09 { get; set; }
+    public string? Udfc10 { get; set; }
+    public string? Udfc11 { get; set; }
+    public string? Udfc12 { get; set; }
+    public string? Udfc13 { get; set; }
+    public string? Udfc14 { get; set; }
+    public string? Udfc15 { get; set; }
+    public string? Udfc16 { get; set; }
+    public string? Udfc17 { get; set; }
+    public string? Udfc18 { get; set; }
+    public string? Udfc19 { get; set; }
+    public string? Udfc20 { get; set; }
+    public string? Udfc21 { get; set; }
+    public string? Udfc22 { get; set; }
+    public string? Udfc23 { get; set; }
+    public string? Udfc24 { get; set; }
+    public string? Udfc25 { get; set; }
+    public string? Udfc26 { get; set; }
+    public string? Udfc27 { get; set; }
+    public string? Udfc28 { get; set; }
+    public string? Udfc29 { get; set; }
+    public string? Udfc30 { get; set; }
+    public string? Udfc31 { get; set; }
+    public string? Udfc32 { get; set; }
+    public string? Udfc33 { get; set; }
+    public string? Udfc34 { get; set; }
+    public string? Udfc35 { get; set; }
+    public string? Udfc36 { get; set; }
+    public string? Udfc37 { get; set; }
+    public string? Udfc38 { get; set; }
+    public string? Udfc39 { get; set; }
+    public string? Udfc40 { get; set; }
     public decimal? Udfn01 { get; set; }
     public decimal? Udfn02 { get; set; }
     public decimal? Udfn03 { get; set; }

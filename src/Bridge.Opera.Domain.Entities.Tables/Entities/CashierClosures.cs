@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CashierClosures
 {
-    public string Resort { get; set; }
-    public decimal CashierId { get; set; }
-    public decimal ClosureNo { get; set; }
+    public string? Resort { get; set; }
+    public decimal? CashierId { get; set; }
+    public decimal? ClosureNo { get; set; }
     public DateTime? BusinessDate { get; set; }
     public DateTime? OpenDate { get; set; }
     public DateTime? CloseDate { get; set; }
@@ -12,10 +12,10 @@ public partial class CashierClosures
     public decimal? ToTranActionId { get; set; }
     public decimal? ClosedBy { get; set; }
     public decimal? Reprints { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
     public decimal? TotalCashReceived { get; set; }
     public decimal? TotalCheckReceived { get; set; }
     public decimal? TotalPaidouts { get; set; }

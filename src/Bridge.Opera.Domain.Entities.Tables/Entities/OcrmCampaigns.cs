@@ -8,51 +8,51 @@ public partial class OcrmCampaigns
         OcrmResvStayOfferLink = new HashSet<OcrmResvStayOfferLink>();
     }
 
-    public decimal CampaignId { get; set; }
-    public string Resort { get; set; }
-    public string CampaignCode { get; set; }
-    public string CampaignName { get; set; }
-    public string CampaignDescription { get; set; }
+    public decimal? CampaignId { get; set; }
+    public string? Resort { get; set; }
+    public string? CampaignCode { get; set; }
+    public string? CampaignName { get; set; }
+    public string? CampaignDescription { get; set; }
     public decimal? SegId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? InactiveDate { get; set; }
-    public string Type { get; set; }
-    public string Category { get; set; }
+    public string? Type { get; set; }
+    public string? Category { get; set; }
     public decimal? OwnerId { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string EspCode { get; set; }
+    public string? EspCode { get; set; }
     public decimal? ApprovalUserId { get; set; }
     public DateTime? ApprovalDate { get; set; }
-    public string ApprovalStatusFlg { get; set; }
+    public string? ApprovalStatusFlg { get; set; }
     public DateTime? ApprovalSubDate { get; set; }
     public decimal? EstTotalCost { get; set; }
     public decimal? EstRmNights { get; set; }
     public decimal? EstRmRevenue { get; set; }
     public decimal? EstCatRevenue { get; set; }
     public decimal? EstOtherRevenue { get; set; }
-    public string StatusCode { get; set; }
-    public string RequestTypeId { get; set; }
-    public string GenerateActivityYn { get; set; }
-    public string GenerateProfileRequestYn { get; set; }
-    public string EmailYnFlg { get; set; }
-    public string EmailYnOptInFlg { get; set; }
-    public string GuestPrivYnFlg { get; set; }
-    public string GuestPrivYnOptInFlg { get; set; }
+    public string? StatusCode { get; set; }
+    public string? RequestTypeId { get; set; }
+    public string? GenerateActivityYn { get; set; }
+    public string? GenerateProfileRequestYn { get; set; }
+    public string? EmailYnFlg { get; set; }
+    public string? EmailYnOptInFlg { get; set; }
+    public string? GuestPrivYnFlg { get; set; }
+    public string? GuestPrivYnOptInFlg { get; set; }
     public decimal? TaskInstId { get; set; }
     public decimal? ExpFileId { get; set; }
-    public string EmailColName { get; set; }
-    public string ExpFileProcessType { get; set; }
-    public string Module { get; set; }
-    public string ActionType { get; set; }
-    public string ActPurpose { get; set; }
-    public string ActType { get; set; }
+    public string? EmailColName { get; set; }
+    public string? ExpFileProcessType { get; set; }
+    public string? Module { get; set; }
+    public string? ActionType { get; set; }
+    public string? ActPurpose { get; set; }
+    public string? ActType { get; set; }
     public DateTime? ActStartDate { get; set; }
     public DateTime? ActEndDate { get; set; }
-    public string ReqType { get; set; }
+    public string? ReqType { get; set; }
 
     public virtual ActionType ActionTypeNavigation { get; set; }
     public virtual OcrmProfileSegHdr Seg { get; set; }

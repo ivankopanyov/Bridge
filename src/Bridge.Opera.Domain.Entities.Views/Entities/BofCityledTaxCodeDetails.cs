@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofCityledTaxCodeDetails
 {
-    public string Resort { get; set; }
-    public string BillType { get; set; }
+    public string? Resort { get; set; }
+    public string? BillType { get; set; }
     public decimal? BillNo { get; set; }
     public DateTime? TrxDate { get; set; }
     public decimal? ArAppliedAmt { get; set; }
-    public string PayTrxCode { get; set; }
-    public string PaymentDesc { get; set; }
+    public string? PayTrxCode { get; set; }
+    public string? PaymentDesc { get; set; }
     public decimal? TaxAmt { get; set; }
     public decimal? NetAmt { get; set; }
     public decimal? TaxNo { get; set; }
@@ -24,36 +24,36 @@ public partial class BofCityledTaxCodeDetails
     public decimal? CalcAppAmt { get; set; }
     public decimal? ConsumptionNameId { get; set; }
     public decimal? PayeeNameId { get; set; }
-    public string PayeeFirstName { get; set; }
-    public string PayeeLastName { get; set; }
-    public string Title { get; set; }
-    public string Passport { get; set; }
-    public string Nationality { get; set; }
+    public string? PayeeFirstName { get; set; }
+    public string? PayeeLastName { get; set; }
+    public string? Title { get; set; }
+    public string? Passport { get; set; }
+    public string? Nationality { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string Salutation { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Address3 { get; set; }
-    public string Address4 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string ZipCode { get; set; }
-    public string PhoneNo { get; set; }
-    public string FaxNo { get; set; }
-    public string NameType { get; set; }
-    public string VipStatus { get; set; }
-    public string MembershipNumber { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string ArNo { get; set; }
-    public string Gender { get; set; }
-    public string BirthPlace { get; set; }
-    public string BirthCountry { get; set; }
-    public string ProfileTaxId { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
+    public string? Salutation { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Address3 { get; set; }
+    public string? Address4 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? ZipCode { get; set; }
+    public string? PhoneNo { get; set; }
+    public string? FaxNo { get; set; }
+    public string? NameType { get; set; }
+    public string? VipStatus { get; set; }
+    public string? MembershipNumber { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? ArNo { get; set; }
+    public string? Gender { get; set; }
+    public string? BirthPlace { get; set; }
+    public string? BirthCountry { get; set; }
+    public string? ProfileTaxId { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
     public decimal? ConsumptionTrxno { get; set; }
     public decimal? ConsumptionInvoice { get; set; }
     public decimal? ConsumptionDebit { get; set; }
@@ -61,7 +61,7 @@ public partial class BofCityledTaxCodeDetails
     public decimal? PaymentTrxno { get; set; }
     public decimal? PaymentInvoice { get; set; }
     public decimal? PaymentBillno { get; set; }
-    public string PaymentBillType { get; set; }
+    public string? PaymentBillType { get; set; }
     public decimal? PaymentDebit { get; set; }
     public decimal? PaymentCredit { get; set; }
     public decimal? ResvNameId { get; set; }

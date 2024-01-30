@@ -7,15 +7,15 @@ public partial class NameClass
         BroadcastRules = new HashSet<BroadcastRules>();
     }
 
-    public string NameType { get; set; }
-    public string NameClass1 { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Description { get; set; }
-    public string RelationCategory { get; set; }
-    public string RelationAllowedYn { get; set; }
+    public string? NameType { get; set; }
+    public string? NameClass1 { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Description { get; set; }
+    public string? RelationCategory { get; set; }
+    public string? RelationAllowedYn { get; set; }
 
     public virtual ICollection<BroadcastRules> BroadcastRules { get; set; }
 

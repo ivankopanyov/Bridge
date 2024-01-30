@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class StatusTranslation
 {
-    public string Status { get; set; }
-    public string Language { get; set; }
-    public string Description { get; set; }
+    public string? Status { get; set; }
+    public string? Language { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

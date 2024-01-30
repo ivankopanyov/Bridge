@@ -2,23 +2,23 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsRestatusQueue
 {
-    public decimal RestatusId { get; set; }
-    public string RestatusType { get; set; }
-    public string RestatusSubType { get; set; }
-    public string RestatusGdsHost { get; set; }
-    public string RestatusResort { get; set; }
-    public string RestatusGdsRateCode { get; set; }
-    public string RestatusGdsRoomCategory { get; set; }
-    public DateTime RestatusBeginDate { get; set; }
-    public DateTime RestatusEndDate { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime ExecutionTime { get; set; }
+    public decimal? RestatusId { get; set; }
+    public string? RestatusType { get; set; }
+    public string? RestatusSubType { get; set; }
+    public string? RestatusGdsHost { get; set; }
+    public string? RestatusResort { get; set; }
+    public string? RestatusGdsRateCode { get; set; }
+    public string? RestatusGdsRoomCategory { get; set; }
+    public DateTime? RestatusBeginDate { get; set; }
+    public DateTime? RestatusEndDate { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? ExecutionTime { get; set; }
     public DateTime? BeginTime { get; set; }
     public DateTime? EndTime { get; set; }
-    public string Result { get; set; }
+    public string? Result { get; set; }
     public decimal? LosDay { get; set; }
-    public string LosNa { get; set; }
+    public string? LosNa { get; set; }
     public decimal? RateTier { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

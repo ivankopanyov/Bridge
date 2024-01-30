@@ -2,28 +2,28 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class RestrictionsActivityLog
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? ReservationRestrictionId { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
     public decimal? AllotmentHeaderId { get; set; }
-    public string RestrictionType { get; set; }
-    public string RestrictionTypeDesc { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string RoomCategoryDesc { get; set; }
+    public string? RestrictionType { get; set; }
+    public string? RestrictionTypeDesc { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? RoomCategoryDesc { get; set; }
     public decimal? LosUnits { get; set; }
-    public string SeasonCode { get; set; }
-    public string RateClass { get; set; }
-    public string RateCategory { get; set; }
-    public string RoomClass { get; set; }
+    public string? SeasonCode { get; set; }
+    public string? RateClass { get; set; }
+    public string? RateCategory { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? InsertUser { get; set; }
-    public string InsertUserDesc { get; set; }
+    public string? InsertUserDesc { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string GdsOnRequest { get; set; }
-    public string GdsHost { get; set; }
-    public string Yieldability { get; set; }
-    public string TriggerRestrictionTypeDesc { get; set; }
+    public string? GdsOnRequest { get; set; }
+    public string? GdsHost { get; set; }
+    public string? Yieldability { get; set; }
+    public string? TriggerRestrictionTypeDesc { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

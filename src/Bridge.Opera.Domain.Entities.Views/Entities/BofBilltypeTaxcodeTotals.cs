@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BofBilltypeTaxcodeTotals
 {
-    public string Resort { get; set; }
-    public string BillType { get; set; }
+    public string? Resort { get; set; }
+    public string? BillType { get; set; }
     public DateTime? BillGenerationDate { get; set; }
     public decimal? TaxNo { get; set; }
     public decimal? TaxPerc { get; set; }
-    public string TaxCodeDescription { get; set; }
+    public string? TaxCodeDescription { get; set; }
     public decimal? TotalTaxAmount { get; set; }
     public decimal? TotalNetAmount { get; set; }
     public decimal? TotalGrossAmount { get; set; }

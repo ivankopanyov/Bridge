@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IfcSpltView
 {
-    public string Resort { get; set; }
-    public string SplitCode { get; set; }
-    public string SplitFld { get; set; }
+    public string? Resort { get; set; }
+    public string? SplitCode { get; set; }
+    public string? SplitFld { get; set; }
     public decimal? SplitPost { get; set; }
     public decimal? SplitFact { get; set; }
-    public string SplitText { get; set; }
-    public string DbfLogo { get; set; }
+    public string? SplitText { get; set; }
+    public string? DbfLogo { get; set; }
     public decimal? OrderBy { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

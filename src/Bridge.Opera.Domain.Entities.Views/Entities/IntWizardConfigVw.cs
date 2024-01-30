@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IntWizardConfigVw
 {
-    public decimal WizConfigId { get; set; }
-    public string ApplicationId { get; set; }
-    public string InterfaceId { get; set; }
-    public string Category { get; set; }
-    public string Item { get; set; }
-    public string SubItem { get; set; }
-    public string Value { get; set; }
-    public string MandatRecom { get; set; }
-    public string ScriptFile { get; set; }
-    public string Description { get; set; }
+    public decimal? WizConfigId { get; set; }
+    public string? ApplicationId { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Category { get; set; }
+    public string? Item { get; set; }
+    public string? SubItem { get; set; }
+    public string? Value { get; set; }
+    public string? MandatRecom { get; set; }
+    public string? ScriptFile { get; set; }
+    public string? Description { get; set; }
     public decimal? WizOutputId { get; set; }
     public decimal? WizconfigId1 { get; set; }
-    public string ValueSet { get; set; }
-    public string Target { get; set; }
-    public string Fixable { get; set; }
-    public string Fixed { get; set; }
-    public string Interface { get; set; }
-    public string Property { get; set; }
-    public string Remarks { get; set; }
+    public string? ValueSet { get; set; }
+    public string? Target { get; set; }
+    public string? Fixable { get; set; }
+    public string? Fixed { get; set; }
+    public string? Interface { get; set; }
+    public string? Property { get; set; }
+    public string? Remarks { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

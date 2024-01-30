@@ -2,22 +2,22 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class CallHeaderVw
 {
-    public decimal CallHeaderId { get; set; }
+    public decimal? CallHeaderId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string TurnawayCode { get; set; }
+    public string? TurnawayCode { get; set; }
     public DateTime? CallBegin { get; set; }
     public DateTime? CallEnd { get; set; }
-    public string CallerFirst { get; set; }
-    public string CallerLast { get; set; }
-    public string CallerPhone { get; set; }
-    public string Comments { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string ConfirmationNo { get; set; }
-    public string CallerFax { get; set; }
-    public string CallerEmail { get; set; }
+    public string? CallerFirst { get; set; }
+    public string? CallerLast { get; set; }
+    public string? CallerPhone { get; set; }
+    public string? Comments { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? ConfirmationNo { get; set; }
+    public string? CallerFax { get; set; }
+    public string? CallerEmail { get; set; }
     public decimal? NameId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

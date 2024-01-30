@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class InternetCinRulesMem
 {
-    public decimal RuleId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public decimal? RuleId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
 
     public virtual InternetCinRules Rule { get; set; }
 

@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DayTypeRateView
 {
-    public string Resort { get; set; }
-    public string RateCode { get; set; }
-    public string DtCode { get; set; }
+    public string? Resort { get; set; }
+    public string? RateCode { get; set; }
+    public string? DtCode { get; set; }
     public decimal? DisplaySequence { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

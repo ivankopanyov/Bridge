@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class EuroParameters
 {
-    public string Resort { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public string? Resort { get; set; }
+    public string? Username { get; set; }
+    public string? Password { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

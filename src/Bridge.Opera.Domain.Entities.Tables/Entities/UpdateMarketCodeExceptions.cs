@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class UpdateMarketCodeExceptions
 {
-    public string TableName { get; set; }
-    public string FromMktCode { get; set; }
-    public string ToMktCode { get; set; }
+    public string? TableName { get; set; }
+    public string? FromMktCode { get; set; }
+    public string? ToMktCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

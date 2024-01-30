@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpIlBkmvFolio
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
@@ -13,39 +13,39 @@ public partial class ExpIlBkmvFolio
     public decimal? RevisionNo { get; set; }
     public int? FolioView { get; set; }
     public decimal? InvoiceNo { get; set; }
-    public DateTime TrxDate { get; set; }
-    public decimal TrxNo { get; set; }
-    public string FolioType { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? InsertDateFoliotax { get; set; }
     public decimal? InsertUserFoliotax { get; set; }
     public DateTime? UpdateDateFoliotax { get; set; }
     public decimal? UpdateUserFoliotax { get; set; }
     public decimal? CashierId { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PropertyTaxId { get; set; }
-    public string TrxCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PropertyTaxId { get; set; }
+    public string? TrxCode { get; set; }
     public decimal? TrxAmountNetIls { get; set; }
     public decimal? TaxAmountIls { get; set; }
     public decimal? PaymentAmountIls { get; set; }
     public decimal? FoltaxTotalNetIls { get; set; }
     public decimal? FoltaxTotalTaxIls { get; set; }
-    public string TransactionDescription { get; set; }
-    public string ChequeNumber { get; set; }
-    public string Reference { get; set; }
-    public string Remark { get; set; }
-    public string PackageArrangementCode { get; set; }
-    public string TaxElements { get; set; }
+    public string? TransactionDescription { get; set; }
+    public string? ChequeNumber { get; set; }
+    public string? Reference { get; set; }
+    public string? Remark { get; set; }
+    public string? PackageArrangementCode { get; set; }
+    public string? TaxElements { get; set; }
     public decimal? TrxNoAddedBy { get; set; }
     public decimal? TrxNoAgainstPackage { get; set; }
-    public string TaxInclusiveYn { get; set; }
+    public string? TaxInclusiveYn { get; set; }
     public decimal? Installments { get; set; }
-    public string PaymentMethodType { get; set; }
-    public string CreditCardCode { get; set; }
-    public string FtSubtype { get; set; }
-    public string DeferredTaxesYn { get; set; }
+    public string? PaymentMethodType { get; set; }
+    public string? CreditCardCode { get; set; }
+    public string? FtSubtype { get; set; }
+    public string? DeferredTaxesYn { get; set; }
     public decimal? GuestAccountDebit { get; set; }
     public decimal? GuestAccountCredit { get; set; }
-    public string TaxRate { get; set; }
+    public string? TaxRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

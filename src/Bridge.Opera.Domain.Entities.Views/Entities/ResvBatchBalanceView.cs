@@ -2,52 +2,52 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ResvBatchBalanceView
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? Balance { get; set; }
-    public string GuestName { get; set; }
-    public string GuestFirstName { get; set; }
-    public string GuestMiddleName { get; set; }
-    public string ResvStatus { get; set; }
-    public decimal ResvNameId { get; set; }
-    public string GuestTitle { get; set; }
-    public string CompanyName { get; set; }
+    public string? GuestName { get; set; }
+    public string? GuestFirstName { get; set; }
+    public string? GuestMiddleName { get; set; }
+    public string? ResvStatus { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? GuestTitle { get; set; }
+    public string? CompanyName { get; set; }
     public decimal? CompanyId { get; set; }
-    public string TravelAgentName { get; set; }
+    public string? TravelAgentName { get; set; }
     public decimal? TravelAgentId { get; set; }
-    public string GroupName { get; set; }
+    public string? GroupName { get; set; }
     public decimal? GroupId { get; set; }
-    public string SourceName { get; set; }
+    public string? SourceName { get; set; }
     public decimal? SourceId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string NameUsageType { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? NameUsageType { get; set; }
     public DateTime? Arrival { get; set; }
     public DateTime? Departure { get; set; }
-    public string ConsumerYn { get; set; }
-    public string FinanciallyResponsibleYn { get; set; }
-    public string IntermediaryYn { get; set; }
-    public string PaymentMethod { get; set; }
-    public string PostingAllowedYn { get; set; }
+    public string? ConsumerYn { get; set; }
+    public string? FinanciallyResponsibleYn { get; set; }
+    public string? IntermediaryYn { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? PostingAllowedYn { get; set; }
     public DateTime? ActualCheckInDate { get; set; }
     public DateTime? ActualCheckOutDate { get; set; }
     public decimal? CreditLimit { get; set; }
     public decimal? NoOfRooms { get; set; }
     public decimal? Adults { get; set; }
     public decimal? Children { get; set; }
-    public string Room { get; set; }
-    public string RateCode { get; set; }
-    public string RoomCategory { get; set; }
-    public string MarketCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public DateTime ReservationDate { get; set; }
-    public string NameTaxType { get; set; }
-    public string RbStatus { get; set; }
-    public string Vip { get; set; }
+    public string? Room { get; set; }
+    public string? RateCode { get; set; }
+    public string? RoomCategory { get; set; }
+    public string? MarketCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public DateTime? ReservationDate { get; set; }
+    public string? NameTaxType { get; set; }
+    public string? RbStatus { get; set; }
+    public string? Vip { get; set; }
     public DateTime? TruncArrival { get; set; }
     public decimal? Nights { get; set; }
     public DateTime? TruncDeparture { get; set; }
-    public string RoomResort { get; set; }
-    public string SguestName { get; set; }
-    public string RoomClass { get; set; }
+    public string? RoomResort { get; set; }
+    public string? SguestName { get; set; }
+    public string? RoomClass { get; set; }
     public DateTime? LastPeriodicFolioDate { get; set; }
     public DateTime? LastDirectBillBatchDate { get; set; }
     public decimal? PeriodicFolioFreq { get; set; }

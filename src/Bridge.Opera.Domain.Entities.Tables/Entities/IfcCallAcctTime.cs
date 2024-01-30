@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcCallAcctTime
 {
-    public decimal TimeId { get; set; }
+    public decimal? TimeId { get; set; }
     public decimal? IfcCtrlId { get; set; }
     public decimal? StartTime { get; set; }
     public decimal? EndTime { get; set; }

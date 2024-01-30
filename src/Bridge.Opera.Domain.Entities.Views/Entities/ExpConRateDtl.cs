@@ -28,12 +28,12 @@ public partial class ExpConRateDtl
     public decimal? ChildOwnCharge2 { get; set; }
     public decimal? ChildOwnCharge3 { get; set; }
     public decimal? ChildOwnCharge4 { get; set; }
-    public string RateCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string RoomType { get; set; }
-    public string PkgCode { get; set; }
+    public string? RateCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RoomType { get; set; }
+    public string? PkgCode { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
 

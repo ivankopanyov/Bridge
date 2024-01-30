@@ -4,10 +4,10 @@ public partial class ArStatementDetailsD
 {
     public decimal? AccountCode { get; set; }
     public decimal? NameId { get; set; }
-    public string Room { get; set; }
-    public string GuestName { get; set; }
-    public string Remark { get; set; }
-    public string Reference { get; set; }
+    public string? Room { get; set; }
+    public string? GuestName { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
     public decimal? TrxNo { get; set; }
     public decimal? Payments { get; set; }
     public decimal? InvoiceAmount { get; set; }
@@ -15,13 +15,13 @@ public partial class ArStatementDetailsD
     public decimal? FolioNo { get; set; }
     public decimal? BillNo { get; set; }
     public decimal? Paid { get; set; }
-    public DateTime BillingDate { get; set; }
+    public DateTime? BillingDate { get; set; }
     public DateTime? BillingDateTime { get; set; }
     public decimal? OpenBalance { get; set; }
     public decimal? ArDebit { get; set; }
     public decimal? ArCredit { get; set; }
     public decimal? RunningTotal { get; set; }
-    public string ReminderStyle { get; set; }
+    public string? ReminderStyle { get; set; }
     public decimal? TranActionId { get; set; }
     public decimal? InvoiceAge { get; set; }
     public decimal? Aging1 { get; set; }
@@ -45,29 +45,29 @@ public partial class ArStatementDetailsD
     public decimal? PrintedAging4 { get; set; }
     public decimal? PrintedAging5 { get; set; }
     public decimal? PrintedAging6 { get; set; }
-    public string PrintedCurrency { get; set; }
-    public string PrintedExchInfo { get; set; }
-    public string PrintedExchRate { get; set; }
-    public string Currency { get; set; }
+    public string? PrintedCurrency { get; set; }
+    public string? PrintedExchInfo { get; set; }
+    public string? PrintedExchRate { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
-    public string CurrFormatMask { get; set; }
-    public DateTime UpdDate { get; set; }
+    public string? CurrFormatMask { get; set; }
+    public DateTime? UpdDate { get; set; }
     public DateTime? TrnsActivityDate { get; set; }
     public decimal? TrnsFromAcct { get; set; }
     public decimal? TrnsToAcct { get; set; }
     public decimal? LineBalance { get; set; }
     public decimal? ResvNameId { get; set; }
     public int? FolioView { get; set; }
-    public string BillingContactName { get; set; }
-    public string ExternalReference { get; set; }
-    public string CustomReference { get; set; }
-    public string TaRecordLocator { get; set; }
-    public string PrintedYn { get; set; }
+    public string? BillingContactName { get; set; }
+    public string? ExternalReference { get; set; }
+    public string? CustomReference { get; set; }
+    public string? TaRecordLocator { get; set; }
+    public string? PrintedYn { get; set; }
     public DateTime? DepartureDate { get; set; }
     public decimal? StatementNo { get; set; }
     public DateTime? ArrivalDate { get; set; }
-    public string PurgeYn { get; set; }
+    public string? PurgeYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

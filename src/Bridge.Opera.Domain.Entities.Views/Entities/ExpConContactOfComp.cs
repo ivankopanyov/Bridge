@@ -7,9 +7,9 @@ public partial class ExpConContactOfComp
     public decimal? ContactNameId { get; set; }
     public decimal? CompanyNameId { get; set; }
     public decimal? RowCount { get; set; }
-    public string CompanyName { get; set; }
-    public string ContactNameType { get; set; }
-    public string CompanyNameType { get; set; }
+    public string? CompanyName { get; set; }
+    public string? ContactNameType { get; set; }
+    public string? CompanyNameType { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

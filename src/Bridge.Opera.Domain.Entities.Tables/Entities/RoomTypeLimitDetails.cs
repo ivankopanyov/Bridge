@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class RoomTypeLimitDetails
 {
-    public decimal LimitId { get; set; }
-    public decimal ItemId { get; set; }
-    public decimal Quantity { get; set; }
+    public decimal? LimitId { get; set; }
+    public decimal? ItemId { get; set; }
+    public decimal? Quantity { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }

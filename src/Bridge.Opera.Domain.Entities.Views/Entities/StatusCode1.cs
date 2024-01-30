@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class StatusCode1
 {
-    public string Resort { get; set; }
-    public string StatusCode { get; set; }
-    public string Description { get; set; }
-    public string LanguageCode { get; set; }
+    public string? Resort { get; set; }
+    public string? StatusCode { get; set; }
+    public string? Description { get; set; }
+    public string? LanguageCode { get; set; }
     public decimal? PpStatusCode { get; set; }
-    public string UsedInApp { get; set; }
+    public string? UsedInApp { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

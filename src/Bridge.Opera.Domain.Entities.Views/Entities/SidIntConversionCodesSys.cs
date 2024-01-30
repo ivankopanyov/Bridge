@@ -2,13 +2,13 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SidIntConversionCodesSys
 {
-    public string ConversionCode { get; set; }
-    public string Description { get; set; }
-    public string LabelConversionCode { get; set; }
-    public string InterfaceId { get; set; }
-    public string LovQuery { get; set; }
-    public string MasterCode { get; set; }
-    public string Xmltypes { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? Description { get; set; }
+    public string? LabelConversionCode { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? LovQuery { get; set; }
+    public string? MasterCode { get; set; }
+    public string? Xmltypes { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

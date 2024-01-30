@@ -7,9 +7,9 @@ public partial class EvForecast
         EvForecastRevenue = new HashSet<EvForecastRevenue>();
     }
 
-    public decimal EvForecastid { get; set; }
-    public string EvType { get; set; }
-    public string Resort { get; set; }
+    public decimal? EvForecastid { get; set; }
+    public string? EvType { get; set; }
+    public string? Resort { get; set; }
     public DateTime? FcBegin { get; set; }
     public DateTime? FcEnd { get; set; }
 

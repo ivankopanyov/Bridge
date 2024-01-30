@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class OperaSession
 {
-    public decimal InstId { get; set; }
-    public decimal Sid { get; set; }
+    public decimal? InstId { get; set; }
+    public decimal? Sid { get; set; }
     public decimal? OperaSid { get; set; }
-    public string OperaUser { get; set; }
-    public string OperaResort { get; set; }
+    public string? OperaUser { get; set; }
+    public string? OperaResort { get; set; }
     public decimal? Serial { get; set; }
-    public string Jsessionid { get; set; }
-    public string Terminal { get; set; }
-    public string Appserver { get; set; }
+    public string? Jsessionid { get; set; }
+    public string? Terminal { get; set; }
+    public string? Appserver { get; set; }
     public DateTime? InsertDate { get; set; }
-    public string OsPid { get; set; }
+    public string? OsPid { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

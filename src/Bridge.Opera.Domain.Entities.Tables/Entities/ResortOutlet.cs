@@ -2,11 +2,11 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResortOutlet
 {
-    public string OutletCode { get; set; }
-    public string Description { get; set; }
-    public string OutletType { get; set; }
+    public string? OutletCode { get; set; }
+    public string? Description { get; set; }
+    public string? OutletType { get; set; }
     public decimal? BookingDuration { get; set; }
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
 
     public virtual Resort ResortNavigation { get; set; }
 

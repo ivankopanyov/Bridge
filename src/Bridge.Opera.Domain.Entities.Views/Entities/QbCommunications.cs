@@ -2,29 +2,29 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class QbCommunications
 {
-    public decimal PhoneId { get; set; }
-    public decimal NameId { get; set; }
-    public string PhoneType { get; set; }
-    public string PhoneRole { get; set; }
-    public string PhoneNumber { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public decimal? PhoneId { get; set; }
+    public decimal? NameId { get; set; }
+    public string? PhoneType { get; set; }
+    public string? PhoneRole { get; set; }
+    public string? PhoneNumber { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
     public DateTime? InactiveDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? BeginDate { get; set; }
     public decimal? AddressId { get; set; }
-    public string PrimaryYn { get; set; }
+    public string? PrimaryYn { get; set; }
     public decimal? DisplaySeq { get; set; }
     public byte? LaptopChange { get; set; }
-    public string IndexPhone { get; set; }
-    public string Extension { get; set; }
-    public string EmailFormat { get; set; }
-    public string ShareEmailYn { get; set; }
-    public string DefaultConfirmationYn { get; set; }
-    public string EmailLanguage { get; set; }
-    public string MobileAudioKeyYn { get; set; }
+    public string? IndexPhone { get; set; }
+    public string? Extension { get; set; }
+    public string? EmailFormat { get; set; }
+    public string? ShareEmailYn { get; set; }
+    public string? DefaultConfirmationYn { get; set; }
+    public string? EmailLanguage { get; set; }
+    public string? MobileAudioKeyYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

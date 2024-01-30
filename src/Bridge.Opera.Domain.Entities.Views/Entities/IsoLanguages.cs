@@ -2,9 +2,9 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class IsoLanguages
 {
-    public string LanguageCode { get; set; }
-    public string LanguageDesc { get; set; }
-    public string CultureCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? LanguageDesc { get; set; }
+    public string? CultureCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

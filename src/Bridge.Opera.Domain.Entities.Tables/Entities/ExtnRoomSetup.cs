@@ -2,16 +2,16 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ExtnRoomSetup
 {
-    public string Resort { get; set; }
-    public string ExtnNumber { get; set; }
-    public string RoomNumber { get; set; }
-    public string AssignedYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public string ExtnType { get; set; }
-    public string MandatoryYn { get; set; }
+    public string? Resort { get; set; }
+    public string? ExtnNumber { get; set; }
+    public string? RoomNumber { get; set; }
+    public string? AssignedYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public string? ExtnType { get; set; }
+    public string? MandatoryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

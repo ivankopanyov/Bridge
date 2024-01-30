@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OxiRestrictionChannels
 {
-    public string Code { get; set; }
-    public string Name { get; set; }
-    public string ChannelType { get; set; }
-    public string ExternalYn { get; set; }
+    public string? Code { get; set; }
+    public string? Name { get; set; }
+    public string? ChannelType { get; set; }
+    public string? ExternalYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

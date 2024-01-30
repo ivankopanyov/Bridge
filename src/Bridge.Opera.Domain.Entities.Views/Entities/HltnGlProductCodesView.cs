@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class HltnGlProductCodesView
 {
-    public string ProductCode { get; set; }
-    public string ProductCodeDisplay { get; set; }
+    public string? ProductCode { get; set; }
+    public string? ProductCodeDisplay { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemMenuDetails1
 {
-    public decimal MenuId { get; set; }
-    public string Resort { get; set; }
-    public decimal MitId { get; set; }
+    public decimal? MenuId { get; set; }
+    public string? Resort { get; set; }
+    public decimal? MitId { get; set; }
     public byte? Course { get; set; }
     public byte? CourseOrder { get; set; }
-    public string ShowbeoYn { get; set; }
+    public string? ShowbeoYn { get; set; }
     public decimal? Serving { get; set; }
-    public string IncludedYn { get; set; }
+    public string? IncludedYn { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? DemandFactor { get; set; }
     public DateTime? InsertDate { get; set; }
@@ -17,8 +17,8 @@ public partial class GemMenuDetails1
     public DateTime? UpdateDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public decimal? CreationSeq { get; set; }
-    public string ConsumptionYn { get; set; }
-    public string MandatoryYn { get; set; }
+    public string? ConsumptionYn { get; set; }
+    public string? MandatoryYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

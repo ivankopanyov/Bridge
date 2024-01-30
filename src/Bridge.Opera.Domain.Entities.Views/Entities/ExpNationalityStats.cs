@@ -3,8 +3,8 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ExpNationalityStats
 {
     public DateTime? BusinessDate { get; set; }
-    public string Nationality { get; set; }
-    public string Description { get; set; }
+    public string? Nationality { get; set; }
+    public string? Description { get; set; }
     public decimal? NoOfRooms { get; set; }
     public decimal? NoOfAdults { get; set; }
     public decimal? NoOfChildren { get; set; }

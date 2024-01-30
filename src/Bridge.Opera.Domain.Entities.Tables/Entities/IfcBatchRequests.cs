@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IfcBatchRequests
 {
-    public string Resort { get; set; }
-    public string RequestAction { get; set; }
+    public string? Resort { get; set; }
+    public string? RequestAction { get; set; }
     public decimal? ResvNameId { get; set; }
     public decimal? IfcCtrlId { get; set; }
     public DateTime? InsertDate { get; set; }

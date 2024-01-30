@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ResourceNotes
 {
-    public string Resort { get; set; }
-    public decimal BookId { get; set; }
-    public decimal EventId { get; set; }
-    public decimal NoteId { get; set; }
-    public decimal ResourceId { get; set; }
-    public string ResourceType { get; set; }
-    public string NoteTitle { get; set; }
-    public string Notes { get; set; }
-    public string InternalYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? NoteId { get; set; }
+    public decimal? ResourceId { get; set; }
+    public string? ResourceType { get; set; }
+    public string? NoteTitle { get; set; }
+    public string? Notes { get; set; }
+    public string? InternalYn { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

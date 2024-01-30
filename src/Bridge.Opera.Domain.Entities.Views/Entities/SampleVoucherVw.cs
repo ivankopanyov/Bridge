@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class SampleVoucherVw
 {
-    public string Resort { get; set; }
-    public decimal ResvNameId { get; set; }
-    public decimal GuestNameId { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public decimal? GuestNameId { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
     public DateTime? ArrivalDate { get; set; }
     public DateTime? DepartureDate { get; set; }
-    public string ArrivalDateIso { get; set; }
-    public string DepartureDateIso { get; set; }
-    public string Room { get; set; }
+    public string? ArrivalDateIso { get; set; }
+    public string? DepartureDateIso { get; set; }
+    public string? Room { get; set; }
     public decimal? VoucherAmount { get; set; }
-    public string VoucherAmountWords { get; set; }
-    public string FullName { get; set; }
+    public string? VoucherAmountWords { get; set; }
+    public string? FullName { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

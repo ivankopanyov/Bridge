@@ -2,17 +2,17 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemEventRevenueResortCurr
 {
-    public decimal EventId { get; set; }
-    public decimal BookId { get; set; }
-    public string Resort { get; set; }
-    public string RevType { get; set; }
-    public string RevGroup { get; set; }
+    public decimal? EventId { get; set; }
+    public decimal? BookId { get; set; }
+    public string? Resort { get; set; }
+    public string? RevType { get; set; }
+    public string? RevGroup { get; set; }
     public decimal? OrderBy { get; set; }
     public decimal? ExpectedRevenue { get; set; }
     public decimal? GuaranteedRevenue { get; set; }
     public decimal? ActualRevenue { get; set; }
-    public string FlatYn { get; set; }
-    public string CustomYn { get; set; }
+    public string? FlatYn { get; set; }
+    public string? CustomYn { get; set; }
     public decimal? ExpectedCost { get; set; }
     public decimal? GuaranteedCost { get; set; }
     public decimal? ActualCost { get; set; }
@@ -25,10 +25,10 @@ public partial class GemEventRevenueResortCurr
     public decimal? BilledRevenue { get; set; }
     public decimal? BilledCost { get; set; }
     public decimal? ForecastRevenue { get; set; }
-    public string IgnoreForecastYn { get; set; }
-    public string PkgRevenueYn { get; set; }
-    public string ForecastEditedYn { get; set; }
-    public string MinimumRevenueYn { get; set; }
+    public string? IgnoreForecastYn { get; set; }
+    public string? PkgRevenueYn { get; set; }
+    public string? ForecastEditedYn { get; set; }
+    public string? MinimumRevenueYn { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

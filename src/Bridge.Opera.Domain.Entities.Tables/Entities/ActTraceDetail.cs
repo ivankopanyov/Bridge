@@ -2,18 +2,18 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ActTraceDetail
 {
-    public decimal TraceId { get; set; }
-    public decimal OrderBy { get; set; }
-    public string Condition { get; set; }
-    public string FieldName { get; set; }
-    public string FieldValue { get; set; }
-    public string NewOrOld { get; set; }
-    public string DataType { get; set; }
-    public string Operator { get; set; }
-    public string OperatorValue { get; set; }
-    public string OpenBracket { get; set; }
-    public string CloseBracket { get; set; }
-    public string JoinCondition { get; set; }
+    public decimal? TraceId { get; set; }
+    public decimal? OrderBy { get; set; }
+    public string? Condition { get; set; }
+    public string? FieldName { get; set; }
+    public string? FieldValue { get; set; }
+    public string? NewOrOld { get; set; }
+    public string? DataType { get; set; }
+    public string? Operator { get; set; }
+    public string? OperatorValue { get; set; }
+    public string? OpenBracket { get; set; }
+    public string? CloseBracket { get; set; }
+    public string? JoinCondition { get; set; }
 
     public virtual ActTrace Trace { get; set; }
 

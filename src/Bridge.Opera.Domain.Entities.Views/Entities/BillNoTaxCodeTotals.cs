@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class BillNoTaxCodeTotals
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public DateTime? BusinessDate { get; set; }
     public decimal? BillNo { get; set; }
-    public string FolioType { get; set; }
+    public string? FolioType { get; set; }
     public DateTime? BillGenerationDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Room { get; set; }
+    public string? Room { get; set; }
     public decimal? Cashpay { get; set; }
     public decimal? Clpay { get; set; }
     public decimal? Deposit { get; set; }
@@ -23,7 +23,7 @@ public partial class BillNoTaxCodeTotals
     public decimal? NetAmt { get; set; }
     public decimal? GrossAmt { get; set; }
     public decimal? TaxRate { get; set; }
-    public string TaxCodeDescription { get; set; }
+    public string? TaxCodeDescription { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

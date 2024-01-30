@@ -2,24 +2,24 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class DphInhouseGroups
 {
-    public string PropertyCode { get; set; }
-    public string DelphiId { get; set; }
-    public string ReservationId { get; set; }
-    public string BookingName { get; set; }
-    public string AllotmentDate { get; set; }
-    public string RoomType { get; set; }
-    public string NoRoomsPickup { get; set; }
-    public string NoOfGuests { get; set; }
-    public string SingleRoomsPickup { get; set; }
-    public string DoubleRoomsPickup { get; set; }
-    public string TripleRoomsPickup { get; set; }
-    public string QuadRoomsPickup { get; set; }
-    public string GuestRoomRevenue { get; set; }
-    public string OtherIncomeRevenue { get; set; }
-    public string SingleRate { get; set; }
-    public string DoubleRate { get; set; }
-    public string TripleRate { get; set; }
-    public string QuadRate { get; set; }
+    public string? PropertyCode { get; set; }
+    public string? DelphiId { get; set; }
+    public string? ReservationId { get; set; }
+    public string? BookingName { get; set; }
+    public string? AllotmentDate { get; set; }
+    public string? RoomType { get; set; }
+    public string? NoRoomsPickup { get; set; }
+    public string? NoOfGuests { get; set; }
+    public string? SingleRoomsPickup { get; set; }
+    public string? DoubleRoomsPickup { get; set; }
+    public string? TripleRoomsPickup { get; set; }
+    public string? QuadRoomsPickup { get; set; }
+    public string? GuestRoomRevenue { get; set; }
+    public string? OtherIncomeRevenue { get; set; }
+    public string? SingleRate { get; set; }
+    public string? DoubleRate { get; set; }
+    public string? TripleRate { get; set; }
+    public string? QuadRate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

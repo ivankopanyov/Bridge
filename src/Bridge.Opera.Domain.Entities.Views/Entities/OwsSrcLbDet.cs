@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class OwsSrcLbDet
 {
-    public decimal Id { get; set; }
-    public string ScreenLanguage { get; set; }
-    public string ScreenDescription { get; set; }
-    public string Tooltip { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public string Host { get; set; }
+    public decimal? Id { get; set; }
+    public string? ScreenLanguage { get; set; }
+    public string? ScreenDescription { get; set; }
+    public string? Tooltip { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public string? Host { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

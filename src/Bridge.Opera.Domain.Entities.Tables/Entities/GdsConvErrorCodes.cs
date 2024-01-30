@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class GdsConvErrorCodes
 {
-    public string GdsHost { get; set; }
-    public string ErrorCode { get; set; }
-    public string GdsErrorCodePrefix { get; set; }
-    public string GdsErrorCodeSuffix { get; set; }
-    public string Description { get; set; }
-    public string BookingResponse { get; set; }
+    public string? GdsHost { get; set; }
+    public string? ErrorCode { get; set; }
+    public string? GdsErrorCodePrefix { get; set; }
+    public string? GdsErrorCodeSuffix { get; set; }
+    public string? Description { get; set; }
+    public string? BookingResponse { get; set; }
     public DateTime? BeginDate { get; set; }
     public DateTime? EndDate { get; set; }
-    public string ManualProcessYn { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? ManualProcessYn { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

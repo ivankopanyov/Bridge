@@ -3,50 +3,50 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class ArFolioDetail
 {
     public decimal? AccountCode { get; set; }
-    public string AccountName { get; set; }
-    public DateTime PostDate { get; set; }
-    public DateTime BusinessDate { get; set; }
-    public string GuestName { get; set; }
+    public string? AccountName { get; set; }
+    public DateTime? PostDate { get; set; }
+    public DateTime? BusinessDate { get; set; }
+    public string? GuestName { get; set; }
     public decimal? GuestNameId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Remark { get; set; }
-    public string Room { get; set; }
-    public decimal TrxNo { get; set; }
+    public string? Remark { get; set; }
+    public string? Room { get; set; }
+    public decimal? TrxNo { get; set; }
     public DateTime? DepDate { get; set; }
     public DateTime? DepTime { get; set; }
     public decimal? Invoice { get; set; }
     public decimal? FolioNo { get; set; }
-    public string InvoiceType { get; set; }
+    public string? InvoiceType { get; set; }
     public decimal? CashierId { get; set; }
-    public string CashierName { get; set; }
+    public string? CashierName { get; set; }
     public decimal? OrgAmt { get; set; }
     public decimal? Amount { get; set; }
     public decimal? Paid { get; set; }
     public decimal? Aropen { get; set; }
-    public string Reference { get; set; }
-    public string DepartmentCode { get; set; }
+    public string? Reference { get; set; }
+    public string? DepartmentCode { get; set; }
     public DateTime? TrasferDate { get; set; }
-    public string AdjustYn { get; set; }
-    public string TclCode1 { get; set; }
-    public string TclCode2 { get; set; }
+    public string? AdjustYn { get; set; }
+    public string? TclCode1 { get; set; }
+    public string? TclCode2 { get; set; }
     public decimal? RoomCharge { get; set; }
-    public string InvStatus { get; set; }
-    public DateTime InsertDate { get; set; }
+    public string? InvStatus { get; set; }
+    public DateTime? InsertDate { get; set; }
     public decimal? Price { get; set; }
     public decimal? Qty { get; set; }
-    public string Currency { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
     public decimal? EuroExchangeRate { get; set; }
     public decimal? BillNumber { get; set; }
     public decimal? RevisionNumber { get; set; }
-    public string FolioType { get; set; }
-    public string MarketCode { get; set; }
-    public string SourceCode { get; set; }
-    public string RoomClass { get; set; }
+    public string? FolioType { get; set; }
+    public string? MarketCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? RoomClass { get; set; }
     public decimal? CreditCardId { get; set; }
-    public string CreditCardExpDate { get; set; }
-    public string CreditCardNo { get; set; }
-    public string FiscalBillNo { get; set; }
+    public string? CreditCardExpDate { get; set; }
+    public string? CreditCardNo { get; set; }
+    public string? FiscalBillNo { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

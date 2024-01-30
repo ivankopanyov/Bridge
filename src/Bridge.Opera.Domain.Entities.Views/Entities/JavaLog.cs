@@ -3,10 +3,10 @@ namespace Bridge.Opera.Domain.Entities.Views;
 public partial class JavaLog
 {
     public decimal? SeqNo { get; set; }
-    public string MsgText { get; set; }
-    public string CommandLine { get; set; }
-    public string DesName { get; set; }
-    public string Step { get; set; }
+    public string? MsgText { get; set; }
+    public string? CommandLine { get; set; }
+    public string? DesName { get; set; }
+    public string? Step { get; set; }
     public decimal? ReportId { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? IndexColumn { get; set; }

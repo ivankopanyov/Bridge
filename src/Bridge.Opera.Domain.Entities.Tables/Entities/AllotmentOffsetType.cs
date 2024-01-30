@@ -7,10 +7,10 @@ public partial class AllotmentOffsetType
         AllotmentOffsetGrid = new HashSet<AllotmentOffsetGrid>();
     }
 
-    public string Resort { get; set; }
-    public decimal AllotmentHeaderId { get; set; }
-    public string OffsetType { get; set; }
-    public string IgnoreOffsetYn { get; set; }
+    public string? Resort { get; set; }
+    public decimal? AllotmentHeaderId { get; set; }
+    public string? OffsetType { get; set; }
+    public string? IgnoreOffsetYn { get; set; }
     public DateTime? InactiveDate { get; set; }
 
     public virtual AllotmentHeader AllotmentHeader { get; set; }

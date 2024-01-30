@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class CountryLanguages
 {
-    public string CountryCode { get; set; }
-    public string LanguageCode { get; set; }
+    public string? CountryCode { get; set; }
+    public string? LanguageCode { get; set; }
 
     public virtual Country CountryCodeNavigation { get; set; }
 

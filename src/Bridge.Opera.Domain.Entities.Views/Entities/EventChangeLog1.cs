@@ -2,15 +2,15 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class EventChangeLog1
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BookId { get; set; }
     public decimal? EventId { get; set; }
     public DateTime? EventDate { get; set; }
     public DateTime? ChangeDate { get; set; }
-    public string RevenueType { get; set; }
+    public string? RevenueType { get; set; }
     public decimal? RevenueChange { get; set; }
-    public string CurrentStatus { get; set; }
-    public string PriorStatus { get; set; }
+    public string? CurrentStatus { get; set; }
+    public string? PriorStatus { get; set; }
     public decimal? Attendees { get; set; }
     public decimal? ChangeId { get; set; }
 

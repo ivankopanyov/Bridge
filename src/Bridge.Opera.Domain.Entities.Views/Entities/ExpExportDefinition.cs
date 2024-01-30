@@ -2,97 +2,97 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ExpExportDefinition
 {
-    public string RecordType { get; set; }
+    public string? RecordType { get; set; }
     public decimal? HdrExpFileId { get; set; }
-    public string HdrFileType { get; set; }
-    public string HdrFileGroupId { get; set; }
-    public string HdrResort { get; set; }
-    public string HdrFileTypeDesc { get; set; }
-    public string HdrProgramName { get; set; }
-    public string HdrCompany { get; set; }
-    public string HdrSourceViewCode { get; set; }
-    public string HdrSourceViewDescription { get; set; }
-    public string HdrFileName { get; set; }
-    public string HdrFileExtension { get; set; }
-    public string HdrFileLocation { get; set; }
-    public string HdrColSeperator { get; set; }
-    public string HdrWhereClause { get; set; }
-    public string HdrRunInNaYn { get; set; }
+    public string? HdrFileType { get; set; }
+    public string? HdrFileGroupId { get; set; }
+    public string? HdrResort { get; set; }
+    public string? HdrFileTypeDesc { get; set; }
+    public string? HdrProgramName { get; set; }
+    public string? HdrCompany { get; set; }
+    public string? HdrSourceViewCode { get; set; }
+    public string? HdrSourceViewDescription { get; set; }
+    public string? HdrFileName { get; set; }
+    public string? HdrFileExtension { get; set; }
+    public string? HdrFileLocation { get; set; }
+    public string? HdrColSeperator { get; set; }
+    public string? HdrWhereClause { get; set; }
+    public string? HdrRunInNaYn { get; set; }
     public decimal? HdrInsertUser { get; set; }
     public DateTime? HdrInsertDate { get; set; }
     public decimal? HdrUpdateUser { get; set; }
     public DateTime? HdrUpdateDate { get; set; }
-    public string HdrInactiveYn { get; set; }
-    public string HdrZipFileLoc { get; set; }
-    public string HdrCompressdataYn { get; set; }
-    public string HdrZipFileName { get; set; }
-    public string HdrPreExpProc { get; set; }
-    public string HdrPostExpProc { get; set; }
-    public string HdrParameterForm { get; set; }
+    public string? HdrInactiveYn { get; set; }
+    public string? HdrZipFileLoc { get; set; }
+    public string? HdrCompressdataYn { get; set; }
+    public string? HdrZipFileName { get; set; }
+    public string? HdrPreExpProc { get; set; }
+    public string? HdrPostExpProc { get; set; }
+    public string? HdrParameterForm { get; set; }
     public decimal? HdrBatchSeq { get; set; }
-    public string HdrAddNewlineYn { get; set; }
-    public string HdrNaFrequency { get; set; }
-    public string HdrAlwaysHdrfooterYn { get; set; }
-    public string HdrFtpUploadYn { get; set; }
-    public string HdrUploadType { get; set; }
-    public string HdrOxiInterfaceId { get; set; }
-    public string HdrHttpUploadYn { get; set; }
-    public string HdrHttpAddress { get; set; }
-    public string HdrNaWhenToExport { get; set; }
-    public string HdrComponentExportYn { get; set; }
+    public string? HdrAddNewlineYn { get; set; }
+    public string? HdrNaFrequency { get; set; }
+    public string? HdrAlwaysHdrfooterYn { get; set; }
+    public string? HdrFtpUploadYn { get; set; }
+    public string? HdrUploadType { get; set; }
+    public string? HdrOxiInterfaceId { get; set; }
+    public string? HdrHttpUploadYn { get; set; }
+    public string? HdrHttpAddress { get; set; }
+    public string? HdrNaWhenToExport { get; set; }
+    public string? HdrComponentExportYn { get; set; }
     public decimal? HdrParentId { get; set; }
     public decimal? HdrExportSequence { get; set; }
-    public string HdrAppendToFileYn { get; set; }
-    public string HdrTransferMethod { get; set; }
-    public string HdrSoapAction { get; set; }
-    public string HdrXmlYn { get; set; }
-    public string HdrXmlDocName { get; set; }
+    public string? HdrAppendToFileYn { get; set; }
+    public string? HdrTransferMethod { get; set; }
+    public string? HdrSoapAction { get; set; }
+    public string? HdrXmlYn { get; set; }
+    public string? HdrXmlDocName { get; set; }
     public decimal? DtlExpFileId { get; set; }
     public decimal? DtlExpFileDtlId { get; set; }
-    public string DtlColName { get; set; }
+    public string? DtlColName { get; set; }
     public decimal? DtlColLength { get; set; }
-    public string DtlColFormat { get; set; }
-    public string DtlColAlignment { get; set; }
+    public string? DtlColFormat { get; set; }
+    public string? DtlColAlignment { get; set; }
     public decimal? DtlOrderBy { get; set; }
-    public string DtlColType { get; set; }
-    public string DtlDatabaseYn { get; set; }
-    public string DtlFormula { get; set; }
+    public string? DtlColType { get; set; }
+    public string? DtlDatabaseYn { get; set; }
+    public string? DtlFormula { get; set; }
     public decimal? DtlInsertUser { get; set; }
     public DateTime? DtlInsertDate { get; set; }
     public decimal? DtlUpdateUser { get; set; }
     public DateTime? DtlUpdateDate { get; set; }
-    public string DtlPromptYn { get; set; }
-    public string DtlDefaultValue { get; set; }
-    public string DtlGenDataType { get; set; }
-    public string DtlIgnoreLengthYn { get; set; }
-    public string DtlVariableLengthYn { get; set; }
+    public string? DtlPromptYn { get; set; }
+    public string? DtlDefaultValue { get; set; }
+    public string? DtlGenDataType { get; set; }
+    public string? DtlIgnoreLengthYn { get; set; }
+    public string? DtlVariableLengthYn { get; set; }
     public decimal? DtlExpDtlLinkId { get; set; }
-    public string DtlXmlColType { get; set; }
-    public string DtlAddSourceView { get; set; }
-    public string DtlFilter { get; set; }
-    public string DtlTagRequiredYn { get; set; }
-    public string DtlXmlAttributeYn { get; set; }
+    public string? DtlXmlColType { get; set; }
+    public string? DtlAddSourceView { get; set; }
+    public string? DtlFilter { get; set; }
+    public string? DtlTagRequiredYn { get; set; }
+    public string? DtlXmlAttributeYn { get; set; }
     public decimal? DlvExpFileId { get; set; }
-    public string DlvCommType { get; set; }
-    public string DlvHostUrl { get; set; }
-    public string DlvUserId { get; set; }
-    public string DlvPassword { get; set; }
-    public string DlvDirectory { get; set; }
-    public string DlvSafeCreateYn { get; set; }
-    public string DlvTempDirectory { get; set; }
-    public string DlvFtpPassiveYn { get; set; }
-    public string DlvAsciiTransferYn { get; set; }
-    public string DlvCompressYn { get; set; }
-    public string DlvSoapYn { get; set; }
-    public string DlvSoapVersion { get; set; }
-    public string DlvSoapAction { get; set; }
+    public string? DlvCommType { get; set; }
+    public string? DlvHostUrl { get; set; }
+    public string? DlvUserId { get; set; }
+    public string? DlvPassword { get; set; }
+    public string? DlvDirectory { get; set; }
+    public string? DlvSafeCreateYn { get; set; }
+    public string? DlvTempDirectory { get; set; }
+    public string? DlvFtpPassiveYn { get; set; }
+    public string? DlvAsciiTransferYn { get; set; }
+    public string? DlvCompressYn { get; set; }
+    public string? DlvSoapYn { get; set; }
+    public string? DlvSoapVersion { get; set; }
+    public string? DlvSoapAction { get; set; }
     public decimal? DlvRetryCount { get; set; }
     public decimal? DlvRetryIntervalSec { get; set; }
     public DateTime? DlvDeliveryTime { get; set; }
-    public string DlvHxExportYn { get; set; }
-    public string DlvHxVersionNo { get; set; }
-    public string DlvHxSystemType { get; set; }
-    public string DlvDeliveryStatus { get; set; }
+    public string? DlvHxExportYn { get; set; }
+    public string? DlvHxVersionNo { get; set; }
+    public string? DlvHxSystemType { get; set; }
+    public string? DlvDeliveryStatus { get; set; }
     public DateTime? DlvInsertDate { get; set; }
     public decimal? DlvInsertUser { get; set; }
     public DateTime? DlvUpdateDate { get; set; }

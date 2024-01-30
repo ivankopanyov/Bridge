@@ -2,7 +2,7 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ClaimAdjLimits
 {
-    public string ClaimAdjLimitCode { get; set; }
+    public string? ClaimAdjLimitCode { get; set; }
     public decimal? AwPtsLowerLimit { get; set; }
     public decimal? AwPtsUpperLimit { get; set; }
     public decimal? TierPtsStayLowerLimit { get; set; }
@@ -11,11 +11,11 @@ public partial class ClaimAdjLimits
     public decimal? TierPtsNightsUpperLimit { get; set; }
     public decimal? TierPtsRevLowerLimit { get; set; }
     public decimal? TierPtsRevUpperLimit { get; set; }
-    public string BillingGroup { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal UpdateUser { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public string? BillingGroup { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

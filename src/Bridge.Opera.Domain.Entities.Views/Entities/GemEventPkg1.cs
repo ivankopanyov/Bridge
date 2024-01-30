@@ -2,25 +2,25 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class GemEventPkg1
 {
-    public decimal BookId { get; set; }
-    public decimal PkgId { get; set; }
-    public string PkgName { get; set; }
-    public string Resort { get; set; }
+    public decimal? BookId { get; set; }
+    public decimal? PkgId { get; set; }
+    public string? PkgName { get; set; }
+    public string? Resort { get; set; }
     public decimal? TotalRevenue { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string PkgCode { get; set; }
+    public string? PkgCode { get; set; }
     public decimal? Duration { get; set; }
     public decimal? ExpectedAttendees { get; set; }
     public decimal? GuaranteedAttendees { get; set; }
     public decimal? ActualAttendees { get; set; }
     public DateTime? StartDate { get; set; }
-    public string PriceCode { get; set; }
-    public string PriceCodeDesc { get; set; }
+    public string? PriceCode { get; set; }
+    public string? PriceCodeDesc { get; set; }
     public decimal? PkgPriceId { get; set; }
-    public string PkgResort { get; set; }
+    public string? PkgResort { get; set; }
     public decimal? GroupId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

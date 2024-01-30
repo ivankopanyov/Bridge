@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class TaCheckDetail
 {
-    public string Resort { get; set; }
+    public string? Resort { get; set; }
     public decimal? BatchId { get; set; }
     public decimal? CheckNo { get; set; }
     public decimal? TravelAgentId { get; set; }
     public decimal? ResvNameId { get; set; }
-    public string Name { get; set; }
-    public string AddresseeAddress1 { get; set; }
-    public string AddresseeAddress2 { get; set; }
-    public string IataCorpNo { get; set; }
-    public string ArrivalDate { get; set; }
-    public string DepartureDate { get; set; }
-    public string BeginDate { get; set; }
-    public string EndDate { get; set; }
+    public string? Name { get; set; }
+    public string? AddresseeAddress1 { get; set; }
+    public string? AddresseeAddress2 { get; set; }
+    public string? IataCorpNo { get; set; }
+    public string? ArrivalDate { get; set; }
+    public string? DepartureDate { get; set; }
+    public string? BeginDate { get; set; }
+    public string? EndDate { get; set; }
     public decimal? Nights { get; set; }
-    public string GuestName { get; set; }
+    public string? GuestName { get; set; }
     public decimal? CommissionableRevenue { get; set; }
     public decimal? Commission { get; set; }
     public decimal? PrepaidComm { get; set; }
@@ -26,22 +26,22 @@ public partial class TaCheckDetail
     public decimal? CheckAmount { get; set; }
     public DateTime? CheckDate { get; set; }
     public decimal? PaymentId { get; set; }
-    public string CommissionCode { get; set; }
-    public string ReservationStatus { get; set; }
-    public string AddresseeCity { get; set; }
-    public string AddresseeState { get; set; }
-    public string AddresseeZipCode { get; set; }
-    public string AddresseeCountry { get; set; }
+    public string? CommissionCode { get; set; }
+    public string? ReservationStatus { get; set; }
+    public string? AddresseeCity { get; set; }
+    public string? AddresseeState { get; set; }
+    public string? AddresseeZipCode { get; set; }
+    public string? AddresseeCountry { get; set; }
     public decimal? RoomRate { get; set; }
-    public string FolioNo { get; set; }
-    public string Currency { get; set; }
+    public string? FolioNo { get; set; }
+    public string? Currency { get; set; }
     public decimal? ExchangeRate { get; set; }
-    public string AccountNo { get; set; }
-    public string Tax1No { get; set; }
-    public string TaFormattedAddress { get; set; }
-    public string Xname { get; set; }
-    public string XguestName { get; set; }
-    public string AddresseeStateDescription { get; set; }
+    public string? AccountNo { get; set; }
+    public string? Tax1No { get; set; }
+    public string? TaFormattedAddress { get; set; }
+    public string? Xname { get; set; }
+    public string? XguestName { get; set; }
+    public string? AddresseeStateDescription { get; set; }
     public decimal? CommissionId { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)

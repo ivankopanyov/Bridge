@@ -2,19 +2,19 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class ObiDimAttributes
 {
-    public string DimName { get; set; }
-    public decimal AttributeSeq { get; set; }
-    public string DimTable { get; set; }
-    public string DimKeyCol { get; set; }
-    public string ReturnCol { get; set; }
-    public string ReturnDescCol { get; set; }
-    public string ReturnValues { get; set; }
-    public string DimWhere { get; set; }
-    public string DisplayLabel { get; set; }
-    public DateTime InsertDate { get; set; }
-    public decimal InsertUser { get; set; }
-    public DateTime UpdateDate { get; set; }
-    public decimal UpdateUser { get; set; }
+    public string? DimName { get; set; }
+    public decimal? AttributeSeq { get; set; }
+    public string? DimTable { get; set; }
+    public string? DimKeyCol { get; set; }
+    public string? ReturnCol { get; set; }
+    public string? ReturnDescCol { get; set; }
+    public string? ReturnValues { get; set; }
+    public string? DimWhere { get; set; }
+    public string? DisplayLabel { get; set; }
+    public DateTime? InsertDate { get; set; }
+    public decimal? InsertUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? UpdateUser { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

@@ -7,11 +7,11 @@ public partial class ExpMappingTypes
         ExpMappingCodes = new HashSet<ExpMappingCodes>();
     }
 
-    public decimal ExpMappingId { get; set; }
-    public string Resort { get; set; }
-    public string ConfigType { get; set; }
-    public string MappingType { get; set; }
-    public string TypeDesc { get; set; }
+    public decimal? ExpMappingId { get; set; }
+    public string? Resort { get; set; }
+    public string? ConfigType { get; set; }
+    public string? MappingType { get; set; }
+    public string? TypeDesc { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }

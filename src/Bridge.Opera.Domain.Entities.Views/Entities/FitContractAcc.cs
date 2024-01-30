@@ -2,12 +2,12 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class FitContractAcc
 {
-    public decimal NameId { get; set; }
-    public string DisplayName { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string Citystatezip { get; set; }
-    public string Country { get; set; }
+    public decimal? NameId { get; set; }
+    public string? DisplayName { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? Citystatezip { get; set; }
+    public string? Country { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

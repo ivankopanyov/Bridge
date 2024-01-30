@@ -7,74 +7,74 @@ public partial class GuestEnrollment
         GuestEnrollmentPref = new HashSet<GuestEnrollmentPref>();
     }
 
-    public decimal EnrollmentSeqId { get; set; }
-    public string EnrollmentRecType { get; set; }
-    public string MembershipNo { get; set; }
-    public string MembershipType { get; set; }
-    public string MembershipLevel { get; set; }
-    public string PmtMethod { get; set; }
-    public string Mpcode { get; set; }
-    public string RateCode { get; set; }
-    public string SourceCode { get; set; }
-    public string Resort { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-    public string MiddleInitial { get; set; }
-    public string PrefName { get; set; }
-    public string BusinessTitle { get; set; }
+    public decimal? EnrollmentSeqId { get; set; }
+    public string? EnrollmentRecType { get; set; }
+    public string? MembershipNo { get; set; }
+    public string? MembershipType { get; set; }
+    public string? MembershipLevel { get; set; }
+    public string? PmtMethod { get; set; }
+    public string? Mpcode { get; set; }
+    public string? RateCode { get; set; }
+    public string? SourceCode { get; set; }
+    public string? Resort { get; set; }
+    public string? LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? MiddleInitial { get; set; }
+    public string? PrefName { get; set; }
+    public string? BusinessTitle { get; set; }
     public DateTime? BirthDate { get; set; }
-    public string HomeOrBusinessFlag { get; set; }
-    public string Address1 { get; set; }
-    public string Address2 { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-    public string Country { get; set; }
-    public string HomePhone { get; set; }
-    public string BusinessPhone { get; set; }
-    public string BusinessExt { get; set; }
-    public string CommName { get; set; }
-    public string EmailAddress { get; set; }
-    public string EmailPrefCode { get; set; }
-    public string LanguageCode { get; set; }
-    public string CurrencyCode { get; set; }
-    public string PassportNumber { get; set; }
-    public string CountryBirth { get; set; }
-    public string CountryCitizen { get; set; }
-    public string CountryPassport { get; set; }
-    public string CcNo { get; set; }
-    public string CcName { get; set; }
-    public string CcType { get; set; }
+    public string? HomeOrBusinessFlag { get; set; }
+    public string? Address1 { get; set; }
+    public string? Address2 { get; set; }
+    public string? City { get; set; }
+    public string? State { get; set; }
+    public string? ZipCode { get; set; }
+    public string? Country { get; set; }
+    public string? HomePhone { get; set; }
+    public string? BusinessPhone { get; set; }
+    public string? BusinessExt { get; set; }
+    public string? CommName { get; set; }
+    public string? EmailAddress { get; set; }
+    public string? EmailPrefCode { get; set; }
+    public string? LanguageCode { get; set; }
+    public string? CurrencyCode { get; set; }
+    public string? PassportNumber { get; set; }
+    public string? CountryBirth { get; set; }
+    public string? CountryCitizen { get; set; }
+    public string? CountryPassport { get; set; }
+    public string? CcNo { get; set; }
+    public string? CcName { get; set; }
+    public string? CcType { get; set; }
     public DateTime? CcExpirationDate { get; set; }
     public decimal? PmtAmount { get; set; }
-    public string PmtType { get; set; }
-    public string PmtCcNo { get; set; }
-    public string PmtCcName { get; set; }
-    public string PmtCcType { get; set; }
+    public string? PmtType { get; set; }
+    public string? PmtCcNo { get; set; }
+    public string? PmtCcName { get; set; }
+    public string? PmtCcType { get; set; }
     public DateTime? PmtCcExpirationDate { get; set; }
-    public string SetNumber { get; set; }
-    public string AgentMemberNo { get; set; }
-    public string Cresnumber { get; set; }
+    public string? SetNumber { get; set; }
+    public string? AgentMemberNo { get; set; }
+    public string? Cresnumber { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? CpiNumber { get; set; }
-    public string CcExpirationDateStr { get; set; }
-    public string PmtCcExpirationDateStr { get; set; }
-    public string TmpCcn { get; set; }
-    public string TmpEds { get; set; }
-    public string TmpPmtCcn { get; set; }
-    public string TmpPmtEds { get; set; }
+    public string? CcExpirationDateStr { get; set; }
+    public string? PmtCcExpirationDateStr { get; set; }
+    public string? TmpCcn { get; set; }
+    public string? TmpEds { get; set; }
+    public string? TmpPmtCcn { get; set; }
+    public string? TmpPmtEds { get; set; }
     public decimal? CreditCardId { get; set; }
     public decimal? PmtCreditCardId { get; set; }
-    public string LoyaltySegments { get; set; }
-    public string AltLastName { get; set; }
-    public string AltFirstName { get; set; }
-    public string AltMiddleInitial { get; set; }
-    public string AltPrefName { get; set; }
-    public string AltLanguageCode { get; set; }
-    public string AltSalutation { get; set; }
-    public string AltEnvelopeGreeting { get; set; }
-    public string EmployeeDepartment { get; set; }
+    public string? LoyaltySegments { get; set; }
+    public string? AltLastName { get; set; }
+    public string? AltFirstName { get; set; }
+    public string? AltMiddleInitial { get; set; }
+    public string? AltPrefName { get; set; }
+    public string? AltLanguageCode { get; set; }
+    public string? AltSalutation { get; set; }
+    public string? AltEnvelopeGreeting { get; set; }
+    public string? EmployeeDepartment { get; set; }
 
     public virtual ICollection<GuestEnrollmentPref> GuestEnrollmentPref { get; set; }
 

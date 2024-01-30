@@ -2,27 +2,27 @@ namespace Bridge.Opera.Domain.Entities.Views;
 	
 public partial class ObiRqResortDim
 {
-    public string AllCode { get; set; }
-    public string AllDesc { get; set; }
-    public string ChainCode { get; set; }
-    public string ChainDesc { get; set; }
-    public string RegionCode { get; set; }
-    public string Region { get; set; }
-    public string RegionDesc { get; set; }
-    public string CountryCode { get; set; }
-    public string Country { get; set; }
-    public string CountryDesc { get; set; }
-    public string State { get; set; }
-    public string StateDesc { get; set; }
-    public string City { get; set; }
-    public string CityDesc { get; set; }
-    public string Resort { get; set; }
-    public string ResortDesc { get; set; }
-    public string ResortLongDesc { get; set; }
-    public string PostCode { get; set; }
-    public string ResortType { get; set; }
-    public string Ownership { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? AllCode { get; set; }
+    public string? AllDesc { get; set; }
+    public string? ChainCode { get; set; }
+    public string? ChainDesc { get; set; }
+    public string? RegionCode { get; set; }
+    public string? Region { get; set; }
+    public string? RegionDesc { get; set; }
+    public string? CountryCode { get; set; }
+    public string? Country { get; set; }
+    public string? CountryDesc { get; set; }
+    public string? State { get; set; }
+    public string? StateDesc { get; set; }
+    public string? City { get; set; }
+    public string? CityDesc { get; set; }
+    public string? Resort { get; set; }
+    public string? ResortDesc { get; set; }
+    public string? ResortLongDesc { get; set; }
+    public string? PostCode { get; set; }
+    public string? ResortType { get; set; }
+    public string? Ownership { get; set; }
+    public string? CurrencyCode { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

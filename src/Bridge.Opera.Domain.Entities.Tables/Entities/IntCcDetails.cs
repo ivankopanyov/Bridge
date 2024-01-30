@@ -2,21 +2,21 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class IntCcDetails
 {
-    public decimal CcdSeqNo { get; set; }
-    public string InterfaceId { get; set; }
-    public string Resort { get; set; }
-    public string ConversionCode { get; set; }
-    public string PmsValue { get; set; }
-    public string ExtValue { get; set; }
-    public string PmsDefaultYn { get; set; }
-    public string CrsDefaultYn { get; set; }
-    public string ActiveYn { get; set; }
+    public decimal? CcdSeqNo { get; set; }
+    public string? InterfaceId { get; set; }
+    public string? Resort { get; set; }
+    public string? ConversionCode { get; set; }
+    public string? PmsValue { get; set; }
+    public string? ExtValue { get; set; }
+    public string? PmsDefaultYn { get; set; }
+    public string? CrsDefaultYn { get; set; }
+    public string? ActiveYn { get; set; }
     public DateTime? InactiveDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? UpdateUser { get; set; }
     public DateTime? UpdateDate { get; set; }
-    public string MasterValue { get; set; }
+    public string? MasterValue { get; set; }
 
     public virtual IntInterfaceSetup IntInterfaceSetup { get; set; }
 

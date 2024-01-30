@@ -2,8 +2,8 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class TaxBracketAmounts
 {
-    public string Resort { get; set; }
-    public decimal BracketPerc { get; set; }
+    public string? Resort { get; set; }
+    public decimal? BracketPerc { get; set; }
     public decimal? BracketStart { get; set; }
     public decimal? BracketEnd { get; set; }
     public decimal? TaxAmount { get; set; }

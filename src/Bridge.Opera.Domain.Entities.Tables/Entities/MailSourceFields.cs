@@ -2,10 +2,10 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class MailSourceFields
 {
-    public decimal SourceId { get; set; }
-    public string TableName { get; set; }
-    public string FieldName { get; set; }
-    public string VirtualYn { get; set; }
+    public decimal? SourceId { get; set; }
+    public string? TableName { get; set; }
+    public string? FieldName { get; set; }
+    public string? VirtualYn { get; set; }
 
     public virtual MailSource Source { get; set; }
 

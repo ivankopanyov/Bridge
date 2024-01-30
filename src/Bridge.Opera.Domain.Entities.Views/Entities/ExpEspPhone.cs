@@ -7,10 +7,10 @@ public partial class ExpEspPhone
     public DateTime? ConsideredDate { get; set; }
     public decimal? NameId { get; set; }
     public decimal? RecordType { get; set; }
-    public string PhoneIndicator { get; set; }
-    public string PhoneNumber { get; set; }
-    public string PhoneType { get; set; }
-    public string Extension { get; set; }
+    public string? PhoneIndicator { get; set; }
+    public string? PhoneNumber { get; set; }
+    public string? PhoneType { get; set; }
+    public string? Extension { get; set; }
 
 	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
 	{

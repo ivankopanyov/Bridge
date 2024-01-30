@@ -2,14 +2,14 @@ namespace Bridge.Opera.Domain.Entities.Tables;
 
 public partial class FsSourceCat
 {
-    public string SrcCat { get; set; }
-    public string CatType { get; set; }
-    public string Url { get; set; }
-    public string SrcCatDesc { get; set; }
+    public string? SrcCat { get; set; }
+    public string? CatType { get; set; }
+    public string? Url { get; set; }
+    public string? SrcCatDesc { get; set; }
     public decimal? OrderBy { get; set; }
-    public string ObiUser { get; set; }
-    public string ObiPwd { get; set; }
-    public string AuthUrl { get; set; }
+    public string? ObiUser { get; set; }
+    public string? ObiPwd { get; set; }
+    public string? AuthUrl { get; set; }
     public DateTime? InsertDate { get; set; }
     public decimal? InsertUser { get; set; }
     public DateTime? UpdateDate { get; set; }
