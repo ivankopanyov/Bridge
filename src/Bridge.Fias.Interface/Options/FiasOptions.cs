@@ -2,7 +2,9 @@
 
 public class FiasOptions
 {
-    public string? Hostname { get; set; }
+    public const string SectionName = "Fias";
+
+    public string? Host { get; set; }
 
     public int? Port { get; set; }
 }

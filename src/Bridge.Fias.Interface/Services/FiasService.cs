@@ -40,6 +40,8 @@ internal class FiasService : IFiasService
 
     #endregion
 
+    private readonly IWritableOptions<FiasOptions> _writableFiasOptions;
+
     private string? _hostname = null;
 
     private int? _port = null;
@@ -62,7 +64,16 @@ internal class FiasService : IFiasService
 
     public CancellationToken CancellationToken => _cancellationToken;
 
-    public FiasService() => RefreshCancellationToken();
+    public FiasService(IWritableOptions<FiasOptions> writableFiasOptions)
+    {
+        _writableFiasOptions = writableFiasOptions;
+
+        var optionsValue = writableFiasOptions?.Value;
+        _hostname = optionsValue?.Host;
+        _port = optionsValue?.Port;
+
+        RefreshCancellationToken();
+    }
 
     public void RefreshCancellationToken()
     {
@@ -142,16 +153,24 @@ internal class FiasService : IFiasService
 
     public void SetFiasOptions(FiasOptions? options)
     {
-        if (((_hostname == null && options?.Hostname == null)
-            || (_hostname != null && options?.Hostname != null && _hostname == options?.Hostname))
+        if (((_hostname == null && options?.Host == null)
+            || (_hostname != null && options?.Host != null && _hostname == options?.Host))
             && ((_port == null && options?.Port == null)
             || (_port != null && options?.Port != null && _port == options?.Port)))
             return;
 
-        _hostname = options?.Hostname;
+        _writableFiasOptions.Update(opt =>
+        {
+            opt.Host = options?.Host;
+            opt.Port = options?.Port;
+        });
+
+        _hostname = options?.Host;
         _port = options?.Port;
         _cancellationTokenSource.Cancel();
     }
+
+    public void Restart() => _cancellationTokenSource.Cancel();
 
     public void Active()
     {

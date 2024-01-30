@@ -55,6 +55,8 @@ public interface IFiasService
 
     void SetFiasOptions(FiasOptions? options);
 
+    void Restart();
+
     internal void RefreshCancellationToken();
 
     internal void MessageEventInvoke(object message);

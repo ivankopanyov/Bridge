@@ -36,4 +36,13 @@ public class FiasController : ControllerBase
             StackTrace = _fiasService.CurrentException?.StackTrace
         });
     }
+
+    [HttpPut("restart")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public IActionResult Restart()
+    {
+        _fiasService.Restart();
+        return Ok();
+    }
 }
+

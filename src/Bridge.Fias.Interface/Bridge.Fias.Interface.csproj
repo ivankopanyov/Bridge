@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bridge.Extensions.Options\Bridge.Extensions.Options.csproj" />
     <ProjectReference Include="..\Bridge.Fias.Entities\Bridge.Fias.Entities.csproj" />
   </ItemGroup>
 

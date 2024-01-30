@@ -1,6 +1,8 @@
-﻿global using Bridge.Fias.Entities;
+﻿global using Bridge.Extensions.Options;
+global using Bridge.Fias.Entities;
 global using Bridge.Fias.Interface;
 global using Bridge.Fias.SocketClient;
+global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Options;

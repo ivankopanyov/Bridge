@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddLogger()
-    .AddFias()
+    .AddFias(builder.Configuration)
     .AddHostedService<FiasStateHandler>()
     .AddEventBus()
     .RegisterStart<CheckInHandler, FiasGuestCheckIn, ReservationInfo>()
