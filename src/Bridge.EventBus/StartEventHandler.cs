@@ -1,14 +1,17 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-
-namespace Bridge.EventBus;
+﻿namespace Bridge.EventBus;
 
 public abstract class StartEventHandler<TIn, TOut> : EventHandlerBase<TIn, TOut> where TIn : class, new() where TOut : Message, new()
 {
     protected StartEventHandler(IEventBusService eventBusService, ILogger logger) : base(eventBusService, logger) { }
 
-    protected async Task InputDataAsync(string? queueName, TIn? @in)
+    protected async Task InputDataAsync(string? queueName, TIn @in)
     {
+        if (@in == null)
+        {
+            Logger.Critical(HandlerName, "Input data is null.");
+            return;
+        }
+
         var @event = new Event<TIn>
         {
             QueueName = queueName,

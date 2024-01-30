@@ -25,7 +25,7 @@ public static class LoggerExtensions
         var log = "Complete task!";
 
         if (@in != null)
-            log += $"\n\t-->{FixInOut(@in)}";
+            log += $"\n\t--> {FixInOut(@in)}";
 
         logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
     }
@@ -35,35 +35,45 @@ public static class LoggerExtensions
         var log = "Succesful send message!";
 
         if (@in != null)
-            log += $"\n\t-->{FixInOut(@in)}";
+            log += $"\n\t--> {FixInOut(@in)}";
 
         if (@out != null)
-            log += $"\n\t<--{FixInOut(@out)}";
+            log += $"\n\t<-- {FixInOut(@out)}";
 
         logger.Log(LogLevel.Information, log, queueName, handlerName, taskId); 
     }
 
     public static void Info(this ILogger logger, string? sericeName, string? message)
-        => logger.Log(LogLevel.Information, message, sericeName, null);
+        => logger.Log(LogLevel.Information, FixMessage(message), sericeName, null);
 
     public static void Error(this ILogger logger, string? sericeName, Exception ex)
         => logger.Log(LogLevel.Error, ex?.Message, sericeName, ex);
 
     public static void Error(this ILogger logger, string? sericeName, string? message)
-        => logger.Log(LogLevel.Error, message, sericeName, null);
+        => logger.Log(LogLevel.Error, FixMessage(message), sericeName, null);
 
     public static void Error(this ILogger logger, string? queueName, string? handlerName, string? taskId, string? @in, Exception ex)
     {
         var log = FixMessage(ex?.Message);
 
         if (@in != null)
-            log += $"\n\t-->{FixInOut(@in)}";
+            log += $"\n\t--> {FixInOut(@in)}";
 
         logger.Log(LogLevel.Error, log, queueName, handlerName, taskId, ex); 
     }
 
     public static void Critical(this ILogger logger, string? handlerName, string? message)
-        => logger.Log(LogLevel.Critical, message, handlerName: handlerName);
+        => logger.Log(LogLevel.Critical, FixMessage(message), handlerName: handlerName);
+
+    public static void Critical(this ILogger logger, string? handlerName, string? message, string? @in)
+    {
+        var log = FixMessage(message);
+
+        if (@in != null)
+            log += $"\n\t--> {FixInOut(@in)}";
+
+        logger.Log(LogLevel.Critical, log, handlerName: handlerName);
+    }
 
     public static void Critical(this ILogger logger, string? handlerName, Exception ex)
         => logger.Log(LogLevel.Critical, ex?.Message, handlerName: handlerName, ex: ex);

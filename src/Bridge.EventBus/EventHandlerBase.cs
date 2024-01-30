@@ -83,6 +83,13 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
                 return;
             }
 
+            if (@event.Message == null)
+            {
+                Logger.Critical(HandlerName, "Event message is null.");
+                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
+                return;
+            }
+
             try
             {
                 if (!await HandleProcessAsync(@event))
@@ -105,7 +112,7 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         }
     }
 
-    protected virtual string? InputLog(TIn? @in) => null;
+    protected virtual string? InputLog(TIn @in) => null;
 
     private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
 
@@ -136,7 +143,12 @@ public abstract class EventHandlerBase<TIn, TOut>(IEventBusService eventBusServi
 {
     private protected override sealed async Task<bool> HandleProcessAsync(Event<TIn> @event)
     {
-        var @out = await HandleAsync(@event.Message);
+        if (await HandleAsync(@event.Message) is not TOut @out)
+        {
+            Logger.Critical(HandlerName, "Output data is null.");
+            return false;
+        }
+
         Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
 
         try
@@ -159,7 +171,7 @@ public abstract class EventHandlerBase<TIn, TOut>(IEventBusService eventBusServi
         }
     }
 
-    protected abstract Task<TOut?> HandleAsync(TIn? @in);
+    protected abstract Task<TOut> HandleAsync(TIn @in);
 
-    protected virtual string? OutputLog(TOut? @out) => null;
+    protected virtual string? OutputLog(TOut @out) => null;
 }

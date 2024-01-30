@@ -11,7 +11,7 @@ public abstract class EventHandler<TIn> : EventHandlerBase<TIn> where TIn : Mess
         return true;
     }
 
-    protected abstract Task HandleAsync(TIn? @in);
+    protected abstract Task HandleAsync(TIn @in);
 }
 
 public abstract class EventHandler<TIn, TOut> : EventHandlerBase<TIn, TOut> where TIn : Message, new() where TOut : Message, new()
