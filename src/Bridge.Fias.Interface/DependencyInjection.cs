@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Fias.Interface;
 
-public static class FiasDependencyInjection
+public static class DependencyInjection
 {
     public static IServiceCollection AddFias(this IServiceCollection serviceCollection, IConfiguration configuration)
     {

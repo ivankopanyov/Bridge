@@ -8,10 +8,10 @@ services:
       dockerfile: src/Bridge.Fias/Dockerfile
 
   opera:
-    image: ${DOCKER_REGISTRY-}bridgeopera
+    image: ${DOCKER_REGISTRY-}opera
     build:
       context: .
-      dockerfile: Bridge.Opera/Dockerfile
+      dockerfile: src/Bridge.Opera/Dockerfile
   
   elasticsearch:
     image: elasticsearch:${ELASTIC_VERSION}

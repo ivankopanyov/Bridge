@@ -25,7 +25,7 @@ internal class EventBusService : IEventBusService
         };
     }
 
-    public async Task SendAsync<T>(string? queueName, T? message) where T : Message, new()
+    public async Task SendAsync<T>(string? queueName, T message) where T : class, new()
         => await SendAsync<T>(new()
         {
             QueueName = queueName,
@@ -35,7 +35,7 @@ internal class EventBusService : IEventBusService
 
     public Task SendAsync<T>(Event<T> @event) where T : class, new()
     {
-        var queueName = typeof(T).Name;
+        var queueName = typeof(T).AssemblyQualifiedName;
         using var connection = ConnectionFactory.CreateConnection();
         using var model = connection.CreateModel();
 

@@ -1,6 +1,6 @@
 ﻿namespace Bridge.EventBus.Messages;
 
-public class ReservationInfo : Message
+public class ReservationInfo
 {
     public string Resort { get; set; }
 

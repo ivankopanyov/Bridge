@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class CheckInHandler : StartEventHandler<FiasGuestCheckIn, ReservationInfo>
+internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
 {
     protected override string HandlerName => "CHECKIN";
 

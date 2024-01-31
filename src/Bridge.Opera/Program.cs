@@ -1,5 +1,3 @@
-using Bridge.Opera.Handlers;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<OperaDbContext>();
@@ -9,9 +7,10 @@ builder.Services
     .ConfigureWritable<OperaOptions>(builder.Configuration.GetSection(OperaOptions.SectionName));
 
 builder.Services
+    .AddHostedService<CheckOperaHandler>()
     .AddLogger()
     .AddEventBus()
-    .Register<ReservationHandler, ReservationInfo, ReservationUpdatedInfo>();
+    .Register<ReservationHandler, ReservationInfo>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

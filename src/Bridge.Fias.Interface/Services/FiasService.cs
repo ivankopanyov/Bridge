@@ -42,35 +42,25 @@ internal class FiasService : IFiasService
 
     private readonly IWritableOptions<FiasOptions> _writableFiasOptions;
 
-    private string? _hostname = null;
-
-    private int? _port = null;
-
-    private bool _isActive = false;
-
-    private Exception? _currentException = null;
-
     private CancellationTokenSource _cancellationTokenSource;
 
-    private CancellationToken _cancellationToken;
+    public string? Hostname { get; private set; }
 
-    public string? Hostname => _hostname;
+    public int? Port { get; private set; }
 
-    public int? Port => _port;
+    public bool IsActive { get; private set; }
 
-    public bool IsActive => _isActive;
+    public Exception? CurrentException { get; private set; }
 
-    public Exception? CurrentException => _currentException;
-
-    public CancellationToken CancellationToken => _cancellationToken;
+    public CancellationToken CancellationToken { get; private set; }
 
     public FiasService(IWritableOptions<FiasOptions> writableFiasOptions)
     {
         _writableFiasOptions = writableFiasOptions;
 
         var optionsValue = writableFiasOptions?.Value;
-        _hostname = optionsValue?.Host;
-        _port = optionsValue?.Port;
+        Hostname = optionsValue?.Host;
+        Port = optionsValue?.Port;
 
         RefreshCancellationToken();
     }
@@ -78,7 +68,7 @@ internal class FiasService : IFiasService
     public void RefreshCancellationToken()
     {
         _cancellationTokenSource = new CancellationTokenSource();
-        _cancellationToken = _cancellationTokenSource.Token;
+        CancellationToken = _cancellationTokenSource.Token;
     }
 
     public void Send(string message) => FiasSendMessageEvent?.Invoke(message);
@@ -153,10 +143,10 @@ internal class FiasService : IFiasService
 
     public void SetFiasOptions(FiasOptions? options)
     {
-        if (((_hostname == null && options?.Host == null)
-            || (_hostname != null && options?.Host != null && _hostname == options?.Host))
-            && ((_port == null && options?.Port == null)
-            || (_port != null && options?.Port != null && _port == options?.Port)))
+        if (((Hostname == null && options?.Host == null)
+            || (Hostname != null && options?.Host != null && Hostname == options?.Host))
+            && ((Port == null && options?.Port == null)
+            || (Port != null && options?.Port != null && Port == options?.Port)))
             return;
 
         _writableFiasOptions.Update(opt =>
@@ -165,8 +155,8 @@ internal class FiasService : IFiasService
             opt.Port = options?.Port;
         });
 
-        _hostname = options?.Host;
-        _port = options?.Port;
+        Hostname = options?.Host;
+        Port = options?.Port;
         _cancellationTokenSource.Cancel();
     }
 
@@ -174,21 +164,21 @@ internal class FiasService : IFiasService
 
     public void Active()
     {
-        if (_isActive)
+        if (IsActive)
             return;
 
-        _isActive = true;
-        _currentException = null;
+        IsActive = true;
+        CurrentException = null;
         ChangeStateEvent?.Invoke(true, null);
     }
 
     public void Unactive(Exception ex)
     {
-        if (!_isActive && _currentException != null && ex?.Message == _currentException.Message)
+        if (!IsActive && CurrentException != null && ex?.Message == CurrentException.Message)
             return;
 
-        _isActive = false;
-        _currentException = ex;
+        IsActive = false;
+        CurrentException = ex;
         ChangeStateEvent?.Invoke(false, ex);
     }
 }

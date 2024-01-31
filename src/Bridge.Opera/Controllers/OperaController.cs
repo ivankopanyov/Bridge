@@ -1,8 +1,4 @@
-﻿using Bridge.EventBus.Messages;
-using Bridge.Opera.Dto;
-using Bridge.Opera.Infrastructure;
-using Bridge.Opera.Options;
-namespace Bridge.Opera.Controllers;
+﻿namespace Bridge.Opera.Controllers;
 
 [ApiController]
 [Route("opera")]
@@ -24,10 +20,15 @@ public class OperaController : ControllerBase
     {
         return Ok(new OperaState
         {
-            ConnectionString = OperaService.ConnectionString,
             IsActive = _operaService.IsActive,
             ErrorMessagen = _operaService.CurrentException?.Message,
-            StackTrace = _operaService.CurrentException?.StackTrace
+            StackTrace = _operaService.CurrentException?.StackTrace,
+            Options = new OperaOptions
+            {
+                ConnectionString = OperaService.ConnectionString,
+                TrxCodes = _operaService.TrxCodes?.ToHashSet(),
+                DocumentTypeAliases = _operaService.DocumentTypeAliases?.ToDictionary()
+            }
         });
     }
 
@@ -49,14 +50,20 @@ public class OperaController : ControllerBase
 
         return Ok(new OperaState
         {
-            ConnectionString = OperaService.ConnectionString,
             IsActive = _operaService.IsActive,
             ErrorMessagen = _operaService.CurrentException?.Message,
-            StackTrace = _operaService.CurrentException?.StackTrace
+            StackTrace = _operaService.CurrentException?.StackTrace,
+            Options = new OperaOptions
+            {
+                ConnectionString = OperaService.ConnectionString,
+                TrxCodes = _operaService.TrxCodes?.ToHashSet(),
+                DocumentTypeAliases = _operaService.DocumentTypeAliases?.ToDictionary()
+            }
         });
     }
 
     [HttpGet("check")]
+    [ProducesResponseType(typeof(OperaState), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<OperaState>> CheckAsync()
     {
         try
@@ -71,10 +78,15 @@ public class OperaController : ControllerBase
 
         return Ok(new OperaState
         {
-            ConnectionString = OperaService.ConnectionString,
             IsActive = _operaService.IsActive,
             ErrorMessagen = _operaService.CurrentException?.Message,
-            StackTrace = _operaService.CurrentException?.StackTrace
+            StackTrace = _operaService.CurrentException?.StackTrace,
+            Options = new OperaOptions
+            {
+                ConnectionString = OperaService.ConnectionString,
+                TrxCodes = _operaService.TrxCodes?.ToHashSet(),
+                DocumentTypeAliases = _operaService.DocumentTypeAliases?.ToDictionary()
+            }
         });
     }
 }

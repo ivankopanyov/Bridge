@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Fias", "src\Bridge.F
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81EA9C18-421C-42DC-8692-19D28C33E381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Extensions.Options", "src\Bridge.Extensions.Options\Bridge.Extensions.Options.csproj", "{CDED05F6-A853-48A0-868B-4270F1AD67D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Extensions.Options", "src\Bridge.Extensions.Options\Bridge.Extensions.Options.csproj", "{CDED05F6-A853-48A0-868B-4270F1AD67D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Opera", "Bridge.Opera\Bridge.Opera.csproj", "{AECCA062-809F-4DCA-82D1-B113FCC96968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Opera", "src\Bridge.Opera\Bridge.Opera.csproj", "{AECCA062-809F-4DCA-82D1-B113FCC96968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.EventBus.Messages", "src\Bridge.EventBus.Messages\Bridge.EventBus.Messages.csproj", "{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{AECCA062-809F-4DCA-82D1-B113FCC96968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AECCA062-809F-4DCA-82D1-B113FCC96968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AECCA062-809F-4DCA-82D1-B113FCC96968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{C3A90460-F88F-4021-9862-5CEFC67A49CB} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 		{CDED05F6-A853-48A0-868B-4270F1AD67D3} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 		{AECCA062-809F-4DCA-82D1-B113FCC96968} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
+		{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA} = {63F0321D-66AD-42E6-99F6-A2FA317D468D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {068F8188-C4D1-4990-9C43-BD00F62D36EE}

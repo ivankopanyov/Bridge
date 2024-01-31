@@ -5,9 +5,9 @@ builder.Services
     .AddFias(builder.Configuration)
     .AddHostedService<FiasStateHandler>()
     .AddEventBus()
-    .RegisterStart<CheckInHandler, FiasGuestCheckIn, ReservationInfo>()
-    .RegisterStart<CheckOutHandler, FiasGuestCheckOut, ReservationInfo>()
-    .RegisterStart<ChangeHandler, FiasGuestChange, ReservationInfo>();
+    .Register<CheckInHandler, FiasGuestCheckIn>()
+    .Register<CheckOutHandler, FiasGuestCheckOut>()
+    .Register<ChangeHandler, FiasGuestChange>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class ChangeHandler : StartEventHandler<FiasGuestChange, ReservationInfo>
+internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
 {
     protected override string HandlerName => "CHANGE";
 

@@ -15,11 +15,14 @@ public class FiasController : ControllerBase
     [ProducesResponseType(typeof(FiasState), (int)HttpStatusCode.OK)]
     public ActionResult<FiasState> GetState() => Ok(new FiasState()
     {
-        Host = _fiasService.Hostname,
-        Port = _fiasService.Port,
         IsActive = _fiasService.IsActive,
         ErrorMessage = _fiasService.CurrentException?.Message,
-        StackTrace = _fiasService.CurrentException?.StackTrace
+        StackTrace = _fiasService.CurrentException?.StackTrace,
+        Options = new Interface.FiasOptions
+        {
+            Host = _fiasService.Hostname,
+            Port = _fiasService.Port
+        }
     });
 
     [HttpPut("state")]
@@ -29,11 +32,14 @@ public class FiasController : ControllerBase
         _fiasService.SetFiasOptions(fiasOptions);
         return Ok(new FiasState()
         {
-            Host = _fiasService.Hostname,
-            Port = _fiasService.Port,
             IsActive = _fiasService.IsActive,
             ErrorMessage = _fiasService.CurrentException?.Message,
-            StackTrace = _fiasService.CurrentException?.StackTrace
+            StackTrace = _fiasService.CurrentException?.StackTrace,
+            Options = new Interface.FiasOptions
+            {
+                Host = _fiasService.Hostname,
+                Port = _fiasService.Port
+            }
         });
     }
 

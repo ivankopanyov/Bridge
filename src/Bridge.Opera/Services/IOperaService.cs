@@ -10,6 +10,10 @@ public interface IOperaService
 
     Exception? CurrentException { get; }
 
+    IReadOnlySet<string>? TrxCodes { get; }
+
+    IReadOnlyDictionary<string, string>? DocumentTypeAliases { get; }
+
     void SetOperaOptions(OperaOptions? options);
     
     void Active();

@@ -1,19 +1,16 @@
 ﻿namespace Bridge.Opera.Handlers;
 
-public class ReservationHandler : EventHandler<ReservationInfo, ReservationUpdatedInfo>
+public class ReservationHandler : EventHandler<ReservationInfo, ReservationUpdatedMessage>
 {
     private const string NAME_DATA_QUERY = "select hrs_dev.hrs_sh_sens.dob(n.name_id) as BIRTHDAY, " +
         "hrs_dev.hrs_sh_sens.pass_id(n.name_id) as PASS_ID from opera.name n where rownum <= 1 and n.name_id = {0}";
 
-    private static readonly string[] _trxCodes = ["4324"];
-
-    private static readonly IReadOnlyDictionary<string, string> _sexAliases =
-        new Dictionary<string, string>() { { "1", "M" }, { "2", "F" } };
-
-    private static readonly IReadOnlyDictionary<string, string> _documentTypeAliases =
-        new Dictionary<string, string>() { { "PASSPORT", "103008" } };
+    private static readonly IReadOnlyDictionary<string, string> _sexAliases = new Dictionary<string, string>()
+            { { "1", "M" }, { "2", "F" } };
 
     private readonly IOperaService _operaService;
+
+    protected override string HandlerName => "OPERA_DB";
 
     public ReservationHandler(IOperaService operaService, IEventBusService eventBusService,
         ILogger<ReservationHandler> logger) : base(eventBusService, logger)
@@ -21,12 +18,13 @@ public class ReservationHandler : EventHandler<ReservationInfo, ReservationUpdat
         _operaService = operaService;
     }
 
-    protected override async Task<ReservationUpdatedInfo> HandleAsync(ReservationInfo @in)
+    protected override async Task<ReservationUpdatedMessage> HandleAsync(ReservationInfo @in)
     {
-        using var context = new OperaDbContext();
-
         try
         {
+            using var context = new OperaDbContext();
+            var trxCodes = _operaService.TrxCodes;
+
             var reservationResponse = await (from rn in context.ReservationNames
                                              from n in context.Names
                                              where rn.Resort == @in.Resort && rn.ResvNameId == @in.Id && n.NameId == rn.NameId
@@ -77,7 +75,7 @@ public class ReservationHandler : EventHandler<ReservationInfo, ReservationUpdat
                                                                               where rp.Resort == rden.Resort && rp.ResvNameId == rden.ResvNameId &&
                                                                                   rpp.Resort == rp.Resort && rpp.ReservationDate == rden.ReservationDate &&
                                                                                   rpp.ReservationProductId == rp.ReservationProductId && ppr.Resort == rpp.Resort &&
-                                                                                  ppr.Product == rp.ProductId && (_trxCodes == null || _trxCodes.Length == 0 || _trxCodes.Contains(ppr.TrxCode))
+                                                                                  ppr.Product == rp.ProductId && (trxCodes == null || trxCodes.Count == 0 || trxCodes.Contains(ppr.TrxCode))
                                                                               select new
                                                                               {
                                                                                   Code = rp.ProductId,

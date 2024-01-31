@@ -1,6 +1,4 @@
-﻿using RabbitMQ.Client;
-
-namespace Bridge.EventBus;
+﻿namespace Bridge.EventBus;
 
 public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : class, new()
 {
@@ -30,7 +28,7 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         _model?.Dispose();
         _connection?.Dispose();
 
-        var queueName = typeof(TIn).Name;
+        var queueName = typeof(TIn).AssemblyQualifiedName;
         var connect = false;
         while (!connect)
             await Task.Run(async () =>
@@ -114,6 +112,49 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
 
     protected virtual string? InputLog(TIn @in) => null;
 
+    protected async Task InputDataAsync(string? queueName, TIn @in)
+    {
+        if (@in == null)
+        {
+            Logger.Critical(HandlerName, "Input data is null.");
+            return;
+        }
+
+        var @event = new Event<TIn>
+        {
+            QueueName = queueName,
+            TaskId = Guid.NewGuid().ToString(),
+            Message = @in
+        };
+
+        try
+        {
+            await HandleProcessAsync(@event);
+        }
+        catch (Exception ex)
+        {
+            Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
+            await TrySendAsync(async () => await EventBusService.SendAsync(@event));
+        }
+    }
+
+    private async Task TrySendAsync(Action action)
+    {
+        try
+        {
+            action.Invoke();
+        }
+        catch (Exception ex)
+        {
+            EventBusService.Unactive(ex);
+            await Task.Run(async () =>
+            {
+                await ConnectAsync();
+                await TrySendAsync(action);
+            }).ConfigureAwait(false);
+        }
+    }
+
     private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
 
     private async Task TryBasicAnswerAsync(Action action)
@@ -138,40 +179,3 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
     }
 }
 
-public abstract class EventHandlerBase<TIn, TOut>(IEventBusService eventBusService, ILogger logger)
-    : EventHandlerBase<TIn>(eventBusService, logger) where TIn : class, new() where TOut : Message, new()
-{
-    private protected override sealed async Task<bool> HandleProcessAsync(Event<TIn> @event)
-    {
-        if (await HandleAsync(@event.Message) is not TOut @out)
-        {
-            Logger.Critical(HandlerName, "Output data is null.");
-            return false;
-        }
-
-        Logger.Successful(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), OutputLog(@out));
-
-        try
-        {
-            await EventBusService.SendAsync(new Event<TOut>
-            {
-                QueueName = @event.QueueName,
-                TaskId = @event.TaskId,
-                Message = @out
-            });
-
-            EventBusService.Active();
-            return true;
-        }
-        catch (Exception ex) 
-        {
-            EventBusService.Unactive(ex);
-            await Task.Run(ConnectAsync);
-            return false;
-        }
-    }
-
-    protected abstract Task<TOut> HandleAsync(TIn @in);
-
-    protected virtual string? OutputLog(TOut @out) => null;
-}

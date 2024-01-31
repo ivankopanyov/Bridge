@@ -12,7 +12,7 @@ public interface IEventBusService
 
     event ChangeStateServiceBusHandle? ChangeStateEvent;
 
-    Task SendAsync<T>(string? queuName, T? message) where T : Message, new();
+    Task SendAsync<T>(string? queuName, T message) where T : class, new();
 
     internal Task SendAsync<T>(Event<T> @event) where T : class, new();
 

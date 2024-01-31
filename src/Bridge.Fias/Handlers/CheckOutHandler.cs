@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class CheckOutHandler : StartEventHandler<FiasGuestCheckOut, ReservationInfo>
+internal class CheckOutHandler : EventHandler<FiasGuestCheckOut, ReservationInfo>
 {
     protected override string HandlerName => "CHECKOUT";
 
