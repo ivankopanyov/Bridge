@@ -25,6 +25,18 @@ services:
       - network
     depends_on:
       - rabbitmq
+
+  sanatorium:
+    container_name: sanatorium
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "5002:8080"
+    networks:
+      - network
+    depends_on:
+      - rabbitmq
   
   elasticsearch:
     container_name: elasticsearch
@@ -62,4 +74,3 @@ networks:
 
 volumes:
     elasticsearch:
-

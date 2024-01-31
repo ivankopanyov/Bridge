@@ -12,6 +12,12 @@ services:
     build:
       context: .
       dockerfile: src/Bridge.Opera/Dockerfile
+
+  sanatorium:
+    image: ${DOCKER_REGISTRY-}sanatorium
+    build:
+      context: .
+      dockerfile: src/Bridge.Sanatorium/Dockerfile
   
   elasticsearch:
     image: elasticsearch:${ELASTIC_VERSION}
