@@ -1,0 +1,76 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/Empty.proto";
+ 
+option csharp_namespace = "Bridge.Services.Control";
+ 
+package services;
+
+message ServiceState {
+	bool isActive = 1;
+	optional string error = 2;
+	optional string stackTrace = 3;
+}
+
+enum ServicePropertyType {
+	string = 0;
+	int = 1;
+}
+
+message ServiceProperty {
+	string name = 1;
+	string value = 2;
+	ServicePropertyType type = 3;
+}
+
+message RepeatedServiceProperty {
+	string name = 1;
+	repeated string value = 2;
+}
+
+message MapServiceProperty {
+	string name = 1;
+	map<string, string> value = 2;
+}
+
+message ServiceOptions {
+	repeated ServiceProperty properties = 1;
+	repeated RepeatedServiceProperty repeatedProperties = 2;
+	repeated MapServiceProperty mapProperties = 3;
+}
+
+message ServiceInfo {
+	string name = 1;
+	bool useRestart = 2;
+	ServiceState state = 3;
+	optional ServiceOptions options = 4;
+}
+
+message Service {
+	string host = 1;
+	ServiceInfo service = 2;
+}
+
+message Services {
+	string host = 1;
+	repeated ServiceInfo services = 2;
+}
+
+message SetOptionsRequest {
+	string serviceName = 1;
+	ServiceOptions options = 2;
+}
+
+message Response {
+	bool ok = 1;
+	optional string message = 2;
+}
+
+service ServiceControl {
+	rpc GetServices (google.protobuf.Empty) returns (Services);
+	rpc SetOptions (SetOptionsRequest) returns (Response);
+}
+
+service ServiceHost {
+	rpc SetServices (Services) returns (google.protobuf.Empty);
+}
