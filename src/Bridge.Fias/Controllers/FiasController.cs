@@ -4,50 +4,21 @@
 [Route("fias")]
 public class FiasController : ControllerBase
 {
-    private readonly IFiasService _fiasService;
+    private readonly FiasServiceNode _fiasService;
 
-    public FiasController(IFiasService fiasService)
+    public FiasController(FiasServiceNode fiasService)
     {
         _fiasService = fiasService;
     }
 
-    [HttpGet("state")]
-    [ProducesResponseType(typeof(FiasState), (int)HttpStatusCode.OK)]
-    public ActionResult<FiasState> GetState() => Ok(new FiasState()
-    {
-        IsActive = _fiasService.IsActive,
-        ErrorMessage = _fiasService.CurrentException?.Message,
-        StackTrace = _fiasService.CurrentException?.StackTrace,
-        Options = new Interface.FiasOptions
-        {
-            Host = _fiasService.Hostname,
-            Port = _fiasService.Port
-        }
-    });
-
     [HttpPut("state")]
-    [ProducesResponseType(typeof(FiasState), (int)HttpStatusCode.OK)]
-    public ActionResult<FiasState> UpdateState(Interface.FiasOptions? fiasOptions)
+    public async Task<IActionResult> SetOptionsAsync([FromBody] FiasServiceOptions options)
     {
-        _fiasService.SetFiasOptions(fiasOptions);
-        return Ok(new FiasState()
+        await _fiasService.SetOptionsAsync(new FiasServiceOptions
         {
-            IsActive = _fiasService.IsActive,
-            ErrorMessage = _fiasService.CurrentException?.Message,
-            StackTrace = _fiasService.CurrentException?.StackTrace,
-            Options = new Interface.FiasOptions
-            {
-                Host = _fiasService.Hostname,
-                Port = _fiasService.Port
-            }
+            Host = options.Host,
+            Port = options.Port
         });
-    }
-
-    [HttpPut("restart")]
-    [ProducesResponseType((int)HttpStatusCode.OK)]
-    public IActionResult Restart()
-    {
-        _fiasService.Restart();
         return Ok();
     }
 }

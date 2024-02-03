@@ -18,11 +18,10 @@ internal class ServiceHostClient : IServiceHostClient
 
     private Exception? _ex;
 
-    public ServiceHostClient(IOptions<ServiceHostClientOptions> options, ILogger<ServiceHostClient> logger)
+    public ServiceHostClient(ServiceHostClientOptions options, ILogger<ServiceHostClient> logger)
     {
-        var optionsValue = options.Value;
-        _host = optionsValue.Host;
-        _serviceHost = optionsValue.ServiceHost;
+        _host = options.Host;
+        _serviceHost = options.ServiceHost;
         _logger = logger;
         _services = [];
         _tokenSource = new();

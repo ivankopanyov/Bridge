@@ -14,6 +14,6 @@ global using Bridge.Opera.Services;
 global using Logus.HMS.Messages.Booking;
 global using Logus.HMS.Messages.Shared;
 global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Server.Kestrel.Core;
 global using Microsoft.EntityFrameworkCore;
 global using System.Net;
-

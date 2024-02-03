@@ -36,17 +36,26 @@ public abstract class ServiceNode(IServiceHostClient serviceHostClient, ServiceN
         await ServiceHostClient.SetServiceAsync(this);
     }
 
-    public virtual ServiceInfo ToServiceInfo() => new()
+    public virtual ServiceInfo ToServiceInfo()
     {
-        Name = Name,
-        UseRestart = _useRestart,
-        State = new ServiceState
+        var serviceInfo = new ServiceInfo()
         {
-            IsActive = IsActive,
-            Error = CurrentException?.Message,
-            StackTrace = CurrentException?.StackTrace
-        }
-    };
+            Name = Name,
+            UseRestart = _useRestart,
+            State = new ServiceState
+            {
+                IsActive = IsActive
+            }
+        };
+
+        if (CurrentException?.Message is string error)
+            serviceInfo.State.Error = error;
+
+        if (CurrentException?.StackTrace is string stackTrace)
+            serviceInfo.State.StackTrace = stackTrace;
+
+        return serviceInfo;
+    }
 
     public override int GetHashCode() => Name.GetHashCode();
 
@@ -56,16 +65,11 @@ public abstract class ServiceNode(IServiceHostClient serviceHostClient, ServiceN
 public abstract class ServiceNode<T>(IServiceHostClient serviceHostClient, ServiceNodeOptions options, ILogger logger) 
     : ServiceNode(serviceHostClient, options, logger) where T : Options, new()
 {
-    private T _options = DefaultOptions;
+    public T? Options { get; protected set; }
 
-    private static T DefaultOptions => (T)Activator.CreateInstance(typeof(T))!;
-
-    public T Options => _options;
-
-    public virtual async Task SetOptionsAsync(T options, Action? action = null)
+    public virtual async Task SetOptionsAsync(T? options)
     {
-        _options = options ?? DefaultOptions;
-        action?.Invoke();
+        Options = options;
 
         try
         {
@@ -80,7 +84,10 @@ public abstract class ServiceNode<T>(IServiceHostClient serviceHostClient, Servi
     public override ServiceInfo ToServiceInfo()
     {
         var serviceInfo = base.ToServiceInfo();
-        serviceInfo.Options = Options.ToServiceOptions();
+
+        if (Options?.ToServiceOptions() is ServiceOptions options)
+            serviceInfo.Options = options;
+
         return serviceInfo;
     }
 }

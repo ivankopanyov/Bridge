@@ -17,7 +17,7 @@ internal class ServiceRegistrator(IServiceCollection services) : IServiceRegistr
             throw new ArgumentException("Service name is null or withespace.", nameof(options.Name));
 
         if (_serviceNames.Contains(options.Name))
-            throw new ArgumentException($"service named {options.Name} has already been registered.", nameof(options.Name));
+            throw new ArgumentException($"Service named {options.Name} has already been registered.", nameof(options.Name));
 
         _services.AddSingleton(options);
         _services.AddSingleton<T>();
