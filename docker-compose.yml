@@ -18,6 +18,12 @@ services:
     build:
       context: .
       dockerfile: src/Bridge.Sanatorium/Dockerfile
+
+  hostapi:
+    image: ${DOCKER_REGISTRY-}hostapi
+    build:
+      context: .
+      dockerfile: src/Bridge.HostApi/Dockerfile
   
   elasticsearch:
     image: elasticsearch:${ELASTIC_VERSION}

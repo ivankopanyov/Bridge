@@ -6,7 +6,8 @@
       "serviceActions": {
         "bridge.opera": "StartDebugging",
         "fias": "StartDebugging",
-        "bridge.sanatorium": "StartDebugging"
+        "bridge.sanatorium": "StartDebugging",
+        "bridge.hostapi": "StartDebugging"
       }
     }
   }
