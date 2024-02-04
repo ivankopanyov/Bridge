@@ -20,7 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Bridge.EventBus.Messages\Bridge.EventBus.Messages.csproj" />
     <ProjectReference Include="..\Bridge.EventBus\Bridge.EventBus.csproj" />
-    <ProjectReference Include="..\Bridge.Extensions.Options\Bridge.Extensions.Options.csproj" />
     <ProjectReference Include="..\Bridge.Logger\Bridge.Logger.csproj" />
     <ProjectReference Include="..\Bridge.Opera.Domain.Entities.Tables\Bridge.Opera.Domain.Entities.Tables.csproj" />
     <ProjectReference Include="..\Bridge.Opera.Domain\Bridge.Opera.Domain.csproj" />

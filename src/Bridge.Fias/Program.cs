@@ -6,21 +6,15 @@ var http1Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP1_PORT"), o
 var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), out int http2)
     && http2 >= IPEndPoint.MinPort && http1 <= IPEndPoint.MaxPort ? http2 : 8080;
 
-builder.WebHost.ConfigureKestrel(options => {
-    options.Listen(IPAddress.Any, http1Port, listenOptions =>
-    {
-        listenOptions.Protocols = HttpProtocols.Http1;
-    });
-
-    options.Listen(IPAddress.Any, http2Port, listenOptions =>
-    {
-        listenOptions.Protocols = HttpProtocols.Http2;
-    });
+builder.WebHost.ConfigureKestrel(options => 
+{
+    options.Listen(IPAddress.Any, http1Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http1);
+    options.Listen(IPAddress.Any, http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
 });
 
 builder.Services
     .AddLogger()
-    .AddFias(builder.Configuration)
+    .AddFias()
     .AddHostedService<FiasStateHandler>();
 
 builder.Services.AddEventBus()

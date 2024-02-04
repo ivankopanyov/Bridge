@@ -1,6 +1,5 @@
 ﻿global using Bridge.EventBus;
 global using Bridge.EventBus.Messages;
-global using Bridge.Extensions.Options;
 global using Bridge.Logger;
 global using Bridge.Opera;
 global using Bridge.Opera.Domain;

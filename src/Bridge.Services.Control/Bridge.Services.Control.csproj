@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bridge.Extensions.Logging\Bridge.Extensions.Logging.csproj" />
-    <ProjectReference Include="..\Bridge.Extensions.Options\Bridge.Extensions.Options.csproj" />
   </ItemGroup>
 
 </Project>

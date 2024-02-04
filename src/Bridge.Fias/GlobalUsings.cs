@@ -1,7 +1,6 @@
 ﻿global using Bridge.EventBus;
 global using Bridge.EventBus.Messages;
 global using Bridge.Extensions.Logging;
-global using Bridge.Fias.Dto;
 global using Bridge.Fias.Options;
 global using Bridge.Logger;
 global using Bridge.Fias.Entities;

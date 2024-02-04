@@ -22,9 +22,6 @@ builder.Services.AddDbContext<OperaDbContext>();
 builder.Services.AddSingleton<IOperaService, OperaService>();
 
 builder.Services
-    .ConfigureWritable<OperaOptions>(builder.Configuration.GetSection(OperaOptions.SectionName));
-
-builder.Services
     .AddHostedService<CheckOperaHandler>()
     .AddLogger()
     .AddEventBus()

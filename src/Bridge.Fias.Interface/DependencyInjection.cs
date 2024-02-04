@@ -2,9 +2,8 @@
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddFias(this IServiceCollection serviceCollection, IConfiguration configuration)
+    public static IServiceCollection AddFias(this IServiceCollection serviceCollection)
     {
-        serviceCollection.ConfigureWritable<FiasOptions>(configuration.GetSection(FiasOptions.SectionName));
         serviceCollection.AddSingleton<IFiasService, FiasService>();
         serviceCollection.AddHostedService<FiasSocketClient>();
 
