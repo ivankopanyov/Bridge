@@ -4,5 +4,5 @@ public interface IServiceControlClient
 {
     Task<IEnumerable<ServiceInfo>> GetServicesAsync(string host);
 
-    Task<string?> SetOptionsAsync(string host, string serviceName, ServiceOptions options);
+    Task<OptionsResponse> SetOptionsAsync(string host, SetOptionsRequest request);
 }

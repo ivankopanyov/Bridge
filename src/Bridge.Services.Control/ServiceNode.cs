@@ -1,92 +1,222 @@
 ﻿namespace Bridge.Services.Control;
 
-public abstract class ServiceNode(IServiceHostClient serviceHostClient, ServiceNodeOptions options, ILogger logger)
+public abstract class ServiceNode : BackgroundService
 {
-    private readonly bool _useRestart = options.UseRestart;
+    private protected readonly string _host;
 
-    protected string Name { get; init; } = options.Name;
+    private protected readonly string _name;
 
-    protected IServiceHostClient ServiceHostClient { get; init; } = serviceHostClient;
+    private readonly bool _useRestart;
 
-    protected ILogger Logger { get; init; } = logger;
+    private protected readonly ServiceHost.ServiceHostClient _serviceHostClient;
 
-    protected bool IsActive { get; private set; }
+    private protected readonly ILogger _logger;
 
-    protected Exception? CurrentException { get; private set; }
+    private CancellationTokenSource _cancellationTokenSource;
+
+    private CancellationToken _cancellationToken;
+
+    private Exception? _ex;
+
+    private bool _isActive;
+
+    private Exception? _currentException;
+
+    public ServiceNode(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options, ILogger logger)
+    {
+        _host = options.Host;
+        _name = options.Name;
+        _useRestart = options.UseRestart;
+        _serviceHostClient = serviceHostClient;
+        _logger = logger;
+        _cancellationTokenSource = new CancellationTokenSource();
+        _cancellationToken = _cancellationTokenSource.Token;
+        eventService.GetServicesEvent += () => ToServiceInfo();
+    }
 
     public async Task ActiveAsync()
     {
-        if (IsActive)
+        if (_isActive)
             return;
 
-        IsActive = true;
-        CurrentException = null; 
-        await ServiceHostClient.SetServiceAsync(this);
+        _isActive = true;
+        _currentException = null; 
+        await ChangeStateAsync();
     }
 
     public async Task UnactiveAsync(Exception? ex = null)
     {
-        if (!IsActive && ((ex == null && CurrentException == null)
-            || (ex != null && CurrentException != null && ex.Message == CurrentException.Message
-            && ex.StackTrace == CurrentException.StackTrace)))
+        if (!_isActive && ((ex == null && _currentException == null)
+            || (ex != null && _currentException != null && ex.Message == _currentException.Message
+            && ex.StackTrace == _currentException.StackTrace)))
             return;
 
-        IsActive = false;
-        CurrentException = ex; 
-        await ServiceHostClient.SetServiceAsync(this);
+        _isActive = false;
+        _currentException = ex; 
+        await ChangeStateAsync();
     }
 
-    public virtual ServiceInfo ToServiceInfo()
+    private protected virtual ServiceInfo ToServiceInfo()
     {
         var serviceInfo = new ServiceInfo()
         {
-            Name = Name,
+            Name = _name,
             UseRestart = _useRestart,
             State = new ServiceState
             {
-                IsActive = IsActive
+                IsActive = _isActive
             }
         };
 
-        if (CurrentException?.Message is string error)
+        if (_currentException?.Message is string error)
             serviceInfo.State.Error = error;
 
-        if (CurrentException?.StackTrace is string stackTrace)
+        if (_currentException?.StackTrace is string stackTrace)
             serviceInfo.State.StackTrace = stackTrace;
 
         return serviceInfo;
     }
 
-    public override int GetHashCode() => Name.GetHashCode();
+    public override int GetHashCode() => _name.GetHashCode();
 
-    public override bool Equals(object? obj) => obj is ServiceNode other && Name == other.Name;
-}
+    public override bool Equals(object? obj) => obj is ServiceNode other && _name == other._name;
 
-public abstract class ServiceNode<T>(IServiceHostClient serviceHostClient, ServiceNodeOptions options, ILogger logger) 
-    : ServiceNode(serviceHostClient, options, logger) where T : Options, new()
-{
-    public T? Options { get; protected set; }
-
-    public virtual async Task SetOptionsAsync(T? options)
+    private async Task ChangeStateAsync()
     {
-        Options = options;
+        _cancellationTokenSource.Cancel();
+        _cancellationTokenSource = new CancellationTokenSource();
+        _cancellationToken = _cancellationTokenSource.Token;
 
         try
         {
-            await ServiceHostClient.SetServiceAsync(this);
+            await SendServiceAsync(new Service
+            {
+                Host = _host,
+                Service_ = ToServiceInfo()
+            }, _cancellationToken);
+        }
+        catch (OperationCanceledException ex)
+        {
+            _logger.Info(_name, ex.Message);
         }
         catch (Exception ex)
         {
-            Logger.Error(Name, ex);
+            _logger.Error(_name, ex);
         }
     }
 
-    public override ServiceInfo ToServiceInfo()
+    private async Task SendServiceAsync(Service service, CancellationToken cancellationToken) => await Task.Run(async () =>
+    {
+        try
+        {
+            await _serviceHostClient.SetServiceAsync(service);
+            _ex = null;
+        }
+        catch (Exception ex)
+        {
+            if (_ex == null || _ex.Message != ex.Message || _ex.StackTrace != ex.StackTrace)
+            {
+                _ex = ex;
+                _logger.Error(_name, ex);
+            }
+
+            await Task.Delay(1000);
+            await SendServiceAsync(service, cancellationToken);
+        }
+    }, cancellationToken).ConfigureAwait(false);
+}
+
+public abstract class ServiceNode<T> : ServiceNode where T : class, new()
+{
+    public T? Options { get; protected set; }
+
+    public ServiceNode(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options,
+        ILogger logger) : base(serviceHostClient, eventService, options, logger)
+    {
+        eventService.SetOptionsEvent += (serviceName, serviceOptions) =>
+        {
+            if (serviceName != _name)
+                return null;
+
+            var newServiceOptions = new ServiceOptions();
+
+            try 
+            {
+                Options = serviceOptions != null && JsonConvert.DeserializeObject<T>(serviceOptions) is T newOptions
+                    ? newOptions : null;
+            }
+            catch (Exception ex)
+            {
+                Options = null;
+                _logger.Error(_name, ex);
+            }
+
+            SetOptionsHandle();
+            return newServiceOptions;
+        };
+    }
+
+    protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        await GetOptionsAsync(new Service
+        {
+            Host = _host,
+            Service_ = ToServiceInfo()
+        });
+    }
+
+    private async Task GetOptionsAsync(Service service, Exception? currentExeption = null) => await Task.Run(async () =>
+    {
+        try
+        {
+            var options = await _serviceHostClient.GetOptionsAsync(service);
+
+            if (options?.Options?.Options == null)
+                Options = null;
+            else
+                try
+                {
+                    Options = JsonConvert.DeserializeObject<T>(options.Options.Options);
+                }
+                catch (Exception ex)
+                {
+                    _logger.Error(_name, ex);
+                    Options = null;
+                }
+        }
+        catch (Exception ex)
+        {
+            if (currentExeption == null || currentExeption.Message != ex.Message || currentExeption.StackTrace != ex.StackTrace)
+            {
+                currentExeption = ex;
+                _logger.Error(_name, ex);
+            }
+
+            await Task.Delay(1000);
+            await GetOptionsAsync(service, currentExeption);
+        }
+    }).ConfigureAwait(false);
+
+    protected virtual void SetOptionsHandle() { }
+
+    private protected override ServiceInfo ToServiceInfo()
     {
         var serviceInfo = base.ToServiceInfo();
+        serviceInfo.Options = new ServiceOptions();
 
-        if (Options?.ToServiceOptions() is ServiceOptions options)
-            serviceInfo.Options = options;
+        if (Options == null)
+            return serviceInfo;
+
+        try
+        {
+            var result = JsonConvert.SerializeObject(Options);
+            if (result != null)
+                serviceInfo.Options.Options = result;
+        }
+        catch (Exception ex)
+        {
+            _logger.Error(_name, ex);
+        }
 
         return serviceInfo;
     }

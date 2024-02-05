@@ -2,20 +2,36 @@
 
 public static class DependencyInjection
 {
-    public static IServiceRegistrator AddServiceHostClinet(this IServiceCollection services, Action<ServiceHostClientOptions> action)
+    public static IServiceRegistrator AddServiceControl(this IServiceCollection services, Action<ServiceControlOptions> action)
     {
-        ArgumentNullException.ThrowIfNull(action);
-
-        var options = new ServiceHostClientOptions();
+        var options = new ServiceControlOptions();
         action.Invoke(options);
         services.AddSingleton(options);
-        services.AddSingleton<IServiceHostClient, ServiceHostClient>();
-        return new ServiceRegistrator(services);
+        services.AddSingleton<IEventService, EventService>();
+        services.AddGrpc();
+        services.AddGrpcClient<ServiceHost.ServiceHostClient>(opt => opt.Address = new Uri(options.ServiceHost));
+        return new ServiceRegistrator(services, options.Host);
     }
 
-    public static IServiceCollection AddServiceControlClient(this IServiceCollection services)
+    public static WebApplication MapServiceControl(this WebApplication webApplication)
     {
+        webApplication.MapGrpcService<ServiceController>();
+        return webApplication;
+    }
+
+    public static IServiceCollection AddServiceHost(this IServiceCollection services, Action<ServiceHostOptions> action)
+    {
+        var options = new ServiceHostOptions();
+        action.Invoke(options);
+        services.AddSingleton(options);
+        services.AddGrpc();
         services.AddSingleton<IServiceControlClient, ServiceControlClient>();
         return services;
+    }
+
+    public static WebApplication MapServiceHost<TService>(this WebApplication webApplication) where TService : ServiceHost.ServiceHostBase
+    {
+        webApplication.MapGrpcService<TService>();
+        return webApplication;
     }
 }

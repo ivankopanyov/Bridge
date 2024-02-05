@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Services.Control;
 
-public class ServiceHostClientOptions
+public class ServiceControlOptions
 {
     public string Host { get; set; }
 

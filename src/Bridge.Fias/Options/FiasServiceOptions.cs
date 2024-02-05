@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Fias.Options;
 
-public class FiasServiceOptions : Bridge.Services.Control.Options
+public class FiasServiceOptions
 {
     public string? Host { get; set; }
 

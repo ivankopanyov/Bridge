@@ -2,5 +2,5 @@
 
 public interface IServiceRegistrator
 {
-    IServiceRegistrator Register<T>(Action<ServiceNodeOptions<T>> action) where T : ServiceNode;
+    IServiceRegistrator Register<T>(Action<ServiceNodeOptions> action) where T : ServiceNode;
 }

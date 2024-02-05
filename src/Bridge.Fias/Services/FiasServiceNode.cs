@@ -4,8 +4,8 @@ public class FiasServiceNode : ServiceNode<FiasServiceOptions>
 {
     private readonly IFiasService _fiasService;
 
-    public FiasServiceNode(IFiasService fiasService, IServiceHostClient serviceHostClient,
-        ServiceNodeOptions<FiasServiceNode> options, ILogger<FiasServiceNode> logger) : base(serviceHostClient, options, logger)
+    public FiasServiceNode(IFiasService fiasService, ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService,
+        ServiceNodeOptions<FiasServiceNode> options, ILogger<FiasServiceNode> logger) : base(serviceHostClient, eventService, options, logger)
     {
         _fiasService = fiasService;
         _fiasService.ChangeStateEvent += async (isActive, ex) =>
@@ -23,13 +23,9 @@ public class FiasServiceNode : ServiceNode<FiasServiceOptions>
         };
     }
 
-    public override async Task SetOptionsAsync(FiasServiceOptions? options)
+    protected override void SetOptionsHandle() => _fiasService.SetFiasOptions(new Interface.FiasOptions
     {
-        await base.SetOptionsAsync(options);
-        _fiasService.SetFiasOptions(new Interface.FiasOptions
-        {
-            Host = options?.Host,
-            Port = options?.Port
-        });
-    }
+        Host = Options?.Host,
+        Port = Options?.Port
+    });
 }
