@@ -138,8 +138,6 @@ public abstract class ServiceNode<T> : ServiceNode where T : class, new()
             if (serviceName != _name)
                 return null;
 
-            var newServiceOptions = new ServiceOptions();
-
             try 
             {
                 Options = serviceOptions != null && JsonConvert.DeserializeObject<T>(serviceOptions) is T newOptions
@@ -152,7 +150,7 @@ public abstract class ServiceNode<T> : ServiceNode where T : class, new()
             }
 
             SetOptionsHandle();
-            return newServiceOptions;
+            return ToServiceInfo();
         };
     }
 
@@ -183,6 +181,8 @@ public abstract class ServiceNode<T> : ServiceNode where T : class, new()
                     _logger.Error(_name, ex);
                     Options = null;
                 }
+
+            SetOptionsHandle();
         }
         catch (Exception ex)
         {

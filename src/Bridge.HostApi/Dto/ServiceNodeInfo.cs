@@ -1,14 +1,16 @@
-﻿namespace Bridge.HostApi.Models;
+﻿namespace Bridge.HostApi.Dto;
 
 public class ServiceNodeInfo(ServiceInfo serviceInfo)
 {
     public string Name { get; init; } = serviceInfo.Name;
 
-    public bool UseRestart { get; init; } = serviceInfo.UseRestart;
+    public bool UseRestart { get; set; } = serviceInfo.UseRestart;
 
-    public ServiceState State { get; init; } = serviceInfo.State;
+    public ServiceNodeState State { get; set; } = new ServiceNodeState(serviceInfo.State);
 
-    public ServiceOptions? Options { get; init; } = serviceInfo.Options;
+    public ServiceNodeOptions? Options { get; set; } = serviceInfo.Options != null
+        ? new ServiceNodeOptions(serviceInfo.Options)
+        : null;
 
     public ServiceInfo ToServiceInfo()
     {
@@ -16,12 +18,11 @@ public class ServiceNodeInfo(ServiceInfo serviceInfo)
         {
             Name = Name,
             UseRestart = UseRestart,
-            State = State,
-            Options = Options
+            State = State.ToServiceState()
         };
 
         if (Options != null)
-            serviceInfo.Options = Options;
+            serviceInfo.Options = Options.ToServiceOptions();
 
         return serviceInfo;
     }

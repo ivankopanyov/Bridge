@@ -4,15 +4,14 @@ internal class ServiceControlClient(ServiceHostOptions options) : IServiceContro
 {
     private readonly int _http2Port = options.Http2Port;
 
-    public async Task<IEnumerable<ServiceInfo>> GetServicesAsync(string host)
+    public async Task<Services> GetServicesAsync(string host)
     {
         using var channel = GrpcChannel.ForAddress(GetHost(host));
         var client = new ServiceControl.ServiceControlClient(channel);
-        var response = await client.GetServicesAsync(new Empty());
-        return response.Services_.ToHashSet();
+        return await client.GetServicesAsync(new Empty());
     }
 
-    public async Task<OptionsResponse> SetOptionsAsync(string host, SetOptionsRequest request)
+    public async Task<SetOptionsResponse> SetOptionsAsync(string host, SetOptionsRequest request)
     {
         using var channel = GrpcChannel.ForAddress(GetHost(host));
         var client = new ServiceControl.ServiceControlClient(channel);

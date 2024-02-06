@@ -9,13 +9,13 @@ internal class EventService : IEventService
     public IEnumerable<ServiceInfo> GetServices() => GetServicesEvent?
         .GetInvocationList().Select(i => ((GetServicesHandle)i)()) ?? Enumerable.Empty<ServiceInfo>();
 
-    public ServiceOptions? SetOptions(string serviceName, ServiceOptions options)
+    public ServiceInfo? SetOptions(string serviceName, ServiceOptions options)
     {
         if (SetOptionsEvent == null)
             return null;
 
         foreach (var d in SetOptionsEvent.GetInvocationList())
-            if (((SetOptionsHandle)d)(serviceName, options.Options) is ServiceOptions result)
+            if (((SetOptionsHandle)d)(serviceName, options.Options) is ServiceInfo result)
                 return result;
 
         return null;

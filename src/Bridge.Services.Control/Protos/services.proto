@@ -43,12 +43,16 @@ message SetOptionsRequest {
 	ServiceOptions options = 2;
 }
 
+message SetOptionsResponse {
+	optional ServiceInfo service = 1;
+}
+
 message OptionsResponse {
 	optional ServiceOptions options = 1;
 }
 
 service ServiceControl {
-	rpc SetOptions (SetOptionsRequest) returns (OptionsResponse);
+	rpc SetOptions (SetOptionsRequest) returns (SetOptionsResponse);
 	rpc GetServices (google.protobuf.Empty) returns (Services);
 }
 

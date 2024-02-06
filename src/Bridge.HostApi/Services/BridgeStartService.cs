@@ -12,24 +12,24 @@ public class BridgeStartService(IServiceControlClient serviceControlClient, ILog
     {
         using var context = new BridgeDbContext();
         await context.Database.EnsureCreatedAsync();
-        var hosts = (await context.Hosts.AsNoTracking().ToListAsync()).Select(h => h.Name);
+
         var repository = new ServiceRepository(context);
+        var hosts = await repository.GetHostNamesAsync();
+        var servicesSet = new HashSet<Bridge.Services.Control.Services>();
+
         foreach (var host in hosts)
         {
-            var services = await _serviceControlClient.GetServicesAsync(host);
-            foreach (var serviceInfo in services)
-                try
-                {
-                    await repository.SetServiceAsync(new Service
-                    {
-                        Host = host,
-                        Service_ = serviceInfo
-                    });
-                }
-                catch (Exception ex)
-                {
-                    _logger.Error(_name, ex);
-                }
+            try
+            {
+                var services = await _serviceControlClient.GetServicesAsync(host);
+                servicesSet.Add(services);
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(_name, ex);
+            }
         }
+
+        await repository.UpdateServicesAsync(servicesSet);
     }
 }

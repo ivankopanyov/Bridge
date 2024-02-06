@@ -1,21 +1,15 @@
-﻿using Bridge.HostApi.Models;
-using Bridge.HostApi.Repositories.Abstract;
-
-namespace Bridge.HostApi.Services;
+﻿namespace Bridge.HostApi.Services;
 
 public class BridgeServiceHost : ServiceHost.ServiceHostBase
 {
     private readonly IServiceRepository _serviceRepository;
 
-    private readonly ILogger<BridgeServiceHost> _logger;
-
-    public BridgeServiceHost(IServiceRepository serviceRepository, ILogger<BridgeServiceHost> logger)
+    public BridgeServiceHost(IServiceRepository serviceRepository)
     {
         _serviceRepository = serviceRepository;
-        _logger = logger;
     }
 
-    public override async Task<OptionsResponse> GetOptions(Service request, ServerCallContext context)
+    public override async Task<OptionsResponse> GetOptions(Bridge.Services.Control.Service request, ServerCallContext context)
     {
         var response = new OptionsResponse();
         if (await _serviceRepository.GetOptionsAsync(request) is ServiceOptions options)
@@ -24,9 +18,9 @@ public class BridgeServiceHost : ServiceHost.ServiceHostBase
         return response;
     }
 
-    public override async Task<Empty> SetService(Service request, ServerCallContext context)
+    public override async Task<Empty> SetService(Bridge.Services.Control.Service request, ServerCallContext context)
     {
-        await _serviceRepository.SetServiceAsync(request);
+        await _serviceRepository.SetServiceStateAsync(request);
         return new Empty();
     }
 }

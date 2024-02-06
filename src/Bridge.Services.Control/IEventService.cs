@@ -2,7 +2,7 @@
 
 internal delegate ServiceInfo GetServicesHandle();
 
-internal delegate ServiceOptions? SetOptionsHandle(string serviceName, string? options);
+internal delegate ServiceInfo? SetOptionsHandle(string serviceName, string? options);
 
 public interface IEventService
 {
@@ -12,5 +12,5 @@ public interface IEventService
 
     internal IEnumerable<ServiceInfo> GetServices();
 
-    internal ServiceOptions? SetOptions(string serviceName, ServiceOptions options);
+    internal ServiceInfo? SetOptions(string serviceName, ServiceOptions options);
 }
