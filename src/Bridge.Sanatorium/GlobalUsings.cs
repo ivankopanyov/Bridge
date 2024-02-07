@@ -1,7 +1,10 @@
 ﻿global using Bridge.EventBus;
+global using Bridge.Extensions.Logging;
 global using Bridge.Logger;
 global using Bridge.Sanatorium.Handlers;
+global using Bridge.Sanatorium.Options;
+global using Bridge.Sanatorium.Services;
+global using Bridge.Services.Control;
 global using Logus.HMS.Messages.Booking;
 global using Microsoft.AspNetCore.Server.Kestrel.Core;
 global using System.Net;
-

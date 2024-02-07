@@ -10,6 +10,12 @@ builder.Services
     .AddEventBus()
     .Register<ReservationHandler, ReservationUpdatedMessage>();
 
+builder.Services.AddServiceControl(optios =>
+{
+    optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "sanatorium";
+    optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+}).Register<ServiceBusServiceNode, ServiceBusOptions>(options => options.Name = "NServiceBus");
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,5 +31,6 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapServiceControl();
 
 app.Run();
