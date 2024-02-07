@@ -1,6 +1,6 @@
 ﻿syntax = "proto3";
 
-import "google/protobuf/Empty.proto";
+import "google/protobuf/empty.proto";
  
 option csharp_namespace = "Bridge.Services.Control";
  

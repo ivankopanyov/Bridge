@@ -1,5 +1,3 @@
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
@@ -7,15 +5,15 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Bridge.Opera/Bridge.Opera.csproj", "Bridge.Opera/"]
+COPY ["src/Bridge.Opera/Bridge.Opera.csproj", "src/Bridge.Opera/"]
 COPY ["src/Bridge.EventBus/Bridge.EventBus.csproj", "src/Bridge.EventBus/"]
 COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
 COPY ["src/Bridge.Logger/Bridge.Logger.csproj", "src/Bridge.Logger/"]
 COPY ["src/Bridge.Opera.Domain.Entities.Tables/Bridge.Opera.Domain.Entities.Tables.csproj", "src/Bridge.Opera.Domain.Entities.Tables/"]
 COPY ["src/Bridge.Opera.Domain/Bridge.Opera.Domain.csproj", "src/Bridge.Opera.Domain/"]
-RUN dotnet restore "./Bridge.Opera/./Bridge.Opera.csproj"
+RUN dotnet restore "./src/Bridge.Opera/./Bridge.Opera.csproj"
 COPY . .
-WORKDIR "/src/Bridge.Opera"
+WORKDIR "/src/src/Bridge.Opera"
 RUN dotnet build "./Bridge.Opera.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish

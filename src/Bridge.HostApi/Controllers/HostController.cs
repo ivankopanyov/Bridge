@@ -2,17 +2,13 @@
 
 [ApiController]
 [Route("api/v1.0/hosts")]
-public class HostController : ControllerBase
+public class HostController(IServiceRepository serviceRepository, IServiceControlClient serviceControlClient, ILogger<HostController> logger) : ControllerBase
 {
-    private readonly IServiceRepository _serviceRepository;
+    private readonly IServiceRepository _serviceRepository = serviceRepository;
 
-    private readonly IServiceControlClient _serviceControlClient;
+    private readonly IServiceControlClient _serviceControlClient = serviceControlClient;
 
-    public HostController(IServiceRepository serviceRepository, IServiceControlClient serviceControlClient)
-    {
-        _serviceRepository = serviceRepository;
-        _serviceControlClient = serviceControlClient;
-    }
+    private readonly ILogger _logger = logger;
 
     [HttpGet("")]
     [ProducesResponseType<IReadOnlyDictionary<string, HashSet<ServiceNodeInfo>>>((int)HttpStatusCode.OK)]
@@ -59,9 +55,10 @@ public class HostController : ControllerBase
 
             return Ok();
         }
-        catch
+        catch (Exception ex)
         {
-            return NotFound($"Host {hostName} not found.");
+            _logger.Error(nameof(HostController), ex);
+            return NotFound(ex.Message);
         }
     }
 }
