@@ -6,13 +6,13 @@ internal class ServiceController(IEventService eventService, ServiceControlOptio
 
     private readonly string _host = options.Host;
 
-    public override Task<SetOptionsResponse> SetOptions(SetOptionsRequest request, ServerCallContext context)
+    public override async Task<SetOptionsResponse> SetOptions(SetOptionsRequest request, ServerCallContext context)
     { 
         var response = new SetOptionsResponse();
-        if (_eventService.SetOptions(request.ServiceName, request.Options) is ServiceInfo service)
+        if (await _eventService.SetOptionsAsync(request.ServiceName, request.Options) is ServiceInfo service)
             response.Service = service;
 
-        return Task.FromResult(response);
+        return response;
     }
 
     public override sealed Task<Services> GetServices(Empty request, ServerCallContext context)

@@ -4,18 +4,18 @@ internal class EventService : IEventService
 {
     public event GetServicesHandle? GetServicesEvent;
 
-    public event SetOptionsHandle? SetOptionsEvent;
+    public event SetOptionsHandleAsync? SetOptionsEvent;
 
     public IEnumerable<ServiceInfo> GetServices() => GetServicesEvent?
         .GetInvocationList().Select(i => ((GetServicesHandle)i)()) ?? Enumerable.Empty<ServiceInfo>();
 
-    public ServiceInfo? SetOptions(string serviceName, ServiceOptions options)
+    public async Task<ServiceInfo?> SetOptionsAsync(string serviceName, ServiceOptions options)
     {
         if (SetOptionsEvent == null)
             return null;
 
         foreach (var d in SetOptionsEvent.GetInvocationList())
-            if (((SetOptionsHandle)d)(serviceName, options.Options) is ServiceInfo result)
+            if (await ((SetOptionsHandleAsync)d)(serviceName, options.Options) is ServiceInfo result)
                 return result;
 
         return null;

@@ -2,9 +2,9 @@
 
 internal class CheckOperaHandler : BackgroundService
 {
-    private readonly IOperaService _operaService;
+    private readonly OperaServiceNode _operaService;
 
-    public CheckOperaHandler(IOperaService operaService)
+    public CheckOperaHandler(OperaServiceNode operaService)
     {
         _operaService = operaService;
     }
@@ -15,11 +15,11 @@ internal class CheckOperaHandler : BackgroundService
         {
             using var context = new OperaDbContext();
             await context.ReservationNames.AsNoTracking().AnyAsync(cancellationToken: stoppingToken);
-            _operaService.Active();
+            await _operaService.ActiveAsync();
         }
         catch (Exception ex)
         {
-            _operaService.Unactive(ex);
+            await _operaService.UnactiveAsync(ex);
         }
     }
 }

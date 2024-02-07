@@ -35,7 +35,7 @@ public class OperaDbContext : OperaDbContextBase
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
-            optionsBuilder.UseOracle(OperaService.ConnectionString, options => options
+            optionsBuilder.UseOracle(OperaOptions.OperaDbConnectionString, options => options
                 .UseOracleSQLCompatibility("11"));
     }
 }

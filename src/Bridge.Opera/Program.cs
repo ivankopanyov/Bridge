@@ -6,13 +6,18 @@ var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), o
 builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2));
 
 builder.Services.AddDbContext<OperaDbContext>();
-builder.Services.AddSingleton<IOperaService, OperaService>();
 
 builder.Services
     .AddHostedService<CheckOperaHandler>()
     .AddLogger()
     .AddEventBus()
     .Register<ReservationHandler, ReservationInfo>();
+
+builder.Services.AddServiceControl(optios =>
+{
+    optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "opera";
+    optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+}).Register<OperaServiceNode, OperaOptions>(options => options.Name = "Opera");
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -29,5 +34,6 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapServiceControl();
 
 app.Run();

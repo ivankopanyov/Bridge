@@ -23,6 +23,7 @@
     <ProjectReference Include="..\Bridge.Logger\Bridge.Logger.csproj" />
     <ProjectReference Include="..\Bridge.Opera.Domain.Entities.Tables\Bridge.Opera.Domain.Entities.Tables.csproj" />
     <ProjectReference Include="..\Bridge.Opera.Domain\Bridge.Opera.Domain.csproj" />
+    <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
   </ItemGroup>
 
 </Project>

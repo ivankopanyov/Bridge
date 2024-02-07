@@ -2,11 +2,33 @@
 
 public class OperaOptions
 {
-    public const string SectionName = "Opera";
+    private string _connectionString = string.Empty;
 
-    public string? ConnectionString { get; set; }
+    private HashSet<string> trxCodes = [];
 
-    public HashSet<string>? TrxCodes { get; set; }
+    private Dictionary<string, string> _documentTypeAliases = [];
 
-    public Dictionary<string, string>? DocumentTypeAliases { get; set; }
+    public static string OperaDbConnectionString { get; private set; } = string.Empty;
+
+    public string? ConnectionString 
+    {
+        get => _connectionString; 
+        set
+        {
+            _connectionString = value ?? string.Empty;
+            OperaDbConnectionString = _connectionString;
+        }
+    }
+
+    public HashSet<string>? TrxCodes
+    {
+        get => trxCodes;
+        set => trxCodes = value ?? [];
+    }
+
+    public Dictionary<string, string>? DocumentTypeAliases
+    {
+        get => _documentTypeAliases;
+        set => _documentTypeAliases = value ?? [];
+    }
 }

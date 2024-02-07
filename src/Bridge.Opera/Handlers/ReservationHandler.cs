@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Opera.Handlers;
 
-public class ReservationHandler(IOperaService operaService, IEventBusService eventBusService,
+public class ReservationHandler(OperaServiceNode operaService, IEventBusService eventBusService,
     ILogger<ReservationHandler> logger) : EventHandler<ReservationInfo, ReservationUpdatedMessage>(eventBusService, logger)
 {
     private const string NAME_DATA_QUERY = "select hrs_dev.hrs_sh_sens.dob(n.name_id) as BIRTHDAY, " +
@@ -12,7 +12,7 @@ public class ReservationHandler(IOperaService operaService, IEventBusService eve
         { "2", "F" } 
     };
 
-    private readonly IOperaService _operaService = operaService;
+    private readonly OperaServiceNode _operaService = operaService;
 
     protected override string HandlerName => "OPERA_DB";
 
@@ -21,7 +21,7 @@ public class ReservationHandler(IOperaService operaService, IEventBusService eve
         try
         {
             using var context = new OperaDbContext();
-            var trxCodes = _operaService.TrxCodes;
+            var trxCodes = _operaService.Options.TrxCodes ?? [];
 
             var reservationResponse = await (from rn in context.ReservationNames
                                              from n in context.Names
@@ -181,12 +181,12 @@ public class ReservationHandler(IOperaService operaService, IEventBusService eve
                 .FirstOrDefault(t => reservationResponse.BusinnesDate != null && t.DateRange.DateTimeFrom == reservationResponse.BusinnesDate)
                 ?? reservationUpdatedMessage.Timelines[0];
 
-            _operaService.Active();
+            await _operaService.ActiveAsync();
             return reservationUpdatedMessage;
         }
         catch (Exception ex)
         {
-            _operaService.Unactive(ex);
+            await _operaService.UnactiveAsync(ex);
             throw;
         }
     }
@@ -223,10 +223,11 @@ public class ReservationHandler(IOperaService operaService, IEventBusService eve
 
     private string FixDocumentTypeCode(string value)
     {
-        if (_operaService.DocumentTypeAliases == null || _operaService.DocumentTypeAliases.Count == 0)
+        var _documentTypeAliases = _operaService.Options.DocumentTypeAliases;
+        if (_documentTypeAliases == null || _documentTypeAliases.Count == 0)
             return value;
 
-        foreach (var alias in _operaService.DocumentTypeAliases)
+        foreach (var alias in _documentTypeAliases)
             if (value == alias.Key)
                 return alias.Value;
 

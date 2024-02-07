@@ -2,7 +2,19 @@
 
 public class FiasServiceOptions
 {
-    public string? Host { get; set; }
+    private string _host = string.Empty;
 
-    public int? Port { get; set; }
+    private int _port;
+
+    public string? Host
+    {
+        get => _host;
+        set => _host = value ?? string.Empty;
+    }
+
+    public int? Port 
+    {
+        get => _port;
+        set => _port = value ?? 0;
+    }
 }

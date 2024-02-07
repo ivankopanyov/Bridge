@@ -14,7 +14,7 @@ public class HostController : ControllerBase
         _serviceControlClient = serviceControlClient;
     }
 
-    [HttpGet("/")]
+    [HttpGet("")]
     [ProducesResponseType<IReadOnlyDictionary<string, HashSet<ServiceNodeInfo>>>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.Forbidden)]
     public ActionResult<IReadOnlyDictionary<string, HashSet<ServiceNodeInfo>>> GetHosts() => _serviceRepository.Hosts == null
@@ -22,6 +22,10 @@ public class HostController : ControllerBase
         : Ok(_serviceRepository.Hosts);
 
     [HttpPut("{hostName}/{serviceName}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType<string>((int)HttpStatusCode.Forbidden)]
+    [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
     public async Task<IActionResult> SetOptionsAsync([FromRoute] string hostName, [FromRoute] string serviceName, [FromBody] Dto.ServiceNodeOptions options)
     {
         if (hostName == null)
@@ -55,9 +59,9 @@ public class HostController : ControllerBase
 
             return Ok();
         }
-        catch (Exception ex)
+        catch
         {
-            return NotFound(ex.Message + "\n" + ex.StackTrace);
+            return NotFound($"Host {hostName} not found.");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Services.Control;
 
-public abstract class ServiceNode : BackgroundService
+public abstract class ServiceNodeBase
 {
     private protected readonly string _host;
 
@@ -22,7 +22,7 @@ public abstract class ServiceNode : BackgroundService
 
     private Exception? _currentException;
 
-    public ServiceNode(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options, ILogger logger)
+    private protected ServiceNodeBase(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options, ILogger logger)
     {
         _host = options.Host;
         _name = options.Name;
@@ -40,7 +40,7 @@ public abstract class ServiceNode : BackgroundService
             return;
 
         _isActive = true;
-        _currentException = null; 
+        _currentException = null;
         await ChangeStateAsync();
     }
 
@@ -52,7 +52,7 @@ public abstract class ServiceNode : BackgroundService
             return;
 
         _isActive = false;
-        _currentException = ex; 
+        _currentException = ex;
         await ChangeStateAsync();
     }
 
@@ -79,7 +79,7 @@ public abstract class ServiceNode : BackgroundService
 
     public override int GetHashCode() => _name.GetHashCode();
 
-    public override bool Equals(object? obj) => obj is ServiceNode other && _name == other._name;
+    public override bool Equals(object? obj) => obj is ServiceNodeBase other && _name == other._name;
 
     private async Task ChangeStateAsync()
     {
@@ -125,101 +125,3 @@ public abstract class ServiceNode : BackgroundService
         }
     }, cancellationToken).ConfigureAwait(false);
 }
-
-public abstract class ServiceNode<T> : ServiceNode where T : class, new()
-{
-    public T? Options { get; protected set; }
-
-    public ServiceNode(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options,
-        ILogger logger) : base(serviceHostClient, eventService, options, logger)
-    {
-        eventService.SetOptionsEvent += (serviceName, serviceOptions) =>
-        {
-            if (serviceName != _name)
-                return null;
-
-            try 
-            {
-                Options = serviceOptions != null && JsonConvert.DeserializeObject<T>(serviceOptions) is T newOptions
-                    ? newOptions : null;
-            }
-            catch (Exception ex)
-            {
-                Options = null;
-                _logger.Error(_name, ex);
-            }
-
-            SetOptionsHandle();
-            return ToServiceInfo();
-        };
-    }
-
-    protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        await GetOptionsAsync(new Service
-        {
-            Host = _host,
-            Service_ = ToServiceInfo()
-        });
-    }
-
-    private async Task GetOptionsAsync(Service service, Exception? currentExeption = null) => await Task.Run(async () =>
-    {
-        try
-        {
-            var options = await _serviceHostClient.GetOptionsAsync(service);
-
-            if (options?.Options?.Options == null)
-                Options = null;
-            else
-                try
-                {
-                    Options = JsonConvert.DeserializeObject<T>(options.Options.Options);
-                }
-                catch (Exception ex)
-                {
-                    _logger.Error(_name, ex);
-                    Options = null;
-                }
-
-            SetOptionsHandle();
-        }
-        catch (Exception ex)
-        {
-            if (currentExeption == null || currentExeption.Message != ex.Message || currentExeption.StackTrace != ex.StackTrace)
-            {
-                currentExeption = ex;
-                _logger.Error(_name, ex);
-            }
-
-            await Task.Delay(1000);
-            await GetOptionsAsync(service, currentExeption);
-        }
-    }).ConfigureAwait(false);
-
-    protected virtual void SetOptionsHandle() { }
-
-    private protected override ServiceInfo ToServiceInfo()
-    {
-        var serviceInfo = base.ToServiceInfo();
-        serviceInfo.Options = new ServiceOptions();
-
-        if (Options == null)
-            return serviceInfo;
-
-        try
-        {
-            var result = JsonConvert.SerializeObject(Options);
-            if (result != null)
-                serviceInfo.Options.Options = result;
-        }
-        catch (Exception ex)
-        {
-            _logger.Error(_name, ex);
-        }
-
-        return serviceInfo;
-    }
-}
-
-    

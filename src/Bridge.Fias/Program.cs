@@ -19,7 +19,7 @@ builder.Services.AddServiceControl(optios =>
 {
     optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "fias";
     optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
-}).Register<FiasServiceNode>(options =>
+}).Register<FiasServiceNode, FiasServiceOptions>(options =>
 {
     options.Name = "Fias";
     options.UseRestart = true;
