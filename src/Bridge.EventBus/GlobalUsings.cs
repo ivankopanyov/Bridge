@@ -1,4 +1,7 @@
-﻿global using Bridge.Extensions.Logging;
+﻿global using Bridge.EventBus.Options;
+global using Bridge.EventBus.Services;
+global using Bridge.Extensions.Logging;
+global using Bridge.Services.Control;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;

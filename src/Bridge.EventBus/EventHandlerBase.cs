@@ -10,11 +10,18 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
 
     private protected IEventBusService EventBusService { get; init; }
 
+    private CancellationTokenSource _cancellationTokenSource;
+
+    private CancellationToken _cancellationToken;
+
     protected virtual string HandlerName => GetType().Name;
 
     private protected EventHandlerBase(IEventBusService eventBusService, ILogger logger)
     {
-        EventBusService = eventBusService;
+        EventBusService = eventBusService; 
+        _cancellationTokenSource = new();
+        _cancellationToken = _cancellationTokenSource.Token;
+        EventBusService.RabbitMqService.ChangeRabbitMqOptionsEvent += () => RefreshCancellationToken();
         Logger = logger;
     }
 
@@ -45,12 +52,12 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
                     _connection.ConnectionShutdown += async (sender, e) => await ConnectAsync();
 
                     _model.BasicConsume(queueName, false, consumer);
-                    EventBusService.Active();
+                    await EventBusService.RabbitMqService.ActiveAsync();
                     connect = true;
                 }
                 catch (Exception ex)
                 {
-                    EventBusService.Unactive(ex);
+                    await EventBusService.RabbitMqService.UnactiveAsync(ex);
                     await Task.Delay(1000);
                 }
             }).ConfigureAwait(false);
@@ -146,7 +153,7 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         }
         catch (Exception ex)
         {
-            EventBusService.Unactive(ex);
+            await EventBusService.RabbitMqService.UnactiveAsync(ex);
             await Task.Run(async () =>
             {
                 await ConnectAsync();
@@ -162,13 +169,20 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         try
         {
             action.Invoke();
-            EventBusService.Active();
+            await EventBusService.RabbitMqService.ActiveAsync();
         }
         catch (Exception ex)
         {
-            EventBusService.Unactive(ex);
+            await EventBusService.RabbitMqService.UnactiveAsync(ex);
             await Task.Run(ConnectAsync);
         }
+    }
+
+    private void RefreshCancellationToken()
+    {
+        _cancellationTokenSource.Cancel();
+        _cancellationTokenSource = new();
+        _cancellationToken = _cancellationTokenSource.Token;
     }
 
     public override void Dispose()

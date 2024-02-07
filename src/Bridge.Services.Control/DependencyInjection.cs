@@ -2,7 +2,7 @@
 
 public static class DependencyInjection
 {
-    public static IServiceRegistrator AddServiceControl(this IServiceCollection services, Action<ServiceControlOptions> action)
+    public static IServiceControlBuilder AddServiceControl(this IServiceCollection services, Action<ServiceControlOptions> action)
     {
         var options = new ServiceControlOptions();
         action.Invoke(options);
@@ -10,7 +10,7 @@ public static class DependencyInjection
         services.AddSingleton<IEventService, EventService>();
         services.AddGrpc();
         services.AddGrpcClient<ServiceHost.ServiceHostClient>(opt => opt.Address = new Uri(options.ServiceHost));
-        return new ServiceRegistrator(services, options.Host);
+        return new ServiceControlBuilder(services, options.Host);
     }
 
     public static WebApplication MapServiceControl(this WebApplication webApplication)

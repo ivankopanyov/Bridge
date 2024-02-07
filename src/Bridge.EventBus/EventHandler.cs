@@ -37,12 +37,12 @@ public abstract class EventHandler<TIn, TOut> : EventHandlerBase<TIn> where TIn 
                 Message = @out
             });
 
-            EventBusService.Active();
+            await EventBusService.RabbitMqService.ActiveAsync();
             return true;
         }
         catch (Exception ex)
         {
-            EventBusService.Unactive(ex);
+            await EventBusService.RabbitMqService.UnactiveAsync(ex);
             await Task.Run(ConnectAsync);
             return false;
         }

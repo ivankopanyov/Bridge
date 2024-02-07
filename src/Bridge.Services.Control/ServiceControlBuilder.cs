@@ -1,16 +1,14 @@
-﻿using Bridge.Services.Control.Control;
+﻿namespace Bridge.Services.Control;
 
-namespace Bridge.Services.Control;
-
-internal class ServiceRegistrator(IServiceCollection services, string host) : IServiceRegistrator
+internal class ServiceControlBuilder(IServiceCollection services, string host) : IServiceControlBuilder
 {
-    private readonly IServiceCollection _services = services;
-
     private readonly string _host = host;
 
     private readonly HashSet<string> _serviceNames = [];
 
-    public IServiceRegistrator Register<T>(Action<ServiceNodeOptions> action) where T : ServiceNode
+    public IServiceCollection Services { get; private init; } = services;
+
+    public IServiceControlBuilder AddService<T>(Action<ServiceNodeOptions> action) where T : ServiceNode
     {
         ArgumentNullException.ThrowIfNull(action);
 
@@ -23,17 +21,17 @@ internal class ServiceRegistrator(IServiceCollection services, string host) : IS
         if (_serviceNames.Contains(options.Name))
             throw new ArgumentException($"Service named {options.Name} has already been registered.", nameof(options.Name));
 
-        _services.AddSingleton(new ServiceNodeOptions<T>
+        Services.AddSingleton(new ServiceNodeOptions<T>
         {
             Host = _host,
             Name = options.Name,
             UseRestart = options.UseRestart
         });
-        _services.AddSingleton<T>();
+        Services.AddSingleton<T>();
         return this;
     }
 
-    public IServiceRegistrator Register<T, TOptions>(Action<ServiceNodeOptions> action)
+    public IServiceControlBuilder AddService<T, TOptions>(Action<ServiceNodeOptions> action)
         where T : ServiceNode<TOptions> where TOptions : class, new()
     {
         ArgumentNullException.ThrowIfNull(action);
@@ -47,14 +45,14 @@ internal class ServiceRegistrator(IServiceCollection services, string host) : IS
         if (_serviceNames.Contains(options.Name))
             throw new ArgumentException($"Service named {options.Name} has already been registered.", nameof(options.Name));
 
-        _services.AddSingleton(new ServiceNodeOptions<T, TOptions>
+        Services.AddSingleton(new ServiceNodeOptions<T, TOptions>
         {
             Host = _host,
             Name = options.Name,
             UseRestart = options.UseRestart
         });
-        _services.AddSingleton<T>();
-        _services.AddHostedService<HostedServiceNode<T, TOptions>>();
+        Services.AddSingleton<T>();
+        Services.AddHostedService<HostedServiceNode<T, TOptions>>();
         return this;
     }
 }

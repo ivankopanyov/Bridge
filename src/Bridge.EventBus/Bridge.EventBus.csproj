@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bridge.Extensions.Logging\Bridge.Extensions.Logging.csproj" />
+    <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
   </ItemGroup>
 
 </Project>

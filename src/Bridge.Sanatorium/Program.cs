@@ -6,15 +6,15 @@ var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), o
 builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2));
 
 builder.Services
-    .AddLogger()
-    .AddEventBus()
-    .Register<ReservationHandler, ReservationUpdatedMessage>();
+    .AddLogger();
 
 builder.Services.AddServiceControl(optios =>
 {
     optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "sanatorium";
     optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
-}).Register<ServiceBusServiceNode, ServiceBusOptions>(options => options.Name = "NServiceBus");
+})
+.AddService<ServiceBusServiceNode, ServiceBusOptions>(options => options.Name = "NServiceBus")
+.AddEventBus(builder => builder.AddHandler<ReservationHandler, ReservationUpdatedMessage>());
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

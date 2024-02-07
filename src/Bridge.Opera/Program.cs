@@ -9,15 +9,15 @@ builder.Services.AddDbContext<OperaDbContext>();
 
 builder.Services
     .AddHostedService<CheckOperaHandler>()
-    .AddLogger()
-    .AddEventBus()
-    .Register<ReservationHandler, ReservationInfo>();
+    .AddLogger();
 
 builder.Services.AddServiceControl(optios =>
 {
     optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "opera";
     optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
-}).Register<OperaServiceNode, OperaOptions>(options => options.Name = "Opera");
+})
+.AddService<OperaServiceNode, OperaOptions>(options => options.Name = "Oracle")
+.AddEventBus(builder => builder.AddHandler<ReservationHandler, ReservationInfo>());
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -10,20 +10,16 @@ builder.Services
     .AddFias()
     .AddHostedService<FiasStateHandler>();
 
-builder.Services.AddEventBus()
-    .Register<CheckInHandler, FiasGuestCheckIn>()
-    .Register<CheckOutHandler, FiasGuestCheckOut>()
-    .Register<ChangeHandler, FiasGuestChange>();
-
 builder.Services.AddServiceControl(optios =>
 {
     optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "fias";
     optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
-}).Register<FiasServiceNode, FiasServiceOptions>(options =>
-{
-    options.Name = "Fias";
-    options.UseRestart = true;
-});
+})
+.AddService<FiasServiceNode, FiasServiceOptions>(options => options.Name = "Fias")
+.AddEventBus(builder => builder
+    .AddHandler<CheckInHandler, FiasGuestCheckIn>()
+    .AddHandler<CheckOutHandler, FiasGuestCheckOut>()
+    .AddHandler<ChangeHandler, FiasGuestChange>());
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
