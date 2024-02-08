@@ -10,18 +10,21 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
 
     private protected IEventBusService EventBusService { get; init; }
 
-    private CancellationTokenSource _cancellationTokenSource;
-
-    private CancellationToken _cancellationToken;
-
     protected virtual string HandlerName => GetType().Name;
 
     private protected EventHandlerBase(IEventBusService eventBusService, ILogger logger)
     {
-        EventBusService = eventBusService; 
-        _cancellationTokenSource = new();
-        _cancellationToken = _cancellationTokenSource.Token;
-        EventBusService.RabbitMqService.ChangeRabbitMqOptionsEvent += () => RefreshCancellationToken();
+        EventBusService = eventBusService;
+        EventBusService.RabbitMqService.ChangeRabbitMqOptionsEvent += async () =>
+        {
+            if (_connection != null && _connection.IsOpen)
+            {
+                _connection.Close(); 
+                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection close."));
+            }
+
+            await ConnectAsync();
+        };
         Logger = logger;
     }
 
@@ -30,38 +33,38 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         await ConnectAsync();
     }
 
-    private protected async Task ConnectAsync()
+    private protected async Task ConnectAsync() => await Task.Run(async () =>
     {
         _model?.Dispose();
         _connection?.Dispose();
 
         var queueName = typeof(TIn).AssemblyQualifiedName;
-        var connect = false;
-        while (!connect)
-            await Task.Run(async () =>
+
+        try
+        {
+            _connection = EventBusService.ConnectionFactory.CreateConnection();
+            _model = _connection.CreateModel();
+            _model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+
+            var consumer = new EventingBasicConsumer(_model);
+            consumer.Received += async (sender, e) => await BasicEventHandleAsync(e, _model);
+
+            _connection.ConnectionShutdown += async (sender, e) =>
             {
-                try
-                {
-                    _connection = EventBusService.ConnectionFactory.CreateConnection();
-                    _model = _connection.CreateModel();
-                    _model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection shutdown."));
+                await ConnectAsync();
+            };
 
-                    var consumer = new EventingBasicConsumer(_model);
-                    consumer.Received += async (sender, e) => await BasicEventHandleAsync(e, _model);
-
-                    _connection.ConnectionShutdown += async (sender, e) => await ConnectAsync();
-
-                    _model.BasicConsume(queueName, false, consumer);
-                    await EventBusService.RabbitMqService.ActiveAsync();
-                    connect = true;
-                }
-                catch (Exception ex)
-                {
-                    await EventBusService.RabbitMqService.UnactiveAsync(ex);
-                    await Task.Delay(1000);
-                }
-            }).ConfigureAwait(false);
-    }
+            _model.BasicConsume(queueName, false, consumer);
+            await EventBusService.RabbitMqService.ActiveAsync();
+        }
+        catch (Exception ex)
+        {
+            await EventBusService.RabbitMqService.UnactiveAsync(ex);
+            await Task.Delay(1000);
+            await ConnectAsync();
+        }
+    }).ConfigureAwait(false);
 
     private async Task BasicEventHandleAsync(BasicDeliverEventArgs e, IModel model)
     {
@@ -171,18 +174,16 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
             action.Invoke();
             await EventBusService.RabbitMqService.ActiveAsync();
         }
-        catch (Exception ex)
+        catch
         {
-            await EventBusService.RabbitMqService.UnactiveAsync(ex);
-            await Task.Run(ConnectAsync);
-        }
-    }
+            if (_connection != null && _connection.IsOpen)
+            {
+                _connection.Close();
+                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection close."));
+            }
 
-    private void RefreshCancellationToken()
-    {
-        _cancellationTokenSource.Cancel();
-        _cancellationTokenSource = new();
-        _cancellationToken = _cancellationTokenSource.Token;
+            await ConnectAsync();
+        }
     }
 
     public override void Dispose()

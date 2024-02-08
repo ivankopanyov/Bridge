@@ -21,21 +21,8 @@ builder.Services.AddServiceControl(optios =>
     .AddHandler<CheckOutHandler, FiasGuestCheckOut>()
     .AddHandler<ChangeHandler, FiasGuestChange>());
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseAuthorization();
-
-app.MapControllers();
 app.MapServiceControl();
 
 app.Run();

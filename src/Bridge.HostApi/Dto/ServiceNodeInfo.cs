@@ -4,8 +4,6 @@ public class ServiceNodeInfo(ServiceInfo serviceInfo)
 {
     public string Name { get; init; } = serviceInfo.Name;
 
-    public bool UseRestart { get; set; } = serviceInfo.UseRestart;
-
     public ServiceNodeState State { get; set; } = new ServiceNodeState(serviceInfo.State);
 
     public ServiceNodeOptions? Options { get; set; } = serviceInfo.Options != null
@@ -17,7 +15,6 @@ public class ServiceNodeInfo(ServiceInfo serviceInfo)
         var serviceInfo = new ServiceInfo()
         {
             Name = Name,
-            UseRestart = UseRestart,
             State = State.ToServiceState()
         };
 

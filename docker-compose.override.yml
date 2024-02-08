@@ -5,13 +5,9 @@ services:
     container_name: fias
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=${HTTP1_PORT}
-      - HTTP1_PORT=${HTTP1_PORT}
       - HTTP2_PORT=${HTTP2_PORT}
       - HOST_API=${HOST_API}
       - HOST=fias
-    ports:
-      - 5000:${HTTP1_PORT}
     networks:
       - network
     depends_on:
@@ -21,14 +17,10 @@ services:
     container_name: opera
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=${HTTP1_PORT}
-      - HTTP1_PORT=${HTTP1_PORT}
       - HTTP2_PORT=${HTTP2_PORT}
       - HOST_API=${HOST_API}
       - TZ=Europe/Moscow
       - HOST=opera
-    ports:
-      - 5001:${HTTP1_PORT}
     networks:
       - network
     depends_on:
@@ -38,13 +30,9 @@ services:
     container_name: sanatorium
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=${HTTP1_PORT}
-      - HTTP1_PORT=${HTTP1_PORT}
       - HTTP2_PORT=${HTTP2_PORT}
       - HOST_API=${HOST_API}
       - HOST=sanatorium
-    ports:
-      - 5002:${HTTP1_PORT}
     networks:
       - network
     depends_on:

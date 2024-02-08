@@ -1,5 +1,4 @@
-﻿
-namespace Bridge.Services.Control;
+﻿namespace Bridge.Services.Control;
 
 internal class HostedServiceNode<T, TOptions>(T serviceNode) : BackgroundService 
     where T : ServiceNode<TOptions> where TOptions : class, new()

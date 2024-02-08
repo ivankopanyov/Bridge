@@ -6,8 +6,6 @@ public abstract class ServiceNodeBase
 
     private protected readonly string _name;
 
-    private readonly bool _useRestart;
-
     private protected readonly ServiceHost.ServiceHostClient _serviceHostClient;
 
     private protected readonly ILogger _logger;
@@ -26,7 +24,6 @@ public abstract class ServiceNodeBase
     {
         _host = options.Host;
         _name = options.Name;
-        _useRestart = options.UseRestart;
         _serviceHostClient = serviceHostClient;
         _logger = logger;
         _cancellationTokenSource = new CancellationTokenSource();
@@ -61,7 +58,6 @@ public abstract class ServiceNodeBase
         var serviceInfo = new ServiceInfo()
         {
             Name = _name,
-            UseRestart = _useRestart,
             State = new ServiceState
             {
                 IsActive = _isActive

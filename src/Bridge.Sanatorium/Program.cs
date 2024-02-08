@@ -5,8 +5,7 @@ var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), o
 
 builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2));
 
-builder.Services
-    .AddLogger();
+builder.Services.AddLogger();
 
 builder.Services.AddServiceControl(optios =>
 {
@@ -16,21 +15,8 @@ builder.Services.AddServiceControl(optios =>
 .AddService<ServiceBusServiceNode, ServiceBusOptions>(options => options.Name = "NServiceBus")
 .AddEventBus(builder => builder.AddHandler<ReservationHandler, ReservationUpdatedMessage>());
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseAuthorization();
-
-app.MapControllers();
 app.MapServiceControl();
 
 app.Run();

@@ -23,7 +23,6 @@ message ServiceOptions {
 
 message ServiceInfo {
 	string name = 1;
-	bool useRestart = 2;
 	ServiceState state = 3;
 	optional ServiceOptions options = 4;
 }

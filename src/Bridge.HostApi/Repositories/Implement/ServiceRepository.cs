@@ -128,7 +128,6 @@ public class ServiceRepository(BridgeDbContext context) : IServiceRepository
         {
             var current = _services[service.Host].First(s => s.Name == service.Service_.Name);
 
-            current.UseRestart = service.Service_.UseRestart;
             current.State = new ServiceNodeState(service.Service_.State);
 
             if (current.Options == null && service.Service_.Options != null)
@@ -193,7 +192,6 @@ public class ServiceRepository(BridgeDbContext context) : IServiceRepository
         {
             var current = _services[service.Host].First(s => s.Name == service.Service_.Name);
 
-            current.UseRestart = service.Service_.UseRestart;
             current.State = new ServiceNodeState(service.Service_.State);
 
             if (current.Options != null)

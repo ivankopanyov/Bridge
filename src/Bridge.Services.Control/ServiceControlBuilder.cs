@@ -24,8 +24,7 @@ internal class ServiceControlBuilder(IServiceCollection services, string host) :
         Services.AddSingleton(new ServiceNodeOptions<T>
         {
             Host = _host,
-            Name = options.Name,
-            UseRestart = options.UseRestart
+            Name = options.Name
         });
         Services.AddSingleton<T>();
         return this;
@@ -48,8 +47,7 @@ internal class ServiceControlBuilder(IServiceCollection services, string host) :
         Services.AddSingleton(new ServiceNodeOptions<T, TOptions>
         {
             Host = _host,
-            Name = options.Name,
-            UseRestart = options.UseRestart
+            Name = options.Name
         });
         Services.AddSingleton<T>();
         Services.AddHostedService<HostedServiceNode<T, TOptions>>();
