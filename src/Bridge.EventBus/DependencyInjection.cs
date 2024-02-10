@@ -12,6 +12,10 @@ public static class DependencyInjection
 
         var handlerBuilder = new EventBusBuilder(builder.Services);
         action.Invoke(handlerBuilder);
+
+        builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
+        builder.Services.AddSingleton<IElasticSearchService, ElasticSearchService>();
+
         return builder;
     }
 }

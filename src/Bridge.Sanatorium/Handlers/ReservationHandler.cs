@@ -1,7 +1,7 @@
 ﻿namespace Bridge.Sanatorium.Handlers;
 
-internal class ReservationHandler(IEventBusService eventBusService, ILogger<ReservationHandler> logger) 
-    : EventBus.EventHandler<ReservationUpdatedMessage>(eventBusService, logger)
+internal class ReservationHandler(IEventBusService eventBusService) 
+    : EventBus.EventHandler<ReservationUpdatedMessage>(eventBusService)
 {
     protected override string HandlerName => "N_SERVICE_BUS";
 
@@ -9,6 +9,4 @@ internal class ReservationHandler(IEventBusService eventBusService, ILogger<Rese
     {
         return Task.CompletedTask;
     }
-
-    protected override string? InputLog(ReservationUpdatedMessage @in) => @in.Id;
 }

@@ -2,131 +2,23 @@
 
 public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : class, new()
 {
-    private IConnection? _connection;
-
-    private IModel? _model;
-
-    private protected ILogger Logger { get; init; }
-
-    private protected IEventBusService EventBusService { get; init; }
+    private protected readonly IEventBusService _eventBusService;
 
     protected virtual string HandlerName => GetType().Name;
 
-    private protected EventHandlerBase(IEventBusService eventBusService, ILogger logger)
+    private protected EventHandlerBase(IEventBusService eventBusService)
     {
-        EventBusService = eventBusService;
-        EventBusService.RabbitMqService.ChangeRabbitMqOptionsEvent += async () =>
-        {
-            if (_connection != null && _connection.IsOpen)
-            {
-                _connection.Close(); 
-                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection close."));
-            }
-
-            await ConnectAsync();
-        };
-        Logger = logger;
+        _eventBusService = eventBusService;
     }
 
     protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        await ConnectAsync();
-    }
-
-    private protected async Task ConnectAsync() => await Task.Run(async () =>
-    {
-        _model?.Dispose();
-        _connection?.Dispose();
-
-        var queueName = typeof(TIn).AssemblyQualifiedName;
-
-        try
-        {
-            _connection = EventBusService.ConnectionFactory.CreateConnection();
-            _model = _connection.CreateModel();
-            _model.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
-
-            var consumer = new EventingBasicConsumer(_model);
-            consumer.Received += async (sender, e) => await BasicEventHandleAsync(e, _model);
-
-            _connection.ConnectionShutdown += async (sender, e) =>
-            {
-                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection shutdown."));
-                await ConnectAsync();
-            };
-
-            _model.BasicConsume(queueName, false, consumer);
-            await EventBusService.RabbitMqService.ActiveAsync();
-        }
-        catch (Exception ex)
-        {
-            await EventBusService.RabbitMqService.UnactiveAsync(ex);
-            await Task.Delay(1000);
-            await ConnectAsync();
-        }
-    }).ConfigureAwait(false);
-
-    private async Task BasicEventHandleAsync(BasicDeliverEventArgs e, IModel model)
-    {
-        try
-        {
-            if (e.Body.ToArray() is not byte[] bytes)
-            {
-                Logger.Critical(HandlerName, "Event body is null.");
-                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
-                return;
-            }
-
-            if (Encoding.UTF8.GetString(bytes) is not string json)
-            {
-                Logger.Critical(HandlerName, "Event encoding failed.");
-                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
-                return;
-            }
-
-            if (JsonConvert.DeserializeObject<Event<TIn>>(json) is not Event<TIn> @event)
-            {
-                Logger.Critical(HandlerName, "Event deserialize failed.");
-                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
-                return;
-            }
-
-            if (@event.Message == null)
-            {
-                Logger.Critical(HandlerName, "Event message is null.");
-                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
-                return;
-            }
-
-            try
-            {
-                if (!await HandleProcessAsync(@event))
-                    return;
-
-                await TryBasicAnswerAsync(() => model.BasicAck(e.DeliveryTag, false));
-            }
-            catch (Exception ex)
-            {
-                if (!e.Redelivered)
-                    Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
-
-                await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, true));
-            }
-        }
-        catch (Exception ex)
-        {
-            Logger.Critical(HandlerName, ex); 
-            await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false));
-        }
-    }
-
-    protected virtual string? InputLog(TIn @in) => null;
+        => await _eventBusService.RecieveAsync<TIn>(HandlerName, async (@event, action) => await HandleProcessAsync(@event, action));
 
     protected async Task InputDataAsync(string? queueName, TIn @in)
     {
         if (@in == null)
         {
-            Logger.Critical(HandlerName, "Input data is null.");
+            await _eventBusService.CriticalAsync(queueName, HandlerName, null, "Input data is null.");
             return;
         }
 
@@ -143,54 +35,11 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         }
         catch (Exception ex)
         {
-            Logger.Error(@event.QueueName, HandlerName, @event.TaskId, InputLog(@event.Message), ex);
-            await TrySendAsync(async () => await EventBusService.SendAsync(@event));
+            await _eventBusService.ErrorAsync(@event.QueueName, HandlerName, @event.TaskId, @event.Message, ex.Message, ex.StackTrace);
+            await _eventBusService.PublishAsync(@event);
         }
     }
 
-    private async Task TrySendAsync(Action action)
-    {
-        try
-        {
-            action.Invoke();
-        }
-        catch (Exception ex)
-        {
-            await EventBusService.RabbitMqService.UnactiveAsync(ex);
-            await Task.Run(async () =>
-            {
-                await ConnectAsync();
-                await TrySendAsync(action);
-            }).ConfigureAwait(false);
-        }
-    }
-
-    private protected abstract Task<bool> HandleProcessAsync(Event<TIn> @event);
-
-    private async Task TryBasicAnswerAsync(Action action)
-    {
-        try
-        {
-            action.Invoke();
-            await EventBusService.RabbitMqService.ActiveAsync();
-        }
-        catch
-        {
-            if (_connection != null && _connection.IsOpen)
-            {
-                _connection.Close();
-                await EventBusService.RabbitMqService.UnactiveAsync(new Exception("Connection close."));
-            }
-
-            await ConnectAsync();
-        }
-    }
-
-    public override void Dispose()
-    {
-        base.Dispose();
-        _model?.Dispose();
-        _connection?.Dispose();
-    }
+    private protected abstract Task HandleProcessAsync(Event<TIn> @event, Action? action = null);
 }
 

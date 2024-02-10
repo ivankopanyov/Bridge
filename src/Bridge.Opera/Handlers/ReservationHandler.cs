@@ -1,7 +1,7 @@
 ﻿namespace Bridge.Opera.Handlers;
 
-public class ReservationHandler(OperaServiceNode operaService, IEventBusService eventBusService,
-    ILogger<ReservationHandler> logger) : EventHandler<ReservationInfo, ReservationUpdatedMessage>(eventBusService, logger)
+public class ReservationHandler(OperaServiceNode operaService, IEventBusService eventBusService)
+    : EventHandler<ReservationInfo, ReservationUpdatedMessage>(eventBusService)
 {
     private const string NAME_DATA_QUERY = "select hrs_dev.hrs_sh_sens.dob(n.name_id) as BIRTHDAY, " +
         "hrs_dev.hrs_sh_sens.pass_id(n.name_id) as PASS_ID from opera.name n where rownum <= 1 and n.name_id = {0}";
@@ -237,56 +237,4 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
     private static DateTime? ToDateTime(string value, string format) 
         => value == null || !DateTime.TryParseExact(value, format, null, System.Globalization.DateTimeStyles.None, out DateTime issue)
             ? null : issue;
-
-    protected override string InputLog(ReservationInfo @in) =>
-        $"RESERVATION INFO: {@in.Status ?? "*STATUS*"}  {string.Format("{0:0}", @in.Id)}  {@in.Room ?? "*ROOM*"}  {@in.ArrivalDate?.ToString("dd.MM.yyyy") ?? "*ARRIVAL*"} - {@in.DepartureDate?.ToString("dd.MM.yyyy") ?? "*DEPARTURE*"}";
-
-    protected override string OutputLog(ReservationUpdatedMessage @out)
-    {
-        var log = $"RESERVATION UPDATE MESSAGE: {@out.GenericNo ?? "*GENERIC NO*"}  {@out.Status ?? "*STATUS*"}  {@out.ArrivalDate:dd.MM.yyyy} - {@out.DepartureDate:dd.MM.yyyy}";
-
-        if (@out.ReservationGuests != null && @out.ReservationGuests.Length > 0 && @out.ReservationGuests[0] != null)
-        {
-            var guest = @out.ReservationGuests[0];
-            log += $"\n\tGUEST: {guest.GenericNo ?? "GENERIC NO"}  {guest.LastName ?? "*LASTNAME*"} {guest.FirstName ?? "*FIRSTNAME*"} {guest.MiddleName ?? "*MIDDLENAME*"}  {guest.Sex ?? "*SEX*"}";
-            log += $"\n\t{guest.BirthDate?.ToString("dd.MM.yyyy") ?? "*BIRTHDAY*"}  {guest.CountryCode ?? "*COUNTRYCODE*"}, {guest.Region ?? "*REGION*"}, {guest.City ?? "*CITY*"}, {guest.Street ?? "*STREET*"}";
-
-            if (guest.DocumentData != null)
-            {
-                var document = guest.DocumentData;
-                log += $"\n\tDOCUMENT: {document.DocumentTypeCode ?? "*TYPECODE*"}  {document.DocumentSeries ?? "*SERIES*"} {document.DocumentNumber ?? "*NUMBER*"}";
-                log += $"\n\t{document.IssueDate?.ToString("dd.MM.yyyy") ?? "*ISSUEDATE*"}  {document.DepartmentCode ?? "*DEPARTMENT*"}  {document.IssuerInfo ?? "*ISSUERINFO*"}";
-            }
-
-            var timelines = @out.Timelines?.Where(t => t != null);
-
-            if (timelines != null && timelines.Any())
-            {
-                log += $"\n\tTIMELINES:";
-
-                foreach (var timeline in timelines)
-                {
-                    log += $"\n\t\t{timeline.DateRange?.DateTimeFrom.ToString("dd.MM.yyyy") ?? "*FROM*"} - {timeline.DateRange?.DateTimeTo.ToString("dd.MM.yyyy") ?? "*TO*"}";
-                    log += $"\n\t{timeline.RateName ?? "*RATECODE*"}  {timeline.RoomTypeCode ?? "*ROOMTYPE*"}  {timeline.RoomCode ?? "*ROOM*"}  {timeline.StayPriceLocalCurrencyAmount}";
-
-                    var packages = timeline.Packages?.Where(p => p != null);
-
-                    if (packages != null && packages.Any())
-                    {
-                        log += $"\n\t\tPACKAGES:";
-
-                        foreach (var package in packages)
-                            log += $"\n\t\t\t{package.Code ?? "*CODE*"}  {package.Amount} {package.CurrencyCode ?? "*CURRENCYCODE*"}  {package.Count?.ToString() ?? "*COUNT*"}";
-                    }
-                }
-            }
-
-            var phones = guest.Phones?.Where(t => t != null);
-
-            if (phones != null && phones.Any())
-                log += $"\n\tPHONES: {string.Join(", ", phones.Where(p => p != null).Select(p => $"{p.PhoneNumber ?? "*NUMBER*"} ({p.PhoneType ?? "*TYPE*"})"))}";
-        }
-
-        return log;
-    }
 }

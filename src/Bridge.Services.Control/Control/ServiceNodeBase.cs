@@ -41,11 +41,19 @@ public abstract class ServiceNodeBase
         await ChangeStateAsync();
     }
 
-    public async Task UnactiveAsync(Exception? ex = null)
+    public async Task UnactiveAsync(string error)
     {
-        if (!_isActive && ((ex == null && _currentException == null)
-            || (ex != null && _currentException != null && ex.Message == _currentException.Message
-            && ex.StackTrace == _currentException.StackTrace)))
+        if (!_isActive && (_currentException == null || _currentException.Message != error))
+            return;
+
+        _isActive = false;
+        _currentException = new Exception(error);
+        await ChangeStateAsync();
+    }
+
+    public async Task UnactiveAsync(Exception ex)
+    {
+        if (!_isActive && (_currentException == null || _currentException.Message != ex.Message || _currentException.StackTrace != ex.StackTrace))
             return;
 
         _isActive = false;

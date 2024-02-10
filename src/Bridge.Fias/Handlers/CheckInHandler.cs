@@ -4,8 +4,7 @@ internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
 {
     protected override string HandlerName => "CHECKIN";
 
-    public CheckInHandler(IFiasService fiasService, IEventBusService eventBusService, ILogger<CheckInHandler> logger)
-        : base(eventBusService, logger)
+    public CheckInHandler(IFiasService fiasService, IEventBusService eventBusService) : base(eventBusService)
     {
         fiasService.FiasGuestCheckInEvent += async message => await InputDataAsync("RESV", message);
     }
@@ -34,9 +33,4 @@ internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
             DepartureDate = departureDate
         });
     }
-
-    protected override string InputLog(FiasGuestCheckIn @in) => @in.Source ?? @in.ReservationNumber.ToString();
-
-    protected override string OutputLog(ReservationInfo @out) =>
-        $"GUEST CHECKIN: {string.Format("{0:0}", @out.Id)}  {@out.Room ?? "ROOM"}  {@out.ArrivalDate?.ToString("dd.MM.yyyy") ?? "ARRIVAL"} - {@out.DepartureDate?.ToString("dd.MM.yyyy") ?? "DEPARTURE"}";
 }

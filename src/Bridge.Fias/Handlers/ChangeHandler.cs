@@ -4,8 +4,7 @@ internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
 {
     protected override string HandlerName => "CHANGE";
 
-    public ChangeHandler(IFiasService fiasService, IEventBusService eventBusService, ILogger<ChangeHandler> logger)
-        : base(eventBusService, logger)
+    public ChangeHandler(IFiasService fiasService, IEventBusService eventBusService) : base(eventBusService)
     {
         fiasService.FiasGuestChangeEvent += async message => await InputDataAsync("RESV", message);
     }
@@ -34,9 +33,4 @@ internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
             DepartureDate = departureDate
         });
     }
-
-    protected override string InputLog(FiasGuestChange @in) => @in.Source ?? @in.ReservationNumber.ToString();
-
-    protected override string OutputLog(ReservationInfo @out) =>
-        $"GUEST CHECKIN: {string.Format("{0:0}", @out.Id)}  {@out.Room ?? "ROOM"}  {@out.ArrivalDate?.ToString("dd.MM.yyyy") ?? "ARRIVAL"} - {@out.DepartureDate?.ToString("dd.MM.yyyy") ?? "DEPARTURE"}";
 }

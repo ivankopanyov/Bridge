@@ -6,6 +6,8 @@ internal class ElasticSearchOptions
 
     private int _port = 9200;
 
+    private string _index = "Bridge";
+
     public string? Host
     {
         get => _host;
@@ -16,5 +18,11 @@ internal class ElasticSearchOptions
     {
         get => _port;
         set => _port = value ?? 0;
+    }
+
+    public string? Index
+    {
+        get => _index;
+        set => _index = value ?? string.Empty;
     }
 }
