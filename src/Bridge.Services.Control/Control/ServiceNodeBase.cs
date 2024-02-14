@@ -33,7 +33,7 @@ public abstract class ServiceNodeBase
 
     public async Task ActiveAsync()
     {
-        if (_isActive)
+        if (_isActive && _currentException == null)
             return;
 
         _isActive = true;
@@ -43,7 +43,7 @@ public abstract class ServiceNodeBase
 
     public async Task UnactiveAsync(string error)
     {
-        if (!_isActive && (_currentException == null || _currentException.Message != error))
+        if (!_isActive && _currentException != null && _currentException.Message == error && _currentException.StackTrace == null)
             return;
 
         _isActive = false;
@@ -53,7 +53,7 @@ public abstract class ServiceNodeBase
 
     public async Task UnactiveAsync(Exception ex)
     {
-        if (!_isActive && (_currentException == null || _currentException.Message != ex.Message || _currentException.StackTrace != ex.StackTrace))
+        if (!_isActive && _currentException != null && _currentException.Message == ex.Message && _currentException.StackTrace == ex.StackTrace)
             return;
 
         _isActive = false;

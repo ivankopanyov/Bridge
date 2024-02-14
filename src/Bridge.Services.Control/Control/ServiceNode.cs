@@ -20,19 +20,32 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
             if (serviceName != _name)
                 return null;
 
+            var response = new SetOptionsResponse();
+
+            if (serviceOptions == null)
+            {
+                response.Error = "Options is null";
+                return response;
+            }
+
             try 
             {
-                Options = serviceOptions != null && JsonConvert.DeserializeObject<T>(serviceOptions) is T newOptions
-                    ? newOptions : DefaultOptions;
+                var options = JsonConvert.DeserializeObject<T>(serviceOptions);
+                if (options != null)
+                {
+                    Options = options;
+                    await SetOptionsHandleAsync();
+                    response.Service = ToServiceInfo();
+                }
+                else
+                    response.Error = "Options is null";
             }
             catch (Exception ex)
             {
-                Options = DefaultOptions;
-                _logger.Error(_name, ex);
+                response.Error = ex.Message;
             }
 
-            await SetOptionsHandleAsync();
-            return ToServiceInfo();
+            return response;
         };
     }
 

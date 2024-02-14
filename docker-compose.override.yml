@@ -12,6 +12,7 @@ services:
       - network
     depends_on:
       - rabbitmq
+    restart: always
 
   opera:
     container_name: opera
@@ -37,6 +38,7 @@ services:
       - network
     depends_on:
       - rabbitmq
+    restart: always
 
   hostapi:
     container_name: hostapi
@@ -51,6 +53,12 @@ services:
       - network
     depends_on:
       - rabbitmq
+    restart: always
+  
+  spa:
+    container_name: spa
+    volumes:
+      - bridge-spa:/app/build
   
   elasticsearch:
     container_name: elasticsearch
@@ -63,6 +71,7 @@ services:
       - network
     depends_on:
       - rabbitmq
+    restart: always
   
   kibana:
     container_name: kibana
@@ -74,6 +83,7 @@ services:
       - network
     depends_on:
       - elasticsearch
+    restart: always
 
   rabbitmq:
     container_name: rabbitmq
@@ -81,11 +91,25 @@ services:
       - "15672:15672"
     networks:
       - network
+    restart: always
+  
+  nginx:
+    container_name: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./src/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./src/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - bridge-spa:/usr/share/nginx/html
+    depends_on:
+      - spa
+    restart: always
 
 networks:
   network:
     driver: bridge
 
 volumes:
-    elasticsearch:
+  elasticsearch:
+  bridge-spa:
 

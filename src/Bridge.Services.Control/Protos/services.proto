@@ -43,7 +43,8 @@ message SetOptionsRequest {
 }
 
 message SetOptionsResponse {
-	optional ServiceInfo service = 1;
+	optional string Error = 1;
+	optional ServiceInfo service = 2;
 }
 
 message OptionsResponse {

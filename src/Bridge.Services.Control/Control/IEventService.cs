@@ -2,7 +2,7 @@
 
 internal delegate ServiceInfo GetServicesHandle();
 
-internal delegate Task<ServiceInfo?> SetOptionsHandleAsync(string serviceName, string? options);
+internal delegate Task<SetOptionsResponse?> SetOptionsHandleAsync(string serviceName, string? options);
 
 public interface IEventService
 {
@@ -12,5 +12,5 @@ public interface IEventService
 
     internal IEnumerable<ServiceInfo> GetServices();
 
-    internal Task<ServiceInfo?> SetOptionsAsync(string serviceName, ServiceOptions options);
+    internal Task<SetOptionsResponse?> SetOptionsAsync(string serviceName, ServiceOptions options);
 }

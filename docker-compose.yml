@@ -25,6 +25,11 @@ services:
       context: .
       dockerfile: src/Bridge.HostApi/Dockerfile
   
+  spa:
+    build:
+      context: .
+      dockerfile: src/bridge-spa/Dockerfile
+  
   elasticsearch:
     image: elasticsearch:${ELASTIC_VERSION}
   
@@ -33,4 +38,7 @@ services:
 
   rabbitmq:
     image: rabbitmq:3.12.12-management-alpine
+  
+  nginx:
+    image: nginx
 

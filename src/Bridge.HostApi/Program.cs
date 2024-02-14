@@ -12,6 +12,8 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
 });
 
+builder.Services.AddCors();
+
 builder.Services.AddLogger();
 builder.Services.AddServiceHost(options => options.Http2Port = http2Port);
 
@@ -41,6 +43,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(builder => builder
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed(origin => true)
+    .AllowCredentials());
 
 app.UseAuthorization();
 

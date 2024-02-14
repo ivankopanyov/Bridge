@@ -9,13 +9,13 @@ internal class EventService : IEventService
     public IEnumerable<ServiceInfo> GetServices() => GetServicesEvent?
         .GetInvocationList().Select(i => ((GetServicesHandle)i)()) ?? Enumerable.Empty<ServiceInfo>();
 
-    public async Task<ServiceInfo?> SetOptionsAsync(string serviceName, ServiceOptions options)
+    public async Task<SetOptionsResponse?> SetOptionsAsync(string serviceName, ServiceOptions options)
     {
         if (SetOptionsEvent == null)
             return null;
 
         foreach (var d in SetOptionsEvent.GetInvocationList())
-            if (await ((SetOptionsHandleAsync)d)(serviceName, options.Options) is ServiceInfo result)
+            if (await ((SetOptionsHandleAsync)d)(serviceName, options.Options) is SetOptionsResponse result)
                 return result;
 
         return null;

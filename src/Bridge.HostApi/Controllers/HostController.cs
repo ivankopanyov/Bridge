@@ -11,15 +11,18 @@ public class HostController(IServiceRepository serviceRepository, IServiceContro
     private readonly ILogger _logger = logger;
 
     [HttpGet("")]
-    [ProducesResponseType<IReadOnlyDictionary<string, HashSet<ServiceNodeInfo>>>((int)HttpStatusCode.OK)]
-    [ProducesResponseType<string>((int)HttpStatusCode.Forbidden)]
-    public ActionResult<IReadOnlyDictionary<string, HashSet<ServiceNodeInfo>>> GetHosts() => _serviceRepository.Hosts == null
-        ? Forbid("Services have not yet been loaded.")
-        : Ok(_serviceRepository.Hosts);
+    [ProducesResponseType<IEnumerable<HostNode>>((int)HttpStatusCode.OK)]
+    [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
+    public ActionResult<IEnumerable<HostNode>> GetHosts() => _serviceRepository.Hosts == null
+        ? NotFound("Searching for services.")
+        : Ok(_serviceRepository.Hosts.Select(keyValue => new HostNode
+        {
+            Name = keyValue.Key,
+            Services = keyValue.Value
+        }));
 
     [HttpPut("{hostName}/{serviceName}")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
-    [ProducesResponseType<string>((int)HttpStatusCode.Forbidden)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
     public async Task<IActionResult> SetOptionsAsync([FromRoute] string hostName, [FromRoute] string serviceName, [FromBody] Dto.ServiceNodeOptions options)
@@ -34,7 +37,7 @@ public class HostController(IServiceRepository serviceRepository, IServiceContro
             return BadRequest("Options is required.");
 
         if (_serviceRepository.Hosts == null)
-            return Forbid("Services have not yet been loaded.");
+            return NotFound("Services have not yet been loaded.");
 
         try
         {
@@ -43,6 +46,9 @@ public class HostController(IServiceRepository serviceRepository, IServiceContro
                 ServiceName = serviceName,
                 Options = options.ToServiceOptions()
             });
+
+            if (result.Error != null)
+                return BadRequest(result.Error);
 
             if (result.Service == null)
                 return NotFound($"Service {serviceName} not found on host {hostName}.");
