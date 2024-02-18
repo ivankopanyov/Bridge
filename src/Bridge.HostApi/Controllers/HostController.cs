@@ -2,68 +2,59 @@
 
 [ApiController]
 [Route("api/v1.0/hosts")]
-public class HostController(IServiceRepository serviceRepository, IServiceControlClient serviceControlClient, ILogger<HostController> logger) : ControllerBase
+public class HostController(IServiceRepository serviceRepository, IServiceControlClient serviceControlClient) : ControllerBase
 {
     private readonly IServiceRepository _serviceRepository = serviceRepository;
 
     private readonly IServiceControlClient _serviceControlClient = serviceControlClient;
-
-    private readonly ILogger _logger = logger;
 
     [HttpGet("")]
     [ProducesResponseType<IEnumerable<HostNode>>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
     public ActionResult<IEnumerable<HostNode>> GetHosts() => _serviceRepository.Hosts == null
         ? NotFound("Searching for services.")
-        : Ok(_serviceRepository.Hosts.Select(keyValue => new HostNode
-        {
-            Name = keyValue.Key,
-            Services = keyValue.Value
-        }));
+        : Ok(_serviceRepository.Hosts);
 
     [HttpPut("{hostName}/{serviceName}")]
-    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType<ServiceNodeInfo>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
-    public async Task<IActionResult> SetOptionsAsync([FromRoute] string hostName, [FromRoute] string serviceName, [FromBody] Dto.ServiceNodeOptions options)
+    public async Task<ActionResult<ServiceNodeInfo>> SetOptionsAsync([FromRoute] string hostName, [FromRoute] string serviceName, [FromBody] OptionsDto options)
     {
-        if (hostName == null)
+        if (string.IsNullOrWhiteSpace(hostName))
             return BadRequest("Hostname is required.");
 
-        if (serviceName == null)
+        if (string.IsNullOrWhiteSpace(serviceName))
             return BadRequest("Servicename is required.");
 
         if (options == null)
             return BadRequest("Options is required.");
 
-        if (_serviceRepository.Hosts == null)
-            return NotFound("Services have not yet been loaded.");
+        if (string.IsNullOrWhiteSpace(options.JsonOptions))
+            return BadRequest("JsonOptions is required.");
 
         try
         {
-            var result = await _serviceControlClient.SetOptionsAsync(hostName, new SetOptionsRequest
+            var result = await _serviceControlClient.SetOptionsAsync(hostName, new Options
             {
                 ServiceName = serviceName,
-                Options = options.ToServiceOptions()
+                JsonOptions = options.JsonOptions
             });
 
-            if (result.Error != null)
+            if (!result.Ok)
                 return BadRequest(result.Error);
 
             if (result.Service == null)
                 return NotFound($"Service {serviceName} not found on host {hostName}.");
 
-            await _serviceRepository.SetServiceOptionsAsync(new Bridge.Services.Control.Service
-            {
-                Host = hostName,
-                Service_ = result.Service
-            });
+            var serviceNodeInfo = await _serviceRepository.UpdateServiceAsync(result.Service, true);
 
-            return Ok();
+            // Update service event
+
+            return Ok(new ServiceNodeInfo(result.Service));
         }
         catch (Exception ex)
         {
-            _logger.Error(nameof(HostController), ex);
             return NotFound(ex.Message);
         }
     }

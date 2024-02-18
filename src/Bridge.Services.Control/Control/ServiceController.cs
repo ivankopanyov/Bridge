@@ -6,19 +6,18 @@ internal class ServiceController(IEventService eventService, ServiceControlOptio
 
     private readonly string _host = options.Host;
 
-    public override async Task<SetOptionsResponse> SetOptions(SetOptionsRequest request, ServerCallContext context) =>
-        await _eventService.SetOptionsAsync(request.ServiceName, request.Options) is SetOptionsResponse service
-            ? service : new SetOptionsResponse();
+    public override async Task<SetOptionsResponse> SetOptions(Options request, ServerCallContext context) =>
+        await _eventService.SetOptionsAsync(request) is SetOptionsResponse service ? service : new();
 
-    public override sealed Task<Services> GetServices(Empty request, ServerCallContext context)
+    public override sealed Task<HostInfo> GetServices(Empty request, ServerCallContext context)
     {
         var services = _eventService.GetServices();
-        var response = new Services
+        var response = new HostInfo
         {
-            Host = _host
+            Name = _host
         };
 
-        response.Services_.AddRange(services);
+        response.Services.AddRange(services);
         return Task.FromResult(response);
     }
 }

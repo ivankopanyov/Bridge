@@ -1,30 +1,39 @@
 ﻿namespace Bridge.HostApi.Dto;
 
-public class ServiceNodeInfo(ServiceInfo serviceInfo)
+public class ServiceNodeInfo
 {
-    public string Name { get; init; } = serviceInfo.Name;
+    public string Name { get; init; }
 
-    public ServiceNodeState State { get; set; } = new ServiceNodeState(serviceInfo.State);
+    public string HostName { get; init; }
 
-    public ServiceNodeOptions? Options { get; set; } = serviceInfo.Options != null
-        ? new ServiceNodeOptions(serviceInfo.Options)
-        : null;
+    public ServiceNodeState State { get; set; }
+
+    public string? JsonOptions { get; set; }
+
+    public ServiceNodeInfo(ServiceInfo serviceInfo)
+    {
+        Name = serviceInfo.Name;
+        HostName = serviceInfo.HostName;
+        State = new ServiceNodeState(serviceInfo.State);
+        JsonOptions = serviceInfo.JsonOptions;
+    }
 
     public ServiceInfo ToServiceInfo()
     {
         var serviceInfo = new ServiceInfo()
         {
             Name = Name,
+            HostName = HostName,
             State = State.ToServiceState()
-        };
-
-        if (Options != null)
-            serviceInfo.Options = Options.ToServiceOptions();
+        }; 
+        
+        if (JsonOptions != null)
+            serviceInfo.JsonOptions = JsonOptions;
 
         return serviceInfo;
     }
 
     public override int GetHashCode() => Name.GetHashCode();
 
-    public override bool Equals(object? obj) => obj is ServiceNodeInfo other && other.Name == Name;
+    public override bool Equals(object? obj) => obj is ServiceNodeInfo other && Name == other.Name;
 }

@@ -66,6 +66,7 @@ public abstract class ServiceNodeBase
         var serviceInfo = new ServiceInfo()
         {
             Name = _name,
+            HostName = _host,
             State = new ServiceState
             {
                 IsActive = _isActive
@@ -81,10 +82,6 @@ public abstract class ServiceNodeBase
         return serviceInfo;
     }
 
-    public override int GetHashCode() => _name.GetHashCode();
-
-    public override bool Equals(object? obj) => obj is ServiceNodeBase other && _name == other._name;
-
     private async Task ChangeStateAsync()
     {
         _cancellationTokenSource.Cancel();
@@ -93,11 +90,7 @@ public abstract class ServiceNodeBase
 
         try
         {
-            await SendServiceAsync(new Service
-            {
-                Host = _host,
-                Service_ = ToServiceInfo()
-            }, _cancellationToken);
+            await SendServiceAsync(ToServiceInfo(), _cancellationToken);
         }
         catch (OperationCanceledException ex)
         {
@@ -109,7 +102,7 @@ public abstract class ServiceNodeBase
         }
     }
 
-    private async Task SendServiceAsync(Service service, CancellationToken cancellationToken) => await Task.Run(async () =>
+    private async Task SendServiceAsync(ServiceInfo service, CancellationToken cancellationToken) => await Task.Run(async () =>
     {
         try
         {

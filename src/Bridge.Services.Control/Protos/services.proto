@@ -12,51 +12,35 @@ message ServiceState {
 	optional string stackTrace = 3;
 }
 
-enum ServicePropertyType {
-	string = 0;
-	int = 1;
-}
-
-message ServiceOptions {
-	optional string options = 1;
-}
-
 message ServiceInfo {
 	string name = 1;
+	string hostName = 2;
 	ServiceState state = 3;
-	optional ServiceOptions options = 4;
+	optional string jsonOptions = 4;
 }
 
-message Service {
-	string host = 1;
-	ServiceInfo service = 2;
-}
-
-message Services {
-	string host = 1;
+message HostInfo {
+	string name = 1;
 	repeated ServiceInfo services = 2;
 }
 
-message SetOptionsRequest {
+message Options {
 	string serviceName = 1;
-	ServiceOptions options = 2;
+	optional string jsonOptions = 2;
 }
 
 message SetOptionsResponse {
-	optional string Error = 1;
-	optional ServiceInfo service = 2;
-}
-
-message OptionsResponse {
-	optional ServiceOptions options = 1;
+	bool ok = 1;
+	optional string Error = 2;
+	optional ServiceInfo service = 3;
 }
 
 service ServiceControl {
-	rpc SetOptions (SetOptionsRequest) returns (SetOptionsResponse);
-	rpc GetServices (google.protobuf.Empty) returns (Services);
+	rpc SetOptions (Options) returns (SetOptionsResponse);
+	rpc GetServices (google.protobuf.Empty) returns (HostInfo);
 }
 
 service ServiceHost {
-	rpc GetOptions (Service) returns (OptionsResponse);
-	rpc SetService (Service) returns (google.protobuf.Empty);
+	rpc GetOptions (ServiceInfo) returns (Options);
+	rpc SetService (ServiceInfo) returns (google.protobuf.Empty);
 }

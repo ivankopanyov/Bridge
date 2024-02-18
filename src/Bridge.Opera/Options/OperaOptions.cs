@@ -4,7 +4,7 @@ public class OperaOptions
 {
     private string _connectionString = string.Empty;
 
-    private HashSet<string> trxCodes = [];
+    private HashSet<string> _trxCodes = [];
 
     private Dictionary<string, string> _documentTypeAliases = [];
 
@@ -20,13 +20,13 @@ public class OperaOptions
         }
     }
 
-    public HashSet<string>? TrxCodes
+    public HashSet<string> TrxCodes
     {
-        get => trxCodes;
-        set => trxCodes = value ?? [];
+        get => _trxCodes;
+        init => _trxCodes = value ?? [];
     }
 
-    public Dictionary<string, string>? DocumentTypeAliases
+    public Dictionary<string, string> DocumentTypeAliases
     {
         get => _documentTypeAliases;
         set => _documentTypeAliases = value ?? [];

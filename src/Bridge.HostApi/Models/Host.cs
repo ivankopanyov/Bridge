@@ -6,11 +6,8 @@ public class Host
 
     public virtual ICollection<Service> Services { get; set; }
 
-    public virtual ICollection<Options> Options { get; set; }
-
     public Host()
     {
         Services = new HashSet<Service>();
-        Options = new HashSet<Options>();
     }
 }

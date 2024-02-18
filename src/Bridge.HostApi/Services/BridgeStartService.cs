@@ -1,12 +1,8 @@
 ﻿namespace Bridge.HostApi.Services;
 
-public class BridgeStartService(IServiceControlClient serviceControlClient, ILogger<BridgeStartService> logger) : BackgroundService
+public class BridgeStartService(IServiceControlClient serviceControlClient) : BackgroundService
 {
-    private static readonly string _name = typeof(BridgeStartService).Name;
-
     private readonly IServiceControlClient _serviceControlClient = serviceControlClient;
-
-    private readonly ILogger _logger = logger;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -14,22 +10,35 @@ public class BridgeStartService(IServiceControlClient serviceControlClient, ILog
         await context.Database.EnsureCreatedAsync();
 
         var repository = new ServiceRepository(context);
-        var hosts = await repository.GetHostNamesAsync();
-        var servicesSet = new HashSet<Bridge.Services.Control.Services>();
+        var hosts = await context.Hosts.AsNoTracking().Include(h => h.Services).ToListAsync();
 
         foreach (var host in hosts)
         {
             try
             {
-                var services = await _serviceControlClient.GetServicesAsync(host);
-                servicesSet.Add(services);
+                var hostInfo = await _serviceControlClient.GetServicesAsync(host.Name);
+                foreach (var serviceInfo in hostInfo.Services)
+                {
+                    var serviceNodeInfo = await repository.UpdateServiceAsync(serviceInfo, false);
+                    if (host.Services.FirstOrDefault(s => s.ServiceName == serviceNodeInfo.Name) is Service service)
+                        host.Services.Remove(service);
+
+                    // Update service event
+                }
+
+                foreach (var s in host.Services)
+                {
+                    context.Services.Remove(s);
+                    // Remove service event
+                }
             }
-            catch (Exception ex)
+            catch (RpcException)
             {
-                _logger.Error(_name, ex);
+                context.Hosts.Remove(host);
+                // Remove host event
             }
         }
 
-        await repository.UpdateServicesAsync(servicesSet);
+        await context.SaveChangesAsync();
     }
 }

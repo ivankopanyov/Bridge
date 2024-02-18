@@ -6,7 +6,7 @@ public class Service
 
     public string HostName { get; set; }
 
-    public virtual Options? Options { get; set; }
+    public string? JsonOptions { get; set; }
 
     public virtual Host Host { get; set; }
 }

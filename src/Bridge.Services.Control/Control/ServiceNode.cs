@@ -15,33 +15,40 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
     public ServiceNode(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options,
         ILogger logger) : base(serviceHostClient, eventService, options, logger)
     {
-        eventService.SetOptionsEvent += async (serviceName, serviceOptions) =>
+        eventService.SetOptionsEvent += async (options) =>
         {
-            if (serviceName != _name)
+            if (options.ServiceName != _name)
                 return null;
 
             var response = new SetOptionsResponse();
 
-            if (serviceOptions == null)
+            if (string.IsNullOrWhiteSpace(options.JsonOptions))
             {
+                response.Ok = false;
                 response.Error = "Options is null";
                 return response;
             }
 
             try 
             {
-                var options = JsonConvert.DeserializeObject<T>(serviceOptions);
-                if (options != null)
+                var newOptions = JsonConvert.DeserializeObject<T>(options.JsonOptions);
+                if (newOptions != null)
                 {
-                    Options = options;
+                    Options = newOptions;
                     await SetOptionsHandleAsync();
+
+                    response.Ok = true;
                     response.Service = ToServiceInfo();
                 }
                 else
+                {
+                    response.Ok = false;
                     response.Error = "Options is null";
+                }
             }
             catch (Exception ex)
             {
+                response.Ok = false;
                 response.Error = ex.Message;
             }
 
@@ -49,24 +56,20 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
         };
     }
 
-    internal async Task GetOptionsAsync() => await Task.Run(async () => await GetOptionsAsync(new Service
-    {
-        Host = _host,
-        Service_ = ToServiceInfo()
-    })).ConfigureAwait(false);
+    internal async Task GetOptionsAsync() => await Task.Run(async () => await GetOptionsAsync(ToServiceInfo())).ConfigureAwait(false);
 
-    private async Task GetOptionsAsync(Service service, Exception? currentExeption = null) => await Task.Run(async () =>
+    private async Task GetOptionsAsync(ServiceInfo service, Exception? currentExeption = null) => await Task.Run(async () =>
     {
         try
         {
             var options = await _serviceHostClient.GetOptionsAsync(service);
 
-            if (options?.Options?.Options == null)
+            if (options == null)
                 Options = DefaultOptions;
             else
                 try
                 {
-                    Options = JsonConvert.DeserializeObject<T>(options.Options.Options) ?? DefaultOptions;
+                    Options = JsonConvert.DeserializeObject<T>(options.JsonOptions) ?? DefaultOptions;
                 }
                 catch (Exception ex)
                 {
@@ -94,16 +97,12 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
     private protected override ServiceInfo ToServiceInfo()
     {
         var serviceInfo = base.ToServiceInfo();
-        serviceInfo.Options = new ServiceOptions();
-
-        if (Options == null)
-            return serviceInfo;
 
         try
         {
             var result = JsonConvert.SerializeObject(Options);
             if (result != null)
-                serviceInfo.Options.Options = result;
+                serviceInfo.JsonOptions = result;
         }
         catch (Exception ex)
         {

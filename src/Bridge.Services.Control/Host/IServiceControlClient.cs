@@ -2,7 +2,7 @@
 
 public interface IServiceControlClient
 {
-    Task<Services> GetServicesAsync(string host);
+    Task<HostInfo> GetServicesAsync(string host);
 
-    Task<SetOptionsResponse> SetOptionsAsync(string host, SetOptionsRequest request);
+    Task<SetOptionsResponse> SetOptionsAsync(string host, Options request);
 }
