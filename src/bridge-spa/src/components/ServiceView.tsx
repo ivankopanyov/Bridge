@@ -8,6 +8,7 @@ import OptionsProperty from "../models/OptionsProperty";
 import ButtonProperty from "./ButtonProperty";
 import Field from "./Field";
 import ErrorView from "./ErrorView";
+import ServiceDto from "../dto/ServiceDto";
 
 interface ServiceViewProps {
     serviceViewModel: ServiceViewModel;
@@ -20,43 +21,19 @@ interface ServiceViewProps {
 const ServiceView: React.FC<ServiceViewProps> = (props: ServiceViewProps) => {
     const margin: number = 20;
 
-    const getOptionsProperties = (jsonOptions: string | undefined): OptionsProperty[] | undefined => {
-        if (!jsonOptions)
-            return undefined;
-
-        try {
-            const options = JSON.parse(jsonOptions);
-            const values = Object.values<any>(options);
-            return Object.keys(options).map((key, index) => { return {
-                name: key,
-                value: values[index]
-            }});
-        } catch {
-            return undefined;
-        }
-    };
-
     const [disabled, setDisabled] = React.useState<boolean>(false);
     const [error, setError] = React.useState<string | undefined>(undefined);
-    const [options, setOptions] = React.useState<OptionsProperty[] | undefined>(getOptionsProperties(props.service.jsonOptions));
-
-    const getOptions = () => {
-        if (!options)
-            return options;
-        const map = new Map<string, any>();
-        options.forEach(property => map.set(property.name, property.value));
-        return Object.fromEntries(map.entries());
-    };
   
     const setOptionsRequest = async () => await props.httpClient
-        .update<Service>("hosts/" + props.service.hostName + "/" + props.service.name, {
-            jsonOptions: JSON.stringify(getOptions())
+        .update<ServiceDto>("hosts/" + props.service.hostName + "/" + props.service.name, {
+            jsonOptions: !props.service.temp
+                ? props.service.temp
+                : JSON.stringify(Object.fromEntries(props.service.temp.map(p => [p.name, p.value])))
         })
         .then(data => {
             setDisabled(false);
             setError(undefined);
-            props.serviceViewModel.setService(data);
-            setOptions(getOptionsProperties(data.jsonOptions));
+            props.serviceViewModel.updateService(data);
         })
         .catch(error => {
             setDisabled(false);
@@ -67,31 +44,34 @@ const ServiceView: React.FC<ServiceViewProps> = (props: ServiceViewProps) => {
         <Component
             title={props.service.name}
             titleColor={props.service.state.isActive ? props.successColor : props.failColor}
-            onResetClick={() => setOptions(getOptionsProperties(props.service.jsonOptions))}>
+            onResetClick={() => props.serviceViewModel.resetOptions(props.service.hostName, props.service.name)}>
             {(props.service.state.error || props.service.state.stackTrace) && <ErrorView
                 error={props.service.state.error}
                 stackTrace={props.service.state.stackTrace}
                 failColor={props.failColor}
                 margin={margin} /> }
-            { options && 
+            { props.service.temp && 
                 <div 
                     style={{
                         marginTop: margin + "px"
                     }}>
-                    { options.map((property, index) => <Field 
+                    { props.service.temp.map((property, index) => <Field 
                         key={index}
                         name={property.name}
                         value={property.value}
                         setValue={value => {
-                            const newOptions = [...options];
-                            const newValue: OptionsProperty = {
-                                name: property.name,
-                                value: value
-                            };
+                            if (!props.service.temp)
+                                return;
 
-                            const index = newOptions.findIndex(p => p.name === property.name);
-                            index >= 0 ? newOptions[index] = newValue : newOptions.push(newValue);
-                            setOptions(newOptions);
+                            const options = [...props.service.temp];
+                            const index = options.findIndex(p => p.name === property.name);
+                            if (index >= 0) {
+                                options[index] = {
+                                    name: property.name,
+                                    value: value
+                                };
+                                props.serviceViewModel.updateOptions(props.service.hostName, props.service.name, options);
+                            }
                         }}
                         mb={margin}
                         disabled={disabled} />

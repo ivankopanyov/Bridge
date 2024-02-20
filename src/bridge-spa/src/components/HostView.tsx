@@ -19,8 +19,8 @@ const HostView: React.FC<HostViewProps> = (props: HostViewProps) => {
             title={props.host.name + " (" + props.host.services.filter(s => s.state.isActive).length + " / " + props.host.services.length + ")"}
             titleColor={props.host.services.find(service => !service.state.isActive) ? props.failColor : props.successColor}
             contentColor='gray'>
-            { props.host.services.map((service, index) => <ServiceView
-                key={index}
+            { props.host.services.map(service => <ServiceView
+                key={service.name}
                 serviceViewModel={props.serviceViewModel}
                 httpClient={props.httpClient}
                 service={service}

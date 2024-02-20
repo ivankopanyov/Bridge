@@ -6,10 +6,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
 import ReplayIcon from '@mui/icons-material/Replay';
 
-const expandedState = {
-    enabled: true
-};
-
 interface ComponentProps extends MarginProps {
     children?: React.ReactNode;
     title?: string;
@@ -23,6 +19,7 @@ interface ComponentProps extends MarginProps {
   
 const Component: React.FC<ComponentProps> = (props: ComponentProps) => {
     const [expanded, setExpanded] = React.useState<boolean>(false);
+    const expandedState = React.useRef<boolean>(true);
   
     return (
         <Accordion
@@ -34,8 +31,8 @@ const Component: React.FC<ComponentProps> = (props: ComponentProps) => {
             }}
             expanded={expanded}
             onChange={(_e, s) => { 
-                setExpanded(expandedState.enabled ? s : true);
-                expandedState.enabled = true; 
+                setExpanded(expandedState.current ? s : true);
+                expandedState.current = true; 
             }}>
             <AccordionSummary
                 sx={{ 
@@ -48,7 +45,7 @@ const Component: React.FC<ComponentProps> = (props: ComponentProps) => {
                         { props.onAddClick && 
                         <IconButton
                             onClick={() => {
-                                expandedState.enabled = false;
+                                expandedState.current = false;
                                 props.onAddClick && props.onAddClick();
                             }}
                             disabled={props.disabled}>
@@ -57,7 +54,7 @@ const Component: React.FC<ComponentProps> = (props: ComponentProps) => {
                         { props.onResetClick && expanded &&
                         <IconButton
                             onClick={() => {
-                                expandedState.enabled = false;
+                                expandedState.current = false;
                                 props.onResetClick && props.onResetClick();
                             }}
                             disabled={props.disabled}>

@@ -1,7 +1,9 @@
 ﻿namespace Bridge.HostApi.Services;
 
-public class BridgeStartService(IServiceControlClient serviceControlClient) : BackgroundService
+public class BridgeStartService(IUpdateService updateService, IServiceControlClient serviceControlClient) : BackgroundService
 {
+    private readonly IUpdateService _updateService = updateService;
+
     private readonly IServiceControlClient _serviceControlClient = serviceControlClient;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -23,19 +25,26 @@ public class BridgeStartService(IServiceControlClient serviceControlClient) : Ba
                     if (host.Services.FirstOrDefault(s => s.ServiceName == serviceNodeInfo.Name) is Service service)
                         host.Services.Remove(service);
 
-                    // Update service event
+                    await _updateService.SendUpdateAsync(serviceNodeInfo);
                 }
 
                 foreach (var s in host.Services)
                 {
                     context.Services.Remove(s);
-                    // Remove service event
+                    await _updateService.SendRemoveServiceAsync(new()
+                    {
+                        Name = s.ServiceName,
+                        HostName = s.HostName
+                    });
                 }
             }
             catch (RpcException)
             {
                 context.Hosts.Remove(host);
-                // Remove host event
+                await _updateService.SendRemoveHostAsync(new()
+                {
+                    Name = host.Name
+                });
             }
         }
 

@@ -2,8 +2,10 @@
 
 [ApiController]
 [Route("api/v1.0/hosts")]
-public class HostController(IServiceRepository serviceRepository, IServiceControlClient serviceControlClient) : ControllerBase
+public class HostController(IUpdateService updateService, IServiceRepository serviceRepository, IServiceControlClient serviceControlClient) : ControllerBase
 {
+    private readonly IUpdateService _updateService = updateService;
+
     private readonly IServiceRepository _serviceRepository = serviceRepository;
 
     private readonly IServiceControlClient _serviceControlClient = serviceControlClient;
@@ -49,7 +51,7 @@ public class HostController(IServiceRepository serviceRepository, IServiceContro
 
             var serviceNodeInfo = await _serviceRepository.UpdateServiceAsync(result.Service, true);
 
-            // Update service event
+            await _updateService.SendUpdateAsync(serviceNodeInfo);
 
             return Ok(new ServiceNodeInfo(result.Service));
         }

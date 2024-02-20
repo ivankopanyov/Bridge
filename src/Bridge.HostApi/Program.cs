@@ -18,6 +18,7 @@ builder.Services.AddLogger();
 builder.Services.AddServiceHost(options => options.Http2Port = http2Port);
 
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddSingleton<IUpdateService, UpdateService>();
 builder.Services.AddHostedService<BridgeStartService>();
 
 builder.Services
@@ -32,6 +33,7 @@ builder.Services
     })
     .AddEntityFrameworkStores<BridgeDbContext>();
 
+builder.Services.AddSignalR();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -52,6 +54,7 @@ app.UseCors(builder => builder
 
 app.UseAuthorization();
 
+app.MapHub<UpdateHub>("/update");
 app.MapControllers();
 app.MapServiceHost<BridgeServiceHost>();
 

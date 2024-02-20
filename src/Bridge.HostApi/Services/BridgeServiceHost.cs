@@ -1,13 +1,10 @@
 ﻿namespace Bridge.HostApi.Services;
 
-public class BridgeServiceHost : ServiceHost.ServiceHostBase
+public class BridgeServiceHost(IUpdateService updateService, IServiceRepository serviceRepository) : ServiceHost.ServiceHostBase
 {
-    private readonly IServiceRepository _serviceRepository;
+    private readonly IUpdateService _updateService = updateService;
 
-    public BridgeServiceHost(IServiceRepository serviceRepository)
-    {
-        _serviceRepository = serviceRepository;
-    }
+    private readonly IServiceRepository _serviceRepository = serviceRepository;
 
     public override async Task<Options> GetOptions(ServiceInfo request, ServerCallContext context)
     {
@@ -21,7 +18,7 @@ public class BridgeServiceHost : ServiceHost.ServiceHostBase
         if (serviceNodeInfo.JsonOptions != null)
             response.JsonOptions = serviceNodeInfo.JsonOptions;
 
-        // Update service event
+        await _updateService.SendUpdateAsync(serviceNodeInfo);
 
         return response;
     }
@@ -29,9 +26,7 @@ public class BridgeServiceHost : ServiceHost.ServiceHostBase
     public override async Task<Empty> SetService(ServiceInfo request, ServerCallContext context)
     {
         var serviceNodeInfo = await _serviceRepository.UpdateServiceAsync(request, true);
-
-        // Update service event
-
+        await _updateService.SendUpdateAsync(serviceNodeInfo);
         return new Empty();
     }
 }
