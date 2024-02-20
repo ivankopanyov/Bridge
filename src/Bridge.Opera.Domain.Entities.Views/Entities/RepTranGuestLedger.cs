@@ -1,0 +1,249 @@
+namespace Bridge.Opera.Domain.Entities.Views;
+	
+public partial class RepTranGuestLedger
+{
+    public string? Resort { get; set; }
+    public decimal? ResvNameId { get; set; }
+    public string? ResvStatus { get; set; }
+    public DateTime? Arrival { get; set; }
+    public DateTime? Departure { get; set; }
+    public string? PaymentMethod { get; set; }
+    public string? GuestName { get; set; }
+    public string? Room { get; set; }
+    public string? RoomNo { get; set; }
+    public decimal? TrxNo { get; set; }
+    public string? TcGroup { get; set; }
+    public string? TcSubgroup { get; set; }
+    public string? TrxCode { get; set; }
+    public string? TrxDesc { get; set; }
+    public string? FtGeneratedType { get; set; }
+    public string? FtSubtype { get; set; }
+    public DateTime? TrxDate { get; set; }
+    public decimal? Quantity { get; set; }
+    public decimal? Credit { get; set; }
+    public decimal? Debit { get; set; }
+    public decimal? RevenueAmt { get; set; }
+    public decimal? PricePerUnit { get; set; }
+    public decimal? Amount { get; set; }
+    public int? FolioView { get; set; }
+    public string? Remark { get; set; }
+    public string? Reference { get; set; }
+    public decimal? UpdateUser { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public decimal? CashierId { get; set; }
+    public string? IndRevenueGp { get; set; }
+    public string? IndCash { get; set; }
+    public string? TcTransactionType { get; set; }
+    public string? IndDepositYn { get; set; }
+    public string? IndAr { get; set; }
+    public string? IndBilling { get; set; }
+    public string? CcCode { get; set; }
+    public string? CcType { get; set; }
+    public string? CreditCardNumber { get; set; }
+    public string? CreditCardExpDate { get; set; }
+    public decimal? InvoiceNo { get; set; }
+    public decimal? OpenBalance { get; set; }
+    public DateTime? BusinessDate { get; set; }
+
+	public static void OnModelCreating(ModelBuilder modelBuilder, ISet<Type> types)
+	{
+		modelBuilder.Entity<RepTranGuestLedger>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.ToView("REP_TRAN_GUEST_LEDGER");
+
+            entity.Property(e => e.Amount)
+                .HasColumnName("AMOUNT")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.Arrival)
+                .HasColumnName("ARRIVAL")
+                .HasColumnType("DATE");
+
+            entity.Property(e => e.BusinessDate)
+                .HasColumnName("BUSINESS_DATE")
+                .HasColumnType("DATE");
+
+            entity.Property(e => e.CashierId)
+                .HasColumnName("CASHIER_ID")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.CcCode)
+                .HasColumnName("CC_CODE")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.CcType)
+                .HasColumnName("CC_TYPE")
+                .HasMaxLength(2)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Credit)
+                .HasColumnName("CREDIT")
+                .HasColumnType("NUMBER(38,12)");
+
+            entity.Property(e => e.CreditCardExpDate)
+                .HasColumnName("CREDIT_CARD_EXP_DATE")
+                .HasMaxLength(5)
+                .IsUnicode(false);
+
+            entity.Property(e => e.CreditCardNumber)
+                .HasColumnName("CREDIT_CARD_NUMBER")
+                .IsUnicode(false);
+
+            entity.Property(e => e.Debit)
+                .HasColumnName("DEBIT")
+                .HasColumnType("NUMBER(38,12)");
+
+            entity.Property(e => e.Departure)
+                .HasColumnName("DEPARTURE")
+                .HasColumnType("DATE");
+
+            entity.Property(e => e.FolioView)
+                .HasColumnName("FOLIO_VIEW")
+                .HasColumnType("NUMBER(9)");
+
+            entity.Property(e => e.FtGeneratedType)
+                .HasColumnName("FT_GENERATED_TYPE")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.FtSubtype)
+                .IsRequired()
+                .HasColumnName("FT_SUBTYPE")
+                .HasColumnType("CHAR(5)");
+
+            entity.Property(e => e.GuestName)
+                .HasColumnName("GUEST_NAME")
+                .IsUnicode(false);
+
+            entity.Property(e => e.IndAr)
+                .HasColumnName("IND_AR")
+                .HasMaxLength(1)
+                .IsUnicode(false);
+
+            entity.Property(e => e.IndBilling)
+                .HasColumnName("IND_BILLING")
+                .HasMaxLength(1)
+                .IsUnicode(false);
+
+            entity.Property(e => e.IndCash)
+                .HasColumnName("IND_CASH")
+                .HasMaxLength(1)
+                .IsUnicode(false);
+
+            entity.Property(e => e.IndDepositYn)
+                .HasColumnName("IND_DEPOSIT_YN")
+                .HasMaxLength(1)
+                .IsUnicode(false);
+
+            entity.Property(e => e.IndRevenueGp)
+                .HasColumnName("IND_REVENUE_GP")
+                .HasMaxLength(1)
+                .IsUnicode(false);
+
+            entity.Property(e => e.InvoiceNo)
+                .HasColumnName("INVOICE_NO")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.OpenBalance)
+                .HasColumnName("OPEN_BALANCE")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.PaymentMethod)
+                .HasColumnName("PAYMENT_METHOD")
+                .HasMaxLength(50)
+                .IsUnicode(false);
+
+            entity.Property(e => e.PricePerUnit)
+                .HasColumnName("PRICE_PER_UNIT")
+                .HasColumnType("NUMBER(38,12)");
+
+            entity.Property(e => e.Quantity)
+                .HasColumnName("QUANTITY")
+                .HasColumnType("NUMBER(12,3)");
+
+            entity.Property(e => e.Reference)
+                .HasColumnName("REFERENCE")
+                .HasMaxLength(2000)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Remark)
+                .HasColumnName("REMARK")
+                .HasMaxLength(2000)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Resort)
+                .IsRequired()
+                .HasColumnName("RESORT")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.ResvNameId)
+                .HasColumnName("RESV_NAME_ID")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.ResvStatus)
+                .IsRequired()
+                .HasColumnName("RESV_STATUS")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.RevenueAmt)
+                .HasColumnName("REVENUE_AMT")
+                .HasColumnType("NUMBER(38,12)");
+
+            entity.Property(e => e.Room)
+                .HasColumnName("ROOM")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.RoomNo)
+                .HasColumnName("ROOM_NO")
+                .HasMaxLength(36)
+                .IsUnicode(false);
+
+            entity.Property(e => e.TcGroup)
+                .IsRequired()
+                .HasColumnName("TC_GROUP")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.TcSubgroup)
+                .IsRequired()
+                .HasColumnName("TC_SUBGROUP")
+                .HasMaxLength(20)
+                .IsUnicode(false);
+
+            entity.Property(e => e.TcTransactionType)
+                .HasColumnName("TC_TRANSACTION_TYPE")
+                .HasColumnType("CHAR(5)");
+
+            entity.Property(e => e.TrxCode)
+                .HasColumnName("TRX_CODE")
+                .HasMaxLength(36)
+                .IsUnicode(false);
+
+            entity.Property(e => e.TrxDate)
+                .HasColumnName("TRX_DATE")
+                .HasColumnType("DATE");
+
+            entity.Property(e => e.TrxDesc)
+                .HasColumnName("TRX_DESC")
+                .IsUnicode(false);
+
+            entity.Property(e => e.TrxNo)
+                .HasColumnName("TRX_NO")
+                .HasColumnType("NUMBER");
+
+            entity.Property(e => e.UpdateDate)
+                .HasColumnName("UPDATE_DATE")
+                .HasColumnType("DATE");
+
+            entity.Property(e => e.UpdateUser)
+                .HasColumnName("UPDATE_USER")
+                .HasColumnType("NUMBER");
+        });
+	}
+}

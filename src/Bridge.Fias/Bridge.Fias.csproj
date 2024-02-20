@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bridge.EventBus.Messages\Bridge.EventBus.Messages.csproj" />
+    <ProjectReference Include="..\Bridge.EventBus\Bridge.EventBus.csproj" />
+    <ProjectReference Include="..\Bridge.Extensions.Logging\Bridge.Extensions.Logging.csproj" />
+    <ProjectReference Include="..\Bridge.Fias.Entities\Bridge.Fias.Entities.csproj" />
+    <ProjectReference Include="..\Bridge.Fias.Interface\Bridge.Fias.Interface.csproj" />
+    <ProjectReference Include="..\Bridge.Logger\Bridge.Logger.csproj" />
+    <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "bridge.opera": "StartDebugging",
+        "fias": "StartDebugging",
+        "bridge.sanatorium": "StartDebugging",
+        "bridge.hostapi": "StartDebugging"
+      }
+    }
+  }
+}

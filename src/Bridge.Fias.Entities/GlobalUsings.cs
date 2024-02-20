@@ -1,0 +1,12 @@
+﻿global using AutoMapper;
+global using Bridge.Fias.Entities.Attributes;
+global using Bridge.Fias.Entities.Base;
+global using Bridge.Fias.Entities.Json.Converters;
+global using Bridge.Fias.Entities.Json.Writers;
+global using Bridge.Fias.Entities.Services.Mapping;
+global using Newtonsoft.Json;
+global using Newtonsoft.Json.Converters;
+global using System.ComponentModel.DataAnnotations;
+global using System.Globalization;
+global using System.Reflection;
+global using System.Runtime.Serialization;
