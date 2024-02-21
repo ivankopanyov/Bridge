@@ -38,6 +38,7 @@ public abstract class ServiceNodeBase
 
         _isActive = true;
         _currentException = null;
+        _logger.LogActive(_name);
         await ChangeStateAsync();
     }
 
@@ -48,6 +49,7 @@ public abstract class ServiceNodeBase
 
         _isActive = false;
         _currentException = new Exception(error);
+        _logger.LogUnactive(_name, _currentException.Message, _currentException);
         await ChangeStateAsync();
     }
 
@@ -58,6 +60,7 @@ public abstract class ServiceNodeBase
 
         _isActive = false;
         _currentException = ex;
+        _logger.LogUnactive(_name, ex.Message, ex);
         await ChangeStateAsync();
     }
 
@@ -94,11 +97,7 @@ public abstract class ServiceNodeBase
         }
         catch (OperationCanceledException ex)
         {
-            _logger.Info(_name, ex.Message);
-        }
-        catch (Exception ex)
-        {
-            _logger.Error(_name, ex);
+            _logger.LogUnactive(_name, ex.Message, ex);
         }
     }
 
@@ -112,10 +111,7 @@ public abstract class ServiceNodeBase
         catch (Exception ex)
         {
             if (_ex == null || _ex.Message != ex.Message || _ex.StackTrace != ex.StackTrace)
-            {
                 _ex = ex;
-                _logger.Error(_name, ex);
-            }
 
             await Task.Delay(1000);
             await SendServiceAsync(service, cancellationToken);

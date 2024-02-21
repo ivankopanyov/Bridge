@@ -14,7 +14,11 @@ builder.WebHost.ConfigureKestrel(options =>
 
 builder.Services.AddCors();
 
-builder.Services.AddLogger();
+builder.Services.AddSerilog(new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/all_logs_.log", rollingInterval: RollingInterval.Day)
+    .CreateLogger());
+
 builder.Services.AddServiceHost(options => options.Http2Port = http2Port);
 
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();

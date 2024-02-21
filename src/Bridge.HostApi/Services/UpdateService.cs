@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json.Serialization;
-
-namespace Bridge.HostApi.Services;
+﻿namespace Bridge.HostApi.Services;
 
 public class UpdateService(IHubContext<UpdateHub> updateHubContext, ILogger<UpdateService> logger) : IUpdateService
 {

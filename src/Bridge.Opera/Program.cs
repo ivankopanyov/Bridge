@@ -8,16 +8,24 @@ builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, liste
 builder.Services.AddDbContext<OperaDbContext>();
 
 builder.Services
-    .AddHostedService<CheckOperaHandler>()
-    .AddLogger();
+    .AddHostedService<CheckOperaHandler>();
 
-builder.Services.AddServiceControl(optios =>
+var loggerConfiguration = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/all_logs_.log", rollingInterval: RollingInterval.Day);
+
+builder.Services.AddServiceControl(options =>
 {
-    optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "opera";
-    optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+    options.Host = Environment.GetEnvironmentVariable("HOST") ?? "opera";
+    options.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+    options.LoggerConfiguration = loggerConfiguration;
 })
 .AddService<OperaServiceNode, OperaOptions>(options => options.Name = "Oracle")
-.AddEventBus(builder => builder.AddHandler<ReservationHandler, ReservationInfo>());
+.AddEventBus(builder => builder
+    .AddLogger(loggerConfiguration)
+    .AddHandler<ReservationHandler, ReservationInfo>());
+
+builder.Services.AddSerilog(loggerConfiguration.CreateLogger());
 
 var app = builder.Build();
 

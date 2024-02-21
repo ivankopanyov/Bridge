@@ -4,20 +4,21 @@ internal class ElasticSearchService : IElasticSearchService
 {
     private readonly ElasticSearchServiceNode _elasticSearchServiceNode;
 
+    private readonly ILogger _logger;
+
     private ElasticsearchClient NewElasticsearchClient
     {
         get
         {
-            var host = _elasticSearchServiceNode.Options.Host;
-            var port = _elasticSearchServiceNode.Options.Port;
-            var uri = new Uri($"http://{host}:{port}");
+            var uri = new Uri(_elasticSearchServiceNode.Options.Url);
             return new ElasticsearchClient(uri);
         }
     }
 
-    public ElasticSearchService(ElasticSearchServiceNode elasticSearchServiceNode)
+    public ElasticSearchService(ElasticSearchServiceNode elasticSearchServiceNode, ILogger<ElasticSearchService> logger)
     {
         _elasticSearchServiceNode = elasticSearchServiceNode;
+        _logger = logger;
         _elasticSearchServiceNode.ChangeElasticSearchOptionsEvent += async () => 
         {
             try
@@ -41,6 +42,7 @@ internal class ElasticSearchService : IElasticSearchService
     {
         try
         {
+            _logger.LogEvent(log);
             var response = await NewElasticsearchClient.IndexAsync(log, _elasticSearchServiceNode.Options.Index ?? string.Empty);
 
             if (response.IsSuccess())

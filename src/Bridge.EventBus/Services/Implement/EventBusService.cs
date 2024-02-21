@@ -1,6 +1,4 @@
-﻿using Google.Protobuf;
-
-namespace Bridge.EventBus.Services.Implement;
+﻿namespace Bridge.EventBus.Services.Implement;
 
 internal class EventBusService : IEventBusService
 {
