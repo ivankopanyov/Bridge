@@ -18,12 +18,11 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bridge.Extensions.Logging\Bridge.Extensions.Logging.csproj" />
-    <ProjectReference Include="..\Bridge.Logger\Bridge.Logger.csproj" />
     <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
   </ItemGroup>
 

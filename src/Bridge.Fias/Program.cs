@@ -6,20 +6,27 @@ var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), o
 builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2));
 
 builder.Services
-    .AddLogger()
     .AddFias()
     .AddHostedService<FiasStateHandler>();
 
-builder.Services.AddServiceControl(optios =>
+var loggerConfiguration = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/all_logs_.log", rollingInterval: RollingInterval.Day);
+
+builder.Services.AddServiceControl(options =>
 {
-    optios.Host = Environment.GetEnvironmentVariable("HOST") ?? "fias";
-    optios.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+    options.Host = Environment.GetEnvironmentVariable("HOST") ?? "fias";
+    options.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
+    options.LoggerConfiguration = loggerConfiguration;
 })
 .AddService<FiasServiceNode, FiasServiceOptions>(options => options.Name = "Fias")
 .AddEventBus(builder => builder
+    .AddLogger(loggerConfiguration)
     .AddHandler<CheckInHandler, FiasGuestCheckIn>()
     .AddHandler<CheckOutHandler, FiasGuestCheckOut>()
     .AddHandler<ChangeHandler, FiasGuestChange>());
+
+builder.Services.AddSerilog(loggerConfiguration.CreateLogger());
 
 var app = builder.Build();
 

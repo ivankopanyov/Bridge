@@ -13,13 +13,12 @@
   <ItemGroup>
     <PackageReference Include="Logus.HMS.Messages" Version="1.39.26" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Bridge.EventBus\Bridge.EventBus.csproj" />
-    <ProjectReference Include="..\Bridge.Extensions.Logging\Bridge.Extensions.Logging.csproj" />
-    <ProjectReference Include="..\Bridge.Logger\Bridge.Logger.csproj" />
     <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
   </ItemGroup>
 

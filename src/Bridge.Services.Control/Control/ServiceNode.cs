@@ -71,9 +71,8 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
                 {
                     Options = JsonConvert.DeserializeObject<T>(options.JsonOptions) ?? DefaultOptions;
                 }
-                catch (Exception ex)
+                catch
                 {
-                    _logger.Error(_name, ex);
                     Options = DefaultOptions;
                 }
 
@@ -82,10 +81,7 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
         catch (Exception ex)
         {
             if (currentExeption == null || currentExeption.Message != ex.Message || currentExeption.StackTrace != ex.StackTrace)
-            {
                 currentExeption = ex;
-                _logger.Error(_name, ex);
-            }
 
             await Task.Delay(1000);
             await GetOptionsAsync(service, currentExeption);
@@ -104,10 +100,7 @@ public abstract class ServiceNode<T> : ServiceNodeBase where T : class, new()
             if (result != null)
                 serviceInfo.JsonOptions = result;
         }
-        catch (Exception ex)
-        {
-            _logger.Error(_name, ex);
-        }
+        catch { }
 
         return serviceInfo;
     }

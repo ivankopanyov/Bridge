@@ -1,6 +1,5 @@
 ﻿global using Bridge.EventBus;
 global using Bridge.EventBus.Messages;
-global using Bridge.Logger;
 global using Bridge.Opera.Domain;
 global using Bridge.Opera.Domain.Entities.Tables;
 global using Bridge.Opera.Entities;
@@ -13,4 +12,5 @@ global using Logus.HMS.Messages.Booking;
 global using Logus.HMS.Messages.Shared;
 global using Microsoft.AspNetCore.Server.Kestrel.Core;
 global using Microsoft.EntityFrameworkCore;
+global using Serilog;
 global using System.Net;

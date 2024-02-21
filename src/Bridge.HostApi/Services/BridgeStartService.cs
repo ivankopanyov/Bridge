@@ -28,7 +28,7 @@ public class BridgeStartService(IUpdateService updateService, IServiceControlCli
                     await _updateService.SendUpdateAsync(serviceNodeInfo);
                 }
 
-                foreach (var s in host.Services)
+                foreach (var s in host.Services.ToHashSet())
                 {
                     context.Services.Remove(s);
                     await _updateService.SendRemoveServiceAsync(new()

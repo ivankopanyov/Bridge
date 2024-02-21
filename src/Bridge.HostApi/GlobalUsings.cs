@@ -1,5 +1,4 @@
-﻿global using Bridge.Logger;
-global using Bridge.HostApi.Dto;
+﻿global using Bridge.HostApi.Dto;
 global using Bridge.HostApi.Hubs;
 global using Bridge.HostApi.Infrasructure;
 global using Bridge.HostApi.Models;
@@ -16,4 +15,8 @@ global using Microsoft.AspNetCore.Server.Kestrel.Core;
 global using Microsoft.AspNetCore.SignalR;
 global using Microsoft.EntityFrameworkCore;
 global using Newtonsoft.Json;
+global using Newtonsoft.Json.Serialization;
+global using Serilog;
 global using System.Net;
+
+global using ILogger = Microsoft.Extensions.Logging.ILogger;
