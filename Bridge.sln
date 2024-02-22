@@ -32,7 +32,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Opera", "src\Bridge.Opera\Bridge.Opera.csproj", "{AECCA062-809F-4DCA-82D1-B113FCC96968}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.EventBus.Messages", "src\Bridge.EventBus.Messages\Bridge.EventBus.Messages.csproj", "{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.EventBus.Shared", "src\Bridge.EventBus.Shared\Bridge.EventBus.Shared.csproj", "{8FCB4AFC-F9B4-4FC4-84D7-8FC040EB7ECA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge.Sanatorium", "src\Bridge.Sanatorium\Bridge.Sanatorium.csproj", "{F551B0E3-7C9B-49D4-B9A1-4A9EDB3F0B97}"
 EndProject

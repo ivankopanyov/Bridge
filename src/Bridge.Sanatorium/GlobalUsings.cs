@@ -1,11 +1,14 @@
 ﻿global using Bridge.EventBus;
+global using Bridge.EventBus.Shared;
 global using Bridge.Sanatorium.Handlers;
 global using Bridge.Sanatorium.Options;
 global using Bridge.Sanatorium.Services;
 global using Bridge.Services.Control;
 global using Logus.HMS.Messages.Booking;
+global using Logus.HMS.Messages.Invoice;
+global using Logus.HMS.Messages.Shared;
 global using Microsoft.AspNetCore.Server.Kestrel.Core;
+global using Microsoft.Data.SqlClient;
+global using NServiceBus.Transport.SqlServer;
 global using Serilog;
 global using System.Net;
-
-global using ILogger = Microsoft.Extensions.Logging.ILogger;

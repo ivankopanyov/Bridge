@@ -4,9 +4,17 @@ public class ServiceBusOptions
 {
     private string _connectionString = string.Empty;
 
-    public string? ConnectionString
+    private string _endpointName = string.Empty;
+
+    public string ConnectionString
     {
         get => _connectionString;
         set => _connectionString = value ?? string.Empty;
+    }
+
+    public string EndpointName
+    {
+        get => _endpointName;
+        set => _endpointName = value ?? string.Empty;
     }
 }

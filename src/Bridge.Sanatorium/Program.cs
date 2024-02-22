@@ -16,10 +16,14 @@ builder.Services.AddServiceControl(options =>
     options.LoggerConfiguration = loggerConfiguration;
 
 })
-.AddService<ServiceBusServiceNode, ServiceBusOptions>(options => options.Name = "NServiceBus")
+.AddService<ServiceBusNode, ServiceBusOptions>(options => options.Name = "NServiceBus")
 .AddEventBus(builder => builder
     .AddLogger(loggerConfiguration)
-    .AddHandler<ReservationHandler, ReservationUpdatedMessage>());
+    .AddHandler<ReservationHandler, ReservationUpdateInfo>()
+    .AddHandler<PostRequestHandler, PostTransactionsRequest>()
+    .AddHandler<PostResponseHandler, PostResponseInfo>());
+
+builder.Services.AddSingleton<ISanatoriumService, SanatoriumService>();
 
 builder.Services.AddSerilog(loggerConfiguration.CreateLogger());
 
