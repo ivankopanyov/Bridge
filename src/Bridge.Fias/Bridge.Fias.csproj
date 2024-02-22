@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bridge.EventBus.Shared\Bridge.EventBus.Shared.csproj" />
-    <ProjectReference Include="..\Bridge.Fias.Entities\Bridge.Fias.Entities.csproj" />
     <ProjectReference Include="..\Bridge.Fias.Interface\Bridge.Fias.Interface.csproj" />
     <ProjectReference Include="..\Bridge.Services.Control\Bridge.Services.Control.csproj" />
   </ItemGroup>
