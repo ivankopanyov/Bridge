@@ -1,7 +1,7 @@
 ﻿namespace Bridge.Opera.Handlers;
 
 public class ReservationHandler(OperaServiceNode operaService, IEventBusService eventBusService)
-    : EventHandler<ReservationInfo, ReservationUpdatedMessage>(eventBusService)
+    : EventHandler<ReservationInfo, ReservationUpdateInfo>(eventBusService)
 {
     private const string NAME_DATA_QUERY = "select hrs_dev.hrs_sh_sens.dob(n.name_id) as BIRTHDAY, " +
         "hrs_dev.hrs_sh_sens.pass_id(n.name_id) as PASS_ID from opera.name n where rownum <= 1 and n.name_id = {0}";
@@ -16,7 +16,7 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
 
     protected override string HandlerName => "OPERA_DB";
 
-    protected override async Task<ReservationUpdatedMessage> HandleAsync(ReservationInfo @in)
+    protected override async Task<ReservationUpdateInfo> HandleAsync(ReservationInfo @in)
     {
         try
         {
@@ -26,17 +26,24 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
             var reservationResponse = await (from rn in context.ReservationNames
                                              from n in context.Names
                                              where rn.Resort == @in.Resort && rn.ResvNameId == @in.Id && n.NameId == rn.NameId
-                                             select new
+                                             select new ReservationUpdateInfo
                                              {
-                                                 Id = n.NameId,
-                                                 LastName = Trim(n.XlastName ?? n.Last),
-                                                 FirstName = Trim(n.XfirstName ?? n.First),
+                                                 GenericNo = @in.Id.ToString("0"),
+                                                 Status = @in.Status,
+                                                 ArrivalDate = @in.ArrivalDate ?? default,
+                                                 DepartureDate = @in.DepartureDate ?? default,
+                                                 //CustomFieldValues = 
+                                                 GuestGenericNo = $"{n.NameId:0}",
+                                                 Id = $"{n.NameId:0}/{@in.Id:0}",
+                                                 FirstName = Trim(n.XlastName ?? n.Last),
+                                                 LastName = Trim(n.XfirstName ?? n.First),
                                                  MiddleName = Trim(n.XmiddleName ?? n.Middle),
                                                  Sex = n.Gender,
-                                                 //BirthDate =
-                                                 //Notes =
-                                                 rn.TruncBeginDate,
-                                                 rn.TruncEndDate,
+                                                 BirthDateStr = string.Empty,
+                                                 BirthDate = DateTime.Now,
+                                                 //Notes = 
+                                                 TruncBeginDate = rn.TruncBeginDate,
+                                                 TruncEndDate = rn.TruncEndDate,
                                                  DocumentTypeCode = (from nd in context.NameDocuments
                                                                      where nd.PrimaryYn == "Y" && nd.NameId == n.NameId
                                                                      select nd.IdType).AsNoTracking().FirstOrDefault(),
@@ -53,13 +60,10 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
                                                               where rden.Resort == rn.Resort && rden.ResvNameId == rn.ResvNameId &&
                                                                   rde.Resort == rden.Resort && rde.ResvDailyElSeq == rden.ResvDailyElSeq &&
                                                                   rde.ReservationDate == rden.ReservationDate
-                                                              select new ReservationMessage.Timeline
+                                                              select new TimelineInfo
                                                               {
-                                                                  DateRange = new DateRange
-                                                                  {
-                                                                      DateTimeFrom = rden.ReservationDate ?? default,
-                                                                      DateTimeTo = (rden.ReservationDate ?? default).AddDays(1).AddTicks(-1)
-                                                                  },
+                                                                  DateTimeFrom = rden.ReservationDate ?? default,
+                                                                  DateTimeTo = (rden.ReservationDate ?? default).AddDays(1).AddTicks(-1),
                                                                   EffectiveDate = rden.ReservationDate,
                                                                   StayPriceLocalCurrencyAmount = CalcShareAmount(rden.ShareAmount, rden.SharePrcnt),
                                                                   RoomTypeCode = (from rrc in context.ResortRoomCategories
@@ -73,35 +77,35 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
                                                                               where rp.Resort == rden.Resort && rp.ResvNameId == rden.ResvNameId &&
                                                                                   rpp.Resort == rp.Resort && rpp.ReservationDate == rden.ReservationDate &&
                                                                                   rpp.ReservationProductId == rp.ReservationProductId && ppr.Resort == rpp.Resort &&
-                                                                                  ppr.Product == rp.ProductId && (trxCodes == null || trxCodes.Count == 0 || trxCodes.Contains(ppr.TrxCode))
-                                                                              select new Package
+                                                                                  ppr.Product == rp.ProductId && (trxCodes == null || trxCodes.Count == 0 || (ppr.TrxCode != null && trxCodes.Contains(ppr.TrxCode)))
+                                                                              select new PackageInfo
                                                                               {
                                                                                   Code = rp.ProductId,
                                                                                   Amount = rpp.Price ?? default,
                                                                                   Count = (int?)rpp.Quantity,
                                                                                   CurrencyCode = rp.CurrencyCode
-                                                                              }).AsNoTracking().ToArray()
-                                                              }).AsNoTracking().ToArray(),
+                                                                              }).AsNoTracking().ToHashSet()
+                                                              }).AsNoTracking().ToHashSet(),
                                                  BusinnesDate = (from b in context.Businessdates
                                                                  where b.Resort == rn.Resort && b.State == "OPEN"
                                                                  select b.BusinessDate1).FirstOrDefault(),
                                                  Address = (from na in context.NameAddresses
                                                             from c in context.Countries
                                                             where na.NameId == n.NameId && na.PrimaryYn == "Y" && na.InactiveDate == null && c.CountryCode == na.Country
-                                                            select new
+                                                            select new AddressInfo
                                                             {
                                                                 CountryCode = c.IsoCode,
                                                                 Region = Trim(na.State),
                                                                 City = Trim(na.City),
-                                                                Street = JoinAddress(na.Address1, na.Address2, na.Address3, na.Address4),
+                                                                Street = JoinAddress(na.Address1, na.Address2, na.Address3, na.Address4)
                                                             }).AsNoTracking().FirstOrDefault(),
                                                  Phones = (from np in context.NamePhones
                                                            where np.NameId == n.NameId
-                                                           select new GuestPhone
+                                                           select new PhoneInfo
                                                            {
                                                                PhoneNumber = np.PhoneNumber,
                                                                PhoneType = np.PhoneType
-                                                           }).AsNoTracking().ToArray()
+                                                           }).AsNoTracking().ToHashSet()
                                              }).AsNoTracking().FirstOrDefaultAsync();
 
             if (reservationResponse == null)
@@ -111,78 +115,36 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
                 .FromSqlRaw(string.Format(NAME_DATA_QUERY, reservationResponse.Id))
                 .FirstOrDefaultAsync();
 
-            var reservationId = @in.Id.ToString("0");
-            var guestId = reservationResponse.Id?.ToString("0");
+            reservationResponse.Sex = FixSex(reservationResponse.Sex);
+            reservationResponse.BirthDate = ToDateTime(nameInfo?.BirthDay, "dd.MM.yyyy");
+            reservationResponse.DocumentTypeCode = FixDocumentTypeCode(reservationResponse.DocumentTypeCode);
+            reservationResponse.DocumentNumber = nameInfo?.PassId;
 
-            var reservationUpdatedMessage = new ReservationUpdatedMessage
+            if (reservationResponse.TruncBeginDate != reservationResponse.TruncEndDate)
+                reservationResponse.Timelines = reservationResponse.Timelines
+                        .Where(t => t.DateTimeFrom != reservationResponse.TruncEndDate)
+                        .ToHashSet();
+
+            if (!reservationResponse.Timelines.Any())
             {
-                GenericNo = reservationId,
-                Status = @in.Status,
-                ArrivalDate = @in.ArrivalDate ?? default,
-                DepartureDate = @in.DepartureDate ?? default,
-                //CustomFieldValues = 
-                ReservationGuests =
-                [
-                        new()
-                        {
-                            GenericNo = guestId,
-                            Id = $"{guestId}/{reservationId}",
-                            FirstName = reservationResponse?.FirstName,
-                            LastName = reservationResponse?.LastName,
-                            MiddleName = reservationResponse?.MiddleName,
-                            Sex = FixSex(reservationResponse?.Sex),
-                            BirthDate = ToDateTime(nameInfo?.BirthDay, "dd.MM.yyyy"),
-                            CountryCode = reservationResponse?.Address?.CountryCode,
-                            Region = reservationResponse?.Address?.Region,
-                            City = reservationResponse?.Address?.City,
-                            Street = reservationResponse?.Address?.Street,
-                            //Notes = 
-                            Phones = reservationResponse?.Phones,
-                            DocumentData = new DocumentData
-                            {
-                                DocumentTypeCode = FixDocumentTypeCode(reservationResponse?.DocumentTypeCode),
-                                //DocumentTypeName =
-                                DocumentSeries = reservationResponse?.DocumentSeries,
-                                DocumentNumber = nameInfo?.PassId,
-                                IssueDate = reservationResponse?.IssueDate,
-                                //ExpirationDate = 
-                                DepartmentCode = reservationResponse?.DepartmentCode,
-                                IssuerInfo = reservationResponse?.IssuerInfo
-                            }
-                        }
-                ],
-                Timelines = reservationResponse.TruncBeginDate == reservationResponse?.TruncEndDate
-                    ? reservationResponse?.Timelines
-                    : reservationResponse?.Timelines
-                        .Where(t => t.DateRange.DateTimeFrom != reservationResponse?.TruncEndDate)
-                        .ToArray()
-            };
+                var timeline = new TimelineInfo
+                {
+                    DateTimeFrom = @in.ArrivalDate ?? default,
+                    DateTimeTo = @in.DepartureDate ?? default,
+                    EffectiveDate = @in.ArrivalDate,
+                    RoomCode = @in.Room
+                };
 
-            if (reservationResponse.Timelines.Length == 0)
-            {
-                reservationUpdatedMessage.Timelines =
-                [
-                        new ()
-                        {
-                            DateRange = new DateRange
-                            {
-                                DateTimeFrom = @in.ArrivalDate ?? default,
-                                DateTimeTo = @in.DepartureDate ?? default,
-                            },
-                            EffectiveDate = @in.ArrivalDate,
-                            RoomCode = @in.Room
-                        }
-                ];
-
-                reservationUpdatedMessage.CurrentTimeline = reservationUpdatedMessage.Timelines[0];
+                reservationResponse.Timelines = new HashSet<TimelineInfo>() { timeline };
+                reservationResponse.CurrentTimeline = timeline;
             }
-
-            reservationUpdatedMessage.CurrentTimeline = reservationUpdatedMessage.Timelines
-                .FirstOrDefault(t => reservationResponse.BusinnesDate != null && t.DateRange.DateTimeFrom == reservationResponse.BusinnesDate)
-                ?? reservationUpdatedMessage.Timelines[0];
+            else
+                reservationResponse.CurrentTimeline = reservationResponse.Timelines
+                    .FirstOrDefault(t => reservationResponse.BusinnesDate != null && t.DateTimeFrom == reservationResponse.BusinnesDate)
+                       ?? reservationResponse.Timelines.First();
 
             await _operaService.ActiveAsync();
-            return reservationUpdatedMessage;
+            return reservationResponse;
         }
         catch (Exception ex)
         {
@@ -191,10 +153,13 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
         }
     }
 
-    private static string? Trim(string value) => value?.Trim();
+    private static string? Trim(string? value) => value?.Trim();
 
-    private static string FixSex(string value)
+    private static string? FixSex(string? value)
     {
+        if (value == null)
+            return null;
+
         foreach (var alias in _sexAliases)
             if (value == alias.Key)
                 return alias.Value;
@@ -204,7 +169,7 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
 
     private static decimal CalcShareAmount(decimal? shareAmount, decimal? sharePrcnt) => (shareAmount ?? 0) * (sharePrcnt ?? 100) / 100;
 
-    private static string? JoinAddress(params string[] addresses)
+    private static string? JoinAddress(params string?[] addresses)
     {
         if (addresses == null)
             return null;
@@ -221,8 +186,11 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
         return string.Join(", ", result);
     }
 
-    private string FixDocumentTypeCode(string value)
+    private string? FixDocumentTypeCode(string? value)
     {
+        if (value == null)
+            return null;
+
         var _documentTypeAliases = _operaService.Options.DocumentTypeAliases;
         if (_documentTypeAliases == null || _documentTypeAliases.Count == 0)
             return value;
@@ -234,7 +202,7 @@ public class ReservationHandler(OperaServiceNode operaService, IEventBusService 
         return value;
     }
 
-    private static DateTime? ToDateTime(string value, string format) 
+    private static DateTime? ToDateTime(string? value, string format) 
         => value == null || !DateTime.TryParseExact(value, format, null, System.Globalization.DateTimeStyles.None, out DateTime issue)
             ? null : issue;
 }

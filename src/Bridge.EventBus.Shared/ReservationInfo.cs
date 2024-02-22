@@ -1,4 +1,4 @@
-﻿namespace Bridge.EventBus.Messages;
+﻿namespace Bridge.EventBus.Shared;
 
 public class ReservationInfo
 {

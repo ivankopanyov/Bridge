@@ -1,5 +1,5 @@
 ﻿global using Bridge.EventBus;
-global using Bridge.EventBus.Messages;
+global using Bridge.EventBus.Shared;
 global using Bridge.Fias.Options;
 global using Bridge.Fias.Entities;
 global using Bridge.Fias.Interface;
