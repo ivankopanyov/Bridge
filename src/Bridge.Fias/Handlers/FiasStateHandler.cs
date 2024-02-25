@@ -2,9 +2,9 @@
 
 internal class FiasStateHandler : BackgroundService
 {
-    private readonly IFiasService _fiasService;
+    private readonly IFias _fiasService;
 
-    public FiasStateHandler(IFiasService fiasService, ILogger<FiasStateHandler> logger)
+    public FiasStateHandler(IFias fiasService)
     {
         _fiasService = fiasService;
 
@@ -29,14 +29,12 @@ internal class FiasStateHandler : BackgroundService
 
             _fiasService.Send(linkDescription);
 
-            var guestCheckInOptions = new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestCheckInOptions>()!).ToString();
-            _fiasService.Send(guestCheckInOptions);
-
-            var guestCheckOutOptions = new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestCheckOutOptions>()!).ToString();
-            _fiasService.Send(guestCheckOutOptions);
-
-            var guestChangeOptions = new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestChangeOptions>()!).ToString();
-            _fiasService.Send(guestChangeOptions);
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestCheckInOptions>()!).ToString());
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestCheckOutOptions>()!).ToString());
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasGuestChangeOptions>()!).ToString());
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasPostingRequestOptions>()!).ToString());
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasPostingSimpleOptions>()!).ToString());
+            _fiasService.Send(new FiasLinkRecord(Entities.FiasOptions.All<FiasPostingAnswerOptions>()!).ToString());
 
             var linkAlive = new FiasLinkAlive() { DateTime = DateTime.Now }.ToString();
             _fiasService.Send(linkAlive);

@@ -6,7 +6,9 @@ public class FiasServiceOptions
 
     private int _port;
 
-    public string? Host
+    private IDictionary<string, bool> _taxCodes { get; set; } = new Dictionary<string, bool>();
+
+    public string Host
     {
         get => _host;
         set => _host = value ?? string.Empty;
@@ -16,5 +18,11 @@ public class FiasServiceOptions
     {
         get => _port;
         set => _port = value ?? 0;
+    }
+
+    public IDictionary<string, bool> TaxCodes
+    {
+        get => _taxCodes;
+        set => _taxCodes = value ?? new Dictionary<string, bool>();
     }
 }

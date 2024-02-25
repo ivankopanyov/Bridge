@@ -1,39 +1,25 @@
 ﻿namespace Bridge.EventBus.Services.Implement;
 
-internal class ElasticSearchService : IElasticSearchService
+internal class ElasticSearchService(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService,
+    ServiceOptions<ElasticSearchService, ElasticSearchOptions> options, ILogger<ElasticSearchService> logger)
+    : ServiceControl<ElasticSearchOptions>(serviceHostClient, eventService, options, logger), IElasticSearchService
 {
-    private readonly ElasticSearchServiceNode _elasticSearchServiceNode;
+    private ElasticsearchClient NewElasticsearchClient => new ElasticsearchClient(new Uri(Options.Url));
 
-    private readonly ILogger _logger;
-
-    private ElasticsearchClient NewElasticsearchClient
+    protected override async Task SetOptionsHandleAsync()
     {
-        get
+        try
         {
-            var uri = new Uri(_elasticSearchServiceNode.Options.Url);
-            return new ElasticsearchClient(uri);
+            var response = await NewElasticsearchClient.PingAsync();
+            if (response.IsSuccess())
+                await ActiveAsync();
+            else
+                await UnactiveAsync(response.DebugInformation);
         }
-    }
-
-    public ElasticSearchService(ElasticSearchServiceNode elasticSearchServiceNode, ILogger<ElasticSearchService> logger)
-    {
-        _elasticSearchServiceNode = elasticSearchServiceNode;
-        _logger = logger;
-        _elasticSearchServiceNode.ChangeElasticSearchOptionsEvent += async () => 
+        catch (Exception ex)
         {
-            try
-            {
-                var response = await NewElasticsearchClient.PingAsync();
-                if (response.IsSuccess())
-                    await _elasticSearchServiceNode.ActiveAsync();
-                else
-                    await _elasticSearchServiceNode.UnactiveAsync(response.DebugInformation);
-            }
-            catch (Exception ex) 
-            { 
-                await _elasticSearchServiceNode.UnactiveAsync(ex);
-            }
-        };
+            await UnactiveAsync(ex);
+        }
     }
 
     public async Task SendAsync(ElasticLog log) => await SendAsync(log, null);
@@ -42,18 +28,18 @@ internal class ElasticSearchService : IElasticSearchService
     {
         try
         {
-            _logger.LogEvent(log);
-            var response = await NewElasticsearchClient.IndexAsync(log, _elasticSearchServiceNode.Options.Index ?? string.Empty);
+            logger.LogEvent(log);
+            var response = await NewElasticsearchClient.IndexAsync(log, Options.Index ?? string.Empty);
 
             if (response.IsSuccess())
-                await _elasticSearchServiceNode.ActiveAsync();
+                await ActiveAsync();
             else
             {
                 var ex = new Exception(response.DebugInformation);
                 if (currentException == null || currentException.Message != ex.Message)
                     currentException = ex;
 
-                await _elasticSearchServiceNode.UnactiveAsync(currentException);
+                await UnactiveAsync(currentException);
                 await Task.Delay(TimeSpan.FromSeconds(1));
                 await SendAsync(log, currentException);
             }
@@ -63,7 +49,7 @@ internal class ElasticSearchService : IElasticSearchService
             if (currentException == null || currentException.Message != ex.Message || currentException.StackTrace != ex.StackTrace)
                 currentException = ex;
 
-            await _elasticSearchServiceNode.UnactiveAsync(currentException);
+            await UnactiveAsync(currentException);
             await Task.Delay(TimeSpan.FromSeconds(1));
             await SendAsync(log, currentException);
         }

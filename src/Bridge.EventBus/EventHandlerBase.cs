@@ -14,7 +14,7 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
     protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
         => await _eventBusService.RecieveAsync<TIn>(HandlerName, async (@event, action) => await HandleProcessAsync(@event, action));
 
-    protected async Task InputDataAsync(string? queueName, TIn @in)
+    protected async Task InputDataAsync(string? queueName, TIn @in, string? taskId = null)
     {
         if (@in == null)
         {
@@ -25,7 +25,7 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         var @event = new Event<TIn>
         {
             QueueName = queueName,
-            TaskId = Guid.NewGuid().ToString(),
+            TaskId = taskId ?? Guid.NewGuid().ToString(),
             Message = @in
         };
 

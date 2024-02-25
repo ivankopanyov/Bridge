@@ -19,12 +19,14 @@ builder.Services.AddServiceControl(options =>
     options.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
     options.LoggerConfiguration = loggerConfiguration;
 })
-.AddService<FiasServiceNode, FiasServiceOptions>(options => options.Name = "Fias")
+.AddService<IFias, FiasService, FiasServiceOptions>(options => options.Name = "Fias")
+.AddCache()
 .AddEventBus(builder => builder
     .AddLogger(loggerConfiguration)
     .AddHandler<CheckInHandler, FiasGuestCheckIn>()
     .AddHandler<CheckOutHandler, FiasGuestCheckOut>()
-    .AddHandler<ChangeHandler, FiasGuestChange>());
+    .AddHandler<ChangeHandler, FiasGuestChange>()
+    .AddHandler<PostingHandler, PostRequestInfo>());
 
 builder.Services.AddSerilog(loggerConfiguration.CreateLogger());
 

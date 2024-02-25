@@ -2,21 +2,21 @@
 
 internal delegate Task CloseConnectionHandle();
 
-internal class RabbitMqService : IRabbitMqService
+internal class RabbitMqService(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService,
+    ServiceOptions<RabbitMqService, RabbitMqOptions> options, ILogger<RabbitMqService> logger)
+    : ServiceControl<RabbitMqOptions>(serviceHostClient, eventService, options, logger), IRabbitMqService
 {
     private static readonly JsonSerializerSettings _jsonSerializerSettings = new()
     {
         NullValueHandling = NullValueHandling.Ignore
     };
 
-    private readonly RabbitMqServiceNode _rabbitMqServiceNode;
-
     private IConnection? _connection;
 
     private IConnection NewConnection => new ConnectionFactory
     {
-        HostName = _rabbitMqServiceNode.Options.Host,
-        Port = _rabbitMqServiceNode.Options.Port ?? 0
+        HostName = Options.Host,
+        Port = Options.Port ?? 0
     }.CreateConnection();
 
     private event CloseConnectionHandle? CloseConnectionEvent;
@@ -25,19 +25,15 @@ internal class RabbitMqService : IRabbitMqService
 
     public event ErrorHandleAsync? ErrorEvent;
 
-    public RabbitMqService(RabbitMqServiceNode rabbitMqServiceNode)
+    protected override async Task SetOptionsHandleAsync()
     {
-        _rabbitMqServiceNode = rabbitMqServiceNode;
-        _rabbitMqServiceNode.ChangeRabbitMqOptionsEvent += async () =>
+        if (_connection != null && _connection.IsOpen)
         {
-            if (_connection != null && _connection.IsOpen)
-            {
-                _connection.Close();
-                await _rabbitMqServiceNode.UnactiveAsync("Connection close.");
-            }
+            _connection.Close();
+            await UnactiveAsync("Connection close.");
+        }
 
-            CloseConnectionEvent?.Invoke();
-        };
+        CloseConnectionEvent?.Invoke();
     }
 
     public async Task PublishAsync<T>(Event<T> @event, Action? successAction = null) where T : class, new()
@@ -73,17 +69,17 @@ internal class RabbitMqService : IRabbitMqService
 
             _connection.ConnectionShutdown += async (sender, e) =>
             {
-                await _rabbitMqServiceNode.UnactiveAsync("Connection shutdown.");
+                await UnactiveAsync("Connection shutdown.");
                 await RecieveAsync(handlerName, handleAction);
             };
 
             _model.BasicConsume(queueName, false, consumer);
-            await _rabbitMqServiceNode.ActiveAsync();
+            await ActiveAsync();
             CloseConnectionEvent += async () => await RecieveAsync(handlerName, handleAction);
         }
         catch (Exception ex)
         {
-            await _rabbitMqServiceNode.UnactiveAsync(ex);
+            await UnactiveAsync(ex);
             await Task.Delay(1000);
             await RecieveAsync(handlerName, handleAction);
         }
@@ -98,14 +94,14 @@ internal class RabbitMqService : IRabbitMqService
             model.QueueDeclare(queue: queueName, exclusive: false, autoDelete: false);
             model.BasicPublish(exchange: string.Empty, routingKey: queueName, body: body);
             successAction?.Invoke();
-            await _rabbitMqServiceNode.ActiveAsync();
+            await ActiveAsync();
         }
         catch (Exception ex)
         {
             if (currentException == null || currentException.Message != ex.Message)
             {
                 currentException = ex;
-                await _rabbitMqServiceNode.UnactiveAsync(currentException);
+                await UnactiveAsync(currentException);
             }
 
             await Task.Delay(TimeSpan.FromSeconds(1));
@@ -169,14 +165,14 @@ internal class RabbitMqService : IRabbitMqService
         try
         {
             basicAction.Invoke();
-            await _rabbitMqServiceNode.ActiveAsync();
+            await ActiveAsync();
         }
         catch
         {
             if (_connection != null && _connection.IsOpen)
             {
                 _connection.Close();
-                await _rabbitMqServiceNode.UnactiveAsync("Connection close.");
+                await UnactiveAsync("Connection close.");
             }
 
             await RecieveAsync(handlerName, handleAction);

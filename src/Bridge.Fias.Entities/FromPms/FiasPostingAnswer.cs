@@ -1,4 +1,4 @@
-﻿namespace Bridge.Fias.Entities;
+﻿ namespace Bridge.Fias.Entities;
 
 /// <summary>
 /// To receive <see cref="FiasPostingAnswer"/> from FIAS, send an instance of
@@ -40,7 +40,7 @@ public partial class FiasPostingAnswer : FiasMessageFromPms
     /// </summary>
     public string? WorkStationId { get; set; }
 
-    public int? CheckNumber { get; set; }
+    public string? CheckNumber { get; set; }
 
     /// <summary>
     /// Not available when <see cref="FiasPostingSimple"/> is used.<br/>

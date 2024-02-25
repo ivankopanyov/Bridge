@@ -4,12 +4,12 @@ internal class CheckOutHandler : EventHandler<FiasGuestCheckOut, ReservationInfo
 {
     protected override string HandlerName => "CHECKOUT";
 
-    public CheckOutHandler(IFiasService fiasService, IEventBusService eventBusService) : base(eventBusService)
+    public CheckOutHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
     {
         fiasService.FiasGuestCheckOutEvent += async message => await InputDataAsync("RESV", message);
     }
 
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckOut @in)
+    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckOut @in, string? taskId)
     {
         return Task.FromResult(new ReservationInfo
         {

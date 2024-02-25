@@ -8,5 +8,7 @@ public class PostRequestInfo
 
     public string? FolioGenericNo { get; set; }
 
+    public int Rvc { get; set; }
+
     public ISet<TransactionInfo> Transactions { get; set; }
 }

@@ -7,7 +7,7 @@ public class ReservationHandler(ISanatoriumService sanatoriumService, IEventBusS
 
     protected override string HandlerName => "N_SERVICE_BUS";
 
-    protected override async Task HandleAsync(ReservationUpdateInfo @in)
+    protected override async Task HandleAsync(ReservationUpdateInfo @in, string? taskId)
     {
         var message = new ReservationUpdatedMessage()
         {

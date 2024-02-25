@@ -19,6 +19,12 @@ services:
       context: .
       dockerfile: src/Bridge.Sanatorium/Dockerfile
 
+  fiscal:
+    image: ${DOCKER_REGISTRY-}fiscal
+    build:
+      context: .
+      dockerfile: src/Bridge.Fiscal/Dockerfile
+
   hostapi:
     image: ${DOCKER_REGISTRY-}hostapi
     build:
@@ -38,6 +44,9 @@ services:
 
   rabbitmq:
     image: rabbitmq:3.12.12-management-alpine
+  
+  redis:
+    image: redis:alpine
   
   nginx:
     image: nginx

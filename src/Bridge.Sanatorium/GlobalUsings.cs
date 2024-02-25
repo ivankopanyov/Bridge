@@ -8,7 +8,6 @@ global using Logus.HMS.Messages.Booking;
 global using Logus.HMS.Messages.Invoice;
 global using Logus.HMS.Messages.Shared;
 global using Microsoft.AspNetCore.Server.Kestrel.Core;
-global using Microsoft.Data.SqlClient;
-global using NServiceBus.Transport.SqlServer;
+global using NServiceBus.Persistence;
 global using Serilog;
 global using System.Net;

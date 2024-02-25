@@ -37,6 +37,10 @@ public class FiasPostingSimpleOptions : FiasOptions
     [FiasFor(nameof(FiasCommonMessage.RoomNumber))]
     public bool RoomNumber => true;
 
+    /// <summary>Use <see cref="FiasPostingSimple.CheckNumber"/></summary>
+    [FiasFor(nameof(FiasCommonMessage.CheckNumber))]
+    public bool CheckNumber { get; set; }
+
     /// <summary>Use <see cref="FiasPostingSimple.SalesOutlet"/></summary>
     [FiasFor(nameof(FiasCommonMessage.SalesOutlet))]
     public bool SalesOutlet { get; set; }

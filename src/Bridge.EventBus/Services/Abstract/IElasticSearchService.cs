@@ -1,6 +1,6 @@
 ﻿namespace Bridge.EventBus.Services.Abstract;
 
-internal interface IElasticSearchService
+internal interface IElasticSearchService : IOptinable
 {
     Task SendAsync(ElasticLog log);
 }

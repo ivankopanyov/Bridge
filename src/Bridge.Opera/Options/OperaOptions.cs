@@ -8,16 +8,10 @@ public class OperaOptions
 
     private Dictionary<string, string> _documentTypeAliases = [];
 
-    public static string OperaDbConnectionString { get; private set; } = string.Empty;
-
-    public string? ConnectionString 
+    public string ConnectionString 
     {
         get => _connectionString; 
-        set
-        {
-            _connectionString = value ?? string.Empty;
-            OperaDbConnectionString = _connectionString;
-        }
+        set => _connectionString = value ?? string.Empty;
     }
 
     public HashSet<string> TrxCodes

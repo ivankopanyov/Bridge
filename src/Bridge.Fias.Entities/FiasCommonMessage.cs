@@ -246,7 +246,7 @@ public partial class FiasCommonMessage
     public int? PostingSequenceNumber { get; set; }
 
     [JsonProperty(PropertyName = "C#")]
-    public int? CheckNumber { get; set; }
+    public string? CheckNumber { get; set; }
 
     [JsonProperty(PropertyName = "CL")]
     public long? CreditLimit { get; set; }

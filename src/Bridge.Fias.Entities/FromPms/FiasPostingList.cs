@@ -44,7 +44,7 @@ public partial class FiasPostingList : FiasMessageFromPms
 
     public decimal? BalanceAmount { get; set; }
 
-    public int? CheckNumber { get; set; }
+    public string? CheckNumber { get; set; }
 
     /// <summary>
     /// Requires configuration in PMS.<br/>

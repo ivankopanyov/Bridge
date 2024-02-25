@@ -83,6 +83,8 @@ public partial class FiasPostingSimple : FiasMessageToPms
     [Required(AllowEmptyStrings = true)]
     public string RoomNumber { get; set; }
 
+    public string? CheckNumber { get; set; }
+
     /// <summary>
     /// Valid values ​​range from <see cref="FiasEnviroments.MIN_5"/> to <see cref="FiasEnviroments.MAX_5"/>.<br/>
     /// Required if the same interface uses more than one <see cref="PostingType"/>.<br/>

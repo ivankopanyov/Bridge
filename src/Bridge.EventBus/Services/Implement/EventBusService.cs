@@ -23,6 +23,14 @@ internal class EventBusService : IEventBusService
             Message = message
         });
 
+    public async Task PublishAsync<T>(string? queueName, string? taskId, T message) where T : class, new() =>
+        await _rabbitMqService.PublishAsync<T>(new()
+        {
+            QueueName = queueName,
+            TaskId = taskId,
+            Message = message
+        });
+
     public async Task PublishAsync<T>(Event<T> @event, Action? successAction = null) where T : class, new() => 
         await _rabbitMqService.PublishAsync(@event, successAction);
 

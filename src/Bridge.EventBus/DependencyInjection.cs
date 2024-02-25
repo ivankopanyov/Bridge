@@ -1,6 +1,4 @@
-﻿using Serilog.Events;
-
-namespace Bridge.EventBus;
+﻿namespace Bridge.EventBus;
 
 public static class DependencyInjection
 {
@@ -15,8 +13,8 @@ public static class DependencyInjection
         builder.Services.AddSingleton<IEventBusService, EventBusService>();
 
         builder
-            .AddService<RabbitMqServiceNode, RabbitMqOptions>(options => options.Name = "RabbitMQ")
-            .AddService<ElasticSearchServiceNode, ElasticSearchOptions>(options => options.Name = "Elasticsearch");
+            .AddService<IRabbitMqService, RabbitMqService, RabbitMqOptions>(options => options.Name = "RabbitMQ")
+            .AddService<IElasticSearchService, ElasticSearchService, ElasticSearchOptions>(options => options.Name = "Elasticsearch");
 
         var handlerBuilder = new EventBusBuilder(builder.Services);
         action.Invoke(handlerBuilder);
@@ -28,9 +26,6 @@ public static class DependencyInjection
                 e.Properties.Keys.Contains(Extensions.LoggerExtensions.TASK))
             .WriteTo.Console(outputTemplate: OUTPUT_CONSOLE_TEMPLATE)
             .WriteTo.File(handlerBuilder.LogFileName ?? $"logs/events_.log", outputTemplate: OUTPUT_FILE_TEMPLATE, rollingInterval: RollingInterval.Day));
-
-        builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
-        builder.Services.AddSingleton<IElasticSearchService, ElasticSearchService>();
 
         return builder;
     }

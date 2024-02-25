@@ -1,8 +1,8 @@
 ﻿namespace Bridge.Sanatorium.Services;
 
-public interface ISanatoriumService
+public interface ISanatoriumService : IOptinable
 {
-    Task ConnectAsync();
+    decimal Rvc { get; }
 
     Task PublishAsync<T>(T message) where T : class, new();
 }
