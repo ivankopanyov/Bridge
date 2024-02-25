@@ -4,7 +4,7 @@ internal delegate Task ErrorHandleAsync(string? queueName, string? handlerName, 
 
 internal delegate Task CriticalHandleAsync(string? queueName, string? handlerName, string? taskId, string error, string? stackTrace = null);
 
-internal interface IRabbitMqService
+internal interface IRabbitMqService : IOptinable
 {
     event ErrorHandleAsync? ErrorEvent;
 

@@ -9,7 +9,6 @@ public interface ICheckDB
     [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
     System.Threading.Tasks.Task<SetCheckJsonResponse> SetCheckJsonAsync(SetCheckJsonRequest request);
 
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICheckDB/GetCheckJson", ReplyAction = "http://tempuri.org/ICheckDB/GetCheckJsonResponse")]
     [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
     System.Threading.Tasks.Task<GetCheckJsonResponse> GetCheckJsonAsync(GetCheckJsonRequest request);
 

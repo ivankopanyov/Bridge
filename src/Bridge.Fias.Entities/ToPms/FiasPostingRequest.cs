@@ -118,12 +118,7 @@ public partial class FiasPostingRequest : FiasMessageToPms
     [Range(typeof(decimal), FiasEnviroments.MIN_15, FiasEnviroments.MAX_15)]
     public decimal? SubtotalForCashPosRoundingDifferences { get; set; }
 
-    /// <summary>
-    /// Valid values ​​range from <see cref="FiasEnviroments.MIN_8"/> to <see cref="FiasEnviroments.MAX_8"/>.<br/>
-    /// Допустимое значение в диапазоне от <see cref="FiasEnviroments.MIN_8"/> до <see cref="FiasEnviroments.MAX_8"/>.
-    /// </summary>
-    [Range(FiasEnviroments.MIN_8, FiasEnviroments.MAX_8)]
-    public int? CheckNumber { get; set; }
+    public string? CheckNumber { get; set; }
 
     /// <summary>
     /// This flag defines if the PMS Credit limit should be ignored for this

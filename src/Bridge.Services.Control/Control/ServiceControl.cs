@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Services.Control;
 
-public abstract class ServiceNodeBase
+public abstract class ServiceControl<TOptions> : IOptinable where TOptions : class, new()
 {
     private protected readonly string _host;
 
@@ -19,8 +19,11 @@ public abstract class ServiceNodeBase
     private bool _isActive;
 
     private Exception? _currentException;
+    private static TOptions DefaultOptions => Activator.CreateInstance<TOptions>();
 
-    private protected ServiceNodeBase(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceNodeOptions options, ILogger logger)
+    public TOptions Options { get; protected set; } = DefaultOptions;
+
+    protected ServiceControl(ServiceHost.ServiceHostClient serviceHostClient, IEventService eventService, ServiceOptions options, ILogger logger)
     {
         _host = options.Host;
         _name = options.Name;
@@ -28,7 +31,48 @@ public abstract class ServiceNodeBase
         _logger = logger;
         _cancellationTokenSource = new CancellationTokenSource();
         _cancellationToken = _cancellationTokenSource.Token;
+
         eventService.GetServicesEvent += () => ToServiceInfo();
+
+        eventService.SetOptionsEvent += async (options) =>
+        {
+            if (options.ServiceName != _name)
+                return null;
+
+            var response = new SetOptionsResponse();
+
+            if (string.IsNullOrWhiteSpace(options.JsonOptions))
+            {
+                response.Ok = false;
+                response.Error = "Options is null";
+                return response;
+            }
+
+            try
+            {
+                var newOptions = JsonConvert.DeserializeObject<TOptions>(options.JsonOptions);
+                if (newOptions != null)
+                {
+                    Options = newOptions;
+                    await SetOptionsHandleAsync();
+
+                    response.Ok = true;
+                    response.Service = ToServiceInfo();
+                }
+                else
+                {
+                    response.Ok = false;
+                    response.Error = "Options is null";
+                }
+            }
+            catch (Exception ex)
+            {
+                response.Ok = false;
+                response.Error = ex.Message;
+            }
+
+            return response;
+        };
     }
 
     public async Task ActiveAsync()
@@ -64,7 +108,7 @@ public abstract class ServiceNodeBase
         await ChangeStateAsync();
     }
 
-    private protected virtual ServiceInfo ToServiceInfo()
+    private protected ServiceInfo ToServiceInfo()
     {
         var serviceInfo = new ServiceInfo()
         {
@@ -80,7 +124,15 @@ public abstract class ServiceNodeBase
             serviceInfo.State.Error = error;
 
         if (_currentException?.StackTrace is string stackTrace)
-            serviceInfo.State.StackTrace = stackTrace;
+            serviceInfo.State.StackTrace = stackTrace; 
+        
+        try
+        {
+            var result = JsonConvert.SerializeObject(Options);
+            if (result != null)
+                serviceInfo.JsonOptions = result;
+        }
+        catch { }
 
         return serviceInfo;
     }
@@ -117,4 +169,38 @@ public abstract class ServiceNodeBase
             await SendServiceAsync(service, cancellationToken);
         }
     }, cancellationToken).ConfigureAwait(false);
+
+    async Task IOptinable.GetOptionsAsync() => await GetOptionsAsync(ToServiceInfo(), null);
+
+    private async Task GetOptionsAsync(ServiceInfo service, Exception? currentExeption = null) => await Task.Run(async () =>
+    {
+        try
+        {
+            var options = await _serviceHostClient.GetOptionsAsync(service);
+
+            if (options == null)
+                Options = DefaultOptions;
+            else
+                try
+                {
+                    Options = JsonConvert.DeserializeObject<TOptions>(options.JsonOptions) ?? DefaultOptions;
+                }
+                catch
+                {
+                    Options = DefaultOptions;
+                }
+
+            await SetOptionsHandleAsync();
+        }
+        catch (Exception ex)
+        {
+            if (currentExeption == null || currentExeption.Message != ex.Message || currentExeption.StackTrace != ex.StackTrace)
+                currentExeption = ex;
+
+            await Task.Delay(1000);
+            await GetOptionsAsync(service, currentExeption);
+        }
+    }).ConfigureAwait(false);
+
+    protected virtual Task SetOptionsHandleAsync() => Task.CompletedTask;
 }

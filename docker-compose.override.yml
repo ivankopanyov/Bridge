@@ -40,6 +40,19 @@ services:
       - rabbitmq
     restart: always
 
+  fiscal:
+    container_name: fiscal
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - HTTP2_PORT=${HTTP2_PORT}
+      - HOST_API=${HOST_API}
+      - HOST=fiscal
+    networks:
+      - network
+    depends_on:
+      - rabbitmq
+    restart: always
+
   hostapi:
     container_name: hostapi
     environment:
@@ -93,6 +106,14 @@ services:
       - network
     restart: always
   
+  redis:
+    container_name: redis
+    volumes: 
+      - cache:/cache-data
+    networks:
+      - network
+    restart: always
+  
   nginx:
     container_name: nginx
     ports:
@@ -112,4 +133,6 @@ networks:
 volumes:
   elasticsearch:
   bridge-spa:
+  cache:
+
 

@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Opera.Infrastructure;
 
-public class OperaDbContext : OperaDbContextBase
+public class OperaDbContext(string connectioString) : OperaDbContextBase()
 {
     public virtual DbSet<ReservationName> ReservationNames { get; set; }
 
@@ -34,8 +34,7 @@ public class OperaDbContext : OperaDbContextBase
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        if (!optionsBuilder.IsConfigured)
-            optionsBuilder.UseOracle(OperaOptions.OperaDbConnectionString, options => options
-                .UseOracleSQLCompatibility("11"));
+        optionsBuilder.UseOracle(connectioString, options => options
+            .UseOracleSQLCompatibility("11"));
     }
 }

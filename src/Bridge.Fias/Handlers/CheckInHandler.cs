@@ -4,12 +4,12 @@ internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
 {
     protected override string HandlerName => "CHECKIN";
 
-    public CheckInHandler(IFiasService fiasService, IEventBusService eventBusService) : base(eventBusService)
+    public CheckInHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
     {
         fiasService.FiasGuestCheckInEvent += async message => await InputDataAsync("RESV", message);
     }
 
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckIn @in)
+    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckIn @in, string? taskId)
     {
         DateTime? arrivalDate = null;
         if (@in.GuestArrivalDate is DateOnly _arrivalDate)

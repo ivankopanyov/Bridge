@@ -4,12 +4,12 @@ internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
 {
     protected override string HandlerName => "CHANGE";
 
-    public ChangeHandler(IFiasService fiasService, IEventBusService eventBusService) : base(eventBusService)
+    public ChangeHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
     {
         fiasService.FiasGuestChangeEvent += async message => await InputDataAsync("RESV", message);
     }
 
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestChange @in)
+    protected override Task<ReservationInfo> HandleAsync(FiasGuestChange @in, string? taskId)
     {
         DateTime? arrivalDate = null;
         if (@in.GuestArrivalDate is DateOnly _arrivalDate)

@@ -7,7 +7,7 @@ public class PostResponseHandler(ISanatoriumService sanatoriumService, IEventBus
 
     protected override string HandlerName => "N_SERVICE_BUS";
 
-    protected override async Task HandleAsync(PostResponseInfo @in)
+    protected override async Task HandleAsync(PostResponseInfo @in, string? taskId)
     {
         PostTransactionsResponse message = new(@in.CorrelationId)
         {

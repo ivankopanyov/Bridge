@@ -6,12 +6,12 @@ public abstract class EventHandler<TIn> : EventHandlerBase<TIn> where TIn : clas
 
     private protected override sealed async Task HandleProcessAsync(Event<TIn> @event, Action? action = null)
     { 
-        await HandleAsync(@event.Message);
+        await HandleAsync(@event.Message, @event.TaskId);
         action?.Invoke();
         await _eventBusService.SuccessfulAsync(@event.QueueName, HandlerName, @event.TaskId, @event.Message);
     }
 
-    protected abstract Task HandleAsync(TIn @in);
+    protected abstract Task HandleAsync(TIn @in, string? taskId);
 }
 
 public abstract class EventHandler<TIn, TOut> : EventHandlerBase<TIn> where TIn : class, new() where TOut : class, new()
@@ -20,7 +20,7 @@ public abstract class EventHandler<TIn, TOut> : EventHandlerBase<TIn> where TIn 
 
     private protected override sealed async Task HandleProcessAsync(Event<TIn> @event, Action? successAction = null)
     {
-        if (await HandleAsync(@event.Message) is not TOut @out)
+        if (await HandleAsync(@event.Message, @event.TaskId) is not TOut @out)
         {
             await _eventBusService.CriticalAsync(@event.QueueName, HandlerName, @event.TaskId, "Output data is null.");
             return;
@@ -35,5 +35,5 @@ public abstract class EventHandler<TIn, TOut> : EventHandlerBase<TIn> where TIn 
         }, successAction);
     }
 
-    protected abstract Task<TOut> HandleAsync(TIn @in);
+    protected abstract Task<TOut> HandleAsync(TIn @in, string? taskId);
 }
