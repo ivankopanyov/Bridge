@@ -7,8 +7,6 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Bridge.Opera/Bridge.Opera.csproj", "src/Bridge.Opera/"]
 COPY ["src/Bridge.EventBus/Bridge.EventBus.csproj", "src/Bridge.EventBus/"]
-COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
-COPY ["src/Bridge.Logger/Bridge.Logger.csproj", "src/Bridge.Logger/"]
 COPY ["src/Bridge.Opera.Domain.Entities.Tables/Bridge.Opera.Domain.Entities.Tables.csproj", "src/Bridge.Opera.Domain.Entities.Tables/"]
 COPY ["src/Bridge.Opera.Domain/Bridge.Opera.Domain.csproj", "src/Bridge.Opera.Domain/"]
 RUN dotnet restore "./src/Bridge.Opera/./Bridge.Opera.csproj"

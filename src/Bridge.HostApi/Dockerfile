@@ -6,8 +6,6 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Bridge.HostApi/Bridge.HostApi.csproj", "src/Bridge.HostApi/"]
-COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
-COPY ["src/Bridge.Logger/Bridge.Logger.csproj", "src/Bridge.Logger/"]
 COPY ["src/Bridge.Services.Control/Bridge.Services.Control.csproj", "src/Bridge.Services.Control/"]
 RUN dotnet restore "./src/Bridge.HostApi/./Bridge.HostApi.csproj"
 COPY . .
