@@ -7,10 +7,8 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Bridge.Fias/Bridge.Fias.csproj", "src/Bridge.Fias/"]
 COPY ["src/Bridge.EventBus/Bridge.EventBus.csproj", "src/Bridge.EventBus/"]
-COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
 COPY ["src/Bridge.Fias.Entities/Bridge.Fias.Entities.csproj", "src/Bridge.Fias.Entities/"]
 COPY ["src/Bridge.Fias.Interface/Bridge.Fias.Interface.csproj", "src/Bridge.Fias.Interface/"]
-COPY ["src/Bridge.Logger/Bridge.Logger.csproj", "src/Bridge.Logger/"]
 RUN dotnet restore "./src/Bridge.Fias/./Bridge.Fias.csproj"
 COPY . .
 WORKDIR "/src/src/Bridge.Fias"

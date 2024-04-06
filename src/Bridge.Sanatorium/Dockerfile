@@ -7,8 +7,6 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Bridge.Sanatorium/Bridge.Sanatorium.csproj", "src/Bridge.Sanatorium/"]
 COPY ["src/Bridge.EventBus/Bridge.EventBus.csproj", "src/Bridge.EventBus/"]
-COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
-COPY ["src/Bridge.Logger/Bridge.Logger.csproj", "src/Bridge.Logger/"]
 RUN dotnet restore "./src/Bridge.Sanatorium/./Bridge.Sanatorium.csproj"
 COPY . .
 WORKDIR "/src/src/Bridge.Sanatorium"
