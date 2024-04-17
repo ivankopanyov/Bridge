@@ -1,0 +1,25 @@
+@import '../../styles/vars';
+
+.nav-bar {
+    background-color: $color-component !important;
+    justify-content: center;
+    height: $tab_bar_height;
+}
+
+.nav-bar-desktop {
+    left: $tab_bar_width !important;
+    width: auto !important;
+}
+
+.nav-bar-title {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-bar-button-right {
+    margin-left: 10px;
+}
+
+.nav-bar-page {
+    margin-top: $tab_bar_height;
+}

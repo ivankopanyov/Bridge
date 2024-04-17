@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+
+.text-base {
+    font-size: 12px !important;
+    color: $color-primary;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.text-oneline {
+    -webkit-line-clamp: 1;
+}
+
+.text-secondary {
+    color: $color-secondary
+}
+
+.text-large {
+    font-size: 16px !important;
+}

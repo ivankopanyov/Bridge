@@ -1,0 +1,29 @@
+@import '../../styles/vars';
+
+$checkbox-size: 20px;
+$checkbox-size-large: 30px;
+$checkbox-icon-medium-size: 18px;
+
+.checkbox {
+    width: $checkbox-size;
+    height: $checkbox-size;
+}
+
+.checkbox-enabled {
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+}
+
+.checkbox-large {
+    width: $checkbox-size-large;
+    height: $checkbox-size-large;
+}
+
+.checkbox-icon {
+    color: $color-secondary;
+}
+
+.checkbox-icon-medium {
+    width: $checkbox-icon-medium-size;
+    height: $checkbox-icon-medium-size;
+}

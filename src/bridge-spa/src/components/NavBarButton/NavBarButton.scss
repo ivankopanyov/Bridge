@@ -1,0 +1,12 @@
+@import '../../styles/vars';
+
+$nav_bar_button_size: 30px;
+
+.nav-bar-button {
+    width: $nav_bar_button_size;
+    height: $nav_bar_button_size;
+    border: 1px solid $color-secondary !important;
+    color: $color-secondary !important;
+    border-radius: $border-radius !important;
+    margin: 0 !important;
+}

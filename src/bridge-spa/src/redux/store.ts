@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import serviceReducer from "../features/serviceSlice";
+import hostListReducer from '../features/HostList/HostListStore';
 
 export const store = configureStore({
     reducer: {
-        services: serviceReducer
+        hostList: hostListReducer
     }
 });
 

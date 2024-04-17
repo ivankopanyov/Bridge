@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+
+$search-bar-icon-size: 20px;
+$search-bar-indent: 4px;
+
+.search-bar {
+    color: $color-primary;
+    height: 30px !important;
+}
+
+.search-bar-fixed {
+    width: 250px;
+}
+
+.search-bar-icon {
+    color: $color-secondary !important;
+    width: $search-bar-icon-size !important;
+    height: $search-bar-icon-size !important;
+}
+
+.search-bar-icon-button {
+    padding: 0 !important;
+}
+
+.search-bar-adornment-left {
+    margin-left: 0 !important;
+    margin-right: $search-bar-indent;
+}
+
+.search-bar-adornment-right {
+    margin-right: 0 !important;
+    margin-left: $search-bar-indent;
+}
