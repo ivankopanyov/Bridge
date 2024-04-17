@@ -1,0 +1,23 @@
+@import '../../styles/vars';
+
+$host-list-progress-size: 20px;
+
+.host-list-page {
+    display: flex;
+    justify-content: center;
+}
+
+.host-list-content {
+    margin: 10px;
+    max-width: 700px;
+}
+
+.host-list-progress {
+    width: $host-list-progress-size !important;
+    height: $host-list-progress-size !important;
+    margin-right: 14px;
+}
+
+.host-list-icon {
+    margin-right: 10px;
+}

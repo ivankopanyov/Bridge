@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+
+.enumerable-parameter-item-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.enumerable-parameter-item-icon-button {
+    padding: 0 !important;
+    margin-left: 5px !important;
+    height: $input-height;
+}
+
+.enumerable-parameter-item-icon {
+    color: $color-secondary;
+}

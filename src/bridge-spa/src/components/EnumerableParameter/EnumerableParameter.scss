@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+
+.enumerable-parameter-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.enumerable-parameter-icon-button {
+    padding: 0 !important;
+    margin-right: 10px !important;
+    color: $color-secondary !important;
+}
+
+.enumerable-parameter-accordion-container {
+    flex-grow: 1;
+}
+
+.enumerable-parameter-header-container {
+    display: flex;
+    align-items: center;
+}
