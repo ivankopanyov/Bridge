@@ -29,4 +29,10 @@ public class BridgeServiceHost(IUpdateService updateService, IServiceRepository 
         await _updateService.SendUpdateAsync(serviceNodeInfo);
         return new Empty();
     }
+
+    public override async Task<Empty> AddLog(Bridge.Services.Control.Log request, ServerCallContext context)
+    {
+        await _updateService.SendLogAsync(new LogDto(request));
+        return new Empty();
+    }
 }

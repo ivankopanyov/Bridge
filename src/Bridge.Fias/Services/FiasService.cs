@@ -47,5 +47,16 @@ public class FiasService : ServiceControl<FiasServiceOptions>, IFias
         };
     }
 
+    protected override Task SetOptionsHandleAsync()
+    {
+        _fiasService.SetFiasOptions(new Interface.FiasOptions
+        {
+            Host = Options.Host,
+            Port = Options.Port
+        });
+
+        return Task.CompletedTask;
+    }
+
     public void Send(string message) => _fiasService.Send(message);
 }

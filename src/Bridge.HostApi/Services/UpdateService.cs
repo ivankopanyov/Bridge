@@ -14,6 +14,24 @@ public class UpdateService(IHubContext<UpdateHub> updateHubContext, ILogger<Upda
         }
     };
 
+    public async Task SendLogAsync(LogDto log)
+    {
+        try
+        {
+            if (JsonConvert.SerializeObject(log, _jsonSerializerSettings) is not string message)
+            {
+                _logger.LogError("Log is null");
+                return;
+            }
+
+            await _updateHubContext.Clients.All.SendAsync("Log", message);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+        }
+    }
+
     public async Task SendUpdateAsync(ServiceNodeInfo service)
     {
         try

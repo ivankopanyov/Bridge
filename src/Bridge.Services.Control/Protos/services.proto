@@ -1,6 +1,7 @@
 ﻿syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
  
 option csharp_namespace = "Bridge.Services.Control";
  
@@ -31,8 +32,26 @@ message Options {
 
 message SetOptionsResponse {
 	bool ok = 1;
-	optional string Error = 2;
+	optional string error = 2;
 	optional ServiceInfo service = 3;
+}
+
+enum LogStatus {
+	information = 0;
+    error = 1;
+    critical = 2;
+}
+
+message Log {
+	optional string queueName = 1;
+	optional string handlerName = 2;
+	optional string taskId = 3;
+	LogStatus logLevel = 4;
+	optional string error = 5;
+	optional string stackTrace = 6; 
+	google.protobuf.Timestamp dateTime = 7;
+	optional string inJson = 8;
+	optional string outJson = 9; 
 }
 
 service ServiceControl {
@@ -43,4 +62,5 @@ service ServiceControl {
 service ServiceHost {
 	rpc GetOptions (ServiceInfo) returns (Options);
 	rpc SetService (ServiceInfo) returns (google.protobuf.Empty);
+	rpc AddLog (Log) returns (google.protobuf.Empty);
 }

@@ -4,7 +4,7 @@ internal class ElasticSearchService(ServiceHost.ServiceHostClient serviceHostCli
     ServiceOptions<ElasticSearchService, ElasticSearchOptions> options, ILogger<ElasticSearchService> logger)
     : ServiceControl<ElasticSearchOptions>(serviceHostClient, eventService, options, logger), IElasticSearchService
 {
-    private ElasticsearchClient NewElasticsearchClient => new ElasticsearchClient(new Uri(Options.Url));
+    private ElasticsearchClient NewElasticsearchClient => new(new Uri(Options.Url));
 
     protected override async Task SetOptionsHandleAsync()
     {

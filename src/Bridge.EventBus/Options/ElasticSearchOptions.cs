@@ -4,7 +4,7 @@ internal class ElasticSearchOptions
 {
     private string _url = "http://elasticsearch:9200";
 
-    private string _index = "Bridge";
+    private string _index = "bridge";
 
     public string Url
     {
