@@ -10,11 +10,11 @@ public interface IEventBusService
 
     internal Task RecieveAsync<T>(string handlerName, Action<Event<T>, Action?> handleAction) where T : class, new();
 
-    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, object @in);
+    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, string? description, object @in);
 
-    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, object @in, object @out);
+    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, string? description, object @in, object @out);
 
-    internal Task ErrorAsync(string? queueName, string? handlerName, string? taskId, object @in, string error, string? stackTrace = null);
+    internal Task ErrorAsync(string? queueName, string? handlerName, string? taskId, string? description, object @in, string error, string? stackTrace = null);
 
-    internal Task CriticalAsync(string? queueName, string? handlerName, string? taskId, string error, string? stackTrace = null);
+    internal Task CriticalAsync(string? queueName, string? handlerName, string? taskId, string? description, string error, string? stackTrace = null);
 }

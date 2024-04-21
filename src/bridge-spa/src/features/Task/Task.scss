@@ -1,0 +1,35 @@
+@import '../../styles/vars';
+
+$task-handler-padding: 3px;
+
+.task-header {
+    display: flex;
+    align-items: center;
+}
+
+.task-handler {
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    padding-left: $task-handler-padding;
+    padding-right: $task-handler-padding;
+}
+
+.task-icon {
+    color: $color-secondary;
+}
+
+.task-icon-success {
+    color: $color-primary;
+}
+
+.task-icon-fail {
+    color: $color-error;
+}
+
+.task-indent-left {
+    margin-left: 10px;
+}
+
+.task-indent-right {
+    margin-right: 10px;
+}

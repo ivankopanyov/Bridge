@@ -33,4 +33,10 @@ internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
             DepartureDate = departureDate
         });
     }
+
+    protected override string? SuccessfulLog(FiasGuestChange @in, ReservationInfo @out)
+        => $"{@out.Id} {@out.Room} {@out.ArrivalDate} - {@out.DepartureDate}";
+
+    protected override string? ErrorLog(FiasGuestChange @in, Exception ex)
+        => $"{@in.ReservationNumber} {@in.RoomNumber} {@in.GuestArrivalDate} - {@in.GuestDepartureDate}";
 }

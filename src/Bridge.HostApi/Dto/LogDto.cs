@@ -8,6 +8,10 @@ public class LogDto
 
     public string? TaskId { get; set; }
 
+    public bool IsEnd { get; set; }
+
+    public string? Description { get; set; }
+
     public LogLevel LogLevel { get; set; }
 
     public string? Error { get; set; }
@@ -25,6 +29,8 @@ public class LogDto
         QueueName = log.QueueName;
         HandlerName = log.HandlerName;
         TaskId = log.TaskId;
+        IsEnd = log.IsEnd;
+        Description = log.Description;
         LogLevel = log.LogLevel switch
         {
             LogStatus.Information => LogLevel.Information,

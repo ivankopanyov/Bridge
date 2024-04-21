@@ -19,4 +19,9 @@ internal class CheckOutHandler : EventHandler<FiasGuestCheckOut, ReservationInfo
             Status = "OUT"
         });
     }
+
+    protected override string? SuccessfulLog(FiasGuestCheckOut @in, ReservationInfo @out) => $"{@out.Id} {@out.Room}";
+
+    protected override string? ErrorLog(FiasGuestCheckOut @in, Exception ex)
+        => $"{@in.ReservationNumber} {@in.RoomNumber}";
 }

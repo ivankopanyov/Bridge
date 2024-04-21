@@ -6,6 +6,7 @@ import { MenuBook, DisplaySettings } from '@mui/icons-material';
 import { useAppDispatch } from '../redux/hooks';
 import useScreenSize from '../hooks/useScreenSize';
 import { getHosts, removeHost, removeService, setStatus, update } from '../features/HostList/HostListStore';
+import { updateTask } from '../features/LogList/LogListStore';
 import HostList from '../features/HostList/HostList';
 import LogList from '../features/LogList/LogList';
 import { Tab } from '../components';
@@ -27,6 +28,7 @@ const App: FC = () => {
             .build();
         
         hubConnection.on('Update', (message) => dispatch(update(JSON.parse(message))));
+        hubConnection.on('Log', (message) => dispatch(updateTask(JSON.parse(message))));
         hubConnection.on('RemoveService', (message) => dispatch(removeService(JSON.parse(message))));
         hubConnection.on('RemoveHost', (message) => dispatch(removeHost(JSON.parse(message))));
 
@@ -34,7 +36,7 @@ const App: FC = () => {
             dispatch(setStatus({ 
                 loading: true, 
                 error: error?.message
-            }))
+            }));
             await loadHosts();
         });
     
@@ -64,11 +66,11 @@ const App: FC = () => {
         setTab(tabIndex);
         switch (tabIndex) {
             case 0:
-                navigate('services');
+                navigate('logs');
                 break;
 
             case 1:
-                navigate('logs');
+                navigate('services');
                 break;
         }
     };
@@ -78,17 +80,17 @@ const App: FC = () => {
     return (
         <Box className={ screenSize.isMobile ? 'tab-bar-container-mobile' : 'tab-bar-container-desktop' }>
             <Routes>
-                <Route path="services" element={
-                    <Tab setTab={() => setTab(0)}>
-                        <HostList />
-                    </Tab>
-                } />
                 <Route path="logs" element={
-                    <Tab setTab={() => setTab(1)}>
+                    <Tab setTab={() => setTab(0)}>
                         <LogList />
                     </Tab>
                 } />
-                <Route path="*" element={<Navigate to="services" replace={true} />} /> 
+                <Route path="services" element={
+                    <Tab setTab={() => setTab(1)}>
+                        <HostList />
+                    </Tab>
+                } />
+                <Route path="*" element={<Navigate to="logs" replace={true} />} /> 
             </Routes>
             <BottomNavigation className={`tab-bar ${screenSize.isMobile ? 'tab-bar-mobile' : 'tab-bar-desktop'}`}
                 showLabels={!screenSize.isMobile}
@@ -100,12 +102,12 @@ const App: FC = () => {
                 onChange={(_e, value) => switchTab(value)}
             >
                 <BottomNavigationAction className={tabClassName}
-                    icon={<DisplaySettings className="tab-bar-icon" />}
-                    label={ !screenSize.isMobile && 'Services' }
-                />
-                <BottomNavigationAction className={tabClassName}
                     icon={<MenuBook className="tab-bar-icon" />}
                     label={ !screenSize.isMobile && 'Logs' }
+                />
+                <BottomNavigationAction className={tabClassName}
+                    icon={<DisplaySettings className="tab-bar-icon" />}
+                    label={ !screenSize.isMobile && 'Services' }
                 />
             </BottomNavigation>
         </Box>

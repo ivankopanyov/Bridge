@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import hostListReducer from '../features/HostList/HostListStore';
+import logListReducer from '../features/LogList/LogListStore';
 
 export const store = configureStore({
     reducer: {
-        hostList: hostListReducer
+        hostList: hostListReducer,
+        logList: logListReducer
     }
 });
 

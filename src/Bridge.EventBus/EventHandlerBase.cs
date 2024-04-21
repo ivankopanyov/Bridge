@@ -12,13 +12,26 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
     }
 
     protected override sealed async Task ExecuteAsync(CancellationToken stoppingToken)
-        => await _eventBusService.RecieveAsync<TIn>(HandlerName, async (@event, action) => await HandleProcessAsync(@event, action));
+    {
+        await _eventBusService.RecieveAsync<TIn>(HandlerName, async (@event, action) =>
+        {
+            try
+            {
+                await HandleProcessAsync(@event);
+            }
+            catch (Exception ex)
+            {
+                await _eventBusService.ErrorAsync(@event.QueueName, HandlerName, @event.TaskId, ErrorLog(@event.Message, ex), @event.Message, ex.Message, ex.StackTrace);
+                await _eventBusService.PublishAsync(@event);
+            }
+        });
+    }
 
     protected async Task InputDataAsync(string? queueName, TIn @in, string? taskId = null)
     {
         if (@in == null)
         {
-            await _eventBusService.CriticalAsync(queueName, HandlerName, null, "Input data is null.");
+            await _eventBusService.CriticalAsync(queueName, HandlerName, null, CriticalLog(), "Input data is null.");
             return;
         }
 
@@ -35,11 +48,15 @@ public abstract class EventHandlerBase<TIn> : BackgroundService where TIn : clas
         }
         catch (Exception ex)
         {
-            await _eventBusService.ErrorAsync(@event.QueueName, HandlerName, @event.TaskId, @event.Message, ex.Message, ex.StackTrace);
+            await _eventBusService.ErrorAsync(@event.QueueName, HandlerName, @event.TaskId, ErrorLog(@in, ex), @event.Message, ex.Message, ex.StackTrace);
             await _eventBusService.PublishAsync(@event);
         }
     }
 
     private protected abstract Task HandleProcessAsync(Event<TIn> @event, Action? action = null);
+
+    protected virtual string? CriticalLog() => null;
+
+    protected virtual string? ErrorLog(TIn @in, Exception ex) => null;
 }
 

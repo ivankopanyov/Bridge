@@ -3,6 +3,9 @@
 .text-base {
     font-size: 12px !important;
     color: $color-primary;
+}
+
+.text-hidden {
     overflow-wrap: anywhere;
     display: -webkit-box;
     overflow: hidden;

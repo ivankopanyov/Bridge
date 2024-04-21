@@ -50,8 +50,10 @@ message Log {
 	optional string error = 5;
 	optional string stackTrace = 6; 
 	google.protobuf.Timestamp dateTime = 7;
-	optional string inJson = 8;
-	optional string outJson = 9; 
+	optional string description = 8;
+	bool isEnd = 9;
+	optional string inJson = 10;
+	optional string outJson = 11; 
 }
 
 service ServiceControl {

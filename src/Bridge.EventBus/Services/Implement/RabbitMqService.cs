@@ -115,28 +115,28 @@ internal class RabbitMqService(ServiceHost.ServiceHostClient serviceHostClient, 
         {
             if (e.Body.ToArray() is not byte[] bytes)
             {
-                CriticalEvent?.Invoke(null, handlerName, null, "Event body is null.");
+                CriticalEvent?.Invoke(null, handlerName, null, null, "Event body is null.");
                 await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false), handleAction, handlerName);
                 return;
             }
 
             if (Encoding.UTF8.GetString(bytes) is not string json)
             {
-                CriticalEvent?.Invoke(null, handlerName, null, "Event encoding failed.");
+                CriticalEvent?.Invoke(null, handlerName, null, null, "Event encoding failed.");
                 await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false), handleAction, handlerName);
                 return;
             }
 
             if (JsonConvert.DeserializeObject<Event<T>>(json) is not Event<T> @event)
             {
-                CriticalEvent?.Invoke(null, handlerName, null, "Event deserialize failed.");
+                CriticalEvent?.Invoke(null, handlerName, null, null, "Event deserialize failed.");
                 await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false), handleAction, handlerName);
                 return;
             }
 
             if (@event.Message == null)
             {
-                CriticalEvent?.Invoke(@event.QueueName, handlerName, @event.TaskId, "Event message is null.");
+                CriticalEvent?.Invoke(@event.QueueName, handlerName, @event.TaskId, null, "Event message is null.");
                 await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, false), handleAction, handlerName);
                 return;
             }
@@ -148,7 +148,7 @@ internal class RabbitMqService(ServiceHost.ServiceHostClient serviceHostClient, 
             catch (Exception ex)
             {
                 if (!e.Redelivered)
-                    ErrorEvent?.Invoke(@event.QueueName, handlerName, @event.TaskId, @event.Message, ex.Message, ex.StackTrace);
+                    ErrorEvent?.Invoke(@event.QueueName, handlerName, @event.TaskId, null, @event.Message, ex.Message, ex.StackTrace);
 
                 await TryBasicAnswerAsync(() => model.BasicReject(e.DeliveryTag, true), handleAction, handlerName);
             }
