@@ -1,27 +1,26 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class CheckOutHandler : EventHandler<FiasGuestCheckOut, ReservationInfo>
+public class CheckOutHandler : Handler<FiasGuestCheckOut>
 {
-    protected override string HandlerName => "CHECKOUT";
-
-    public CheckOutHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
+    protected override Task HandleAsync(FiasGuestCheckOut @in, IEventContext context)
     {
-        fiasService.FiasGuestCheckOutEvent += async message => await InputDataAsync("RESV", message);
-    }
-
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckOut @in, string? taskId)
-    {
-        return Task.FromResult(new ReservationInfo
+        context.Send(new ReservationInfo
         {
-            Resort = "RSS",
-            Id = @in.ReservationNumber,
+            ReservationNumber = @in.ReservationNumber,
             Room = @in.RoomNumber,
             Status = "OUT"
         });
+
+        return Task.CompletedTask;
     }
 
-    protected override string? SuccessfulLog(FiasGuestCheckOut @in, ReservationInfo @out) => $"{@out.Id} {@out.Room}";
+    protected override string? Message(FiasGuestCheckOut @in)
+    {
+        var result = $"Reservation: {@in.ReservationNumber}";
 
-    protected override string? ErrorLog(FiasGuestCheckOut @in, Exception ex)
-        => $"{@in.ReservationNumber} {@in.RoomNumber}";
+        if (!string.IsNullOrWhiteSpace(@in.RoomNumber))
+            result += $", Room: {@in.RoomNumber}";
+
+        return result;
+    }
 }

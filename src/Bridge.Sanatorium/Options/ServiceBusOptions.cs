@@ -2,35 +2,26 @@
 
 public class ServiceBusOptions
 {
-    private string _connectionString = string.Empty;
+    [Required(AllowEmptyStrings = true)]
+    public string ConnectionString { get; set; } = "Data Source=localhost;Initial Catalog=servicebus;User Id=;Password=;Min Pool Size=1;Connection Timeout=10;";
 
-    private string _endpointName = string.Empty;
+    [Required(AllowEmptyStrings = true)]
+    public string Endpoint { get; set; } = "Bridge";
 
-    private string _license = string.Empty;
+    [Required(AllowEmptyStrings = true)]
+    public string ServerEndpoint { get; set; } = "Sanatorium.Server";
 
-    private decimal _rvc;
+    [Required(AllowEmptyStrings = true)]
+    public string License { get; set; } = string.Empty;
 
-    public string ConnectionString
-    {
-        get => _connectionString;
-        set => _connectionString = value ?? string.Empty;
-    }
+    [Range(0, int.MaxValue), Description("Время ожидания в секундах перед попыткой установления подключения.")]
+    public int ConnectionDelay { get; set; } = 1;
 
-    public string EndpointName
-    {
-        get => _endpointName;
-        set => _endpointName = value ?? string.Empty;
-    }
+    public override int GetHashCode() => HashCode.Combine(ConnectionString, ServerEndpoint, Endpoint, License);
 
-    public string License
-    {
-        get => _license;
-        set => _license = value ?? string.Empty;
-    }
-
-    public decimal? Rvc
-    {
-        get => _rvc;
-        set => _rvc = value ?? 0;
-    }
+    public override bool Equals(object? obj) => obj is ServiceBusOptions other 
+        && ConnectionString == other.ConnectionString
+        && Endpoint == other.Endpoint
+        && ServerEndpoint == other.ServerEndpoint
+        && License == other.License;
 }

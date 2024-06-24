@@ -1,69 +1,103 @@
-﻿namespace Bridge.HostApi.Repositories.Implement;
+﻿ namespace Bridge.HostApi.Repositories.Implement;
 
-public class ServiceRepository(BridgeDbContext context) : IServiceRepository
+public class ServiceRepository(ICacheService cache) : IServiceRepository
 {
-    private static HashSet<HostNode> _hosts = [];
+    private static readonly Lazy<SemaphoreSlim> _semaphore = new(() => new(1));
 
-    private readonly BridgeDbContext _context = context;
+    private static SemaphoreSlim Semaphore => _semaphore.Value;
 
-    public IReadOnlySet<HostNode> Hosts => _hosts;
+    public async Task<IEnumerable<ServiceInfo>> GetAllAsync() => await cache.GetAllAsync<ServiceInfo>();
 
-    public async Task<ServiceNodeInfo> UpdateServiceAsync(ServiceInfo serviceInfo, bool updateOptions)
+    public async Task<ServiceInfo?> GetAsync(string hostName, string serviceName)
     {
-        var serviceNodeInfo = new ServiceNodeInfo(serviceInfo);
+        ArgumentNullException.ThrowIfNull(hostName, nameof(hostName));
+        ArgumentNullException.ThrowIfNull(serviceName, nameof(serviceName));
 
-        var host = await (from h in _context.Hosts
-                          select new Models.Host
-                          {
-                              Name = h.Name,
-                              Services = h.Services.Where(s => s.ServiceName == serviceInfo.Name).ToHashSet()
-                          }).FirstOrDefaultAsync(h => h.Name == serviceInfo.HostName);
+        var key = GetKey(hostName, serviceName);
 
-        if (host == null)
-            await _context.AddAsync(new Models.Host
-            {
-                Name = serviceNodeInfo.HostName,
-                Services = new HashSet<Service>()
-                    {
-                        new()
-                        {
-                            HostName = serviceNodeInfo.HostName,
-                            ServiceName = serviceNodeInfo.Name,
-                            JsonOptions = serviceNodeInfo.JsonOptions
-                        }
-                    }
-            });
-        else if (host.Services.FirstOrDefault(s => s.ServiceName == serviceInfo.Name) is not Service service)
-            await _context.Services.AddAsync(new Service
-            {
-                HostName = serviceNodeInfo.HostName,
-                ServiceName = serviceNodeInfo.Name,
-                JsonOptions = serviceNodeInfo.JsonOptions
-            });
-        else if (updateOptions)
-            service.JsonOptions = serviceNodeInfo.JsonOptions;
-        else
-            serviceNodeInfo.JsonOptions = service.JsonOptions;
+        await Semaphore.WaitAsync();
 
-        await _context.SaveChangesAsync();
-
-        if (_hosts.FirstOrDefault(h => h.Name == serviceInfo.HostName) is not HostNode hostNode)
-            _hosts.Add(new HostNode
-            {
-                Name = serviceNodeInfo.HostName,
-                Services = new HashSet<ServiceNodeInfo> { serviceNodeInfo }
-            });
-        else if (hostNode.Services.FirstOrDefault(s => s.Name == serviceInfo.Name) is not ServiceNodeInfo serviceNode)
-            hostNode.Services.Add(serviceNodeInfo);
-        else
+        try
         {
-            serviceNode.State = serviceNodeInfo.State;
-            if (updateOptions)
-                serviceNode.JsonOptions = serviceNodeInfo.JsonOptions;
-
-            return serviceNode;
+            return await cache.GetAsync<ServiceInfo>(key);
         }
-
-        return serviceNodeInfo;
+        finally
+        {
+            Semaphore.Release();
+        }
     }
+
+    public async Task<bool> AddAsync(ServiceInfo serviceInfo)
+    {
+        ArgumentNullException.ThrowIfNull(serviceInfo?.HostName, nameof(serviceInfo.HostName));
+        ArgumentNullException.ThrowIfNull(serviceInfo?.Name, nameof(serviceInfo.Name));
+
+        var key = GetKey(serviceInfo);
+
+        await Semaphore.WaitAsync();
+
+        try
+        {
+            var isExists = await cache.ExistsAsync<ServiceInfo>(key);
+            if (!isExists)
+                await cache.PushAsync(key, serviceInfo);
+
+            return !isExists;
+        }
+        finally
+        {
+            Semaphore.Release();
+        }
+    }
+
+    public async Task<ServiceInfo> UpdateAsync(ServiceInfo serviceInfo, bool updateOptions)
+    {
+        ArgumentNullException.ThrowIfNull(serviceInfo?.HostName, nameof(serviceInfo.HostName));
+        ArgumentNullException.ThrowIfNull(serviceInfo?.Name, nameof(serviceInfo.Name));
+
+        var info = serviceInfo.Clone();
+
+        await Semaphore.WaitAsync();
+
+        try
+        {
+            var key = GetKey(info);
+            if (await cache.PopAsync<ServiceInfo>(key) is ServiceInfo s)
+            {
+                info.State ??= s.State;
+
+                if (!updateOptions)
+                    info.JsonOptions = s.JsonOptions;
+            }
+
+            await cache.PushAsync(key, info);
+
+            return info;
+        }
+        finally
+        {
+            Semaphore.Release();
+        }
+    }
+
+    public async Task<ServiceInfo?> RemoveAsync(string hostName, string serviceName)
+    {
+        ArgumentNullException.ThrowIfNull(hostName, nameof(hostName));
+        ArgumentNullException.ThrowIfNull(serviceName, nameof(serviceName));
+
+        await Semaphore.WaitAsync();
+
+        try
+        {
+            return await cache.PopAsync<ServiceInfo>(GetKey(hostName, serviceName));
+        }
+        finally
+        {
+            Semaphore.Release();
+        }
+    }
+
+    private static string GetKey(ServiceInfo serviceInfo) => GetKey(serviceInfo.HostName, serviceInfo.Name);
+
+    private static string GetKey(string hostName, string serviceName) => $"{hostName}/{serviceName}";
 }

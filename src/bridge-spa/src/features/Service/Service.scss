@@ -6,7 +6,7 @@ $service-input-margin: 5px;
 
 .service-header-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .service-success-icon {
@@ -22,62 +22,19 @@ $service-input-margin: 5px;
 .service-progress {
     margin-left: 2px;
     margin-right: 12px;
+    margin-top: 4px;
     width: $progress-size !important;
     height: $progress-size !important;
 }
 
-.service-left-input {
-    margin-right: $service-input-margin !important;
+.service-host-name {
+    margin-left: 5px;
 }
 
-.service-right-input {
-    margin-left: $service-input-margin !important;
+.service-name {
+    margin-top: 3px;
 }
 
-.service-bool-params-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 5px;
-}
-
-.service-bool-param {
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-    margin-bottom: 5px;
-}
-
-.service-checkbox {
-    margin-right: 5px;
-}
-
-.service-checkbox-large {
-    margin-left: 10px;
-}
-
-.service-button-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.service-button {
-    color: $color-primary !important;
-    border: 1px solid $color-secondary !important;
-    border-radius: $border-radius !important;
-    padding: 4px !important;
-    margin-right: 5px !important;
-}
-
-.service-button:disabled {
-    color: $color-secondary !important;
-}
-
-.service-button-icon {
-    width: $button-icon-size !important;
-    height: $button-icon-size !important;
-    margin-right: 5px !important;
+.service-opacity {
+    opacity: 0.2;
 }

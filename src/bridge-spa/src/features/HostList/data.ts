@@ -1,26 +1,22 @@
-export interface Parameter<T> {
-    name: string;
-    value: T;
-}
+import { Parameters } from "../ParameterList/data";
 
-export interface KeyValue<T> {
-    key: string,
-    value: T
-}
-
-export interface ServiceInfo {
-    hostName: string;
-    name: string;
+export interface ServiceState {
     isActive: boolean;
     error?: string;
     stackTrace?: string;
-    loading: boolean;
+}
+
+export interface SimpleServiceInfo {
+    hostName: string;
+    name: string;
+    parameters: Parameters;
+}
+
+export interface ServiceInfo extends SimpleServiceInfo {
+    state?: ServiceState;
+    timeoutId?: NodeJS.Timeout;
     updateError?: string;
-    booleanParameters: Parameter<boolean>[];
-    stringParameters: Parameter<string>[];
-    listParameters: Parameter<string[]>[];
-    booleanMapParameters: Parameter<KeyValue<boolean>[]>[];
-    stringMapParameters: Parameter<KeyValue<string>[]>[];
+    loading: boolean;
 }
 
 export interface HostInfo {

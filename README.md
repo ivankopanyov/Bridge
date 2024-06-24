@@ -4,13 +4,15 @@
 
 ![Bridge integration services architecture diagram](img/bridge_architecture.png)
 
+![Bridge homepage screenshot](img/bridge_homepage.png)
+
 ## Запуск
 
 ```sh
 git clone https://github.com/ivankopanyov/Bridge.git
 cd Bridge
 docker-compose build
-docker-compose up -t
+docker-compose up -d
 ```
 
 Откройте в браузере http://localhost

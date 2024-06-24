@@ -2,7 +2,7 @@
 
 public interface IEventBusBuilder
 {
-    IEventBusBuilder AddHandler<THandler, TIn>() where THandler : EventHandlerBase<TIn> where TIn : class, new();
+    IEventBusBuilder AddEventHandler<THandler, TIn>(Action<EventHandlerOptions>? action = null) where THandler : Handler<TIn>;
 
-    IEventBusBuilder AddLogger(LoggerConfiguration? loggerConfiguration, string? logFileName = null);
+    IEventBusBuilder AddLogHandler<THandler>() where THandler : LogHandler;
 }

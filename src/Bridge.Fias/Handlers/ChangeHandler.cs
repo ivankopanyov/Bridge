@@ -1,15 +1,8 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
+public class ChangeHandler : Handler<FiasGuestChange>
 {
-    protected override string HandlerName => "CHANGE";
-
-    public ChangeHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
-    {
-        fiasService.FiasGuestChangeEvent += async message => await InputDataAsync("RESV", message);
-    }
-
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestChange @in, string? taskId)
+    protected override Task HandleAsync(FiasGuestChange @in, IEventContext context)
     {
         DateTime? arrivalDate = null;
         if (@in.GuestArrivalDate is DateOnly _arrivalDate)
@@ -23,20 +16,28 @@ internal class ChangeHandler : EventHandler<FiasGuestChange, ReservationInfo>
                 departureDate = date.AddDays(1).AddTicks(-1);
         }
 
-        return Task.FromResult(new ReservationInfo
+        context.Send(new ReservationInfo
         {
-            Resort = "RSS",
-            Id = @in.ReservationNumber,
+            ReservationNumber = @in.ReservationNumber,
             Room = @in.RoomNumber,
             Status = "IN",
             ArrivalDate = arrivalDate,
             DepartureDate = departureDate
         });
+
+        return Task.CompletedTask;
     }
 
-    protected override string? SuccessfulLog(FiasGuestChange @in, ReservationInfo @out)
-        => $"{@out.Id} {@out.Room} {@out.ArrivalDate} - {@out.DepartureDate}";
+    protected override string? Message(FiasGuestChange @in)
+    {
+        var result = $"Reservation: {@in.ReservationNumber}";
 
-    protected override string? ErrorLog(FiasGuestChange @in, Exception ex)
-        => $"{@in.ReservationNumber} {@in.RoomNumber} {@in.GuestArrivalDate} - {@in.GuestDepartureDate}";
+        if (!string.IsNullOrWhiteSpace(@in.RoomNumber))
+            result += $", Room: {@in.RoomNumber}";
+
+        if (!string.IsNullOrWhiteSpace(@in.GuestName))
+            result += $" {@in.GuestName}";
+
+        return result;
+    }
 }

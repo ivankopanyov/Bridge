@@ -268,7 +268,7 @@ public partial class FiasCommonMessage
             return new FiasCommonMessage(source);
 
         var json = items.Length > 1
-            ? string.Join(",", items.Skip(1).Select(item => item.Length <= 2 ? $"\"{item}\":\"\"" : $"\"{item[..2]}\":\"{item[2..]}\""))
+            ? string.Join(",", items.Skip(1).Select(item => item.Length <= 2 ? $"\"{item}\":\"\"" : $"\"{item[..2]}\":\"{item[2..].Replace("\"", "\\\"")}\""))
             : string.Empty;
 
         try

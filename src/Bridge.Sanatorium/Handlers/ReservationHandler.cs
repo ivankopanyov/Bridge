@@ -1,13 +1,8 @@
 ﻿namespace Bridge.Sanatorium.Handlers;
 
-public class ReservationHandler(ISanatoriumService sanatoriumService, IEventBusService eventBusService) 
-    : EventBus.EventHandler<ReservationUpdateInfo>(eventBusService)
+public class ReservationHandler(ISanatoriumService sanatoriumService) : Handler<ReservationUpdateInfo>()
 {
-    private readonly ISanatoriumService _sanatoriumService = sanatoriumService;
-
-    protected override string HandlerName => "N_SERVICE_BUS";
-
-    protected override async Task HandleAsync(ReservationUpdateInfo @in, string? taskId)
+    protected override async Task HandleAsync(ReservationUpdateInfo @in, IEventContext context)
     {
         var message = new ReservationUpdatedMessage()
         {
@@ -54,10 +49,10 @@ public class ReservationHandler(ISanatoriumService sanatoriumService, IEventBusS
             CurrentTimeline = ToTimeline(@in.CurrentTimeline)
         };
 
-        await _sanatoriumService.PublishAsync(message);
+        await sanatoriumService.Exec<Task>(endpoint => endpoint.Publish(message));
     }
 
-    private ReservationMessage.Timeline ToTimeline(TimelineInfo t) => new()
+    private static ReservationMessage.Timeline ToTimeline(TimelineInfo t) => new()
     {
         DateRange = new DateRange
         {
@@ -77,4 +72,15 @@ public class ReservationHandler(ISanatoriumService sanatoriumService, IEventBusS
             CurrencyCode = p.CurrencyCode
         }).ToArray()
     };
+
+    protected override string? Message(ReservationUpdateInfo @in)
+    {
+        var result = $"GenericNo: {@in.GenericNo}, Id: {@in.Id}";
+        var name = string.Join(' ', @in.LastName, @in.FirstName, @in.MiddleName);
+
+        if (!string.IsNullOrWhiteSpace(name))
+            result += $", {name}";
+
+        return result;
+    }
 }

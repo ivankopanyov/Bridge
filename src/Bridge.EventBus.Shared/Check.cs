@@ -2,9 +2,9 @@
 
 public class Check
 {
-    public int Rvc { get; set; }
+    public Dictionary<string, string> Headers { get; set; }
 
-    public int CheckNumber { get; set; }
+    public string CorrelationId { get; set; }
 
     public DateTime DateTime { get; set; }
 

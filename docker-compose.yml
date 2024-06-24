@@ -1,53 +1,50 @@
-version: '3.4'
-
 services:
-  fias:
-    image: ${DOCKER_REGISTRY-}fias
+  bridge.fias:
+    image: ${DOCKER_REGISTRY-}bridge_fias
     build:
       context: .
       dockerfile: src/Bridge.Fias/Dockerfile
 
-  opera:
-    image: ${DOCKER_REGISTRY-}opera
+  bridge.opera:
+    image: ${DOCKER_REGISTRY-}bridge_opera
     build:
       context: .
       dockerfile: src/Bridge.Opera/Dockerfile
 
-  sanatorium:
-    image: ${DOCKER_REGISTRY-}sanatorium
+  bridge.sanatorium:
+    image: ${DOCKER_REGISTRY-}bridge_sanatorium
     build:
       context: .
       dockerfile: src/Bridge.Sanatorium/Dockerfile
 
-  fiscal:
-    image: ${DOCKER_REGISTRY-}fiscal
+  bridge.fiscal:
+    image: ${DOCKER_REGISTRY-}bridge_fiscal
     build:
       context: .
       dockerfile: src/Bridge.Fiscal/Dockerfile
 
-  hostapi:
-    image: ${DOCKER_REGISTRY-}hostapi
+  bridge.telegrambot:
+    image: ${DOCKER_REGISTRY-}bridgetelegrambot
+    build:
+      context: .
+      dockerfile: src/Bridge.TelegramBot/Dockerfile
+
+  bridge.hostapi:
+    image: ${DOCKER_REGISTRY-}bridge_hostapi
     build:
       context: .
       dockerfile: src/Bridge.HostApi/Dockerfile
   
-  spa:
+  bridge.spa:
     build:
       context: .
       dockerfile: src/bridge-spa/Dockerfile
   
   elasticsearch:
-    image: elasticsearch:${ELASTIC_VERSION}
-  
-  kibana:
-    image: kibana:${ELASTIC_VERSION}
+    image: elasticsearch:8.12.0
 
   rabbitmq:
     image: rabbitmq:3.12.12-management-alpine
   
   redis:
     image: redis:alpine
-  
-  nginx:
-    image: nginx
-

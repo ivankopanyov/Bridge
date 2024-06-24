@@ -7,27 +7,29 @@ public static class DependencyInjection
         + Extensions.LoggerExtensions.TASK + "} {Message}{NewLine}";
 
     private const string OUTPUT_FILE_TEMPLATE = OUTPUT_CONSOLE_TEMPLATE + "{Exception}{NewLine}";
-
-    public static IServiceControlBuilder AddEventBus(this IServiceControlBuilder builder, Action<IEventBusBuilder> action)
+    
+    public static IEventBusBuilder AddEventBus<TTransport, TOptions>(this IServiceCollection services, Action<TOptions> transportOptionsAction,
+        Action<EventBusOptions>? eventBusOptionsAction = null) where TTransport : class, ITransport<TOptions> where TOptions : EventBusOptionsBase, new()
     {
-        builder.Services.AddSingleton<IEventBusService, EventBusService>();
+        var options = new TOptions();
+        transportOptionsAction.Invoke(options);
+        services.AddEventBusFactory<TTransport, TOptions>(options);
 
-        builder
-            .AddService<IRabbitMqService, RabbitMqService, RabbitMqOptions>(options => options.Name = "RabbitMQ")
-            .AddService<IElasticSearchService, ElasticSearchService, ElasticSearchOptions>(options => options.Name = "Elasticsearch");
+        if (eventBusOptionsAction != null)
+        {
+            var eventBusOptions = new EventBusOptions();
+            eventBusOptionsAction.Invoke(eventBusOptions);
 
-        var handlerBuilder = new EventBusBuilder(builder.Services);
-        action.Invoke(handlerBuilder);
+            eventBusOptions.LoggerConfiguration?.WriteTo.Logger(config => config
+                .Filter.ByIncludingOnly(e =>
+                    e.Properties.Keys.Contains(Extensions.LoggerExtensions.QUEUE) &&
+                    e.Properties.Keys.Contains(Extensions.LoggerExtensions.HANDLER) &&
+                    e.Properties.Keys.Contains(Extensions.LoggerExtensions.TASK))
+                .WriteTo.Console(outputTemplate: OUTPUT_CONSOLE_TEMPLATE)
+                .WriteTo.File(eventBusOptions.LogFileName ?? $"logs/events_.log", outputTemplate: OUTPUT_FILE_TEMPLATE, rollingInterval: RollingInterval.Day));
+        }
 
-        handlerBuilder.LoggerConfiguration?.WriteTo.Logger(config => config
-            .Filter.ByIncludingOnly(e =>
-                e.Properties.Keys.Contains(Extensions.LoggerExtensions.QUEUE) &&
-                e.Properties.Keys.Contains(Extensions.LoggerExtensions.HANDLER) &&
-                e.Properties.Keys.Contains(Extensions.LoggerExtensions.TASK))
-            .WriteTo.Console(outputTemplate: OUTPUT_CONSOLE_TEMPLATE)
-            .WriteTo.File(handlerBuilder.LogFileName ?? $"logs/events_.log", outputTemplate: OUTPUT_FILE_TEMPLATE, rollingInterval: RollingInterval.Day));
-
-        return builder;
+        return new EventBusBuilder(services, options.HostId);
     }
 }
 

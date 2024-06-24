@@ -2,27 +2,21 @@
 
 public class FiasServiceOptions
 {
-    private string _host = string.Empty;
+    [Required(AllowEmptyStrings = true)]
+    public string Host { get; set; } = string.Empty;
 
-    private int _port;
+    [Range(IPEndPoint.MinPort, IPEndPoint.MaxPort)]
+    public int Port { get; set; }
 
-    private IDictionary<string, bool> _taxCodes { get; set; } = new Dictionary<string, bool>();
+    [Range(0, int.MaxValue), Description("Время ожидания в секундах при попытке установления подключения.")]
+    public int ConnectionTimeout { get; set; } = 1;
 
-    public string Host
-    {
-        get => _host;
-        set => _host = value ?? string.Empty;
-    }
+    [Range(0, int.MaxValue), Description("Время ожидания в секундах перед попыткой установления подключения.")]
+    public int ConnectionDelay { get; set; } = 6;
 
-    public int? Port 
-    {
-        get => _port;
-        set => _port = value ?? 0;
-    }
+    public override int GetHashCode() => HashCode.Combine(Host, Port);
 
-    public IDictionary<string, bool> TaxCodes
-    {
-        get => _taxCodes;
-        set => _taxCodes = value ?? new Dictionary<string, bool>();
-    }
+    public override bool Equals(object? obj) => obj is FiasServiceOptions other
+        && Host == other.Host 
+        && Port == other.Port;
 }

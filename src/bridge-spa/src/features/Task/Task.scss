@@ -1,10 +1,11 @@
 @import '../../styles/vars';
 
 $task-handler-padding: 3px;
+$task-progress-size: 12px;
 
 .task-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .task-handler {
@@ -12,6 +13,11 @@ $task-handler-padding: 3px;
     border-radius: $border-radius;
     padding-left: $task-handler-padding;
     padding-right: $task-handler-padding;
+}
+
+.task-header-name {
+    display: flex;
+    margin-top: 4px;
 }
 
 .task-icon {

@@ -4,6 +4,7 @@
     display: flex;
     align-items: flex-start;
     width: 100%;
+    margin-top: 4px;
 }
 
 .enumerable-parameter-icon-button {
@@ -18,5 +19,5 @@
 
 .enumerable-parameter-header-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }

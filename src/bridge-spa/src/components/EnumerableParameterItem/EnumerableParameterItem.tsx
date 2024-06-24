@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from 'react';
-import { Box, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material';
 import { DeleteForever } from '@mui/icons-material';
 import './EnumerableParameterItem.scss';
 
@@ -10,7 +10,7 @@ interface EnumerableParameterItemProps {
 
 export const EnumerableParameterItem: FC<Readonly<PropsWithChildren<EnumerableParameterItemProps>>> = ({ editMode, onDeleteClick, children }) => {
     return (
-        <Box className="enumerable-parameter-item-container">
+        <div className="enumerable-parameter-item-container">
             { children }
             {
                 editMode &&
@@ -18,7 +18,7 @@ export const EnumerableParameterItem: FC<Readonly<PropsWithChildren<EnumerablePa
                         <DeleteForever className="enumerable-parameter-item-icon" />
                     </IconButton>
             }
-        </Box>
+        </div>
     );
 };
 

@@ -65,11 +65,11 @@ public partial class FiasPostingRequest : FiasMessageToPms
     /// <b>Required.</b><br/>
     /// Valid values ​​range from 1 to <see cref="FiasEnviroments.MAX_8"/>.<br/>
     /// Shall be unique as per message sent and shall not be the value from
-    /// <see cref="PostingInquiry"/> in corresponding <see cref="FiasPostingRequest"/>.<br/>
+    /// <see cref="FiasPostingRequest.PostingInquiry"/> in corresponding <see cref="FiasPostingRequest"/>.<br/>
     /// <b>Обязательно.</b><br/>
     /// Допустимое значение в диапазоне от 1 до <see cref="FiasEnviroments.MAX_8"/>.<br/>
     /// Порядковый номер публикации должен быть уникальным для каждого отправленного
-    /// сообщения и не должен иметь значение из <see cref="PostingInquiry"/> в
+    /// сообщения и не должен иметь значение из <see cref="FiasPostingRequest.PostingInquiry"/> в
     /// соответствующем <see cref="FiasPostingRequest"/>.
     /// </summary>
     [Required]

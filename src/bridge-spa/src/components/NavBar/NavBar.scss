@@ -1,5 +1,7 @@
 @import '../../styles/vars';
 
+$nav-bar-progress-size: 20px;
+
 .nav-bar {
     background-color: $color-component !important;
     justify-content: center;
@@ -22,4 +24,21 @@
 
 .nav-bar-page {
     margin-top: $tab_bar_height;
+}
+
+.nav-bar-page-content {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar-content {
+    margin: 10px;
+	width: 100%;
+    max-width: 700px;
+}
+
+.nav-bar-progress {
+    width: $nav-bar-progress-size !important;
+    height: $nav-bar-progress-size !important;
+    margin-right: 14px;
 }

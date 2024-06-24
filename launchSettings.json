@@ -5,10 +5,12 @@
       "commandVersion": "1.0",
       "serviceActions": {
         "bridge.opera": "StartDebugging",
-        "fias": "StartDebugging",
+        "bridge.fias": "StartDebugging",
         "bridge.sanatorium": "StartDebugging",
         "bridge.hostapi": "StartDebugging",
-        "bridge.fiscal": "StartDebugging"
+        "bridge.fiscal": "StartDebugging",
+        "bridge.elasticsearch": "StartDebugging",
+        "bridge.telegrambot": "StartDebugging"
       }
     }
   }

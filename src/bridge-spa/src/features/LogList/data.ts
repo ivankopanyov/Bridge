@@ -1,25 +1,35 @@
-export interface LogInfo {
-    handlerName?: string;
-    status: 'SUCCESS' | 'ERROR' | 'CRITICAL' | 'UNKNOWN';
+export interface LogData {
+    logId: string;
+    taskId: string;
     error?: string;
     stackTrace?: string;
+    inputObjectJson?: string;
+}
+
+export interface LogInfo {
+    id: string;
+    taskId: string;
+    taskName?: string;
+    handlerName?: string;
     dateTime: Date;
-    description?: string;
+    isError: boolean;
+    isEnd: boolean;
+    message?: string;
+    data?: LogData;
+    loading?: boolean;
+    error?: string;
 }
 
 export interface TaskInfo {
     logs: LogInfo[];
-    queueName?: string;
-    handlerName?: string;
-    taskId?: string;
-    status: 'SUCCESS' | 'ERROR' | 'CRITICAL' | 'UNKNOWN';
-    dateTime: Date;
-    isEnd: boolean;
-    description?: string;
+    loading?: boolean;
+    error?: string;
 }
 
 export interface LogList {
     tasks: TaskInfo[];
     loading: boolean;
+    bottomLoading: boolean;
     error?: string;
+    isEnd: boolean;
 }

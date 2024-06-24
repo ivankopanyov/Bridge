@@ -2,9 +2,7 @@
 
 public class ReservationInfo
 {
-    public string Resort { get; set; }
-
-    public decimal Id { get; set; }
+    public decimal ReservationNumber { get; set; }
 
     public string Status { get; set; }
 

@@ -1,15 +1,8 @@
 ﻿namespace Bridge.Fias.Handlers;
 
-internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
+public class CheckInHandler : Handler<FiasGuestCheckIn>
 {
-    protected override string HandlerName => "CHECKIN";
-
-    public CheckInHandler(IFias fiasService, IEventBusService eventBusService) : base(eventBusService)
-    {
-        fiasService.FiasGuestCheckInEvent += async message => await InputDataAsync("RESV", message);
-    }
-
-    protected override Task<ReservationInfo> HandleAsync(FiasGuestCheckIn @in, string? taskId)
+    protected override Task HandleAsync(FiasGuestCheckIn @in, IEventContext context)
     {
         DateTime? arrivalDate = null;
         if (@in.GuestArrivalDate is DateOnly _arrivalDate)
@@ -23,20 +16,28 @@ internal class CheckInHandler : EventHandler<FiasGuestCheckIn, ReservationInfo>
                 departureDate = date.AddDays(1).AddTicks(-1);
         }
 
-        return Task.FromResult(new ReservationInfo
+        context.Send(new ReservationInfo
         {
-            Resort = "RSS",
-            Id = @in.ReservationNumber,
+            ReservationNumber = @in.ReservationNumber,
             Room = @in.RoomNumber,
             Status = "IN",
             ArrivalDate = arrivalDate,
             DepartureDate = departureDate
         });
+
+        return Task.CompletedTask;
     }
 
-    protected override string? SuccessfulLog(FiasGuestCheckIn @in, ReservationInfo @out)
-        => $"{@out.Id} {@out.Room} {@out.ArrivalDate} - {@out.DepartureDate}";
+    protected override string? Message(FiasGuestCheckIn @in)
+    {
+        var result = $"Reservation: {@in.ReservationNumber}";
 
-    protected override string? ErrorLog(FiasGuestCheckIn @in, Exception ex)
-        => $"{@in.ReservationNumber} {@in.RoomNumber} {@in.GuestArrivalDate} - {@in.GuestDepartureDate}";
+        if (!string.IsNullOrWhiteSpace(@in.RoomNumber))
+            result += $", Room: {@in.RoomNumber}";
+
+        if (!string.IsNullOrWhiteSpace(@in.GuestName))
+            result += $" {@in.GuestName}";
+
+        return result;
+    }
 }
