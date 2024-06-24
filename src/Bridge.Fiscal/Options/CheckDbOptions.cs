@@ -2,11 +2,11 @@
 
 public class CheckDbOptions
 {
-    private string _host = string.Empty;
+    [Required(AllowEmptyStrings = true)]
+    public string Endpoint { get; set; } = "http://localhost/FiscalService/CheckDB";
 
-    public string Host
-    {
-        get => _host;
-        set => _host = value ?? string.Empty;
-    }
+    public override int GetHashCode() => HashCode.Combine(Endpoint);
+
+    public override bool Equals(object? obj) => obj is CheckDbOptions other
+        && Endpoint == other.Endpoint;
 }

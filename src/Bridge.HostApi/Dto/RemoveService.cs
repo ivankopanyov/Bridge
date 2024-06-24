@@ -2,7 +2,7 @@
 
 public class RemoveService
 {
-    public string Name { get; set; }
+    public string HostName { get; set; }
 
-    public string HostName { get; set; }  
+    public string Name { get; set; }
 }

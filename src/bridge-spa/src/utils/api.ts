@@ -1,31 +1,40 @@
-type Options = Record<string, string | number | boolean | Object | any[]> | null;
+import { serverHost } from "../environment";
 
 export const api = {
-    baseURL: 'http://localhost:8080/api/v1.0',
-    get: (endpoint: string, external = false) => api.respond('get', endpoint, null, external),
-    post: (endpoint: string, options: Options) => api.respond('post', endpoint, options),
-    put: (endpoint: string, options: Options) => api.respond('put', endpoint, options),
-    patch: (endpoint: string, options: Options) => api.respond('patch', endpoint, options),
+    baseURL: `${serverHost}/api/v1.0`,
+    get: (endpoint: string) => api.respond('get', endpoint, null),
+    post: (endpoint: string, body?: any) => api.respond('post', endpoint, body),
+    put: (endpoint: string, body?: any) => api.respond('put', endpoint, body),
+    patch: (endpoint: string, body?: any) => api.respond('patch', endpoint, body),
     delete: (endpoint: string) => api.respond('delete', endpoint),
     respond: async (
       method: string,
       endpoint: string,
-      data?: Options,
-      external?: boolean
+      body?: any
     ) => {
-        const url = external ? endpoint : api.baseURL + endpoint;
-        const options = data
+        const options = body
             ? {
                 headers: new Headers({ 'Content-Type': 'application/json' }),
-                body: JSON.stringify(data)
+                body: JSON.stringify(body)
             }
             : {};
+        
+        let response: Response;
+
         try {
-            const response = await fetch(url, { method, ...options });
-            const data = await response.json();
-            return [null, data];
-        } catch (error) {
-            return [error];
+            response = await fetch(api.baseURL + endpoint, { method, ...options });
+        } catch(e: any) {
+            throw new Error('No connection to the server.');
+        }
+
+        if (response.ok) {
+            try {
+                return await response.json();
+            } catch {
+                return undefined;
+            }
+        } else {
+            throw new Error(await response.text());
         }
     }
 };

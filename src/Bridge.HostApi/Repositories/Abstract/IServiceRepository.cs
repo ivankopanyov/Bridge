@@ -2,7 +2,13 @@
 
 public interface IServiceRepository
 {
-    IReadOnlySet<HostNode>? Hosts { get; }
+    Task<IEnumerable<ServiceInfo>> GetAllAsync();
 
-    Task<ServiceNodeInfo> UpdateServiceAsync(ServiceInfo serviceInfo, bool updateOptions);
+    Task<ServiceInfo?> GetAsync(string hostName, string serviceName);
+
+    Task<bool> AddAsync(ServiceInfo serviceInfo);
+
+    Task<ServiceInfo> UpdateAsync(ServiceInfo serviceInfo, bool updateOptions);
+
+    Task<ServiceInfo?> RemoveAsync(string hostName, string serviceName);
 }

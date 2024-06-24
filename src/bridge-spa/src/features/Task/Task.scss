@@ -1,0 +1,41 @@
+@import '../../styles/vars';
+
+$task-handler-padding: 3px;
+$task-progress-size: 12px;
+
+.task-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.task-handler {
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    padding-left: $task-handler-padding;
+    padding-right: $task-handler-padding;
+}
+
+.task-header-name {
+    display: flex;
+    margin-top: 4px;
+}
+
+.task-icon {
+    color: $color-secondary;
+}
+
+.task-icon-success {
+    color: $color-primary;
+}
+
+.task-icon-fail {
+    color: $color-error;
+}
+
+.task-indent-left {
+    margin-left: 10px;
+}
+
+.task-indent-right {
+    margin-right: 10px;
+}

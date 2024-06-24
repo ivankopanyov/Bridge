@@ -3,6 +3,10 @@
 .text-base {
     font-size: 12px !important;
     color: $color-primary;
+    white-space: pre-wrap;
+}
+
+.text-hidden {
     overflow-wrap: anywhere;
     display: -webkit-box;
     overflow: hidden;
@@ -14,7 +18,11 @@
 }
 
 .text-secondary {
-    color: $color-secondary
+    color: $color-secondary;
+}
+
+.text-fail {
+    color: $color-error;
 }
 
 .text-large {

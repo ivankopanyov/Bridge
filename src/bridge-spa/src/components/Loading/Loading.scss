@@ -1,0 +1,16 @@
+@import '../../styles/vars';
+
+$loading-progress-margin: 5px;
+$loading-progress-size: 20px;
+
+.loading-progress-container {
+    display: flex;
+    justify-content: center;
+    margin-top: $loading-progress-margin;
+    margin-bottom: $loading-progress-margin;
+}
+
+.loading-progress {
+    width: $loading-progress-size !important;
+    height: $loading-progress-size !important;
+}

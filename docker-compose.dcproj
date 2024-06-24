@@ -7,7 +7,7 @@
     <ProjectGuid>81ea9c18-421c-42dc-8692-19d28c33e381</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>bridge.opera</DockerServiceName>
+    <DockerServiceName>bridge.hostapi</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

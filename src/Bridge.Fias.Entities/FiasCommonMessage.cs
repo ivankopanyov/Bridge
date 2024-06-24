@@ -1,6 +1,5 @@
 ﻿namespace Bridge.Fias.Entities;
 
-
 public partial class FiasCommonMessage
 {
     [JsonProperty(PropertyName = "DA")]

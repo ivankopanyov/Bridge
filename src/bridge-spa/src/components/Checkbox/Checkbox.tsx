@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IconButton } from "@mui/material";
-import { Check, DoDisturb } from "@mui/icons-material";
+import { Check } from "@mui/icons-material";
 import './Checkbox.scss';
 
 interface CheckboxProps {
@@ -11,22 +11,22 @@ interface CheckboxProps {
 }
 
 export const Checkbox: FC<Readonly<CheckboxProps>> = ({ value, setValue, disabled, large }) => {
-    const iconClassName = `checkbox-icon ${!large && 'checkbox-icon-medium'}`;
 
     const onClick = () => setValue(!value);
 
     return (
-        <IconButton 
-            className={`checkbox ${!disabled && 'checkbox-enabled'} ${large && 'checkbox-large'}`}
-            onClick={onClick}
-            disabled={disabled}
-        >
-            {
-                value
-                    ? <Check className={iconClassName} />
-                    : (disabled && <DoDisturb className={iconClassName} />)
-            }
-        </IconButton>
+        <div className={`checkbox-container ${large ? 'checkbox-container-large' : 'checkbox-container-medium'}`}>
+            <IconButton 
+                className={`${large ? 'checkbox-large' : 'checkbox-medium'}`}
+                onClick={onClick}
+                disabled={disabled}
+            >
+                {
+                    value &&
+                        <Check className={`checkbox-icon ${!large && 'checkbox-icon-medium'}`} />
+                }
+            </IconButton>
+        </div>
     );
 };
 

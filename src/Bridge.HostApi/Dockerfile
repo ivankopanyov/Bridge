@@ -1,11 +1,20 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
+EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Bridge.HostApi/Bridge.HostApi.csproj", "src/Bridge.HostApi/"]
+COPY ["src/Bridge.DefaultServices/Bridge.DefaultServices.csproj", "src/Bridge.DefaultServices/"]
+COPY ["src/Bridge.Cache.Memory/Bridge.Cache.Memory.csproj", "src/Bridge.Cache.Memory/"]
+COPY ["src/Bridge.Cache/Bridge.Cache.csproj", "src/Bridge.Cache/"]
+COPY ["src/Bridge.Cache.Redis/Bridge.Cache.Redis.csproj", "src/Bridge.Cache.Redis/"]
+COPY ["src/Bridge.Extensions.Logging/Bridge.Extensions.Logging.csproj", "src/Bridge.Extensions.Logging/"]
+COPY ["src/Bridge.EventBus.RabbitMq/Bridge.EventBus.RabbitMq.csproj", "src/Bridge.EventBus.RabbitMq/"]
+COPY ["src/Bridge.EventBus.Abstractions/Bridge.EventBus.Abstractions.csproj", "src/Bridge.EventBus.Abstractions/"]
+COPY ["src/Bridge.EventBus/Bridge.EventBus.csproj", "src/Bridge.EventBus/"]
 COPY ["src/Bridge.Services.Control/Bridge.Services.Control.csproj", "src/Bridge.Services.Control/"]
 RUN dotnet restore "./src/Bridge.HostApi/./Bridge.HostApi.csproj"
 COPY . .

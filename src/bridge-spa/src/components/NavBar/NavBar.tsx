@@ -1,13 +1,14 @@
 import { useState, FC, PropsWithChildren } from 'react';
-import { AppBar, Box, Drawer, Toolbar } from '@mui/material';
+import { AppBar, Drawer, Toolbar, CircularProgress } from '@mui/material';
 import { Search, Menu, Close } from '@mui/icons-material';
-import useScreenSize from '../../hooks/useScreenSize';
 import { NavBarButton, SearchBar, Text } from '..';
+import useScreenSize from '../../hooks/useScreenSize';
 import './NavBar.scss';
 
 interface NavBarProps {
     title?: string;
     icon?: JSX.Element;
+    loading?: boolean;
     search?: {
         value: string;
         setValue: (value: string) => void;
@@ -15,7 +16,7 @@ interface NavBarProps {
     drawer?: JSX.Element;
 }
 
-const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, search, drawer, children }) => {
+const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, loading, search, drawer, children }) => {
     const [showSearch, setShowSearch] = useState(false);
     const [showDrawer, setShowDrawer] = useState(false);
     const screenSize = useScreenSize();
@@ -33,15 +34,19 @@ const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, sea
     const onCloseDrawerClick = () => setShowDrawer(false);
  
     return (
-        <Box>
+        <div>
             <AppBar className={`nav-bar ${!screenSize.isMobile && 'nav-bar-desktop'}`}>
                 <Toolbar>
                     {   
                         (fixSearch || (!fixSearch && !showSearch)) &&
-                            <Box className="nav-bar-title">
-                                { icon && icon }
+                            <div className="nav-bar-title">
+                                {
+                                    loading
+                                        ? <CircularProgress className="nav-bar-progress" />
+                                        : icon
+                                }
                                 <Text large>{ title }</Text>
-                            </Box>
+                            </div>
                     }
                     {
                         search && fixSearch &&
@@ -49,19 +54,19 @@ const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, sea
                     }
                     {
                         search && !fixSearch && !showSearch &&
-                            <Box className="nav-bar-button-right">
+                            <div className="nav-bar-button-right">
                                 <NavBarButton onClick={onSearchClick}>
                                     <Search />
                                 </NavBarButton>
-                            </Box>
+                            </div>
                     }
                     {
                         drawer && (screenSize.width > 700 || (!fixSearch && !showSearch)) &&
-                            <Box className="nav-bar-button-right">
+                            <div className="nav-bar-button-right">
                                 <NavBarButton onClick={onMenuClick}>
                                     <Menu />
                                 </NavBarButton>
-                            </Box>
+                            </div>
                     }
                     {
                         search && !fixSearch && showSearch &&
@@ -69,15 +74,15 @@ const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, sea
                     }
                     {
                         search && !fixSearch && showSearch &&
-                            <Box className="nav-bar-button-right">
+                            <div className="nav-bar-button-right">
                                 <NavBarButton onClick={onCloseClick}>
                                     <Close />
                                 </NavBarButton>
-                            </Box>
+                            </div>
                     }
                 </Toolbar>
             </AppBar>
-            <Box className="nav-bar-page">
+            <div className="nav-bar-page">
                 {
                     <Drawer
                         anchor="right"
@@ -87,9 +92,13 @@ const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, sea
                         { drawer }
                     </Drawer>
                 }
-                { children }
-            </Box>
-        </Box>
+                <div className="nav-bar-page-content">
+                    <div className="nav-bar-content">
+                        { children }
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

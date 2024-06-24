@@ -2,27 +2,16 @@
 
 public class OperaOptions
 {
-    private string _connectionString = string.Empty;
+    [Required(AllowEmptyStrings =  true)]
+    public string ConnectionString { get; set; } = "Data Source=localhost/opera;User Id=;Password=;";
 
-    private HashSet<string> _trxCodes = [];
+    [Description("Совместимость с версией Oracle Database. Поддерживаются версии 11 и 12.")]
+    [Required(AllowEmptyStrings = true), RegularExpression(@"^(11|12)?$")]
+    public string? OracleSqlCompatibility { get; set; } = string.Empty;
 
-    private Dictionary<string, string> _documentTypeAliases = [];
+    public override int GetHashCode() => HashCode.Combine(ConnectionString, OracleSqlCompatibility);
 
-    public string ConnectionString 
-    {
-        get => _connectionString; 
-        set => _connectionString = value ?? string.Empty;
-    }
-
-    public HashSet<string> TrxCodes
-    {
-        get => _trxCodes;
-        init => _trxCodes = value ?? [];
-    }
-
-    public Dictionary<string, string> DocumentTypeAliases
-    {
-        get => _documentTypeAliases;
-        set => _documentTypeAliases = value ?? [];
-    }
+    public override bool Equals(object? obj) => obj is OperaOptions other
+        && ConnectionString == other.ConnectionString
+        && OracleSqlCompatibility == other.OracleSqlCompatibility;
 }

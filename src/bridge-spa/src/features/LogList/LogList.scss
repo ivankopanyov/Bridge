@@ -1,5 +1,10 @@
 @import '../../styles/vars';
 
 .log-list-icon {
-    margin-right: 10px;
+    margin-right: $icon-margin-right;
+}
+
+.log-list-bottom-mobile {
+    height: $tab_bar_height;
+    margin-bottom: -$tab_bar_height;
 }

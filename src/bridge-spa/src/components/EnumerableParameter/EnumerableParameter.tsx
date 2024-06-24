@@ -1,7 +1,8 @@
 import { FC, PropsWithChildren, useState } from 'react';
-import { Box, IconButton, Accordion } from '@mui/material';
+import { IconButton, Accordion } from '@mui/material';
 import { PlaylistAdd } from '@mui/icons-material';
-import { Text, AccordionBody, AccordionHeader } from '..';
+import { AccordionBody, AccordionHeader } from '..';
+import ParameterHeader from '../ParameterHeader/ParameterHeader';
 import './EnumerableParameter.scss';
 
 interface EnumerableParameterProps {
@@ -22,25 +23,25 @@ const EnumerableParameter: FC<Readonly<PropsWithChildren<EnumerableParameterProp
     };
 
     return (
-        <Box className="enumerable-parameter-container">
+        <div className="enumerable-parameter-container">
             {
                 editMode && 
                     <IconButton className="enumerable-parameter-icon-button" onClick={onAddClick}>
                         <PlaylistAdd />
                     </IconButton>
             }
-            <Box className="enumerable-parameter-accordion-container">
+            <div className="enumerable-parameter-accordion-container">
                 <Accordion expanded={expanded} onChange={(_e, s) => setExpanded(s)}>
                     <AccordionHeader>
-                        <Box className="enumerable-parameter-header-container">
+                        <div className="enumerable-parameter-header-container">
                             { !editMode && icon }
-                            <Text>{title}</Text>
-                        </Box>
+                            <ParameterHeader name={title} />
+                        </div>
                     </AccordionHeader>
                     <AccordionBody indent={!editMode}>{ children }</AccordionBody>
                 </Accordion>
-            </Box>
-        </Box>
+            </div>
+        </div>
     );
 };
 

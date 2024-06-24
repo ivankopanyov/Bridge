@@ -1,20 +1,10 @@
 ﻿namespace Bridge.EventBus;
 
-public interface IEventBusService
+internal delegate Task PublishHandleAsync<TIn>(TIn @in);
+
+public interface IEventBusService<TIn>
 {
-    Task PublishAsync<T>(string? queueName, T message) where T : class, new();
+    internal event PublishHandleAsync<TIn>? PublishEvent;
 
-    Task PublishAsync<T>(string? queueName, string? taskId, T message) where T : class, new();
-
-    internal Task PublishAsync<T>(Event<T> @event, Action? successAction = null) where T : class, new();
-
-    internal Task RecieveAsync<T>(string handlerName, Action<Event<T>, Action?> handleAction) where T : class, new();
-
-    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, object @in);
-
-    internal Task SuccessfulAsync(string? queueName, string? handlerName, string? taskId, object @in, object @out);
-
-    internal Task ErrorAsync(string? queueName, string? handlerName, string? taskId, object @in, string error, string? stackTrace = null);
-
-    internal Task CriticalAsync(string? queueName, string? handlerName, string? taskId, string error, string? stackTrace = null);
+    void Publish(TIn @in);
 }

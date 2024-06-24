@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+$list-margin: 16px;
+
+.list-top {
+    height: $tab_bar_height;
+    margin-top: -$tab_bar_height;
+}
+
+.list-fab {
+    opacity: 0.2;
+    position: fixed !important;
+    bottom: $list-margin;
+    right: $list-margin;
+}
+
+.list-fab-mobile {
+    bottom: $list-margin + $tab_bar_height;
+}

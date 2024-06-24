@@ -1,22 +1,32 @@
 ﻿namespace Bridge.EventBus;
 
-internal class EventBusBuilder(IServiceCollection services) : IEventBusBuilder
+internal class EventBusBuilder(IServiceCollection services, int hostId) : IEventBusBuilder
 {
-    private readonly IServiceCollection _services = services;
-
-    internal LoggerConfiguration? LoggerConfiguration { get; private set; }
-
-    internal string? LogFileName { get; private set; }
-
-    public IEventBusBuilder AddHandler<THandler, TIn>() where THandler : EventHandlerBase<TIn> where TIn : class, new()
+    public IEventBusBuilder AddEventHandler<THandler, TIn>(Action<EventHandlerOptions>? action = null) where THandler : Handler<TIn>
     {
-        _services.AddHostedService<THandler>();
-        return this;
+        ArgumentNullException.ThrowIfNull(action);
+        var options = new EventHandlerOptions<THandler, TIn>()
+        {
+            UseEventLogging = true
+        };
+        action.Invoke(options);
+
+        return AddHandler(options);
     }
-    public IEventBusBuilder AddLogger(LoggerConfiguration? loggerConfiguration, string? logFileName = null)
+
+    public IEventBusBuilder AddLogHandler<THandler>() where THandler : LogHandler => 
+        AddHandler(new EventHandlerOptions<THandler, EventLog>());
+
+    private IEventBusBuilder AddHandler<THandler, TIn>(EventHandlerOptions<THandler, TIn> options) where THandler : HandlerBase<TIn>
     {
-        LoggerConfiguration = loggerConfiguration;
-        LogFileName = logFileName;
+        options.HostId = hostId;
+
+        services
+            .AddTransient<THandler>()
+            .AddSingleton<IEventBusService<TIn>, EventBusService<TIn>>()
+            .AddSingleton(options)
+            .AddHostedService<HandlerStarter<THandler, TIn>>();
+
         return this;
     }
 }

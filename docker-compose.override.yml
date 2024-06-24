@@ -1,108 +1,123 @@
-version: '3.4'
-
 services:
-  fias:
-    container_name: fias
+  bridge.fias:
+    container_name: bridge_fias
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - HTTP2_PORT=${HTTP2_PORT}
-      - HOST_API=${HOST_API}
-      - HOST=fias
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - TZ=${TZ}
     networks:
       - network
     depends_on:
       - rabbitmq
     restart: always
 
-  opera:
-    container_name: opera
+  bridge.opera:
+    container_name: bridge_opera
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - HTTP2_PORT=${HTTP2_PORT}
-      - HOST_API=${HOST_API}
-      - TZ=Europe/Moscow
-      - HOST=opera
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - TZ=${TZ}
     networks:
       - network
     depends_on:
       - rabbitmq
     restart: always
 
-  sanatorium:
-    container_name: sanatorium
+  bridge.sanatorium:
+    container_name: bridge_sanatorium
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - HTTP2_PORT=${HTTP2_PORT}
-      - HOST_API=${HOST_API}
-      - HOST=sanatorium
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - TZ=${TZ}
     networks:
       - network
     depends_on:
       - rabbitmq
     restart: always
 
-  fiscal:
-    container_name: fiscal
+  bridge.fiscal:
+    container_name: bridge_fiscal
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - HTTP2_PORT=${HTTP2_PORT}
-      - HOST_API=${HOST_API}
-      - HOST=fiscal
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - TZ=${TZ}
     networks:
       - network
     depends_on:
       - rabbitmq
+      - redis
     restart: always
 
-  hostapi:
-    container_name: hostapi
+  bridge.telegrambot:
+    container_name: bridge_telegrambot
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - TZ=${TZ}
+    networks:
+      - network
+    depends_on:
+      - rabbitmq
+      - redis
+    restart: always
+
+  bridge.hostapi:
+    container_name: bridge_hostapi
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=${HTTP1_PORT}
-      - HTTP1_PORT=${HTTP1_PORT}
-      - HTTP2_PORT=${HTTP2_PORT}
+      - ASPNETCORE_HTTP_PORTS=80
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - TZ=${TZ}
     ports:
-      - 8080:${HTTP1_PORT}
+      - 8080:80
     networks:
       - network
     depends_on:
       - rabbitmq
+      - redis
+      - elasticsearch
     restart: always
   
-  spa:
-    container_name: spa
+  bridge.spa:
+    container_name: bridge_spa
+    environment:
+      - TZ=${TZ}
+      - SERVER_HOST=http://localhost:8080
+    ports:
+      - 80:80
     volumes:
-      - bridge-spa:/app/build
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: always
   
   elasticsearch:
     container_name: elasticsearch
-    volumes:
-      - elasticsearch:/usr/share/elasticsearch/data:Z
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data:Z
     networks:
       - network
-    depends_on:
-      - rabbitmq
-    restart: always
-  
-  kibana:
-    container_name: kibana
-    ports:
-      - 5601:5601
-    environment:
-      - elasticsearch.hosts=["elasticsearch:9200"]
-    networks:
-      - network
-    depends_on:
-      - elasticsearch
     restart: always
 
   rabbitmq:
     container_name: rabbitmq
     ports:
-      - "15672:15672"
+      - 15672:15672
+    volumes:
+      - rabbitmq:/var/lib/rabbitmq
     networks:
       - network
     restart: always
@@ -110,21 +125,9 @@ services:
   redis:
     container_name: redis
     volumes: 
-      - cache:/cache-data
+      - redis:/data
     networks:
       - network
-    restart: always
-  
-  nginx:
-    container_name: nginx
-    ports:
-      - 80:80
-    volumes:
-      - ./src/nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./src/nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - bridge-spa:/usr/share/nginx/html
-    depends_on:
-      - spa
     restart: always
 
 networks:
@@ -133,7 +136,6 @@ networks:
 
 volumes:
   elasticsearch:
-  bridge-spa:
-  cache:
-
+  redis:
+  rabbitmq:
 

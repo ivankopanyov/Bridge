@@ -1,0 +1,30 @@
+@import '../../styles/vars';
+
+.accordion-box {
+    border-radius: $border-radius !important;
+}
+
+.accordion-box-normal {
+    border: 1px solid $color-secondary;
+}
+
+.accordion-box-error {
+    border: 1px solid $color-error;
+}
+
+.accordion-box-icon {
+    margin-right: 10px;
+}
+
+.accordion-box-icon-normal {
+    color: $color-primary;
+}
+
+.accordion-box-icon-error {
+    color: $color-error;
+}
+
+.accordion-box-header {
+    display: flex;
+    align-items: center;
+}

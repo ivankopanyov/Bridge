@@ -1,5 +1,4 @@
 import { useEffect, FC, PropsWithChildren } from 'react';
-import { Box } from '@mui/material';
 
 interface TabProps {
     setTab: () => void;
@@ -8,7 +7,7 @@ interface TabProps {
 export const Tab: FC<Readonly<PropsWithChildren<TabProps>>> = ({ setTab, children }) => {
     useEffect(() => { setTab(); }, []);
     
-    return (<Box>{ children }</Box>);
+    return (<div>{ children }</div>);
 };
 
 export default Tab;

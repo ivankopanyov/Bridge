@@ -4,30 +4,31 @@ public abstract class FiasOptions
 {
     internal FiasOptions() { }
 
-    public static T? All<T>() where T : FiasOptions, new()
+    public static T All<T>() where T : FiasOptions, new()
     {
-        if (Activator.CreateInstance(typeof(T)) is T options)
-        {
+        var options = new T();
 
-            var setters = typeof(T)
+        var setters = typeof(T)
                 .GetProperties()
                 .Select(property => property.SetMethod)
                 .Where(method => method != null);
 
+        foreach (var setter in setters)
+        {
             try
             {
-                foreach (var setter in setters)
-                    setter?.Invoke(options, new object[] { true });
-
-                return options;
+                setter?.Invoke(options, new object[] { true });
             }
             catch
             {
-                return null;
             }
         }
 
-        return null;
+        return options;
     }
+
+    public override int GetHashCode() => GetType().GetHashCode();
+
+    public override bool Equals(object? obj) => obj == null || GetType() == obj.GetType();
 }
 

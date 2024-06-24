@@ -8,26 +8,22 @@ internal static class LoggerExtensions
 
     public const string TASK = "TaskId";
 
-    public static void LogEvent(this ILogger logger, ElasticLog elasticLog, string? message = null, Exception? ex = null)
+    public static void LogEvent(this ILogger logger, EventLog eventLog, Exception? ex = null)
     {
         var state = new Dictionary<string, object>()
         {
-            { QUEUE, FixLog(elasticLog.QueueName, "UNKNOWN_QUEUE") },
-            { HANDLER, FixLog(elasticLog.HandlerName, "UNKNOWN_HANDLER") },
-            { TASK, FixLog(elasticLog.TaskId, "\"UNKNOWN_TASK\"") }
+            { QUEUE, FixLog(eventLog.TaskName, "UNKNOWN_QUEUE") },
+            { HANDLER, FixLog(eventLog.HandlerName, "UNKNOWN_HANDLER") },
+            { TASK, FixLog(eventLog.TaskId, "\"UNKNOWN_TASK\"") }
         };
 
-        string log = message ?? ex?.Message ?? "No message."; 
-        
-        if (elasticLog.In != null)
-            log += $"\n\t--> {elasticLog.In}";
-
-        if (elasticLog.Out != null)
-            log += $"\n\t<-- {elasticLog.Out}";
+        LogLevel logLevel = LogLevel.Information;
+        if (eventLog.IsError)
+            logLevel = eventLog.IsEnd ? LogLevel.Critical : LogLevel.Error;
 
         using (logger.BeginScope(state))
         {
-            logger.Log(elasticLog.LogLevel, ex, FixLog(message ?? ex?.Message, "No message."));
+            logger.Log(logLevel, ex, FixLog(eventLog.Message, "No message."));
         };
     }
 

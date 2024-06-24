@@ -1,5 +1,4 @@
-﻿
-namespace Bridge.Fias.Entities;
+﻿namespace Bridge.Fias.Entities;
 
 public enum FiasKeyRequestTypes
 {

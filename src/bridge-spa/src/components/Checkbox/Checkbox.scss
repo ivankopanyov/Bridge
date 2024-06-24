@@ -1,17 +1,25 @@
 @import '../../styles/vars';
 
-$checkbox-size: 20px;
-$checkbox-size-large: 30px;
-$checkbox-icon-medium-size: 18px;
+$checkbox-size: 22px;
+$checkbox-size-large: 28px;
+$checkbox-icon-medium-size: 20px; 
 
-.checkbox {
-    width: $checkbox-size;
-    height: $checkbox-size;
-}
-
-.checkbox-enabled {
+.checkbox-container {
     border: 1px solid $color-secondary;
     border-radius: $border-radius;
+}
+
+.checkbox-container-medium {
+    margin-right: 5px;
+}
+
+.checkbox-container-large {
+    margin-right: 10px;
+}
+
+.checkbox-medium {
+    width: $checkbox-size;
+    height: $checkbox-size;
 }
 
 .checkbox-large {

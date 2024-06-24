@@ -1,14 +1,16 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { HostList, KeyValue, ServiceInfo } from './data';
+import { HostList, ServiceInfo, SimpleServiceInfo } from './data';
 import { api } from '../../utils/api';
+import { parametersToObject, objectToParameters } from '../../utils/mapper';
 
-interface Service {
+export interface Service {
     name: string;
     hostName: string;
-    state: {
+    state?: {
         isActive: boolean;
         error?: string;
         stackTrace?: string;
+        info?: string;
     },
     jsonOptions?: string;
 }
@@ -22,46 +24,27 @@ const defaultHostList: HostList = {
 
 const initialState: HostList = defaultHostList;
 
-const getType = (value: any): 'boolean' | 'string' | 'array' | 'map' => {
-    const type = typeof value;
-    if (type === 'boolean')
-        return 'boolean';
-    if (type === 'object')
-        return Array.isArray(value) ? 'array' : 'map';
-    return 'string';
-}
+export const getServices = createAsyncThunk('hostList/getServices', async () => 
+    await api.get(`/services`));
 
-export const getHosts = createAsyncThunk('hostList/getHosts', async () => {
-        const [error, response] = await api.get('/hosts');
+export const getService = createAsyncThunk('hostList/getService', async (service: ServiceInfo) => 
+    await api.get(`/services/${service.hostName}/${service.name}`));
 
-        if (error)
-            throw new Error(error);
-        
-        return response;
-    }
-);
+export const reloadService = createAsyncThunk('hostList/reloadService', async (service: ServiceInfo) =>
+    await api.get(`/services/reload/${service.hostName}/${service.name}`));
 
-export const updateService = createAsyncThunk('hostList/updateService', async (service: ServiceInfo) => {
-        const [error, response] = await api.put(`/hosts/${service.hostName}/${service.name}`, {
-            jsonOptions: JSON.stringify(Object.fromEntries([
-                ...service.booleanParameters.map(p => [p.name, p.value]),
-                ...service.stringParameters.map(p => [p.name, p.value]),
-                ...service.listParameters.map(p => [p.name, p.value]),
-                ...service.booleanMapParameters.map(p => [p.name, Object.fromEntries(p.value.map(i => [i.key, i.value]))]),
-                ...service.stringMapParameters.map(p => [p.name, Object.fromEntries(p.value.map(i => [i.key, i.value]))])
-            ]))
-        });
+export const updateService = createAsyncThunk('hostList/updateService', async (service: SimpleServiceInfo) =>
+    await api.put(`/services/${service.hostName}/${service.name}`, {
+        jsonOptions: JSON.stringify(parametersToObject(service.parameters))
+    }));
 
-        if (error)
-            throw new Error(error);
-        
-        return response;
-    }
-);
+export const deleteService = createAsyncThunk('hostList/deleteService', async (service: ServiceInfo) =>
+    await api.delete(`/services/${service.hostName}/${service.name}`));
 
 const setService = (state: HostList, payload: Service) => {
-    const { name, hostName, jsonOptions} = payload;
-    const { isActive, error, stackTrace } = payload.state;
+    const { name, hostName, jsonOptions } = payload;
+    const isActive = payload.state?.isActive;
+    
     let host = state.hosts.find(h => h.name === hostName);
     if (!host) {
         host = {
@@ -74,186 +57,174 @@ const setService = (state: HostList, payload: Service) => {
     }
 
     let service = host.services.find(s => s.name === name);
+    let index = -1;
+
     if (!service) {
         state.serviceCount += 1;
         if (isActive) {
             state.activeServiceCount += 1;
             host.activeServiceCount += 1;
         }
+    } else {
+        if (service.timeoutId) {
+            clearTimeout(service.timeoutId);
+            service.timeoutId = undefined;
+        }
 
-        service = {
-            name: name,
-            hostName: hostName,
-            isActive: isActive,
-            error: error,
-            stackTrace: stackTrace,
-            loading: false,
-            updateError: undefined,
+        if (isActive && !service.state?.isActive) {
+            state.activeServiceCount += 1;
+            host.activeServiceCount += 1;
+        } else if (!isActive && service.state?.isActive) {
+            state.activeServiceCount -= 1;
+            host.activeServiceCount -= 1;
+        }
+
+        index = host.services.indexOf(service);
+    }
+
+    service = {
+        name: name,
+        hostName: hostName,
+        state: !payload.state ? undefined : {
+            isActive: payload.state.isActive,
+            error: payload.state.error,
+            stackTrace: payload.state.stackTrace
+        },
+        loading: false,
+        updateError: payload.state?.info,
+        parameters: {
             booleanParameters: [],
             stringParameters: [],
             listParameters: [],
             booleanMapParameters: [],
             stringMapParameters: []
-        };
-        host.services.push(service);
-    } else {
-        if (isActive && !service.isActive) {
-            state.activeServiceCount += 1;
-            host.activeServiceCount += 1;
-        } else if (!isActive && service.isActive) {
-            state.activeServiceCount -= 1;
-            host.activeServiceCount -= 1;
         }
+    };
 
-        service.name = name;
-        service.hostName = hostName;
-        service.isActive = isActive;
-        service.error = error;
-        service.stackTrace = stackTrace;
-        service.loading = false;
-        service.updateError = undefined;
-        service.booleanParameters = [];
-        service.stringParameters = [];
-        service.listParameters = [];
-        service.booleanMapParameters = [];
-        service.stringMapParameters = [];
-    }
+    if (jsonOptions)
+        service.parameters = objectToParameters(JSON.parse(jsonOptions));
 
-    if (!jsonOptions)
-        return;
+    index >= 0
+        ? host.services[index] = service
+        : host.services.push(service);
+};
 
-    const options = JSON.parse(jsonOptions);
-    const values = Object.values<any>(options);
-    Object.keys(options).forEach((key, index) => { 
-        switch (getType(values[index])) {
-            case 'boolean':
-                const booleanValue = Boolean(values[index]);
-                service?.booleanParameters?.push({
-                    name: key,
-                    value: booleanValue
-                });
-                break;
-
-            case 'string':
-                const stringValue = String(values[index]);
-                service?.stringParameters?.push({
-                    name: key,
-                    value: stringValue
-                });
-                break;
-                
-            case 'array':
-                const listValue = [...values[index]].map(i => String(i));
-                service?.listParameters?.push({
-                    name: key,
-                    value: listValue
-                });
-                break;
-                
-            case 'map':
-                const mapValues = Object.values<any>(values[index]);
-                if (mapValues.length > 0 && getType(mapValues[0]) === 'boolean') {
-                    service?.booleanMapParameters.push({
-                        name: key,
-                        value: Object.keys(values[index]).map((k, i) => { return {
-                            key: k,
-                            value: Boolean(mapValues[i])
-                        }})
-                    });
-                } else {
-                    service?.stringMapParameters.push({
-                        name: key,
-                        value: Object.keys(values[index]).map((k, i) => { return {
-                            key: k,
-                            value: String(mapValues[i])
-                        }})
-                    });
+const remove = (state: HostList, payload: {
+    name: string;
+    hostName: string;
+}) => {
+    const { name, hostName } = payload;
+    const host = state.hosts.find(h => h.name === hostName);
+    if (host) {
+        const service = host.services.find(s => s.name === name);
+        if (service) {
+            if (host.services.length === 1) {
+                const index = state.hosts.indexOf(host);
+                if (index >= 0) {
+                    state.serviceCount -= 1;
+                    if (service.state?.isActive)
+                        state.activeServiceCount -= 1;
+                        
+                    state.hosts.splice(index, 1);
                 }
-                break;
+            } else {
+                const index = host.services.indexOf(service);
+                if (index >= 0) {
+                    state.serviceCount -= 1;
+                    if (service.state?.isActive) {
+                        state.activeServiceCount -= 1;
+                        host.activeServiceCount -= 1;
+                    }
+
+                    host.services.splice(index, 1);
+                }
+            }
         }
-    });
+    }
+};
+
+const pending = (state: HostList, action: any) => {
+    const { name, hostName } = action.meta.arg;
+    const service = state.hosts.find(h => h.name === hostName)?.services.find(s => s.name === name);
+    if (service) {
+        service.loading = true;
+        service.updateError = undefined;
+    }
+};
+
+const rejected = (state: HostList, action: any) => {
+    const { name, hostName } = action.meta.arg;
+    const service = state.hosts.find(h => h.name === hostName)?.services.find(s => s.name === name);
+    if (service) {
+        if (service.timeoutId) {
+            clearTimeout(service.timeoutId);
+            service.timeoutId = undefined;
+        }
+        service.loading = false;
+        service.updateError = action.error.message;
+    }
 };
 
 const hostListSlice = createSlice({
     name: 'hostList',
     initialState,
     reducers: {
-        update(state, action: PayloadAction<Service>) {
+        updateServiceRange(state, action: PayloadAction<Service[]>) {
+            action.payload.forEach(service => setService(state, service));
+        },
+        changeService(state, action: PayloadAction<Service>) {
             setService(state, action.payload);
         },
         removeService(state, action: PayloadAction<{
             name: string;
             hostName: string;
         }>) {
-            const { name, hostName } = action.payload;
-            const host = state.hosts.find(h => h.name === hostName);
-            if (host) {
-                const service = host.services.find(s => s.name === name);
-                if (service) {
-                    const index = host.services.indexOf(service);
-                    if (index >= 0) {
-                        host.services.splice(index, 1);
-                    }
-                }
-            }
+            remove(state, action.payload);
         },
-        removeHost(state, action: PayloadAction<{
+        setTimeoutService(state, action: PayloadAction<{
             name: string;
+            hostName: string;
+            timeoutId: NodeJS.Timeout;
         }>) {
-            const { name } = action.payload;
-            const host = state.hosts.find(h => h.name === name);
-            if (host) {
-                const index = state.hosts.indexOf(host);
-                if (index >= 0) {
-                    state.hosts.splice(index, 1);
-                }
+            const { name, hostName, timeoutId } = action.payload;
+            const service = state.hosts.find(h => h.name === hostName)?.services.find(s => s.name === name);
+            if (service) {
+                service.timeoutId = timeoutId;
+                service.loading = true;
             }
         },
-        setStatus(state, action: PayloadAction<{
-            loading: boolean;
-            error?: string;
-        }>) {
-            const { loading, error } = action.payload;
-            state.loading = loading;
-            state.error = error;
+        setError(state, action: PayloadAction<string>) {
+            state.error = action.payload;
         }
     },
     extraReducers: (builder) => {
-        builder.addCase(getHosts.pending, (state) => {
+        builder.addCase(getServices.pending, (state) => {
             state.loading = true;
         });
-        builder.addCase(getHosts.fulfilled, (state, action: PayloadAction<{
-            name: string;
-            services: Service[]
-        }[]>) => action.payload.flatMap(h => h.services).forEach(service => setService(state, service)));
-        builder.addCase(getHosts.rejected, (state, action) => {
+        builder.addCase(getServices.fulfilled, (state, action: PayloadAction<Service[]>) => {
+            action.payload.forEach(service => setService(state, service));
+            state.loading = false;
+            state.error = undefined;
+        });
+        builder.addCase(getServices.rejected, (state, action) => {
             state.error = action.error.message;
         });
-        builder.addCase(updateService.pending, (state, action) => {
-            const { name, hostName } = action.meta.arg;
-            const service = state.hosts.find(h => h.name === hostName)?.services.find(s => s.name === name);
-            if (service) {
-                service.loading = true;
-                service.updateError = undefined;
-            }
-        });
-        builder.addCase(updateService.fulfilled, (state, action: PayloadAction<Service>) => setService(state, action.payload));
-        builder.addCase(updateService.rejected, (state, action) => {
-            const { name, hostName } = action.meta.arg;
-            const service = state.hosts.find(h => h.name === hostName)?.services.find(s => s.name === name);
-            if (service) {
-                service.loading = false;
-                service.updateError = 'Error';
-            }
-        });
+        builder.addCase(getService.fulfilled, (state, action) => setService(state, action.payload));
+        builder.addCase(getService.rejected, (state, action) => rejected(state, action));
+        builder.addCase(reloadService.pending, (state, action) => pending(state, action));
+        builder.addCase(reloadService.rejected, (state, action) => rejected(state, action));
+        builder.addCase(updateService.pending, (state, action) => pending(state, action));
+        builder.addCase(updateService.rejected, (state, action) => rejected(state, action));
+        builder.addCase(deleteService.pending, (state, action) => pending(state, action));
+        builder.addCase(deleteService.rejected, (state, action) => rejected(state, action));
     }
 });
 
 export const {
-    update,
+    changeService,
     removeService,
-    removeHost,
-    setStatus
+    setTimeoutService,
+    setError
 } = hostListSlice.actions;
 
 export default hostListSlice.reducer;

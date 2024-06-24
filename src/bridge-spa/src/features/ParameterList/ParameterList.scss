@@ -1,0 +1,64 @@
+@import '../../styles/vars';
+
+$button-icon-size: 16px;
+$parameter-list-input-margin: 5px;
+
+.parameter-list-success-icon {
+    margin-right: 10px;
+    color: $color-secondary;
+}
+
+.parameter-list-left-input {
+    margin-right: $parameter-list-input-margin !important;
+}
+
+.parameter-list-right-input {
+    margin-left: $parameter-list-input-margin !important;
+}
+
+.parameter-list-bool-params-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.parameter-list-bool-param {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+.parameter-list-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.parameter-list-button {
+    color: $color-primary !important;
+    border: 1px solid $color-secondary !important;
+    border-radius: $border-radius !important;
+    padding: 4px !important;
+    margin-right: 5px !important;
+}
+
+.parameter-list-button:disabled {
+    color: $color-secondary !important;
+}
+
+.parameter-list-button-icon {
+    width: $button-icon-size !important;
+    height: $button-icon-size !important;
+    margin-right: 5px !important;
+}
+
+.parameter-list-boolean-parameter {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}

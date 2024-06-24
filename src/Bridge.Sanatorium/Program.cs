@@ -1,32 +1,16 @@
-var builder = WebApplication.CreateBuilder(args);
+const string N_SERVICE_BUS = "N_SERVICE_BUS";
 
-var http2Port = int.TryParse(Environment.GetEnvironmentVariable("HTTP2_PORT"), out int http2)
-    && http2 >= IPEndPoint.MinPort && http2 <= IPEndPoint.MaxPort ? http2 : 8080;
+var builder = Host.CreateApplicationBuilder(args);
 
-builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(http2Port, listenOptions => listenOptions.Protocols = HttpProtocols.Http2));
-
-var loggerConfiguration = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("logs/all_logs_.log", rollingInterval: RollingInterval.Day);
-
-builder.Services.AddServiceControl(options =>
-{
-    options.Host = Environment.GetEnvironmentVariable("HOST") ?? "sanatorium";
-    options.ServiceHost = $"http://{Environment.GetEnvironmentVariable("HOST_API") ?? "hostapi"}:{http2Port}";
-    options.LoggerConfiguration = loggerConfiguration;
-
-})
-.AddService<ISanatoriumService, SanatoriumService, ServiceBusOptions>(options => options.Name = "NServiceBus")
-.AddEventBus(builder => builder
-    .AddLogger(loggerConfiguration)
-    .AddHandler<ReservationHandler, ReservationUpdateInfo>()
-    .AddHandler<PostRequestHandler, PostTransactionsRequest>()
-    .AddHandler<PostResponseHandler, PostResponseInfo>());
-
-builder.Services.AddSerilog(loggerConfiguration.CreateLogger());
+builder.Services
+    .AddMemoryCache()
+    .AddDefaultServices(hostName: "sanatorium", hostId: 5,
+        eventBusBuilder => eventBusBuilder
+            .AddPostingEventHandler<PostingRequestHandler, PostingRequest>(options => options.HandlerName = N_SERVICE_BUS)
+            .AddPostingEventHandler<PostingResponseHandler, PostResponseInfo>(options => options.HandlerName = N_SERVICE_BUS)
+            .AddEventHandler<ReservationHandler, ReservationUpdateInfo>(options => options.HandlerName = N_SERVICE_BUS),
+        serviceControlBuilder => serviceControlBuilder
+            .AddSingleton<ISanatoriumService, SanatoriumService, ServiceBusOptions>(options => options.ServiceName = "NServiceBus"));
 
 var app = builder.Build();
-
-app.MapServiceControl();
-
 app.Run();

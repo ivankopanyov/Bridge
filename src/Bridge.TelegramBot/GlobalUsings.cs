@@ -1,0 +1,13 @@
+global using Bridge.Cache;
+global using Bridge.DefaultServices;
+global using Bridge.EventBus;
+global using Bridge.Services.Control;
+global using Bridge.TelegramBot.Extensions;
+global using Bridge.TelegramBot.Handlers;
+global using Bridge.TelegramBot.Models;
+global using Bridge.TelegramBot.Options;
+global using Bridge.TelegramBot.Services.Abstract;
+global using Bridge.TelegramBot.Services.Implement;
+global using System.ComponentModel.DataAnnotations;
+global using System.Text;
+global using Telegram.Bot;

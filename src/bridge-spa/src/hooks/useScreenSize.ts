@@ -9,7 +9,7 @@ interface ScreenSize {
     isMobile: boolean;
 }
 
-export default function useScreenSize() {
+export function useScreenSize() {
     const [screenSize, setScreenSize] = useState<ScreenSize>({
         width: window.innerWidth,
         height: window.innerHeight,
@@ -24,9 +24,10 @@ export default function useScreenSize() {
         });
 
         window.addEventListener('resize', onResize);
-    
         return () => window.removeEventListener('resize', onResize);
     }, []);
     
     return screenSize;
 }
+
+export default useScreenSize;
