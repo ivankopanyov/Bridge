@@ -4,9 +4,10 @@ import { ViewportList } from "react-viewport-list";
 import { useInView } from 'react-intersection-observer';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { addLog, getTasks, getUpdate, setError } from "./LogListStore";
+import { pageSize, addLog, addLogRange, getTasks, setError, setLoading } from "./LogListStore";
 import { Loading, ScrollView } from "../../components";
-import { useLoopRequest, useScreenSize, useWebSocket } from "../../hooks";
+import { useConnection, useLoopRequest, useScreenSize } from "../../hooks";
+import { api } from "../../utils/api";
 import Task from "../Task/Task";
 import NavBar from "../../components/NavBar/NavBar";
 import Error from '../../components/Error/Error';
@@ -16,6 +17,26 @@ const LogList: FC = () => {
     const dispatch = useAppDispatch();
     const logList = useAppSelector(({ logList }: RootState) => logList);
     const screen = useScreenSize();
+    const connection = useConnection('/logs', {
+        invoke: () => {
+            dispatch(setLoading(true));
+            return logList.tasks.length === 0
+                ? ['Tasks', [pageSize]]
+                : ['Update', [new Date(logList.tasks[0].logs[0].dateTime)]];
+        },
+        callback: (running, _authError, message) => {
+            dispatch(setLoading(!running));
+            dispatch(setError(message));
+        },
+        auth: api.refresh,
+        handlers: [
+            ['Log', log => dispatch(addLog(log))],
+            ['Logs', (logs, update) => dispatch(addLogRange({
+                logs: logs,
+                splice: update
+            }))]
+        ]
+    });
     const request = useLoopRequest(async () => {
         const response = await dispatch(getTasks(new Date(logList.tasks[logList.tasks.length - 1].logs[0].dateTime)));
         return response.meta.requestStatus === 'fulfilled';
@@ -25,18 +46,6 @@ const LogList: FC = () => {
     const [loadingRef, loadingInView] = useInView();
     const [top, setTop] = useState(false);
     const [search, setSearch] = useState('');
-    
-    const load = async () => {
-        const result = await dispatch(logList.tasks.length === 0
-            ? getTasks()
-            : getUpdate(new Date(logList.tasks[0].logs[0].dateTime)));
-        return result.meta.requestStatus === 'fulfilled';
-    };
-
-    const socket = useWebSocket('/logs', load, error => dispatch(setError(error)), [{
-        methodName: 'Log',
-        newMethod: (message) => dispatch(addLog(JSON.parse(message)))
-    }]);
 
     useEffect(() => {
         if (loadingInView) {
@@ -51,7 +60,7 @@ const LogList: FC = () => {
 
     useEffect(() => {
         return () => {
-            socket.stop();
+            connection.stop();
             request.stop();
         }
     }, []);
@@ -67,9 +76,9 @@ const LogList: FC = () => {
             }}
         >
             <ScrollView
-                onTopChanged={value => {
+                onTopChanged={async value => {
                     setTop(value);
-                    value ? socket.start() : socket.stop();
+                    value ? await connection.start() : await connection.stop();
                 }}
                 onBottomChanged={async value => {
                     if (!logList.isEnd && value && !logList.bottomLoading && logList.tasks.length > 0)

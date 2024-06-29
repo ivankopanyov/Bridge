@@ -2,9 +2,10 @@ import { FC, useEffect } from 'react';
 import { FormatListBulleted } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { getEnvironment, updateEnvironment, changeEnvironment, setError } from './EnvironmentStore';
+import { updateEnvironment, changeEnvironment, setLoading, setError } from './EnvironmentStore';
 import { Parameters } from '../ParameterList/data';
-import { useWebSocket } from '../../hooks';
+import { useConnection } from '../../hooks';
+import { api } from '../../utils/api';
 import NavBar from '../../components/NavBar/NavBar';
 import ParameterList from '../ParameterList/ParameterList';
 import './Environment.scss';
@@ -12,21 +13,24 @@ import './Environment.scss';
 const Environment: FC = () => {
     const dispatch = useAppDispatch();
     const environment = useAppSelector(({ environment }: RootState) => environment);
-
-    const load = async () => {
-        const result = await dispatch(getEnvironment());
-        return result.meta.requestStatus === 'fulfilled';
-    };
-
-    const socket = useWebSocket('/environment', load, error => dispatch(setError(error)), [{
-        methodName: 'Environment',
-        newMethod: (message) => dispatch(changeEnvironment(JSON.parse(message)))
-    }]);
+    
+    const connection = useConnection('/environment', {
+        invoke: () => {
+            dispatch(setLoading(true));
+            return ['Environment', []];
+        },
+        callback: (running, _authError, message) => {
+            dispatch(setLoading(!running));
+            dispatch(setError(message));
+        },
+        auth: api.refresh,
+        handlers: [['Environment', environment => dispatch(changeEnvironment(environment))]]
+    });
     
     useEffect(() => {
-        socket.start();
+        connection.start();
         return () => {
-            socket.stop();
+            connection.stop();
         };
     }, []);
     

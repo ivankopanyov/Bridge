@@ -1,9 +1,9 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { LogList, TaskInfo, LogInfo, LogData } from './data';
+import { LogList, LogInfo, LogData } from './data';
 import { api } from '../../utils/api';
 
-const size = 100;
-const maxSize = size * 3;
+export const pageSize = 100;
+const maxSize = pageSize * 3;
 
 const defaultHostList: LogList = {
     tasks: [],
@@ -12,12 +12,8 @@ const defaultHostList: LogList = {
     isEnd: false
 };
 
-export const getUpdate = createAsyncThunk('logList/getUpdate', async (from: Date) => await api.post('/logs', {
-    from: from?.toJSON()
-}));
-
 export const getTasks = createAsyncThunk('logList/getTasks', async (to?: Date) => await api.post('/logs', {
-    size: size,
+    size: pageSize,
     to: to?.toJSON()
 }));
 
@@ -27,6 +23,42 @@ export const getLog = createAsyncThunk('logList/getLog', async (id: {
     taskId: string;
     id: string;
 }) => await api.get(`/logs/${id.taskId}/${id.id}`));
+
+const addLogs = (state: LogList, logs: LogInfo[], splice = false) => {
+    let sort = false;
+    logs.forEach(log => {
+        const task = state.tasks.find(t => t.logs[0].taskId === log.taskId);
+        if (task) {
+            if (log.dateTime > task.logs[0].dateTime && !task.loading) {
+                task.logs = [log];
+                sort = true;
+            }
+        } else {
+            state.tasks.push({
+                logs: [log]
+            });
+            sort = true;
+        }
+    });
+
+    if (sort) {
+        state.tasks.sort((a, b) => {
+            if (a.logs[0].dateTime === b.logs[0].dateTime)
+                return 0;
+
+            return a.logs[0].dateTime > b.logs[0].dateTime ? 1 : -1;
+        });
+    }
+    
+    if (splice) {
+        state.tasks.length > maxSize && state.tasks.splice(maxSize, state.tasks.length - maxSize);
+        state.loading = false;
+    } else {
+        state.bottomLoading = false;
+    }
+    
+    state.error = undefined;
+};
 
 const initialState: LogList = defaultHostList;
 
@@ -76,89 +108,30 @@ const logListSlice = createSlice({
                 state.tasks.splice(maxSize, state.tasks.length - maxSize);
             }
         },
+        addLogRange(state, action: PayloadAction<{
+            logs: LogInfo[],
+            splice: boolean
+        }>) {
+            const { logs, splice } = action.payload;
+            addLogs(state, logs, splice);
+        },
+        setLoading(state, action: PayloadAction<boolean>) {
+            state.loading = action.payload
+        },
         setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
         }
     },
     extraReducers: (builder) => {
-        builder.addCase(getUpdate.pending, (state) => {
-            state.loading = true;
-        });
-        builder.addCase(getUpdate.fulfilled, (state, action: PayloadAction<LogInfo[]>) => {
-            const logs = action.payload;
-            let sort = false;
-            logs.forEach(log => {
-                const task = state.tasks.find(t => t.logs[0].taskId === log.taskId);
-                if (task) {
-                    if (log.dateTime > task.logs[0].dateTime && !task.loading) {
-                        task.logs = [log];
-                        sort = true;
-                    }
-                } else {
-                    state.tasks.push({
-                        logs: [log]
-                    });
-                    sort = true;
-                }
-            });
-
-            if (sort) {
-                state.tasks.sort((a, b) => {
-                    if (a.logs[0].dateTime === b.logs[0].dateTime)
-                        return 0;
-
-                    return a.logs[0].dateTime > b.logs[0].dateTime ? 1 : -1;
-                });
-            }
-
-            if (state.tasks.length > maxSize) {
-                state.tasks.splice(maxSize, state.tasks.length - maxSize);
-            }
-
-            state.loading = false;
-            state.error = undefined;
-        });
-        builder.addCase(getUpdate.rejected, (state, action) => {
-            state.error = action.error.message;
-        });
-
         builder.addCase(getTasks.pending, (state) => {
             state.bottomLoading = true;
         });
         builder.addCase(getTasks.fulfilled, (state, action: PayloadAction<LogInfo[]>) => {
-            const logs = action.payload;
-            let sort = false;
-            logs.forEach(log => {
-                const task = state.tasks.find(t => t.logs[0].taskId === log.taskId);
-                if (task) {
-                    if (log.dateTime > task.logs[0].dateTime && !task.loading) {
-                        task.logs = [log];
-                        sort = true;
-                    }
-                } else {
-                    state.tasks.push({
-                        logs: [log]
-                    });
-                    sort = true;
-                }
-            });
-
-            if (sort) {
-                state.tasks.sort((a, b) => {
-                    if (a.logs[0].dateTime === b.logs[0].dateTime)
-                        return 0;
-
-                    return a.logs[0].dateTime > b.logs[0].dateTime ? -1 : 1;
-                });
-            }
-
-            state.bottomLoading = false;
-            state.error = undefined;
+            addLogs(state, action.payload);
         });
         builder.addCase(getTasks.rejected, (state, action) => {
             state.error = action.error.message;
         });
-
         
         builder.addCase(getTask.pending, (state, action) => {
             const id = action.meta.arg;
@@ -248,6 +221,8 @@ const logListSlice = createSlice({
 
 export const {
     addLog,
+    addLogRange,
+    setLoading,
     setError
 } = logListSlice.actions;
 

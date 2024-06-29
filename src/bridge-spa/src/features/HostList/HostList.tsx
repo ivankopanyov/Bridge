@@ -2,8 +2,9 @@ import { FC, useEffect } from 'react';
 import { DisplaySettings } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { changeService, getServices, removeService, setError } from './HostListStore';
-import { useWebSocket } from '../../hooks';
+import { removeService, setError, updateServiceRange, setLoading } from './HostListStore';
+import { useConnection } from '../../hooks';
+import { api } from '../../utils/api';
 import Host from '../Host/Host';
 import Service from '../Service/Service';
 import NavBar from '../../components/NavBar/NavBar';
@@ -14,23 +15,26 @@ const HostList: FC = () => {
     const dispatch = useAppDispatch();
     const hostList = useAppSelector(({ hostList }: RootState) => hostList);
 
-    const load = async () => {
-        const result = await dispatch(getServices());
-        return result.meta.requestStatus === 'fulfilled';
-    };
-
-    const socket = useWebSocket('/services', load, error => dispatch(setError(error)), [{
-        methodName: 'Service',
-        newMethod: (message) => dispatch(changeService(JSON.parse(message)))
-    }, {
-        methodName: 'RemoveService',
-        newMethod: (message) => dispatch(removeService(JSON.parse(message)))
-    }]);
+    const connection = useConnection('/services', {
+        invoke: () => {
+            dispatch(setLoading(true));
+            return ['Services', []];
+        },
+        callback: (running, _authError, message) => {
+            dispatch(setLoading(!running));
+            dispatch(setError(message));
+        },
+        auth: api.refresh,
+        handlers: [
+            ['Services', services => dispatch(updateServiceRange(services))],
+            ['RemoveService', service => dispatch(removeService(service))]
+        ]
+    });
 
     useEffect(() => {
-        socket.start();
+        connection.start();
         return () => {
-            socket.stop();
+            connection.stop();
         };
     }, []);
 

@@ -1,7 +1,7 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { HostList, ServiceInfo, SimpleServiceInfo } from './data';
 import { api } from '../../utils/api';
-import { parametersToObject, objectToParameters } from '../../utils/mapper';
+import { object, params } from '../../utils/mapper';
 
 export interface Service {
     name: string;
@@ -24,9 +24,6 @@ const defaultHostList: HostList = {
 
 const initialState: HostList = defaultHostList;
 
-export const getServices = createAsyncThunk('hostList/getServices', async () => 
-    await api.get(`/services`));
-
 export const getService = createAsyncThunk('hostList/getService', async (service: ServiceInfo) => 
     await api.get(`/services/${service.hostName}/${service.name}`));
 
@@ -35,7 +32,7 @@ export const reloadService = createAsyncThunk('hostList/reloadService', async (s
 
 export const updateService = createAsyncThunk('hostList/updateService', async (service: SimpleServiceInfo) =>
     await api.put(`/services/${service.hostName}/${service.name}`, {
-        jsonOptions: JSON.stringify(parametersToObject(service.parameters))
+        jsonOptions: JSON.stringify(object(service.parameters))
     }));
 
 export const deleteService = createAsyncThunk('hostList/deleteService', async (service: ServiceInfo) =>
@@ -102,7 +99,7 @@ const setService = (state: HostList, payload: Service) => {
     };
 
     if (jsonOptions)
-        service.parameters = objectToParameters(JSON.parse(jsonOptions));
+        service.parameters = params(JSON.parse(jsonOptions));
 
     index >= 0
         ? host.services[index] = service
@@ -171,9 +168,8 @@ const hostListSlice = createSlice({
     reducers: {
         updateServiceRange(state, action: PayloadAction<Service[]>) {
             action.payload.forEach(service => setService(state, service));
-        },
-        changeService(state, action: PayloadAction<Service>) {
-            setService(state, action.payload);
+            state.loading = false;
+            state.error = undefined;
         },
         removeService(state, action: PayloadAction<{
             name: string;
@@ -193,22 +189,14 @@ const hostListSlice = createSlice({
                 service.loading = true;
             }
         },
-        setError(state, action: PayloadAction<string>) {
+        setLoading(state, action: PayloadAction<boolean>) {
+            state.loading = action.payload;
+        },
+        setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
         }
     },
     extraReducers: (builder) => {
-        builder.addCase(getServices.pending, (state) => {
-            state.loading = true;
-        });
-        builder.addCase(getServices.fulfilled, (state, action: PayloadAction<Service[]>) => {
-            action.payload.forEach(service => setService(state, service));
-            state.loading = false;
-            state.error = undefined;
-        });
-        builder.addCase(getServices.rejected, (state, action) => {
-            state.error = action.error.message;
-        });
         builder.addCase(getService.fulfilled, (state, action) => setService(state, action.payload));
         builder.addCase(getService.rejected, (state, action) => rejected(state, action));
         builder.addCase(reloadService.pending, (state, action) => pending(state, action));
@@ -221,9 +209,10 @@ const hostListSlice = createSlice({
 });
 
 export const {
-    changeService,
+    updateServiceRange,
     removeService,
     setTimeoutService,
+    setLoading,
     setError
 } = hostListSlice.actions;
 
