@@ -1,6 +1,6 @@
 import { Parameters } from "../features/ParameterList/data";
 
-export const parametersToObject = (parameters: Parameters) => Object.fromEntries([
+export const object = (parameters: Parameters) => Object.fromEntries([
     ...parameters.booleanParameters.map(p => [p.name, p.value]),
     ...parameters.stringParameters.map(p => [p.name, p.value]),
     ...parameters.listParameters.map(p => [p.name, p.value]),
@@ -8,7 +8,7 @@ export const parametersToObject = (parameters: Parameters) => Object.fromEntries
     ...parameters.stringMapParameters.map(p => [p.name, Object.fromEntries(p.value.map(i => [i.key, i.value]))])
 ]);
 
-export const objectToParameters = (obj: any): Parameters => {
+export const params = (obj: any) => {
     const parameters: Parameters = {
         booleanParameters: [],
         stringParameters: [],
@@ -68,14 +68,7 @@ export const objectToParameters = (obj: any): Parameters => {
     });
 
     return parameters;
-}
-
-export const toDisplayDateTime = (date: Date) => {
-    date = new Date(date);
-    return `${toDisplayNumber(date.getDate())}.${toDisplayNumber(date.getMonth() + 1)}.${date.getFullYear()} ${toDisplayNumber(date.getHours())}:${toDisplayNumber(date.getMinutes())}:${toDisplayNumber(date.getSeconds())}`;
-}
-
-const toDisplayNumber = (value: number) => value.toString().padStart(2, '0');
+};
 
 const getType = (value: any): 'boolean' | 'string' | 'array' | 'map' => {
     const type = typeof value;

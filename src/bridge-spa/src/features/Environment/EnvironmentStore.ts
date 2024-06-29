@@ -1,8 +1,8 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { Environment } from "./data";
-import { api } from '../../utils/api';
-import { parametersToObject, objectToParameters } from '../../utils/mapper';
 import { Parameters } from '../ParameterList/data';
+import { api } from '../../utils/api';
+import { object, params } from '../../utils/mapper';
 
 const defaultEnvironment: Environment = {
     loading: false,
@@ -17,16 +17,13 @@ const defaultEnvironment: Environment = {
 
 const initialState: Environment = defaultEnvironment;
 
-export const getEnvironment = createAsyncThunk('environment/getEnvironment', async () =>
-    await api.get(`/environment`));
-
 export const updateEnvironment = createAsyncThunk('environment/updateEnvironment', async (parameters: Parameters) =>
-    await api.put(`/environment`, parametersToObject(parameters)));
+    await api.put(`/environment`, object(parameters)));
 
-const setEnvironment = (state: Environment, payload: any) => {
+const setEnvironment = (state: Environment, payload: object) => {
     state.loading = false;
     state.error = undefined;
-    state.parameters = objectToParameters(payload);
+    state.parameters = params(payload);
 };
 
 const environmentSlice = createSlice({
@@ -36,19 +33,14 @@ const environmentSlice = createSlice({
         changeEnvironment(state, action: PayloadAction<any>) {
             setEnvironment(state, action.payload);
         },
-        setError(state, action: PayloadAction<string>) {
+        setLoading(state, action: PayloadAction<boolean>) {
+            state.loading = action.payload;
+        },
+        setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
         }
     },
     extraReducers: (builder) => {
-        builder.addCase(getEnvironment.pending, (state) => {
-            state.loading = true;
-        });
-        builder.addCase(getEnvironment.fulfilled, (state, action: PayloadAction<any>) =>
-            setEnvironment(state, action.payload));
-        builder.addCase(getEnvironment.rejected, (state, action) => {
-            state.error = action.error.message;
-        });
         builder.addCase(updateEnvironment.pending, (state) => {
             state.loading = true;
         });
@@ -63,6 +55,7 @@ const environmentSlice = createSlice({
 
 export const {
     changeEnvironment,
+    setLoading,
     setError
 } = environmentSlice.actions;
 

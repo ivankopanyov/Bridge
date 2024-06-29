@@ -4,7 +4,6 @@ import { CreditScore, CreditCard, CreditCardOff, HowToReg, Person, PersonOff, Pu
 import { TaskInfo } from '../LogList/data';
 import { getTask } from '../LogList/LogListStore';
 import { AccordionBody, AccordionHeader, Text, Loading } from '../../components';
-import { toDisplayDateTime } from '../../utils/mapper';
 import { useAppDispatch } from '../../redux/hooks';
 import { useLoopRequest } from '../../hooks';
 import Log from '../Log/Log';
@@ -56,7 +55,7 @@ const Task: FC<Readonly<TaskProps>> = ({ task }) => {
                     </div>
                     <div>
                         <div className="task-header-name">
-                            <Text>{ toDisplayDateTime(task.logs[0].dateTime) }</Text>
+                            <Text>{ task.logs[0].dateTime.display() }</Text>
                             {
                                 !expanded && task.logs[0].handlerName &&
                                     <div className="task-handler task-indent-left">

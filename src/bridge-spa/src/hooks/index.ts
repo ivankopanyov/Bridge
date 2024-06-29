@@ -1,3 +1,3 @@
 export { useScreenSize } from './useScreenSize';
-export { useWebSocket } from './useWebSocket';
+export { useConnection } from './useConnection';
 export { useLoopRequest } from './useLoopRequest';
