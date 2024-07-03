@@ -5,6 +5,6 @@ public class UpdateHandler(IHubContext<LogHub> hubContext) : LogHandler
     protected override async Task HandleAsync(EventLog @in)
     {
         @in.Data = null;
-        await hubContext.SendToAllAsync("Log", @in);
+        await hubContext.Clients.All.SendAsync("Log", @in);
     }
 }

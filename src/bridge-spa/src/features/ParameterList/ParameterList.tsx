@@ -11,18 +11,19 @@ import './ParameterList.scss';
 
 interface ParameterListProps {
     parameters: Parameters;
+    modifiedParameters: Parameters;
     disable: boolean;
     error?: string;
     stackTrace?: string;
-    onSave: (parameters: Parameters) => Promise<Parameters | undefined>;
+    setModifiedParameters: (parameters: Parameters) => void;
+    onSave: (parameters: Parameters) => Promise<void>;
     onReload?: () => void;
     onDelete?: () => void;
 }
 
 export const ParameterList: FC<Readonly<ParameterListProps>> = ({
-    parameters, disable, error, stackTrace, onSave, onReload, onDelete 
+    parameters, modifiedParameters, disable, error, stackTrace, setModifiedParameters, onSave, onReload, onDelete 
 }) => {
-    const [modifiedParameters, setModifiedParameters] = useState(parameters);
     const [editMode, setEditMode] = useState(false);
     const disabled = !editMode || disable;
     const showButtons = parameters.booleanParameters.length > 0
@@ -39,19 +40,8 @@ export const ParameterList: FC<Readonly<ParameterListProps>> = ({
         });
         setModifiedParameters(parameters);
         setEditMode(false);
-        const result = await onSave(parameters);
-        if (result)
-            setModifiedParameters(result);
+        await onSave(parameters);
     };
-
-    const onResetClick = () => setModifiedParameters(parameters);
-
-    const onCancelClick = () => {
-        setModifiedParameters(parameters);
-        setEditMode(false);
-    };
-
-    const onEditClick = () => setEditMode(true);
 
     const onBooleanParameterChanged = (index: number, value: boolean) =>
         setModifiedParameters(produce(modifiedParameters, (draftState) => {
@@ -127,17 +117,17 @@ export const ParameterList: FC<Readonly<ParameterListProps>> = ({
                                 <Save className="parameter-list-button-icon" />
                                 <Text>Save</Text>
                             </Button>
-                            <Button className="parameter-list-button" onClick={onResetClick} disabled={disable}>
+                            <Button className="parameter-list-button" onClick={() => setModifiedParameters(parameters)} disabled={disable}>
                                 <Undo className="parameter-list-button-icon" />
                                 <Text>Reset</Text>
                             </Button>
-                            <Button className="parameter-list-button" onClick={onCancelClick} disabled={disable}>
+                            <Button className="parameter-list-button" onClick={() => setEditMode(false)} disabled={disable}>
                                 <EditOff className="parameter-list-button-icon" />
                                 <Text>Cancel</Text>
                             </Button>
                         </div>
                     :   <div className="parameter-list-button-container">
-                            <Button className="parameter-list-button" onClick={onEditClick} disabled={disable}>
+                            <Button className="parameter-list-button" onClick={() => setEditMode(true)} disabled={disable}>
                                 <Edit className="parameter-list-button-icon" />
                                 <Text>Edit</Text>
                             </Button>

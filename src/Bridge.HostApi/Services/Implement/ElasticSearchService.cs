@@ -2,6 +2,8 @@
 
 public class ElasticSearchService(IControl<ElasticSearchOptions, BridgeEnvironment> control) : IElasticSearchService
 {
+    public const int PageMaxSize = 10000;
+
     private ElasticsearchClient Client => new(new Uri(control.Options.Endpoint ?? string.Empty));
 
     public async Task ChangedOptionsHandleAsync(ElasticSearchOptions options)

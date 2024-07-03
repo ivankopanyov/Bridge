@@ -3,71 +3,64 @@ services:
     container_name: bridge_fias
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
       - TZ=${TZ}
     networks:
       - network
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
     restart: always
 
   bridge.opera:
     container_name: bridge_opera
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
       - TZ=${TZ}
     networks:
       - network
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
     restart: always
 
   bridge.sanatorium:
     container_name: bridge_sanatorium
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
       - TZ=${TZ}
     networks:
       - network
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
     restart: always
 
   bridge.fiscal:
     container_name: bridge_fiscal
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
-      - REDIS_HOST=${REDIS_HOST}
-      - REDIS_PORT=${REDIS_PORT}
       - TZ=${TZ}
     networks:
       - network
     depends_on:
-      - rabbitmq
-      - redis
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     restart: always
 
   bridge.telegrambot:
     container_name: bridge_telegrambot
     environment:
       - DOTNET_ENVIRONMENT=Development
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
-      - REDIS_HOST=${REDIS_HOST}
-      - REDIS_PORT=${REDIS_PORT}
       - TZ=${TZ}
     networks:
       - network
     depends_on:
-      - rabbitmq
-      - redis
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     restart: always
 
   bridge.hostapi:
@@ -75,19 +68,20 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=80
-      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
-      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
-      - REDIS_HOST=${REDIS_HOST}
-      - REDIS_PORT=${REDIS_PORT}
       - TZ=${TZ}
     ports:
       - 8080:80
     networks:
       - network
     depends_on:
-      - rabbitmq
-      - redis
-      - elasticsearch
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
     restart: always
   
   bridge.spa:
@@ -101,41 +95,70 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     restart: always
   
+  postgres:
+    container_name: postgres
+    environment:
+      - TZ=${TZ}
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 30s
+      timeout: 5s
+      retries: 10
+    restart: always
+  
   elasticsearch:
     container_name: elasticsearch
     environment:
+      - TZ=${TZ}
       - xpack.security.enabled=false
       - discovery.type=single-node
     volumes:
-      - elasticsearch:/usr/share/elasticsearch/data:Z
+      - ./data/elasticsearch:/usr/share/elasticsearch/data:Z
     networks:
       - network
+    healthcheck:
+      test: curl -u elastic:elastic -s -f elasticsearch:9200/_cat/health >/dev/null || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 5
     restart: always
 
   rabbitmq:
     container_name: rabbitmq
-    ports:
-      - 15672:15672
+    environment:
+      - TZ=${TZ}
     volumes:
-      - rabbitmq:/var/lib/rabbitmq
+      - ./data/rabbitmq:/var/lib/rabbitmq
     networks:
       - network
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
     restart: always
   
   redis:
     container_name: redis
+    environment:
+      - TZ=${TZ}
     volumes: 
-      - redis:/data
+      - ./data/redis:/data
     networks:
       - network
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
     restart: always
 
 networks:
   network:
     driver: bridge
-
-volumes:
-  elasticsearch:
-  redis:
-  rabbitmq:
-

@@ -2,7 +2,7 @@ import { FC, useEffect } from 'react';
 import { DisplaySettings } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { removeService, setError, updateServiceRange, setLoading } from './HostListStore';
+import { update, removeService, setError, updateServiceRange, setLoading } from './HostListStore';
 import { useConnection } from '../../hooks';
 import { api } from '../../utils/api';
 import Host from '../Host/Host';
@@ -26,6 +26,7 @@ const HostList: FC = () => {
         },
         auth: api.refresh,
         handlers: [
+            ['Service', service => dispatch(update(service))],
             ['Services', services => dispatch(updateServiceRange(services))],
             ['RemoveService', service => dispatch(removeService(service))]
         ]

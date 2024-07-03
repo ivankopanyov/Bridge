@@ -400,3 +400,6 @@ FodyWeavers.xsd
 
 # MacOS
 *.DS_Store
+
+# Data directory
+data/

@@ -2,26 +2,35 @@
 
 public class LogRepository(IElasticSearchService elasticSearchService) : ILogRepository
 {
-    private const int SIZE_MAX = 10000;
+    private readonly SemaphoreSlim _semaphore = new(1);
 
     public async Task AddAsync(EventLog eventLog) => await elasticSearchService.Exec<Task>(async (client, index) =>
     {
-        var getResponse = await client.GetAsync<TaskLog>(eventLog.TaskId, i => i.Index(index));
-        if (!getResponse.IsSuccess())
-            throw new Exception(getResponse.DebugInformation);
+        await _semaphore.WaitAsync();
 
-        ElasticsearchResponse response = getResponse.IsValidResponse
-            ? await client.UpdateAsync<TaskLog, TaskLog>(index, eventLog.TaskId, u => u.Doc(getResponse.Source?.AddLog(eventLog) ?? new TaskLog().AddLog(eventLog)))
-            : await client.IndexAsync(new TaskLog().AddLog(eventLog), index);
+        try
+        {
+            var getResponse = await client.GetAsync<TaskLog>(eventLog.TaskId, i => i.Index(index));
+            if (!getResponse.IsSuccess())
+                throw new Exception(getResponse.DebugInformation);
 
-        if (!response.IsSuccess())
-            throw new Exception(response.DebugInformation);
+            ElasticsearchResponse response = getResponse.IsValidResponse
+                ? await client.UpdateAsync<TaskLog, TaskLog>(index, eventLog.TaskId, u => u.Doc(getResponse.Source?.AddLog(eventLog) ?? new TaskLog().AddLog(eventLog)))
+                : await client.IndexAsync(new TaskLog().AddLog(eventLog), index);
+
+            if (!response.IsSuccess())
+                throw new Exception(response.DebugInformation);
+        }
+        finally
+        {
+            _semaphore.Release();
+        }
     });
 
     public async Task<IEnumerable<EventLog>?> GetAsync(string id) => await elasticSearchService.Exec<Task<IEnumerable<EventLog>?>>(async (client, index) => 
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(id, nameof(id));
-        
+
         var response = await client.GetAsync<TaskLog>(id, i => i.Index(index));
 
         if (!response.IsSuccess())
@@ -30,30 +39,62 @@ public class LogRepository(IElasticSearchService elasticSearchService) : ILogRep
         return response.IsValidResponse ? response.Source?.Logs : null;
     });
 
-    public async Task<IEnumerable<EventLog>> FindAsync(SearchFilter? filter = null) => 
+    public async Task<IEnumerable<EventLog>> FindAsync(SearchFilter? filter = null)
+    {
+        if (filter?.Size != null && filter.Size <= 0)
+            return Enumerable.Empty<EventLog>();
+
+        var search = new SearchRequestDescriptor<TaskLog>()
+            .Sort(config => config.Field(field => field.DateTime, new FieldSort { Order = SortOrder.Desc }));
+
+        if (filter != null)
+        {
+            var filters = GetFilters(filter);
+
+            if (filters.Count == 1)
+                search.Query(filters[0]);
+            else if (filters.Count > 1)
+                search.Query(configure => configure.Bool(configure => configure.Filter(filters.ToArray())));
+        }
+
+        if (filter?.Size == null)
+        {
+            search.Size(ElasticSearchService.PageMaxSize);
+
+            var result = new List<EventLog>();
+            for (int i = 0; true; i++)
+            {
+                var logs = await FindAsync(search.From(i));
+                result.AddRange(logs);
+                if (logs.Count() < ElasticSearchService.PageMaxSize)
+                    return result;
+            }
+        }
+
+        if (filter.Size > ElasticSearchService.PageMaxSize)
+        {
+            search.Size(ElasticSearchService.PageMaxSize);
+
+            var result = new List<EventLog>();
+            for (int i = 0, j = (int)filter.Size; j > 0; i++, j -= ElasticSearchService.PageMaxSize)
+            {
+                if (j < ElasticSearchService.PageMaxSize)
+                    search.Size(j);
+
+                var logs = await FindAsync(search.From(i));
+                result.AddRange(logs);
+                if (logs.Count() < ElasticSearchService.PageMaxSize)
+                    return result;
+            }
+        }
+
+        return await FindAsync(search.From(0).Size(filter.Size));
+    }
+
+    private async Task<IEnumerable<EventLog>> FindAsync(SearchRequestDescriptor<TaskLog> searchRequestDescriptor) =>
         await elasticSearchService.Exec<Task<IEnumerable<EventLog>>>(async (client, index) => 
         {
-            if (filter?.Size != null && filter.Size <= 0)
-                return Enumerable.Empty<EventLog>();
-
-            var response = await client.SearchAsync<TaskLog>(search =>
-            {
-                search
-                    .Index(index)
-                    .Sort(config => config.Field(field => field.DateTime, new FieldSort { Order = SortOrder.Desc }))
-                    .From(0)
-                    .Size(Math.Min(filter?.Size ?? SIZE_MAX, SIZE_MAX));
-
-                if (filter != null)
-                {
-                    var filters = GetFilters(filter);
-
-                    if (filters.Count == 1)
-                        search.Query(filters[0]);
-                    else if (filters.Count > 1)
-                        search.Query(configure => configure.Bool(configure => configure.Filter(filters.ToArray())));
-                }
-            });
+            var response = await client.SearchAsync(searchRequestDescriptor.Index(index));
 
             if (!response.IsSuccess())
                 throw new Exception(response.DebugInformation);

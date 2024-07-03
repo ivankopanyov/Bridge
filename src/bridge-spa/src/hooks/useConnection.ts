@@ -40,7 +40,7 @@ export function useConnection(endpoint: string, props?: ConnectionProps) {
     const startConnection = async (): Promise<void> => {
         const connection = new signalR.HubConnectionBuilder()
             .withUrl(`${serverHost}${endpoint}`, {
-                transport: signalR.HttpTransportType.LongPolling
+                transport: signalR.HttpTransportType.WebSockets
             })
             .withAutomaticReconnect({
               nextRetryDelayInMilliseconds: () => ms
@@ -48,21 +48,23 @@ export function useConnection(endpoint: string, props?: ConnectionProps) {
             .build();
         
         handlers && handlers.forEach(handler => connection.on(handler[0], handler[1]));
-        connection.onreconnecting(error => failedCallback(error?.message));
+        connection.onreconnecting(async error => {
+            if (error?.message?.includes('401'))
+                auth ? await refresh(auth) : await failedAuth();
+            else
+                failed(async () => await startConnection(), error?.message);
+          });
         connection.onreconnected(async () => invoke && await invokeMethod(connection, invoke));
         hubConnection.current = connection;
 
         await connection
             .start()
-            .then(async () => invoke 
-                ? await invokeMethod(connection, invoke)
-                : success())
+            .then(async () => invoke ? await invokeMethod(connection, invoke) : success())
             .catch(async error => {
-                if (error.message?.includes('401')) {
-                    auth ? await refresh(auth) : failedAuth();
-                } else {
+                if (error.message?.includes('401'))
+                    auth ? await refresh(auth, async () => await startConnection()) : await failedAuth();
+                else
                     failed(async () => await startConnection(), error?.message);
-                }
             });
     };
   
@@ -71,19 +73,18 @@ export function useConnection(endpoint: string, props?: ConnectionProps) {
         await connection
             .invoke(data[0], ...data[1])
             .then(() => success())
-            .catch(error => {
-                failed(async () => await invokeMethod(connection, method), error?.message);
-            });
+            .catch(error => failed(async () => await invokeMethod(connection, method), error?.message));
     };
   
-    const refresh = async (authMethod: () => Promise<void>) => await authMethod()
-        .then(() => timeout.current = setTimeout(async () => await startConnection(), ms))
-        .catch(error => {
-            if (error.code === '401') {
-                failedAuth();
-            } else {
-                failed(async () => await refresh(authMethod), error?.message);
-            }
+    const refresh = async (authMethod: () => Promise<void>, callback?: () => void) => await authMethod()
+        .then(() => {
+            if (callback)
+                timeout.current = setTimeout(async () => await startConnection(), ms);
+        })
+        .catch(async error => {
+            error.code === '401'
+                ? await failedAuth()
+                : failed(async () => await refresh(authMethod, callback), error?.message);
         });
 
     const success = () => callback && callback(true);
@@ -91,13 +92,12 @@ export function useConnection(endpoint: string, props?: ConnectionProps) {
     const failed = (method: () => void, message?: string) => {
         failedCallback(message);
         timeout.current = setTimeout(method, ms);
-    }
+    };
 
     const failedCallback = (message?: string) => callback && callback(false, false, message);
 
-    const failedAuth = () => {
-        timeout.current = undefined;
-        hubConnection.current = undefined;
+    const failedAuth = async () => {
+        await stop();
         callback && callback(false, true);
     };
     

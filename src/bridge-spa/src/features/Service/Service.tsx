@@ -17,6 +17,7 @@ interface ServiceProps {
 const Service: FC<Readonly<ServiceProps>> = ({ service, showHostName }) => {
     const dispatch = useAppDispatch();
     const [expanded, setExpanded] = useState(false);
+    const [modifiedParameters, setModifiedParameters] = useState(service.parameters);
 
     const timeoutService = () => {
         const timeoutId = setTimeout(() => dispatch(getService(service)), 10000);
@@ -35,8 +36,6 @@ const Service: FC<Readonly<ServiceProps>> = ({ service, showHostName }) => {
         }));
         if (result.meta.requestStatus === 'fulfilled')
             timeoutService();
-        
-        return undefined;
     };
 
     const onReloadClick = async () => {
@@ -85,9 +84,11 @@ const Service: FC<Readonly<ServiceProps>> = ({ service, showHostName }) => {
             <AccordionBody indent>
                 <ParameterList
                     parameters={service.parameters}
+                    modifiedParameters={modifiedParameters}
                     disable={service.loading}
                     error={service.state?.error}
                     stackTrace={service.state?.stackTrace}
+                    setModifiedParameters={setModifiedParameters}
                     onSave={onSaveClick}
                     onReload={onReloadClick}
                     onDelete={onDeleteClick}

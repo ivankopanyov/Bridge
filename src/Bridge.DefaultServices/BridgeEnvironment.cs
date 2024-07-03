@@ -32,32 +32,14 @@ public class BridgeEnvironment
     public override int GetHashCode() =>
         HashCode.Combine(UseReservation, UsePosting, UseCheckDatabase, ResortCode, Rvc, TaxCodes, TrxCodes, DocumentTypeAliases);
 
-    public override bool Equals(object? obj)
-    {
-        if (obj is not BridgeEnvironment other
-            || UseReservation != other.UseReservation
-            || UsePosting != other.UsePosting
-            || UseCheckDatabase != other.UseCheckDatabase
-            || ResortCode != other.ResortCode
-            || Rvc != other.Rvc
-            || !TaxCodes.Keys.ToHashSet().SetEquals(other.TaxCodes.Keys)
-            || !TrxCodes.SetEquals(other.TrxCodes)
-            || !DocumentTypeAliases.Keys.ToHashSet().SetEquals(other.DocumentTypeAliases.Keys)
-            || !TelegramChats.Keys.ToHashSet().SetEquals(other.TelegramChats.Keys))
-            return false;
-
-        foreach (var key in TaxCodes.Keys)
-            if (TaxCodes[key] != other.TaxCodes[key])
-                return false;
-
-        foreach (var key in DocumentTypeAliases.Keys)
-            if (DocumentTypeAliases[key] != other.DocumentTypeAliases[key])
-                return false;
-
-        foreach (var key in TelegramChats.Keys)
-            if (TelegramChats[key] != other.TelegramChats[key])
-                return false;
-
-        return true;
-    }
+    public override bool Equals(object? obj) => obj is BridgeEnvironment other
+        && UseReservation == other.UseReservation
+        && UsePosting == other.UsePosting
+        && UseCheckDatabase == other.UseCheckDatabase
+        && ResortCode == other.ResortCode
+        && Rvc == other.Rvc
+        && TaxCodes.SequenceEqual(other.TaxCodes)
+        && TrxCodes.SequenceEqual(other.TrxCodes)
+        && DocumentTypeAliases.SequenceEqual(other.DocumentTypeAliases)
+        && TelegramChats.SequenceEqual(other.TelegramChats);
 }

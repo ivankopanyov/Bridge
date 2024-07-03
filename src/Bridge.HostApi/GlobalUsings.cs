@@ -22,6 +22,7 @@ global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.SignalR;
 global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
 global using Newtonsoft.Json;
 global using System.ComponentModel.DataAnnotations;
 global using System.Linq.Expressions;

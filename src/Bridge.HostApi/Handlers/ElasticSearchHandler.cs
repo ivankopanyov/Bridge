@@ -7,7 +7,10 @@ public class ElasticSearchHandler(ILogRepository logRepository,
     {
         await logRepository.AddAsync(@in);
 
-        if (@in.TaskName != null && await searchArgsRepository.UpdateAsync(@in.TaskName) is SearchArgs searchArgs)
-            await hubContext.SendToAllAsync("SearchArgs", searchArgs);
+        if (@in.TaskName != null && await searchArgsRepository.UpdateAsync(new() {
+            Id = @in.TaskName,
+            DateTime = @in.DateTime 
+        }) is SearchArgs searchArgs)
+            await hubContext.Clients.All.SendAsync("SearchArgs", searchArgs);
     }
 }

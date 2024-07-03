@@ -166,6 +166,9 @@ const hostListSlice = createSlice({
     name: 'hostList',
     initialState,
     reducers: {
+        update(state, action: PayloadAction<Service>) {
+            setService(state, action.payload)
+        },
         updateServiceRange(state, action: PayloadAction<Service[]>) {
             action.payload.forEach(service => setService(state, service));
             state.loading = false;
@@ -209,6 +212,7 @@ const hostListSlice = createSlice({
 });
 
 export const {
+    update,
     updateServiceRange,
     removeService,
     setTimeoutService,
