@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { FormatListBulleted } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
@@ -13,6 +13,8 @@ import './Environment.scss';
 const Environment: FC = () => {
     const dispatch = useAppDispatch();
     const environment = useAppSelector(({ environment }: RootState) => environment);
+    const [trigger, setTrigger] = useState<boolean | undefined>();
+    const [modifiedParameters, setModifiedParameters] = useState(environment.parameters);
     
     const connection = useConnection('/environment', {
         invoke: () => {
@@ -24,7 +26,11 @@ const Environment: FC = () => {
             dispatch(setError(message));
         },
         auth: api.refresh,
-        handlers: [['Environment', environment => dispatch(changeEnvironment(environment))]]
+        handlers: [['Environment', env => {
+            dispatch(changeEnvironment(JSON.parse(env)));
+            if (trigger === undefined)
+                setTrigger(!trigger);
+        }]]
     });
     
     useEffect(() => {
@@ -33,10 +39,15 @@ const Environment: FC = () => {
             connection.stop();
         };
     }, []);
+
+    useEffect(() => {
+        setModifiedParameters(environment.parameters);
+    }, [trigger]);
     
     const onSaveClick = async (parameters: Parameters) => {
         const result = await dispatch(updateEnvironment(parameters));
-        return result.meta.requestStatus !== 'fulfilled' ? environment.parameters : undefined;
+        if (result.meta.requestStatus === 'fulfilled')
+            setTrigger(trigger === undefined ? true : !trigger);
     }
 
     return (
@@ -47,8 +58,10 @@ const Environment: FC = () => {
         >
             <ParameterList
                 parameters={environment.parameters}
+                modifiedParameters={modifiedParameters}
                 disable={environment.loading}
                 error={environment.error}
+                setModifiedParameters={setModifiedParameters}
                 onSave={onSaveClick}
             />
         </NavBar>

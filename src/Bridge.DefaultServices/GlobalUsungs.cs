@@ -5,7 +5,7 @@ global using Bridge.EventBus;
 global using Bridge.Services.Control;
 global using Bridge.EventBus.RabbitMq;
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.VisualBasic;
+global using Newtonsoft.Json;
 global using Serilog;
 global using System.ComponentModel.DataAnnotations;
 global using System.Diagnostics.CodeAnalysis;

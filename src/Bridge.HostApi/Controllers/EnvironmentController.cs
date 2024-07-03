@@ -18,7 +18,7 @@ public class EnvironmentController(IEnvironmentRepository environmentRepository,
         if (await environmentRepository.UpdateAsync(environment))
         {
             serviceController.SetEnvironment(environment);
-            await hubContext.SendToAllAsync("Environment", environment);
+            await hubContext.Clients.All.SendAsync("Environment", environment);
         }
 
         return Ok(environment);

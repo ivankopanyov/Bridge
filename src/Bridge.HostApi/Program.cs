@@ -2,10 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddCors()
-    .AddTransient<ILogRepository, LogRepository>()
-    .AddScoped<IServiceRepository, ServiceRepository>()
-    .AddScoped<IEnvironmentRepository, EnvironmentRepository>()
-    .AddScoped<ISearchArgsRepository, SearchArgsRepository>()
+    .AddRepositories()
     .AddHostedService<BridgeStartService>()
     .AddRedis()
     .AddDefaultServices(hostName: "hostapi", hostId: 1,
@@ -18,14 +15,7 @@ builder.Services
 
 builder.Services
     .AddDbContext<BridgeDbContext>()
-    .AddIdentity<User, Role>(options =>
-    {
-        options.Password.RequireDigit = false;
-        options.Password.RequiredLength = 6;
-        options.Password.RequireNonAlphanumeric = false;
-        options.Password.RequireUppercase = false;
-        options.Password.RequireLowercase = false;
-    })
+    .AddIdentity<User, Role>(options => builder.Configuration.Bind(nameof(PasswordOptions), options.Password))
     .AddEntityFrameworkStores<BridgeDbContext>();
 
 builder.Services.AddSignalR();
@@ -42,6 +32,12 @@ builder.Services
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    using var context = scope.ServiceProvider.GetService<BridgeDbContext>()!;
+    await context.Database.MigrateAsync();
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -56,10 +52,8 @@ app.UseCors(builder => builder
 
 app.UseAuthorization();
 
-app.MapHub<LogHub>("/logs");
-app.MapHub<ServiceHub>("/services");
-app.MapHub<EnvironmentHub>("/environment");
-app.MapHub<SearchArgsHub>("/searchArgs");
-app.MapControllers();
+app
+    .MapHubs()
+    .MapControllers();
 
 app.Run();

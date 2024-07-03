@@ -2,7 +2,7 @@
 
 public interface ISearchArgsRepository
 {
-    Task<SearchArgs?> GetAsync();
+    Task<SearchArgs> GetAsync();
 
-    Task<SearchArgs?> UpdateAsync(string taskName);
+    Task<SearchArgs?> UpdateAsync(TaskName taskName);
 }

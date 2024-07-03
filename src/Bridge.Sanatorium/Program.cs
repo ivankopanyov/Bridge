@@ -3,7 +3,6 @@ const string N_SERVICE_BUS = "N_SERVICE_BUS";
 var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services
-    .AddMemoryCache()
     .AddDefaultServices(hostName: "sanatorium", hostId: 5,
         eventBusBuilder => eventBusBuilder
             .AddPostingEventHandler<PostingRequestHandler, PostingRequest>(options => options.HandlerName = N_SERVICE_BUS)

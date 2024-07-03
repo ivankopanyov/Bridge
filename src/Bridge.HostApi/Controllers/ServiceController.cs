@@ -44,7 +44,7 @@ public class ServiceController(IServiceRepository serviceRepository, IServiceCon
     {
         if (await serviceRepository.RemoveAsync(hostName, serviceName) is ServiceInfo serviceInfo)
         {
-            await hubContext.SendToAllAsync(hostName, new RemoveService
+            await hubContext.Clients.All.SendAsync("RemoveService", new RemoveService
             {
                 HostName = hostName,
                 Name = serviceName

@@ -4,10 +4,5 @@ public class Host
 {
     public string Name { get; set; }
 
-    public virtual ICollection<Service> Services { get; set; }
-
-    public Host()
-    {
-        Services = new HashSet<Service>();
-    }
+    public virtual ICollection<Service> Services { get; set; } = new HashSet<Service>();
 }

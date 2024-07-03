@@ -21,7 +21,7 @@ public class BridgeStartService : BackgroundService
         var hubContext = scope.ServiceProvider.GetRequiredService<IHubContext<ServiceHub>>();
 
         var result = await serviceRepository.UpdateAsync(serviceInfo, serviceInfo.UpdateOptions);
-        await hubContext.SendToAllAsync("Service", result);
+        await hubContext.Clients.All.SendAsync("Service", result);
 
         if (!serviceInfo.UpdateOptions && serviceInfo.JsonOptions != result.JsonOptions)
             _serviceController.SetOptions(serviceInfo.HostName, serviceInfo.Name, new Bridge.Services.Control.Options
