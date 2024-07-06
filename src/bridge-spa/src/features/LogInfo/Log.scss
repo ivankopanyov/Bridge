@@ -1,0 +1,44 @@
+@import '../../styles/vars';
+
+$log-handler-padding: 3px;
+
+.log-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.log-header-name {
+    display: flex;
+    margin-top: 4px;
+}
+
+.log-handler {
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    padding-left: $log-handler-padding;
+    padding-right: $log-handler-padding;
+}
+
+.log-icon {
+    color: $color-secondary;
+}
+
+.log-icon-success {
+    color: $color-primary;
+}
+
+.log-icon-fail {
+    color: $color-error;
+}
+
+.log-indent-left {
+    margin-left: 10px;
+}
+
+.log-indent-right {
+    margin-right: 10px;
+}
+
+.log-indent-bottom {
+    margin-bottom: 5px;
+}
