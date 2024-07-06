@@ -2,18 +2,19 @@ import { FC, useEffect, useState } from 'react';
 import { FormatListBulleted } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { updateEnvironment, changeEnvironment, setLoading, setError } from './EnvironmentStore';
+import { updateEnvironment, changeEnvironment, setLoading, setError, authorized } from './EnvironmentStore';
 import { Parameters } from '../ParameterList/data';
 import { useConnection } from '../../hooks';
 import { api } from '../../utils/api';
-import NavBar from '../../components/NavBar/NavBar';
+import { unauthorized } from '../../App/AppStore';
+import NavBar from '../NavBar/NavBar';
 import ParameterList from '../ParameterList/ParameterList';
 import './Environment.scss';
 
 const Environment: FC = () => {
     const dispatch = useAppDispatch();
+    const app = useAppSelector(({ app }: RootState) => app);
     const environment = useAppSelector(({ environment }: RootState) => environment);
-    const [trigger, setTrigger] = useState<boolean | undefined>();
     const [modifiedParameters, setModifiedParameters] = useState(environment.parameters);
     
     const connection = useConnection('/environment', {
@@ -21,16 +22,16 @@ const Environment: FC = () => {
             dispatch(setLoading(true));
             return ['Environment', []];
         },
-        callback: (running, _authError, message) => {
-            dispatch(setLoading(!running));
-            dispatch(setError(message));
+        callback: (running, authError, message) => {
+            if (authError) {
+                dispatch(unauthorized());
+            } else {
+                dispatch(setLoading(!running));
+                dispatch(setError(message));
+            }
         },
         auth: api.refresh,
-        handlers: [['Environment', env => {
-            dispatch(changeEnvironment(JSON.parse(env)));
-            if (trigger === undefined)
-                setTrigger(!trigger);
-        }]]
+        handlers: [['Environment', env => dispatch(changeEnvironment(JSON.parse(env)))]]
     });
     
     useEffect(() => {
@@ -42,13 +43,18 @@ const Environment: FC = () => {
 
     useEffect(() => {
         setModifiedParameters(environment.parameters);
-    }, [trigger]);
+    }, [environment.parameters]);
+
+    useEffect(() => {
+        if (!environment.auth) {
+            dispatch(authorized());
+            dispatch(unauthorized());
+        }
+    }, [environment.auth]);
     
     const onSaveClick = async (parameters: Parameters) => {
-        const result = await dispatch(updateEnvironment(parameters));
-        if (result.meta.requestStatus === 'fulfilled')
-            setTrigger(trigger === undefined ? true : !trigger);
-    }
+        await dispatch(updateEnvironment(parameters));
+    };
 
     return (
         <NavBar

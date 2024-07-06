@@ -19,7 +19,8 @@ const defaultHostList: HostList = {
     hosts: [],
     serviceCount: 0,
     activeServiceCount: 0,
-    loading: false
+    loading: false,
+    auth: true
 };
 
 const initialState: HostList = defaultHostList;
@@ -160,6 +161,9 @@ const rejected = (state: HostList, action: any) => {
         service.loading = false;
         service.updateError = action.error.message;
     }
+
+    if (action.error.code === '401')
+        state.auth = false;
 };
 
 const hostListSlice = createSlice({
@@ -197,6 +201,9 @@ const hostListSlice = createSlice({
         },
         setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
+        },
+        authorized(state) {
+            state.auth = true;
         }
     },
     extraReducers: (builder) => {
@@ -217,7 +224,8 @@ export const {
     removeService,
     setTimeoutService,
     setLoading,
-    setError
+    setError,
+    authorized
 } = hostListSlice.actions;
 
 export default hostListSlice.reducer;

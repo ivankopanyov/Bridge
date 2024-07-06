@@ -1,7 +1,10 @@
 import { useState, FC, PropsWithChildren } from 'react';
 import { AppBar, Drawer, Toolbar, CircularProgress } from '@mui/material';
-import { Search, Menu, Close } from '@mui/icons-material';
-import { NavBarButton, SearchBar, Text } from '..';
+import { Search, Menu, Close, Logout } from '@mui/icons-material';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { RootState } from '../../redux/store';
+import { NavBarButton, SearchBar, Text } from '../../components';
+import { signOut } from '../../App/AppStore';
 import useScreenSize from '../../hooks/useScreenSize';
 import './NavBar.scss';
 
@@ -17,6 +20,8 @@ interface NavBarProps {
 }
 
 const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, loading, search, drawer, children }) => {
+    const dispatch = useAppDispatch();
+    const app = useAppSelector(({ app }: RootState) => app);
     const [showSearch, setShowSearch] = useState(false);
     const [showDrawer, setShowDrawer] = useState(false);
     const screenSize = useScreenSize();
@@ -78,6 +83,18 @@ const NavBar: FC<Readonly<PropsWithChildren<NavBarProps>>> = ({ title, icon, loa
                                 <NavBarButton onClick={onCloseClick}>
                                     <Close />
                                 </NavBarButton>
+                            </div>
+                    }
+                    {
+                        (!search || (search && (fixSearch || !showSearch))) &&
+                            <div className="nav-bar-button-right">
+                                {
+                                    app.loading
+                                        ? <CircularProgress className="nav-bar-progress nav-bar-progess-margin-right" />
+                                        : <NavBarButton onClick={async () => await dispatch(signOut())}>
+                                            <Logout />
+                                        </NavBarButton>
+                                }
                             </div>
                     }
                 </Toolbar>

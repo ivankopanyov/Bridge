@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+.signin-button {
+    color: $color-primary !important;
+    border: 1px solid $color-secondary !important;
+    border-radius: $border-radius !important;
+    padding: 4px !important;
+    margin-right: 5px !important;
+}
+
+.signin-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

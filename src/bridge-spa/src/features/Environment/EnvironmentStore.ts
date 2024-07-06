@@ -5,6 +5,7 @@ import { api } from '../../utils/api';
 import { object, params } from '../../utils/mapper';
 
 const defaultEnvironment: Environment = {
+    auth: true,
     loading: false,
     parameters: {
         booleanParameters: [],
@@ -38,17 +39,26 @@ const environmentSlice = createSlice({
         },
         setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
+        },
+        authorized(state) {
+            state.auth = true;
         }
     },
     extraReducers: (builder) => {
         builder.addCase(updateEnvironment.pending, (state) => {
             state.loading = true;
         });
-        builder.addCase(updateEnvironment.fulfilled, (state, action: PayloadAction<any>) =>
-            setEnvironment(state, action.payload));
+        builder.addCase(updateEnvironment.fulfilled, (state, action: PayloadAction<any>) => {
+            setEnvironment(state, action.payload);
+        });
         builder.addCase(updateEnvironment.rejected, (state, action) => {
             state.loading = false;
-            state.error = action.error.message;
+            if (action.error.code === '401') {
+                state.error = undefined;
+                state.auth = false;
+            } else {
+                state.error = action.error.message;
+            }
         });
     }
 });
@@ -56,7 +66,8 @@ const environmentSlice = createSlice({
 export const {
     changeEnvironment,
     setLoading,
-    setError
+    setError,
+    authorized
 } = environmentSlice.actions;
 
 export default environmentSlice.reducer;
