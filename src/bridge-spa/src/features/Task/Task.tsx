@@ -6,7 +6,7 @@ import { getTask } from '../LogList/LogListStore';
 import { AccordionBody, AccordionHeader, Text, Loading } from '../../components';
 import { useAppDispatch } from '../../redux/hooks';
 import { useLoopRequest } from '../../hooks';
-import Log from '../Log/Log';
+import Log from '../LogInfo/Log';
 import './Task.scss';
  
 interface TaskProps {
