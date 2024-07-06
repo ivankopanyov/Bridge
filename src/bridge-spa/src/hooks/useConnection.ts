@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import * as signalR from "@microsoft/signalr";
-import { serverHost } from "../environment";
 
 interface ConnectionProps {
     ms?: number;
@@ -39,7 +38,7 @@ export function useConnection(endpoint: string, props?: ConnectionProps) {
   
     const startConnection = async (): Promise<void> => {
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl(`${serverHost}${endpoint}`, {
+            .withUrl(`${window.location.origin}:8080${endpoint}`, {
                 transport: signalR.HttpTransportType.WebSockets
             })
             .withAutomaticReconnect({

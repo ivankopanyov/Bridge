@@ -103,6 +103,7 @@ const appSlice = createSlice({
             state.loading = false;
             state.error = undefined;
             state.auth = 'authorized';
+            state.page = 'signin';
         });
         builder.addCase(signUp.rejected, (state, action) => {
             if (action.error.code === '403') {
