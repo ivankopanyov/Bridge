@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export function useLoopRequest(preload: () => Promise<boolean>, fullfilled?: () => void, timeoutMs: number = 3000) {
+export function useLoopRequest(preload: () => Promise<boolean>, timeoutMs: number = 3000) {
     const timeout = useRef<NodeJS.Timeout | undefined>();
     const close = useRef(true);
 

@@ -32,4 +32,5 @@ export interface HostList {
     activeServiceCount: number;
     loading: boolean;
     error?: string;
+    auth: boolean;
 }

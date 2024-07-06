@@ -7,6 +7,8 @@ public class LogController(ILogRepository logRepository) : ControllerBase
     [HttpPost("")]
     [ProducesResponseType<IEnumerable<EventLog>>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ActionResult<IEnumerable<EventLog>>> PostAsync([Required][FromBody] SearchFilter filter) =>
         Ok(await logRepository.FindAsync(filter));
 
@@ -14,6 +16,8 @@ public class LogController(ILogRepository logRepository) : ControllerBase
     [ProducesResponseType<IEnumerable<EventLog>>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ActionResult<IEnumerable<EventLog>>> GetAsync([Required][FromRoute] string id)
     {
         if (await logRepository.GetAsync(id) is not IEnumerable<EventLog> logs)
@@ -30,6 +34,8 @@ public class LogController(ILogRepository logRepository) : ControllerBase
     [ProducesResponseType<EventData>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType<string>((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ActionResult<EventData>> GetEventAsync([Required][FromRoute] string taskId, [Required][FromRoute] string eventId)
     {
         if (await logRepository.GetAsync(taskId) is not IEnumerable<EventLog> logs)

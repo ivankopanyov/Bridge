@@ -9,7 +9,8 @@ const defaultHostList: LogList = {
     tasks: [],
     loading: false,
     bottomLoading: false,
-    isEnd: false
+    isEnd: false,
+    auth: true
 };
 
 export const getTasks = createAsyncThunk('logList/getTasks', async (to?: Date) => await api.post('/logs', {
@@ -120,6 +121,9 @@ const logListSlice = createSlice({
         },
         setError(state, action: PayloadAction<string | undefined>) {
             state.error = action.payload;
+        },
+        authorized(state) {
+            state.auth = true;
         }
     },
     extraReducers: (builder) => {
@@ -130,15 +134,17 @@ const logListSlice = createSlice({
             addLogs(state, action.payload);
         });
         builder.addCase(getTasks.rejected, (state, action) => {
-            state.error = action.error.message;
+            if (action.error.code === '401')
+                state.auth = false;
+            else
+                state.error = action.error.message;
         });
         
         builder.addCase(getTask.pending, (state, action) => {
             const id = action.meta.arg;
             const task = state.tasks.find(t => t.logs[0].taskId === id);
-            if (task) {
+            if (task)
                 task.loading = true;
-            }
         });
         builder.addCase(getTask.fulfilled, (state, action: PayloadAction<LogInfo[]>) => {
             const logs = action.payload;
@@ -184,17 +190,20 @@ const logListSlice = createSlice({
             const task = state.tasks.find(t => t.logs[0].taskId === id);
             if (task) {
                 task.loading = undefined;
-                task.error = action.error.message;
+                if (action.error.code !== '401')
+                    task.error = action.error.message;
             }
+
+            if (action.error.code === '401')
+                state.auth = false;
         });
 
         
         builder.addCase(getLog.pending, (state, action) => {
             const { taskId, id } = action.meta.arg;
             const log = state.tasks.find(t => t.logs[0].taskId === taskId)?.logs?.find(l => l.id === id);
-            if (log) {
+            if (log)
                 log.loading = true;
-            }
         });
         builder.addCase(getLog.fulfilled, (state, action: PayloadAction<LogData>) => {
             const logData = action.payload;
@@ -213,8 +222,12 @@ const logListSlice = createSlice({
             const log = state.tasks.find(t => t.logs[0].taskId === taskId)?.logs?.find(l => l.id === id);
             if (log) {
                 log.loading = undefined;
-                log.error = action.error.message;
+                if (action.error.code !== '401')
+                    log.error = action.error.message;
             }
+
+            if (action.error.code === '401')
+                state.auth = false;
         });
     }
 });
@@ -223,7 +236,8 @@ export const {
     addLog,
     addLogRange,
     setLoading,
-    setError
+    setError,
+    authorized
 } = logListSlice.actions;
 
 export default logListSlice.reducer;

@@ -1,5 +1,6 @@
 ﻿namespace Bridge.HostApi.Hubs;
 
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class LogHub(ILogRepository logRepository) : Hub
 {
     public async Task Tasks(int size) => await SendAsync(new SearchFilter

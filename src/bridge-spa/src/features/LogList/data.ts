@@ -32,4 +32,5 @@ export interface LogList {
     bottomLoading: boolean;
     error?: string;
     isEnd: boolean;
+    auth: boolean;
 }

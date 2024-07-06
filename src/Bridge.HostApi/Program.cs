@@ -13,12 +13,12 @@ builder.Services
             .AddTransient<IElasticSearchService, ElasticSearchService, ElasticSearchOptions>(options => options.ServiceName = "ElasticSearch")
             .AddServiceController());
 
+builder.Services.AddOptions<JwtOptions>().Bind(builder.Configuration.GetSection(JwtOptions.SectionName));
+
 builder.Services
     .AddDbContext<BridgeDbContext>()
     .AddIdentity<User, Role>(options => builder.Configuration.Bind(nameof(PasswordOptions), options.Password))
     .AddEntityFrameworkStores<BridgeDbContext>();
-
-builder.Services.AddSignalR();
 
 builder.Services
     .AddControllers()
@@ -28,7 +28,25 @@ builder.Services
 
 builder.Services
     .AddEndpointsApiExplorer()
-    .AddSwaggerGen();
+    .AddSwaggerGen(options =>
+    {
+        var openApiSecurityScheme = new OpenApiSecurityScheme();
+        builder.Configuration.Bind(nameof(OpenApiSecurityScheme), openApiSecurityScheme);
+        options.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, openApiSecurityScheme);
+        options.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+            { openApiSecurityScheme, [] }
+        });
+    })
+    .AddScoped<ITokenService, JwtService>()
+    .AddAuthentication()
+    .AddJwtBearer()
+    .AddJwtBearer("Refresh");
+
+builder.Services.AddSingleton<IPostConfigureOptions<JwtBearerOptions>, Bridge.HostApi.Infrasructure.JwtBearerPostConfigureOptions>();
+
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<IUserIdProvider, UserIdProvider>();
 
 var app = builder.Build();
 
@@ -51,6 +69,7 @@ app.UseCors(builder => builder
     .AllowCredentials());
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app
     .MapHubs()

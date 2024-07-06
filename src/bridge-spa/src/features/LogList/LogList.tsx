@@ -4,17 +4,19 @@ import { ViewportList } from "react-viewport-list";
 import { useInView } from 'react-intersection-observer';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
-import { pageSize, addLog, addLogRange, getTasks, setError, setLoading } from "./LogListStore";
+import { pageSize, addLog, addLogRange, getTasks, setError, setLoading, authorized } from "./LogListStore";
 import { Loading, ScrollView } from "../../components";
 import { useConnection, useLoopRequest, useScreenSize } from "../../hooks";
 import { api } from "../../utils/api";
+import { unauthorized } from "../../App/AppStore";
 import Task from "../Task/Task";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import Error from '../../components/Error/Error';
 import './LogList.scss';
 
 const LogList: FC = () => {
     const dispatch = useAppDispatch();
+    const app = useAppSelector(({ app }: RootState) => app);
     const logList = useAppSelector(({ logList }: RootState) => logList);
     const screen = useScreenSize();
     const connection = useConnection('/logs', {
@@ -24,9 +26,13 @@ const LogList: FC = () => {
                 ? ['Tasks', [pageSize]]
                 : ['Update', [new Date(logList.tasks[0].logs[0].dateTime)]];
         },
-        callback: (running, _authError, message) => {
-            dispatch(setLoading(!running));
-            dispatch(setError(message));
+        callback: (running, authError, message) => {
+            if (authError) {
+                dispatch(unauthorized());
+            } else {
+                dispatch(setLoading(!running));
+                dispatch(setError(message));
+            }
         },
         auth: api.refresh,
         handlers: [
@@ -64,6 +70,13 @@ const LogList: FC = () => {
             request.stop();
         }
     }, []);
+
+    useEffect(() => {
+        if (!logList.auth) {
+            dispatch(authorized());
+            dispatch(unauthorized());
+        }
+    }, [logList.auth]);
     
     return (
         <NavBar

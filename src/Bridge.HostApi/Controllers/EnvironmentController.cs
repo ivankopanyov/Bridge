@@ -7,12 +7,16 @@ public class EnvironmentController(IEnvironmentRepository environmentRepository,
 {
     [HttpGet("")]
     [ProducesResponseType<BridgeEnvironment>((int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ActionResult<BridgeEnvironment>> GetAsync() => 
         Ok(await environmentRepository.GetAsync() ?? new BridgeEnvironment());
 
     [HttpPut("")]
     [ProducesResponseType<BridgeEnvironment>((int)HttpStatusCode.OK)]
     [ProducesResponseType<string>((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ActionResult<BridgeEnvironment>> UpdateAsync([Required][FromBody] BridgeEnvironment environment)
     {
         if (await environmentRepository.UpdateAsync(environment))

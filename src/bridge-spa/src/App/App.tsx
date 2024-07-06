@@ -1,77 +1,39 @@
-import { useState, FC } from 'react';
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
-import { BottomNavigation, BottomNavigationAction } from '@mui/material';
-import { MenuBook, DisplaySettings, FormatListBulleted } from '@mui/icons-material';
-import { Tab } from '../components';
-import useScreenSize from '../hooks/useScreenSize';
-import HostList from '../features/HostList/HostList';
-import Environment from '../features/Environment/Environment';
-import LogList from '../features/LogList/LogList';
-import './App.scss';
+import { useEffect, FC } from 'react';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { RootState } from '../redux/store';
+import { refresh } from './AppStore';
+import { Loading } from '../components';
+import Error from '../components/Error/Error';
+import TabBar from '../features/TabBar/TabBar';
+import Auth from '../features/Auth/Auth';
 
 const App: FC = () => {
-    const screenSize = useScreenSize();
-    const navigate = useNavigate();
-    const [tab, setTab] = useState<number>(0);
-    const tabClassName = `tab ${!screenSize.isMobile && 'tab-desktop'}`;
+    const dispatch = useAppDispatch();
+    const app = useAppSelector(({ app }: RootState) => app);
 
-    const switchTab = (tabIndex: number) => {
-        setTab(tabIndex);
-        switch (tabIndex) {
-            case 0:
-                navigate('logs');
-                break;
+    useEffect(() => {
+        dispatch(refresh());
+    }, []);
 
-            case 1:
-                navigate('services');
-                break;
-
-            case 2:
-                navigate('environment');
-                break;
-        }
-    };
+    useEffect(() => {
+        if (!app.loading && !app.auth)
+            setTimeout(async () => await dispatch(refresh()), 3000);
+    }, [app.loading]);
     
     return (
-        <div className={ screenSize.isMobile ? 'tab-bar-container-mobile' : 'tab-bar-container-desktop' }>
-            <Routes>
-                <Route
-                    path="logs"
-                    element={<Tab setTab={() => setTab(0)}><LogList /></Tab>}
-                />
-                <Route
-                    path="services"
-                    element={<Tab setTab={() => setTab(1)}><HostList /></Tab>}
-                />
-                <Route
-                    path="environment"
-                    element={<Tab setTab={() => setTab(2)}><Environment /></Tab>}
-                />
-                <Route path="*" element={<Navigate to="logs" replace={true} />} /> 
-            </Routes>
-            <BottomNavigation className={`tab-bar ${screenSize.isMobile ? 'tab-bar-mobile' : 'tab-bar-desktop'}`}
-                showLabels={!screenSize.isMobile}
-                sx={{
-                    width: screenSize.isMobile ? screenSize.width : undefined,
-                    height: screenSize.isMobile ? undefined : screenSize.height
-                }}
-                value={tab}
-                onChange={(_e, value) => switchTab(value)}
-            >
-                <BottomNavigationAction className={tabClassName}
-                    icon={<MenuBook className="tab-bar-icon" />}
-                    label={ !screenSize.isMobile && 'Logs' }
-                />
-                <BottomNavigationAction className={tabClassName}
-                    icon={<DisplaySettings className="tab-bar-icon" />}
-                    label={ !screenSize.isMobile && 'Services' }
-                />
-                <BottomNavigationAction className={tabClassName}
-                    icon={<FormatListBulleted className="tab-bar-icon" />}
-                    label={ !screenSize.isMobile && 'Environment' }
-                />
-            </BottomNavigation>
-        </div>
+        <>
+            {
+                {
+                    'authorized': <TabBar />,
+                    'unauthorized': <Auth />,
+                    'unknown':
+                        <div>
+                            { app.error && <Error error={app.error} /> }
+                            <Loading />
+                        </div>
+                }[app.auth ?? 'unknown']
+            }
+        </>
     );
 }
 

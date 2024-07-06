@@ -1,0 +1,13 @@
+@import '../../styles/vars';
+
+$input-text-icon-size: 16px;
+
+.input-text-icon {
+    width: $input-text-icon-size !important;
+    height: $input-text-icon-size !important;
+    color: $color-secondary;
+}
+
+.input-text-input-adornment {
+    margin-right: 5px;
+}

@@ -4,6 +4,7 @@ export { Checkbox } from './Checkbox/Checkbox';
 export { EnumerableParameterItem } from './EnumerableParameterItem/EnumerableParameterItem';
 export { Loading } from './Loading/Loading';
 export { NavBarButton } from './NavBarButton/NavBarButton';
+export { InputText } from './InputText/InputText';
 export { ScrollView } from './ScrollView/ScrollView';
 export { SearchBar } from './SearchBar/SearchBar';
 export { Tab } from './Tab/Tab';
