@@ -3,7 +3,7 @@
 public class Login
 {
     [Required]
-    [RegularExpression(@"^[ ]*[A-Za-z][A-Za-z0-9-_]{5,49}[ ]*$")]
+    [RegularExpression(@"^[ ]*[A-Za-z][A-Za-z0-9-_]{3,49}[ ]*$")]
     public string Username { get; set; }
 
     [Required]

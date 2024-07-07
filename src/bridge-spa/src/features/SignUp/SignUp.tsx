@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
 import { signUp } from '../../App/AppStore';
 import { Loading, InputText, Text } from '../../components';
+import { NAME_MAX, NAME_MIN, PASS_MAX, PASS_MIN } from '../../environment';
 import Error from '../../components/Error/Error';
 import ParameterHeader from '../../components/ParameterHeader/ParameterHeader';
 import './SignUp.scss';
@@ -18,21 +19,19 @@ const SignUp: FC = () => {
     const dispatch = useAppDispatch();
     const app = useAppSelector(({ app }: RootState) => app);
 
-    const disable = () => {
-        const name = username.trim();
-        return !/^[A-Za-z][A-Za-z1-9-_]{5,}$/g.test(name) || password.length < 6 || password.length > 50 || password !== confirnPassword;
-    };
+    const disable = () => !new RegExp(`^[ ]*[A-Za-z][A-Za-z1-9-_]{${NAME_MIN - 1},${NAME_MAX - 1}}[ ]*$`).test(username)
+        || password.length < PASS_MIN || password.length > PASS_MAX || password !== confirnPassword;
 
     const usernameTitle = () => {
         const name = username.trim();
-        const length = name.length >= 6 && name.length <= 50 ? ok : fail;
+        const length = name.length >= NAME_MIN && name.length <= NAME_MAX ? ok : fail;
         const regex = /^[A-Za-z1-9-_]*$/g.test(name) ? ok : fail;
         const first = /^[A-Za-z]/g.test(name) ? ok : fail;
-        return `Username (${length} Длина в диапазоне от 6 до 50 символов.\n${regex} Содержит только строчные и заглавные буквы латинского алфавита, цифры и знаки дефиса и нижнего подчеркивания.\n${first} Начинается с буквы.)`;
+        return `Username (${length} Длина в диапазоне от ${NAME_MIN} до ${NAME_MAX} символов.\n${regex} Содержит только строчные и заглавные буквы латинского алфавита, цифры и знаки дефиса и нижнего подчеркивания.\n${first} Начинается с буквы.)`;
     }
 
     const passwordTitle = () => 
-        `Password (${password.length >= 6 && password.length <= 50 ? ok : fail} Длина в диапазоне от 6 до 50 символов.)`;
+        `Password (${password.length >= PASS_MIN && password.length <= PASS_MAX ? ok : fail} Длина в диапазоне от ${PASS_MIN} до ${PASS_MAX} символов.)`;
 
     const confirmPasswordTitle = () => 
         `Confirm password (${password === confirnPassword ? ok : fail} Пароли совпадают.)`;

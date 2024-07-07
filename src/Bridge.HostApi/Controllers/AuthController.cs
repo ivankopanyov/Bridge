@@ -42,9 +42,12 @@ public class AuthController(UserManager<User> userManager, BridgeDbContext conte
             if (await context.Users.AsNoTracking().AnyAsync())
                 return StatusCode(StatusCodes.Status403Forbidden);
 
+            var userName = login.Username.Trim();
+
             var user = new User
             {
-                UserName = login.Username.Trim().ToLower(),
+                UserName = userName.ToLower(),
+                NormalizedUserName = userName,
                 CanModified = false
             };
 
@@ -67,7 +70,7 @@ public class AuthController(UserManager<User> userManager, BridgeDbContext conte
     [ProducesResponseType((int)HttpStatusCode.Forbidden)]
     public async Task<IActionResult> SignInAsync([Required][FromBody] Login login)
     {
-        if (await userManager.FindByNameAsync(login.Username) is not User user)
+        if (await userManager.FindByNameAsync(login.Username.Trim().ToLower()) is not User user)
         {
             return await userManager.Users.AsNoTracking().AnyAsync()
                 ? NotFound("The username or password is incorrect")

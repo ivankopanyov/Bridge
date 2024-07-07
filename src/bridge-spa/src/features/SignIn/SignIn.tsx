@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { RootState } from '../../redux/store';
 import { setError, signIn } from '../../App/AppStore';
 import { Loading, InputText, Text } from '../../components';
+import { NAME_MAX, NAME_MIN, PASS_MAX, PASS_MIN } from '../../environment';
 import Error from '../../components/Error/Error';
 import ParameterHeader from '../../components/ParameterHeader/ParameterHeader';
 import './SignIn.scss';
@@ -26,7 +27,7 @@ const SignIn: FC = () => {
             return;
         }
 
-        if (!/^[A-Za-z][A-Za-z1-9-_]{5,}$/g.test(name) || password.length < 6 || password.length > 50) {
+        if (!new RegExp(`^[A-Za-z][A-Za-z1-9-_]{${NAME_MIN - 1},${NAME_MAX - 1}}$`).test(name) || password.length < PASS_MIN || password.length > PASS_MAX) {
             dispatch(setError('The username or password is incorrect.'));
             return;
         }
