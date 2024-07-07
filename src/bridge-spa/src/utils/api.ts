@@ -1,3 +1,5 @@
+import { SERVER_HOST } from "../environment";
+
 class HttpError extends Error {
     readonly code: string = '0';
   
@@ -8,7 +10,7 @@ class HttpError extends Error {
 }
 
 export const api = {
-    baseURL: `${window.location.origin}:8080/api/v1.0`,
+    baseURL: `${SERVER_HOST}/api/v1.0`,
     get: (endpoint: string) => api.respond('get', endpoint),
     post: (endpoint: string, body?: any) => api.respond('post', endpoint, body),
     put: (endpoint: string, body?: any) => api.respond('put', endpoint, body),
@@ -17,7 +19,6 @@ export const api = {
     refresh: () => api.respond('get', '/auth/refresh', undefined, false),
     respond: async (method: string, endpoint: string, options?: any, refresh: boolean = true): Promise<any | undefined> => {
         let response: Response;
-  
         try {
             response = await fetch(`${api.baseURL}${endpoint}`, {
                 method: method,
