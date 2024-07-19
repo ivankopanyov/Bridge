@@ -1,4 +1,4 @@
-import { useState, FC, useEffect, useRef } from "react";
+import { useState, FC, useEffect } from "react";
 import { Accordion } from "@mui/material";
 import {
   CreditScore,
@@ -9,8 +9,7 @@ import {
   PersonOff,
   PublishedWithChanges,
   Sync,
-  SyncDisabled,
-  UnfoldLess,
+  SyncDisabled
 } from "@mui/icons-material";
 import { TaskInfo } from "../LogList/data";
 import { getTask } from "../LogList/LogListStore";
@@ -100,7 +99,7 @@ const Task: FC<Readonly<TaskProps>> = ({ task }) => {
           </div>
           <div>
             <div className="task-header-name">
-              <Text>{task.logs[0].dateTime.display()}</Text>
+              <Text>{new Date(task.logs[0].dateTime).display()}</Text>
               {!expanded && task.logs[0].handlerName && (
                 <div className="task-handler task-indent-left">
                   <Text>{task.logs[0].handlerName}</Text>
