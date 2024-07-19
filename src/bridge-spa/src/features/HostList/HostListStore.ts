@@ -114,7 +114,6 @@ const setService = (state: HostList, payload: Service) => {
   };
 
   if (jsonOptions) service.parameters = params(JSON.parse(jsonOptions));
-
   index >= 0 ? (host.services[index] = service) : host.services.push(service);
 };
 
@@ -135,7 +134,6 @@ const remove = (
         if (index >= 0) {
           state.serviceCount -= 1;
           if (service.state?.isActive) state.activeServiceCount -= 1;
-
           state.hosts.splice(index, 1);
         }
       } else {

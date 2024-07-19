@@ -36,6 +36,7 @@ export const getLog = createAsyncThunk(
 const addLogs = (state: LogList, logs: LogInfo[], splice = false) => {
   let sort = false;
   logs.forEach((log) => {
+    log.dateTime = new Date(log.dateTime);
     const task = state.tasks.find((t) => t.logs[0].taskId === log.taskId);
     if (task) {
       if (log.dateTime > task.logs[0].dateTime && !task.loading) {
@@ -53,7 +54,6 @@ const addLogs = (state: LogList, logs: LogInfo[], splice = false) => {
   if (sort) {
     state.tasks.sort((a, b) => {
       if (a.logs[0].dateTime === b.logs[0].dateTime) return 0;
-
       return a.logs[0].dateTime > b.logs[0].dateTime ? 1 : -1;
     });
   }
@@ -77,6 +77,7 @@ const logListSlice = createSlice({
   reducers: {
     addLog(state, action: PayloadAction<LogInfo>) {
       const log = action.payload;
+      log.dateTime = new Date(log.dateTime);
       const task = state.tasks.find((t) => t.logs[0].taskId === log.taskId);
       let sort = false;
       if (task) {
@@ -91,7 +92,6 @@ const logListSlice = createSlice({
             task.logs.push(log);
             task.logs.sort((a, b) => {
               if (a.dateTime === b.dateTime) return 0;
-
               return a.dateTime > b.dateTime ? -1 : 1;
             });
           }
@@ -106,7 +106,6 @@ const logListSlice = createSlice({
       if (sort) {
         state.tasks.sort((a, b) => {
           if (a.logs[0].dateTime === b.logs[0].dateTime) return 0;
-
           return a.logs[0].dateTime > b.logs[0].dateTime ? -1 : 1;
         });
       }
@@ -166,6 +165,7 @@ const logListSlice = createSlice({
           let logSort = false;
           let sort = false;
           logs.forEach((log) => {
+            log.dateTime = new Date(log.dateTime);
             const first = task.logs[0].dateTime;
             if (!task.logs.find((l) => l.id === log.id)) {
               task.logs.push(log);
@@ -179,7 +179,6 @@ const logListSlice = createSlice({
           if (logSort) {
             task.logs.sort((a, b) => {
               if (a.dateTime === b.dateTime) return 0;
-
               return a.dateTime > b.dateTime ? -1 : 1;
             });
           }
@@ -187,7 +186,6 @@ const logListSlice = createSlice({
           if (sort) {
             state.tasks.sort((a, b) => {
               if (a.logs[0].dateTime === b.logs[0].dateTime) return 0;
-
               return a.logs[0].dateTime > b.logs[0].dateTime ? -1 : 1;
             });
           }
