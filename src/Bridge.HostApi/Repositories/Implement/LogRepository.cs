@@ -92,19 +92,22 @@ public class LogRepository(IElasticSearchService elasticSearchService) : ILogRep
     }
 
     private async Task<IEnumerable<EventLog>> FindAsync(SearchRequestDescriptor<TaskLog> searchRequestDescriptor) =>
-        await elasticSearchService.Exec<Task<IEnumerable<EventLog>>>(async (client, index) => 
+        await elasticSearchService.Exec(async (client, index) => 
         {
             var response = await client.SearchAsync(searchRequestDescriptor.Index(index));
 
             if (!response.IsSuccess())
                 throw new Exception(response.DebugInformation);
 
-            return response.Total <= 0 ? Enumerable.Empty<EventLog>() : response.Documents.Select(task =>
+            return response.Total <= 0 ? [] : response.Documents.Select(task =>
             {
-                var log = task.Logs.First();
+                if (task.Logs.FirstOrDefault() is not EventLog log)
+                    return null!;
+                
                 log.Data = null;
                 return log;
-            });
+            })
+            .Where(el => el != null);
         });
 
     private static List<Action<QueryDescriptor<TaskLog>>> GetFilters(SearchFilter filter)
