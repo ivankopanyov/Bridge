@@ -1,19 +1,19 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .accordion-header {
-    padding: 0 !important;
-    min-height: 0 !important;
-    align-items: flex-start !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  align-items: flex-start !important;
 }
 
 .accordion-header-expand-icon {
-    color: $color-secondary;
+  color: $color-secondary;
 }
 
 .MuiAccordionSummary-content {
-    margin: 0 !important
+  margin: 0 !important;
 }
 
 .MuiAccordionSummary-content.Mui-expanded {
-    margin: 0 !important
+  margin: 0 !important;
 }

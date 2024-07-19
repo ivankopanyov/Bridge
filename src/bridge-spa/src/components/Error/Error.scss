@@ -1,11 +1,11 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .error-icon {
-    margin-right: 10px;
-    color: $color-error;
+  margin-right: 10px;
+  color: $color-error;
 }
 
 .error-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

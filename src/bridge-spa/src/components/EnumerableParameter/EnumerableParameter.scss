@@ -1,23 +1,23 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .enumerable-parameter-container {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 4px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 4px;
 }
 
 .enumerable-parameter-icon-button {
-    padding: 0 !important;
-    margin-right: 10px !important;
-    color: $color-secondary !important;
+  padding: 0 !important;
+  margin-right: 10px !important;
+  color: $color-secondary !important;
 }
 
 .enumerable-parameter-accordion-container {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .enumerable-parameter-header-container {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }

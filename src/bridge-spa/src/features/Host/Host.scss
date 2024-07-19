@@ -1,18 +1,18 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .host-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .host-indent-right {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .host-success-icon {
-    color: $color-secondary
+  color: $color-secondary;
 }
 
 .host-fail-icon {
-    color: $color-error
+  color: $color-error;
 }

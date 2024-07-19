@@ -1,37 +1,37 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 $checkbox-size: 22px;
 $checkbox-size-large: 28px;
-$checkbox-icon-medium-size: 20px; 
+$checkbox-icon-medium-size: 20px;
 
 .checkbox-container {
-    border: 1px solid $color-secondary;
-    border-radius: $border-radius;
+  border: 1px solid $color-secondary;
+  border-radius: $border-radius;
 }
 
 .checkbox-container-medium {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .checkbox-container-large {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .checkbox-medium {
-    width: $checkbox-size;
-    height: $checkbox-size;
+  width: $checkbox-size;
+  height: $checkbox-size;
 }
 
 .checkbox-large {
-    width: $checkbox-size-large;
-    height: $checkbox-size-large;
+  width: $checkbox-size-large;
+  height: $checkbox-size-large;
 }
 
 .checkbox-icon {
-    color: $color-secondary;
+  color: $color-secondary;
 }
 
 .checkbox-icon-medium {
-    width: $checkbox-icon-medium-size;
-    height: $checkbox-icon-medium-size;
+  width: $checkbox-icon-medium-size;
+  height: $checkbox-icon-medium-size;
 }

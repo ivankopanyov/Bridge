@@ -1,40 +1,40 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 $progress-size: 20px;
 $button-icon-size: 16px;
 $service-input-margin: 5px;
 
 .service-header-container {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .service-success-icon {
-    margin-right: 10px;
-    color: $color-secondary;
+  margin-right: 10px;
+  color: $color-secondary;
 }
 
 .service-fail-icon {
-    margin-right: 10px;
-    color: $color-error;
+  margin-right: 10px;
+  color: $color-error;
 }
 
 .service-progress {
-    margin-left: 2px;
-    margin-right: 12px;
-    margin-top: 4px;
-    width: $progress-size !important;
-    height: $progress-size !important;
+  margin-left: 2px;
+  margin-right: 12px;
+  margin-top: 4px;
+  width: $progress-size !important;
+  height: $progress-size !important;
 }
 
 .service-host-name {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .service-name {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 .service-opacity {
-    opacity: 0.2;
+  opacity: 0.2;
 }

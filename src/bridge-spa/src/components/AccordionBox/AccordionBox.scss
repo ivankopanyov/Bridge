@@ -1,30 +1,30 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .accordion-box {
-    border-radius: $border-radius !important;
+  border-radius: $border-radius !important;
 }
 
 .accordion-box-normal {
-    border: 1px solid $color-secondary;
+  border: 1px solid $color-secondary;
 }
 
 .accordion-box-error {
-    border: 1px solid $color-error;
+  border: 1px solid $color-error;
 }
 
 .accordion-box-icon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .accordion-box-icon-normal {
-    color: $color-primary;
+  color: $color-primary;
 }
 
 .accordion-box-icon-error {
-    color: $color-error;
+  color: $color-error;
 }
 
 .accordion-box-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

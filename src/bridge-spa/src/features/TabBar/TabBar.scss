@@ -1,46 +1,46 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .tab-bar-container-mobile {
-    margin-bottom: $tab_bar_height;
+  margin-bottom: $tab_bar_height;
 }
 
 .tab-bar-container-desktop {
-    margin-left: $tab_bar_width;
+  margin-left: $tab_bar_width;
 }
 
 .tab-bar {
-    color: #90caf9 !important;
-    background-color: $color-component !important;
+  color: #90caf9 !important;
+  background-color: $color-component !important;
 }
 
 .tab {
-    color: $color-secondary !important;
-    padding: 12px !important;
+  color: $color-secondary !important;
+  padding: 12px !important;
 }
 
 .tab-desktop {
-    flex-direction: row !important;
-    justify-content: flex-start !important;
-    flex-grow: 0 !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  flex-grow: 0 !important;
 }
 
 .tab-bar-mobile {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: $tab_bar_height;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $tab_bar_height;
 }
 
 .tab-bar-desktop {
-    flex-direction: column;
-    justify-content: flex-start !important;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: $tab_bar_width;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: $tab_bar_width;
 }
 
 .tab-bar-icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
