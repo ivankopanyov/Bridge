@@ -121,7 +121,7 @@ services:
     networks:
       - network
     healthcheck:
-      test: ["CMD-SHELL", "curl http://localhost:9200/_cluster/health?wait_for_status=green || exit 1"]
+      test: ["CMD-SHELL", "curl http://localhost:9200/_cluster/health?wait_for_status=yellow || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 10
